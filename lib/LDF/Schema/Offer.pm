@@ -1131,7 +1131,9 @@ Defines the type for L<MooX::Role::JSON_LD>
 
 sub json_ld_type { 'Offer' }
 
-=ead2 C<json_ld_fields>
+
+
+=head2 C<json_ld_fields>
 
 Specifies the fields for L<MooX::Role::JSON_LD>
 
@@ -1186,6 +1188,7 @@ around json_ld_fields => sub {
       { warranty => 'warranty' },
     ]
 };
+
 
 
 

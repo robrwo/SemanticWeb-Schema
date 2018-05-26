@@ -76,7 +76,9 @@ Defines the type for L<MooX::Role::JSON_LD>
 
 sub json_ld_type { '[% label %]' }
 
-=ead2 C<json_ld_fields>
+[% IF attributes.size %]
+
+=head2 C<json_ld_fields>
 
 Specifies the fields for L<MooX::Role::JSON_LD>
 
@@ -103,6 +105,7 @@ sub json_ld_fields {
     ]
 }
 
+[% END %]
 [% END %]
 
 =head1 SEE ALSO

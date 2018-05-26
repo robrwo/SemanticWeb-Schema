@@ -43,21 +43,6 @@ Defines the type for L<MooX::Role::JSON_LD>
 
 sub json_ld_type { 'RestrictedDiet' }
 
-=ead2 C<json_ld_fields>
-
-Specifies the fields for L<MooX::Role::JSON_LD>
-
-=cut
-
-
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ @$fields,
-    ]
-};
-
 
 
 =head1 SEE ALSO
