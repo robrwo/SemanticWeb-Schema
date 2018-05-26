@@ -7,6 +7,7 @@ use Moo;
 use Carp;
 use Const::Fast;
 use List::Util 1.33 qw/ any pairgrep uniqstr /;
+use LWP::UserAgent;
 use Path::Tiny;
 use RDF::Prefixes;
 use RDF::Trine;
@@ -75,6 +76,56 @@ has definition => (
     },
 );
 
+has cache_dir => (
+    is => 'lazy',
+    default => './cache',
+);
+
+has definition_files => (
+    is => 'lazy',
+    builder => sub {
+        my ($self) = @_;
+
+        my $ua = LWP::UserAgent->new;
+
+        my $defs = $self->definition;
+        unless ( is_plain_arrayref($defs) ) {
+            $defs = [$defs];
+        }
+
+        my @files;
+
+        foreach my $uri (map { URI->new($_) } @$defs) {
+
+            my $file = path( $self->cache_dir, $uri->host, $uri->path );
+            if ($file->exists) {
+
+                push @files, [ $uri => $file ];
+
+            }
+            else {
+
+                my $res = $ua->get($uri);
+                if ($res->is_success) {
+
+                    $file->parent->mkpath;
+                    $file->spew_raw( $res->decoded_content );
+
+                    push @files, [ $uri => $file ];
+
+                }
+                else {
+
+                    croak "Cannot fetch ${uri}";
+                }
+            }
+
+        }
+
+        return \@files;
+    }
+);
+
 has store => (
     is      => 'lazy',
     builder => sub {
@@ -87,15 +138,13 @@ has model => (
     builder => sub {
         my ($self) = @_;
 
-        my $defs = $self->definition;
-        unless ( is_plain_arrayref($defs) ) {
-            $defs = [$defs];
-        }
+        my $defs = $self->definition_files;
 
         my $model = RDF::Trine::Model->new( $self->store );
 
-        foreach my $url (@$defs) {
-            RDF::Trine::Parser->parse_url_into_model( $url, $model, );
+        foreach my $def (@$defs) {
+            my ($uri, $file) = @$def;
+            RDF::Trine::Parser::RDFXML->parse_file_into_model( $uri, $file->openr, $model, );
         }
         return $model;
 
