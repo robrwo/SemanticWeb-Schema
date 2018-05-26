@@ -235,11 +235,13 @@ sub generate_class_from_trine {
 
     if ( my $extends = $nodes->{'rdfs:subClassOf'} ) {
         $extends = [$extends] unless is_plain_arrayref($extends);
-        $meta{parents} = [ map { $self->label_to_package_name($_) } @$extends ],
-          ;
+        $meta{parents} = [ map { $self->label_to_package_name($_) } @$extends ];
+        $meta{is_subclass} = 1;
+
     }
     else {
 
+        $meta{is_subclass} = 0;
         $meta{roles} = 'MooX::Role::JSON_LD';
 
     }

@@ -84,7 +84,7 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 
 =cut
 
-[% IF parents.size %]
+[% IF is_subclass %]
 
 around json_ld_fields => sub {
     my ($next, $self) = @_;
