@@ -69,6 +69,7 @@ has definition => (
     default => sub {
         [
          ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
+         'http://schema.org/version/3.3/ext-meta.rdf',
          'http://schema.org/version/3.3/schema.rdf',
         ]
     },
@@ -300,7 +301,7 @@ sub get_properties_of_class {
 
         $range = [$range] unless is_plain_arrayref($range);
 
-        return $type eq 'rdf:Property' && any { $_ eq $class } @$range;
+        return $type =~ /^(?:rdf|schema):Property$/ && any { $_ eq $class } @$range;
 
     }
     %{$trines};
