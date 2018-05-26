@@ -25,16 +25,6 @@ Quantity: Duration (use <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO
 
 
 
-Note that this class was generated automatically from the following sources:
-
-=over
-
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
-
-=item L<http://schema.org/version/3.3/schema.rdf>
-
-=back
-
 
 =cut
 

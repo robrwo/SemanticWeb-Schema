@@ -23,15 +23,6 @@ our $VERSION = '[% version %]';
 
 [% description %]
 
-Note that this class was generated automatically from the following sources:
-
-=over
-[% FOREACH uri IN sources %]
-=item L<[% uri %]>
-[% END -%]
-
-=back
-
 [% IF attributes.size %]
 =head1 ATTRIBUTES
 

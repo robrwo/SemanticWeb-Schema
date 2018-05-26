@@ -69,20 +69,20 @@ has definition => (
     is      => 'ro',
     default => sub {
         [
-         ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
-         'http://schema.org/version/3.3/ext-meta.rdf',
-         'http://schema.org/version/3.3/schema.rdf',
+            ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
+            'http://schema.org/version/3.3/ext-meta.rdf',
+            'http://schema.org/version/3.3/schema.rdf',
         ]
     },
 );
 
 has cache_dir => (
-    is => 'lazy',
+    is      => 'lazy',
     default => './cache',
 );
 
 has definition_files => (
-    is => 'lazy',
+    is      => 'lazy',
     builder => sub {
         my ($self) = @_;
 
@@ -95,10 +95,10 @@ has definition_files => (
 
         my @files;
 
-        foreach my $uri (map { URI->new($_) } @$defs) {
+        foreach my $uri ( map { URI->new($_) } @$defs ) {
 
             my $file = path( $self->cache_dir, $uri->host, $uri->path );
-            if ($file->exists) {
+            if ( $file->exists ) {
 
                 push @files, [ $uri => $file ];
 
@@ -106,7 +106,7 @@ has definition_files => (
             else {
 
                 my $res = $ua->get($uri);
-                if ($res->is_success) {
+                if ( $res->is_success ) {
 
                     $file->parent->mkpath;
                     $file->spew_raw( $res->decoded_content );
@@ -143,8 +143,9 @@ has model => (
         my $model = RDF::Trine::Model->new( $self->store );
 
         foreach my $def (@$defs) {
-            my ($uri, $file) = @$def;
-            RDF::Trine::Parser::RDFXML->parse_file_into_model( $uri, $file->openr, $model, );
+            my ( $uri, $file ) = @$def;
+            RDF::Trine::Parser::RDFXML->parse_file_into_model( $uri,
+                $file->openr, $model, );
         }
         return $model;
 
@@ -201,11 +202,11 @@ sub generate_class_from_trine {
 
     return if any { $_ eq 'schema:DataType' } @$types;
 
-    return unless any { $_ eq 'rdfs:Class' } @$types;
+    return unless any { $_ =~ /^(rdfs|schema):Class$/ } @$types;
 
     my $class_name = $self->label_to_package_name($subj);
 
-    my ($prefix, $label) = split /:/, $subj;
+    my ( $prefix, $label ) = split /:/, $subj;
 
     my %meta = (
         sources    => $self->definition,
@@ -241,8 +242,8 @@ sub generate_class_from_trine {
     }
     else {
 
+        $meta{parents} = $self->label_to_package_name($prefix);
         $meta{is_subclass} = 0;
-        $meta{roles} = 'MooX::Role::JSON_LD';
 
     }
 
@@ -267,14 +268,14 @@ sub generate_class_from_trine {
 
         if ( my $types = $node->{'schema:rangeIncludes'} ) {
             $types = [$types] unless is_plain_arrayref($types);
-            $attrs{$name}{types} = $self->translate_types( @$types );
+            $attrs{$name}{types} = $self->translate_types(@$types);
         }
 
     }
 
     my $filename = $class_name;
     $filename =~ s/::/\//g;
-    my $file    = path( 'lib', $filename . '.pm' );
+    my $file = path( 'lib', $filename . '.pm' );
 
     $file->parent->mkpath;
 
@@ -297,25 +298,26 @@ sub translate_types {
     # The RDF specification does not seem to specify whether
     # properties are repeatable.
 
-    while (my $type = shift) {
+    while ( my $type = shift ) {
 
-        if ($type eq 'schema:Text') {
+        if ( $type eq 'schema:Text' ) {
             push @types, 'Str';
         }
-        elsif ($type eq 'schema:Number') {
+        elsif ( $type eq 'schema:Number' ) {
             push @types, 'Num';
         }
-        elsif ($type eq 'schema:URL') {
+        elsif ( $type eq 'schema:URL' ) {
             push @types, 'Str';
         }
-        elsif ($type eq 'schema:Boolean') {
+        elsif ( $type eq 'schema:Boolean' ) {
             push @types, 'Bool';
         }
-        elsif ($type =~ /^schema:(Date(Time)?|Time)$/) {
+        elsif ( $type =~ /^schema:(Date(Time)?|Time)$/ ) {
             push @types, qw/ Str /;
         }
         else {
-            push @types, "InstanceOf['" . $self->label_to_package_name($type) . "']";
+            push @types,
+              "InstanceOf['" . $self->label_to_package_name($type) . "']";
         }
 
     }
@@ -352,7 +354,8 @@ sub get_properties_of_class {
 
         $range = [$range] unless is_plain_arrayref($range);
 
-        return $type =~ /^(?:rdf|schema):Property$/ && any { $_ eq $class } @$range;
+        return $type =~ /^(?:rdf|schema):Property$/ && any { $_ eq $class }
+        @$range;
 
     }
     %{$trines};
@@ -365,11 +368,11 @@ sub label_to_package_name {
 
     my ( $prefix, $name ) = split /:/, $qname;
 
-    return
-        'LDF::'
-      . ( $prefix =~ /^(?:schema|elements)$/ ? ucfirst($prefix) : uc($prefix) )
-      . '::'
-      . $name;
+    return join('::', grep { defined $_ } (
+        'LDF',
+        $prefix =~ /^(?:schema|elements)$/ ? ucfirst($prefix) : uc($prefix),
+        $name,
+    ));
 
 }
 
@@ -389,11 +392,44 @@ sub query {
 sub generate_all_classes {
     my ($self) = @_;
 
-    my $trines     = $self->trines;
+    my $trines = $self->trines;
 
-    foreach my $name (keys %$trines) {
-        $self->generate_class_from_trine($name);
+    my $prefix;
+
+    foreach my $qname ( keys %$trines ) {
+
+        unless ($prefix) {
+            ($prefix) = split /:/, $qname;
+            $self->generate_base_class($prefix);
+        }
+
+        $self->generate_class_from_trine($qname);
     }
+
+}
+
+sub generate_base_class {
+    my ( $self, $prefix ) = @_;
+
+    my $class_name = $self->label_to_package_name($prefix);
+
+    my %meta = (
+        sources    => $self->definition,
+        prefix     => $prefix,
+        context    => $prefixes{$prefix},
+        version    => $VERSION,
+        class_name => $class_name,
+        );
+
+    my $filename = $class_name;
+    $filename =~ s/::/\//g;
+    my $file = path( 'lib', $filename . '.pm' );
+
+    $file->parent->mkpath;
+
+    my $engine = Template->new();
+
+    $engine->process( 'etc/base.tt', \%meta, $file->openw );
 
 }
 

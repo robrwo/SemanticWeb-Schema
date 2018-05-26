@@ -20,16 +20,6 @@ A page devoted to a single item, such as a particular product or hotel.
 
 
 
-Note that this class was generated automatically from the following sources:
-
-=over
-
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
-
-=item L<http://schema.org/version/3.3/schema.rdf>
-
-=back
-
 
 =cut
 

@@ -1,0 +1,78 @@
+package [% class_name %];
+
+# ABSTRACT: Moo classes for [% context %] classes
+
+use Moo;
+with 'MooX::Role::JSON_LD';
+
+use namespace::autoclean;
+
+our $VERSION = '[% version %]';
+
+=head1 DESCRIPTION
+
+The C<[% class_name %]> classes were generated automatically from the
+following sources:
+
+=over
+
+[% FOREACH uri IN sources %]
+=item L<[% uri %]>
+[% END -%]
+
+=back
+
+=head1 ATTRIBUTES
+
+=head2 C<id>
+
+If this is set, it adds a C<@id> to the L</json_ld_data>.
+
+=cut
+
+has id => (
+    is        => 'rw',
+    predicate => 1,
+);
+
+=head2 C<context>
+
+=cut
+
+has context => (
+    is => 'lazy',
+);
+
+sub _build_context {
+    return '[% context %]';
+}
+
+around json_ld_data => sub {
+    my ($next, $self) = @_;
+
+    my $data = $self->$next;
+    $data->{'@id'} //= $self->id if $self->has_id;
+    $data->{'@context'} = $self->context;
+
+    return $data;
+};
+
+sub json_ld_type { }
+
+sub json_ld_fields { [] }
+
+=head1 SEE ALSO
+
+=over
+
+=item L<Moo>
+
+=item L<MooX::Role::JSON_LD>
+
+=item L<[% context %]>
+
+=back
+
+=cut
+
+1;

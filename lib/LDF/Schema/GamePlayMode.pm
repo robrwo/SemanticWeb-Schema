@@ -20,16 +20,6 @@ Indicates whether this game is multi-player, co-op or single-player.
 
 
 
-Note that this class was generated automatically from the following sources:
-
-=over
-
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
-
-=item L<http://schema.org/version/3.3/schema.rdf>
-
-=back
-
 
 =cut
 

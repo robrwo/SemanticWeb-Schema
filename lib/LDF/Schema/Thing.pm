@@ -4,8 +4,8 @@ package LDF::Schema::Thing;
 
 use Moo;
 
+extends qw/ LDF::Schema /;
 
-with qw/ MooX::Role::JSON_LD /;
 
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
@@ -19,16 +19,6 @@ our $VERSION = 'v0.0.1';
 The most generic type of item.
 
 
-
-Note that this class was generated automatically from the following sources:
-
-=over
-
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
-
-=item L<http://schema.org/version/3.3/schema.rdf>
-
-=back
 
 
 =head1 ATTRIBUTES
@@ -369,8 +359,8 @@ sub json_ld_fields {
 =head1 SEE ALSO
 
 
-L<MooX::Role::JSON_LD>
 
+L<LDF::Schema>
 
 =cut
 

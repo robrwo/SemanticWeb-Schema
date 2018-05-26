@@ -22,16 +22,6 @@ price. Reciprocal of BuyAction.
 
 
 
-Note that this class was generated automatically from the following sources:
-
-=over
-
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
-
-=item L<http://schema.org/version/3.3/schema.rdf>
-
-=back
-
 
 =head1 ATTRIBUTES
 
