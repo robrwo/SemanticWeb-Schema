@@ -1,0 +1,120 @@
+package [% class_name %];
+
+# ABSTRACT: [% abstract %]
+
+use Moo;
+
+[% IF parents.size -%]
+extends qw/[% FOREACH parent IN parents %] [% parent %][% END %] /;
+[% END -%]
+
+[% IF roles.size -%]
+with qw/[% FOREACH role IN roles %] [% role %][% END %] /;
+[% END -%]
+
+use Ref::Util qw/ is_plain_hashref /;
+# RECOMMEND PREREQ: Ref::Util::XS
+
+use namespace::autoclean;
+
+our $VERSION = '[% version %]';
+
+=head1 DESCRIPTION
+
+[% description %]
+
+Note that this class was generated automatically from the following sources:
+
+=over
+[% FOREACH uri IN sources %]
+=item L<[% uri %]>
+[% END -%]
+
+=back
+
+[% IF attributes.size %]
+=head1 ATTRIBUTES
+
+[% FOREACH name IN attributes.keys.sort -%]
+
+=head2 C<[% name %]>
+
+[% IF name != attributes.$name.label %]C<[% attributes.$name.label %]>[% END %]
+
+[% attributes.$name.description -%]
+
+[% IF attributes.$name.types -%]
+A [% name %] should be one of the following types:
+
+=over
+[% FOREACH type IN attributes.$name.types %]
+=item C<[% type %]>
+[% END -%]
+
+=back
+[% END -%]
+
+=cut
+
+has [% name %] => (
+    is        => 'rw',
+    predicate => 1,
+);
+
+[% END %]
+[% ELSE %]
+=cut
+[% END %]
+
+=head1 METHODS
+
+=head2 C<json_ld_type>
+
+Defines the type for L<MooX::Role::JSON_LD>
+
+=cut
+
+sub json_ld_type { '[% label %]' }
+
+=ead2 C<json_ld_fields>
+
+Specifies the fields for L<MooX::Role::JSON_LD>
+
+=cut
+
+[% IF parents.size %]
+
+around json_ld_fields => sub {
+    my ($next, $self) = @_;
+    my $fields = $self->$next;
+    [ @$fields,
+[% FOREACH name IN attributes.keys.sort -%]
+      { [% attributes.$name.label %] => '[% name %]' },
+[% END -%]
+    ]
+};
+
+[% ELSE %]
+sub json_ld_fields {
+    [
+[% FOREACH name IN attributes.keys.sort -%]
+      { '[% attributes.$name.label %]' => '[% name %]' },
+[% END -%]
+    ]
+}
+
+[% END %]
+
+=head1 SEE ALSO
+
+[% FOREACH role in roles %]
+L<[% role %]>
+[% END -%]
+
+[% FOREACH parent in parents %]
+L<[% parent %]>
+[% END -%]
+
+=cut
+
+1;
