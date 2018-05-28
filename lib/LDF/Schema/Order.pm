@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -575,30 +576,30 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { acceptedOffer => 'accepted_offer' },
-      { billingAddress => 'billing_address' },
-      { broker => 'broker' },
-      { confirmationNumber => 'confirmation_number' },
-      { customer => 'customer' },
-      { discount => 'discount' },
-      { discountCode => 'discount_code' },
-      { discountCurrency => 'discount_currency' },
-      { isGift => 'is_gift' },
-      { merchant => 'merchant' },
-      { orderDate => 'order_date' },
-      { orderDelivery => 'order_delivery' },
-      { orderNumber => 'order_number' },
-      { orderStatus => 'order_status' },
-      { orderedItem => 'ordered_item' },
-      { partOfInvoice => 'part_of_invoice' },
-      { paymentDue => 'payment_due' },
-      { paymentDueDate => 'payment_due_date' },
-      { paymentMethod => 'payment_method' },
-      { paymentMethodId => 'payment_method_id' },
-      { paymentUrl => 'payment_url' },
-      { seller => 'seller' },
-    ]
+    [ @$fields, {
+       'acceptedOffer' => $self->curry::_serializer('accepted_offer'),
+       'billingAddress' => $self->curry::_serializer('billing_address'),
+       'broker' => $self->curry::_serializer('broker'),
+       'confirmationNumber' => $self->curry::_serializer('confirmation_number'),
+       'customer' => $self->curry::_serializer('customer'),
+       'discount' => $self->curry::_serializer('discount'),
+       'discountCode' => $self->curry::_serializer('discount_code'),
+       'discountCurrency' => $self->curry::_serializer('discount_currency'),
+       'isGift' => $self->curry::_serializer('is_gift'),
+       'merchant' => $self->curry::_serializer('merchant'),
+       'orderDate' => $self->curry::_serializer('order_date'),
+       'orderDelivery' => $self->curry::_serializer('order_delivery'),
+       'orderNumber' => $self->curry::_serializer('order_number'),
+       'orderStatus' => $self->curry::_serializer('order_status'),
+       'orderedItem' => $self->curry::_serializer('ordered_item'),
+       'partOfInvoice' => $self->curry::_serializer('part_of_invoice'),
+       'paymentDue' => $self->curry::_serializer('payment_due'),
+       'paymentDueDate' => $self->curry::_serializer('payment_due_date'),
+       'paymentMethod' => $self->curry::_serializer('payment_method'),
+       'paymentMethodId' => $self->curry::_serializer('payment_method_id'),
+       'paymentUrl' => $self->curry::_serializer('payment_url'),
+       'seller' => $self->curry::_serializer('seller'),
+    } ]
 };
 
 

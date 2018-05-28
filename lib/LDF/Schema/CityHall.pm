@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::GovernmentBuilding /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 

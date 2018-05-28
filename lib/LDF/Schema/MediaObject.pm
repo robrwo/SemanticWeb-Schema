@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -426,23 +427,23 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { associatedArticle => 'associated_article' },
-      { bitrate => 'bitrate' },
-      { contentSize => 'content_size' },
-      { contentUrl => 'content_url' },
-      { duration => 'duration' },
-      { embedUrl => 'embed_url' },
-      { encodesCreativeWork => 'encodes_creative_work' },
-      { encodingFormat => 'encoding_format' },
-      { height => 'height' },
-      { playerType => 'player_type' },
-      { productionCompany => 'production_company' },
-      { regionsAllowed => 'regions_allowed' },
-      { requiresSubscription => 'requires_subscription' },
-      { uploadDate => 'upload_date' },
-      { width => 'width' },
-    ]
+    [ @$fields, {
+       'associatedArticle' => $self->curry::_serializer('associated_article'),
+       'bitrate' => $self->curry::_serializer('bitrate'),
+       'contentSize' => $self->curry::_serializer('content_size'),
+       'contentUrl' => $self->curry::_serializer('content_url'),
+       'duration' => $self->curry::_serializer('duration'),
+       'embedUrl' => $self->curry::_serializer('embed_url'),
+       'encodesCreativeWork' => $self->curry::_serializer('encodes_creative_work'),
+       'encodingFormat' => $self->curry::_serializer('encoding_format'),
+       'height' => $self->curry::_serializer('height'),
+       'playerType' => $self->curry::_serializer('player_type'),
+       'productionCompany' => $self->curry::_serializer('production_company'),
+       'regionsAllowed' => $self->curry::_serializer('regions_allowed'),
+       'requiresSubscription' => $self->curry::_serializer('requires_subscription'),
+       'uploadDate' => $self->curry::_serializer('upload_date'),
+       'width' => $self->curry::_serializer('width'),
+    } ]
 };
 
 

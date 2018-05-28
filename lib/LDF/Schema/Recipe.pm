@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::HowTo /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -301,18 +302,18 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { cookTime => 'cook_time' },
-      { cookingMethod => 'cooking_method' },
-      { ingredients => 'ingredients' },
-      { nutrition => 'nutrition' },
-      { recipeCategory => 'recipe_category' },
-      { recipeCuisine => 'recipe_cuisine' },
-      { recipeIngredient => 'recipe_ingredient' },
-      { recipeInstructions => 'recipe_instructions' },
-      { recipeYield => 'recipe_yield' },
-      { suitableForDiet => 'suitable_for_diet' },
-    ]
+    [ @$fields, {
+       'cookTime' => $self->curry::_serializer('cook_time'),
+       'cookingMethod' => $self->curry::_serializer('cooking_method'),
+       'ingredients' => $self->curry::_serializer('ingredients'),
+       'nutrition' => $self->curry::_serializer('nutrition'),
+       'recipeCategory' => $self->curry::_serializer('recipe_category'),
+       'recipeCuisine' => $self->curry::_serializer('recipe_cuisine'),
+       'recipeIngredient' => $self->curry::_serializer('recipe_ingredient'),
+       'recipeInstructions' => $self->curry::_serializer('recipe_instructions'),
+       'recipeYield' => $self->curry::_serializer('recipe_yield'),
+       'suitableForDiet' => $self->curry::_serializer('suitable_for_diet'),
+    } ]
 };
 
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWorkSeries /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -381,22 +382,22 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actor => 'actor' },
-      { actors => 'actors' },
-      { containsSeason => 'contains_season' },
-      { director => 'director' },
-      { directors => 'directors' },
-      { episode => 'episode' },
-      { episodes => 'episodes' },
-      { musicBy => 'music_by' },
-      { numberOfEpisodes => 'number_of_episodes' },
-      { numberOfSeasons => 'number_of_seasons' },
-      { productionCompany => 'production_company' },
-      { season => 'season' },
-      { seasons => 'seasons' },
-      { trailer => 'trailer' },
-    ]
+    [ @$fields, {
+       'actor' => $self->curry::_serializer('actor'),
+       'actors' => $self->curry::_serializer('actors'),
+       'containsSeason' => $self->curry::_serializer('contains_season'),
+       'director' => $self->curry::_serializer('director'),
+       'directors' => $self->curry::_serializer('directors'),
+       'episode' => $self->curry::_serializer('episode'),
+       'episodes' => $self->curry::_serializer('episodes'),
+       'musicBy' => $self->curry::_serializer('music_by'),
+       'numberOfEpisodes' => $self->curry::_serializer('number_of_episodes'),
+       'numberOfSeasons' => $self->curry::_serializer('number_of_seasons'),
+       'productionCompany' => $self->curry::_serializer('production_company'),
+       'season' => $self->curry::_serializer('season'),
+       'seasons' => $self->curry::_serializer('seasons'),
+       'trailer' => $self->curry::_serializer('trailer'),
+    } ]
 };
 
 

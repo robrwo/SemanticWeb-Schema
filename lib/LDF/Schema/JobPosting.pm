@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -548,29 +549,29 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { baseSalary => 'base_salary' },
-      { benefits => 'benefits' },
-      { datePosted => 'date_posted' },
-      { educationRequirements => 'education_requirements' },
-      { employmentType => 'employment_type' },
-      { experienceRequirements => 'experience_requirements' },
-      { hiringOrganization => 'hiring_organization' },
-      { incentiveCompensation => 'incentive_compensation' },
-      { incentives => 'incentives' },
-      { industry => 'industry' },
-      { jobBenefits => 'job_benefits' },
-      { jobLocation => 'job_location' },
-      { occupationalCategory => 'occupational_category' },
-      { qualifications => 'qualifications' },
-      { responsibilities => 'responsibilities' },
-      { salaryCurrency => 'salary_currency' },
-      { skills => 'skills' },
-      { specialCommitments => 'special_commitments' },
-      { title => 'title' },
-      { validThrough => 'valid_through' },
-      { workHours => 'work_hours' },
-    ]
+    [ @$fields, {
+       'baseSalary' => $self->curry::_serializer('base_salary'),
+       'benefits' => $self->curry::_serializer('benefits'),
+       'datePosted' => $self->curry::_serializer('date_posted'),
+       'educationRequirements' => $self->curry::_serializer('education_requirements'),
+       'employmentType' => $self->curry::_serializer('employment_type'),
+       'experienceRequirements' => $self->curry::_serializer('experience_requirements'),
+       'hiringOrganization' => $self->curry::_serializer('hiring_organization'),
+       'incentiveCompensation' => $self->curry::_serializer('incentive_compensation'),
+       'incentives' => $self->curry::_serializer('incentives'),
+       'industry' => $self->curry::_serializer('industry'),
+       'jobBenefits' => $self->curry::_serializer('job_benefits'),
+       'jobLocation' => $self->curry::_serializer('job_location'),
+       'occupationalCategory' => $self->curry::_serializer('occupational_category'),
+       'qualifications' => $self->curry::_serializer('qualifications'),
+       'responsibilities' => $self->curry::_serializer('responsibilities'),
+       'salaryCurrency' => $self->curry::_serializer('salary_currency'),
+       'skills' => $self->curry::_serializer('skills'),
+       'specialCommitments' => $self->curry::_serializer('special_commitments'),
+       'title' => $self->curry::_serializer('title'),
+       'validThrough' => $self->curry::_serializer('valid_through'),
+       'workHours' => $self->curry::_serializer('work_hours'),
+    } ]
 };
 
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Product /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -731,33 +732,33 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { cargoVolume => 'cargo_volume' },
-      { dateVehicleFirstRegistered => 'date_vehicle_first_registered' },
-      { driveWheelConfiguration => 'drive_wheel_configuration' },
-      { fuelConsumption => 'fuel_consumption' },
-      { fuelEfficiency => 'fuel_efficiency' },
-      { fuelType => 'fuel_type' },
-      { knownVehicleDamages => 'known_vehicle_damages' },
-      { mileageFromOdometer => 'mileage_from_odometer' },
-      { numberOfAirbags => 'number_of_airbags' },
-      { numberOfAxles => 'number_of_axles' },
-      { numberOfDoors => 'number_of_doors' },
-      { numberOfForwardGears => 'number_of_forward_gears' },
-      { numberOfPreviousOwners => 'number_of_previous_owners' },
-      { productionDate => 'production_date' },
-      { purchaseDate => 'purchase_date' },
-      { steeringPosition => 'steering_position' },
-      { vehicleConfiguration => 'vehicle_configuration' },
-      { vehicleEngine => 'vehicle_engine' },
-      { vehicleIdentificationNumber => 'vehicle_identification_number' },
-      { vehicleInteriorColor => 'vehicle_interior_color' },
-      { vehicleInteriorType => 'vehicle_interior_type' },
-      { vehicleModelDate => 'vehicle_model_date' },
-      { vehicleSeatingCapacity => 'vehicle_seating_capacity' },
-      { vehicleSpecialUsage => 'vehicle_special_usage' },
-      { vehicleTransmission => 'vehicle_transmission' },
-    ]
+    [ @$fields, {
+       'cargoVolume' => $self->curry::_serializer('cargo_volume'),
+       'dateVehicleFirstRegistered' => $self->curry::_serializer('date_vehicle_first_registered'),
+       'driveWheelConfiguration' => $self->curry::_serializer('drive_wheel_configuration'),
+       'fuelConsumption' => $self->curry::_serializer('fuel_consumption'),
+       'fuelEfficiency' => $self->curry::_serializer('fuel_efficiency'),
+       'fuelType' => $self->curry::_serializer('fuel_type'),
+       'knownVehicleDamages' => $self->curry::_serializer('known_vehicle_damages'),
+       'mileageFromOdometer' => $self->curry::_serializer('mileage_from_odometer'),
+       'numberOfAirbags' => $self->curry::_serializer('number_of_airbags'),
+       'numberOfAxles' => $self->curry::_serializer('number_of_axles'),
+       'numberOfDoors' => $self->curry::_serializer('number_of_doors'),
+       'numberOfForwardGears' => $self->curry::_serializer('number_of_forward_gears'),
+       'numberOfPreviousOwners' => $self->curry::_serializer('number_of_previous_owners'),
+       'productionDate' => $self->curry::_serializer('production_date'),
+       'purchaseDate' => $self->curry::_serializer('purchase_date'),
+       'steeringPosition' => $self->curry::_serializer('steering_position'),
+       'vehicleConfiguration' => $self->curry::_serializer('vehicle_configuration'),
+       'vehicleEngine' => $self->curry::_serializer('vehicle_engine'),
+       'vehicleIdentificationNumber' => $self->curry::_serializer('vehicle_identification_number'),
+       'vehicleInteriorColor' => $self->curry::_serializer('vehicle_interior_color'),
+       'vehicleInteriorType' => $self->curry::_serializer('vehicle_interior_type'),
+       'vehicleModelDate' => $self->curry::_serializer('vehicle_model_date'),
+       'vehicleSeatingCapacity' => $self->curry::_serializer('vehicle_seating_capacity'),
+       'vehicleSpecialUsage' => $self->curry::_serializer('vehicle_special_usage'),
+       'vehicleTransmission' => $self->curry::_serializer('vehicle_transmission'),
+    } ]
 };
 
 

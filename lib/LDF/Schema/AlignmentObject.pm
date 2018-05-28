@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -168,13 +169,13 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { alignmentType => 'alignment_type' },
-      { educationalFramework => 'educational_framework' },
-      { targetDescription => 'target_description' },
-      { targetName => 'target_name' },
-      { targetUrl => 'target_url' },
-    ]
+    [ @$fields, {
+       'alignmentType' => $self->curry::_serializer('alignment_type'),
+       'educationalFramework' => $self->curry::_serializer('educational_framework'),
+       'targetDescription' => $self->curry::_serializer('target_description'),
+       'targetName' => $self->curry::_serializer('target_name'),
+       'targetUrl' => $self->curry::_serializer('target_url'),
+    } ]
 };
 
 

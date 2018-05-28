@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreateAction /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -123,11 +124,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { foodEstablishment => 'food_establishment' },
-      { foodEvent => 'food_event' },
-      { recipe => 'recipe' },
-    ]
+    [ @$fields, {
+       'foodEstablishment' => $self->curry::_serializer('food_establishment'),
+       'foodEvent' => $self->curry::_serializer('food_event'),
+       'recipe' => $self->curry::_serializer('recipe'),
+    } ]
 };
 
 

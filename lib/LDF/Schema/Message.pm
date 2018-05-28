@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -284,17 +285,17 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { bccRecipient => 'bcc_recipient' },
-      { ccRecipient => 'cc_recipient' },
-      { dateRead => 'date_read' },
-      { dateReceived => 'date_received' },
-      { dateSent => 'date_sent' },
-      { messageAttachment => 'message_attachment' },
-      { recipient => 'recipient' },
-      { sender => 'sender' },
-      { toRecipient => 'to_recipient' },
-    ]
+    [ @$fields, {
+       'bccRecipient' => $self->curry::_serializer('bcc_recipient'),
+       'ccRecipient' => $self->curry::_serializer('cc_recipient'),
+       'dateRead' => $self->curry::_serializer('date_read'),
+       'dateReceived' => $self->curry::_serializer('date_received'),
+       'dateSent' => $self->curry::_serializer('date_sent'),
+       'messageAttachment' => $self->curry::_serializer('message_attachment'),
+       'recipient' => $self->curry::_serializer('recipient'),
+       'sender' => $self->curry::_serializer('sender'),
+       'toRecipient' => $self->curry::_serializer('to_recipient'),
+    } ]
 };
 
 

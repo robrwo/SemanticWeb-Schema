@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Event /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -141,12 +142,12 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { accessCode => 'access_code' },
-      { availableFrom => 'available_from' },
-      { availableThrough => 'available_through' },
-      { hasDeliveryMethod => 'has_delivery_method' },
-    ]
+    [ @$fields, {
+       'accessCode' => $self->curry::_serializer('access_code'),
+       'availableFrom' => $self->curry::_serializer('available_from'),
+       'availableThrough' => $self->curry::_serializer('available_through'),
+       'hasDeliveryMethod' => $self->curry::_serializer('has_delivery_method'),
+    } ]
 };
 
 

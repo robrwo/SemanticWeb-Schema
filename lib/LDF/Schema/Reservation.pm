@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -384,21 +385,21 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { bookingAgent => 'booking_agent' },
-      { bookingTime => 'booking_time' },
-      { broker => 'broker' },
-      { modifiedTime => 'modified_time' },
-      { priceCurrency => 'price_currency' },
-      { programMembershipUsed => 'program_membership_used' },
-      { provider => 'provider' },
-      { reservationFor => 'reservation_for' },
-      { reservationId => 'reservation_id' },
-      { reservationStatus => 'reservation_status' },
-      { reservedTicket => 'reserved_ticket' },
-      { totalPrice => 'total_price' },
-      { underName => 'under_name' },
-    ]
+    [ @$fields, {
+       'bookingAgent' => $self->curry::_serializer('booking_agent'),
+       'bookingTime' => $self->curry::_serializer('booking_time'),
+       'broker' => $self->curry::_serializer('broker'),
+       'modifiedTime' => $self->curry::_serializer('modified_time'),
+       'priceCurrency' => $self->curry::_serializer('price_currency'),
+       'programMembershipUsed' => $self->curry::_serializer('program_membership_used'),
+       'provider' => $self->curry::_serializer('provider'),
+       'reservationFor' => $self->curry::_serializer('reservation_for'),
+       'reservationId' => $self->curry::_serializer('reservation_id'),
+       'reservationStatus' => $self->curry::_serializer('reservation_status'),
+       'reservedTicket' => $self->curry::_serializer('reserved_ticket'),
+       'totalPrice' => $self->curry::_serializer('total_price'),
+       'underName' => $self->curry::_serializer('under_name'),
+    } ]
 };
 
 

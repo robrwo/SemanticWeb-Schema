@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Enumeration /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -260,16 +261,16 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { additionalProperty => 'additional_property' },
-      { equal => 'equal' },
-      { greater => 'greater' },
-      { greaterOrEqual => 'greater_or_equal' },
-      { lesser => 'lesser' },
-      { lesserOrEqual => 'lesser_or_equal' },
-      { nonEqual => 'non_equal' },
-      { valueReference => 'value_reference' },
-    ]
+    [ @$fields, {
+       'additionalProperty' => $self->curry::_serializer('additional_property'),
+       'equal' => $self->curry::_serializer('equal'),
+       'greater' => $self->curry::_serializer('greater'),
+       'greaterOrEqual' => $self->curry::_serializer('greater_or_equal'),
+       'lesser' => $self->curry::_serializer('lesser'),
+       'lesserOrEqual' => $self->curry::_serializer('lesser_or_equal'),
+       'nonEqual' => $self->curry::_serializer('non_equal'),
+       'valueReference' => $self->curry::_serializer('value_reference'),
+    } ]
 };
 
 

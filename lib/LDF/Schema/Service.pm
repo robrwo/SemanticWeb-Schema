@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -593,30 +594,30 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { aggregateRating => 'aggregate_rating' },
-      { areaServed => 'area_served' },
-      { audience => 'audience' },
-      { availableChannel => 'available_channel' },
-      { award => 'award' },
-      { brand => 'brand' },
-      { broker => 'broker' },
-      { category => 'category' },
-      { hasOfferCatalog => 'has_offer_catalog' },
-      { hoursAvailable => 'hours_available' },
-      { isRelatedTo => 'is_related_to' },
-      { isSimilarTo => 'is_similar_to' },
-      { logo => 'logo' },
-      { offers => 'offers' },
-      { produces => 'produces' },
-      { provider => 'provider' },
-      { providerMobility => 'provider_mobility' },
-      { review => 'review' },
-      { serviceArea => 'service_area' },
-      { serviceAudience => 'service_audience' },
-      { serviceOutput => 'service_output' },
-      { serviceType => 'service_type' },
-    ]
+    [ @$fields, {
+       'aggregateRating' => $self->curry::_serializer('aggregate_rating'),
+       'areaServed' => $self->curry::_serializer('area_served'),
+       'audience' => $self->curry::_serializer('audience'),
+       'availableChannel' => $self->curry::_serializer('available_channel'),
+       'award' => $self->curry::_serializer('award'),
+       'brand' => $self->curry::_serializer('brand'),
+       'broker' => $self->curry::_serializer('broker'),
+       'category' => $self->curry::_serializer('category'),
+       'hasOfferCatalog' => $self->curry::_serializer('has_offer_catalog'),
+       'hoursAvailable' => $self->curry::_serializer('hours_available'),
+       'isRelatedTo' => $self->curry::_serializer('is_related_to'),
+       'isSimilarTo' => $self->curry::_serializer('is_similar_to'),
+       'logo' => $self->curry::_serializer('logo'),
+       'offers' => $self->curry::_serializer('offers'),
+       'produces' => $self->curry::_serializer('produces'),
+       'provider' => $self->curry::_serializer('provider'),
+       'providerMobility' => $self->curry::_serializer('provider_mobility'),
+       'review' => $self->curry::_serializer('review'),
+       'serviceArea' => $self->curry::_serializer('service_area'),
+       'serviceAudience' => $self->curry::_serializer('service_audience'),
+       'serviceOutput' => $self->curry::_serializer('service_output'),
+       'serviceType' => $self->curry::_serializer('service_type'),
+    } ]
 };
 
 

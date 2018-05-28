@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::MedicalOrganization /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Thing /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -920,42 +921,42 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { additionalProperty => 'additional_property' },
-      { aggregateRating => 'aggregate_rating' },
-      { audience => 'audience' },
-      { award => 'award' },
-      { awards => 'awards' },
-      { brand => 'brand' },
-      { category => 'category' },
-      { color => 'color' },
-      { depth => 'depth' },
-      { gtin12 => 'gtin12' },
-      { gtin13 => 'gtin13' },
-      { gtin14 => 'gtin14' },
-      { gtin8 => 'gtin8' },
-      { height => 'height' },
-      { isAccessoryOrSparePartFor => 'is_accessory_or_spare_part_for' },
-      { isConsumableFor => 'is_consumable_for' },
-      { isRelatedTo => 'is_related_to' },
-      { isSimilarTo => 'is_similar_to' },
-      { itemCondition => 'item_condition' },
-      { logo => 'logo' },
-      { manufacturer => 'manufacturer' },
-      { material => 'material' },
-      { model => 'model' },
-      { mpn => 'mpn' },
-      { offers => 'offers' },
-      { productID => 'product_id' },
-      { productionDate => 'production_date' },
-      { purchaseDate => 'purchase_date' },
-      { releaseDate => 'release_date' },
-      { review => 'review' },
-      { reviews => 'reviews' },
-      { sku => 'sku' },
-      { weight => 'weight' },
-      { width => 'width' },
-    ]
+    [ @$fields, {
+       'additionalProperty' => $self->curry::_serializer('additional_property'),
+       'aggregateRating' => $self->curry::_serializer('aggregate_rating'),
+       'audience' => $self->curry::_serializer('audience'),
+       'award' => $self->curry::_serializer('award'),
+       'awards' => $self->curry::_serializer('awards'),
+       'brand' => $self->curry::_serializer('brand'),
+       'category' => $self->curry::_serializer('category'),
+       'color' => $self->curry::_serializer('color'),
+       'depth' => $self->curry::_serializer('depth'),
+       'gtin12' => $self->curry::_serializer('gtin12'),
+       'gtin13' => $self->curry::_serializer('gtin13'),
+       'gtin14' => $self->curry::_serializer('gtin14'),
+       'gtin8' => $self->curry::_serializer('gtin8'),
+       'height' => $self->curry::_serializer('height'),
+       'isAccessoryOrSparePartFor' => $self->curry::_serializer('is_accessory_or_spare_part_for'),
+       'isConsumableFor' => $self->curry::_serializer('is_consumable_for'),
+       'isRelatedTo' => $self->curry::_serializer('is_related_to'),
+       'isSimilarTo' => $self->curry::_serializer('is_similar_to'),
+       'itemCondition' => $self->curry::_serializer('item_condition'),
+       'logo' => $self->curry::_serializer('logo'),
+       'manufacturer' => $self->curry::_serializer('manufacturer'),
+       'material' => $self->curry::_serializer('material'),
+       'model' => $self->curry::_serializer('model'),
+       'mpn' => $self->curry::_serializer('mpn'),
+       'offers' => $self->curry::_serializer('offers'),
+       'productID' => $self->curry::_serializer('product_id'),
+       'productionDate' => $self->curry::_serializer('production_date'),
+       'purchaseDate' => $self->curry::_serializer('purchase_date'),
+       'releaseDate' => $self->curry::_serializer('release_date'),
+       'review' => $self->curry::_serializer('review'),
+       'reviews' => $self->curry::_serializer('reviews'),
+       'sku' => $self->curry::_serializer('sku'),
+       'weight' => $self->curry::_serializer('weight'),
+       'width' => $self->curry::_serializer('width'),
+    } ]
 };
 
 

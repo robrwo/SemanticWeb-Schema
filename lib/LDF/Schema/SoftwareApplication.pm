@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -618,32 +619,32 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { applicationCategory => 'application_category' },
-      { applicationSubCategory => 'application_sub_category' },
-      { applicationSuite => 'application_suite' },
-      { availableOnDevice => 'available_on_device' },
-      { countriesNotSupported => 'countries_not_supported' },
-      { countriesSupported => 'countries_supported' },
-      { device => 'device' },
-      { downloadUrl => 'download_url' },
-      { featureList => 'feature_list' },
-      { fileSize => 'file_size' },
-      { installUrl => 'install_url' },
-      { memoryRequirements => 'memory_requirements' },
-      { operatingSystem => 'operating_system' },
-      { permissions => 'permissions' },
-      { processorRequirements => 'processor_requirements' },
-      { releaseNotes => 'release_notes' },
-      { requirements => 'requirements' },
-      { screenshot => 'screenshot' },
-      { softwareAddOn => 'software_add_on' },
-      { softwareHelp => 'software_help' },
-      { softwareRequirements => 'software_requirements' },
-      { softwareVersion => 'software_version' },
-      { storageRequirements => 'storage_requirements' },
-      { supportingData => 'supporting_data' },
-    ]
+    [ @$fields, {
+       'applicationCategory' => $self->curry::_serializer('application_category'),
+       'applicationSubCategory' => $self->curry::_serializer('application_sub_category'),
+       'applicationSuite' => $self->curry::_serializer('application_suite'),
+       'availableOnDevice' => $self->curry::_serializer('available_on_device'),
+       'countriesNotSupported' => $self->curry::_serializer('countries_not_supported'),
+       'countriesSupported' => $self->curry::_serializer('countries_supported'),
+       'device' => $self->curry::_serializer('device'),
+       'downloadUrl' => $self->curry::_serializer('download_url'),
+       'featureList' => $self->curry::_serializer('feature_list'),
+       'fileSize' => $self->curry::_serializer('file_size'),
+       'installUrl' => $self->curry::_serializer('install_url'),
+       'memoryRequirements' => $self->curry::_serializer('memory_requirements'),
+       'operatingSystem' => $self->curry::_serializer('operating_system'),
+       'permissions' => $self->curry::_serializer('permissions'),
+       'processorRequirements' => $self->curry::_serializer('processor_requirements'),
+       'releaseNotes' => $self->curry::_serializer('release_notes'),
+       'requirements' => $self->curry::_serializer('requirements'),
+       'screenshot' => $self->curry::_serializer('screenshot'),
+       'softwareAddOn' => $self->curry::_serializer('software_add_on'),
+       'softwareHelp' => $self->curry::_serializer('software_help'),
+       'softwareRequirements' => $self->curry::_serializer('software_requirements'),
+       'softwareVersion' => $self->curry::_serializer('software_version'),
+       'storageRequirements' => $self->curry::_serializer('storage_requirements'),
+       'supportingData' => $self->curry::_serializer('supporting_data'),
+    } ]
 };
 
 

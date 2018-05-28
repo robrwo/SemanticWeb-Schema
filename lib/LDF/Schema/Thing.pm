@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -338,19 +339,20 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 
 
 sub json_ld_fields {
-    [
-      { 'additionalType' => 'additional_type' },
-      { 'alternateName' => 'alternate_name' },
-      { 'description' => 'description' },
-      { 'disambiguatingDescription' => 'disambiguating_description' },
-      { 'identifier' => 'identifier' },
-      { 'image' => 'image' },
-      { 'mainEntityOfPage' => 'main_entity_of_page' },
-      { 'name' => 'name' },
-      { 'potentialAction' => 'potential_action' },
-      { 'sameAs' => 'same_as' },
-      { 'url' => 'url' },
-    ]
+  my ($self) = @_;
+   [
+    {   'additionalType' => $self->curry::_serializer('additional_type') },
+    {   'alternateName' => $self->curry::_serializer('alternate_name') },
+    {   'description' => $self->curry::_serializer('description') },
+    {   'disambiguatingDescription' => $self->curry::_serializer('disambiguating_description') },
+    {   'identifier' => $self->curry::_serializer('identifier') },
+    {   'image' => $self->curry::_serializer('image') },
+    {   'mainEntityOfPage' => $self->curry::_serializer('main_entity_of_page') },
+    {   'name' => $self->curry::_serializer('name') },
+    {   'potentialAction' => $self->curry::_serializer('potential_action') },
+    {   'sameAs' => $self->curry::_serializer('same_as') },
+    {   'url' => $self->curry::_serializer('url') },
+     ]
 }
 
 

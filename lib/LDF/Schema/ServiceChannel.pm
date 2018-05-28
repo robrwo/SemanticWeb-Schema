@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -244,16 +245,16 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { availableLanguage => 'available_language' },
-      { processingTime => 'processing_time' },
-      { providesService => 'provides_service' },
-      { serviceLocation => 'service_location' },
-      { servicePhone => 'service_phone' },
-      { servicePostalAddress => 'service_postal_address' },
-      { serviceSmsNumber => 'service_sms_number' },
-      { serviceUrl => 'service_url' },
-    ]
+    [ @$fields, {
+       'availableLanguage' => $self->curry::_serializer('available_language'),
+       'processingTime' => $self->curry::_serializer('processing_time'),
+       'providesService' => $self->curry::_serializer('provides_service'),
+       'serviceLocation' => $self->curry::_serializer('service_location'),
+       'servicePhone' => $self->curry::_serializer('service_phone'),
+       'servicePostalAddress' => $self->curry::_serializer('service_postal_address'),
+       'serviceSmsNumber' => $self->curry::_serializer('service_sms_number'),
+       'serviceUrl' => $self->curry::_serializer('service_url'),
+    } ]
 };
 
 

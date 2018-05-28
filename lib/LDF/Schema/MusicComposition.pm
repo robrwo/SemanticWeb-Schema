@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -282,18 +283,18 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { composer => 'composer' },
-      { firstPerformance => 'first_performance' },
-      { includedComposition => 'included_composition' },
-      { iswcCode => 'iswc_code' },
-      { lyricist => 'lyricist' },
-      { lyrics => 'lyrics' },
-      { musicArrangement => 'music_arrangement' },
-      { musicCompositionForm => 'music_composition_form' },
-      { musicalKey => 'musical_key' },
-      { recordedAs => 'recorded_as' },
-    ]
+    [ @$fields, {
+       'composer' => $self->curry::_serializer('composer'),
+       'firstPerformance' => $self->curry::_serializer('first_performance'),
+       'includedComposition' => $self->curry::_serializer('included_composition'),
+       'iswcCode' => $self->curry::_serializer('iswc_code'),
+       'lyricist' => $self->curry::_serializer('lyricist'),
+       'lyrics' => $self->curry::_serializer('lyrics'),
+       'musicArrangement' => $self->curry::_serializer('music_arrangement'),
+       'musicCompositionForm' => $self->curry::_serializer('music_composition_form'),
+       'musicalKey' => $self->curry::_serializer('musical_key'),
+       'recordedAs' => $self->curry::_serializer('recorded_as'),
+    } ]
 };
 
 

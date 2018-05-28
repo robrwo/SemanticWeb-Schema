@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Episode /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -126,11 +127,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { countryOfOrigin => 'country_of_origin' },
-      { partOfTVSeries => 'part_of_tv_series' },
-      { subtitleLanguage => 'subtitle_language' },
-    ]
+    [ @$fields, {
+       'countryOfOrigin' => $self->curry::_serializer('country_of_origin'),
+       'partOfTVSeries' => $self->curry::_serializer('part_of_tv_series'),
+       'subtitleLanguage' => $self->curry::_serializer('subtitle_language'),
+    } ]
 };
 
 

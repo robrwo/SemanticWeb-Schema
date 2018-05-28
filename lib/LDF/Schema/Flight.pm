@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -480,26 +481,26 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { aircraft => 'aircraft' },
-      { arrivalAirport => 'arrival_airport' },
-      { arrivalGate => 'arrival_gate' },
-      { arrivalTerminal => 'arrival_terminal' },
-      { arrivalTime => 'arrival_time' },
-      { boardingPolicy => 'boarding_policy' },
-      { carrier => 'carrier' },
-      { departureAirport => 'departure_airport' },
-      { departureGate => 'departure_gate' },
-      { departureTerminal => 'departure_terminal' },
-      { departureTime => 'departure_time' },
-      { estimatedFlightDuration => 'estimated_flight_duration' },
-      { flightDistance => 'flight_distance' },
-      { flightNumber => 'flight_number' },
-      { mealService => 'meal_service' },
-      { provider => 'provider' },
-      { seller => 'seller' },
-      { webCheckinTime => 'web_checkin_time' },
-    ]
+    [ @$fields, {
+       'aircraft' => $self->curry::_serializer('aircraft'),
+       'arrivalAirport' => $self->curry::_serializer('arrival_airport'),
+       'arrivalGate' => $self->curry::_serializer('arrival_gate'),
+       'arrivalTerminal' => $self->curry::_serializer('arrival_terminal'),
+       'arrivalTime' => $self->curry::_serializer('arrival_time'),
+       'boardingPolicy' => $self->curry::_serializer('boarding_policy'),
+       'carrier' => $self->curry::_serializer('carrier'),
+       'departureAirport' => $self->curry::_serializer('departure_airport'),
+       'departureGate' => $self->curry::_serializer('departure_gate'),
+       'departureTerminal' => $self->curry::_serializer('departure_terminal'),
+       'departureTime' => $self->curry::_serializer('departure_time'),
+       'estimatedFlightDuration' => $self->curry::_serializer('estimated_flight_duration'),
+       'flightDistance' => $self->curry::_serializer('flight_distance'),
+       'flightNumber' => $self->curry::_serializer('flight_number'),
+       'mealService' => $self->curry::_serializer('meal_service'),
+       'provider' => $self->curry::_serializer('provider'),
+       'seller' => $self->curry::_serializer('seller'),
+       'webCheckinTime' => $self->curry::_serializer('web_checkin_time'),
+    } ]
 };
 
 

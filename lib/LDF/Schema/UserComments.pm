@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::UserInteraction /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -175,13 +176,13 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { commentText => 'comment_text' },
-      { commentTime => 'comment_time' },
-      { creator => 'creator' },
-      { discusses => 'discusses' },
-      { replyToUrl => 'reply_to_url' },
-    ]
+    [ @$fields, {
+       'commentText' => $self->curry::_serializer('comment_text'),
+       'commentTime' => $self->curry::_serializer('comment_time'),
+       'creator' => $self->curry::_serializer('creator'),
+       'discusses' => $self->curry::_serializer('discusses'),
+       'replyToUrl' => $self->curry::_serializer('reply_to_url'),
+    } ]
 };
 
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -319,19 +320,19 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actor => 'actor' },
-      { director => 'director' },
-      { endDate => 'end_date' },
-      { episode => 'episode' },
-      { episodes => 'episodes' },
-      { numberOfEpisodes => 'number_of_episodes' },
-      { partOfSeries => 'part_of_series' },
-      { productionCompany => 'production_company' },
-      { seasonNumber => 'season_number' },
-      { startDate => 'start_date' },
-      { trailer => 'trailer' },
-    ]
+    [ @$fields, {
+       'actor' => $self->curry::_serializer('actor'),
+       'director' => $self->curry::_serializer('director'),
+       'endDate' => $self->curry::_serializer('end_date'),
+       'episode' => $self->curry::_serializer('episode'),
+       'episodes' => $self->curry::_serializer('episodes'),
+       'numberOfEpisodes' => $self->curry::_serializer('number_of_episodes'),
+       'partOfSeries' => $self->curry::_serializer('part_of_series'),
+       'productionCompany' => $self->curry::_serializer('production_company'),
+       'seasonNumber' => $self->curry::_serializer('season_number'),
+       'startDate' => $self->curry::_serializer('start_date'),
+       'trailer' => $self->curry::_serializer('trailer'),
+    } ]
 };
 
 

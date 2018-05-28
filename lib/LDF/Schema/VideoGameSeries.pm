@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWorkSeries /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -581,30 +582,30 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actor => 'actor' },
-      { actors => 'actors' },
-      { characterAttribute => 'character_attribute' },
-      { cheatCode => 'cheat_code' },
-      { containsSeason => 'contains_season' },
-      { director => 'director' },
-      { directors => 'directors' },
-      { episode => 'episode' },
-      { episodes => 'episodes' },
-      { gameItem => 'game_item' },
-      { gameLocation => 'game_location' },
-      { gamePlatform => 'game_platform' },
-      { musicBy => 'music_by' },
-      { numberOfEpisodes => 'number_of_episodes' },
-      { numberOfPlayers => 'number_of_players' },
-      { numberOfSeasons => 'number_of_seasons' },
-      { playMode => 'play_mode' },
-      { productionCompany => 'production_company' },
-      { quest => 'quest' },
-      { season => 'season' },
-      { seasons => 'seasons' },
-      { trailer => 'trailer' },
-    ]
+    [ @$fields, {
+       'actor' => $self->curry::_serializer('actor'),
+       'actors' => $self->curry::_serializer('actors'),
+       'characterAttribute' => $self->curry::_serializer('character_attribute'),
+       'cheatCode' => $self->curry::_serializer('cheat_code'),
+       'containsSeason' => $self->curry::_serializer('contains_season'),
+       'director' => $self->curry::_serializer('director'),
+       'directors' => $self->curry::_serializer('directors'),
+       'episode' => $self->curry::_serializer('episode'),
+       'episodes' => $self->curry::_serializer('episodes'),
+       'gameItem' => $self->curry::_serializer('game_item'),
+       'gameLocation' => $self->curry::_serializer('game_location'),
+       'gamePlatform' => $self->curry::_serializer('game_platform'),
+       'musicBy' => $self->curry::_serializer('music_by'),
+       'numberOfEpisodes' => $self->curry::_serializer('number_of_episodes'),
+       'numberOfPlayers' => $self->curry::_serializer('number_of_players'),
+       'numberOfSeasons' => $self->curry::_serializer('number_of_seasons'),
+       'playMode' => $self->curry::_serializer('play_mode'),
+       'productionCompany' => $self->curry::_serializer('production_company'),
+       'quest' => $self->curry::_serializer('quest'),
+       'season' => $self->curry::_serializer('season'),
+       'seasons' => $self->curry::_serializer('seasons'),
+       'trailer' => $self->curry::_serializer('trailer'),
+    } ]
 };
 
 

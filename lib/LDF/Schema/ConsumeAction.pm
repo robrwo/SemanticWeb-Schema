@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Action /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -73,9 +74,9 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { expectsAcceptanceOf => 'expects_acceptance_of' },
-    ]
+    [ @$fields, {
+       'expectsAcceptanceOf' => $self->curry::_serializer('expects_acceptance_of'),
+    } ]
 };
 
 

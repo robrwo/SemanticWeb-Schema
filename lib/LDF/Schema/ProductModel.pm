@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Product /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -123,11 +124,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { isVariantOf => 'is_variant_of' },
-      { predecessorOf => 'predecessor_of' },
-      { successorOf => 'successor_of' },
-    ]
+    [ @$fields, {
+       'isVariantOf' => $self->curry::_serializer('is_variant_of'),
+       'predecessorOf' => $self->curry::_serializer('predecessor_of'),
+       'successorOf' => $self->curry::_serializer('successor_of'),
+    } ]
 };
 
 

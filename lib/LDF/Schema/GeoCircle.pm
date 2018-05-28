@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::GeoShape /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -104,10 +105,10 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { geoMidpoint => 'geo_midpoint' },
-      { geoRadius => 'geo_radius' },
-    ]
+    [ @$fields, {
+       'geoMidpoint' => $self->curry::_serializer('geo_midpoint'),
+       'geoRadius' => $self->curry::_serializer('geo_radius'),
+    } ]
 };
 
 

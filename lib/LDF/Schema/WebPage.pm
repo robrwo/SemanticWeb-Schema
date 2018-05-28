@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -273,17 +274,17 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { breadcrumb => 'breadcrumb' },
-      { lastReviewed => 'last_reviewed' },
-      { mainContentOfPage => 'main_content_of_page' },
-      { primaryImageOfPage => 'primary_image_of_page' },
-      { relatedLink => 'related_link' },
-      { reviewedBy => 'reviewed_by' },
-      { significantLink => 'significant_link' },
-      { significantLinks => 'significant_links' },
-      { specialty => 'specialty' },
-    ]
+    [ @$fields, {
+       'breadcrumb' => $self->curry::_serializer('breadcrumb'),
+       'lastReviewed' => $self->curry::_serializer('last_reviewed'),
+       'mainContentOfPage' => $self->curry::_serializer('main_content_of_page'),
+       'primaryImageOfPage' => $self->curry::_serializer('primary_image_of_page'),
+       'relatedLink' => $self->curry::_serializer('related_link'),
+       'reviewedBy' => $self->curry::_serializer('reviewed_by'),
+       'significantLink' => $self->curry::_serializer('significant_link'),
+       'significantLinks' => $self->curry::_serializer('significant_links'),
+       'specialty' => $self->curry::_serializer('specialty'),
+    } ]
 };
 
 

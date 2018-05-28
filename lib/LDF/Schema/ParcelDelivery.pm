@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -332,20 +333,20 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { carrier => 'carrier' },
-      { deliveryAddress => 'delivery_address' },
-      { deliveryStatus => 'delivery_status' },
-      { expectedArrivalFrom => 'expected_arrival_from' },
-      { expectedArrivalUntil => 'expected_arrival_until' },
-      { hasDeliveryMethod => 'has_delivery_method' },
-      { itemShipped => 'item_shipped' },
-      { originAddress => 'origin_address' },
-      { partOfOrder => 'part_of_order' },
-      { provider => 'provider' },
-      { trackingNumber => 'tracking_number' },
-      { trackingUrl => 'tracking_url' },
-    ]
+    [ @$fields, {
+       'carrier' => $self->curry::_serializer('carrier'),
+       'deliveryAddress' => $self->curry::_serializer('delivery_address'),
+       'deliveryStatus' => $self->curry::_serializer('delivery_status'),
+       'expectedArrivalFrom' => $self->curry::_serializer('expected_arrival_from'),
+       'expectedArrivalUntil' => $self->curry::_serializer('expected_arrival_until'),
+       'hasDeliveryMethod' => $self->curry::_serializer('has_delivery_method'),
+       'itemShipped' => $self->curry::_serializer('item_shipped'),
+       'originAddress' => $self->curry::_serializer('origin_address'),
+       'partOfOrder' => $self->curry::_serializer('part_of_order'),
+       'provider' => $self->curry::_serializer('provider'),
+       'trackingNumber' => $self->curry::_serializer('tracking_number'),
+       'trackingUrl' => $self->curry::_serializer('tracking_url'),
+    } ]
 };
 
 

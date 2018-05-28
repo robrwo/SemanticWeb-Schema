@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Thing /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -938,43 +939,43 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { about => 'about' },
-      { actor => 'actor' },
-      { aggregateRating => 'aggregate_rating' },
-      { attendee => 'attendee' },
-      { attendees => 'attendees' },
-      { audience => 'audience' },
-      { composer => 'composer' },
-      { contributor => 'contributor' },
-      { director => 'director' },
-      { doorTime => 'door_time' },
-      { duration => 'duration' },
-      { endDate => 'end_date' },
-      { eventStatus => 'event_status' },
-      { funder => 'funder' },
-      { inLanguage => 'in_language' },
-      { isAccessibleForFree => 'is_accessible_for_free' },
-      { location => 'location' },
-      { maximumAttendeeCapacity => 'maximum_attendee_capacity' },
-      { offers => 'offers' },
-      { organizer => 'organizer' },
-      { performer => 'performer' },
-      { performers => 'performers' },
-      { previousStartDate => 'previous_start_date' },
-      { recordedIn => 'recorded_in' },
-      { remainingAttendeeCapacity => 'remaining_attendee_capacity' },
-      { review => 'review' },
-      { sponsor => 'sponsor' },
-      { startDate => 'start_date' },
-      { subEvent => 'sub_event' },
-      { subEvents => 'sub_events' },
-      { superEvent => 'super_event' },
-      { translator => 'translator' },
-      { typicalAgeRange => 'typical_age_range' },
-      { workFeatured => 'work_featured' },
-      { workPerformed => 'work_performed' },
-    ]
+    [ @$fields, {
+       'about' => $self->curry::_serializer('about'),
+       'actor' => $self->curry::_serializer('actor'),
+       'aggregateRating' => $self->curry::_serializer('aggregate_rating'),
+       'attendee' => $self->curry::_serializer('attendee'),
+       'attendees' => $self->curry::_serializer('attendees'),
+       'audience' => $self->curry::_serializer('audience'),
+       'composer' => $self->curry::_serializer('composer'),
+       'contributor' => $self->curry::_serializer('contributor'),
+       'director' => $self->curry::_serializer('director'),
+       'doorTime' => $self->curry::_serializer('door_time'),
+       'duration' => $self->curry::_serializer('duration'),
+       'endDate' => $self->curry::_serializer('end_date'),
+       'eventStatus' => $self->curry::_serializer('event_status'),
+       'funder' => $self->curry::_serializer('funder'),
+       'inLanguage' => $self->curry::_serializer('in_language'),
+       'isAccessibleForFree' => $self->curry::_serializer('is_accessible_for_free'),
+       'location' => $self->curry::_serializer('location'),
+       'maximumAttendeeCapacity' => $self->curry::_serializer('maximum_attendee_capacity'),
+       'offers' => $self->curry::_serializer('offers'),
+       'organizer' => $self->curry::_serializer('organizer'),
+       'performer' => $self->curry::_serializer('performer'),
+       'performers' => $self->curry::_serializer('performers'),
+       'previousStartDate' => $self->curry::_serializer('previous_start_date'),
+       'recordedIn' => $self->curry::_serializer('recorded_in'),
+       'remainingAttendeeCapacity' => $self->curry::_serializer('remaining_attendee_capacity'),
+       'review' => $self->curry::_serializer('review'),
+       'sponsor' => $self->curry::_serializer('sponsor'),
+       'startDate' => $self->curry::_serializer('start_date'),
+       'subEvent' => $self->curry::_serializer('sub_event'),
+       'subEvents' => $self->curry::_serializer('sub_events'),
+       'superEvent' => $self->curry::_serializer('super_event'),
+       'translator' => $self->curry::_serializer('translator'),
+       'typicalAgeRange' => $self->curry::_serializer('typical_age_range'),
+       'workFeatured' => $self->curry::_serializer('work_featured'),
+       'workPerformed' => $self->curry::_serializer('work_performed'),
+    } ]
 };
 
 

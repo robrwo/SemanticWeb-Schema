@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::PriceSpecification /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -177,13 +178,13 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { billingIncrement => 'billing_increment' },
-      { priceType => 'price_type' },
-      { referenceQuantity => 'reference_quantity' },
-      { unitCode => 'unit_code' },
-      { unitText => 'unit_text' },
-    ]
+    [ @$fields, {
+       'billingIncrement' => $self->curry::_serializer('billing_increment'),
+       'priceType' => $self->curry::_serializer('price_type'),
+       'referenceQuantity' => $self->curry::_serializer('reference_quantity'),
+       'unitCode' => $self->curry::_serializer('unit_code'),
+       'unitText' => $self->curry::_serializer('unit_text'),
+    } ]
 };
 
 

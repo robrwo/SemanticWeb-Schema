@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::InvestmentOrDeposit LDF::Schema::BankAccount /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 

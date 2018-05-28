@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Article /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -182,13 +183,13 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { dateline => 'dateline' },
-      { printColumn => 'print_column' },
-      { printEdition => 'print_edition' },
-      { printPage => 'print_page' },
-      { printSection => 'print_section' },
-    ]
+    [ @$fields, {
+       'dateline' => $self->curry::_serializer('dateline'),
+       'printColumn' => $self->curry::_serializer('print_column'),
+       'printEdition' => $self->curry::_serializer('print_edition'),
+       'printPage' => $self->curry::_serializer('print_page'),
+       'printSection' => $self->curry::_serializer('print_section'),
+    } ]
 };
 
 

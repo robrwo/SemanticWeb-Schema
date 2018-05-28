@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::StructuredValue /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -254,15 +255,15 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { additionalProperty => 'additional_property' },
-      { maxValue => 'max_value' },
-      { minValue => 'min_value' },
-      { unitCode => 'unit_code' },
-      { unitText => 'unit_text' },
-      { value => 'value' },
-      { valueReference => 'value_reference' },
-    ]
+    [ @$fields, {
+       'additionalProperty' => $self->curry::_serializer('additional_property'),
+       'maxValue' => $self->curry::_serializer('max_value'),
+       'minValue' => $self->curry::_serializer('min_value'),
+       'unitCode' => $self->curry::_serializer('unit_code'),
+       'unitText' => $self->curry::_serializer('unit_text'),
+       'value' => $self->curry::_serializer('value'),
+       'valueReference' => $self->curry::_serializer('value_reference'),
+    } ]
 };
 
 

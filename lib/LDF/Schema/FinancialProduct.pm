@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Service /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -130,11 +131,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { annualPercentageRate => 'annual_percentage_rate' },
-      { feesAndCommissionsSpecification => 'fees_and_commissions_specification' },
-      { interestRate => 'interest_rate' },
-    ]
+    [ @$fields, {
+       'annualPercentageRate' => $self->curry::_serializer('annual_percentage_rate'),
+       'feesAndCommissionsSpecification' => $self->curry::_serializer('fees_and_commissions_specification'),
+       'interestRate' => $self->curry::_serializer('interest_rate'),
+    } ]
 };
 
 

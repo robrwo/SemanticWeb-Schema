@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::PlayAction /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -261,17 +262,17 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { course => 'course' },
-      { distance => 'distance' },
-      { exerciseCourse => 'exercise_course' },
-      { fromLocation => 'from_location' },
-      { opponent => 'opponent' },
-      { sportsActivityLocation => 'sports_activity_location' },
-      { sportsEvent => 'sports_event' },
-      { sportsTeam => 'sports_team' },
-      { toLocation => 'to_location' },
-    ]
+    [ @$fields, {
+       'course' => $self->curry::_serializer('course'),
+       'distance' => $self->curry::_serializer('distance'),
+       'exerciseCourse' => $self->curry::_serializer('exercise_course'),
+       'fromLocation' => $self->curry::_serializer('from_location'),
+       'opponent' => $self->curry::_serializer('opponent'),
+       'sportsActivityLocation' => $self->curry::_serializer('sports_activity_location'),
+       'sportsEvent' => $self->curry::_serializer('sports_event'),
+       'sportsTeam' => $self->curry::_serializer('sports_team'),
+       'toLocation' => $self->curry::_serializer('to_location'),
+    } ]
 };
 
 

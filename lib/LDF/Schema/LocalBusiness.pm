@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Organization LDF::Schema::Place /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -199,13 +200,13 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { branchOf => 'branch_of' },
-      { currenciesAccepted => 'currencies_accepted' },
-      { openingHours => 'opening_hours' },
-      { paymentAccepted => 'payment_accepted' },
-      { priceRange => 'price_range' },
-    ]
+    [ @$fields, {
+       'branchOf' => $self->curry::_serializer('branch_of'),
+       'currenciesAccepted' => $self->curry::_serializer('currencies_accepted'),
+       'openingHours' => $self->curry::_serializer('opening_hours'),
+       'paymentAccepted' => $self->curry::_serializer('payment_accepted'),
+       'priceRange' => $self->curry::_serializer('price_range'),
+    } ]
 };
 
 

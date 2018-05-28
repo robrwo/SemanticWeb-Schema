@@ -12,6 +12,7 @@ extends qw/[% FOREACH parent IN parents %] [% parent %][% END %] /;
 with qw/[% FOREACH role IN roles %] [% role %][% END %] /;
 [% END -%]
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -80,20 +81,21 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
+    [ @$fields, {
 [% FOREACH name IN attributes.keys.sort -%]
-      { [% attributes.$name.label %] => '[% name %]' },
+       '[% attributes.$name.label %]' => $self->curry::_serializer('[% name %]'),
 [% END -%]
-    ]
+    } ]
 };
 
 [% ELSE %]
 sub json_ld_fields {
-    [
+  my ($self) = @_;
+   [
 [% FOREACH name IN attributes.keys.sort -%]
-      { '[% attributes.$name.label %]' => '[% name %]' },
+    {   '[% attributes.$name.label %]' => $self->curry::_serializer('[% name %]') },
 [% END -%]
-    ]
+     ]
 }
 
 [% END %]

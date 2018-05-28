@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -260,17 +261,17 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { arrivalPlatform => 'arrival_platform' },
-      { arrivalStation => 'arrival_station' },
-      { arrivalTime => 'arrival_time' },
-      { departurePlatform => 'departure_platform' },
-      { departureStation => 'departure_station' },
-      { departureTime => 'departure_time' },
-      { provider => 'provider' },
-      { trainName => 'train_name' },
-      { trainNumber => 'train_number' },
-    ]
+    [ @$fields, {
+       'arrivalPlatform' => $self->curry::_serializer('arrival_platform'),
+       'arrivalStation' => $self->curry::_serializer('arrival_station'),
+       'arrivalTime' => $self->curry::_serializer('arrival_time'),
+       'departurePlatform' => $self->curry::_serializer('departure_platform'),
+       'departureStation' => $self->curry::_serializer('departure_station'),
+       'departureTime' => $self->curry::_serializer('departure_time'),
+       'provider' => $self->curry::_serializer('provider'),
+       'trainName' => $self->curry::_serializer('train_name'),
+       'trainNumber' => $self->curry::_serializer('train_number'),
+    } ]
 };
 
 

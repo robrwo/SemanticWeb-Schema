@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -248,16 +249,16 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { dateIssued => 'date_issued' },
-      { issuedBy => 'issued_by' },
-      { priceCurrency => 'price_currency' },
-      { ticketNumber => 'ticket_number' },
-      { ticketToken => 'ticket_token' },
-      { ticketedSeat => 'ticketed_seat' },
-      { totalPrice => 'total_price' },
-      { underName => 'under_name' },
-    ]
+    [ @$fields, {
+       'dateIssued' => $self->curry::_serializer('date_issued'),
+       'issuedBy' => $self->curry::_serializer('issued_by'),
+       'priceCurrency' => $self->curry::_serializer('price_currency'),
+       'ticketNumber' => $self->curry::_serializer('ticket_number'),
+       'ticketToken' => $self->curry::_serializer('ticket_token'),
+       'ticketedSeat' => $self->curry::_serializer('ticketed_seat'),
+       'totalPrice' => $self->curry::_serializer('total_price'),
+       'underName' => $self->curry::_serializer('under_name'),
+    } ]
 };
 
 

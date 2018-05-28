@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -214,15 +215,15 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actionApplication => 'action_application' },
-      { actionPlatform => 'action_platform' },
-      { application => 'application' },
-      { contentType => 'content_type' },
-      { encodingType => 'encoding_type' },
-      { httpMethod => 'http_method' },
-      { urlTemplate => 'url_template' },
-    ]
+    [ @$fields, {
+       'actionApplication' => $self->curry::_serializer('action_application'),
+       'actionPlatform' => $self->curry::_serializer('action_platform'),
+       'application' => $self->curry::_serializer('application'),
+       'contentType' => $self->curry::_serializer('content_type'),
+       'encodingType' => $self->curry::_serializer('encoding_type'),
+       'httpMethod' => $self->curry::_serializer('http_method'),
+       'urlTemplate' => $self->curry::_serializer('url_template'),
+    } ]
 };
 
 

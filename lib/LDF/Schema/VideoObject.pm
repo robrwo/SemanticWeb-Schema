@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::MediaObject /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -288,18 +289,18 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actor => 'actor' },
-      { actors => 'actors' },
-      { caption => 'caption' },
-      { director => 'director' },
-      { directors => 'directors' },
-      { musicBy => 'music_by' },
-      { thumbnail => 'thumbnail' },
-      { transcript => 'transcript' },
-      { videoFrameSize => 'video_frame_size' },
-      { videoQuality => 'video_quality' },
-    ]
+    [ @$fields, {
+       'actor' => $self->curry::_serializer('actor'),
+       'actors' => $self->curry::_serializer('actors'),
+       'caption' => $self->curry::_serializer('caption'),
+       'director' => $self->curry::_serializer('director'),
+       'directors' => $self->curry::_serializer('directors'),
+       'musicBy' => $self->curry::_serializer('music_by'),
+       'thumbnail' => $self->curry::_serializer('thumbnail'),
+       'transcript' => $self->curry::_serializer('transcript'),
+       'videoFrameSize' => $self->curry::_serializer('video_frame_size'),
+       'videoQuality' => $self->curry::_serializer('video_quality'),
+    } ]
 };
 
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::MusicPlaylist /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -142,12 +143,12 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { albumProductionType => 'album_production_type' },
-      { albumRelease => 'album_release' },
-      { albumReleaseType => 'album_release_type' },
-      { byArtist => 'by_artist' },
-    ]
+    [ @$fields, {
+       'albumProductionType' => $self->curry::_serializer('album_production_type'),
+       'albumRelease' => $self->curry::_serializer('album_release'),
+       'albumReleaseType' => $self->curry::_serializer('album_release_type'),
+       'byArtist' => $self->curry::_serializer('by_artist'),
+    } ]
 };
 
 

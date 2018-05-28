@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -882,40 +883,40 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { acceptedPaymentMethod => 'accepted_payment_method' },
-      { advanceBookingRequirement => 'advance_booking_requirement' },
-      { areaServed => 'area_served' },
-      { availability => 'availability' },
-      { availabilityEnds => 'availability_ends' },
-      { availabilityStarts => 'availability_starts' },
-      { availableAtOrFrom => 'available_at_or_from' },
-      { availableDeliveryMethod => 'available_delivery_method' },
-      { businessFunction => 'business_function' },
-      { deliveryLeadTime => 'delivery_lead_time' },
-      { eligibleCustomerType => 'eligible_customer_type' },
-      { eligibleDuration => 'eligible_duration' },
-      { eligibleQuantity => 'eligible_quantity' },
-      { eligibleRegion => 'eligible_region' },
-      { eligibleTransactionVolume => 'eligible_transaction_volume' },
-      { gtin12 => 'gtin12' },
-      { gtin13 => 'gtin13' },
-      { gtin14 => 'gtin14' },
-      { gtin8 => 'gtin8' },
-      { includesObject => 'includes_object' },
-      { ineligibleRegion => 'ineligible_region' },
-      { inventoryLevel => 'inventory_level' },
-      { itemCondition => 'item_condition' },
-      { itemOffered => 'item_offered' },
-      { mpn => 'mpn' },
-      { priceSpecification => 'price_specification' },
-      { seller => 'seller' },
-      { serialNumber => 'serial_number' },
-      { sku => 'sku' },
-      { validFrom => 'valid_from' },
-      { validThrough => 'valid_through' },
-      { warranty => 'warranty' },
-    ]
+    [ @$fields, {
+       'acceptedPaymentMethod' => $self->curry::_serializer('accepted_payment_method'),
+       'advanceBookingRequirement' => $self->curry::_serializer('advance_booking_requirement'),
+       'areaServed' => $self->curry::_serializer('area_served'),
+       'availability' => $self->curry::_serializer('availability'),
+       'availabilityEnds' => $self->curry::_serializer('availability_ends'),
+       'availabilityStarts' => $self->curry::_serializer('availability_starts'),
+       'availableAtOrFrom' => $self->curry::_serializer('available_at_or_from'),
+       'availableDeliveryMethod' => $self->curry::_serializer('available_delivery_method'),
+       'businessFunction' => $self->curry::_serializer('business_function'),
+       'deliveryLeadTime' => $self->curry::_serializer('delivery_lead_time'),
+       'eligibleCustomerType' => $self->curry::_serializer('eligible_customer_type'),
+       'eligibleDuration' => $self->curry::_serializer('eligible_duration'),
+       'eligibleQuantity' => $self->curry::_serializer('eligible_quantity'),
+       'eligibleRegion' => $self->curry::_serializer('eligible_region'),
+       'eligibleTransactionVolume' => $self->curry::_serializer('eligible_transaction_volume'),
+       'gtin12' => $self->curry::_serializer('gtin12'),
+       'gtin13' => $self->curry::_serializer('gtin13'),
+       'gtin14' => $self->curry::_serializer('gtin14'),
+       'gtin8' => $self->curry::_serializer('gtin8'),
+       'includesObject' => $self->curry::_serializer('includes_object'),
+       'ineligibleRegion' => $self->curry::_serializer('ineligible_region'),
+       'inventoryLevel' => $self->curry::_serializer('inventory_level'),
+       'itemCondition' => $self->curry::_serializer('item_condition'),
+       'itemOffered' => $self->curry::_serializer('item_offered'),
+       'mpn' => $self->curry::_serializer('mpn'),
+       'priceSpecification' => $self->curry::_serializer('price_specification'),
+       'seller' => $self->curry::_serializer('seller'),
+       'serialNumber' => $self->curry::_serializer('serial_number'),
+       'sku' => $self->curry::_serializer('sku'),
+       'validFrom' => $self->curry::_serializer('valid_from'),
+       'validThrough' => $self->curry::_serializer('valid_through'),
+       'warranty' => $self->curry::_serializer('warranty'),
+    } ]
 };
 
 

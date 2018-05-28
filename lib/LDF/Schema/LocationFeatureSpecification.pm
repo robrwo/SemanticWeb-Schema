@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::PropertyValue /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -121,11 +122,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { hoursAvailable => 'hours_available' },
-      { validFrom => 'valid_from' },
-      { validThrough => 'valid_through' },
-    ]
+    [ @$fields, {
+       'hoursAvailable' => $self->curry::_serializer('hours_available'),
+       'validFrom' => $self->curry::_serializer('valid_from'),
+       'validThrough' => $self->curry::_serializer('valid_through'),
+    } ]
 };
 
 

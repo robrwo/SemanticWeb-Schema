@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::StructuredValue /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -325,20 +326,20 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { calories => 'calories' },
-      { carbohydrateContent => 'carbohydrate_content' },
-      { cholesterolContent => 'cholesterol_content' },
-      { fatContent => 'fat_content' },
-      { fiberContent => 'fiber_content' },
-      { proteinContent => 'protein_content' },
-      { saturatedFatContent => 'saturated_fat_content' },
-      { servingSize => 'serving_size' },
-      { sodiumContent => 'sodium_content' },
-      { sugarContent => 'sugar_content' },
-      { transFatContent => 'trans_fat_content' },
-      { unsaturatedFatContent => 'unsaturated_fat_content' },
-    ]
+    [ @$fields, {
+       'calories' => $self->curry::_serializer('calories'),
+       'carbohydrateContent' => $self->curry::_serializer('carbohydrate_content'),
+       'cholesterolContent' => $self->curry::_serializer('cholesterol_content'),
+       'fatContent' => $self->curry::_serializer('fat_content'),
+       'fiberContent' => $self->curry::_serializer('fiber_content'),
+       'proteinContent' => $self->curry::_serializer('protein_content'),
+       'saturatedFatContent' => $self->curry::_serializer('saturated_fat_content'),
+       'servingSize' => $self->curry::_serializer('serving_size'),
+       'sodiumContent' => $self->curry::_serializer('sodium_content'),
+       'sugarContent' => $self->curry::_serializer('sugar_content'),
+       'transFatContent' => $self->curry::_serializer('trans_fat_content'),
+       'unsaturatedFatContent' => $self->curry::_serializer('unsaturated_fat_content'),
+    } ]
 };
 
 

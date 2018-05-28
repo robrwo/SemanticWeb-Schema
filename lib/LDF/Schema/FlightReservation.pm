@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Reservation /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -151,12 +152,12 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { boardingGroup => 'boarding_group' },
-      { passengerPriorityStatus => 'passenger_priority_status' },
-      { passengerSequenceNumber => 'passenger_sequence_number' },
-      { securityScreening => 'security_screening' },
-    ]
+    [ @$fields, {
+       'boardingGroup' => $self->curry::_serializer('boarding_group'),
+       'passengerPriorityStatus' => $self->curry::_serializer('passenger_priority_status'),
+       'passengerSequenceNumber' => $self->curry::_serializer('passenger_sequence_number'),
+       'securityScreening' => $self->curry::_serializer('security_screening'),
+    } ]
 };
 
 

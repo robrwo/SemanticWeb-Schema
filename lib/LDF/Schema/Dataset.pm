@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -240,16 +241,16 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { catalog => 'catalog' },
-      { datasetTimeInterval => 'dataset_time_interval' },
-      { distribution => 'distribution' },
-      { includedDataCatalog => 'included_data_catalog' },
-      { includedInDataCatalog => 'included_in_data_catalog' },
-      { issn => 'issn' },
-      { spatial => 'spatial' },
-      { temporal => 'temporal' },
-    ]
+    [ @$fields, {
+       'catalog' => $self->curry::_serializer('catalog'),
+       'datasetTimeInterval' => $self->curry::_serializer('dataset_time_interval'),
+       'distribution' => $self->curry::_serializer('distribution'),
+       'includedDataCatalog' => $self->curry::_serializer('included_data_catalog'),
+       'includedInDataCatalog' => $self->curry::_serializer('included_in_data_catalog'),
+       'issn' => $self->curry::_serializer('issn'),
+       'spatial' => $self->curry::_serializer('spatial'),
+       'temporal' => $self->curry::_serializer('temporal'),
+    } ]
 };
 
 

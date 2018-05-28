@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Game LDF::Schema::SoftwareApplication /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -321,19 +322,19 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { actor => 'actor' },
-      { actors => 'actors' },
-      { cheatCode => 'cheat_code' },
-      { director => 'director' },
-      { directors => 'directors' },
-      { gamePlatform => 'game_platform' },
-      { gameServer => 'game_server' },
-      { gameTip => 'game_tip' },
-      { musicBy => 'music_by' },
-      { playMode => 'play_mode' },
-      { trailer => 'trailer' },
-    ]
+    [ @$fields, {
+       'actor' => $self->curry::_serializer('actor'),
+       'actors' => $self->curry::_serializer('actors'),
+       'cheatCode' => $self->curry::_serializer('cheat_code'),
+       'director' => $self->curry::_serializer('director'),
+       'directors' => $self->curry::_serializer('directors'),
+       'gamePlatform' => $self->curry::_serializer('game_platform'),
+       'gameServer' => $self->curry::_serializer('game_server'),
+       'gameTip' => $self->curry::_serializer('game_tip'),
+       'musicBy' => $self->curry::_serializer('music_by'),
+       'playMode' => $self->curry::_serializer('play_mode'),
+       'trailer' => $self->curry::_serializer('trailer'),
+    } ]
 };
 
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::StructuredValue /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -300,17 +301,17 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { eligibleQuantity => 'eligible_quantity' },
-      { eligibleTransactionVolume => 'eligible_transaction_volume' },
-      { maxPrice => 'max_price' },
-      { minPrice => 'min_price' },
-      { price => 'price' },
-      { priceCurrency => 'price_currency' },
-      { validFrom => 'valid_from' },
-      { validThrough => 'valid_through' },
-      { valueAddedTaxIncluded => 'value_added_tax_included' },
-    ]
+    [ @$fields, {
+       'eligibleQuantity' => $self->curry::_serializer('eligible_quantity'),
+       'eligibleTransactionVolume' => $self->curry::_serializer('eligible_transaction_volume'),
+       'maxPrice' => $self->curry::_serializer('max_price'),
+       'minPrice' => $self->curry::_serializer('min_price'),
+       'price' => $self->curry::_serializer('price'),
+       'priceCurrency' => $self->curry::_serializer('price_currency'),
+       'validFrom' => $self->curry::_serializer('valid_from'),
+       'validThrough' => $self->curry::_serializer('valid_through'),
+       'valueAddedTaxIncluded' => $self->curry::_serializer('value_added_tax_included'),
+    } ]
 };
 
 

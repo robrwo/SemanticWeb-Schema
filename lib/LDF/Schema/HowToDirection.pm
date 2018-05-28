@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::ListItem /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -261,16 +262,16 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { afterMedia => 'after_media' },
-      { beforeMedia => 'before_media' },
-      { duringMedia => 'during_media' },
-      { performTime => 'perform_time' },
-      { prepTime => 'prep_time' },
-      { supply => 'supply' },
-      { tool => 'tool' },
-      { totalTime => 'total_time' },
-    ]
+    [ @$fields, {
+       'afterMedia' => $self->curry::_serializer('after_media'),
+       'beforeMedia' => $self->curry::_serializer('before_media'),
+       'duringMedia' => $self->curry::_serializer('during_media'),
+       'performTime' => $self->curry::_serializer('perform_time'),
+       'prepTime' => $self->curry::_serializer('prep_time'),
+       'supply' => $self->curry::_serializer('supply'),
+       'tool' => $self->curry::_serializer('tool'),
+       'totalTime' => $self->curry::_serializer('total_time'),
+    } ]
 };
 
 

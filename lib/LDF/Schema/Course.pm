@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::CreativeWork /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -143,11 +144,11 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { courseCode => 'course_code' },
-      { coursePrerequisites => 'course_prerequisites' },
-      { hasCourseInstance => 'has_course_instance' },
-    ]
+    [ @$fields, {
+       'courseCode' => $self->curry::_serializer('course_code'),
+       'coursePrerequisites' => $self->curry::_serializer('course_prerequisites'),
+       'hasCourseInstance' => $self->curry::_serializer('has_course_instance'),
+    } ]
 };
 
 

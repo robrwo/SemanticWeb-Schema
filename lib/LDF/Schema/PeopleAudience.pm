@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Audience /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -188,14 +189,14 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { requiredGender => 'required_gender' },
-      { requiredMaxAge => 'required_max_age' },
-      { requiredMinAge => 'required_min_age' },
-      { suggestedGender => 'suggested_gender' },
-      { suggestedMaxAge => 'suggested_max_age' },
-      { suggestedMinAge => 'suggested_min_age' },
-    ]
+    [ @$fields, {
+       'requiredGender' => $self->curry::_serializer('required_gender'),
+       'requiredMaxAge' => $self->curry::_serializer('required_max_age'),
+       'requiredMinAge' => $self->curry::_serializer('required_min_age'),
+       'suggestedGender' => $self->curry::_serializer('suggested_gender'),
+       'suggestedMaxAge' => $self->curry::_serializer('suggested_max_age'),
+       'suggestedMinAge' => $self->curry::_serializer('suggested_min_age'),
+    } ]
 };
 
 

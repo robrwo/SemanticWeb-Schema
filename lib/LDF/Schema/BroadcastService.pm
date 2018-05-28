@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Service /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -219,15 +220,15 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { area => 'area' },
-      { broadcastAffiliateOf => 'broadcast_affiliate_of' },
-      { broadcastDisplayName => 'broadcast_display_name' },
-      { broadcastTimezone => 'broadcast_timezone' },
-      { broadcaster => 'broadcaster' },
-      { parentService => 'parent_service' },
-      { videoFormat => 'video_format' },
-    ]
+    [ @$fields, {
+       'area' => $self->curry::_serializer('area'),
+       'broadcastAffiliateOf' => $self->curry::_serializer('broadcast_affiliate_of'),
+       'broadcastDisplayName' => $self->curry::_serializer('broadcast_display_name'),
+       'broadcastTimezone' => $self->curry::_serializer('broadcast_timezone'),
+       'broadcaster' => $self->curry::_serializer('broadcaster'),
+       'parentService' => $self->curry::_serializer('parent_service'),
+       'videoFormat' => $self->curry::_serializer('video_format'),
+    } ]
 };
 
 

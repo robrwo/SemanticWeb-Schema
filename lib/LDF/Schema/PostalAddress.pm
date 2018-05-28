@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::ContactPoint /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -195,14 +196,14 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { addressCountry => 'address_country' },
-      { addressLocality => 'address_locality' },
-      { addressRegion => 'address_region' },
-      { postOfficeBoxNumber => 'post_office_box_number' },
-      { postalCode => 'postal_code' },
-      { streetAddress => 'street_address' },
-    ]
+    [ @$fields, {
+       'addressCountry' => $self->curry::_serializer('address_country'),
+       'addressLocality' => $self->curry::_serializer('address_locality'),
+       'addressRegion' => $self->curry::_serializer('address_region'),
+       'postOfficeBoxNumber' => $self->curry::_serializer('post_office_box_number'),
+       'postalCode' => $self->curry::_serializer('postal_code'),
+       'streetAddress' => $self->curry::_serializer('street_address'),
+    } ]
 };
 
 

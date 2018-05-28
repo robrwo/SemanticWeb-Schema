@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -313,19 +314,19 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { defaultValue => 'default_value' },
-      { maxValue => 'max_value' },
-      { minValue => 'min_value' },
-      { multipleValues => 'multiple_values' },
-      { readonlyValue => 'readonly_value' },
-      { stepValue => 'step_value' },
-      { valueMaxLength => 'value_max_length' },
-      { valueMinLength => 'value_min_length' },
-      { valueName => 'value_name' },
-      { valuePattern => 'value_pattern' },
-      { valueRequired => 'value_required' },
-    ]
+    [ @$fields, {
+       'defaultValue' => $self->curry::_serializer('default_value'),
+       'maxValue' => $self->curry::_serializer('max_value'),
+       'minValue' => $self->curry::_serializer('min_value'),
+       'multipleValues' => $self->curry::_serializer('multiple_values'),
+       'readonlyValue' => $self->curry::_serializer('readonly_value'),
+       'stepValue' => $self->curry::_serializer('step_value'),
+       'valueMaxLength' => $self->curry::_serializer('value_max_length'),
+       'valueMinLength' => $self->curry::_serializer('value_min_length'),
+       'valueName' => $self->curry::_serializer('value_name'),
+       'valuePattern' => $self->curry::_serializer('value_pattern'),
+       'valueRequired' => $self->curry::_serializer('value_required'),
+    } ]
 };
 
 

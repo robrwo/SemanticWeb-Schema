@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Thing /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -776,37 +777,37 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { additionalProperty => 'additional_property' },
-      { address => 'address' },
-      { aggregateRating => 'aggregate_rating' },
-      { amenityFeature => 'amenity_feature' },
-      { branchCode => 'branch_code' },
-      { containedIn => 'contained_in' },
-      { containedInPlace => 'contained_in_place' },
-      { containsPlace => 'contains_place' },
-      { event => 'event' },
-      { events => 'events' },
-      { faxNumber => 'fax_number' },
-      { geo => 'geo' },
-      { globalLocationNumber => 'global_location_number' },
-      { hasMap => 'has_map' },
-      { isAccessibleForFree => 'is_accessible_for_free' },
-      { isicV4 => 'isic_v4' },
-      { logo => 'logo' },
-      { map => 'map' },
-      { maps => 'maps' },
-      { maximumAttendeeCapacity => 'maximum_attendee_capacity' },
-      { openingHoursSpecification => 'opening_hours_specification' },
-      { photo => 'photo' },
-      { photos => 'photos' },
-      { publicAccess => 'public_access' },
-      { review => 'review' },
-      { reviews => 'reviews' },
-      { smokingAllowed => 'smoking_allowed' },
-      { specialOpeningHoursSpecification => 'special_opening_hours_specification' },
-      { telephone => 'telephone' },
-    ]
+    [ @$fields, {
+       'additionalProperty' => $self->curry::_serializer('additional_property'),
+       'address' => $self->curry::_serializer('address'),
+       'aggregateRating' => $self->curry::_serializer('aggregate_rating'),
+       'amenityFeature' => $self->curry::_serializer('amenity_feature'),
+       'branchCode' => $self->curry::_serializer('branch_code'),
+       'containedIn' => $self->curry::_serializer('contained_in'),
+       'containedInPlace' => $self->curry::_serializer('contained_in_place'),
+       'containsPlace' => $self->curry::_serializer('contains_place'),
+       'event' => $self->curry::_serializer('event'),
+       'events' => $self->curry::_serializer('events'),
+       'faxNumber' => $self->curry::_serializer('fax_number'),
+       'geo' => $self->curry::_serializer('geo'),
+       'globalLocationNumber' => $self->curry::_serializer('global_location_number'),
+       'hasMap' => $self->curry::_serializer('has_map'),
+       'isAccessibleForFree' => $self->curry::_serializer('is_accessible_for_free'),
+       'isicV4' => $self->curry::_serializer('isic_v4'),
+       'logo' => $self->curry::_serializer('logo'),
+       'map' => $self->curry::_serializer('map'),
+       'maps' => $self->curry::_serializer('maps'),
+       'maximumAttendeeCapacity' => $self->curry::_serializer('maximum_attendee_capacity'),
+       'openingHoursSpecification' => $self->curry::_serializer('opening_hours_specification'),
+       'photo' => $self->curry::_serializer('photo'),
+       'photos' => $self->curry::_serializer('photos'),
+       'publicAccess' => $self->curry::_serializer('public_access'),
+       'review' => $self->curry::_serializer('review'),
+       'reviews' => $self->curry::_serializer('reviews'),
+       'smokingAllowed' => $self->curry::_serializer('smoking_allowed'),
+       'specialOpeningHoursSpecification' => $self->curry::_serializer('special_opening_hours_specification'),
+       'telephone' => $self->curry::_serializer('telephone'),
+    } ]
 };
 
 

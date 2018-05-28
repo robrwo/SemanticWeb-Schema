@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::StructuredValue /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -306,18 +307,18 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { areaServed => 'area_served' },
-      { availableLanguage => 'available_language' },
-      { contactOption => 'contact_option' },
-      { contactType => 'contact_type' },
-      { email => 'email' },
-      { faxNumber => 'fax_number' },
-      { hoursAvailable => 'hours_available' },
-      { productSupported => 'product_supported' },
-      { serviceArea => 'service_area' },
-      { telephone => 'telephone' },
-    ]
+    [ @$fields, {
+       'areaServed' => $self->curry::_serializer('area_served'),
+       'availableLanguage' => $self->curry::_serializer('available_language'),
+       'contactOption' => $self->curry::_serializer('contact_option'),
+       'contactType' => $self->curry::_serializer('contact_type'),
+       'email' => $self->curry::_serializer('email'),
+       'faxNumber' => $self->curry::_serializer('fax_number'),
+       'hoursAvailable' => $self->curry::_serializer('hours_available'),
+       'productSupported' => $self->curry::_serializer('product_supported'),
+       'serviceArea' => $self->curry::_serializer('service_area'),
+       'telephone' => $self->curry::_serializer('telephone'),
+    } ]
 };
 
 

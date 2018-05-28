@@ -7,6 +7,7 @@ use Moo;
 extends qw/ LDF::Schema::Intangible /;
 
 
+use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -439,24 +440,24 @@ Specifies the fields for L<MooX::Role::JSON_LD>
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields,
-      { accountId => 'account_id' },
-      { billingPeriod => 'billing_period' },
-      { broker => 'broker' },
-      { category => 'category' },
-      { confirmationNumber => 'confirmation_number' },
-      { customer => 'customer' },
-      { minimumPaymentDue => 'minimum_payment_due' },
-      { paymentDue => 'payment_due' },
-      { paymentDueDate => 'payment_due_date' },
-      { paymentMethod => 'payment_method' },
-      { paymentMethodId => 'payment_method_id' },
-      { paymentStatus => 'payment_status' },
-      { provider => 'provider' },
-      { referencesOrder => 'references_order' },
-      { scheduledPaymentDate => 'scheduled_payment_date' },
-      { totalPaymentDue => 'total_payment_due' },
-    ]
+    [ @$fields, {
+       'accountId' => $self->curry::_serializer('account_id'),
+       'billingPeriod' => $self->curry::_serializer('billing_period'),
+       'broker' => $self->curry::_serializer('broker'),
+       'category' => $self->curry::_serializer('category'),
+       'confirmationNumber' => $self->curry::_serializer('confirmation_number'),
+       'customer' => $self->curry::_serializer('customer'),
+       'minimumPaymentDue' => $self->curry::_serializer('minimum_payment_due'),
+       'paymentDue' => $self->curry::_serializer('payment_due'),
+       'paymentDueDate' => $self->curry::_serializer('payment_due_date'),
+       'paymentMethod' => $self->curry::_serializer('payment_method'),
+       'paymentMethodId' => $self->curry::_serializer('payment_method_id'),
+       'paymentStatus' => $self->curry::_serializer('payment_status'),
+       'provider' => $self->curry::_serializer('provider'),
+       'referencesOrder' => $self->curry::_serializer('references_order'),
+       'scheduledPaymentDate' => $self->curry::_serializer('scheduled_payment_date'),
+       'totalPaymentDue' => $self->curry::_serializer('total_payment_due'),
+    } ]
 };
 
 
