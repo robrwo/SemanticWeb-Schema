@@ -6,6 +6,7 @@ use Moo;
 
 use Carp;
 use Const::Fast;
+use JSON::MaybeXS;
 use List::Util 1.33 qw/ any pairgrep uniqstr /;
 use LWP::UserAgent;
 use Path::Tiny;
@@ -42,6 +43,22 @@ has class_dir => (
     isa     => InstanceOf ['Path::Tiny'],
     coerce  => \&path,
     default => 'lib',
+);
+
+has test_dir => (
+    is      => 'lazy',
+    isa     => InstanceOf ['Path::Tiny'],
+    coerce  => \&path,
+    default => 't',
+);
+
+has json => (
+    is      => 'lazy',
+    isa     => InstanceOf [qw/ Cpanel::JSON::XS JSON JSON::PP JSON::XS /],
+    builder => sub {
+        return JSON->new->canonical->utf8->space_after->indent->pretty;
+    },
+    handles => [qw/ encode /],
 );
 
 has prefixes => (
@@ -304,6 +321,14 @@ sub generate_class_from_trine {
 
     $engine->process( 'etc/package.tt', \%meta, $file->openw );
 
+    # Save information used for constructing the class as a JSON
+    # file. We can use this for debugging as well as tests.
+
+    my $test = path( $self->test_dir, 'data/classes', $filename . '.json' );
+    $test->parent->mkpath;
+    my %data = ( class => $nodes, properties => $properties );
+
+    $test->spew_raw( $self->encode( \%data ) );
 }
 
 sub translate_types {
