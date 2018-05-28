@@ -46,10 +46,7 @@ has alumni => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'alumni',
-    json_ld_serializer => \&_serialize_alumni,
 );
-
-sub _serialize_alumni { $_[0]->_serializer('alumni') }
 
 
 

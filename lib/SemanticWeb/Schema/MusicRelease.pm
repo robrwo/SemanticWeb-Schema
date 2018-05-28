@@ -46,10 +46,7 @@ has catalog_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'catalogNumber',
-    json_ld_serializer => \&_serialize_catalog_number,
 );
-
-sub _serialize_catalog_number { $_[0]->_serializer('catalog_number') }
 
 
 =head2 C<credited_to>
@@ -77,10 +74,7 @@ has credited_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'creditedTo',
-    json_ld_serializer => \&_serialize_credited_to,
 );
-
-sub _serialize_credited_to { $_[0]->_serializer('credited_to') }
 
 
 =head2 C<duration>
@@ -109,10 +103,7 @@ has duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duration',
-    json_ld_serializer => \&_serialize_duration,
 );
-
-sub _serialize_duration { $_[0]->_serializer('duration') }
 
 
 =head2 C<music_release_format>
@@ -137,10 +128,7 @@ has music_release_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicReleaseFormat',
-    json_ld_serializer => \&_serialize_music_release_format,
 );
-
-sub _serialize_music_release_format { $_[0]->_serializer('music_release_format') }
 
 
 =head2 C<record_label>
@@ -164,10 +152,7 @@ has record_label => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recordLabel',
-    json_ld_serializer => \&_serialize_record_label,
 );
-
-sub _serialize_record_label { $_[0]->_serializer('record_label') }
 
 
 =head2 C<release_of>
@@ -191,10 +176,7 @@ has release_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'releaseOf',
-    json_ld_serializer => \&_serialize_release_of,
 );
-
-sub _serialize_release_of { $_[0]->_serializer('release_of') }
 
 
 

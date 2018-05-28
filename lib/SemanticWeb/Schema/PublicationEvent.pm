@@ -48,10 +48,7 @@ has free => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'free',
-    json_ld_serializer => \&_serialize_free,
 );
-
-sub _serialize_free { $_[0]->_serializer('free') }
 
 
 =head2 C<is_accessible_for_free>
@@ -75,10 +72,7 @@ has is_accessible_for_free => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isAccessibleForFree',
-    json_ld_serializer => \&_serialize_is_accessible_for_free,
 );
-
-sub _serialize_is_accessible_for_free { $_[0]->_serializer('is_accessible_for_free') }
 
 
 =head2 C<published_on>
@@ -102,10 +96,7 @@ has published_on => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publishedOn',
-    json_ld_serializer => \&_serialize_published_on,
 );
-
-sub _serialize_published_on { $_[0]->_serializer('published_on') }
 
 
 

@@ -50,10 +50,7 @@ has base_salary => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'baseSalary',
-    json_ld_serializer => \&_serialize_base_salary,
 );
-
-sub _serialize_base_salary { $_[0]->_serializer('base_salary') }
 
 
 =head2 C<salary_currency>
@@ -83,10 +80,7 @@ has salary_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'salaryCurrency',
-    json_ld_serializer => \&_serialize_salary_currency,
 );
-
-sub _serialize_salary_currency { $_[0]->_serializer('salary_currency') }
 
 
 

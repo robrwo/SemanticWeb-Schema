@@ -50,10 +50,7 @@ has estimated_cost => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'estimatedCost',
-    json_ld_serializer => \&_serialize_estimated_cost,
 );
-
-sub _serialize_estimated_cost { $_[0]->_serializer('estimated_cost') }
 
 
 =head2 C<perform_time>
@@ -83,10 +80,7 @@ has perform_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'performTime',
-    json_ld_serializer => \&_serialize_perform_time,
 );
-
-sub _serialize_perform_time { $_[0]->_serializer('perform_time') }
 
 
 =head2 C<prep_time>
@@ -116,10 +110,7 @@ has prep_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'prepTime',
-    json_ld_serializer => \&_serialize_prep_time,
 );
-
-sub _serialize_prep_time { $_[0]->_serializer('prep_time') }
 
 
 =head2 C<steps>
@@ -148,10 +139,7 @@ has steps => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'steps',
-    json_ld_serializer => \&_serialize_steps,
 );
-
-sub _serialize_steps { $_[0]->_serializer('steps') }
 
 
 =head2 C<supply>
@@ -178,10 +166,7 @@ has supply => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supply',
-    json_ld_serializer => \&_serialize_supply,
 );
-
-sub _serialize_supply { $_[0]->_serializer('supply') }
 
 
 =head2 C<tool>
@@ -208,10 +193,7 @@ has tool => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'tool',
-    json_ld_serializer => \&_serialize_tool,
 );
-
-sub _serialize_tool { $_[0]->_serializer('tool') }
 
 
 =head2 C<total_time>
@@ -241,10 +223,7 @@ has total_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'totalTime',
-    json_ld_serializer => \&_serialize_total_time,
 );
-
-sub _serialize_total_time { $_[0]->_serializer('total_time') }
 
 
 =head2 C<yield>
@@ -271,10 +250,7 @@ has yield => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'yield',
-    json_ld_serializer => \&_serialize_yield,
 );
-
-sub _serialize_yield { $_[0]->_serializer('yield') }
 
 
 

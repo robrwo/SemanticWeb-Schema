@@ -56,10 +56,7 @@ has eligible_quantity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleQuantity',
-    json_ld_serializer => \&_serialize_eligible_quantity,
 );
-
-sub _serialize_eligible_quantity { $_[0]->_serializer('eligible_quantity') }
 
 
 =head2 C<eligible_transaction_volume>
@@ -86,10 +83,7 @@ has eligible_transaction_volume => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleTransactionVolume',
-    json_ld_serializer => \&_serialize_eligible_transaction_volume,
 );
-
-sub _serialize_eligible_transaction_volume { $_[0]->_serializer('eligible_transaction_volume') }
 
 
 =head2 C<max_price>
@@ -113,10 +107,7 @@ has max_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maxPrice',
-    json_ld_serializer => \&_serialize_max_price,
 );
-
-sub _serialize_max_price { $_[0]->_serializer('max_price') }
 
 
 =head2 C<min_price>
@@ -140,10 +131,7 @@ has min_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'minPrice',
-    json_ld_serializer => \&_serialize_min_price,
 );
-
-sub _serialize_min_price { $_[0]->_serializer('min_price') }
 
 
 =head2 C<price>
@@ -189,10 +177,7 @@ has price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'price',
-    json_ld_serializer => \&_serialize_price,
 );
-
-sub _serialize_price { $_[0]->_serializer('price') }
 
 
 =head2 C<price_currency>
@@ -223,10 +208,7 @@ has price_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceCurrency',
-    json_ld_serializer => \&_serialize_price_currency,
 );
-
-sub _serialize_price_currency { $_[0]->_serializer('price_currency') }
 
 
 =head2 C<valid_from>
@@ -250,10 +232,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_through>
@@ -278,10 +257,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 =head2 C<value_added_tax_included>
@@ -306,10 +282,7 @@ has value_added_tax_included => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueAddedTaxIncluded',
-    json_ld_serializer => \&_serialize_value_added_tax_included,
 );
-
-sub _serialize_value_added_tax_included { $_[0]->_serializer('value_added_tax_included') }
 
 
 

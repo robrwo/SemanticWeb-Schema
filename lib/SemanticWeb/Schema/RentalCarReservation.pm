@@ -52,10 +52,7 @@ has dropoff_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dropoffLocation',
-    json_ld_serializer => \&_serialize_dropoff_location,
 );
-
-sub _serialize_dropoff_location { $_[0]->_serializer('dropoff_location') }
 
 
 =head2 C<dropoff_time>
@@ -79,10 +76,7 @@ has dropoff_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dropoffTime',
-    json_ld_serializer => \&_serialize_dropoff_time,
 );
-
-sub _serialize_dropoff_time { $_[0]->_serializer('dropoff_time') }
 
 
 =head2 C<pickup_location>
@@ -106,10 +100,7 @@ has pickup_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pickupLocation',
-    json_ld_serializer => \&_serialize_pickup_location,
 );
-
-sub _serialize_pickup_location { $_[0]->_serializer('pickup_location') }
 
 
 =head2 C<pickup_time>
@@ -133,10 +124,7 @@ has pickup_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pickupTime',
-    json_ld_serializer => \&_serialize_pickup_time,
 );
-
-sub _serialize_pickup_time { $_[0]->_serializer('pickup_time') }
 
 
 

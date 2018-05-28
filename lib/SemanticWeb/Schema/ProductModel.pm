@@ -49,10 +49,7 @@ has is_variant_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isVariantOf',
-    json_ld_serializer => \&_serialize_is_variant_of,
 );
-
-sub _serialize_is_variant_of { $_[0]->_serializer('is_variant_of') }
 
 
 =head2 C<predecessor_of>
@@ -77,10 +74,7 @@ has predecessor_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'predecessorOf',
-    json_ld_serializer => \&_serialize_predecessor_of,
 );
-
-sub _serialize_predecessor_of { $_[0]->_serializer('predecessor_of') }
 
 
 =head2 C<successor_of>
@@ -105,10 +99,7 @@ has successor_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'successorOf',
-    json_ld_serializer => \&_serialize_successor_of,
 );
-
-sub _serialize_successor_of { $_[0]->_serializer('successor_of') }
 
 
 

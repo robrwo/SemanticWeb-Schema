@@ -47,10 +47,7 @@ has sport => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sport',
-    json_ld_serializer => \&_serialize_sport,
 );
-
-sub _serialize_sport { $_[0]->_serializer('sport') }
 
 
 

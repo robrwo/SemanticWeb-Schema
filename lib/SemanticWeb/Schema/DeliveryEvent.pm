@@ -46,10 +46,7 @@ has access_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessCode',
-    json_ld_serializer => \&_serialize_access_code,
 );
-
-sub _serialize_access_code { $_[0]->_serializer('access_code') }
 
 
 =head2 C<available_from>
@@ -73,10 +70,7 @@ has available_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableFrom',
-    json_ld_serializer => \&_serialize_available_from,
 );
-
-sub _serialize_available_from { $_[0]->_serializer('available_from') }
 
 
 =head2 C<available_through>
@@ -100,10 +94,7 @@ has available_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableThrough',
-    json_ld_serializer => \&_serialize_available_through,
 );
-
-sub _serialize_available_through { $_[0]->_serializer('available_through') }
 
 
 =head2 C<has_delivery_method>
@@ -127,10 +118,7 @@ has has_delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasDeliveryMethod',
-    json_ld_serializer => \&_serialize_has_delivery_method,
 );
-
-sub _serialize_has_delivery_method { $_[0]->_serializer('has_delivery_method') }
 
 
 

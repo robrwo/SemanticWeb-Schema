@@ -48,10 +48,7 @@ has carrier_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'carrierRequirements',
-    json_ld_serializer => \&_serialize_carrier_requirements,
 );
-
-sub _serialize_carrier_requirements { $_[0]->_serializer('carrier_requirements') }
 
 
 

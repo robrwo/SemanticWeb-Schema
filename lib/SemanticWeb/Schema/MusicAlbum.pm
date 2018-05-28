@@ -47,10 +47,7 @@ has album_production_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'albumProductionType',
-    json_ld_serializer => \&_serialize_album_production_type,
 );
-
-sub _serialize_album_production_type { $_[0]->_serializer('album_production_type') }
 
 
 =head2 C<album_release>
@@ -74,10 +71,7 @@ has album_release => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'albumRelease',
-    json_ld_serializer => \&_serialize_album_release,
 );
-
-sub _serialize_album_release { $_[0]->_serializer('album_release') }
 
 
 =head2 C<album_release_type>
@@ -101,10 +95,7 @@ has album_release_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'albumReleaseType',
-    json_ld_serializer => \&_serialize_album_release_type,
 );
-
-sub _serialize_album_release_type { $_[0]->_serializer('album_release_type') }
 
 
 =head2 C<by_artist>
@@ -128,10 +119,7 @@ has by_artist => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'byArtist',
-    json_ld_serializer => \&_serialize_by_artist,
 );
-
-sub _serialize_by_artist { $_[0]->_serializer('by_artist') }
 
 
 

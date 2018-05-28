@@ -49,10 +49,7 @@ has duration_of_warranty => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'durationOfWarranty',
-    json_ld_serializer => \&_serialize_duration_of_warranty,
 );
-
-sub _serialize_duration_of_warranty { $_[0]->_serializer('duration_of_warranty') }
 
 
 =head2 C<warranty_scope>
@@ -76,10 +73,7 @@ has warranty_scope => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'warrantyScope',
-    json_ld_serializer => \&_serialize_warranty_scope,
 );
-
-sub _serialize_warranty_scope { $_[0]->_serializer('warranty_scope') }
 
 
 

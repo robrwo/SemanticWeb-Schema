@@ -60,45 +60,6 @@ around json_ld_data => sub {
     return $data;
 };
 
-sub _serializer {
-    my ( $self, $method ) = @_;
-    my $values = $self->$method;
-
-    return undef unless defined $values;
-
-    my $jsonify = sub {
-        my ($value) = @_;
-
-        if ( is_blessed_ref($value) ) {
-
-            if ( my $method =
-                first { $value->can($_) }
-                qw/ json_ld_data as_string stringify / )
-            {
-                return $value->$method;
-            }
-            else {
-                return
-                  $value
-                  ;    # Let JSON handle it, though it will probably be an error
-            }
-
-        }
-        else {
-
-            return $value;
-
-        }
-    };
-
-    if ( is_plain_arrayref($values) ) {
-        return [ map { $jsonify->($_) } @$values ];
-    }
-    else {
-        return $jsonify->($values);
-    }
-}
-
 =head1 SEE ALSO
 
 =over

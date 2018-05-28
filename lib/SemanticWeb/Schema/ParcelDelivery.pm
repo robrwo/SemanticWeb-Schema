@@ -48,10 +48,7 @@ has carrier => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'carrier',
-    json_ld_serializer => \&_serialize_carrier,
 );
-
-sub _serialize_carrier { $_[0]->_serializer('carrier') }
 
 
 =head2 C<delivery_address>
@@ -75,10 +72,7 @@ has delivery_address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deliveryAddress',
-    json_ld_serializer => \&_serialize_delivery_address,
 );
-
-sub _serialize_delivery_address { $_[0]->_serializer('delivery_address') }
 
 
 =head2 C<delivery_status>
@@ -103,10 +97,7 @@ has delivery_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deliveryStatus',
-    json_ld_serializer => \&_serialize_delivery_status,
 );
-
-sub _serialize_delivery_status { $_[0]->_serializer('delivery_status') }
 
 
 =head2 C<expected_arrival_from>
@@ -130,10 +121,7 @@ has expected_arrival_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'expectedArrivalFrom',
-    json_ld_serializer => \&_serialize_expected_arrival_from,
 );
-
-sub _serialize_expected_arrival_from { $_[0]->_serializer('expected_arrival_from') }
 
 
 =head2 C<expected_arrival_until>
@@ -157,10 +145,7 @@ has expected_arrival_until => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'expectedArrivalUntil',
-    json_ld_serializer => \&_serialize_expected_arrival_until,
 );
-
-sub _serialize_expected_arrival_until { $_[0]->_serializer('expected_arrival_until') }
 
 
 =head2 C<has_delivery_method>
@@ -184,10 +169,7 @@ has has_delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasDeliveryMethod',
-    json_ld_serializer => \&_serialize_has_delivery_method,
 );
-
-sub _serialize_has_delivery_method { $_[0]->_serializer('has_delivery_method') }
 
 
 =head2 C<item_shipped>
@@ -211,10 +193,7 @@ has item_shipped => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemShipped',
-    json_ld_serializer => \&_serialize_item_shipped,
 );
-
-sub _serialize_item_shipped { $_[0]->_serializer('item_shipped') }
 
 
 =head2 C<origin_address>
@@ -238,10 +217,7 @@ has origin_address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'originAddress',
-    json_ld_serializer => \&_serialize_origin_address,
 );
-
-sub _serialize_origin_address { $_[0]->_serializer('origin_address') }
 
 
 =head2 C<part_of_order>
@@ -265,10 +241,7 @@ has part_of_order => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfOrder',
-    json_ld_serializer => \&_serialize_part_of_order,
 );
-
-sub _serialize_part_of_order { $_[0]->_serializer('part_of_order') }
 
 
 =head2 C<provider>
@@ -296,10 +269,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<tracking_number>
@@ -323,10 +293,7 @@ has tracking_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trackingNumber',
-    json_ld_serializer => \&_serialize_tracking_number,
 );
-
-sub _serialize_tracking_number { $_[0]->_serializer('tracking_number') }
 
 
 =head2 C<tracking_url>
@@ -350,10 +317,7 @@ has tracking_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trackingUrl',
-    json_ld_serializer => \&_serialize_tracking_url,
 );
-
-sub _serialize_tracking_url { $_[0]->_serializer('tracking_url') }
 
 
 

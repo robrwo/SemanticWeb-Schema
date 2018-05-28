@@ -57,10 +57,7 @@ has additional_property => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalProperty',
-    json_ld_serializer => \&_serialize_additional_property,
 );
-
-sub _serialize_additional_property { $_[0]->_serializer('additional_property') }
 
 
 =head2 C<address>
@@ -86,10 +83,7 @@ has address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'address',
-    json_ld_serializer => \&_serialize_address,
 );
-
-sub _serialize_address { $_[0]->_serializer('address') }
 
 
 =head2 C<aggregate_rating>
@@ -114,10 +108,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<amenity_feature>
@@ -144,10 +135,7 @@ has amenity_feature => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amenityFeature',
-    json_ld_serializer => \&_serialize_amenity_feature,
 );
-
-sub _serialize_amenity_feature { $_[0]->_serializer('amenity_feature') }
 
 
 =head2 C<branch_code>
@@ -179,10 +167,7 @@ has branch_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'branchCode',
-    json_ld_serializer => \&_serialize_branch_code,
 );
-
-sub _serialize_branch_code { $_[0]->_serializer('branch_code') }
 
 
 =head2 C<contained_in>
@@ -206,10 +191,7 @@ has contained_in => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'containedIn',
-    json_ld_serializer => \&_serialize_contained_in,
 );
-
-sub _serialize_contained_in { $_[0]->_serializer('contained_in') }
 
 
 =head2 C<contained_in_place>
@@ -233,10 +215,7 @@ has contained_in_place => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'containedInPlace',
-    json_ld_serializer => \&_serialize_contained_in_place,
 );
-
-sub _serialize_contained_in_place { $_[0]->_serializer('contained_in_place') }
 
 
 =head2 C<contains_place>
@@ -261,10 +240,7 @@ has contains_place => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'containsPlace',
-    json_ld_serializer => \&_serialize_contains_place,
 );
-
-sub _serialize_contains_place { $_[0]->_serializer('contains_place') }
 
 
 =head2 C<event>
@@ -288,10 +264,7 @@ has event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'event',
-    json_ld_serializer => \&_serialize_event,
 );
-
-sub _serialize_event { $_[0]->_serializer('event') }
 
 
 =head2 C<events>
@@ -315,10 +288,7 @@ has events => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'events',
-    json_ld_serializer => \&_serialize_events,
 );
-
-sub _serialize_events { $_[0]->_serializer('events') }
 
 
 =head2 C<fax_number>
@@ -342,10 +312,7 @@ has fax_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'faxNumber',
-    json_ld_serializer => \&_serialize_fax_number,
 );
-
-sub _serialize_fax_number { $_[0]->_serializer('fax_number') }
 
 
 =head2 C<geo>
@@ -371,10 +338,7 @@ has geo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'geo',
-    json_ld_serializer => \&_serialize_geo,
 );
-
-sub _serialize_geo { $_[0]->_serializer('geo') }
 
 
 =head2 C<global_location_number>
@@ -405,10 +369,7 @@ has global_location_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'globalLocationNumber',
-    json_ld_serializer => \&_serialize_global_location_number,
 );
-
-sub _serialize_global_location_number { $_[0]->_serializer('global_location_number') }
 
 
 =head2 C<has_map>
@@ -434,10 +395,7 @@ has has_map => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasMap',
-    json_ld_serializer => \&_serialize_has_map,
 );
-
-sub _serialize_has_map { $_[0]->_serializer('has_map') }
 
 
 =head2 C<is_accessible_for_free>
@@ -461,10 +419,7 @@ has is_accessible_for_free => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isAccessibleForFree',
-    json_ld_serializer => \&_serialize_is_accessible_for_free,
 );
-
-sub _serialize_is_accessible_for_free { $_[0]->_serializer('is_accessible_for_free') }
 
 
 =head2 C<isic_v4>
@@ -490,10 +445,7 @@ has isic_v4 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isicV4',
-    json_ld_serializer => \&_serialize_isic_v4,
 );
-
-sub _serialize_isic_v4 { $_[0]->_serializer('isic_v4') }
 
 
 =head2 C<logo>
@@ -519,10 +471,7 @@ has logo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'logo',
-    json_ld_serializer => \&_serialize_logo,
 );
-
-sub _serialize_logo { $_[0]->_serializer('logo') }
 
 
 =head2 C<map>
@@ -546,10 +495,7 @@ has map => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'map',
-    json_ld_serializer => \&_serialize_map,
 );
-
-sub _serialize_map { $_[0]->_serializer('map') }
 
 
 =head2 C<maps>
@@ -573,10 +519,7 @@ has maps => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maps',
-    json_ld_serializer => \&_serialize_maps,
 );
-
-sub _serialize_maps { $_[0]->_serializer('maps') }
 
 
 =head2 C<maximum_attendee_capacity>
@@ -600,10 +543,7 @@ has maximum_attendee_capacity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maximumAttendeeCapacity',
-    json_ld_serializer => \&_serialize_maximum_attendee_capacity,
 );
-
-sub _serialize_maximum_attendee_capacity { $_[0]->_serializer('maximum_attendee_capacity') }
 
 
 =head2 C<opening_hours_specification>
@@ -627,10 +567,7 @@ has opening_hours_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'openingHoursSpecification',
-    json_ld_serializer => \&_serialize_opening_hours_specification,
 );
-
-sub _serialize_opening_hours_specification { $_[0]->_serializer('opening_hours_specification') }
 
 
 =head2 C<photo>
@@ -656,10 +593,7 @@ has photo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'photo',
-    json_ld_serializer => \&_serialize_photo,
 );
-
-sub _serialize_photo { $_[0]->_serializer('photo') }
 
 
 =head2 C<photos>
@@ -685,10 +619,7 @@ has photos => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'photos',
-    json_ld_serializer => \&_serialize_photos,
 );
-
-sub _serialize_photos { $_[0]->_serializer('photos') }
 
 
 =head2 C<public_access>
@@ -718,10 +649,7 @@ has public_access => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publicAccess',
-    json_ld_serializer => \&_serialize_public_access,
 );
-
-sub _serialize_public_access { $_[0]->_serializer('public_access') }
 
 
 =head2 C<review>
@@ -745,10 +673,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<reviews>
@@ -772,10 +697,7 @@ has reviews => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviews',
-    json_ld_serializer => \&_serialize_reviews,
 );
-
-sub _serialize_reviews { $_[0]->_serializer('reviews') }
 
 
 =head2 C<smoking_allowed>
@@ -800,10 +722,7 @@ has smoking_allowed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'smokingAllowed',
-    json_ld_serializer => \&_serialize_smoking_allowed,
 );
-
-sub _serialize_smoking_allowed { $_[0]->_serializer('smoking_allowed') }
 
 
 =head2 C<special_opening_hours_specification>
@@ -835,10 +754,7 @@ has special_opening_hours_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'specialOpeningHoursSpecification',
-    json_ld_serializer => \&_serialize_special_opening_hours_specification,
 );
-
-sub _serialize_special_opening_hours_specification { $_[0]->_serializer('special_opening_hours_specification') }
 
 
 =head2 C<telephone>
@@ -862,10 +778,7 @@ has telephone => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'telephone',
-    json_ld_serializer => \&_serialize_telephone,
 );
-
-sub _serialize_telephone { $_[0]->_serializer('telephone') }
 
 
 

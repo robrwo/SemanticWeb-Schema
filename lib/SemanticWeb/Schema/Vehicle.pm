@@ -55,10 +55,7 @@ has cargo_volume => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'cargoVolume',
-    json_ld_serializer => \&_serialize_cargo_volume,
 );
-
-sub _serialize_cargo_volume { $_[0]->_serializer('cargo_volume') }
 
 
 =head2 C<date_vehicle_first_registered>
@@ -83,10 +80,7 @@ has date_vehicle_first_registered => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateVehicleFirstRegistered',
-    json_ld_serializer => \&_serialize_date_vehicle_first_registered,
 );
-
-sub _serialize_date_vehicle_first_registered { $_[0]->_serializer('date_vehicle_first_registered') }
 
 
 =head2 C<drive_wheel_configuration>
@@ -113,10 +107,7 @@ has drive_wheel_configuration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'driveWheelConfiguration',
-    json_ld_serializer => \&_serialize_drive_wheel_configuration,
 );
-
-sub _serialize_drive_wheel_configuration { $_[0]->_serializer('drive_wheel_configuration') }
 
 
 =head2 C<fuel_consumption>
@@ -158,10 +149,7 @@ has fuel_consumption => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fuelConsumption',
-    json_ld_serializer => \&_serialize_fuel_consumption,
 );
-
-sub _serialize_fuel_consumption { $_[0]->_serializer('fuel_consumption') }
 
 
 =head2 C<fuel_efficiency>
@@ -203,10 +191,7 @@ has fuel_efficiency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fuelEfficiency',
-    json_ld_serializer => \&_serialize_fuel_efficiency,
 );
-
-sub _serialize_fuel_efficiency { $_[0]->_serializer('fuel_efficiency') }
 
 
 =head2 C<fuel_type>
@@ -234,10 +219,7 @@ has fuel_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fuelType',
-    json_ld_serializer => \&_serialize_fuel_type,
 );
-
-sub _serialize_fuel_type { $_[0]->_serializer('fuel_type') }
 
 
 =head2 C<known_vehicle_damages>
@@ -261,10 +243,7 @@ has known_vehicle_damages => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'knownVehicleDamages',
-    json_ld_serializer => \&_serialize_known_vehicle_damages,
 );
-
-sub _serialize_known_vehicle_damages { $_[0]->_serializer('known_vehicle_damages') }
 
 
 =head2 C<mileage_from_odometer>
@@ -294,10 +273,7 @@ has mileage_from_odometer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mileageFromOdometer',
-    json_ld_serializer => \&_serialize_mileage_from_odometer,
 );
-
-sub _serialize_mileage_from_odometer { $_[0]->_serializer('mileage_from_odometer') }
 
 
 =head2 C<number_of_airbags>
@@ -323,10 +299,7 @@ has number_of_airbags => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfAirbags',
-    json_ld_serializer => \&_serialize_number_of_airbags,
 );
-
-sub _serialize_number_of_airbags { $_[0]->_serializer('number_of_airbags') }
 
 
 =head2 C<number_of_axles>
@@ -356,10 +329,7 @@ has number_of_axles => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfAxles',
-    json_ld_serializer => \&_serialize_number_of_axles,
 );
-
-sub _serialize_number_of_axles { $_[0]->_serializer('number_of_axles') }
 
 
 =head2 C<number_of_doors>
@@ -389,10 +359,7 @@ has number_of_doors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfDoors',
-    json_ld_serializer => \&_serialize_number_of_doors,
 );
-
-sub _serialize_number_of_doors { $_[0]->_serializer('number_of_doors') }
 
 
 =head2 C<number_of_forward_gears>
@@ -423,10 +390,7 @@ has number_of_forward_gears => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfForwardGears',
-    json_ld_serializer => \&_serialize_number_of_forward_gears,
 );
-
-sub _serialize_number_of_forward_gears { $_[0]->_serializer('number_of_forward_gears') }
 
 
 =head2 C<number_of_previous_owners>
@@ -457,10 +421,7 @@ has number_of_previous_owners => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfPreviousOwners',
-    json_ld_serializer => \&_serialize_number_of_previous_owners,
 );
-
-sub _serialize_number_of_previous_owners { $_[0]->_serializer('number_of_previous_owners') }
 
 
 =head2 C<production_date>
@@ -484,10 +445,7 @@ has production_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionDate',
-    json_ld_serializer => \&_serialize_production_date,
 );
-
-sub _serialize_production_date { $_[0]->_serializer('production_date') }
 
 
 =head2 C<purchase_date>
@@ -511,10 +469,7 @@ has purchase_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'purchaseDate',
-    json_ld_serializer => \&_serialize_purchase_date,
 );
-
-sub _serialize_purchase_date { $_[0]->_serializer('purchase_date') }
 
 
 =head2 C<steering_position>
@@ -538,10 +493,7 @@ has steering_position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'steeringPosition',
-    json_ld_serializer => \&_serialize_steering_position,
 );
-
-sub _serialize_steering_position { $_[0]->_serializer('steering_position') }
 
 
 =head2 C<vehicle_configuration>
@@ -566,10 +518,7 @@ has vehicle_configuration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleConfiguration',
-    json_ld_serializer => \&_serialize_vehicle_configuration,
 );
-
-sub _serialize_vehicle_configuration { $_[0]->_serializer('vehicle_configuration') }
 
 
 =head2 C<vehicle_engine>
@@ -593,10 +542,7 @@ has vehicle_engine => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleEngine',
-    json_ld_serializer => \&_serialize_vehicle_engine,
 );
-
-sub _serialize_vehicle_engine { $_[0]->_serializer('vehicle_engine') }
 
 
 =head2 C<vehicle_identification_number>
@@ -621,10 +567,7 @@ has vehicle_identification_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleIdentificationNumber',
-    json_ld_serializer => \&_serialize_vehicle_identification_number,
 );
-
-sub _serialize_vehicle_identification_number { $_[0]->_serializer('vehicle_identification_number') }
 
 
 =head2 C<vehicle_interior_color>
@@ -648,10 +591,7 @@ has vehicle_interior_color => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleInteriorColor',
-    json_ld_serializer => \&_serialize_vehicle_interior_color,
 );
-
-sub _serialize_vehicle_interior_color { $_[0]->_serializer('vehicle_interior_color') }
 
 
 =head2 C<vehicle_interior_type>
@@ -678,10 +618,7 @@ has vehicle_interior_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleInteriorType',
-    json_ld_serializer => \&_serialize_vehicle_interior_type,
 );
-
-sub _serialize_vehicle_interior_type { $_[0]->_serializer('vehicle_interior_type') }
 
 
 =head2 C<vehicle_model_date>
@@ -706,10 +643,7 @@ has vehicle_model_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleModelDate',
-    json_ld_serializer => \&_serialize_vehicle_model_date,
 );
-
-sub _serialize_vehicle_model_date { $_[0]->_serializer('vehicle_model_date') }
 
 
 =head2 C<vehicle_seating_capacity>
@@ -741,10 +675,7 @@ has vehicle_seating_capacity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleSeatingCapacity',
-    json_ld_serializer => \&_serialize_vehicle_seating_capacity,
 );
-
-sub _serialize_vehicle_seating_capacity { $_[0]->_serializer('vehicle_seating_capacity') }
 
 
 =head2 C<vehicle_special_usage>
@@ -771,10 +702,7 @@ has vehicle_special_usage => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleSpecialUsage',
-    json_ld_serializer => \&_serialize_vehicle_special_usage,
 );
-
-sub _serialize_vehicle_special_usage { $_[0]->_serializer('vehicle_special_usage') }
 
 
 =head2 C<vehicle_transmission>
@@ -801,10 +729,7 @@ has vehicle_transmission => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleTransmission',
-    json_ld_serializer => \&_serialize_vehicle_transmission,
 );
-
-sub _serialize_vehicle_transmission { $_[0]->_serializer('vehicle_transmission') }
 
 
 

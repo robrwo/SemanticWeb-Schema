@@ -52,10 +52,7 @@ has superseded_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supersededBy',
-    json_ld_serializer => \&_serialize_superseded_by,
 );
-
-sub _serialize_superseded_by { $_[0]->_serializer('superseded_by') }
 
 
 

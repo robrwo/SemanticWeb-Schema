@@ -46,10 +46,7 @@ has caption => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'caption',
-    json_ld_serializer => \&_serialize_caption,
 );
-
-sub _serialize_caption { $_[0]->_serializer('caption') }
 
 
 =head2 C<exif_data>
@@ -75,10 +72,7 @@ has exif_data => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'exifData',
-    json_ld_serializer => \&_serialize_exif_data,
 );
-
-sub _serialize_exif_data { $_[0]->_serializer('exif_data') }
 
 
 =head2 C<representative_of_page>
@@ -102,10 +96,7 @@ has representative_of_page => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'representativeOfPage',
-    json_ld_serializer => \&_serialize_representative_of_page,
 );
-
-sub _serialize_representative_of_page { $_[0]->_serializer('representative_of_page') }
 
 
 =head2 C<thumbnail>
@@ -129,10 +120,7 @@ has thumbnail => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'thumbnail',
-    json_ld_serializer => \&_serialize_thumbnail,
 );
-
-sub _serialize_thumbnail { $_[0]->_serializer('thumbnail') }
 
 
 

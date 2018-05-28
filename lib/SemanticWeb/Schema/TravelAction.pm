@@ -47,10 +47,7 @@ has distance => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'distance',
-    json_ld_serializer => \&_serialize_distance,
 );
-
-sub _serialize_distance { $_[0]->_serializer('distance') }
 
 
 

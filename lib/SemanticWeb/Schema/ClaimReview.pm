@@ -47,10 +47,7 @@ has claim_reviewed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'claimReviewed',
-    json_ld_serializer => \&_serialize_claim_reviewed,
 );
-
-sub _serialize_claim_reviewed { $_[0]->_serializer('claim_reviewed') }
 
 
 

@@ -48,10 +48,7 @@ has audience_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audienceType',
-    json_ld_serializer => \&_serialize_audience_type,
 );
-
-sub _serialize_audience_type { $_[0]->_serializer('audience_type') }
 
 
 =head2 C<geographic_area>
@@ -75,10 +72,7 @@ has geographic_area => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'geographicArea',
-    json_ld_serializer => \&_serialize_geographic_area,
 );
-
-sub _serialize_geographic_area { $_[0]->_serializer('geographic_area') }
 
 
 

@@ -56,10 +56,7 @@ has page_end => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pageEnd',
-    json_ld_serializer => \&_serialize_page_end,
 );
-
-sub _serialize_page_end { $_[0]->_serializer('page_end') }
 
 
 =head2 C<page_start>
@@ -85,10 +82,7 @@ has page_start => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pageStart',
-    json_ld_serializer => \&_serialize_page_start,
 );
-
-sub _serialize_page_start { $_[0]->_serializer('page_start') }
 
 
 =head2 C<pagination>
@@ -113,10 +107,7 @@ has pagination => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pagination',
-    json_ld_serializer => \&_serialize_pagination,
 );
-
-sub _serialize_pagination { $_[0]->_serializer('pagination') }
 
 
 =head2 C<volume_number>
@@ -143,10 +134,7 @@ has volume_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'volumeNumber',
-    json_ld_serializer => \&_serialize_volume_number,
 );
-
-sub _serialize_volume_number { $_[0]->_serializer('volume_number') }
 
 
 

@@ -58,10 +58,7 @@ has closes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'closes',
-    json_ld_serializer => \&_serialize_closes,
 );
-
-sub _serialize_closes { $_[0]->_serializer('closes') }
 
 
 =head2 C<day_of_week>
@@ -85,10 +82,7 @@ has day_of_week => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dayOfWeek',
-    json_ld_serializer => \&_serialize_day_of_week,
 );
-
-sub _serialize_day_of_week { $_[0]->_serializer('day_of_week') }
 
 
 =head2 C<opens>
@@ -112,10 +106,7 @@ has opens => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'opens',
-    json_ld_serializer => \&_serialize_opens,
 );
-
-sub _serialize_opens { $_[0]->_serializer('opens') }
 
 
 =head2 C<valid_from>
@@ -139,10 +130,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_through>
@@ -167,10 +155,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 

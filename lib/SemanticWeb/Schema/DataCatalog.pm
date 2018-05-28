@@ -46,10 +46,7 @@ has dataset => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dataset',
-    json_ld_serializer => \&_serialize_dataset,
 );
-
-sub _serialize_dataset { $_[0]->_serializer('dataset') }
 
 
 

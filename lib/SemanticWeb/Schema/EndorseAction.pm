@@ -48,10 +48,7 @@ has endorsee => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endorsee',
-    json_ld_serializer => \&_serialize_endorsee,
 );
-
-sub _serialize_endorsee { $_[0]->_serializer('endorsee') }
 
 
 

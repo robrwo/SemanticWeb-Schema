@@ -47,10 +47,7 @@ has album => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'album',
-    json_ld_serializer => \&_serialize_album,
 );
-
-sub _serialize_album { $_[0]->_serializer('album') }
 
 
 =head2 C<albums>
@@ -74,10 +71,7 @@ has albums => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'albums',
-    json_ld_serializer => \&_serialize_albums,
 );
-
-sub _serialize_albums { $_[0]->_serializer('albums') }
 
 
 =head2 C<genre>
@@ -101,10 +95,7 @@ has genre => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'genre',
-    json_ld_serializer => \&_serialize_genre,
 );
-
-sub _serialize_genre { $_[0]->_serializer('genre') }
 
 
 =head2 C<music_group_member>
@@ -128,10 +119,7 @@ has music_group_member => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicGroupMember',
-    json_ld_serializer => \&_serialize_music_group_member,
 );
-
-sub _serialize_music_group_member { $_[0]->_serializer('music_group_member') }
 
 
 =head2 C<track>
@@ -158,10 +146,7 @@ has track => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'track',
-    json_ld_serializer => \&_serialize_track,
 );
-
-sub _serialize_track { $_[0]->_serializer('track') }
 
 
 =head2 C<tracks>
@@ -185,10 +170,7 @@ has tracks => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'tracks',
-    json_ld_serializer => \&_serialize_tracks,
 );
-
-sub _serialize_tracks { $_[0]->_serializer('tracks') }
 
 
 

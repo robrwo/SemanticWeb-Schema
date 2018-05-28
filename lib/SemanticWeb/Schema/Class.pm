@@ -49,10 +49,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<superseded_by>
@@ -81,10 +78,7 @@ has superseded_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supersededBy',
-    json_ld_serializer => \&_serialize_superseded_by,
 );
-
-sub _serialize_superseded_by { $_[0]->_serializer('superseded_by') }
 
 
 

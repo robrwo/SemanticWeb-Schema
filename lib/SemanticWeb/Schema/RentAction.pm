@@ -50,10 +50,7 @@ has landlord => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'landlord',
-    json_ld_serializer => \&_serialize_landlord,
 );
-
-sub _serialize_landlord { $_[0]->_serializer('landlord') }
 
 
 =head2 C<real_estate_agent>
@@ -78,10 +75,7 @@ has real_estate_agent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'realEstateAgent',
-    json_ld_serializer => \&_serialize_real_estate_agent,
 );
-
-sub _serialize_real_estate_agent { $_[0]->_serializer('real_estate_agent') }
 
 
 

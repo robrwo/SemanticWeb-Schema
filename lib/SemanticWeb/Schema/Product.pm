@@ -59,10 +59,7 @@ has additional_property => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalProperty',
-    json_ld_serializer => \&_serialize_additional_property,
 );
-
-sub _serialize_additional_property { $_[0]->_serializer('additional_property') }
 
 
 =head2 C<aggregate_rating>
@@ -87,10 +84,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<audience>
@@ -114,10 +108,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<award>
@@ -141,10 +132,7 @@ has award => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'award',
-    json_ld_serializer => \&_serialize_award,
 );
-
-sub _serialize_award { $_[0]->_serializer('award') }
 
 
 =head2 C<awards>
@@ -168,10 +156,7 @@ has awards => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'awards',
-    json_ld_serializer => \&_serialize_awards,
 );
-
-sub _serialize_awards { $_[0]->_serializer('awards') }
 
 
 =head2 C<brand>
@@ -198,10 +183,7 @@ has brand => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'brand',
-    json_ld_serializer => \&_serialize_brand,
 );
-
-sub _serialize_brand { $_[0]->_serializer('brand') }
 
 
 =head2 C<category>
@@ -228,10 +210,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<color>
@@ -255,10 +234,7 @@ has color => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'color',
-    json_ld_serializer => \&_serialize_color,
 );
-
-sub _serialize_color { $_[0]->_serializer('color') }
 
 
 =head2 C<depth>
@@ -284,10 +260,7 @@ has depth => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'depth',
-    json_ld_serializer => \&_serialize_depth,
 );
-
-sub _serialize_depth { $_[0]->_serializer('depth') }
 
 
 =head2 C<gtin12>
@@ -321,10 +294,7 @@ has gtin12 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin12',
-    json_ld_serializer => \&_serialize_gtin12,
 );
-
-sub _serialize_gtin12 { $_[0]->_serializer('gtin12') }
 
 
 =head2 C<gtin13>
@@ -358,10 +328,7 @@ has gtin13 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin13',
-    json_ld_serializer => \&_serialize_gtin13,
 );
-
-sub _serialize_gtin13 { $_[0]->_serializer('gtin13') }
 
 
 =head2 C<gtin14>
@@ -393,10 +360,7 @@ has gtin14 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin14',
-    json_ld_serializer => \&_serialize_gtin14,
 );
-
-sub _serialize_gtin14 { $_[0]->_serializer('gtin14') }
 
 
 =head2 C<gtin8>
@@ -428,10 +392,7 @@ has gtin8 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin8',
-    json_ld_serializer => \&_serialize_gtin8,
 );
-
-sub _serialize_gtin8 { $_[0]->_serializer('gtin8') }
 
 
 =head2 C<height>
@@ -457,10 +418,7 @@ has height => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'height',
-    json_ld_serializer => \&_serialize_height,
 );
-
-sub _serialize_height { $_[0]->_serializer('height') }
 
 
 =head2 C<is_accessory_or_spare_part_for>
@@ -485,10 +443,7 @@ has is_accessory_or_spare_part_for => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isAccessoryOrSparePartFor',
-    json_ld_serializer => \&_serialize_is_accessory_or_spare_part_for,
 );
-
-sub _serialize_is_accessory_or_spare_part_for { $_[0]->_serializer('is_accessory_or_spare_part_for') }
 
 
 =head2 C<is_consumable_for>
@@ -513,10 +468,7 @@ has is_consumable_for => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isConsumableFor',
-    json_ld_serializer => \&_serialize_is_consumable_for,
 );
-
-sub _serialize_is_consumable_for { $_[0]->_serializer('is_consumable_for') }
 
 
 =head2 C<is_related_to>
@@ -542,10 +494,7 @@ has is_related_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isRelatedTo',
-    json_ld_serializer => \&_serialize_is_related_to,
 );
-
-sub _serialize_is_related_to { $_[0]->_serializer('is_related_to') }
 
 
 =head2 C<is_similar_to>
@@ -571,10 +520,7 @@ has is_similar_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isSimilarTo',
-    json_ld_serializer => \&_serialize_is_similar_to,
 );
-
-sub _serialize_is_similar_to { $_[0]->_serializer('is_similar_to') }
 
 
 =head2 C<item_condition>
@@ -600,10 +546,7 @@ has item_condition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemCondition',
-    json_ld_serializer => \&_serialize_item_condition,
 );
-
-sub _serialize_item_condition { $_[0]->_serializer('item_condition') }
 
 
 =head2 C<logo>
@@ -629,10 +572,7 @@ has logo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'logo',
-    json_ld_serializer => \&_serialize_logo,
 );
-
-sub _serialize_logo { $_[0]->_serializer('logo') }
 
 
 =head2 C<manufacturer>
@@ -656,10 +596,7 @@ has manufacturer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'manufacturer',
-    json_ld_serializer => \&_serialize_manufacturer,
 );
-
-sub _serialize_manufacturer { $_[0]->_serializer('manufacturer') }
 
 
 =head2 C<material>
@@ -685,10 +622,7 @@ has material => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'material',
-    json_ld_serializer => \&_serialize_material,
 );
-
-sub _serialize_material { $_[0]->_serializer('material') }
 
 
 =head2 C<model>
@@ -717,10 +651,7 @@ has model => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'model',
-    json_ld_serializer => \&_serialize_model,
 );
-
-sub _serialize_model { $_[0]->_serializer('model') }
 
 
 =head2 C<mpn>
@@ -745,10 +676,7 @@ has mpn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mpn',
-    json_ld_serializer => \&_serialize_mpn,
 );
-
-sub _serialize_mpn { $_[0]->_serializer('mpn') }
 
 
 =head2 C<offers>
@@ -774,10 +702,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 =head2 C<product_id>
@@ -806,10 +731,7 @@ has product_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productID',
-    json_ld_serializer => \&_serialize_product_id,
 );
-
-sub _serialize_product_id { $_[0]->_serializer('product_id') }
 
 
 =head2 C<production_date>
@@ -833,10 +755,7 @@ has production_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionDate',
-    json_ld_serializer => \&_serialize_production_date,
 );
-
-sub _serialize_production_date { $_[0]->_serializer('production_date') }
 
 
 =head2 C<purchase_date>
@@ -860,10 +779,7 @@ has purchase_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'purchaseDate',
-    json_ld_serializer => \&_serialize_purchase_date,
 );
-
-sub _serialize_purchase_date { $_[0]->_serializer('purchase_date') }
 
 
 =head2 C<release_date>
@@ -888,10 +804,7 @@ has release_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'releaseDate',
-    json_ld_serializer => \&_serialize_release_date,
 );
-
-sub _serialize_release_date { $_[0]->_serializer('release_date') }
 
 
 =head2 C<review>
@@ -915,10 +828,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<reviews>
@@ -942,10 +852,7 @@ has reviews => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviews',
-    json_ld_serializer => \&_serialize_reviews,
 );
-
-sub _serialize_reviews { $_[0]->_serializer('reviews') }
 
 
 =head2 C<sku>
@@ -970,10 +877,7 @@ has sku => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sku',
-    json_ld_serializer => \&_serialize_sku,
 );
-
-sub _serialize_sku { $_[0]->_serializer('sku') }
 
 
 =head2 C<weight>
@@ -997,10 +901,7 @@ has weight => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'weight',
-    json_ld_serializer => \&_serialize_weight,
 );
-
-sub _serialize_weight { $_[0]->_serializer('weight') }
 
 
 =head2 C<width>
@@ -1026,10 +927,7 @@ has width => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'width',
-    json_ld_serializer => \&_serialize_width,
 );
-
-sub _serialize_width { $_[0]->_serializer('width') }
 
 
 

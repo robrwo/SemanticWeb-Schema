@@ -58,10 +58,7 @@ has additional_property => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalProperty',
-    json_ld_serializer => \&_serialize_additional_property,
 );
-
-sub _serialize_additional_property { $_[0]->_serializer('additional_property') }
 
 
 =head2 C<equal>
@@ -86,10 +83,7 @@ has equal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'equal',
-    json_ld_serializer => \&_serialize_equal,
 );
-
-sub _serialize_equal { $_[0]->_serializer('equal') }
 
 
 =head2 C<greater>
@@ -114,10 +108,7 @@ has greater => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'greater',
-    json_ld_serializer => \&_serialize_greater,
 );
-
-sub _serialize_greater { $_[0]->_serializer('greater') }
 
 
 =head2 C<greater_or_equal>
@@ -142,10 +133,7 @@ has greater_or_equal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'greaterOrEqual',
-    json_ld_serializer => \&_serialize_greater_or_equal,
 );
-
-sub _serialize_greater_or_equal { $_[0]->_serializer('greater_or_equal') }
 
 
 =head2 C<lesser>
@@ -170,10 +158,7 @@ has lesser => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lesser',
-    json_ld_serializer => \&_serialize_lesser,
 );
-
-sub _serialize_lesser { $_[0]->_serializer('lesser') }
 
 
 =head2 C<lesser_or_equal>
@@ -198,10 +183,7 @@ has lesser_or_equal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lesserOrEqual',
-    json_ld_serializer => \&_serialize_lesser_or_equal,
 );
-
-sub _serialize_lesser_or_equal { $_[0]->_serializer('lesser_or_equal') }
 
 
 =head2 C<non_equal>
@@ -226,10 +208,7 @@ has non_equal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'nonEqual',
-    json_ld_serializer => \&_serialize_non_equal,
 );
-
-sub _serialize_non_equal { $_[0]->_serializer('non_equal') }
 
 
 =head2 C<value_reference>
@@ -262,10 +241,7 @@ has value_reference => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueReference',
-    json_ld_serializer => \&_serialize_value_reference,
 );
-
-sub _serialize_value_reference { $_[0]->_serializer('value_reference') }
 
 
 

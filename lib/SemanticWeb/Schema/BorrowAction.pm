@@ -57,10 +57,7 @@ has lender => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lender',
-    json_ld_serializer => \&_serialize_lender,
 );
-
-sub _serialize_lender { $_[0]->_serializer('lender') }
 
 
 

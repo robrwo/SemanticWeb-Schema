@@ -46,10 +46,7 @@ has calories => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'calories',
-    json_ld_serializer => \&_serialize_calories,
 );
-
-sub _serialize_calories { $_[0]->_serializer('calories') }
 
 
 =head2 C<carbohydrate_content>
@@ -73,10 +70,7 @@ has carbohydrate_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'carbohydrateContent',
-    json_ld_serializer => \&_serialize_carbohydrate_content,
 );
-
-sub _serialize_carbohydrate_content { $_[0]->_serializer('carbohydrate_content') }
 
 
 =head2 C<cholesterol_content>
@@ -100,10 +94,7 @@ has cholesterol_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'cholesterolContent',
-    json_ld_serializer => \&_serialize_cholesterol_content,
 );
-
-sub _serialize_cholesterol_content { $_[0]->_serializer('cholesterol_content') }
 
 
 =head2 C<fat_content>
@@ -127,10 +118,7 @@ has fat_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fatContent',
-    json_ld_serializer => \&_serialize_fat_content,
 );
-
-sub _serialize_fat_content { $_[0]->_serializer('fat_content') }
 
 
 =head2 C<fiber_content>
@@ -154,10 +142,7 @@ has fiber_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fiberContent',
-    json_ld_serializer => \&_serialize_fiber_content,
 );
-
-sub _serialize_fiber_content { $_[0]->_serializer('fiber_content') }
 
 
 =head2 C<protein_content>
@@ -181,10 +166,7 @@ has protein_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'proteinContent',
-    json_ld_serializer => \&_serialize_protein_content,
 );
-
-sub _serialize_protein_content { $_[0]->_serializer('protein_content') }
 
 
 =head2 C<saturated_fat_content>
@@ -208,10 +190,7 @@ has saturated_fat_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'saturatedFatContent',
-    json_ld_serializer => \&_serialize_saturated_fat_content,
 );
-
-sub _serialize_saturated_fat_content { $_[0]->_serializer('saturated_fat_content') }
 
 
 =head2 C<serving_size>
@@ -235,10 +214,7 @@ has serving_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'servingSize',
-    json_ld_serializer => \&_serialize_serving_size,
 );
-
-sub _serialize_serving_size { $_[0]->_serializer('serving_size') }
 
 
 =head2 C<sodium_content>
@@ -262,10 +238,7 @@ has sodium_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sodiumContent',
-    json_ld_serializer => \&_serialize_sodium_content,
 );
-
-sub _serialize_sodium_content { $_[0]->_serializer('sodium_content') }
 
 
 =head2 C<sugar_content>
@@ -289,10 +262,7 @@ has sugar_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sugarContent',
-    json_ld_serializer => \&_serialize_sugar_content,
 );
-
-sub _serialize_sugar_content { $_[0]->_serializer('sugar_content') }
 
 
 =head2 C<trans_fat_content>
@@ -316,10 +286,7 @@ has trans_fat_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'transFatContent',
-    json_ld_serializer => \&_serialize_trans_fat_content,
 );
-
-sub _serialize_trans_fat_content { $_[0]->_serializer('trans_fat_content') }
 
 
 =head2 C<unsaturated_fat_content>
@@ -343,10 +310,7 @@ has unsaturated_fat_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unsaturatedFatContent',
-    json_ld_serializer => \&_serialize_unsaturated_fat_content,
 );
-
-sub _serialize_unsaturated_fat_content { $_[0]->_serializer('unsaturated_fat_content') }
 
 
 

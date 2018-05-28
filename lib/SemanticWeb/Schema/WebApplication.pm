@@ -47,10 +47,7 @@ has browser_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'browserRequirements',
-    json_ld_serializer => \&_serialize_browser_requirements,
 );
-
-sub _serialize_browser_requirements { $_[0]->_serializer('browser_requirements') }
 
 
 

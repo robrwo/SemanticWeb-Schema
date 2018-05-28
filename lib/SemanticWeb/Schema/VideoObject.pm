@@ -48,10 +48,7 @@ has actor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actor',
-    json_ld_serializer => \&_serialize_actor,
 );
-
-sub _serialize_actor { $_[0]->_serializer('actor') }
 
 
 =head2 C<actors>
@@ -76,10 +73,7 @@ has actors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actors',
-    json_ld_serializer => \&_serialize_actors,
 );
-
-sub _serialize_actors { $_[0]->_serializer('actors') }
 
 
 =head2 C<caption>
@@ -103,10 +97,7 @@ has caption => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'caption',
-    json_ld_serializer => \&_serialize_caption,
 );
-
-sub _serialize_caption { $_[0]->_serializer('caption') }
 
 
 =head2 C<director>
@@ -132,10 +123,7 @@ has director => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'director',
-    json_ld_serializer => \&_serialize_director,
 );
-
-sub _serialize_director { $_[0]->_serializer('director') }
 
 
 =head2 C<directors>
@@ -160,10 +148,7 @@ has directors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'directors',
-    json_ld_serializer => \&_serialize_directors,
 );
-
-sub _serialize_directors { $_[0]->_serializer('directors') }
 
 
 =head2 C<music_by>
@@ -189,10 +174,7 @@ has music_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicBy',
-    json_ld_serializer => \&_serialize_music_by,
 );
-
-sub _serialize_music_by { $_[0]->_serializer('music_by') }
 
 
 =head2 C<thumbnail>
@@ -216,10 +198,7 @@ has thumbnail => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'thumbnail',
-    json_ld_serializer => \&_serialize_thumbnail,
 );
-
-sub _serialize_thumbnail { $_[0]->_serializer('thumbnail') }
 
 
 =head2 C<transcript>
@@ -244,10 +223,7 @@ has transcript => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'transcript',
-    json_ld_serializer => \&_serialize_transcript,
 );
-
-sub _serialize_transcript { $_[0]->_serializer('transcript') }
 
 
 =head2 C<video_frame_size>
@@ -271,10 +247,7 @@ has video_frame_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'videoFrameSize',
-    json_ld_serializer => \&_serialize_video_frame_size,
 );
-
-sub _serialize_video_frame_size { $_[0]->_serializer('video_frame_size') }
 
 
 =head2 C<video_quality>
@@ -298,10 +271,7 @@ has video_quality => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'videoQuality',
-    json_ld_serializer => \&_serialize_video_quality,
 );
-
-sub _serialize_video_quality { $_[0]->_serializer('video_quality') }
 
 
 

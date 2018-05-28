@@ -50,10 +50,7 @@ has interaction_service => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'interactionService',
-    json_ld_serializer => \&_serialize_interaction_service,
 );
-
-sub _serialize_interaction_service { $_[0]->_serializer('interaction_service') }
 
 
 =head2 C<interaction_type>
@@ -85,10 +82,7 @@ has interaction_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'interactionType',
-    json_ld_serializer => \&_serialize_interaction_type,
 );
-
-sub _serialize_interaction_type { $_[0]->_serializer('interaction_type') }
 
 
 =head2 C<user_interaction_count>
@@ -113,10 +107,7 @@ has user_interaction_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'userInteractionCount',
-    json_ld_serializer => \&_serialize_user_interaction_count,
 );
-
-sub _serialize_user_interaction_count { $_[0]->_serializer('user_interaction_count') }
 
 
 

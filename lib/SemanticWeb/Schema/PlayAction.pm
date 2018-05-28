@@ -59,10 +59,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<event>
@@ -86,10 +83,7 @@ has event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'event',
-    json_ld_serializer => \&_serialize_event,
 );
-
-sub _serialize_event { $_[0]->_serializer('event') }
 
 
 

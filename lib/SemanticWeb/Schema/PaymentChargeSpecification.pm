@@ -47,10 +47,7 @@ has applies_to_delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'appliesToDeliveryMethod',
-    json_ld_serializer => \&_serialize_applies_to_delivery_method,
 );
-
-sub _serialize_applies_to_delivery_method { $_[0]->_serializer('applies_to_delivery_method') }
 
 
 =head2 C<applies_to_payment_method>
@@ -74,10 +71,7 @@ has applies_to_payment_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'appliesToPaymentMethod',
-    json_ld_serializer => \&_serialize_applies_to_payment_method,
 );
-
-sub _serialize_applies_to_payment_method { $_[0]->_serializer('applies_to_payment_method') }
 
 
 

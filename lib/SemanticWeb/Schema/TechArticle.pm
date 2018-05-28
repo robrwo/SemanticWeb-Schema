@@ -47,10 +47,7 @@ has dependencies => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dependencies',
-    json_ld_serializer => \&_serialize_dependencies,
 );
-
-sub _serialize_dependencies { $_[0]->_serializer('dependencies') }
 
 
 =head2 C<proficiency_level>
@@ -74,10 +71,7 @@ has proficiency_level => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'proficiencyLevel',
-    json_ld_serializer => \&_serialize_proficiency_level,
 );
-
-sub _serialize_proficiency_level { $_[0]->_serializer('proficiency_level') }
 
 
 

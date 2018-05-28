@@ -47,10 +47,7 @@ has area => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'area',
-    json_ld_serializer => \&_serialize_area,
 );
-
-sub _serialize_area { $_[0]->_serializer('area') }
 
 
 =head2 C<broadcast_affiliate_of>
@@ -74,10 +71,7 @@ has broadcast_affiliate_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcastAffiliateOf',
-    json_ld_serializer => \&_serialize_broadcast_affiliate_of,
 );
-
-sub _serialize_broadcast_affiliate_of { $_[0]->_serializer('broadcast_affiliate_of') }
 
 
 =head2 C<broadcast_display_name>
@@ -102,10 +96,7 @@ has broadcast_display_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcastDisplayName',
-    json_ld_serializer => \&_serialize_broadcast_display_name,
 );
-
-sub _serialize_broadcast_display_name { $_[0]->_serializer('broadcast_display_name') }
 
 
 =head2 C<broadcast_timezone>
@@ -134,10 +125,7 @@ has broadcast_timezone => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcastTimezone',
-    json_ld_serializer => \&_serialize_broadcast_timezone,
 );
-
-sub _serialize_broadcast_timezone { $_[0]->_serializer('broadcast_timezone') }
 
 
 =head2 C<broadcaster>
@@ -161,10 +149,7 @@ has broadcaster => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcaster',
-    json_ld_serializer => \&_serialize_broadcaster,
 );
-
-sub _serialize_broadcaster { $_[0]->_serializer('broadcaster') }
 
 
 =head2 C<parent_service>
@@ -189,10 +174,7 @@ has parent_service => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'parentService',
-    json_ld_serializer => \&_serialize_parent_service,
 );
-
-sub _serialize_parent_service { $_[0]->_serializer('parent_service') }
 
 
 =head2 C<video_format>
@@ -217,10 +199,7 @@ has video_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'videoFormat',
-    json_ld_serializer => \&_serialize_video_format,
 );
-
-sub _serialize_video_format { $_[0]->_serializer('video_format') }
 
 
 

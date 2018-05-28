@@ -46,10 +46,7 @@ has item_reviewed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemReviewed',
-    json_ld_serializer => \&_serialize_item_reviewed,
 );
-
-sub _serialize_item_reviewed { $_[0]->_serializer('item_reviewed') }
 
 
 =head2 C<review_body>
@@ -73,10 +70,7 @@ has review_body => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviewBody',
-    json_ld_serializer => \&_serialize_review_body,
 );
-
-sub _serialize_review_body { $_[0]->_serializer('review_body') }
 
 
 =head2 C<review_rating>
@@ -108,10 +102,7 @@ has review_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviewRating',
-    json_ld_serializer => \&_serialize_review_rating,
 );
-
-sub _serialize_review_rating { $_[0]->_serializer('review_rating') }
 
 
 

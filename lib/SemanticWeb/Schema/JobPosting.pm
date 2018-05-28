@@ -50,10 +50,7 @@ has base_salary => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'baseSalary',
-    json_ld_serializer => \&_serialize_base_salary,
 );
-
-sub _serialize_base_salary { $_[0]->_serializer('base_salary') }
 
 
 =head2 C<benefits>
@@ -77,10 +74,7 @@ has benefits => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'benefits',
-    json_ld_serializer => \&_serialize_benefits,
 );
-
-sub _serialize_benefits { $_[0]->_serializer('benefits') }
 
 
 =head2 C<date_posted>
@@ -104,10 +98,7 @@ has date_posted => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'datePosted',
-    json_ld_serializer => \&_serialize_date_posted,
 );
-
-sub _serialize_date_posted { $_[0]->_serializer('date_posted') }
 
 
 =head2 C<education_requirements>
@@ -131,10 +122,7 @@ has education_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'educationRequirements',
-    json_ld_serializer => \&_serialize_education_requirements,
 );
-
-sub _serialize_education_requirements { $_[0]->_serializer('education_requirements') }
 
 
 =head2 C<employment_type>
@@ -159,10 +147,7 @@ has employment_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'employmentType',
-    json_ld_serializer => \&_serialize_employment_type,
 );
-
-sub _serialize_employment_type { $_[0]->_serializer('employment_type') }
 
 
 =head2 C<experience_requirements>
@@ -186,10 +171,7 @@ has experience_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'experienceRequirements',
-    json_ld_serializer => \&_serialize_experience_requirements,
 );
-
-sub _serialize_experience_requirements { $_[0]->_serializer('experience_requirements') }
 
 
 =head2 C<hiring_organization>
@@ -213,10 +195,7 @@ has hiring_organization => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hiringOrganization',
-    json_ld_serializer => \&_serialize_hiring_organization,
 );
-
-sub _serialize_hiring_organization { $_[0]->_serializer('hiring_organization') }
 
 
 =head2 C<incentive_compensation>
@@ -240,10 +219,7 @@ has incentive_compensation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'incentiveCompensation',
-    json_ld_serializer => \&_serialize_incentive_compensation,
 );
-
-sub _serialize_incentive_compensation { $_[0]->_serializer('incentive_compensation') }
 
 
 =head2 C<incentives>
@@ -267,10 +243,7 @@ has incentives => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'incentives',
-    json_ld_serializer => \&_serialize_incentives,
 );
-
-sub _serialize_incentives { $_[0]->_serializer('incentives') }
 
 
 =head2 C<industry>
@@ -294,10 +267,7 @@ has industry => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'industry',
-    json_ld_serializer => \&_serialize_industry,
 );
-
-sub _serialize_industry { $_[0]->_serializer('industry') }
 
 
 =head2 C<job_benefits>
@@ -321,10 +291,7 @@ has job_benefits => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'jobBenefits',
-    json_ld_serializer => \&_serialize_job_benefits,
 );
-
-sub _serialize_job_benefits { $_[0]->_serializer('job_benefits') }
 
 
 =head2 C<job_location>
@@ -348,10 +315,7 @@ has job_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'jobLocation',
-    json_ld_serializer => \&_serialize_job_location,
 );
-
-sub _serialize_job_location { $_[0]->_serializer('job_location') }
 
 
 =head2 C<occupational_category>
@@ -377,10 +341,7 @@ has occupational_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'occupationalCategory',
-    json_ld_serializer => \&_serialize_occupational_category,
 );
-
-sub _serialize_occupational_category { $_[0]->_serializer('occupational_category') }
 
 
 =head2 C<qualifications>
@@ -404,10 +365,7 @@ has qualifications => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'qualifications',
-    json_ld_serializer => \&_serialize_qualifications,
 );
-
-sub _serialize_qualifications { $_[0]->_serializer('qualifications') }
 
 
 =head2 C<responsibilities>
@@ -431,10 +389,7 @@ has responsibilities => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'responsibilities',
-    json_ld_serializer => \&_serialize_responsibilities,
 );
-
-sub _serialize_responsibilities { $_[0]->_serializer('responsibilities') }
 
 
 =head2 C<salary_currency>
@@ -464,10 +419,7 @@ has salary_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'salaryCurrency',
-    json_ld_serializer => \&_serialize_salary_currency,
 );
-
-sub _serialize_salary_currency { $_[0]->_serializer('salary_currency') }
 
 
 =head2 C<skills>
@@ -491,10 +443,7 @@ has skills => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'skills',
-    json_ld_serializer => \&_serialize_skills,
 );
-
-sub _serialize_skills { $_[0]->_serializer('skills') }
 
 
 =head2 C<special_commitments>
@@ -519,10 +468,7 @@ has special_commitments => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'specialCommitments',
-    json_ld_serializer => \&_serialize_special_commitments,
 );
-
-sub _serialize_special_commitments { $_[0]->_serializer('special_commitments') }
 
 
 =head2 C<title>
@@ -546,10 +492,7 @@ has title => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'title',
-    json_ld_serializer => \&_serialize_title,
 );
-
-sub _serialize_title { $_[0]->_serializer('title') }
 
 
 =head2 C<valid_through>
@@ -574,10 +517,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 =head2 C<work_hours>
@@ -602,10 +542,7 @@ has work_hours => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workHours',
-    json_ld_serializer => \&_serialize_work_hours,
 );
-
-sub _serialize_work_hours { $_[0]->_serializer('work_hours') }
 
 
 

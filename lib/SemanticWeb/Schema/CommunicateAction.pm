@@ -47,10 +47,7 @@ has about => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'about',
-    json_ld_serializer => \&_serialize_about,
 );
-
-sub _serialize_about { $_[0]->_serializer('about') }
 
 
 =head2 C<in_language>
@@ -84,10 +81,7 @@ has in_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inLanguage',
-    json_ld_serializer => \&_serialize_in_language,
 );
-
-sub _serialize_in_language { $_[0]->_serializer('in_language') }
 
 
 =head2 C<language>
@@ -111,10 +105,7 @@ has language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'language',
-    json_ld_serializer => \&_serialize_language,
 );
-
-sub _serialize_language { $_[0]->_serializer('language') }
 
 
 =head2 C<recipient>
@@ -145,10 +136,7 @@ has recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipient',
-    json_ld_serializer => \&_serialize_recipient,
 );
-
-sub _serialize_recipient { $_[0]->_serializer('recipient') }
 
 
 

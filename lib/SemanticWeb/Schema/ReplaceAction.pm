@@ -47,10 +47,7 @@ has replacee => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'replacee',
-    json_ld_serializer => \&_serialize_replacee,
 );
-
-sub _serialize_replacee { $_[0]->_serializer('replacee') }
 
 
 =head2 C<replacer>
@@ -74,10 +71,7 @@ has replacer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'replacer',
-    json_ld_serializer => \&_serialize_replacer,
 );
-
-sub _serialize_replacer { $_[0]->_serializer('replacer') }
 
 
 

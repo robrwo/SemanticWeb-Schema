@@ -49,10 +49,7 @@ has service_operator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceOperator',
-    json_ld_serializer => \&_serialize_service_operator,
 );
-
-sub _serialize_service_operator { $_[0]->_serializer('service_operator') }
 
 
 

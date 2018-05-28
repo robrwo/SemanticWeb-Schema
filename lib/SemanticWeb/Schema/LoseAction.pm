@@ -46,10 +46,7 @@ has winner => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'winner',
-    json_ld_serializer => \&_serialize_winner,
 );
-
-sub _serialize_winner { $_[0]->_serializer('winner') }
 
 
 

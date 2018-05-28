@@ -46,10 +46,7 @@ has nutrition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'nutrition',
-    json_ld_serializer => \&_serialize_nutrition,
 );
-
-sub _serialize_nutrition { $_[0]->_serializer('nutrition') }
 
 
 =head2 C<offers>
@@ -75,10 +72,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 =head2 C<suitable_for_diet>
@@ -103,10 +97,7 @@ has suitable_for_diet => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'suitableForDiet',
-    json_ld_serializer => \&_serialize_suitable_for_diet,
 );
-
-sub _serialize_suitable_for_diet { $_[0]->_serializer('suitable_for_diet') }
 
 
 

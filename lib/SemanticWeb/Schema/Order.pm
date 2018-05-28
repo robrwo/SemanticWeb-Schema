@@ -49,10 +49,7 @@ has accepted_offer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'acceptedOffer',
-    json_ld_serializer => \&_serialize_accepted_offer,
 );
-
-sub _serialize_accepted_offer { $_[0]->_serializer('accepted_offer') }
 
 
 =head2 C<billing_address>
@@ -76,10 +73,7 @@ has billing_address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'billingAddress',
-    json_ld_serializer => \&_serialize_billing_address,
 );
-
-sub _serialize_billing_address { $_[0]->_serializer('billing_address') }
 
 
 =head2 C<broker>
@@ -108,10 +102,7 @@ has broker => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broker',
-    json_ld_serializer => \&_serialize_broker,
 );
-
-sub _serialize_broker { $_[0]->_serializer('broker') }
 
 
 =head2 C<confirmation_number>
@@ -135,10 +126,7 @@ has confirmation_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'confirmationNumber',
-    json_ld_serializer => \&_serialize_confirmation_number,
 );
-
-sub _serialize_confirmation_number { $_[0]->_serializer('confirmation_number') }
 
 
 =head2 C<customer>
@@ -164,10 +152,7 @@ has customer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'customer',
-    json_ld_serializer => \&_serialize_customer,
 );
-
-sub _serialize_customer { $_[0]->_serializer('customer') }
 
 
 =head2 C<discount>
@@ -193,10 +178,7 @@ has discount => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'discount',
-    json_ld_serializer => \&_serialize_discount,
 );
-
-sub _serialize_discount { $_[0]->_serializer('discount') }
 
 
 =head2 C<discount_code>
@@ -220,10 +202,7 @@ has discount_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'discountCode',
-    json_ld_serializer => \&_serialize_discount_code,
 );
-
-sub _serialize_discount_code { $_[0]->_serializer('discount_code') }
 
 
 =head2 C<discount_currency>
@@ -247,10 +226,7 @@ has discount_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'discountCurrency',
-    json_ld_serializer => \&_serialize_discount_currency,
 );
-
-sub _serialize_discount_currency { $_[0]->_serializer('discount_currency') }
 
 
 =head2 C<is_gift>
@@ -274,10 +250,7 @@ has is_gift => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isGift',
-    json_ld_serializer => \&_serialize_is_gift,
 );
-
-sub _serialize_is_gift { $_[0]->_serializer('is_gift') }
 
 
 =head2 C<merchant>
@@ -303,10 +276,7 @@ has merchant => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'merchant',
-    json_ld_serializer => \&_serialize_merchant,
 );
-
-sub _serialize_merchant { $_[0]->_serializer('merchant') }
 
 
 =head2 C<order_date>
@@ -330,10 +300,7 @@ has order_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderDate',
-    json_ld_serializer => \&_serialize_order_date,
 );
-
-sub _serialize_order_date { $_[0]->_serializer('order_date') }
 
 
 =head2 C<order_delivery>
@@ -357,10 +324,7 @@ has order_delivery => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderDelivery',
-    json_ld_serializer => \&_serialize_order_delivery,
 );
-
-sub _serialize_order_delivery { $_[0]->_serializer('order_delivery') }
 
 
 =head2 C<order_number>
@@ -384,10 +348,7 @@ has order_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderNumber',
-    json_ld_serializer => \&_serialize_order_number,
 );
-
-sub _serialize_order_number { $_[0]->_serializer('order_number') }
 
 
 =head2 C<order_status>
@@ -411,10 +372,7 @@ has order_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderStatus',
-    json_ld_serializer => \&_serialize_order_status,
 );
-
-sub _serialize_order_status { $_[0]->_serializer('order_status') }
 
 
 =head2 C<ordered_item>
@@ -440,10 +398,7 @@ has ordered_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderedItem',
-    json_ld_serializer => \&_serialize_ordered_item,
 );
-
-sub _serialize_ordered_item { $_[0]->_serializer('ordered_item') }
 
 
 =head2 C<part_of_invoice>
@@ -467,10 +422,7 @@ has part_of_invoice => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfInvoice',
-    json_ld_serializer => \&_serialize_part_of_invoice,
 );
-
-sub _serialize_part_of_invoice { $_[0]->_serializer('part_of_invoice') }
 
 
 =head2 C<payment_due>
@@ -494,10 +446,7 @@ has payment_due => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentDue',
-    json_ld_serializer => \&_serialize_payment_due,
 );
-
-sub _serialize_payment_due { $_[0]->_serializer('payment_due') }
 
 
 =head2 C<payment_due_date>
@@ -521,10 +470,7 @@ has payment_due_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentDueDate',
-    json_ld_serializer => \&_serialize_payment_due_date,
 );
-
-sub _serialize_payment_due_date { $_[0]->_serializer('payment_due_date') }
 
 
 =head2 C<payment_method>
@@ -548,10 +494,7 @@ has payment_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentMethod',
-    json_ld_serializer => \&_serialize_payment_method,
 );
-
-sub _serialize_payment_method { $_[0]->_serializer('payment_method') }
 
 
 =head2 C<payment_method_id>
@@ -576,10 +519,7 @@ has payment_method_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentMethodId',
-    json_ld_serializer => \&_serialize_payment_method_id,
 );
-
-sub _serialize_payment_method_id { $_[0]->_serializer('payment_method_id') }
 
 
 =head2 C<payment_url>
@@ -603,10 +543,7 @@ has payment_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentUrl',
-    json_ld_serializer => \&_serialize_payment_url,
 );
-
-sub _serialize_payment_url { $_[0]->_serializer('payment_url') }
 
 
 =head2 C<seller>
@@ -633,10 +570,7 @@ has seller => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seller',
-    json_ld_serializer => \&_serialize_seller,
 );
-
-sub _serialize_seller { $_[0]->_serializer('seller') }
 
 
 

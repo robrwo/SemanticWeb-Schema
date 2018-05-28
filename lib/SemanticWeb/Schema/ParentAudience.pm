@@ -47,10 +47,7 @@ has child_max_age => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'childMaxAge',
-    json_ld_serializer => \&_serialize_child_max_age,
 );
-
-sub _serialize_child_max_age { $_[0]->_serializer('child_max_age') }
 
 
 =head2 C<child_min_age>
@@ -74,10 +71,7 @@ has child_min_age => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'childMinAge',
-    json_ld_serializer => \&_serialize_child_min_age,
 );
-
-sub _serialize_child_min_age { $_[0]->_serializer('child_min_age') }
 
 
 

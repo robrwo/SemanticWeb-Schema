@@ -48,10 +48,7 @@ has has_digital_document_permission => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasDigitalDocumentPermission',
-    json_ld_serializer => \&_serialize_has_digital_document_permission,
 );
-
-sub _serialize_has_digital_document_permission { $_[0]->_serializer('has_digital_document_permission') }
 
 
 

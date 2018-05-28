@@ -48,10 +48,7 @@ has aircraft => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aircraft',
-    json_ld_serializer => \&_serialize_aircraft,
 );
-
-sub _serialize_aircraft { $_[0]->_serializer('aircraft') }
 
 
 =head2 C<arrival_airport>
@@ -75,10 +72,7 @@ has arrival_airport => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalAirport',
-    json_ld_serializer => \&_serialize_arrival_airport,
 );
-
-sub _serialize_arrival_airport { $_[0]->_serializer('arrival_airport') }
 
 
 =head2 C<arrival_gate>
@@ -102,10 +96,7 @@ has arrival_gate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalGate',
-    json_ld_serializer => \&_serialize_arrival_gate,
 );
-
-sub _serialize_arrival_gate { $_[0]->_serializer('arrival_gate') }
 
 
 =head2 C<arrival_terminal>
@@ -129,10 +120,7 @@ has arrival_terminal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalTerminal',
-    json_ld_serializer => \&_serialize_arrival_terminal,
 );
-
-sub _serialize_arrival_terminal { $_[0]->_serializer('arrival_terminal') }
 
 
 =head2 C<arrival_time>
@@ -156,10 +144,7 @@ has arrival_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalTime',
-    json_ld_serializer => \&_serialize_arrival_time,
 );
-
-sub _serialize_arrival_time { $_[0]->_serializer('arrival_time') }
 
 
 =head2 C<boarding_policy>
@@ -184,10 +169,7 @@ has boarding_policy => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'boardingPolicy',
-    json_ld_serializer => \&_serialize_boarding_policy,
 );
-
-sub _serialize_boarding_policy { $_[0]->_serializer('boarding_policy') }
 
 
 =head2 C<carrier>
@@ -212,10 +194,7 @@ has carrier => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'carrier',
-    json_ld_serializer => \&_serialize_carrier,
 );
-
-sub _serialize_carrier { $_[0]->_serializer('carrier') }
 
 
 =head2 C<departure_airport>
@@ -239,10 +218,7 @@ has departure_airport => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureAirport',
-    json_ld_serializer => \&_serialize_departure_airport,
 );
-
-sub _serialize_departure_airport { $_[0]->_serializer('departure_airport') }
 
 
 =head2 C<departure_gate>
@@ -266,10 +242,7 @@ has departure_gate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureGate',
-    json_ld_serializer => \&_serialize_departure_gate,
 );
-
-sub _serialize_departure_gate { $_[0]->_serializer('departure_gate') }
 
 
 =head2 C<departure_terminal>
@@ -293,10 +266,7 @@ has departure_terminal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureTerminal',
-    json_ld_serializer => \&_serialize_departure_terminal,
 );
-
-sub _serialize_departure_terminal { $_[0]->_serializer('departure_terminal') }
 
 
 =head2 C<departure_time>
@@ -320,10 +290,7 @@ has departure_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureTime',
-    json_ld_serializer => \&_serialize_departure_time,
 );
-
-sub _serialize_departure_time { $_[0]->_serializer('departure_time') }
 
 
 =head2 C<estimated_flight_duration>
@@ -349,10 +316,7 @@ has estimated_flight_duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'estimatedFlightDuration',
-    json_ld_serializer => \&_serialize_estimated_flight_duration,
 );
-
-sub _serialize_estimated_flight_duration { $_[0]->_serializer('estimated_flight_duration') }
 
 
 =head2 C<flight_distance>
@@ -378,10 +342,7 @@ has flight_distance => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'flightDistance',
-    json_ld_serializer => \&_serialize_flight_distance,
 );
-
-sub _serialize_flight_distance { $_[0]->_serializer('flight_distance') }
 
 
 =head2 C<flight_number>
@@ -407,10 +368,7 @@ has flight_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'flightNumber',
-    json_ld_serializer => \&_serialize_flight_number,
 );
-
-sub _serialize_flight_number { $_[0]->_serializer('flight_number') }
 
 
 =head2 C<meal_service>
@@ -434,10 +392,7 @@ has meal_service => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mealService',
-    json_ld_serializer => \&_serialize_meal_service,
 );
-
-sub _serialize_meal_service { $_[0]->_serializer('meal_service') }
 
 
 =head2 C<provider>
@@ -465,10 +420,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<seller>
@@ -495,10 +447,7 @@ has seller => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seller',
-    json_ld_serializer => \&_serialize_seller,
 );
-
-sub _serialize_seller { $_[0]->_serializer('seller') }
 
 
 =head2 C<web_checkin_time>
@@ -522,10 +471,7 @@ has web_checkin_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'webCheckinTime',
-    json_ld_serializer => \&_serialize_web_checkin_time,
 );
-
-sub _serialize_web_checkin_time { $_[0]->_serializer('web_checkin_time') }
 
 
 

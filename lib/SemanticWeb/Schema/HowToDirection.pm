@@ -48,10 +48,7 @@ has after_media => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'afterMedia',
-    json_ld_serializer => \&_serialize_after_media,
 );
-
-sub _serialize_after_media { $_[0]->_serializer('after_media') }
 
 
 =head2 C<before_media>
@@ -76,10 +73,7 @@ has before_media => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'beforeMedia',
-    json_ld_serializer => \&_serialize_before_media,
 );
-
-sub _serialize_before_media { $_[0]->_serializer('before_media') }
 
 
 =head2 C<during_media>
@@ -104,10 +98,7 @@ has during_media => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duringMedia',
-    json_ld_serializer => \&_serialize_during_media,
 );
-
-sub _serialize_during_media { $_[0]->_serializer('during_media') }
 
 
 =head2 C<perform_time>
@@ -137,10 +128,7 @@ has perform_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'performTime',
-    json_ld_serializer => \&_serialize_perform_time,
 );
-
-sub _serialize_perform_time { $_[0]->_serializer('perform_time') }
 
 
 =head2 C<prep_time>
@@ -170,10 +158,7 @@ has prep_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'prepTime',
-    json_ld_serializer => \&_serialize_prep_time,
 );
-
-sub _serialize_prep_time { $_[0]->_serializer('prep_time') }
 
 
 =head2 C<supply>
@@ -200,10 +185,7 @@ has supply => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supply',
-    json_ld_serializer => \&_serialize_supply,
 );
-
-sub _serialize_supply { $_[0]->_serializer('supply') }
 
 
 =head2 C<tool>
@@ -230,10 +212,7 @@ has tool => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'tool',
-    json_ld_serializer => \&_serialize_tool,
 );
-
-sub _serialize_tool { $_[0]->_serializer('tool') }
 
 
 =head2 C<total_time>
@@ -263,10 +242,7 @@ has total_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'totalTime',
-    json_ld_serializer => \&_serialize_total_time,
 );
-
-sub _serialize_total_time { $_[0]->_serializer('total_time') }
 
 
 

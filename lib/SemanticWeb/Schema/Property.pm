@@ -50,10 +50,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<domain_includes>
@@ -78,10 +75,7 @@ has domain_includes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'domainIncludes',
-    json_ld_serializer => \&_serialize_domain_includes,
 );
-
-sub _serialize_domain_includes { $_[0]->_serializer('domain_includes') }
 
 
 =head2 C<inverse_of>
@@ -109,10 +103,7 @@ has inverse_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inverseOf',
-    json_ld_serializer => \&_serialize_inverse_of,
 );
-
-sub _serialize_inverse_of { $_[0]->_serializer('inverse_of') }
 
 
 =head2 C<range_includes>
@@ -137,10 +128,7 @@ has range_includes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'rangeIncludes',
-    json_ld_serializer => \&_serialize_range_includes,
 );
-
-sub _serialize_range_includes { $_[0]->_serializer('range_includes') }
 
 
 =head2 C<superseded_by>
@@ -169,10 +157,7 @@ has superseded_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supersededBy',
-    json_ld_serializer => \&_serialize_superseded_by,
 );
-
-sub _serialize_superseded_by { $_[0]->_serializer('superseded_by') }
 
 
 

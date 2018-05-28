@@ -46,10 +46,7 @@ has broadcast_of_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcastOfEvent',
-    json_ld_serializer => \&_serialize_broadcast_of_event,
 );
-
-sub _serialize_broadcast_of_event { $_[0]->_serializer('broadcast_of_event') }
 
 
 =head2 C<is_live_broadcast>
@@ -73,10 +70,7 @@ has is_live_broadcast => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isLiveBroadcast',
-    json_ld_serializer => \&_serialize_is_live_broadcast,
 );
-
-sub _serialize_is_live_broadcast { $_[0]->_serializer('is_live_broadcast') }
 
 
 =head2 C<video_format>
@@ -101,10 +95,7 @@ has video_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'videoFormat',
-    json_ld_serializer => \&_serialize_video_format,
 );
-
-sub _serialize_video_format { $_[0]->_serializer('video_format') }
 
 
 

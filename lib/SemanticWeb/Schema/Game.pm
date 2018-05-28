@@ -49,10 +49,7 @@ has character_attribute => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'characterAttribute',
-    json_ld_serializer => \&_serialize_character_attribute,
 );
-
-sub _serialize_character_attribute { $_[0]->_serializer('character_attribute') }
 
 
 =head2 C<game_item>
@@ -77,10 +74,7 @@ has game_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gameItem',
-    json_ld_serializer => \&_serialize_game_item,
 );
-
-sub _serialize_game_item { $_[0]->_serializer('game_item') }
 
 
 =head2 C<game_location>
@@ -108,10 +102,7 @@ has game_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gameLocation',
-    json_ld_serializer => \&_serialize_game_location,
 );
-
-sub _serialize_game_location { $_[0]->_serializer('game_location') }
 
 
 =head2 C<number_of_players>
@@ -135,10 +126,7 @@ has number_of_players => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfPlayers',
-    json_ld_serializer => \&_serialize_number_of_players,
 );
-
-sub _serialize_number_of_players { $_[0]->_serializer('number_of_players') }
 
 
 =head2 C<quest>
@@ -163,10 +151,7 @@ has quest => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'quest',
-    json_ld_serializer => \&_serialize_quest,
 );
-
-sub _serialize_quest { $_[0]->_serializer('quest') }
 
 
 

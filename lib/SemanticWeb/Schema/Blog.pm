@@ -46,10 +46,7 @@ has blog_post => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'blogPost',
-    json_ld_serializer => \&_serialize_blog_post,
 );
-
-sub _serialize_blog_post { $_[0]->_serializer('blog_post') }
 
 
 =head2 C<blog_posts>
@@ -73,10 +70,7 @@ has blog_posts => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'blogPosts',
-    json_ld_serializer => \&_serialize_blog_posts,
 );
-
-sub _serialize_blog_posts { $_[0]->_serializer('blog_posts') }
 
 
 =head2 C<issn>
@@ -102,10 +96,7 @@ has issn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issn',
-    json_ld_serializer => \&_serialize_issn,
 );
-
-sub _serialize_issn { $_[0]->_serializer('issn') }
 
 
 

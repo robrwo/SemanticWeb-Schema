@@ -46,10 +46,7 @@ has book_edition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bookEdition',
-    json_ld_serializer => \&_serialize_book_edition,
 );
-
-sub _serialize_book_edition { $_[0]->_serializer('book_edition') }
 
 
 =head2 C<book_format>
@@ -73,10 +70,7 @@ has book_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bookFormat',
-    json_ld_serializer => \&_serialize_book_format,
 );
-
-sub _serialize_book_format { $_[0]->_serializer('book_format') }
 
 
 =head2 C<illustrator>
@@ -100,10 +94,7 @@ has illustrator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'illustrator',
-    json_ld_serializer => \&_serialize_illustrator,
 );
-
-sub _serialize_illustrator { $_[0]->_serializer('illustrator') }
 
 
 =head2 C<isbn>
@@ -127,10 +118,7 @@ has isbn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isbn',
-    json_ld_serializer => \&_serialize_isbn,
 );
-
-sub _serialize_isbn { $_[0]->_serializer('isbn') }
 
 
 =head2 C<number_of_pages>
@@ -154,10 +142,7 @@ has number_of_pages => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfPages',
-    json_ld_serializer => \&_serialize_number_of_pages,
 );
-
-sub _serialize_number_of_pages { $_[0]->_serializer('number_of_pages') }
 
 
 

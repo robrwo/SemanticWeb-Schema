@@ -59,10 +59,7 @@ has number_of_rooms => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfRooms',
-    json_ld_serializer => \&_serialize_number_of_rooms,
 );
-
-sub _serialize_number_of_rooms { $_[0]->_serializer('number_of_rooms') }
 
 
 

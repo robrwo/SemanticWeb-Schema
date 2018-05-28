@@ -47,10 +47,7 @@ has fees_and_commissions_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'feesAndCommissionsSpecification',
-    json_ld_serializer => \&_serialize_fees_and_commissions_specification,
 );
-
-sub _serialize_fees_and_commissions_specification { $_[0]->_serializer('fees_and_commissions_specification') }
 
 
 

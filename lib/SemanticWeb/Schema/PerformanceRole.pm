@@ -48,10 +48,7 @@ has character_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'characterName',
-    json_ld_serializer => \&_serialize_character_name,
 );
-
-sub _serialize_character_name { $_[0]->_serializer('character_name') }
 
 
 

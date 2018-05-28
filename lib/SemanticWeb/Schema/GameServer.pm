@@ -46,10 +46,7 @@ has game => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'game',
-    json_ld_serializer => \&_serialize_game,
 );
-
-sub _serialize_game { $_[0]->_serializer('game') }
 
 
 =head2 C<players_online>
@@ -73,10 +70,7 @@ has players_online => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'playersOnline',
-    json_ld_serializer => \&_serialize_players_online,
 );
-
-sub _serialize_players_online { $_[0]->_serializer('players_online') }
 
 
 =head2 C<server_status>
@@ -100,10 +94,7 @@ has server_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serverStatus',
-    json_ld_serializer => \&_serialize_server_status,
 );
-
-sub _serialize_server_status { $_[0]->_serializer('server_status') }
 
 
 

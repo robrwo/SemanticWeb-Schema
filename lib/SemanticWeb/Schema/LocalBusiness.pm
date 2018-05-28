@@ -55,10 +55,7 @@ has branch_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'branchOf',
-    json_ld_serializer => \&_serialize_branch_of,
 );
-
-sub _serialize_branch_of { $_[0]->_serializer('branch_of') }
 
 
 =head2 C<currencies_accepted>
@@ -87,10 +84,7 @@ has currencies_accepted => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'currenciesAccepted',
-    json_ld_serializer => \&_serialize_currencies_accepted,
 );
-
-sub _serialize_currencies_accepted { $_[0]->_serializer('currencies_accepted') }
 
 
 =head2 C<opening_hours>
@@ -131,10 +125,7 @@ has opening_hours => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'openingHours',
-    json_ld_serializer => \&_serialize_opening_hours,
 );
-
-sub _serialize_opening_hours { $_[0]->_serializer('opening_hours') }
 
 
 =head2 C<payment_accepted>
@@ -158,10 +149,7 @@ has payment_accepted => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentAccepted',
-    json_ld_serializer => \&_serialize_payment_accepted,
 );
-
-sub _serialize_payment_accepted { $_[0]->_serializer('payment_accepted') }
 
 
 =head2 C<price_range>
@@ -189,10 +177,7 @@ has price_range => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceRange',
-    json_ld_serializer => \&_serialize_price_range,
 );
-
-sub _serialize_price_range { $_[0]->_serializer('price_range') }
 
 
 

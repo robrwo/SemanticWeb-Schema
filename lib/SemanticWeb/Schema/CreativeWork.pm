@@ -47,10 +47,7 @@ has about => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'about',
-    json_ld_serializer => \&_serialize_about,
 );
-
-sub _serialize_about { $_[0]->_serializer('about') }
 
 
 =head2 C<access_mode>
@@ -77,10 +74,7 @@ has access_mode => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessMode',
-    json_ld_serializer => \&_serialize_access_mode,
 );
-
-sub _serialize_access_mode { $_[0]->_serializer('access_mode') }
 
 
 =head2 C<access_mode_sufficient>
@@ -106,10 +100,7 @@ has access_mode_sufficient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessModeSufficient',
-    json_ld_serializer => \&_serialize_access_mode_sufficient,
 );
-
-sub _serialize_access_mode_sufficient { $_[0]->_serializer('access_mode_sufficient') }
 
 
 =head2 C<accessibility_api>
@@ -139,10 +130,7 @@ has accessibility_api => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessibilityAPI',
-    json_ld_serializer => \&_serialize_accessibility_api,
 );
-
-sub _serialize_accessibility_api { $_[0]->_serializer('accessibility_api') }
 
 
 =head2 C<accessibility_control>
@@ -173,10 +161,7 @@ has accessibility_control => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessibilityControl',
-    json_ld_serializer => \&_serialize_accessibility_control,
 );
-
-sub _serialize_accessibility_control { $_[0]->_serializer('accessibility_control') }
 
 
 =head2 C<accessibility_feature>
@@ -207,10 +192,7 @@ has accessibility_feature => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessibilityFeature',
-    json_ld_serializer => \&_serialize_accessibility_feature,
 );
-
-sub _serialize_accessibility_feature { $_[0]->_serializer('accessibility_feature') }
 
 
 =head2 C<accessibility_hazard>
@@ -241,10 +223,7 @@ has accessibility_hazard => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessibilityHazard',
-    json_ld_serializer => \&_serialize_accessibility_hazard,
 );
-
-sub _serialize_accessibility_hazard { $_[0]->_serializer('accessibility_hazard') }
 
 
 =head2 C<accessibility_summary>
@@ -272,10 +251,7 @@ has accessibility_summary => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accessibilitySummary',
-    json_ld_serializer => \&_serialize_accessibility_summary,
 );
-
-sub _serialize_accessibility_summary { $_[0]->_serializer('accessibility_summary') }
 
 
 =head2 C<accountable_person>
@@ -299,10 +275,7 @@ has accountable_person => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accountablePerson',
-    json_ld_serializer => \&_serialize_accountable_person,
 );
-
-sub _serialize_accountable_person { $_[0]->_serializer('accountable_person') }
 
 
 =head2 C<aggregate_rating>
@@ -327,10 +300,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<alternative_headline>
@@ -354,10 +324,7 @@ has alternative_headline => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'alternativeHeadline',
-    json_ld_serializer => \&_serialize_alternative_headline,
 );
-
-sub _serialize_alternative_headline { $_[0]->_serializer('alternative_headline') }
 
 
 =head2 C<associated_media>
@@ -382,10 +349,7 @@ has associated_media => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'associatedMedia',
-    json_ld_serializer => \&_serialize_associated_media,
 );
-
-sub _serialize_associated_media { $_[0]->_serializer('associated_media') }
 
 
 =head2 C<audience>
@@ -409,10 +373,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<audio>
@@ -436,10 +397,7 @@ has audio => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audio',
-    json_ld_serializer => \&_serialize_audio,
 );
-
-sub _serialize_audio { $_[0]->_serializer('audio') }
 
 
 =head2 C<author>
@@ -467,10 +425,7 @@ has author => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'author',
-    json_ld_serializer => \&_serialize_author,
 );
-
-sub _serialize_author { $_[0]->_serializer('author') }
 
 
 =head2 C<award>
@@ -494,10 +449,7 @@ has award => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'award',
-    json_ld_serializer => \&_serialize_award,
 );
-
-sub _serialize_award { $_[0]->_serializer('award') }
 
 
 =head2 C<awards>
@@ -521,10 +473,7 @@ has awards => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'awards',
-    json_ld_serializer => \&_serialize_awards,
 );
-
-sub _serialize_awards { $_[0]->_serializer('awards') }
 
 
 =head2 C<character>
@@ -548,10 +497,7 @@ has character => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'character',
-    json_ld_serializer => \&_serialize_character,
 );
-
-sub _serialize_character { $_[0]->_serializer('character') }
 
 
 =head2 C<citation>
@@ -578,10 +524,7 @@ has citation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'citation',
-    json_ld_serializer => \&_serialize_citation,
 );
-
-sub _serialize_citation { $_[0]->_serializer('citation') }
 
 
 =head2 C<comment>
@@ -605,10 +548,7 @@ has comment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'comment',
-    json_ld_serializer => \&_serialize_comment,
 );
-
-sub _serialize_comment { $_[0]->_serializer('comment') }
 
 
 =head2 C<comment_count>
@@ -634,10 +574,7 @@ has comment_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'commentCount',
-    json_ld_serializer => \&_serialize_comment_count,
 );
-
-sub _serialize_comment_count { $_[0]->_serializer('comment_count') }
 
 
 =head2 C<content_location>
@@ -662,10 +599,7 @@ has content_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentLocation',
-    json_ld_serializer => \&_serialize_content_location,
 );
-
-sub _serialize_content_location { $_[0]->_serializer('content_location') }
 
 
 =head2 C<content_rating>
@@ -689,10 +623,7 @@ has content_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentRating',
-    json_ld_serializer => \&_serialize_content_rating,
 );
-
-sub _serialize_content_rating { $_[0]->_serializer('content_rating') }
 
 
 =head2 C<contributor>
@@ -718,10 +649,7 @@ has contributor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contributor',
-    json_ld_serializer => \&_serialize_contributor,
 );
-
-sub _serialize_contributor { $_[0]->_serializer('contributor') }
 
 
 =head2 C<copyright_holder>
@@ -747,10 +675,7 @@ has copyright_holder => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'copyrightHolder',
-    json_ld_serializer => \&_serialize_copyright_holder,
 );
-
-sub _serialize_copyright_holder { $_[0]->_serializer('copyright_holder') }
 
 
 =head2 C<copyright_year>
@@ -775,10 +700,7 @@ has copyright_year => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'copyrightYear',
-    json_ld_serializer => \&_serialize_copyright_year,
 );
-
-sub _serialize_copyright_year { $_[0]->_serializer('copyright_year') }
 
 
 =head2 C<creator>
@@ -805,10 +727,7 @@ has creator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'creator',
-    json_ld_serializer => \&_serialize_creator,
 );
-
-sub _serialize_creator { $_[0]->_serializer('creator') }
 
 
 =head2 C<date_created>
@@ -833,10 +752,7 @@ has date_created => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateCreated',
-    json_ld_serializer => \&_serialize_date_created,
 );
-
-sub _serialize_date_created { $_[0]->_serializer('date_created') }
 
 
 =head2 C<date_modified>
@@ -861,10 +777,7 @@ has date_modified => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateModified',
-    json_ld_serializer => \&_serialize_date_modified,
 );
-
-sub _serialize_date_modified { $_[0]->_serializer('date_modified') }
 
 
 =head2 C<date_published>
@@ -888,10 +801,7 @@ has date_published => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'datePublished',
-    json_ld_serializer => \&_serialize_date_published,
 );
-
-sub _serialize_date_published { $_[0]->_serializer('date_published') }
 
 
 =head2 C<discussion_url>
@@ -915,10 +825,7 @@ has discussion_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'discussionUrl',
-    json_ld_serializer => \&_serialize_discussion_url,
 );
-
-sub _serialize_discussion_url { $_[0]->_serializer('discussion_url') }
 
 
 =head2 C<editor>
@@ -942,10 +849,7 @@ has editor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'editor',
-    json_ld_serializer => \&_serialize_editor,
 );
-
-sub _serialize_editor { $_[0]->_serializer('editor') }
 
 
 =head2 C<educational_alignment>
@@ -969,10 +873,7 @@ has educational_alignment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'educationalAlignment',
-    json_ld_serializer => \&_serialize_educational_alignment,
 );
-
-sub _serialize_educational_alignment { $_[0]->_serializer('educational_alignment') }
 
 
 =head2 C<educational_use>
@@ -997,10 +898,7 @@ has educational_use => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'educationalUse',
-    json_ld_serializer => \&_serialize_educational_use,
 );
-
-sub _serialize_educational_use { $_[0]->_serializer('educational_use') }
 
 
 =head2 C<encoding>
@@ -1025,10 +923,7 @@ has encoding => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'encoding',
-    json_ld_serializer => \&_serialize_encoding,
 );
-
-sub _serialize_encoding { $_[0]->_serializer('encoding') }
 
 
 =head2 C<encodings>
@@ -1052,10 +947,7 @@ has encodings => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'encodings',
-    json_ld_serializer => \&_serialize_encodings,
 );
-
-sub _serialize_encodings { $_[0]->_serializer('encodings') }
 
 
 =head2 C<example_of_work>
@@ -1080,10 +972,7 @@ has example_of_work => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'exampleOfWork',
-    json_ld_serializer => \&_serialize_example_of_work,
 );
-
-sub _serialize_example_of_work { $_[0]->_serializer('example_of_work') }
 
 
 =head2 C<expires>
@@ -1118,10 +1007,7 @@ has expires => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'expires',
-    json_ld_serializer => \&_serialize_expires,
 );
-
-sub _serialize_expires { $_[0]->_serializer('expires') }
 
 
 =head2 C<file_format>
@@ -1156,10 +1042,7 @@ has file_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fileFormat',
-    json_ld_serializer => \&_serialize_file_format,
 );
-
-sub _serialize_file_format { $_[0]->_serializer('file_format') }
 
 
 =head2 C<funder>
@@ -1186,10 +1069,7 @@ has funder => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'funder',
-    json_ld_serializer => \&_serialize_funder,
 );
-
-sub _serialize_funder { $_[0]->_serializer('funder') }
 
 
 =head2 C<genre>
@@ -1213,10 +1093,7 @@ has genre => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'genre',
-    json_ld_serializer => \&_serialize_genre,
 );
-
-sub _serialize_genre { $_[0]->_serializer('genre') }
 
 
 =head2 C<has_part>
@@ -1241,10 +1118,7 @@ has has_part => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasPart',
-    json_ld_serializer => \&_serialize_has_part,
 );
-
-sub _serialize_has_part { $_[0]->_serializer('has_part') }
 
 
 =head2 C<headline>
@@ -1268,10 +1142,7 @@ has headline => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'headline',
-    json_ld_serializer => \&_serialize_headline,
 );
-
-sub _serialize_headline { $_[0]->_serializer('headline') }
 
 
 =head2 C<in_language>
@@ -1305,10 +1176,7 @@ has in_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inLanguage',
-    json_ld_serializer => \&_serialize_in_language,
 );
-
-sub _serialize_in_language { $_[0]->_serializer('in_language') }
 
 
 =head2 C<interaction_statistic>
@@ -1334,10 +1202,7 @@ has interaction_statistic => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'interactionStatistic',
-    json_ld_serializer => \&_serialize_interaction_statistic,
 );
-
-sub _serialize_interaction_statistic { $_[0]->_serializer('interaction_statistic') }
 
 
 =head2 C<interactivity_type>
@@ -1362,10 +1227,7 @@ has interactivity_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'interactivityType',
-    json_ld_serializer => \&_serialize_interactivity_type,
 );
-
-sub _serialize_interactivity_type { $_[0]->_serializer('interactivity_type') }
 
 
 =head2 C<is_accessible_for_free>
@@ -1389,10 +1251,7 @@ has is_accessible_for_free => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isAccessibleForFree',
-    json_ld_serializer => \&_serialize_is_accessible_for_free,
 );
-
-sub _serialize_is_accessible_for_free { $_[0]->_serializer('is_accessible_for_free') }
 
 
 =head2 C<is_based_on>
@@ -1422,10 +1281,7 @@ has is_based_on => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isBasedOn',
-    json_ld_serializer => \&_serialize_is_based_on,
 );
-
-sub _serialize_is_based_on { $_[0]->_serializer('is_based_on') }
 
 
 =head2 C<is_based_on_url>
@@ -1455,10 +1311,7 @@ has is_based_on_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isBasedOnUrl',
-    json_ld_serializer => \&_serialize_is_based_on_url,
 );
-
-sub _serialize_is_based_on_url { $_[0]->_serializer('is_based_on_url') }
 
 
 =head2 C<is_family_friendly>
@@ -1482,10 +1335,7 @@ has is_family_friendly => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isFamilyFriendly',
-    json_ld_serializer => \&_serialize_is_family_friendly,
 );
-
-sub _serialize_is_family_friendly { $_[0]->_serializer('is_family_friendly') }
 
 
 =head2 C<is_part_of>
@@ -1509,10 +1359,7 @@ has is_part_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isPartOf',
-    json_ld_serializer => \&_serialize_is_part_of,
 );
-
-sub _serialize_is_part_of { $_[0]->_serializer('is_part_of') }
 
 
 =head2 C<keywords>
@@ -1537,10 +1384,7 @@ has keywords => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'keywords',
-    json_ld_serializer => \&_serialize_keywords,
 );
-
-sub _serialize_keywords { $_[0]->_serializer('keywords') }
 
 
 =head2 C<learning_resource_type>
@@ -1565,10 +1409,7 @@ has learning_resource_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'learningResourceType',
-    json_ld_serializer => \&_serialize_learning_resource_type,
 );
-
-sub _serialize_learning_resource_type { $_[0]->_serializer('learning_resource_type') }
 
 
 =head2 C<license>
@@ -1595,10 +1436,7 @@ has license => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'license',
-    json_ld_serializer => \&_serialize_license,
 );
-
-sub _serialize_license { $_[0]->_serializer('license') }
 
 
 =head2 C<location_created>
@@ -1623,10 +1461,7 @@ has location_created => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'locationCreated',
-    json_ld_serializer => \&_serialize_location_created,
 );
-
-sub _serialize_location_created { $_[0]->_serializer('location_created') }
 
 
 =head2 C<main_entity>
@@ -1650,10 +1485,7 @@ has main_entity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mainEntity',
-    json_ld_serializer => \&_serialize_main_entity,
 );
-
-sub _serialize_main_entity { $_[0]->_serializer('main_entity') }
 
 
 =head2 C<material>
@@ -1679,10 +1511,7 @@ has material => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'material',
-    json_ld_serializer => \&_serialize_material,
 );
-
-sub _serialize_material { $_[0]->_serializer('material') }
 
 
 =head2 C<mentions>
@@ -1707,10 +1536,7 @@ has mentions => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mentions',
-    json_ld_serializer => \&_serialize_mentions,
 );
-
-sub _serialize_mentions { $_[0]->_serializer('mentions') }
 
 
 =head2 C<offers>
@@ -1736,10 +1562,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 =head2 C<position>
@@ -1765,10 +1588,7 @@ has position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'position',
-    json_ld_serializer => \&_serialize_position,
 );
-
-sub _serialize_position { $_[0]->_serializer('position') }
 
 
 =head2 C<producer>
@@ -1795,10 +1615,7 @@ has producer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'producer',
-    json_ld_serializer => \&_serialize_producer,
 );
-
-sub _serialize_producer { $_[0]->_serializer('producer') }
 
 
 =head2 C<provider>
@@ -1826,10 +1643,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<publication>
@@ -1853,10 +1667,7 @@ has publication => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publication',
-    json_ld_serializer => \&_serialize_publication,
 );
-
-sub _serialize_publication { $_[0]->_serializer('publication') }
 
 
 =head2 C<publisher>
@@ -1882,10 +1693,7 @@ has publisher => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publisher',
-    json_ld_serializer => \&_serialize_publisher,
 );
-
-sub _serialize_publisher { $_[0]->_serializer('publisher') }
 
 
 =head2 C<publishing_principles>
@@ -1930,10 +1738,7 @@ has publishing_principles => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publishingPrinciples',
-    json_ld_serializer => \&_serialize_publishing_principles,
 );
-
-sub _serialize_publishing_principles { $_[0]->_serializer('publishing_principles') }
 
 
 =head2 C<recorded_at>
@@ -1958,10 +1763,7 @@ has recorded_at => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recordedAt',
-    json_ld_serializer => \&_serialize_recorded_at,
 );
-
-sub _serialize_recorded_at { $_[0]->_serializer('recorded_at') }
 
 
 =head2 C<released_event>
@@ -1985,10 +1787,7 @@ has released_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'releasedEvent',
-    json_ld_serializer => \&_serialize_released_event,
 );
-
-sub _serialize_released_event { $_[0]->_serializer('released_event') }
 
 
 =head2 C<review>
@@ -2012,10 +1811,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<reviews>
@@ -2039,10 +1835,7 @@ has reviews => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviews',
-    json_ld_serializer => \&_serialize_reviews,
 );
-
-sub _serialize_reviews { $_[0]->_serializer('reviews') }
 
 
 =head2 C<schema_version>
@@ -2069,10 +1862,7 @@ has schema_version => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'schemaVersion',
-    json_ld_serializer => \&_serialize_schema_version,
 );
-
-sub _serialize_schema_version { $_[0]->_serializer('schema_version') }
 
 
 =head2 C<source_organization>
@@ -2096,10 +1886,7 @@ has source_organization => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sourceOrganization',
-    json_ld_serializer => \&_serialize_source_organization,
 );
-
-sub _serialize_source_organization { $_[0]->_serializer('source_organization') }
 
 
 =head2 C<spatial_coverage>
@@ -2128,10 +1915,7 @@ has spatial_coverage => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'spatialCoverage',
-    json_ld_serializer => \&_serialize_spatial_coverage,
 );
-
-sub _serialize_spatial_coverage { $_[0]->_serializer('spatial_coverage') }
 
 
 =head2 C<sponsor>
@@ -2159,10 +1943,7 @@ has sponsor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sponsor',
-    json_ld_serializer => \&_serialize_sponsor,
 );
-
-sub _serialize_sponsor { $_[0]->_serializer('sponsor') }
 
 
 =head2 C<temporal_coverage>
@@ -2201,10 +1982,7 @@ has temporal_coverage => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'temporalCoverage',
-    json_ld_serializer => \&_serialize_temporal_coverage,
 );
-
-sub _serialize_temporal_coverage { $_[0]->_serializer('temporal_coverage') }
 
 
 =head2 C<text>
@@ -2228,10 +2006,7 @@ has text => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'text',
-    json_ld_serializer => \&_serialize_text,
 );
-
-sub _serialize_text { $_[0]->_serializer('text') }
 
 
 =head2 C<thumbnail_url>
@@ -2255,10 +2030,7 @@ has thumbnail_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'thumbnailUrl',
-    json_ld_serializer => \&_serialize_thumbnail_url,
 );
-
-sub _serialize_thumbnail_url { $_[0]->_serializer('thumbnail_url') }
 
 
 =head2 C<time_required>
@@ -2283,10 +2055,7 @@ has time_required => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'timeRequired',
-    json_ld_serializer => \&_serialize_time_required,
 );
-
-sub _serialize_time_required { $_[0]->_serializer('time_required') }
 
 
 =head2 C<translator>
@@ -2314,10 +2083,7 @@ has translator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'translator',
-    json_ld_serializer => \&_serialize_translator,
 );
-
-sub _serialize_translator { $_[0]->_serializer('translator') }
 
 
 =head2 C<typical_age_range>
@@ -2341,10 +2107,7 @@ has typical_age_range => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'typicalAgeRange',
-    json_ld_serializer => \&_serialize_typical_age_range,
 );
-
-sub _serialize_typical_age_range { $_[0]->_serializer('typical_age_range') }
 
 
 =head2 C<version>
@@ -2370,10 +2133,7 @@ has version => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'version',
-    json_ld_serializer => \&_serialize_version,
 );
-
-sub _serialize_version { $_[0]->_serializer('version') }
 
 
 =head2 C<video>
@@ -2397,10 +2157,7 @@ has video => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'video',
-    json_ld_serializer => \&_serialize_video,
 );
-
-sub _serialize_video { $_[0]->_serializer('video') }
 
 
 =head2 C<work_example>
@@ -2425,10 +2182,7 @@ has work_example => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workExample',
-    json_ld_serializer => \&_serialize_work_example,
 );
-
-sub _serialize_work_example { $_[0]->_serializer('work_example') }
 
 
 

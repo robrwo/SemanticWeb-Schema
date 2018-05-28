@@ -48,10 +48,7 @@ has shared_content => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sharedContent',
-    json_ld_serializer => \&_serialize_shared_content,
 );
-
-sub _serialize_shared_content { $_[0]->_serializer('shared_content') }
 
 
 

@@ -60,10 +60,7 @@ has dateline => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateline',
-    json_ld_serializer => \&_serialize_dateline,
 );
-
-sub _serialize_dateline { $_[0]->_serializer('dateline') }
 
 
 =head2 C<print_column>
@@ -88,10 +85,7 @@ has print_column => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'printColumn',
-    json_ld_serializer => \&_serialize_print_column,
 );
-
-sub _serialize_print_column { $_[0]->_serializer('print_column') }
 
 
 =head2 C<print_edition>
@@ -115,10 +109,7 @@ has print_edition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'printEdition',
-    json_ld_serializer => \&_serialize_print_edition,
 );
-
-sub _serialize_print_edition { $_[0]->_serializer('print_edition') }
 
 
 =head2 C<print_page>
@@ -144,10 +135,7 @@ has print_page => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'printPage',
-    json_ld_serializer => \&_serialize_print_page,
 );
-
-sub _serialize_print_page { $_[0]->_serializer('print_page') }
 
 
 =head2 C<print_section>
@@ -172,10 +160,7 @@ has print_section => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'printSection',
-    json_ld_serializer => \&_serialize_print_section,
 );
-
-sub _serialize_print_section { $_[0]->_serializer('print_section') }
 
 
 

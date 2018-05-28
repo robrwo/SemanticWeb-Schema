@@ -60,10 +60,7 @@ has currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'currency',
-    json_ld_serializer => \&_serialize_currency,
 );
-
-sub _serialize_currency { $_[0]->_serializer('currency') }
 
 
 =head2 C<max_value>
@@ -87,10 +84,7 @@ has max_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maxValue',
-    json_ld_serializer => \&_serialize_max_value,
 );
-
-sub _serialize_max_value { $_[0]->_serializer('max_value') }
 
 
 =head2 C<min_value>
@@ -114,10 +108,7 @@ has min_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'minValue',
-    json_ld_serializer => \&_serialize_min_value,
 );
-
-sub _serialize_min_value { $_[0]->_serializer('min_value') }
 
 
 =head2 C<valid_from>
@@ -141,10 +132,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_through>
@@ -169,10 +157,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 =head2 C<value>
@@ -213,10 +198,7 @@ has value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'value',
-    json_ld_serializer => \&_serialize_value,
 );
-
-sub _serialize_value { $_[0]->_serializer('value') }
 
 
 

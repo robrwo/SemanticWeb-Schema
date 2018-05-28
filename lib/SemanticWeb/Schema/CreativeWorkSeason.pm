@@ -48,10 +48,7 @@ has actor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actor',
-    json_ld_serializer => \&_serialize_actor,
 );
-
-sub _serialize_actor { $_[0]->_serializer('actor') }
 
 
 =head2 C<director>
@@ -77,10 +74,7 @@ has director => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'director',
-    json_ld_serializer => \&_serialize_director,
 );
-
-sub _serialize_director { $_[0]->_serializer('director') }
 
 
 =head2 C<end_date>
@@ -109,10 +103,7 @@ has end_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endDate',
-    json_ld_serializer => \&_serialize_end_date,
 );
-
-sub _serialize_end_date { $_[0]->_serializer('end_date') }
 
 
 =head2 C<episode>
@@ -136,10 +127,7 @@ has episode => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'episode',
-    json_ld_serializer => \&_serialize_episode,
 );
-
-sub _serialize_episode { $_[0]->_serializer('episode') }
 
 
 =head2 C<episodes>
@@ -163,10 +151,7 @@ has episodes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'episodes',
-    json_ld_serializer => \&_serialize_episodes,
 );
-
-sub _serialize_episodes { $_[0]->_serializer('episodes') }
 
 
 =head2 C<number_of_episodes>
@@ -190,10 +175,7 @@ has number_of_episodes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfEpisodes',
-    json_ld_serializer => \&_serialize_number_of_episodes,
 );
-
-sub _serialize_number_of_episodes { $_[0]->_serializer('number_of_episodes') }
 
 
 =head2 C<part_of_series>
@@ -217,10 +199,7 @@ has part_of_series => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfSeries',
-    json_ld_serializer => \&_serialize_part_of_series,
 );
-
-sub _serialize_part_of_series { $_[0]->_serializer('part_of_series') }
 
 
 =head2 C<production_company>
@@ -245,10 +224,7 @@ has production_company => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionCompany',
-    json_ld_serializer => \&_serialize_production_company,
 );
-
-sub _serialize_production_company { $_[0]->_serializer('production_company') }
 
 
 =head2 C<season_number>
@@ -274,10 +250,7 @@ has season_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seasonNumber',
-    json_ld_serializer => \&_serialize_season_number,
 );
-
-sub _serialize_season_number { $_[0]->_serializer('season_number') }
 
 
 =head2 C<start_date>
@@ -306,10 +279,7 @@ has start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startDate',
-    json_ld_serializer => \&_serialize_start_date,
 );
-
-sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 =head2 C<trailer>
@@ -333,10 +303,7 @@ has trailer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trailer',
-    json_ld_serializer => \&_serialize_trailer,
 );
-
-sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 

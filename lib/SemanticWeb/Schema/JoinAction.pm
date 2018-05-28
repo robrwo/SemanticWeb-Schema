@@ -60,10 +60,7 @@ has event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'event',
-    json_ld_serializer => \&_serialize_event,
 );
-
-sub _serialize_event { $_[0]->_serializer('event') }
 
 
 

@@ -48,10 +48,7 @@ has code_repository => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'codeRepository',
-    json_ld_serializer => \&_serialize_code_repository,
 );
-
-sub _serialize_code_repository { $_[0]->_serializer('code_repository') }
 
 
 =head2 C<code_sample_type>
@@ -76,10 +73,7 @@ has code_sample_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'codeSampleType',
-    json_ld_serializer => \&_serialize_code_sample_type,
 );
-
-sub _serialize_code_sample_type { $_[0]->_serializer('code_sample_type') }
 
 
 =head2 C<programming_language>
@@ -105,10 +99,7 @@ has programming_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'programmingLanguage',
-    json_ld_serializer => \&_serialize_programming_language,
 );
-
-sub _serialize_programming_language { $_[0]->_serializer('programming_language') }
 
 
 =head2 C<runtime>
@@ -133,10 +124,7 @@ has runtime => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'runtime',
-    json_ld_serializer => \&_serialize_runtime,
 );
-
-sub _serialize_runtime { $_[0]->_serializer('runtime') }
 
 
 =head2 C<runtime_platform>
@@ -161,10 +149,7 @@ has runtime_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'runtimePlatform',
-    json_ld_serializer => \&_serialize_runtime_platform,
 );
-
-sub _serialize_runtime_platform { $_[0]->_serializer('runtime_platform') }
 
 
 =head2 C<sample_type>
@@ -189,10 +174,7 @@ has sample_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sampleType',
-    json_ld_serializer => \&_serialize_sample_type,
 );
-
-sub _serialize_sample_type { $_[0]->_serializer('sample_type') }
 
 
 =head2 C<target_product>
@@ -217,10 +199,7 @@ has target_product => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetProduct',
-    json_ld_serializer => \&_serialize_target_product,
 );
-
-sub _serialize_target_product { $_[0]->_serializer('target_product') }
 
 
 

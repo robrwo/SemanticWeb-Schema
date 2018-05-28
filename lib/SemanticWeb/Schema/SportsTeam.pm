@@ -47,10 +47,7 @@ has athlete => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'athlete',
-    json_ld_serializer => \&_serialize_athlete,
 );
-
-sub _serialize_athlete { $_[0]->_serializer('athlete') }
 
 
 =head2 C<coach>
@@ -74,10 +71,7 @@ has coach => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'coach',
-    json_ld_serializer => \&_serialize_coach,
 );
-
-sub _serialize_coach { $_[0]->_serializer('coach') }
 
 
 

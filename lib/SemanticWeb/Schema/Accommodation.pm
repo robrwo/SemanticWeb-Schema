@@ -59,10 +59,7 @@ has amenity_feature => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amenityFeature',
-    json_ld_serializer => \&_serialize_amenity_feature,
 );
-
-sub _serialize_amenity_feature { $_[0]->_serializer('amenity_feature') }
 
 
 =head2 C<floor_size>
@@ -88,10 +85,7 @@ has floor_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'floorSize',
-    json_ld_serializer => \&_serialize_floor_size,
 );
-
-sub _serialize_floor_size { $_[0]->_serializer('floor_size') }
 
 
 =head2 C<number_of_rooms>
@@ -120,10 +114,7 @@ has number_of_rooms => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfRooms',
-    json_ld_serializer => \&_serialize_number_of_rooms,
 );
-
-sub _serialize_number_of_rooms { $_[0]->_serializer('number_of_rooms') }
 
 
 =head2 C<permitted_usage>
@@ -147,10 +138,7 @@ has permitted_usage => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'permittedUsage',
-    json_ld_serializer => \&_serialize_permitted_usage,
 );
-
-sub _serialize_permitted_usage { $_[0]->_serializer('permitted_usage') }
 
 
 =head2 C<pets_allowed>
@@ -177,10 +165,7 @@ has pets_allowed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'petsAllowed',
-    json_ld_serializer => \&_serialize_pets_allowed,
 );
-
-sub _serialize_pets_allowed { $_[0]->_serializer('pets_allowed') }
 
 
 

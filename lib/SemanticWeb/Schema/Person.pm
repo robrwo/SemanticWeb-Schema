@@ -46,10 +46,7 @@ has additional_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalName',
-    json_ld_serializer => \&_serialize_additional_name,
 );
-
-sub _serialize_additional_name { $_[0]->_serializer('additional_name') }
 
 
 =head2 C<address>
@@ -75,10 +72,7 @@ has address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'address',
-    json_ld_serializer => \&_serialize_address,
 );
-
-sub _serialize_address { $_[0]->_serializer('address') }
 
 
 =head2 C<affiliation>
@@ -103,10 +97,7 @@ has affiliation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'affiliation',
-    json_ld_serializer => \&_serialize_affiliation,
 );
-
-sub _serialize_affiliation { $_[0]->_serializer('affiliation') }
 
 
 =head2 C<alumni_of>
@@ -132,10 +123,7 @@ has alumni_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'alumniOf',
-    json_ld_serializer => \&_serialize_alumni_of,
 );
-
-sub _serialize_alumni_of { $_[0]->_serializer('alumni_of') }
 
 
 =head2 C<award>
@@ -159,10 +147,7 @@ has award => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'award',
-    json_ld_serializer => \&_serialize_award,
 );
-
-sub _serialize_award { $_[0]->_serializer('award') }
 
 
 =head2 C<awards>
@@ -186,10 +171,7 @@ has awards => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'awards',
-    json_ld_serializer => \&_serialize_awards,
 );
-
-sub _serialize_awards { $_[0]->_serializer('awards') }
 
 
 =head2 C<birth_date>
@@ -213,10 +195,7 @@ has birth_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'birthDate',
-    json_ld_serializer => \&_serialize_birth_date,
 );
-
-sub _serialize_birth_date { $_[0]->_serializer('birth_date') }
 
 
 =head2 C<birth_place>
@@ -240,10 +219,7 @@ has birth_place => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'birthPlace',
-    json_ld_serializer => \&_serialize_birth_place,
 );
-
-sub _serialize_birth_place { $_[0]->_serializer('birth_place') }
 
 
 =head2 C<brand>
@@ -270,10 +246,7 @@ has brand => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'brand',
-    json_ld_serializer => \&_serialize_brand,
 );
-
-sub _serialize_brand { $_[0]->_serializer('brand') }
 
 
 =head2 C<children>
@@ -297,10 +270,7 @@ has children => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'children',
-    json_ld_serializer => \&_serialize_children,
 );
-
-sub _serialize_children { $_[0]->_serializer('children') }
 
 
 =head2 C<colleague>
@@ -326,10 +296,7 @@ has colleague => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'colleague',
-    json_ld_serializer => \&_serialize_colleague,
 );
-
-sub _serialize_colleague { $_[0]->_serializer('colleague') }
 
 
 =head2 C<colleagues>
@@ -353,10 +320,7 @@ has colleagues => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'colleagues',
-    json_ld_serializer => \&_serialize_colleagues,
 );
-
-sub _serialize_colleagues { $_[0]->_serializer('colleagues') }
 
 
 =head2 C<contact_point>
@@ -380,10 +344,7 @@ has contact_point => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contactPoint',
-    json_ld_serializer => \&_serialize_contact_point,
 );
-
-sub _serialize_contact_point { $_[0]->_serializer('contact_point') }
 
 
 =head2 C<contact_points>
@@ -407,10 +368,7 @@ has contact_points => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contactPoints',
-    json_ld_serializer => \&_serialize_contact_points,
 );
-
-sub _serialize_contact_points { $_[0]->_serializer('contact_points') }
 
 
 =head2 C<death_date>
@@ -434,10 +392,7 @@ has death_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deathDate',
-    json_ld_serializer => \&_serialize_death_date,
 );
-
-sub _serialize_death_date { $_[0]->_serializer('death_date') }
 
 
 =head2 C<death_place>
@@ -461,10 +416,7 @@ has death_place => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deathPlace',
-    json_ld_serializer => \&_serialize_death_place,
 );
-
-sub _serialize_death_place { $_[0]->_serializer('death_place') }
 
 
 =head2 C<duns>
@@ -489,10 +441,7 @@ has duns => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duns',
-    json_ld_serializer => \&_serialize_duns,
 );
-
-sub _serialize_duns { $_[0]->_serializer('duns') }
 
 
 =head2 C<email>
@@ -516,10 +465,7 @@ has email => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'email',
-    json_ld_serializer => \&_serialize_email,
 );
-
-sub _serialize_email { $_[0]->_serializer('email') }
 
 
 =head2 C<family_name>
@@ -544,10 +490,7 @@ has family_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'familyName',
-    json_ld_serializer => \&_serialize_family_name,
 );
-
-sub _serialize_family_name { $_[0]->_serializer('family_name') }
 
 
 =head2 C<fax_number>
@@ -571,10 +514,7 @@ has fax_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'faxNumber',
-    json_ld_serializer => \&_serialize_fax_number,
 );
-
-sub _serialize_fax_number { $_[0]->_serializer('fax_number') }
 
 
 =head2 C<follows>
@@ -598,10 +538,7 @@ has follows => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'follows',
-    json_ld_serializer => \&_serialize_follows,
 );
-
-sub _serialize_follows { $_[0]->_serializer('follows') }
 
 
 =head2 C<funder>
@@ -628,10 +565,7 @@ has funder => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'funder',
-    json_ld_serializer => \&_serialize_funder,
 );
-
-sub _serialize_funder { $_[0]->_serializer('funder') }
 
 
 =head2 C<gender>
@@ -659,10 +593,7 @@ has gender => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gender',
-    json_ld_serializer => \&_serialize_gender,
 );
-
-sub _serialize_gender { $_[0]->_serializer('gender') }
 
 
 =head2 C<given_name>
@@ -687,10 +618,7 @@ has given_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'givenName',
-    json_ld_serializer => \&_serialize_given_name,
 );
-
-sub _serialize_given_name { $_[0]->_serializer('given_name') }
 
 
 =head2 C<global_location_number>
@@ -721,10 +649,7 @@ has global_location_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'globalLocationNumber',
-    json_ld_serializer => \&_serialize_global_location_number,
 );
-
-sub _serialize_global_location_number { $_[0]->_serializer('global_location_number') }
 
 
 =head2 C<has_offer_catalog>
@@ -749,10 +674,7 @@ has has_offer_catalog => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasOfferCatalog',
-    json_ld_serializer => \&_serialize_has_offer_catalog,
 );
-
-sub _serialize_has_offer_catalog { $_[0]->_serializer('has_offer_catalog') }
 
 
 =head2 C<has_pos>
@@ -776,10 +698,7 @@ has has_pos => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasPOS',
-    json_ld_serializer => \&_serialize_has_pos,
 );
-
-sub _serialize_has_pos { $_[0]->_serializer('has_pos') }
 
 
 =head2 C<height>
@@ -805,10 +724,7 @@ has height => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'height',
-    json_ld_serializer => \&_serialize_height,
 );
-
-sub _serialize_height { $_[0]->_serializer('height') }
 
 
 =head2 C<home_location>
@@ -834,10 +750,7 @@ has home_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'homeLocation',
-    json_ld_serializer => \&_serialize_home_location,
 );
-
-sub _serialize_home_location { $_[0]->_serializer('home_location') }
 
 
 =head2 C<honorific_prefix>
@@ -861,10 +774,7 @@ has honorific_prefix => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'honorificPrefix',
-    json_ld_serializer => \&_serialize_honorific_prefix,
 );
-
-sub _serialize_honorific_prefix { $_[0]->_serializer('honorific_prefix') }
 
 
 =head2 C<honorific_suffix>
@@ -888,10 +798,7 @@ has honorific_suffix => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'honorificSuffix',
-    json_ld_serializer => \&_serialize_honorific_suffix,
 );
-
-sub _serialize_honorific_suffix { $_[0]->_serializer('honorific_suffix') }
 
 
 =head2 C<isic_v4>
@@ -917,10 +824,7 @@ has isic_v4 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isicV4',
-    json_ld_serializer => \&_serialize_isic_v4,
 );
-
-sub _serialize_isic_v4 { $_[0]->_serializer('isic_v4') }
 
 
 =head2 C<job_title>
@@ -944,10 +848,7 @@ has job_title => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'jobTitle',
-    json_ld_serializer => \&_serialize_job_title,
 );
-
-sub _serialize_job_title { $_[0]->_serializer('job_title') }
 
 
 =head2 C<knows>
@@ -971,10 +872,7 @@ has knows => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'knows',
-    json_ld_serializer => \&_serialize_knows,
 );
-
-sub _serialize_knows { $_[0]->_serializer('knows') }
 
 
 =head2 C<makes_offer>
@@ -998,10 +896,7 @@ has makes_offer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'makesOffer',
-    json_ld_serializer => \&_serialize_makes_offer,
 );
-
-sub _serialize_makes_offer { $_[0]->_serializer('makes_offer') }
 
 
 =head2 C<member_of>
@@ -1028,10 +923,7 @@ has member_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'memberOf',
-    json_ld_serializer => \&_serialize_member_of,
 );
-
-sub _serialize_member_of { $_[0]->_serializer('member_of') }
 
 
 =head2 C<naics>
@@ -1056,10 +948,7 @@ has naics => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'naics',
-    json_ld_serializer => \&_serialize_naics,
 );
-
-sub _serialize_naics { $_[0]->_serializer('naics') }
 
 
 =head2 C<nationality>
@@ -1083,10 +972,7 @@ has nationality => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'nationality',
-    json_ld_serializer => \&_serialize_nationality,
 );
-
-sub _serialize_nationality { $_[0]->_serializer('nationality') }
 
 
 =head2 C<net_worth>
@@ -1113,10 +999,7 @@ has net_worth => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'netWorth',
-    json_ld_serializer => \&_serialize_net_worth,
 );
-
-sub _serialize_net_worth { $_[0]->_serializer('net_worth') }
 
 
 =head2 C<owns>
@@ -1142,10 +1025,7 @@ has owns => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'owns',
-    json_ld_serializer => \&_serialize_owns,
 );
-
-sub _serialize_owns { $_[0]->_serializer('owns') }
 
 
 =head2 C<parent>
@@ -1169,10 +1049,7 @@ has parent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'parent',
-    json_ld_serializer => \&_serialize_parent,
 );
-
-sub _serialize_parent { $_[0]->_serializer('parent') }
 
 
 =head2 C<parents>
@@ -1196,10 +1073,7 @@ has parents => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'parents',
-    json_ld_serializer => \&_serialize_parents,
 );
-
-sub _serialize_parents { $_[0]->_serializer('parents') }
 
 
 =head2 C<performer_in>
@@ -1223,10 +1097,7 @@ has performer_in => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'performerIn',
-    json_ld_serializer => \&_serialize_performer_in,
 );
-
-sub _serialize_performer_in { $_[0]->_serializer('performer_in') }
 
 
 =head2 C<publishing_principles>
@@ -1271,10 +1142,7 @@ has publishing_principles => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'publishingPrinciples',
-    json_ld_serializer => \&_serialize_publishing_principles,
 );
-
-sub _serialize_publishing_principles { $_[0]->_serializer('publishing_principles') }
 
 
 =head2 C<related_to>
@@ -1298,10 +1166,7 @@ has related_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'relatedTo',
-    json_ld_serializer => \&_serialize_related_to,
 );
-
-sub _serialize_related_to { $_[0]->_serializer('related_to') }
 
 
 =head2 C<seeks>
@@ -1326,10 +1191,7 @@ has seeks => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seeks',
-    json_ld_serializer => \&_serialize_seeks,
 );
-
-sub _serialize_seeks { $_[0]->_serializer('seeks') }
 
 
 =head2 C<sibling>
@@ -1353,10 +1215,7 @@ has sibling => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sibling',
-    json_ld_serializer => \&_serialize_sibling,
 );
-
-sub _serialize_sibling { $_[0]->_serializer('sibling') }
 
 
 =head2 C<siblings>
@@ -1380,10 +1239,7 @@ has siblings => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'siblings',
-    json_ld_serializer => \&_serialize_siblings,
 );
-
-sub _serialize_siblings { $_[0]->_serializer('siblings') }
 
 
 =head2 C<sponsor>
@@ -1411,10 +1267,7 @@ has sponsor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sponsor',
-    json_ld_serializer => \&_serialize_sponsor,
 );
-
-sub _serialize_sponsor { $_[0]->_serializer('sponsor') }
 
 
 =head2 C<spouse>
@@ -1438,10 +1291,7 @@ has spouse => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'spouse',
-    json_ld_serializer => \&_serialize_spouse,
 );
-
-sub _serialize_spouse { $_[0]->_serializer('spouse') }
 
 
 =head2 C<tax_id>
@@ -1466,10 +1316,7 @@ has tax_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'taxID',
-    json_ld_serializer => \&_serialize_tax_id,
 );
-
-sub _serialize_tax_id { $_[0]->_serializer('tax_id') }
 
 
 =head2 C<telephone>
@@ -1493,10 +1340,7 @@ has telephone => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'telephone',
-    json_ld_serializer => \&_serialize_telephone,
 );
-
-sub _serialize_telephone { $_[0]->_serializer('telephone') }
 
 
 =head2 C<vat_id>
@@ -1520,10 +1364,7 @@ has vat_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vatID',
-    json_ld_serializer => \&_serialize_vat_id,
 );
-
-sub _serialize_vat_id { $_[0]->_serializer('vat_id') }
 
 
 =head2 C<weight>
@@ -1547,10 +1388,7 @@ has weight => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'weight',
-    json_ld_serializer => \&_serialize_weight,
 );
-
-sub _serialize_weight { $_[0]->_serializer('weight') }
 
 
 =head2 C<work_location>
@@ -1576,10 +1414,7 @@ has work_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workLocation',
-    json_ld_serializer => \&_serialize_work_location,
 );
-
-sub _serialize_work_location { $_[0]->_serializer('work_location') }
 
 
 =head2 C<works_for>
@@ -1603,10 +1438,7 @@ has works_for => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'worksFor',
-    json_ld_serializer => \&_serialize_works_for,
 );
-
-sub _serialize_works_for { $_[0]->_serializer('works_for') }
 
 
 

@@ -53,10 +53,7 @@ has recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipient',
-    json_ld_serializer => \&_serialize_recipient,
 );
-
-sub _serialize_recipient { $_[0]->_serializer('recipient') }
 
 
 

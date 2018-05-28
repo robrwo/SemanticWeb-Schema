@@ -50,10 +50,7 @@ has art_edition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'artEdition',
-    json_ld_serializer => \&_serialize_art_edition,
 );
-
-sub _serialize_art_edition { $_[0]->_serializer('art_edition') }
 
 
 =head2 C<art_medium>
@@ -79,10 +76,7 @@ has art_medium => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'artMedium',
-    json_ld_serializer => \&_serialize_art_medium,
 );
-
-sub _serialize_art_medium { $_[0]->_serializer('art_medium') }
 
 
 =head2 C<artform>
@@ -107,10 +101,7 @@ has artform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'artform',
-    json_ld_serializer => \&_serialize_artform,
 );
-
-sub _serialize_artform { $_[0]->_serializer('artform') }
 
 
 =head2 C<artwork_surface>
@@ -135,10 +126,7 @@ has artwork_surface => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'artworkSurface',
-    json_ld_serializer => \&_serialize_artwork_surface,
 );
-
-sub _serialize_artwork_surface { $_[0]->_serializer('artwork_surface') }
 
 
 =head2 C<depth>
@@ -164,10 +152,7 @@ has depth => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'depth',
-    json_ld_serializer => \&_serialize_depth,
 );
-
-sub _serialize_depth { $_[0]->_serializer('depth') }
 
 
 =head2 C<height>
@@ -193,10 +178,7 @@ has height => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'height',
-    json_ld_serializer => \&_serialize_height,
 );
-
-sub _serialize_height { $_[0]->_serializer('height') }
 
 
 =head2 C<surface>
@@ -221,10 +203,7 @@ has surface => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'surface',
-    json_ld_serializer => \&_serialize_surface,
 );
-
-sub _serialize_surface { $_[0]->_serializer('surface') }
 
 
 =head2 C<width>
@@ -250,10 +229,7 @@ has width => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'width',
-    json_ld_serializer => \&_serialize_width,
 );
-
-sub _serialize_width { $_[0]->_serializer('width') }
 
 
 

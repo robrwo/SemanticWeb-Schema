@@ -49,10 +49,7 @@ has has_menu_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasMenuItem',
-    json_ld_serializer => \&_serialize_has_menu_item,
 );
-
-sub _serialize_has_menu_item { $_[0]->_serializer('has_menu_item') }
 
 
 =head2 C<has_menu_section>
@@ -76,10 +73,7 @@ has has_menu_section => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasMenuSection',
-    json_ld_serializer => \&_serialize_has_menu_section,
 );
-
-sub _serialize_has_menu_section { $_[0]->_serializer('has_menu_section') }
 
 
 

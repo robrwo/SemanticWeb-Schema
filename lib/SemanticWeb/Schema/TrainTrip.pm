@@ -46,10 +46,7 @@ has arrival_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalPlatform',
-    json_ld_serializer => \&_serialize_arrival_platform,
 );
-
-sub _serialize_arrival_platform { $_[0]->_serializer('arrival_platform') }
 
 
 =head2 C<arrival_station>
@@ -73,10 +70,7 @@ has arrival_station => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalStation',
-    json_ld_serializer => \&_serialize_arrival_station,
 );
-
-sub _serialize_arrival_station { $_[0]->_serializer('arrival_station') }
 
 
 =head2 C<arrival_time>
@@ -100,10 +94,7 @@ has arrival_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalTime',
-    json_ld_serializer => \&_serialize_arrival_time,
 );
-
-sub _serialize_arrival_time { $_[0]->_serializer('arrival_time') }
 
 
 =head2 C<departure_platform>
@@ -127,10 +118,7 @@ has departure_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departurePlatform',
-    json_ld_serializer => \&_serialize_departure_platform,
 );
-
-sub _serialize_departure_platform { $_[0]->_serializer('departure_platform') }
 
 
 =head2 C<departure_station>
@@ -154,10 +142,7 @@ has departure_station => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureStation',
-    json_ld_serializer => \&_serialize_departure_station,
 );
-
-sub _serialize_departure_station { $_[0]->_serializer('departure_station') }
 
 
 =head2 C<departure_time>
@@ -181,10 +166,7 @@ has departure_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureTime',
-    json_ld_serializer => \&_serialize_departure_time,
 );
-
-sub _serialize_departure_time { $_[0]->_serializer('departure_time') }
 
 
 =head2 C<provider>
@@ -212,10 +194,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<train_name>
@@ -239,10 +218,7 @@ has train_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trainName',
-    json_ld_serializer => \&_serialize_train_name,
 );
-
-sub _serialize_train_name { $_[0]->_serializer('train_name') }
 
 
 =head2 C<train_number>
@@ -266,10 +242,7 @@ has train_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trainNumber',
-    json_ld_serializer => \&_serialize_train_number,
 );
-
-sub _serialize_train_number { $_[0]->_serializer('train_number') }
 
 
 

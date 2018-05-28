@@ -52,10 +52,7 @@ has area_served => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'areaServed',
-    json_ld_serializer => \&_serialize_area_served,
 );
-
-sub _serialize_area_served { $_[0]->_serializer('area_served') }
 
 
 =head2 C<available_language>
@@ -88,10 +85,7 @@ has available_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableLanguage',
-    json_ld_serializer => \&_serialize_available_language,
 );
-
-sub _serialize_available_language { $_[0]->_serializer('available_language') }
 
 
 =head2 C<contact_option>
@@ -116,10 +110,7 @@ has contact_option => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contactOption',
-    json_ld_serializer => \&_serialize_contact_option,
 );
-
-sub _serialize_contact_option { $_[0]->_serializer('contact_option') }
 
 
 =head2 C<contact_type>
@@ -145,10 +136,7 @@ has contact_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contactType',
-    json_ld_serializer => \&_serialize_contact_type,
 );
-
-sub _serialize_contact_type { $_[0]->_serializer('contact_type') }
 
 
 =head2 C<email>
@@ -172,10 +160,7 @@ has email => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'email',
-    json_ld_serializer => \&_serialize_email,
 );
-
-sub _serialize_email { $_[0]->_serializer('email') }
 
 
 =head2 C<fax_number>
@@ -199,10 +184,7 @@ has fax_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'faxNumber',
-    json_ld_serializer => \&_serialize_fax_number,
 );
-
-sub _serialize_fax_number { $_[0]->_serializer('fax_number') }
 
 
 =head2 C<hours_available>
@@ -226,10 +208,7 @@ has hours_available => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hoursAvailable',
-    json_ld_serializer => \&_serialize_hours_available,
 );
-
-sub _serialize_hours_available { $_[0]->_serializer('hours_available') }
 
 
 =head2 C<product_supported>
@@ -258,10 +237,7 @@ has product_supported => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productSupported',
-    json_ld_serializer => \&_serialize_product_supported,
 );
-
-sub _serialize_product_supported { $_[0]->_serializer('product_supported') }
 
 
 =head2 C<service_area>
@@ -289,10 +265,7 @@ has service_area => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceArea',
-    json_ld_serializer => \&_serialize_service_area,
 );
-
-sub _serialize_service_area { $_[0]->_serializer('service_area') }
 
 
 =head2 C<telephone>
@@ -316,10 +289,7 @@ has telephone => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'telephone',
-    json_ld_serializer => \&_serialize_telephone,
 );
-
-sub _serialize_telephone { $_[0]->_serializer('telephone') }
 
 
 

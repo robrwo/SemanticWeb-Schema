@@ -51,10 +51,7 @@ has address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'address',
-    json_ld_serializer => \&_serialize_address,
 );
-
-sub _serialize_address { $_[0]->_serializer('address') }
 
 
 =head2 C<address_country>
@@ -86,10 +83,7 @@ has address_country => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addressCountry',
-    json_ld_serializer => \&_serialize_address_country,
 );
-
-sub _serialize_address_country { $_[0]->_serializer('address_country') }
 
 
 =head2 C<box>
@@ -115,10 +109,7 @@ has box => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'box',
-    json_ld_serializer => \&_serialize_box,
 );
-
-sub _serialize_box { $_[0]->_serializer('box') }
 
 
 =head2 C<circle>
@@ -144,10 +135,7 @@ has circle => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'circle',
-    json_ld_serializer => \&_serialize_circle,
 );
-
-sub _serialize_circle { $_[0]->_serializer('circle') }
 
 
 =head2 C<elevation>
@@ -178,10 +166,7 @@ has elevation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'elevation',
-    json_ld_serializer => \&_serialize_elevation,
 );
-
-sub _serialize_elevation { $_[0]->_serializer('elevation') }
 
 
 =head2 C<line>
@@ -206,10 +191,7 @@ has line => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'line',
-    json_ld_serializer => \&_serialize_line,
 );
-
-sub _serialize_line { $_[0]->_serializer('line') }
 
 
 =head2 C<polygon>
@@ -236,10 +218,7 @@ has polygon => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'polygon',
-    json_ld_serializer => \&_serialize_polygon,
 );
-
-sub _serialize_polygon { $_[0]->_serializer('polygon') }
 
 
 =head2 C<postal_code>
@@ -263,10 +242,7 @@ has postal_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'postalCode',
-    json_ld_serializer => \&_serialize_postal_code,
 );
-
-sub _serialize_postal_code { $_[0]->_serializer('postal_code') }
 
 
 

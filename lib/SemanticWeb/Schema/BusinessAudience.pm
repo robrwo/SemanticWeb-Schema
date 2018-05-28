@@ -47,10 +47,7 @@ has number_of_employees => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfEmployees',
-    json_ld_serializer => \&_serialize_number_of_employees,
 );
-
-sub _serialize_number_of_employees { $_[0]->_serializer('number_of_employees') }
 
 
 =head2 C<yearly_revenue>
@@ -74,10 +71,7 @@ has yearly_revenue => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'yearlyRevenue',
-    json_ld_serializer => \&_serialize_yearly_revenue,
 );
-
-sub _serialize_yearly_revenue { $_[0]->_serializer('yearly_revenue') }
 
 
 =head2 C<years_in_operation>
@@ -101,10 +95,7 @@ has years_in_operation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'yearsInOperation',
-    json_ld_serializer => \&_serialize_years_in_operation,
 );
-
-sub _serialize_years_in_operation { $_[0]->_serializer('years_in_operation') }
 
 
 

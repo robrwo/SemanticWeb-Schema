@@ -70,10 +70,7 @@ has price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'price',
-    json_ld_serializer => \&_serialize_price,
 );
-
-sub _serialize_price { $_[0]->_serializer('price') }
 
 
 =head2 C<price_specification>
@@ -98,10 +95,7 @@ has price_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceSpecification',
-    json_ld_serializer => \&_serialize_price_specification,
 );
-
-sub _serialize_price_specification { $_[0]->_serializer('price_specification') }
 
 
 

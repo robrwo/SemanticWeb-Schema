@@ -77,10 +77,7 @@ has end_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endDate',
-    json_ld_serializer => \&_serialize_end_date,
 );
-
-sub _serialize_end_date { $_[0]->_serializer('end_date') }
 
 
 =head2 C<issn>
@@ -106,10 +103,7 @@ has issn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issn',
-    json_ld_serializer => \&_serialize_issn,
 );
-
-sub _serialize_issn { $_[0]->_serializer('issn') }
 
 
 =head2 C<start_date>
@@ -138,10 +132,7 @@ has start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startDate',
-    json_ld_serializer => \&_serialize_start_date,
 );
-
-sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 

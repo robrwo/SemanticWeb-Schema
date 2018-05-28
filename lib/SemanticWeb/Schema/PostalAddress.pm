@@ -54,10 +54,7 @@ has address_country => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addressCountry',
-    json_ld_serializer => \&_serialize_address_country,
 );
-
-sub _serialize_address_country { $_[0]->_serializer('address_country') }
 
 
 =head2 C<address_locality>
@@ -81,10 +78,7 @@ has address_locality => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addressLocality',
-    json_ld_serializer => \&_serialize_address_locality,
 );
-
-sub _serialize_address_locality { $_[0]->_serializer('address_locality') }
 
 
 =head2 C<address_region>
@@ -108,10 +102,7 @@ has address_region => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addressRegion',
-    json_ld_serializer => \&_serialize_address_region,
 );
-
-sub _serialize_address_region { $_[0]->_serializer('address_region') }
 
 
 =head2 C<post_office_box_number>
@@ -135,10 +126,7 @@ has post_office_box_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'postOfficeBoxNumber',
-    json_ld_serializer => \&_serialize_post_office_box_number,
 );
-
-sub _serialize_post_office_box_number { $_[0]->_serializer('post_office_box_number') }
 
 
 =head2 C<postal_code>
@@ -162,10 +150,7 @@ has postal_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'postalCode',
-    json_ld_serializer => \&_serialize_postal_code,
 );
-
-sub _serialize_postal_code { $_[0]->_serializer('postal_code') }
 
 
 =head2 C<street_address>
@@ -189,10 +174,7 @@ has street_address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'streetAddress',
-    json_ld_serializer => \&_serialize_street_address,
 );
-
-sub _serialize_street_address { $_[0]->_serializer('street_address') }
 
 
 

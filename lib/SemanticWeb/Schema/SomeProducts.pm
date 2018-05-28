@@ -46,10 +46,7 @@ has inventory_level => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inventoryLevel',
-    json_ld_serializer => \&_serialize_inventory_level,
 );
-
-sub _serialize_inventory_level { $_[0]->_serializer('inventory_level') }
 
 
 

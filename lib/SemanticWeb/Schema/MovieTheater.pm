@@ -46,10 +46,7 @@ has screen_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'screenCount',
-    json_ld_serializer => \&_serialize_screen_count,
 );
-
-sub _serialize_screen_count { $_[0]->_serializer('screen_count') }
 
 
 

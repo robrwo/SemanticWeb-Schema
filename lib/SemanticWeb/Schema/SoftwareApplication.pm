@@ -46,10 +46,7 @@ has application_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'applicationCategory',
-    json_ld_serializer => \&_serialize_application_category,
 );
-
-sub _serialize_application_category { $_[0]->_serializer('application_category') }
 
 
 =head2 C<application_sub_category>
@@ -73,10 +70,7 @@ has application_sub_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'applicationSubCategory',
-    json_ld_serializer => \&_serialize_application_sub_category,
 );
-
-sub _serialize_application_sub_category { $_[0]->_serializer('application_sub_category') }
 
 
 =head2 C<application_suite>
@@ -101,10 +95,7 @@ has application_suite => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'applicationSuite',
-    json_ld_serializer => \&_serialize_application_suite,
 );
-
-sub _serialize_application_suite { $_[0]->_serializer('application_suite') }
 
 
 =head2 C<available_on_device>
@@ -129,10 +120,7 @@ has available_on_device => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableOnDevice',
-    json_ld_serializer => \&_serialize_available_on_device,
 );
-
-sub _serialize_available_on_device { $_[0]->_serializer('available_on_device') }
 
 
 =head2 C<countries_not_supported>
@@ -157,10 +145,7 @@ has countries_not_supported => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'countriesNotSupported',
-    json_ld_serializer => \&_serialize_countries_not_supported,
 );
-
-sub _serialize_countries_not_supported { $_[0]->_serializer('countries_not_supported') }
 
 
 =head2 C<countries_supported>
@@ -185,10 +170,7 @@ has countries_supported => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'countriesSupported',
-    json_ld_serializer => \&_serialize_countries_supported,
 );
-
-sub _serialize_countries_supported { $_[0]->_serializer('countries_supported') }
 
 
 =head2 C<device>
@@ -213,10 +195,7 @@ has device => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'device',
-    json_ld_serializer => \&_serialize_device,
 );
-
-sub _serialize_device { $_[0]->_serializer('device') }
 
 
 =head2 C<download_url>
@@ -240,10 +219,7 @@ has download_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'downloadUrl',
-    json_ld_serializer => \&_serialize_download_url,
 );
-
-sub _serialize_download_url { $_[0]->_serializer('download_url') }
 
 
 =head2 C<feature_list>
@@ -268,10 +244,7 @@ has feature_list => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'featureList',
-    json_ld_serializer => \&_serialize_feature_list,
 );
-
-sub _serialize_feature_list { $_[0]->_serializer('feature_list') }
 
 
 =head2 C<file_size>
@@ -296,10 +269,7 @@ has file_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fileSize',
-    json_ld_serializer => \&_serialize_file_size,
 );
-
-sub _serialize_file_size { $_[0]->_serializer('file_size') }
 
 
 =head2 C<install_url>
@@ -324,10 +294,7 @@ has install_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'installUrl',
-    json_ld_serializer => \&_serialize_install_url,
 );
-
-sub _serialize_install_url { $_[0]->_serializer('install_url') }
 
 
 =head2 C<memory_requirements>
@@ -351,10 +318,7 @@ has memory_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'memoryRequirements',
-    json_ld_serializer => \&_serialize_memory_requirements,
 );
-
-sub _serialize_memory_requirements { $_[0]->_serializer('memory_requirements') }
 
 
 =head2 C<operating_system>
@@ -378,10 +342,7 @@ has operating_system => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'operatingSystem',
-    json_ld_serializer => \&_serialize_operating_system,
 );
-
-sub _serialize_operating_system { $_[0]->_serializer('operating_system') }
 
 
 =head2 C<permissions>
@@ -406,10 +367,7 @@ has permissions => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'permissions',
-    json_ld_serializer => \&_serialize_permissions,
 );
-
-sub _serialize_permissions { $_[0]->_serializer('permissions') }
 
 
 =head2 C<processor_requirements>
@@ -433,10 +391,7 @@ has processor_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'processorRequirements',
-    json_ld_serializer => \&_serialize_processor_requirements,
 );
-
-sub _serialize_processor_requirements { $_[0]->_serializer('processor_requirements') }
 
 
 =head2 C<release_notes>
@@ -460,10 +415,7 @@ has release_notes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'releaseNotes',
-    json_ld_serializer => \&_serialize_release_notes,
 );
-
-sub _serialize_release_notes { $_[0]->_serializer('release_notes') }
 
 
 =head2 C<requirements>
@@ -490,10 +442,7 @@ has requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'requirements',
-    json_ld_serializer => \&_serialize_requirements,
 );
-
-sub _serialize_requirements { $_[0]->_serializer('requirements') }
 
 
 =head2 C<screenshot>
@@ -519,10 +468,7 @@ has screenshot => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'screenshot',
-    json_ld_serializer => \&_serialize_screenshot,
 );
-
-sub _serialize_screenshot { $_[0]->_serializer('screenshot') }
 
 
 =head2 C<software_add_on>
@@ -546,10 +492,7 @@ has software_add_on => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'softwareAddOn',
-    json_ld_serializer => \&_serialize_software_add_on,
 );
-
-sub _serialize_software_add_on { $_[0]->_serializer('software_add_on') }
 
 
 =head2 C<software_help>
@@ -573,10 +516,7 @@ has software_help => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'softwareHelp',
-    json_ld_serializer => \&_serialize_software_help,
 );
-
-sub _serialize_software_help { $_[0]->_serializer('software_help') }
 
 
 =head2 C<software_requirements>
@@ -603,10 +543,7 @@ has software_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'softwareRequirements',
-    json_ld_serializer => \&_serialize_software_requirements,
 );
-
-sub _serialize_software_requirements { $_[0]->_serializer('software_requirements') }
 
 
 =head2 C<software_version>
@@ -630,10 +567,7 @@ has software_version => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'softwareVersion',
-    json_ld_serializer => \&_serialize_software_version,
 );
-
-sub _serialize_software_version { $_[0]->_serializer('software_version') }
 
 
 =head2 C<storage_requirements>
@@ -657,10 +591,7 @@ has storage_requirements => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'storageRequirements',
-    json_ld_serializer => \&_serialize_storage_requirements,
 );
-
-sub _serialize_storage_requirements { $_[0]->_serializer('storage_requirements') }
 
 
 =head2 C<supporting_data>
@@ -684,10 +615,7 @@ has supporting_data => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'supportingData',
-    json_ld_serializer => \&_serialize_supporting_data,
 );
-
-sub _serialize_supporting_data { $_[0]->_serializer('supporting_data') }
 
 
 

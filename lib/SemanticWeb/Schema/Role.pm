@@ -62,10 +62,7 @@ has end_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endDate',
-    json_ld_serializer => \&_serialize_end_date,
 );
-
-sub _serialize_end_date { $_[0]->_serializer('end_date') }
 
 
 =head2 C<named_position>
@@ -91,10 +88,7 @@ has named_position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'namedPosition',
-    json_ld_serializer => \&_serialize_named_position,
 );
-
-sub _serialize_named_position { $_[0]->_serializer('named_position') }
 
 
 =head2 C<role_name>
@@ -121,10 +115,7 @@ has role_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'roleName',
-    json_ld_serializer => \&_serialize_role_name,
 );
-
-sub _serialize_role_name { $_[0]->_serializer('role_name') }
 
 
 =head2 C<start_date>
@@ -153,10 +144,7 @@ has start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startDate',
-    json_ld_serializer => \&_serialize_start_date,
 );
-
-sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 

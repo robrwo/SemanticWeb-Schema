@@ -49,10 +49,7 @@ has accepted_answer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'acceptedAnswer',
-    json_ld_serializer => \&_serialize_accepted_answer,
 );
-
-sub _serialize_accepted_answer { $_[0]->_serializer('accepted_answer') }
 
 
 =head2 C<answer_count>
@@ -76,10 +73,7 @@ has answer_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'answerCount',
-    json_ld_serializer => \&_serialize_answer_count,
 );
-
-sub _serialize_answer_count { $_[0]->_serializer('answer_count') }
 
 
 =head2 C<downvote_count>
@@ -104,10 +98,7 @@ has downvote_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'downvoteCount',
-    json_ld_serializer => \&_serialize_downvote_count,
 );
-
-sub _serialize_downvote_count { $_[0]->_serializer('downvote_count') }
 
 
 =head2 C<suggested_answer>
@@ -132,10 +123,7 @@ has suggested_answer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'suggestedAnswer',
-    json_ld_serializer => \&_serialize_suggested_answer,
 );
-
-sub _serialize_suggested_answer { $_[0]->_serializer('suggested_answer') }
 
 
 =head2 C<upvote_count>
@@ -160,10 +148,7 @@ has upvote_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'upvoteCount',
-    json_ld_serializer => \&_serialize_upvote_count,
 );
-
-sub _serialize_upvote_count { $_[0]->_serializer('upvote_count') }
 
 
 

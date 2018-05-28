@@ -46,10 +46,7 @@ has seat_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seatNumber',
-    json_ld_serializer => \&_serialize_seat_number,
 );
-
-sub _serialize_seat_number { $_[0]->_serializer('seat_number') }
 
 
 =head2 C<seat_row>
@@ -73,10 +70,7 @@ has seat_row => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seatRow',
-    json_ld_serializer => \&_serialize_seat_row,
 );
-
-sub _serialize_seat_row { $_[0]->_serializer('seat_row') }
 
 
 =head2 C<seat_section>
@@ -100,10 +94,7 @@ has seat_section => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seatSection',
-    json_ld_serializer => \&_serialize_seat_section,
 );
-
-sub _serialize_seat_section { $_[0]->_serializer('seat_section') }
 
 
 =head2 C<seating_type>
@@ -129,10 +120,7 @@ has seating_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seatingType',
-    json_ld_serializer => \&_serialize_seating_type,
 );
-
-sub _serialize_seating_type { $_[0]->_serializer('seating_type') }
 
 
 

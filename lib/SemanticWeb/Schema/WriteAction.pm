@@ -56,10 +56,7 @@ has in_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inLanguage',
-    json_ld_serializer => \&_serialize_in_language,
 );
-
-sub _serialize_in_language { $_[0]->_serializer('in_language') }
 
 
 =head2 C<language>
@@ -83,10 +80,7 @@ has language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'language',
-    json_ld_serializer => \&_serialize_language,
 );
-
-sub _serialize_language { $_[0]->_serializer('language') }
 
 
 

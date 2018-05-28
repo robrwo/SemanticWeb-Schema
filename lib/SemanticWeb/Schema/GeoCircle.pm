@@ -50,10 +50,7 @@ has geo_midpoint => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'geoMidpoint',
-    json_ld_serializer => \&_serialize_geo_midpoint,
 );
-
-sub _serialize_geo_midpoint { $_[0]->_serializer('geo_midpoint') }
 
 
 =head2 C<geo_radius>
@@ -82,10 +79,7 @@ has geo_radius => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'geoRadius',
-    json_ld_serializer => \&_serialize_geo_radius,
 );
-
-sub _serialize_geo_radius { $_[0]->_serializer('geo_radius') }
 
 
 

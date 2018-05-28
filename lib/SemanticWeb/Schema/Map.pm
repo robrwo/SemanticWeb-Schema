@@ -46,10 +46,7 @@ has map_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mapType',
-    json_ld_serializer => \&_serialize_map_type,
 );
-
-sub _serialize_map_type { $_[0]->_serializer('map_type') }
 
 
 

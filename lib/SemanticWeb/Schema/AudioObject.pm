@@ -47,10 +47,7 @@ has transcript => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'transcript',
-    json_ld_serializer => \&_serialize_transcript,
 );
-
-sub _serialize_transcript { $_[0]->_serializer('transcript') }
 
 
 

@@ -46,10 +46,7 @@ has loser => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'loser',
-    json_ld_serializer => \&_serialize_loser,
 );
-
-sub _serialize_loser { $_[0]->_serializer('loser') }
 
 
 

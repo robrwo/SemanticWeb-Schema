@@ -70,10 +70,7 @@ has available_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableLanguage',
-    json_ld_serializer => \&_serialize_available_language,
 );
-
-sub _serialize_available_language { $_[0]->_serializer('available_language') }
 
 
 =head2 C<tourist_type>
@@ -100,10 +97,7 @@ has tourist_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'touristType',
-    json_ld_serializer => \&_serialize_tourist_type,
 );
-
-sub _serialize_tourist_type { $_[0]->_serializer('tourist_type') }
 
 
 

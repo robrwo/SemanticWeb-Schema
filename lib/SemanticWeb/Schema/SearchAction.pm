@@ -53,10 +53,7 @@ has query => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'query',
-    json_ld_serializer => \&_serialize_query,
 );
-
-sub _serialize_query { $_[0]->_serializer('query') }
 
 
 

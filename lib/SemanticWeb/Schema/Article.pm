@@ -54,10 +54,7 @@ has article_body => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'articleBody',
-    json_ld_serializer => \&_serialize_article_body,
 );
-
-sub _serialize_article_body { $_[0]->_serializer('article_body') }
 
 
 =head2 C<article_section>
@@ -82,10 +79,7 @@ has article_section => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'articleSection',
-    json_ld_serializer => \&_serialize_article_section,
 );
-
-sub _serialize_article_section { $_[0]->_serializer('article_section') }
 
 
 =head2 C<page_end>
@@ -111,10 +105,7 @@ has page_end => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pageEnd',
-    json_ld_serializer => \&_serialize_page_end,
 );
-
-sub _serialize_page_end { $_[0]->_serializer('page_end') }
 
 
 =head2 C<page_start>
@@ -140,10 +131,7 @@ has page_start => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pageStart',
-    json_ld_serializer => \&_serialize_page_start,
 );
-
-sub _serialize_page_start { $_[0]->_serializer('page_start') }
 
 
 =head2 C<pagination>
@@ -168,10 +156,7 @@ has pagination => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pagination',
-    json_ld_serializer => \&_serialize_pagination,
 );
-
-sub _serialize_pagination { $_[0]->_serializer('pagination') }
 
 
 =head2 C<word_count>
@@ -195,10 +180,7 @@ has word_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'wordCount',
-    json_ld_serializer => \&_serialize_word_count,
 );
-
-sub _serialize_word_count { $_[0]->_serializer('word_count') }
 
 
 

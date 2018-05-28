@@ -55,10 +55,7 @@ has downvote_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'downvoteCount',
-    json_ld_serializer => \&_serialize_downvote_count,
 );
-
-sub _serialize_downvote_count { $_[0]->_serializer('downvote_count') }
 
 
 =head2 C<parent_item>
@@ -82,10 +79,7 @@ has parent_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'parentItem',
-    json_ld_serializer => \&_serialize_parent_item,
 );
-
-sub _serialize_parent_item { $_[0]->_serializer('parent_item') }
 
 
 =head2 C<upvote_count>
@@ -110,10 +104,7 @@ has upvote_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'upvoteCount',
-    json_ld_serializer => \&_serialize_upvote_count,
 );
-
-sub _serialize_upvote_count { $_[0]->_serializer('upvote_count') }
 
 
 

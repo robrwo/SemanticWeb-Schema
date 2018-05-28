@@ -57,10 +57,7 @@ has amount => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amount',
-    json_ld_serializer => \&_serialize_amount,
 );
-
-sub _serialize_amount { $_[0]->_serializer('amount') }
 
 
 =head2 C<currency>
@@ -89,10 +86,7 @@ has currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'currency',
-    json_ld_serializer => \&_serialize_currency,
 );
-
-sub _serialize_currency { $_[0]->_serializer('currency') }
 
 
 =head2 C<end_date>
@@ -121,10 +115,7 @@ has end_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endDate',
-    json_ld_serializer => \&_serialize_end_date,
 );
-
-sub _serialize_end_date { $_[0]->_serializer('end_date') }
 
 
 =head2 C<start_date>
@@ -153,10 +144,7 @@ has start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startDate',
-    json_ld_serializer => \&_serialize_start_date,
 );
-
-sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 

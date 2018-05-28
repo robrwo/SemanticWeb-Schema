@@ -64,10 +64,7 @@ has item_list_element => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemListElement',
-    json_ld_serializer => \&_serialize_item_list_element,
 );
-
-sub _serialize_item_list_element { $_[0]->_serializer('item_list_element') }
 
 
 =head2 C<item_list_order>
@@ -93,10 +90,7 @@ has item_list_order => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemListOrder',
-    json_ld_serializer => \&_serialize_item_list_order,
 );
-
-sub _serialize_item_list_order { $_[0]->_serializer('item_list_order') }
 
 
 =head2 C<number_of_items>
@@ -122,10 +116,7 @@ has number_of_items => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfItems',
-    json_ld_serializer => \&_serialize_number_of_items,
 );
-
-sub _serialize_number_of_items { $_[0]->_serializer('number_of_items') }
 
 
 

@@ -61,10 +61,7 @@ has accepted_payment_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'acceptedPaymentMethod',
-    json_ld_serializer => \&_serialize_accepted_payment_method,
 );
-
-sub _serialize_accepted_payment_method { $_[0]->_serializer('accepted_payment_method') }
 
 
 =head2 C<add_on>
@@ -90,10 +87,7 @@ has add_on => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addOn',
-    json_ld_serializer => \&_serialize_add_on,
 );
-
-sub _serialize_add_on { $_[0]->_serializer('add_on') }
 
 
 =head2 C<advance_booking_requirement>
@@ -118,10 +112,7 @@ has advance_booking_requirement => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'advanceBookingRequirement',
-    json_ld_serializer => \&_serialize_advance_booking_requirement,
 );
-
-sub _serialize_advance_booking_requirement { $_[0]->_serializer('advance_booking_requirement') }
 
 
 =head2 C<aggregate_rating>
@@ -146,10 +137,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<area_served>
@@ -179,10 +167,7 @@ has area_served => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'areaServed',
-    json_ld_serializer => \&_serialize_area_served,
 );
-
-sub _serialize_area_served { $_[0]->_serializer('area_served') }
 
 
 =head2 C<availability>
@@ -207,10 +192,7 @@ has availability => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availability',
-    json_ld_serializer => \&_serialize_availability,
 );
-
-sub _serialize_availability { $_[0]->_serializer('availability') }
 
 
 =head2 C<availability_ends>
@@ -235,10 +217,7 @@ has availability_ends => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availabilityEnds',
-    json_ld_serializer => \&_serialize_availability_ends,
 );
-
-sub _serialize_availability_ends { $_[0]->_serializer('availability_ends') }
 
 
 =head2 C<availability_starts>
@@ -263,10 +242,7 @@ has availability_starts => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availabilityStarts',
-    json_ld_serializer => \&_serialize_availability_starts,
 );
-
-sub _serialize_availability_starts { $_[0]->_serializer('availability_starts') }
 
 
 =head2 C<available_at_or_from>
@@ -290,10 +266,7 @@ has available_at_or_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableAtOrFrom',
-    json_ld_serializer => \&_serialize_available_at_or_from,
 );
-
-sub _serialize_available_at_or_from { $_[0]->_serializer('available_at_or_from') }
 
 
 =head2 C<available_delivery_method>
@@ -317,10 +290,7 @@ has available_delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableDeliveryMethod',
-    json_ld_serializer => \&_serialize_available_delivery_method,
 );
-
-sub _serialize_available_delivery_method { $_[0]->_serializer('available_delivery_method') }
 
 
 =head2 C<business_function>
@@ -346,10 +316,7 @@ has business_function => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'businessFunction',
-    json_ld_serializer => \&_serialize_business_function,
 );
-
-sub _serialize_business_function { $_[0]->_serializer('business_function') }
 
 
 =head2 C<category>
@@ -376,10 +343,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<delivery_lead_time>
@@ -405,10 +369,7 @@ has delivery_lead_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deliveryLeadTime',
-    json_ld_serializer => \&_serialize_delivery_lead_time,
 );
-
-sub _serialize_delivery_lead_time { $_[0]->_serializer('delivery_lead_time') }
 
 
 =head2 C<eligible_customer_type>
@@ -432,10 +393,7 @@ has eligible_customer_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleCustomerType',
-    json_ld_serializer => \&_serialize_eligible_customer_type,
 );
-
-sub _serialize_eligible_customer_type { $_[0]->_serializer('eligible_customer_type') }
 
 
 =head2 C<eligible_duration>
@@ -459,10 +417,7 @@ has eligible_duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleDuration',
-    json_ld_serializer => \&_serialize_eligible_duration,
 );
-
-sub _serialize_eligible_duration { $_[0]->_serializer('eligible_duration') }
 
 
 =head2 C<eligible_quantity>
@@ -488,10 +443,7 @@ has eligible_quantity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleQuantity',
-    json_ld_serializer => \&_serialize_eligible_quantity,
 );
-
-sub _serialize_eligible_quantity { $_[0]->_serializer('eligible_quantity') }
 
 
 =head2 C<eligible_region>
@@ -526,10 +478,7 @@ has eligible_region => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleRegion',
-    json_ld_serializer => \&_serialize_eligible_region,
 );
-
-sub _serialize_eligible_region { $_[0]->_serializer('eligible_region') }
 
 
 =head2 C<eligible_transaction_volume>
@@ -556,10 +505,7 @@ has eligible_transaction_volume => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleTransactionVolume',
-    json_ld_serializer => \&_serialize_eligible_transaction_volume,
 );
-
-sub _serialize_eligible_transaction_volume { $_[0]->_serializer('eligible_transaction_volume') }
 
 
 =head2 C<gtin12>
@@ -593,10 +539,7 @@ has gtin12 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin12',
-    json_ld_serializer => \&_serialize_gtin12,
 );
-
-sub _serialize_gtin12 { $_[0]->_serializer('gtin12') }
 
 
 =head2 C<gtin13>
@@ -630,10 +573,7 @@ has gtin13 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin13',
-    json_ld_serializer => \&_serialize_gtin13,
 );
-
-sub _serialize_gtin13 { $_[0]->_serializer('gtin13') }
 
 
 =head2 C<gtin14>
@@ -665,10 +605,7 @@ has gtin14 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin14',
-    json_ld_serializer => \&_serialize_gtin14,
 );
-
-sub _serialize_gtin14 { $_[0]->_serializer('gtin14') }
 
 
 =head2 C<gtin8>
@@ -700,10 +637,7 @@ has gtin8 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin8',
-    json_ld_serializer => \&_serialize_gtin8,
 );
-
-sub _serialize_gtin8 { $_[0]->_serializer('gtin8') }
 
 
 =head2 C<includes_object>
@@ -728,10 +662,7 @@ has includes_object => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'includesObject',
-    json_ld_serializer => \&_serialize_includes_object,
 );
-
-sub _serialize_includes_object { $_[0]->_serializer('includes_object') }
 
 
 =head2 C<ineligible_region>
@@ -767,10 +698,7 @@ has ineligible_region => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ineligibleRegion',
-    json_ld_serializer => \&_serialize_ineligible_region,
 );
-
-sub _serialize_ineligible_region { $_[0]->_serializer('ineligible_region') }
 
 
 =head2 C<inventory_level>
@@ -794,10 +722,7 @@ has inventory_level => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inventoryLevel',
-    json_ld_serializer => \&_serialize_inventory_level,
 );
-
-sub _serialize_inventory_level { $_[0]->_serializer('inventory_level') }
 
 
 =head2 C<item_condition>
@@ -823,10 +748,7 @@ has item_condition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemCondition',
-    json_ld_serializer => \&_serialize_item_condition,
 );
-
-sub _serialize_item_condition { $_[0]->_serializer('item_condition') }
 
 
 =head2 C<item_offered>
@@ -852,10 +774,7 @@ has item_offered => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'itemOffered',
-    json_ld_serializer => \&_serialize_item_offered,
 );
-
-sub _serialize_item_offered { $_[0]->_serializer('item_offered') }
 
 
 =head2 C<mpn>
@@ -880,10 +799,7 @@ has mpn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mpn',
-    json_ld_serializer => \&_serialize_mpn,
 );
-
-sub _serialize_mpn { $_[0]->_serializer('mpn') }
 
 
 =head2 C<offered_by>
@@ -909,10 +825,7 @@ has offered_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offeredBy',
-    json_ld_serializer => \&_serialize_offered_by,
 );
-
-sub _serialize_offered_by { $_[0]->_serializer('offered_by') }
 
 
 =head2 C<price>
@@ -958,10 +871,7 @@ has price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'price',
-    json_ld_serializer => \&_serialize_price,
 );
-
-sub _serialize_price { $_[0]->_serializer('price') }
 
 
 =head2 C<price_currency>
@@ -992,10 +902,7 @@ has price_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceCurrency',
-    json_ld_serializer => \&_serialize_price_currency,
 );
-
-sub _serialize_price_currency { $_[0]->_serializer('price_currency') }
 
 
 =head2 C<price_specification>
@@ -1020,10 +927,7 @@ has price_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceSpecification',
-    json_ld_serializer => \&_serialize_price_specification,
 );
-
-sub _serialize_price_specification { $_[0]->_serializer('price_specification') }
 
 
 =head2 C<price_valid_until>
@@ -1047,10 +951,7 @@ has price_valid_until => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceValidUntil',
-    json_ld_serializer => \&_serialize_price_valid_until,
 );
-
-sub _serialize_price_valid_until { $_[0]->_serializer('price_valid_until') }
 
 
 =head2 C<review>
@@ -1074,10 +975,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<reviews>
@@ -1101,10 +999,7 @@ has reviews => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviews',
-    json_ld_serializer => \&_serialize_reviews,
 );
-
-sub _serialize_reviews { $_[0]->_serializer('reviews') }
 
 
 =head2 C<seller>
@@ -1131,10 +1026,7 @@ has seller => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seller',
-    json_ld_serializer => \&_serialize_seller,
 );
-
-sub _serialize_seller { $_[0]->_serializer('seller') }
 
 
 =head2 C<serial_number>
@@ -1160,10 +1052,7 @@ has serial_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serialNumber',
-    json_ld_serializer => \&_serialize_serial_number,
 );
-
-sub _serialize_serial_number { $_[0]->_serializer('serial_number') }
 
 
 =head2 C<sku>
@@ -1188,10 +1077,7 @@ has sku => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sku',
-    json_ld_serializer => \&_serialize_sku,
 );
-
-sub _serialize_sku { $_[0]->_serializer('sku') }
 
 
 =head2 C<valid_from>
@@ -1215,10 +1101,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_through>
@@ -1243,10 +1126,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 =head2 C<warranty>
@@ -1270,10 +1150,7 @@ has warranty => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'warranty',
-    json_ld_serializer => \&_serialize_warranty,
 );
-
-sub _serialize_warranty { $_[0]->_serializer('warranty') }
 
 
 

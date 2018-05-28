@@ -48,10 +48,7 @@ has hours_available => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hoursAvailable',
-    json_ld_serializer => \&_serialize_hours_available,
 );
-
-sub _serialize_hours_available { $_[0]->_serializer('hours_available') }
 
 
 =head2 C<valid_from>
@@ -75,10 +72,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_through>
@@ -103,10 +97,7 @@ has valid_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validThrough',
-    json_ld_serializer => \&_serialize_valid_through,
 );
-
-sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 

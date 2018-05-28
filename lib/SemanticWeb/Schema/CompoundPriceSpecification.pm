@@ -57,10 +57,7 @@ has price_component => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceComponent',
-    json_ld_serializer => \&_serialize_price_component,
 );
-
-sub _serialize_price_component { $_[0]->_serializer('price_component') }
 
 
 

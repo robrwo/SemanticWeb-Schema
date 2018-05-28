@@ -51,10 +51,7 @@ has seller => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seller',
-    json_ld_serializer => \&_serialize_seller,
 );
-
-sub _serialize_seller { $_[0]->_serializer('seller') }
 
 
 =head2 C<vendor>
@@ -80,10 +77,7 @@ has vendor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vendor',
-    json_ld_serializer => \&_serialize_vendor,
 );
-
-sub _serialize_vendor { $_[0]->_serializer('vendor') }
 
 
 =head2 C<warranty_promise>
@@ -107,10 +101,7 @@ has warranty_promise => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'warrantyPromise',
-    json_ld_serializer => \&_serialize_warranty_promise,
 );
-
-sub _serialize_warranty_promise { $_[0]->_serializer('warranty_promise') }
 
 
 

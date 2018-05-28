@@ -47,10 +47,7 @@ has numbered_position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberedPosition',
-    json_ld_serializer => \&_serialize_numbered_position,
 );
-
-sub _serialize_numbered_position { $_[0]->_serializer('numbered_position') }
 
 
 

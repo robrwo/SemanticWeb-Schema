@@ -46,10 +46,7 @@ has educational_role => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'educationalRole',
-    json_ld_serializer => \&_serialize_educational_role,
 );
-
-sub _serialize_educational_role { $_[0]->_serializer('educational_role') }
 
 
 

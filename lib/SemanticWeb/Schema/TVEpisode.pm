@@ -47,10 +47,7 @@ has country_of_origin => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'countryOfOrigin',
-    json_ld_serializer => \&_serialize_country_of_origin,
 );
-
-sub _serialize_country_of_origin { $_[0]->_serializer('country_of_origin') }
 
 
 =head2 C<part_of_tv_series>
@@ -74,10 +71,7 @@ has part_of_tv_series => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfTVSeries',
-    json_ld_serializer => \&_serialize_part_of_tv_series,
 );
-
-sub _serialize_part_of_tv_series { $_[0]->_serializer('part_of_tv_series') }
 
 
 =head2 C<subtitle_language>
@@ -108,10 +102,7 @@ has subtitle_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subtitleLanguage',
-    json_ld_serializer => \&_serialize_subtitle_language,
 );
-
-sub _serialize_subtitle_language { $_[0]->_serializer('subtitle_language') }
 
 
 

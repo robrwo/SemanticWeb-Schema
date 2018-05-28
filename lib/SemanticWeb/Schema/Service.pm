@@ -48,10 +48,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<area_served>
@@ -81,10 +78,7 @@ has area_served => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'areaServed',
-    json_ld_serializer => \&_serialize_area_served,
 );
-
-sub _serialize_area_served { $_[0]->_serializer('area_served') }
 
 
 =head2 C<audience>
@@ -108,10 +102,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<available_channel>
@@ -136,10 +127,7 @@ has available_channel => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableChannel',
-    json_ld_serializer => \&_serialize_available_channel,
 );
-
-sub _serialize_available_channel { $_[0]->_serializer('available_channel') }
 
 
 =head2 C<award>
@@ -163,10 +151,7 @@ has award => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'award',
-    json_ld_serializer => \&_serialize_award,
 );
-
-sub _serialize_award { $_[0]->_serializer('award') }
 
 
 =head2 C<brand>
@@ -193,10 +178,7 @@ has brand => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'brand',
-    json_ld_serializer => \&_serialize_brand,
 );
-
-sub _serialize_brand { $_[0]->_serializer('brand') }
 
 
 =head2 C<broker>
@@ -225,10 +207,7 @@ has broker => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broker',
-    json_ld_serializer => \&_serialize_broker,
 );
-
-sub _serialize_broker { $_[0]->_serializer('broker') }
 
 
 =head2 C<category>
@@ -255,10 +234,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<has_offer_catalog>
@@ -283,10 +259,7 @@ has has_offer_catalog => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasOfferCatalog',
-    json_ld_serializer => \&_serialize_has_offer_catalog,
 );
-
-sub _serialize_has_offer_catalog { $_[0]->_serializer('has_offer_catalog') }
 
 
 =head2 C<hours_available>
@@ -310,10 +283,7 @@ has hours_available => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hoursAvailable',
-    json_ld_serializer => \&_serialize_hours_available,
 );
-
-sub _serialize_hours_available { $_[0]->_serializer('hours_available') }
 
 
 =head2 C<is_related_to>
@@ -339,10 +309,7 @@ has is_related_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isRelatedTo',
-    json_ld_serializer => \&_serialize_is_related_to,
 );
-
-sub _serialize_is_related_to { $_[0]->_serializer('is_related_to') }
 
 
 =head2 C<is_similar_to>
@@ -368,10 +335,7 @@ has is_similar_to => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isSimilarTo',
-    json_ld_serializer => \&_serialize_is_similar_to,
 );
-
-sub _serialize_is_similar_to { $_[0]->_serializer('is_similar_to') }
 
 
 =head2 C<logo>
@@ -397,10 +361,7 @@ has logo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'logo',
-    json_ld_serializer => \&_serialize_logo,
 );
-
-sub _serialize_logo { $_[0]->_serializer('logo') }
 
 
 =head2 C<offers>
@@ -426,10 +387,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 =head2 C<produces>
@@ -453,10 +411,7 @@ has produces => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'produces',
-    json_ld_serializer => \&_serialize_produces,
 );
-
-sub _serialize_produces { $_[0]->_serializer('produces') }
 
 
 =head2 C<provider>
@@ -484,10 +439,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<provider_mobility>
@@ -511,10 +463,7 @@ has provider_mobility => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'providerMobility',
-    json_ld_serializer => \&_serialize_provider_mobility,
 );
-
-sub _serialize_provider_mobility { $_[0]->_serializer('provider_mobility') }
 
 
 =head2 C<review>
@@ -538,10 +487,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<service_area>
@@ -569,10 +515,7 @@ has service_area => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceArea',
-    json_ld_serializer => \&_serialize_service_area,
 );
-
-sub _serialize_service_area { $_[0]->_serializer('service_area') }
 
 
 =head2 C<service_audience>
@@ -596,10 +539,7 @@ has service_audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceAudience',
-    json_ld_serializer => \&_serialize_service_audience,
 );
-
-sub _serialize_service_audience { $_[0]->_serializer('service_audience') }
 
 
 =head2 C<service_output>
@@ -623,10 +563,7 @@ has service_output => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceOutput',
-    json_ld_serializer => \&_serialize_service_output,
 );
-
-sub _serialize_service_output { $_[0]->_serializer('service_output') }
 
 
 =head2 C<service_type>
@@ -651,10 +588,7 @@ has service_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceType',
-    json_ld_serializer => \&_serialize_service_type,
 );
-
-sub _serialize_service_type { $_[0]->_serializer('service_type') }
 
 
 

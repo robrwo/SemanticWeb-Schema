@@ -57,10 +57,7 @@ has action_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actionStatus',
-    json_ld_serializer => \&_serialize_action_status,
 );
-
-sub _serialize_action_status { $_[0]->_serializer('action_status') }
 
 
 =head2 C<agent>
@@ -91,10 +88,7 @@ has agent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'agent',
-    json_ld_serializer => \&_serialize_agent,
 );
-
-sub _serialize_agent { $_[0]->_serializer('agent') }
 
 
 =head2 C<end_time>
@@ -127,10 +121,7 @@ has end_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endTime',
-    json_ld_serializer => \&_serialize_end_time,
 );
-
-sub _serialize_end_time { $_[0]->_serializer('end_time') }
 
 
 =head2 C<error>
@@ -154,10 +145,7 @@ has error => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'error',
-    json_ld_serializer => \&_serialize_error,
 );
-
-sub _serialize_error { $_[0]->_serializer('error') }
 
 
 =head2 C<instrument>
@@ -186,10 +174,7 @@ has instrument => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'instrument',
-    json_ld_serializer => \&_serialize_instrument,
 );
-
-sub _serialize_instrument { $_[0]->_serializer('instrument') }
 
 
 =head2 C<location>
@@ -218,10 +203,7 @@ has location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'location',
-    json_ld_serializer => \&_serialize_location,
 );
-
-sub _serialize_location { $_[0]->_serializer('location') }
 
 
 =head2 C<object>
@@ -252,10 +234,7 @@ has object => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'object',
-    json_ld_serializer => \&_serialize_object,
 );
-
-sub _serialize_object { $_[0]->_serializer('object') }
 
 
 =head2 C<participant>
@@ -286,10 +265,7 @@ has participant => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'participant',
-    json_ld_serializer => \&_serialize_participant,
 );
-
-sub _serialize_participant { $_[0]->_serializer('participant') }
 
 
 =head2 C<result>
@@ -317,10 +293,7 @@ has result => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'result',
-    json_ld_serializer => \&_serialize_result,
 );
-
-sub _serialize_result { $_[0]->_serializer('result') }
 
 
 =head2 C<start_time>
@@ -353,10 +326,7 @@ has start_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startTime',
-    json_ld_serializer => \&_serialize_start_time,
 );
-
-sub _serialize_start_time { $_[0]->_serializer('start_time') }
 
 
 =head2 C<target>
@@ -380,10 +350,7 @@ has target => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'target',
-    json_ld_serializer => \&_serialize_target,
 );
-
-sub _serialize_target { $_[0]->_serializer('target') }
 
 
 

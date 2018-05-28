@@ -46,10 +46,7 @@ has account_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'accountId',
-    json_ld_serializer => \&_serialize_account_id,
 );
-
-sub _serialize_account_id { $_[0]->_serializer('account_id') }
 
 
 =head2 C<billing_period>
@@ -73,10 +70,7 @@ has billing_period => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'billingPeriod',
-    json_ld_serializer => \&_serialize_billing_period,
 );
-
-sub _serialize_billing_period { $_[0]->_serializer('billing_period') }
 
 
 =head2 C<broker>
@@ -105,10 +99,7 @@ has broker => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broker',
-    json_ld_serializer => \&_serialize_broker,
 );
-
-sub _serialize_broker { $_[0]->_serializer('broker') }
 
 
 =head2 C<category>
@@ -135,10 +126,7 @@ has category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'category',
-    json_ld_serializer => \&_serialize_category,
 );
-
-sub _serialize_category { $_[0]->_serializer('category') }
 
 
 =head2 C<confirmation_number>
@@ -162,10 +150,7 @@ has confirmation_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'confirmationNumber',
-    json_ld_serializer => \&_serialize_confirmation_number,
 );
-
-sub _serialize_confirmation_number { $_[0]->_serializer('confirmation_number') }
 
 
 =head2 C<customer>
@@ -191,10 +176,7 @@ has customer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'customer',
-    json_ld_serializer => \&_serialize_customer,
 );
-
-sub _serialize_customer { $_[0]->_serializer('customer') }
 
 
 =head2 C<minimum_payment_due>
@@ -220,10 +202,7 @@ has minimum_payment_due => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'minimumPaymentDue',
-    json_ld_serializer => \&_serialize_minimum_payment_due,
 );
-
-sub _serialize_minimum_payment_due { $_[0]->_serializer('minimum_payment_due') }
 
 
 =head2 C<payment_due>
@@ -247,10 +226,7 @@ has payment_due => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentDue',
-    json_ld_serializer => \&_serialize_payment_due,
 );
-
-sub _serialize_payment_due { $_[0]->_serializer('payment_due') }
 
 
 =head2 C<payment_due_date>
@@ -274,10 +250,7 @@ has payment_due_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentDueDate',
-    json_ld_serializer => \&_serialize_payment_due_date,
 );
-
-sub _serialize_payment_due_date { $_[0]->_serializer('payment_due_date') }
 
 
 =head2 C<payment_method>
@@ -301,10 +274,7 @@ has payment_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentMethod',
-    json_ld_serializer => \&_serialize_payment_method,
 );
-
-sub _serialize_payment_method { $_[0]->_serializer('payment_method') }
 
 
 =head2 C<payment_method_id>
@@ -329,10 +299,7 @@ has payment_method_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentMethodId',
-    json_ld_serializer => \&_serialize_payment_method_id,
 );
-
-sub _serialize_payment_method_id { $_[0]->_serializer('payment_method_id') }
 
 
 =head2 C<payment_status>
@@ -358,10 +325,7 @@ has payment_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'paymentStatus',
-    json_ld_serializer => \&_serialize_payment_status,
 );
-
-sub _serialize_payment_status { $_[0]->_serializer('payment_status') }
 
 
 =head2 C<provider>
@@ -389,10 +353,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<references_order>
@@ -417,10 +378,7 @@ has references_order => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'referencesOrder',
-    json_ld_serializer => \&_serialize_references_order,
 );
-
-sub _serialize_references_order { $_[0]->_serializer('references_order') }
 
 
 =head2 C<scheduled_payment_date>
@@ -444,10 +402,7 @@ has scheduled_payment_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'scheduledPaymentDate',
-    json_ld_serializer => \&_serialize_scheduled_payment_date,
 );
-
-sub _serialize_scheduled_payment_date { $_[0]->_serializer('scheduled_payment_date') }
 
 
 =head2 C<total_payment_due>
@@ -473,10 +428,7 @@ has total_payment_due => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'totalPaymentDue',
-    json_ld_serializer => \&_serialize_total_payment_due,
 );
-
-sub _serialize_total_payment_due { $_[0]->_serializer('total_payment_due') }
 
 
 

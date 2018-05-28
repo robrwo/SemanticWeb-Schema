@@ -48,10 +48,7 @@ has sub_reservation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subReservation',
-    json_ld_serializer => \&_serialize_sub_reservation,
 );
-
-sub _serialize_sub_reservation { $_[0]->_serializer('sub_reservation') }
 
 
 

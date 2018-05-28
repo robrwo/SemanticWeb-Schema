@@ -53,10 +53,7 @@ has grantee => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'grantee',
-    json_ld_serializer => \&_serialize_grantee,
 );
-
-sub _serialize_grantee { $_[0]->_serializer('grantee') }
 
 
 =head2 C<permission_type>
@@ -80,10 +77,7 @@ has permission_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'permissionType',
-    json_ld_serializer => \&_serialize_permission_type,
 );
-
-sub _serialize_permission_type { $_[0]->_serializer('permission_type') }
 
 
 

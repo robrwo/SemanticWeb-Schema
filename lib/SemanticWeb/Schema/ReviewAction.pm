@@ -48,10 +48,7 @@ has result_review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'resultReview',
-    json_ld_serializer => \&_serialize_result_review,
 );
-
-sub _serialize_result_review { $_[0]->_serializer('result_review') }
 
 
 

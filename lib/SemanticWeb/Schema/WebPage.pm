@@ -57,10 +57,7 @@ has breadcrumb => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'breadcrumb',
-    json_ld_serializer => \&_serialize_breadcrumb,
 );
-
-sub _serialize_breadcrumb { $_[0]->_serializer('breadcrumb') }
 
 
 =head2 C<last_reviewed>
@@ -85,10 +82,7 @@ has last_reviewed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lastReviewed',
-    json_ld_serializer => \&_serialize_last_reviewed,
 );
-
-sub _serialize_last_reviewed { $_[0]->_serializer('last_reviewed') }
 
 
 =head2 C<main_content_of_page>
@@ -112,10 +106,7 @@ has main_content_of_page => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mainContentOfPage',
-    json_ld_serializer => \&_serialize_main_content_of_page,
 );
-
-sub _serialize_main_content_of_page { $_[0]->_serializer('main_content_of_page') }
 
 
 =head2 C<primary_image_of_page>
@@ -139,10 +130,7 @@ has primary_image_of_page => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'primaryImageOfPage',
-    json_ld_serializer => \&_serialize_primary_image_of_page,
 );
-
-sub _serialize_primary_image_of_page { $_[0]->_serializer('primary_image_of_page') }
 
 
 =head2 C<related_link>
@@ -166,10 +154,7 @@ has related_link => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'relatedLink',
-    json_ld_serializer => \&_serialize_related_link,
 );
-
-sub _serialize_related_link { $_[0]->_serializer('related_link') }
 
 
 =head2 C<reviewed_by>
@@ -196,10 +181,7 @@ has reviewed_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reviewedBy',
-    json_ld_serializer => \&_serialize_reviewed_by,
 );
-
-sub _serialize_reviewed_by { $_[0]->_serializer('reviewed_by') }
 
 
 =head2 C<significant_link>
@@ -224,10 +206,7 @@ has significant_link => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'significantLink',
-    json_ld_serializer => \&_serialize_significant_link,
 );
-
-sub _serialize_significant_link { $_[0]->_serializer('significant_link') }
 
 
 =head2 C<significant_links>
@@ -252,10 +231,7 @@ has significant_links => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'significantLinks',
-    json_ld_serializer => \&_serialize_significant_links,
 );
-
-sub _serialize_significant_links { $_[0]->_serializer('significant_links') }
 
 
 =head2 C<specialty>
@@ -279,10 +255,7 @@ has specialty => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'specialty',
-    json_ld_serializer => \&_serialize_specialty,
 );
-
-sub _serialize_specialty { $_[0]->_serializer('specialty') }
 
 
 

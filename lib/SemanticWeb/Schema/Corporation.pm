@@ -50,10 +50,7 @@ has ticker_symbol => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'tickerSymbol',
-    json_ld_serializer => \&_serialize_ticker_symbol,
 );
-
-sub _serialize_ticker_symbol { $_[0]->_serializer('ticker_symbol') }
 
 
 

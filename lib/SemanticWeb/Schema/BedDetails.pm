@@ -55,10 +55,7 @@ has number_of_beds => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfBeds',
-    json_ld_serializer => \&_serialize_number_of_beds,
 );
-
-sub _serialize_number_of_beds { $_[0]->_serializer('number_of_beds') }
 
 
 =head2 C<type_of_bed>
@@ -83,10 +80,7 @@ has type_of_bed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'typeOfBed',
-    json_ld_serializer => \&_serialize_type_of_bed,
 );
-
-sub _serialize_type_of_bed { $_[0]->_serializer('type_of_bed') }
 
 
 

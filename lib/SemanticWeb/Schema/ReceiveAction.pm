@@ -58,10 +58,7 @@ has delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'deliveryMethod',
-    json_ld_serializer => \&_serialize_delivery_method,
 );
-
-sub _serialize_delivery_method { $_[0]->_serializer('delivery_method') }
 
 
 =head2 C<sender>
@@ -90,10 +87,7 @@ has sender => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sender',
-    json_ld_serializer => \&_serialize_sender,
 );
-
-sub _serialize_sender { $_[0]->_serializer('sender') }
 
 
 

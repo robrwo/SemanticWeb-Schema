@@ -71,10 +71,7 @@ has followee => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'followee',
-    json_ld_serializer => \&_serialize_followee,
 );
-
-sub _serialize_followee { $_[0]->_serializer('followee') }
 
 
 

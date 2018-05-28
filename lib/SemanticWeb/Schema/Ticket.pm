@@ -46,10 +46,7 @@ has date_issued => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateIssued',
-    json_ld_serializer => \&_serialize_date_issued,
 );
-
-sub _serialize_date_issued { $_[0]->_serializer('date_issued') }
 
 
 =head2 C<issued_by>
@@ -73,10 +70,7 @@ has issued_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issuedBy',
-    json_ld_serializer => \&_serialize_issued_by,
 );
-
-sub _serialize_issued_by { $_[0]->_serializer('issued_by') }
 
 
 =head2 C<price_currency>
@@ -107,10 +101,7 @@ has price_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceCurrency',
-    json_ld_serializer => \&_serialize_price_currency,
 );
-
-sub _serialize_price_currency { $_[0]->_serializer('price_currency') }
 
 
 =head2 C<ticket_number>
@@ -134,10 +125,7 @@ has ticket_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ticketNumber',
-    json_ld_serializer => \&_serialize_ticket_number,
 );
-
-sub _serialize_ticket_number { $_[0]->_serializer('ticket_number') }
 
 
 =head2 C<ticket_token>
@@ -162,10 +150,7 @@ has ticket_token => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ticketToken',
-    json_ld_serializer => \&_serialize_ticket_token,
 );
-
-sub _serialize_ticket_token { $_[0]->_serializer('ticket_token') }
 
 
 =head2 C<ticketed_seat>
@@ -189,10 +174,7 @@ has ticketed_seat => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ticketedSeat',
-    json_ld_serializer => \&_serialize_ticketed_seat,
 );
-
-sub _serialize_ticketed_seat { $_[0]->_serializer('ticketed_seat') }
 
 
 =head2 C<total_price>
@@ -221,10 +203,7 @@ has total_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'totalPrice',
-    json_ld_serializer => \&_serialize_total_price,
 );
-
-sub _serialize_total_price { $_[0]->_serializer('total_price') }
 
 
 =head2 C<under_name>
@@ -250,10 +229,7 @@ has under_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'underName',
-    json_ld_serializer => \&_serialize_under_name,
 );
-
-sub _serialize_under_name { $_[0]->_serializer('under_name') }
 
 
 

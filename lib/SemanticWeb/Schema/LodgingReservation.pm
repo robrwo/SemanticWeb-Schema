@@ -52,10 +52,7 @@ has checkin_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'checkinTime',
-    json_ld_serializer => \&_serialize_checkin_time,
 );
-
-sub _serialize_checkin_time { $_[0]->_serializer('checkin_time') }
 
 
 =head2 C<checkout_time>
@@ -79,10 +76,7 @@ has checkout_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'checkoutTime',
-    json_ld_serializer => \&_serialize_checkout_time,
 );
-
-sub _serialize_checkout_time { $_[0]->_serializer('checkout_time') }
 
 
 =head2 C<lodging_unit_description>
@@ -106,10 +100,7 @@ has lodging_unit_description => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lodgingUnitDescription',
-    json_ld_serializer => \&_serialize_lodging_unit_description,
 );
-
-sub _serialize_lodging_unit_description { $_[0]->_serializer('lodging_unit_description') }
 
 
 =head2 C<lodging_unit_type>
@@ -136,10 +127,7 @@ has lodging_unit_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lodgingUnitType',
-    json_ld_serializer => \&_serialize_lodging_unit_type,
 );
-
-sub _serialize_lodging_unit_type { $_[0]->_serializer('lodging_unit_type') }
 
 
 =head2 C<num_adults>
@@ -165,10 +153,7 @@ has num_adults => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numAdults',
-    json_ld_serializer => \&_serialize_num_adults,
 );
-
-sub _serialize_num_adults { $_[0]->_serializer('num_adults') }
 
 
 =head2 C<num_children>
@@ -194,10 +179,7 @@ has num_children => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numChildren',
-    json_ld_serializer => \&_serialize_num_children,
 );
-
-sub _serialize_num_children { $_[0]->_serializer('num_children') }
 
 
 

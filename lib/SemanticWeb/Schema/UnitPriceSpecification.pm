@@ -48,10 +48,7 @@ has billing_increment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'billingIncrement',
-    json_ld_serializer => \&_serialize_billing_increment,
 );
-
-sub _serialize_billing_increment { $_[0]->_serializer('billing_increment') }
 
 
 =head2 C<price_type>
@@ -77,10 +74,7 @@ has price_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceType',
-    json_ld_serializer => \&_serialize_price_type,
 );
-
-sub _serialize_price_type { $_[0]->_serializer('price_type') }
 
 
 =head2 C<reference_quantity>
@@ -106,10 +100,7 @@ has reference_quantity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'referenceQuantity',
-    json_ld_serializer => \&_serialize_reference_quantity,
 );
-
-sub _serialize_reference_quantity { $_[0]->_serializer('reference_quantity') }
 
 
 =head2 C<unit_code>
@@ -135,10 +126,7 @@ has unit_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitCode',
-    json_ld_serializer => \&_serialize_unit_code,
 );
-
-sub _serialize_unit_code { $_[0]->_serializer('unit_code') }
 
 
 =head2 C<unit_text>
@@ -167,10 +155,7 @@ has unit_text => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitText',
-    json_ld_serializer => \&_serialize_unit_text,
 );
-
-sub _serialize_unit_text { $_[0]->_serializer('unit_text') }
 
 
 

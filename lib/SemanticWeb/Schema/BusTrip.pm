@@ -48,10 +48,7 @@ has arrival_bus_stop => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalBusStop',
-    json_ld_serializer => \&_serialize_arrival_bus_stop,
 );
-
-sub _serialize_arrival_bus_stop { $_[0]->_serializer('arrival_bus_stop') }
 
 
 =head2 C<arrival_time>
@@ -75,10 +72,7 @@ has arrival_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalTime',
-    json_ld_serializer => \&_serialize_arrival_time,
 );
-
-sub _serialize_arrival_time { $_[0]->_serializer('arrival_time') }
 
 
 =head2 C<bus_name>
@@ -102,10 +96,7 @@ has bus_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'busName',
-    json_ld_serializer => \&_serialize_bus_name,
 );
-
-sub _serialize_bus_name { $_[0]->_serializer('bus_name') }
 
 
 =head2 C<bus_number>
@@ -129,10 +120,7 @@ has bus_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'busNumber',
-    json_ld_serializer => \&_serialize_bus_number,
 );
-
-sub _serialize_bus_number { $_[0]->_serializer('bus_number') }
 
 
 =head2 C<departure_bus_stop>
@@ -158,10 +146,7 @@ has departure_bus_stop => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureBusStop',
-    json_ld_serializer => \&_serialize_departure_bus_stop,
 );
-
-sub _serialize_departure_bus_stop { $_[0]->_serializer('departure_bus_stop') }
 
 
 =head2 C<departure_time>
@@ -185,10 +170,7 @@ has departure_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureTime',
-    json_ld_serializer => \&_serialize_departure_time,
 );
-
-sub _serialize_departure_time { $_[0]->_serializer('departure_time') }
 
 
 =head2 C<provider>
@@ -216,10 +198,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 

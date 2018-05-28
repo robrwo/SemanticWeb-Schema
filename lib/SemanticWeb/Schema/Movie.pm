@@ -48,10 +48,7 @@ has actor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actor',
-    json_ld_serializer => \&_serialize_actor,
 );
-
-sub _serialize_actor { $_[0]->_serializer('actor') }
 
 
 =head2 C<actors>
@@ -76,10 +73,7 @@ has actors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actors',
-    json_ld_serializer => \&_serialize_actors,
 );
-
-sub _serialize_actors { $_[0]->_serializer('actors') }
 
 
 =head2 C<country_of_origin>
@@ -104,10 +98,7 @@ has country_of_origin => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'countryOfOrigin',
-    json_ld_serializer => \&_serialize_country_of_origin,
 );
-
-sub _serialize_country_of_origin { $_[0]->_serializer('country_of_origin') }
 
 
 =head2 C<director>
@@ -133,10 +124,7 @@ has director => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'director',
-    json_ld_serializer => \&_serialize_director,
 );
-
-sub _serialize_director { $_[0]->_serializer('director') }
 
 
 =head2 C<directors>
@@ -161,10 +149,7 @@ has directors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'directors',
-    json_ld_serializer => \&_serialize_directors,
 );
-
-sub _serialize_directors { $_[0]->_serializer('directors') }
 
 
 =head2 C<duration>
@@ -193,10 +178,7 @@ has duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duration',
-    json_ld_serializer => \&_serialize_duration,
 );
-
-sub _serialize_duration { $_[0]->_serializer('duration') }
 
 
 =head2 C<music_by>
@@ -222,10 +204,7 @@ has music_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicBy',
-    json_ld_serializer => \&_serialize_music_by,
 );
-
-sub _serialize_music_by { $_[0]->_serializer('music_by') }
 
 
 =head2 C<production_company>
@@ -250,10 +229,7 @@ has production_company => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionCompany',
-    json_ld_serializer => \&_serialize_production_company,
 );
-
-sub _serialize_production_company { $_[0]->_serializer('production_company') }
 
 
 =head2 C<subtitle_language>
@@ -284,10 +260,7 @@ has subtitle_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subtitleLanguage',
-    json_ld_serializer => \&_serialize_subtitle_language,
 );
-
-sub _serialize_subtitle_language { $_[0]->_serializer('subtitle_language') }
 
 
 =head2 C<trailer>
@@ -311,10 +284,7 @@ has trailer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trailer',
-    json_ld_serializer => \&_serialize_trailer,
 );
-
-sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 

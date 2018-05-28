@@ -54,10 +54,7 @@ has annual_percentage_rate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'annualPercentageRate',
-    json_ld_serializer => \&_serialize_annual_percentage_rate,
 );
-
-sub _serialize_annual_percentage_rate { $_[0]->_serializer('annual_percentage_rate') }
 
 
 =head2 C<fees_and_commissions_specification>
@@ -82,10 +79,7 @@ has fees_and_commissions_specification => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'feesAndCommissionsSpecification',
-    json_ld_serializer => \&_serialize_fees_and_commissions_specification,
 );
-
-sub _serialize_fees_and_commissions_specification { $_[0]->_serializer('fees_and_commissions_specification') }
 
 
 =head2 C<interest_rate>
@@ -112,10 +106,7 @@ has interest_rate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'interestRate',
-    json_ld_serializer => \&_serialize_interest_rate,
 );
-
-sub _serialize_interest_rate { $_[0]->_serializer('interest_rate') }
 
 
 

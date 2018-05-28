@@ -46,10 +46,7 @@ has issued_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issuedBy',
-    json_ld_serializer => \&_serialize_issued_by,
 );
-
-sub _serialize_issued_by { $_[0]->_serializer('issued_by') }
 
 
 =head2 C<issued_through>
@@ -73,10 +70,7 @@ has issued_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issuedThrough',
-    json_ld_serializer => \&_serialize_issued_through,
 );
-
-sub _serialize_issued_through { $_[0]->_serializer('issued_through') }
 
 
 =head2 C<permit_audience>
@@ -100,10 +94,7 @@ has permit_audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'permitAudience',
-    json_ld_serializer => \&_serialize_permit_audience,
 );
-
-sub _serialize_permit_audience { $_[0]->_serializer('permit_audience') }
 
 
 =head2 C<valid_for>
@@ -127,10 +118,7 @@ has valid_for => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFor',
-    json_ld_serializer => \&_serialize_valid_for,
 );
-
-sub _serialize_valid_for { $_[0]->_serializer('valid_for') }
 
 
 =head2 C<valid_from>
@@ -154,10 +142,7 @@ has valid_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validFrom',
-    json_ld_serializer => \&_serialize_valid_from,
 );
-
-sub _serialize_valid_from { $_[0]->_serializer('valid_from') }
 
 
 =head2 C<valid_in>
@@ -181,10 +166,7 @@ has valid_in => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validIn',
-    json_ld_serializer => \&_serialize_valid_in,
 );
-
-sub _serialize_valid_in { $_[0]->_serializer('valid_in') }
 
 
 =head2 C<valid_until>
@@ -208,10 +190,7 @@ has valid_until => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'validUntil',
-    json_ld_serializer => \&_serialize_valid_until,
 );
-
-sub _serialize_valid_until { $_[0]->_serializer('valid_until') }
 
 
 

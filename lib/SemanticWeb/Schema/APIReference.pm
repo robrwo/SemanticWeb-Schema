@@ -46,10 +46,7 @@ has assembly => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'assembly',
-    json_ld_serializer => \&_serialize_assembly,
 );
-
-sub _serialize_assembly { $_[0]->_serializer('assembly') }
 
 
 =head2 C<assembly_version>
@@ -73,10 +70,7 @@ has assembly_version => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'assemblyVersion',
-    json_ld_serializer => \&_serialize_assembly_version,
 );
-
-sub _serialize_assembly_version { $_[0]->_serializer('assembly_version') }
 
 
 =head2 C<executable_library_name>
@@ -100,10 +94,7 @@ has executable_library_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'executableLibraryName',
-    json_ld_serializer => \&_serialize_executable_library_name,
 );
-
-sub _serialize_executable_library_name { $_[0]->_serializer('executable_library_name') }
 
 
 =head2 C<programming_model>
@@ -127,10 +118,7 @@ has programming_model => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'programmingModel',
-    json_ld_serializer => \&_serialize_programming_model,
 );
-
-sub _serialize_programming_model { $_[0]->_serializer('programming_model') }
 
 
 =head2 C<target_platform>
@@ -154,10 +142,7 @@ has target_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetPlatform',
-    json_ld_serializer => \&_serialize_target_platform,
 );
-
-sub _serialize_target_platform { $_[0]->_serializer('target_platform') }
 
 
 

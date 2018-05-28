@@ -53,10 +53,7 @@ has boarding_group => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'boardingGroup',
-    json_ld_serializer => \&_serialize_boarding_group,
 );
-
-sub _serialize_boarding_group { $_[0]->_serializer('boarding_group') }
 
 
 =head2 C<passenger_priority_status>
@@ -83,10 +80,7 @@ has passenger_priority_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'passengerPriorityStatus',
-    json_ld_serializer => \&_serialize_passenger_priority_status,
 );
-
-sub _serialize_passenger_priority_status { $_[0]->_serializer('passenger_priority_status') }
 
 
 =head2 C<passenger_sequence_number>
@@ -110,10 +104,7 @@ has passenger_sequence_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'passengerSequenceNumber',
-    json_ld_serializer => \&_serialize_passenger_sequence_number,
 );
-
-sub _serialize_passenger_sequence_number { $_[0]->_serializer('passenger_sequence_number') }
 
 
 =head2 C<security_screening>
@@ -137,10 +128,7 @@ has security_screening => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'securityScreening',
-    json_ld_serializer => \&_serialize_security_screening,
 );
-
-sub _serialize_security_screening { $_[0]->_serializer('security_screening') }
 
 
 

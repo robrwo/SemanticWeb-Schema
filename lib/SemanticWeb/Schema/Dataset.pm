@@ -46,10 +46,7 @@ has catalog => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'catalog',
-    json_ld_serializer => \&_serialize_catalog,
 );
-
-sub _serialize_catalog { $_[0]->_serializer('catalog') }
 
 
 =head2 C<dataset_time_interval>
@@ -74,10 +71,7 @@ has dataset_time_interval => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'datasetTimeInterval',
-    json_ld_serializer => \&_serialize_dataset_time_interval,
 );
-
-sub _serialize_dataset_time_interval { $_[0]->_serializer('dataset_time_interval') }
 
 
 =head2 C<distribution>
@@ -102,10 +96,7 @@ has distribution => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'distribution',
-    json_ld_serializer => \&_serialize_distribution,
 );
-
-sub _serialize_distribution { $_[0]->_serializer('distribution') }
 
 
 =head2 C<included_data_catalog>
@@ -130,10 +121,7 @@ has included_data_catalog => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'includedDataCatalog',
-    json_ld_serializer => \&_serialize_included_data_catalog,
 );
-
-sub _serialize_included_data_catalog { $_[0]->_serializer('included_data_catalog') }
 
 
 =head2 C<included_in_data_catalog>
@@ -157,10 +145,7 @@ has included_in_data_catalog => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'includedInDataCatalog',
-    json_ld_serializer => \&_serialize_included_in_data_catalog,
 );
-
-sub _serialize_included_in_data_catalog { $_[0]->_serializer('included_in_data_catalog') }
 
 
 =head2 C<issn>
@@ -186,10 +171,7 @@ has issn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issn',
-    json_ld_serializer => \&_serialize_issn,
 );
-
-sub _serialize_issn { $_[0]->_serializer('issn') }
 
 
 =head2 C<spatial>
@@ -214,10 +196,7 @@ has spatial => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'spatial',
-    json_ld_serializer => \&_serialize_spatial,
 );
-
-sub _serialize_spatial { $_[0]->_serializer('spatial') }
 
 
 =head2 C<temporal>
@@ -242,10 +221,7 @@ has temporal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'temporal',
-    json_ld_serializer => \&_serialize_temporal,
 );
-
-sub _serialize_temporal { $_[0]->_serializer('temporal') }
 
 
 

@@ -47,10 +47,7 @@ has result_comment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'resultComment',
-    json_ld_serializer => \&_serialize_result_comment,
 );
-
-sub _serialize_result_comment { $_[0]->_serializer('result_comment') }
 
 
 

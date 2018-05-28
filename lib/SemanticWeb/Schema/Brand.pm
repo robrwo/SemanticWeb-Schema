@@ -48,10 +48,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<logo>
@@ -77,10 +74,7 @@ has logo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'logo',
-    json_ld_serializer => \&_serialize_logo,
 );
-
-sub _serialize_logo { $_[0]->_serializer('logo') }
 
 
 =head2 C<review>
@@ -104,10 +98,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 

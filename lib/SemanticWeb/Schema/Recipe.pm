@@ -59,10 +59,7 @@ has cook_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'cookTime',
-    json_ld_serializer => \&_serialize_cook_time,
 );
-
-sub _serialize_cook_time { $_[0]->_serializer('cook_time') }
 
 
 =head2 C<cooking_method>
@@ -86,10 +83,7 @@ has cooking_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'cookingMethod',
-    json_ld_serializer => \&_serialize_cooking_method,
 );
-
-sub _serialize_cooking_method { $_[0]->_serializer('cooking_method') }
 
 
 =head2 C<ingredients>
@@ -113,10 +107,7 @@ has ingredients => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ingredients',
-    json_ld_serializer => \&_serialize_ingredients,
 );
-
-sub _serialize_ingredients { $_[0]->_serializer('ingredients') }
 
 
 =head2 C<nutrition>
@@ -140,10 +131,7 @@ has nutrition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'nutrition',
-    json_ld_serializer => \&_serialize_nutrition,
 );
-
-sub _serialize_nutrition { $_[0]->_serializer('nutrition') }
 
 
 =head2 C<recipe_category>
@@ -167,10 +155,7 @@ has recipe_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipeCategory',
-    json_ld_serializer => \&_serialize_recipe_category,
 );
-
-sub _serialize_recipe_category { $_[0]->_serializer('recipe_category') }
 
 
 =head2 C<recipe_cuisine>
@@ -194,10 +179,7 @@ has recipe_cuisine => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipeCuisine',
-    json_ld_serializer => \&_serialize_recipe_cuisine,
 );
-
-sub _serialize_recipe_cuisine { $_[0]->_serializer('recipe_cuisine') }
 
 
 =head2 C<recipe_ingredient>
@@ -221,10 +203,7 @@ has recipe_ingredient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipeIngredient',
-    json_ld_serializer => \&_serialize_recipe_ingredient,
 );
-
-sub _serialize_recipe_ingredient { $_[0]->_serializer('recipe_ingredient') }
 
 
 =head2 C<recipe_instructions>
@@ -253,10 +232,7 @@ has recipe_instructions => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipeInstructions',
-    json_ld_serializer => \&_serialize_recipe_instructions,
 );
-
-sub _serialize_recipe_instructions { $_[0]->_serializer('recipe_instructions') }
 
 
 =head2 C<recipe_yield>
@@ -283,10 +259,7 @@ has recipe_yield => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipeYield',
-    json_ld_serializer => \&_serialize_recipe_yield,
 );
-
-sub _serialize_recipe_yield { $_[0]->_serializer('recipe_yield') }
 
 
 =head2 C<suitable_for_diet>
@@ -311,10 +284,7 @@ has suitable_for_diet => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'suitableForDiet',
-    json_ld_serializer => \&_serialize_suitable_for_diet,
 );
-
-sub _serialize_suitable_for_diet { $_[0]->_serializer('suitable_for_diet') }
 
 
 

@@ -51,10 +51,7 @@ has required_quantity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'requiredQuantity',
-    json_ld_serializer => \&_serialize_required_quantity,
 );
-
-sub _serialize_required_quantity { $_[0]->_serializer('required_quantity') }
 
 
 

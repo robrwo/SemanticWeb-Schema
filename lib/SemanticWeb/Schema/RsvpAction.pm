@@ -48,10 +48,7 @@ has additional_number_of_guests => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalNumberOfGuests',
-    json_ld_serializer => \&_serialize_additional_number_of_guests,
 );
-
-sub _serialize_additional_number_of_guests { $_[0]->_serializer('additional_number_of_guests') }
 
 
 =head2 C<comment>
@@ -75,10 +72,7 @@ has comment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'comment',
-    json_ld_serializer => \&_serialize_comment,
 );
-
-sub _serialize_comment { $_[0]->_serializer('comment') }
 
 
 =head2 C<rsvp_response>
@@ -102,10 +96,7 @@ has rsvp_response => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'rsvpResponse',
-    json_ld_serializer => \&_serialize_rsvp_response,
 );
-
-sub _serialize_rsvp_response { $_[0]->_serializer('rsvp_response') }
 
 
 

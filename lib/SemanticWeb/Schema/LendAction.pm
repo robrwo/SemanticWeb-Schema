@@ -55,10 +55,7 @@ has borrower => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'borrower',
-    json_ld_serializer => \&_serialize_borrower,
 );
-
-sub _serialize_borrower { $_[0]->_serializer('borrower') }
 
 
 

@@ -51,10 +51,7 @@ has fuel_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fuelType',
-    json_ld_serializer => \&_serialize_fuel_type,
 );
-
-sub _serialize_fuel_type { $_[0]->_serializer('fuel_type') }
 
 
 

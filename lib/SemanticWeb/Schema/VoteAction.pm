@@ -47,10 +47,7 @@ has candidate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'candidate',
-    json_ld_serializer => \&_serialize_candidate,
 );
-
-sub _serialize_candidate { $_[0]->_serializer('candidate') }
 
 
 

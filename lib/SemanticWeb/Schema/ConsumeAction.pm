@@ -47,10 +47,7 @@ has expects_acceptance_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'expectsAcceptanceOf',
-    json_ld_serializer => \&_serialize_expects_acceptance_of,
 );
-
-sub _serialize_expects_acceptance_of { $_[0]->_serializer('expects_acceptance_of') }
 
 
 

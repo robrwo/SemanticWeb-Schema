@@ -48,10 +48,7 @@ has away_team => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'awayTeam',
-    json_ld_serializer => \&_serialize_away_team,
 );
-
-sub _serialize_away_team { $_[0]->_serializer('away_team') }
 
 
 =head2 C<competitor>
@@ -77,10 +74,7 @@ has competitor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'competitor',
-    json_ld_serializer => \&_serialize_competitor,
 );
-
-sub _serialize_competitor { $_[0]->_serializer('competitor') }
 
 
 =head2 C<home_team>
@@ -106,10 +100,7 @@ has home_team => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'homeTeam',
-    json_ld_serializer => \&_serialize_home_team,
 );
-
-sub _serialize_home_team { $_[0]->_serializer('home_team') }
 
 
 

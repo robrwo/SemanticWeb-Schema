@@ -53,10 +53,7 @@ has about => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'about',
-    json_ld_serializer => \&_serialize_about,
 );
-
-sub _serialize_about { $_[0]->_serializer('about') }
 
 
 =head2 C<actor>
@@ -82,10 +79,7 @@ has actor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actor',
-    json_ld_serializer => \&_serialize_actor,
 );
-
-sub _serialize_actor { $_[0]->_serializer('actor') }
 
 
 =head2 C<aggregate_rating>
@@ -110,10 +104,7 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'aggregateRating',
-    json_ld_serializer => \&_serialize_aggregate_rating,
 );
-
-sub _serialize_aggregate_rating { $_[0]->_serializer('aggregate_rating') }
 
 
 =head2 C<attendee>
@@ -139,10 +130,7 @@ has attendee => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'attendee',
-    json_ld_serializer => \&_serialize_attendee,
 );
-
-sub _serialize_attendee { $_[0]->_serializer('attendee') }
 
 
 =head2 C<attendees>
@@ -168,10 +156,7 @@ has attendees => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'attendees',
-    json_ld_serializer => \&_serialize_attendees,
 );
-
-sub _serialize_attendees { $_[0]->_serializer('attendees') }
 
 
 =head2 C<audience>
@@ -195,10 +180,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<composer>
@@ -225,10 +207,7 @@ has composer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'composer',
-    json_ld_serializer => \&_serialize_composer,
 );
-
-sub _serialize_composer { $_[0]->_serializer('composer') }
 
 
 =head2 C<contributor>
@@ -254,10 +233,7 @@ has contributor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contributor',
-    json_ld_serializer => \&_serialize_contributor,
 );
-
-sub _serialize_contributor { $_[0]->_serializer('contributor') }
 
 
 =head2 C<director>
@@ -283,10 +259,7 @@ has director => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'director',
-    json_ld_serializer => \&_serialize_director,
 );
-
-sub _serialize_director { $_[0]->_serializer('director') }
 
 
 =head2 C<door_time>
@@ -310,10 +283,7 @@ has door_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'doorTime',
-    json_ld_serializer => \&_serialize_door_time,
 );
-
-sub _serialize_door_time { $_[0]->_serializer('door_time') }
 
 
 =head2 C<duration>
@@ -342,10 +312,7 @@ has duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duration',
-    json_ld_serializer => \&_serialize_duration,
 );
-
-sub _serialize_duration { $_[0]->_serializer('duration') }
 
 
 =head2 C<end_date>
@@ -374,10 +341,7 @@ has end_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endDate',
-    json_ld_serializer => \&_serialize_end_date,
 );
-
-sub _serialize_end_date { $_[0]->_serializer('end_date') }
 
 
 =head2 C<event_status>
@@ -402,10 +366,7 @@ has event_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eventStatus',
-    json_ld_serializer => \&_serialize_event_status,
 );
-
-sub _serialize_event_status { $_[0]->_serializer('event_status') }
 
 
 =head2 C<funder>
@@ -432,10 +393,7 @@ has funder => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'funder',
-    json_ld_serializer => \&_serialize_funder,
 );
-
-sub _serialize_funder { $_[0]->_serializer('funder') }
 
 
 =head2 C<in_language>
@@ -469,10 +427,7 @@ has in_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inLanguage',
-    json_ld_serializer => \&_serialize_in_language,
 );
-
-sub _serialize_in_language { $_[0]->_serializer('in_language') }
 
 
 =head2 C<is_accessible_for_free>
@@ -496,10 +451,7 @@ has is_accessible_for_free => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isAccessibleForFree',
-    json_ld_serializer => \&_serialize_is_accessible_for_free,
 );
-
-sub _serialize_is_accessible_for_free { $_[0]->_serializer('is_accessible_for_free') }
 
 
 =head2 C<location>
@@ -528,10 +480,7 @@ has location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'location',
-    json_ld_serializer => \&_serialize_location,
 );
-
-sub _serialize_location { $_[0]->_serializer('location') }
 
 
 =head2 C<maximum_attendee_capacity>
@@ -555,10 +504,7 @@ has maximum_attendee_capacity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maximumAttendeeCapacity',
-    json_ld_serializer => \&_serialize_maximum_attendee_capacity,
 );
-
-sub _serialize_maximum_attendee_capacity { $_[0]->_serializer('maximum_attendee_capacity') }
 
 
 =head2 C<offers>
@@ -584,10 +530,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 =head2 C<organizer>
@@ -613,10 +556,7 @@ has organizer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'organizer',
-    json_ld_serializer => \&_serialize_organizer,
 );
-
-sub _serialize_organizer { $_[0]->_serializer('organizer') }
 
 
 =head2 C<performer>
@@ -643,10 +583,7 @@ has performer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'performer',
-    json_ld_serializer => \&_serialize_performer,
 );
-
-sub _serialize_performer { $_[0]->_serializer('performer') }
 
 
 =head2 C<performers>
@@ -673,10 +610,7 @@ has performers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'performers',
-    json_ld_serializer => \&_serialize_performers,
 );
-
-sub _serialize_performers { $_[0]->_serializer('performers') }
 
 
 =head2 C<previous_start_date>
@@ -704,10 +638,7 @@ has previous_start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'previousStartDate',
-    json_ld_serializer => \&_serialize_previous_start_date,
 );
-
-sub _serialize_previous_start_date { $_[0]->_serializer('previous_start_date') }
 
 
 =head2 C<recorded_in>
@@ -731,10 +662,7 @@ has recorded_in => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recordedIn',
-    json_ld_serializer => \&_serialize_recorded_in,
 );
-
-sub _serialize_recorded_in { $_[0]->_serializer('recorded_in') }
 
 
 =head2 C<remaining_attendee_capacity>
@@ -758,10 +686,7 @@ has remaining_attendee_capacity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'remainingAttendeeCapacity',
-    json_ld_serializer => \&_serialize_remaining_attendee_capacity,
 );
-
-sub _serialize_remaining_attendee_capacity { $_[0]->_serializer('remaining_attendee_capacity') }
 
 
 =head2 C<review>
@@ -785,10 +710,7 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
-    json_ld_serializer => \&_serialize_review,
 );
-
-sub _serialize_review { $_[0]->_serializer('review') }
 
 
 =head2 C<sponsor>
@@ -816,10 +738,7 @@ has sponsor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sponsor',
-    json_ld_serializer => \&_serialize_sponsor,
 );
-
-sub _serialize_sponsor { $_[0]->_serializer('sponsor') }
 
 
 =head2 C<start_date>
@@ -848,10 +767,7 @@ has start_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startDate',
-    json_ld_serializer => \&_serialize_start_date,
 );
-
-sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 =head2 C<sub_event>
@@ -876,10 +792,7 @@ has sub_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subEvent',
-    json_ld_serializer => \&_serialize_sub_event,
 );
-
-sub _serialize_sub_event { $_[0]->_serializer('sub_event') }
 
 
 =head2 C<sub_events>
@@ -904,10 +817,7 @@ has sub_events => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subEvents',
-    json_ld_serializer => \&_serialize_sub_events,
 );
-
-sub _serialize_sub_events { $_[0]->_serializer('sub_events') }
 
 
 =head2 C<super_event>
@@ -933,10 +843,7 @@ has super_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'superEvent',
-    json_ld_serializer => \&_serialize_super_event,
 );
-
-sub _serialize_super_event { $_[0]->_serializer('super_event') }
 
 
 =head2 C<translator>
@@ -964,10 +871,7 @@ has translator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'translator',
-    json_ld_serializer => \&_serialize_translator,
 );
-
-sub _serialize_translator { $_[0]->_serializer('translator') }
 
 
 =head2 C<typical_age_range>
@@ -991,10 +895,7 @@ has typical_age_range => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'typicalAgeRange',
-    json_ld_serializer => \&_serialize_typical_age_range,
 );
-
-sub _serialize_typical_age_range { $_[0]->_serializer('typical_age_range') }
 
 
 =head2 C<work_featured>
@@ -1020,10 +921,7 @@ has work_featured => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workFeatured',
-    json_ld_serializer => \&_serialize_work_featured,
 );
-
-sub _serialize_work_featured { $_[0]->_serializer('work_featured') }
 
 
 =head2 C<work_performed>
@@ -1048,10 +946,7 @@ has work_performed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workPerformed',
-    json_ld_serializer => \&_serialize_work_performed,
 );
-
-sub _serialize_work_performed { $_[0]->_serializer('work_performed') }
 
 
 

@@ -48,10 +48,7 @@ has address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'address',
-    json_ld_serializer => \&_serialize_address,
 );
-
-sub _serialize_address { $_[0]->_serializer('address') }
 
 
 =head2 C<address_country>
@@ -83,10 +80,7 @@ has address_country => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'addressCountry',
-    json_ld_serializer => \&_serialize_address_country,
 );
-
-sub _serialize_address_country { $_[0]->_serializer('address_country') }
 
 
 =head2 C<elevation>
@@ -117,10 +111,7 @@ has elevation => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'elevation',
-    json_ld_serializer => \&_serialize_elevation,
 );
-
-sub _serialize_elevation { $_[0]->_serializer('elevation') }
 
 
 =head2 C<latitude>
@@ -151,10 +142,7 @@ has latitude => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'latitude',
-    json_ld_serializer => \&_serialize_latitude,
 );
-
-sub _serialize_latitude { $_[0]->_serializer('latitude') }
 
 
 =head2 C<longitude>
@@ -185,10 +173,7 @@ has longitude => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'longitude',
-    json_ld_serializer => \&_serialize_longitude,
 );
-
-sub _serialize_longitude { $_[0]->_serializer('longitude') }
 
 
 =head2 C<postal_code>
@@ -212,10 +197,7 @@ has postal_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'postalCode',
-    json_ld_serializer => \&_serialize_postal_code,
 );
-
-sub _serialize_postal_code { $_[0]->_serializer('postal_code') }
 
 
 

@@ -52,10 +52,7 @@ has steps => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'steps',
-    json_ld_serializer => \&_serialize_steps,
 );
-
-sub _serialize_steps { $_[0]->_serializer('steps') }
 
 
 

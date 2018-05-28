@@ -51,10 +51,7 @@ has additional_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'additionalType',
-    json_ld_serializer => \&_serialize_additional_type,
 );
-
-sub _serialize_additional_type { $_[0]->_serializer('additional_type') }
 
 
 =head2 C<alternate_name>
@@ -78,10 +75,7 @@ has alternate_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'alternateName',
-    json_ld_serializer => \&_serialize_alternate_name,
 );
-
-sub _serialize_alternate_name { $_[0]->_serializer('alternate_name') }
 
 
 =head2 C<description>
@@ -105,10 +99,7 @@ has description => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'description',
-    json_ld_serializer => \&_serialize_description,
 );
-
-sub _serialize_description { $_[0]->_serializer('description') }
 
 
 =head2 C<disambiguating_description>
@@ -135,10 +126,7 @@ has disambiguating_description => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'disambiguatingDescription',
-    json_ld_serializer => \&_serialize_disambiguating_description,
 );
-
-sub _serialize_disambiguating_description { $_[0]->_serializer('disambiguating_description') }
 
 
 =head2 C<identifier>
@@ -173,10 +161,7 @@ has identifier => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'identifier',
-    json_ld_serializer => \&_serialize_identifier,
 );
-
-sub _serialize_identifier { $_[0]->_serializer('identifier') }
 
 
 =head2 C<image>
@@ -208,10 +193,7 @@ has image => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'image',
-    json_ld_serializer => \&_serialize_image,
 );
-
-sub _serialize_image { $_[0]->_serializer('image') }
 
 
 =head2 C<main_entity_of_page>
@@ -244,10 +226,7 @@ has main_entity_of_page => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mainEntityOfPage',
-    json_ld_serializer => \&_serialize_main_entity_of_page,
 );
-
-sub _serialize_main_entity_of_page { $_[0]->_serializer('main_entity_of_page') }
 
 
 =head2 C<name>
@@ -271,10 +250,7 @@ has name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'name',
-    json_ld_serializer => \&_serialize_name,
 );
-
-sub _serialize_name { $_[0]->_serializer('name') }
 
 
 =head2 C<potential_action>
@@ -299,10 +275,7 @@ has potential_action => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'potentialAction',
-    json_ld_serializer => \&_serialize_potential_action,
 );
-
-sub _serialize_potential_action { $_[0]->_serializer('potential_action') }
 
 
 =head2 C<same_as>
@@ -328,10 +301,7 @@ has same_as => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sameAs',
-    json_ld_serializer => \&_serialize_same_as,
 );
-
-sub _serialize_same_as { $_[0]->_serializer('same_as') }
 
 
 =head2 C<url>
@@ -355,10 +325,7 @@ has url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'url',
-    json_ld_serializer => \&_serialize_url,
 );
-
-sub _serialize_url { $_[0]->_serializer('url') }
 
 
 

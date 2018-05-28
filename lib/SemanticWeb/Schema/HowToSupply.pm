@@ -50,10 +50,7 @@ has estimated_cost => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'estimatedCost',
-    json_ld_serializer => \&_serialize_estimated_cost,
 );
-
-sub _serialize_estimated_cost { $_[0]->_serializer('estimated_cost') }
 
 
 

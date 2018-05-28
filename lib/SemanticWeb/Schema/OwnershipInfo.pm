@@ -49,10 +49,7 @@ has acquired_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'acquiredFrom',
-    json_ld_serializer => \&_serialize_acquired_from,
 );
-
-sub _serialize_acquired_from { $_[0]->_serializer('acquired_from') }
 
 
 =head2 C<owned_from>
@@ -76,10 +73,7 @@ has owned_from => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ownedFrom',
-    json_ld_serializer => \&_serialize_owned_from,
 );
-
-sub _serialize_owned_from { $_[0]->_serializer('owned_from') }
 
 
 =head2 C<owned_through>
@@ -103,10 +97,7 @@ has owned_through => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ownedThrough',
-    json_ld_serializer => \&_serialize_owned_through,
 );
-
-sub _serialize_owned_through { $_[0]->_serializer('owned_through') }
 
 
 =head2 C<type_of_good>
@@ -132,10 +123,7 @@ has type_of_good => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'typeOfGood',
-    json_ld_serializer => \&_serialize_type_of_good,
 );
-
-sub _serialize_type_of_good { $_[0]->_serializer('type_of_good') }
 
 
 

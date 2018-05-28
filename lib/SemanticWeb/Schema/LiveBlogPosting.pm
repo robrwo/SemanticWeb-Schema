@@ -48,10 +48,7 @@ has coverage_end_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'coverageEndTime',
-    json_ld_serializer => \&_serialize_coverage_end_time,
 );
-
-sub _serialize_coverage_end_time { $_[0]->_serializer('coverage_end_time') }
 
 
 =head2 C<coverage_start_time>
@@ -77,10 +74,7 @@ has coverage_start_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'coverageStartTime',
-    json_ld_serializer => \&_serialize_coverage_start_time,
 );
-
-sub _serialize_coverage_start_time { $_[0]->_serializer('coverage_start_time') }
 
 
 =head2 C<live_blog_update>
@@ -104,10 +98,7 @@ has live_blog_update => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'liveBlogUpdate',
-    json_ld_serializer => \&_serialize_live_blog_update,
 );
-
-sub _serialize_live_blog_update { $_[0]->_serializer('live_blog_update') }
 
 
 

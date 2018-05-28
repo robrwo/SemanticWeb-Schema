@@ -47,10 +47,7 @@ has boarding_policy => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'boardingPolicy',
-    json_ld_serializer => \&_serialize_boarding_policy,
 );
-
-sub _serialize_boarding_policy { $_[0]->_serializer('boarding_policy') }
 
 
 =head2 C<iata_code>
@@ -74,10 +71,7 @@ has iata_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'iataCode',
-    json_ld_serializer => \&_serialize_iata_code,
 );
-
-sub _serialize_iata_code { $_[0]->_serializer('iata_code') }
 
 
 

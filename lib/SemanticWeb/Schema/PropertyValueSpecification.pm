@@ -50,10 +50,7 @@ has default_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'defaultValue',
-    json_ld_serializer => \&_serialize_default_value,
 );
-
-sub _serialize_default_value { $_[0]->_serializer('default_value') }
 
 
 =head2 C<max_value>
@@ -77,10 +74,7 @@ has max_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maxValue',
-    json_ld_serializer => \&_serialize_max_value,
 );
-
-sub _serialize_max_value { $_[0]->_serializer('max_value') }
 
 
 =head2 C<min_value>
@@ -104,10 +98,7 @@ has min_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'minValue',
-    json_ld_serializer => \&_serialize_min_value,
 );
-
-sub _serialize_min_value { $_[0]->_serializer('min_value') }
 
 
 =head2 C<multiple_values>
@@ -131,10 +122,7 @@ has multiple_values => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'multipleValues',
-    json_ld_serializer => \&_serialize_multiple_values,
 );
-
-sub _serialize_multiple_values { $_[0]->_serializer('multiple_values') }
 
 
 =head2 C<readonly_value>
@@ -160,10 +148,7 @@ has readonly_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'readonlyValue',
-    json_ld_serializer => \&_serialize_readonly_value,
 );
-
-sub _serialize_readonly_value { $_[0]->_serializer('readonly_value') }
 
 
 =head2 C<step_value>
@@ -188,10 +173,7 @@ has step_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'stepValue',
-    json_ld_serializer => \&_serialize_step_value,
 );
-
-sub _serialize_step_value { $_[0]->_serializer('step_value') }
 
 
 =head2 C<value_max_length>
@@ -215,10 +197,7 @@ has value_max_length => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueMaxLength',
-    json_ld_serializer => \&_serialize_value_max_length,
 );
-
-sub _serialize_value_max_length { $_[0]->_serializer('value_max_length') }
 
 
 =head2 C<value_min_length>
@@ -243,10 +222,7 @@ has value_min_length => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueMinLength',
-    json_ld_serializer => \&_serialize_value_min_length,
 );
-
-sub _serialize_value_min_length { $_[0]->_serializer('value_min_length') }
 
 
 =head2 C<value_name>
@@ -271,10 +247,7 @@ has value_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueName',
-    json_ld_serializer => \&_serialize_value_name,
 );
-
-sub _serialize_value_name { $_[0]->_serializer('value_name') }
 
 
 =head2 C<value_pattern>
@@ -299,10 +272,7 @@ has value_pattern => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valuePattern',
-    json_ld_serializer => \&_serialize_value_pattern,
 );
-
-sub _serialize_value_pattern { $_[0]->_serializer('value_pattern') }
 
 
 =head2 C<value_required>
@@ -327,10 +297,7 @@ has value_required => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueRequired',
-    json_ld_serializer => \&_serialize_value_required,
 );
-
-sub _serialize_value_required { $_[0]->_serializer('value_required') }
 
 
 

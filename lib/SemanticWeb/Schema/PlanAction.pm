@@ -47,10 +47,7 @@ has scheduled_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'scheduledTime',
-    json_ld_serializer => \&_serialize_scheduled_time,
 );
-
-sub _serialize_scheduled_time { $_[0]->_serializer('scheduled_time') }
 
 
 

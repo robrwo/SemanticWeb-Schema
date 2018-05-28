@@ -50,10 +50,7 @@ has bcc_recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bccRecipient',
-    json_ld_serializer => \&_serialize_bcc_recipient,
 );
-
-sub _serialize_bcc_recipient { $_[0]->_serializer('bcc_recipient') }
 
 
 =head2 C<cc_recipient>
@@ -81,10 +78,7 @@ has cc_recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ccRecipient',
-    json_ld_serializer => \&_serialize_cc_recipient,
 );
-
-sub _serialize_cc_recipient { $_[0]->_serializer('cc_recipient') }
 
 
 =head2 C<date_read>
@@ -109,10 +103,7 @@ has date_read => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateRead',
-    json_ld_serializer => \&_serialize_date_read,
 );
-
-sub _serialize_date_read { $_[0]->_serializer('date_read') }
 
 
 =head2 C<date_received>
@@ -136,10 +127,7 @@ has date_received => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateReceived',
-    json_ld_serializer => \&_serialize_date_received,
 );
-
-sub _serialize_date_received { $_[0]->_serializer('date_received') }
 
 
 =head2 C<date_sent>
@@ -163,10 +151,7 @@ has date_sent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateSent',
-    json_ld_serializer => \&_serialize_date_sent,
 );
-
-sub _serialize_date_sent { $_[0]->_serializer('date_sent') }
 
 
 =head2 C<message_attachment>
@@ -190,10 +175,7 @@ has message_attachment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'messageAttachment',
-    json_ld_serializer => \&_serialize_message_attachment,
 );
-
-sub _serialize_message_attachment { $_[0]->_serializer('message_attachment') }
 
 
 =head2 C<recipient>
@@ -224,10 +206,7 @@ has recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipient',
-    json_ld_serializer => \&_serialize_recipient,
 );
-
-sub _serialize_recipient { $_[0]->_serializer('recipient') }
 
 
 =head2 C<sender>
@@ -256,10 +235,7 @@ has sender => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sender',
-    json_ld_serializer => \&_serialize_sender,
 );
-
-sub _serialize_sender { $_[0]->_serializer('sender') }
 
 
 =head2 C<to_recipient>
@@ -290,10 +266,7 @@ has to_recipient => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'toRecipient',
-    json_ld_serializer => \&_serialize_to_recipient,
 );
-
-sub _serialize_to_recipient { $_[0]->_serializer('to_recipient') }
 
 
 

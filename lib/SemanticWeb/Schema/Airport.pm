@@ -46,10 +46,7 @@ has iata_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'iataCode',
-    json_ld_serializer => \&_serialize_iata_code,
 );
-
-sub _serialize_iata_code { $_[0]->_serializer('iata_code') }
 
 
 =head2 C<icao_code>
@@ -73,10 +70,7 @@ has icao_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'icaoCode',
-    json_ld_serializer => \&_serialize_icao_code,
 );
-
-sub _serialize_icao_code { $_[0]->_serializer('icao_code') }
 
 
 

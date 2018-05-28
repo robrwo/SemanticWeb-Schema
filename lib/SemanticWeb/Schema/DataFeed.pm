@@ -51,10 +51,7 @@ has data_feed_element => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dataFeedElement',
-    json_ld_serializer => \&_serialize_data_feed_element,
 );
-
-sub _serialize_data_feed_element { $_[0]->_serializer('data_feed_element') }
 
 
 

@@ -56,10 +56,7 @@ has available_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableLanguage',
-    json_ld_serializer => \&_serialize_available_language,
 );
-
-sub _serialize_available_language { $_[0]->_serializer('available_language') }
 
 
 =head2 C<processing_time>
@@ -83,10 +80,7 @@ has processing_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'processingTime',
-    json_ld_serializer => \&_serialize_processing_time,
 );
-
-sub _serialize_processing_time { $_[0]->_serializer('processing_time') }
 
 
 =head2 C<provides_service>
@@ -110,10 +104,7 @@ has provides_service => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'providesService',
-    json_ld_serializer => \&_serialize_provides_service,
 );
-
-sub _serialize_provides_service { $_[0]->_serializer('provides_service') }
 
 
 =head2 C<service_location>
@@ -138,10 +129,7 @@ has service_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceLocation',
-    json_ld_serializer => \&_serialize_service_location,
 );
-
-sub _serialize_service_location { $_[0]->_serializer('service_location') }
 
 
 =head2 C<service_phone>
@@ -165,10 +153,7 @@ has service_phone => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'servicePhone',
-    json_ld_serializer => \&_serialize_service_phone,
 );
-
-sub _serialize_service_phone { $_[0]->_serializer('service_phone') }
 
 
 =head2 C<service_postal_address>
@@ -192,10 +177,7 @@ has service_postal_address => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'servicePostalAddress',
-    json_ld_serializer => \&_serialize_service_postal_address,
 );
-
-sub _serialize_service_postal_address { $_[0]->_serializer('service_postal_address') }
 
 
 =head2 C<service_sms_number>
@@ -219,10 +201,7 @@ has service_sms_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceSmsNumber',
-    json_ld_serializer => \&_serialize_service_sms_number,
 );
-
-sub _serialize_service_sms_number { $_[0]->_serializer('service_sms_number') }
 
 
 =head2 C<service_url>
@@ -246,10 +225,7 @@ has service_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceUrl',
-    json_ld_serializer => \&_serialize_service_url,
 );
-
-sub _serialize_service_url { $_[0]->_serializer('service_url') }
 
 
 

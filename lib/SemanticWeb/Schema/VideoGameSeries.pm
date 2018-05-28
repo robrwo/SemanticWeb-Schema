@@ -48,10 +48,7 @@ has actor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actor',
-    json_ld_serializer => \&_serialize_actor,
 );
-
-sub _serialize_actor { $_[0]->_serializer('actor') }
 
 
 =head2 C<actors>
@@ -76,10 +73,7 @@ has actors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actors',
-    json_ld_serializer => \&_serialize_actors,
 );
-
-sub _serialize_actors { $_[0]->_serializer('actors') }
 
 
 =head2 C<character_attribute>
@@ -104,10 +98,7 @@ has character_attribute => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'characterAttribute',
-    json_ld_serializer => \&_serialize_character_attribute,
 );
-
-sub _serialize_character_attribute { $_[0]->_serializer('character_attribute') }
 
 
 =head2 C<cheat_code>
@@ -131,10 +122,7 @@ has cheat_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'cheatCode',
-    json_ld_serializer => \&_serialize_cheat_code,
 );
-
-sub _serialize_cheat_code { $_[0]->_serializer('cheat_code') }
 
 
 =head2 C<contains_season>
@@ -158,10 +146,7 @@ has contains_season => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'containsSeason',
-    json_ld_serializer => \&_serialize_contains_season,
 );
-
-sub _serialize_contains_season { $_[0]->_serializer('contains_season') }
 
 
 =head2 C<director>
@@ -187,10 +172,7 @@ has director => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'director',
-    json_ld_serializer => \&_serialize_director,
 );
-
-sub _serialize_director { $_[0]->_serializer('director') }
 
 
 =head2 C<directors>
@@ -215,10 +197,7 @@ has directors => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'directors',
-    json_ld_serializer => \&_serialize_directors,
 );
-
-sub _serialize_directors { $_[0]->_serializer('directors') }
 
 
 =head2 C<episode>
@@ -242,10 +221,7 @@ has episode => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'episode',
-    json_ld_serializer => \&_serialize_episode,
 );
-
-sub _serialize_episode { $_[0]->_serializer('episode') }
 
 
 =head2 C<episodes>
@@ -269,10 +245,7 @@ has episodes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'episodes',
-    json_ld_serializer => \&_serialize_episodes,
 );
-
-sub _serialize_episodes { $_[0]->_serializer('episodes') }
 
 
 =head2 C<game_item>
@@ -297,10 +270,7 @@ has game_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gameItem',
-    json_ld_serializer => \&_serialize_game_item,
 );
-
-sub _serialize_game_item { $_[0]->_serializer('game_item') }
 
 
 =head2 C<game_location>
@@ -328,10 +298,7 @@ has game_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gameLocation',
-    json_ld_serializer => \&_serialize_game_location,
 );
-
-sub _serialize_game_location { $_[0]->_serializer('game_location') }
 
 
 =head2 C<game_platform>
@@ -363,10 +330,7 @@ has game_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gamePlatform',
-    json_ld_serializer => \&_serialize_game_platform,
 );
-
-sub _serialize_game_platform { $_[0]->_serializer('game_platform') }
 
 
 =head2 C<music_by>
@@ -392,10 +356,7 @@ has music_by => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicBy',
-    json_ld_serializer => \&_serialize_music_by,
 );
-
-sub _serialize_music_by { $_[0]->_serializer('music_by') }
 
 
 =head2 C<number_of_episodes>
@@ -419,10 +380,7 @@ has number_of_episodes => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfEpisodes',
-    json_ld_serializer => \&_serialize_number_of_episodes,
 );
-
-sub _serialize_number_of_episodes { $_[0]->_serializer('number_of_episodes') }
 
 
 =head2 C<number_of_players>
@@ -446,10 +404,7 @@ has number_of_players => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfPlayers',
-    json_ld_serializer => \&_serialize_number_of_players,
 );
-
-sub _serialize_number_of_players { $_[0]->_serializer('number_of_players') }
 
 
 =head2 C<number_of_seasons>
@@ -473,10 +428,7 @@ has number_of_seasons => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numberOfSeasons',
-    json_ld_serializer => \&_serialize_number_of_seasons,
 );
-
-sub _serialize_number_of_seasons { $_[0]->_serializer('number_of_seasons') }
 
 
 =head2 C<play_mode>
@@ -502,10 +454,7 @@ has play_mode => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'playMode',
-    json_ld_serializer => \&_serialize_play_mode,
 );
-
-sub _serialize_play_mode { $_[0]->_serializer('play_mode') }
 
 
 =head2 C<production_company>
@@ -530,10 +479,7 @@ has production_company => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionCompany',
-    json_ld_serializer => \&_serialize_production_company,
 );
-
-sub _serialize_production_company { $_[0]->_serializer('production_company') }
 
 
 =head2 C<quest>
@@ -558,10 +504,7 @@ has quest => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'quest',
-    json_ld_serializer => \&_serialize_quest,
 );
-
-sub _serialize_quest { $_[0]->_serializer('quest') }
 
 
 =head2 C<season>
@@ -585,10 +528,7 @@ has season => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'season',
-    json_ld_serializer => \&_serialize_season,
 );
-
-sub _serialize_season { $_[0]->_serializer('season') }
 
 
 =head2 C<seasons>
@@ -612,10 +552,7 @@ has seasons => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'seasons',
-    json_ld_serializer => \&_serialize_seasons,
 );
-
-sub _serialize_seasons { $_[0]->_serializer('seasons') }
 
 
 =head2 C<trailer>
@@ -639,10 +576,7 @@ has trailer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'trailer',
-    json_ld_serializer => \&_serialize_trailer,
 );
-
-sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 

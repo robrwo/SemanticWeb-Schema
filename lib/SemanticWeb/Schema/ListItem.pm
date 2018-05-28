@@ -47,10 +47,7 @@ has item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'item',
-    json_ld_serializer => \&_serialize_item,
 );
-
-sub _serialize_item { $_[0]->_serializer('item') }
 
 
 =head2 C<next_item>
@@ -74,10 +71,7 @@ has next_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'nextItem',
-    json_ld_serializer => \&_serialize_next_item,
 );
-
-sub _serialize_next_item { $_[0]->_serializer('next_item') }
 
 
 =head2 C<position>
@@ -103,10 +97,7 @@ has position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'position',
-    json_ld_serializer => \&_serialize_position,
 );
-
-sub _serialize_position { $_[0]->_serializer('position') }
 
 
 =head2 C<previous_item>
@@ -130,10 +121,7 @@ has previous_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'previousItem',
-    json_ld_serializer => \&_serialize_previous_item,
 );
-
-sub _serialize_previous_item { $_[0]->_serializer('previous_item') }
 
 
 

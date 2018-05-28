@@ -49,10 +49,7 @@ has amount => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amount',
-    json_ld_serializer => \&_serialize_amount,
 );
-
-sub _serialize_amount { $_[0]->_serializer('amount') }
 
 
 =head2 C<loan_term>
@@ -76,10 +73,7 @@ has loan_term => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'loanTerm',
-    json_ld_serializer => \&_serialize_loan_term,
 );
-
-sub _serialize_loan_term { $_[0]->_serializer('loan_term') }
 
 
 =head2 C<required_collateral>
@@ -106,10 +100,7 @@ has required_collateral => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'requiredCollateral',
-    json_ld_serializer => \&_serialize_required_collateral,
 );
-
-sub _serialize_required_collateral { $_[0]->_serializer('required_collateral') }
 
 
 

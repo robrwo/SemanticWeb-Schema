@@ -53,10 +53,7 @@ has subtitle_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'subtitleLanguage',
-    json_ld_serializer => \&_serialize_subtitle_language,
 );
-
-sub _serialize_subtitle_language { $_[0]->_serializer('subtitle_language') }
 
 
 =head2 C<video_format>
@@ -81,10 +78,7 @@ has video_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'videoFormat',
-    json_ld_serializer => \&_serialize_video_format,
 );
-
-sub _serialize_video_format { $_[0]->_serializer('video_format') }
 
 
 =head2 C<work_presented>
@@ -108,10 +102,7 @@ has work_presented => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workPresented',
-    json_ld_serializer => \&_serialize_work_presented,
 );
-
-sub _serialize_work_presented { $_[0]->_serializer('work_presented') }
 
 
 

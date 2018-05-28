@@ -46,10 +46,7 @@ has action_application => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actionApplication',
-    json_ld_serializer => \&_serialize_action_application,
 );
-
-sub _serialize_action_application { $_[0]->_serializer('action_application') }
 
 
 =head2 C<action_platform>
@@ -75,10 +72,7 @@ has action_platform => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actionPlatform',
-    json_ld_serializer => \&_serialize_action_platform,
 );
-
-sub _serialize_action_platform { $_[0]->_serializer('action_platform') }
 
 
 =head2 C<application>
@@ -102,10 +96,7 @@ has application => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'application',
-    json_ld_serializer => \&_serialize_application,
 );
-
-sub _serialize_application { $_[0]->_serializer('application') }
 
 
 =head2 C<content_type>
@@ -129,10 +120,7 @@ has content_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentType',
-    json_ld_serializer => \&_serialize_content_type,
 );
-
-sub _serialize_content_type { $_[0]->_serializer('content_type') }
 
 
 =head2 C<encoding_type>
@@ -156,10 +144,7 @@ has encoding_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'encodingType',
-    json_ld_serializer => \&_serialize_encoding_type,
 );
-
-sub _serialize_encoding_type { $_[0]->_serializer('encoding_type') }
 
 
 =head2 C<http_method>
@@ -184,10 +169,7 @@ has http_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'httpMethod',
-    json_ld_serializer => \&_serialize_http_method,
 );
-
-sub _serialize_http_method { $_[0]->_serializer('http_method') }
 
 
 =head2 C<url_template>
@@ -212,10 +194,7 @@ has url_template => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'urlTemplate',
-    json_ld_serializer => \&_serialize_url_template,
 );
-
-sub _serialize_url_template { $_[0]->_serializer('url_template') }
 
 
 

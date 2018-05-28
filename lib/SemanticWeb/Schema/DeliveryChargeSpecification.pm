@@ -47,10 +47,7 @@ has applies_to_delivery_method => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'appliesToDeliveryMethod',
-    json_ld_serializer => \&_serialize_applies_to_delivery_method,
 );
-
-sub _serialize_applies_to_delivery_method { $_[0]->_serializer('applies_to_delivery_method') }
 
 
 =head2 C<area_served>
@@ -80,10 +77,7 @@ has area_served => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'areaServed',
-    json_ld_serializer => \&_serialize_area_served,
 );
-
-sub _serialize_area_served { $_[0]->_serializer('area_served') }
 
 
 =head2 C<eligible_region>
@@ -118,10 +112,7 @@ has eligible_region => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'eligibleRegion',
-    json_ld_serializer => \&_serialize_eligible_region,
 );
-
-sub _serialize_eligible_region { $_[0]->_serializer('eligible_region') }
 
 
 =head2 C<ineligible_region>
@@ -157,10 +148,7 @@ has ineligible_region => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ineligibleRegion',
-    json_ld_serializer => \&_serialize_ineligible_region,
 );
-
-sub _serialize_ineligible_region { $_[0]->_serializer('ineligible_region') }
 
 
 

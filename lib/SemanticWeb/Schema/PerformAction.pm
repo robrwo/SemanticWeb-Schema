@@ -47,10 +47,7 @@ has entertainment_business => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'entertainmentBusiness',
-    json_ld_serializer => \&_serialize_entertainment_business,
 );
-
-sub _serialize_entertainment_business { $_[0]->_serializer('entertainment_business') }
 
 
 

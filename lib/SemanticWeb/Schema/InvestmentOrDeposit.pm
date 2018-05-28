@@ -50,10 +50,7 @@ has amount => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amount',
-    json_ld_serializer => \&_serialize_amount,
 );
-
-sub _serialize_amount { $_[0]->_serializer('amount') }
 
 
 

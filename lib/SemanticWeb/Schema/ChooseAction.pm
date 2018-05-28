@@ -49,10 +49,7 @@ has action_option => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'actionOption',
-    json_ld_serializer => \&_serialize_action_option,
 );
-
-sub _serialize_action_option { $_[0]->_serializer('action_option') }
 
 
 =head2 C<option>
@@ -78,10 +75,7 @@ has option => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'option',
-    json_ld_serializer => \&_serialize_option,
 );
-
-sub _serialize_option { $_[0]->_serializer('option') }
 
 
 

@@ -47,10 +47,7 @@ has amount_of_this_good => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amountOfThisGood',
-    json_ld_serializer => \&_serialize_amount_of_this_good,
 );
-
-sub _serialize_amount_of_this_good { $_[0]->_serializer('amount_of_this_good') }
 
 
 =head2 C<business_function>
@@ -76,10 +73,7 @@ has business_function => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'businessFunction',
-    json_ld_serializer => \&_serialize_business_function,
 );
-
-sub _serialize_business_function { $_[0]->_serializer('business_function') }
 
 
 =head2 C<type_of_good>
@@ -105,10 +99,7 @@ has type_of_good => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'typeOfGood',
-    json_ld_serializer => \&_serialize_type_of_good,
 );
-
-sub _serialize_type_of_good { $_[0]->_serializer('type_of_good') }
 
 
 =head2 C<unit_code>
@@ -134,10 +125,7 @@ has unit_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitCode',
-    json_ld_serializer => \&_serialize_unit_code,
 );
-
-sub _serialize_unit_code { $_[0]->_serializer('unit_code') }
 
 
 =head2 C<unit_text>
@@ -166,10 +154,7 @@ has unit_text => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitText',
-    json_ld_serializer => \&_serialize_unit_text,
 );
-
-sub _serialize_unit_text { $_[0]->_serializer('unit_text') }
 
 
 

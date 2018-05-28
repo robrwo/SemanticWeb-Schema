@@ -46,10 +46,7 @@ has by_artist => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'byArtist',
-    json_ld_serializer => \&_serialize_by_artist,
 );
-
-sub _serialize_by_artist { $_[0]->_serializer('by_artist') }
 
 
 =head2 C<duration>
@@ -78,10 +75,7 @@ has duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duration',
-    json_ld_serializer => \&_serialize_duration,
 );
-
-sub _serialize_duration { $_[0]->_serializer('duration') }
 
 
 =head2 C<in_album>
@@ -105,10 +99,7 @@ has in_album => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inAlbum',
-    json_ld_serializer => \&_serialize_in_album,
 );
-
-sub _serialize_in_album { $_[0]->_serializer('in_album') }
 
 
 =head2 C<in_playlist>
@@ -132,10 +123,7 @@ has in_playlist => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'inPlaylist',
-    json_ld_serializer => \&_serialize_in_playlist,
 );
-
-sub _serialize_in_playlist { $_[0]->_serializer('in_playlist') }
 
 
 =head2 C<isrc_code>
@@ -159,10 +147,7 @@ has isrc_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isrcCode',
-    json_ld_serializer => \&_serialize_isrc_code,
 );
-
-sub _serialize_isrc_code { $_[0]->_serializer('isrc_code') }
 
 
 =head2 C<recording_of>
@@ -186,10 +171,7 @@ has recording_of => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recordingOf',
-    json_ld_serializer => \&_serialize_recording_of,
 );
-
-sub _serialize_recording_of { $_[0]->_serializer('recording_of') }
 
 
 

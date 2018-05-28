@@ -58,10 +58,7 @@ has course_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'courseCode',
-    json_ld_serializer => \&_serialize_course_code,
 );
-
-sub _serialize_course_code { $_[0]->_serializer('course_code') }
 
 
 =head2 C<course_prerequisites>
@@ -97,10 +94,7 @@ has course_prerequisites => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'coursePrerequisites',
-    json_ld_serializer => \&_serialize_course_prerequisites,
 );
-
-sub _serialize_course_prerequisites { $_[0]->_serializer('course_prerequisites') }
 
 
 =head2 C<has_course_instance>
@@ -125,10 +119,7 @@ has has_course_instance => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasCourseInstance',
-    json_ld_serializer => \&_serialize_has_course_instance,
 );
-
-sub _serialize_has_course_instance { $_[0]->_serializer('has_course_instance') }
 
 
 

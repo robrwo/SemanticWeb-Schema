@@ -49,10 +49,7 @@ has amenity_feature => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'amenityFeature',
-    json_ld_serializer => \&_serialize_amenity_feature,
 );
-
-sub _serialize_amenity_feature { $_[0]->_serializer('amenity_feature') }
 
 
 =head2 C<audience>
@@ -76,10 +73,7 @@ has audience => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'audience',
-    json_ld_serializer => \&_serialize_audience,
 );
-
-sub _serialize_audience { $_[0]->_serializer('audience') }
 
 
 =head2 C<available_language>
@@ -112,10 +106,7 @@ has available_language => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'availableLanguage',
-    json_ld_serializer => \&_serialize_available_language,
 );
-
-sub _serialize_available_language { $_[0]->_serializer('available_language') }
 
 
 =head2 C<checkin_time>
@@ -139,10 +130,7 @@ has checkin_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'checkinTime',
-    json_ld_serializer => \&_serialize_checkin_time,
 );
-
-sub _serialize_checkin_time { $_[0]->_serializer('checkin_time') }
 
 
 =head2 C<checkout_time>
@@ -166,10 +154,7 @@ has checkout_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'checkoutTime',
-    json_ld_serializer => \&_serialize_checkout_time,
 );
-
-sub _serialize_checkout_time { $_[0]->_serializer('checkout_time') }
 
 
 =head2 C<pets_allowed>
@@ -196,10 +181,7 @@ has pets_allowed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'petsAllowed',
-    json_ld_serializer => \&_serialize_pets_allowed,
 );
-
-sub _serialize_pets_allowed { $_[0]->_serializer('pets_allowed') }
 
 
 =head2 C<star_rating>
@@ -226,10 +208,7 @@ has star_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'starRating',
-    json_ld_serializer => \&_serialize_star_rating,
 );
-
-sub _serialize_star_rating { $_[0]->_serializer('star_rating') }
 
 
 

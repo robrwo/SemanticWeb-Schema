@@ -47,10 +47,7 @@ has course => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'course',
-    json_ld_serializer => \&_serialize_course,
 );
-
-sub _serialize_course { $_[0]->_serializer('course') }
 
 
 =head2 C<distance>
@@ -74,10 +71,7 @@ has distance => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'distance',
-    json_ld_serializer => \&_serialize_distance,
 );
-
-sub _serialize_distance { $_[0]->_serializer('distance') }
 
 
 =head2 C<exercise_course>
@@ -101,10 +95,7 @@ has exercise_course => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'exerciseCourse',
-    json_ld_serializer => \&_serialize_exercise_course,
 );
-
-sub _serialize_exercise_course { $_[0]->_serializer('exercise_course') }
 
 
 =head2 C<from_location>
@@ -129,10 +120,7 @@ has from_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'fromLocation',
-    json_ld_serializer => \&_serialize_from_location,
 );
-
-sub _serialize_from_location { $_[0]->_serializer('from_location') }
 
 
 =head2 C<opponent>
@@ -156,10 +144,7 @@ has opponent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'opponent',
-    json_ld_serializer => \&_serialize_opponent,
 );
-
-sub _serialize_opponent { $_[0]->_serializer('opponent') }
 
 
 =head2 C<sports_activity_location>
@@ -184,10 +169,7 @@ has sports_activity_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sportsActivityLocation',
-    json_ld_serializer => \&_serialize_sports_activity_location,
 );
-
-sub _serialize_sports_activity_location { $_[0]->_serializer('sports_activity_location') }
 
 
 =head2 C<sports_event>
@@ -211,10 +193,7 @@ has sports_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sportsEvent',
-    json_ld_serializer => \&_serialize_sports_event,
 );
-
-sub _serialize_sports_event { $_[0]->_serializer('sports_event') }
 
 
 =head2 C<sports_team>
@@ -239,10 +218,7 @@ has sports_team => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sportsTeam',
-    json_ld_serializer => \&_serialize_sports_team,
 );
-
-sub _serialize_sports_team { $_[0]->_serializer('sports_team') }
 
 
 =head2 C<to_location>
@@ -267,10 +243,7 @@ has to_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'toLocation',
-    json_ld_serializer => \&_serialize_to_location,
 );
-
-sub _serialize_to_location { $_[0]->_serializer('to_location') }
 
 
 

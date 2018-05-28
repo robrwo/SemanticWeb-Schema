@@ -49,10 +49,7 @@ has food_establishment => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'foodEstablishment',
-    json_ld_serializer => \&_serialize_food_establishment,
 );
-
-sub _serialize_food_establishment { $_[0]->_serializer('food_establishment') }
 
 
 =head2 C<food_event>
@@ -77,10 +74,7 @@ has food_event => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'foodEvent',
-    json_ld_serializer => \&_serialize_food_event,
 );
-
-sub _serialize_food_event { $_[0]->_serializer('food_event') }
 
 
 =head2 C<recipe>
@@ -105,10 +99,7 @@ has recipe => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recipe',
-    json_ld_serializer => \&_serialize_recipe,
 );
-
-sub _serialize_recipe { $_[0]->_serializer('recipe') }
 
 
 

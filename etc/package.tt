@@ -52,10 +52,7 @@ has [% name %] => (
     is        => 'rw',
     predicate => 1,
     json_ld   => '[% attributes.$name.label %]',
-    json_ld_serializer => \&_serialize_[% name %],
 );
-
-sub _serialize_[% name %] { $_[0]->_serializer('[% name %]') }
 
 [% END %]
 [% ELSE %]

@@ -49,10 +49,7 @@ has serial_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serialNumber',
-    json_ld_serializer => \&_serialize_serial_number,
 );
-
-sub _serialize_serial_number { $_[0]->_serializer('serial_number') }
 
 
 

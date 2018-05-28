@@ -55,10 +55,7 @@ has party_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partySize',
-    json_ld_serializer => \&_serialize_party_size,
 );
-
-sub _serialize_party_size { $_[0]->_serializer('party_size') }
 
 
 =head2 C<pickup_location>
@@ -82,10 +79,7 @@ has pickup_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pickupLocation',
-    json_ld_serializer => \&_serialize_pickup_location,
 );
-
-sub _serialize_pickup_location { $_[0]->_serializer('pickup_location') }
 
 
 =head2 C<pickup_time>
@@ -109,10 +103,7 @@ has pickup_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'pickupTime',
-    json_ld_serializer => \&_serialize_pickup_time,
 );
-
-sub _serialize_pickup_time { $_[0]->_serializer('pickup_time') }
 
 
 

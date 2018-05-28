@@ -50,10 +50,7 @@ has author => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'author',
-    json_ld_serializer => \&_serialize_author,
 );
-
-sub _serialize_author { $_[0]->_serializer('author') }
 
 
 =head2 C<best_rating>
@@ -80,10 +77,7 @@ has best_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bestRating',
-    json_ld_serializer => \&_serialize_best_rating,
 );
-
-sub _serialize_best_rating { $_[0]->_serializer('best_rating') }
 
 
 =head2 C<rating_value>
@@ -109,10 +103,7 @@ has rating_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ratingValue',
-    json_ld_serializer => \&_serialize_rating_value,
 );
-
-sub _serialize_rating_value { $_[0]->_serializer('rating_value') }
 
 
 =head2 C<worst_rating>
@@ -139,10 +130,7 @@ has worst_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'worstRating',
-    json_ld_serializer => \&_serialize_worst_rating,
 );
-
-sub _serialize_worst_rating { $_[0]->_serializer('worst_rating') }
 
 
 

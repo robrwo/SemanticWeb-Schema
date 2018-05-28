@@ -46,10 +46,7 @@ has num_tracks => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'numTracks',
-    json_ld_serializer => \&_serialize_num_tracks,
 );
-
-sub _serialize_num_tracks { $_[0]->_serializer('num_tracks') }
 
 
 =head2 C<track>
@@ -76,10 +73,7 @@ has track => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'track',
-    json_ld_serializer => \&_serialize_track,
 );
-
-sub _serialize_track { $_[0]->_serializer('track') }
 
 
 =head2 C<tracks>
@@ -103,10 +97,7 @@ has tracks => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'tracks',
-    json_ld_serializer => \&_serialize_tracks,
 );
-
-sub _serialize_tracks { $_[0]->_serializer('tracks') }
 
 
 

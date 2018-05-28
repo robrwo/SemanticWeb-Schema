@@ -47,10 +47,7 @@ has date_created => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateCreated',
-    json_ld_serializer => \&_serialize_date_created,
 );
-
-sub _serialize_date_created { $_[0]->_serializer('date_created') }
 
 
 =head2 C<date_deleted>
@@ -74,10 +71,7 @@ has date_deleted => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateDeleted',
-    json_ld_serializer => \&_serialize_date_deleted,
 );
-
-sub _serialize_date_deleted { $_[0]->_serializer('date_deleted') }
 
 
 =head2 C<date_modified>
@@ -102,10 +96,7 @@ has date_modified => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'dateModified',
-    json_ld_serializer => \&_serialize_date_modified,
 );
-
-sub _serialize_date_modified { $_[0]->_serializer('date_modified') }
 
 
 =head2 C<item>
@@ -130,10 +121,7 @@ has item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'item',
-    json_ld_serializer => \&_serialize_item,
 );
-
-sub _serialize_item { $_[0]->_serializer('item') }
 
 
 

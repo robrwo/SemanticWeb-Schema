@@ -49,10 +49,7 @@ has composer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'composer',
-    json_ld_serializer => \&_serialize_composer,
 );
-
-sub _serialize_composer { $_[0]->_serializer('composer') }
 
 
 =head2 C<first_performance>
@@ -76,10 +73,7 @@ has first_performance => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'firstPerformance',
-    json_ld_serializer => \&_serialize_first_performance,
 );
-
-sub _serialize_first_performance { $_[0]->_serializer('first_performance') }
 
 
 =head2 C<included_composition>
@@ -103,10 +97,7 @@ has included_composition => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'includedComposition',
-    json_ld_serializer => \&_serialize_included_composition,
 );
-
-sub _serialize_included_composition { $_[0]->_serializer('included_composition') }
 
 
 =head2 C<iswc_code>
@@ -130,10 +121,7 @@ has iswc_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'iswcCode',
-    json_ld_serializer => \&_serialize_iswc_code,
 );
-
-sub _serialize_iswc_code { $_[0]->_serializer('iswc_code') }
 
 
 =head2 C<lyricist>
@@ -157,10 +145,7 @@ has lyricist => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lyricist',
-    json_ld_serializer => \&_serialize_lyricist,
 );
-
-sub _serialize_lyricist { $_[0]->_serializer('lyricist') }
 
 
 =head2 C<lyrics>
@@ -184,10 +169,7 @@ has lyrics => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lyrics',
-    json_ld_serializer => \&_serialize_lyrics,
 );
-
-sub _serialize_lyrics { $_[0]->_serializer('lyrics') }
 
 
 =head2 C<music_arrangement>
@@ -211,10 +193,7 @@ has music_arrangement => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicArrangement',
-    json_ld_serializer => \&_serialize_music_arrangement,
 );
-
-sub _serialize_music_arrangement { $_[0]->_serializer('music_arrangement') }
 
 
 =head2 C<music_composition_form>
@@ -238,10 +217,7 @@ has music_composition_form => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicCompositionForm',
-    json_ld_serializer => \&_serialize_music_composition_form,
 );
-
-sub _serialize_music_composition_form { $_[0]->_serializer('music_composition_form') }
 
 
 =head2 C<musical_key>
@@ -265,10 +241,7 @@ has musical_key => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'musicalKey',
-    json_ld_serializer => \&_serialize_musical_key,
 );
-
-sub _serialize_musical_key { $_[0]->_serializer('musical_key') }
 
 
 =head2 C<recorded_as>
@@ -292,10 +265,7 @@ has recorded_as => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'recordedAs',
-    json_ld_serializer => \&_serialize_recorded_as,
 );
-
-sub _serialize_recorded_as { $_[0]->_serializer('recorded_as') }
 
 
 

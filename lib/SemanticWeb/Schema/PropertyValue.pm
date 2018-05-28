@@ -56,10 +56,7 @@ has max_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'maxValue',
-    json_ld_serializer => \&_serialize_max_value,
 );
-
-sub _serialize_max_value { $_[0]->_serializer('max_value') }
 
 
 =head2 C<min_value>
@@ -83,10 +80,7 @@ has min_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'minValue',
-    json_ld_serializer => \&_serialize_min_value,
 );
-
-sub _serialize_min_value { $_[0]->_serializer('min_value') }
 
 
 =head2 C<property_id>
@@ -118,10 +112,7 @@ has property_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'propertyID',
-    json_ld_serializer => \&_serialize_property_id,
 );
-
-sub _serialize_property_id { $_[0]->_serializer('property_id') }
 
 
 =head2 C<unit_code>
@@ -147,10 +138,7 @@ has unit_code => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitCode',
-    json_ld_serializer => \&_serialize_unit_code,
 );
-
-sub _serialize_unit_code { $_[0]->_serializer('unit_code') }
 
 
 =head2 C<unit_text>
@@ -179,10 +167,7 @@ has unit_text => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'unitText',
-    json_ld_serializer => \&_serialize_unit_text,
 );
-
-sub _serialize_unit_text { $_[0]->_serializer('unit_text') }
 
 
 =head2 C<value>
@@ -223,10 +208,7 @@ has value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'value',
-    json_ld_serializer => \&_serialize_value,
 );
-
-sub _serialize_value { $_[0]->_serializer('value') }
 
 
 =head2 C<value_reference>
@@ -259,10 +241,7 @@ has value_reference => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'valueReference',
-    json_ld_serializer => \&_serialize_value_reference,
 );
-
-sub _serialize_value_reference { $_[0]->_serializer('value_reference') }
 
 
 

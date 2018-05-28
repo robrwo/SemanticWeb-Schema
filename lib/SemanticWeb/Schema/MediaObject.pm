@@ -50,10 +50,7 @@ has associated_article => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'associatedArticle',
-    json_ld_serializer => \&_serialize_associated_article,
 );
-
-sub _serialize_associated_article { $_[0]->_serializer('associated_article') }
 
 
 =head2 C<bitrate>
@@ -77,10 +74,7 @@ has bitrate => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bitrate',
-    json_ld_serializer => \&_serialize_bitrate,
 );
-
-sub _serialize_bitrate { $_[0]->_serializer('bitrate') }
 
 
 =head2 C<content_size>
@@ -104,10 +98,7 @@ has content_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentSize',
-    json_ld_serializer => \&_serialize_content_size,
 );
-
-sub _serialize_content_size { $_[0]->_serializer('content_size') }
 
 
 =head2 C<content_url>
@@ -131,10 +122,7 @@ has content_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentUrl',
-    json_ld_serializer => \&_serialize_content_url,
 );
-
-sub _serialize_content_url { $_[0]->_serializer('content_url') }
 
 
 =head2 C<duration>
@@ -163,10 +151,7 @@ has duration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'duration',
-    json_ld_serializer => \&_serialize_duration,
 );
-
-sub _serialize_duration { $_[0]->_serializer('duration') }
 
 
 =head2 C<embed_url>
@@ -196,10 +181,7 @@ has embed_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'embedUrl',
-    json_ld_serializer => \&_serialize_embed_url,
 );
-
-sub _serialize_embed_url { $_[0]->_serializer('embed_url') }
 
 
 =head2 C<encodes_creative_work>
@@ -223,10 +205,7 @@ has encodes_creative_work => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'encodesCreativeWork',
-    json_ld_serializer => \&_serialize_encodes_creative_work,
 );
-
-sub _serialize_encodes_creative_work { $_[0]->_serializer('encodes_creative_work') }
 
 
 =head2 C<encoding_format>
@@ -250,10 +229,7 @@ has encoding_format => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'encodingFormat',
-    json_ld_serializer => \&_serialize_encoding_format,
 );
-
-sub _serialize_encoding_format { $_[0]->_serializer('encoding_format') }
 
 
 =head2 C<height>
@@ -279,10 +255,7 @@ has height => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'height',
-    json_ld_serializer => \&_serialize_height,
 );
-
-sub _serialize_height { $_[0]->_serializer('height') }
 
 
 =head2 C<player_type>
@@ -306,10 +279,7 @@ has player_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'playerType',
-    json_ld_serializer => \&_serialize_player_type,
 );
-
-sub _serialize_player_type { $_[0]->_serializer('player_type') }
 
 
 =head2 C<production_company>
@@ -334,10 +304,7 @@ has production_company => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'productionCompany',
-    json_ld_serializer => \&_serialize_production_company,
 );
-
-sub _serialize_production_company { $_[0]->_serializer('production_company') }
 
 
 =head2 C<regions_allowed>
@@ -367,10 +334,7 @@ has regions_allowed => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'regionsAllowed',
-    json_ld_serializer => \&_serialize_regions_allowed,
 );
-
-sub _serialize_regions_allowed { $_[0]->_serializer('regions_allowed') }
 
 
 =head2 C<requires_subscription>
@@ -400,10 +364,7 @@ has requires_subscription => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'requiresSubscription',
-    json_ld_serializer => \&_serialize_requires_subscription,
 );
-
-sub _serialize_requires_subscription { $_[0]->_serializer('requires_subscription') }
 
 
 =head2 C<upload_date>
@@ -427,10 +388,7 @@ has upload_date => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'uploadDate',
-    json_ld_serializer => \&_serialize_upload_date,
 );
-
-sub _serialize_upload_date { $_[0]->_serializer('upload_date') }
 
 
 =head2 C<width>
@@ -456,10 +414,7 @@ has width => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'width',
-    json_ld_serializer => \&_serialize_width,
 );
-
-sub _serialize_width { $_[0]->_serializer('width') }
 
 
 

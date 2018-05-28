@@ -57,10 +57,7 @@ has end_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'endTime',
-    json_ld_serializer => \&_serialize_end_time,
 );
-
-sub _serialize_end_time { $_[0]->_serializer('end_time') }
 
 
 =head2 C<party_size>
@@ -86,10 +83,7 @@ has party_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partySize',
-    json_ld_serializer => \&_serialize_party_size,
 );
-
-sub _serialize_party_size { $_[0]->_serializer('party_size') }
 
 
 =head2 C<start_time>
@@ -122,10 +116,7 @@ has start_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'startTime',
-    json_ld_serializer => \&_serialize_start_time,
 );
-
-sub _serialize_start_time { $_[0]->_serializer('start_time') }
 
 
 

@@ -49,10 +49,7 @@ has issn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issn',
-    json_ld_serializer => \&_serialize_issn,
 );
-
-sub _serialize_issn { $_[0]->_serializer('issn') }
 
 
 

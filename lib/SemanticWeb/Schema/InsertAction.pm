@@ -47,10 +47,7 @@ has to_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'toLocation',
-    json_ld_serializer => \&_serialize_to_location,
 );
-
-sub _serialize_to_location { $_[0]->_serializer('to_location') }
 
 
 

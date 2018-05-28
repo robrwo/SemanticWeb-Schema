@@ -46,10 +46,7 @@ has part_of_tv_series => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfTVSeries',
-    json_ld_serializer => \&_serialize_part_of_tv_series,
 );
-
-sub _serialize_part_of_tv_series { $_[0]->_serializer('part_of_tv_series') }
 
 
 

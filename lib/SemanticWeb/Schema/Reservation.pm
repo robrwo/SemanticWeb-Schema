@@ -58,10 +58,7 @@ has booking_agent => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bookingAgent',
-    json_ld_serializer => \&_serialize_booking_agent,
 );
-
-sub _serialize_booking_agent { $_[0]->_serializer('booking_agent') }
 
 
 =head2 C<booking_time>
@@ -85,10 +82,7 @@ has booking_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'bookingTime',
-    json_ld_serializer => \&_serialize_booking_time,
 );
-
-sub _serialize_booking_time { $_[0]->_serializer('booking_time') }
 
 
 =head2 C<broker>
@@ -117,10 +111,7 @@ has broker => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broker',
-    json_ld_serializer => \&_serialize_broker,
 );
-
-sub _serialize_broker { $_[0]->_serializer('broker') }
 
 
 =head2 C<modified_time>
@@ -144,10 +135,7 @@ has modified_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'modifiedTime',
-    json_ld_serializer => \&_serialize_modified_time,
 );
-
-sub _serialize_modified_time { $_[0]->_serializer('modified_time') }
 
 
 =head2 C<price_currency>
@@ -178,10 +166,7 @@ has price_currency => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'priceCurrency',
-    json_ld_serializer => \&_serialize_price_currency,
 );
-
-sub _serialize_price_currency { $_[0]->_serializer('price_currency') }
 
 
 =head2 C<program_membership_used>
@@ -206,10 +191,7 @@ has program_membership_used => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'programMembershipUsed',
-    json_ld_serializer => \&_serialize_program_membership_used,
 );
-
-sub _serialize_program_membership_used { $_[0]->_serializer('program_membership_used') }
 
 
 =head2 C<provider>
@@ -237,10 +219,7 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
-    json_ld_serializer => \&_serialize_provider,
 );
-
-sub _serialize_provider { $_[0]->_serializer('provider') }
 
 
 =head2 C<reservation_for>
@@ -264,10 +243,7 @@ has reservation_for => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reservationFor',
-    json_ld_serializer => \&_serialize_reservation_for,
 );
-
-sub _serialize_reservation_for { $_[0]->_serializer('reservation_for') }
 
 
 =head2 C<reservation_id>
@@ -291,10 +267,7 @@ has reservation_id => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reservationId',
-    json_ld_serializer => \&_serialize_reservation_id,
 );
-
-sub _serialize_reservation_id { $_[0]->_serializer('reservation_id') }
 
 
 =head2 C<reservation_status>
@@ -318,10 +291,7 @@ has reservation_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reservationStatus',
-    json_ld_serializer => \&_serialize_reservation_status,
 );
-
-sub _serialize_reservation_status { $_[0]->_serializer('reservation_status') }
 
 
 =head2 C<reserved_ticket>
@@ -345,10 +315,7 @@ has reserved_ticket => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reservedTicket',
-    json_ld_serializer => \&_serialize_reserved_ticket,
 );
-
-sub _serialize_reserved_ticket { $_[0]->_serializer('reserved_ticket') }
 
 
 =head2 C<total_price>
@@ -377,10 +344,7 @@ has total_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'totalPrice',
-    json_ld_serializer => \&_serialize_total_price,
 );
-
-sub _serialize_total_price { $_[0]->_serializer('total_price') }
 
 
 =head2 C<under_name>
@@ -406,10 +370,7 @@ has under_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'underName',
-    json_ld_serializer => \&_serialize_under_name,
 );
-
-sub _serialize_under_name { $_[0]->_serializer('under_name') }
 
 
 

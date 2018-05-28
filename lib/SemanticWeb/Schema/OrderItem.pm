@@ -47,10 +47,7 @@ has order_delivery => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderDelivery',
-    json_ld_serializer => \&_serialize_order_delivery,
 );
-
-sub _serialize_order_delivery { $_[0]->_serializer('order_delivery') }
 
 
 =head2 C<order_item_number>
@@ -74,10 +71,7 @@ has order_item_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderItemNumber',
-    json_ld_serializer => \&_serialize_order_item_number,
 );
-
-sub _serialize_order_item_number { $_[0]->_serializer('order_item_number') }
 
 
 =head2 C<order_item_status>
@@ -101,10 +95,7 @@ has order_item_status => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderItemStatus',
-    json_ld_serializer => \&_serialize_order_item_status,
 );
-
-sub _serialize_order_item_status { $_[0]->_serializer('order_item_status') }
 
 
 =head2 C<order_quantity>
@@ -129,10 +120,7 @@ has order_quantity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderQuantity',
-    json_ld_serializer => \&_serialize_order_quantity,
 );
-
-sub _serialize_order_quantity { $_[0]->_serializer('order_quantity') }
 
 
 =head2 C<ordered_item>
@@ -158,10 +146,7 @@ has ordered_item => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'orderedItem',
-    json_ld_serializer => \&_serialize_ordered_item,
 );
-
-sub _serialize_ordered_item { $_[0]->_serializer('ordered_item') }
 
 
 

@@ -47,10 +47,7 @@ has report_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'reportNumber',
-    json_ld_serializer => \&_serialize_report_number,
 );
-
-sub _serialize_report_number { $_[0]->_serializer('report_number') }
 
 
 

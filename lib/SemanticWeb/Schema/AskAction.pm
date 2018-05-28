@@ -53,10 +53,7 @@ has question => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'question',
-    json_ld_serializer => \&_serialize_question,
 );
-
-sub _serialize_question { $_[0]->_serializer('question') }
 
 
 

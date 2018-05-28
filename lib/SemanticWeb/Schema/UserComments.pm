@@ -54,10 +54,7 @@ has comment_text => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'commentText',
-    json_ld_serializer => \&_serialize_comment_text,
 );
-
-sub _serialize_comment_text { $_[0]->_serializer('comment_text') }
 
 
 =head2 C<comment_time>
@@ -81,10 +78,7 @@ has comment_time => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'commentTime',
-    json_ld_serializer => \&_serialize_comment_time,
 );
-
-sub _serialize_comment_time { $_[0]->_serializer('comment_time') }
 
 
 =head2 C<creator>
@@ -111,10 +105,7 @@ has creator => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'creator',
-    json_ld_serializer => \&_serialize_creator,
 );
-
-sub _serialize_creator { $_[0]->_serializer('creator') }
 
 
 =head2 C<discusses>
@@ -138,10 +129,7 @@ has discusses => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'discusses',
-    json_ld_serializer => \&_serialize_discusses,
 );
-
-sub _serialize_discusses { $_[0]->_serializer('discusses') }
 
 
 =head2 C<reply_to_url>
@@ -165,10 +153,7 @@ has reply_to_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'replyToUrl',
-    json_ld_serializer => \&_serialize_reply_to_url,
 );
-
-sub _serialize_reply_to_url { $_[0]->_serializer('reply_to_url') }
 
 
 

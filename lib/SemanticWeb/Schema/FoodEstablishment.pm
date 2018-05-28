@@ -54,10 +54,7 @@ has accepts_reservations => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'acceptsReservations',
-    json_ld_serializer => \&_serialize_accepts_reservations,
 );
-
-sub _serialize_accepts_reservations { $_[0]->_serializer('accepts_reservations') }
 
 
 =head2 C<has_menu>
@@ -84,10 +81,7 @@ has has_menu => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hasMenu',
-    json_ld_serializer => \&_serialize_has_menu,
 );
-
-sub _serialize_has_menu { $_[0]->_serializer('has_menu') }
 
 
 =head2 C<menu>
@@ -114,10 +108,7 @@ has menu => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'menu',
-    json_ld_serializer => \&_serialize_menu,
 );
-
-sub _serialize_menu { $_[0]->_serializer('menu') }
 
 
 =head2 C<serves_cuisine>
@@ -141,10 +132,7 @@ has serves_cuisine => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'servesCuisine',
-    json_ld_serializer => \&_serialize_serves_cuisine,
 );
-
-sub _serialize_serves_cuisine { $_[0]->_serializer('serves_cuisine') }
 
 
 =head2 C<star_rating>
@@ -171,10 +159,7 @@ has star_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'starRating',
-    json_ld_serializer => \&_serialize_star_rating,
 );
-
-sub _serialize_star_rating { $_[0]->_serializer('star_rating') }
 
 
 

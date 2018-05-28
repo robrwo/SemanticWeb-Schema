@@ -48,10 +48,7 @@ has hosting_organization => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'hostingOrganization',
-    json_ld_serializer => \&_serialize_hosting_organization,
 );
-
-sub _serialize_hosting_organization { $_[0]->_serializer('hosting_organization') }
 
 
 =head2 C<member>
@@ -78,10 +75,7 @@ has member => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'member',
-    json_ld_serializer => \&_serialize_member,
 );
-
-sub _serialize_member { $_[0]->_serializer('member') }
 
 
 =head2 C<members>
@@ -107,10 +101,7 @@ has members => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'members',
-    json_ld_serializer => \&_serialize_members,
 );
-
-sub _serialize_members { $_[0]->_serializer('members') }
 
 
 =head2 C<membership_number>
@@ -134,10 +125,7 @@ has membership_number => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'membershipNumber',
-    json_ld_serializer => \&_serialize_membership_number,
 );
-
-sub _serialize_membership_number { $_[0]->_serializer('membership_number') }
 
 
 =head2 C<program_name>
@@ -161,10 +149,7 @@ has program_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'programName',
-    json_ld_serializer => \&_serialize_program_name,
 );
-
-sub _serialize_program_name { $_[0]->_serializer('program_name') }
 
 
 

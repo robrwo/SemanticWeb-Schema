@@ -46,10 +46,7 @@ has collection => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'collection',
-    json_ld_serializer => \&_serialize_collection,
 );
-
-sub _serialize_collection { $_[0]->_serializer('collection') }
 
 
 =head2 C<target_collection>
@@ -73,10 +70,7 @@ has target_collection => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetCollection',
-    json_ld_serializer => \&_serialize_target_collection,
 );
-
-sub _serialize_target_collection { $_[0]->_serializer('target_collection') }
 
 
 

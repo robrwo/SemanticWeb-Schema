@@ -57,10 +57,7 @@ has course_mode => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'courseMode',
-    json_ld_serializer => \&_serialize_course_mode,
 );
-
-sub _serialize_course_mode { $_[0]->_serializer('course_mode') }
 
 
 =head2 C<instructor>
@@ -90,10 +87,7 @@ has instructor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'instructor',
-    json_ld_serializer => \&_serialize_instructor,
 );
-
-sub _serialize_instructor { $_[0]->_serializer('instructor') }
 
 
 

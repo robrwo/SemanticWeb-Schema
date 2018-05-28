@@ -50,10 +50,7 @@ has alignment_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'alignmentType',
-    json_ld_serializer => \&_serialize_alignment_type,
 );
-
-sub _serialize_alignment_type { $_[0]->_serializer('alignment_type') }
 
 
 =head2 C<educational_framework>
@@ -77,10 +74,7 @@ has educational_framework => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'educationalFramework',
-    json_ld_serializer => \&_serialize_educational_framework,
 );
-
-sub _serialize_educational_framework { $_[0]->_serializer('educational_framework') }
 
 
 =head2 C<target_description>
@@ -104,10 +98,7 @@ has target_description => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetDescription',
-    json_ld_serializer => \&_serialize_target_description,
 );
-
-sub _serialize_target_description { $_[0]->_serializer('target_description') }
 
 
 =head2 C<target_name>
@@ -131,10 +122,7 @@ has target_name => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetName',
-    json_ld_serializer => \&_serialize_target_name,
 );
-
-sub _serialize_target_name { $_[0]->_serializer('target_name') }
 
 
 =head2 C<target_url>
@@ -158,10 +146,7 @@ has target_url => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'targetUrl',
-    json_ld_serializer => \&_serialize_target_url,
 );
-
-sub _serialize_target_url { $_[0]->_serializer('target_url') }
 
 
 

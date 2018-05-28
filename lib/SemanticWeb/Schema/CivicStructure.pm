@@ -63,10 +63,7 @@ has opening_hours => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'openingHours',
-    json_ld_serializer => \&_serialize_opening_hours,
 );
-
-sub _serialize_opening_hours { $_[0]->_serializer('opening_hours') }
 
 
 

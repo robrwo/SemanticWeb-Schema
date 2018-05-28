@@ -50,10 +50,7 @@ has high_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'highPrice',
-    json_ld_serializer => \&_serialize_high_price,
 );
-
-sub _serialize_high_price { $_[0]->_serializer('high_price') }
 
 
 =head2 C<low_price>
@@ -79,10 +76,7 @@ has low_price => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'lowPrice',
-    json_ld_serializer => \&_serialize_low_price,
 );
-
-sub _serialize_low_price { $_[0]->_serializer('low_price') }
 
 
 =head2 C<offer_count>
@@ -106,10 +100,7 @@ has offer_count => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offerCount',
-    json_ld_serializer => \&_serialize_offer_count,
 );
-
-sub _serialize_offer_count { $_[0]->_serializer('offer_count') }
 
 
 =head2 C<offers>
@@ -135,10 +126,7 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
-    json_ld_serializer => \&_serialize_offers,
 );
-
-sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 
