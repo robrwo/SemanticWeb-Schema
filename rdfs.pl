@@ -15,6 +15,7 @@ use Ref::Util qw/ is_plain_arrayref /;
 use String::CamelCase qw/ decamelize /;
 use Template;
 use Text::Wrap qw/ wrap /;
+use Types::Standard -types;
 use URI;
 
 our $VERSION = 'v0.0.1';
@@ -31,17 +32,21 @@ const my %prefixes => (
 );
 
 has module_namespace => (
-   is => 'lazy',
-   default => 'SemanticWeb',
+    is      => 'lazy',
+    isa     => Str,
+    default => 'SemanticWeb',
 );
 
-has generate_to_dir => (
+has class_dir => (
     is      => 'lazy',
-    default => 'blib',
+    isa     => InstanceOf ['Path::Tiny'],
+    coerce  => \&path,
+    default => 'lib',
 );
 
 has prefixes => (
     is      => 'lazy',
+    isa     => InstanceOf ['RDF::Prefixes'],
     builder => sub { RDF::Prefixes->new( \%prefixes ) },
 );
 
@@ -77,6 +82,7 @@ foreach my $prefix ( keys %prefixes ) {
 
 has definition => (
     is      => 'ro',
+    isa     => ArrayRef [Str],
     default => sub {
         [
             ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
@@ -88,11 +94,14 @@ has definition => (
 
 has cache_dir => (
     is      => 'lazy',
+    isa     => InstanceOf ['Path::Tiny'],
+    coerce  => \&path,
     default => './cache',
 );
 
 has definition_files => (
     is      => 'lazy',
+    isa     => ArrayRef,
     builder => sub {
         my ($self) = @_;
 
@@ -138,6 +147,7 @@ has definition_files => (
 
 has store => (
     is      => 'lazy',
+    isa     => InstanceOf ['RDF::Trine::Store'],
     builder => sub {
         RDF::Trine::Store::Memory->new;
     },
@@ -145,6 +155,7 @@ has store => (
 
 has model => (
     is      => 'lazy',
+    isa     => InstanceOf ['RDF::Trine::Model'],
     builder => sub {
         my ($self) = @_;
 
@@ -285,7 +296,7 @@ sub generate_class_from_trine {
 
     my $filename = $class_name;
     $filename =~ s/::/\//g;
-    my $file = path( $self->generate_to_dir, $filename . '.pm' );
+    my $file = path( $self->class_dir, $filename . '.pm' );
 
     $file->parent->mkpath;
 
@@ -436,7 +447,7 @@ sub generate_base_class {
 
     my $filename = $class_name;
     $filename =~ s/::/\//g;
-    my $file = path( $self->generate_to_dir, $filename . '.pm' );
+    my $file = path( $self->class_dir, $filename . '.pm' );
 
     $file->parent->mkpath;
 
