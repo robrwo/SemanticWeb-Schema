@@ -1,0 +1,75 @@
+package SemanticWeb::Schema::SportsOrganization;
+
+# ABSTRACT: Represents the collection of all sports organizations
+
+use Moo;
+
+extends qw/ SemanticWeb::Schema::Organization /;
+
+
+use Ref::Util qw/ is_plain_hashref /;
+# RECOMMEND PREREQ: Ref::Util::XS
+
+use namespace::autoclean;
+
+our $VERSION = 'v0.0.1';
+
+=head1 DESCRIPTION
+
+Represents the collection of all sports organizations, including sports
+teams, governing bodies, and sports associations.
+
+
+
+
+=head1 ATTRIBUTES
+
+
+=head2 C<sport>
+
+
+
+A type of sport (e.g. Baseball).
+
+
+A sport should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has sport => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'sport',
+    json_ld_serializer => \&_serialize_sport,
+);
+
+sub _serialize_sport { $_[0]->_serializer('sport') }
+
+
+
+
+around json_ld_type => sub { return 'SportsOrganization' };
+
+around json_ld_fields => sub {
+    my ($next, $self) = @_;
+    my $fields = $self->$next;
+    [ $fields ? @$fields : (), {
+       'sport' => \&_serialize_sport,
+    } ]
+};
+
+=head1 SEE ALSO
+
+
+
+L<SemanticWeb::Schema::Organization>
+
+=cut
+
+1;

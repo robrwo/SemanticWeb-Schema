@@ -12,7 +12,6 @@ extends qw/[% FOREACH parent IN parents %] [% parent %][% END %] /;
 with qw/[% FOREACH role IN roles %] [% role %][% END %] /;
 [% END -%]
 
-use curry;
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -51,55 +50,28 @@ A [% name %] should be one of the following types:
 has [% name %] => (
     is        => 'rw',
     predicate => 1,
+    json_ld   => '[% attributes.$name.label %]',
+    json_ld_serializer => \&_serialize_[% name %],
 );
+
+sub _serialize_[% name %] { $_[0]->_serializer('[% name %]') }
 
 [% END %]
 [% ELSE %]
 =cut
 [% END %]
 
-=head1 METHODS
-
-=head2 C<json_ld_type>
-
-Defines the type for L<MooX::Role::JSON_LD>
-
-=cut
-
-sub json_ld_type { '[% label %]' }
-
-[% IF attributes.size %]
-
-=head2 C<json_ld_fields>
-
-Specifies the fields for L<MooX::Role::JSON_LD>
-
-=cut
-
-[% IF is_subclass %]
+around json_ld_type => sub { return '[% label %]' };
 
 around json_ld_fields => sub {
     my ($next, $self) = @_;
     my $fields = $self->$next;
-    [ @$fields, {
+    [ $fields ? @$fields : (), {
 [% FOREACH name IN attributes.keys.sort -%]
-       '[% attributes.$name.label %]' => $self->curry::_serializer('[% name %]'),
+       '[% attributes.$name.label %]' => \&_serialize_[% name %],
 [% END -%]
     } ]
 };
-
-[% ELSE %]
-sub json_ld_fields {
-  my ($self) = @_;
-   [
-[% FOREACH name IN attributes.keys.sort -%]
-    {   '[% attributes.$name.label %]' => $self->curry::_serializer('[% name %]') },
-[% END -%]
-     ]
-}
-
-[% END %]
-[% END %]
 
 =head1 SEE ALSO
 

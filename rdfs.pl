@@ -1,4 +1,4 @@
-package LDF::ClassGenerator;
+package SemanticWeb::ClassGenerator;
 
 use v5.10;
 
@@ -28,6 +28,16 @@ const my %prefixes => (
     rdfs     => 'http://www.w3.org/2000/01/rdf-schema#',
     schema   => 'http://schema.org/',
     og       => 'http://ogp.me/ns#',
+);
+
+has module_namespace => (
+   is => 'lazy',
+   default => 'SemanticWeb',
+);
+
+has generate_to_dir => (
+    is      => 'lazy',
+    default => 'blib',
 );
 
 has prefixes => (
@@ -242,7 +252,7 @@ sub generate_class_from_trine {
     }
     else {
 
-        $meta{parents} = $self->label_to_package_name($prefix);
+        $meta{parents}     = $self->label_to_package_name($prefix);
         $meta{is_subclass} = 0;
 
     }
@@ -275,7 +285,7 @@ sub generate_class_from_trine {
 
     my $filename = $class_name;
     $filename =~ s/::/\//g;
-    my $file = path( 'lib', $filename . '.pm' );
+    my $file = path( $self->generate_to_dir, $filename . '.pm' );
 
     $file->parent->mkpath;
 
@@ -368,11 +378,14 @@ sub label_to_package_name {
 
     my ( $prefix, $name ) = split /:/, $qname;
 
-    return join('::', grep { defined $_ } (
-        'LDF',
-        $prefix =~ /^(?:schema|elements)$/ ? ucfirst($prefix) : uc($prefix),
-        $name,
-    ));
+    return join(
+        '::',
+        grep { defined $_ } (
+            $self->module_namespace,
+            $prefix =~ /^(?:schema|elements)$/ ? ucfirst($prefix) : uc($prefix),
+            $name,
+        )
+    );
 
 }
 
@@ -419,11 +432,11 @@ sub generate_base_class {
         context    => $prefixes{$prefix},
         version    => $VERSION,
         class_name => $class_name,
-        );
+    );
 
     my $filename = $class_name;
     $filename =~ s/::/\//g;
-    my $file = path( 'lib', $filename . '.pm' );
+    my $file = path( $self->generate_to_dir, $filename . '.pm' );
 
     $file->parent->mkpath;
 
@@ -438,7 +451,7 @@ package main;
 use v5.10;
 use DDP;
 
-my $mg = LDF::ClassGenerator->new();
+my $mg = SemanticWeb::ClassGenerator->new();
 
 # definition_url => 'http://ogp.me/ns/ogp.me.rdf'
 
