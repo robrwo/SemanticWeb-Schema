@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema /;
 
 
+use MooX::JSON_LD 'Thing';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -361,26 +362,6 @@ sub _serialize_url { $_[0]->_serializer('url') }
 
 
 
-
-around json_ld_type => sub { return 'Thing' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalType' => \&_serialize_additional_type,
-       'alternateName' => \&_serialize_alternate_name,
-       'description' => \&_serialize_description,
-       'disambiguatingDescription' => \&_serialize_disambiguating_description,
-       'identifier' => \&_serialize_identifier,
-       'image' => \&_serialize_image,
-       'mainEntityOfPage' => \&_serialize_main_entity_of_page,
-       'name' => \&_serialize_name,
-       'potentialAction' => \&_serialize_potential_action,
-       'sameAs' => \&_serialize_same_as,
-       'url' => \&_serialize_url,
-    } ]
-};
 
 =head1 SEE ALSO
 

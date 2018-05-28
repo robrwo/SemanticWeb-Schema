@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Event /;
 
 
+use MooX::JSON_LD 'ScreeningEvent';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -114,18 +115,6 @@ sub _serialize_work_presented { $_[0]->_serializer('work_presented') }
 
 
 
-
-around json_ld_type => sub { return 'ScreeningEvent' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'subtitleLanguage' => \&_serialize_subtitle_language,
-       'videoFormat' => \&_serialize_video_format,
-       'workPresented' => \&_serialize_work_presented,
-    } ]
-};
 
 =head1 SEE ALSO
 

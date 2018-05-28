@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'PublicationVolume';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -149,19 +150,6 @@ sub _serialize_volume_number { $_[0]->_serializer('volume_number') }
 
 
 
-
-around json_ld_type => sub { return 'PublicationVolume' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'pageEnd' => \&_serialize_page_end,
-       'pageStart' => \&_serialize_page_start,
-       'pagination' => \&_serialize_pagination,
-       'volumeNumber' => \&_serialize_volume_number,
-    } ]
-};
 
 =head1 SEE ALSO
 

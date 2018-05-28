@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Episode /;
 
 
+use MooX::JSON_LD 'TVEpisode';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -114,18 +115,6 @@ sub _serialize_subtitle_language { $_[0]->_serializer('subtitle_language') }
 
 
 
-
-around json_ld_type => sub { return 'TVEpisode' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'countryOfOrigin' => \&_serialize_country_of_origin,
-       'partOfTVSeries' => \&_serialize_part_of_tv_series,
-       'subtitleLanguage' => \&_serialize_subtitle_language,
-    } ]
-};
 
 =head1 SEE ALSO
 

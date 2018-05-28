@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'DigitalDocument';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_has_digital_document_permission { $_[0]->_serializer('has_digital
 
 
 
-
-around json_ld_type => sub { return 'DigitalDocument' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'hasDigitalDocumentPermission' => \&_serialize_has_digital_document_permission,
-    } ]
-};
 
 =head1 SEE ALSO
 

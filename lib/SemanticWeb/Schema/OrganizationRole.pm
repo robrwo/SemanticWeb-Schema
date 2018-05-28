@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Role /;
 
 
+use MooX::JSON_LD 'OrganizationRole';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_numbered_position { $_[0]->_serializer('numbered_position') }
 
 
 
-
-around json_ld_type => sub { return 'OrganizationRole' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'numberedPosition' => \&_serialize_numbered_position,
-    } ]
-};
 
 =head1 SEE ALSO
 

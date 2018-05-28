@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ListItem /;
 
 
+use MooX::JSON_LD 'HowToTip';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -26,15 +27,6 @@ doesn't specify what should be done (see HowToDirection).
 
 =cut
 
-
-around json_ld_type => sub { return 'HowToTip' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

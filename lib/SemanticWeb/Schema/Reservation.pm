@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Reservation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -412,28 +413,6 @@ sub _serialize_under_name { $_[0]->_serializer('under_name') }
 
 
 
-
-around json_ld_type => sub { return 'Reservation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'bookingAgent' => \&_serialize_booking_agent,
-       'bookingTime' => \&_serialize_booking_time,
-       'broker' => \&_serialize_broker,
-       'modifiedTime' => \&_serialize_modified_time,
-       'priceCurrency' => \&_serialize_price_currency,
-       'programMembershipUsed' => \&_serialize_program_membership_used,
-       'provider' => \&_serialize_provider,
-       'reservationFor' => \&_serialize_reservation_for,
-       'reservationId' => \&_serialize_reservation_id,
-       'reservationStatus' => \&_serialize_reservation_status,
-       'reservedTicket' => \&_serialize_reserved_ticket,
-       'totalPrice' => \&_serialize_total_price,
-       'underName' => \&_serialize_under_name,
-    } ]
-};
 
 =head1 SEE ALSO
 

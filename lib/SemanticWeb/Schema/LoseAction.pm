@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::AchieveAction /;
 
 
+use MooX::JSON_LD 'LoseAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_winner { $_[0]->_serializer('winner') }
 
 
 
-
-around json_ld_type => sub { return 'LoseAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'winner' => \&_serialize_winner,
-    } ]
-};
 
 =head1 SEE ALSO
 

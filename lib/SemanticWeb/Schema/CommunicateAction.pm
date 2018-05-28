@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::InteractAction /;
 
 
+use MooX::JSON_LD 'CommunicateAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -151,19 +152,6 @@ sub _serialize_recipient { $_[0]->_serializer('recipient') }
 
 
 
-
-around json_ld_type => sub { return 'CommunicateAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'about' => \&_serialize_about,
-       'inLanguage' => \&_serialize_in_language,
-       'language' => \&_serialize_language,
-       'recipient' => \&_serialize_recipient,
-    } ]
-};
 
 =head1 SEE ALSO
 

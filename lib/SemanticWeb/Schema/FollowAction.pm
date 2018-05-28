@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::InteractAction /;
 
 
+use MooX::JSON_LD 'FollowAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -77,16 +78,6 @@ sub _serialize_followee { $_[0]->_serializer('followee') }
 
 
 
-
-around json_ld_type => sub { return 'FollowAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'followee' => \&_serialize_followee,
-    } ]
-};
 
 =head1 SEE ALSO
 

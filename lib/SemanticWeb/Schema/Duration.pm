@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Quantity /;
 
 
+use MooX::JSON_LD 'Duration';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -28,15 +29,6 @@ Quantity: Duration (use <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO
 
 =cut
 
-
-around json_ld_type => sub { return 'Duration' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

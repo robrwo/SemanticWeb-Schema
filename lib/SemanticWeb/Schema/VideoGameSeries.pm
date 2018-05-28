@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;
 
 
+use MooX::JSON_LD 'VideoGameSeries';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -645,37 +646,6 @@ sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 
-
-around json_ld_type => sub { return 'VideoGameSeries' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actor' => \&_serialize_actor,
-       'actors' => \&_serialize_actors,
-       'characterAttribute' => \&_serialize_character_attribute,
-       'cheatCode' => \&_serialize_cheat_code,
-       'containsSeason' => \&_serialize_contains_season,
-       'director' => \&_serialize_director,
-       'directors' => \&_serialize_directors,
-       'episode' => \&_serialize_episode,
-       'episodes' => \&_serialize_episodes,
-       'gameItem' => \&_serialize_game_item,
-       'gameLocation' => \&_serialize_game_location,
-       'gamePlatform' => \&_serialize_game_platform,
-       'musicBy' => \&_serialize_music_by,
-       'numberOfEpisodes' => \&_serialize_number_of_episodes,
-       'numberOfPlayers' => \&_serialize_number_of_players,
-       'numberOfSeasons' => \&_serialize_number_of_seasons,
-       'playMode' => \&_serialize_play_mode,
-       'productionCompany' => \&_serialize_production_company,
-       'quest' => \&_serialize_quest,
-       'season' => \&_serialize_season,
-       'seasons' => \&_serialize_seasons,
-       'trailer' => \&_serialize_trailer,
-    } ]
-};
 
 =head1 SEE ALSO
 

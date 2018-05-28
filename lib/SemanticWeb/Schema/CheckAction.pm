@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::FindAction /;
 
 
+use MooX::JSON_LD 'CheckAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -24,15 +25,6 @@ object's accuracy, quality, condition, or state.
 
 =cut
 
-
-around json_ld_type => sub { return 'CheckAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

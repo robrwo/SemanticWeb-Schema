@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Rating';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -145,19 +146,6 @@ sub _serialize_worst_rating { $_[0]->_serializer('worst_rating') }
 
 
 
-
-around json_ld_type => sub { return 'Rating' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'author' => \&_serialize_author,
-       'bestRating' => \&_serialize_best_rating,
-       'ratingValue' => \&_serialize_rating_value,
-       'worstRating' => \&_serialize_worst_rating,
-    } ]
-};
 
 =head1 SEE ALSO
 

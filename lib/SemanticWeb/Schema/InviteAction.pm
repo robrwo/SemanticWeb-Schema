@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CommunicateAction /;
 
 
+use MooX::JSON_LD 'InviteAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_event { $_[0]->_serializer('event') }
 
 
 
-
-around json_ld_type => sub { return 'InviteAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'event' => \&_serialize_event,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::SoftwareApplication /;
 
 
+use MooX::JSON_LD 'MobileApplication';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_carrier_requirements { $_[0]->_serializer('carrier_requirements')
 
 
 
-
-around json_ld_type => sub { return 'MobileApplication' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'carrierRequirements' => \&_serialize_carrier_requirements,
-    } ]
-};
 
 =head1 SEE ALSO
 

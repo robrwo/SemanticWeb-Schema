@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'SoftwareApplication';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -690,39 +691,6 @@ sub _serialize_supporting_data { $_[0]->_serializer('supporting_data') }
 
 
 
-
-around json_ld_type => sub { return 'SoftwareApplication' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'applicationCategory' => \&_serialize_application_category,
-       'applicationSubCategory' => \&_serialize_application_sub_category,
-       'applicationSuite' => \&_serialize_application_suite,
-       'availableOnDevice' => \&_serialize_available_on_device,
-       'countriesNotSupported' => \&_serialize_countries_not_supported,
-       'countriesSupported' => \&_serialize_countries_supported,
-       'device' => \&_serialize_device,
-       'downloadUrl' => \&_serialize_download_url,
-       'featureList' => \&_serialize_feature_list,
-       'fileSize' => \&_serialize_file_size,
-       'installUrl' => \&_serialize_install_url,
-       'memoryRequirements' => \&_serialize_memory_requirements,
-       'operatingSystem' => \&_serialize_operating_system,
-       'permissions' => \&_serialize_permissions,
-       'processorRequirements' => \&_serialize_processor_requirements,
-       'releaseNotes' => \&_serialize_release_notes,
-       'requirements' => \&_serialize_requirements,
-       'screenshot' => \&_serialize_screenshot,
-       'softwareAddOn' => \&_serialize_software_add_on,
-       'softwareHelp' => \&_serialize_software_help,
-       'softwareRequirements' => \&_serialize_software_requirements,
-       'softwareVersion' => \&_serialize_software_version,
-       'storageRequirements' => \&_serialize_storage_requirements,
-       'supportingData' => \&_serialize_supporting_data,
-    } ]
-};
 
 =head1 SEE ALSO
 

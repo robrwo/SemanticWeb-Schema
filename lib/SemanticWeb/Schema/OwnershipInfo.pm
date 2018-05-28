@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'OwnershipInfo';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -138,19 +139,6 @@ sub _serialize_type_of_good { $_[0]->_serializer('type_of_good') }
 
 
 
-
-around json_ld_type => sub { return 'OwnershipInfo' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'acquiredFrom' => \&_serialize_acquired_from,
-       'ownedFrom' => \&_serialize_owned_from,
-       'ownedThrough' => \&_serialize_owned_through,
-       'typeOfGood' => \&_serialize_type_of_good,
-    } ]
-};
 
 =head1 SEE ALSO
 

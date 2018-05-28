@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Audience';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -81,17 +82,6 @@ sub _serialize_geographic_area { $_[0]->_serializer('geographic_area') }
 
 
 
-
-around json_ld_type => sub { return 'Audience' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'audienceType' => \&_serialize_audience_type,
-       'geographicArea' => \&_serialize_geographic_area,
-    } ]
-};
 
 =head1 SEE ALSO
 

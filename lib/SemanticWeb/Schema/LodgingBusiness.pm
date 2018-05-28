@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::LocalBusiness /;
 
 
+use MooX::JSON_LD 'LodgingBusiness';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -232,22 +233,6 @@ sub _serialize_star_rating { $_[0]->_serializer('star_rating') }
 
 
 
-
-around json_ld_type => sub { return 'LodgingBusiness' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'amenityFeature' => \&_serialize_amenity_feature,
-       'audience' => \&_serialize_audience,
-       'availableLanguage' => \&_serialize_available_language,
-       'checkinTime' => \&_serialize_checkin_time,
-       'checkoutTime' => \&_serialize_checkout_time,
-       'petsAllowed' => \&_serialize_pets_allowed,
-       'starRating' => \&_serialize_star_rating,
-    } ]
-};
 
 =head1 SEE ALSO
 

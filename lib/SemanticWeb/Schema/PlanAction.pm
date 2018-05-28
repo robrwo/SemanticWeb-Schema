@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::OrganizeAction /;
 
 
+use MooX::JSON_LD 'PlanAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_scheduled_time { $_[0]->_serializer('scheduled_time') }
 
 
 
-
-around json_ld_type => sub { return 'PlanAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'scheduledTime' => \&_serialize_scheduled_time,
-    } ]
-};
 
 =head1 SEE ALSO
 

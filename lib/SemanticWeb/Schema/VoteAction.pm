@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ChooseAction /;
 
 
+use MooX::JSON_LD 'VoteAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_candidate { $_[0]->_serializer('candidate') }
 
 
 
-
-around json_ld_type => sub { return 'VoteAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'candidate' => \&_serialize_candidate,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::UserInteraction /;
 
 
+use MooX::JSON_LD 'UserComments';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -171,20 +172,6 @@ sub _serialize_reply_to_url { $_[0]->_serializer('reply_to_url') }
 
 
 
-
-around json_ld_type => sub { return 'UserComments' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'commentText' => \&_serialize_comment_text,
-       'commentTime' => \&_serialize_comment_time,
-       'creator' => \&_serialize_creator,
-       'discusses' => \&_serialize_discusses,
-       'replyToUrl' => \&_serialize_reply_to_url,
-    } ]
-};
 
 =head1 SEE ALSO
 

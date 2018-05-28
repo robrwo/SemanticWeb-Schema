@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PriceSpecification /;
 
 
+use MooX::JSON_LD 'CompoundPriceSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -63,16 +64,6 @@ sub _serialize_price_component { $_[0]->_serializer('price_component') }
 
 
 
-
-around json_ld_type => sub { return 'CompoundPriceSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'priceComponent' => \&_serialize_price_component,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'AlignmentObject';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -164,20 +165,6 @@ sub _serialize_target_url { $_[0]->_serializer('target_url') }
 
 
 
-
-around json_ld_type => sub { return 'AlignmentObject' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'alignmentType' => \&_serialize_alignment_type,
-       'educationalFramework' => \&_serialize_educational_framework,
-       'targetDescription' => \&_serialize_target_description,
-       'targetName' => \&_serialize_target_name,
-       'targetUrl' => \&_serialize_target_url,
-    } ]
-};
 
 =head1 SEE ALSO
 

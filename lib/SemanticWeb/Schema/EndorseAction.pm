@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ReactAction /;
 
 
+use MooX::JSON_LD 'EndorseAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_endorsee { $_[0]->_serializer('endorsee') }
 
 
 
-
-around json_ld_type => sub { return 'EndorseAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'endorsee' => \&_serialize_endorsee,
-    } ]
-};
 
 =head1 SEE ALSO
 

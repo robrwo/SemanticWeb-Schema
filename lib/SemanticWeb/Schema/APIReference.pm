@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TechArticle /;
 
 
+use MooX::JSON_LD 'APIReference';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -160,20 +161,6 @@ sub _serialize_target_platform { $_[0]->_serializer('target_platform') }
 
 
 
-
-around json_ld_type => sub { return 'APIReference' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'assembly' => \&_serialize_assembly,
-       'assemblyVersion' => \&_serialize_assembly_version,
-       'executableLibraryName' => \&_serialize_executable_library_name,
-       'programmingModel' => \&_serialize_programming_model,
-       'targetPlatform' => \&_serialize_target_platform,
-    } ]
-};
 
 =head1 SEE ALSO
 

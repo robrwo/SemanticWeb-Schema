@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Place /;
 
 
+use MooX::JSON_LD 'TouristAttraction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -106,17 +107,6 @@ sub _serialize_tourist_type { $_[0]->_serializer('tourist_type') }
 
 
 
-
-around json_ld_type => sub { return 'TouristAttraction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'availableLanguage' => \&_serialize_available_language,
-       'touristType' => \&_serialize_tourist_type,
-    } ]
-};
 
 =head1 SEE ALSO
 

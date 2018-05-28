@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::FinancialProduct /;
 
 
+use MooX::JSON_LD 'LoanOrCredit';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -112,18 +113,6 @@ sub _serialize_required_collateral { $_[0]->_serializer('required_collateral') }
 
 
 
-
-around json_ld_type => sub { return 'LoanOrCredit' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'amount' => \&_serialize_amount,
-       'loanTerm' => \&_serialize_loan_term,
-       'requiredCollateral' => \&_serialize_required_collateral,
-    } ]
-};
 
 =head1 SEE ALSO
 

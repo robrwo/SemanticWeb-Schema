@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::LodgingBusiness /;
 
 
+use MooX::JSON_LD 'Hostel';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -29,15 +30,6 @@ schema.org for marking up hotels and other forms of accommodations</a>.
 
 =cut
 
-
-around json_ld_type => sub { return 'Hostel' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

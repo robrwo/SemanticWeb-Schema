@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'JobPosting';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -608,36 +609,6 @@ sub _serialize_work_hours { $_[0]->_serializer('work_hours') }
 
 
 
-
-around json_ld_type => sub { return 'JobPosting' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'baseSalary' => \&_serialize_base_salary,
-       'benefits' => \&_serialize_benefits,
-       'datePosted' => \&_serialize_date_posted,
-       'educationRequirements' => \&_serialize_education_requirements,
-       'employmentType' => \&_serialize_employment_type,
-       'experienceRequirements' => \&_serialize_experience_requirements,
-       'hiringOrganization' => \&_serialize_hiring_organization,
-       'incentiveCompensation' => \&_serialize_incentive_compensation,
-       'incentives' => \&_serialize_incentives,
-       'industry' => \&_serialize_industry,
-       'jobBenefits' => \&_serialize_job_benefits,
-       'jobLocation' => \&_serialize_job_location,
-       'occupationalCategory' => \&_serialize_occupational_category,
-       'qualifications' => \&_serialize_qualifications,
-       'responsibilities' => \&_serialize_responsibilities,
-       'salaryCurrency' => \&_serialize_salary_currency,
-       'skills' => \&_serialize_skills,
-       'specialCommitments' => \&_serialize_special_commitments,
-       'title' => \&_serialize_title,
-       'validThrough' => \&_serialize_valid_through,
-       'workHours' => \&_serialize_work_hours,
-    } ]
-};
 
 =head1 SEE ALSO
 

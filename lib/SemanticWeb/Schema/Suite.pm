@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Accommodation /;
 
 
+use MooX::JSON_LD 'Suite';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -130,18 +131,6 @@ sub _serialize_occupancy { $_[0]->_serializer('occupancy') }
 
 
 
-
-around json_ld_type => sub { return 'Suite' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'bed' => \&_serialize_bed,
-       'numberOfRooms' => \&_serialize_number_of_rooms,
-       'occupancy' => \&_serialize_occupancy,
-    } ]
-};
 
 =head1 SEE ALSO
 

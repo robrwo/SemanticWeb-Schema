@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Rating /;
 
 
+use MooX::JSON_LD 'AggregateRating';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -106,18 +107,6 @@ sub _serialize_review_count { $_[0]->_serializer('review_count') }
 
 
 
-
-around json_ld_type => sub { return 'AggregateRating' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'itemReviewed' => \&_serialize_item_reviewed,
-       'ratingCount' => \&_serialize_rating_count,
-       'reviewCount' => \&_serialize_review_count,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::FinancialProduct /;
 
 
+use MooX::JSON_LD 'InvestmentOrDeposit';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -56,16 +57,6 @@ sub _serialize_amount { $_[0]->_serializer('amount') }
 
 
 
-
-around json_ld_type => sub { return 'InvestmentOrDeposit' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'amount' => \&_serialize_amount,
-    } ]
-};
 
 =head1 SEE ALSO
 

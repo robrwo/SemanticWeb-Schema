@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;
 
 
+use MooX::JSON_LD 'RadioSeries';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -413,29 +414,6 @@ sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 
-
-around json_ld_type => sub { return 'RadioSeries' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actor' => \&_serialize_actor,
-       'actors' => \&_serialize_actors,
-       'containsSeason' => \&_serialize_contains_season,
-       'director' => \&_serialize_director,
-       'directors' => \&_serialize_directors,
-       'episode' => \&_serialize_episode,
-       'episodes' => \&_serialize_episodes,
-       'musicBy' => \&_serialize_music_by,
-       'numberOfEpisodes' => \&_serialize_number_of_episodes,
-       'numberOfSeasons' => \&_serialize_number_of_seasons,
-       'productionCompany' => \&_serialize_production_company,
-       'season' => \&_serialize_season,
-       'seasons' => \&_serialize_seasons,
-       'trailer' => \&_serialize_trailer,
-    } ]
-};
 
 =head1 SEE ALSO
 

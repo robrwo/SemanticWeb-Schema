@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Product';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -1032,49 +1033,6 @@ sub _serialize_width { $_[0]->_serializer('width') }
 
 
 
-
-around json_ld_type => sub { return 'Product' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalProperty' => \&_serialize_additional_property,
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'audience' => \&_serialize_audience,
-       'award' => \&_serialize_award,
-       'awards' => \&_serialize_awards,
-       'brand' => \&_serialize_brand,
-       'category' => \&_serialize_category,
-       'color' => \&_serialize_color,
-       'depth' => \&_serialize_depth,
-       'gtin12' => \&_serialize_gtin12,
-       'gtin13' => \&_serialize_gtin13,
-       'gtin14' => \&_serialize_gtin14,
-       'gtin8' => \&_serialize_gtin8,
-       'height' => \&_serialize_height,
-       'isAccessoryOrSparePartFor' => \&_serialize_is_accessory_or_spare_part_for,
-       'isConsumableFor' => \&_serialize_is_consumable_for,
-       'isRelatedTo' => \&_serialize_is_related_to,
-       'isSimilarTo' => \&_serialize_is_similar_to,
-       'itemCondition' => \&_serialize_item_condition,
-       'logo' => \&_serialize_logo,
-       'manufacturer' => \&_serialize_manufacturer,
-       'material' => \&_serialize_material,
-       'model' => \&_serialize_model,
-       'mpn' => \&_serialize_mpn,
-       'offers' => \&_serialize_offers,
-       'productID' => \&_serialize_product_id,
-       'productionDate' => \&_serialize_production_date,
-       'purchaseDate' => \&_serialize_purchase_date,
-       'releaseDate' => \&_serialize_release_date,
-       'review' => \&_serialize_review,
-       'reviews' => \&_serialize_reviews,
-       'sku' => \&_serialize_sku,
-       'weight' => \&_serialize_weight,
-       'width' => \&_serialize_width,
-    } ]
-};
 
 =head1 SEE ALSO
 

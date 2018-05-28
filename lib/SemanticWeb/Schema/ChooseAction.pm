@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::AssessAction /;
 
 
+use MooX::JSON_LD 'ChooseAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -84,17 +85,6 @@ sub _serialize_option { $_[0]->_serializer('option') }
 
 
 
-
-around json_ld_type => sub { return 'ChooseAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actionOption' => \&_serialize_action_option,
-       'option' => \&_serialize_option,
-    } ]
-};
 
 =head1 SEE ALSO
 

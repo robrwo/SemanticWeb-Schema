@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Role';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -159,19 +160,6 @@ sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 
-
-around json_ld_type => sub { return 'Role' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'endDate' => \&_serialize_end_date,
-       'namedPosition' => \&_serialize_named_position,
-       'roleName' => \&_serialize_role_name,
-       'startDate' => \&_serialize_start_date,
-    } ]
-};
 
 =head1 SEE ALSO
 

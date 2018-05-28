@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TransferAction /;
 
 
+use MooX::JSON_LD 'BorrowAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -63,16 +64,6 @@ sub _serialize_lender { $_[0]->_serializer('lender') }
 
 
 
-
-around json_ld_type => sub { return 'BorrowAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'lender' => \&_serialize_lender,
-    } ]
-};
 
 =head1 SEE ALSO
 

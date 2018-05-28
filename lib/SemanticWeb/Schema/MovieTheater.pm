@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness SemanticWeb::Schema::CivicStructure /;
 
 
+use MooX::JSON_LD 'MovieTheater';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_screen_count { $_[0]->_serializer('screen_count') }
 
 
 
-
-around json_ld_type => sub { return 'MovieTheater' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'screenCount' => \&_serialize_screen_count,
-    } ]
-};
 
 =head1 SEE ALSO
 

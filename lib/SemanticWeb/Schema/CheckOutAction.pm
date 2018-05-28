@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CommunicateAction /;
 
 
+use MooX::JSON_LD 'CheckOutAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -37,15 +38,6 @@ the end of a previously reserved service.</li> </ul>
 
 =cut
 
-
-around json_ld_type => sub { return 'CheckOutAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

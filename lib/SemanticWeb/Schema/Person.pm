@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Person';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -1609,71 +1610,6 @@ sub _serialize_works_for { $_[0]->_serializer('works_for') }
 
 
 
-
-around json_ld_type => sub { return 'Person' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalName' => \&_serialize_additional_name,
-       'address' => \&_serialize_address,
-       'affiliation' => \&_serialize_affiliation,
-       'alumniOf' => \&_serialize_alumni_of,
-       'award' => \&_serialize_award,
-       'awards' => \&_serialize_awards,
-       'birthDate' => \&_serialize_birth_date,
-       'birthPlace' => \&_serialize_birth_place,
-       'brand' => \&_serialize_brand,
-       'children' => \&_serialize_children,
-       'colleague' => \&_serialize_colleague,
-       'colleagues' => \&_serialize_colleagues,
-       'contactPoint' => \&_serialize_contact_point,
-       'contactPoints' => \&_serialize_contact_points,
-       'deathDate' => \&_serialize_death_date,
-       'deathPlace' => \&_serialize_death_place,
-       'duns' => \&_serialize_duns,
-       'email' => \&_serialize_email,
-       'familyName' => \&_serialize_family_name,
-       'faxNumber' => \&_serialize_fax_number,
-       'follows' => \&_serialize_follows,
-       'funder' => \&_serialize_funder,
-       'gender' => \&_serialize_gender,
-       'givenName' => \&_serialize_given_name,
-       'globalLocationNumber' => \&_serialize_global_location_number,
-       'hasOfferCatalog' => \&_serialize_has_offer_catalog,
-       'hasPOS' => \&_serialize_has_pos,
-       'height' => \&_serialize_height,
-       'homeLocation' => \&_serialize_home_location,
-       'honorificPrefix' => \&_serialize_honorific_prefix,
-       'honorificSuffix' => \&_serialize_honorific_suffix,
-       'isicV4' => \&_serialize_isic_v4,
-       'jobTitle' => \&_serialize_job_title,
-       'knows' => \&_serialize_knows,
-       'makesOffer' => \&_serialize_makes_offer,
-       'memberOf' => \&_serialize_member_of,
-       'naics' => \&_serialize_naics,
-       'nationality' => \&_serialize_nationality,
-       'netWorth' => \&_serialize_net_worth,
-       'owns' => \&_serialize_owns,
-       'parent' => \&_serialize_parent,
-       'parents' => \&_serialize_parents,
-       'performerIn' => \&_serialize_performer_in,
-       'publishingPrinciples' => \&_serialize_publishing_principles,
-       'relatedTo' => \&_serialize_related_to,
-       'seeks' => \&_serialize_seeks,
-       'sibling' => \&_serialize_sibling,
-       'siblings' => \&_serialize_siblings,
-       'sponsor' => \&_serialize_sponsor,
-       'spouse' => \&_serialize_spouse,
-       'taxID' => \&_serialize_tax_id,
-       'telephone' => \&_serialize_telephone,
-       'vatID' => \&_serialize_vat_id,
-       'weight' => \&_serialize_weight,
-       'workLocation' => \&_serialize_work_location,
-       'worksFor' => \&_serialize_works_for,
-    } ]
-};
 
 =head1 SEE ALSO
 

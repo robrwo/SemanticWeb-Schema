@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ReactAction /;
 
 
+use MooX::JSON_LD 'WantAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,15 +24,6 @@ The act of expressing a desire about the object. An agent wants an object.
 
 =cut
 
-
-around json_ld_type => sub { return 'WantAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'VisualArtwork';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -256,23 +257,6 @@ sub _serialize_width { $_[0]->_serializer('width') }
 
 
 
-
-around json_ld_type => sub { return 'VisualArtwork' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'artEdition' => \&_serialize_art_edition,
-       'artMedium' => \&_serialize_art_medium,
-       'artform' => \&_serialize_artform,
-       'artworkSurface' => \&_serialize_artwork_surface,
-       'depth' => \&_serialize_depth,
-       'height' => \&_serialize_height,
-       'surface' => \&_serialize_surface,
-       'width' => \&_serialize_width,
-    } ]
-};
 
 =head1 SEE ALSO
 

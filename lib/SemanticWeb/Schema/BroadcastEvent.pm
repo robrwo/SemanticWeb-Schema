@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PublicationEvent /;
 
 
+use MooX::JSON_LD 'BroadcastEvent';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -107,18 +108,6 @@ sub _serialize_video_format { $_[0]->_serializer('video_format') }
 
 
 
-
-around json_ld_type => sub { return 'BroadcastEvent' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'broadcastOfEvent' => \&_serialize_broadcast_of_event,
-       'isLiveBroadcast' => \&_serialize_is_live_broadcast,
-       'videoFormat' => \&_serialize_video_format,
-    } ]
-};
 
 =head1 SEE ALSO
 

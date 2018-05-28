@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::LocalBusiness /;
 
 
+use MooX::JSON_LD 'FinancialService';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_fees_and_commissions_specification { $_[0]->_serializer('fees_and
 
 
 
-
-around json_ld_type => sub { return 'FinancialService' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'feesAndCommissionsSpecification' => \&_serialize_fees_and_commissions_specification,
-    } ]
-};
 
 =head1 SEE ALSO
 

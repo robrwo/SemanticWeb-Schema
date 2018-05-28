@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Reservation /;
 
 
+use MooX::JSON_LD 'LodgingReservation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -200,21 +201,6 @@ sub _serialize_num_children { $_[0]->_serializer('num_children') }
 
 
 
-
-around json_ld_type => sub { return 'LodgingReservation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'checkinTime' => \&_serialize_checkin_time,
-       'checkoutTime' => \&_serialize_checkout_time,
-       'lodgingUnitDescription' => \&_serialize_lodging_unit_description,
-       'lodgingUnitType' => \&_serialize_lodging_unit_type,
-       'numAdults' => \&_serialize_num_adults,
-       'numChildren' => \&_serialize_num_children,
-    } ]
-};
 
 =head1 SEE ALSO
 

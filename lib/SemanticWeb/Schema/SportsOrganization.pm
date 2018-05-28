@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Organization /;
 
 
+use MooX::JSON_LD 'SportsOrganization';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_sport { $_[0]->_serializer('sport') }
 
 
 
-
-around json_ld_type => sub { return 'SportsOrganization' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'sport' => \&_serialize_sport,
-    } ]
-};
 
 =head1 SEE ALSO
 

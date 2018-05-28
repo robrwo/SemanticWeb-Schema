@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'MenuItem';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -109,18 +110,6 @@ sub _serialize_suitable_for_diet { $_[0]->_serializer('suitable_for_diet') }
 
 
 
-
-around json_ld_type => sub { return 'MenuItem' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'nutrition' => \&_serialize_nutrition,
-       'offers' => \&_serialize_offers,
-       'suitableForDiet' => \&_serialize_suitable_for_diet,
-    } ]
-};
 
 =head1 SEE ALSO
 

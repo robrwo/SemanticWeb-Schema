@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'WarrantyPromise';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -82,17 +83,6 @@ sub _serialize_warranty_scope { $_[0]->_serializer('warranty_scope') }
 
 
 
-
-around json_ld_type => sub { return 'WarrantyPromise' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'durationOfWarranty' => \&_serialize_duration_of_warranty,
-       'warrantyScope' => \&_serialize_warranty_scope,
-    } ]
-};
 
 =head1 SEE ALSO
 

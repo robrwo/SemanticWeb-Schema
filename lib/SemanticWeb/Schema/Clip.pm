@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Clip';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -278,24 +279,6 @@ sub _serialize_part_of_series { $_[0]->_serializer('part_of_series') }
 
 
 
-
-around json_ld_type => sub { return 'Clip' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actor' => \&_serialize_actor,
-       'actors' => \&_serialize_actors,
-       'clipNumber' => \&_serialize_clip_number,
-       'director' => \&_serialize_director,
-       'directors' => \&_serialize_directors,
-       'musicBy' => \&_serialize_music_by,
-       'partOfEpisode' => \&_serialize_part_of_episode,
-       'partOfSeason' => \&_serialize_part_of_season,
-       'partOfSeries' => \&_serialize_part_of_series,
-    } ]
-};
 
 =head1 SEE ALSO
 

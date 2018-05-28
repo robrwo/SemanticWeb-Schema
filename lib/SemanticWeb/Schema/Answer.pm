@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Comment /;
 
 
+use MooX::JSON_LD 'Answer';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -24,15 +25,6 @@ wrong.
 
 =cut
 
-
-around json_ld_type => sub { return 'Answer' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

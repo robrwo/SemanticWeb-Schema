@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Action /;
 
 
+use MooX::JSON_LD 'UpdateAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -79,17 +80,6 @@ sub _serialize_target_collection { $_[0]->_serializer('target_collection') }
 
 
 
-
-around json_ld_type => sub { return 'UpdateAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'collection' => \&_serialize_collection,
-       'targetCollection' => \&_serialize_target_collection,
-    } ]
-};
 
 =head1 SEE ALSO
 

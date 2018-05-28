@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'HowTo';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -277,23 +278,6 @@ sub _serialize_yield { $_[0]->_serializer('yield') }
 
 
 
-
-around json_ld_type => sub { return 'HowTo' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'estimatedCost' => \&_serialize_estimated_cost,
-       'performTime' => \&_serialize_perform_time,
-       'prepTime' => \&_serialize_prep_time,
-       'steps' => \&_serialize_steps,
-       'supply' => \&_serialize_supply,
-       'tool' => \&_serialize_tool,
-       'totalTime' => \&_serialize_total_time,
-       'yield' => \&_serialize_yield,
-    } ]
-};
 
 =head1 SEE ALSO
 

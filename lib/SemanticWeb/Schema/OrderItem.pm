@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'OrderItem';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -164,20 +165,6 @@ sub _serialize_ordered_item { $_[0]->_serializer('ordered_item') }
 
 
 
-
-around json_ld_type => sub { return 'OrderItem' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'orderDelivery' => \&_serialize_order_delivery,
-       'orderItemNumber' => \&_serialize_order_item_number,
-       'orderItemStatus' => \&_serialize_order_item_status,
-       'orderQuantity' => \&_serialize_order_quantity,
-       'orderedItem' => \&_serialize_ordered_item,
-    } ]
-};
 
 =head1 SEE ALSO
 

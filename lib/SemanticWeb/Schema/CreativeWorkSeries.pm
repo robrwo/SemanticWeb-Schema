@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'CreativeWorkSeries';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -144,18 +145,6 @@ sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 
-
-around json_ld_type => sub { return 'CreativeWorkSeries' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'endDate' => \&_serialize_end_date,
-       'issn' => \&_serialize_issn,
-       'startDate' => \&_serialize_start_date,
-    } ]
-};
 
 =head1 SEE ALSO
 

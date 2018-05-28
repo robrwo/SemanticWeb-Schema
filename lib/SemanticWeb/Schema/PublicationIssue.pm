@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'PublicationIssue';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -148,19 +149,6 @@ sub _serialize_pagination { $_[0]->_serializer('pagination') }
 
 
 
-
-around json_ld_type => sub { return 'PublicationIssue' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'issueNumber' => \&_serialize_issue_number,
-       'pageEnd' => \&_serialize_page_end,
-       'pageStart' => \&_serialize_page_start,
-       'pagination' => \&_serialize_pagination,
-    } ]
-};
 
 =head1 SEE ALSO
 

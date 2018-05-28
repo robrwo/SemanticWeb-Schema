@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::HowToItem /;
 
 
+use MooX::JSON_LD 'HowToSupply';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -56,16 +57,6 @@ sub _serialize_estimated_cost { $_[0]->_serializer('estimated_cost') }
 
 
 
-
-around json_ld_type => sub { return 'HowToSupply' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'estimatedCost' => \&_serialize_estimated_cost,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Action /;
 
 
+use MooX::JSON_LD 'ConsumeAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_expects_acceptance_of { $_[0]->_serializer('expects_acceptance_of
 
 
 
-
-around json_ld_type => sub { return 'ConsumeAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'expectsAcceptanceOf' => \&_serialize_expects_acceptance_of,
-    } ]
-};
 
 =head1 SEE ALSO
 

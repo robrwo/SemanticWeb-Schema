@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Demand';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -986,47 +987,6 @@ sub _serialize_warranty { $_[0]->_serializer('warranty') }
 
 
 
-
-around json_ld_type => sub { return 'Demand' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'acceptedPaymentMethod' => \&_serialize_accepted_payment_method,
-       'advanceBookingRequirement' => \&_serialize_advance_booking_requirement,
-       'areaServed' => \&_serialize_area_served,
-       'availability' => \&_serialize_availability,
-       'availabilityEnds' => \&_serialize_availability_ends,
-       'availabilityStarts' => \&_serialize_availability_starts,
-       'availableAtOrFrom' => \&_serialize_available_at_or_from,
-       'availableDeliveryMethod' => \&_serialize_available_delivery_method,
-       'businessFunction' => \&_serialize_business_function,
-       'deliveryLeadTime' => \&_serialize_delivery_lead_time,
-       'eligibleCustomerType' => \&_serialize_eligible_customer_type,
-       'eligibleDuration' => \&_serialize_eligible_duration,
-       'eligibleQuantity' => \&_serialize_eligible_quantity,
-       'eligibleRegion' => \&_serialize_eligible_region,
-       'eligibleTransactionVolume' => \&_serialize_eligible_transaction_volume,
-       'gtin12' => \&_serialize_gtin12,
-       'gtin13' => \&_serialize_gtin13,
-       'gtin14' => \&_serialize_gtin14,
-       'gtin8' => \&_serialize_gtin8,
-       'includesObject' => \&_serialize_includes_object,
-       'ineligibleRegion' => \&_serialize_ineligible_region,
-       'inventoryLevel' => \&_serialize_inventory_level,
-       'itemCondition' => \&_serialize_item_condition,
-       'itemOffered' => \&_serialize_item_offered,
-       'mpn' => \&_serialize_mpn,
-       'priceSpecification' => \&_serialize_price_specification,
-       'seller' => \&_serialize_seller,
-       'serialNumber' => \&_serialize_serial_number,
-       'sku' => \&_serialize_sku,
-       'validFrom' => \&_serialize_valid_from,
-       'validThrough' => \&_serialize_valid_through,
-       'warranty' => \&_serialize_warranty,
-    } ]
-};
 
 =head1 SEE ALSO
 

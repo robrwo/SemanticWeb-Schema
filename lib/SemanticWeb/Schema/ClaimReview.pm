@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Review /;
 
 
+use MooX::JSON_LD 'ClaimReview';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_claim_reviewed { $_[0]->_serializer('claim_reviewed') }
 
 
 
-
-around json_ld_type => sub { return 'ClaimReview' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'claimReviewed' => \&_serialize_claim_reviewed,
-    } ]
-};
 
 =head1 SEE ALSO
 

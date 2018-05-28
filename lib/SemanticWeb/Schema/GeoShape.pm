@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'GeoShape';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -269,23 +270,6 @@ sub _serialize_postal_code { $_[0]->_serializer('postal_code') }
 
 
 
-
-around json_ld_type => sub { return 'GeoShape' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'address' => \&_serialize_address,
-       'addressCountry' => \&_serialize_address_country,
-       'box' => \&_serialize_box,
-       'circle' => \&_serialize_circle,
-       'elevation' => \&_serialize_elevation,
-       'line' => \&_serialize_line,
-       'polygon' => \&_serialize_polygon,
-       'postalCode' => \&_serialize_postal_code,
-    } ]
-};
 
 =head1 SEE ALSO
 

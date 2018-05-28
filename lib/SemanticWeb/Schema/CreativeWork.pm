@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'CreativeWork';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -2431,97 +2432,6 @@ sub _serialize_work_example { $_[0]->_serializer('work_example') }
 
 
 
-
-around json_ld_type => sub { return 'CreativeWork' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'about' => \&_serialize_about,
-       'accessMode' => \&_serialize_access_mode,
-       'accessModeSufficient' => \&_serialize_access_mode_sufficient,
-       'accessibilityAPI' => \&_serialize_accessibility_api,
-       'accessibilityControl' => \&_serialize_accessibility_control,
-       'accessibilityFeature' => \&_serialize_accessibility_feature,
-       'accessibilityHazard' => \&_serialize_accessibility_hazard,
-       'accessibilitySummary' => \&_serialize_accessibility_summary,
-       'accountablePerson' => \&_serialize_accountable_person,
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'alternativeHeadline' => \&_serialize_alternative_headline,
-       'associatedMedia' => \&_serialize_associated_media,
-       'audience' => \&_serialize_audience,
-       'audio' => \&_serialize_audio,
-       'author' => \&_serialize_author,
-       'award' => \&_serialize_award,
-       'awards' => \&_serialize_awards,
-       'character' => \&_serialize_character,
-       'citation' => \&_serialize_citation,
-       'comment' => \&_serialize_comment,
-       'commentCount' => \&_serialize_comment_count,
-       'contentLocation' => \&_serialize_content_location,
-       'contentRating' => \&_serialize_content_rating,
-       'contributor' => \&_serialize_contributor,
-       'copyrightHolder' => \&_serialize_copyright_holder,
-       'copyrightYear' => \&_serialize_copyright_year,
-       'creator' => \&_serialize_creator,
-       'dateCreated' => \&_serialize_date_created,
-       'dateModified' => \&_serialize_date_modified,
-       'datePublished' => \&_serialize_date_published,
-       'discussionUrl' => \&_serialize_discussion_url,
-       'editor' => \&_serialize_editor,
-       'educationalAlignment' => \&_serialize_educational_alignment,
-       'educationalUse' => \&_serialize_educational_use,
-       'encoding' => \&_serialize_encoding,
-       'encodings' => \&_serialize_encodings,
-       'exampleOfWork' => \&_serialize_example_of_work,
-       'expires' => \&_serialize_expires,
-       'fileFormat' => \&_serialize_file_format,
-       'funder' => \&_serialize_funder,
-       'genre' => \&_serialize_genre,
-       'hasPart' => \&_serialize_has_part,
-       'headline' => \&_serialize_headline,
-       'inLanguage' => \&_serialize_in_language,
-       'interactionStatistic' => \&_serialize_interaction_statistic,
-       'interactivityType' => \&_serialize_interactivity_type,
-       'isAccessibleForFree' => \&_serialize_is_accessible_for_free,
-       'isBasedOn' => \&_serialize_is_based_on,
-       'isBasedOnUrl' => \&_serialize_is_based_on_url,
-       'isFamilyFriendly' => \&_serialize_is_family_friendly,
-       'isPartOf' => \&_serialize_is_part_of,
-       'keywords' => \&_serialize_keywords,
-       'learningResourceType' => \&_serialize_learning_resource_type,
-       'license' => \&_serialize_license,
-       'locationCreated' => \&_serialize_location_created,
-       'mainEntity' => \&_serialize_main_entity,
-       'material' => \&_serialize_material,
-       'mentions' => \&_serialize_mentions,
-       'offers' => \&_serialize_offers,
-       'position' => \&_serialize_position,
-       'producer' => \&_serialize_producer,
-       'provider' => \&_serialize_provider,
-       'publication' => \&_serialize_publication,
-       'publisher' => \&_serialize_publisher,
-       'publishingPrinciples' => \&_serialize_publishing_principles,
-       'recordedAt' => \&_serialize_recorded_at,
-       'releasedEvent' => \&_serialize_released_event,
-       'review' => \&_serialize_review,
-       'reviews' => \&_serialize_reviews,
-       'schemaVersion' => \&_serialize_schema_version,
-       'sourceOrganization' => \&_serialize_source_organization,
-       'spatialCoverage' => \&_serialize_spatial_coverage,
-       'sponsor' => \&_serialize_sponsor,
-       'temporalCoverage' => \&_serialize_temporal_coverage,
-       'text' => \&_serialize_text,
-       'thumbnailUrl' => \&_serialize_thumbnail_url,
-       'timeRequired' => \&_serialize_time_required,
-       'translator' => \&_serialize_translator,
-       'typicalAgeRange' => \&_serialize_typical_age_range,
-       'version' => \&_serialize_version,
-       'video' => \&_serialize_video,
-       'workExample' => \&_serialize_work_example,
-    } ]
-};
 
 =head1 SEE ALSO
 

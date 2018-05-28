@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::MusicPlaylist /;
 
 
+use MooX::JSON_LD 'MusicAlbum';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -134,19 +135,6 @@ sub _serialize_by_artist { $_[0]->_serializer('by_artist') }
 
 
 
-
-around json_ld_type => sub { return 'MusicAlbum' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'albumProductionType' => \&_serialize_album_production_type,
-       'albumRelease' => \&_serialize_album_release,
-       'albumReleaseType' => \&_serialize_album_release_type,
-       'byArtist' => \&_serialize_by_artist,
-    } ]
-};
 
 =head1 SEE ALSO
 

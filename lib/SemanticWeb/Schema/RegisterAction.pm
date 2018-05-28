@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::InteractAction /;
 
 
+use MooX::JSON_LD 'RegisterAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -36,15 +37,6 @@ updates from the object.</li> </ul>
 
 =cut
 
-
-around json_ld_type => sub { return 'RegisterAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

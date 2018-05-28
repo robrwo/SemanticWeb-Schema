@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'DataFeedItem';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -136,19 +137,6 @@ sub _serialize_item { $_[0]->_serializer('item') }
 
 
 
-
-around json_ld_type => sub { return 'DataFeedItem' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'dateCreated' => \&_serialize_date_created,
-       'dateDeleted' => \&_serialize_date_deleted,
-       'dateModified' => \&_serialize_date_modified,
-       'item' => \&_serialize_item,
-    } ]
-};
 
 =head1 SEE ALSO
 

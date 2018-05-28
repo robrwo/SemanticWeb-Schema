@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::OrganizationRole /;
 
 
+use MooX::JSON_LD 'EmployeeRole';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -89,17 +90,6 @@ sub _serialize_salary_currency { $_[0]->_serializer('salary_currency') }
 
 
 
-
-around json_ld_type => sub { return 'EmployeeRole' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'baseSalary' => \&_serialize_base_salary,
-       'salaryCurrency' => \&_serialize_salary_currency,
-    } ]
-};
 
 =head1 SEE ALSO
 

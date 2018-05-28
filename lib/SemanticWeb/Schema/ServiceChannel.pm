@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'ServiceChannel';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -252,23 +253,6 @@ sub _serialize_service_url { $_[0]->_serializer('service_url') }
 
 
 
-
-around json_ld_type => sub { return 'ServiceChannel' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'availableLanguage' => \&_serialize_available_language,
-       'processingTime' => \&_serialize_processing_time,
-       'providesService' => \&_serialize_provides_service,
-       'serviceLocation' => \&_serialize_service_location,
-       'servicePhone' => \&_serialize_service_phone,
-       'servicePostalAddress' => \&_serialize_service_postal_address,
-       'serviceSmsNumber' => \&_serialize_service_sms_number,
-       'serviceUrl' => \&_serialize_service_url,
-    } ]
-};
 
 =head1 SEE ALSO
 

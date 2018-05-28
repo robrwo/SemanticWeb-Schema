@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'TypeAndQuantityNode';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -172,20 +173,6 @@ sub _serialize_unit_text { $_[0]->_serializer('unit_text') }
 
 
 
-
-around json_ld_type => sub { return 'TypeAndQuantityNode' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'amountOfThisGood' => \&_serialize_amount_of_this_good,
-       'businessFunction' => \&_serialize_business_function,
-       'typeOfGood' => \&_serialize_type_of_good,
-       'unitCode' => \&_serialize_unit_code,
-       'unitText' => \&_serialize_unit_text,
-    } ]
-};
 
 =head1 SEE ALSO
 

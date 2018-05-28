@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PerformingGroup /;
 
 
+use MooX::JSON_LD 'MusicGroup';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -191,21 +192,6 @@ sub _serialize_tracks { $_[0]->_serializer('tracks') }
 
 
 
-
-around json_ld_type => sub { return 'MusicGroup' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'album' => \&_serialize_album,
-       'albums' => \&_serialize_albums,
-       'genre' => \&_serialize_genre,
-       'musicGroupMember' => \&_serialize_music_group_member,
-       'track' => \&_serialize_track,
-       'tracks' => \&_serialize_tracks,
-    } ]
-};
 
 =head1 SEE ALSO
 

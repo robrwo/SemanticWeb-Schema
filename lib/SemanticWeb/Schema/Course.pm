@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Course';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -131,18 +132,6 @@ sub _serialize_has_course_instance { $_[0]->_serializer('has_course_instance') }
 
 
 
-
-around json_ld_type => sub { return 'Course' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'courseCode' => \&_serialize_course_code,
-       'coursePrerequisites' => \&_serialize_course_prerequisites,
-       'hasCourseInstance' => \&_serialize_has_course_instance,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PriceSpecification /;
 
 
+use MooX::JSON_LD 'PaymentChargeSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -80,17 +81,6 @@ sub _serialize_applies_to_payment_method { $_[0]->_serializer('applies_to_paymen
 
 
 
-
-around json_ld_type => sub { return 'PaymentChargeSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'appliesToDeliveryMethod' => \&_serialize_applies_to_delivery_method,
-       'appliesToPaymentMethod' => \&_serialize_applies_to_payment_method,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Product /;
 
 
+use MooX::JSON_LD 'ProductModel';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -111,18 +112,6 @@ sub _serialize_successor_of { $_[0]->_serializer('successor_of') }
 
 
 
-
-around json_ld_type => sub { return 'ProductModel' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'isVariantOf' => \&_serialize_is_variant_of,
-       'predecessorOf' => \&_serialize_predecessor_of,
-       'successorOf' => \&_serialize_successor_of,
-    } ]
-};
 
 =head1 SEE ALSO
 

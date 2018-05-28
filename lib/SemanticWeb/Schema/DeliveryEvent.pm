@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Event /;
 
 
+use MooX::JSON_LD 'DeliveryEvent';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -133,19 +134,6 @@ sub _serialize_has_delivery_method { $_[0]->_serializer('has_delivery_method') }
 
 
 
-
-around json_ld_type => sub { return 'DeliveryEvent' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'accessCode' => \&_serialize_access_code,
-       'availableFrom' => \&_serialize_available_from,
-       'availableThrough' => \&_serialize_available_through,
-       'hasDeliveryMethod' => \&_serialize_has_delivery_method,
-    } ]
-};
 
 =head1 SEE ALSO
 

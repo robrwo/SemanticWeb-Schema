@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Invoice';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -479,31 +480,6 @@ sub _serialize_total_payment_due { $_[0]->_serializer('total_payment_due') }
 
 
 
-
-around json_ld_type => sub { return 'Invoice' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'accountId' => \&_serialize_account_id,
-       'billingPeriod' => \&_serialize_billing_period,
-       'broker' => \&_serialize_broker,
-       'category' => \&_serialize_category,
-       'confirmationNumber' => \&_serialize_confirmation_number,
-       'customer' => \&_serialize_customer,
-       'minimumPaymentDue' => \&_serialize_minimum_payment_due,
-       'paymentDue' => \&_serialize_payment_due,
-       'paymentDueDate' => \&_serialize_payment_due_date,
-       'paymentMethod' => \&_serialize_payment_method,
-       'paymentMethodId' => \&_serialize_payment_method_id,
-       'paymentStatus' => \&_serialize_payment_status,
-       'provider' => \&_serialize_provider,
-       'referencesOrder' => \&_serialize_references_order,
-       'scheduledPaymentDate' => \&_serialize_scheduled_payment_date,
-       'totalPaymentDue' => \&_serialize_total_payment_due,
-    } ]
-};
 
 =head1 SEE ALSO
 

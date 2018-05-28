@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Message';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -296,24 +297,6 @@ sub _serialize_to_recipient { $_[0]->_serializer('to_recipient') }
 
 
 
-
-around json_ld_type => sub { return 'Message' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'bccRecipient' => \&_serialize_bcc_recipient,
-       'ccRecipient' => \&_serialize_cc_recipient,
-       'dateRead' => \&_serialize_date_read,
-       'dateReceived' => \&_serialize_date_received,
-       'dateSent' => \&_serialize_date_sent,
-       'messageAttachment' => \&_serialize_message_attachment,
-       'recipient' => \&_serialize_recipient,
-       'sender' => \&_serialize_sender,
-       'toRecipient' => \&_serialize_to_recipient,
-    } ]
-};
 
 =head1 SEE ALSO
 

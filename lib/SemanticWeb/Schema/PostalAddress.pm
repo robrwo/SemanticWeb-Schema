@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ContactPoint /;
 
 
+use MooX::JSON_LD 'PostalAddress';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -195,21 +196,6 @@ sub _serialize_street_address { $_[0]->_serializer('street_address') }
 
 
 
-
-around json_ld_type => sub { return 'PostalAddress' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'addressCountry' => \&_serialize_address_country,
-       'addressLocality' => \&_serialize_address_locality,
-       'addressRegion' => \&_serialize_address_region,
-       'postOfficeBoxNumber' => \&_serialize_post_office_box_number,
-       'postalCode' => \&_serialize_postal_code,
-       'streetAddress' => \&_serialize_street_address,
-    } ]
-};
 
 =head1 SEE ALSO
 

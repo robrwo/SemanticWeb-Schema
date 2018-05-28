@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'DigitalDocumentPermission';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -86,17 +87,6 @@ sub _serialize_permission_type { $_[0]->_serializer('permission_type') }
 
 
 
-
-around json_ld_type => sub { return 'DigitalDocumentPermission' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'grantee' => \&_serialize_grantee,
-       'permissionType' => \&_serialize_permission_type,
-    } ]
-};
 
 =head1 SEE ALSO
 

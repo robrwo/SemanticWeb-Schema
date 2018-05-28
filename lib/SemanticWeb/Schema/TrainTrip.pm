@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'TrainTrip';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -272,24 +273,6 @@ sub _serialize_train_number { $_[0]->_serializer('train_number') }
 
 
 
-
-around json_ld_type => sub { return 'TrainTrip' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'arrivalPlatform' => \&_serialize_arrival_platform,
-       'arrivalStation' => \&_serialize_arrival_station,
-       'arrivalTime' => \&_serialize_arrival_time,
-       'departurePlatform' => \&_serialize_departure_platform,
-       'departureStation' => \&_serialize_departure_station,
-       'departureTime' => \&_serialize_departure_time,
-       'provider' => \&_serialize_provider,
-       'trainName' => \&_serialize_train_name,
-       'trainNumber' => \&_serialize_train_number,
-    } ]
-};
 
 =head1 SEE ALSO
 

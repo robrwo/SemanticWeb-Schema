@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ItemList /;
 
 
+use MooX::JSON_LD 'HowToSection';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -58,16 +59,6 @@ sub _serialize_steps { $_[0]->_serializer('steps') }
 
 
 
-
-around json_ld_type => sub { return 'HowToSection' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'steps' => \&_serialize_steps,
-    } ]
-};
 
 =head1 SEE ALSO
 

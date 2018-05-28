@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::AssessAction /;
 
 
+use MooX::JSON_LD 'ReviewAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_result_review { $_[0]->_serializer('result_review') }
 
 
 
-
-around json_ld_type => sub { return 'ReviewAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'resultReview' => \&_serialize_result_review,
-    } ]
-};
 
 =head1 SEE ALSO
 

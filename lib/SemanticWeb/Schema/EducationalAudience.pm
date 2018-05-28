@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Audience /;
 
 
+use MooX::JSON_LD 'EducationalAudience';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_educational_role { $_[0]->_serializer('educational_role') }
 
 
 
-
-around json_ld_type => sub { return 'EducationalAudience' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'educationalRole' => \&_serialize_educational_role,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Organization';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -1434,64 +1435,6 @@ sub _serialize_vat_id { $_[0]->_serializer('vat_id') }
 
 
 
-
-around json_ld_type => sub { return 'Organization' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'address' => \&_serialize_address,
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'alumni' => \&_serialize_alumni,
-       'areaServed' => \&_serialize_area_served,
-       'award' => \&_serialize_award,
-       'awards' => \&_serialize_awards,
-       'brand' => \&_serialize_brand,
-       'contactPoint' => \&_serialize_contact_point,
-       'contactPoints' => \&_serialize_contact_points,
-       'department' => \&_serialize_department,
-       'dissolutionDate' => \&_serialize_dissolution_date,
-       'duns' => \&_serialize_duns,
-       'email' => \&_serialize_email,
-       'employee' => \&_serialize_employee,
-       'employees' => \&_serialize_employees,
-       'event' => \&_serialize_event,
-       'events' => \&_serialize_events,
-       'faxNumber' => \&_serialize_fax_number,
-       'founder' => \&_serialize_founder,
-       'founders' => \&_serialize_founders,
-       'foundingDate' => \&_serialize_founding_date,
-       'foundingLocation' => \&_serialize_founding_location,
-       'funder' => \&_serialize_funder,
-       'globalLocationNumber' => \&_serialize_global_location_number,
-       'hasOfferCatalog' => \&_serialize_has_offer_catalog,
-       'hasPOS' => \&_serialize_has_pos,
-       'isicV4' => \&_serialize_isic_v4,
-       'legalName' => \&_serialize_legal_name,
-       'leiCode' => \&_serialize_lei_code,
-       'location' => \&_serialize_location,
-       'logo' => \&_serialize_logo,
-       'makesOffer' => \&_serialize_makes_offer,
-       'member' => \&_serialize_member,
-       'memberOf' => \&_serialize_member_of,
-       'members' => \&_serialize_members,
-       'naics' => \&_serialize_naics,
-       'numberOfEmployees' => \&_serialize_number_of_employees,
-       'owns' => \&_serialize_owns,
-       'parentOrganization' => \&_serialize_parent_organization,
-       'publishingPrinciples' => \&_serialize_publishing_principles,
-       'review' => \&_serialize_review,
-       'reviews' => \&_serialize_reviews,
-       'seeks' => \&_serialize_seeks,
-       'serviceArea' => \&_serialize_service_area,
-       'sponsor' => \&_serialize_sponsor,
-       'subOrganization' => \&_serialize_sub_organization,
-       'taxID' => \&_serialize_tax_id,
-       'telephone' => \&_serialize_telephone,
-       'vatID' => \&_serialize_vat_id,
-    } ]
-};
 
 =head1 SEE ALSO
 

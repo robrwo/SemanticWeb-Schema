@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Offer /;
 
 
+use MooX::JSON_LD 'AggregateOffer';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -141,19 +142,6 @@ sub _serialize_offers { $_[0]->_serializer('offers') }
 
 
 
-
-around json_ld_type => sub { return 'AggregateOffer' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'highPrice' => \&_serialize_high_price,
-       'lowPrice' => \&_serialize_low_price,
-       'offerCount' => \&_serialize_offer_count,
-       'offers' => \&_serialize_offers,
-    } ]
-};
 
 =head1 SEE ALSO
 

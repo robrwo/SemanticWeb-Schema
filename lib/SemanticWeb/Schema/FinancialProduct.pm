@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Service /;
 
 
+use MooX::JSON_LD 'FinancialProduct';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -118,18 +119,6 @@ sub _serialize_interest_rate { $_[0]->_serializer('interest_rate') }
 
 
 
-
-around json_ld_type => sub { return 'FinancialProduct' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'annualPercentageRate' => \&_serialize_annual_percentage_rate,
-       'feesAndCommissionsSpecification' => \&_serialize_fees_and_commissions_specification,
-       'interestRate' => \&_serialize_interest_rate,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TradeAction /;
 
 
+use MooX::JSON_LD 'RentAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -84,17 +85,6 @@ sub _serialize_real_estate_agent { $_[0]->_serializer('real_estate_agent') }
 
 
 
-
-around json_ld_type => sub { return 'RentAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'landlord' => \&_serialize_landlord,
-       'realEstateAgent' => \&_serialize_real_estate_agent,
-    } ]
-};
 
 =head1 SEE ALSO
 

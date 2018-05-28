@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ReactAction /;
 
 
+use MooX::JSON_LD 'LikeAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -24,15 +25,6 @@ an object (a proposition, topic or theme) with participants.
 
 =cut
 
-
-around json_ld_type => sub { return 'LikeAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

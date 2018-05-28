@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'MusicPlaylist';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -109,18 +110,6 @@ sub _serialize_tracks { $_[0]->_serializer('tracks') }
 
 
 
-
-around json_ld_type => sub { return 'MusicPlaylist' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'numTracks' => \&_serialize_num_tracks,
-       'track' => \&_serialize_track,
-       'tracks' => \&_serialize_tracks,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Book';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -160,20 +161,6 @@ sub _serialize_number_of_pages { $_[0]->_serializer('number_of_pages') }
 
 
 
-
-around json_ld_type => sub { return 'Book' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'bookEdition' => \&_serialize_book_edition,
-       'bookFormat' => \&_serialize_book_format,
-       'illustrator' => \&_serialize_illustrator,
-       'isbn' => \&_serialize_isbn,
-       'numberOfPages' => \&_serialize_number_of_pages,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'BroadcastChannel';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -163,20 +164,6 @@ sub _serialize_provides_broadcast_service { $_[0]->_serializer('provides_broadca
 
 
 
-
-around json_ld_type => sub { return 'BroadcastChannel' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'broadcastChannelId' => \&_serialize_broadcast_channel_id,
-       'broadcastServiceTier' => \&_serialize_broadcast_service_tier,
-       'genre' => \&_serialize_genre,
-       'inBroadcastLineup' => \&_serialize_in_broadcast_lineup,
-       'providesBroadcastService' => \&_serialize_provides_broadcast_service,
-    } ]
-};
 
 =head1 SEE ALSO
 

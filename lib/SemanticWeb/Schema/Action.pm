@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Action';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -386,26 +387,6 @@ sub _serialize_target { $_[0]->_serializer('target') }
 
 
 
-
-around json_ld_type => sub { return 'Action' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actionStatus' => \&_serialize_action_status,
-       'agent' => \&_serialize_agent,
-       'endTime' => \&_serialize_end_time,
-       'error' => \&_serialize_error,
-       'instrument' => \&_serialize_instrument,
-       'location' => \&_serialize_location,
-       'object' => \&_serialize_object,
-       'participant' => \&_serialize_participant,
-       'result' => \&_serialize_result,
-       'startTime' => \&_serialize_start_time,
-       'target' => \&_serialize_target,
-    } ]
-};
 
 =head1 SEE ALSO
 

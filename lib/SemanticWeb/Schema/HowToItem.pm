@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ListItem /;
 
 
+use MooX::JSON_LD 'HowToItem';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -57,16 +58,6 @@ sub _serialize_required_quantity { $_[0]->_serializer('required_quantity') }
 
 
 
-
-around json_ld_type => sub { return 'HowToItem' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'requiredQuantity' => \&_serialize_required_quantity,
-    } ]
-};
 
 =head1 SEE ALSO
 

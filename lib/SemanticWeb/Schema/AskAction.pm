@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CommunicateAction /;
 
 
+use MooX::JSON_LD 'AskAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -59,16 +60,6 @@ sub _serialize_question { $_[0]->_serializer('question') }
 
 
 
-
-around json_ld_type => sub { return 'AskAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'question' => \&_serialize_question,
-    } ]
-};
 
 =head1 SEE ALSO
 

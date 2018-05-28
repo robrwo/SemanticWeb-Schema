@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Brand';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -110,18 +111,6 @@ sub _serialize_review { $_[0]->_serializer('review') }
 
 
 
-
-around json_ld_type => sub { return 'Brand' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'logo' => \&_serialize_logo,
-       'review' => \&_serialize_review,
-    } ]
-};
 
 =head1 SEE ALSO
 

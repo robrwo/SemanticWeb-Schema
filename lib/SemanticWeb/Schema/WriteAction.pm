@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreateAction /;
 
 
+use MooX::JSON_LD 'WriteAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -89,17 +90,6 @@ sub _serialize_language { $_[0]->_serializer('language') }
 
 
 
-
-around json_ld_type => sub { return 'WriteAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'inLanguage' => \&_serialize_in_language,
-       'language' => \&_serialize_language,
-    } ]
-};
 
 =head1 SEE ALSO
 

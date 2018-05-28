@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Event /;
 
 
+use MooX::JSON_LD 'SportsEvent';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -112,18 +113,6 @@ sub _serialize_home_team { $_[0]->_serializer('home_team') }
 
 
 
-
-around json_ld_type => sub { return 'SportsEvent' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'awayTeam' => \&_serialize_away_team,
-       'competitor' => \&_serialize_competitor,
-       'homeTeam' => \&_serialize_home_team,
-    } ]
-};
 
 =head1 SEE ALSO
 

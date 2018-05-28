@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Event';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -1054,50 +1055,6 @@ sub _serialize_work_performed { $_[0]->_serializer('work_performed') }
 
 
 
-
-around json_ld_type => sub { return 'Event' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'about' => \&_serialize_about,
-       'actor' => \&_serialize_actor,
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'attendee' => \&_serialize_attendee,
-       'attendees' => \&_serialize_attendees,
-       'audience' => \&_serialize_audience,
-       'composer' => \&_serialize_composer,
-       'contributor' => \&_serialize_contributor,
-       'director' => \&_serialize_director,
-       'doorTime' => \&_serialize_door_time,
-       'duration' => \&_serialize_duration,
-       'endDate' => \&_serialize_end_date,
-       'eventStatus' => \&_serialize_event_status,
-       'funder' => \&_serialize_funder,
-       'inLanguage' => \&_serialize_in_language,
-       'isAccessibleForFree' => \&_serialize_is_accessible_for_free,
-       'location' => \&_serialize_location,
-       'maximumAttendeeCapacity' => \&_serialize_maximum_attendee_capacity,
-       'offers' => \&_serialize_offers,
-       'organizer' => \&_serialize_organizer,
-       'performer' => \&_serialize_performer,
-       'performers' => \&_serialize_performers,
-       'previousStartDate' => \&_serialize_previous_start_date,
-       'recordedIn' => \&_serialize_recorded_in,
-       'remainingAttendeeCapacity' => \&_serialize_remaining_attendee_capacity,
-       'review' => \&_serialize_review,
-       'sponsor' => \&_serialize_sponsor,
-       'startDate' => \&_serialize_start_date,
-       'subEvent' => \&_serialize_sub_event,
-       'subEvents' => \&_serialize_sub_events,
-       'superEvent' => \&_serialize_super_event,
-       'translator' => \&_serialize_translator,
-       'typicalAgeRange' => \&_serialize_typical_age_range,
-       'workFeatured' => \&_serialize_work_featured,
-       'workPerformed' => \&_serialize_work_performed,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Service /;
 
 
+use MooX::JSON_LD 'GovernmentService';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -55,16 +56,6 @@ sub _serialize_service_operator { $_[0]->_serializer('service_operator') }
 
 
 
-
-around json_ld_type => sub { return 'GovernmentService' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'serviceOperator' => \&_serialize_service_operator,
-    } ]
-};
 
 =head1 SEE ALSO
 

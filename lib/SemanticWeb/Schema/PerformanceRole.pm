@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Role /;
 
 
+use MooX::JSON_LD 'PerformanceRole';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_character_name { $_[0]->_serializer('character_name') }
 
 
 
-
-around json_ld_type => sub { return 'PerformanceRole' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'characterName' => \&_serialize_character_name,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Clip /;
 
 
+use MooX::JSON_LD 'TVClip';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_part_of_tv_series { $_[0]->_serializer('part_of_tv_series') }
 
 
 
-
-around json_ld_type => sub { return 'TVClip' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'partOfTVSeries' => \&_serialize_part_of_tv_series,
-    } ]
-};
 
 =head1 SEE ALSO
 

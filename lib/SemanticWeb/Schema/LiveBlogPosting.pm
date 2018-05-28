@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::BlogPosting /;
 
 
+use MooX::JSON_LD 'LiveBlogPosting';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -110,18 +111,6 @@ sub _serialize_live_blog_update { $_[0]->_serializer('live_blog_update') }
 
 
 
-
-around json_ld_type => sub { return 'LiveBlogPosting' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'coverageEndTime' => \&_serialize_coverage_end_time,
-       'coverageStartTime' => \&_serialize_coverage_start_time,
-       'liveBlogUpdate' => \&_serialize_live_blog_update,
-    } ]
-};
 
 =head1 SEE ALSO
 

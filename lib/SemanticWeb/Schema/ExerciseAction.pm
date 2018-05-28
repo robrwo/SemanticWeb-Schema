@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PlayAction /;
 
 
+use MooX::JSON_LD 'ExerciseAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -273,24 +274,6 @@ sub _serialize_to_location { $_[0]->_serializer('to_location') }
 
 
 
-
-around json_ld_type => sub { return 'ExerciseAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'course' => \&_serialize_course,
-       'distance' => \&_serialize_distance,
-       'exerciseCourse' => \&_serialize_exercise_course,
-       'fromLocation' => \&_serialize_from_location,
-       'opponent' => \&_serialize_opponent,
-       'sportsActivityLocation' => \&_serialize_sports_activity_location,
-       'sportsEvent' => \&_serialize_sports_event,
-       'sportsTeam' => \&_serialize_sports_team,
-       'toLocation' => \&_serialize_to_location,
-    } ]
-};
 
 =head1 SEE ALSO
 

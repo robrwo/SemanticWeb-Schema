@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TransferAction /;
 
 
+use MooX::JSON_LD 'ReturnAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -60,16 +61,6 @@ sub _serialize_recipient { $_[0]->_serializer('recipient') }
 
 
 
-
-around json_ld_type => sub { return 'ReturnAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'recipient' => \&_serialize_recipient,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Action /;
 
 
+use MooX::JSON_LD 'TradeAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -104,17 +105,6 @@ sub _serialize_price_specification { $_[0]->_serializer('price_specification') }
 
 
 
-
-around json_ld_type => sub { return 'TradeAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'price' => \&_serialize_price,
-       'priceSpecification' => \&_serialize_price_specification,
-    } ]
-};
 
 =head1 SEE ALSO
 

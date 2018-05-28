@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Enumeration /;
 
 
+use MooX::JSON_LD 'QualitativeValue';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -268,23 +269,6 @@ sub _serialize_value_reference { $_[0]->_serializer('value_reference') }
 
 
 
-
-around json_ld_type => sub { return 'QualitativeValue' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalProperty' => \&_serialize_additional_property,
-       'equal' => \&_serialize_equal,
-       'greater' => \&_serialize_greater,
-       'greaterOrEqual' => \&_serialize_greater_or_equal,
-       'lesser' => \&_serialize_lesser,
-       'lesserOrEqual' => \&_serialize_lesser_or_equal,
-       'nonEqual' => \&_serialize_non_equal,
-       'valueReference' => \&_serialize_value_reference,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::WebPage /;
 
 
+use MooX::JSON_LD 'QAPage';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -25,15 +26,6 @@ e.g. in a question answering site or documenting Frequently Asked Questions
 
 =cut
 
-
-around json_ld_type => sub { return 'QAPage' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PlayAction /;
 
 
+use MooX::JSON_LD 'PerformAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_entertainment_business { $_[0]->_serializer('entertainment_busine
 
 
 
-
-around json_ld_type => sub { return 'PerformAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'entertainmentBusiness' => \&_serialize_entertainment_business,
-    } ]
-};
 
 =head1 SEE ALSO
 

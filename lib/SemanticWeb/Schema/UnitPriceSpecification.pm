@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PriceSpecification /;
 
 
+use MooX::JSON_LD 'UnitPriceSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -173,20 +174,6 @@ sub _serialize_unit_text { $_[0]->_serializer('unit_text') }
 
 
 
-
-around json_ld_type => sub { return 'UnitPriceSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'billingIncrement' => \&_serialize_billing_increment,
-       'priceType' => \&_serialize_price_type,
-       'referenceQuantity' => \&_serialize_reference_quantity,
-       'unitCode' => \&_serialize_unit_code,
-       'unitText' => \&_serialize_unit_text,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;
 
 
+use MooX::JSON_LD 'HVACBusiness';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,15 +24,6 @@ A business that provide Heating, Ventilation and Air Conditioning services.
 
 =cut
 
-
-around json_ld_type => sub { return 'HVACBusiness' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

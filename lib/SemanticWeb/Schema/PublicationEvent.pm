@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Event /;
 
 
+use MooX::JSON_LD 'PublicationEvent';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -108,18 +109,6 @@ sub _serialize_published_on { $_[0]->_serializer('published_on') }
 
 
 
-
-around json_ld_type => sub { return 'PublicationEvent' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'free' => \&_serialize_free,
-       'isAccessibleForFree' => \&_serialize_is_accessible_for_free,
-       'publishedOn' => \&_serialize_published_on,
-    } ]
-};
 
 =head1 SEE ALSO
 

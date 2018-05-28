@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::SoftwareApplication /;
 
 
+use MooX::JSON_LD 'WebApplication';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_browser_requirements { $_[0]->_serializer('browser_requirements')
 
 
 
-
-around json_ld_type => sub { return 'WebApplication' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'browserRequirements' => \&_serialize_browser_requirements,
-    } ]
-};
 
 =head1 SEE ALSO
 

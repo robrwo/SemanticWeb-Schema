@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::MoveAction /;
 
 
+use MooX::JSON_LD 'TravelAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_distance { $_[0]->_serializer('distance') }
 
 
 
-
-around json_ld_type => sub { return 'TravelAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'distance' => \&_serialize_distance,
-    } ]
-};
 
 =head1 SEE ALSO
 

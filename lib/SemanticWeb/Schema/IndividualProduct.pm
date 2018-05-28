@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Product /;
 
 
+use MooX::JSON_LD 'IndividualProduct';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -55,16 +56,6 @@ sub _serialize_serial_number { $_[0]->_serializer('serial_number') }
 
 
 
-
-around json_ld_type => sub { return 'IndividualProduct' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'serialNumber' => \&_serialize_serial_number,
-    } ]
-};
 
 =head1 SEE ALSO
 

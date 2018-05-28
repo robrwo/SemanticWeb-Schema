@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'MonetaryAmount';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -219,21 +220,6 @@ sub _serialize_value { $_[0]->_serializer('value') }
 
 
 
-
-around json_ld_type => sub { return 'MonetaryAmount' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'currency' => \&_serialize_currency,
-       'maxValue' => \&_serialize_max_value,
-       'minValue' => \&_serialize_min_value,
-       'validFrom' => \&_serialize_valid_from,
-       'validThrough' => \&_serialize_valid_through,
-       'value' => \&_serialize_value,
-    } ]
-};
 
 =head1 SEE ALSO
 

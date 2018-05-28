@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'WebPage';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -285,24 +286,6 @@ sub _serialize_specialty { $_[0]->_serializer('specialty') }
 
 
 
-
-around json_ld_type => sub { return 'WebPage' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'breadcrumb' => \&_serialize_breadcrumb,
-       'lastReviewed' => \&_serialize_last_reviewed,
-       'mainContentOfPage' => \&_serialize_main_content_of_page,
-       'primaryImageOfPage' => \&_serialize_primary_image_of_page,
-       'relatedLink' => \&_serialize_related_link,
-       'reviewedBy' => \&_serialize_reviewed_by,
-       'significantLink' => \&_serialize_significant_link,
-       'significantLinks' => \&_serialize_significant_links,
-       'specialty' => \&_serialize_specialty,
-    } ]
-};
 
 =head1 SEE ALSO
 

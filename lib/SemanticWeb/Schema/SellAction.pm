@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TradeAction /;
 
 
+use MooX::JSON_LD 'SellAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -82,17 +83,6 @@ sub _serialize_warranty_promise { $_[0]->_serializer('warranty_promise') }
 
 
 
-
-around json_ld_type => sub { return 'SellAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'buyer' => \&_serialize_buyer,
-       'warrantyPromise' => \&_serialize_warranty_promise,
-    } ]
-};
 
 =head1 SEE ALSO
 

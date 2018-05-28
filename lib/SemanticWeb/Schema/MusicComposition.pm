@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'MusicComposition';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -298,25 +299,6 @@ sub _serialize_recorded_as { $_[0]->_serializer('recorded_as') }
 
 
 
-
-around json_ld_type => sub { return 'MusicComposition' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'composer' => \&_serialize_composer,
-       'firstPerformance' => \&_serialize_first_performance,
-       'includedComposition' => \&_serialize_included_composition,
-       'iswcCode' => \&_serialize_iswc_code,
-       'lyricist' => \&_serialize_lyricist,
-       'lyrics' => \&_serialize_lyrics,
-       'musicArrangement' => \&_serialize_music_arrangement,
-       'musicCompositionForm' => \&_serialize_music_composition_form,
-       'musicalKey' => \&_serialize_musical_key,
-       'recordedAs' => \&_serialize_recorded_as,
-    } ]
-};
 
 =head1 SEE ALSO
 

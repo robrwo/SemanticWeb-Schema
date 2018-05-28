@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::MediaObject /;
 
 
+use MooX::JSON_LD 'AudioObject';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_transcript { $_[0]->_serializer('transcript') }
 
 
 
-
-around json_ld_type => sub { return 'AudioObject' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'transcript' => \&_serialize_transcript,
-    } ]
-};
 
 =head1 SEE ALSO
 

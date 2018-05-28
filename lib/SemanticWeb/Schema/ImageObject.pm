@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::MediaObject /;
 
 
+use MooX::JSON_LD 'ImageObject';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -135,19 +136,6 @@ sub _serialize_thumbnail { $_[0]->_serializer('thumbnail') }
 
 
 
-
-around json_ld_type => sub { return 'ImageObject' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'caption' => \&_serialize_caption,
-       'exifData' => \&_serialize_exif_data,
-       'representativeOfPage' => \&_serialize_representative_of_page,
-       'thumbnail' => \&_serialize_thumbnail,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Service /;
 
 
+use MooX::JSON_LD 'BroadcastService';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -223,22 +224,6 @@ sub _serialize_video_format { $_[0]->_serializer('video_format') }
 
 
 
-
-around json_ld_type => sub { return 'BroadcastService' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'area' => \&_serialize_area,
-       'broadcastAffiliateOf' => \&_serialize_broadcast_affiliate_of,
-       'broadcastDisplayName' => \&_serialize_broadcast_display_name,
-       'broadcastTimezone' => \&_serialize_broadcast_timezone,
-       'broadcaster' => \&_serialize_broadcaster,
-       'parentService' => \&_serialize_parent_service,
-       'videoFormat' => \&_serialize_video_format,
-    } ]
-};
 
 =head1 SEE ALSO
 

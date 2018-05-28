@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::ListItem /;
 
 
+use MooX::JSON_LD 'HowToDirection';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -269,23 +270,6 @@ sub _serialize_total_time { $_[0]->_serializer('total_time') }
 
 
 
-
-around json_ld_type => sub { return 'HowToDirection' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'afterMedia' => \&_serialize_after_media,
-       'beforeMedia' => \&_serialize_before_media,
-       'duringMedia' => \&_serialize_during_media,
-       'performTime' => \&_serialize_perform_time,
-       'prepTime' => \&_serialize_prep_time,
-       'supply' => \&_serialize_supply,
-       'tool' => \&_serialize_tool,
-       'totalTime' => \&_serialize_total_time,
-    } ]
-};
 
 =head1 SEE ALSO
 

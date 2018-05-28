@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'MediaObject';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -462,30 +463,6 @@ sub _serialize_width { $_[0]->_serializer('width') }
 
 
 
-
-around json_ld_type => sub { return 'MediaObject' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'associatedArticle' => \&_serialize_associated_article,
-       'bitrate' => \&_serialize_bitrate,
-       'contentSize' => \&_serialize_content_size,
-       'contentUrl' => \&_serialize_content_url,
-       'duration' => \&_serialize_duration,
-       'embedUrl' => \&_serialize_embed_url,
-       'encodesCreativeWork' => \&_serialize_encodes_creative_work,
-       'encodingFormat' => \&_serialize_encoding_format,
-       'height' => \&_serialize_height,
-       'playerType' => \&_serialize_player_type,
-       'productionCompany' => \&_serialize_production_company,
-       'regionsAllowed' => \&_serialize_regions_allowed,
-       'requiresSubscription' => \&_serialize_requires_subscription,
-       'uploadDate' => \&_serialize_upload_date,
-       'width' => \&_serialize_width,
-    } ]
-};
 
 =head1 SEE ALSO
 

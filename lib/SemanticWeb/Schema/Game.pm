@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Game';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -169,20 +170,6 @@ sub _serialize_quest { $_[0]->_serializer('quest') }
 
 
 
-
-around json_ld_type => sub { return 'Game' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'characterAttribute' => \&_serialize_character_attribute,
-       'gameItem' => \&_serialize_game_item,
-       'gameLocation' => \&_serialize_game_location,
-       'numberOfPlayers' => \&_serialize_number_of_players,
-       'quest' => \&_serialize_quest,
-    } ]
-};
 
 =head1 SEE ALSO
 

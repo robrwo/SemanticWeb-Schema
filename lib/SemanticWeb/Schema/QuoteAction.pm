@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TradeAction /;
 
 
+use MooX::JSON_LD 'QuoteAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -24,15 +25,6 @@ at a location/store.
 
 =cut
 
-
-around json_ld_type => sub { return 'QuoteAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

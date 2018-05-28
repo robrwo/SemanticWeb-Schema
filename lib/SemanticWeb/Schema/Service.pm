@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Service';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -657,37 +658,6 @@ sub _serialize_service_type { $_[0]->_serializer('service_type') }
 
 
 
-
-around json_ld_type => sub { return 'Service' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'areaServed' => \&_serialize_area_served,
-       'audience' => \&_serialize_audience,
-       'availableChannel' => \&_serialize_available_channel,
-       'award' => \&_serialize_award,
-       'brand' => \&_serialize_brand,
-       'broker' => \&_serialize_broker,
-       'category' => \&_serialize_category,
-       'hasOfferCatalog' => \&_serialize_has_offer_catalog,
-       'hoursAvailable' => \&_serialize_hours_available,
-       'isRelatedTo' => \&_serialize_is_related_to,
-       'isSimilarTo' => \&_serialize_is_similar_to,
-       'logo' => \&_serialize_logo,
-       'offers' => \&_serialize_offers,
-       'produces' => \&_serialize_produces,
-       'provider' => \&_serialize_provider,
-       'providerMobility' => \&_serialize_provider_mobility,
-       'review' => \&_serialize_review,
-       'serviceArea' => \&_serialize_service_area,
-       'serviceAudience' => \&_serialize_service_audience,
-       'serviceOutput' => \&_serialize_service_output,
-       'serviceType' => \&_serialize_service_type,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Organization SemanticWeb::Schema::Place /;
 
 
+use MooX::JSON_LD 'LocalBusiness';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -195,20 +196,6 @@ sub _serialize_price_range { $_[0]->_serializer('price_range') }
 
 
 
-
-around json_ld_type => sub { return 'LocalBusiness' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'branchOf' => \&_serialize_branch_of,
-       'currenciesAccepted' => \&_serialize_currencies_accepted,
-       'openingHours' => \&_serialize_opening_hours,
-       'paymentAccepted' => \&_serialize_payment_accepted,
-       'priceRange' => \&_serialize_price_range,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'InteractionCounter';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -119,18 +120,6 @@ sub _serialize_user_interaction_count { $_[0]->_serializer('user_interaction_cou
 
 
 
-
-around json_ld_type => sub { return 'InteractionCounter' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'interactionService' => \&_serialize_interaction_service,
-       'interactionType' => \&_serialize_interaction_type,
-       'userInteractionCount' => \&_serialize_user_interaction_count,
-    } ]
-};
 
 =head1 SEE ALSO
 

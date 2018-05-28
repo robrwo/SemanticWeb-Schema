@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'PriceSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -312,24 +313,6 @@ sub _serialize_value_added_tax_included { $_[0]->_serializer('value_added_tax_in
 
 
 
-
-around json_ld_type => sub { return 'PriceSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'eligibleQuantity' => \&_serialize_eligible_quantity,
-       'eligibleTransactionVolume' => \&_serialize_eligible_transaction_volume,
-       'maxPrice' => \&_serialize_max_price,
-       'minPrice' => \&_serialize_min_price,
-       'price' => \&_serialize_price,
-       'priceCurrency' => \&_serialize_price_currency,
-       'validFrom' => \&_serialize_valid_from,
-       'validThrough' => \&_serialize_valid_through,
-       'valueAddedTaxIncluded' => \&_serialize_value_added_tax_included,
-    } ]
-};
 
 =head1 SEE ALSO
 

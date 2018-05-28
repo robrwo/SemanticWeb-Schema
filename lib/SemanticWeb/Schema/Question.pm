@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Question';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -166,20 +167,6 @@ sub _serialize_upvote_count { $_[0]->_serializer('upvote_count') }
 
 
 
-
-around json_ld_type => sub { return 'Question' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'acceptedAnswer' => \&_serialize_accepted_answer,
-       'answerCount' => \&_serialize_answer_count,
-       'downvoteCount' => \&_serialize_downvote_count,
-       'suggestedAnswer' => \&_serialize_suggested_answer,
-       'upvoteCount' => \&_serialize_upvote_count,
-    } ]
-};
 
 =head1 SEE ALSO
 

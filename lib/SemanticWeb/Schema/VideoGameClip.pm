@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Clip /;
 
 
+use MooX::JSON_LD 'VideoGameClip';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,15 +24,6 @@ A short segment/part of a video game.
 
 =cut
 
-
-around json_ld_type => sub { return 'VideoGameClip' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Game SemanticWeb::Schema::SoftwareApplication /;
 
 
+use MooX::JSON_LD 'VideoGame';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -341,26 +342,6 @@ sub _serialize_trailer { $_[0]->_serializer('trailer') }
 
 
 
-
-around json_ld_type => sub { return 'VideoGame' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actor' => \&_serialize_actor,
-       'actors' => \&_serialize_actors,
-       'cheatCode' => \&_serialize_cheat_code,
-       'director' => \&_serialize_director,
-       'directors' => \&_serialize_directors,
-       'gamePlatform' => \&_serialize_game_platform,
-       'gameServer' => \&_serialize_game_server,
-       'gameTip' => \&_serialize_game_tip,
-       'musicBy' => \&_serialize_music_by,
-       'playMode' => \&_serialize_play_mode,
-       'trailer' => \&_serialize_trailer,
-    } ]
-};
 
 =head1 SEE ALSO
 

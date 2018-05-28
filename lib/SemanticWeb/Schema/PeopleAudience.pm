@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Audience /;
 
 
+use MooX::JSON_LD 'PeopleAudience';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -188,21 +189,6 @@ sub _serialize_suggested_min_age { $_[0]->_serializer('suggested_min_age') }
 
 
 
-
-around json_ld_type => sub { return 'PeopleAudience' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'requiredGender' => \&_serialize_required_gender,
-       'requiredMaxAge' => \&_serialize_required_max_age,
-       'requiredMinAge' => \&_serialize_required_min_age,
-       'suggestedGender' => \&_serialize_suggested_gender,
-       'suggestedMaxAge' => \&_serialize_suggested_max_age,
-       'suggestedMinAge' => \&_serialize_suggested_min_age,
-    } ]
-};
 
 =head1 SEE ALSO
 

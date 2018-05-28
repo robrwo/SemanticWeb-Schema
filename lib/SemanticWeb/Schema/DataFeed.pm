@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Dataset /;
 
 
+use MooX::JSON_LD 'DataFeed';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -57,16 +58,6 @@ sub _serialize_data_feed_element { $_[0]->_serializer('data_feed_element') }
 
 
 
-
-around json_ld_type => sub { return 'DataFeed' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'dataFeedElement' => \&_serialize_data_feed_element,
-    } ]
-};
 
 =head1 SEE ALSO
 

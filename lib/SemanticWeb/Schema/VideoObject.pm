@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::MediaObject /;
 
 
+use MooX::JSON_LD 'VideoObject';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -304,25 +305,6 @@ sub _serialize_video_quality { $_[0]->_serializer('video_quality') }
 
 
 
-
-around json_ld_type => sub { return 'VideoObject' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actor' => \&_serialize_actor,
-       'actors' => \&_serialize_actors,
-       'caption' => \&_serialize_caption,
-       'director' => \&_serialize_director,
-       'directors' => \&_serialize_directors,
-       'musicBy' => \&_serialize_music_by,
-       'thumbnail' => \&_serialize_thumbnail,
-       'transcript' => \&_serialize_transcript,
-       'videoFrameSize' => \&_serialize_video_frame_size,
-       'videoQuality' => \&_serialize_video_quality,
-    } ]
-};
 
 =head1 SEE ALSO
 

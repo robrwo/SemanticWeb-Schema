@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'DatedMoneySpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -159,19 +160,6 @@ sub _serialize_start_date { $_[0]->_serializer('start_date') }
 
 
 
-
-around json_ld_type => sub { return 'DatedMoneySpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'amount' => \&_serialize_amount,
-       'currency' => \&_serialize_currency,
-       'endDate' => \&_serialize_end_date,
-       'startDate' => \&_serialize_start_date,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::HowTo /;
 
 
+use MooX::JSON_LD 'Recipe';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -317,25 +318,6 @@ sub _serialize_suitable_for_diet { $_[0]->_serializer('suitable_for_diet') }
 
 
 
-
-around json_ld_type => sub { return 'Recipe' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'cookTime' => \&_serialize_cook_time,
-       'cookingMethod' => \&_serialize_cooking_method,
-       'ingredients' => \&_serialize_ingredients,
-       'nutrition' => \&_serialize_nutrition,
-       'recipeCategory' => \&_serialize_recipe_category,
-       'recipeCuisine' => \&_serialize_recipe_cuisine,
-       'recipeIngredient' => \&_serialize_recipe_ingredient,
-       'recipeInstructions' => \&_serialize_recipe_instructions,
-       'recipeYield' => \&_serialize_recipe_yield,
-       'suitableForDiet' => \&_serialize_suitable_for_diet,
-    } ]
-};
 
 =head1 SEE ALSO
 

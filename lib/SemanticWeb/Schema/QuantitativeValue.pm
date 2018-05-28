@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'QuantitativeValue';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -258,22 +259,6 @@ sub _serialize_value_reference { $_[0]->_serializer('value_reference') }
 
 
 
-
-around json_ld_type => sub { return 'QuantitativeValue' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalProperty' => \&_serialize_additional_property,
-       'maxValue' => \&_serialize_max_value,
-       'minValue' => \&_serialize_min_value,
-       'unitCode' => \&_serialize_unit_code,
-       'unitText' => \&_serialize_unit_text,
-       'value' => \&_serialize_value,
-       'valueReference' => \&_serialize_value_reference,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::UpdateAction /;
 
 
+use MooX::JSON_LD 'ReplaceAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -80,17 +81,6 @@ sub _serialize_replacer { $_[0]->_serializer('replacer') }
 
 
 
-
-around json_ld_type => sub { return 'ReplaceAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'replacee' => \&_serialize_replacee,
-       'replacer' => \&_serialize_replacer,
-    } ]
-};
 
 =head1 SEE ALSO
 

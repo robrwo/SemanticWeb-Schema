@@ -12,6 +12,7 @@ extends qw/[% FOREACH parent IN parents %] [% parent %][% END %] /;
 with qw/[% FOREACH role IN roles %] [% role %][% END %] /;
 [% END -%]
 
+use MooX::JSON_LD '[% label %]';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -60,18 +61,6 @@ sub _serialize_[% name %] { $_[0]->_serializer('[% name %]') }
 [% ELSE %]
 =cut
 [% END %]
-
-around json_ld_type => sub { return '[% label %]' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-[% FOREACH name IN attributes.keys.sort -%]
-       '[% attributes.$name.label %]' => \&_serialize_[% name %],
-[% END -%]
-    } ]
-};
 
 =head1 SEE ALSO
 

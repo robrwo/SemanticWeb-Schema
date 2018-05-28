@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Seat';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -135,19 +136,6 @@ sub _serialize_seating_type { $_[0]->_serializer('seating_type') }
 
 
 
-
-around json_ld_type => sub { return 'Seat' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'seatNumber' => \&_serialize_seat_number,
-       'seatRow' => \&_serialize_seat_row,
-       'seatSection' => \&_serialize_seat_section,
-       'seatingType' => \&_serialize_seating_type,
-    } ]
-};
 
 =head1 SEE ALSO
 

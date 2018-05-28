@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreateAction /;
 
 
+use MooX::JSON_LD 'CookAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -111,18 +112,6 @@ sub _serialize_recipe { $_[0]->_serializer('recipe') }
 
 
 
-
-around json_ld_type => sub { return 'CookAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'foodEstablishment' => \&_serialize_food_establishment,
-       'foodEvent' => \&_serialize_food_event,
-       'recipe' => \&_serialize_recipe,
-    } ]
-};
 
 =head1 SEE ALSO
 

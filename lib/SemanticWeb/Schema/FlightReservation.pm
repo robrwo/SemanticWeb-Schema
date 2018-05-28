@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Reservation /;
 
 
+use MooX::JSON_LD 'FlightReservation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -143,19 +144,6 @@ sub _serialize_security_screening { $_[0]->_serializer('security_screening') }
 
 
 
-
-around json_ld_type => sub { return 'FlightReservation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'boardingGroup' => \&_serialize_boarding_group,
-       'passengerPriorityStatus' => \&_serialize_passenger_priority_status,
-       'passengerSequenceNumber' => \&_serialize_passenger_sequence_number,
-       'securityScreening' => \&_serialize_security_screening,
-    } ]
-};
 
 =head1 SEE ALSO
 

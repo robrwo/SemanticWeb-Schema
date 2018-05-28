@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::WebPageElement /;
 
 
+use MooX::JSON_LD 'SiteNavigationElement';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,15 +24,6 @@ A navigation element of the page.
 
 =cut
 
-
-around json_ld_type => sub { return 'SiteNavigationElement' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

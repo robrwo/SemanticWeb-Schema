@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'PropertyValueSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -333,26 +334,6 @@ sub _serialize_value_required { $_[0]->_serializer('value_required') }
 
 
 
-
-around json_ld_type => sub { return 'PropertyValueSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'defaultValue' => \&_serialize_default_value,
-       'maxValue' => \&_serialize_max_value,
-       'minValue' => \&_serialize_min_value,
-       'multipleValues' => \&_serialize_multiple_values,
-       'readonlyValue' => \&_serialize_readonly_value,
-       'stepValue' => \&_serialize_step_value,
-       'valueMaxLength' => \&_serialize_value_max_length,
-       'valueMinLength' => \&_serialize_value_min_length,
-       'valueName' => \&_serialize_value_name,
-       'valuePattern' => \&_serialize_value_pattern,
-       'valueRequired' => \&_serialize_value_required,
-    } ]
-};
 
 =head1 SEE ALSO
 

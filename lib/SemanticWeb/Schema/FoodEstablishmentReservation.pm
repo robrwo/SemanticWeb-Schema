@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Reservation /;
 
 
+use MooX::JSON_LD 'FoodEstablishmentReservation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -128,18 +129,6 @@ sub _serialize_start_time { $_[0]->_serializer('start_time') }
 
 
 
-
-around json_ld_type => sub { return 'FoodEstablishmentReservation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'endTime' => \&_serialize_end_time,
-       'partySize' => \&_serialize_party_size,
-       'startTime' => \&_serialize_start_time,
-    } ]
-};
 
 =head1 SEE ALSO
 

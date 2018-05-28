@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'NutritionInformation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -349,27 +350,6 @@ sub _serialize_unsaturated_fat_content { $_[0]->_serializer('unsaturated_fat_con
 
 
 
-
-around json_ld_type => sub { return 'NutritionInformation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'calories' => \&_serialize_calories,
-       'carbohydrateContent' => \&_serialize_carbohydrate_content,
-       'cholesterolContent' => \&_serialize_cholesterol_content,
-       'fatContent' => \&_serialize_fat_content,
-       'fiberContent' => \&_serialize_fiber_content,
-       'proteinContent' => \&_serialize_protein_content,
-       'saturatedFatContent' => \&_serialize_saturated_fat_content,
-       'servingSize' => \&_serialize_serving_size,
-       'sodiumContent' => \&_serialize_sodium_content,
-       'sugarContent' => \&_serialize_sugar_content,
-       'transFatContent' => \&_serialize_trans_fat_content,
-       'unsaturatedFatContent' => \&_serialize_unsaturated_fat_content,
-    } ]
-};
 
 =head1 SEE ALSO
 

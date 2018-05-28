@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Article /;
 
 
+use MooX::JSON_LD 'Report';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -53,16 +54,6 @@ sub _serialize_report_number { $_[0]->_serializer('report_number') }
 
 
 
-
-around json_ld_type => sub { return 'Report' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'reportNumber' => \&_serialize_report_number,
-    } ]
-};
 
 =head1 SEE ALSO
 

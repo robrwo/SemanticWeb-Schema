@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Dataset';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -248,23 +249,6 @@ sub _serialize_temporal { $_[0]->_serializer('temporal') }
 
 
 
-
-around json_ld_type => sub { return 'Dataset' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'catalog' => \&_serialize_catalog,
-       'datasetTimeInterval' => \&_serialize_dataset_time_interval,
-       'distribution' => \&_serialize_distribution,
-       'includedDataCatalog' => \&_serialize_included_data_catalog,
-       'includedInDataCatalog' => \&_serialize_included_in_data_catalog,
-       'issn' => \&_serialize_issn,
-       'spatial' => \&_serialize_spatial,
-       'temporal' => \&_serialize_temporal,
-    } ]
-};
 
 =head1 SEE ALSO
 

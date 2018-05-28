@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'EntryPoint';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -218,22 +219,6 @@ sub _serialize_url_template { $_[0]->_serializer('url_template') }
 
 
 
-
-around json_ld_type => sub { return 'EntryPoint' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'actionApplication' => \&_serialize_action_application,
-       'actionPlatform' => \&_serialize_action_platform,
-       'application' => \&_serialize_application,
-       'contentType' => \&_serialize_content_type,
-       'encodingType' => \&_serialize_encoding_type,
-       'httpMethod' => \&_serialize_http_method,
-       'urlTemplate' => \&_serialize_url_template,
-    } ]
-};
 
 =head1 SEE ALSO
 

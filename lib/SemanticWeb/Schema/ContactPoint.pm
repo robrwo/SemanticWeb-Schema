@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'ContactPoint';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -322,25 +323,6 @@ sub _serialize_telephone { $_[0]->_serializer('telephone') }
 
 
 
-
-around json_ld_type => sub { return 'ContactPoint' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'areaServed' => \&_serialize_area_served,
-       'availableLanguage' => \&_serialize_available_language,
-       'contactOption' => \&_serialize_contact_option,
-       'contactType' => \&_serialize_contact_type,
-       'email' => \&_serialize_email,
-       'faxNumber' => \&_serialize_fax_number,
-       'hoursAvailable' => \&_serialize_hours_available,
-       'productSupported' => \&_serialize_product_supported,
-       'serviceArea' => \&_serialize_service_area,
-       'telephone' => \&_serialize_telephone,
-    } ]
-};
 
 =head1 SEE ALSO
 

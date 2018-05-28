@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Ticket';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -256,23 +257,6 @@ sub _serialize_under_name { $_[0]->_serializer('under_name') }
 
 
 
-
-around json_ld_type => sub { return 'Ticket' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'dateIssued' => \&_serialize_date_issued,
-       'issuedBy' => \&_serialize_issued_by,
-       'priceCurrency' => \&_serialize_price_currency,
-       'ticketNumber' => \&_serialize_ticket_number,
-       'ticketToken' => \&_serialize_ticket_token,
-       'ticketedSeat' => \&_serialize_ticketed_seat,
-       'totalPrice' => \&_serialize_total_price,
-       'underName' => \&_serialize_under_name,
-    } ]
-};
 
 =head1 SEE ALSO
 

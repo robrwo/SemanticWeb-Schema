@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Order';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -639,37 +640,6 @@ sub _serialize_seller { $_[0]->_serializer('seller') }
 
 
 
-
-around json_ld_type => sub { return 'Order' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'acceptedOffer' => \&_serialize_accepted_offer,
-       'billingAddress' => \&_serialize_billing_address,
-       'broker' => \&_serialize_broker,
-       'confirmationNumber' => \&_serialize_confirmation_number,
-       'customer' => \&_serialize_customer,
-       'discount' => \&_serialize_discount,
-       'discountCode' => \&_serialize_discount_code,
-       'discountCurrency' => \&_serialize_discount_currency,
-       'isGift' => \&_serialize_is_gift,
-       'merchant' => \&_serialize_merchant,
-       'orderDate' => \&_serialize_order_date,
-       'orderDelivery' => \&_serialize_order_delivery,
-       'orderNumber' => \&_serialize_order_number,
-       'orderStatus' => \&_serialize_order_status,
-       'orderedItem' => \&_serialize_ordered_item,
-       'partOfInvoice' => \&_serialize_part_of_invoice,
-       'paymentDue' => \&_serialize_payment_due,
-       'paymentDueDate' => \&_serialize_payment_due_date,
-       'paymentMethod' => \&_serialize_payment_method,
-       'paymentMethodId' => \&_serialize_payment_method_id,
-       'paymentUrl' => \&_serialize_payment_url,
-       'seller' => \&_serialize_seller,
-    } ]
-};
 
 =head1 SEE ALSO
 

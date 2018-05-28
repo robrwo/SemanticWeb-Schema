@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'BedDetails';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -89,17 +90,6 @@ sub _serialize_type_of_bed { $_[0]->_serializer('type_of_bed') }
 
 
 
-
-around json_ld_type => sub { return 'BedDetails' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'numberOfBeds' => \&_serialize_number_of_beds,
-       'typeOfBed' => \&_serialize_type_of_bed,
-    } ]
-};
 
 =head1 SEE ALSO
 

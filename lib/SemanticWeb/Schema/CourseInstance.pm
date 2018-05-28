@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Event /;
 
 
+use MooX::JSON_LD 'CourseInstance';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -96,17 +97,6 @@ sub _serialize_instructor { $_[0]->_serializer('instructor') }
 
 
 
-
-around json_ld_type => sub { return 'CourseInstance' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'courseMode' => \&_serialize_course_mode,
-       'instructor' => \&_serialize_instructor,
-    } ]
-};
 
 =head1 SEE ALSO
 

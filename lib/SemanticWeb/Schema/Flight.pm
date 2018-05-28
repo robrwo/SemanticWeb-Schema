@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Flight';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -528,33 +529,6 @@ sub _serialize_web_checkin_time { $_[0]->_serializer('web_checkin_time') }
 
 
 
-
-around json_ld_type => sub { return 'Flight' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'aircraft' => \&_serialize_aircraft,
-       'arrivalAirport' => \&_serialize_arrival_airport,
-       'arrivalGate' => \&_serialize_arrival_gate,
-       'arrivalTerminal' => \&_serialize_arrival_terminal,
-       'arrivalTime' => \&_serialize_arrival_time,
-       'boardingPolicy' => \&_serialize_boarding_policy,
-       'carrier' => \&_serialize_carrier,
-       'departureAirport' => \&_serialize_departure_airport,
-       'departureGate' => \&_serialize_departure_gate,
-       'departureTerminal' => \&_serialize_departure_terminal,
-       'departureTime' => \&_serialize_departure_time,
-       'estimatedFlightDuration' => \&_serialize_estimated_flight_duration,
-       'flightDistance' => \&_serialize_flight_distance,
-       'flightNumber' => \&_serialize_flight_number,
-       'mealService' => \&_serialize_meal_service,
-       'provider' => \&_serialize_provider,
-       'seller' => \&_serialize_seller,
-       'webCheckinTime' => \&_serialize_web_checkin_time,
-    } ]
-};
 
 =head1 SEE ALSO
 

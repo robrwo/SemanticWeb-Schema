@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Place /;
 
 
+use MooX::JSON_LD 'CivicStructure';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -69,16 +70,6 @@ sub _serialize_opening_hours { $_[0]->_serializer('opening_hours') }
 
 
 
-
-around json_ld_type => sub { return 'CivicStructure' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'openingHours' => \&_serialize_opening_hours,
-    } ]
-};
 
 =head1 SEE ALSO
 

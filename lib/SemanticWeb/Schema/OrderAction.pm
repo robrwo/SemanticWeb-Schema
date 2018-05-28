@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::TradeAction /;
 
 
+use MooX::JSON_LD 'OrderAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_delivery_method { $_[0]->_serializer('delivery_method') }
 
 
 
-
-around json_ld_type => sub { return 'OrderAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'deliveryMethod' => \&_serialize_delivery_method,
-    } ]
-};
 
 =head1 SEE ALSO
 

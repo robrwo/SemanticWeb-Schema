@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'ParcelDelivery';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -356,27 +357,6 @@ sub _serialize_tracking_url { $_[0]->_serializer('tracking_url') }
 
 
 
-
-around json_ld_type => sub { return 'ParcelDelivery' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'carrier' => \&_serialize_carrier,
-       'deliveryAddress' => \&_serialize_delivery_address,
-       'deliveryStatus' => \&_serialize_delivery_status,
-       'expectedArrivalFrom' => \&_serialize_expected_arrival_from,
-       'expectedArrivalUntil' => \&_serialize_expected_arrival_until,
-       'hasDeliveryMethod' => \&_serialize_has_delivery_method,
-       'itemShipped' => \&_serialize_item_shipped,
-       'originAddress' => \&_serialize_origin_address,
-       'partOfOrder' => \&_serialize_part_of_order,
-       'provider' => \&_serialize_provider,
-       'trackingNumber' => \&_serialize_tracking_number,
-       'trackingUrl' => \&_serialize_tracking_url,
-    } ]
-};
 
 =head1 SEE ALSO
 

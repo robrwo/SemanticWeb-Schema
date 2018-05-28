@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'OpeningHoursSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -173,20 +174,6 @@ sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 
-
-around json_ld_type => sub { return 'OpeningHoursSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'closes' => \&_serialize_closes,
-       'dayOfWeek' => \&_serialize_day_of_week,
-       'opens' => \&_serialize_opens,
-       'validFrom' => \&_serialize_valid_from,
-       'validThrough' => \&_serialize_valid_through,
-    } ]
-};
 
 =head1 SEE ALSO
 

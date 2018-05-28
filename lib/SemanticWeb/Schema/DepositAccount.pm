@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::InvestmentOrDeposit SemanticWeb::Schema::BankAccount /;
 
 
+use MooX::JSON_LD 'DepositAccount';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -24,15 +25,6 @@ interest or other benefits.
 
 =cut
 
-
-around json_ld_type => sub { return 'DepositAccount' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Reservation /;
 
 
+use MooX::JSON_LD 'RentalCarReservation';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -139,19 +140,6 @@ sub _serialize_pickup_time { $_[0]->_serializer('pickup_time') }
 
 
 
-
-around json_ld_type => sub { return 'RentalCarReservation' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'dropoffLocation' => \&_serialize_dropoff_location,
-       'dropoffTime' => \&_serialize_dropoff_time,
-       'pickupLocation' => \&_serialize_pickup_location,
-       'pickupTime' => \&_serialize_pickup_time,
-    } ]
-};
 
 =head1 SEE ALSO
 

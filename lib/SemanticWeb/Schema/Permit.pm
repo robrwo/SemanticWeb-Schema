@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Permit';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -214,22 +215,6 @@ sub _serialize_valid_until { $_[0]->_serializer('valid_until') }
 
 
 
-
-around json_ld_type => sub { return 'Permit' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'issuedBy' => \&_serialize_issued_by,
-       'issuedThrough' => \&_serialize_issued_through,
-       'permitAudience' => \&_serialize_permit_audience,
-       'validFor' => \&_serialize_valid_for,
-       'validFrom' => \&_serialize_valid_from,
-       'validIn' => \&_serialize_valid_in,
-       'validUntil' => \&_serialize_valid_until,
-    } ]
-};
 
 =head1 SEE ALSO
 

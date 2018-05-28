@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'ItemList';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -128,18 +129,6 @@ sub _serialize_number_of_items { $_[0]->_serializer('number_of_items') }
 
 
 
-
-around json_ld_type => sub { return 'ItemList' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'itemListElement' => \&_serialize_item_list_element,
-       'itemListOrder' => \&_serialize_item_list_order,
-       'numberOfItems' => \&_serialize_number_of_items,
-    } ]
-};
 
 =head1 SEE ALSO
 

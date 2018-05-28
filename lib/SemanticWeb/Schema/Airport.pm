@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CivicStructure /;
 
 
+use MooX::JSON_LD 'Airport';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -79,17 +80,6 @@ sub _serialize_icao_code { $_[0]->_serializer('icao_code') }
 
 
 
-
-around json_ld_type => sub { return 'Airport' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'iataCode' => \&_serialize_iata_code,
-       'icaoCode' => \&_serialize_icao_code,
-    } ]
-};
 
 =head1 SEE ALSO
 

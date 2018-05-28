@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Blog';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -108,18 +109,6 @@ sub _serialize_issn { $_[0]->_serializer('issn') }
 
 
 
-
-around json_ld_type => sub { return 'Blog' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'blogPost' => \&_serialize_blog_post,
-       'blogPosts' => \&_serialize_blog_posts,
-       'issn' => \&_serialize_issn,
-    } ]
-};
 
 =head1 SEE ALSO
 

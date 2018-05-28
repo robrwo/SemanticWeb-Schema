@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Product /;
 
 
+use MooX::JSON_LD 'SomeProducts';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -52,16 +53,6 @@ sub _serialize_inventory_level { $_[0]->_serializer('inventory_level') }
 
 
 
-
-around json_ld_type => sub { return 'SomeProducts' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'inventoryLevel' => \&_serialize_inventory_level,
-    } ]
-};
 
 =head1 SEE ALSO
 

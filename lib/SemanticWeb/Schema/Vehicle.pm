@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Product /;
 
 
+use MooX::JSON_LD 'Vehicle';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -807,40 +808,6 @@ sub _serialize_vehicle_transmission { $_[0]->_serializer('vehicle_transmission')
 
 
 
-
-around json_ld_type => sub { return 'Vehicle' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'cargoVolume' => \&_serialize_cargo_volume,
-       'dateVehicleFirstRegistered' => \&_serialize_date_vehicle_first_registered,
-       'driveWheelConfiguration' => \&_serialize_drive_wheel_configuration,
-       'fuelConsumption' => \&_serialize_fuel_consumption,
-       'fuelEfficiency' => \&_serialize_fuel_efficiency,
-       'fuelType' => \&_serialize_fuel_type,
-       'knownVehicleDamages' => \&_serialize_known_vehicle_damages,
-       'mileageFromOdometer' => \&_serialize_mileage_from_odometer,
-       'numberOfAirbags' => \&_serialize_number_of_airbags,
-       'numberOfAxles' => \&_serialize_number_of_axles,
-       'numberOfDoors' => \&_serialize_number_of_doors,
-       'numberOfForwardGears' => \&_serialize_number_of_forward_gears,
-       'numberOfPreviousOwners' => \&_serialize_number_of_previous_owners,
-       'productionDate' => \&_serialize_production_date,
-       'purchaseDate' => \&_serialize_purchase_date,
-       'steeringPosition' => \&_serialize_steering_position,
-       'vehicleConfiguration' => \&_serialize_vehicle_configuration,
-       'vehicleEngine' => \&_serialize_vehicle_engine,
-       'vehicleIdentificationNumber' => \&_serialize_vehicle_identification_number,
-       'vehicleInteriorColor' => \&_serialize_vehicle_interior_color,
-       'vehicleInteriorType' => \&_serialize_vehicle_interior_type,
-       'vehicleModelDate' => \&_serialize_vehicle_model_date,
-       'vehicleSeatingCapacity' => \&_serialize_vehicle_seating_capacity,
-       'vehicleSpecialUsage' => \&_serialize_vehicle_special_usage,
-       'vehicleTransmission' => \&_serialize_vehicle_transmission,
-    } ]
-};
 
 =head1 SEE ALSO
 

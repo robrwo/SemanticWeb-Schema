@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'SoftwareSourceCode';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -223,22 +224,6 @@ sub _serialize_target_product { $_[0]->_serializer('target_product') }
 
 
 
-
-around json_ld_type => sub { return 'SoftwareSourceCode' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'codeRepository' => \&_serialize_code_repository,
-       'codeSampleType' => \&_serialize_code_sample_type,
-       'programmingLanguage' => \&_serialize_programming_language,
-       'runtime' => \&_serialize_runtime,
-       'runtimePlatform' => \&_serialize_runtime_platform,
-       'sampleType' => \&_serialize_sample_type,
-       'targetProduct' => \&_serialize_target_product,
-    } ]
-};
 
 =head1 SEE ALSO
 

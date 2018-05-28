@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Article /;
 
 
+use MooX::JSON_LD 'NewsArticle';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -178,20 +179,6 @@ sub _serialize_print_section { $_[0]->_serializer('print_section') }
 
 
 
-
-around json_ld_type => sub { return 'NewsArticle' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'dateline' => \&_serialize_dateline,
-       'printColumn' => \&_serialize_print_column,
-       'printEdition' => \&_serialize_print_edition,
-       'printPage' => \&_serialize_print_page,
-       'printSection' => \&_serialize_print_section,
-    } ]
-};
 
 =head1 SEE ALSO
 

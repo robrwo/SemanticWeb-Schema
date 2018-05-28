@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Reservation /;
 
 
+use MooX::JSON_LD 'ReservationPackage';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_sub_reservation { $_[0]->_serializer('sub_reservation') }
 
 
 
-
-around json_ld_type => sub { return 'ReservationPackage' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'subReservation' => \&_serialize_sub_reservation,
-    } ]
-};
 
 =head1 SEE ALSO
 

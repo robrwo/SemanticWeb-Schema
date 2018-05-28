@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::PropertyValue /;
 
 
+use MooX::JSON_LD 'LocationFeatureSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -109,18 +110,6 @@ sub _serialize_valid_through { $_[0]->_serializer('valid_through') }
 
 
 
-
-around json_ld_type => sub { return 'LocationFeatureSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'hoursAvailable' => \&_serialize_hours_available,
-       'validFrom' => \&_serialize_valid_from,
-       'validThrough' => \&_serialize_valid_through,
-    } ]
-};
 
 =head1 SEE ALSO
 

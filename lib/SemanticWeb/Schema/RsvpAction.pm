@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::InformAction /;
 
 
+use MooX::JSON_LD 'RsvpAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -108,18 +109,6 @@ sub _serialize_rsvp_response { $_[0]->_serializer('rsvp_response') }
 
 
 
-
-around json_ld_type => sub { return 'RsvpAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalNumberOfGuests' => \&_serialize_additional_number_of_guests,
-       'comment' => \&_serialize_comment,
-       'rsvpResponse' => \&_serialize_rsvp_response,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Article /;
 
 
+use MooX::JSON_LD 'SocialMediaPosting';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -54,16 +55,6 @@ sub _serialize_shared_content { $_[0]->_serializer('shared_content') }
 
 
 
-
-around json_ld_type => sub { return 'SocialMediaPosting' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'sharedContent' => \&_serialize_shared_content,
-    } ]
-};
 
 =head1 SEE ALSO
 

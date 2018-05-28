@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Intangible /;
 
 
+use MooX::JSON_LD 'Enumeration';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -58,16 +59,6 @@ sub _serialize_superseded_by { $_[0]->_serializer('superseded_by') }
 
 
 
-
-around json_ld_type => sub { return 'Enumeration' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'supersededBy' => \&_serialize_superseded_by,
-    } ]
-};
 
 =head1 SEE ALSO
 

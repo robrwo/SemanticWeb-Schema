@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Action /;
 
 
+use MooX::JSON_LD 'TransferAction';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -82,17 +83,6 @@ sub _serialize_to_location { $_[0]->_serializer('to_location') }
 
 
 
-
-around json_ld_type => sub { return 'TransferAction' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'fromLocation' => \&_serialize_from_location,
-       'toLocation' => \&_serialize_to_location,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::CreativeWork /;
 
 
+use MooX::JSON_LD 'Article';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -201,21 +202,6 @@ sub _serialize_word_count { $_[0]->_serializer('word_count') }
 
 
 
-
-around json_ld_type => sub { return 'Article' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'articleBody' => \&_serialize_article_body,
-       'articleSection' => \&_serialize_article_section,
-       'pageEnd' => \&_serialize_page_end,
-       'pageStart' => \&_serialize_page_start,
-       'pagination' => \&_serialize_pagination,
-       'wordCount' => \&_serialize_word_count,
-    } ]
-};
 
 =head1 SEE ALSO
 

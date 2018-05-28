@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::StructuredValue /;
 
 
+use MooX::JSON_LD 'EngineSpecification';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -57,16 +58,6 @@ sub _serialize_fuel_type { $_[0]->_serializer('fuel_type') }
 
 
 
-
-around json_ld_type => sub { return 'EngineSpecification' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'fuelType' => \&_serialize_fuel_type,
-    } ]
-};
 
 =head1 SEE ALSO
 

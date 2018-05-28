@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Audience /;
 
 
+use MooX::JSON_LD 'BusinessAudience';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -107,18 +108,6 @@ sub _serialize_years_in_operation { $_[0]->_serializer('years_in_operation') }
 
 
 
-
-around json_ld_type => sub { return 'BusinessAudience' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'numberOfEmployees' => \&_serialize_number_of_employees,
-       'yearlyRevenue' => \&_serialize_yearly_revenue,
-       'yearsInOperation' => \&_serialize_years_in_operation,
-    } ]
-};
 
 =head1 SEE ALSO
 

@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;
 
 
+use MooX::JSON_LD 'DefenceEstablishment';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,15 +24,6 @@ A defence establishment, such as an army or navy base.
 
 =cut
 
-
-around json_ld_type => sub { return 'DefenceEstablishment' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

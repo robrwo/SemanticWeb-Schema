@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Accommodation /;
 
 
+use MooX::JSON_LD 'CampingPitch';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -30,15 +31,6 @@ marking up hotels and other forms of accommodations</a>.
 
 =cut
 
-
-around json_ld_type => sub { return 'CampingPitch' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-    } ]
-};
 
 =head1 SEE ALSO
 

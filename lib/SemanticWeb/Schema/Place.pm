@@ -7,6 +7,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::Thing /;
 
 
+use MooX::JSON_LD 'Place';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -868,44 +869,6 @@ sub _serialize_telephone { $_[0]->_serializer('telephone') }
 
 
 
-
-around json_ld_type => sub { return 'Place' };
-
-around json_ld_fields => sub {
-    my ($next, $self) = @_;
-    my $fields = $self->$next;
-    [ $fields ? @$fields : (), {
-       'additionalProperty' => \&_serialize_additional_property,
-       'address' => \&_serialize_address,
-       'aggregateRating' => \&_serialize_aggregate_rating,
-       'amenityFeature' => \&_serialize_amenity_feature,
-       'branchCode' => \&_serialize_branch_code,
-       'containedIn' => \&_serialize_contained_in,
-       'containedInPlace' => \&_serialize_contained_in_place,
-       'containsPlace' => \&_serialize_contains_place,
-       'event' => \&_serialize_event,
-       'events' => \&_serialize_events,
-       'faxNumber' => \&_serialize_fax_number,
-       'geo' => \&_serialize_geo,
-       'globalLocationNumber' => \&_serialize_global_location_number,
-       'hasMap' => \&_serialize_has_map,
-       'isAccessibleForFree' => \&_serialize_is_accessible_for_free,
-       'isicV4' => \&_serialize_isic_v4,
-       'logo' => \&_serialize_logo,
-       'map' => \&_serialize_map,
-       'maps' => \&_serialize_maps,
-       'maximumAttendeeCapacity' => \&_serialize_maximum_attendee_capacity,
-       'openingHoursSpecification' => \&_serialize_opening_hours_specification,
-       'photo' => \&_serialize_photo,
-       'photos' => \&_serialize_photos,
-       'publicAccess' => \&_serialize_public_access,
-       'review' => \&_serialize_review,
-       'reviews' => \&_serialize_reviews,
-       'smokingAllowed' => \&_serialize_smoking_allowed,
-       'specialOpeningHoursSpecification' => \&_serialize_special_opening_hours_specification,
-       'telephone' => \&_serialize_telephone,
-    } ]
-};
 
 =head1 SEE ALSO
 
