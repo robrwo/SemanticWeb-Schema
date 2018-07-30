@@ -13,6 +13,22 @@ use namespace::autoclean;
 
 our $VERSION = 'v0.0.1';
 
+# RECOMMEND PREREQ: aliased
+# RECOMMEND PREREQ: Ref::Util::XS
+# RECOMMEND PREREQ: Type::Tiny::XS
+
+=head1 SYNOPSIS
+
+  use aliased 'SemanticWeb::Schema::Person' => 'Person';
+
+  my $person = Person->new(
+    name        => 'James Clerk Maxwell',
+    birth_date  => '1831-06-13',
+    birth_place => 'Edinburgh',
+  );
+
+  print $person->json_ld;
+
 =head1 DESCRIPTION
 
 This is a base class for the C<SemanticWeb::Schema> classes, which
