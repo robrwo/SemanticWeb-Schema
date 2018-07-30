@@ -1,2 +1,4 @@
 cache/
 blib/
+local/
+cpanfile.snapshot
