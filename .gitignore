@@ -5,3 +5,5 @@ cpanfile.snapshot
 
 SemanticWeb-Schema-v0.0.1.tar.gz
 SemanticWeb-Schema-v0.0.1/
+
+.build/
