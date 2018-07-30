@@ -55,6 +55,7 @@ has id => (
     is        => 'rw',
     isa       => Str,
     predicate => 1,
+    json_ld   => '@id',
 );
 
 =head2 C<context>
@@ -63,19 +64,7 @@ The context defaults to "http://schema.org/".
 
 =cut
 
-around _build_context => sub { return 'http://schema.org/' };
-
-around json_ld_data => sub {
-    my ($next, $self) = @_;
-
-    my $data = $self->$next;
-
-    delete $data->{$_} for grep { !defined $data->{$_} } keys %$data;
-
-    $data->{'@id'} //= $self->id if $self->has_id;
-
-    return $data;
-};
+sub _build_context { return 'http://schema.org/' };
 
 =head1 SEE ALSO
 

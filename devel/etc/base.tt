@@ -54,6 +54,7 @@ has id => (
     is        => 'rw',
     isa       => Str,
     predicate => 1,
+    json_ld   => '@id',
 );
 
 =head2 C<context>
@@ -62,19 +63,7 @@ The context defaults to "[% context %]".
 
 =cut
 
-around _build_context => sub { return '[% context %]' };
-
-around json_ld_data => sub {
-    my ($next, $self) = @_;
-
-    my $data = $self->$next;
-
-    delete $data->{$_} for grep { !defined $data->{$_} } keys %$data;
-
-    $data->{'@id'} //= $self->id if $self->has_id;
-
-    return $data;
-};
+sub _build_context { return '[% context %]' };
 
 =head1 SEE ALSO
 
