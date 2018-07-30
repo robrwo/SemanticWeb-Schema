@@ -2,6 +2,8 @@ package SemanticWeb::Schema;
 
 # ABSTRACT: Moo classes for http://schema.org/ classes
 
+use v5.10.1;
+
 use Moo;
 
 use List::Util qw/ first /;
@@ -64,7 +66,7 @@ The context defaults to "http://schema.org/".
 
 =cut
 
-sub _build_context { return 'http://schema.org/' };
+around _build_context => sub { return 'http://schema.org/' };
 
 =head1 SEE ALSO
 
