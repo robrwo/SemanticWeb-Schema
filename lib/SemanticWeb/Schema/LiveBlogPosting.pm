@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::LiveBlogPosting;
 
 # ABSTRACT: A blog post intended to provide a rolling textual coverage of an ongoing event through continuous updates.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

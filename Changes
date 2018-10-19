@@ -4,6 +4,9 @@ Revision history for SemanticWeb-Schema:
   [Enhancements]
   - Updated classes to Version 3.4 of the schema.
 
+  [Bug Fixes]
+  - Handle UTF-8 issues.
+
   [Documentation]
   - Added INSTALL file to the distribution.
 

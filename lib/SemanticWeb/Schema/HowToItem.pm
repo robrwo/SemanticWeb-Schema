@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::HowToItem;
 
 # ABSTRACT: An item used as either a tool or supply when performing the instructions for how to to achieve a result.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::ItemList;
 
 # ABSTRACT: A list of items of any sort&#x2014;for example
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

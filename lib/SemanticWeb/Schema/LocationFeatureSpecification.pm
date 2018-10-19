@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::LocationFeatureSpecification;
 
 # ABSTRACT: Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

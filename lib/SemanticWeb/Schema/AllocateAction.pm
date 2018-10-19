@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::AllocateAction;
 
 # ABSTRACT: The act of organizing tasks/objects/events by associating resources to it.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

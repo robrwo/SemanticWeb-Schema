@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::VideoGame;
 
 # ABSTRACT: A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

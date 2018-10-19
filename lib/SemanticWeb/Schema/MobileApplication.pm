@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::MobileApplication;
 
 # ABSTRACT: A software application designed specifically to work well on a mobile device such as a telephone.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

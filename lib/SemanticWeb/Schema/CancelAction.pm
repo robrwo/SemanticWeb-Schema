@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::CancelAction;
 
 # ABSTRACT: The act of asserting that a future event/action is no longer going to happen
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

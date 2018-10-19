@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::Conversation;
 
 # ABSTRACT: One or more messages between organizations or people on a particular topic
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::TipAction;
 
 # ABSTRACT: The act of giving money voluntarily to a beneficiary in recognition of services rendered.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

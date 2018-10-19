@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::ChooseAction;
 
 # ABSTRACT: The act of expressing a preference from a set of options or a large or unbounded set of choices/options.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

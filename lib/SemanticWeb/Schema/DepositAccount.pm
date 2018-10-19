@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::DepositAccount;
 
 # ABSTRACT: A type of Bank Account with a main purpose of depositing funds to gain interest or other benefits.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

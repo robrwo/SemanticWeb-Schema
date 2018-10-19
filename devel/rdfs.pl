@@ -317,9 +317,9 @@ sub generate_class_from_trine {
 
     $file->parent->mkpath;
 
-    my $engine = Template->new();
+    my $engine = Template->new( { ENCODING => 'utf8' } );
 
-    $engine->process( 'devel/etc/package.tt', \%meta, $file->openw );
+    $engine->process( 'devel/etc/package.tt', \%meta, $file->openw_utf8 );
 
     # Save information used for constructing the class as a JSON
     # file. We can use this for debugging as well as tests.
@@ -328,7 +328,7 @@ sub generate_class_from_trine {
     $test->parent->mkpath;
     my %data = ( class => $nodes, properties => $properties );
 
-    $test->spew_raw( $self->encode( \%data ) );
+    $test->spew_utf8( $self->encode( \%data ) );
 }
 
 sub translate_types {

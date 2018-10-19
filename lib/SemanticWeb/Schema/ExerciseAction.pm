@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::ExerciseAction;
 
 # ABSTRACT: The act of participating in exertive activity for the purposes of improving health and fitness.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

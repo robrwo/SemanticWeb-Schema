@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::OwnershipInfo;
 
 # ABSTRACT: A structured value providing information about when a certain organization or person owned a certain product.
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

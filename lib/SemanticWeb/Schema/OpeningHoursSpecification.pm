@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::OpeningHoursSpecification;
 
 # ABSTRACT: A structured value providing information about the opening hours of a place or a certain service inside a place
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

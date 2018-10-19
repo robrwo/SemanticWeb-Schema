@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::Course;
 
 # ABSTRACT: A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

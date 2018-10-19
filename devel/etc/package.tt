@@ -1,3 +1,5 @@
+use utf8;
+
 package [% class_name %];
 
 # ABSTRACT: [% abstract %]
@@ -19,6 +21,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = '[% version %]';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 

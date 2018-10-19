@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema::ActivateAction;
 
 # ABSTRACT: The act of starting or activating a device or application (e
@@ -14,6 +16,8 @@ use Ref::Util qw/ is_plain_hashref /;
 use namespace::autoclean;
 
 our $VERSION = 'v0.0.2';
+
+=encoding utf8
 
 =head1 DESCRIPTION
 
