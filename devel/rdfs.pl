@@ -319,7 +319,7 @@ sub generate_class_from_trine {
 
     my $engine = Template->new();
 
-    $engine->process( 'etc/package.tt', \%meta, $file->openw );
+    $engine->process( 'devel/etc/package.tt', \%meta, $file->openw );
 
     # Save information used for constructing the class as a JSON
     # file. We can use this for debugging as well as tests.
@@ -478,7 +478,7 @@ sub generate_base_class {
 
     my $engine = Template->new();
 
-    $engine->process( 'etc/base.tt', \%meta, $file->openw );
+    $engine->process( 'devel/etc/base.tt', \%meta, $file->openw );
 
 }
 
