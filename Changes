@@ -4,5 +4,8 @@ Revision history for SemanticWeb-Schema:
   [Documentation]
   - Added INSTALL file to the distribution.
 
+  [Toolchain]
+  - Update MANIFEST.SKIP.
+
 v0.0.1    2018-07-30 23:54:07+01:00 Europe/London
 - Initial release.

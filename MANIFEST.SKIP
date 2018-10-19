@@ -1,4 +1,6 @@
 #
+SemanticWeb-Schema-.*.tar.gz
+SemanticWeb-Schema-.*/
 
 ^devel/
 
