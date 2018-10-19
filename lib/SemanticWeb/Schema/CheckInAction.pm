@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::CheckInAction;
 
-# ABSTRACT: <p>The act of an agent communicating (service provider
+# ABSTRACT: The act of an agent communicating (service provider
 
 use Moo;
 
@@ -19,11 +19,11 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of an agent communicating (service provider, social media, etc)
+The act of an agent communicating (service provider, social media, etc)
 their arrival by registering/confirming for a previously reserved service
 (e.g. flight check in) or at a place (e.g. hotel), possibly resulting in a
-result (boarding pass, etc).</p> <p>Related actions:</p> <ul> <li><a
-class="localLink"
+result (boarding pass, etc).<br/><br/> Related actions:<br/><br/> <ul>
+<li><a class="localLink"
 href="http://schema.org/CheckOutAction">CheckOutAction</a>: The antonym of
 CheckInAction.</li> <li><a class="localLink"
 href="http://schema.org/ArriveAction">ArriveAction</a>: Unlike

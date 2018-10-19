@@ -39,9 +39,9 @@ A data_feed_element should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::DataFeedItem']>
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
+=item C<Str>
 
 =back
 

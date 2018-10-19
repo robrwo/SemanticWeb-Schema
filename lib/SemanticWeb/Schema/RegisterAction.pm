@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::RegisterAction;
 
-# ABSTRACT: <p>The act of registering to be a user of a service
+# ABSTRACT: The act of registering to be a user of a service
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of registering to be a user of a service, product or web
-page.</p> <p>Related actions:</p> <ul> <li><a class="localLink"
+The act of registering to be a user of a service, product or web
+page.<br/><br/> Related actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/JoinAction">JoinAction</a>: Unlike JoinAction,
 RegisterAction implies you are registering to be a user of a service,
 <em>not</em> a group/team of people.</li> <li>[FollowAction]]: Unlike

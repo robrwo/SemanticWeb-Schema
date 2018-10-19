@@ -19,9 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-A construction business.</p> <p>A HomeAndConstructionBusiness is a <a
+A construction business.<br/><br/> A HomeAndConstructionBusiness is a <a
 class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
-that provides services around homes and buildings.</p> <p>As a <a
+that provides services around homes and buildings.<br/><br/> As a <a
 class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
 it can be described as a <a class="localLink"
 href="http://schema.org/provider">provider</a> of one or more <a

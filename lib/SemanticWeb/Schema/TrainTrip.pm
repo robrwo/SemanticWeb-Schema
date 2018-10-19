@@ -4,7 +4,7 @@ package SemanticWeb::Schema::TrainTrip;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Intangible /;
+extends qw/ SemanticWeb::Schema::Trip /;
 
 
 use MooX::JSON_LD 'TrainTrip';
@@ -73,30 +73,6 @@ has arrival_station => (
 );
 
 
-=head2 C<arrival_time>
-
-C<arrivalTime>
-
-The expected arrival time.
-
-
-A arrival_time should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has arrival_time => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'arrivalTime',
-);
-
-
 =head2 C<departure_platform>
 
 C<departurePlatform>
@@ -142,58 +118,6 @@ has departure_station => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'departureStation',
-);
-
-
-=head2 C<departure_time>
-
-C<departureTime>
-
-The expected departure time.
-
-
-A departure_time should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has departure_time => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'departureTime',
-);
-
-
-=head2 C<provider>
-
-
-
-The service provider, service operator, or service performer; the goods
-producer. Another party (a seller) may offer those services or goods on
-behalf of the provider. A provider may also serve as the seller.
-
-
-A provider should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
-=back
-
-=cut
-
-has provider => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'provider',
 );
 
 
@@ -251,7 +175,7 @@ has train_number => (
 
 
 
-L<SemanticWeb::Schema::Intangible>
+L<SemanticWeb::Schema::Trip>
 
 =cut
 

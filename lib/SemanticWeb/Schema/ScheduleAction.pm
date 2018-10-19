@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::ScheduleAction;
 
-# ABSTRACT: <p>Scheduling future actions
+# ABSTRACT: Scheduling future actions, events, or tasks
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>Scheduling future actions, events, or tasks.</p> <p>Related actions:</p>
-<ul> <li><a class="localLink"
+Scheduling future actions, events, or tasks.<br/><br/> Related
+actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/ReserveAction">ReserveAction</a>: Unlike
 ReserveAction, ScheduleAction allocates future actions (e.g. an event, a
 task, etc) towards a time slot / spatial allocation.</li> </ul> 

@@ -27,8 +27,8 @@ href="http://schema.org/LandmarksOrHistoricalBuildings">LandmarksOrHistoric
 alBuildings</a> to a <a class="localLink"
 href="http://schema.org/LocalBusiness">LocalBusiness</a>. This Type can be
 used on its own to describe a general <a class="localLink"
-href="http://schema.org/TourstAttraction">TourstAttraction</a>, or be used
-as an <a class="localLink"
+href="http://schema.org/TouristAttraction">TouristAttraction</a>, or be
+used as an <a class="localLink"
 href="http://schema.org/additionalType">additionalType</a> to add tourist
 attraction properties to any other type. (See examples below)
 
@@ -85,9 +85,9 @@ A tourist_type should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
 

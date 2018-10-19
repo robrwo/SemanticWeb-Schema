@@ -39,11 +39,11 @@ A grantee should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
+
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
 

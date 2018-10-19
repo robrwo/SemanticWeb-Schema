@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::WarrantyScope;
 
-# ABSTRACT: <p>A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product
+# ABSTRACT: A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product
 
 use Moo;
 
@@ -19,9 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>A range of of services that will be provided to a customer free of
-charge in case of a defect or malfunction of a product.</p> <p>Commonly
-used values:</p> <ul>
+A range of of services that will be provided to a customer free of charge
+in case of a defect or malfunction of a product.<br/><br/> Commonly used
+values:<br/><br/> <ul>
 <li>http://purl.org/goodrelations/v1#Labor-BringIn</li>
 <li>http://purl.org/goodrelations/v1#PartsAndLabor-BringIn</li>
 <li>http://purl.org/goodrelations/v1#PartsAndLabor-PickUp</li> </ul> 

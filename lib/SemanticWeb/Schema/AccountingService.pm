@@ -19,7 +19,7 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-Accountancy business.</p> <p>As a <a class="localLink"
+Accountancy business.<br/><br/> As a <a class="localLink"
 href="http://schema.org/LocalBusiness">LocalBusiness</a> it can be
 described as a <a class="localLink"
 href="http://schema.org/provider">provider</a> of one or more <a

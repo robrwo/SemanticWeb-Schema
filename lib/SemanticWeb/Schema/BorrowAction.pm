@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::BorrowAction;
 
-# ABSTRACT: <p>The act of obtaining an object under an agreement to return it at a later date
+# ABSTRACT: The act of obtaining an object under an agreement to return it at a later date
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of obtaining an object under an agreement to return it at a
-later date. Reciprocal of LendAction.</p> <p>Related actions:</p> <ul>
+The act of obtaining an object under an agreement to return it at a later
+date. Reciprocal of LendAction.<br/><br/> Related actions:<br/><br/> <ul>
 <li><a class="localLink"
 href="http://schema.org/LendAction">LendAction</a>: Reciprocal of
 BorrowAction.</li> </ul> 
@@ -45,9 +45,9 @@ A lender should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 

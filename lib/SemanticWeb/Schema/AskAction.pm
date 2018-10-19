@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::AskAction;
 
-# ABSTRACT: <p>The act of posing a question / favor to someone
+# ABSTRACT: The act of posing a question / favor to someone
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of posing a question / favor to someone.</p> <p>Related
-actions:</p> <ul> <li><a class="localLink"
+The act of posing a question / favor to someone.<br/><br/> Related
+actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/ReplyAction">ReplyAction</a>: Appears generally as
 a response to AskAction.</li> </ul> 
 

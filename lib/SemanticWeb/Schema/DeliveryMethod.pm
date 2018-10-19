@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::DeliveryMethod;
 
-# ABSTRACT: <p>A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer
+# ABSTRACT: A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer
 
 use Moo;
 
@@ -19,11 +19,11 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>A delivery method is a standardized procedure for transferring the
-product or service to the destination of fulfillment chosen by the
-customer. Delivery methods are characterized by the means of transportation
-used, and by the organization or group that is the contracting party for
-the sending organization or person.</p> <p>Commonly used values:</p> <ul>
+A delivery method is a standardized procedure for transferring the product
+or service to the destination of fulfillment chosen by the customer.
+Delivery methods are characterized by the means of transportation used, and
+by the organization or group that is the contracting party for the sending
+organization or person.<br/><br/> Commonly used values:<br/><br/> <ul>
 <li>http://purl.org/goodrelations/v1#DeliveryModeDirectDownload</li>
 <li>http://purl.org/goodrelations/v1#DeliveryModeFreight</li>
 <li>http://purl.org/goodrelations/v1#DeliveryModeMail</li>

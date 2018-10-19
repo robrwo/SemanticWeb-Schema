@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::FollowAction;
 
-# ABSTRACT: <p>The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates polled from
+# ABSTRACT: The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates polled from
 
 use Moo;
 
@@ -19,9 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of forming a personal connection with someone/something (object)
-unidirectionally/asymmetrically to get updates polled from.</p> <p>Related
-actions:</p> <ul> <li><a class="localLink"
+The act of forming a personal connection with someone/something (object)
+unidirectionally/asymmetrically to get updates polled from.<br/><br/>
+Related actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/BefriendAction">BefriendAction</a>: Unlike
 BefriendAction, FollowAction implies that the connection is <em>not</em>
 necessarily reciprocal.</li> <li><a class="localLink"
@@ -59,9 +59,9 @@ A followee should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 

@@ -4,7 +4,7 @@ package SemanticWeb::Schema::HealthClub;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::SportsActivityLocation SemanticWeb::Schema::HealthAndBeautyBusiness /;
+extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness SemanticWeb::Schema::SportsActivityLocation /;
 
 
 use MooX::JSON_LD 'HealthClub';
@@ -29,7 +29,7 @@ A health club.
 
 
 
-L<SemanticWeb::Schema::HealthAndBeautyBusiness>
+L<SemanticWeb::Schema::SportsActivityLocation>
 
 =cut
 

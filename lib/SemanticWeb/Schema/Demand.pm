@@ -39,9 +39,9 @@ A accepted_payment_method should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::LoanOrCredit']>
-
 =item C<InstanceOf['SemanticWeb::Schema::PaymentMethod']>
+
+=item C<InstanceOf['SemanticWeb::Schema::LoanOrCredit']>
 
 =back
 
@@ -90,11 +90,11 @@ A area_served should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -366,7 +366,7 @@ C<eligibleRegion>
 
 The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
 GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is valid.</p> <p>See also <a class="localLink"
+charge specification is valid.<br/><br/> See also <a class="localLink"
 href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.
 
 =end html
@@ -376,11 +376,11 @@ A eligible_region should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 
@@ -426,13 +426,11 @@ has eligible_transaction_volume => (
 
 =begin html
 
-The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-12.aspx">GTIN-12</a> code
-of the product, or the product to which the offer refers. The GTIN-12 is
-the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix,
-Item Reference, and Check Digit used to identify trade items. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.
+The GTIN-12 code of the product, or the product to which the offer refers.
+The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C.
+Company Prefix, Item Reference, and Check Digit used to identify trade
+items. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1
+GTIN Summary</a> for more details.
 
 =end html
 
@@ -460,12 +458,11 @@ has gtin12 => (
 
 =begin html
 
-The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-13.aspx">GTIN-13</a> code
-of the product, or the product to which the offer refers. This is
-equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes
-can be converted into a GTIN-13 code by simply adding a preceeding zero.
-See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
+The GTIN-13 code of the product, or the product to which the offer refers.
+This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit
+UPC codes can be converted into a GTIN-13 code by simply adding a
+preceeding zero. See <a
+href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
 Summary</a> for more details.
 
 =end html
@@ -494,10 +491,8 @@ has gtin13 => (
 
 =begin html
 
-The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-14.aspx">GTIN-14</a> code
-of the product, or the product to which the offer refers. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
+The GTIN-14 code of the product, or the product to which the offer refers.
+See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
 Summary</a> for more details.
 
 =end html
@@ -586,7 +581,7 @@ C<ineligibleRegion>
 The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
 GeoShape for the geo-political region(s) for which the offer or delivery
 charge specification is not valid, e.g. a region where the transaction is
-not allowed.</p> <p>See also <a class="localLink"
+not allowed.<br/><br/> See also <a class="localLink"
 href="http://schema.org/eligibleRegion">eligibleRegion</a>.
 
 =end html
@@ -596,11 +591,11 @@ A ineligible_region should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
-
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 
@@ -674,9 +669,9 @@ A item_offered should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Service']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
 

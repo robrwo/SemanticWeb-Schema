@@ -4,7 +4,7 @@ package SemanticWeb::Schema::Series;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::Intangible /;
 
 
 use MooX::JSON_LD 'Series';
@@ -17,8 +17,14 @@ our $VERSION = 'v0.0.2';
 
 =head1 DESCRIPTION
 
+=begin html
+
 A Series in schema.org is a group of related items, typically but not
-necessarily of the same kind.
+necessarily of the same kind. See also <a class="localLink"
+href="http://schema.org/CreativeWorkSeries">CreativeWorkSeries</a>, <a
+class="localLink" href="http://schema.org/EventSeries">EventSeries</a>.
+
+=end html
 
 
 
@@ -30,7 +36,7 @@ necessarily of the same kind.
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::Intangible>
 
 =cut
 

@@ -21,7 +21,7 @@ our $VERSION = 'v0.0.2';
 
 An article, such as a news article or piece of investigative report.
 Newspapers and magazines have articles of many different types and this is
-intended to cover them all.</p> <p>See also <a
+intended to cover them all.<br/><br/> See also <a
 href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
 html">blog post</a>.
 
@@ -119,9 +119,9 @@ A page_start should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Integer']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
 

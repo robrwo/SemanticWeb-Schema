@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::MoveAction;
 
-# ABSTRACT: <p>The act of an agent relocating to a place
+# ABSTRACT: The act of an agent relocating to a place
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of an agent relocating to a place.</p> <p>Related actions:</p>
-<ul> <li><a class="localLink"
+The act of an agent relocating to a place.<br/><br/> Related
+actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/TransferAction">TransferAction</a>: Unlike
 TransferAction, the subject of the move is a living Person or Organization
 rather than an inanimate object.</li> </ul> 

@@ -111,11 +111,11 @@ A area_served should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -763,9 +763,9 @@ A location should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -842,9 +842,9 @@ A member should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1031,8 +1031,8 @@ href="http://schema.org/CreativeWork">CreativeWork</a> (e.g. <a
 class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>) the
 principles are those of the party primarily responsible for the creation of
 the <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.</p> <p>While such
-policies are most typically expressed in natural language, sometimes
+href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
+such policies are most typically expressed in natural language, sometimes
 related information (e.g. indicating a <a class="localLink"
 href="http://schema.org/funder">funder</a>) can be expressed using
 schema.org terminology.
@@ -1143,11 +1143,11 @@ A service_area should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 

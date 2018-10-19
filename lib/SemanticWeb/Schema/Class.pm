@@ -25,33 +25,6 @@ A class, also often called a 'Type'; equivalent to rdfs:Class.
 =head1 ATTRIBUTES
 
 
-=head2 C<category>
-
-
-
-A category for the item. Greater signs or slashes can be used to informally
-indicate a category hierarchy.
-
-
-A category should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
-
-=back
-
-=cut
-
-has category => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'category',
-);
-
-
 =head2 C<superseded_by>
 
 C<supersededBy>
@@ -66,9 +39,9 @@ A superseded_by should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::Enumeration']>
 
-=item C<InstanceOf['SemanticWeb::Schema::Property']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Class']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Property']>
 
 =back
 

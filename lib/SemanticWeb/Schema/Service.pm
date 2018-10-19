@@ -62,11 +62,11 @@ A area_served should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -195,9 +195,9 @@ A broker should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -323,9 +323,9 @@ A is_similar_to should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Service']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
 
@@ -427,9 +427,9 @@ A provider should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -501,11 +501,11 @@ A service_area should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 

@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::ConfirmAction;
 
-# ABSTRACT: <p>The act of notifying someone that a future event/action is going to happen as expected
+# ABSTRACT: The act of notifying someone that a future event/action is going to happen as expected
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of notifying someone that a future event/action is going to
-happen as expected.</p> <p>Related actions:</p> <ul> <li><a
+The act of notifying someone that a future event/action is going to happen
+as expected.<br/><br/> Related actions:<br/><br/> <ul> <li><a
 class="localLink" href="http://schema.org/CancelAction">CancelAction</a>:
 The antonym of ConfirmAction.</li> </ul> 
 

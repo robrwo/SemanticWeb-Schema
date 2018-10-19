@@ -4,7 +4,7 @@ package SemanticWeb::Schema::StadiumOrArena;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::SportsActivityLocation SemanticWeb::Schema::CivicStructure /;
+extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::SportsActivityLocation /;
 
 
 use MooX::JSON_LD 'StadiumOrArena';
@@ -29,7 +29,7 @@ A stadium.
 
 
 
-L<SemanticWeb::Schema::CivicStructure>
+L<SemanticWeb::Schema::SportsActivityLocation>
 
 =cut
 

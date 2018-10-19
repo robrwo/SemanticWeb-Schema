@@ -36,11 +36,11 @@ A base_salary should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
-
 =item C<Num>
 
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
 =back
 

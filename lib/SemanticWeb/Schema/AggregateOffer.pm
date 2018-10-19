@@ -64,9 +64,9 @@ A low_price should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<Str>
+
+=item C<Num>
 
 =back
 

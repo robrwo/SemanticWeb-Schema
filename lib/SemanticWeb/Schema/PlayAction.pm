@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::PlayAction;
 
-# ABSTRACT: <p>The act of playing/exercising/training/performing for enjoyment
+# ABSTRACT: The act of playing/exercising/training/performing for enjoyment
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of playing/exercising/training/performing for enjoyment,
-leisure, recreation, Competition or exercise.</p> <p>Related actions:</p>
+The act of playing/exercising/training/performing for enjoyment, leisure,
+recreation, Competition or exercise.<br/><br/> Related actions:<br/><br/>
 <ul> <li><a class="localLink"
 href="http://schema.org/ListenAction">ListenAction</a>: Unlike ListenAction
 (which is under ConsumeAction), PlayAction refers to performing for an

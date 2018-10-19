@@ -39,9 +39,9 @@ were generated automatically from the following sources:
 =over
 
 
-=item L<http://schema.org/version/3.3/ext-meta.rdf>
+=item L<http://schema.org/version/3.4/ext-meta.rdf>
 
-=item L<http://schema.org/version/3.3/schema.rdf>
+=item L<http://schema.org/version/3.4/schema.rdf>
 
 =back
 

@@ -4,7 +4,7 @@ package SemanticWeb::Schema::HowToTip;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ListItem /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToTip';

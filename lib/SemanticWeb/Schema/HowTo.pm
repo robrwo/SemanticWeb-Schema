@@ -113,23 +113,54 @@ has prep_time => (
 );
 
 
+=head2 C<step>
+
+
+
+A single step item (as HowToStep, text, document, video, etc.) or a
+HowToSection.
+
+
+A step should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToSection']>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToStep']>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=back
+
+=cut
+
+has step => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'step',
+);
+
+
 =head2 C<steps>
 
 
 
-The steps in the form of a single item (text, document, video, etc.) or an
-ordered list with HowToStep and/or HowToSection items.
+A single step item (as HowToStep, text, document, video, etc.) or a
+HowToSection (originally misnamed 'steps'; 'step' is preferred).
 
 
 A steps should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
 
@@ -181,9 +212,9 @@ A tool should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
 
 =back
 
@@ -238,9 +269,9 @@ A yield should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 

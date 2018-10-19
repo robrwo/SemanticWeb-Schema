@@ -42,9 +42,9 @@ A accepts_reservations should be one of the following types:
 
 =over
 
-=item C<Bool>
-
 =item C<Str>
+
+=item C<Bool>
 
 =back
 
@@ -69,9 +69,9 @@ A has_menu should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Menu']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Menu']>
 
 =back
 
@@ -96,9 +96,9 @@ A menu should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Menu']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Menu']>
 
 =back
 

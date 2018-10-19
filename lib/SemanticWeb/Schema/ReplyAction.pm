@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::ReplyAction;
 
-# ABSTRACT: <p>The act of responding to a question/message asked/sent by the object
+# ABSTRACT: The act of responding to a question/message asked/sent by the object
 
 use Moo;
 
@@ -19,10 +19,10 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of responding to a question/message asked/sent by the object.
+The act of responding to a question/message asked/sent by the object.
 Related to <a class="localLink"
-href="http://schema.org/AskAction">AskAction</a></p> <p>Related
-actions:</p> <ul> <li><a class="localLink"
+href="http://schema.org/AskAction">AskAction</a><br/><br/> Related
+actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/AskAction">AskAction</a>: Appears generally as an
 origin of a ReplyAction.</li> </ul> 
 

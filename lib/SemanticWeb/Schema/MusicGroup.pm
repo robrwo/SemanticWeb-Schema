@@ -134,9 +134,9 @@ A track should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MusicRecording']>
-
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MusicRecording']>
 
 =back
 

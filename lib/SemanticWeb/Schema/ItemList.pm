@@ -34,13 +34,13 @@ C<itemListElement>
 =begin html
 
 For itemListElement values, you can use simple strings (e.g. "Peter",
-"Paul", "Mary"), existing entities, or use ListItem.</p> <p>Text values are
-best if the elements in the list are plain strings. Existing entities are
-best for a simple, unordered list of existing things in your data. ListItem
-is used with ordered lists when you want to provide additional context
-about the element in that list or when the same item might be in different
-places in different lists.</p> <p>Note: The order of elements in your
-mark-up is not sufficient for indicating the order or elements. Use
+"Paul", "Mary"), existing entities, or use ListItem.<br/><br/> Text values
+are best if the elements in the list are plain strings. Existing entities
+are best for a simple, unordered list of existing things in your data.
+ListItem is used with ordered lists when you want to provide additional
+context about the element in that list or when the same item might be in
+different places in different lists.<br/><br/> Note: The order of elements
+in your mark-up is not sufficient for indicating the order or elements. Use
 ListItem with a 'position' property in such cases.
 
 =end html
@@ -50,11 +50,11 @@ A item_list_element should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::ListItem']>
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
 

@@ -23,7 +23,7 @@ An action performed by a direct agent and indirect participants upon a
 direct object. Optionally happens at a location with the help of an
 inanimate instrument. The execution of the action may produce a result.
 Specific action sub-type documentation specifies the exact expectation of
-each argument/role.</p> <p>See also <a
+each argument/role.<br/><br/> See also <a
 href="http://blog.schema.org/2014/04/announcing-schemaorg-actions.html">blo
 g post</a> and <a href="http://schema.org/docs/actions.html">Actions
 overview document</a>.
@@ -100,9 +100,10 @@ C<endTime>
 The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from January to <em>December</em>.</p> <p>Note that Event
-uses startDate/endDate instead of startTime/endTime, even when describing
-dates with times. This situation may be clarified in future revisions.
+John wrote a book from January to <em>December</em>.<br/><br/> Note that
+Event uses startDate/endDate instead of startTime/endTime, even when
+describing dates with times. This situation may be clarified in future
+revisions.
 
 =end html
 
@@ -189,9 +190,9 @@ A location should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -253,9 +254,9 @@ A participant should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -305,9 +306,10 @@ C<startTime>
 The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from <em>January</em> to December.</p> <p>Note that Event
-uses startDate/endDate instead of startTime/endTime, even when describing
-dates with times. This situation may be clarified in future revisions.
+John wrote a book from <em>January</em> to December.<br/><br/> Note that
+Event uses startDate/endDate instead of startTime/endTime, even when
+describing dates with times. This situation may be clarified in future
+revisions.
 
 =end html
 

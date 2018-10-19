@@ -284,9 +284,9 @@ A game_location should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
 
@@ -318,9 +318,9 @@ A game_platform should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
+=item C<Str>
 
 =back
 
@@ -344,9 +344,9 @@ A music_by should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
 
 =back
 

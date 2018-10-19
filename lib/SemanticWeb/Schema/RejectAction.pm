@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::RejectAction;
 
-# ABSTRACT: <p>The act of rejecting to/adopting an object
+# ABSTRACT: The act of rejecting to/adopting an object
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of rejecting to/adopting an object.</p> <p>Related actions:</p>
-<ul> <li><a class="localLink"
+The act of rejecting to/adopting an object.<br/><br/> Related
+actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/AcceptAction">AcceptAction</a>: The antonym of
 RejectAction.</li> </ul> 
 

@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::LeaveAction;
 
-# ABSTRACT: <p>An agent leaves an event / group with participants/friends at a location
+# ABSTRACT: An agent leaves an event / group with participants/friends at a location
 
 use Moo;
 
@@ -19,10 +19,10 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>An agent leaves an event / group with participants/friends at a
-location.</p> <p>Related actions:</p> <ul> <li><a class="localLink"
-href="http://schema.org/JoinAction">JoinAction</a>: The antonym of
-LeaveAction.</li> <li><a class="localLink"
+An agent leaves an event / group with participants/friends at a
+location.<br/><br/> Related actions:<br/><br/> <ul> <li><a
+class="localLink" href="http://schema.org/JoinAction">JoinAction</a>: The
+antonym of LeaveAction.</li> <li><a class="localLink"
 href="http://schema.org/UnRegisterAction">UnRegisterAction</a>: Unlike
 UnRegisterAction, LeaveAction implies leaving a group/team of people rather
 than a service.</li> </ul> 

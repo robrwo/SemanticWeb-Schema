@@ -19,7 +19,7 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-A reservation for air travel.</p> <p>Note: This type is for information
+A reservation for air travel.<br/><br/> Note: This type is for information
 about actual reservations, e.g. in confirmation emails or HTML pages with
 individual confirmations of reservations. For offers of tickets, use <a
 class="localLink" href="http://schema.org/Offer">Offer</a>.

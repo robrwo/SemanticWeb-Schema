@@ -4,7 +4,7 @@ package SemanticWeb::Schema::Flight;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Intangible /;
+extends qw/ SemanticWeb::Schema::Trip /;
 
 
 use MooX::JSON_LD 'Flight';
@@ -120,30 +120,6 @@ has arrival_terminal => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'arrivalTerminal',
-);
-
-
-=head2 C<arrival_time>
-
-C<arrivalTime>
-
-The expected arrival time.
-
-
-A arrival_time should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has arrival_time => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'arrivalTime',
 );
 
 
@@ -269,30 +245,6 @@ has departure_terminal => (
 );
 
 
-=head2 C<departure_time>
-
-C<departureTime>
-
-The expected departure time.
-
-
-A departure_time should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has departure_time => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'departureTime',
-);
-
-
 =head2 C<estimated_flight_duration>
 
 C<estimatedFlightDuration>
@@ -304,9 +256,9 @@ A estimated_flight_duration should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Duration']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
 
@@ -395,34 +347,6 @@ has meal_service => (
 );
 
 
-=head2 C<provider>
-
-
-
-The service provider, service operator, or service performer; the goods
-producer. Another party (a seller) may offer those services or goods on
-behalf of the provider. A provider may also serve as the seller.
-
-
-A provider should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
-=back
-
-=cut
-
-has provider => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'provider',
-);
-
-
 =head2 C<seller>
 
 
@@ -480,7 +404,7 @@ has web_checkin_time => (
 
 
 
-L<SemanticWeb::Schema::Intangible>
+L<SemanticWeb::Schema::Trip>
 
 =cut
 

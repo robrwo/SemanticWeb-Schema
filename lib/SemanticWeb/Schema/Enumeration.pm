@@ -17,8 +17,7 @@ our $VERSION = 'v0.0.2';
 
 =head1 DESCRIPTION
 
-Lists or enumerations—for example, a list of cuisines or music genres,
-etc.
+Lists or enumerations—for example, a list of cuisines or music genres, etc.
 
 
 
@@ -40,9 +39,9 @@ A superseded_by should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::Enumeration']>
 
-=item C<InstanceOf['SemanticWeb::Schema::Property']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Class']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Property']>
 
 =back
 

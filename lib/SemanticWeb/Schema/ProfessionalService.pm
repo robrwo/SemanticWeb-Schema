@@ -19,7 +19,7 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-Original definition: "provider of professional services."</p> <p>The
+Original definition: "provider of professional services."<br/><br/> The
 general <a class="localLink"
 href="http://schema.org/ProfessionalService">ProfessionalService</a> type
 for local businesses was deprecated due to confusion with <a

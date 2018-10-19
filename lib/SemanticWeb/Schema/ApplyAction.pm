@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::ApplyAction;
 
-# ABSTRACT: <p>The act of registering to an organization/service without the guarantee to receive it
+# ABSTRACT: The act of registering to an organization/service without the guarantee to receive it
 
 use Moo;
 
@@ -19,8 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of registering to an organization/service without the guarantee
-to receive it.</p> <p>Related actions:</p> <ul> <li><a class="localLink"
+The act of registering to an organization/service without the guarantee to
+receive it.<br/><br/> Related actions:<br/><br/> <ul> <li><a
+class="localLink"
 href="http://schema.org/RegisterAction">RegisterAction</a>: Unlike
 RegisterAction, ApplyAction has no guarantees that the application will be
 accepted.</li> </ul> 

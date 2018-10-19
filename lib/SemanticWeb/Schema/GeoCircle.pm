@@ -65,9 +65,9 @@ A geo_radius should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::Distance']>
+
+=item C<Num>
 
 =item C<Str>
 

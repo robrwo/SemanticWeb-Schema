@@ -87,9 +87,9 @@ A broker should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -190,9 +190,9 @@ A minimum_payment_due should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
-
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
+=item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =back
 
@@ -313,9 +313,9 @@ A payment_status should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PaymentStatusType']>
+
+=item C<Str>
 
 =back
 
@@ -341,9 +341,9 @@ A provider should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 

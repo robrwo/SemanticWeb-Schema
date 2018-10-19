@@ -36,9 +36,9 @@ A bcc_recipient should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
@@ -64,9 +64,9 @@ A cc_recipient should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
@@ -190,11 +190,11 @@ A recipient should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
+
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 

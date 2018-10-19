@@ -4,7 +4,7 @@ package SemanticWeb::Schema::HowToStep;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ItemList /;
+extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList /;
 
 
 use MooX::JSON_LD 'HowToStep';

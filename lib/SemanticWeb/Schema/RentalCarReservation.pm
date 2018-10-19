@@ -19,9 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-A reservation for a rental car.</p> <p>Note: This type is for information
-about actual reservations, e.g. in confirmation emails or HTML pages with
-individual confirmations of reservations.
+A reservation for a rental car.<br/><br/> Note: This type is for
+information about actual reservations, e.g. in confirmation emails or HTML
+pages with individual confirmations of reservations.
 
 =end html
 

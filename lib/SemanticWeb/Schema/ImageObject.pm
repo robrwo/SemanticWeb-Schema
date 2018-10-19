@@ -60,9 +60,9 @@ A exif_data should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
 
 =back
 

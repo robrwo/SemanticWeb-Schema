@@ -4,7 +4,7 @@ package SemanticWeb::Schema::HowToDirection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ListItem /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToDirection';
@@ -38,6 +38,8 @@ A after_media should be one of the following types:
 
 =over
 
+=item C<Str>
+
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
 =back
@@ -65,6 +67,8 @@ A before_media should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
+=item C<Str>
+
 =back
 
 =cut
@@ -89,6 +93,8 @@ A during_media should be one of the following types:
 =over
 
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
+
+=item C<Str>
 
 =back
 
@@ -200,9 +206,9 @@ A tool should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
 
 =back
 

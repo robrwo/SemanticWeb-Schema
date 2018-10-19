@@ -37,9 +37,9 @@ A food_establishment should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
-
 =item C<InstanceOf['SemanticWeb::Schema::FoodEstablishment']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 

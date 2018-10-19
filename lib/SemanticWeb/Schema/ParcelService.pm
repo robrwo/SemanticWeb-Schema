@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::ParcelService;
 
-# ABSTRACT: <p>A private parcel service as the delivery mode available for a certain offer
+# ABSTRACT: A private parcel service as the delivery mode available for a certain offer
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>A private parcel service as the delivery mode available for a certain
-offer.</p> <p>Commonly used values:</p> <ul>
+A private parcel service as the delivery mode available for a certain
+offer.<br/><br/> Commonly used values:<br/><br/> <ul>
 <li>http://purl.org/goodrelations/v1#DHL</li>
 <li>http://purl.org/goodrelations/v1#FederalExpress</li>
 <li>http://purl.org/goodrelations/v1#UPS</li> </ul> 

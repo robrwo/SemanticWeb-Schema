@@ -30,14 +30,16 @@ in a Frequently Asked Questions (FAQ) document.
 
 C<acceptedAnswer>
 
-The answer that has been accepted as best, typically on a Question/Answer
-site. Sites vary in their selection mechanisms, e.g. drawing on community
-opinion and/or the view of the Question author.
+The answer(s) that has been accepted as best, typically on a
+Question/Answer site. Sites vary in their selection mechanisms, e.g.
+drawing on community opinion and/or the view of the Question author.
 
 
 A accepted_answer should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Answer']>
 
@@ -114,6 +116,8 @@ A suggested_answer should be one of the following types:
 =over
 
 =item C<InstanceOf['SemanticWeb::Schema::Answer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
 

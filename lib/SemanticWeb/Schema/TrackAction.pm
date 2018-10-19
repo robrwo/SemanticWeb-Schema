@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::TrackAction;
 
-# ABSTRACT: <p>An agent tracks an object for updates
+# ABSTRACT: An agent tracks an object for updates
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>An agent tracks an object for updates.</p> <p>Related actions:</p> <ul>
-<li><a class="localLink"
+An agent tracks an object for updates.<br/><br/> Related actions:<br/><br/>
+<ul> <li><a class="localLink"
 href="http://schema.org/FollowAction">FollowAction</a>: Unlike
 FollowAction, TrackAction refers to the interest on the location of
 innanimates objects.</li> <li><a class="localLink"

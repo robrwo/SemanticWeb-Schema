@@ -21,7 +21,7 @@ our $VERSION = 'v0.0.2';
 
 A part of a successively published publication such as a periodical or
 publication volume, often numbered, usually containing a grouping of works
-such as articles.</p> <p><a
+such as articles.<br/><br/> <a
 href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
 html">blog post</a>.
 
@@ -96,9 +96,9 @@ A page_start should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Integer']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
 

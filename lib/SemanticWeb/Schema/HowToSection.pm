@@ -4,7 +4,7 @@ package SemanticWeb::Schema::HowToSection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ItemList /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToSection';
@@ -30,19 +30,19 @@ A sub-grouping of steps in the instructions for how to achieve a result
 
 
 
-The steps in the form of a single item (text, document, video, etc.) or an
-ordered list with HowToStep and/or HowToSection items.
+A single step item (as HowToStep, text, document, video, etc.) or a
+HowToSection (originally misnamed 'steps'; 'step' is preferred).
 
 
 A steps should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
 
@@ -61,7 +61,7 @@ has steps => (
 
 
 
-L<SemanticWeb::Schema::ItemList>
+L<SemanticWeb::Schema::ListItem>
 
 =cut
 

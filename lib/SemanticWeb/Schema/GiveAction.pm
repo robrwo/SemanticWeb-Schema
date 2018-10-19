@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::GiveAction;
 
-# ABSTRACT: <p>The act of transferring ownership of an object to a destination
+# ABSTRACT: The act of transferring ownership of an object to a destination
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of transferring ownership of an object to a destination.
-Reciprocal of TakeAction.</p> <p>Related actions:</p> <ul> <li><a
+The act of transferring ownership of an object to a destination. Reciprocal
+of TakeAction.<br/><br/> Related actions:<br/><br/> <ul> <li><a
 class="localLink" href="http://schema.org/TakeAction">TakeAction</a>:
 Reciprocal of GiveAction.</li> <li><a class="localLink"
 href="http://schema.org/SendAction">SendAction</a>: Unlike SendAction,
@@ -47,11 +47,11 @@ A recipient should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
+
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 

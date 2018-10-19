@@ -33,8 +33,8 @@ C<cargoVolume>
 =begin html
 
 The available volume for cargo or luggage. For automobiles, this is usually
-the trunk volume.</p> <p>Typical unit code(s): LTR for liters, FTQ for
-cubic foot/feet</p> <p>Note: You can use <a class="localLink"
+the trunk volume.<br/><br/> Typical unit code(s): LTR for liters, FTQ for
+cubic foot/feet<br/><br/> Note: You can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.
 
@@ -116,8 +116,8 @@ C<fuelConsumption>
 
 =begin html
 
-<p>The amount of fuel consumed for traveling a particular distance or
-temporal duration with the given vehicle (e.g. liters per 100 km).</p> <ul>
+The amount of fuel consumed for traveling a particular distance or temporal
+duration with the given vehicle (e.g. liters per 100 km).<br/><br/> <ul>
 <li>Note 1: There are unfortunately no standard unit codes for liters per
 100 km. Use <a class="localLink"
 href="http://schema.org/unitText">unitText</a> to indicate the unit of
@@ -158,8 +158,8 @@ C<fuelEfficiency>
 
 =begin html
 
-<p>The distance traveled per unit of fuel used; most commonly miles per
-gallon (mpg) or kilometers per liter (km/L).</p> <ul> <li>Note 1: There are
+The distance traveled per unit of fuel used; most commonly miles per gallon
+(mpg) or kilometers per liter (km/L).<br/><br/> <ul> <li>Note 1: There are
 unfortunately no standard unit codes for miles per gallon or kilometers per
 liter. Use <a class="localLink"
 href="http://schema.org/unitText">unitText</a> to indicate the unit of
@@ -207,9 +207,9 @@ A fuel_type should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -253,8 +253,8 @@ C<mileageFromOdometer>
 =begin html
 
 The total distance travelled by the particular vehicle since its initial
-production, as read from its odometer.</p> <p>Typical unit code(s): KMT for
-kilometers, SMI for statute miles
+production, as read from its odometer.<br/><br/> Typical unit code(s): KMT
+for kilometers, SMI for statute miles
 
 =end html
 
@@ -308,7 +308,7 @@ C<numberOfAxles>
 
 =begin html
 
-The number of axles.</p> <p>Typical unit code(s): C62
+The number of axles.<br/><br/> Typical unit code(s): C62
 
 =end html
 
@@ -317,9 +317,9 @@ A number_of_axles should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -338,7 +338,7 @@ C<numberOfDoors>
 
 =begin html
 
-The number of doors.</p> <p>Typical unit code(s): C62
+The number of doors.<br/><br/> Typical unit code(s): C62
 
 =end html
 
@@ -369,7 +369,7 @@ C<numberOfForwardGears>
 =begin html
 
 The total number of forward gears available for the transmission system of
-the vehicle.</p> <p>Typical unit code(s): C62
+the vehicle.<br/><br/> Typical unit code(s): C62
 
 =end html
 
@@ -378,9 +378,9 @@ A number_of_forward_gears should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -399,8 +399,8 @@ C<numberOfPreviousOwners>
 
 =begin html
 
-The number of owners of the vehicle, including the current one.</p>
-<p>Typical unit code(s): C62
+The number of owners of the vehicle, including the current one.<br/><br/>
+Typical unit code(s): C62
 
 =end html
 
@@ -654,7 +654,7 @@ C<vehicleSeatingCapacity>
 
 The number of passengers that can be seated in the vehicle, both in terms
 of the physical space available, and in terms of limitations set by
-law.</p> <p>Typical unit code(s): C62 for persons.
+law.<br/><br/> Typical unit code(s): C62 for persons.
 
 =end html
 

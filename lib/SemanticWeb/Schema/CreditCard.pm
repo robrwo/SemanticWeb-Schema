@@ -1,10 +1,10 @@
 package SemanticWeb::Schema::CreditCard;
 
-# ABSTRACT: <p>A card payment method of a particular brand or name
+# ABSTRACT: A card payment method of a particular brand or name
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::PaymentCard SemanticWeb::Schema::LoanOrCredit /;
+extends qw/ SemanticWeb::Schema::LoanOrCredit SemanticWeb::Schema::PaymentCard /;
 
 
 use MooX::JSON_LD 'CreditCard';
@@ -19,9 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>A card payment method of a particular brand or name. Used to mark up a
+A card payment method of a particular brand or name. Used to mark up a
 particular payment method and/or the financial product/service that
-supplies the card account.</p> <p>Commonly used values:</p> <ul>
+supplies the card account.<br/><br/> Commonly used values:<br/><br/> <ul>
 <li>http://purl.org/goodrelations/v1#AmericanExpress</li>
 <li>http://purl.org/goodrelations/v1#DinersClub</li>
 <li>http://purl.org/goodrelations/v1#Discover</li>
@@ -41,7 +41,7 @@ supplies the card account.</p> <p>Commonly used values:</p> <ul>
 
 
 
-L<SemanticWeb::Schema::LoanOrCredit>
+L<SemanticWeb::Schema::PaymentCard>
 
 =cut
 

@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::SendAction;
 
-# ABSTRACT: <p>The act of physically/electronically dispatching an object for transfer from an origin to a destination
+# ABSTRACT: The act of physically/electronically dispatching an object for transfer from an origin to a destination
 
 use Moo;
 
@@ -19,8 +19,8 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>The act of physically/electronically dispatching an object for transfer
-from an origin to a destination.Related actions:</p> <ul> <li><a
+The act of physically/electronically dispatching an object for transfer
+from an origin to a destination.Related actions:<br/><br/> <ul> <li><a
 class="localLink" href="http://schema.org/ReceiveAction">ReceiveAction</a>:
 The reciprocal of SendAction.</li> <li><a class="localLink"
 href="http://schema.org/GiveAction">GiveAction</a>: Unlike GiveAction,
@@ -71,11 +71,11 @@ A recipient should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
+
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 

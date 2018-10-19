@@ -90,9 +90,9 @@ A broker should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -166,9 +166,9 @@ A discount should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<Str>
+
+=item C<Num>
 
 =back
 
@@ -209,7 +209,18 @@ has discount_code => (
 
 C<discountCurrency>
 
-The currency (in 3-letter ISO 4217 format) of the discount.
+=begin html
+
+The currency of the discount.<br/><br/> Use standard formats: <a
+href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency format</a>
+e.g. "USD"; <a
+href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
+symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
+href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
+Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
+HOUR".
+
+=end html
 
 
 A discount_currency should be one of the following types:
@@ -264,9 +275,9 @@ A merchant should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 

@@ -38,9 +38,9 @@ A interaction_service should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::SoftwareApplication']>
-
 =item C<InstanceOf['SemanticWeb::Schema::WebSite']>
+
+=item C<InstanceOf['SemanticWeb::Schema::SoftwareApplication']>
 
 =back
 

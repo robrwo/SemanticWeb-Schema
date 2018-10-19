@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::JoinAction;
 
-# ABSTRACT: <p>An agent joins an event/group with participants/friends at a location
+# ABSTRACT: An agent joins an event/group with participants/friends at a location
 
 use Moo;
 
@@ -19,8 +19,9 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>An agent joins an event/group with participants/friends at a
-location.</p> <p>Related actions:</p> <ul> <li><a class="localLink"
+An agent joins an event/group with participants/friends at a
+location.<br/><br/> Related actions:<br/><br/> <ul> <li><a
+class="localLink"
 href="http://schema.org/RegisterAction">RegisterAction</a>: Unlike
 RegisterAction, JoinAction refers to joining a group/team of people.</li>
 <li><a class="localLink"

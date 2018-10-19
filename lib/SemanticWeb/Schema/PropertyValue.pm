@@ -22,7 +22,7 @@ our $VERSION = 'v0.0.2';
 A property-value pair, e.g. representing a feature of a product or place.
 Use the 'name' property for the name of the property. If there is an
 additional human-readable version of the value, put that into the
-'description' property.</p> <p>Always use specific schema.org properties
+'description' property.<br/><br/> Always use specific schema.org properties
 when a) they exist and b) you can populate them. Using PropertyValue as a
 substitute will typically not trigger the same effect as using the
 original, specific property.
@@ -176,7 +176,7 @@ has unit_text => (
 
 =begin html
 
-<p>The value of the quantitative value or property value node.</p> <ul>
+The value of the quantitative value or property value node.<br/><br/> <ul>
 <li>For <a class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
 class="localLink"
@@ -192,13 +192,13 @@ A value should be one of the following types:
 
 =over
 
-=item C<Bool>
-
 =item C<Num>
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
+=item C<Bool>
+
+=item C<Str>
 
 =back
 
@@ -223,15 +223,15 @@ A value_reference should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Enumeration']>
 
 =item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
-
-=item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
-
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 

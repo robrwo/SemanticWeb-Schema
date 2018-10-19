@@ -19,7 +19,7 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-A reservation for lodging at a hotel, motel, inn, etc.</p> <p>Note: This
+A reservation for lodging at a hotel, motel, inn, etc.<br/><br/> Note: This
 type is for information about actual reservations, e.g. in confirmation
 emails or HTML pages with individual confirmations of reservations.
 
@@ -115,9 +115,9 @@ A lodging_unit_type should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -141,9 +141,9 @@ A num_adults should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -167,9 +167,9 @@ A num_children should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 

@@ -33,7 +33,7 @@ C<additionalProperty>
 
 A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.</p> <p>Note: Publishers should be
+is no matching property in schema.org.<br/><br/> Note: Publishers should be
 aware that applications designed to use specific schema.org properties
 (e.g. http://schema.org/width, http://schema.org/color,
 http://schema.org/gtin13, ...) will typically expect such data to be
@@ -169,7 +169,7 @@ has unit_text => (
 
 =begin html
 
-<p>The value of the quantitative value or property value node.</p> <ul>
+The value of the quantitative value or property value node.<br/><br/> <ul>
 <li>For <a class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
 class="localLink"
@@ -185,13 +185,13 @@ A value should be one of the following types:
 
 =over
 
-=item C<Bool>
-
 =item C<Num>
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
+=item C<Bool>
+
+=item C<Str>
 
 =back
 
@@ -216,15 +216,15 @@ A value_reference should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Enumeration']>
 
 =item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
-
-=item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
-
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 

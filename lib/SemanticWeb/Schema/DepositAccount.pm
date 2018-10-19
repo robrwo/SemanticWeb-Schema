@@ -4,7 +4,7 @@ package SemanticWeb::Schema::DepositAccount;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::InvestmentOrDeposit SemanticWeb::Schema::BankAccount /;
+extends qw/ SemanticWeb::Schema::BankAccount SemanticWeb::Schema::InvestmentOrDeposit /;
 
 
 use MooX::JSON_LD 'DepositAccount';
@@ -30,7 +30,7 @@ interest or other benefits.
 
 
 
-L<SemanticWeb::Schema::BankAccount>
+L<SemanticWeb::Schema::InvestmentOrDeposit>
 
 =cut
 

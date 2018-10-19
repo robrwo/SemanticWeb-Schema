@@ -4,7 +4,7 @@ package SemanticWeb::Schema::VideoGame;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Game SemanticWeb::Schema::SoftwareApplication /;
+extends qw/ SemanticWeb::Schema::SoftwareApplication SemanticWeb::Schema::Game /;
 
 
 use MooX::JSON_LD 'VideoGame';
@@ -169,9 +169,9 @@ A game_platform should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
+=item C<Str>
 
 =back
 
@@ -243,9 +243,9 @@ A music_by should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
 
 =back
 
@@ -314,7 +314,7 @@ has trailer => (
 
 
 
-L<SemanticWeb::Schema::SoftwareApplication>
+L<SemanticWeb::Schema::Game>
 
 =cut
 

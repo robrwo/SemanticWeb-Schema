@@ -1,6 +1,6 @@
 package SemanticWeb::Schema::BusinessEntityType;
 
-# ABSTRACT: <p>A business entity type is a conceptual entity representing the legal form
+# ABSTRACT: A business entity type is a conceptual entity representing the legal form
 
 use Moo;
 
@@ -19,10 +19,10 @@ our $VERSION = 'v0.0.2';
 
 =begin html
 
-<p>A business entity type is a conceptual entity representing the legal
-form, the size, the main line of business, the position in the value chain,
-or any combination thereof, of an organization or business person.</p>
-<p>Commonly used values:</p> <ul>
+A business entity type is a conceptual entity representing the legal form,
+the size, the main line of business, the position in the value chain, or
+any combination thereof, of an organization or business person.<br/><br/>
+Commonly used values:<br/><br/> <ul>
 <li>http://purl.org/goodrelations/v1#Business</li>
 <li>http://purl.org/goodrelations/v1#Enduser</li>
 <li>http://purl.org/goodrelations/v1#PublicInstitution</li>

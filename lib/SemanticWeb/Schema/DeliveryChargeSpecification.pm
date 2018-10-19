@@ -61,11 +61,11 @@ A area_served should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
@@ -88,7 +88,7 @@ C<eligibleRegion>
 
 The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
 GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is valid.</p> <p>See also <a class="localLink"
+charge specification is valid.<br/><br/> See also <a class="localLink"
 href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.
 
 =end html
@@ -98,11 +98,11 @@ A eligible_region should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 
@@ -124,7 +124,7 @@ C<ineligibleRegion>
 The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
 GeoShape for the geo-political region(s) for which the offer or delivery
 charge specification is not valid, e.g. a region where the transaction is
-not allowed.</p> <p>See also <a class="localLink"
+not allowed.<br/><br/> See also <a class="localLink"
 href="http://schema.org/eligibleRegion">eligibleRegion</a>.
 
 =end html
@@ -134,11 +134,11 @@ A ineligible_region should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
-
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 
