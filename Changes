@@ -1,6 +1,8 @@
 Revision history for SemanticWeb-Schema:
 
 {{$NEXT}}
+  [Toolchain]
+  - Tweaks to dist.ini for simplifying build.
 
 v0.0.2    2018-10-19 18:07:44+01:00 Europe/London
   [Enhancements]
