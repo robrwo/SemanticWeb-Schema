@@ -47,7 +47,7 @@ SemanticWeb-Schema-.*/
 # Author Extras
 ^inc/.*\.pod$
 ^pkg/
-^xt/
+# ^xt/
 # ^dist.ini$
 
 # Editors
@@ -104,6 +104,7 @@ SemanticWeb-Schema-.*/
 \.build/
 SemanticWeb-Schema-.*/
 SemanticWeb-Schema-.*\.tar\.gz
+\.mailmap$
 cpanfile\.snapshot$
 lib/SemanticWeb/Schema/DataType.pm
 lib/SemanticWeb/Schema/Float.pm
