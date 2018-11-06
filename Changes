@@ -4,6 +4,9 @@ Revision history for SemanticWeb-Schema:
   [Bug Fixes]
   - Upgrade MooX::JSON_LD prereq to v0.0.16 to fix inheritance issues.
 
+  - Rename the JSON_LD base class to avoid conflict with
+    SemanticWeb::Schema::Class.
+
   [Toolchain]
   - Tweaks to dist.ini for simplifying build.
 

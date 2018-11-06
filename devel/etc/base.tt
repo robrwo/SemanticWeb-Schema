@@ -7,7 +7,7 @@ use v5.10.1;
 use Moo;
 
 use List::Util qw/ first /;
-use MooX::JSON_LD 'Class';
+use MooX::JSON_LD 'base';
 use Ref::Util qw/ is_blessed_ref is_plain_arrayref /;
 use Types::Standard qw/ Str /;
 
