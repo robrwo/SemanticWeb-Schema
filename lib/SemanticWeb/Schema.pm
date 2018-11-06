@@ -13,7 +13,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.3';
+our $VERSION = 'v0.0.4';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Ref::Util::XS
