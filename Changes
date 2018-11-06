@@ -1,6 +1,8 @@
 Revision history for SemanticWeb-Schema:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Remove cache/ from distribution.
 
 v0.0.3    2018-11-06 20:54:26+00:00 Europe/London
   [Bug Fixes]
