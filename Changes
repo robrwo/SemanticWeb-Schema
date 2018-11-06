@@ -7,6 +7,8 @@ Revision history for SemanticWeb-Schema:
   - Rename the JSON_LD base class to avoid conflict with
     SemanticWeb::Schema::Class.
 
+  - Remove local/ from distribution.
+
   [Toolchain]
   - Tweaks to dist.ini for simplifying build.
 
