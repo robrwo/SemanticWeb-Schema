@@ -4,6 +4,9 @@ Revision history for SemanticWeb-Schema:
   [Enhancements]
   - Add Class::XSAccessor as a recommended prereq.
 
+  [Toolchain]
+  - Tweaks to dist.ini.
+
 v0.0.4    2018-11-06 21:04:04+00:00 Europe/London
   [Bug Fixes]
   - Remove cache/ from distribution.
