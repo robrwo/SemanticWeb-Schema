@@ -113,4 +113,5 @@ lib/SemanticWeb/Schema/DataType.pm
 lib/SemanticWeb/Schema/Float.pm
 lib/SemanticWeb/Schema/Integer.pm
 lib/SemanticWeb/Schema/URL.pm
+lib/SemanticWeb/Schema/MedicalCode.pm
 cache/
