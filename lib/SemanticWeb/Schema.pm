@@ -42,6 +42,8 @@ were generated automatically from the following sources:
 
 =item L<http://schema.org/version/3.5/ext-meta.rdf>
 
+=item L<http://schema.org/version/3.5/ext-health-lifesci.rdf>
+
 =item L<http://schema.org/version/3.5/schema.rdf>
 
 =back

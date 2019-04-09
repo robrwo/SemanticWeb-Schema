@@ -27,7 +27,33 @@ clinic.
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<medical_specialty>
+
+C<medicalSpecialty>
+
+A medical specialty of the provider.
+
+
+A medical_specialty should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalSpecialty']>
+
+=back
+
 =cut
+
+has medical_specialty => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'medicalSpecialty',
+);
+
+
 
 
 =head1 SEE ALSO

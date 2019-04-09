@@ -2,13 +2,14 @@ use utf8;
 
 package SemanticWeb::Schema::MedicalBusiness;
 
-# ABSTRACT: A particular physical or virtual business of an organization for medical purposes.
+# ABSTRACT: A particular physical or virtual business of an organization for medical purposes
 
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;
 
-use MooX::JSON_LD 'LocalBusiness';
+
+use MooX::JSON_LD 'MedicalBusiness';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -20,11 +21,19 @@ our $VERSION = 'v0.1.0';
 
 =head1 DESCRIPTION
 
-A particular physical or virtual business of an organization for
-medical purposes. Examples of MedicalBusiness include differents
-business run by health professionals.
+A particular physical or virtual business of an organization for medical
+purposes. Examples of MedicalBusiness include differents business run by
+health professionals.
+
+
+
+
+=cut
+
 
 =head1 SEE ALSO
+
+
 
 L<SemanticWeb::Schema::LocalBusiness>
 

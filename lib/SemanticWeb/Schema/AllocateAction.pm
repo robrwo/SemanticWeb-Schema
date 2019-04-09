@@ -26,7 +26,35 @@ The act of organizing tasks/objects/events by associating resources to it.
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<purpose>
+
+
+
+A goal towards an action is taken. Can be concrete or abstract.
+
+
+A purpose should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalDevicePurpose']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
+=back
+
 =cut
+
+has purpose => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'purpose',
+);
+
+
 
 
 =head1 SEE ALSO

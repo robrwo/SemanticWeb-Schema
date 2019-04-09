@@ -30,6 +30,31 @@ target audience.
 =head1 ATTRIBUTES
 
 
+=head2 C<health_condition>
+
+C<healthCondition>
+
+Specifying the health condition(s) of a patient, medical study, or other
+target audience.
+
+
+A health_condition should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalCondition']>
+
+=back
+
+=cut
+
+has health_condition => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'healthCondition',
+);
+
+
 =head2 C<required_gender>
 
 C<requiredGender>
