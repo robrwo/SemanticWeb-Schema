@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -40,9 +40,9 @@ A away_team should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::SportsTeam']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -66,9 +66,9 @@ A competitor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::SportsTeam']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -92,9 +92,9 @@ A home_team should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::SportsTeam']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::SportsTeam']>
 
 =back
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -66,9 +66,9 @@ A logo should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
 
 =back
 
@@ -102,6 +102,30 @@ has review => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'review',
+);
+
+
+=head2 C<slogan>
+
+
+
+A slogan or motto associated with the item.
+
+
+A slogan should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has slogan => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'slogan',
 );
 
 

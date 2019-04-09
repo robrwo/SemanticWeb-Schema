@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -43,9 +43,9 @@ A accepted_payment_method should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::PaymentMethod']>
-
 =item C<InstanceOf['SemanticWeb::Schema::LoanOrCredit']>
+
+=item C<InstanceOf['SemanticWeb::Schema::PaymentMethod']>
 
 =back
 
@@ -94,13 +94,13 @@ A area_served should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
-
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
+=item C<Str>
 
 =back
 
@@ -595,11 +595,11 @@ A ineligible_region should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
-
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 
@@ -750,9 +750,9 @@ A seller should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 

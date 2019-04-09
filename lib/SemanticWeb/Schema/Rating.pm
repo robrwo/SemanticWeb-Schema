@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A author should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -107,6 +107,31 @@ has rating_value => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'ratingValue',
+);
+
+
+=head2 C<review_aspect>
+
+C<reviewAspect>
+
+This Review or Rating is relevant to this part or facet of the
+itemReviewed.
+
+
+A review_aspect should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has review_aspect => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'reviewAspect',
 );
 
 

@@ -1,6 +1,6 @@
 {
    "class" : {
-      "dc:source" : "schemadotorgsources2:source_VisualArtworkClass",
+      "dc:source" : "schemadotorgsources:source_VisualArtworkClass",
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A work of art that is primarily visual in character.",
       "rdfs:label" : "VisualArtwork",
@@ -13,8 +13,8 @@
          "rdfs:label" : "artEdition",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ]
       },
       "schema:artMedium" : {
@@ -24,8 +24,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:artform" : {
@@ -34,8 +34,8 @@
          "rdfs:label" : "artform",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:artworkSurface" : {
@@ -49,7 +49,7 @@
          ]
       },
       "schema:depth" : {
-         "dc:source" : "schemadotorgsources2:source_GoodRelationsTerms",
+         "dc:source" : "schemadotorgsources:source_GoodRelationsTerms",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
@@ -58,8 +58,8 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:height" : {
@@ -67,10 +67,10 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:MediaObject",
             "schema:VisualArtwork",
-            "schema:Product"
+            "schema:Person",
+            "schema:Product",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -84,8 +84,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -94,9 +94,9 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:MediaObject",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",

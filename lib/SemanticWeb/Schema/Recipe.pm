@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -142,7 +142,7 @@ has nutrition => (
 
 C<recipeCategory>
 
-The category of the recipe—for example, appetizer, entree, etc.
+The category of the recipeâfor example, appetizer, entree, etc.
 
 
 A recipe_category should be one of the following types:
@@ -222,11 +222,11 @@ A recipe_instructions should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
 

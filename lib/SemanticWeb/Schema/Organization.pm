@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -40,9 +40,9 @@ A address should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<Str>
 
 =back
 
@@ -115,13 +115,13 @@ A area_served should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
-
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
+=item C<Str>
 
 =back
 
@@ -767,11 +767,11 @@ A location should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
 
 =item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 
@@ -795,9 +795,9 @@ A logo should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
 
 =back
 
@@ -899,9 +899,9 @@ A members should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1048,9 +1048,9 @@ A publishing_principles should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -1147,11 +1147,11 @@ A service_area should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
-
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
 
@@ -1161,6 +1161,30 @@ has service_area => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'serviceArea',
+);
+
+
+=head2 C<slogan>
+
+
+
+A slogan or motto associated with the item.
+
+
+A slogan should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has slogan => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'slogan',
 );
 
 
@@ -1177,9 +1201,9 @@ A sponsor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 

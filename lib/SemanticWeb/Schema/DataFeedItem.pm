@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -108,7 +108,7 @@ has date_modified => (
 
 
 An entity represented by an entry in a list or data feed (e.g. an 'artist'
-in a list of 'artists')’.
+in a list of 'artists')â.
 
 
 A item should be one of the following types:

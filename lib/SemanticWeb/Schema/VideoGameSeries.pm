@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -288,11 +288,11 @@ A game_location should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
-
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 
@@ -322,9 +322,9 @@ A game_platform should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
 
@@ -348,9 +348,9 @@ A music_by should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 

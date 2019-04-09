@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -27,6 +27,34 @@ A food or drink item listed in a menu or menu section.
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<menu_add_on>
+
+C<menuAddOn>
+
+Additional menu item(s) such as a side dish of salad or side order of fries
+that can be added to this menu item. Additionally it can be a menu section
+containing allowed add-on menu items for this menu item.
+
+
+A menu_add_on should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MenuItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MenuSection']>
+
+=back
+
+=cut
+
+has menu_add_on => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'menuAddOn',
+);
 
 
 =head2 C<nutrition>

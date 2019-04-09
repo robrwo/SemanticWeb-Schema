@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -175,56 +175,6 @@ has issn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'issn',
-);
-
-
-=head2 C<spatial>
-
-
-
-The range of spatial applicability of a dataset, e.g. for a dataset of New
-York weather, the state of New York.
-
-
-A spatial should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
-
-=back
-
-=cut
-
-has spatial => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'spatial',
-);
-
-
-=head2 C<temporal>
-
-
-
-The range of temporal applicability of a dataset, e.g. for a 2011 census
-dataset, the year 2011 (in ISO 8601 time interval format).
-
-
-A temporal should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has temporal => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'temporal',
 );
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -105,7 +105,7 @@ has permit_audience => (
 
 C<validFor>
 
-The time validity of the permit.
+The duration of validity of a permit or similar thing.
 
 
 A valid_for should be one of the following types:
@@ -153,7 +153,7 @@ has valid_from => (
 
 C<validIn>
 
-The geographic area where the permit is valid.
+The geographic area where a permit or similar thing is valid.
 
 
 A valid_in should be one of the following types:

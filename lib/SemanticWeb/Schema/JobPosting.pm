@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -40,9 +40,9 @@ A base_salary should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
+
+=item C<Num>
 
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
@@ -105,30 +105,6 @@ has date_posted => (
 );
 
 
-=head2 C<education_requirements>
-
-C<educationRequirements>
-
-Educational background needed for the position.
-
-
-A education_requirements should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has education_requirements => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'educationRequirements',
-);
-
-
 =head2 C<employment_type>
 
 C<employmentType>
@@ -158,7 +134,7 @@ has employment_type => (
 
 C<experienceRequirements>
 
-Description of skills and experience needed for the position.
+Description of skills and experience needed for the position or Occupation.
 
 
 A experience_requirements should be one of the following types:
@@ -348,27 +324,27 @@ has occupational_category => (
 );
 
 
-=head2 C<qualifications>
+=head2 C<relevant_occupation>
+
+C<relevantOccupation>
+
+The Occupation for the JobPosting.
 
 
-
-Specific qualifications required for this role.
-
-
-A qualifications should be one of the following types:
+A relevant_occupation should be one of the following types:
 
 =over
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::Occupation']>
 
 =back
 
 =cut
 
-has qualifications => (
+has relevant_occupation => (
     is        => 'rw',
     predicate => 1,
-    json_ld   => 'qualifications',
+    json_ld   => 'relevantOccupation',
 );
 
 
@@ -376,7 +352,7 @@ has qualifications => (
 
 
 
-Responsibilities associated with this role.
+Responsibilities associated with this role or Occupation.
 
 
 A responsibilities should be one of the following types:
@@ -430,7 +406,7 @@ has salary_currency => (
 
 
 
-Skills required to fulfill this role.
+Skills required to fulfill this role or in this Occupation.
 
 
 A skills should be one of the following types:

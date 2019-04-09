@@ -4,9 +4,9 @@
       "rdfs:comment" : "A hospital.",
       "rdfs:label" : "Hospital",
       "rdfs:subClassOf" : [
+         "schema:EmergencyService",
          "schema:MedicalOrganization",
-         "schema:CivicStructure",
-         "schema:EmergencyService"
+         "schema:CivicStructure"
       ]
    },
    "properties" : {}

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -393,6 +393,8 @@ A audio should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::AudioObject']>
 
+=item C<InstanceOf['SemanticWeb::Schema::Clip']>
+
 =back
 
 =cut
@@ -417,9 +419,9 @@ A author should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -617,9 +619,9 @@ A content_rating should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Rating']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Rating']>
 
 =back
 
@@ -1212,9 +1214,9 @@ A in_language should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Language']>
+
+=item C<Str>
 
 =back
 
@@ -1315,11 +1317,11 @@ A is_based_on should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =item C<Str>
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -1548,9 +1550,9 @@ A material should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<Str>
 
 =back
 
@@ -1652,9 +1654,9 @@ A producer should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1680,9 +1682,9 @@ A provider should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -1775,9 +1777,9 @@ A publishing_principles should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -1938,6 +1940,41 @@ has source_organization => (
 );
 
 
+=head2 C<spatial>
+
+
+
+=begin html
+
+The "spatial" property can be used in cases when more specific properties
+(e.g. <a class="localLink"
+href="http://schema.org/locationCreated">locationCreated</a>, <a
+class="localLink"
+href="http://schema.org/spatialCoverage">spatialCoverage</a>, <a
+class="localLink"
+href="http://schema.org/contentLocation">contentLocation</a>) are not known
+to be appropriate.
+
+=end html
+
+
+A spatial should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=back
+
+=cut
+
+has spatial => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'spatial',
+);
+
+
 =head2 C<spatial_coverage>
 
 C<spatialCoverage>
@@ -1980,9 +2017,9 @@ A sponsor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1992,6 +2029,41 @@ has sponsor => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'sponsor',
+);
+
+
+=head2 C<temporal>
+
+
+
+=begin html
+
+The "temporal" property can be used in cases where more specific properties
+(e.g. <a class="localLink"
+href="http://schema.org/temporalCoverage">temporalCoverage</a>, <a
+class="localLink" href="http://schema.org/dateCreated">dateCreated</a>, <a
+class="localLink" href="http://schema.org/dateModified">dateModified</a>,
+<a class="localLink"
+href="http://schema.org/datePublished">datePublished</a>) are not known to
+be appropriate.
+
+=end html
+
+
+A temporal should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has temporal => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'temporal',
 );
 
 
@@ -2012,7 +2084,11 @@ content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate
 their temporalCoverage in broader terms - textually or via well-known URL.
 Written works such as books may sometimes have precise temporal coverage
 too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval
-format format via "1939/1945".
+format format via "1939/1945".<br/><br/> Open-ended date ranges can be
+written with ".." in place of the end date. For example, "2015-11/.."
+indicates a range beginning in November 2015 and with no specified final
+date. This is tentative and might be updated in future when ISO 8601 is
+officially updated.
 
 =end html
 
@@ -2170,9 +2246,9 @@ A version should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<Num>
+
+=item C<Str>
 
 =back
 
@@ -2195,6 +2271,8 @@ An embedded video object.
 A video should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::Clip']>
 
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
 

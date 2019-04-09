@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -211,9 +211,9 @@ A fuel_type should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -291,9 +291,9 @@ A number_of_airbags should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<Num>
+
+=item C<Str>
 
 =back
 
@@ -321,9 +321,9 @@ A number_of_axles should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -382,9 +382,9 @@ A number_of_forward_gears should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -667,9 +667,9 @@ A vehicle_seating_capacity should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -679,33 +679,6 @@ has vehicle_seating_capacity => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleSeatingCapacity',
-);
-
-
-=head2 C<vehicle_special_usage>
-
-C<vehicleSpecialUsage>
-
-Indicates whether the vehicle has been used for special purposes, like
-commercial rental, driving school, or as a taxi. The legislation in many
-countries requires this information to be revealed when offering a car for
-sale.
-
-
-A vehicle_special_usage should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has vehicle_special_usage => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'vehicleSpecialUsage',
 );
 
 

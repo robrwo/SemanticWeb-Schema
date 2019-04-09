@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToStep;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToStep';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ list with HowToDirection and/or HowToTip items.
 
 
 
-L<SemanticWeb::Schema::ItemList>
+L<SemanticWeb::Schema::ListItem>
 
 =cut
 

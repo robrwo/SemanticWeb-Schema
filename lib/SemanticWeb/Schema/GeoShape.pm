@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -43,9 +43,9 @@ A address should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<Str>
 
 =back
 
@@ -75,9 +75,9 @@ A address_country should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Country']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Country']>
 
 =back
 
@@ -150,6 +150,9 @@ has circle => (
 
 The elevation of a location (<a
 href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000
+m', '3,200 ft') while numbers alone should be assumed to be a value in
+meters.
 
 =end html
 

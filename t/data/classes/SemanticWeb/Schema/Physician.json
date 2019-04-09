@@ -3,7 +3,10 @@
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A doctor's office.",
       "rdfs:label" : "Physician",
-      "rdfs:subClassOf" : "schema:MedicalOrganization"
+      "rdfs:subClassOf" : [
+         "schema:MedicalOrganization",
+         "schema:MedicalBusiness"
+      ]
    },
    "properties" : {}
 }

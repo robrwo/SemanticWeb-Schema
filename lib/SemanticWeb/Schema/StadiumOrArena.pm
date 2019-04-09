@@ -6,7 +6,7 @@ package SemanticWeb::Schema::StadiumOrArena;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::SportsActivityLocation /;
+extends qw/ SemanticWeb::Schema::SportsActivityLocation SemanticWeb::Schema::CivicStructure /;
 
 
 use MooX::JSON_LD 'StadiumOrArena';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A stadium.
 
 
 
-L<SemanticWeb::Schema::SportsActivityLocation>
+L<SemanticWeb::Schema::CivicStructure>
 
 =cut
 

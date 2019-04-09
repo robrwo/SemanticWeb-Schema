@@ -2,6 +2,8 @@ Revision history for SemanticWeb-Schema:
 
 {{$NEXT}}
   [Enhancements]
+  - Updated classes to Version 3.5 of the schema.
+
   - Add Class::XSAccessor as a recommended prereq.
 
   [Toolchain]

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -103,6 +103,34 @@ has broadcast_display_name => (
 );
 
 
+=head2 C<broadcast_frequency>
+
+C<broadcastFrequency>
+
+The frequency used for over-the-air broadcasts. Numeric values or simple
+ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences
+of AM and FM radio channels, e.g. "87 FM".
+
+
+A broadcast_frequency should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::BroadcastFrequencySpecification']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has broadcast_frequency => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'broadcastFrequency',
+);
+
+
 =head2 C<broadcast_timezone>
 
 C<broadcastTimezone>
@@ -153,6 +181,30 @@ has broadcaster => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcaster',
+);
+
+
+=head2 C<has_broadcast_channel>
+
+C<hasBroadcastChannel>
+
+A broadcast channel of a broadcast service.
+
+
+A has_broadcast_channel should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::BroadcastChannel']>
+
+=back
+
+=cut
+
+has has_broadcast_channel => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'hasBroadcastChannel',
 );
 
 

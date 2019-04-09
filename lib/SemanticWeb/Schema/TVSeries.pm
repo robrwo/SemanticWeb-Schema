@@ -6,7 +6,7 @@ package SemanticWeb::Schema::TVSeries;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::CreativeWorkSeries /;
+extends qw/ SemanticWeb::Schema::CreativeWorkSeries SemanticWeb::Schema::CreativeWork /;
 
 
 use MooX::JSON_LD 'TVSeries';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v0.0.5';
+our $VERSION = 'v0.1.0';
 
 =encoding utf8
 
@@ -240,9 +240,9 @@ A music_by should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::MusicGroup']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -406,7 +406,7 @@ has trailer => (
 
 
 
-L<SemanticWeb::Schema::CreativeWorkSeries>
+L<SemanticWeb::Schema::CreativeWork>
 
 =cut
 
