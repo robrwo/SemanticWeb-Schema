@@ -2,9 +2,10 @@
    "class" : {
       "dc:source" : "schemadotorgsources:Automotive_Ontology_Working_Group",
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A car is a wheeled, self-powered motor vehicle used for transportation.",
-      "rdfs:label" : "Car",
-      "rdfs:subClassOf" : "schema:Vehicle"
+      "rdfs:comment" : "A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury busses, usually in service for long distance travel.",
+      "rdfs:label" : "BusOrCoach",
+      "rdfs:subClassOf" : "schema:Vehicle",
+      "schema:isPartOf" : "http:auto.schema.org"
    },
    "properties" : {
       "schema:acrissCode" : {

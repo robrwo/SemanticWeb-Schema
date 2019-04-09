@@ -105,6 +105,7 @@ has definition => (
             ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
             'http://schema.org/version/3.5/ext-meta.rdf',
             'http://schema.org/version/3.5/ext-health-lifesci.rdf',
+            'http://schema.org/version/3.5/ext-auto.rdf',
             'http://schema.org/version/3.5/schema.rdf',
         ]
     },

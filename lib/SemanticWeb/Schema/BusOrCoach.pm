@@ -1,15 +1,15 @@
 use utf8;
 
-package SemanticWeb::Schema::Car;
+package SemanticWeb::Schema::BusOrCoach;
 
-# ABSTRACT: A car is a wheeled
+# ABSTRACT: A bus (also omnibus or autobus) is a road vehicle designed to carry passengers
 
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vehicle /;
 
 
-use MooX::JSON_LD 'Car';
+use MooX::JSON_LD 'BusOrCoach';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -21,7 +21,9 @@ our $VERSION = 'v0.1.0';
 
 =head1 DESCRIPTION
 
-A car is a wheeled, self-powered motor vehicle used for transportation.
+A bus (also omnibus or autobus) is a road vehicle designed to carry
+passengers. Coaches are luxury busses, usually in service for long distance
+travel.
 
 
 

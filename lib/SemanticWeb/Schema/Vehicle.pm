@@ -30,6 +30,72 @@ over land, water, air, or through space.
 =head1 ATTRIBUTES
 
 
+=head2 C<acceleration_time>
+
+C<accelerationTime>
+
+=begin html
+
+The time needed to accelerate the vehicle from a given start velocity to a
+given target velocity.<br/><br/> Typical unit code(s): SEC for
+seconds<br/><br/> <ul> <li>Note: There are unfortunately no standard unit
+codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use "SEC" for
+seconds and indicate the velocities in the <a class="localLink"
+href="http://schema.org/name">name</a> of the <a class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a>, or use <a
+class="localLink"
+href="http://schema.org/valueReference">valueReference</a> with a <a
+class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a> of 0..60
+mph or 0..100 km/h to specify the reference speeds.</li> </ul> 
+
+=end html
+
+
+A acceleration_time should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has acceleration_time => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'accelerationTime',
+);
+
+
+=head2 C<body_type>
+
+C<bodyType>
+
+Indicates the design and body style of the vehicle (e.g. station wagon,
+hatchback, etc.).
+
+
+A body_type should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=back
+
+=cut
+
+has body_type => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'bodyType',
+);
+
+
 =head2 C<cargo_volume>
 
 C<cargoVolume>
@@ -111,6 +177,64 @@ has drive_wheel_configuration => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'driveWheelConfiguration',
+);
+
+
+=head2 C<emissions_co2>
+
+C<emissionsCO2>
+
+The CO2 emissions in g/km. When used in combination with a
+QuantitativeValue, put "g/km" into the unitText property of that value,
+since there is no UN/CEFACT Common Code for "g/km".
+
+
+A emissions_co2 should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=back
+
+=cut
+
+has emissions_co2 => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'emissionsCO2',
+);
+
+
+=head2 C<fuel_capacity>
+
+C<fuelCapacity>
+
+=begin html
+
+The capacity of the fuel tank or in the case of electric cars, the battery.
+If there are multiple components for storage, this should indicate the
+total of all storage of the same type.<br/><br/> Typical unit code(s): LTR
+for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for
+ampere-hours (for electrical vehicles).
+
+=end html
+
+
+A fuel_capacity should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has fuel_capacity => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'fuelCapacity',
 );
 
 
@@ -250,6 +374,32 @@ has known_vehicle_damages => (
 );
 
 
+=head2 C<meets_emission_standard>
+
+C<meetsEmissionStandard>
+
+Indicates that the vehicle meets the respective emission standard.
+
+
+A meets_emission_standard should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=back
+
+=cut
+
+has meets_emission_standard => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'meetsEmissionStandard',
+);
+
+
 =head2 C<mileage_from_odometer>
 
 C<mileageFromOdometer>
@@ -277,6 +427,31 @@ has mileage_from_odometer => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mileageFromOdometer',
+);
+
+
+=head2 C<model_date>
+
+C<modelDate>
+
+The release date of a vehicle model (often used to differentiate versions
+of the same make and model).
+
+
+A model_date should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has model_date => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'modelDate',
 );
 
 
@@ -428,6 +603,50 @@ has number_of_previous_owners => (
 );
 
 
+=head2 C<payload>
+
+
+
+=begin html
+
+The permitted weight of passengers and cargo, EXCLUDING the weight of the
+empty vehicle.<br/><br/> Typical unit code(s): KGM for kilogram, LBR for
+pound<br/><br/> <ul> <li>Note 1: Many databases specify the permitted TOTAL
+weight instead, which is the sum of <a class="localLink"
+href="http://schema.org/weight">weight</a> and <a class="localLink"
+href="http://schema.org/payload">payload</a></li> <li>Note 2: You can
+indicate additional information in the <a class="localLink"
+href="http://schema.org/name">name</a> of the <a class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>
+<li>Note 3: You may also link to a <a class="localLink"
+href="http://schema.org/QualitativeValue">QualitativeValue</a> node that
+provides additional information using <a class="localLink"
+href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
+4: Note that you can use <a class="localLink"
+href="http://schema.org/minValue">minValue</a> and <a class="localLink"
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
+</ul> 
+
+=end html
+
+
+A payload should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has payload => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'payload',
+);
+
+
 =head2 C<production_date>
 
 C<productionDate>
@@ -476,6 +695,77 @@ has purchase_date => (
 );
 
 
+=head2 C<seating_capacity>
+
+C<seatingCapacity>
+
+=begin html
+
+The number of persons that can be seated (e.g. in a vehicle), both in terms
+of the physical space available, and in terms of limitations set by
+law.<br/><br/> Typical unit code(s): C62 for persons
+
+=end html
+
+
+A seating_capacity should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has seating_capacity => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'seatingCapacity',
+);
+
+
+=head2 C<speed>
+
+
+
+=begin html
+
+The speed range of the vehicle. If the vehicle is powered by an engine, the
+upper limit of the speed range (indicated by <a class="localLink"
+href="http://schema.org/maxValue">maxValue</a> should be the maximum speed
+achievable under regular conditions.<br/><br/> Typical unit code(s): KMH
+for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot<br/><br/> *Note
+1: Use <a class="localLink" href="http://schema.org/minValue">minValue</a>
+and <a class="localLink" href="http://schema.org/maxValue">maxValue</a> to
+indicate the range. Typically, the minimal value is zero. * Note 2: There
+are many different ways of measuring the speed range. You can link to
+information about how the given value has been determined using the <a
+class="localLink"
+href="http://schema.org/valueReference">valueReference</a> property.
+
+=end html
+
+
+A speed should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has speed => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'speed',
+);
+
+
 =head2 C<steering_position>
 
 C<steeringPosition>
@@ -497,6 +787,87 @@ has steering_position => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'steeringPosition',
+);
+
+
+=head2 C<tongue_weight>
+
+C<tongueWeight>
+
+=begin html
+
+The permitted vertical load (TWR) of a trailer attached to the vehicle.
+Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating
+(VLR)<br/><br/> Typical unit code(s): KGM for kilogram, LBR for
+pound<br/><br/> <ul> <li>Note 1: You can indicate additional information in
+the <a class="localLink" href="http://schema.org/name">name</a> of the <a
+class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class="localLink"
+href="http://schema.org/QualitativeValue">QualitativeValue</a> node that
+provides additional information using <a class="localLink"
+href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
+3: Note that you can use <a class="localLink"
+href="http://schema.org/minValue">minValue</a> and <a class="localLink"
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
+</ul> 
+
+=end html
+
+
+A tongue_weight should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has tongue_weight => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'tongueWeight',
+);
+
+
+=head2 C<trailer_weight>
+
+C<trailerWeight>
+
+=begin html
+
+The permitted weight of a trailer attached to the vehicle.<br/><br/>
+Typical unit code(s): KGM for kilogram, LBR for pound * Note 1: You can
+indicate additional information in the <a class="localLink"
+href="http://schema.org/name">name</a> of the <a class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node. *
+Note 2: You may also link to a <a class="localLink"
+href="http://schema.org/QualitativeValue">QualitativeValue</a> node that
+provides additional information using <a class="localLink"
+href="http://schema.org/valueReference">valueReference</a>. * Note 3: Note
+that you can use <a class="localLink"
+href="http://schema.org/minValue">minValue</a> and <a class="localLink"
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.
+
+=end html
+
+
+A trailer_weight should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has trailer_weight => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'trailerWeight',
 );
 
 
@@ -682,6 +1053,35 @@ has vehicle_seating_capacity => (
 );
 
 
+=head2 C<vehicle_special_usage>
+
+C<vehicleSpecialUsage>
+
+Indicates whether the vehicle has been used for special purposes, like
+commercial rental, driving school, or as a taxi. The legislation in many
+countries requires this information to be revealed when offering a car for
+sale.
+
+
+A vehicle_special_usage should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::CarUsageType']>
+
+=back
+
+=cut
+
+has vehicle_special_usage => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'vehicleSpecialUsage',
+);
+
+
 =head2 C<vehicle_transmission>
 
 C<vehicleTransmission>
@@ -706,6 +1106,77 @@ has vehicle_transmission => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'vehicleTransmission',
+);
+
+
+=head2 C<weight_total>
+
+C<weightTotal>
+
+=begin html
+
+The permitted total weight of the loaded vehicle, including passengers and
+cargo and the weight of the empty vehicle.<br/><br/> Typical unit code(s):
+KGM for kilogram, LBR for pound<br/><br/> <ul> <li>Note 1: You can indicate
+additional information in the <a class="localLink"
+href="http://schema.org/name">name</a> of the <a class="localLink"
+href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>
+<li>Note 2: You may also link to a <a class="localLink"
+href="http://schema.org/QualitativeValue">QualitativeValue</a> node that
+provides additional information using <a class="localLink"
+href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
+3: Note that you can use <a class="localLink"
+href="http://schema.org/minValue">minValue</a> and <a class="localLink"
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
+</ul> 
+
+=end html
+
+
+A weight_total should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has weight_total => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'weightTotal',
+);
+
+
+=head2 C<wheelbase>
+
+
+
+=begin html
+
+The distance between the centers of the front and rear wheels.<br/><br/>
+Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches,
+FOT for foot/feet
+
+=end html
+
+
+A wheelbase should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has wheelbase => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'wheelbase',
 );
 
 
