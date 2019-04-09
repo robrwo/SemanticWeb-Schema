@@ -19,7 +19,7 @@ use Text::Wrap qw/ wrap /;
 use Types::Standard -types;
 use URI;
 
-our $VERSION = 'v0.1.0';
+our $VERSION = 'v3.5.0';
 
 const my $MAX_ABSTRACT_LENGTH => 44;    # See ExtUtils::ModuleMaker
 

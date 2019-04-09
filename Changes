@@ -1,8 +1,11 @@
-Revision history for SemanticWeb-Schema:
+Revision history for {{$dist->name}}:
 
 {{$NEXT}}
   [Enhancements]
   - Updated classes to Version 3.5 of the schema.
+
+    Note that the VERSION of this and future releases of {{$dist->name}}
+    will be based on the schema version.
 
   - Include the health-lifesci extensions, since some of the schema
     classes depend on these.
