@@ -103,8 +103,8 @@ has definition => (
     default => sub {
         [
             ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
-            'http://schema.org/version/3.4/ext-meta.rdf',
-            'http://schema.org/version/3.4/schema.rdf',
+            'http://schema.org/version/3.5/ext-meta.rdf',
+            'http://schema.org/version/3.5/schema.rdf',
         ]
     },
 );
