@@ -1747,6 +1747,30 @@ has publisher => (
 );
 
 
+=head2 C<publisher_imprint>
+
+C<publisherImprint>
+
+The publishing division which published the comic.
+
+
+A publisher_imprint should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=back
+
+=cut
+
+has publisher_imprint => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'publisherImprint',
+);
+
+
 =head2 C<publishing_principles>
 
 C<publishingPrinciples>
@@ -2183,6 +2207,31 @@ has time_required => (
 );
 
 
+=head2 C<translation_of_work>
+
+C<translationOfWork>
+
+The work that this work has been translated from. e.g. ç©ç§èµ·æº is a
+translationOf âOn the Origin of Speciesâ
+
+
+A translation_of_work should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=back
+
+=cut
+
+has translation_of_work => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'translationOfWork',
+);
+
+
 =head2 C<translator>
 
 
@@ -2309,6 +2358,33 @@ has work_example => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'workExample',
+);
+
+
+=head2 C<work_translation>
+
+C<workTranslation>
+
+A work that is a translation of the content of this work. e.g. è¥¿éè¨
+has an English workTranslation âJourney to the Westâ,a German
+workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese translation TÃ¢y
+du kÃ½ bÃ¬nh kháº£o.
+
+
+A work_translation should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=back
+
+=cut
+
+has work_translation => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'workTranslation',
 );
 
 

@@ -7,7 +7,9 @@ Revision history for SemanticWeb-Schema:
   - Include the health-lifesci extensions, since some of the schema
     classes depend on these.
 
-  - Include the auto extensions.
+  - Include the auto (automotive) extensions.
+
+  - Include the bib (bibliographic) extensions.
 
   - Add Class::XSAccessor as a recommended prereq.
 

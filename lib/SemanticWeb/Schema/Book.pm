@@ -29,6 +29,30 @@ A book.
 =head1 ATTRIBUTES
 
 
+=head2 C<abridged>
+
+
+
+Indicates whether the book is an abridged edition.
+
+
+A abridged should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=cut
+
+has abridged => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'abridged',
+);
+
+
 =head2 C<book_edition>
 
 C<bookEdition>

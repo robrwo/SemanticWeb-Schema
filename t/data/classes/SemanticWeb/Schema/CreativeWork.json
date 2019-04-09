@@ -647,6 +647,15 @@
             "schema:Person"
          ]
       },
+      "schema:publisherImprint" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The publishing division which published the comic.",
+         "rdfs:label" : "publisherImprint",
+         "schema:category" : "Comics",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:bib.schema.org",
+         "schema:rangeIncludes" : "schema:Organization"
+      },
       "schema:publishingPrinciples" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.<br/><br/>\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology.",
@@ -800,6 +809,15 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : "schema:Duration"
       },
+      "schema:translationOfWork" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The work that this work has been translated from. e.g. Ã§ÂÂ©Ã§Â§ÂÃ¨ÂµÂ·Ã¦ÂºÂ is a translationOf Ã¢ÂÂOn the Origin of SpeciesÃ¢ÂÂ",
+         "rdfs:label" : "translationOfWork",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:inverseOf" : "schema:workTranslation",
+         "schema:isPartOf" : "http:bib.schema.org",
+         "schema:rangeIncludes" : "schema:CreativeWork"
+      },
       "schema:translator" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
@@ -850,6 +868,15 @@
          "rdfs:label" : "workExample",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:exampleOfWork",
+         "schema:rangeIncludes" : "schema:CreativeWork"
+      },
+      "schema:workTranslation" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A work that is a translation of the content of this work. e.g. Ã¨Â¥Â¿Ã©ÂÂÃ¨Â¨Â has an English workTranslation Ã¢ÂÂJourney to the WestÃ¢ÂÂ,a German workTranslation Ã¢ÂÂMonkeys PilgerfahrtÃ¢ÂÂ and a Vietnamese  translation TÃÂ¢y du kÃÂ½ bÃÂ¬nh khÃ¡ÂºÂ£o.",
+         "rdfs:label" : "workTranslation",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:inverseOf" : "schema:translationOfWork",
+         "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:CreativeWork"
       }
    }

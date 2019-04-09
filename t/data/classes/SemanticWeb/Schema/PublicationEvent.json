@@ -26,6 +26,17 @@
          ],
          "schema:rangeIncludes" : "schema:Boolean"
       },
+      "schema:publishedBy" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "An agent associated with the publication event.",
+         "rdfs:label" : "publishedBy",
+         "schema:domainIncludes" : "schema:PublicationEvent",
+         "schema:isPartOf" : "http:bib.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Person",
+            "schema:Organization"
+         ]
+      },
       "schema:publishedOn" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A broadcast service associated with the publication event.",

@@ -108,6 +108,32 @@ has artform => (
 );
 
 
+=head2 C<artist>
+
+
+
+The primary artist for a work in a medium other than pencils or digital
+line art--for example, if the primary artwork is done in watercolors or
+digital paints.
+
+
+A artist should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has artist => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'artist',
+);
+
+
 =head2 C<artwork_surface>
 
 C<artworkSurface>
@@ -130,6 +156,30 @@ has artwork_surface => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'artworkSurface',
+);
+
+
+=head2 C<colorist>
+
+
+
+The individual who adds color to inked drawings.
+
+
+A colorist should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has colorist => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'colorist',
 );
 
 
@@ -182,6 +232,80 @@ has height => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'height',
+);
+
+
+=head2 C<inker>
+
+
+
+The individual who traces over the pencil drawings in ink after pencils are
+complete.
+
+
+A inker should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has inker => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'inker',
+);
+
+
+=head2 C<letterer>
+
+
+
+The individual who adds lettering, including speech balloons and sound
+effects, to artwork.
+
+
+A letterer should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has letterer => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'letterer',
+);
+
+
+=head2 C<penciler>
+
+
+
+The individual who draws the primary narrative artwork.
+
+
+A penciler should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has penciler => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'penciler',
 );
 
 

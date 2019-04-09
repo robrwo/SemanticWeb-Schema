@@ -79,6 +79,32 @@ has is_accessible_for_free => (
 );
 
 
+=head2 C<published_by>
+
+C<publishedBy>
+
+An agent associated with the publication event.
+
+
+A published_by should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=back
+
+=cut
+
+has published_by => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'publishedBy',
+);
+
+
 =head2 C<published_on>
 
 C<publishedOn>
