@@ -9,6 +9,8 @@ Revision history for SemanticWeb-Schema:
   [Toolchain]
   - Tweaks to dist.ini.
 
+  - Update MANIFEST.SKIP.
+
 v0.0.4    2018-11-06 21:04:04+00:00 Europe/London
   [Bug Fixes]
   - Remove cache/ from distribution.
