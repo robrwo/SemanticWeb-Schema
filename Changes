@@ -6,8 +6,12 @@ Revision history for {{$dist->name}}:
 
   - Update copyright year.
 
+  - Include SOURCE and BUGS sections.
+
   [Toolchain]
   - Tweaks to dist.ini.
+
+  - Fixed broken Pod::Weaver configuration.
 
 v3.5.0    2019-04-09 23:34:22+01:00 Europe/London
   [Enhancements]
