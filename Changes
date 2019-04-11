@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fix broken link in POD, @manwar++.
+
   [Toolchain]
   - Tweaks to dist.ini.
 
