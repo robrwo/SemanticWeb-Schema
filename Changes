@@ -4,6 +4,8 @@ Revision history for {{$dist->name}}:
   [Documentation]
   - Fix broken link in POD, @manwar++.
 
+  - Update copyright year.
+
   [Toolchain]
   - Tweaks to dist.ini.
 
