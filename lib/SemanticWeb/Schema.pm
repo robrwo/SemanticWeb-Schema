@@ -56,7 +56,7 @@ were generated automatically from the following sources:
 
 =head2 C<id>
 
-If this is set, it adds a C<@id> to the L</json_ld_data>.
+If this is set, it adds a C<@id> to the L<MooX::JSON_LD/"json_ld">.
 
 =cut
 
