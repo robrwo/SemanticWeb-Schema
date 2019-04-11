@@ -35,7 +35,7 @@ were generated automatically from the following sources:
 
 ## `id`
 
-If this is set, it adds a `@id` to the ["json\_ld\_data"](#json_ld_data).
+If this is set, it adds a `@id` to the ["json\_ld" in MooX::JSON\_LD](https://metacpan.org/pod/MooX::JSON_LD#json_ld).
 
 ## `context`
 
