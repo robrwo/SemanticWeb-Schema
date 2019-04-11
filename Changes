@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+
+v3.5.1    2019-04-11 13:39:49+01:00 Europe/London
   [Documentation]
   - Fix broken link in POD, @manwar++.
 

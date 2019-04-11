@@ -13,7 +13,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.1';
+our $VERSION = 'v3.5.2';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Class::XSAccessor 1.18
