@@ -36,9 +36,9 @@
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
             "schema:TherapeuticProcedure",
+            "schema:DrugClass",
             "schema:MedicalCondition",
-            "schema:Patient",
-            "schema:DrugClass"
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -49,8 +49,8 @@
          "rdfs:label" : "indication",
          "schema:domainIncludes" : [
             "schema:MedicalProcedure",
-            "schema:MedicalDevice",
-            "schema:TherapeuticProcedure"
+            "schema:TherapeuticProcedure",
+            "schema:MedicalDevice"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalIndication"

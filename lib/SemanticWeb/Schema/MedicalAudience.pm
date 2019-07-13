@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalAudience;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::PeopleAudience SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::Audience /;
+extends qw/ SemanticWeb::Schema::Audience SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::PeopleAudience /;
 
 
 use MooX::JSON_LD 'MedicalAudience';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ Target audiences for medical web pages. Enumerated type.
 
 
 
-L<SemanticWeb::Schema::Audience>
+L<SemanticWeb::Schema::PeopleAudience>
 
 =cut
 

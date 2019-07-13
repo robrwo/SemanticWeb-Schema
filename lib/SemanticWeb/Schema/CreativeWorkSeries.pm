@@ -6,7 +6,7 @@ package SemanticWeb::Schema::CreativeWorkSeries;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::Series /;
+extends qw/ SemanticWeb::Schema::Series SemanticWeb::Schema::CreativeWork /;
 
 
 use MooX::JSON_LD 'CreativeWorkSeries';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -145,7 +145,7 @@ has start_date => (
 
 
 
-L<SemanticWeb::Schema::Series>
+L<SemanticWeb::Schema::CreativeWork>
 
 =cut
 

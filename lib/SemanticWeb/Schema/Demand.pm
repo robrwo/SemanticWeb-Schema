@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -94,13 +94,13 @@ A area_served should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
 
@@ -380,11 +380,11 @@ A eligible_region should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+
+=item C<Str>
 
 =back
 
@@ -595,11 +595,11 @@ A ineligible_region should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+
+=item C<Str>
 
 =back
 

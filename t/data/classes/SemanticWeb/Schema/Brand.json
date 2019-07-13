@@ -14,12 +14,12 @@
          "schema:domainIncludes" : [
             "schema:Product",
             "schema:Offer",
-            "schema:Brand",
+            "schema:CreativeWork",
             "schema:Place",
-            "schema:Organization",
-            "schema:Service",
             "schema:Event",
-            "schema:CreativeWork"
+            "schema:Organization",
+            "schema:Brand",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -30,11 +30,11 @@
          "rdfs:label" : "logo",
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Place",
-            "schema:Product",
+            "schema:Service",
             "schema:Brand",
-            "schema:Service"
+            "schema:Product",
+            "schema:Organization",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
             "schema:ImageObject",
@@ -46,12 +46,12 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Place",
             "schema:Offer",
-            "schema:Brand",
-            "schema:Organization",
             "schema:Event",
+            "schema:Place",
+            "schema:Product",
+            "schema:Organization",
+            "schema:Brand",
             "schema:Service",
             "schema:CreativeWork"
          ],
@@ -62,11 +62,11 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:Service",
+            "schema:Organization",
             "schema:Brand",
+            "schema:Service",
             "schema:Product",
-            "schema:Organization"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

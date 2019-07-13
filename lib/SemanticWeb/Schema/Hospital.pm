@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Hospital;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::EmergencyService SemanticWeb::Schema::MedicalOrganization SemanticWeb::Schema::CivicStructure /;
+extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::MedicalOrganization SemanticWeb::Schema::EmergencyService /;
 
 
 use MooX::JSON_LD 'Hospital';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -87,7 +87,7 @@ has medical_specialty => (
 
 
 
-L<SemanticWeb::Schema::CivicStructure>
+L<SemanticWeb::Schema::EmergencyService>
 
 =cut
 

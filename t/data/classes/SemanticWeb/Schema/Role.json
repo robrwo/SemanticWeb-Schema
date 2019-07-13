@@ -11,11 +11,11 @@
          "rdfs:comment" : "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:Role",
             "schema:DatedMoneySpecification",
             "schema:Event",
-            "schema:CreativeWorkSeason"
+            "schema:CreativeWorkSeries",
+            "schema:CreativeWorkSeason",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -39,8 +39,8 @@
          "rdfs:label" : "roleName",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:startDate" : {
@@ -48,15 +48,15 @@
          "rdfs:comment" : "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
-            "schema:Event",
             "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
             "schema:Role",
-            "schema:CreativeWorkSeries"
+            "schema:CreativeWorkSeason",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       }
    }

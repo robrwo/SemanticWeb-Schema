@@ -41,13 +41,13 @@
          "rdfs:label" : "duration",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:Event",
-            "schema:MusicRelease",
             "schema:Audiobook",
             "schema:QuantitativeValueDistribution",
+            "schema:Movie",
+            "schema:MediaObject",
             "schema:MusicRecording",
-            "schema:MediaObject"
+            "schema:MusicRelease",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       },
@@ -75,8 +75,8 @@
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:endTime" : {
@@ -84,9 +84,9 @@
          "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
-            "schema:Action",
+            "schema:MediaObject",
             "schema:FoodEstablishmentReservation",
-            "schema:MediaObject"
+            "schema:Action"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -95,14 +95,14 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
+            "schema:MediaObject",
             "schema:VisualArtwork",
-            "schema:Person",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:playerType" : {
@@ -117,14 +117,14 @@
          "rdfs:comment" : "The production company or studio responsible for the item e.g. series, video game, episode etc.",
          "rdfs:label" : "productionCompany",
          "schema:domainIncludes" : [
-            "schema:TVSeries",
-            "schema:RadioSeries",
-            "schema:VideoGameSeries",
-            "schema:Movie",
-            "schema:CreativeWorkSeason",
-            "schema:Episode",
             "schema:MediaObject",
-            "schema:MovieSeries"
+            "schema:RadioSeries",
+            "schema:TVSeries",
+            "schema:MovieSeries",
+            "schema:VideoGameSeries",
+            "schema:Episode",
+            "schema:Movie",
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -142,8 +142,8 @@
          "rdfs:label" : "requiresSubscription",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:MediaSubscription",
@@ -173,13 +173,13 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:MediaObject",
-            "schema:VisualArtwork",
-            "schema:Product"
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       }
    }

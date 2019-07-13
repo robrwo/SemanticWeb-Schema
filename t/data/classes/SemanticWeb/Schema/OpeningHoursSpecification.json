@@ -38,12 +38,12 @@
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
             "schema:LocationFeatureSpecification",
-            "schema:MonetaryAmount",
-            "schema:Demand",
-            "schema:PriceSpecification",
+            "schema:OpeningHoursSpecification",
             "schema:Permit",
-            "schema:Offer",
-            "schema:OpeningHoursSpecification"
+            "schema:PriceSpecification",
+            "schema:Demand",
+            "schema:MonetaryAmount",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -53,13 +53,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification",
             "schema:JobPosting",
-            "schema:PriceSpecification",
-            "schema:Demand",
+            "schema:Offer",
             "schema:MonetaryAmount",
-            "schema:LocationFeatureSpecification"
+            "schema:PriceSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       }

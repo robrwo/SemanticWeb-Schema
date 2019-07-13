@@ -13,9 +13,9 @@
          "rdfs:label" : "about",
          "schema:category" : "issue-1670",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
             "schema:Event",
-            "schema:CommunicateAction"
+            "schema:CommunicateAction",
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing"
@@ -26,10 +26,10 @@
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:LinkRole",
-            "schema:WriteAction",
             "schema:CommunicateAction",
-            "schema:Event"
+            "schema:Event",
+            "schema:WriteAction",
+            "schema:LinkRole"
          ],
          "schema:rangeIncludes" : [
             "schema:Language",
@@ -42,8 +42,8 @@
          "rdfs:label" : "language",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : "schema:Language",
          "schema:supersededBy" : "schema:inLanguage"
@@ -54,21 +54,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:PayAction",
             "schema:AuthorizeAction",
             "schema:SendAction",
             "schema:CommunicateAction",
-            "schema:PayAction",
             "schema:TipAction",
-            "schema:DonateAction",
-            "schema:ReturnAction",
             "schema:Message",
+            "schema:ReturnAction",
+            "schema:DonateAction",
             "schema:GiveAction"
          ],
          "schema:rangeIncludes" : [
             "schema:ContactPoint",
+            "schema:Person",
             "schema:Audience",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ]
       }
    }

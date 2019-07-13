@@ -25,8 +25,8 @@
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:MediaSubscription",
-            "schema:ActionAccessSpecification",
-            "schema:ConsumeAction"
+            "schema:ConsumeAction",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       }

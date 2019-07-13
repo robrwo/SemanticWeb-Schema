@@ -24,8 +24,8 @@
          "rdfs:label" : "toLocation",
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : [
-            "schema:InsertAction",
             "schema:ExerciseAction",
+            "schema:InsertAction",
             "schema:TransferAction",
             "schema:MoveAction"
          ],

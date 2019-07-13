@@ -6,7 +6,7 @@ package SemanticWeb::Schema::TVSeason;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWorkSeason SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::CreativeWorkSeason /;
 
 
 use MooX::JSON_LD 'TVSeason';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -84,7 +84,7 @@ has part_of_tv_series => (
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::CreativeWorkSeason>
 
 =cut
 

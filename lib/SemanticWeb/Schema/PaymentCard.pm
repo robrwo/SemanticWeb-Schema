@@ -6,7 +6,7 @@ package SemanticWeb::Schema::PaymentCard;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::PaymentMethod SemanticWeb::Schema::FinancialProduct /;
+extends qw/ SemanticWeb::Schema::FinancialProduct SemanticWeb::Schema::PaymentMethod /;
 
 
 use MooX::JSON_LD 'PaymentCard';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ the payment with an account.
 
 
 
-L<SemanticWeb::Schema::FinancialProduct>
+L<SemanticWeb::Schema::PaymentMethod>
 
 =cut
 

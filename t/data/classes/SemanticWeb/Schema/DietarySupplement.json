@@ -12,10 +12,10 @@
          "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
          "rdfs:label" : "activeIngredient",
          "schema:domainIncludes" : [
+            "schema:DietarySupplement",
             "schema:DrugStrength",
             "schema:Drug",
-            "schema:Substance",
-            "schema:DietarySupplement"
+            "schema:Substance"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -33,8 +33,8 @@
          "rdfs:comment" : "True if this item's name is a proprietary/brand name (vs. generic name).",
          "rdfs:label" : "isProprietary",
          "schema:domainIncludes" : [
-            "schema:Drug",
-            "schema:DietarySupplement"
+            "schema:DietarySupplement",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Boolean"
@@ -44,15 +44,15 @@
          "rdfs:comment" : "The drug or supplement's legal status, including any controlled substance schedules that apply.",
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
+            "schema:Drug",
             "schema:DietarySupplement",
-            "schema:MedicalEntity",
-            "schema:Drug"
+            "schema:MedicalEntity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:DrugLegalStatus",
-            "schema:MedicalEnumeration",
-            "schema:Text"
+            "schema:MedicalEnumeration"
          ]
       },
       "schema:manufacturer" : {
@@ -61,8 +61,8 @@
          "rdfs:label" : "manufacturer",
          "schema:domainIncludes" : [
             "schema:Product",
-            "schema:DietarySupplement",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:DietarySupplement"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -72,9 +72,9 @@
          "rdfs:label" : "maximumIntake",
          "schema:domainIncludes" : [
             "schema:Substance",
-            "schema:DietarySupplement",
+            "schema:DrugStrength",
             "schema:Drug",
-            "schema:DrugStrength"
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MaximumDoseSchedule"
@@ -95,8 +95,8 @@
          "rdfs:comment" : "The generic name of this drug or supplement.",
          "rdfs:label" : "nonProprietaryName",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -106,8 +106,8 @@
          "rdfs:comment" : "Proprietary name given to the diet plan, typically by its originator or creator.",
          "rdfs:label" : "proprietaryName",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -133,8 +133,8 @@
          "rdfs:comment" : "Characteristics of the population for which this is intended, or which typically uses it, e.g. 'adults'.",
          "rdfs:label" : "targetPopulation",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
-            "schema:DoseSchedule"
+            "schema:DoseSchedule",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

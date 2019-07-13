@@ -13,7 +13,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Class::XSAccessor 1.18
@@ -40,15 +40,15 @@ were generated automatically from the following sources:
 =over
 
 
-=item L<http://schema.org/version/3.5/ext-meta.rdf>
+=item L<http://schema.org/version/3.6/ext-auto.rdf>
 
-=item L<http://schema.org/version/3.5/ext-health-lifesci.rdf>
+=item L<http://schema.org/version/3.6/ext-bib.rdf>
 
-=item L<http://schema.org/version/3.5/ext-auto.rdf>
+=item L<http://schema.org/version/3.6/ext-health-lifesci.rdf>
 
-=item L<http://schema.org/version/3.5/ext-bib.rdf>
+=item L<http://schema.org/version/3.6/ext-meta.rdf>
 
-=item L<http://schema.org/version/3.5/schema.rdf>
+=item L<http://schema.org/version/3.6/schema.rdf>
 
 =back
 
@@ -56,7 +56,7 @@ were generated automatically from the following sources:
 
 =head2 C<id>
 
-If this is set, it adds a C<@id> to the L<MooX::JSON_LD/"json_ld">.
+If this is set, it adds a C<@id> to the L</json_ld_data>.
 
 =cut
 

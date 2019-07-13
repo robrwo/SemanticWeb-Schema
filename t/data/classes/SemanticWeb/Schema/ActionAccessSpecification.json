@@ -19,8 +19,8 @@
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:ActionAccessSpecification",
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -35,8 +35,8 @@
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:Demand",
-            "schema:ActionAccessSpecification",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -47,17 +47,17 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:Invoice",
             "schema:Service",
             "schema:PhysicalActivity",
             "schema:Product",
             "schema:ActionAccessSpecification",
-            "schema:Offer",
-            "schema:Invoice"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Thing",
             "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:Thing"
+            "schema:PhysicalActivityCategory"
          ]
       },
       "schema:eligibleRegion" : {
@@ -71,15 +71,15 @@
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:DeliveryChargeSpecification",
-            "schema:Offer",
             "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer",
+            "schema:DeliveryChargeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:Place",
-            "schema:GeoShape"
+            "schema:GeoShape",
+            "schema:Text"
          ]
       },
       "schema:expectsAcceptanceOf" : {
@@ -90,8 +90,8 @@
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:MediaSubscription",
-            "schema:ActionAccessSpecification",
-            "schema:ConsumeAction"
+            "schema:ConsumeAction",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       },
@@ -102,8 +102,8 @@
          "rdfs:label" : "requiresSubscription",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:MediaSubscription",

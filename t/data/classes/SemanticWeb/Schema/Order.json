@@ -26,9 +26,9 @@
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:Order",
             "schema:Reservation",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -41,8 +41,8 @@
          "rdfs:label" : "confirmationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -55,8 +55,8 @@
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:discount" : {
@@ -142,8 +142,9 @@
             "schema:Order"
          ],
          "schema:rangeIncludes" : [
+            "schema:OrderItem",
             "schema:Product",
-            "schema:OrderItem"
+            "schema:Service"
          ]
       },
       "schema:partOfInvoice" : {
@@ -179,8 +180,8 @@
          "rdfs:comment" : "The name of the credit card or other method of payment for the order.",
          "rdfs:label" : "paymentMethod",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : "schema:PaymentMethod"
       },
@@ -189,8 +190,8 @@
          "rdfs:comment" : "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
          "rdfs:label" : "paymentMethodId",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -207,10 +208,10 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Demand",
-            "schema:Offer",
             "schema:BuyAction",
+            "schema:Demand",
+            "schema:Order",
+            "schema:Offer",
             "schema:Flight"
          ],
          "schema:rangeIncludes" : [

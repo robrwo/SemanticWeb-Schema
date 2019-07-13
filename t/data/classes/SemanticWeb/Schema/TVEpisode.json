@@ -11,10 +11,10 @@
          "rdfs:comment" : "The country of the principal offices of the production company or individual responsible for the movie or program.",
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
+            "schema:TVSeason",
             "schema:TVEpisode",
             "schema:Movie",
-            "schema:TVSeries",
-            "schema:TVSeason"
+            "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -24,8 +24,8 @@
          "rdfs:label" : "partOfTVSeries",
          "rdfs:subPropertyOf" : "schema:isPartOf",
          "schema:domainIncludes" : [
-            "schema:TVSeason",
             "schema:TVClip",
+            "schema:TVSeason",
             "schema:TVEpisode"
          ],
          "schema:rangeIncludes" : "schema:TVSeries",
@@ -41,8 +41,8 @@
             "schema:TVEpisode"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       }
    }

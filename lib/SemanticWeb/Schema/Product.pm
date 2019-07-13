@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -202,11 +202,11 @@ A category should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::PhysicalActivityCategory']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
 
@@ -254,9 +254,9 @@ A depth should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Distance']>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Distance']>
 
 =back
 
@@ -407,9 +407,9 @@ A height should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Distance']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -509,9 +509,9 @@ A is_similar_to should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 
@@ -611,9 +611,9 @@ A material should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 
@@ -640,9 +640,9 @@ A model should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ProductModel']>
+
+=item C<Str>
 
 =back
 
@@ -940,9 +940,9 @@ A width should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Distance']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 

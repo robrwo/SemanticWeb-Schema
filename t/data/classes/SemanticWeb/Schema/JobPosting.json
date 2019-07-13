@@ -11,13 +11,13 @@
          "rdfs:comment" : "The base salary of the job or of an employee in an EmployeeRole.",
          "rdfs:label" : "baseSalary",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:EmployeeRole"
+            "schema:EmployeeRole",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceSpecification",
             "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification"
          ]
       },
       "schema:benefits" : {
@@ -41,6 +41,18 @@
          "rdfs:label" : "employmentType",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:rangeIncludes" : "schema:Text"
+      },
+      "schema:estimatedSalary" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
+         "rdfs:label" : "estimatedSalary",
+         "schema:category" : "issue-1698",
+         "schema:domainIncludes" : [
+            "schema:Occupation",
+            "schema:JobPosting"
+         ],
+         "schema:rangeIncludes" : "schema:MonetaryAmountDistribution"
       },
       "schema:experienceRequirements" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
@@ -104,8 +116,8 @@
          "rdfs:label" : "occupationalCategory",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -135,8 +147,8 @@
          "rdfs:comment" : "The currency (coded using <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217</a> ) used for the main salary information in this job posting or for this employee.",
          "rdfs:label" : "salaryCurrency",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:EmployeeRole"
+            "schema:EmployeeRole",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -147,8 +159,8 @@
          "rdfs:label" : "skills",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -172,13 +184,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification",
             "schema:JobPosting",
-            "schema:PriceSpecification",
-            "schema:Demand",
+            "schema:Offer",
             "schema:MonetaryAmount",
-            "schema:LocationFeatureSpecification"
+            "schema:PriceSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },

@@ -26,8 +26,8 @@
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
             "schema:ContactPoint",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:dateRead" : {
@@ -64,21 +64,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:PayAction",
             "schema:AuthorizeAction",
             "schema:SendAction",
             "schema:CommunicateAction",
-            "schema:PayAction",
             "schema:TipAction",
-            "schema:DonateAction",
-            "schema:ReturnAction",
             "schema:Message",
+            "schema:ReturnAction",
+            "schema:DonateAction",
             "schema:GiveAction"
          ],
          "schema:rangeIncludes" : [
             "schema:ContactPoint",
+            "schema:Person",
             "schema:Audience",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ]
       },
       "schema:sender" : {
@@ -87,13 +87,13 @@
          "rdfs:label" : "sender",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:ReceiveAction",
-            "schema:Message"
+            "schema:Message",
+            "schema:ReceiveAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
+            "schema:Audience",
             "schema:Organization",
-            "schema:Audience"
+            "schema:Person"
          ]
       },
       "schema:toRecipient" : {
@@ -103,9 +103,9 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
-            "schema:ContactPoint",
             "schema:Audience",
             "schema:Person",
+            "schema:ContactPoint",
             "schema:Organization"
          ]
       }

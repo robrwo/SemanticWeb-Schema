@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -66,13 +66,13 @@ A area_served should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
 
@@ -226,11 +226,11 @@ A category should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::PhysicalActivityCategory']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
 
@@ -329,9 +329,9 @@ A is_similar_to should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 
@@ -433,9 +433,9 @@ A provider should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -507,11 +507,11 @@ A service_area should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
-=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
 

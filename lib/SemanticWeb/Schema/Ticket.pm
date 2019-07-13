@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -192,19 +192,27 @@ has ticketed_seat => (
 
 C<totalPrice>
 
+=begin html
+
 The total price for the reservation or ticket, including applicable taxes,
-shipping, etc.
+shipping, etc.<br/><br/> Usage guidelines:<br/><br/> <ul> <li>Use values
+from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
+rather than superficially similiar Unicode symbols.</li> <li>Use '.'
+(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
+Avoid using these symbols as a readability separator.</li> </ul> 
+
+=end html
 
 
 A total_price should be one of the following types:
 
 =over
 
+=item C<Str>
+
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =item C<Num>
-
-=item C<Str>
 
 =back
 

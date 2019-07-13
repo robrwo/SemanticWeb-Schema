@@ -46,8 +46,9 @@
             "schema:Order"
          ],
          "schema:rangeIncludes" : [
+            "schema:OrderItem",
             "schema:Product",
-            "schema:OrderItem"
+            "schema:Service"
          ]
       }
    }

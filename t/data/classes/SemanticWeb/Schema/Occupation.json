@@ -11,10 +11,13 @@
       "schema:estimatedSalary" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An estimated salary for a job posting based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
+         "rdfs:comment" : "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
          "rdfs:label" : "estimatedSalary",
          "schema:category" : "issue-1698",
-         "schema:domainIncludes" : "schema:Occupation",
+         "schema:domainIncludes" : [
+            "schema:Occupation",
+            "schema:JobPosting"
+         ],
          "schema:rangeIncludes" : "schema:MonetaryAmountDistribution"
       },
       "schema:experienceRequirements" : {
@@ -45,8 +48,8 @@
          "rdfs:label" : "occupationalCategory",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -69,8 +72,8 @@
          "rdfs:label" : "skills",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

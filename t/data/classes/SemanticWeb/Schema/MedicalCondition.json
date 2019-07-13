@@ -17,9 +17,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AnatomicalSystem",
+            "schema:AnatomicalStructure",
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalSystem"
          ]
       },
       "schema:cause" : {
@@ -27,8 +27,8 @@
          "rdfs:comment" : "Specifying a cause of something in general. e.g in medicine , one of the causative agent(s) that are most directly responsible for the pathophysiologic process that eventually results in the occurrence.",
          "rdfs:label" : "cause",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:MedicalSignOrSymptom"
+            "schema:MedicalSignOrSymptom",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCause"
@@ -47,9 +47,9 @@
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
             "schema:TherapeuticProcedure",
+            "schema:DrugClass",
             "schema:MedicalCondition",
-            "schema:Patient",
-            "schema:DrugClass"
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -59,8 +59,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -86,8 +86,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -156,15 +156,15 @@
          "rdfs:comment" : "The status of the study (enumerated).",
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:MedicalProcedure",
             "schema:MedicalCondition",
-            "schema:MedicalProcedure"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:EventStatusType",
+            "schema:MedicalStudyStatus",
             "schema:Text",
-            "schema:MedicalStudyStatus"
+            "schema:EventStatusType"
          ]
       },
       "schema:subtype" : {

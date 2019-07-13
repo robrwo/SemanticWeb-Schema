@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -70,9 +70,9 @@ A cc_recipient should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -196,11 +196,11 @@ A recipient should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -225,11 +225,11 @@ A sender should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
+=item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
-=item C<InstanceOf['SemanticWeb::Schema::Audience']>
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -254,11 +254,11 @@ A to_recipient should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 

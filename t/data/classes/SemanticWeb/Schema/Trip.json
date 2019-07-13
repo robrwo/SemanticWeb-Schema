@@ -26,13 +26,13 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:MenuItem",
-            "schema:Service",
-            "schema:AggregateOffer",
-            "schema:Product",
             "schema:Trip",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event",
+            "schema:Service",
+            "schema:MenuItem",
+            "schema:Product",
+            "schema:AggregateOffer"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       },
@@ -41,16 +41,16 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Trip",
-            "schema:Reservation",
             "schema:Service",
-            "schema:ParcelDelivery",
-            "schema:CreativeWork"
+            "schema:Invoice",
+            "schema:Reservation",
+            "schema:Trip",
+            "schema:CreativeWork",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

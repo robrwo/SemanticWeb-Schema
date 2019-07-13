@@ -16,15 +16,15 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:category" : [
-            "issue-1253",
-            "issue-1698"
+            "issue-1698",
+            "issue-1253"
          ],
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:MoneyTransfer",
-            "schema:LoanOrCredit",
             "schema:MonetaryGrant",
-            "schema:InvestmentOrDeposit"
+            "schema:LoanOrCredit",
+            "schema:InvestmentOrDeposit",
+            "schema:DatedMoneySpecification",
+            "schema:MoneyTransfer"
          ],
          "schema:rangeIncludes" : [
             "schema:MonetaryAmount",

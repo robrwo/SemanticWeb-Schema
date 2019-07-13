@@ -6,7 +6,7 @@ package SemanticWeb::Schema::CreditCard;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::PaymentCard SemanticWeb::Schema::LoanOrCredit /;
+extends qw/ SemanticWeb::Schema::LoanOrCredit SemanticWeb::Schema::PaymentCard /;
 
 
 use MooX::JSON_LD 'CreditCard';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -45,7 +45,7 @@ supplies the card account.<br/><br/> Commonly used values:<br/><br/> <ul>
 
 
 
-L<SemanticWeb::Schema::LoanOrCredit>
+L<SemanticWeb::Schema::PaymentCard>
 
 =cut
 

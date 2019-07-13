@@ -17,8 +17,8 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalDevicePurpose",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:MedicalDevicePurpose"
          ]
       }
    }

@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToSection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::ItemList SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToSection';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -42,11 +42,11 @@ A steps should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
 =item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
-
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -65,7 +65,7 @@ has steps => (
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::ListItem>
 
 =cut
 

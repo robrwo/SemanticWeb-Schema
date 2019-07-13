@@ -15,8 +15,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Demand",
-            "schema:IndividualProduct"
+            "schema:IndividualProduct",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

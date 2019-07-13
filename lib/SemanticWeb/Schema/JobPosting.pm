@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -40,11 +40,11 @@ A base_salary should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
-
 =item C<Num>
 
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
+=item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =back
 
@@ -127,6 +127,33 @@ has employment_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'employmentType',
+);
+
+
+=head2 C<estimated_salary>
+
+C<estimatedSalary>
+
+An estimated salary for a job posting or occupation, based on a variety of
+variables including, but not limited to industry, job title, and location.
+Estimated salaries are often computed by outside organizations rather than
+the hiring organization, who may not have committed to the estimated value.
+
+
+A estimated_salary should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmountDistribution']>
+
+=back
+
+=cut
+
+has estimated_salary => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'estimatedSalary',
 );
 
 

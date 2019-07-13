@@ -59,10 +59,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Blog",
-            "schema:WebSite",
+            "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:CreativeWorkSeries"
+            "schema:WebSite",
+            "schema:Blog"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

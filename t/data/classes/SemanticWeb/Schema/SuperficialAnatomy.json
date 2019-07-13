@@ -13,8 +13,8 @@
          "rdfs:label" : "associatedPathophysiology",
          "schema:domainIncludes" : [
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure",
-            "schema:AnatomicalSystem"
+            "schema:AnatomicalSystem",
+            "schema:AnatomicalStructure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -35,9 +35,9 @@
          "rdfs:comment" : "A medical condition associated with this anatomy.",
          "rdfs:label" : "relatedCondition",
          "schema:domainIncludes" : [
+            "schema:SuperficialAnatomy",
             "schema:AnatomicalSystem",
-            "schema:AnatomicalStructure",
-            "schema:SuperficialAnatomy"
+            "schema:AnatomicalStructure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -48,8 +48,8 @@
          "rdfs:label" : "relatedTherapy",
          "schema:domainIncludes" : [
             "schema:AnatomicalSystem",
-            "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalStructure",
+            "schema:SuperficialAnatomy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalTherapy"

@@ -6,7 +6,7 @@ package SemanticWeb::Schema::LocalBusiness;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Organization SemanticWeb::Schema::Place /;
+extends qw/ SemanticWeb::Schema::Place SemanticWeb::Schema::Organization /;
 
 
 use MooX::JSON_LD 'LocalBusiness';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -196,7 +196,7 @@ has price_range => (
 
 
 
-L<SemanticWeb::Schema::Place>
+L<SemanticWeb::Schema::Organization>
 
 =cut
 

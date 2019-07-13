@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A after_media should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
 =back
 
@@ -183,9 +183,9 @@ A supply should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
+
+=item C<Str>
 
 =back
 
@@ -210,9 +210,9 @@ A tool should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
+
+=item C<Str>
 
 =back
 

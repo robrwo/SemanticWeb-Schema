@@ -23,8 +23,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:QualitativeValue",
+            "schema:Text",
             "schema:URL"
          ]
       },
@@ -95,8 +95,8 @@
          "rdfs:comment" : "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.",
          "rdfs:label" : "fuelType",
          "schema:domainIncludes" : [
-            "schema:EngineSpecification",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -121,8 +121,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:URL"
          ]
       },
       "schema:mileageFromOdometer" : {
@@ -160,8 +160,8 @@
          "rdfs:label" : "numberOfAxles",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numberOfDoors" : {
@@ -236,8 +236,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:speed" : {
@@ -343,8 +343,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CarUsageType"
+            "schema:CarUsageType",
+            "schema:Text"
          ]
       },
       "schema:vehicleTransmission" : {
@@ -354,9 +354,9 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:Text",
             "schema:QualitativeValue",
-            "schema:Text"
+            "schema:URL"
          ]
       },
       "schema:weightTotal" : {

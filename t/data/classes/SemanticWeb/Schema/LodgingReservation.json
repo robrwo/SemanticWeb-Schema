@@ -11,8 +11,8 @@
          "rdfs:comment" : "The earliest someone may check into a lodging establishment.",
          "rdfs:label" : "checkinTime",
          "schema:domainIncludes" : [
-            "schema:LodgingReservation",
-            "schema:LodgingBusiness"
+            "schema:LodgingBusiness",
+            "schema:LodgingReservation"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -49,8 +49,8 @@
          "rdfs:label" : "numAdults",
          "schema:domainIncludes" : "schema:LodgingReservation",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numChildren" : {

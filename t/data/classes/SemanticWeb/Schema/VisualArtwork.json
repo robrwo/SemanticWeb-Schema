@@ -24,8 +24,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:artform" : {
@@ -44,9 +44,9 @@
          "rdfs:label" : "artist",
          "schema:category" : "Comics",
          "schema:domainIncludes" : [
+            "schema:ComicIssue",
             "schema:VisualArtwork",
-            "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -57,8 +57,8 @@
          "rdfs:label" : "artworkSurface",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:colorist" : {
@@ -67,9 +67,9 @@
          "rdfs:label" : "colorist",
          "schema:category" : "Comics",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:ComicIssue",
-            "schema:ComicStory",
-            "schema:VisualArtwork"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -84,8 +84,8 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       },
       "schema:height" : {
@@ -93,14 +93,14 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
+            "schema:MediaObject",
             "schema:VisualArtwork",
-            "schema:Person",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:inker" : {
@@ -109,8 +109,8 @@
          "rdfs:label" : "inker",
          "schema:category" : "Comics",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
             "schema:ComicIssue",
+            "schema:ComicStory",
             "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -122,8 +122,8 @@
          "rdfs:label" : "letterer",
          "schema:category" : "Comics",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
             "schema:VisualArtwork",
+            "schema:ComicStory",
             "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -135,9 +135,9 @@
          "rdfs:label" : "penciler",
          "schema:category" : "Comics",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicIssue",
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -149,8 +149,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -159,13 +159,13 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:MediaObject",
-            "schema:VisualArtwork",
-            "schema:Product"
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       }
    }

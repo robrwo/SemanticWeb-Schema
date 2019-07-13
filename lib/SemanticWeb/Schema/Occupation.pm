@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -33,10 +33,10 @@ A profession, may involve prolonged training and/or a formal qualification.
 
 C<estimatedSalary>
 
-An estimated salary for a job posting based on a variety of variables
-including, but not limited to industry, job title, and location. Estimated
-salaries are often computed by outside organizations rather than the hiring
-organization, who may not have committed to the estimated value.
+An estimated salary for a job posting or occupation, based on a variety of
+variables including, but not limited to industry, job title, and location.
+Estimated salaries are often computed by outside organizations rather than
+the hiring organization, who may not have committed to the estimated value.
 
 
 A estimated_salary should be one of the following types:

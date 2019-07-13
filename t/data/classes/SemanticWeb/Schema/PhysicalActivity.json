@@ -17,9 +17,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AnatomicalSystem",
+            "schema:AnatomicalStructure",
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalSystem"
          ]
       },
       "schema:category" : {
@@ -29,17 +29,17 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:Invoice",
             "schema:Service",
             "schema:PhysicalActivity",
             "schema:Product",
             "schema:ActionAccessSpecification",
-            "schema:Offer",
-            "schema:Invoice"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Thing",
             "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:Thing"
+            "schema:PhysicalActivityCategory"
          ]
       },
       "schema:epidemiology" : {
@@ -47,8 +47,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -58,8 +58,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

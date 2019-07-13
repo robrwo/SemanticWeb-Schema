@@ -12,10 +12,10 @@
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:LinkRole",
-            "schema:WriteAction",
             "schema:CommunicateAction",
-            "schema:Event"
+            "schema:Event",
+            "schema:WriteAction",
+            "schema:LinkRole"
          ],
          "schema:rangeIncludes" : [
             "schema:Language",
@@ -28,8 +28,8 @@
          "rdfs:label" : "language",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : "schema:Language",
          "schema:supersededBy" : "schema:inLanguage"

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A author should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -69,9 +69,9 @@ A best_rating should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<Str>
+
+=item C<Num>
 
 =back
 
@@ -88,7 +88,16 @@ has best_rating => (
 
 C<ratingValue>
 
-The rating for the content.
+=begin html
+
+The rating for the content.<br/><br/> Usage guidelines:<br/><br/> <ul>
+<li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT
+NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
+<li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
+decimal point. Avoid using these symbols as a readability separator.</li>
+</ul> 
+
+=end html
 
 
 A rating_value should be one of the following types:
@@ -147,9 +156,9 @@ A worst_rating should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<Str>
+
+=item C<Num>
 
 =back
 

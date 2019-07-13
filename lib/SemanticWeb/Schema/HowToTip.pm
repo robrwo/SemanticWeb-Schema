@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToTip;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
+extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::CreativeWork /;
 
 
 use MooX::JSON_LD 'HowToTip';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.5.2';
+our $VERSION = 'v3.6.0';
 
 =encoding utf8
 
@@ -36,7 +36,7 @@ doesn't specify what should be done (see HowToDirection).
 
 
 
-L<SemanticWeb::Schema::ListItem>
+L<SemanticWeb::Schema::CreativeWork>
 
 =cut
 
