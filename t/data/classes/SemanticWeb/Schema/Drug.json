@@ -13,10 +13,10 @@
          "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
          "rdfs:label" : "activeIngredient",
          "schema:domainIncludes" : [
+            "schema:Substance",
             "schema:DrugStrength",
-            "schema:Drug",
             "schema:DietarySupplement",
-            "schema:Substance"
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -170,9 +170,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:DrugLegalStatus",
             "schema:MedicalEnumeration",
-            "schema:Text",
-            "schema:DrugLegalStatus"
+            "schema:Text"
          ]
       },
       "schema:manufacturer" : {
@@ -180,9 +180,9 @@
          "rdfs:comment" : "The manufacturer of the product.",
          "rdfs:label" : "manufacturer",
          "schema:domainIncludes" : [
+            "schema:DietarySupplement",
             "schema:Product",
-            "schema:Drug",
-            "schema:DietarySupplement"
+            "schema:Drug"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -191,10 +191,10 @@
          "rdfs:comment" : "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
          "rdfs:label" : "maximumIntake",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
             "schema:Drug",
             "schema:Substance",
-            "schema:DrugStrength"
+            "schema:DrugStrength",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MaximumDoseSchedule"
@@ -204,8 +204,8 @@
          "rdfs:comment" : "The specific biochemical interaction through which this drug or supplement produces its pharmacological effect.",
          "rdfs:label" : "mechanismOfAction",
          "schema:domainIncludes" : [
-            "schema:Drug",
-            "schema:DietarySupplement"
+            "schema:DietarySupplement",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -215,8 +215,8 @@
          "rdfs:comment" : "The generic name of this drug or supplement.",
          "rdfs:label" : "nonProprietaryName",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -260,8 +260,8 @@
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DrugPrescriptionStatus"
+            "schema:DrugPrescriptionStatus",
+            "schema:Text"
          ]
       },
       "schema:proprietaryName" : {
@@ -269,8 +269,8 @@
          "rdfs:comment" : "Proprietary name given to the diet plan, typically by its originator or creator.",
          "rdfs:label" : "proprietaryName",
          "schema:domainIncludes" : [
-            "schema:Drug",
-            "schema:DietarySupplement"
+            "schema:DietarySupplement",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -290,8 +290,8 @@
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       }
    }

@@ -12,8 +12,8 @@
          "rdfs:comment" : "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.<br/><br/>\n\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Place",
+            "schema:Product",
             "schema:QualitativeValue",
             "schema:QuantitativeValue"
          ],
@@ -26,9 +26,9 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
+            "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValueSpecification",
-            "schema:PropertyValue"
+            "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },
@@ -52,9 +52,9 @@
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -66,10 +66,10 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -84,10 +84,10 @@
             "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:Number",
             "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Number"
+            "schema:Text"
          ]
       },
       "schema:valueReference" : {
@@ -96,16 +96,16 @@
          "rdfs:comment" : "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
+            "schema:QuantitativeValue",
             "schema:QualitativeValue",
-            "schema:QuantitativeValue"
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
+            "schema:StructuredValue",
+            "schema:QuantitativeValue",
             "schema:Enumeration",
             "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:StructuredValue",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ]
       }
    }

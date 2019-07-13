@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToSection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList SemanticWeb::Schema::ListItem /;
+extends qw/ SemanticWeb::Schema::ItemList SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToSection';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -44,9 +44,9 @@ A steps should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
 
 =back
 

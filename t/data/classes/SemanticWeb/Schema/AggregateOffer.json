@@ -12,8 +12,8 @@
          "rdfs:label" : "highPrice",
          "schema:domainIncludes" : "schema:AggregateOffer",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:lowPrice" : {
@@ -22,8 +22,8 @@
          "rdfs:label" : "lowPrice",
          "schema:domainIncludes" : "schema:AggregateOffer",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:offerCount" : {
@@ -39,12 +39,12 @@
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
             "schema:Event",
+            "schema:Trip",
+            "schema:MenuItem",
             "schema:AggregateOffer",
             "schema:Product",
             "schema:CreativeWork",
-            "schema:Service",
-            "schema:Trip",
-            "schema:MenuItem"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       }

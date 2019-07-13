@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -464,11 +464,11 @@ A legal_status should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DrugLegalStatus']>
+
 =item C<InstanceOf['SemanticWeb::Schema::MedicalEnumeration']>
 
 =item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::DrugLegalStatus']>
 
 =back
 
@@ -690,9 +690,9 @@ A prescription_status should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::DrugPrescriptionStatus']>
+
+=item C<Str>
 
 =back
 

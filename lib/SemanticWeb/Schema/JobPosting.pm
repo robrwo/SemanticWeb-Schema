@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -40,11 +40,11 @@ A base_salary should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =item C<Num>
-
-=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
 =back
 
@@ -146,9 +146,9 @@ A estimated_salary should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmountDistribution']>
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
+=item C<Num>
 
 =back
 
@@ -351,9 +351,9 @@ A occupational_category should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::CategoryCode']>
+
+=item C<Str>
 
 =back
 

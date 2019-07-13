@@ -10,24 +10,28 @@
    "properties" : {
       "schema:availabilityEnds" : {
          "dc:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityEnds",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
+            "schema:Demand",
             "schema:ActionAccessSpecification"
          ],
-         "schema:rangeIncludes" : "schema:DateTime"
+         "schema:rangeIncludes" : [
+            "schema:Time",
+            "schema:Date",
+            "schema:DateTime"
+         ]
       },
       "schema:availabilityStarts" : {
          "dc:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "schemadotorgsources:source_GoodRelationsTerms"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The beginning of the availability of the product or service included in the offer.",
@@ -35,10 +39,14 @@
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:Demand",
-            "schema:ActionAccessSpecification",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:ActionAccessSpecification"
          ],
-         "schema:rangeIncludes" : "schema:DateTime"
+         "schema:rangeIncludes" : [
+            "schema:Date",
+            "schema:DateTime",
+            "schema:Time"
+         ]
       },
       "schema:category" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -47,12 +55,12 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
             "schema:Product",
+            "schema:PhysicalActivity",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
             "schema:Invoice",
-            "schema:Service",
-            "schema:Offer"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:Thing",
@@ -62,8 +70,8 @@
       },
       "schema:eligibleRegion" : {
          "dc:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "schemadotorgsources:source_GoodRelationsTerms"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>\n\nSee also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>.",
@@ -71,15 +79,15 @@
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Offer",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:GeoShape",
-            "schema:Place"
+            "schema:Place",
+            "schema:Text"
          ]
       },
       "schema:expectsAcceptanceOf" : {
@@ -89,9 +97,9 @@
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:MediaSubscription",
+            "schema:ActionAccessSpecification",
             "schema:ConsumeAction",
-            "schema:ActionAccessSpecification"
+            "schema:MediaSubscription"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       },
@@ -102,12 +110,12 @@
          "rdfs:label" : "requiresSubscription",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:ActionAccessSpecification"
+            "schema:ActionAccessSpecification",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaSubscription",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:MediaSubscription"
          ]
       }
    }

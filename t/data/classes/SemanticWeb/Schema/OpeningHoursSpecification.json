@@ -37,15 +37,18 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
+            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
             "schema:Demand",
             "schema:MonetaryAmount",
-            "schema:LocationFeatureSpecification",
-            "schema:Offer",
+            "schema:PriceSpecification",
             "schema:Permit",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification"
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:DateTime"
+         "schema:rangeIncludes" : [
+            "schema:DateTime",
+            "schema:Date"
+         ]
       },
       "schema:validThrough" : {
          "dc:source" : "schemadotorgsources:source_GoodRelationsTerms",
@@ -53,15 +56,18 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:JobPosting",
-            "schema:Demand",
-            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
             "schema:Offer",
             "schema:OpeningHoursSpecification",
-            "schema:LocationFeatureSpecification"
+            "schema:JobPosting",
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount",
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:DateTime"
+         "schema:rangeIncludes" : [
+            "schema:DateTime",
+            "schema:Date"
+         ]
       }
    }
 }

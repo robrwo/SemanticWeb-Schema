@@ -34,12 +34,12 @@
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
             "schema:Event",
+            "schema:Trip",
+            "schema:MenuItem",
             "schema:AggregateOffer",
             "schema:Product",
             "schema:CreativeWork",
-            "schema:Service",
-            "schema:Trip",
-            "schema:MenuItem"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       },

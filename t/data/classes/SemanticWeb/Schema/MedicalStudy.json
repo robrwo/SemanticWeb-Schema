@@ -12,9 +12,9 @@
          "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:PeopleAudience",
             "schema:Patient",
-            "schema:PeopleAudience"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -24,8 +24,8 @@
          "rdfs:comment" : "Expected or actual outcomes of the study.",
          "rdfs:label" : "outcome",
          "schema:domainIncludes" : [
-            "schema:MedicalProcedure",
-            "schema:MedicalStudy"
+            "schema:MedicalStudy",
+            "schema:MedicalProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
@@ -46,16 +46,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
+            "schema:Event",
             "schema:CreativeWork",
-            "schema:Organization",
-            "schema:Grant",
             "schema:Person",
             "schema:MedicalStudy",
-            "schema:Event"
+            "schema:Grant",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:status" : {
@@ -63,15 +63,15 @@
          "rdfs:comment" : "The status of the study (enumerated).",
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
+            "schema:MedicalCondition",
             "schema:MedicalProcedure",
-            "schema:MedicalStudy",
-            "schema:MedicalCondition"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalStudyStatus",
+            "schema:EventStatusType",
             "schema:Text",
-            "schema:EventStatusType"
+            "schema:MedicalStudyStatus"
          ]
       },
       "schema:studyLocation" : {

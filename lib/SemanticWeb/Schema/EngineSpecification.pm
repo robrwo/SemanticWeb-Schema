@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -117,9 +117,9 @@ A engine_type should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -145,9 +145,9 @@ A fuel_type should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 

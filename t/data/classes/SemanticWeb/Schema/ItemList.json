@@ -13,8 +13,8 @@
          "schema:domainIncludes" : "schema:ItemList",
          "schema:rangeIncludes" : [
             "schema:Thing",
-            "schema:Text",
-            "schema:ListItem"
+            "schema:ListItem",
+            "schema:Text"
          ]
       },
       "schema:itemListOrder" : {

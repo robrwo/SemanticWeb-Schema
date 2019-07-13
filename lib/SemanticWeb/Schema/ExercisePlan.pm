@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A activity_duration should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Duration']>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
 
@@ -68,9 +68,9 @@ A activity_frequency should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -148,9 +148,9 @@ A intensity should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -174,9 +174,9 @@ A repetitions should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -200,9 +200,9 @@ A rest_periods should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -227,9 +227,9 @@ A workload should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Energy']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 

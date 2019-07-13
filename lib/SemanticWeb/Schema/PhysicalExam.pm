@@ -6,7 +6,7 @@ package SemanticWeb::Schema::PhysicalExam;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalProcedure SemanticWeb::Schema::MedicalEnumeration /;
+extends qw/ SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::MedicalProcedure /;
 
 
 use MooX::JSON_LD 'PhysicalExam';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A type of physical examination of a patient performed by a physician.
 
 
 
-L<SemanticWeb::Schema::MedicalEnumeration>
+L<SemanticWeb::Schema::MedicalProcedure>
 
 =cut
 

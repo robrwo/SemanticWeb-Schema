@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToDirection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
 
 
 use MooX::JSON_LD 'HowToDirection';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A after_media should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
+
+=item C<Str>
 
 =back
 
@@ -96,9 +96,9 @@ A during_media should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
 =back
 
@@ -183,9 +183,9 @@ A supply should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
+
+=item C<Str>
 
 =back
 
@@ -210,9 +210,9 @@ A tool should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
 
 =back
 
@@ -261,7 +261,7 @@ has total_time => (
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::ListItem>
 
 =cut
 

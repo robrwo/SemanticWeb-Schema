@@ -52,8 +52,8 @@
          "rdfs:comment" : "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
          "rdfs:label" : "carrier",
          "schema:domainIncludes" : [
-            "schema:Flight",
-            "schema:ParcelDelivery"
+            "schema:ParcelDelivery",
+            "schema:Flight"
          ],
          "schema:rangeIncludes" : "schema:Organization",
          "schema:supersededBy" : "schema:provider"
@@ -95,8 +95,8 @@
          "rdfs:label" : "flightDistance",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:Text"
          ]
       },
       "schema:flightNumber" : {
@@ -120,15 +120,15 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Order",
+            "schema:Demand",
             "schema:Offer",
-            "schema:BuyAction",
-            "schema:Flight"
+            "schema:Flight",
+            "schema:BuyAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:webCheckinTime" : {

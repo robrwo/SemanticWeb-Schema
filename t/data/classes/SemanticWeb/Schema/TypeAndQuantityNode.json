@@ -21,8 +21,8 @@
          "rdfs:comment" : "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
          "rdfs:label" : "businessFunction",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:TypeAndQuantityNode",
+            "schema:Demand",
             "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:BusinessFunction"
@@ -37,8 +37,8 @@
             "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:Service",
-            "schema:Product"
+            "schema:Product",
+            "schema:Service"
          ]
       },
       "schema:unitCode" : {
@@ -48,9 +48,9 @@
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -62,10 +62,10 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

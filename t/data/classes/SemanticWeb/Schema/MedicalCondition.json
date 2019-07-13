@@ -27,8 +27,8 @@
          "rdfs:comment" : "Specifying a cause of something in general. e.g in medicine , one of the causative agent(s) that are most directly responsible for the pathophysiologic process that eventually results in the occurrence.",
          "rdfs:label" : "cause",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:MedicalSignOrSymptom"
+            "schema:MedicalSignOrSymptom",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCause"
@@ -46,9 +46,9 @@
          "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:Patient",
             "schema:DrugClass",
             "schema:TherapeuticProcedure",
+            "schema:Patient",
             "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
@@ -59,8 +59,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -105,8 +105,8 @@
          "rdfs:comment" : "A possible treatment to address this condition, sign or symptom.",
          "rdfs:label" : "possibleTreatment",
          "schema:domainIncludes" : [
-            "schema:MedicalSignOrSymptom",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:MedicalSignOrSymptom"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalTherapy"
@@ -156,15 +156,15 @@
          "rdfs:comment" : "The status of the study (enumerated).",
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
+            "schema:MedicalCondition",
             "schema:MedicalProcedure",
-            "schema:MedicalStudy",
-            "schema:MedicalCondition"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalStudyStatus",
+            "schema:EventStatusType",
             "schema:Text",
-            "schema:EventStatusType"
+            "schema:MedicalStudyStatus"
          ]
       },
       "schema:subtype" : {

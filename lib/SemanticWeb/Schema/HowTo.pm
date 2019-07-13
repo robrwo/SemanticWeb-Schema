@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -131,11 +131,11 @@ A step should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::HowToStep']>
 
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
-
 =item C<InstanceOf['SemanticWeb::Schema::HowToSection']>
 
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -162,9 +162,9 @@ A steps should be one of the following types:
 
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
 
 =back
 
@@ -189,9 +189,9 @@ A supply should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
+
+=item C<Str>
 
 =back
 
@@ -216,9 +216,9 @@ A tool should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToTool']>
 
 =back
 

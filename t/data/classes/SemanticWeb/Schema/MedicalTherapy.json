@@ -17,8 +17,8 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:MedicalContraindication"
+            "schema:MedicalContraindication",
+            "schema:Text"
          ]
       },
       "schema:duplicateTherapy" : {

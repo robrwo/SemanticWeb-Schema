@@ -34,9 +34,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:DrugLegalStatus",
             "schema:MedicalEnumeration",
-            "schema:Text",
-            "schema:DrugLegalStatus"
+            "schema:Text"
          ]
       },
       "schema:medicineSystem" : {

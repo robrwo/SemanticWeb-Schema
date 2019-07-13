@@ -13,9 +13,9 @@
          "rdfs:comment" : "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:LodgingBusiness",
-            "schema:Accommodation",
-            "schema:Place"
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
@@ -33,16 +33,16 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:House",
-            "schema:LodgingBusiness",
+            "schema:Apartment",
             "schema:Accommodation",
             "schema:Suite",
+            "schema:House",
             "schema:SingleFamilyResidence",
-            "schema:Apartment"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:permittedUsage" : {
@@ -63,8 +63,8 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:Text"
          ]
       }
    }

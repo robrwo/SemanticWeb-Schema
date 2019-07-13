@@ -6,7 +6,7 @@ package SemanticWeb::Schema::ComicCoverArt;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::ComicStory SemanticWeb::Schema::CoverArt /;
+extends qw/ SemanticWeb::Schema::CoverArt SemanticWeb::Schema::ComicStory /;
 
 
 use MooX::JSON_LD 'ComicCoverArt';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ The artwork on the cover of a comic.
 
 
 
-L<SemanticWeb::Schema::CoverArt>
+L<SemanticWeb::Schema::ComicStory>
 
 =cut
 

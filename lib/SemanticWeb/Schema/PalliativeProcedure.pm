@@ -6,7 +6,7 @@ package SemanticWeb::Schema::PalliativeProcedure;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalTherapy SemanticWeb::Schema::MedicalProcedure /;
+extends qw/ SemanticWeb::Schema::MedicalProcedure SemanticWeb::Schema::MedicalTherapy /;
 
 
 use MooX::JSON_LD 'PalliativeProcedure';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ relieving the symptoms of an underlying health condition.
 
 
 
-L<SemanticWeb::Schema::MedicalProcedure>
+L<SemanticWeb::Schema::MedicalTherapy>
 
 =cut
 

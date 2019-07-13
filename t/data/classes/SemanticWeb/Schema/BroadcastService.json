@@ -35,12 +35,12 @@
          "rdfs:label" : "broadcastFrequency",
          "schema:category" : "issue-1004",
          "schema:domainIncludes" : [
-            "schema:BroadcastChannel",
-            "schema:BroadcastService"
+            "schema:BroadcastService",
+            "schema:BroadcastChannel"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:BroadcastFrequencySpecification"
+            "schema:BroadcastFrequencySpecification",
+            "schema:Text"
          ]
       },
       "schema:broadcastTimezone" : {

@@ -12,8 +12,8 @@
          "rdfs:label" : "bookingAgent",
          "schema:domainIncludes" : "schema:Reservation",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:broker"
       },
@@ -29,10 +29,10 @@
          "rdfs:comment" : "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
-            "schema:Invoice",
             "schema:Order",
-            "schema:Reservation",
-            "schema:Service"
+            "schema:Invoice",
+            "schema:Service",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -52,10 +52,10 @@
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
             "schema:Reservation",
-            "schema:PriceSpecification",
-            "schema:TradeAction",
             "schema:Ticket",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:TradeAction",
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -71,16 +71,16 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:CreativeWork",
+            "schema:Service",
             "schema:Reservation",
             "schema:ParcelDelivery",
-            "schema:Service",
+            "schema:CreativeWork",
+            "schema:Trip",
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:reservationFor" : {
@@ -120,9 +120,9 @@
             "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceSpecification",
             "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:PriceSpecification"
          ]
       },
       "schema:underName" : {
@@ -134,8 +134,8 @@
             "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

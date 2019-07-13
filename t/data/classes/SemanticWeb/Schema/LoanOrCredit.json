@@ -16,15 +16,15 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:category" : [
-            "issue-1698",
-            "issue-1253"
+            "issue-1253",
+            "issue-1698"
          ],
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
+            "schema:LoanOrCredit",
             "schema:MoneyTransfer",
-            "schema:LoanOrCredit"
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -38,11 +38,11 @@
          "rdfs:label" : "currency",
          "schema:category" : "issue-1253",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution",
-            "schema:MonetaryAmount"
+            "schema:DatedMoneySpecification",
+            "schema:LoanOrCredit",
+            "schema:MonetaryAmount",
+            "schema:MonetaryAmountDistribution"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -62,8 +62,8 @@
          "rdfs:label" : "requiredCollateral",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:rangeIncludes" : [
-            "schema:Thing",
-            "schema:Text"
+            "schema:Text",
+            "schema:Thing"
          ]
       }
    }

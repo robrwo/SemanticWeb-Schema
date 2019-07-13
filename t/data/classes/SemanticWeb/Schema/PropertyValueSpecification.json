@@ -24,9 +24,9 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
+            "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValueSpecification",
-            "schema:PropertyValue"
+            "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },

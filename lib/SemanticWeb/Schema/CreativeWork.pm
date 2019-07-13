@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -94,7 +94,7 @@ A access_mode_sufficient should be one of the following types:
 
 =over
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
 
@@ -391,9 +391,9 @@ A audio should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Clip']>
-
 =item C<InstanceOf['SemanticWeb::Schema::AudioObject']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Clip']>
 
 =back
 
@@ -619,9 +619,9 @@ A content_rating should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Rating']>
+
+=item C<Str>
 
 =back
 
@@ -645,9 +645,9 @@ A contributor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -671,9 +671,9 @@ A copyright_holder should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -723,9 +723,9 @@ A creator should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1316,11 +1316,11 @@ A is_based_on should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
+=item C<Str>
 
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
-=item C<Str>
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 
@@ -1346,11 +1346,11 @@ A is_based_on_url should be one of the following types:
 
 =over
 
+=item C<Str>
+
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
-
-=item C<Str>
 
 =back
 
@@ -1474,9 +1474,9 @@ A license should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
 
 =back
 
@@ -1653,9 +1653,9 @@ A producer should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 
@@ -1681,9 +1681,9 @@ A provider should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -2040,9 +2040,9 @@ A sponsor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -2244,9 +2244,9 @@ A translator should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -2294,9 +2294,9 @@ A version should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<Num>
+
+=item C<Str>
 
 =back
 
@@ -2320,9 +2320,9 @@ A video should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Clip']>
-
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Clip']>
 
 =back
 

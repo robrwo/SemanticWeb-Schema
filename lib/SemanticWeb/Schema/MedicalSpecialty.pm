@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalSpecialty;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Specialty SemanticWeb::Schema::MedicalEnumeration /;
+extends qw/ SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::Specialty /;
 
 
 use MooX::JSON_LD 'MedicalSpecialty';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.7.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -36,7 +36,7 @@ Enumerated type.
 
 
 
-L<SemanticWeb::Schema::MedicalEnumeration>
+L<SemanticWeb::Schema::Specialty>
 
 =cut
 
