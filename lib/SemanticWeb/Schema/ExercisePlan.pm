@@ -6,7 +6,7 @@ package SemanticWeb::Schema::ExercisePlan;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::PhysicalActivity SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::PhysicalActivity /;
 
 
 use MooX::JSON_LD 'ExercisePlan';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A activity_duration should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
 
@@ -68,9 +68,9 @@ A activity_frequency should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -174,9 +174,9 @@ A repetitions should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -200,9 +200,9 @@ A rest_periods should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -248,7 +248,7 @@ has workload => (
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::PhysicalActivity>
 
 =cut
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -153,9 +153,9 @@ A identifier should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
+
+=item C<Str>
 
 =back
 
@@ -185,9 +185,9 @@ A image should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
 
 =back
 
@@ -218,9 +218,9 @@ A main_entity_of_page should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
 
 =back
 
@@ -319,9 +319,9 @@ A subject_of should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Event']>
-
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
 

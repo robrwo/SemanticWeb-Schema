@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A menu_add_on should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::MenuSection']>
-
 =item C<InstanceOf['SemanticWeb::Schema::MenuItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MenuSection']>
 
 =back
 

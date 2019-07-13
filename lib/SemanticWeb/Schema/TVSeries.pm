@@ -6,7 +6,7 @@ package SemanticWeb::Schema::TVSeries;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWorkSeries SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::CreativeWorkSeries /;
 
 
 use MooX::JSON_LD 'TVSeries';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -406,7 +406,7 @@ has trailer => (
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::CreativeWorkSeries>
 
 =cut
 

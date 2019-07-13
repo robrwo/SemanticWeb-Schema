@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Dentist;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization SemanticWeb::Schema::LocalBusiness /;
+extends qw/ SemanticWeb::Schema::LocalBusiness SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
 
 
 use MooX::JSON_LD 'Dentist';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A dentist.
 
 
 
-L<SemanticWeb::Schema::LocalBusiness>
+L<SemanticWeb::Schema::MedicalOrganization>
 
 =cut
 

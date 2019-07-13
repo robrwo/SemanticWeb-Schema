@@ -6,7 +6,7 @@ package SemanticWeb::Schema::DepositAccount;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::InvestmentOrDeposit SemanticWeb::Schema::BankAccount /;
+extends qw/ SemanticWeb::Schema::BankAccount SemanticWeb::Schema::InvestmentOrDeposit /;
 
 
 use MooX::JSON_LD 'DepositAccount';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ interest or other benefits.
 
 
 
-L<SemanticWeb::Schema::BankAccount>
+L<SemanticWeb::Schema::InvestmentOrDeposit>
 
 =cut
 

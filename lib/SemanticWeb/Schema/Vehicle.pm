@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -165,9 +165,9 @@ A drive_wheel_configuration should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::DriveWheelConfigurationValue']>
+
+=item C<Str>
 
 =back
 
@@ -385,9 +385,9 @@ A meets_emission_standard should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 
@@ -466,9 +466,9 @@ A number_of_airbags should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<Num>
+
+=item C<Str>
 
 =back
 
@@ -588,9 +588,9 @@ A number_of_previous_owners should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -712,9 +712,9 @@ A seating_capacity should be one of the following types:
 
 =over
 
-=item C<Num>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
 
 =back
 
@@ -1094,9 +1094,9 @@ A vehicle_transmission should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
 
 =back
 

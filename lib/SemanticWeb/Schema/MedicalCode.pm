@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalCode;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalIntangible SemanticWeb::Schema::CategoryCode /;
+extends qw/ SemanticWeb::Schema::CategoryCode SemanticWeb::Schema::MedicalIntangible /;
 
 
 use MooX::JSON_LD 'MedicalCode';
@@ -59,7 +59,7 @@ has coding_system => (
 
 
 
-L<SemanticWeb::Schema::CategoryCode>
+L<SemanticWeb::Schema::MedicalIntangible>
 
 =cut
 

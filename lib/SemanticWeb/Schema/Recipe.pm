@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -222,11 +222,11 @@ A recipe_instructions should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =item C<Str>
-
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -251,9 +251,9 @@ A recipe_yield should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Str>
 
 =back
 

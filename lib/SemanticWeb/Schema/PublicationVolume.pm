@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -48,9 +48,9 @@ A page_end should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<Str>
 
 =back
 
@@ -74,9 +74,9 @@ A page_start should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<Str>
 
 =back
 
@@ -126,9 +126,9 @@ A volume_number should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<Str>
 
 =back
 

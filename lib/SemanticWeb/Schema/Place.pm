@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -531,9 +531,9 @@ A geo_equals should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
-
 =item C<InstanceOf['SemanticWeb::Schema::GeospatialGeometry']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 
@@ -662,9 +662,9 @@ A geo_within should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Place']>
-
 =item C<InstanceOf['SemanticWeb::Schema::GeospatialGeometry']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
 
@@ -719,9 +719,9 @@ A has_map should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Map']>
+
+=item C<Str>
 
 =back
 
@@ -795,9 +795,9 @@ A logo should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
 
 =back
 

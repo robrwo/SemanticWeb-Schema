@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MovieTheater;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::EntertainmentBusiness SemanticWeb::Schema::CivicStructure /;
+extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::EntertainmentBusiness /;
 
 
 use MooX::JSON_LD 'MovieTheater';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -59,7 +59,7 @@ has screen_count => (
 
 
 
-L<SemanticWeb::Schema::CivicStructure>
+L<SemanticWeb::Schema::EntertainmentBusiness>
 
 =cut
 

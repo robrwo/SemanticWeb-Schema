@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.8.1';
+our $VERSION = 'v3.8.0';
 
 =encoding utf8
 
@@ -175,9 +175,9 @@ A brand should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Brand']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -202,9 +202,9 @@ A category should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
-
 =item C<InstanceOf['SemanticWeb::Schema::PhysicalActivityCategory']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =item C<Str>
 
@@ -254,9 +254,9 @@ A depth should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Distance']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -483,9 +483,9 @@ A is_related_to should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Service']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
 
@@ -561,9 +561,9 @@ A logo should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
 
 =back
 
@@ -611,9 +611,9 @@ A material should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<Str>
 
 =back
 
@@ -640,9 +640,9 @@ A model should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::ProductModel']>
+
+=item C<Str>
 
 =back
 
