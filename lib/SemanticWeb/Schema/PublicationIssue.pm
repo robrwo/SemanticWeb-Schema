@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -25,7 +25,7 @@ our $VERSION = 'v3.6.1';
 
 A part of a successively published publication such as a periodical or
 publication volume, often numbered, usually containing a grouping of works
-such as articles.<br/><br/> <a
+such as articles.<br/><br/> See also <a
 href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
 html">blog post</a>.
 
@@ -74,9 +74,9 @@ A page_end should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<Str>
 
 =back
 

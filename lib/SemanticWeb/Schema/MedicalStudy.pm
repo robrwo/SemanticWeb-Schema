@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -126,9 +126,9 @@ A sponsor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 

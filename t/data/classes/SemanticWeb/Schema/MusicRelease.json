@@ -22,8 +22,8 @@
          "rdfs:label" : "creditedTo",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:duration" : {
@@ -33,12 +33,12 @@
          "rdfs:label" : "duration",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:Audiobook",
             "schema:QuantitativeValueDistribution",
             "schema:Movie",
-            "schema:MediaObject",
-            "schema:MusicRecording",
             "schema:MusicRelease",
+            "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:Audiobook",
             "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Duration"

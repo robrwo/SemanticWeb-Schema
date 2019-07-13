@@ -13,8 +13,8 @@
          "rdfs:label" : "hoursAvailable",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:ContactPoint",
-            "schema:LocationFeatureSpecification"
+            "schema:LocationFeatureSpecification",
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
       },
@@ -24,13 +24,13 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:Permit",
-            "schema:PriceSpecification",
             "schema:Demand",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:LocationFeatureSpecification",
+            "schema:Offer",
+            "schema:Permit",
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -40,13 +40,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
-            "schema:Offer",
             "schema:MonetaryAmount",
+            "schema:JobPosting",
+            "schema:Demand",
             "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:Offer",
+            "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       }

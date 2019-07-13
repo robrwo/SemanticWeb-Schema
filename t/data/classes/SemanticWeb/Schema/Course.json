@@ -19,9 +19,9 @@
          "rdfs:label" : "coursePrerequisites",
          "schema:domainIncludes" : "schema:Course",
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:AlignmentObject",
             "schema:Course",
-            "schema:AlignmentObject"
+            "schema:Text"
          ]
       },
       "schema:educationalCredentialAwarded" : {

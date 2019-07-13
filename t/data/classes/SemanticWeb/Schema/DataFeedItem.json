@@ -11,12 +11,12 @@
          "rdfs:comment" : "The date on which the CreativeWork was created or the item was added to a DataFeed.",
          "rdfs:label" : "dateCreated",
          "schema:domainIncludes" : [
-            "schema:DataFeedItem",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:DataFeedItem"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:dateDeleted" : {
@@ -31,8 +31,8 @@
          "rdfs:comment" : "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.",
          "rdfs:label" : "dateModified",
          "schema:domainIncludes" : [
-            "schema:DataFeedItem",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:DataFeedItem"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

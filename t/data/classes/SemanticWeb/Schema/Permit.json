@@ -11,8 +11,8 @@
          "rdfs:comment" : "The organization issuing the ticket or permit.",
          "rdfs:label" : "issuedBy",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:Ticket"
+            "schema:Ticket",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -37,8 +37,8 @@
          "rdfs:label" : "validFor",
          "schema:category" : "issue-1779",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       },
@@ -48,13 +48,13 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:Permit",
-            "schema:PriceSpecification",
             "schema:Demand",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:LocationFeatureSpecification",
+            "schema:Offer",
+            "schema:Permit",
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },
@@ -65,8 +65,8 @@
          "rdfs:label" : "validIn",
          "schema:category" : "issue-1779",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:AdministrativeArea"
       },

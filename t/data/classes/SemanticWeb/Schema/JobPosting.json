@@ -11,13 +11,13 @@
          "rdfs:comment" : "The base salary of the job or of an employee in an EmployeeRole.",
          "rdfs:label" : "baseSalary",
          "schema:domainIncludes" : [
-            "schema:EmployeeRole",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:EmployeeRole"
          ],
          "schema:rangeIncludes" : [
+            "schema:PriceSpecification",
             "schema:Number",
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:MonetaryAmount"
          ]
       },
       "schema:benefits" : {
@@ -52,7 +52,11 @@
             "schema:Occupation",
             "schema:JobPosting"
          ],
-         "schema:rangeIncludes" : "schema:MonetaryAmountDistribution"
+         "schema:rangeIncludes" : [
+            "schema:MonetaryAmountDistribution",
+            "schema:Number",
+            "schema:MonetaryAmount"
+         ]
       },
       "schema:experienceRequirements" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
@@ -61,8 +65,8 @@
          "rdfs:label" : "experienceRequirements",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -110,16 +114,25 @@
          "schema:rangeIncludes" : "schema:Place"
       },
       "schema:occupationalCategory" : {
-         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
+         "dc:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2192"
+         ],
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Category or categories describing the job. Use BLS O*NET-SOC taxonomy: http://www.onetcenter.org/taxonomy.html. Ideally includes textual label and formal code, with the property repeated for each applicable value.",
+         "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as <a href=\"http://www.onetcenter.org/taxonomy.html\">BLS O*NET-SOC</a>, <a href=\"https://www.ilo.org/public/english/bureau/stat/isco/isco08/\">ISCO-08</a> or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.<br/><br/>\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
-         "schema:category" : "issue-1698",
+         "schema:category" : [
+            "issue-2192",
+            "issue-1698"
+         ],
          "schema:domainIncludes" : [
             "schema:Occupation",
             "schema:JobPosting"
          ],
-         "schema:rangeIncludes" : "schema:Text"
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:CategoryCode"
+         ]
       },
       "schema:relevantOccupation" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
@@ -137,8 +150,8 @@
          "rdfs:label" : "responsibilities",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -159,8 +172,8 @@
          "rdfs:label" : "skills",
          "schema:category" : "issue-1698",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -184,13 +197,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
-            "schema:Offer",
             "schema:MonetaryAmount",
+            "schema:JobPosting",
+            "schema:Demand",
             "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:Offer",
+            "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       },

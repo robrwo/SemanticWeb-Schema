@@ -41,8 +41,8 @@
          "rdfs:label" : "indication",
          "schema:domainIncludes" : [
             "schema:MedicalProcedure",
-            "schema:TherapeuticProcedure",
-            "schema:MedicalDevice"
+            "schema:MedicalDevice",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalIndication"
@@ -52,8 +52,8 @@
          "rdfs:comment" : "Expected or actual outcomes of the study.",
          "rdfs:label" : "outcome",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
-            "schema:MedicalProcedure"
+            "schema:MedicalProcedure",
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
@@ -86,8 +86,8 @@
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
             "schema:MedicalProcedure",
-            "schema:MedicalCondition",
-            "schema:MedicalStudy"
+            "schema:MedicalStudy",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [

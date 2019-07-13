@@ -14,8 +14,8 @@
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
             "schema:ContactPoint",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:ccRecipient" : {
@@ -25,9 +25,9 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
+            "schema:Person",
             "schema:ContactPoint",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ]
       },
       "schema:dateRead" : {
@@ -64,20 +64,20 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:PayAction",
+            "schema:TipAction",
             "schema:AuthorizeAction",
+            "schema:ReturnAction",
+            "schema:GiveAction",
             "schema:SendAction",
             "schema:CommunicateAction",
-            "schema:TipAction",
-            "schema:Message",
-            "schema:ReturnAction",
+            "schema:PayAction",
             "schema:DonateAction",
-            "schema:GiveAction"
+            "schema:Message"
          ],
          "schema:rangeIncludes" : [
-            "schema:ContactPoint",
             "schema:Person",
             "schema:Audience",
+            "schema:ContactPoint",
             "schema:Organization"
          ]
       },
@@ -92,8 +92,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Audience",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:toRecipient" : {
@@ -103,9 +103,9 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
+            "schema:ContactPoint",
             "schema:Audience",
             "schema:Person",
-            "schema:ContactPoint",
             "schema:Organization"
          ]
       }

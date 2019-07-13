@@ -24,8 +24,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:QualitativeValue",
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:cargoVolume" : {
@@ -121,8 +121,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ]
       },
       "schema:mileageFromOdometer" : {
@@ -182,8 +182,8 @@
          "rdfs:label" : "numberOfForwardGears",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numberOfPreviousOwners" : {
@@ -193,8 +193,8 @@
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:payload" : {
@@ -212,8 +212,8 @@
          "rdfs:comment" : "The date of production of the item, e.g. vehicle.",
          "rdfs:label" : "productionDate",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date"
       },
@@ -343,8 +343,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CarUsageType",
-            "schema:Text"
+            "schema:Text",
+            "schema:CarUsageType"
          ]
       },
       "schema:vehicleTransmission" : {
@@ -355,8 +355,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ]
       },
       "schema:weightTotal" : {

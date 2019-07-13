@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -42,9 +42,9 @@ A estimated_cost should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
+=item C<Str>
 
 =back
 
@@ -160,11 +160,11 @@ A steps should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =item C<Str>
 
-=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -189,9 +189,9 @@ A supply should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
 
 =back
 
@@ -273,9 +273,9 @@ A yield should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 

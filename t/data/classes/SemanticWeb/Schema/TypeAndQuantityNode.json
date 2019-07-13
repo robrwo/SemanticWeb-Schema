@@ -33,12 +33,12 @@
          "rdfs:comment" : "The product that this structured value is referring to.",
          "rdfs:label" : "typeOfGood",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:OwnershipInfo"
+            "schema:OwnershipInfo",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product"
          ]
       },
       "schema:unitCode" : {
@@ -48,13 +48,13 @@
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:UnitPriceSpecification",
+            "schema:QuantitativeValue",
             "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue"
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitText" : {
@@ -64,8 +64,8 @@
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

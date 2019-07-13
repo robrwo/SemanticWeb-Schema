@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Patient;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalAudience SemanticWeb::Schema::Person /;
+extends qw/ SemanticWeb::Schema::Person SemanticWeb::Schema::MedicalAudience /;
 
 
 use MooX::JSON_LD 'Patient';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -109,7 +109,7 @@ has health_condition => (
 
 
 
-L<SemanticWeb::Schema::Person>
+L<SemanticWeb::Schema::MedicalAudience>
 
 =cut
 

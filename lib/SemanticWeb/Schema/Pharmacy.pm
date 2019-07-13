@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Pharmacy;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalOrganization SemanticWeb::Schema::MedicalBusiness /;
+extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
 
 
 use MooX::JSON_LD 'Pharmacy';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A pharmacy or drugstore.
 
 
 
-L<SemanticWeb::Schema::MedicalBusiness>
+L<SemanticWeb::Schema::MedicalOrganization>
 
 =cut
 

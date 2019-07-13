@@ -15,11 +15,11 @@
          "rdfs:label" : "currency",
          "schema:category" : "issue-1253",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
             "schema:LoanOrCredit",
-            "schema:ExchangeRateSpecification",
             "schema:DatedMoneySpecification",
-            "schema:MonetaryAmountDistribution"
+            "schema:ExchangeRateSpecification",
+            "schema:MonetaryAmountDistribution",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

@@ -12,8 +12,8 @@
          "rdfs:label" : "highPrice",
          "schema:domainIncludes" : "schema:AggregateOffer",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:lowPrice" : {
@@ -22,8 +22,8 @@
          "rdfs:label" : "lowPrice",
          "schema:domainIncludes" : "schema:AggregateOffer",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:offerCount" : {
@@ -38,13 +38,13 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:CreativeWork",
             "schema:Event",
-            "schema:Service",
-            "schema:MenuItem",
+            "schema:AggregateOffer",
             "schema:Product",
-            "schema:AggregateOffer"
+            "schema:CreativeWork",
+            "schema:Service",
+            "schema:Trip",
+            "schema:MenuItem"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       }

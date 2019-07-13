@@ -6,7 +6,7 @@ package SemanticWeb::Schema::FireStation;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::EmergencyService /;
+extends qw/ SemanticWeb::Schema::EmergencyService SemanticWeb::Schema::CivicStructure /;
 
 
 use MooX::JSON_LD 'FireStation';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A fire station. With firemen.
 
 
 
-L<SemanticWeb::Schema::EmergencyService>
+L<SemanticWeb::Schema::CivicStructure>
 
 =cut
 

@@ -32,8 +32,8 @@
             "schema:ListItem"
          ],
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ]
       },
       "schema:previousItem" : {

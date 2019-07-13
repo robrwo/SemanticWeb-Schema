@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -557,9 +557,9 @@ A number_of_forward_gears should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -588,9 +588,9 @@ A number_of_previous_owners should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
 =item C<Num>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
 
@@ -1067,9 +1067,9 @@ A vehicle_special_usage should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::CarUsageType']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::CarUsageType']>
 
 =back
 

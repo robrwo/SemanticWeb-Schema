@@ -3,7 +3,7 @@
       "dc:source" : "schemadotorgsources:source_bibex",
       "owl:equivalentClass" : "bibo:Issue",
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.<br/><br/>\n\n<a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>.",
+      "rdfs:comment" : "A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.<br/><br/>\n\nSee also <a href=\"http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html\">blog post</a>.",
       "rdfs:label" : "PublicationIssue",
       "rdfs:subClassOf" : "schema:CreativeWork"
    },
@@ -28,14 +28,14 @@
          "rdfs:comment" : "The page on which the work ends; for example \"138\" or \"xvi\".",
          "rdfs:label" : "pageEnd",
          "schema:domainIncludes" : [
-            "schema:PublicationVolume",
+            "schema:Chapter",
             "schema:Article",
             "schema:PublicationIssue",
-            "schema:Chapter"
+            "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:Text"
          ]
       },
       "schema:pageStart" : {
@@ -45,10 +45,10 @@
          "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
          "rdfs:label" : "pageStart",
          "schema:domainIncludes" : [
+            "schema:PublicationIssue",
             "schema:Chapter",
-            "schema:PublicationVolume",
             "schema:Article",
-            "schema:PublicationIssue"
+            "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : [
             "schema:Integer",
@@ -63,8 +63,8 @@
          "rdfs:label" : "pagination",
          "schema:domainIncludes" : [
             "schema:PublicationIssue",
-            "schema:Chapter",
             "schema:Article",
+            "schema:Chapter",
             "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : "schema:Text"

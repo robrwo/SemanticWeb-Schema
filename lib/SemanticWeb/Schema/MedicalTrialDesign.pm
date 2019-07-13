@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalTrialDesign;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Enumeration SemanticWeb::Schema::MedicalEnumeration /;
+extends qw/ SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::Enumeration /;
 
 
 use MooX::JSON_LD 'MedicalTrialDesign';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ Design models for medical trials. Enumerated type.
 
 
 
-L<SemanticWeb::Schema::MedicalEnumeration>
+L<SemanticWeb::Schema::Enumeration>
 
 =cut
 

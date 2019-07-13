@@ -20,11 +20,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:GeoCoordinates",
+            "schema:Person",
             "schema:Place",
-            "schema:GeoShape",
-            "schema:Person"
+            "schema:Organization",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:PostalAddress",
@@ -46,8 +46,8 @@
          "schema:domainIncludes" : "schema:Person",
          "schema:inverseOf" : "schema:alumni",
          "schema:rangeIncludes" : [
-            "schema:EducationalOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:EducationalOrganization"
          ]
       },
       "schema:award" : {
@@ -57,9 +57,9 @@
          "schema:domainIncludes" : [
             "schema:Service",
             "schema:Organization",
-            "schema:Person",
             "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -68,10 +68,10 @@
          "rdfs:comment" : "Awards won by or for this item.",
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:Organization",
-            "schema:Person",
             "schema:CreativeWork",
-            "schema:Product"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:supersededBy" : "schema:award"
@@ -96,13 +96,13 @@
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
             "schema:Organization",
+            "schema:Service",
             "schema:Person",
-            "schema:Product",
-            "schema:Service"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Brand"
+            "schema:Brand",
+            "schema:Organization"
          ]
       },
       "schema:children" : {
@@ -118,8 +118,8 @@
          "rdfs:label" : "colleague",
          "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Person"
+            "schema:Person",
+            "schema:URL"
          ]
       },
       "schema:colleagues" : {
@@ -146,8 +146,8 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoints",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint",
          "schema:supersededBy" : "schema:contactPoint"
@@ -201,10 +201,10 @@
          "rdfs:comment" : "The fax number.",
          "rdfs:label" : "faxNumber",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
             "schema:Place",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:ContactPoint",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -221,11 +221,11 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:Organization",
-            "schema:MonetaryGrant"
+            "schema:CreativeWork",
+            "schema:Event",
+            "schema:MonetaryGrant",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -256,8 +256,8 @@
          "rdfs:label" : "globalLocationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Person",
+            "schema:Organization",
             "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -276,9 +276,9 @@
          "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
+            "schema:Organization",
             "schema:Person",
-            "schema:Service",
-            "schema:Organization"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -298,10 +298,10 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
             "schema:VisualArtwork",
-            "schema:Product",
-            "schema:Person"
+            "schema:Person",
+            "schema:MediaObject",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",
@@ -315,8 +315,8 @@
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : [
-            "schema:ContactPoint",
-            "schema:Place"
+            "schema:Place",
+            "schema:ContactPoint"
          ]
       },
       "schema:honorificPrefix" : {
@@ -340,16 +340,9 @@
          "rdfs:label" : "isicV4",
          "schema:domainIncludes" : [
             "schema:Place",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
-         "schema:rangeIncludes" : "schema:Text"
-      },
-      "schema:jobTitle" : {
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The job title of the person (for example, Financial Manager).",
-         "rdfs:label" : "jobTitle",
-         "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:knows" : {
@@ -365,8 +358,8 @@
          "rdfs:comment" : "A pointer to products or services offered by the organization or person.",
          "rdfs:label" : "makesOffer",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:inverseOf" : "schema:offeredBy",
          "schema:rangeIncludes" : "schema:Offer"
@@ -381,8 +374,8 @@
          ],
          "schema:inverseOf" : "schema:member",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:ProgramMembership"
+            "schema:ProgramMembership",
+            "schema:Organization"
          ]
       },
       "schema:naics" : {
@@ -419,12 +412,12 @@
          "rdfs:comment" : "Products owned by the organization or person.",
          "rdfs:label" : "owns",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:OwnershipInfo",
-            "schema:Product"
+            "schema:Product",
+            "schema:OwnershipInfo"
          ]
       },
       "schema:parent" : {
@@ -455,8 +448,8 @@
          "rdfs:label" : "publishingPrinciples",
          "schema:domainIncludes" : [
             "schema:Person",
-            "schema:CreativeWork",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -476,8 +469,8 @@
          "rdfs:comment" : "A pointer to products or services sought by the organization or person (demand).",
          "rdfs:label" : "seeks",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Demand"
       },
@@ -501,16 +494,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Grant",
-            "schema:Organization",
             "schema:CreativeWork",
+            "schema:Organization",
+            "schema:Grant",
+            "schema:Person",
             "schema:MedicalStudy",
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:spouse" : {
@@ -527,8 +520,8 @@
          "rdfs:label" : "taxID",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

@@ -6,7 +6,7 @@ package SemanticWeb::Schema::HowToDirection;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ListItem /;
+extends qw/ SemanticWeb::Schema::ListItem SemanticWeb::Schema::CreativeWork /;
 
 
 use MooX::JSON_LD 'HowToDirection';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -183,9 +183,9 @@ A supply should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
-
 =item C<Str>
+
+=item C<InstanceOf['SemanticWeb::Schema::HowToSupply']>
 
 =back
 
@@ -261,7 +261,7 @@ has total_time => (
 
 
 
-L<SemanticWeb::Schema::ListItem>
+L<SemanticWeb::Schema::CreativeWork>
 
 =cut
 

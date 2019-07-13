@@ -81,16 +81,16 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Invoice",
-            "schema:Reservation",
             "schema:Trip",
             "schema:CreativeWork",
-            "schema:ParcelDelivery"
+            "schema:Reservation",
+            "schema:ParcelDelivery",
+            "schema:Service",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:trackingNumber" : {

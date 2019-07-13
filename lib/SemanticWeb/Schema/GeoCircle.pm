@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -69,11 +69,11 @@ A geo_radius should be one of the following types:
 
 =over
 
-=item C<Num>
+=item C<InstanceOf['SemanticWeb::Schema::Distance']>
 
 =item C<Str>
 
-=item C<InstanceOf['SemanticWeb::Schema::Distance']>
+=item C<Num>
 
 =back
 

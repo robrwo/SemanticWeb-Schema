@@ -16,8 +16,8 @@
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
             "schema:Physician",
-            "schema:MedicalClinic",
-            "schema:Hospital"
+            "schema:Hospital",
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
@@ -31,10 +31,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
             "schema:Physician",
             "schema:MedicalClinic",
-            "schema:Hospital"
+            "schema:Hospital",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

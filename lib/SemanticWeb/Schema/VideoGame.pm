@@ -6,7 +6,7 @@ package SemanticWeb::Schema::VideoGame;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Game SemanticWeb::Schema::SoftwareApplication /;
+extends qw/ SemanticWeb::Schema::SoftwareApplication SemanticWeb::Schema::Game /;
 
 
 use MooX::JSON_LD 'VideoGame';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -318,7 +318,7 @@ has trailer => (
 
 
 
-L<SemanticWeb::Schema::SoftwareApplication>
+L<SemanticWeb::Schema::Game>
 
 =cut
 

@@ -95,8 +95,8 @@
          "rdfs:label" : "flightDistance",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:Text"
+            "schema:Text",
+            "schema:Distance"
          ]
       },
       "schema:flightNumber" : {
@@ -120,15 +120,15 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:BuyAction",
             "schema:Demand",
             "schema:Order",
             "schema:Offer",
+            "schema:BuyAction",
             "schema:Flight"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:webCheckinTime" : {

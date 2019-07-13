@@ -21,8 +21,8 @@
             "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:issn" : {
@@ -33,10 +33,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
+            "schema:Blog",
             "schema:CreativeWorkSeries",
-            "schema:Dataset",
             "schema:WebSite",
-            "schema:Blog"
+            "schema:Dataset"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -45,11 +45,11 @@
          "rdfs:comment" : "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
+            "schema:Event",
             "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:Event"
+            "schema:CreativeWorkSeries",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

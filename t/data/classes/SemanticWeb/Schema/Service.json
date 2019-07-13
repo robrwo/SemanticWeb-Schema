@@ -11,14 +11,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Offer",
-            "schema:CreativeWork",
             "schema:Place",
-            "schema:Event",
             "schema:Organization",
+            "schema:Event",
             "schema:Brand",
-            "schema:Service"
+            "schema:CreativeWork",
+            "schema:Service",
+            "schema:Offer",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -27,17 +27,17 @@
          "rdfs:comment" : "The geographic area where a service or offered item is provided.",
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Service",
-            "schema:Demand",
-            "schema:ContactPoint",
+            "schema:DeliveryChargeSpecification",
             "schema:Offer",
-            "schema:DeliveryChargeSpecification"
+            "schema:Service",
+            "schema:ContactPoint",
+            "schema:Organization",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:Place",
             "schema:GeoShape",
+            "schema:Place",
             "schema:AdministrativeArea"
          ]
       },
@@ -46,11 +46,11 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:PlayAction",
-            "schema:CreativeWork",
-            "schema:LodgingBusiness",
             "schema:Event",
+            "schema:PlayAction",
+            "schema:LodgingBusiness",
             "schema:Service",
+            "schema:CreativeWork",
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Audience"
@@ -69,9 +69,9 @@
          "schema:domainIncludes" : [
             "schema:Service",
             "schema:Organization",
-            "schema:Person",
             "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -81,13 +81,13 @@
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
             "schema:Organization",
+            "schema:Service",
             "schema:Person",
-            "schema:Product",
-            "schema:Service"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Brand"
+            "schema:Brand",
+            "schema:Organization"
          ]
       },
       "schema:broker" : {
@@ -95,14 +95,14 @@
          "rdfs:comment" : "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Reservation",
             "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Reservation",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:category" : {
@@ -112,17 +112,17 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Service",
             "schema:PhysicalActivity",
             "schema:Product",
             "schema:ActionAccessSpecification",
+            "schema:Invoice",
+            "schema:Service",
             "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:Thing",
-            "schema:Text",
-            "schema:PhysicalActivityCategory"
+            "schema:PhysicalActivityCategory",
+            "schema:Text"
          ]
       },
       "schema:hasOfferCatalog" : {
@@ -130,9 +130,9 @@
          "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
+            "schema:Organization",
             "schema:Person",
-            "schema:Service",
-            "schema:Organization"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -142,8 +142,8 @@
          "rdfs:label" : "hoursAvailable",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:ContactPoint",
-            "schema:LocationFeatureSpecification"
+            "schema:LocationFeatureSpecification",
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
       },
@@ -153,8 +153,8 @@
          "rdfs:comment" : "A pointer to another, somehow related product (or multiple products).",
          "rdfs:label" : "isRelatedTo",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Product"
+            "schema:Product",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:Service",
@@ -167,8 +167,8 @@
          "rdfs:comment" : "A pointer to another, functionally similar product (or multiple products).",
          "rdfs:label" : "isSimilarTo",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Product"
+            "schema:Product",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:Service",
@@ -182,11 +182,11 @@
          "rdfs:label" : "logo",
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
+            "schema:Organization",
             "schema:Service",
             "schema:Brand",
-            "schema:Product",
-            "schema:Organization",
-            "schema:Place"
+            "schema:Place",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:ImageObject",
@@ -198,13 +198,13 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:CreativeWork",
             "schema:Event",
-            "schema:Service",
-            "schema:MenuItem",
+            "schema:AggregateOffer",
             "schema:Product",
-            "schema:AggregateOffer"
+            "schema:CreativeWork",
+            "schema:Service",
+            "schema:Trip",
+            "schema:MenuItem"
          ],
          "schema:rangeIncludes" : "schema:Offer"
       },
@@ -221,16 +221,16 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Invoice",
-            "schema:Reservation",
             "schema:Trip",
             "schema:CreativeWork",
-            "schema:ParcelDelivery"
+            "schema:Reservation",
+            "schema:ParcelDelivery",
+            "schema:Service",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:providerMobility" : {
@@ -245,14 +245,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
+            "schema:Service",
+            "schema:Organization",
+            "schema:CreativeWork",
+            "schema:Product",
             "schema:Offer",
             "schema:Event",
-            "schema:Place",
-            "schema:Product",
-            "schema:Organization",
             "schema:Brand",
-            "schema:Service",
-            "schema:CreativeWork"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -266,9 +266,9 @@
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:AdministrativeArea",
             "schema:Place",
-            "schema:GeoShape"
+            "schema:GeoShape",
+            "schema:AdministrativeArea"
          ],
          "schema:supersededBy" : "schema:areaServed"
       },
@@ -299,10 +299,10 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Brand",
-            "schema:Service",
             "schema:Product",
+            "schema:Organization",
+            "schema:Service",
+            "schema:Brand",
             "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"

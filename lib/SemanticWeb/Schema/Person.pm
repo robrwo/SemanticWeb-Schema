@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -115,9 +115,9 @@ A alumni_of should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::EducationalOrganization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOrganization']>
 
 =back
 
@@ -238,9 +238,9 @@ A brand should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Brand']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -288,9 +288,9 @@ A colleague should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<Str>
 
 =back
 
@@ -767,9 +767,9 @@ A home_location should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =back
 
@@ -856,30 +856,6 @@ has isic_v4 => (
 );
 
 
-=head2 C<job_title>
-
-C<jobTitle>
-
-The job title of the person (for example, Financial Manager).
-
-
-A job_title should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=cut
-
-has job_title => (
-    is        => 'rw',
-    predicate => 1,
-    json_ld   => 'jobTitle',
-);
-
-
 =head2 C<knows>
 
 
@@ -940,9 +916,9 @@ A member_of should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
 =item C<InstanceOf['SemanticWeb::Schema::ProgramMembership']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
 
@@ -1042,9 +1018,9 @@ A owns should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::OwnershipInfo']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
+
+=item C<InstanceOf['SemanticWeb::Schema::OwnershipInfo']>
 
 =back
 
@@ -1284,9 +1260,9 @@ A sponsor should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Person']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
 

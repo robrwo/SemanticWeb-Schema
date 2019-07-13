@@ -4,8 +4,8 @@
       "rdfs:comment" : "A direction indicating a single action to do in the instructions for how to achieve a result.",
       "rdfs:label" : "HowToDirection",
       "rdfs:subClassOf" : [
-         "schema:CreativeWork",
-         "schema:ListItem"
+         "schema:ListItem",
+         "schema:CreativeWork"
       ]
    },
    "properties" : {
@@ -65,12 +65,12 @@
          "rdfs:label" : "supply",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:HowTo",
-            "schema:HowToDirection"
+            "schema:HowToDirection",
+            "schema:HowTo"
          ],
          "schema:rangeIncludes" : [
-            "schema:HowToSupply",
-            "schema:Text"
+            "schema:Text",
+            "schema:HowToSupply"
          ]
       },
       "schema:tool" : {

@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalClinic;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
+extends qw/ SemanticWeb::Schema::MedicalOrganization SemanticWeb::Schema::MedicalBusiness /;
 
 
 use MooX::JSON_LD 'MedicalClinic';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -89,7 +89,7 @@ has medical_specialty => (
 
 
 
-L<SemanticWeb::Schema::MedicalOrganization>
+L<SemanticWeb::Schema::MedicalBusiness>
 
 =cut
 

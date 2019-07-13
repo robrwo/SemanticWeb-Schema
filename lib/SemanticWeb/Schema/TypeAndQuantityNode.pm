@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -91,9 +91,9 @@ A type_of_good should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Product']>
-
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 

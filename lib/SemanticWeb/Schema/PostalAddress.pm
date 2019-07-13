@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.1';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -46,9 +46,9 @@ A address_country should be one of the following types:
 
 =over
 
-=item C<Str>
-
 =item C<InstanceOf['SemanticWeb::Schema::Country']>
+
+=item C<Str>
 
 =back
 
@@ -65,7 +65,8 @@ has address_country => (
 
 C<addressLocality>
 
-The locality. For example, Mountain View.
+The locality in which the street address is, and which is in the region.
+For example, Mountain View.
 
 
 A address_locality should be one of the following types:
@@ -89,7 +90,14 @@ has address_locality => (
 
 C<addressRegion>
 
-The region. For example, CA.
+=begin html
+
+The region in which the locality is, and which is in the country. For
+example, California or another appropriate first-level <a
+href="https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_cou
+ntry">Administrative division</a>
+
+=end html
 
 
 A address_region should be one of the following types:

@@ -68,8 +68,8 @@
          "rdfs:label" : "relatedCondition",
          "schema:domainIncludes" : [
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalSystem",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalStructure",
+            "schema:AnatomicalSystem"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"

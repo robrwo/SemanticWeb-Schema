@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalCode;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CategoryCode SemanticWeb::Schema::MedicalIntangible /;
+extends qw/ SemanticWeb::Schema::MedicalIntangible SemanticWeb::Schema::CategoryCode /;
 
 
 use MooX::JSON_LD 'MedicalCode';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.6.0';
+our $VERSION = 'v3.7.0';
 
 =encoding utf8
 
@@ -59,7 +59,7 @@ has coding_system => (
 
 
 
-L<SemanticWeb::Schema::MedicalIntangible>
+L<SemanticWeb::Schema::CategoryCode>
 
 =cut
 
