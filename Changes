@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+
+v3.8.1    2019-07-14 14:24:23+01:00 Europe/London
   [Other Changes]
   - Classes and POD data is dumped in alphabetical order, to avoid
     unnecessary source code churn.
