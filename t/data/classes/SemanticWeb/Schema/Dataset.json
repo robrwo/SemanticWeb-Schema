@@ -2,9 +2,9 @@
    "class" : {
       "dc:source" : "schemadotorgsources:source_DatasetClass",
       "owl:equivalentClass" : [
+         "dcmitype:Dataset",
          "void:Dataset",
-         "dcat:Dataset",
-         "dcmitype:Dataset"
+         "dcat:Dataset"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A body of structured information describing some topic(s) of interest.",
@@ -59,10 +59,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:WebSite",
-            "schema:Blog",
             "schema:Dataset",
-            "schema:CreativeWorkSeries"
+            "schema:CreativeWorkSeries",
+            "schema:Blog",
+            "schema:WebSite"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }
