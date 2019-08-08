@@ -583,6 +583,42 @@ has comment_count => (
 );
 
 
+=head2 C<conditions_of_access>
+
+C<conditionsOfAccess>
+
+=begin html
+
+Conditions that affect the availability of, or method(s) of access to, an
+item. Typically used for real world items such as an <a class="localLink"
+href="http://schema.org/ArchiveComponent">ArchiveComponent</a> held by an
+<a class="localLink"
+href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>. This
+property is not suitable for use as a general Web access control mechanism.
+It is expressed only in natural language.<br/><br/> For example "Available
+by appointment from the Reading Room" or "Accessible only from logged-in
+accounts ".
+
+=end html
+
+
+A conditions_of_access should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has conditions_of_access => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'conditionsOfAccess',
+);
+
+
 =head2 C<content_location>
 
 C<contentLocation>
@@ -631,6 +667,31 @@ has content_rating => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'contentRating',
+);
+
+
+=head2 C<content_reference_time>
+
+C<contentReferenceTime>
+
+The specific time described by a creative work, for works (e.g. articles,
+video objects etc.) that emphasise a particular moment within an Event.
+
+
+A content_reference_time should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has content_reference_time => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'contentReferenceTime',
 );
 
 
@@ -708,6 +769,68 @@ has copyright_year => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'copyrightYear',
+);
+
+
+=head2 C<correction>
+
+
+
+=begin html
+
+Indicates a correction to a <a class="localLink"
+href="http://schema.org/CreativeWork">CreativeWork</a>, either via a <a
+class="localLink"
+href="http://schema.org/CorrectionComment">CorrectionComment</a>, textually
+or in another document.
+
+=end html
+
+
+A correction should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CorrectionComment']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has correction => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'correction',
+);
+
+
+=head2 C<creative_work_status>
+
+C<creativeWorkStatus>
+
+The status of a creative work in terms of its stage in a lifecycle. Example
+terms include Incomplete, Draft, Published, Obsolete. Some organizations
+define a set of terms for the stages of their publication lifecycle.
+
+
+A creative_work_status should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has creative_work_status => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'creativeWorkStatus',
 );
 
 
@@ -1564,6 +1687,33 @@ has material => (
 );
 
 
+=head2 C<material_extent>
+
+C<materialExtent>
+
+The quantity of the materials being described or an expression of the
+physical space they occupy.
+
+
+A material_extent should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has material_extent => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'materialExtent',
+);
+
+
 =head2 C<mentions>
 
 
@@ -1936,6 +2086,100 @@ has schema_version => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'schemaVersion',
+);
+
+
+=head2 C<sd_date_published>
+
+C<sdDatePublished>
+
+=begin html
+
+Indicates the date on which the current structured data was generated /
+published. Typically used alongside <a class="localLink"
+href="http://schema.org/sdPublisher">sdPublisher</a>
+
+=end html
+
+
+A sd_date_published should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has sd_date_published => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'sdDatePublished',
+);
+
+
+=head2 C<sd_license>
+
+C<sdLicense>
+
+A license document that applies to this structured data, typically
+indicated by URL.
+
+
+A sd_license should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has sd_license => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'sdLicense',
+);
+
+
+=head2 C<sd_publisher>
+
+C<sdPublisher>
+
+=begin html
+
+Indicates the party responsible for generating and publishing the current
+structured data markup, typically in cases where the structured data is
+derived automatically from existing published content but published on a
+different site. For example, student projects and open data initiatives
+often re-publish existing content with more explicitly structured metadata.
+The <a class="localLink"
+href="http://schema.org/sdPublisher">sdPublisher</a> property helps make
+such practices more explicit.
+
+=end html
+
+
+A sd_publisher should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=cut
+
+has sd_publisher => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'sdPublisher',
 );
 
 

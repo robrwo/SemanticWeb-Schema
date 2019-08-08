@@ -154,6 +154,34 @@ has has_course_instance => (
 );
 
 
+=head2 C<occupational_credential_awarded>
+
+C<occupationalCredentialAwarded>
+
+A description of the qualification, award, certificate, diploma or other
+occupational credential awarded as a consequence of successful completion
+of this course or program.
+
+
+A occupational_credential_awarded should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has occupational_credential_awarded => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'occupationalCredentialAwarded',
+);
+
+
 
 
 =head1 SEE ALSO

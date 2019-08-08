@@ -157,6 +157,31 @@ has directors => (
 );
 
 
+=head2 C<end_offset>
+
+C<endOffset>
+
+The end time of the clip expressed as the number of seconds from the
+beginning of the work.
+
+
+A end_offset should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=back
+
+=cut
+
+has end_offset => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'endOffset',
+);
+
+
 =head2 C<music_by>
 
 C<musicBy>
@@ -252,6 +277,31 @@ has part_of_series => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'partOfSeries',
+);
+
+
+=head2 C<start_offset>
+
+C<startOffset>
+
+The start time of the clip expressed as the number of seconds from the
+beginning of the work.
+
+
+A start_offset should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=back
+
+=cut
+
+has start_offset => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'startOffset',
 );
 
 

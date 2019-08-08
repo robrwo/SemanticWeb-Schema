@@ -29,6 +29,30 @@ A code for a medical entity.
 =head1 ATTRIBUTES
 
 
+=head2 C<code_value>
+
+C<codeValue>
+
+A short textual code that uniquely identifies the value.
+
+
+A code_value should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has code_value => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'codeValue',
+);
+
+
 =head2 C<coding_system>
 
 C<codingSystem>

@@ -110,6 +110,7 @@ has definition => (
             'https://schema.org/version/3.9/ext-health-lifesci.rdf',
             # 'https://schema.org/version/3.9/ext-iot.rdf',
             'https://schema.org/version/3.9/ext-meta.rdf',
+            'https://schema.org/version/3.9/ext-pending.rdf',
             'https://schema.org/version/3.9/schema.rdf',
         ]
     },
@@ -247,6 +248,8 @@ sub generate_class_from_trine {
     return if any { $_ eq 'schema:DataType' } @$types;
 
     return unless any { $_ =~ /^(rdfs|schema):Class$/ } @$types;
+
+    $subj =~ s/2:DModel/:3DModel/; # fix an error in trine data
 
     my $class_name = $self->label_to_package_name($subj);
 

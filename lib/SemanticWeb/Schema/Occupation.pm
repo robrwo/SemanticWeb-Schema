@@ -29,6 +29,32 @@ A profession, may involve prolonged training and/or a formal qualification.
 =head1 ATTRIBUTES
 
 
+=head2 C<education_requirements>
+
+C<educationRequirements>
+
+Educational background needed for the position or Occupation.
+
+
+A education_requirements should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has education_requirements => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'educationRequirements',
+);
+
+
 =head2 C<estimated_salary>
 
 C<estimatedSalary>
@@ -144,6 +170,32 @@ has occupational_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'occupationalCategory',
+);
+
+
+=head2 C<qualifications>
+
+
+
+Specific qualifications required for this role or Occupation.
+
+
+A qualifications should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has qualifications => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'qualifications',
 );
 
 

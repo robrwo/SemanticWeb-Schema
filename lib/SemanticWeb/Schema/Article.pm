@@ -86,6 +86,42 @@ has article_section => (
 );
 
 
+=head2 C<backstory>
+
+
+
+=begin html
+
+For an <a class="localLink" href="http://schema.org/Article">Article</a>,
+typically a <a class="localLink"
+href="http://schema.org/NewsArticle">NewsArticle</a>, the backstory
+property provides a textual summary giving a brief explanation of why and
+how an article was created. In a journalistic setting this could include
+information about reporting process, methods, interviews, data sources,
+etc.
+
+=end html
+
+
+A backstory should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has backstory => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'backstory',
+);
+
+
 =head2 C<page_end>
 
 C<pageEnd>

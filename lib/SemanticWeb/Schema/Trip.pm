@@ -77,6 +77,40 @@ has departure_time => (
 );
 
 
+=head2 C<itinerary>
+
+
+
+=begin html
+
+Destination(s) ( <a class="localLink"
+href="http://schema.org/Place">Place</a> ) that make up a trip. For a trip
+where destination order is important use <a class="localLink"
+href="http://schema.org/ItemList">ItemList</a> to specify that order (see
+examples).
+
+=end html
+
+
+A itinerary should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=back
+
+=cut
+
+has itinerary => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'itinerary',
+);
+
+
 =head2 C<offers>
 
 
@@ -100,6 +134,36 @@ has offers => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'offers',
+);
+
+
+=head2 C<part_of_trip>
+
+C<partOfTrip>
+
+=begin html
+
+Identifies that this <a class="localLink"
+href="http://schema.org/Trip">Trip</a> is a subTrip of another Trip. For
+example Day 1, Day 2, etc. of a multi-day trip.
+
+=end html
+
+
+A part_of_trip should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Trip']>
+
+=back
+
+=cut
+
+has part_of_trip => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'partOfTrip',
 );
 
 
@@ -128,6 +192,36 @@ has provider => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'provider',
+);
+
+
+=head2 C<sub_trip>
+
+C<subTrip>
+
+=begin html
+
+Identifies a <a class="localLink" href="http://schema.org/Trip">Trip</a>
+that is a subTrip of this Trip. For example Day 1, Day 2, etc. of a
+multi-day trip.
+
+=end html
+
+
+A sub_trip should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Trip']>
+
+=back
+
+=cut
+
+has sub_trip => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'subTrip',
 );
 
 

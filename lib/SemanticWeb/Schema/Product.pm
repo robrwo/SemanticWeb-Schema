@@ -269,6 +269,55 @@ has depth => (
 );
 
 
+=head2 C<gtin>
+
+
+
+=begin html
+
+A Global Trade Item Number (<a
+href="https://www.gs1.org/standards/id-keys/gtin">GTIN</a>). GTINs identify
+trade items, including products and services, using numeric identification
+codes. The <a class="localLink" href="http://schema.org/gtin">gtin</a>
+property generalizes the earlier <a class="localLink"
+href="http://schema.org/gtin8">gtin8</a>, <a class="localLink"
+href="http://schema.org/gtin12">gtin12</a>, <a class="localLink"
+href="http://schema.org/gtin13">gtin13</a>, and <a class="localLink"
+href="http://schema.org/gtin14">gtin14</a> properties. The GS1 <a
+href="https://www.gs1.org/standards/Digital-Link/">digital link
+specifications</a> express GTINs as URLs. A correct <a class="localLink"
+href="http://schema.org/gtin">gtin</a> value should be a valid GTIN, which
+means that it should be an all-numeric string of either 8, 12, 13 or 14
+digits, or a "GS1 Digital Link" URL based on such a string. The numeric
+component should also have a <a
+href="https://www.gs1.org/services/check-digit-calculator">valid GS1 check
+digit</a> and meet the other rules for valid GTINs. See also <a
+href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1's GTIN
+Summary</a> and <a
+href="https://en.wikipedia.org/wiki/Global_Trade_Item_Number">Wikipedia</a>
+for more details. Left-padding of the gtin values is not required or
+encouraged.
+
+=end html
+
+
+A gtin should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has gtin => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'gtin',
+);
+
+
 =head2 C<gtin12>
 
 
@@ -393,6 +442,30 @@ has gtin8 => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'gtin8',
+);
+
+
+=head2 C<has_product_return_policy>
+
+C<hasProductReturnPolicy>
+
+Indicates a ProductReturnPolicy that may be applicable.
+
+
+A has_product_return_policy should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
+
+=back
+
+=cut
+
+has has_product_return_policy => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'hasProductReturnPolicy',
 );
 
 
@@ -677,6 +750,37 @@ has mpn => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'mpn',
+);
+
+
+=head2 C<nsn>
+
+
+
+=begin html
+
+Indicates the <a
+href="https://en.wikipedia.org/wiki/NATO_Stock_Number">NATO stock
+number</a> (nsn) of a <a class="localLink"
+href="http://schema.org/Product">Product</a>.
+
+=end html
+
+
+A nsn should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has nsn => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'nsn',
 );
 
 

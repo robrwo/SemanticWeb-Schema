@@ -26,7 +26,38 @@ A created collection of Creative Works or other artefacts.
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<collection_size>
+
+C<collectionSize>
+
+=begin html
+
+The number of items in the <a class="localLink"
+href="http://schema.org/Collection">Collection</a>.
+
+=end html
+
+
+A collection_size should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=back
+
 =cut
+
+has collection_size => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'collectionSize',
+);
+
+
 
 
 =head1 SEE ALSO

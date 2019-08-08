@@ -27,6 +27,19 @@
             "schema:Time"
          ]
       },
+      "schema:itinerary" : {
+         "dc:source" : "schemadotorgsources:Tourism",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Destination(s) ( <a class=\"localLink\" href=\"http://schema.org/Place\">Place</a> ) that make up a trip. For a trip where destination order is important use <a class=\"localLink\" href=\"http://schema.org/ItemList\">ItemList</a> to specify that order (see examples).",
+         "rdfs:label" : "itinerary",
+         "schema:category" : "issue-1810",
+         "schema:domainIncludes" : "schema:Trip",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Place",
+            "schema:ItemList"
+         ]
+      },
       "schema:offers" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2289",
          "rdf:type" : "rdf:Property",
@@ -44,6 +57,17 @@
             "schema:AggregateOffer"
          ],
          "schema:rangeIncludes" : "schema:Offer"
+      },
+      "schema:partOfTrip" : {
+         "dc:source" : "schemadotorgsources:Tourism",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Identifies that this <a class=\"localLink\" href=\"http://schema.org/Trip\">Trip</a> is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
+         "rdfs:label" : "partOfTrip",
+         "schema:category" : "issue-1810",
+         "schema:domainIncludes" : "schema:Trip",
+         "schema:inverseOf" : "schema:subTrip",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Trip"
       },
       "schema:provider" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2289",
@@ -64,6 +88,17 @@
             "schema:Person",
             "schema:Organization"
          ]
+      },
+      "schema:subTrip" : {
+         "dc:source" : "schemadotorgsources:Tourism",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Identifies a <a class=\"localLink\" href=\"http://schema.org/Trip\">Trip</a> that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
+         "rdfs:label" : "subTrip",
+         "schema:category" : "issue-1810",
+         "schema:domainIncludes" : "schema:Trip",
+         "schema:inverseOf" : "schema:partOfTrip",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Trip"
       }
    }
 }

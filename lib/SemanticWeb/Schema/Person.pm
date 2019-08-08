@@ -656,6 +656,30 @@ has global_location_number => (
 );
 
 
+=head2 C<has_credential>
+
+C<hasCredential>
+
+A credential awarded to the Person or Organization.
+
+
+A has_credential should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=back
+
+=cut
+
+has has_credential => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'hasCredential',
+);
+
+
 =head2 C<has_occupation>
 
 C<hasOccupation>
@@ -856,6 +880,32 @@ has isic_v4 => (
 );
 
 
+=head2 C<job_title>
+
+C<jobTitle>
+
+The job title of the person (for example, Financial Manager).
+
+
+A job_title should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has job_title => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'jobTitle',
+);
+
+
 =head2 C<knows>
 
 
@@ -877,6 +927,77 @@ has knows => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'knows',
+);
+
+
+=head2 C<knows_about>
+
+C<knowsAbout>
+
+=begin html
+
+Of a <a class="localLink" href="http://schema.org/Person">Person</a>, and
+less typically of an <a class="localLink"
+href="http://schema.org/Organization">Organization</a>, to indicate a topic
+that is known about - suggesting possible expertise but not implying it. We
+do not distinguish skill levels here, or relate this to educational
+content, events, objectives or <a class="localLink"
+href="http://schema.org/JobPosting">JobPosting</a> descriptions.
+
+=end html
+
+
+A knows_about should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has knows_about => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'knowsAbout',
+);
+
+
+=head2 C<knows_language>
+
+C<knowsLanguage>
+
+=begin html
+
+Of a <a class="localLink" href="http://schema.org/Person">Person</a>, and
+less typically of an <a class="localLink"
+href="http://schema.org/Organization">Organization</a>, to indicate a known
+language. We do not distinguish skill levels or
+reading/writing/speaking/signing here. Use language codes from the <a
+href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.
+
+=end html
+
+
+A knows_language should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Language']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has knows_language => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'knowsLanguage',
 );
 
 

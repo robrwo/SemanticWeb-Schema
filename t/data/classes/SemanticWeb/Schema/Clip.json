@@ -91,6 +91,16 @@
          "schema:rangeIncludes" : "schema:Person",
          "schema:supersededBy" : "schema:director"
       },
+      "schema:endOffset" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2021",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The end time of the clip expressed as the number of seconds from the beginning of the work.",
+         "rdfs:label" : "endOffset",
+         "schema:category" : "issue-2021",
+         "schema:domainIncludes" : "schema:Clip",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Number"
+      },
       "schema:musicBy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The composer of the soundtrack.",
@@ -141,6 +151,16 @@
             "schema:Clip"
          ],
          "schema:rangeIncludes" : "schema:CreativeWorkSeries"
+      },
+      "schema:startOffset" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2021",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The start time of the clip expressed as the number of seconds from the beginning of the work.",
+         "rdfs:label" : "startOffset",
+         "schema:category" : "issue-2021",
+         "schema:domainIncludes" : "schema:Clip",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Number"
       }
    }
 }

@@ -312,6 +312,19 @@
             "schema:Brand"
          ],
          "schema:rangeIncludes" : "schema:Text"
+      },
+      "schema:termsOfService" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1423",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Human-readable terms of service documentation.",
+         "rdfs:label" : "termsOfService",
+         "schema:category" : "issue-1423",
+         "schema:domainIncludes" : "schema:Service",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:URL"
+         ]
       }
    }
 }

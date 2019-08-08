@@ -354,6 +354,30 @@ has food_warning => (
 );
 
 
+=head2 C<included_in_health_insurance_plan>
+
+C<includedInHealthInsurancePlan>
+
+The insurance plans that cover this drug.
+
+
+A included_in_health_insurance_plan should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::HealthInsurancePlan']>
+
+=back
+
+=cut
+
+has included_in_health_insurance_plan => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'includedInHealthInsurancePlan',
+);
+
+
 =head2 C<interacting_drug>
 
 C<interactingDrug>
@@ -752,6 +776,30 @@ has related_drug => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'relatedDrug',
+);
+
+
+=head2 C<rxcui>
+
+
+
+The RxCUI drug identifier from RXNORM.
+
+
+A rxcui should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has rxcui => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'rxcui',
 );
 
 

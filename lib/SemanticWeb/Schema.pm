@@ -48,6 +48,8 @@ were generated automatically from the following sources:
 
 =item L<https://schema.org/version/3.9/ext-meta.rdf>
 
+=item L<https://schema.org/version/3.9/ext-pending.rdf>
+
 =item L<https://schema.org/version/3.9/schema.rdf>
 
 =back

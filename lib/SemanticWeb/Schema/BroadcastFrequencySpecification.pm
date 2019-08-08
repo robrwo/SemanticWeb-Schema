@@ -56,6 +56,56 @@ has broadcast_frequency_value => (
 );
 
 
+=head2 C<broadcast_signal_modulation>
+
+C<broadcastSignalModulation>
+
+The modulation (e.g. FM, AM, etc) used by a particular broadcast service
+
+
+A broadcast_signal_modulation should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has broadcast_signal_modulation => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'broadcastSignalModulation',
+);
+
+
+=head2 C<broadcast_sub_channel>
+
+C<broadcastSubChannel>
+
+The subchannel used for the broadcast.
+
+
+A broadcast_sub_channel should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has broadcast_sub_channel => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'broadcastSubChannel',
+);
+
+
 
 
 =head1 SEE ALSO

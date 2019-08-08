@@ -84,6 +84,38 @@ has best_rating => (
 );
 
 
+=head2 C<rating_explanation>
+
+C<ratingExplanation>
+
+=begin html
+
+A short explanation (e.g. one to two sentences) providing background
+context and other information that led to the conclusion expressed in the
+rating. This is particularly applicable to ratings associated with "fact
+check" markup using <a class="localLink"
+href="http://schema.org/ClaimReview">ClaimReview</a>.
+
+=end html
+
+
+A rating_explanation should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has rating_explanation => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'ratingExplanation',
+);
+
+
 =head2 C<rating_value>
 
 C<ratingValue>

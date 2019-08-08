@@ -210,6 +210,16 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : "schema:Integer"
       },
+      "schema:conditionsOfAccess" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2173",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an <a class=\"localLink\" href=\"http://schema.org/ArchiveComponent\">ArchiveComponent</a> held by an <a class=\"localLink\" href=\"http://schema.org/ArchiveOrganization\">ArchiveOrganization</a>. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.<br/><br/>\n\nFor example \"Available by appointment from the Reading Room\" or \"Accessible only from logged-in accounts \".",
+         "rdfs:label" : "conditionsOfAccess",
+         "schema:category" : "issue-2173",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text"
+      },
       "schema:contentLocation" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The location depicted or described in the content. For example, the location in a photograph or painting.",
@@ -226,6 +236,16 @@
             "schema:Rating",
             "schema:Text"
          ]
+      },
+      "schema:contentReferenceTime" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1050",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The specific time described by a creative work, for works (e.g. articles, video objects etc.) that emphasise a particular moment within an Event.",
+         "rdfs:label" : "contentReferenceTime",
+         "schema:category" : "issue-1050",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:DateTime"
       },
       "schema:contributor" : {
          "rdf:type" : "rdf:Property",
@@ -256,6 +276,39 @@
          "rdfs:label" : "copyrightYear",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : "schema:Number"
+      },
+      "schema:correction" : {
+         "dc:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/1950",
+            "schemadotorgsources2:TP"
+         ],
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates a correction to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>, either via a <a class=\"localLink\" href=\"http://schema.org/CorrectionComment\">CorrectionComment</a>, textually or in another document.",
+         "rdfs:label" : "correction",
+         "schema:category" : [
+            "issue-1688",
+            "issue-1950"
+         ],
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:URL",
+            "schema:CorrectionComment"
+         ]
+      },
+      "schema:creativeWorkStatus" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/987",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The status of a creative work in terms of its stage in a lifecycle. Example terms include Incomplete, Draft, Published, Obsolete. Some organizations define a set of terms for the stages of their publication lifecycle.",
+         "rdfs:label" : "creativeWorkStatus",
+         "schema:category" : "issue-987",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:Text"
+         ]
       },
       "schema:creator" : {
          "rdf:type" : "rdf:Property",
@@ -568,6 +621,19 @@
             "schema:URL"
          ]
       },
+      "schema:materialExtent" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1759",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The quantity of the materials being described or an expression of the physical space they occupy.",
+         "rdfs:label" : "materialExtent",
+         "schema:category" : "issue-1759",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:QuantitativeValue",
+            "schema:Text"
+         ]
+      },
       "schema:mentions" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
@@ -729,6 +795,42 @@
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text"
+         ]
+      },
+      "schema:sdDatePublished" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1886",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates the date on which the current structured data was generated / published. Typically used alongside <a class=\"localLink\" href=\"http://schema.org/sdPublisher\">sdPublisher</a>",
+         "rdfs:label" : "sdDatePublished",
+         "schema:category" : "issue-1886",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Date"
+      },
+      "schema:sdLicense" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1886",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A license document that applies to this structured data, typically indicated by URL.",
+         "rdfs:label" : "sdLicense",
+         "schema:category" : "issue-1886",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:CreativeWork",
+            "schema:URL"
+         ]
+      },
+      "schema:sdPublisher" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1886",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates the party responsible for generating and publishing the current structured data markup, typically in cases where the structured data is derived automatically from existing published content but published on a different site. For example, student projects and open data initiatives often re-publish existing content with more explicitly structured metadata. The\n<a class=\"localLink\" href=\"http://schema.org/sdPublisher\">sdPublisher</a> property helps make such practices more explicit.",
+         "rdfs:label" : "sdPublisher",
+         "schema:category" : "issue-1886",
+         "schema:domainIncludes" : "schema:CreativeWork",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:sourceOrganization" : {

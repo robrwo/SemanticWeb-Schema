@@ -124,6 +124,16 @@
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
       },
+      "schema:includedInHealthInsurancePlan" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1062",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The insurance plans that cover this drug.",
+         "rdfs:label" : "includedInHealthInsurancePlan",
+         "schema:category" : "issue-1062",
+         "schema:domainIncludes" : "schema:Drug",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:HealthInsurancePlan"
+      },
       "schema:interactingDrug" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Another drug that is known to interact with this drug in a way that impacts the effect of this drug or causes a risk to the patient. Note: disease interactions are typically captured as contraindications.",
@@ -282,6 +292,16 @@
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
+      },
+      "schema:rxcui" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1062",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The RxCUI drug identifier from RXNORM.",
+         "rdfs:label" : "rxcui",
+         "schema:category" : "issue-1062",
+         "schema:domainIncludes" : "schema:Drug",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:warning" : {
          "rdf:type" : "rdf:Property",

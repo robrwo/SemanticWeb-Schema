@@ -132,6 +132,34 @@ has membership_number => (
 );
 
 
+=head2 C<membership_points_earned>
+
+C<membershipPointsEarned>
+
+The number of membership points earned by the member. If necessary, the
+unitText can be used to express the units the points are issued in. (e.g.
+stars, miles, etc.)
+
+
+A membership_points_earned should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
+
+=back
+
+=cut
+
+has membership_points_earned => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'membershipPointsEarned',
+);
+
+
 =head2 C<program_name>
 
 C<programName>

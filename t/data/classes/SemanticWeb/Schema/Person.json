@@ -262,6 +262,19 @@
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
+      "schema:hasCredential" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2289",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A credential awarded to the Person or Organization.",
+         "rdfs:label" : "hasCredential",
+         "schema:category" : "issue-2289",
+         "schema:domainIncludes" : [
+            "schema:Person",
+            "schema:Organization"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:EducationalOccupationalCredential"
+      },
       "schema:hasOccupation" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/1698",
          "rdf:type" : "rdf:Property",
@@ -345,12 +358,64 @@
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
+      "schema:jobTitle" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2192",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The job title of the person (for example, Financial Manager).",
+         "rdfs:label" : "jobTitle",
+         "schema:category" : "issue-2192",
+         "schema:domainIncludes" : "schema:Person",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:DefinedTerm"
+         ]
+      },
       "schema:knows" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The most generic bi-directional social/work relation.",
          "rdfs:label" : "knows",
          "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : "schema:Person"
+      },
+      "schema:knowsAbout" : {
+         "dc:source" : [
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/1688"
+         ],
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class=\"localLink\" href=\"http://schema.org/JobPosting\">JobPosting</a> descriptions.",
+         "rdfs:label" : "knowsAbout",
+         "schema:category" : "issue-1688",
+         "schema:domainIncludes" : [
+            "schema:Person",
+            "schema:Organization"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Thing",
+            "schema:URL",
+            "schema:Text"
+         ]
+      },
+      "schema:knowsLanguage" : {
+         "dc:source" : [
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/1688"
+         ],
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>.",
+         "rdfs:label" : "knowsLanguage",
+         "schema:category" : "issue-1688",
+         "schema:domainIncludes" : [
+            "schema:Organization",
+            "schema:Person"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Language",
+            "schema:Text"
+         ]
       },
       "schema:makesOffer" : {
          "dc:source" : "schemadotorgsources:source_GoodRelationsTerms",

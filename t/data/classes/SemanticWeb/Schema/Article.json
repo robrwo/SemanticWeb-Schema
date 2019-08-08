@@ -21,6 +21,22 @@
          "schema:domainIncludes" : "schema:Article",
          "schema:rangeIncludes" : "schema:Text"
       },
+      "schema:backstory" : {
+         "dc:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/1688",
+            "schemadotorgsources2:TP"
+         ],
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "For an <a class=\"localLink\" href=\"http://schema.org/Article\">Article</a>, typically a <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>, the backstory property provides a textual summary giving a brief explanation of why and how an article was created. In a journalistic setting this could include information about reporting process, methods, interviews, data sources, etc.",
+         "rdfs:label" : "backstory",
+         "schema:category" : "issue-1688",
+         "schema:domainIncludes" : "schema:Article",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:CreativeWork",
+            "schema:Text"
+         ]
+      },
       "schema:pageEnd" : {
          "dc:source" : "schemadotorgsources:source_bibex",
          "owl:equivalentProperty" : "bibo:pageEnd",

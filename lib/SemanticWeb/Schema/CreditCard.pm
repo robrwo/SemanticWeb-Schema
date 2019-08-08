@@ -38,7 +38,36 @@ supplies the card account.<br/><br/> Commonly used values:<br/><br/> <ul>
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<monthly_minimum_repayment_amount>
+
+C<monthlyMinimumRepaymentAmount>
+
+The minimum payment is the lowest amount of money that one is required to
+pay on a credit card statement each month.
+
+
+A monthly_minimum_repayment_amount should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
+
+=item C<Num>
+
+=back
+
 =cut
+
+has monthly_minimum_repayment_amount => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'monthlyMinimumRepaymentAmount',
+);
+
+
 
 
 =head1 SEE ALSO

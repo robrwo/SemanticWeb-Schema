@@ -64,6 +64,33 @@ has course_mode => (
 );
 
 
+=head2 C<course_workload>
+
+C<courseWorkload>
+
+The amount of work expected of students taking the course, often provided
+as a figure per week or per month, and may be broken down by type. For
+example, "2 hours of lectures, 1 hour of lab work and 3 hours of
+independent study per week".
+
+
+A course_workload should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has course_workload => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'courseWorkload',
+);
+
+
 =head2 C<instructor>
 
 

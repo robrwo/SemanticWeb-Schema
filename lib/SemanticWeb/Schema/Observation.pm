@@ -1,0 +1,218 @@
+use utf8;
+
+package SemanticWeb::Schema::Observation;
+
+# ABSTRACT: Instances of the class <a class="localLink" href="http://schema
+
+use Moo;
+
+extends qw/ SemanticWeb::Schema::Intangible /;
+
+
+use MooX::JSON_LD 'Observation';
+use Ref::Util qw/ is_plain_hashref /;
+# RECOMMEND PREREQ: Ref::Util::XS
+
+use namespace::autoclean;
+
+our $VERSION = 'v3.9.0';
+
+=encoding utf8
+
+=head1 DESCRIPTION
+
+=begin html
+
+Instances of the class <a class="localLink"
+href="http://schema.org/Observation">Observation</a> are used to specify
+observations about an entity (which may or may not be an instance of a <a
+class="localLink"
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>),
+at a particular time. The principal properties of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a> are <a
+class="localLink" href="http://schema.org/observedNode">observedNode</a>,
+<a class="localLink"
+href="http://schema.org/measuredProperty">measuredProperty</a>, <a
+class="localLink" href="http://schema.org/measuredValue">measuredValue</a>
+(or <a class="localLink" href="http://schema.org/median">median</a>, etc.)
+and <a class="localLink"
+href="http://schema.org/observationDate">observationDate</a> (<a
+class="localLink"
+href="http://schema.org/measuredProperty">measuredProperty</a> properties
+can, but need not always, be W3C RDF Data Cube "measure properties", as in
+the <a
+href="https://www.w3.org/TR/vocab-data-cube/#dsd-example">lifeExpectancy
+example</a>). See also <a class="localLink"
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>,
+and the <a href="/docs/data-and-datasets.html">data and datasets</a>
+overview for more details.
+
+=end html
+
+
+
+
+=head1 ATTRIBUTES
+
+
+=head2 C<margin_of_error>
+
+C<marginOfError>
+
+=begin html
+
+A marginOfError for an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.
+
+=end html
+
+
+A margin_of_error should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has margin_of_error => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'marginOfError',
+);
+
+
+=head2 C<measured_property>
+
+C<measuredProperty>
+
+=begin html
+
+The measuredProperty of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>, either a schema.org
+property, a property from other RDF-compatible systems e.g. W3C RDF Data
+Cube, or schema.org extensions such as <a
+href="https://www.gs1.org/voc/?show=properties">GS1's</a>.
+
+=end html
+
+
+A measured_property should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Property']>
+
+=back
+
+=cut
+
+has measured_property => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'measuredProperty',
+);
+
+
+=head2 C<measured_value>
+
+C<measuredValue>
+
+=begin html
+
+The measuredValue of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.
+
+=end html
+
+
+A measured_value should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DataType']>
+
+=back
+
+=cut
+
+has measured_value => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'measuredValue',
+);
+
+
+=head2 C<observation_date>
+
+C<observationDate>
+
+=begin html
+
+The observationDate of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.
+
+=end html
+
+
+A observation_date should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has observation_date => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'observationDate',
+);
+
+
+=head2 C<observed_node>
+
+C<observedNode>
+
+=begin html
+
+The observedNode of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>, often a <a
+class="localLink"
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.
+
+=end html
+
+
+A observed_node should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::StatisticalPopulation']>
+
+=back
+
+=cut
+
+has observed_node => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'observedNode',
+);
+
+
+
+
+=head1 SEE ALSO
+
+
+
+L<SemanticWeb::Schema::Intangible>
+
+=cut
+
+1;

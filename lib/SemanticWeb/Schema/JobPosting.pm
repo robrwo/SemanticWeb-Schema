@@ -29,6 +29,33 @@ A listing that describes a job opening in a certain organization.
 =head1 ATTRIBUTES
 
 
+=head2 C<applicant_location_requirements>
+
+C<applicantLocationRequirements>
+
+The location(s) applicants can apply from. This is usually used for
+telecommuting jobs where the applicant does not need to be in a physical
+office. Note: This should not be used for citizenship or work visa
+requirements.
+
+
+A applicant_location_requirements should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
+
+=back
+
+=cut
+
+has applicant_location_requirements => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'applicantLocationRequirements',
+);
+
+
 =head2 C<base_salary>
 
 C<baseSalary>
@@ -102,6 +129,32 @@ has date_posted => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'datePosted',
+);
+
+
+=head2 C<education_requirements>
+
+C<educationRequirements>
+
+Educational background needed for the position or Occupation.
+
+
+A education_requirements should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has education_requirements => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'educationRequirements',
 );
 
 
@@ -305,6 +358,30 @@ has job_benefits => (
 );
 
 
+=head2 C<job_immediate_start>
+
+C<jobImmediateStart>
+
+An indicator as to whether a position is available for an immediate start.
+
+
+A job_immediate_start should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=cut
+
+has job_immediate_start => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'jobImmediateStart',
+);
+
+
 =head2 C<job_location>
 
 C<jobLocation>
@@ -326,6 +403,57 @@ has job_location => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'jobLocation',
+);
+
+
+=head2 C<job_location_type>
+
+C<jobLocationType>
+
+A description of the job location (e.g TELECOMMUTE for telecommute jobs).
+
+
+A job_location_type should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has job_location_type => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'jobLocationType',
+);
+
+
+=head2 C<job_start_date>
+
+C<jobStartDate>
+
+The date on which a successful applicant for this job would be expected to
+start work. Choose a specific date in the future or use the
+jobImmediateStart property to indicate the position is to be filled as soon
+as possible.
+
+
+A job_start_date should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has job_start_date => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'jobStartDate',
 );
 
 
@@ -363,6 +491,32 @@ has occupational_category => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'occupationalCategory',
+);
+
+
+=head2 C<qualifications>
+
+
+
+Specific qualifications required for this role or Occupation.
+
+
+A qualifications should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has qualifications => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'qualifications',
 );
 
 
