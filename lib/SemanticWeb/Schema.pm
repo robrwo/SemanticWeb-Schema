@@ -13,7 +13,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Class::XSAccessor 1.18
@@ -40,17 +40,17 @@ were generated automatically from the following sources:
 =over
 
 
-=item L<https://schema.org/version/3.9/ext-auto.rdf>
+=item L<https://schema.org/version/4.0/ext-auto.rdf>
 
-=item L<https://schema.org/version/3.9/ext-bib.rdf>
+=item L<https://schema.org/version/4.0/ext-bib.rdf>
 
-=item L<https://schema.org/version/3.9/ext-health-lifesci.rdf>
+=item L<https://schema.org/version/4.0/ext-health-lifesci.rdf>
 
-=item L<https://schema.org/version/3.9/ext-meta.rdf>
+=item L<https://schema.org/version/4.0/ext-meta.rdf>
 
-=item L<https://schema.org/version/3.9/ext-pending.rdf>
+=item L<https://schema.org/version/4.0/ext-pending.rdf>
 
-=item L<https://schema.org/version/3.9/schema.rdf>
+=item L<https://schema.org/version/4.0/schema.rdf>
 
 =back
 

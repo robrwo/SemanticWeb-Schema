@@ -6,16 +6,16 @@ package SemanticWeb::Schema::HomeAndConstructionBusiness;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::LocalBusiness /;
+extends qw/ SemanticWeb::Schema::LocalBusiness SemanticWeb::Schema::Room /;
 
 
-use MooX::JSON_LD 'HomeAndConstructionBusiness';
+use MooX::JSON_LD 'ARRAY(0x55a419a106a8)';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 =encoding utf8
 
@@ -29,7 +29,15 @@ that provides services around homes and buildings.<br/><br/> As a <a
 class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
 it can be described as a <a class="localLink"
 href="http://schema.org/provider">provider</a> of one or more <a
-class="localLink" href="http://schema.org/Service">Service</a>(s).
+class="localLink"
+href="http://schema.org/Service">Service</a>(s).]]></rdfs:comment>
+</rdfs:Class> <rdfs:Class rdf:about="http://schema.org/HotelRoom">
+<dct:source
+rdf:resource="https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Ac
+commodation_Ontology"/> <rdfs:comment><![CDATA[A hotel room is a single
+room in a hotel. <br /><br /> See also the <a
+href="/docs/hotels.html">dedicated document on the use of schema.org for
+marking up hotels and other forms of accommodations</a>.
 
 =end html
 
@@ -43,7 +51,7 @@ class="localLink" href="http://schema.org/Service">Service</a>(s).
 
 
 
-L<SemanticWeb::Schema::LocalBusiness>
+L<SemanticWeb::Schema::Room>
 
 =cut
 

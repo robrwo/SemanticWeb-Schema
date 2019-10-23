@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 =encoding utf8
 
@@ -784,6 +784,37 @@ has isic_v4 => (
 );
 
 
+=head2 C<latitude>
+
+
+
+=begin html
+
+The latitude of a location. For example <code>37.42242</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+
+=end html
+
+
+A latitude should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has latitude => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'latitude',
+);
+
+
 =head2 C<logo>
 
 
@@ -807,6 +838,37 @@ has logo => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'logo',
+);
+
+
+=head2 C<longitude>
+
+
+
+=begin html
+
+The longitude of a location. For example <code>-122.08585</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+
+=end html
+
+
+A longitude should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has longitude => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'longitude',
 );
 
 

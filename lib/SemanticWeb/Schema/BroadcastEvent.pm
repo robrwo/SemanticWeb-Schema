@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 =encoding utf8
 
@@ -74,6 +74,37 @@ has is_live_broadcast => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'isLiveBroadcast',
+);
+
+
+=head2 C<subtitle_language>
+
+C<subtitleLanguage>
+
+=begin html
+
+Languages in which subtitles/captions are available, in <a
+href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard format</a>.
+
+=end html
+
+
+A subtitle_language should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Language']>
+
+=item C<Str>
+
+=back
+
+=cut
+
+has subtitle_language => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'subtitleLanguage',
 );
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 =encoding utf8
 
@@ -180,6 +180,31 @@ has employment_type => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'employmentType',
+);
+
+
+=head2 C<employment_unit>
+
+C<employmentUnit>
+
+Indicates the department, unit and/or facility where the employee reports
+and/or in which the job is to be performed.
+
+
+A employment_unit should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=back
+
+=cut
+
+has employment_unit => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'employmentUnit',
 );
 
 
@@ -668,6 +693,31 @@ has title => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'title',
+);
+
+
+=head2 C<total_job_openings>
+
+C<totalJobOpenings>
+
+The number of positions open for this job posting. Use a positive integer.
+Do not use if the number of positions is unclear or not known.
+
+
+A total_job_openings should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=back
+
+=cut
+
+has total_job_openings => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'totalJobOpenings',
 );
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v3.9.1';
+our $VERSION = 'v4.0.0';
 
 =encoding utf8
 
@@ -51,6 +51,35 @@ has about => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'about',
+);
+
+
+=head2 C<abstract>
+
+
+
+=begin html
+
+An abstract is a short description that summarizes a <a class="localLink"
+href="http://schema.org/CreativeWork">CreativeWork</a>.
+
+=end html
+
+
+A abstract should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has abstract => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'abstract',
 );
 
 
