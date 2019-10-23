@@ -388,6 +388,9 @@ sub comment_to_pod {
     my $buffer = "";
 
     my $is_html = $comment =~ /\<\w+.*\>/;
+
+    $comment = "<p>" . $comment . "<p>" if $is_html;
+
     $buffer .= "=begin html\n\n" if $is_html;
 
     $buffer .= wrap( '', '', $comment ) . "\n\n";
