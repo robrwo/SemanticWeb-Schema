@@ -6,6 +6,7 @@ use Moo;
 
 use Carp;
 use Const::Fast;
+use HTML::Strip;
 use JSON::MaybeXS;
 use List::Util 1.33 qw/ any pairgrep uniqstr /;
 use LWP::UserAgent;
@@ -236,6 +237,13 @@ has trines => (
     },
 );
 
+has html_strip => (
+    is      => 'bare',
+    isa     => InstanceOf ['HTML::Strip'],
+    builder => sub { return HTML::Strip->new },
+    handles => { strip_html => 'parse' },
+);
+
 sub generate_class_from_trine {
     my ( $self, $subj ) = @_;
 
@@ -268,7 +276,7 @@ sub generate_class_from_trine {
     my $comment = $nodes->{'rdfs:comment'};
     if ($comment) {
 
-        my $abstract = $comment;
+        my $abstract = $self->strip_html($comment);
         $abstract =~ s/\s+/ /g;
         if ( length($abstract) > $MAX_ABSTRACT_LENGTH ) {
             $abstract =~ s/\..+$//;
