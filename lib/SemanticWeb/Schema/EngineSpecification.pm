@@ -36,15 +36,15 @@ C<engineDisplacement>
 
 =begin html
 
-The volume swept by all of the pistons inside the cylinders of an internal
-combustion engine in a single movement. <br/><br/> Typical unit code(s):
-CMQ for cubic centimeter, LTR for liters, INQ for cubic inches * Note 1:
-You can link to information about how the given value has been determined
-using the <a class="localLink"
+<p>The volume swept by all of the pistons inside the cylinders of an
+internal combustion engine in a single movement. <br/><br/> Typical unit
+code(s): CMQ for cubic centimeter, LTR for liters, INQ for cubic inches *
+Note 1: You can link to information about how the given value has been
+determined using the <a class="localLink"
 href="http://schema.org/valueReference">valueReference</a> property. * Note
 2: You can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
-href="http://schema.org/maxValue">maxValue</a> to indicate ranges.
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.<p>
 
 =end html
 
@@ -72,10 +72,10 @@ C<enginePower>
 
 =begin html
 
-The power of the vehicle's engine. Typical unit code(s): KWT for kilowatt,
-BHP for brake horsepower, N12 for metric horsepower (PS, with 1 PS =
-735,49875 W)<br/><br/> <ul> <li>Note 1: There are many different ways of
-measuring an engine's power. For an overview, see <a
+<p>The power of the vehicle's engine. Typical unit code(s): KWT for
+kilowatt, BHP for brake horsepower, N12 for metric horsepower (PS, with 1
+PS = 735,49875 W)<br/><br/> <ul> <li>Note 1: There are many different ways
+of measuring an engine's power. For an overview, see <a
 href="http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes">http
 ://en.wikipedia.org/wiki/Horsepower#Engine<em>power</em>test_codes</a>.</li
 > <li>Note 2: You can link to information about how the given value has
@@ -84,7 +84,7 @@ href="http://schema.org/valueReference">valueReference</a> property.</li>
 <li>Note 3: You can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> 
+</ul> <p>
 
 =end html
 
@@ -166,16 +166,16 @@ has fuel_type => (
 
 =begin html
 
-The torque (turning force) of the vehicle's engine.<br/><br/> Typical unit
-code(s): NU for newton metre (N m), F17 for pound-force per foot, or F48
-for pound-force per inch<br/><br/> <ul> <li>Note 1: You can link to
+<p>The torque (turning force) of the vehicle's engine.<br/><br/> Typical
+unit code(s): NU for newton metre (N m), F17 for pound-force per foot, or
+F48 for pound-force per inch<br/><br/> <ul> <li>Note 1: You can link to
 information about how the given value has been determined (e.g. reference
 RPM) using the <a class="localLink"
 href="http://schema.org/valueReference">valueReference</a> property.</li>
 <li>Note 2: You can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> 
+</ul> <p>
 
 =end html
 

@@ -36,14 +36,14 @@ C<legislationApplies>
 
 =begin html
 
-Indicates that this legislation (or part of a legislation) somehow
+<p>Indicates that this legislation (or part of a legislation) somehow
 transfers another legislation in a different legislative context. This is
 an informative link, and it has no legal value. For legally-binding links
 of transposition, use the <a
 href="/legislationTransposes">legislationTransposes</a> property. For
 example an informative consolidated law of a European Union's member state
 "applies" the consolidated version of the European Directive implemented in
-it.
+it.<p>
 
 =end html
 
@@ -71,14 +71,14 @@ C<legislationChanges>
 
 =begin html
 
-Another legislation that this legislation changes. This encompasses the
+<p>Another legislation that this legislation changes. This encompasses the
 notions of amendment, replacement, correction, repeal, or other types of
 change. This may be a direct change (textual or non-textual amendment) or a
 consequential or indirect change. The property is to be used to express the
 existence of a change relationship between two acts rather than the
 existence of a consolidated version of the text that shows the result of
 the change. For consolidation relationships, use the <a
-href="/legislationConsolidates">legislationConsolidates</a> property.
+href="/legislationConsolidates">legislationConsolidates</a> property.<p>
 
 =end html
 

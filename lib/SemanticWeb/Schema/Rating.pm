@@ -90,11 +90,11 @@ C<ratingExplanation>
 
 =begin html
 
-A short explanation (e.g. one to two sentences) providing background
+<p>A short explanation (e.g. one to two sentences) providing background
 context and other information that led to the conclusion expressed in the
 rating. This is particularly applicable to ratings associated with "fact
 check" markup using <a class="localLink"
-href="http://schema.org/ClaimReview">ClaimReview</a>.
+href="http://schema.org/ClaimReview">ClaimReview</a>.<p>
 
 =end html
 
@@ -122,12 +122,12 @@ C<ratingValue>
 
 =begin html
 
-The rating for the content.<br/><br/> Usage guidelines:<br/><br/> <ul>
+<p>The rating for the content.<br/><br/> Usage guidelines:<br/><br/> <ul>
 <li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT
 NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
 <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
 decimal point. Avoid using these symbols as a readability separator.</li>
-</ul> 
+</ul> <p>
 
 =end html
 

@@ -37,9 +37,9 @@ C<archiveHeld>
 
 =begin html
 
-Collection, <a href="https://en.wikipedia.org/wiki/Fonds">fonds</a>, or
+<p>Collection, <a href="https://en.wikipedia.org/wiki/Fonds">fonds</a>, or
 item held, kept or maintained by an <a class="localLink"
-href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>.
+href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>.<p>
 
 =end html
 

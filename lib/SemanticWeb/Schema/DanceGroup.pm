@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::DanceGroup;
 
-# ABSTRACT: A dance group&#x2014;for example
+# ABSTRACT: A dance group—for example
 
 use Moo;
 

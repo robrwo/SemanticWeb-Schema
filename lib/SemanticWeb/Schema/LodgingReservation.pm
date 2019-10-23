@@ -23,9 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A reservation for lodging at a hotel, motel, inn, etc.<br/><br/> Note: This
-type is for information about actual reservations, e.g. in confirmation
-emails or HTML pages with individual confirmations of reservations.
+<p>A reservation for lodging at a hotel, motel, inn, etc.<br/><br/> Note:
+This type is for information about actual reservations, e.g. in
+confirmation emails or HTML pages with individual confirmations of
+reservations.<p>
 
 =end html
 

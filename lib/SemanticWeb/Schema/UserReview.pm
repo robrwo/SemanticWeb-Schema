@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A review created by an end-user (e.g. consumer, purchaser, attendee etc.),
-in contrast with <a class="localLink"
-href="http://schema.org/CriticReview">CriticReview</a>.
+<p>A review created by an end-user (e.g. consumer, purchaser, attendee
+etc.), in contrast with <a class="localLink"
+href="http://schema.org/CriticReview">CriticReview</a>.<p>
 
 =end html
 

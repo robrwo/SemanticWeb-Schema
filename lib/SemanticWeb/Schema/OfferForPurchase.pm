@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::OfferForPurchase;
 
-# ABSTRACT: An <a class="localLink" href="http://schema
+# ABSTRACT: An OfferForPurchase in Schema
 
 use Moo;
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An <a class="localLink"
+<p>An <a class="localLink"
 href="http://schema.org/OfferForPurchase">OfferForPurchase</a> in
 Schema.org represents an <a class="localLink"
 href="http://schema.org/Offer">Offer</a> to sell something, i.e. an <a
@@ -32,7 +32,7 @@ class="localLink"
 href="http://schema.org/businessFunction">businessFunction</a> is <a
 href="http://purl.org/goodrelations/v1#Sell.">sell</a>. See <a
 href="https://en.wikipedia.org/wiki/GoodRelations">Good Relations</a> for
-background on the underlying concepts.
+background on the underlying concepts.<p>
 
 =end html
 

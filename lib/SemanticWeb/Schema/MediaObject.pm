@@ -135,8 +135,8 @@ has content_url => (
 
 =begin html
 
-The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.
+<p>The duration of the item (movie, audio recording, event, etc.) in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
 
 =end html
 
@@ -164,9 +164,9 @@ C<embedUrl>
 
 =begin html
 
-A URL pointing to a player for a specific video. In general, this is the
+<p>A URL pointing to a player for a specific video. In general, this is the
 information in the <code>src</code> element of an <code>embed</code> tag
-and should not be the same as the content of the <code>loc</code> tag.
+and should not be the same as the content of the <code>loc</code> tag.<p>
 
 =end html
 
@@ -218,7 +218,7 @@ C<encodingFormat>
 
 =begin html
 
-Media type typically expressed using a MIME format (see <a
+<p>Media type typically expressed using a MIME format (see <a
 href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
 site</a> and <a
 href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME
@@ -232,7 +232,7 @@ alongside particular <a class="localLink"
 href="http://schema.org/encodingFormat">encodingFormat</a>
 information.<br/><br/> Unregistered or niche encoding and file formats can
 be indicated instead via the most appropriate URL, e.g. defining Web page
-or a Wikipedia/Wikidata entry.
+or a Wikipedia/Wikidata entry.<p>
 
 =end html
 
@@ -260,14 +260,14 @@ C<endTime>
 
 =begin html
 
-The endTime of something. For a reserved event or service (e.g.
+<p>The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from January to <em>December</em>. For media, including
 audio and video, it's the time offset of the end of a clip within a larger
 file.<br/><br/> Note that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+may be clarified in future revisions.<p>
 
 =end html
 
@@ -370,9 +370,9 @@ C<regionsAllowed>
 
 =begin html
 
-The regions where the media is allowed. If not specified, then it's assumed
-to be allowed everywhere. Specify the countries in <a
-href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166 format</a>.
+<p>The regions where the media is allowed. If not specified, then it's
+assumed to be allowed everywhere. Specify the countries in <a
+href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166 format</a>.<p>
 
 =end html
 
@@ -400,9 +400,9 @@ C<requiresSubscription>
 
 =begin html
 
-Indicates if use of the media require a subscription (either paid or free).
-Allowed values are <code>true</code> or <code>false</code> (note that an
-earlier version had 'yes', 'no').
+<p>Indicates if use of the media require a subscription (either paid or
+free). Allowed values are <code>true</code> or <code>false</code> (note
+that an earlier version had 'yes', 'no').<p>
 
 =end html
 
@@ -432,14 +432,14 @@ C<startTime>
 
 =begin html
 
-The startTime of something. For a reserved event or service (e.g.
+<p>The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from <em>January</em> to December. For media, including
 audio and video, it's the time offset of the start of a clip within a
 larger file.<br/><br/> Note that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+may be clarified in future revisions.<p>
 
 =end html
 

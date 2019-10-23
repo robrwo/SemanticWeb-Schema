@@ -139,12 +139,12 @@ has disambiguating_description => (
 
 =begin html
 
-The identifier property represents any kind of identifier for any kind of
-<a class="localLink" href="http://schema.org/Thing">Thing</a>, such as
+<p>The identifier property represents any kind of identifier for any kind
+of <a class="localLink" href="http://schema.org/Thing">Thing</a>, such as
 ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for
 representing many of these, either as textual strings or as URL (URI)
 links. See <a href="/docs/datamodel.html#identifierBg">background notes</a>
-for more details.
+for more details.<p>
 
 =end html
 
@@ -174,9 +174,9 @@ has identifier => (
 
 =begin html
 
-An image of the item. This can be a <a class="localLink"
+<p>An image of the item. This can be a <a class="localLink"
 href="http://schema.org/URL">URL</a> or a fully described <a
-class="localLink" href="http://schema.org/ImageObject">ImageObject</a>.
+class="localLink" href="http://schema.org/ImageObject">ImageObject</a>.<p>
 
 =end html
 
@@ -206,10 +206,10 @@ C<mainEntityOfPage>
 
 =begin html
 
-Indicates a page (or other CreativeWork) for which this thing is the main
-entity being described. See <a
+<p>Indicates a page (or other CreativeWork) for which this thing is the
+main entity being described. See <a
 href="/docs/datamodel.html#mainEntityBackground">background notes</a> for
-details.
+details.<p>
 
 =end html
 

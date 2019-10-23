@@ -36,10 +36,10 @@ C<holdingArchive>
 
 =begin html
 
-<a class="localLink"
+<p><a class="localLink"
 href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a> that
 holds, keeps or maintains the <a class="localLink"
-href="http://schema.org/ArchiveComponent">ArchiveComponent</a>.
+href="http://schema.org/ArchiveComponent">ArchiveComponent</a>.<p>
 
 =end html
 

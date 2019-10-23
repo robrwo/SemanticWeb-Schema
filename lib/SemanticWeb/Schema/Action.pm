@@ -23,14 +23,14 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An action performed by a direct agent and indirect participants upon a
+<p>An action performed by a direct agent and indirect participants upon a
 direct object. Optionally happens at a location with the help of an
 inanimate instrument. The execution of the action may produce a result.
 Specific action sub-type documentation specifies the exact expectation of
 each argument/role.<br/><br/> See also <a
 href="http://blog.schema.org/2014/04/announcing-schemaorg-actions.html">blo
 g post</a> and <a href="http://schema.org/docs/actions.html">Actions
-overview document</a>.
+overview document</a>.<p>
 
 =end html
 
@@ -70,8 +70,8 @@ has action_status => (
 
 =begin html
 
-The direct performer or driver of the action (animate or inanimate). e.g.
-<em>John</em> wrote a book.
+<p>The direct performer or driver of the action (animate or inanimate).
+e.g. <em>John</em> wrote a book.<p>
 
 =end html
 
@@ -101,14 +101,14 @@ C<endTime>
 
 =begin html
 
-The endTime of something. For a reserved event or service (e.g.
+<p>The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from January to <em>December</em>. For media, including
 audio and video, it's the time offset of the end of a clip within a larger
 file.<br/><br/> Note that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+may be clarified in future revisions.<p>
 
 =end html
 
@@ -160,8 +160,8 @@ has error => (
 
 =begin html
 
-The object that helped the agent perform the action. e.g. John wrote a book
-with <em>a pen</em>.
+<p>The object that helped the agent perform the action. e.g. John wrote a
+book with <em>a pen</em>.<p>
 
 =end html
 
@@ -218,10 +218,10 @@ has location => (
 
 =begin html
 
-The object upon which the action is carried out, whose state is kept intact
-or changed. Also known as the semantic roles patient, affected or undergoer
-(which change their state) or theme (which doesn't). e.g. John read <em>a
-book</em>.
+<p>The object upon which the action is carried out, whose state is kept
+intact or changed. Also known as the semantic roles patient, affected or
+undergoer (which change their state) or theme (which doesn't). e.g. John
+read <em>a book</em>.<p>
 
 =end html
 
@@ -249,8 +249,8 @@ has object => (
 
 =begin html
 
-Other co-agents that participated in the action indirectly. e.g. John wrote
-a book with <em>Steve</em>.
+<p>Other co-agents that participated in the action indirectly. e.g. John
+wrote a book with <em>Steve</em>.<p>
 
 =end html
 
@@ -280,7 +280,7 @@ has participant => (
 
 =begin html
 
-The result produced in the action. e.g. John wrote <em>a book</em>.
+<p>The result produced in the action. e.g. John wrote <em>a book</em>.<p>
 
 =end html
 
@@ -308,14 +308,14 @@ C<startTime>
 
 =begin html
 
-The startTime of something. For a reserved event or service (e.g.
+<p>The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from <em>January</em> to December. For media, including
 audio and video, it's the time offset of the start of a clip within a
 larger file.<br/><br/> Note that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+may be clarified in future revisions.<p>
 
 =end html
 

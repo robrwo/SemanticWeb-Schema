@@ -35,14 +35,14 @@ C<additionalProperty>
 
 =begin html
 
-A property-value pair representing an additional characteristics of the
+<p>A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
 is no matching property in schema.org.<br/><br/> Note: Publishers should be
 aware that applications designed to use specific schema.org properties
 (e.g. http://schema.org/width, http://schema.org/color,
 http://schema.org/gtin13, ...) will typically expect such data to be
 provided using those properties, rather than using the generic
-property/value mechanism.
+property/value mechanism.<p>
 
 =end html
 
@@ -148,11 +148,11 @@ C<branchCode>
 
 =begin html
 
-A short textual code (also called "store code") that uniquely identifies a
-place of business. The code is typically assigned by the parentOrganization
-and used in structured URLs.<br/><br/> For example, in the URL
-http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code "3047" is
-a branchCode for a particular branch.
+<p>A short textual code (also called "store code") that uniquely identifies
+a place of business. The code is typically assigned by the
+parentOrganization and used in structured URLs.<br/><br/> For example, in
+the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code
+"3047" is a branchCode for a particular branch.<p>
 
 =end html
 
@@ -351,11 +351,11 @@ C<geoContains>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a containing geometry to a contained geometry. "a
 contains b iff no points of b lie in the exterior of a, and at least one
 point of the interior of b lies in the interior of a". As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -385,9 +385,9 @@ C<geoCoveredBy>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a geometry to another that covers it. As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -417,10 +417,10 @@ C<geoCovers>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a covering geometry to a covered geometry. "Every
 point of b is a point of (the interior or boundary of) a". As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -450,11 +450,11 @@ C<geoCrosses>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a geometry to another that crosses it: "a crosses b:
 they have some but not all interior points in common, and the dimension of
 the intersection is less than that of at least one of them". As defined in
-<a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+<a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -484,10 +484,10 @@ C<geoDisjoint>
 
 =begin html
 
-Represents spatial relations in which two geometries (or the places they
+<p>Represents spatial relations in which two geometries (or the places they
 represent) are topologically disjoint: they have no point in common. They
 form a set of disconnected geometries." (a symmetric relationship, as
-defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>)
+defined in <a href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>)<p>
 
 =end html
 
@@ -517,12 +517,12 @@ C<geoEquals>
 
 =begin html
 
-Represents spatial relations in which two geometries (or the places they
+<p>Represents spatial relations in which two geometries (or the places they
 represent) are topologically equal, as defined in <a
 href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>. "Two geometries are
 topologically equal if their interiors intersect and no part of the
 interior or boundary of one geometry intersects the exterior of the other"
-(a symmetric relationship)
+(a symmetric relationship)<p>
 
 =end html
 
@@ -552,9 +552,9 @@ C<geoIntersects>
 
 =begin html
 
-Represents spatial relations in which two geometries (or the places they
+<p>Represents spatial relations in which two geometries (or the places they
 represent) have at least one point in common. As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -584,10 +584,10 @@ C<geoOverlaps>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a geometry to another that geospatially overlaps it,
 i.e. they have some but not all points in common. As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -617,10 +617,10 @@ C<geoTouches>
 
 =begin html
 
-Represents spatial relations in which two geometries (or the places they
+<p>Represents spatial relations in which two geometries (or the places they
 represent) touch: they have at least one boundary point in common, but no
 interior points." (a symmetric relationship, as defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a> )
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a> )<p>
 
 =end html
 
@@ -650,10 +650,10 @@ C<geoWithin>
 
 =begin html
 
-Represents a relationship between two geometries (or the places they
+<p>Represents a relationship between two geometries (or the places they
 represent), relating a geometry to one that contains it, i.e. it is inside
 (i.e. within) its interior. As defined in <a
-href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.
+href="https://en.wikipedia.org/wiki/DE-9IM">DE-9IM</a>.<p>
 
 =end html
 
@@ -683,10 +683,10 @@ C<globalLocationNumber>
 
 =begin html
 
-The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
+<p>The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
 sometimes also referred to as International Location Number or ILN) of the
 respective organization, person, or place. The GLN is a 13-digit number
-used to identify parties and physical locations.
+used to identify parties and physical locations.<p>
 
 =end html
 
@@ -790,8 +790,8 @@ has isic_v4 => (
 
 =begin html
 
-The latitude of a location. For example <code>37.42242</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+<p>The latitude of a location. For example <code>37.42242</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
 
 =end html
 
@@ -847,8 +847,8 @@ has logo => (
 
 =begin html
 
-The longitude of a location. For example <code>-122.08585</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+<p>The longitude of a location. For example <code>-122.08585</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
 
 =end html
 
@@ -1026,9 +1026,9 @@ C<publicAccess>
 
 =begin html
 
-A flag to signal that the <a class="localLink"
+<p>A flag to signal that the <a class="localLink"
 href="http://schema.org/Place">Place</a> is open to public visitors. If
-this property is omitted there is no assumed default boolean value
+this property is omitted there is no assumed default boolean value<p>
 
 =end html
 
@@ -1153,12 +1153,12 @@ C<specialOpeningHoursSpecification>
 
 =begin html
 
-The special opening hours of a certain place.<br/><br/> Use this to
+<p>The special opening hours of a certain place.<br/><br/> Use this to
 explicitly override general opening hours brought in scope by <a
 class="localLink"
 href="http://schema.org/openingHoursSpecification">openingHoursSpecificatio
 n</a> or <a class="localLink"
-href="http://schema.org/openingHours">openingHours</a>.
+href="http://schema.org/openingHours">openingHours</a>.<p>
 
 =end html
 

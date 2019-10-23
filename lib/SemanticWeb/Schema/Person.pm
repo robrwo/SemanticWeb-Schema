@@ -578,7 +578,7 @@ has funder => (
 
 =begin html
 
-Gender of something, typically a <a class="localLink"
+<p>Gender of something, typically a <a class="localLink"
 href="http://schema.org/Person">Person</a>, but possibly also fictional
 characters, animals, etc. While http://schema.org/Male and
 http://schema.org/Female may be used, text strings are also acceptable for
@@ -588,7 +588,7 @@ extended sense to cover e.g. the gender of sports teams. As with the gender
 of individuals, we do not try to enumerate all possibilities. A
 mixed-gender <a class="localLink"
 href="http://schema.org/SportsTeam">SportsTeam</a> can be indicated with a
-text value of "Mixed".
+text value of "Mixed".<p>
 
 =end html
 
@@ -643,10 +643,10 @@ C<globalLocationNumber>
 
 =begin html
 
-The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
+<p>The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
 sometimes also referred to as International Location Number or ILN) of the
 respective organization, person, or place. The GLN is a 13-digit number
-used to identify parties and physical locations.
+used to identify parties and physical locations.<p>
 
 =end html
 
@@ -948,13 +948,13 @@ C<knowsAbout>
 
 =begin html
 
-Of a <a class="localLink" href="http://schema.org/Person">Person</a>, and
-less typically of an <a class="localLink"
+<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
+and less typically of an <a class="localLink"
 href="http://schema.org/Organization">Organization</a>, to indicate a topic
 that is known about - suggesting possible expertise but not implying it. We
 do not distinguish skill levels here, or relate this to educational
 content, events, objectives or <a class="localLink"
-href="http://schema.org/JobPosting">JobPosting</a> descriptions.
+href="http://schema.org/JobPosting">JobPosting</a> descriptions.<p>
 
 =end html
 
@@ -984,12 +984,12 @@ C<knowsLanguage>
 
 =begin html
 
-Of a <a class="localLink" href="http://schema.org/Person">Person</a>, and
-less typically of an <a class="localLink"
+<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
+and less typically of an <a class="localLink"
 href="http://schema.org/Organization">Organization</a>, to indicate a known
 language. We do not distinguish skill levels or
 reading/writing/speaking/signing here. Use language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.
+href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.<p>
 
 =end html
 
@@ -1244,7 +1244,7 @@ C<publishingPrinciples>
 
 =begin html
 
-The publishingPrinciples property indicates (typically via <a
+<p>The publishingPrinciples property indicates (typically via <a
 class="localLink" href="http://schema.org/URL">URL</a>) a document
 describing the editorial principles of an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (or individual e.g.
@@ -1259,7 +1259,7 @@ href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
 such policies are most typically expressed in natural language, sometimes
 related information (e.g. indicating a <a class="localLink"
 href="http://schema.org/funder">funder</a>) can be expressed using
-schema.org terminology.
+schema.org terminology.<p>
 
 =end html
 

@@ -35,9 +35,9 @@ C<addressCountry>
 
 =begin html
 
-The country. For example, USA. You can also provide the two-letter <a
+<p>The country. For example, USA. You can also provide the two-letter <a
 href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2 country
-code</a>.
+code</a>.<p>
 
 =end html
 
@@ -92,10 +92,10 @@ C<addressRegion>
 
 =begin html
 
-The region in which the locality is, and which is in the country. For
+<p>The region in which the locality is, and which is in the country. For
 example, California or another appropriate first-level <a
 href="https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_cou
-ntry">Administrative division</a>
+ntry">Administrative division</a><p>
 
 =end html
 

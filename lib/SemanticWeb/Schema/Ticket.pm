@@ -83,7 +83,7 @@ C<priceCurrency>
 
 =begin html
 
-The currency of the price, or a price component when attached to <a
+<p>The currency of the price, or a price component when attached to <a
 class="localLink"
 href="http://schema.org/PriceSpecification">PriceSpecification</a> and its
 subtypes.<br/><br/> Use standard formats: <a
@@ -93,7 +93,7 @@ href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
 symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
 href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
 Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".
+HOUR".<p>
 
 =end html
 
@@ -194,12 +194,12 @@ C<totalPrice>
 
 =begin html
 
-The total price for the reservation or ticket, including applicable taxes,
-shipping, etc.<br/><br/> Usage guidelines:<br/><br/> <ul> <li>Use values
-from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
-rather than superficially similiar Unicode symbols.</li> <li>Use '.'
-(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
-Avoid using these symbols as a readability separator.</li> </ul> 
+<p>The total price for the reservation or ticket, including applicable
+taxes, shipping, etc.<br/><br/> Usage guidelines:<br/><br/> <ul> <li>Use
+values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+(U+0039)) rather than superficially similiar Unicode symbols.</li> <li>Use
+'.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal
+point. Avoid using these symbols as a readability separator.</li> </ul> <p>
 
 =end html
 

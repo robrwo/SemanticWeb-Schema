@@ -23,10 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An event happening at a certain time and location, such as a concert,
+<p>An event happening at a certain time and location, such as a concert,
 lecture, or festival. Ticketing information may be added via the <a
 class="localLink" href="http://schema.org/offers">offers</a> property.
-Repeated events may be structured as separate Event objects.
+Repeated events may be structured as separate Event objects.<p>
 
 =end html
 
@@ -296,8 +296,8 @@ has door_time => (
 
 =begin html
 
-The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.
+<p>The duration of the item (movie, audio recording, event, etc.) in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
 
 =end html
 
@@ -325,8 +325,8 @@ C<endDate>
 
 =begin html
 
-The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The end date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 
@@ -406,11 +406,11 @@ C<inLanguage>
 
 =begin html
 
-The language of the content or performance or used in an action. Please use
-one of the language codes from the <a
+<p>The language of the content or performance or used in an action. Please
+use one of the language codes from the <a
 href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
 <a class="localLink"
-href="http://schema.org/availableLanguage">availableLanguage</a>.
+href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
 
 =end html
 
@@ -751,8 +751,8 @@ C<startDate>
 
 =begin html
 
-The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The start date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 

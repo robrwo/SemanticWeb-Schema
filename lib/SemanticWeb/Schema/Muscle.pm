@@ -36,10 +36,10 @@ tissue that animals use to effect movement.
 
 =begin html
 
-Obsolete term for <a class="localLink"
+<p>Obsolete term for <a class="localLink"
 href="http://schema.org/muscleAction">muscleAction</a>. Not to be confused
 with <a class="localLink"
-href="http://schema.org/potentialAction">potentialAction</a>.
+href="http://schema.org/potentialAction">potentialAction</a>.<p>
 
 =end html
 

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::CampingPitch;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A CampingPitch is an individual place for overnight stay in the outdoors
 
 use Moo;
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink"
+<p>A <a class="localLink"
 href="http://schema.org/CampingPitch">CampingPitch</a> is an individual
 place for overnight stay in the outdoors, typically being part of a larger
 camping site, or <a class="localLink"
@@ -38,7 +38,7 @@ many campsites. (Source: Wikipedia see <a
 href="https://en.wikipedia.org/wiki/Campsite">https://en.wikipedia.org/wiki
 /Campsite</a>).<br/><br/> See also the dedicated <a
 href="/docs/hotels.html">document on the use of schema.org for marking up
-hotels and other forms of accommodations</a>.
+hotels and other forms of accommodations</a>.<p>
 
 =end html
 

@@ -23,12 +23,12 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A DatedMoneySpecification represents monetary values with optional start
+<p>A DatedMoneySpecification represents monetary values with optional start
 and end dates. For example, this could represent an employee's salary over
 a specific period of time. <strong>Note:</strong> This type has been
 superseded by <a class="localLink"
 href="http://schema.org/MonetaryAmount">MonetaryAmount</a> use of that type
-is recommended
+is recommended<p>
 
 =end html
 
@@ -70,14 +70,14 @@ has amount => (
 
 =begin html
 
-The currency in which the monetary amount is expressed.<br/><br/> Use
+<p>The currency in which the monetary amount is expressed.<br/><br/> Use
 standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217
 currency format</a> e.g. "USD"; <a
 href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
 symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
 href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
 Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".
+HOUR".<p>
 
 =end html
 
@@ -105,8 +105,8 @@ C<endDate>
 
 =begin html
 
-The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The end date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 
@@ -134,8 +134,8 @@ C<startDate>
 
 =begin html
 
-The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The start date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 

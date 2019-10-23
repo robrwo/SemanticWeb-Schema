@@ -60,8 +60,9 @@ has about => (
 
 =begin html
 
-An abstract is a short description that summarizes a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.
+<p>An abstract is a short description that summarizes a <a
+class="localLink"
+href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
 
 =end html
 
@@ -142,9 +143,10 @@ C<accessibilityAPI>
 
 =begin html
 
-Indicates that the resource is compatible with the referenced accessibility
-API (<a href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas
-wiki lists possible values</a>).
+<p>Indicates that the resource is compatible with the referenced
+accessibility API (<a
+href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
+lists possible values</a>).<p>
 
 =end html
 
@@ -172,10 +174,10 @@ C<accessibilityControl>
 
 =begin html
 
-Identifies input methods that are sufficient to fully control the described
-resource (<a
+<p>Identifies input methods that are sufficient to fully control the
+described resource (<a
 href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).
+lists possible values</a>).<p>
 
 =end html
 
@@ -203,10 +205,10 @@ C<accessibilityFeature>
 
 =begin html
 
-Content features of the resource, such as accessible media, alternatives
+<p>Content features of the resource, such as accessible media, alternatives
 and supported enhancements for accessibility (<a
 href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).
+lists possible values</a>).<p>
 
 =end html
 
@@ -234,10 +236,10 @@ C<accessibilityHazard>
 
 =begin html
 
-A characteristic of the described resource that is physiologically
+<p>A characteristic of the described resource that is physiologically
 dangerous to some users. Related to WCAG 2.0 guideline 2.3 (<a
 href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).
+lists possible values</a>).<p>
 
 =end html
 
@@ -618,15 +620,16 @@ C<conditionsOfAccess>
 
 =begin html
 
-Conditions that affect the availability of, or method(s) of access to, an
-item. Typically used for real world items such as an <a class="localLink"
+<p>Conditions that affect the availability of, or method(s) of access to,
+an item. Typically used for real world items such as an <a
+class="localLink"
 href="http://schema.org/ArchiveComponent">ArchiveComponent</a> held by an
 <a class="localLink"
 href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>. This
 property is not suitable for use as a general Web access control mechanism.
 It is expressed only in natural language.<br/><br/> For example "Available
 by appointment from the Reading Room" or "Accessible only from logged-in
-accounts ".
+accounts ".<p>
 
 =end html
 
@@ -807,11 +810,11 @@ has copyright_year => (
 
 =begin html
 
-Indicates a correction to a <a class="localLink"
+<p>Indicates a correction to a <a class="localLink"
 href="http://schema.org/CreativeWork">CreativeWork</a>, either via a <a
 class="localLink"
 href="http://schema.org/CorrectionComment">CorrectionComment</a>, textually
-or in another document.
+or in another document.<p>
 
 =end html
 
@@ -1092,7 +1095,7 @@ C<encodingFormat>
 
 =begin html
 
-Media type typically expressed using a MIME format (see <a
+<p>Media type typically expressed using a MIME format (see <a
 href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
 site</a> and <a
 href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME
@@ -1106,7 +1109,7 @@ alongside particular <a class="localLink"
 href="http://schema.org/encodingFormat">encodingFormat</a>
 information.<br/><br/> Unregistered or niche encoding and file formats can
 be indicated instead via the most appropriate URL, e.g. defining Web page
-or a Wikipedia/Wikidata entry.
+or a Wikipedia/Wikidata entry.<p>
 
 =end html
 
@@ -1183,14 +1186,14 @@ has example_of_work => (
 
 =begin html
 
-Date the content expires and is no longer useful or available. For example
-a <a class="localLink" href="http://schema.org/VideoObject">VideoObject</a>
-or <a class="localLink"
-href="http://schema.org/NewsArticle">NewsArticle</a> whose availability or
-relevance is time-limited, or a <a class="localLink"
+<p>Date the content expires and is no longer useful or available. For
+example a <a class="localLink"
+href="http://schema.org/VideoObject">VideoObject</a> or <a
+class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
+whose availability or relevance is time-limited, or a <a class="localLink"
 href="http://schema.org/ClaimReview">ClaimReview</a> fact check whose
 publisher wants to indicate that it may no longer be relevant (or helpful
-to highlight) after some date.
+to highlight) after some date.<p>
 
 =end html
 
@@ -1218,14 +1221,14 @@ C<fileFormat>
 
 =begin html
 
-Media type, typically MIME format (see <a
+<p>Media type, typically MIME format (see <a
 href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
 site</a>) of the content e.g. application/zip of a SoftwareApplication
 binary. In cases where a CreativeWork has several media type
 representations, 'encoding' can be used to indicate each MediaObject
 alongside particular fileFormat information. Unregistered or niche file
 formats can be indicated instead via the most appropriate URL, e.g.
-defining Web page or a Wikipedia entry.
+defining Web page or a Wikipedia entry.<p>
 
 =end html
 
@@ -1353,11 +1356,11 @@ C<inLanguage>
 
 =begin html
 
-The language of the content or performance or used in an action. Please use
-one of the language codes from the <a
+<p>The language of the content or performance or used in an action. Please
+use one of the language codes from the <a
 href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
 <a class="localLink"
-href="http://schema.org/availableLanguage">availableLanguage</a>.
+href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
 
 =end html
 
@@ -1955,7 +1958,7 @@ C<publishingPrinciples>
 
 =begin html
 
-The publishingPrinciples property indicates (typically via <a
+<p>The publishingPrinciples property indicates (typically via <a
 class="localLink" href="http://schema.org/URL">URL</a>) a document
 describing the editorial principles of an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (or individual e.g.
@@ -1970,7 +1973,7 @@ href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
 such policies are most typically expressed in natural language, sometimes
 related information (e.g. indicating a <a class="localLink"
 href="http://schema.org/funder">funder</a>) can be expressed using
-schema.org terminology.
+schema.org terminology.<p>
 
 =end html
 
@@ -2124,9 +2127,9 @@ C<sdDatePublished>
 
 =begin html
 
-Indicates the date on which the current structured data was generated /
+<p>Indicates the date on which the current structured data was generated /
 published. Typically used alongside <a class="localLink"
-href="http://schema.org/sdPublisher">sdPublisher</a>
+href="http://schema.org/sdPublisher">sdPublisher</a><p>
 
 =end html
 
@@ -2181,14 +2184,14 @@ C<sdPublisher>
 
 =begin html
 
-Indicates the party responsible for generating and publishing the current
-structured data markup, typically in cases where the structured data is
-derived automatically from existing published content but published on a
-different site. For example, student projects and open data initiatives
-often re-publish existing content with more explicitly structured metadata.
-The <a class="localLink"
+<p>Indicates the party responsible for generating and publishing the
+current structured data markup, typically in cases where the structured
+data is derived automatically from existing published content but published
+on a different site. For example, student projects and open data
+initiatives often re-publish existing content with more explicitly
+structured metadata. The <a class="localLink"
 href="http://schema.org/sdPublisher">sdPublisher</a> property helps make
-such practices more explicit.
+such practices more explicit.<p>
 
 =end html
 
@@ -2242,14 +2245,14 @@ has source_organization => (
 
 =begin html
 
-The "spatial" property can be used in cases when more specific properties
-(e.g. <a class="localLink"
+<p>The "spatial" property can be used in cases when more specific
+properties (e.g. <a class="localLink"
 href="http://schema.org/locationCreated">locationCreated</a>, <a
 class="localLink"
 href="http://schema.org/spatialCoverage">spatialCoverage</a>, <a
 class="localLink"
 href="http://schema.org/contentLocation">contentLocation</a>) are not known
-to be appropriate.
+to be appropriate.<p>
 
 =end html
 
@@ -2334,14 +2337,14 @@ has sponsor => (
 
 =begin html
 
-The "temporal" property can be used in cases where more specific properties
-(e.g. <a class="localLink"
+<p>The "temporal" property can be used in cases where more specific
+properties (e.g. <a class="localLink"
 href="http://schema.org/temporalCoverage">temporalCoverage</a>, <a
 class="localLink" href="http://schema.org/dateCreated">dateCreated</a>, <a
 class="localLink" href="http://schema.org/dateModified">dateModified</a>,
 <a class="localLink"
 href="http://schema.org/datePublished">datePublished</a>) are not known to
-be appropriate.
+be appropriate.<p>
 
 =end html
 
@@ -2369,7 +2372,7 @@ C<temporalCoverage>
 
 =begin html
 
-The temporalCoverage of a CreativeWork indicates the period that the
+<p>The temporalCoverage of a CreativeWork indicates the period that the
 content applies to, i.e. that it describes, either as a DateTime or as a
 textual string indicating a time period in <a
 href="https://en.wikipedia.org/wiki/ISO_8601#Time_intervals">ISO 8601 time
@@ -2384,7 +2387,7 @@ format format via "1939/1945".<br/><br/> Open-ended date ranges can be
 written with ".." in place of the end date. For example, "2015-11/.."
 indicates a range beginning in November 2015 and with no specified final
 date. This is tentative and might be updated in future when ISO 8601 is
-officially updated.
+officially updated.<p>
 
 =end html
 

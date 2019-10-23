@@ -59,9 +59,9 @@ C<inCodeSet>
 
 =begin html
 
-A <a class="localLink"
+<p>A <a class="localLink"
 href="http://schema.org/CategoryCodeSet">CategoryCodeSet</a> that contains
-this category code.
+this category code.<p>
 
 =end html
 

@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A 3D model represents some kind of 3D content, which may have <a
+<p>A 3D model represents some kind of 3D content, which may have <a
 class="localLink" href="http://schema.org/encoding">encoding</a>s in one or
 more <a class="localLink"
 href="http://schema.org/MediaObject">MediaObject</a>s. Many 3D formats are
@@ -39,7 +39,7 @@ single file published after Zip compression, the convention of appending
 href="http://schema.org/encodingFormat">encodingFormat</a> can be used.
 Geospatial, AR/VR, artistic/animation, gaming, engineering and scientific
 content can all be represented using <a class="localLink"
-href="http://schema.org/3DModel">3DModel</a>.
+href="http://schema.org/3DModel">3DModel</a>.<p>
 
 =end html
 

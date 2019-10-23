@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A FundingScheme combines organizational, project and policy aspects of
+<p>A FundingScheme combines organizational, project and policy aspects of
 grant-based funding that sets guidelines, principles and mechanisms to
 support other kinds of projects and activities. Funding is typically
 organized via <a class="localLink" href="http://schema.org/Grant">Grant</a>
@@ -33,7 +33,7 @@ institutional strategic support fund. For large scale public sector
 funding, the management and administration of grant awards is often handled
 by other, dedicated, organizations - <a class="localLink"
 href="http://schema.org/FundingAgency">FundingAgency</a>s such as ERC, REA,
-...
+...<p>
 
 =end html
 

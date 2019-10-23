@@ -35,14 +35,14 @@ C<additionalProperty>
 
 =begin html
 
-A property-value pair representing an additional characteristics of the
+<p>A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
 is no matching property in schema.org.<br/><br/> Note: Publishers should be
 aware that applications designed to use specific schema.org properties
 (e.g. http://schema.org/width, http://schema.org/color,
 http://schema.org/gtin13, ...) will typically expect such data to be
 provided using those properties, rather than using the generic
-property/value mechanism.
+property/value mechanism.<p>
 
 =end html
 
@@ -144,8 +144,8 @@ C<unitText>
 
 =begin html
 
-A string or text indicating the unit of measurement. Useful if you cannot
-provide a standard unit code for <a href='unitCode'>unitCode</a>.
+<p>A string or text indicating the unit of measurement. Useful if you
+cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
 
 =end html
 
@@ -173,8 +173,8 @@ has unit_text => (
 
 =begin html
 
-The value of the quantitative value or property value node.<br/><br/> <ul>
-<li>For <a class="localLink"
+<p>The value of the quantitative value or property value node.<br/><br/>
+<ul> <li>For <a class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
 class="localLink"
 href="http://schema.org/MonetaryAmount">MonetaryAmount</a>, the recommended
@@ -184,7 +184,7 @@ href="http://schema.org/PropertyValue">PropertyValue</a>, it can be
 from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
 rather than superficially similiar Unicode symbols.</li> <li>Use '.'
 (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
-Avoid using these symbols as a readability separator.</li> </ul> 
+Avoid using these symbols as a readability separator.</li> </ul> <p>
 
 =end html
 

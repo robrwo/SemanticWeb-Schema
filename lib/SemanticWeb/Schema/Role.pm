@@ -23,14 +23,15 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-Represents additional information about a relationship or property. For
+<p>Represents additional information about a relationship or property. For
 example a Role can be used to say that a 'member' role linking some
 SportsTeam to a player occurred during a particular time period. Or that a
 Person's 'actor' role in a Movie was for some particular characterName.
 Such properties can be attached to a Role entity, which is then associated
 with the main entities using ordinary properties like 'member' or
 'actor'.<br/><br/> See also <a
-href="http://blog.schema.org/2014/06/introducing-role.html">blog post</a>.
+href="http://blog.schema.org/2014/06/introducing-role.html">blog
+post</a>.<p>
 
 =end html
 
@@ -46,8 +47,8 @@ C<endDate>
 
 =begin html
 
-The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The end date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 
@@ -128,8 +129,8 @@ C<startDate>
 
 =begin html
 
-The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The start date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 

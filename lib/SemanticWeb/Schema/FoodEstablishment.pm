@@ -35,9 +35,9 @@ C<acceptsReservations>
 
 =begin html
 
-Indicates whether a FoodEstablishment accepts reservations. Values can be
-Boolean, an URL at which reservations can be made or (for backwards
-compatibility) the strings <code>Yes</code> or <code>No</code>.
+<p>Indicates whether a FoodEstablishment accepts reservations. Values can
+be Boolean, an URL at which reservations can be made or (for backwards
+compatibility) the strings <code>Yes</code> or <code>No</code>.<p>
 
 =end html
 

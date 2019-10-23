@@ -90,10 +90,11 @@ C<eligibleRegion>
 
 =begin html
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is valid.<br/><br/> See also <a class="localLink"
-href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.
+<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
+the GeoShape for the geo-political region(s) for which the offer or
+delivery charge specification is valid.<br/><br/> See also <a
+class="localLink"
+href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.<p>
 
 =end html
 
@@ -125,11 +126,11 @@ C<ineligibleRegion>
 
 =begin html
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is not valid, e.g. a region where the transaction is
-not allowed.<br/><br/> See also <a class="localLink"
-href="http://schema.org/eligibleRegion">eligibleRegion</a>.
+<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
+the GeoShape for the geo-political region(s) for which the offer or
+delivery charge specification is not valid, e.g. a region where the
+transaction is not allowed.<br/><br/> See also <a class="localLink"
+href="http://schema.org/eligibleRegion">eligibleRegion</a>.<p>
 
 =end html
 

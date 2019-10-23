@@ -84,7 +84,7 @@ has coach => (
 
 =begin html
 
-Gender of something, typically a <a class="localLink"
+<p>Gender of something, typically a <a class="localLink"
 href="http://schema.org/Person">Person</a>, but possibly also fictional
 characters, animals, etc. While http://schema.org/Male and
 http://schema.org/Female may be used, text strings are also acceptable for
@@ -94,7 +94,7 @@ extended sense to cover e.g. the gender of sports teams. As with the gender
 of individuals, we do not try to enumerate all possibilities. A
 mixed-gender <a class="localLink"
 href="http://schema.org/SportsTeam">SportsTeam</a> can be indicated with a
-text value of "Mixed".
+text value of "Mixed".<p>
 
 =end html
 

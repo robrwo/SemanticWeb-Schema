@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::FAQPage;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A FAQPage is a WebPage presenting one or more " Frequently asked questions " (see also QAPage ).
 
 use Moo;
 
@@ -23,11 +23,12 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> is a <a
-class="localLink" href="http://schema.org/WebPage">WebPage</a> presenting
-one or more "<a href="https://en.wikipedia.org/wiki/FAQ">Frequently asked
-questions</a>" (see also <a class="localLink"
-href="http://schema.org/QAPage">QAPage</a>).
+<p>A <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> is a
+<a class="localLink" href="http://schema.org/WebPage">WebPage</a>
+presenting one or more "<a
+href="https://en.wikipedia.org/wiki/FAQ">Frequently asked questions</a>"
+(see also <a class="localLink"
+href="http://schema.org/QAPage">QAPage</a>).<p>
 
 =end html
 

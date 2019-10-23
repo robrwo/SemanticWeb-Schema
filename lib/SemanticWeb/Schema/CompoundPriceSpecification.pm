@@ -38,11 +38,11 @@ C<priceComponent>
 
 =begin html
 
-This property links to all <a class="localLink"
+<p>This property links to all <a class="localLink"
 href="http://schema.org/UnitPriceSpecification">UnitPriceSpecification</a>
 nodes that apply in parallel for the <a class="localLink"
 href="http://schema.org/CompoundPriceSpecification">CompoundPriceSpecificat
-ion</a> node.
+ion</a> node.<p>
 
 =end html
 

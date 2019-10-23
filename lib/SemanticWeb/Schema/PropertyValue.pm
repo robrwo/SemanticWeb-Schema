@@ -23,13 +23,13 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A property-value pair, e.g. representing a feature of a product or place.
-Use the 'name' property for the name of the property. If there is an
+<p>A property-value pair, e.g. representing a feature of a product or
+place. Use the 'name' property for the name of the property. If there is an
 additional human-readable version of the value, put that into the
 'description' property.<br/><br/> Always use specific schema.org properties
 when a) they exist and b) you can populate them. Using PropertyValue as a
 substitute will typically not trigger the same effect as using the
-original, specific property.
+original, specific property.<p>
 
 =end html
 
@@ -69,7 +69,7 @@ C<measurementTechnique>
 
 =begin html
 
-A technique or technology used in a <a class="localLink"
+<p>A technique or technology used in a <a class="localLink"
 href="http://schema.org/Dataset">Dataset</a> (or <a class="localLink"
 href="http://schema.org/DataDownload">DataDownload</a>, <a
 class="localLink" href="http://schema.org/DataCatalog">DataCatalog</a>),
@@ -96,7 +96,7 @@ href="http://schema.org/PropertyValue">PropertyValue</a> for each <a
 class="localLink"
 href="http://schema.org/variableMeasured">variableMeasured</a> and attach
 the corresponding <a class="localLink"
-href="http://schema.org/measurementTechnique">measurementTechnique</a>.
+href="http://schema.org/measurementTechnique">measurementTechnique</a>.<p>
 
 =end html
 
@@ -206,8 +206,8 @@ C<unitText>
 
 =begin html
 
-A string or text indicating the unit of measurement. Useful if you cannot
-provide a standard unit code for <a href='unitCode'>unitCode</a>.
+<p>A string or text indicating the unit of measurement. Useful if you
+cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
 
 =end html
 
@@ -235,8 +235,8 @@ has unit_text => (
 
 =begin html
 
-The value of the quantitative value or property value node.<br/><br/> <ul>
-<li>For <a class="localLink"
+<p>The value of the quantitative value or property value node.<br/><br/>
+<ul> <li>For <a class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
 class="localLink"
 href="http://schema.org/MonetaryAmount">MonetaryAmount</a>, the recommended
@@ -246,7 +246,7 @@ href="http://schema.org/PropertyValue">PropertyValue</a>, it can be
 from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
 rather than superficially similiar Unicode symbols.</li> <li>Use '.'
 (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
-Avoid using these symbols as a readability separator.</li> </ul> 
+Avoid using these symbols as a readability separator.</li> </ul> <p>
 
 =end html
 

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Energy;
 
-# ABSTRACT: Properties that take Energy as values are of the form '&lt;Number&gt; &lt;Energy unit of measure&gt;'.
+# ABSTRACT: Properties that take Energy as values are of the form '<Number> <Energy unit of measure>'.
 
 use Moo;
 

@@ -9,7 +9,7 @@ use Moo;
 extends qw/ SemanticWeb::Schema::LocalBusiness SemanticWeb::Schema::Room /;
 
 
-use MooX::JSON_LD 'ARRAY(0x55a419a106a8)';
+use MooX::JSON_LD 'ARRAY(0x563e6f04a158)';
 use Ref::Util qw/ is_plain_hashref /;
 # RECOMMEND PREREQ: Ref::Util::XS
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A construction business.<br/><br/> A HomeAndConstructionBusiness is a <a
+<p>A construction business.<br/><br/> A HomeAndConstructionBusiness is a <a
 class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
 that provides services around homes and buildings.<br/><br/> As a <a
 class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
@@ -37,7 +37,7 @@ rdf:resource="https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Ac
 commodation_Ontology"/> <rdfs:comment><![CDATA[A hotel room is a single
 room in a hotel. <br /><br /> See also the <a
 href="/docs/hotels.html">dedicated document on the use of schema.org for
-marking up hotels and other forms of accommodations</a>.
+marking up hotels and other forms of accommodations</a>.<p>
 
 =end html
 

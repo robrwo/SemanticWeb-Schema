@@ -35,12 +35,12 @@ C<cssSelector>
 
 =begin html
 
-A CSS selector, e.g. of a <a class="localLink"
+<p>A CSS selector, e.g. of a <a class="localLink"
 href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>
 or <a class="localLink"
 href="http://schema.org/WebPageElement">WebPageElement</a>. In the latter
 case, multiple matches within a page can constitute a single conceptual
-"Web page element".
+"Web page element".<p>
 
 =end html
 
@@ -68,12 +68,12 @@ has css_selector => (
 
 =begin html
 
-An XPath, e.g. of a <a class="localLink"
+<p>An XPath, e.g. of a <a class="localLink"
 href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>
 or <a class="localLink"
 href="http://schema.org/WebPageElement">WebPageElement</a>. In the latter
 case, multiple matches within a page can constitute a single conceptual
-"Web page element".
+"Web page element".<p>
 
 =end html
 

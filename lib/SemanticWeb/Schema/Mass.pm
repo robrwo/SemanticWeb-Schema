@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Mass;
 
-# ABSTRACT: Properties that take Mass as values are of the form '&lt;Number&gt; &lt;Mass unit of measure&gt;'
+# ABSTRACT: Properties that take Mass as values are of the form '<Number> <Mass unit of measure>'
 
 use Moo;
 

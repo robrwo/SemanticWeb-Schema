@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Schedule;
 
-# ABSTRACT: A schedule defines a repeating time period used to describe a regularly occurring <a class="localLink" href="http://schema
+# ABSTRACT: A schedule defines a repeating time period used to describe a regularly occurring Event 
 
 use Moo;
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A schedule defines a repeating time period used to describe a regularly
+<p>A schedule defines a repeating time period used to describe a regularly
 occurring <a class="localLink" href="http://schema.org/Event">Event</a>. At
 a minimum a schedule will specify <a class="localLink"
 href="http://schema.org/repeatFrequency">repeatFrequency</a> which
@@ -32,7 +32,7 @@ information can be provided to specify the schedule more precisely. This
 includes identifying the day(s) of the week or month when the recurring
 event will take place, in addition to its start and end time. Schedules may
 also have start and end dates to indicate when they are active, e.g. to
-define a limited calendar of events.
+define a limited calendar of events.<p>
 
 =end html
 
@@ -48,8 +48,8 @@ C<byDay>
 
 =begin html
 
-Defines the day(s) of the week on which a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> takes place
+<p>Defines the day(s) of the week on which a recurring <a class="localLink"
+href="http://schema.org/Event">Event</a> takes place<p>
 
 =end html
 
@@ -77,10 +77,10 @@ C<byMonth>
 
 =begin html
 
-Defines the month(s) of the year on which a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> takes place. Specified as an <a
-class="localLink" href="http://schema.org/Integer">Integer</a> between
-1-12. January is 1.
+<p>Defines the month(s) of the year on which a recurring <a
+class="localLink" href="http://schema.org/Event">Event</a> takes place.
+Specified as an <a class="localLink"
+href="http://schema.org/Integer">Integer</a> between 1-12. January is 1.<p>
 
 =end html
 
@@ -108,10 +108,10 @@ C<byMonthDay>
 
 =begin html
 
-Defines the day(s) of the month on which a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> takes place. Specified as an <a
-class="localLink" href="http://schema.org/Integer">Integer</a> between
-1-31.
+<p>Defines the day(s) of the month on which a recurring <a
+class="localLink" href="http://schema.org/Event">Event</a> takes place.
+Specified as an <a class="localLink"
+href="http://schema.org/Integer">Integer</a> between 1-31.<p>
 
 =end html
 
@@ -139,15 +139,16 @@ C<eventSchedule>
 
 =begin html
 
-Associates an <a class="localLink" href="http://schema.org/Event">Event</a>
-with a <a class="localLink" href="http://schema.org/Schedule">Schedule</a>.
-There are circumstances where it is preferable to share a schedule for a
-series of repeating events rather than data on the individual events
-themselves. For example, a website or application might prefer to publish a
-schedule for a weekly gym class rather than provide data on every event. A
-schedule could be processed by applications to add forthcoming events to a
-calendar. An <a class="localLink" href="http://schema.org/Event">Event</a>
-that is associated with a <a class="localLink"
+<p>Associates an <a class="localLink"
+href="http://schema.org/Event">Event</a> with a <a class="localLink"
+href="http://schema.org/Schedule">Schedule</a>. There are circumstances
+where it is preferable to share a schedule for a series of repeating events
+rather than data on the individual events themselves. For example, a
+website or application might prefer to publish a schedule for a weekly gym
+class rather than provide data on every event. A schedule could be
+processed by applications to add forthcoming events to a calendar. An <a
+class="localLink" href="http://schema.org/Event">Event</a> that is
+associated with a <a class="localLink"
 href="http://schema.org/Schedule">Schedule</a> using this property should
 not have <a class="localLink"
 href="http://schema.org/startDate">startDate</a> or <a class="localLink"
@@ -155,7 +156,7 @@ href="http://schema.org/endDate">endDate</a> properties. These are instead
 defined within the associated <a class="localLink"
 href="http://schema.org/Schedule">Schedule</a>, this avoids any ambiguity
 for clients using the data. The propery might have repeated values to
-specify different schedules, e.g. for different months or seasons.
+specify different schedules, e.g. for different months or seasons.<p>
 
 =end html
 
@@ -183,8 +184,8 @@ C<exceptDate>
 
 =begin html
 
-Defines a <a class="localLink" href="http://schema.org/Date">Date</a> or <a
-class="localLink" href="http://schema.org/DateTime">DateTime</a> during
+<p>Defines a <a class="localLink" href="http://schema.org/Date">Date</a> or
+<a class="localLink" href="http://schema.org/DateTime">DateTime</a> during
 which a scheduled <a class="localLink"
 href="http://schema.org/Event">Event</a> will not take place. The property
 allows exceptions to a <a class="localLink"
@@ -196,7 +197,7 @@ the schedule. If an exception is specified as a <a class="localLink"
 href="http://schema.org/Date">Date</a> then any event that is scheduled for
 that 24 hour period should be excluded from the schedule. This allows a
 whole day to be excluded from the schedule without having to itemise every
-scheduled event.
+scheduled event.<p>
 
 =end html
 
@@ -224,8 +225,8 @@ C<repeatCount>
 
 =begin html
 
-Defines the number of times a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> will take place
+<p>Defines the number of times a recurring <a class="localLink"
+href="http://schema.org/Event">Event</a> will take place<p>
 
 =end html
 
@@ -253,12 +254,12 @@ C<repeatFrequency>
 
 =begin html
 
-Defines the frequency at which <a class="localLink"
+<p>Defines the frequency at which <a class="localLink"
 href="http://schema.org/Events">Events</a> will occur according to a
 schedule <a class="localLink"
 href="http://schema.org/Schedule">Schedule</a>. The intervals between
 events should be defined as a <a class="localLink"
-href="http://schema.org/Duration">Duration</a> of time.
+href="http://schema.org/Duration">Duration</a> of time.<p>
 
 =end html
 

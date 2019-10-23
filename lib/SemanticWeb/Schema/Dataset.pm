@@ -184,7 +184,7 @@ C<measurementTechnique>
 
 =begin html
 
-A technique or technology used in a <a class="localLink"
+<p>A technique or technology used in a <a class="localLink"
 href="http://schema.org/Dataset">Dataset</a> (or <a class="localLink"
 href="http://schema.org/DataDownload">DataDownload</a>, <a
 class="localLink" href="http://schema.org/DataCatalog">DataCatalog</a>),
@@ -211,7 +211,7 @@ href="http://schema.org/PropertyValue">PropertyValue</a> for each <a
 class="localLink"
 href="http://schema.org/variableMeasured">variableMeasured</a> and attach
 the corresponding <a class="localLink"
-href="http://schema.org/measurementTechnique">measurementTechnique</a>.
+href="http://schema.org/measurementTechnique">measurementTechnique</a>.<p>
 
 =end html
 

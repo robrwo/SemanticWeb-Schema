@@ -86,10 +86,10 @@ has actors => (
 
 =begin html
 
-The caption for this object. For downloadable machine formats (closed
+<p>The caption for this object. For downloadable machine formats (closed
 caption, subtitles etc.) use MediaObject and indicate the <a
 class="localLink"
-href="http://schema.org/encodingFormat">encodingFormat</a>.
+href="http://schema.org/encodingFormat">encodingFormat</a>.<p>
 
 =end html
 

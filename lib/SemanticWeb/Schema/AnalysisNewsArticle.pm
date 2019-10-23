@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::AnalysisNewsArticle;
 
-# ABSTRACT: An AnalysisNewsArticle is a <a class="localLink" href="http://schema
+# ABSTRACT: An AnalysisNewsArticle is a NewsArticle that
 
 use Moo;
 
@@ -23,10 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An AnalysisNewsArticle is a <a class="localLink"
+<p>An AnalysisNewsArticle is a <a class="localLink"
 href="http://schema.org/NewsArticle">NewsArticle</a> that, while based on
 factual reporting, incorporates the expertise of the author/producer,
-offering interpretations and conclusions.
+offering interpretations and conclusions.<p>
 
 =end html
 

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::GovernmentOffice;
 
-# ABSTRACT: A government office&#x2014;for example
+# ABSTRACT: A government office—for example
 
 use Moo;
 

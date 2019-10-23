@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Observation;
 
-# ABSTRACT: Instances of the class <a class="localLink" href="http://schema
+# ABSTRACT: Instances of the class Observation are used to specify observations about an entity (which may or may not be an instance of a StatisticalPopulation )
 
 use Moo;
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-Instances of the class <a class="localLink"
+<p>Instances of the class <a class="localLink"
 href="http://schema.org/Observation">Observation</a> are used to specify
 observations about an entity (which may or may not be an instance of a <a
 class="localLink"
@@ -45,7 +45,7 @@ href="https://www.w3.org/TR/vocab-data-cube/#dsd-example">lifeExpectancy
 example</a>). See also <a class="localLink"
 href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>,
 and the <a href="/docs/data-and-datasets.html">data and datasets</a>
-overview for more details.
+overview for more details.<p>
 
 =end html
 
@@ -61,8 +61,8 @@ C<marginOfError>
 
 =begin html
 
-A marginOfError for an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.
+<p>A marginOfError for an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.<p>
 
 =end html
 
@@ -90,11 +90,11 @@ C<measuredProperty>
 
 =begin html
 
-The measuredProperty of an <a class="localLink"
+<p>The measuredProperty of an <a class="localLink"
 href="http://schema.org/Observation">Observation</a>, either a schema.org
 property, a property from other RDF-compatible systems e.g. W3C RDF Data
 Cube, or schema.org extensions such as <a
-href="https://www.gs1.org/voc/?show=properties">GS1's</a>.
+href="https://www.gs1.org/voc/?show=properties">GS1's</a>.<p>
 
 =end html
 
@@ -122,8 +122,8 @@ C<measuredValue>
 
 =begin html
 
-The measuredValue of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.
+<p>The measuredValue of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.<p>
 
 =end html
 
@@ -151,8 +151,8 @@ C<observationDate>
 
 =begin html
 
-The observationDate of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.
+<p>The observationDate of an <a class="localLink"
+href="http://schema.org/Observation">Observation</a>.<p>
 
 =end html
 
@@ -180,10 +180,11 @@ C<observedNode>
 
 =begin html
 
-The observedNode of an <a class="localLink"
+<p>The observedNode of an <a class="localLink"
 href="http://schema.org/Observation">Observation</a>, often a <a
 class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.<p
+>
 
 =end html
 

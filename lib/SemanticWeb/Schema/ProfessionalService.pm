@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-Original definition: "provider of professional services."<br/><br/> The
+<p>Original definition: "provider of professional services."<br/><br/> The
 general <a class="localLink"
 href="http://schema.org/ProfessionalService">ProfessionalService</a> type
 for local businesses was deprecated due to confusion with <a
@@ -45,7 +45,7 @@ class="localLink"
 href="http://schema.org/RoofingContractor">RoofingContractor</a>. <a
 class="localLink" href="http://schema.org/LegalService">LegalService</a>
 was introduced as a more inclusive supertype of <a class="localLink"
-href="http://schema.org/Attorney">Attorney</a>.
+href="http://schema.org/Attorney">Attorney</a>.<p>
 
 =end html
 

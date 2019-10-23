@@ -108,11 +108,11 @@ C<reviewRating>
 
 =begin html
 
-The rating given in this review. Note that reviews can themselves be rated.
-The <code>reviewRating</code> applies to rating given by the review. The <a
-class="localLink"
+<p>The rating given in this review. Note that reviews can themselves be
+rated. The <code>reviewRating</code> applies to rating given by the review.
+The <a class="localLink"
 href="http://schema.org/aggregateRating">aggregateRating</a> property
-applies to the review itself, as a creative work.
+applies to the review itself, as a creative work.<p>
 
 =end html
 

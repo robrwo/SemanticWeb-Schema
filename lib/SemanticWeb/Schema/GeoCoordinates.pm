@@ -61,9 +61,9 @@ C<addressCountry>
 
 =begin html
 
-The country. For example, USA. You can also provide the two-letter <a
+<p>The country. For example, USA. You can also provide the two-letter <a
 href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2 country
-code</a>.
+code</a>.<p>
 
 =end html
 
@@ -93,11 +93,11 @@ has address_country => (
 
 =begin html
 
-The elevation of a location (<a
+<p>The elevation of a location (<a
 href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
 Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000
 m', '3,200 ft') while numbers alone should be assumed to be a value in
-meters.
+meters.<p>
 
 =end html
 
@@ -127,8 +127,8 @@ has elevation => (
 
 =begin html
 
-The latitude of a location. For example <code>37.42242</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+<p>The latitude of a location. For example <code>37.42242</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
 
 =end html
 
@@ -158,8 +158,8 @@ has latitude => (
 
 =begin html
 
-The longitude of a location. For example <code>-122.08585</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
+<p>The longitude of a location. For example <code>-122.08585</code> (<a
+href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
 
 =end html
 

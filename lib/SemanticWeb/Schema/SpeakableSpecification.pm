@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::SpeakableSpecification;
 
-# ABSTRACT: A SpeakableSpecification indicates (typically via <a class="localLink" href="http://schema
+# ABSTRACT: A SpeakableSpecification indicates (typically via xpath or cssSelector ) sections of a document that are highlighted as particularly speakable 
 
 use Moo;
 
@@ -23,13 +23,13 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A SpeakableSpecification indicates (typically via <a class="localLink"
+<p>A SpeakableSpecification indicates (typically via <a class="localLink"
 href="http://schema.org/xpath">xpath</a> or <a class="localLink"
 href="http://schema.org/cssSelector">cssSelector</a>) sections of a
 document that are highlighted as particularly <a class="localLink"
 href="http://schema.org/speakable">speakable</a>. Instances of this type
 are expected to be used primarily as values of the <a class="localLink"
-href="http://schema.org/speakable">speakable</a> property.
+href="http://schema.org/speakable">speakable</a> property.<p>
 
 =end html
 
@@ -45,12 +45,12 @@ C<cssSelector>
 
 =begin html
 
-A CSS selector, e.g. of a <a class="localLink"
+<p>A CSS selector, e.g. of a <a class="localLink"
 href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>
 or <a class="localLink"
 href="http://schema.org/WebPageElement">WebPageElement</a>. In the latter
 case, multiple matches within a page can constitute a single conceptual
-"Web page element".
+"Web page element".<p>
 
 =end html
 
@@ -78,12 +78,12 @@ has css_selector => (
 
 =begin html
 
-An XPath, e.g. of a <a class="localLink"
+<p>An XPath, e.g. of a <a class="localLink"
 href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>
 or <a class="localLink"
 href="http://schema.org/WebPageElement">WebPageElement</a>. In the latter
 case, multiple matches within a page can constitute a single conceptual
-"Web page element".
+"Web page element".<p>
 
 =end html
 

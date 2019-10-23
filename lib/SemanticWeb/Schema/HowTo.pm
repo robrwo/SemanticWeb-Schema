@@ -63,9 +63,10 @@ C<performTime>
 
 =begin html
 
-The length of time it takes to perform instructions or a direction (not
+<p>The length of time it takes to perform instructions or a direction (not
 including time to prepare the supplies), in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration
+format</a>.<p>
 
 =end html
 
@@ -93,9 +94,10 @@ C<prepTime>
 
 =begin html
 
-The length of time it takes to prepare the items to be used in instructions
-or a direction, in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601
-duration format</a>.
+<p>The length of time it takes to prepare the items to be used in
+instructions or a direction, in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration
+format</a>.<p>
 
 =end html
 
@@ -237,9 +239,10 @@ C<totalTime>
 
 =begin html
 
-The total time required to perform instructions or a direction (including
-time to prepare the supplies), in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.
+<p>The total time required to perform instructions or a direction
+(including time to prepare the supplies), in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration
+format</a>.<p>
 
 =end html
 

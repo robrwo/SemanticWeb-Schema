@@ -23,8 +23,8 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A StatisticalPopulation is a set of instances of a certain given type that
-satisfy some set of constraints. The property <a class="localLink"
+<p>A StatisticalPopulation is a set of instances of a certain given type
+that satisfy some set of constraints. The property <a class="localLink"
 href="http://schema.org/populationType">populationType</a> is used to
 specify the type. Any property that can be used on instances of that type
 can appear on the statistical population. For example, a <a
@@ -54,7 +54,7 @@ class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
 could be used. See also <a class="localLink"
 href="http://schema.org/Observation">Observation</a>, and the <a
 href="/docs/data-and-datasets.html">data and datasets</a> overview for more
-details.
+details.<p>
 
 =end html
 
@@ -70,11 +70,12 @@ C<constrainingProperty>
 
 =begin html
 
-Indicates a property used as a constraint to define a <a class="localLink"
+<p>Indicates a property used as a constraint to define a <a
+class="localLink"
 href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>
 with respect to the set of entities corresponding to an indicated type (via
 <a class="localLink"
-href="http://schema.org/populationType">populationType</a>).
+href="http://schema.org/populationType">populationType</a>).<p>
 
 =end html
 
@@ -102,13 +103,14 @@ C<numConstraints>
 
 =begin html
 
-Indicates the number of constraints (not counting <a class="localLink"
+<p>Indicates the number of constraints (not counting <a class="localLink"
 href="http://schema.org/populationType">populationType</a>) defined for a
 particular <a class="localLink"
 href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.
 This helps applications understand if they have access to a sufficiently
 complete description of a <a class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.<p
+>
 
 =end html
 
@@ -136,9 +138,10 @@ C<populationType>
 
 =begin html
 
-Indicates the populationType common to all members of a <a
+<p>Indicates the populationType common to all members of a <a
 class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.
+href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.<p
+>
 
 =end html
 

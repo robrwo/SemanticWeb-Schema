@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::SatiricalArticle;
 
-# ABSTRACT: An <a class="localLink" href="http://schema
+# ABSTRACT: An Article whose content is primarily [satirical] in nature
 
 use Moo;
 
@@ -23,14 +23,14 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An <a class="localLink" href="http://schema.org/Article">Article</a> whose
-content is primarily <a
+<p>An <a class="localLink" href="http://schema.org/Article">Article</a>
+whose content is primarily <a
 href="https://en.wikipedia.org/wiki/Satire">[satirical]</a> in nature, i.e.
 unlikely to be literally true. A satirical article is sometimes but not
 necessarily also a <a class="localLink"
 href="http://schema.org/NewsArticle">NewsArticle</a>. <a class="localLink"
 href="http://schema.org/ScholarlyArticle">ScholarlyArticle</a>s are also
-sometimes satirized.
+sometimes satirized.<p>
 
 =end html
 

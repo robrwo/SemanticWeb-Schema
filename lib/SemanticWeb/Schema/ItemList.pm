@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ItemList;
 
-# ABSTRACT: A list of items of any sort&#x2014;for example
+# ABSTRACT: A list of items of any sort—for example
 
 use Moo;
 
@@ -37,7 +37,7 @@ C<itemListElement>
 
 =begin html
 
-For itemListElement values, you can use simple strings (e.g. "Peter",
+<p>For itemListElement values, you can use simple strings (e.g. "Peter",
 "Paul", "Mary"), existing entities, or use ListItem.<br/><br/> Text values
 are best if the elements in the list are plain strings. Existing entities
 are best for a simple, unordered list of existing things in your data.
@@ -45,7 +45,7 @@ ListItem is used with ordered lists when you want to provide additional
 context about the element in that list or when the same item might be in
 different places in different lists.<br/><br/> Note: The order of elements
 in your mark-up is not sufficient for indicating the order or elements. Use
-ListItem with a 'position' property in such cases.
+ListItem with a 'position' property in such cases.<p>
 
 =end html
 

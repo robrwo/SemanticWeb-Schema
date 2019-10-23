@@ -23,14 +23,14 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-The act of un-registering from a service.<br/><br/> Related
+<p>The act of un-registering from a service.<br/><br/> Related
 actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/RegisterAction">RegisterAction</a>: antonym of
 UnRegisterAction.</li> <li><a class="localLink"
 href="http://schema.org/LeaveAction">LeaveAction</a>: Unlike LeaveAction,
 UnRegisterAction implies that you are unregistering from a service you
 werer previously registered, rather than leaving a team/group of
-people.</li> </ul> 
+people.</li> </ul> <p>
 
 =end html
 

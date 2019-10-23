@@ -35,8 +35,8 @@ C<collectionSize>
 
 =begin html
 
-The number of items in the <a class="localLink"
-href="http://schema.org/Collection">Collection</a>.
+<p>The number of items in the <a class="localLink"
+href="http://schema.org/Collection">Collection</a>.<p>
 
 =end html
 

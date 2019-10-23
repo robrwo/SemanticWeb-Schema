@@ -36,8 +36,9 @@ transmitted along each of the axons.
 
 =begin html
 
-The branches that delineate from the nerve bundle. Not to be confused with
-<a class="localLink" href="http://schema.org/branchOf">branchOf</a>.
+<p>The branches that delineate from the nerve bundle. Not to be confused
+with <a class="localLink"
+href="http://schema.org/branchOf">branchOf</a>.<p>
 
 =end html
 

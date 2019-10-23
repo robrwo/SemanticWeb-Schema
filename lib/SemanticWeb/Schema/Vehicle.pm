@@ -36,8 +36,8 @@ C<accelerationTime>
 
 =begin html
 
-The time needed to accelerate the vehicle from a given start velocity to a
-given target velocity.<br/><br/> Typical unit code(s): SEC for
+<p>The time needed to accelerate the vehicle from a given start velocity to
+a given target velocity.<br/><br/> Typical unit code(s): SEC for
 seconds<br/><br/> <ul> <li>Note: There are unfortunately no standard unit
 codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use "SEC" for
 seconds and indicate the velocities in the <a class="localLink"
@@ -47,7 +47,7 @@ class="localLink"
 href="http://schema.org/valueReference">valueReference</a> with a <a
 class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> of 0..60
-mph or 0..100 km/h to specify the reference speeds.</li> </ul> 
+mph or 0..100 km/h to specify the reference speeds.</li> </ul> <p>
 
 =end html
 
@@ -102,11 +102,11 @@ C<cargoVolume>
 
 =begin html
 
-The available volume for cargo or luggage. For automobiles, this is usually
-the trunk volume.<br/><br/> Typical unit code(s): LTR for liters, FTQ for
-cubic foot/feet<br/><br/> Note: You can use <a class="localLink"
+<p>The available volume for cargo or luggage. For automobiles, this is
+usually the trunk volume.<br/><br/> Typical unit code(s): LTR for liters,
+FTQ for cubic foot/feet<br/><br/> Note: You can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
-href="http://schema.org/maxValue">maxValue</a> to indicate ranges.
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.<p>
 
 =end html
 
@@ -212,11 +212,11 @@ C<fuelCapacity>
 
 =begin html
 
-The capacity of the fuel tank or in the case of electric cars, the battery.
-If there are multiple components for storage, this should indicate the
-total of all storage of the same type.<br/><br/> Typical unit code(s): LTR
-for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for
-ampere-hours (for electrical vehicles).
+<p>The capacity of the fuel tank or in the case of electric cars, the
+battery. If there are multiple components for storage, this should indicate
+the total of all storage of the same type.<br/><br/> Typical unit code(s):
+LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for
+ampere-hours (for electrical vehicles).<p>
 
 =end html
 
@@ -244,10 +244,10 @@ C<fuelConsumption>
 
 =begin html
 
-The amount of fuel consumed for traveling a particular distance or temporal
-duration with the given vehicle (e.g. liters per 100 km).<br/><br/> <ul>
-<li>Note 1: There are unfortunately no standard unit codes for liters per
-100 km. Use <a class="localLink"
+<p>The amount of fuel consumed for traveling a particular distance or
+temporal duration with the given vehicle (e.g. liters per 100
+km).<br/><br/> <ul> <li>Note 1: There are unfortunately no standard unit
+codes for liters per 100 km. Use <a class="localLink"
 href="http://schema.org/unitText">unitText</a> to indicate the unit of
 measurement, e.g. L/100 km.</li> <li>Note 2: There are two ways of
 indicating the fuel consumption, <a class="localLink"
@@ -258,7 +258,7 @@ per gallon). They are reciprocal.</li> <li>Note 3: Often, the absolute
 value is useful only when related to driving speed ("at 80 km/h") or usage
 pattern ("city traffic"). You can use <a class="localLink"
 href="http://schema.org/valueReference">valueReference</a> to link the
-value for the fuel consumption to another value.</li> </ul> 
+value for the fuel consumption to another value.</li> </ul> <p>
 
 =end html
 
@@ -286,10 +286,10 @@ C<fuelEfficiency>
 
 =begin html
 
-The distance traveled per unit of fuel used; most commonly miles per gallon
-(mpg) or kilometers per liter (km/L).<br/><br/> <ul> <li>Note 1: There are
-unfortunately no standard unit codes for miles per gallon or kilometers per
-liter. Use <a class="localLink"
+<p>The distance traveled per unit of fuel used; most commonly miles per
+gallon (mpg) or kilometers per liter (km/L).<br/><br/> <ul> <li>Note 1:
+There are unfortunately no standard unit codes for miles per gallon or
+kilometers per liter. Use <a class="localLink"
 href="http://schema.org/unitText">unitText</a> to indicate the unit of
 measurement, e.g. mpg or km/L.</li> <li>Note 2: There are two ways of
 indicating the fuel consumption, <a class="localLink"
@@ -300,7 +300,7 @@ per gallon). They are reciprocal.</li> <li>Note 3: Often, the absolute
 value is useful only when related to driving speed ("at 80 km/h") or usage
 pattern ("city traffic"). You can use <a class="localLink"
 href="http://schema.org/valueReference">valueReference</a> to link the
-value for the fuel economy to another value.</li> </ul> 
+value for the fuel economy to another value.</li> </ul> <p>
 
 =end html
 
@@ -406,9 +406,9 @@ C<mileageFromOdometer>
 
 =begin html
 
-The total distance travelled by the particular vehicle since its initial
+<p>The total distance travelled by the particular vehicle since its initial
 production, as read from its odometer.<br/><br/> Typical unit code(s): KMT
-for kilometers, SMI for statute miles
+for kilometers, SMI for statute miles<p>
 
 =end html
 
@@ -487,7 +487,7 @@ C<numberOfAxles>
 
 =begin html
 
-The number of axles.<br/><br/> Typical unit code(s): C62
+<p>The number of axles.<br/><br/> Typical unit code(s): C62<p>
 
 =end html
 
@@ -517,7 +517,7 @@ C<numberOfDoors>
 
 =begin html
 
-The number of doors.<br/><br/> Typical unit code(s): C62
+<p>The number of doors.<br/><br/> Typical unit code(s): C62<p>
 
 =end html
 
@@ -547,8 +547,8 @@ C<numberOfForwardGears>
 
 =begin html
 
-The total number of forward gears available for the transmission system of
-the vehicle.<br/><br/> Typical unit code(s): C62
+<p>The total number of forward gears available for the transmission system
+of the vehicle.<br/><br/> Typical unit code(s): C62<p>
 
 =end html
 
@@ -578,8 +578,8 @@ C<numberOfPreviousOwners>
 
 =begin html
 
-The number of owners of the vehicle, including the current one.<br/><br/>
-Typical unit code(s): C62
+<p>The number of owners of the vehicle, including the current
+one.<br/><br/> Typical unit code(s): C62<p>
 
 =end html
 
@@ -609,10 +609,10 @@ has number_of_previous_owners => (
 
 =begin html
 
-The permitted weight of passengers and cargo, EXCLUDING the weight of the
-empty vehicle.<br/><br/> Typical unit code(s): KGM for kilogram, LBR for
-pound<br/><br/> <ul> <li>Note 1: Many databases specify the permitted TOTAL
-weight instead, which is the sum of <a class="localLink"
+<p>The permitted weight of passengers and cargo, EXCLUDING the weight of
+the empty vehicle.<br/><br/> Typical unit code(s): KGM for kilogram, LBR
+for pound<br/><br/> <ul> <li>Note 1: Many databases specify the permitted
+TOTAL weight instead, which is the sum of <a class="localLink"
 href="http://schema.org/weight">weight</a> and <a class="localLink"
 href="http://schema.org/payload">payload</a></li> <li>Note 2: You can
 indicate additional information in the <a class="localLink"
@@ -625,7 +625,7 @@ href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
 4: Note that you can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> 
+</ul> <p>
 
 =end html
 
@@ -701,9 +701,9 @@ C<seatingCapacity>
 
 =begin html
 
-The number of persons that can be seated (e.g. in a vehicle), both in terms
-of the physical space available, and in terms of limitations set by
-law.<br/><br/> Typical unit code(s): C62 for persons
+<p>The number of persons that can be seated (e.g. in a vehicle), both in
+terms of the physical space available, and in terms of limitations set by
+law.<br/><br/> Typical unit code(s): C62 for persons<p>
 
 =end html
 
@@ -733,8 +733,8 @@ has seating_capacity => (
 
 =begin html
 
-The speed range of the vehicle. If the vehicle is powered by an engine, the
-upper limit of the speed range (indicated by <a class="localLink"
+<p>The speed range of the vehicle. If the vehicle is powered by an engine,
+the upper limit of the speed range (indicated by <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> should be the maximum speed
 achievable under regular conditions.<br/><br/> Typical unit code(s): KMH
 for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot<br/><br/> *Note
@@ -744,7 +744,7 @@ indicate the range. Typically, the minimal value is zero. * Note 2: There
 are many different ways of measuring the speed range. You can link to
 information about how the given value has been determined using the <a
 class="localLink"
-href="http://schema.org/valueReference">valueReference</a> property.
+href="http://schema.org/valueReference">valueReference</a> property.<p>
 
 =end html
 
@@ -796,7 +796,7 @@ C<tongueWeight>
 
 =begin html
 
-The permitted vertical load (TWR) of a trailer attached to the vehicle.
+<p>The permitted vertical load (TWR) of a trailer attached to the vehicle.
 Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating
 (VLR)<br/><br/> Typical unit code(s): KGM for kilogram, LBR for
 pound<br/><br/> <ul> <li>Note 1: You can indicate additional information in
@@ -810,7 +810,7 @@ href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
 3: Note that you can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> 
+</ul> <p>
 
 =end html
 
@@ -838,7 +838,7 @@ C<trailerWeight>
 
 =begin html
 
-The permitted weight of a trailer attached to the vehicle.<br/><br/>
+<p>The permitted weight of a trailer attached to the vehicle.<br/><br/>
 Typical unit code(s): KGM for kilogram, LBR for pound * Note 1: You can
 indicate additional information in the <a class="localLink"
 href="http://schema.org/name">name</a> of the <a class="localLink"
@@ -849,7 +849,7 @@ provides additional information using <a class="localLink"
 href="http://schema.org/valueReference">valueReference</a>. * Note 3: Note
 that you can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
-href="http://schema.org/maxValue">maxValue</a> to indicate ranges.
+href="http://schema.org/maxValue">maxValue</a> to indicate ranges.<p>
 
 =end html
 
@@ -1027,9 +1027,9 @@ C<vehicleSeatingCapacity>
 
 =begin html
 
-The number of passengers that can be seated in the vehicle, both in terms
-of the physical space available, and in terms of limitations set by
-law.<br/><br/> Typical unit code(s): C62 for persons.
+<p>The number of passengers that can be seated in the vehicle, both in
+terms of the physical space available, and in terms of limitations set by
+law.<br/><br/> Typical unit code(s): C62 for persons.<p>
 
 =end html
 
@@ -1115,10 +1115,10 @@ C<weightTotal>
 
 =begin html
 
-The permitted total weight of the loaded vehicle, including passengers and
-cargo and the weight of the empty vehicle.<br/><br/> Typical unit code(s):
-KGM for kilogram, LBR for pound<br/><br/> <ul> <li>Note 1: You can indicate
-additional information in the <a class="localLink"
+<p>The permitted total weight of the loaded vehicle, including passengers
+and cargo and the weight of the empty vehicle.<br/><br/> Typical unit
+code(s): KGM for kilogram, LBR for pound<br/><br/> <ul> <li>Note 1: You can
+indicate additional information in the <a class="localLink"
 href="http://schema.org/name">name</a> of the <a class="localLink"
 href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>
 <li>Note 2: You may also link to a <a class="localLink"
@@ -1128,7 +1128,7 @@ href="http://schema.org/valueReference">valueReference</a>.</li> <li>Note
 3: Note that you can use <a class="localLink"
 href="http://schema.org/minValue">minValue</a> and <a class="localLink"
 href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> 
+</ul> <p>
 
 =end html
 
@@ -1156,9 +1156,9 @@ has weight_total => (
 
 =begin html
 
-The distance between the centers of the front and rear wheels.<br/><br/>
+<p>The distance between the centers of the front and rear wheels.<br/><br/>
 Typical unit code(s): CMT for centimeters, MTR for meters, INH for inches,
-FOT for foot/feet
+FOT for foot/feet<p>
 
 =end html
 

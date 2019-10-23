@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::LibrarySystem;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A LibrarySystem is a collaborative system amongst several libraries.
 
 use Moo;
 
@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink"
+<p>A <a class="localLink"
 href="http://schema.org/LibrarySystem">LibrarySystem</a> is a collaborative
-system amongst several libraries.
+system amongst several libraries.<p>
 
 =end html
 

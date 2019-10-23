@@ -83,11 +83,11 @@ has departure_time => (
 
 =begin html
 
-Destination(s) ( <a class="localLink"
+<p>Destination(s) ( <a class="localLink"
 href="http://schema.org/Place">Place</a> ) that make up a trip. For a trip
 where destination order is important use <a class="localLink"
 href="http://schema.org/ItemList">ItemList</a> to specify that order (see
-examples).
+examples).<p>
 
 =end html
 
@@ -143,9 +143,9 @@ C<partOfTrip>
 
 =begin html
 
-Identifies that this <a class="localLink"
+<p>Identifies that this <a class="localLink"
 href="http://schema.org/Trip">Trip</a> is a subTrip of another Trip. For
-example Day 1, Day 2, etc. of a multi-day trip.
+example Day 1, Day 2, etc. of a multi-day trip.<p>
 
 =end html
 
@@ -201,9 +201,9 @@ C<subTrip>
 
 =begin html
 
-Identifies a <a class="localLink" href="http://schema.org/Trip">Trip</a>
+<p>Identifies a <a class="localLink" href="http://schema.org/Trip">Trip</a>
 that is a subTrip of this Trip. For example Day 1, Day 2, etc. of a
-multi-day trip.
+multi-day trip.<p>
 
 =end html
 

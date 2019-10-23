@@ -23,7 +23,8 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A tourist attraction. In principle any Thing can be a <a class="localLink"
+<p>A tourist attraction. In principle any Thing can be a <a
+class="localLink"
 href="http://schema.org/TouristAttraction">TouristAttraction</a>, from a <a
 class="localLink" href="http://schema.org/Mountain">Mountain</a> and <a
 class="localLink"
@@ -34,7 +35,7 @@ used on its own to describe a general <a class="localLink"
 href="http://schema.org/TouristAttraction">TouristAttraction</a>, or be
 used as an <a class="localLink"
 href="http://schema.org/additionalType">additionalType</a> to add tourist
-attraction properties to any other type. (See examples below)
+attraction properties to any other type. (See examples below)<p>
 
 =end html
 
@@ -50,10 +51,10 @@ C<availableLanguage>
 
 =begin html
 
-A language someone may use with or at the item, service or place. Please
+<p>A language someone may use with or at the item, service or place. Please
 use one of the language codes from the <a
 href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink" href="http://schema.org/inLanguage">inLanguage</a>
+<a class="localLink" href="http://schema.org/inLanguage">inLanguage</a><p>
 
 =end html
 

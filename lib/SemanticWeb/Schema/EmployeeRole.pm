@@ -63,9 +63,9 @@ C<salaryCurrency>
 
 =begin html
 
-The currency (coded using <a
+<p>The currency (coded using <a
 href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> ) used for the
-main salary information in this job posting or for this employee.
+main salary information in this job posting or for this employee.<p>
 
 =end html
 

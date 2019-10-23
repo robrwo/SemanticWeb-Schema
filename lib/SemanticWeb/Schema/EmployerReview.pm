@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::EmployerReview;
 
-# ABSTRACT: An <a class="localLink" href="http://schema
+# ABSTRACT: An EmployerReview is a review of an Organization regarding its role as an employer
 
 use Moo;
 
@@ -23,12 +23,12 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An <a class="localLink"
+<p>An <a class="localLink"
 href="http://schema.org/EmployerReview">EmployerReview</a> is a review of
 an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> regarding its role
 as an employer, written by a current or former employee of that
-organization.
+organization.<p>
 
 =end html
 

@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An agent joins an event/group with participants/friends at a
+<p>An agent joins an event/group with participants/friends at a
 location.<br/><br/> Related actions:<br/><br/> <ul> <li><a
 class="localLink"
 href="http://schema.org/RegisterAction">RegisterAction</a>: Unlike
@@ -34,7 +34,7 @@ SubscribeAction, JoinAction does not imply that you'll be receiving
 updates.</li> <li><a class="localLink"
 href="http://schema.org/FollowAction">FollowAction</a>: Unlike
 FollowAction, JoinAction does not imply that you'll be polling for
-updates.</li> </ul> 
+updates.</li> </ul> <p>
 
 =end html
 

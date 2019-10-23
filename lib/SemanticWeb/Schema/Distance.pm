@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Distance;
 
-# ABSTRACT: Properties that take Distances as values are of the form '&lt;Number&gt; &lt;Length unit of measure&gt;'
+# ABSTRACT: Properties that take Distances as values are of the form '<Number> <Length unit of measure>'
 
 use Moo;
 

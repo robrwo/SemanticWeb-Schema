@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::AskPublicNewsArticle;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A NewsArticle expressing an open call by a NewsMediaOrganization asking the public for input
 
 use Moo;
 
@@ -23,11 +23,12 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
-expressing an open call by a <a class="localLink"
+<p>A <a class="localLink"
+href="http://schema.org/NewsArticle">NewsArticle</a> expressing an open
+call by a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>
 asking the public for input, insights, clarifications, anecdotes,
-documentation, etc., on an issue, for reporting purposes.
+documentation, etc., on an issue, for reporting purposes.<p>
 
 =end html
 

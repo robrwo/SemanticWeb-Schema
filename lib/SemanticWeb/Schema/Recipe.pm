@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A recipe. For dietary restrictions covered by the recipe, a few common
+<p>A recipe. For dietary restrictions covered by the recipe, a few common
 restrictions are enumerated via <a class="localLink"
 href="http://schema.org/suitableForDiet">suitableForDiet</a>. The <a
 class="localLink" href="http://schema.org/keywords">keywords</a> property
-can also be used to add more detail.
+can also be used to add more detail.<p>
 
 =end html
 
@@ -43,8 +43,9 @@ C<cookTime>
 
 =begin html
 
-The time it takes to actually cook the dish, in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration format</a>.
+<p>The time it takes to actually cook the dish, in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 duration
+format</a>.<p>
 
 =end html
 

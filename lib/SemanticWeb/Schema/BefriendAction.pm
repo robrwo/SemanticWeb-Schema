@@ -23,12 +23,12 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-The act of forming a personal connection with someone (object)
+<p>The act of forming a personal connection with someone (object)
 mutually/bidirectionally/symmetrically.<br/><br/> Related
 actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/FollowAction">FollowAction</a>: Unlike
 FollowAction, BefriendAction implies that the connection is
-reciprocal.</li> </ul> 
+reciprocal.</li> </ul> <p>
 
 =end html
 

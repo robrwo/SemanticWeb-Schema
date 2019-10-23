@@ -162,9 +162,9 @@ C<gamePlatform>
 
 =begin html
 
-The electronic systems used to play <a
+<p>The electronic systems used to play <a
 href="http://en.wikipedia.org/wiki/Category:Video_game_platforms">video
-games</a>.
+games</a>.<p>
 
 =end html
 

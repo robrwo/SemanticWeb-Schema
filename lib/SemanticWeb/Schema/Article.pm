@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An article, such as a news article or piece of investigative report.
+<p>An article, such as a news article or piece of investigative report.
 Newspapers and magazines have articles of many different types and this is
 intended to cover them all.<br/><br/> See also <a
 href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
-html">blog post</a>.
+html">blog post</a>.<p>
 
 =end html
 
@@ -92,13 +92,13 @@ has article_section => (
 
 =begin html
 
-For an <a class="localLink" href="http://schema.org/Article">Article</a>,
-typically a <a class="localLink"
-href="http://schema.org/NewsArticle">NewsArticle</a>, the backstory
-property provides a textual summary giving a brief explanation of why and
-how an article was created. In a journalistic setting this could include
-information about reporting process, methods, interviews, data sources,
-etc.
+<p>For an <a class="localLink"
+href="http://schema.org/Article">Article</a>, typically a <a
+class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>, the
+backstory property provides a textual summary giving a brief explanation of
+why and how an article was created. In a journalistic setting this could
+include information about reporting process, methods, interviews, data
+sources, etc.<p>
 
 =end html
 
@@ -205,8 +205,8 @@ has pagination => (
 
 =begin html
 
-Indicates sections of a Web page that are particularly 'speakable' in the
-sense of being highlighted as being especially appropriate for
+<p>Indicates sections of a Web page that are particularly 'speakable' in
+the sense of being highlighted as being especially appropriate for
 text-to-speech conversion. Other sections of a page may also be usefully
 spoken in particular circumstances; the 'speakable' property serves to
 indicate the parts most likely to be generally useful for speech.<br/><br/>
@@ -225,7 +225,8 @@ sophisticated markup of speakable sections beyond simple ID references,
 either CSS selectors or XPath expressions to pick out document section(s)
 as speakable. For this we define a supporting type, <a class="localLink"
 href="http://schema.org/SpeakableSpecification">SpeakableSpecification</a>
-which is defined to be a possible value of the <em>speakable</em> property.
+which is defined to be a possible value of the <em>speakable</em>
+property.<p>
 
 =end html
 

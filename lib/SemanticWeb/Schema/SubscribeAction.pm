@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-The act of forming a personal connection with someone/something (object)
+<p>The act of forming a personal connection with someone/something (object)
 unidirectionally/asymmetrically to get updates pushed to.<br/><br/> Related
 actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/FollowAction">FollowAction</a>: Unlike
@@ -35,7 +35,7 @@ RegisterAction, SubscribeAction implies that the agent is interested in
 continuing receiving updates from the object.</li> <li><a class="localLink"
 href="http://schema.org/JoinAction">JoinAction</a>: Unlike JoinAction,
 SubscribeAction implies that the agent is interested in continuing
-receiving updates from the object.</li> </ul> 
+receiving updates from the object.</li> </ul> <p>
 
 =end html
 

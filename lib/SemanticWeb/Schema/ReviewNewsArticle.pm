@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ReviewNewsArticle;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A NewsArticle and CriticReview providing a professional critic's assessment of a service
 
 use Moo;
 
@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
-and <a class="localLink"
-href="http://schema.org/CriticReview">CriticReview</a> providing a
-professional critic's assessment of a service, product, performance, or
-artistic or literary work.
+<p>A <a class="localLink"
+href="http://schema.org/NewsArticle">NewsArticle</a> and <a
+class="localLink" href="http://schema.org/CriticReview">CriticReview</a>
+providing a professional critic's assessment of a service, product,
+performance, or artistic or literary work.<p>
 
 =end html
 

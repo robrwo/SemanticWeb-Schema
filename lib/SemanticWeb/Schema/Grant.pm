@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A grant, typically financial or otherwise quantifiable, of resources.
+<p>A grant, typically financial or otherwise quantifiable, of resources.
 Typically a <a class="localLink" href="http://schema.org/funder">funder</a>
 sponsors some <a class="localLink"
 href="http://schema.org/MonetaryAmount">MonetaryAmount</a> to an <a
@@ -47,7 +47,7 @@ for a project to be associated with a single grant.<br/><br/> The amount of
 a <a class="localLink" href="http://schema.org/Grant">Grant</a> is
 represented using <a class="localLink"
 href="http://schema.org/amount">amount</a> as a <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>.
+href="http://schema.org/MonetaryAmount">MonetaryAmount</a>.<p>
 
 =end html
 
@@ -63,8 +63,8 @@ C<fundedItem>
 
 =begin html
 
-Indicates an item funded or sponsored through a <a class="localLink"
-href="http://schema.org/Grant">Grant</a>.
+<p>Indicates an item funded or sponsored through a <a class="localLink"
+href="http://schema.org/Grant">Grant</a>.<p>
 
 =end html
 

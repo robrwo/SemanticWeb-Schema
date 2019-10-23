@@ -23,10 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A Series in schema.org is a group of related items, typically but not
+<p>A Series in schema.org is a group of related items, typically but not
 necessarily of the same kind. See also <a class="localLink"
 href="http://schema.org/CreativeWorkSeries">CreativeWorkSeries</a>, <a
-class="localLink" href="http://schema.org/EventSeries">EventSeries</a>.
+class="localLink" href="http://schema.org/EventSeries">EventSeries</a>.<p>
 
 =end html
 

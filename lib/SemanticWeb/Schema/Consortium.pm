@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Consortium;
 
-# ABSTRACT: A Consortium is a membership <a class="localLink" href="http://schema
+# ABSTRACT: A Consortium is a membership Organization whose members are typically Organizations.
 
 use Moo;
 
@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A Consortium is a membership <a class="localLink"
+<p>A Consortium is a membership <a class="localLink"
 href="http://schema.org/Organization">Organization</a> whose members are
-typically Organizations.
+typically Organizations.<p>
 
 =end html
 

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::BackgroundNewsArticle;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A NewsArticle providing historical context
 
 use Moo;
 
@@ -23,9 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
-providing historical context, definition and detail on a specific topic
-(aka "explainer" or "backgrounder"). For example, an in-depth article or
+<p>A <a class="localLink"
+href="http://schema.org/NewsArticle">NewsArticle</a> providing historical
+context, definition and detail on a specific topic (aka "explainer" or
+"backgrounder"). For example, an in-depth article or
 frequently-asked-questions (<a
 href="https://en.wikipedia.org/wiki/FAQ">FAQ</a>) document on topics such
 as Climate Change or the European Union. Other kinds of background material
@@ -35,7 +36,7 @@ href="http://schema.org/Article">Article</a>, in particular <a
 class="localLink"
 href="http://schema.org/ScholarlyArticle">ScholarlyArticle</a>. See also <a
 class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> for
-related vocabulary from a learning/education perspective.
+related vocabulary from a learning/education perspective.<p>
 
 =end html
 

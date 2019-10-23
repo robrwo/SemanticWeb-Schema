@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-The act of forming a personal connection with someone/something (object)
+<p>The act of forming a personal connection with someone/something (object)
 unidirectionally/asymmetrically to get updates polled from.<br/><br/>
 Related actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/BefriendAction">BefriendAction</a>: Unlike
@@ -42,7 +42,7 @@ the object.</li> <li><a class="localLink"
 href="http://schema.org/TrackAction">TrackAction</a>: Unlike TrackAction,
 FollowAction refers to the polling of updates of all aspects of animate
 objects rather than the location of inanimate objects (e.g. you track a
-package, but you don't follow it).</li> </ul> 
+package, but you don't follow it).</li> </ul> <p>
 
 =end html
 

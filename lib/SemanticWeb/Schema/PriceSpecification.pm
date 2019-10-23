@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A structured value representing a price or price range. Typically, only the
-subclasses of this type are used for markup. It is recommended to use <a
-class="localLink"
+<p>A structured value representing a price or price range. Typically, only
+the subclasses of this type are used for markup. It is recommended to use
+<a class="localLink"
 href="http://schema.org/MonetaryAmount">MonetaryAmount</a> to describe
-independent amounts of money such as a salary, credit card limits, etc.
+independent amounts of money such as a salary, credit card limits, etc.<p>
 
 =end html
 
@@ -144,7 +144,7 @@ has min_price => (
 
 =begin html
 
-The offer price of a product, or of a price component when attached to
+<p>The offer price of a product, or of a price component when attached to
 PriceSpecification and its subtypes.<br/><br/> Usage guidelines:<br/><br/>
 <ul> <li>Use the <a class="localLink"
 href="http://schema.org/priceCurrency">priceCurrency</a> property (with
@@ -165,7 +165,7 @@ RDFa</a> and Microdata syntax allow the use of a "content=" attribute for
 publishing simple machine-readable values alongside more human-friendly
 formatting.</li> <li>Use values from 0123456789 (Unicode 'DIGIT ZERO'
 (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar
-Unicode symbols.</li> </ul> 
+Unicode symbols.</li> </ul> <p>
 
 =end html
 
@@ -195,7 +195,7 @@ C<priceCurrency>
 
 =begin html
 
-The currency of the price, or a price component when attached to <a
+<p>The currency of the price, or a price component when attached to <a
 class="localLink"
 href="http://schema.org/PriceSpecification">PriceSpecification</a> and its
 subtypes.<br/><br/> Use standard formats: <a
@@ -205,7 +205,7 @@ href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
 symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
 href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
 Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".
+HOUR".<p>
 
 =end html
 

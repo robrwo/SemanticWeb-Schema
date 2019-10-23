@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A house is a building or structure that has the ability to be occupied for
-habitation by humans or other creatures (Source: Wikipedia, the free
+<p>A house is a building or structure that has the ability to be occupied
+for habitation by humans or other creatures (Source: Wikipedia, the free
 encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/House">http://en.wikipedia.org/wiki/Hous
-e</a>).
+e</a>).<p>
 
 =end html
 

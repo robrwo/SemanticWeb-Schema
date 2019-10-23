@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ContactPoint;
 
-# ABSTRACT: A contact point&#x2014;for example
+# ABSTRACT: A contact point—for example
 
 use Moo;
 
@@ -65,10 +65,10 @@ C<availableLanguage>
 
 =begin html
 
-A language someone may use with or at the item, service or place. Please
+<p>A language someone may use with or at the item, service or place. Please
 use one of the language codes from the <a
 href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink" href="http://schema.org/inLanguage">inLanguage</a>
+<a class="localLink" href="http://schema.org/inLanguage">inLanguage</a><p>
 
 =end html
 

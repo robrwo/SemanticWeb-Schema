@@ -23,10 +23,10 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-The act of posing a question / favor to someone.<br/><br/> Related
+<p>The act of posing a question / favor to someone.<br/><br/> Related
 actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/ReplyAction">ReplyAction</a>: Appears generally as
-a response to AskAction.</li> </ul> 
+a response to AskAction.</li> </ul> <p>
 
 =end html
 

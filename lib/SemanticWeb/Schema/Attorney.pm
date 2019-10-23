@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-Professional service: Attorney. <br/><br/> This type is deprecated - <a
+<p>Professional service: Attorney. <br/><br/> This type is deprecated - <a
 class="localLink" href="http://schema.org/LegalService">LegalService</a> is
-more inclusive and less ambiguous.
+more inclusive and less ambiguous.<p>
 
 =end html
 

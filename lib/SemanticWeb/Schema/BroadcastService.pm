@@ -137,8 +137,8 @@ C<broadcastTimezone>
 
 =begin html
 
-The timezone in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601
-format</a> for which the service bases its broadcasts
+<p>The timezone in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601
+format</a> for which the service bases its broadcasts<p>
 
 =end html
 

@@ -23,11 +23,11 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-Scheduling future actions, events, or tasks.<br/><br/> Related
+<p>Scheduling future actions, events, or tasks.<br/><br/> Related
 actions:<br/><br/> <ul> <li><a class="localLink"
 href="http://schema.org/ReserveAction">ReserveAction</a>: Unlike
 ReserveAction, ScheduleAction allocates future actions (e.g. an event, a
-task, etc) towards a time slot / spatial allocation.</li> </ul> 
+task, etc) towards a time slot / spatial allocation.</li> </ul> <p>
 
 =end html
 

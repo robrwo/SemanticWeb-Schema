@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A tourist destination. In principle any <a class="localLink"
+<p>A tourist destination. In principle any <a class="localLink"
 href="http://schema.org/Place">Place</a> can be a <a class="localLink"
 href="http://schema.org/TouristDestination">TouristDestination</a> from a
 <a class="localLink" href="http://schema.org/City">City</a>, <a
@@ -45,7 +45,7 @@ linked by a similar theme or interest to a particular <a class="localLink"
 href="http://schema.org/touristType">touristType</a>. The <a
 href="http://www2.unwto.org/">UNWTO</a> defines Destination (main
 destination of a tourism trip) as the place visited that is central to the
-decision to take the trip. (See examples below).
+decision to take the trip. (See examples below).<p>
 
 =end html
 

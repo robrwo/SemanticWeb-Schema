@@ -23,14 +23,14 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A CreativeWorkSeries in schema.org is a group of related items, typically
-but not necessarily of the same kind. CreativeWorkSeries are usually
-organized into some order, often chronological. Unlike <a class="localLink"
-href="http://schema.org/ItemList">ItemList</a> which is a general purpose
-data structure for lists of things, the emphasis with CreativeWorkSeries is
-on published materials (written e.g. books and periodicals, or media such
-as tv, radio and games).<br/><br/> Specific subtypes are available for
-describing <a class="localLink"
+<p>A CreativeWorkSeries in schema.org is a group of related items,
+typically but not necessarily of the same kind. CreativeWorkSeries are
+usually organized into some order, often chronological. Unlike <a
+class="localLink" href="http://schema.org/ItemList">ItemList</a> which is a
+general purpose data structure for lists of things, the emphasis with
+CreativeWorkSeries is on published materials (written e.g. books and
+periodicals, or media such as tv, radio and games).<br/><br/> Specific
+subtypes are available for describing <a class="localLink"
 href="http://schema.org/TVSeries">TVSeries</a>, <a class="localLink"
 href="http://schema.org/RadioSeries">RadioSeries</a>, <a class="localLink"
 href="http://schema.org/MovieSeries">MovieSeries</a>, <a class="localLink"
@@ -45,7 +45,7 @@ and practical subtypes.<br/><br/> It is common for properties applicable to
 an item from the series to be usefully applied to the containing group.
 Schema.org attempts to anticipate some of these cases, but publishers
 should be free to apply properties of the series parts to the series as a
-whole wherever they seem appropriate.
+whole wherever they seem appropriate.<p>
 
 =end html
 
@@ -61,8 +61,8 @@ C<endDate>
 
 =begin html
 
-The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The end date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 
@@ -116,8 +116,8 @@ C<startDate>
 
 =begin html
 
-The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).
+<p>The start date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
 
 =end html
 

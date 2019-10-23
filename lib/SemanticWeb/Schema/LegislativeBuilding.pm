@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::LegislativeBuilding;
 
-# ABSTRACT: A legislative building&#x2014;for example
+# ABSTRACT: A legislative building—for example
 
 use Moo;
 

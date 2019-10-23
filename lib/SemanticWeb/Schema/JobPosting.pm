@@ -488,14 +488,15 @@ C<occupationalCategory>
 
 =begin html
 
-A category describing the job, preferably using a term from a taxonomy such
-as <a href="http://www.onetcenter.org/taxonomy.html">BLS O*NET-SOC</a>, <a
+<p>A category describing the job, preferably using a term from a taxonomy
+such as <a href="http://www.onetcenter.org/taxonomy.html">BLS
+O*NET-SOC</a>, <a
 href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/">ISCO-08<
 /a> or similar, with the property repeated for each applicable value.
 Ideally the taxonomy should be identified, and both the textual label and
 formal code for the category should be provided.<br/><br/> Note: for
 historical reasons, any textual label and formal code provided as a literal
-may be assumed to be from O*NET-SOC.
+may be assumed to be from O*NET-SOC.<p>
 
 =end html
 
@@ -599,9 +600,9 @@ C<salaryCurrency>
 
 =begin html
 
-The currency (coded using <a
+<p>The currency (coded using <a
 href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217</a> ) used for the
-main salary information in this job posting or for this employee.
+main salary information in this job posting or for this employee.<p>
 
 =end html
 

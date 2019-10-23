@@ -39,9 +39,9 @@ C<inDefinedTermSet>
 
 =begin html
 
-A <a class="localLink"
+<p>A <a class="localLink"
 href="http://schema.org/DefinedTermSet">DefinedTermSet</a> that contains
-this term.
+this term.<p>
 
 =end html
 
@@ -71,10 +71,10 @@ C<termCode>
 
 =begin html
 
-A code that identifies this <a class="localLink"
+<p>A code that identifies this <a class="localLink"
 href="http://schema.org/DefinedTerm">DefinedTerm</a> within a <a
 class="localLink"
-href="http://schema.org/DefinedTermSet">DefinedTermSet</a>
+href="http://schema.org/DefinedTermSet">DefinedTermSet</a><p>
 
 =end html
 

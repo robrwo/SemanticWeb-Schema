@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::CorrectionComment;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A comment that corrects CreativeWork .
 
 use Moo;
 
@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/comment">comment</a> that
+<p>A <a class="localLink" href="http://schema.org/comment">comment</a> that
 corrects <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.
+href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
 
 =end html
 

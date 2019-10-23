@@ -23,9 +23,9 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-An EndorsementRating is a rating that expresses some level of endorsement,
-for example inclusion in a "critic's pick" blog, a "Like" or "+1" on a
-social network. It can be considered the <a class="localLink"
+<p>An EndorsementRating is a rating that expresses some level of
+endorsement, for example inclusion in a "critic's pick" blog, a "Like" or
+"+1" on a social network. It can be considered the <a class="localLink"
 href="http://schema.org/result">result</a> of an <a class="localLink"
 href="http://schema.org/EndorseAction">EndorseAction</a> in which the <a
 class="localLink" href="http://schema.org/object">object</a> of the action
@@ -39,7 +39,7 @@ href="http://schema.org/EndorsementRating">EndorsementRating</a> may be
 part of a numeric scale or organized system, but this is not required:
 having an explicit type for indicating a positive, endorsement rating is
 particularly useful in the absence of numeric scales as it helps consumers
-understand that the rating is broadly positive.
+understand that the rating is broadly positive.<p>
 
 =end html
 

@@ -35,9 +35,9 @@ C<publicationType>
 
 =begin html
 
-The type of the medical article, taken from the US NLM MeSH publication
+<p>The type of the medical article, taken from the US NLM MeSH publication
 type catalog. See also <a
-href="http://www.nlm.nih.gov/mesh/pubtypes.html">MeSH documentation</a>.
+href="http://www.nlm.nih.gov/mesh/pubtypes.html">MeSH documentation</a>.<p>
 
 =end html
 

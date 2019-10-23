@@ -35,13 +35,13 @@ C<actionableFeedbackPolicy>
 
 =begin html
 
-For a <a class="localLink"
+<p>For a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or
 other news-related <a class="localLink"
 href="http://schema.org/Organization">Organization</a>, a statement about
 public engagement activities (for news media, the newsroomâs), including
 involving the public - digitally or otherwise -- in coverage decisions,
-reporting and activities after publication.
+reporting and activities after publication.<p>
 
 =end html
 
@@ -71,12 +71,12 @@ C<correctionsPolicy>
 
 =begin html
 
-For an <a class="localLink"
+<p>For an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (e.g. <a
 class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
 a statement describing (in news media, the newsroomâs) disclosure and
-correction policy for errors.
+correction policy for errors.<p>
 
 =end html
 
@@ -106,14 +106,14 @@ C<diversityPolicy>
 
 =begin html
 
-Statement on diversity policy by an <a class="localLink"
+<p>Statement on diversity policy by an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> e.g. a <a
 class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>.
 For a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a
 statement describing the newsroomâs diversity policy on both staffing and
-sources, typically providing staffing data.
+sources, typically providing staffing data.<p>
 
 =end html
 
@@ -143,12 +143,12 @@ C<diversityStaffingReport>
 
 =begin html
 
-For an <a class="localLink"
+<p>For an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (often but not
 necessarily a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
 a report on staffing diversity issues. In a news context this might be for
-example ASNE or RTDNA (US) reports, or self-reported.
+example ASNE or RTDNA (US) reports, or self-reported.<p>
 
 =end html
 
@@ -178,7 +178,7 @@ C<ethicsPolicy>
 
 =begin html
 
-Statement about ethics policy, e.g. of a <a class="localLink"
+<p>Statement about ethics policy, e.g. of a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>
 regarding journalistic and publishing practices, or of a <a
 class="localLink" href="http://schema.org/Restaurant">Restaurant</a>, a
@@ -186,7 +186,7 @@ page describing food source policies. In the case of a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>,
 an ethicsPolicy is typically a statement describing the personal,
 organizational, and corporate standards of behavior expected by the
-organization.
+organization.<p>
 
 =end html
 
@@ -216,9 +216,9 @@ has ethics_policy => (
 
 =begin html
 
-For a <a class="localLink"
+<p>For a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a
-link to the masthead page or a page listing top editorial management.
+link to the masthead page or a page listing top editorial management.<p>
 
 =end html
 
@@ -248,10 +248,10 @@ C<missionCoveragePrioritiesPolicy>
 
 =begin html
 
-For a <a class="localLink"
+<p>For a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a
 statement on coverage priorities, including any public agenda or stance on
-issues.
+issues.<p>
 
 =end html
 
@@ -281,11 +281,11 @@ C<noBylinesPolicy>
 
 =begin html
 
-For a <a class="localLink"
+<p>For a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or
 other news-related <a class="localLink"
 href="http://schema.org/Organization">Organization</a>, a statement
-explaining when authors of articles are not named in bylines.
+explaining when authors of articles are not named in bylines.<p>
 
 =end html
 
@@ -315,7 +315,7 @@ C<ownershipFundingInfo>
 
 =begin html
 
-For an <a class="localLink"
+<p>For an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (often but not
 necessarily a <a class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
@@ -323,7 +323,7 @@ a description of organizational ownership structure; funding and grants. In
 a news/media setting, this is with particular reference to editorial
 independence. Note that the <a class="localLink"
 href="http://schema.org/funder">funder</a> is also available and can be
-used to make basic funder information machine-readable.
+used to make basic funder information machine-readable.<p>
 
 =end html
 
@@ -355,12 +355,12 @@ C<unnamedSourcesPolicy>
 
 =begin html
 
-For an <a class="localLink"
+<p>For an <a class="localLink"
 href="http://schema.org/Organization">Organization</a> (typically a <a
 class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
 a statement about policy on use of unnamed sources and the decision process
-required.
+required.<p>
 
 =end html
 
@@ -390,11 +390,11 @@ C<verificationFactCheckingPolicy>
 
 =begin html
 
-Disclosure about verification and fact-checking processes for a <a
+<p>Disclosure about verification and fact-checking processes for a <a
 class="localLink"
 href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or
 other fact-checking <a class="localLink"
-href="http://schema.org/Organization">Organization</a>.
+href="http://schema.org/Organization">Organization</a>.<p>
 
 =end html
 

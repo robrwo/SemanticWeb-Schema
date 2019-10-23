@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Claim;
 
-# ABSTRACT: A <a class="localLink" href="http://schema
+# ABSTRACT: A Claim in Schema
 
 use Moo;
 
@@ -23,7 +23,7 @@ our $VERSION = 'v4.0.1';
 
 =begin html
 
-A <a class="localLink" href="http://schema.org/Claim">Claim</a> in
+<p>A <a class="localLink" href="http://schema.org/Claim">Claim</a> in
 Schema.org represents a specific, factually-oriented claim that could be
 the <a class="localLink"
 href="http://schema.org/itemReviewed">itemReviewed</a> in a <a
@@ -45,7 +45,7 @@ class="localLink" href="http://schema.org/Question">Question</a> might be
 <a class="localLink" href="http://schema.org/about">about</a> some <a
 class="localLink" href="http://schema.org/Claim">Claim</a>.<br/><br/> At
 this time, Schema.org does not define any types of relationship between
-claims. This is a natural area for future exploration.
+claims. This is a natural area for future exploration.<p>
 
 =end html
 
@@ -61,9 +61,9 @@ claims. This is a natural area for future exploration.
 
 =begin html
 
-Indicates an occurence of a <a class="localLink"
+<p>Indicates an occurence of a <a class="localLink"
 href="http://schema.org/Claim">Claim</a> in some <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.
+href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
 
 =end html
 
@@ -91,9 +91,9 @@ C<firstAppearance>
 
 =begin html
 
-Indicates the first known occurence of a <a class="localLink"
+<p>Indicates the first known occurence of a <a class="localLink"
 href="http://schema.org/Claim">Claim</a> in some <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.
+href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
 
 =end html
 
