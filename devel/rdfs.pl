@@ -345,7 +345,7 @@ sub generate_class_from_trine {
     $test->parent->mkpath;
     my %data = ( class => $nodes, properties => $properties );
 
-    $test->spew_utf8( $self->encode( \%data ) );
+    $test->spew_raw( $self->encode( \%data ) );
 }
 
 sub translate_types {

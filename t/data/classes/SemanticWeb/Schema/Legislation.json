@@ -205,7 +205,7 @@
          ],
          "owl:equivalentProperty" : "ontology:type_document",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"rÃÂ¨glement grand-ducal\", etc., depending on the country.",
+         "rdfs:comment" : "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"rÃ¨glement grand-ducal\", etc., depending on the country.",
          "rdfs:label" : "legislationType",
          "rdfs:subPropertyOf" : "schema:genre",
          "schema:category" : "issue-1156",

@@ -1,3 +1,5 @@
+use utf8;
+
 package SemanticWeb::Schema;
 
 # ABSTRACT: Moo classes for http://schema.org/ classes
@@ -19,6 +21,8 @@ our $VERSION = 'v5.0.0';
 # RECOMMEND PREREQ: Class::XSAccessor 1.18
 # RECOMMEND PREREQ: Ref::Util::XS
 # RECOMMEND PREREQ: Type::Tiny::XS
+
+=encoding utf8
 
 =head1 SYNOPSIS
 

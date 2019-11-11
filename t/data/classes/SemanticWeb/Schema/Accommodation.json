@@ -77,7 +77,7 @@
       "schema:numberOfFullBathrooms" : {
          "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2373",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Number of full bathrooms - The total number of full and ÃÂ¾ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field\">BathroomsFull field in RESO</a>.",
+         "rdfs:comment" : "Number of full bathrooms - The total number of full and Â¾ bathrooms in an <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>. This corresponds to the <a href=\"https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field\">BathroomsFull field in RESO</a>.",
          "rdfs:label" : "numberOfFullBathrooms",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : "schema:Accommodation",

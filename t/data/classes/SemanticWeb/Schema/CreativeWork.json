@@ -929,7 +929,7 @@
       },
       "schema:translationOfWork" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The work that this work has been translated from. e.g. Ã§ÂÂ©Ã§Â§ÂÃ¨ÂµÂ·Ã¦ÂºÂ is a translationOf Ã¢ÂÂOn the Origin of SpeciesÃ¢ÂÂ",
+         "rdfs:comment" : "The work that this work has been translated from. e.g. ç©ç§èµ·æº is a translationOf âOn the Origin of Speciesâ",
          "rdfs:label" : "translationOfWork",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:workTranslation",
@@ -990,7 +990,7 @@
       },
       "schema:workTranslation" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A work that is a translation of the content of this work. e.g. Ã¨Â¥Â¿Ã©ÂÂÃ¨Â¨Â has an English workTranslation Ã¢ÂÂJourney to the WestÃ¢ÂÂ,a German workTranslation Ã¢ÂÂMonkeys PilgerfahrtÃ¢ÂÂ and a Vietnamese  translation TÃÂ¢y du kÃÂ½ bÃÂ¬nh khÃ¡ÂºÂ£o.",
+         "rdfs:comment" : "A work that is a translation of the content of this work. e.g. è¥¿éè¨ has an English workTranslation âJourney to the Westâ,a German workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese  translation TÃ¢y du kÃ½ bÃ¬nh kháº£o.",
          "rdfs:label" : "workTranslation",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:translationOfWork",

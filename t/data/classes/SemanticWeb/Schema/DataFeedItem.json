@@ -44,7 +44,7 @@
       },
       "schema:item" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')Ã¢ÂÂ.",
+         "rdfs:comment" : "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')â.",
          "rdfs:label" : "item",
          "schema:domainIncludes" : [
             "schema:DataFeedItem",

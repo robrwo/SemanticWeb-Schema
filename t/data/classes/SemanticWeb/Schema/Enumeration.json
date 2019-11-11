@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Lists or enumerationsÃ¢ÂÂfor example, a list of cuisines or music genres, etc.",
+      "rdfs:comment" : "Lists or enumerationsâfor example, a list of cuisines or music genres, etc.",
       "rdfs:label" : "Enumeration",
       "rdfs:subClassOf" : "schema:Intangible"
    },

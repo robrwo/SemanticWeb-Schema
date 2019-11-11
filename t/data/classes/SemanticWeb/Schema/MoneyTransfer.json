@@ -42,7 +42,7 @@
             "schemadotorgsources:FIBO"
          ],
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A bank or bankÃ¢ÂÂs branch, financial institution or international financial institution operating the beneficiaryÃ¢ÂÂs bank account or releasing funds for the beneficiary",
+         "rdfs:comment" : "A bank or bankâs branch, financial institution or international financial institution operating the beneficiaryâs bank account or releasing funds for the beneficiary",
          "rdfs:label" : "beneficiaryBank",
          "schema:category" : "issue-1253",
          "schema:domainIncludes" : "schema:MoneyTransfer",
