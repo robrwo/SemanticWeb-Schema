@@ -53,6 +53,15 @@ The context defaults to "http://schema.org/".
 The development version is on github at [https://github.com/robrwo/SemanticWeb-Schema](https://github.com/robrwo/SemanticWeb-Schema)
 and may be cloned from [git://github.com/robrwo/SemanticWeb-Schema.git](git://github.com/robrwo/SemanticWeb-Schema.git)
 
+# BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+[https://github.com/robrwo/SemanticWeb-Schema/issues](https://github.com/robrwo/SemanticWeb-Schema/issues)
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
 # AUTHOR
 
 Robert Rothenberg <rrwo@cpan.org>
