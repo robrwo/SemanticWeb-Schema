@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v4.0.2';
+our $VERSION = 'v5.0.0';
 
 =encoding utf8
 
@@ -628,12 +628,16 @@ has salary_currency => (
 
 
 
-Skills required to fulfill this role or in this Occupation.
+A statement of knowledge, skill, ability, task or any other assertion
+expressing a competency that is desired or required to fulfill this role or
+to work in this occupation.
 
 
 A skills should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
 
 =item C<Str>
 

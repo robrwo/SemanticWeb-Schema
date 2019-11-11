@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v4.0.2';
+our $VERSION = 'v5.0.0';
 
 =encoding utf8
 
@@ -37,6 +37,40 @@ marking up hotels and other forms of accommodations</a>.<p>
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<accommodation_category>
+
+C<accommodationCategory>
+
+=begin html
+
+<p>Category of an <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, following real
+estate conventions e.g. RESO (see <a
+href="https://ddwiki.reso.org/display/DDW17/PropertySubType+Field">Property
+SubType</a>, and <a
+href="https://ddwiki.reso.org/display/DDW17/PropertyType+Field">PropertyTyp
+e</a> fields for suggested values).<p>
+
+=end html
+
+
+A accommodation_category should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has accommodation_category => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'accommodationCategory',
+);
 
 
 =head2 C<amenity_feature>
@@ -66,6 +100,39 @@ has amenity_feature => (
 );
 
 
+=head2 C<floor_level>
+
+C<floorLevel>
+
+=begin html
+
+<p>The floor level for an <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a> in a multi-storey
+building. Since counting systems <a
+href="https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designa
+tions">vary internationally</a>, the local system should be used where
+possible.<p>
+
+=end html
+
+
+A floor_level should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has floor_level => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'floorLevel',
+);
+
+
 =head2 C<floor_size>
 
 C<floorSize>
@@ -89,6 +156,107 @@ has floor_size => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'floorSize',
+);
+
+
+=head2 C<lease_length>
+
+C<leaseLength>
+
+=begin html
+
+<p>Length of the lease for some <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, either particular
+to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
+some cases intrinsic to the property.<p>
+
+=end html
+
+
+A lease_length should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=cut
+
+has lease_length => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'leaseLength',
+);
+
+
+=head2 C<number_of_bathrooms_total>
+
+C<numberOfBathroomsTotal>
+
+=begin html
+
+<p>The total integer number of bathrooms in a some <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, following real
+estate conventions as <a
+href="https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field">do
+cumented in RESO</a>: "The simple sum of the number of bathrooms. For
+example for a property with two Full Bathrooms and one Half Bathroom, the
+Bathrooms Total Integer will be 3.". See also <a class="localLink"
+href="http://schema.org/numberOfRooms">numberOfRooms</a>.<p>
+
+=end html
+
+
+A number_of_bathrooms_total should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=back
+
+=cut
+
+has number_of_bathrooms_total => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'numberOfBathroomsTotal',
+);
+
+
+=head2 C<number_of_full_bathrooms>
+
+C<numberOfFullBathrooms>
+
+=begin html
+
+<p>Number of full bathrooms - The total number of full and Â¾ bathrooms in
+an <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>. This corresponds
+to the <a
+href="https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field">BathroomsF
+ull field in RESO</a>.<p>
+
+=end html
+
+
+A number_of_full_bathrooms should be one of the following types:
+
+=over
+
+=item C<Num>
+
+=back
+
+=cut
+
+has number_of_full_bathrooms => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'numberOfFullBathrooms',
 );
 
 

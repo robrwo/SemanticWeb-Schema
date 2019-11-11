@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v4.0.2';
+our $VERSION = 'v5.0.0';
 
 =encoding utf8
 
@@ -181,6 +181,36 @@ has broadcaster => (
     is        => 'rw',
     predicate => 1,
     json_ld   => 'broadcaster',
+);
+
+
+=head2 C<call_sign>
+
+C<callSign>
+
+=begin html
+
+<p>A <a href="https://en.wikipedia.org/wiki/Call_sign">callsign</a>, as
+used in broadcasting and radio communications to identify people, radio and
+TV stations, or vehicles.<p>
+
+=end html
+
+
+A call_sign should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=cut
+
+has call_sign => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'callSign',
 );
 
 

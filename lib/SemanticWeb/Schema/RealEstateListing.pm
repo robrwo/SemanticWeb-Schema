@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v4.0.2';
+our $VERSION = 'v5.0.0';
 
 =encoding utf8
 
@@ -38,7 +38,42 @@ class="localLink" href="http://schema.org/WebPage">WebPage</a>.<p>
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<lease_length>
+
+C<leaseLength>
+
+=begin html
+
+<p>Length of the lease for some <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, either particular
+to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
+some cases intrinsic to the property.<p>
+
+=end html
+
+
+A lease_length should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
 =cut
+
+has lease_length => (
+    is        => 'rw',
+    predicate => 1,
+    json_ld   => 'leaseLength',
+);
+
+
 
 
 =head1 SEE ALSO
