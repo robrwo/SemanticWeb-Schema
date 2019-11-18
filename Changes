@@ -1,6 +1,13 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - The Place schema could not be loaded because of a conflict
+    with the predicate, thanks @takaya1992.
+
+  [Incompatabilities]
+  - The predicates are now prefixed with an underscore, e.g.
+    `_has_thing` instead of `has_thing`.
 
 v5.0.0    2019-11-11 17:23:43+00:00 Europe/London
   [Enhancements]
