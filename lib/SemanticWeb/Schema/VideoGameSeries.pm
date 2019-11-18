@@ -50,7 +50,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -75,7 +75,7 @@ A actors should be one of the following types:
 
 has actors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actors',
     json_ld   => 'actors',
 );
 
@@ -100,7 +100,7 @@ A character_attribute should be one of the following types:
 
 has character_attribute => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_character_attribute',
     json_ld   => 'characterAttribute',
 );
 
@@ -124,7 +124,7 @@ A cheat_code should be one of the following types:
 
 has cheat_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cheat_code',
     json_ld   => 'cheatCode',
 );
 
@@ -148,7 +148,7 @@ A contains_season should be one of the following types:
 
 has contains_season => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contains_season',
     json_ld   => 'containsSeason',
 );
 
@@ -174,7 +174,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -199,7 +199,7 @@ A directors should be one of the following types:
 
 has directors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_directors',
     json_ld   => 'directors',
 );
 
@@ -223,7 +223,7 @@ A episode should be one of the following types:
 
 has episode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_episode',
     json_ld   => 'episode',
 );
 
@@ -247,7 +247,7 @@ A episodes should be one of the following types:
 
 has episodes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_episodes',
     json_ld   => 'episodes',
 );
 
@@ -272,7 +272,7 @@ A game_item should be one of the following types:
 
 has game_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_item',
     json_ld   => 'gameItem',
 );
 
@@ -300,7 +300,7 @@ A game_location should be one of the following types:
 
 has game_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_location',
     json_ld   => 'gameLocation',
 );
 
@@ -332,7 +332,7 @@ A game_platform should be one of the following types:
 
 has game_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_platform',
     json_ld   => 'gamePlatform',
 );
 
@@ -358,7 +358,7 @@ A music_by should be one of the following types:
 
 has music_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_by',
     json_ld   => 'musicBy',
 );
 
@@ -382,7 +382,7 @@ A number_of_episodes should be one of the following types:
 
 has number_of_episodes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_episodes',
     json_ld   => 'numberOfEpisodes',
 );
 
@@ -406,7 +406,7 @@ A number_of_players should be one of the following types:
 
 has number_of_players => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_players',
     json_ld   => 'numberOfPlayers',
 );
 
@@ -430,7 +430,7 @@ A number_of_seasons should be one of the following types:
 
 has number_of_seasons => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_seasons',
     json_ld   => 'numberOfSeasons',
 );
 
@@ -456,7 +456,7 @@ A play_mode should be one of the following types:
 
 has play_mode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_play_mode',
     json_ld   => 'playMode',
 );
 
@@ -481,7 +481,7 @@ A production_company should be one of the following types:
 
 has production_company => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_company',
     json_ld   => 'productionCompany',
 );
 
@@ -506,7 +506,7 @@ A quest should be one of the following types:
 
 has quest => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_quest',
     json_ld   => 'quest',
 );
 
@@ -530,7 +530,7 @@ A season should be one of the following types:
 
 has season => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_season',
     json_ld   => 'season',
 );
 
@@ -554,7 +554,7 @@ A seasons should be one of the following types:
 
 has seasons => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seasons',
     json_ld   => 'seasons',
 );
 
@@ -578,7 +578,7 @@ A trailer should be one of the following types:
 
 has trailer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trailer',
     json_ld   => 'trailer',
 );
 

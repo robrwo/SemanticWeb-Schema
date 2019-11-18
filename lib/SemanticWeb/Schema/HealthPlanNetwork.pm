@@ -49,7 +49,7 @@ A health_plan_cost_sharing should be one of the following types:
 
 has health_plan_cost_sharing => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_cost_sharing',
     json_ld   => 'healthPlanCostSharing',
 );
 
@@ -74,7 +74,7 @@ A health_plan_network_id should be one of the following types:
 
 has health_plan_network_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_network_id',
     json_ld   => 'healthPlanNetworkId',
 );
 
@@ -98,7 +98,7 @@ A health_plan_network_tier should be one of the following types:
 
 has health_plan_network_tier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_network_tier',
     json_ld   => 'healthPlanNetworkTier',
 );
 

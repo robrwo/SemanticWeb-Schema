@@ -57,7 +57,7 @@ A party_size should be one of the following types:
 
 has party_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_party_size',
     json_ld   => 'partySize',
 );
 
@@ -81,7 +81,7 @@ A pickup_location should be one of the following types:
 
 has pickup_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pickup_location',
     json_ld   => 'pickupLocation',
 );
 
@@ -105,7 +105,7 @@ A pickup_time should be one of the following types:
 
 has pickup_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pickup_time',
     json_ld   => 'pickupTime',
 );
 

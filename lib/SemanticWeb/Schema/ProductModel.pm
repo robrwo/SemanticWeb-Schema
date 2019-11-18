@@ -51,7 +51,7 @@ A is_variant_of should be one of the following types:
 
 has is_variant_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_variant_of',
     json_ld   => 'isVariantOf',
 );
 
@@ -76,7 +76,7 @@ A predecessor_of should be one of the following types:
 
 has predecessor_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_predecessor_of',
     json_ld   => 'predecessorOf',
 );
 
@@ -101,7 +101,7 @@ A successor_of should be one of the following types:
 
 has successor_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_successor_of',
     json_ld   => 'successorOf',
 );
 

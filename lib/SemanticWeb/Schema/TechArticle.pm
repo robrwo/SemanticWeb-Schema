@@ -49,7 +49,7 @@ A dependencies should be one of the following types:
 
 has dependencies => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dependencies',
     json_ld   => 'dependencies',
 );
 
@@ -73,7 +73,7 @@ A proficiency_level should be one of the following types:
 
 has proficiency_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_proficiency_level',
     json_ld   => 'proficiencyLevel',
 );
 

@@ -56,7 +56,7 @@ A archive_held should be one of the following types:
 
 has archive_held => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_archive_held',
     json_ld   => 'archiveHeld',
 );
 

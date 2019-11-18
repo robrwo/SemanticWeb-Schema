@@ -48,7 +48,7 @@ A game should be one of the following types:
 
 has game => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game',
     json_ld   => 'game',
 );
 
@@ -72,7 +72,7 @@ A players_online should be one of the following types:
 
 has players_online => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_players_online',
     json_ld   => 'playersOnline',
 );
 
@@ -96,7 +96,7 @@ A server_status should be one of the following types:
 
 has server_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_server_status',
     json_ld   => 'serverStatus',
 );
 

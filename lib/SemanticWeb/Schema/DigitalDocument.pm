@@ -50,7 +50,7 @@ A has_digital_document_permission should be one of the following types:
 
 has has_digital_document_permission => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_digital_document_permission',
     json_ld   => 'hasDigitalDocumentPermission',
 );
 

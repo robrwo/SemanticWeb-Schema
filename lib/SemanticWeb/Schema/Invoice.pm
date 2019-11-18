@@ -48,7 +48,7 @@ A account_id should be one of the following types:
 
 has account_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_account_id',
     json_ld   => 'accountId',
 );
 
@@ -72,7 +72,7 @@ A billing_period should be one of the following types:
 
 has billing_period => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_billing_period',
     json_ld   => 'billingPeriod',
 );
 
@@ -101,7 +101,7 @@ A broker should be one of the following types:
 
 has broker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broker',
     json_ld   => 'broker',
 );
 
@@ -130,7 +130,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -154,7 +154,7 @@ A confirmation_number should be one of the following types:
 
 has confirmation_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_confirmation_number',
     json_ld   => 'confirmationNumber',
 );
 
@@ -180,7 +180,7 @@ A customer should be one of the following types:
 
 has customer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_customer',
     json_ld   => 'customer',
 );
 
@@ -206,7 +206,7 @@ A minimum_payment_due should be one of the following types:
 
 has minimum_payment_due => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_minimum_payment_due',
     json_ld   => 'minimumPaymentDue',
 );
 
@@ -230,7 +230,7 @@ A payment_due should be one of the following types:
 
 has payment_due => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_due',
     json_ld   => 'paymentDue',
 );
 
@@ -254,7 +254,7 @@ A payment_due_date should be one of the following types:
 
 has payment_due_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_due_date',
     json_ld   => 'paymentDueDate',
 );
 
@@ -278,7 +278,7 @@ A payment_method should be one of the following types:
 
 has payment_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_method',
     json_ld   => 'paymentMethod',
 );
 
@@ -303,7 +303,7 @@ A payment_method_id should be one of the following types:
 
 has payment_method_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_method_id',
     json_ld   => 'paymentMethodId',
 );
 
@@ -329,7 +329,7 @@ A payment_status should be one of the following types:
 
 has payment_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_status',
     json_ld   => 'paymentStatus',
 );
 
@@ -357,7 +357,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -382,7 +382,7 @@ A references_order should be one of the following types:
 
 has references_order => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_references_order',
     json_ld   => 'referencesOrder',
 );
 
@@ -406,7 +406,7 @@ A scheduled_payment_date should be one of the following types:
 
 has scheduled_payment_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_scheduled_payment_date',
     json_ld   => 'scheduledPaymentDate',
 );
 
@@ -432,7 +432,7 @@ A total_payment_due should be one of the following types:
 
 has total_payment_due => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_payment_due',
     json_ld   => 'totalPaymentDue',
 );
 

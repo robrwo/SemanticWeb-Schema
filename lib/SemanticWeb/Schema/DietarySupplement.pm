@@ -52,7 +52,7 @@ A active_ingredient should be one of the following types:
 
 has active_ingredient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_active_ingredient',
     json_ld   => 'activeIngredient',
 );
 
@@ -78,7 +78,7 @@ A background should be one of the following types:
 
 has background => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_background',
     json_ld   => 'background',
 );
 
@@ -102,7 +102,7 @@ A is_proprietary should be one of the following types:
 
 has is_proprietary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_proprietary',
     json_ld   => 'isProprietary',
 );
 
@@ -131,7 +131,7 @@ A legal_status should be one of the following types:
 
 has legal_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legal_status',
     json_ld   => 'legalStatus',
 );
 
@@ -155,7 +155,7 @@ A manufacturer should be one of the following types:
 
 has manufacturer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_manufacturer',
     json_ld   => 'manufacturer',
 );
 
@@ -180,7 +180,7 @@ A maximum_intake should be one of the following types:
 
 has maximum_intake => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maximum_intake',
     json_ld   => 'maximumIntake',
 );
 
@@ -205,7 +205,7 @@ A mechanism_of_action should be one of the following types:
 
 has mechanism_of_action => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mechanism_of_action',
     json_ld   => 'mechanismOfAction',
 );
 
@@ -229,7 +229,7 @@ A non_proprietary_name should be one of the following types:
 
 has non_proprietary_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_non_proprietary_name',
     json_ld   => 'nonProprietaryName',
 );
 
@@ -254,7 +254,7 @@ A proprietary_name should be one of the following types:
 
 has proprietary_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_proprietary_name',
     json_ld   => 'proprietaryName',
 );
 
@@ -279,7 +279,7 @@ A recommended_intake should be one of the following types:
 
 has recommended_intake => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recommended_intake',
     json_ld   => 'recommendedIntake',
 );
 
@@ -305,7 +305,7 @@ A safety_consideration should be one of the following types:
 
 has safety_consideration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_safety_consideration',
     json_ld   => 'safetyConsideration',
 );
 
@@ -330,7 +330,7 @@ A target_population should be one of the following types:
 
 has target_population => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_population',
     json_ld   => 'targetPopulation',
 );
 

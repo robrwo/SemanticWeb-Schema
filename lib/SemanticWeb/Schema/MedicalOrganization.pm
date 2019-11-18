@@ -50,7 +50,7 @@ A health_plan_network_id should be one of the following types:
 
 has health_plan_network_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_network_id',
     json_ld   => 'healthPlanNetworkId',
 );
 
@@ -74,7 +74,7 @@ A is_accepting_new_patients should be one of the following types:
 
 has is_accepting_new_patients => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accepting_new_patients',
     json_ld   => 'isAcceptingNewPatients',
 );
 
@@ -98,7 +98,7 @@ A medical_specialty should be one of the following types:
 
 has medical_specialty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_medical_specialty',
     json_ld   => 'medicalSpecialty',
 );
 

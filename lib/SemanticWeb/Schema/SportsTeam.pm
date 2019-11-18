@@ -49,7 +49,7 @@ A athlete should be one of the following types:
 
 has athlete => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_athlete',
     json_ld   => 'athlete',
 );
 
@@ -73,7 +73,7 @@ A coach should be one of the following types:
 
 has coach => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_coach',
     json_ld   => 'coach',
 );
 
@@ -113,7 +113,7 @@ A gender should be one of the following types:
 
 has gender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gender',
     json_ld   => 'gender',
 );
 

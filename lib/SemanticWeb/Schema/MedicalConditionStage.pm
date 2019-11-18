@@ -48,7 +48,7 @@ A stage_as_number should be one of the following types:
 
 has stage_as_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_stage_as_number',
     json_ld   => 'stageAsNumber',
 );
 
@@ -72,7 +72,7 @@ A sub_stage_suffix should be one of the following types:
 
 has sub_stage_suffix => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_stage_suffix',
     json_ld   => 'subStageSuffix',
 );
 

@@ -50,7 +50,7 @@ A by_artist should be one of the following types:
 
 has by_artist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_by_artist',
     json_ld   => 'byArtist',
 );
 
@@ -79,7 +79,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -103,7 +103,7 @@ A in_album should be one of the following types:
 
 has in_album => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_album',
     json_ld   => 'inAlbum',
 );
 
@@ -127,7 +127,7 @@ A in_playlist should be one of the following types:
 
 has in_playlist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_playlist',
     json_ld   => 'inPlaylist',
 );
 
@@ -151,7 +151,7 @@ A isrc_code should be one of the following types:
 
 has isrc_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_isrc_code',
     json_ld   => 'isrcCode',
 );
 
@@ -175,7 +175,7 @@ A recording_of should be one of the following types:
 
 has recording_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recording_of',
     json_ld   => 'recordingOf',
 );
 

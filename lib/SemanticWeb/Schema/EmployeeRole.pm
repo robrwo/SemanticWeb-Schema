@@ -52,7 +52,7 @@ A base_salary should be one of the following types:
 
 has base_salary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_base_salary',
     json_ld   => 'baseSalary',
 );
 
@@ -82,7 +82,7 @@ A salary_currency should be one of the following types:
 
 has salary_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_salary_currency',
     json_ld   => 'salaryCurrency',
 );
 

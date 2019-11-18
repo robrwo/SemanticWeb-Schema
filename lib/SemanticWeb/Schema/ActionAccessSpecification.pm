@@ -50,7 +50,7 @@ A availability_ends should be one of the following types:
 
 has availability_ends => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_availability_ends',
     json_ld   => 'availabilityEnds',
 );
 
@@ -75,7 +75,7 @@ A availability_starts should be one of the following types:
 
 has availability_starts => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_availability_starts',
     json_ld   => 'availabilityStarts',
 );
 
@@ -104,7 +104,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -140,7 +140,7 @@ A eligible_region should be one of the following types:
 
 has eligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_region',
     json_ld   => 'eligibleRegion',
 );
 
@@ -165,7 +165,7 @@ A expects_acceptance_of should be one of the following types:
 
 has expects_acceptance_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expects_acceptance_of',
     json_ld   => 'expectsAcceptanceOf',
 );
 
@@ -201,7 +201,7 @@ A ineligible_region should be one of the following types:
 
 has ineligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ineligible_region',
     json_ld   => 'ineligibleRegion',
 );
 
@@ -233,7 +233,7 @@ A requires_subscription should be one of the following types:
 
 has requires_subscription => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_requires_subscription',
     json_ld   => 'requiresSubscription',
 );
 

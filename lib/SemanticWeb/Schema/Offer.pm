@@ -63,7 +63,7 @@ A accepted_payment_method should be one of the following types:
 
 has accepted_payment_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accepted_payment_method',
     json_ld   => 'acceptedPaymentMethod',
 );
 
@@ -89,7 +89,7 @@ A add_on should be one of the following types:
 
 has add_on => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_add_on',
     json_ld   => 'addOn',
 );
 
@@ -114,7 +114,7 @@ A advance_booking_requirement should be one of the following types:
 
 has advance_booking_requirement => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_advance_booking_requirement',
     json_ld   => 'advanceBookingRequirement',
 );
 
@@ -139,7 +139,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -169,7 +169,7 @@ A area_served should be one of the following types:
 
 has area_served => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area_served',
     json_ld   => 'areaServed',
 );
 
@@ -194,7 +194,7 @@ A availability should be one of the following types:
 
 has availability => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_availability',
     json_ld   => 'availability',
 );
 
@@ -219,7 +219,7 @@ A availability_ends should be one of the following types:
 
 has availability_ends => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_availability_ends',
     json_ld   => 'availabilityEnds',
 );
 
@@ -244,7 +244,7 @@ A availability_starts should be one of the following types:
 
 has availability_starts => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_availability_starts',
     json_ld   => 'availabilityStarts',
 );
 
@@ -268,7 +268,7 @@ A available_at_or_from should be one of the following types:
 
 has available_at_or_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_at_or_from',
     json_ld   => 'availableAtOrFrom',
 );
 
@@ -292,7 +292,7 @@ A available_delivery_method should be one of the following types:
 
 has available_delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_delivery_method',
     json_ld   => 'availableDeliveryMethod',
 );
 
@@ -318,7 +318,7 @@ A business_function should be one of the following types:
 
 has business_function => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_business_function',
     json_ld   => 'businessFunction',
 );
 
@@ -347,7 +347,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -373,7 +373,7 @@ A delivery_lead_time should be one of the following types:
 
 has delivery_lead_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_delivery_lead_time',
     json_ld   => 'deliveryLeadTime',
 );
 
@@ -397,7 +397,7 @@ A eligible_customer_type should be one of the following types:
 
 has eligible_customer_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_customer_type',
     json_ld   => 'eligibleCustomerType',
 );
 
@@ -421,7 +421,7 @@ A eligible_duration should be one of the following types:
 
 has eligible_duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_duration',
     json_ld   => 'eligibleDuration',
 );
 
@@ -447,7 +447,7 @@ A eligible_quantity should be one of the following types:
 
 has eligible_quantity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_quantity',
     json_ld   => 'eligibleQuantity',
 );
 
@@ -483,7 +483,7 @@ A eligible_region should be one of the following types:
 
 has eligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_region',
     json_ld   => 'eligibleRegion',
 );
 
@@ -510,7 +510,7 @@ A eligible_transaction_volume should be one of the following types:
 
 has eligible_transaction_volume => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_transaction_volume',
     json_ld   => 'eligibleTransactionVolume',
 );
 
@@ -559,7 +559,7 @@ A gtin should be one of the following types:
 
 has gtin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin',
     json_ld   => 'gtin',
 );
 
@@ -592,7 +592,7 @@ A gtin12 should be one of the following types:
 
 has gtin12 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin12',
     json_ld   => 'gtin12',
 );
 
@@ -625,7 +625,7 @@ A gtin13 should be one of the following types:
 
 has gtin13 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin13',
     json_ld   => 'gtin13',
 );
 
@@ -655,7 +655,7 @@ A gtin14 should be one of the following types:
 
 has gtin14 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin14',
     json_ld   => 'gtin14',
 );
 
@@ -688,7 +688,7 @@ A gtin8 should be one of the following types:
 
 has gtin8 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin8',
     json_ld   => 'gtin8',
 );
 
@@ -713,7 +713,7 @@ A includes_object should be one of the following types:
 
 has includes_object => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_includes_object',
     json_ld   => 'includesObject',
 );
 
@@ -749,7 +749,7 @@ A ineligible_region should be one of the following types:
 
 has ineligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ineligible_region',
     json_ld   => 'ineligibleRegion',
 );
 
@@ -773,7 +773,7 @@ A inventory_level should be one of the following types:
 
 has inventory_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_inventory_level',
     json_ld   => 'inventoryLevel',
 );
 
@@ -799,7 +799,7 @@ A item_condition should be one of the following types:
 
 has item_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_condition',
     json_ld   => 'itemCondition',
 );
 
@@ -825,7 +825,7 @@ A item_offered should be one of the following types:
 
 has item_offered => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_offered',
     json_ld   => 'itemOffered',
 );
 
@@ -850,7 +850,7 @@ A mpn should be one of the following types:
 
 has mpn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mpn',
     json_ld   => 'mpn',
 );
 
@@ -876,7 +876,7 @@ A offered_by should be one of the following types:
 
 has offered_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offered_by',
     json_ld   => 'offeredBy',
 );
 
@@ -927,7 +927,7 @@ A price should be one of the following types:
 
 has price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price',
     json_ld   => 'price',
 );
 
@@ -965,7 +965,7 @@ A price_currency should be one of the following types:
 
 has price_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_currency',
     json_ld   => 'priceCurrency',
 );
 
@@ -990,7 +990,7 @@ A price_specification should be one of the following types:
 
 has price_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_specification',
     json_ld   => 'priceSpecification',
 );
 
@@ -1014,7 +1014,7 @@ A price_valid_until should be one of the following types:
 
 has price_valid_until => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_valid_until',
     json_ld   => 'priceValidUntil',
 );
 
@@ -1038,7 +1038,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -1062,7 +1062,7 @@ A reviews should be one of the following types:
 
 has reviews => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviews',
     json_ld   => 'reviews',
 );
 
@@ -1089,7 +1089,7 @@ A seller should be one of the following types:
 
 has seller => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seller',
     json_ld   => 'seller',
 );
 
@@ -1115,7 +1115,7 @@ A serial_number should be one of the following types:
 
 has serial_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serial_number',
     json_ld   => 'serialNumber',
 );
 
@@ -1140,7 +1140,7 @@ A sku should be one of the following types:
 
 has sku => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sku',
     json_ld   => 'sku',
 );
 
@@ -1164,7 +1164,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -1189,7 +1189,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 
@@ -1213,7 +1213,7 @@ A warranty should be one of the following types:
 
 has warranty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_warranty',
     json_ld   => 'warranty',
 );
 

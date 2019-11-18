@@ -51,7 +51,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -76,7 +76,7 @@ A actors should be one of the following types:
 
 has actors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actors',
     json_ld   => 'actors',
 );
 
@@ -100,7 +100,7 @@ A cheat_code should be one of the following types:
 
 has cheat_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cheat_code',
     json_ld   => 'cheatCode',
 );
 
@@ -126,7 +126,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -151,7 +151,7 @@ A directors should be one of the following types:
 
 has directors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_directors',
     json_ld   => 'directors',
 );
 
@@ -183,7 +183,7 @@ A game_platform should be one of the following types:
 
 has game_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_platform',
     json_ld   => 'gamePlatform',
 );
 
@@ -207,7 +207,7 @@ A game_server should be one of the following types:
 
 has game_server => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_server',
     json_ld   => 'gameServer',
 );
 
@@ -231,7 +231,7 @@ A game_tip should be one of the following types:
 
 has game_tip => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_tip',
     json_ld   => 'gameTip',
 );
 
@@ -257,7 +257,7 @@ A music_by should be one of the following types:
 
 has music_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_by',
     json_ld   => 'musicBy',
 );
 
@@ -283,7 +283,7 @@ A play_mode should be one of the following types:
 
 has play_mode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_play_mode',
     json_ld   => 'playMode',
 );
 
@@ -307,7 +307,7 @@ A trailer should be one of the following types:
 
 has trailer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trailer',
     json_ld   => 'trailer',
 );
 

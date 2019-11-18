@@ -59,7 +59,7 @@ A course_mode should be one of the following types:
 
 has course_mode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_course_mode',
     json_ld   => 'courseMode',
 );
 
@@ -86,7 +86,7 @@ A course_workload should be one of the following types:
 
 has course_workload => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_course_workload',
     json_ld   => 'courseWorkload',
 );
 
@@ -116,7 +116,7 @@ A instructor should be one of the following types:
 
 has instructor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_instructor',
     json_ld   => 'instructor',
 );
 

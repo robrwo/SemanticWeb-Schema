@@ -49,7 +49,7 @@ A recommendation_strength should be one of the following types:
 
 has recommendation_strength => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recommendation_strength',
     json_ld   => 'recommendationStrength',
 );
 

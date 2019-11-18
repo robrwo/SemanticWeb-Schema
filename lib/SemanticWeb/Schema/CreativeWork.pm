@@ -49,7 +49,7 @@ A about should be one of the following types:
 
 has about => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_about',
     json_ld   => 'about',
 );
 
@@ -79,7 +79,7 @@ A abstract should be one of the following types:
 
 has abstract => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_abstract',
     json_ld   => 'abstract',
 );
 
@@ -106,7 +106,7 @@ A access_mode should be one of the following types:
 
 has access_mode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_access_mode',
     json_ld   => 'accessMode',
 );
 
@@ -132,7 +132,7 @@ A access_mode_sufficient should be one of the following types:
 
 has access_mode_sufficient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_access_mode_sufficient',
     json_ld   => 'accessModeSufficient',
 );
 
@@ -163,7 +163,7 @@ A accessibility_api should be one of the following types:
 
 has accessibility_api => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accessibility_api',
     json_ld   => 'accessibilityAPI',
 );
 
@@ -194,7 +194,7 @@ A accessibility_control should be one of the following types:
 
 has accessibility_control => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accessibility_control',
     json_ld   => 'accessibilityControl',
 );
 
@@ -225,7 +225,7 @@ A accessibility_feature should be one of the following types:
 
 has accessibility_feature => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accessibility_feature',
     json_ld   => 'accessibilityFeature',
 );
 
@@ -256,7 +256,7 @@ A accessibility_hazard should be one of the following types:
 
 has accessibility_hazard => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accessibility_hazard',
     json_ld   => 'accessibilityHazard',
 );
 
@@ -284,7 +284,7 @@ A accessibility_summary should be one of the following types:
 
 has accessibility_summary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accessibility_summary',
     json_ld   => 'accessibilitySummary',
 );
 
@@ -308,7 +308,7 @@ A accountable_person should be one of the following types:
 
 has accountable_person => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accountable_person',
     json_ld   => 'accountablePerson',
 );
 
@@ -333,7 +333,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -357,7 +357,7 @@ A alternative_headline should be one of the following types:
 
 has alternative_headline => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alternative_headline',
     json_ld   => 'alternativeHeadline',
 );
 
@@ -382,7 +382,7 @@ A associated_media should be one of the following types:
 
 has associated_media => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_media',
     json_ld   => 'associatedMedia',
 );
 
@@ -406,7 +406,7 @@ A audience should be one of the following types:
 
 has audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience',
     json_ld   => 'audience',
 );
 
@@ -432,7 +432,7 @@ A audio should be one of the following types:
 
 has audio => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audio',
     json_ld   => 'audio',
 );
 
@@ -460,7 +460,7 @@ A author should be one of the following types:
 
 has author => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_author',
     json_ld   => 'author',
 );
 
@@ -484,7 +484,7 @@ A award should be one of the following types:
 
 has award => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_award',
     json_ld   => 'award',
 );
 
@@ -508,7 +508,7 @@ A awards should be one of the following types:
 
 has awards => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_awards',
     json_ld   => 'awards',
 );
 
@@ -532,7 +532,7 @@ A character should be one of the following types:
 
 has character => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_character',
     json_ld   => 'character',
 );
 
@@ -559,7 +559,7 @@ A citation should be one of the following types:
 
 has citation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_citation',
     json_ld   => 'citation',
 );
 
@@ -583,7 +583,7 @@ A comment should be one of the following types:
 
 has comment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comment',
     json_ld   => 'comment',
 );
 
@@ -609,7 +609,7 @@ A comment_count should be one of the following types:
 
 has comment_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comment_count',
     json_ld   => 'commentCount',
 );
 
@@ -646,7 +646,7 @@ A conditions_of_access should be one of the following types:
 
 has conditions_of_access => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_conditions_of_access',
     json_ld   => 'conditionsOfAccess',
 );
 
@@ -671,7 +671,7 @@ A content_location should be one of the following types:
 
 has content_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_location',
     json_ld   => 'contentLocation',
 );
 
@@ -697,7 +697,7 @@ A content_rating should be one of the following types:
 
 has content_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_rating',
     json_ld   => 'contentRating',
 );
 
@@ -722,7 +722,7 @@ A content_reference_time should be one of the following types:
 
 has content_reference_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_reference_time',
     json_ld   => 'contentReferenceTime',
 );
 
@@ -748,7 +748,7 @@ A contributor should be one of the following types:
 
 has contributor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contributor',
     json_ld   => 'contributor',
 );
 
@@ -774,7 +774,7 @@ A copyright_holder should be one of the following types:
 
 has copyright_holder => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_copyright_holder',
     json_ld   => 'copyrightHolder',
 );
 
@@ -799,7 +799,7 @@ A copyright_year should be one of the following types:
 
 has copyright_year => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_copyright_year',
     json_ld   => 'copyrightYear',
 );
 
@@ -833,7 +833,7 @@ A correction should be one of the following types:
 
 has correction => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_correction',
     json_ld   => 'correction',
 );
 
@@ -861,7 +861,7 @@ A creative_work_status should be one of the following types:
 
 has creative_work_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_creative_work_status',
     json_ld   => 'creativeWorkStatus',
 );
 
@@ -888,7 +888,7 @@ A creator should be one of the following types:
 
 has creator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_creator',
     json_ld   => 'creator',
 );
 
@@ -913,7 +913,7 @@ A date_created should be one of the following types:
 
 has date_created => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_created',
     json_ld   => 'dateCreated',
 );
 
@@ -938,7 +938,7 @@ A date_modified should be one of the following types:
 
 has date_modified => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_modified',
     json_ld   => 'dateModified',
 );
 
@@ -962,7 +962,7 @@ A date_published should be one of the following types:
 
 has date_published => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_published',
     json_ld   => 'datePublished',
 );
 
@@ -986,7 +986,7 @@ A discussion_url should be one of the following types:
 
 has discussion_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_discussion_url',
     json_ld   => 'discussionUrl',
 );
 
@@ -1010,7 +1010,7 @@ A editor should be one of the following types:
 
 has editor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_editor',
     json_ld   => 'editor',
 );
 
@@ -1034,7 +1034,7 @@ A educational_alignment should be one of the following types:
 
 has educational_alignment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_alignment',
     json_ld   => 'educationalAlignment',
 );
 
@@ -1059,7 +1059,7 @@ A educational_use should be one of the following types:
 
 has educational_use => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_use',
     json_ld   => 'educationalUse',
 );
 
@@ -1084,7 +1084,7 @@ A encoding should be one of the following types:
 
 has encoding => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encoding',
     json_ld   => 'encoding',
 );
 
@@ -1126,7 +1126,7 @@ A encoding_format should be one of the following types:
 
 has encoding_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encoding_format',
     json_ld   => 'encodingFormat',
 );
 
@@ -1150,7 +1150,7 @@ A encodings should be one of the following types:
 
 has encodings => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encodings',
     json_ld   => 'encodings',
 );
 
@@ -1175,7 +1175,7 @@ A example_of_work should be one of the following types:
 
 has example_of_work => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_example_of_work',
     json_ld   => 'exampleOfWork',
 );
 
@@ -1210,7 +1210,7 @@ A expires should be one of the following types:
 
 has expires => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expires',
     json_ld   => 'expires',
 );
 
@@ -1245,7 +1245,7 @@ A file_format should be one of the following types:
 
 has file_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_file_format',
     json_ld   => 'fileFormat',
 );
 
@@ -1272,7 +1272,7 @@ A funder should be one of the following types:
 
 has funder => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_funder',
     json_ld   => 'funder',
 );
 
@@ -1296,7 +1296,7 @@ A genre should be one of the following types:
 
 has genre => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_genre',
     json_ld   => 'genre',
 );
 
@@ -1321,7 +1321,7 @@ A has_part should be one of the following types:
 
 has has_part => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_part',
     json_ld   => 'hasPart',
 );
 
@@ -1345,7 +1345,7 @@ A headline should be one of the following types:
 
 has headline => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_headline',
     json_ld   => 'headline',
 );
 
@@ -1379,7 +1379,7 @@ A in_language should be one of the following types:
 
 has in_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_language',
     json_ld   => 'inLanguage',
 );
 
@@ -1405,7 +1405,7 @@ A interaction_statistic should be one of the following types:
 
 has interaction_statistic => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interaction_statistic',
     json_ld   => 'interactionStatistic',
 );
 
@@ -1430,7 +1430,7 @@ A interactivity_type should be one of the following types:
 
 has interactivity_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interactivity_type',
     json_ld   => 'interactivityType',
 );
 
@@ -1454,7 +1454,7 @@ A is_accessible_for_free should be one of the following types:
 
 has is_accessible_for_free => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accessible_for_free',
     json_ld   => 'isAccessibleForFree',
 );
 
@@ -1483,7 +1483,7 @@ A is_based_on should be one of the following types:
 
 has is_based_on => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_based_on',
     json_ld   => 'isBasedOn',
 );
 
@@ -1513,7 +1513,7 @@ A is_based_on_url should be one of the following types:
 
 has is_based_on_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_based_on_url',
     json_ld   => 'isBasedOnUrl',
 );
 
@@ -1537,7 +1537,7 @@ A is_family_friendly should be one of the following types:
 
 has is_family_friendly => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_family_friendly',
     json_ld   => 'isFamilyFriendly',
 );
 
@@ -1562,7 +1562,7 @@ A is_part_of should be one of the following types:
 
 has is_part_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_part_of',
     json_ld   => 'isPartOf',
 );
 
@@ -1587,7 +1587,7 @@ A keywords should be one of the following types:
 
 has keywords => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_keywords',
     json_ld   => 'keywords',
 );
 
@@ -1612,7 +1612,7 @@ A learning_resource_type should be one of the following types:
 
 has learning_resource_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_learning_resource_type',
     json_ld   => 'learningResourceType',
 );
 
@@ -1639,7 +1639,7 @@ A license should be one of the following types:
 
 has license => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_license',
     json_ld   => 'license',
 );
 
@@ -1664,7 +1664,7 @@ A location_created should be one of the following types:
 
 has location_created => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_location_created',
     json_ld   => 'locationCreated',
 );
 
@@ -1688,7 +1688,7 @@ A main_entity should be one of the following types:
 
 has main_entity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_main_entity',
     json_ld   => 'mainEntity',
 );
 
@@ -1714,7 +1714,7 @@ A material should be one of the following types:
 
 has material => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_material',
     json_ld   => 'material',
 );
 
@@ -1741,7 +1741,7 @@ A material_extent should be one of the following types:
 
 has material_extent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_material_extent',
     json_ld   => 'materialExtent',
 );
 
@@ -1766,7 +1766,7 @@ A mentions should be one of the following types:
 
 has mentions => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mentions',
     json_ld   => 'mentions',
 );
 
@@ -1792,7 +1792,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -1818,7 +1818,7 @@ A position should be one of the following types:
 
 has position => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_position',
     json_ld   => 'position',
 );
 
@@ -1845,7 +1845,7 @@ A producer should be one of the following types:
 
 has producer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_producer',
     json_ld   => 'producer',
 );
 
@@ -1873,7 +1873,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -1897,7 +1897,7 @@ A publication should be one of the following types:
 
 has publication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publication',
     json_ld   => 'publication',
 );
 
@@ -1923,7 +1923,7 @@ A publisher should be one of the following types:
 
 has publisher => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publisher',
     json_ld   => 'publisher',
 );
 
@@ -1947,7 +1947,7 @@ A publisher_imprint should be one of the following types:
 
 has publisher_imprint => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publisher_imprint',
     json_ld   => 'publisherImprint',
 );
 
@@ -1992,7 +1992,7 @@ A publishing_principles should be one of the following types:
 
 has publishing_principles => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publishing_principles',
     json_ld   => 'publishingPrinciples',
 );
 
@@ -2017,7 +2017,7 @@ A recorded_at should be one of the following types:
 
 has recorded_at => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recorded_at',
     json_ld   => 'recordedAt',
 );
 
@@ -2041,7 +2041,7 @@ A released_event should be one of the following types:
 
 has released_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_released_event',
     json_ld   => 'releasedEvent',
 );
 
@@ -2065,7 +2065,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -2089,7 +2089,7 @@ A reviews should be one of the following types:
 
 has reviews => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviews',
     json_ld   => 'reviews',
 );
 
@@ -2116,7 +2116,7 @@ A schema_version should be one of the following types:
 
 has schema_version => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_schema_version',
     json_ld   => 'schemaVersion',
 );
 
@@ -2146,7 +2146,7 @@ A sd_date_published should be one of the following types:
 
 has sd_date_published => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sd_date_published',
     json_ld   => 'sdDatePublished',
 );
 
@@ -2173,7 +2173,7 @@ A sd_license should be one of the following types:
 
 has sd_license => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sd_license',
     json_ld   => 'sdLicense',
 );
 
@@ -2210,7 +2210,7 @@ A sd_publisher should be one of the following types:
 
 has sd_publisher => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sd_publisher',
     json_ld   => 'sdPublisher',
 );
 
@@ -2234,7 +2234,7 @@ A source_organization should be one of the following types:
 
 has source_organization => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_source_organization',
     json_ld   => 'sourceOrganization',
 );
 
@@ -2269,7 +2269,7 @@ A spatial should be one of the following types:
 
 has spatial => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_spatial',
     json_ld   => 'spatial',
 );
 
@@ -2298,7 +2298,7 @@ A spatial_coverage should be one of the following types:
 
 has spatial_coverage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_spatial_coverage',
     json_ld   => 'spatialCoverage',
 );
 
@@ -2326,7 +2326,7 @@ A sponsor should be one of the following types:
 
 has sponsor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sponsor',
     json_ld   => 'sponsor',
 );
 
@@ -2361,7 +2361,7 @@ A temporal should be one of the following types:
 
 has temporal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_temporal',
     json_ld   => 'temporal',
 );
 
@@ -2404,7 +2404,7 @@ A temporal_coverage should be one of the following types:
 
 has temporal_coverage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_temporal_coverage',
     json_ld   => 'temporalCoverage',
 );
 
@@ -2428,7 +2428,7 @@ A text should be one of the following types:
 
 has text => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_text',
     json_ld   => 'text',
 );
 
@@ -2452,7 +2452,7 @@ A thumbnail_url should be one of the following types:
 
 has thumbnail_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_thumbnail_url',
     json_ld   => 'thumbnailUrl',
 );
 
@@ -2477,7 +2477,7 @@ A time_required should be one of the following types:
 
 has time_required => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_time_required',
     json_ld   => 'timeRequired',
 );
 
@@ -2502,7 +2502,7 @@ A translation_of_work should be one of the following types:
 
 has translation_of_work => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_translation_of_work',
     json_ld   => 'translationOfWork',
 );
 
@@ -2530,7 +2530,7 @@ A translator should be one of the following types:
 
 has translator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_translator',
     json_ld   => 'translator',
 );
 
@@ -2554,7 +2554,7 @@ A typical_age_range should be one of the following types:
 
 has typical_age_range => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_typical_age_range',
     json_ld   => 'typicalAgeRange',
 );
 
@@ -2580,7 +2580,7 @@ A version should be one of the following types:
 
 has version => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_version',
     json_ld   => 'version',
 );
 
@@ -2606,7 +2606,7 @@ A video should be one of the following types:
 
 has video => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video',
     json_ld   => 'video',
 );
 
@@ -2631,7 +2631,7 @@ A work_example should be one of the following types:
 
 has work_example => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_example',
     json_ld   => 'workExample',
 );
 
@@ -2658,7 +2658,7 @@ A work_translation should be one of the following types:
 
 has work_translation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_translation',
     json_ld   => 'workTranslation',
 );
 

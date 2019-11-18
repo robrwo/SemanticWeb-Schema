@@ -53,7 +53,7 @@ A data_feed_element should be one of the following types:
 
 has data_feed_element => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_data_feed_element',
     json_ld   => 'dataFeedElement',
 );
 

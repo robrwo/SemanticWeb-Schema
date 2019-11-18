@@ -49,7 +49,7 @@ A order_delivery should be one of the following types:
 
 has order_delivery => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_delivery',
     json_ld   => 'orderDelivery',
 );
 
@@ -73,7 +73,7 @@ A order_item_number should be one of the following types:
 
 has order_item_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_item_number',
     json_ld   => 'orderItemNumber',
 );
 
@@ -97,7 +97,7 @@ A order_item_status should be one of the following types:
 
 has order_item_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_item_status',
     json_ld   => 'orderItemStatus',
 );
 
@@ -122,7 +122,7 @@ A order_quantity should be one of the following types:
 
 has order_quantity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_quantity',
     json_ld   => 'orderQuantity',
 );
 
@@ -150,7 +150,7 @@ A ordered_item should be one of the following types:
 
 has ordered_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ordered_item',
     json_ld   => 'orderedItem',
 );
 

@@ -55,7 +55,7 @@ A branch should be one of the following types:
 
 has branch => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_branch',
     json_ld   => 'branch',
 );
 
@@ -79,7 +79,7 @@ A nerve_motor should be one of the following types:
 
 has nerve_motor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_nerve_motor',
     json_ld   => 'nerveMotor',
 );
 
@@ -106,7 +106,7 @@ A sensory_unit should be one of the following types:
 
 has sensory_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sensory_unit',
     json_ld   => 'sensoryUnit',
 );
 
@@ -130,7 +130,7 @@ A sourced_from should be one of the following types:
 
 has sourced_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sourced_from',
     json_ld   => 'sourcedFrom',
 );
 

@@ -59,7 +59,7 @@ A price_component should be one of the following types:
 
 has price_component => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_component',
     json_ld   => 'priceComponent',
 );
 

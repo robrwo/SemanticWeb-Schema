@@ -51,7 +51,7 @@ A accepted_offer should be one of the following types:
 
 has accepted_offer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accepted_offer',
     json_ld   => 'acceptedOffer',
 );
 
@@ -75,7 +75,7 @@ A billing_address should be one of the following types:
 
 has billing_address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_billing_address',
     json_ld   => 'billingAddress',
 );
 
@@ -104,7 +104,7 @@ A broker should be one of the following types:
 
 has broker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broker',
     json_ld   => 'broker',
 );
 
@@ -128,7 +128,7 @@ A confirmation_number should be one of the following types:
 
 has confirmation_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_confirmation_number',
     json_ld   => 'confirmationNumber',
 );
 
@@ -154,7 +154,7 @@ A customer should be one of the following types:
 
 has customer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_customer',
     json_ld   => 'customer',
 );
 
@@ -180,7 +180,7 @@ A discount should be one of the following types:
 
 has discount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_discount',
     json_ld   => 'discount',
 );
 
@@ -204,7 +204,7 @@ A discount_code should be one of the following types:
 
 has discount_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_discount_code',
     json_ld   => 'discountCode',
 );
 
@@ -239,7 +239,7 @@ A discount_currency should be one of the following types:
 
 has discount_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_discount_currency',
     json_ld   => 'discountCurrency',
 );
 
@@ -263,7 +263,7 @@ A is_gift should be one of the following types:
 
 has is_gift => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_gift',
     json_ld   => 'isGift',
 );
 
@@ -289,7 +289,7 @@ A merchant should be one of the following types:
 
 has merchant => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_merchant',
     json_ld   => 'merchant',
 );
 
@@ -313,7 +313,7 @@ A order_date should be one of the following types:
 
 has order_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_date',
     json_ld   => 'orderDate',
 );
 
@@ -337,7 +337,7 @@ A order_delivery should be one of the following types:
 
 has order_delivery => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_delivery',
     json_ld   => 'orderDelivery',
 );
 
@@ -361,7 +361,7 @@ A order_number should be one of the following types:
 
 has order_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_number',
     json_ld   => 'orderNumber',
 );
 
@@ -385,7 +385,7 @@ A order_status should be one of the following types:
 
 has order_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_order_status',
     json_ld   => 'orderStatus',
 );
 
@@ -413,7 +413,7 @@ A ordered_item should be one of the following types:
 
 has ordered_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ordered_item',
     json_ld   => 'orderedItem',
 );
 
@@ -437,7 +437,7 @@ A part_of_invoice should be one of the following types:
 
 has part_of_invoice => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_invoice',
     json_ld   => 'partOfInvoice',
 );
 
@@ -461,7 +461,7 @@ A payment_due should be one of the following types:
 
 has payment_due => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_due',
     json_ld   => 'paymentDue',
 );
 
@@ -485,7 +485,7 @@ A payment_due_date should be one of the following types:
 
 has payment_due_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_due_date',
     json_ld   => 'paymentDueDate',
 );
 
@@ -509,7 +509,7 @@ A payment_method should be one of the following types:
 
 has payment_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_method',
     json_ld   => 'paymentMethod',
 );
 
@@ -534,7 +534,7 @@ A payment_method_id should be one of the following types:
 
 has payment_method_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_method_id',
     json_ld   => 'paymentMethodId',
 );
 
@@ -558,7 +558,7 @@ A payment_url should be one of the following types:
 
 has payment_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_url',
     json_ld   => 'paymentUrl',
 );
 
@@ -585,7 +585,7 @@ A seller should be one of the following types:
 
 has seller => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seller',
     json_ld   => 'seller',
 );
 

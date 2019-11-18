@@ -54,7 +54,7 @@ A [% name %] should be one of the following types:
 
 has [% name %] => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_[% name %]',
     json_ld   => '[% attributes.$name.label %]',
 );
 

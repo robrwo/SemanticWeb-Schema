@@ -50,7 +50,7 @@ A code should be one of the following types:
 
 has code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_code',
     json_ld   => 'code',
 );
 
@@ -74,7 +74,7 @@ A guideline should be one of the following types:
 
 has guideline => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_guideline',
     json_ld   => 'guideline',
 );
 
@@ -103,7 +103,7 @@ A legal_status should be one of the following types:
 
 has legal_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legal_status',
     json_ld   => 'legalStatus',
 );
 
@@ -128,7 +128,7 @@ A medicine_system should be one of the following types:
 
 has medicine_system => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_medicine_system',
     json_ld   => 'medicineSystem',
 );
 
@@ -153,7 +153,7 @@ A recognizing_authority should be one of the following types:
 
 has recognizing_authority => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recognizing_authority',
     json_ld   => 'recognizingAuthority',
 );
 
@@ -177,7 +177,7 @@ A relevant_specialty should be one of the following types:
 
 has relevant_specialty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_relevant_specialty',
     json_ld   => 'relevantSpecialty',
 );
 
@@ -201,7 +201,7 @@ A study should be one of the following types:
 
 has study => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_study',
     json_ld   => 'study',
 );
 

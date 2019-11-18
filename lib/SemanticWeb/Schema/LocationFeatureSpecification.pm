@@ -50,7 +50,7 @@ A hours_available should be one of the following types:
 
 has hours_available => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_hours_available',
     json_ld   => 'hoursAvailable',
 );
 
@@ -74,7 +74,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -99,7 +99,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 

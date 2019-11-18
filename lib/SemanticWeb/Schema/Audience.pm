@@ -50,7 +50,7 @@ A audience_type should be one of the following types:
 
 has audience_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience_type',
     json_ld   => 'audienceType',
 );
 
@@ -74,7 +74,7 @@ A geographic_area should be one of the following types:
 
 has geographic_area => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geographic_area',
     json_ld   => 'geographicArea',
 );
 

@@ -50,7 +50,7 @@ A code_repository should be one of the following types:
 
 has code_repository => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_code_repository',
     json_ld   => 'codeRepository',
 );
 
@@ -75,7 +75,7 @@ A code_sample_type should be one of the following types:
 
 has code_sample_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_code_sample_type',
     json_ld   => 'codeSampleType',
 );
 
@@ -101,7 +101,7 @@ A programming_language should be one of the following types:
 
 has programming_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_programming_language',
     json_ld   => 'programmingLanguage',
 );
 
@@ -126,7 +126,7 @@ A runtime should be one of the following types:
 
 has runtime => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_runtime',
     json_ld   => 'runtime',
 );
 
@@ -151,7 +151,7 @@ A runtime_platform should be one of the following types:
 
 has runtime_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_runtime_platform',
     json_ld   => 'runtimePlatform',
 );
 
@@ -176,7 +176,7 @@ A sample_type should be one of the following types:
 
 has sample_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sample_type',
     json_ld   => 'sampleType',
 );
 
@@ -201,7 +201,7 @@ A target_product should be one of the following types:
 
 has target_product => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_product',
     json_ld   => 'targetProduct',
 );
 

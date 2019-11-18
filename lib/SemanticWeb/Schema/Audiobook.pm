@@ -53,7 +53,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -77,7 +77,7 @@ A read_by should be one of the following types:
 
 has read_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_read_by',
     json_ld   => 'readBy',
 );
 

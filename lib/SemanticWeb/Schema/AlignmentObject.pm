@@ -52,7 +52,7 @@ A alignment_type should be one of the following types:
 
 has alignment_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alignment_type',
     json_ld   => 'alignmentType',
 );
 
@@ -76,7 +76,7 @@ A educational_framework should be one of the following types:
 
 has educational_framework => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_framework',
     json_ld   => 'educationalFramework',
 );
 
@@ -100,7 +100,7 @@ A target_description should be one of the following types:
 
 has target_description => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_description',
     json_ld   => 'targetDescription',
 );
 
@@ -124,7 +124,7 @@ A target_name should be one of the following types:
 
 has target_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_name',
     json_ld   => 'targetName',
 );
 
@@ -148,7 +148,7 @@ A target_url should be one of the following types:
 
 has target_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_url',
     json_ld   => 'targetUrl',
 );
 

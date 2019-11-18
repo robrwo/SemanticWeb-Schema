@@ -61,7 +61,7 @@ A bed should be one of the following types:
 
 has bed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bed',
     json_ld   => 'bed',
 );
 
@@ -89,7 +89,7 @@ A occupancy should be one of the following types:
 
 has occupancy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupancy',
     json_ld   => 'occupancy',
 );
 

@@ -53,7 +53,7 @@ A address should be one of the following types:
 
 has address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address',
     json_ld   => 'address',
 );
 
@@ -85,7 +85,7 @@ A address_country should be one of the following types:
 
 has address_country => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address_country',
     json_ld   => 'addressCountry',
 );
 
@@ -111,7 +111,7 @@ A box should be one of the following types:
 
 has box => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_box',
     json_ld   => 'box',
 );
 
@@ -137,7 +137,7 @@ A circle should be one of the following types:
 
 has circle => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_circle',
     json_ld   => 'circle',
 );
 
@@ -171,7 +171,7 @@ A elevation should be one of the following types:
 
 has elevation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_elevation',
     json_ld   => 'elevation',
 );
 
@@ -196,7 +196,7 @@ A line should be one of the following types:
 
 has line => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_line',
     json_ld   => 'line',
 );
 
@@ -223,7 +223,7 @@ A polygon should be one of the following types:
 
 has polygon => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_polygon',
     json_ld   => 'polygon',
 );
 
@@ -247,7 +247,7 @@ A postal_code should be one of the following types:
 
 has postal_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_postal_code',
     json_ld   => 'postalCode',
 );
 

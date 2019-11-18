@@ -49,7 +49,7 @@ A report_number should be one of the following types:
 
 has report_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_report_number',
     json_ld   => 'reportNumber',
 );
 

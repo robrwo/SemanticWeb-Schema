@@ -53,7 +53,7 @@ A required_quantity should be one of the following types:
 
 has required_quantity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_required_quantity',
     json_ld   => 'requiredQuantity',
 );
 

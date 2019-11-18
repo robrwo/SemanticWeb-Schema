@@ -48,7 +48,7 @@ A alumni should be one of the following types:
 
 has alumni => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alumni',
     json_ld   => 'alumni',
 );
 

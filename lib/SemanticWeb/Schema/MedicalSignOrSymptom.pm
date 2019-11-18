@@ -51,7 +51,7 @@ A cause should be one of the following types:
 
 has cause => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cause',
     json_ld   => 'cause',
 );
 
@@ -75,7 +75,7 @@ A possible_treatment should be one of the following types:
 
 has possible_treatment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_possible_treatment',
     json_ld   => 'possibleTreatment',
 );
 

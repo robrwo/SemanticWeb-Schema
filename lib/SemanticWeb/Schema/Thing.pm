@@ -53,7 +53,7 @@ A additional_type should be one of the following types:
 
 has additional_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_type',
     json_ld   => 'additionalType',
 );
 
@@ -77,7 +77,7 @@ A alternate_name should be one of the following types:
 
 has alternate_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alternate_name',
     json_ld   => 'alternateName',
 );
 
@@ -101,7 +101,7 @@ A description should be one of the following types:
 
 has description => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_description',
     json_ld   => 'description',
 );
 
@@ -128,7 +128,7 @@ A disambiguating_description should be one of the following types:
 
 has disambiguating_description => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_disambiguating_description',
     json_ld   => 'disambiguatingDescription',
 );
 
@@ -163,7 +163,7 @@ A identifier should be one of the following types:
 
 has identifier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_identifier',
     json_ld   => 'identifier',
 );
 
@@ -195,7 +195,7 @@ A image should be one of the following types:
 
 has image => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_image',
     json_ld   => 'image',
 );
 
@@ -228,7 +228,7 @@ A main_entity_of_page should be one of the following types:
 
 has main_entity_of_page => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_main_entity_of_page',
     json_ld   => 'mainEntityOfPage',
 );
 
@@ -252,7 +252,7 @@ A name should be one of the following types:
 
 has name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_name',
     json_ld   => 'name',
 );
 
@@ -277,7 +277,7 @@ A potential_action should be one of the following types:
 
 has potential_action => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_potential_action',
     json_ld   => 'potentialAction',
 );
 
@@ -303,7 +303,7 @@ A same_as should be one of the following types:
 
 has same_as => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_same_as',
     json_ld   => 'sameAs',
 );
 
@@ -329,7 +329,7 @@ A subject_of should be one of the following types:
 
 has subject_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_subject_of',
     json_ld   => 'subjectOf',
 );
 
@@ -353,7 +353,7 @@ A url should be one of the following types:
 
 has url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_url',
     json_ld   => 'url',
 );
 

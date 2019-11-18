@@ -59,7 +59,7 @@ A additional_property should be one of the following types:
 
 has additional_property => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_property',
     json_ld   => 'additionalProperty',
 );
 
@@ -85,7 +85,7 @@ A address should be one of the following types:
 
 has address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address',
     json_ld   => 'address',
 );
 
@@ -110,7 +110,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -137,7 +137,7 @@ A amenity_feature should be one of the following types:
 
 has amenity_feature => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amenity_feature',
     json_ld   => 'amenityFeature',
 );
 
@@ -169,7 +169,7 @@ A branch_code should be one of the following types:
 
 has branch_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_branch_code',
     json_ld   => 'branchCode',
 );
 
@@ -193,7 +193,7 @@ A contained_in should be one of the following types:
 
 has contained_in => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contained_in',
     json_ld   => 'containedIn',
 );
 
@@ -217,7 +217,7 @@ A contained_in_place should be one of the following types:
 
 has contained_in_place => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contained_in_place',
     json_ld   => 'containedInPlace',
 );
 
@@ -242,7 +242,7 @@ A contains_place should be one of the following types:
 
 has contains_place => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contains_place',
     json_ld   => 'containsPlace',
 );
 
@@ -266,7 +266,7 @@ A event should be one of the following types:
 
 has event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_event',
     json_ld   => 'event',
 );
 
@@ -290,7 +290,7 @@ A events should be one of the following types:
 
 has events => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_events',
     json_ld   => 'events',
 );
 
@@ -314,7 +314,7 @@ A fax_number should be one of the following types:
 
 has fax_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fax_number',
     json_ld   => 'faxNumber',
 );
 
@@ -340,7 +340,7 @@ A geo should be one of the following types:
 
 has geo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo',
     json_ld   => 'geo',
 );
 
@@ -374,7 +374,7 @@ A geo_contains should be one of the following types:
 
 has geo_contains => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_contains',
     json_ld   => 'geoContains',
 );
 
@@ -406,7 +406,7 @@ A geo_covered_by should be one of the following types:
 
 has geo_covered_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_covered_by',
     json_ld   => 'geoCoveredBy',
 );
 
@@ -439,7 +439,7 @@ A geo_covers should be one of the following types:
 
 has geo_covers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_covers',
     json_ld   => 'geoCovers',
 );
 
@@ -473,7 +473,7 @@ A geo_crosses should be one of the following types:
 
 has geo_crosses => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_crosses',
     json_ld   => 'geoCrosses',
 );
 
@@ -506,7 +506,7 @@ A geo_disjoint should be one of the following types:
 
 has geo_disjoint => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_disjoint',
     json_ld   => 'geoDisjoint',
 );
 
@@ -541,7 +541,7 @@ A geo_equals should be one of the following types:
 
 has geo_equals => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_equals',
     json_ld   => 'geoEquals',
 );
 
@@ -573,7 +573,7 @@ A geo_intersects should be one of the following types:
 
 has geo_intersects => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_intersects',
     json_ld   => 'geoIntersects',
 );
 
@@ -606,7 +606,7 @@ A geo_overlaps should be one of the following types:
 
 has geo_overlaps => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_overlaps',
     json_ld   => 'geoOverlaps',
 );
 
@@ -639,7 +639,7 @@ A geo_touches should be one of the following types:
 
 has geo_touches => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_touches',
     json_ld   => 'geoTouches',
 );
 
@@ -672,7 +672,7 @@ A geo_within should be one of the following types:
 
 has geo_within => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_within',
     json_ld   => 'geoWithin',
 );
 
@@ -703,7 +703,7 @@ A global_location_number should be one of the following types:
 
 has global_location_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_global_location_number',
     json_ld   => 'globalLocationNumber',
 );
 
@@ -729,7 +729,7 @@ A has_map should be one of the following types:
 
 has has_map => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_map',
     json_ld   => 'hasMap',
 );
 
@@ -753,7 +753,7 @@ A is_accessible_for_free should be one of the following types:
 
 has is_accessible_for_free => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accessible_for_free',
     json_ld   => 'isAccessibleForFree',
 );
 
@@ -779,7 +779,7 @@ A isic_v4 should be one of the following types:
 
 has isic_v4 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_isic_v4',
     json_ld   => 'isicV4',
 );
 
@@ -810,7 +810,7 @@ A latitude should be one of the following types:
 
 has latitude => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_latitude',
     json_ld   => 'latitude',
 );
 
@@ -836,7 +836,7 @@ A logo should be one of the following types:
 
 has logo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_logo',
     json_ld   => 'logo',
 );
 
@@ -867,7 +867,7 @@ A longitude should be one of the following types:
 
 has longitude => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_longitude',
     json_ld   => 'longitude',
 );
 
@@ -891,7 +891,7 @@ A map should be one of the following types:
 
 has map => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_map',
     json_ld   => 'map',
 );
 
@@ -915,7 +915,7 @@ A maps should be one of the following types:
 
 has maps => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maps',
     json_ld   => 'maps',
 );
 
@@ -939,7 +939,7 @@ A maximum_attendee_capacity should be one of the following types:
 
 has maximum_attendee_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maximum_attendee_capacity',
     json_ld   => 'maximumAttendeeCapacity',
 );
 
@@ -963,7 +963,7 @@ A opening_hours_specification should be one of the following types:
 
 has opening_hours_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_opening_hours_specification',
     json_ld   => 'openingHoursSpecification',
 );
 
@@ -989,7 +989,7 @@ A photo should be one of the following types:
 
 has photo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_photo',
     json_ld   => 'photo',
 );
 
@@ -1015,7 +1015,7 @@ A photos should be one of the following types:
 
 has photos => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_photos',
     json_ld   => 'photos',
 );
 
@@ -1045,7 +1045,7 @@ A public_access should be one of the following types:
 
 has public_access => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_public_access',
     json_ld   => 'publicAccess',
 );
 
@@ -1069,7 +1069,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -1093,7 +1093,7 @@ A reviews should be one of the following types:
 
 has reviews => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviews',
     json_ld   => 'reviews',
 );
 
@@ -1117,7 +1117,7 @@ A slogan should be one of the following types:
 
 has slogan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_slogan',
     json_ld   => 'slogan',
 );
 
@@ -1142,7 +1142,7 @@ A smoking_allowed should be one of the following types:
 
 has smoking_allowed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_smoking_allowed',
     json_ld   => 'smokingAllowed',
 );
 
@@ -1175,7 +1175,7 @@ A special_opening_hours_specification should be one of the following types:
 
 has special_opening_hours_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_special_opening_hours_specification',
     json_ld   => 'specialOpeningHoursSpecification',
 );
 
@@ -1199,7 +1199,7 @@ A telephone should be one of the following types:
 
 has telephone => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_telephone',
     json_ld   => 'telephone',
 );
 

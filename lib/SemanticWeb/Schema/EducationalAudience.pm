@@ -48,7 +48,7 @@ A educational_role should be one of the following types:
 
 has educational_role => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_role',
     json_ld   => 'educationalRole',
 );
 

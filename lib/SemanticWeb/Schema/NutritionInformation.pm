@@ -48,7 +48,7 @@ A calories should be one of the following types:
 
 has calories => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_calories',
     json_ld   => 'calories',
 );
 
@@ -72,7 +72,7 @@ A carbohydrate_content should be one of the following types:
 
 has carbohydrate_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_carbohydrate_content',
     json_ld   => 'carbohydrateContent',
 );
 
@@ -96,7 +96,7 @@ A cholesterol_content should be one of the following types:
 
 has cholesterol_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cholesterol_content',
     json_ld   => 'cholesterolContent',
 );
 
@@ -120,7 +120,7 @@ A fat_content should be one of the following types:
 
 has fat_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fat_content',
     json_ld   => 'fatContent',
 );
 
@@ -144,7 +144,7 @@ A fiber_content should be one of the following types:
 
 has fiber_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fiber_content',
     json_ld   => 'fiberContent',
 );
 
@@ -168,7 +168,7 @@ A protein_content should be one of the following types:
 
 has protein_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_protein_content',
     json_ld   => 'proteinContent',
 );
 
@@ -192,7 +192,7 @@ A saturated_fat_content should be one of the following types:
 
 has saturated_fat_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_saturated_fat_content',
     json_ld   => 'saturatedFatContent',
 );
 
@@ -216,7 +216,7 @@ A serving_size should be one of the following types:
 
 has serving_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serving_size',
     json_ld   => 'servingSize',
 );
 
@@ -240,7 +240,7 @@ A sodium_content should be one of the following types:
 
 has sodium_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sodium_content',
     json_ld   => 'sodiumContent',
 );
 
@@ -264,7 +264,7 @@ A sugar_content should be one of the following types:
 
 has sugar_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sugar_content',
     json_ld   => 'sugarContent',
 );
 
@@ -288,7 +288,7 @@ A trans_fat_content should be one of the following types:
 
 has trans_fat_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trans_fat_content',
     json_ld   => 'transFatContent',
 );
 
@@ -312,7 +312,7 @@ A unsaturated_fat_content should be one of the following types:
 
 has unsaturated_fat_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unsaturated_fat_content',
     json_ld   => 'unsaturatedFatContent',
 );
 

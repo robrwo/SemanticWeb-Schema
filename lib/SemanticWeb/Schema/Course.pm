@@ -60,7 +60,7 @@ A course_code should be one of the following types:
 
 has course_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_course_code',
     json_ld   => 'courseCode',
 );
 
@@ -96,7 +96,7 @@ A course_prerequisites should be one of the following types:
 
 has course_prerequisites => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_course_prerequisites',
     json_ld   => 'coursePrerequisites',
 );
 
@@ -124,7 +124,7 @@ A educational_credential_awarded should be one of the following types:
 
 has educational_credential_awarded => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_credential_awarded',
     json_ld   => 'educationalCredentialAwarded',
 );
 
@@ -149,7 +149,7 @@ A has_course_instance should be one of the following types:
 
 has has_course_instance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_course_instance',
     json_ld   => 'hasCourseInstance',
 );
 
@@ -177,7 +177,7 @@ A occupational_credential_awarded should be one of the following types:
 
 has occupational_credential_awarded => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupational_credential_awarded',
     json_ld   => 'occupationalCredentialAwarded',
 );
 

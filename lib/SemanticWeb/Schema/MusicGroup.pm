@@ -49,7 +49,7 @@ A album should be one of the following types:
 
 has album => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_album',
     json_ld   => 'album',
 );
 
@@ -73,7 +73,7 @@ A albums should be one of the following types:
 
 has albums => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_albums',
     json_ld   => 'albums',
 );
 
@@ -97,7 +97,7 @@ A genre should be one of the following types:
 
 has genre => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_genre',
     json_ld   => 'genre',
 );
 
@@ -121,7 +121,7 @@ A music_group_member should be one of the following types:
 
 has music_group_member => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_group_member',
     json_ld   => 'musicGroupMember',
 );
 
@@ -148,7 +148,7 @@ A track should be one of the following types:
 
 has track => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_track',
     json_ld   => 'track',
 );
 
@@ -172,7 +172,7 @@ A tracks should be one of the following types:
 
 has tracks => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tracks',
     json_ld   => 'tracks',
 );
 

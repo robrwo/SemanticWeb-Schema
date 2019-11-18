@@ -58,7 +58,7 @@ A max_value should be one of the following types:
 
 has max_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_max_value',
     json_ld   => 'maxValue',
 );
 
@@ -113,7 +113,7 @@ A measurement_technique should be one of the following types:
 
 has measurement_technique => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_measurement_technique',
     json_ld   => 'measurementTechnique',
 );
 
@@ -137,7 +137,7 @@ A min_value should be one of the following types:
 
 has min_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_min_value',
     json_ld   => 'minValue',
 );
 
@@ -169,7 +169,7 @@ A property_id should be one of the following types:
 
 has property_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_property_id',
     json_ld   => 'propertyID',
 );
 
@@ -195,7 +195,7 @@ A unit_code should be one of the following types:
 
 has unit_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_code',
     json_ld   => 'unitCode',
 );
 
@@ -224,7 +224,7 @@ A unit_text should be one of the following types:
 
 has unit_text => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_text',
     json_ld   => 'unitText',
 );
 
@@ -269,7 +269,7 @@ A value should be one of the following types:
 
 has value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value',
     json_ld   => 'value',
 );
 
@@ -302,7 +302,7 @@ A value_reference should be one of the following types:
 
 has value_reference => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_reference',
     json_ld   => 'valueReference',
 );
 

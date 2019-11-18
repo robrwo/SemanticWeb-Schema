@@ -49,7 +49,7 @@ A boarding_policy should be one of the following types:
 
 has boarding_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_boarding_policy',
     json_ld   => 'boardingPolicy',
 );
 
@@ -73,7 +73,7 @@ A iata_code should be one of the following types:
 
 has iata_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_iata_code',
     json_ld   => 'iataCode',
 );
 

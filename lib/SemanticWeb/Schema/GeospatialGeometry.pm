@@ -59,7 +59,7 @@ A geo_contains should be one of the following types:
 
 has geo_contains => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_contains',
     json_ld   => 'geoContains',
 );
 
@@ -91,7 +91,7 @@ A geo_covered_by should be one of the following types:
 
 has geo_covered_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_covered_by',
     json_ld   => 'geoCoveredBy',
 );
 
@@ -124,7 +124,7 @@ A geo_covers should be one of the following types:
 
 has geo_covers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_covers',
     json_ld   => 'geoCovers',
 );
 
@@ -158,7 +158,7 @@ A geo_crosses should be one of the following types:
 
 has geo_crosses => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_crosses',
     json_ld   => 'geoCrosses',
 );
 
@@ -191,7 +191,7 @@ A geo_disjoint should be one of the following types:
 
 has geo_disjoint => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_disjoint',
     json_ld   => 'geoDisjoint',
 );
 
@@ -226,7 +226,7 @@ A geo_equals should be one of the following types:
 
 has geo_equals => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_equals',
     json_ld   => 'geoEquals',
 );
 
@@ -258,7 +258,7 @@ A geo_intersects should be one of the following types:
 
 has geo_intersects => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_intersects',
     json_ld   => 'geoIntersects',
 );
 
@@ -291,7 +291,7 @@ A geo_overlaps should be one of the following types:
 
 has geo_overlaps => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_overlaps',
     json_ld   => 'geoOverlaps',
 );
 
@@ -324,7 +324,7 @@ A geo_touches should be one of the following types:
 
 has geo_touches => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_touches',
     json_ld   => 'geoTouches',
 );
 
@@ -357,7 +357,7 @@ A geo_within should be one of the following types:
 
 has geo_within => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_within',
     json_ld   => 'geoWithin',
 );
 

@@ -50,7 +50,7 @@ A action_accessibility_requirement should be one of the following types:
 
 has action_accessibility_requirement => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action_accessibility_requirement',
     json_ld   => 'actionAccessibilityRequirement',
 );
 
@@ -75,7 +75,7 @@ A expects_acceptance_of should be one of the following types:
 
 has expects_acceptance_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expects_acceptance_of',
     json_ld   => 'expectsAcceptanceOf',
 );
 

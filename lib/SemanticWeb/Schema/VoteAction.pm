@@ -49,7 +49,7 @@ A candidate should be one of the following types:
 
 has candidate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_candidate',
     json_ld   => 'candidate',
 );
 

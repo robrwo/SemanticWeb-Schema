@@ -62,7 +62,7 @@ A cook_time should be one of the following types:
 
 has cook_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cook_time',
     json_ld   => 'cookTime',
 );
 
@@ -86,7 +86,7 @@ A cooking_method should be one of the following types:
 
 has cooking_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cooking_method',
     json_ld   => 'cookingMethod',
 );
 
@@ -110,7 +110,7 @@ A ingredients should be one of the following types:
 
 has ingredients => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ingredients',
     json_ld   => 'ingredients',
 );
 
@@ -134,7 +134,7 @@ A nutrition should be one of the following types:
 
 has nutrition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_nutrition',
     json_ld   => 'nutrition',
 );
 
@@ -158,7 +158,7 @@ A recipe_category should be one of the following types:
 
 has recipe_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe_category',
     json_ld   => 'recipeCategory',
 );
 
@@ -182,7 +182,7 @@ A recipe_cuisine should be one of the following types:
 
 has recipe_cuisine => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe_cuisine',
     json_ld   => 'recipeCuisine',
 );
 
@@ -206,7 +206,7 @@ A recipe_ingredient should be one of the following types:
 
 has recipe_ingredient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe_ingredient',
     json_ld   => 'recipeIngredient',
 );
 
@@ -235,7 +235,7 @@ A recipe_instructions should be one of the following types:
 
 has recipe_instructions => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe_instructions',
     json_ld   => 'recipeInstructions',
 );
 
@@ -262,7 +262,7 @@ A recipe_yield should be one of the following types:
 
 has recipe_yield => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe_yield',
     json_ld   => 'recipeYield',
 );
 
@@ -287,7 +287,7 @@ A suitable_for_diet should be one of the following types:
 
 has suitable_for_diet => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suitable_for_diet',
     json_ld   => 'suitableForDiet',
 );
 

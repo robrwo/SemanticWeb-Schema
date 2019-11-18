@@ -54,7 +54,7 @@ A steps should be one of the following types:
 
 has steps => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_steps',
     json_ld   => 'steps',
 );
 

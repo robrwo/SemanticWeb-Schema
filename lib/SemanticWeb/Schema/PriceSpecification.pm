@@ -58,7 +58,7 @@ A eligible_quantity should be one of the following types:
 
 has eligible_quantity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_quantity',
     json_ld   => 'eligibleQuantity',
 );
 
@@ -85,7 +85,7 @@ A eligible_transaction_volume should be one of the following types:
 
 has eligible_transaction_volume => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_transaction_volume',
     json_ld   => 'eligibleTransactionVolume',
 );
 
@@ -109,7 +109,7 @@ A max_price should be one of the following types:
 
 has max_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_max_price',
     json_ld   => 'maxPrice',
 );
 
@@ -133,7 +133,7 @@ A min_price should be one of the following types:
 
 has min_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_min_price',
     json_ld   => 'minPrice',
 );
 
@@ -184,7 +184,7 @@ A price should be one of the following types:
 
 has price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price',
     json_ld   => 'price',
 );
 
@@ -222,7 +222,7 @@ A price_currency should be one of the following types:
 
 has price_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_currency',
     json_ld   => 'priceCurrency',
 );
 
@@ -246,7 +246,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -271,7 +271,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 
@@ -296,7 +296,7 @@ A value_added_tax_included should be one of the following types:
 
 has value_added_tax_included => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_added_tax_included',
     json_ld   => 'valueAddedTaxIncluded',
 );
 

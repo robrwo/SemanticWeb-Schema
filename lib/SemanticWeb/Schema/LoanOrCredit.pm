@@ -51,7 +51,7 @@ A amount should be one of the following types:
 
 has amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amount',
     json_ld   => 'amount',
 );
 
@@ -86,7 +86,7 @@ A currency should be one of the following types:
 
 has currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currency',
     json_ld   => 'currency',
 );
 
@@ -111,7 +111,7 @@ A grace_period should be one of the following types:
 
 has grace_period => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_grace_period',
     json_ld   => 'gracePeriod',
 );
 
@@ -137,7 +137,7 @@ A loan_repayment_form should be one of the following types:
 
 has loan_repayment_form => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_repayment_form',
     json_ld   => 'loanRepaymentForm',
 );
 
@@ -161,7 +161,7 @@ A loan_term should be one of the following types:
 
 has loan_term => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_term',
     json_ld   => 'loanTerm',
 );
 
@@ -185,7 +185,7 @@ A loan_type should be one of the following types:
 
 has loan_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_type',
     json_ld   => 'loanType',
 );
 
@@ -211,7 +211,7 @@ A recourse_loan should be one of the following types:
 
 has recourse_loan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recourse_loan',
     json_ld   => 'recourseLoan',
 );
 
@@ -236,7 +236,7 @@ A renegotiable_loan should be one of the following types:
 
 has renegotiable_loan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_renegotiable_loan',
     json_ld   => 'renegotiableLoan',
 );
 
@@ -263,7 +263,7 @@ A required_collateral should be one of the following types:
 
 has required_collateral => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_required_collateral',
     json_ld   => 'requiredCollateral',
 );
 

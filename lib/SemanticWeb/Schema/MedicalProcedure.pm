@@ -50,7 +50,7 @@ A body_location should be one of the following types:
 
 has body_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_body_location',
     json_ld   => 'bodyLocation',
 );
 
@@ -74,7 +74,7 @@ A followup should be one of the following types:
 
 has followup => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_followup',
     json_ld   => 'followup',
 );
 
@@ -98,7 +98,7 @@ A how_performed should be one of the following types:
 
 has how_performed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_how_performed',
     json_ld   => 'howPerformed',
 );
 
@@ -126,7 +126,7 @@ A indication should be one of the following types:
 
 has indication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_indication',
     json_ld   => 'indication',
 );
 
@@ -152,7 +152,7 @@ A outcome should be one of the following types:
 
 has outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_outcome',
     json_ld   => 'outcome',
 );
 
@@ -179,7 +179,7 @@ A preparation should be one of the following types:
 
 has preparation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_preparation',
     json_ld   => 'preparation',
 );
 
@@ -203,7 +203,7 @@ A procedure_type should be one of the following types:
 
 has procedure_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_procedure_type',
     json_ld   => 'procedureType',
 );
 
@@ -231,7 +231,7 @@ A status should be one of the following types:
 
 has status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_status',
     json_ld   => 'status',
 );
 

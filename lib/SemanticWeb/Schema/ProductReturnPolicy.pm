@@ -55,7 +55,7 @@ A in_store_returns_offered should be one of the following types:
 
 has in_store_returns_offered => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_store_returns_offered',
     json_ld   => 'inStoreReturnsOffered',
 );
 
@@ -80,7 +80,7 @@ A product_return_days should be one of the following types:
 
 has product_return_days => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_product_return_days',
     json_ld   => 'productReturnDays',
 );
 
@@ -104,7 +104,7 @@ A product_return_link should be one of the following types:
 
 has product_return_link => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_product_return_link',
     json_ld   => 'productReturnLink',
 );
 
@@ -128,7 +128,7 @@ A refund_type should be one of the following types:
 
 has refund_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_refund_type',
     json_ld   => 'refundType',
 );
 
@@ -153,7 +153,7 @@ A return_fees should be one of the following types:
 
 has return_fees => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_return_fees',
     json_ld   => 'returnFees',
 );
 
@@ -178,7 +178,7 @@ A return_policy_category should be one of the following types:
 
 has return_policy_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_return_policy_category',
     json_ld   => 'returnPolicyCategory',
 );
 

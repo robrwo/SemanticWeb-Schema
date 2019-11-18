@@ -49,7 +49,7 @@ A area should be one of the following types:
 
 has area => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area',
     json_ld   => 'area',
 );
 
@@ -73,7 +73,7 @@ A broadcast_affiliate_of should be one of the following types:
 
 has broadcast_affiliate_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_affiliate_of',
     json_ld   => 'broadcastAffiliateOf',
 );
 
@@ -98,7 +98,7 @@ A broadcast_display_name should be one of the following types:
 
 has broadcast_display_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_display_name',
     json_ld   => 'broadcastDisplayName',
 );
 
@@ -126,7 +126,7 @@ A broadcast_frequency should be one of the following types:
 
 has broadcast_frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_frequency',
     json_ld   => 'broadcastFrequency',
 );
 
@@ -155,7 +155,7 @@ A broadcast_timezone should be one of the following types:
 
 has broadcast_timezone => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_timezone',
     json_ld   => 'broadcastTimezone',
 );
 
@@ -179,7 +179,7 @@ A broadcaster should be one of the following types:
 
 has broadcaster => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcaster',
     json_ld   => 'broadcaster',
 );
 
@@ -209,7 +209,7 @@ A call_sign should be one of the following types:
 
 has call_sign => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_call_sign',
     json_ld   => 'callSign',
 );
 
@@ -233,7 +233,7 @@ A has_broadcast_channel should be one of the following types:
 
 has has_broadcast_channel => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_broadcast_channel',
     json_ld   => 'hasBroadcastChannel',
 );
 
@@ -258,7 +258,7 @@ A parent_service should be one of the following types:
 
 has parent_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_parent_service',
     json_ld   => 'parentService',
 );
 
@@ -283,7 +283,7 @@ A video_format should be one of the following types:
 
 has video_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video_format',
     json_ld   => 'videoFormat',
 );
 

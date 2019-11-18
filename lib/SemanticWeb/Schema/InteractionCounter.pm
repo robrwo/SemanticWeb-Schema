@@ -52,7 +52,7 @@ A interaction_service should be one of the following types:
 
 has interaction_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interaction_service',
     json_ld   => 'interactionService',
 );
 
@@ -84,7 +84,7 @@ A interaction_type should be one of the following types:
 
 has interaction_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interaction_type',
     json_ld   => 'interactionType',
 );
 
@@ -109,7 +109,7 @@ A user_interaction_count should be one of the following types:
 
 has user_interaction_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_user_interaction_count',
     json_ld   => 'userInteractionCount',
 );
 

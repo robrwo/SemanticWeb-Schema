@@ -58,7 +58,7 @@ A in_language should be one of the following types:
 
 has in_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_language',
     json_ld   => 'inLanguage',
 );
 
@@ -82,7 +82,7 @@ A language should be one of the following types:
 
 has language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_language',
     json_ld   => 'language',
 );
 

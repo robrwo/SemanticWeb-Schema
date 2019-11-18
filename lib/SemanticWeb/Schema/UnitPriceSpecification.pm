@@ -50,7 +50,7 @@ A billing_increment should be one of the following types:
 
 has billing_increment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_billing_increment',
     json_ld   => 'billingIncrement',
 );
 
@@ -76,7 +76,7 @@ A price_type should be one of the following types:
 
 has price_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_type',
     json_ld   => 'priceType',
 );
 
@@ -102,7 +102,7 @@ A reference_quantity should be one of the following types:
 
 has reference_quantity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reference_quantity',
     json_ld   => 'referenceQuantity',
 );
 
@@ -128,7 +128,7 @@ A unit_code should be one of the following types:
 
 has unit_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_code',
     json_ld   => 'unitCode',
 );
 
@@ -157,7 +157,7 @@ A unit_text should be one of the following types:
 
 has unit_text => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_text',
     json_ld   => 'unitText',
 );
 

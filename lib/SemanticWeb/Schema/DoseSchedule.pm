@@ -48,7 +48,7 @@ A dose_unit should be one of the following types:
 
 has dose_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dose_unit',
     json_ld   => 'doseUnit',
 );
 
@@ -74,7 +74,7 @@ A dose_value should be one of the following types:
 
 has dose_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dose_value',
     json_ld   => 'doseValue',
 );
 
@@ -98,7 +98,7 @@ A frequency should be one of the following types:
 
 has frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_frequency',
     json_ld   => 'frequency',
 );
 
@@ -123,7 +123,7 @@ A target_population should be one of the following types:
 
 has target_population => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_population',
     json_ld   => 'targetPopulation',
 );
 

@@ -51,7 +51,7 @@ A applicant_location_requirements should be one of the following types:
 
 has applicant_location_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_applicant_location_requirements',
     json_ld   => 'applicantLocationRequirements',
 );
 
@@ -79,7 +79,7 @@ A base_salary should be one of the following types:
 
 has base_salary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_base_salary',
     json_ld   => 'baseSalary',
 );
 
@@ -103,7 +103,7 @@ A benefits should be one of the following types:
 
 has benefits => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_benefits',
     json_ld   => 'benefits',
 );
 
@@ -127,7 +127,7 @@ A date_posted should be one of the following types:
 
 has date_posted => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_posted',
     json_ld   => 'datePosted',
 );
 
@@ -153,7 +153,7 @@ A education_requirements should be one of the following types:
 
 has education_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_education_requirements',
     json_ld   => 'educationRequirements',
 );
 
@@ -178,7 +178,7 @@ A employment_type should be one of the following types:
 
 has employment_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_employment_type',
     json_ld   => 'employmentType',
 );
 
@@ -203,7 +203,7 @@ A employment_unit should be one of the following types:
 
 has employment_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_employment_unit',
     json_ld   => 'employmentUnit',
 );
 
@@ -234,7 +234,7 @@ A estimated_salary should be one of the following types:
 
 has estimated_salary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimated_salary',
     json_ld   => 'estimatedSalary',
 );
 
@@ -258,7 +258,7 @@ A experience_requirements should be one of the following types:
 
 has experience_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_experience_requirements',
     json_ld   => 'experienceRequirements',
 );
 
@@ -282,7 +282,7 @@ A hiring_organization should be one of the following types:
 
 has hiring_organization => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_hiring_organization',
     json_ld   => 'hiringOrganization',
 );
 
@@ -306,7 +306,7 @@ A incentive_compensation should be one of the following types:
 
 has incentive_compensation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_incentive_compensation',
     json_ld   => 'incentiveCompensation',
 );
 
@@ -330,7 +330,7 @@ A incentives should be one of the following types:
 
 has incentives => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_incentives',
     json_ld   => 'incentives',
 );
 
@@ -354,7 +354,7 @@ A industry should be one of the following types:
 
 has industry => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_industry',
     json_ld   => 'industry',
 );
 
@@ -378,7 +378,7 @@ A job_benefits should be one of the following types:
 
 has job_benefits => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_job_benefits',
     json_ld   => 'jobBenefits',
 );
 
@@ -402,7 +402,7 @@ A job_immediate_start should be one of the following types:
 
 has job_immediate_start => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_job_immediate_start',
     json_ld   => 'jobImmediateStart',
 );
 
@@ -426,7 +426,7 @@ A job_location should be one of the following types:
 
 has job_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_job_location',
     json_ld   => 'jobLocation',
 );
 
@@ -450,7 +450,7 @@ A job_location_type should be one of the following types:
 
 has job_location_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_job_location_type',
     json_ld   => 'jobLocationType',
 );
 
@@ -477,7 +477,7 @@ A job_start_date should be one of the following types:
 
 has job_start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_job_start_date',
     json_ld   => 'jobStartDate',
 );
 
@@ -515,7 +515,7 @@ A occupational_category should be one of the following types:
 
 has occupational_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupational_category',
     json_ld   => 'occupationalCategory',
 );
 
@@ -541,7 +541,7 @@ A qualifications should be one of the following types:
 
 has qualifications => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_qualifications',
     json_ld   => 'qualifications',
 );
 
@@ -565,7 +565,7 @@ A relevant_occupation should be one of the following types:
 
 has relevant_occupation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_relevant_occupation',
     json_ld   => 'relevantOccupation',
 );
 
@@ -589,7 +589,7 @@ A responsibilities should be one of the following types:
 
 has responsibilities => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_responsibilities',
     json_ld   => 'responsibilities',
 );
 
@@ -619,7 +619,7 @@ A salary_currency should be one of the following types:
 
 has salary_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_salary_currency',
     json_ld   => 'salaryCurrency',
 );
 
@@ -647,7 +647,7 @@ A skills should be one of the following types:
 
 has skills => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_skills',
     json_ld   => 'skills',
 );
 
@@ -672,7 +672,7 @@ A special_commitments should be one of the following types:
 
 has special_commitments => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_special_commitments',
     json_ld   => 'specialCommitments',
 );
 
@@ -696,7 +696,7 @@ A title should be one of the following types:
 
 has title => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_title',
     json_ld   => 'title',
 );
 
@@ -721,7 +721,7 @@ A total_job_openings should be one of the following types:
 
 has total_job_openings => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_job_openings',
     json_ld   => 'totalJobOpenings',
 );
 
@@ -746,7 +746,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 
@@ -771,7 +771,7 @@ A work_hours should be one of the following types:
 
 has work_hours => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_hours',
     json_ld   => 'workHours',
 );
 

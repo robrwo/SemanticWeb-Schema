@@ -50,7 +50,7 @@ A additional_number_of_guests should be one of the following types:
 
 has additional_number_of_guests => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_number_of_guests',
     json_ld   => 'additionalNumberOfGuests',
 );
 
@@ -74,7 +74,7 @@ A comment should be one of the following types:
 
 has comment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comment',
     json_ld   => 'comment',
 );
 
@@ -98,7 +98,7 @@ A rsvp_response should be one of the following types:
 
 has rsvp_response => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rsvp_response',
     json_ld   => 'rsvpResponse',
 );
 

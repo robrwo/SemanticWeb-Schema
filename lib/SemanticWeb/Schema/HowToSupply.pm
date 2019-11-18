@@ -52,7 +52,7 @@ A estimated_cost should be one of the following types:
 
 has estimated_cost => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimated_cost',
     json_ld   => 'estimatedCost',
 );
 

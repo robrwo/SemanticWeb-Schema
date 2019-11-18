@@ -49,7 +49,7 @@ A claim_reviewed should be one of the following types:
 
 has claim_reviewed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_claim_reviewed',
     json_ld   => 'claimReviewed',
 );
 

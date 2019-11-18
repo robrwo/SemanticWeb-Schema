@@ -49,7 +49,7 @@ A applies_to_delivery_method should be one of the following types:
 
 has applies_to_delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_applies_to_delivery_method',
     json_ld   => 'appliesToDeliveryMethod',
 );
 
@@ -73,7 +73,7 @@ A applies_to_payment_method should be one of the following types:
 
 has applies_to_payment_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_applies_to_payment_method',
     json_ld   => 'appliesToPaymentMethod',
 );
 

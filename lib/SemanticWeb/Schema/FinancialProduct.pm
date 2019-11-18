@@ -56,7 +56,7 @@ A annual_percentage_rate should be one of the following types:
 
 has annual_percentage_rate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_annual_percentage_rate',
     json_ld   => 'annualPercentageRate',
 );
 
@@ -81,7 +81,7 @@ A fees_and_commissions_specification should be one of the following types:
 
 has fees_and_commissions_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fees_and_commissions_specification',
     json_ld   => 'feesAndCommissionsSpecification',
 );
 
@@ -108,7 +108,7 @@ A interest_rate should be one of the following types:
 
 has interest_rate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interest_rate',
     json_ld   => 'interestRate',
 );
 

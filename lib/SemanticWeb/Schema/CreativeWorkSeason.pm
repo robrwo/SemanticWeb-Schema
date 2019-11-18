@@ -50,7 +50,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -76,7 +76,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -105,7 +105,7 @@ A end_date should be one of the following types:
 
 has end_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_date',
     json_ld   => 'endDate',
 );
 
@@ -129,7 +129,7 @@ A episode should be one of the following types:
 
 has episode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_episode',
     json_ld   => 'episode',
 );
 
@@ -153,7 +153,7 @@ A episodes should be one of the following types:
 
 has episodes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_episodes',
     json_ld   => 'episodes',
 );
 
@@ -177,7 +177,7 @@ A number_of_episodes should be one of the following types:
 
 has number_of_episodes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_episodes',
     json_ld   => 'numberOfEpisodes',
 );
 
@@ -201,7 +201,7 @@ A part_of_series should be one of the following types:
 
 has part_of_series => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_series',
     json_ld   => 'partOfSeries',
 );
 
@@ -226,7 +226,7 @@ A production_company should be one of the following types:
 
 has production_company => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_company',
     json_ld   => 'productionCompany',
 );
 
@@ -252,7 +252,7 @@ A season_number should be one of the following types:
 
 has season_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_season_number',
     json_ld   => 'seasonNumber',
 );
 
@@ -281,7 +281,7 @@ A start_date should be one of the following types:
 
 has start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_date',
     json_ld   => 'startDate',
 );
 
@@ -305,7 +305,7 @@ A trailer should be one of the following types:
 
 has trailer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trailer',
     json_ld   => 'trailer',
 );
 

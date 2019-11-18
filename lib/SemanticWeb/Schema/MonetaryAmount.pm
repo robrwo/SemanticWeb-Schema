@@ -68,7 +68,7 @@ A currency should be one of the following types:
 
 has currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currency',
     json_ld   => 'currency',
 );
 
@@ -92,7 +92,7 @@ A max_value should be one of the following types:
 
 has max_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_max_value',
     json_ld   => 'maxValue',
 );
 
@@ -116,7 +116,7 @@ A min_value should be one of the following types:
 
 has min_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_min_value',
     json_ld   => 'minValue',
 );
 
@@ -140,7 +140,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -165,7 +165,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 
@@ -210,7 +210,7 @@ A value should be one of the following types:
 
 has value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value',
     json_ld   => 'value',
 );
 

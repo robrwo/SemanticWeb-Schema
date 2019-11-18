@@ -79,7 +79,7 @@ A measurement_technique should be one of the following types:
 
 has measurement_technique => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_measurement_technique',
     json_ld   => 'measurementTechnique',
 );
 

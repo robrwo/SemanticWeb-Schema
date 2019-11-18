@@ -60,7 +60,7 @@ A legislation_applies should be one of the following types:
 
 has legislation_applies => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_applies',
     json_ld   => 'legislationApplies',
 );
 
@@ -95,7 +95,7 @@ A legislation_changes should be one of the following types:
 
 has legislation_changes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_changes',
     json_ld   => 'legislationChanges',
 );
 
@@ -123,7 +123,7 @@ A legislation_consolidates should be one of the following types:
 
 has legislation_consolidates => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_consolidates',
     json_ld   => 'legislationConsolidates',
 );
 
@@ -149,7 +149,7 @@ A legislation_date should be one of the following types:
 
 has legislation_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_date',
     json_ld   => 'legislationDate',
 );
 
@@ -176,7 +176,7 @@ A legislation_date_version should be one of the following types:
 
 has legislation_date_version => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_date_version',
     json_ld   => 'legislationDateVersion',
 );
 
@@ -203,7 +203,7 @@ A legislation_identifier should be one of the following types:
 
 has legislation_identifier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_identifier',
     json_ld   => 'legislationIdentifier',
 );
 
@@ -229,7 +229,7 @@ A legislation_jurisdiction should be one of the following types:
 
 has legislation_jurisdiction => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_jurisdiction',
     json_ld   => 'legislationJurisdiction',
 );
 
@@ -254,7 +254,7 @@ A legislation_legal_force should be one of the following types:
 
 has legislation_legal_force => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_legal_force',
     json_ld   => 'legislationLegalForce',
 );
 
@@ -283,7 +283,7 @@ A legislation_passed_by should be one of the following types:
 
 has legislation_passed_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_passed_by',
     json_ld   => 'legislationPassedBy',
 );
 
@@ -312,7 +312,7 @@ A legislation_responsible should be one of the following types:
 
 has legislation_responsible => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_responsible',
     json_ld   => 'legislationResponsible',
 );
 
@@ -340,7 +340,7 @@ A legislation_transposes should be one of the following types:
 
 has legislation_transposes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_transposes',
     json_ld   => 'legislationTransposes',
 );
 
@@ -368,7 +368,7 @@ A legislation_type should be one of the following types:
 
 has legislation_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_type',
     json_ld   => 'legislationType',
 );
 

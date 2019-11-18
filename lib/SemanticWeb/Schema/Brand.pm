@@ -50,7 +50,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -76,7 +76,7 @@ A logo should be one of the following types:
 
 has logo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_logo',
     json_ld   => 'logo',
 );
 
@@ -100,7 +100,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -124,7 +124,7 @@ A slogan should be one of the following types:
 
 has slogan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_slogan',
     json_ld   => 'slogan',
 );
 

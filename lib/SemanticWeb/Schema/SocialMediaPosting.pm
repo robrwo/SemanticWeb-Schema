@@ -50,7 +50,7 @@ A shared_content should be one of the following types:
 
 has shared_content => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_shared_content',
     json_ld   => 'sharedContent',
 );
 

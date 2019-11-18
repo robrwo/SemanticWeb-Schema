@@ -56,7 +56,7 @@ A associated_anatomy should be one of the following types:
 
 has associated_anatomy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_anatomy',
     json_ld   => 'associatedAnatomy',
 );
 
@@ -85,7 +85,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -109,7 +109,7 @@ A epidemiology should be one of the following types:
 
 has epidemiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_epidemiology',
     json_ld   => 'epidemiology',
 );
 
@@ -134,7 +134,7 @@ A pathophysiology should be one of the following types:
 
 has pathophysiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pathophysiology',
     json_ld   => 'pathophysiology',
 );
 

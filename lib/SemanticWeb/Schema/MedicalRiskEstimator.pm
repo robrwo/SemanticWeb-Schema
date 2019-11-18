@@ -49,7 +49,7 @@ A estimates_risk_of should be one of the following types:
 
 has estimates_risk_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimates_risk_of',
     json_ld   => 'estimatesRiskOf',
 );
 
@@ -74,7 +74,7 @@ A included_risk_factor should be one of the following types:
 
 has included_risk_factor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_included_risk_factor',
     json_ld   => 'includedRiskFactor',
 );
 

@@ -53,7 +53,7 @@ A legislation_legal_value should be one of the following types:
 
 has legislation_legal_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legislation_legal_value',
     json_ld   => 'legislationLegalValue',
 );
 

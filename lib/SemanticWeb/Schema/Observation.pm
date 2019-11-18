@@ -79,7 +79,7 @@ A margin_of_error should be one of the following types:
 
 has margin_of_error => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_margin_of_error',
     json_ld   => 'marginOfError',
 );
 
@@ -111,7 +111,7 @@ A measured_property should be one of the following types:
 
 has measured_property => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_measured_property',
     json_ld   => 'measuredProperty',
 );
 
@@ -140,7 +140,7 @@ A measured_value should be one of the following types:
 
 has measured_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_measured_value',
     json_ld   => 'measuredValue',
 );
 
@@ -169,7 +169,7 @@ A observation_date should be one of the following types:
 
 has observation_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_observation_date',
     json_ld   => 'observationDate',
 );
 
@@ -201,7 +201,7 @@ A observed_node should be one of the following types:
 
 has observed_node => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_observed_node',
     json_ld   => 'observedNode',
 );
 

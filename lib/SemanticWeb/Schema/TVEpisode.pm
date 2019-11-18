@@ -49,7 +49,7 @@ A country_of_origin should be one of the following types:
 
 has country_of_origin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_country_of_origin',
     json_ld   => 'countryOfOrigin',
 );
 
@@ -73,7 +73,7 @@ A part_of_tv_series should be one of the following types:
 
 has part_of_tv_series => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_tv_series',
     json_ld   => 'partOfTVSeries',
 );
 
@@ -104,7 +104,7 @@ A subtitle_language should be one of the following types:
 
 has subtitle_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_subtitle_language',
     json_ld   => 'subtitleLanguage',
 );
 

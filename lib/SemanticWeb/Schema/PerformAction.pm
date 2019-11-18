@@ -49,7 +49,7 @@ A entertainment_business should be one of the following types:
 
 has entertainment_business => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_entertainment_business',
     json_ld   => 'entertainmentBusiness',
 );
 

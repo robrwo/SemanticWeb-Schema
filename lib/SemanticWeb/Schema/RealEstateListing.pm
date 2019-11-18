@@ -69,7 +69,7 @@ A lease_length should be one of the following types:
 
 has lease_length => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lease_length',
     json_ld   => 'leaseLength',
 );
 

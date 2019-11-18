@@ -52,7 +52,7 @@ A landlord should be one of the following types:
 
 has landlord => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_landlord',
     json_ld   => 'landlord',
 );
 
@@ -77,7 +77,7 @@ A real_estate_agent should be one of the following types:
 
 has real_estate_agent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_real_estate_agent',
     json_ld   => 'realEstateAgent',
 );
 

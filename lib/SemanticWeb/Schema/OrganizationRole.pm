@@ -49,7 +49,7 @@ A numbered_position should be one of the following types:
 
 has numbered_position => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_numbered_position',
     json_ld   => 'numberedPosition',
 );
 

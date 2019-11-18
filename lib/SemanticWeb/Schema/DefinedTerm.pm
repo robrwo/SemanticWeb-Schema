@@ -60,7 +60,7 @@ A in_defined_term_set should be one of the following types:
 
 has in_defined_term_set => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_defined_term_set',
     json_ld   => 'inDefinedTermSet',
 );
 
@@ -91,7 +91,7 @@ A term_code should be one of the following types:
 
 has term_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_term_code',
     json_ld   => 'termCode',
 );
 

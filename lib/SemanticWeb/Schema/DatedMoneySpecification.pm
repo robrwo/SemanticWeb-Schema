@@ -59,7 +59,7 @@ A amount should be one of the following types:
 
 has amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amount',
     json_ld   => 'amount',
 );
 
@@ -94,7 +94,7 @@ A currency should be one of the following types:
 
 has currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currency',
     json_ld   => 'currency',
 );
 
@@ -123,7 +123,7 @@ A end_date should be one of the following types:
 
 has end_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_date',
     json_ld   => 'endDate',
 );
 
@@ -152,7 +152,7 @@ A start_date should be one of the following types:
 
 has start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_date',
     json_ld   => 'startDate',
 );
 

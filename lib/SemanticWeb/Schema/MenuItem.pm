@@ -52,7 +52,7 @@ A menu_add_on should be one of the following types:
 
 has menu_add_on => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_menu_add_on',
     json_ld   => 'menuAddOn',
 );
 
@@ -76,7 +76,7 @@ A nutrition should be one of the following types:
 
 has nutrition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_nutrition',
     json_ld   => 'nutrition',
 );
 
@@ -102,7 +102,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -127,7 +127,7 @@ A suitable_for_diet should be one of the following types:
 
 has suitable_for_diet => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suitable_for_diet',
     json_ld   => 'suitableForDiet',
 );
 

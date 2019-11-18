@@ -57,7 +57,7 @@ A health_condition should be one of the following types:
 
 has health_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_condition',
     json_ld   => 'healthCondition',
 );
 
@@ -83,7 +83,7 @@ A outcome should be one of the following types:
 
 has outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_outcome',
     json_ld   => 'outcome',
 );
 
@@ -108,7 +108,7 @@ A population should be one of the following types:
 
 has population => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_population',
     json_ld   => 'population',
 );
 
@@ -136,7 +136,7 @@ A sponsor should be one of the following types:
 
 has sponsor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sponsor',
     json_ld   => 'sponsor',
 );
 
@@ -164,7 +164,7 @@ A status should be one of the following types:
 
 has status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_status',
     json_ld   => 'status',
 );
 
@@ -188,7 +188,7 @@ A study_location should be one of the following types:
 
 has study_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_study_location',
     json_ld   => 'studyLocation',
 );
 
@@ -213,7 +213,7 @@ A study_subject should be one of the following types:
 
 has study_subject => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_study_subject',
     json_ld   => 'studySubject',
 );
 

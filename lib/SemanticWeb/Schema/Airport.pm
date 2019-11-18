@@ -48,7 +48,7 @@ A iata_code should be one of the following types:
 
 has iata_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_iata_code',
     json_ld   => 'iataCode',
 );
 
@@ -72,7 +72,7 @@ A icao_code should be one of the following types:
 
 has icao_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_icao_code',
     json_ld   => 'icaoCode',
 );
 

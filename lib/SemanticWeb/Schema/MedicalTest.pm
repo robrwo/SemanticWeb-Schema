@@ -48,7 +48,7 @@ A affected_by should be one of the following types:
 
 has affected_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_affected_by',
     json_ld   => 'affectedBy',
 );
 
@@ -74,7 +74,7 @@ A normal_range should be one of the following types:
 
 has normal_range => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_normal_range',
     json_ld   => 'normalRange',
 );
 
@@ -98,7 +98,7 @@ A sign_detected should be one of the following types:
 
 has sign_detected => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sign_detected',
     json_ld   => 'signDetected',
 );
 
@@ -122,7 +122,7 @@ A used_to_diagnose should be one of the following types:
 
 has used_to_diagnose => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_used_to_diagnose',
     json_ld   => 'usedToDiagnose',
 );
 
@@ -146,7 +146,7 @@ A uses_device should be one of the following types:
 
 has uses_device => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_uses_device',
     json_ld   => 'usesDevice',
 );
 

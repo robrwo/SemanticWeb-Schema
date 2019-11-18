@@ -55,7 +55,7 @@ A about should be one of the following types:
 
 has about => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_about',
     json_ld   => 'about',
 );
 
@@ -81,7 +81,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -106,7 +106,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -132,7 +132,7 @@ A attendee should be one of the following types:
 
 has attendee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_attendee',
     json_ld   => 'attendee',
 );
 
@@ -158,7 +158,7 @@ A attendees should be one of the following types:
 
 has attendees => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_attendees',
     json_ld   => 'attendees',
 );
 
@@ -182,7 +182,7 @@ A audience should be one of the following types:
 
 has audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience',
     json_ld   => 'audience',
 );
 
@@ -209,7 +209,7 @@ A composer should be one of the following types:
 
 has composer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_composer',
     json_ld   => 'composer',
 );
 
@@ -235,7 +235,7 @@ A contributor should be one of the following types:
 
 has contributor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contributor',
     json_ld   => 'contributor',
 );
 
@@ -261,7 +261,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -285,7 +285,7 @@ A door_time should be one of the following types:
 
 has door_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_door_time',
     json_ld   => 'doorTime',
 );
 
@@ -314,7 +314,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -343,7 +343,7 @@ A end_date should be one of the following types:
 
 has end_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_date',
     json_ld   => 'endDate',
 );
 
@@ -368,7 +368,7 @@ A event_status should be one of the following types:
 
 has event_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_event_status',
     json_ld   => 'eventStatus',
 );
 
@@ -395,7 +395,7 @@ A funder should be one of the following types:
 
 has funder => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_funder',
     json_ld   => 'funder',
 );
 
@@ -429,7 +429,7 @@ A in_language should be one of the following types:
 
 has in_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_language',
     json_ld   => 'inLanguage',
 );
 
@@ -453,7 +453,7 @@ A is_accessible_for_free should be one of the following types:
 
 has is_accessible_for_free => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accessible_for_free',
     json_ld   => 'isAccessibleForFree',
 );
 
@@ -482,7 +482,7 @@ A location should be one of the following types:
 
 has location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_location',
     json_ld   => 'location',
 );
 
@@ -506,7 +506,7 @@ A maximum_attendee_capacity should be one of the following types:
 
 has maximum_attendee_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maximum_attendee_capacity',
     json_ld   => 'maximumAttendeeCapacity',
 );
 
@@ -532,7 +532,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -558,7 +558,7 @@ A organizer should be one of the following types:
 
 has organizer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_organizer',
     json_ld   => 'organizer',
 );
 
@@ -585,7 +585,7 @@ A performer should be one of the following types:
 
 has performer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_performer',
     json_ld   => 'performer',
 );
 
@@ -612,7 +612,7 @@ A performers should be one of the following types:
 
 has performers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_performers',
     json_ld   => 'performers',
 );
 
@@ -640,7 +640,7 @@ A previous_start_date should be one of the following types:
 
 has previous_start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_previous_start_date',
     json_ld   => 'previousStartDate',
 );
 
@@ -664,7 +664,7 @@ A recorded_in should be one of the following types:
 
 has recorded_in => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recorded_in',
     json_ld   => 'recordedIn',
 );
 
@@ -688,7 +688,7 @@ A remaining_attendee_capacity should be one of the following types:
 
 has remaining_attendee_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_remaining_attendee_capacity',
     json_ld   => 'remainingAttendeeCapacity',
 );
 
@@ -712,7 +712,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -740,7 +740,7 @@ A sponsor should be one of the following types:
 
 has sponsor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sponsor',
     json_ld   => 'sponsor',
 );
 
@@ -769,7 +769,7 @@ A start_date should be one of the following types:
 
 has start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_date',
     json_ld   => 'startDate',
 );
 
@@ -794,7 +794,7 @@ A sub_event should be one of the following types:
 
 has sub_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_event',
     json_ld   => 'subEvent',
 );
 
@@ -819,7 +819,7 @@ A sub_events should be one of the following types:
 
 has sub_events => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_events',
     json_ld   => 'subEvents',
 );
 
@@ -845,7 +845,7 @@ A super_event should be one of the following types:
 
 has super_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_super_event',
     json_ld   => 'superEvent',
 );
 
@@ -873,7 +873,7 @@ A translator should be one of the following types:
 
 has translator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_translator',
     json_ld   => 'translator',
 );
 
@@ -897,7 +897,7 @@ A typical_age_range should be one of the following types:
 
 has typical_age_range => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_typical_age_range',
     json_ld   => 'typicalAgeRange',
 );
 
@@ -923,7 +923,7 @@ A work_featured should be one of the following types:
 
 has work_featured => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_featured',
     json_ld   => 'workFeatured',
 );
 
@@ -948,7 +948,7 @@ A work_performed should be one of the following types:
 
 has work_performed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_performed',
     json_ld   => 'workPerformed',
 );
 

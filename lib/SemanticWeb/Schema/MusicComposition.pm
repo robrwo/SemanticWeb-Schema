@@ -51,7 +51,7 @@ A composer should be one of the following types:
 
 has composer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_composer',
     json_ld   => 'composer',
 );
 
@@ -75,7 +75,7 @@ A first_performance should be one of the following types:
 
 has first_performance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_first_performance',
     json_ld   => 'firstPerformance',
 );
 
@@ -99,7 +99,7 @@ A included_composition should be one of the following types:
 
 has included_composition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_included_composition',
     json_ld   => 'includedComposition',
 );
 
@@ -123,7 +123,7 @@ A iswc_code should be one of the following types:
 
 has iswc_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_iswc_code',
     json_ld   => 'iswcCode',
 );
 
@@ -147,7 +147,7 @@ A lyricist should be one of the following types:
 
 has lyricist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lyricist',
     json_ld   => 'lyricist',
 );
 
@@ -171,7 +171,7 @@ A lyrics should be one of the following types:
 
 has lyrics => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lyrics',
     json_ld   => 'lyrics',
 );
 
@@ -195,7 +195,7 @@ A music_arrangement should be one of the following types:
 
 has music_arrangement => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_arrangement',
     json_ld   => 'musicArrangement',
 );
 
@@ -219,7 +219,7 @@ A music_composition_form should be one of the following types:
 
 has music_composition_form => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_composition_form',
     json_ld   => 'musicCompositionForm',
 );
 
@@ -243,7 +243,7 @@ A musical_key should be one of the following types:
 
 has musical_key => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_musical_key',
     json_ld   => 'musicalKey',
 );
 
@@ -267,7 +267,7 @@ A recorded_as should be one of the following types:
 
 has recorded_as => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recorded_as',
     json_ld   => 'recordedAs',
 );
 

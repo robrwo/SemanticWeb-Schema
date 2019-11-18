@@ -50,7 +50,7 @@ A endorsee should be one of the following types:
 
 has endorsee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_endorsee',
     json_ld   => 'endorsee',
 );
 

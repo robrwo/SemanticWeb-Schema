@@ -49,7 +49,7 @@ A applies_to_delivery_method should be one of the following types:
 
 has applies_to_delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_applies_to_delivery_method',
     json_ld   => 'appliesToDeliveryMethod',
 );
 
@@ -79,7 +79,7 @@ A area_served should be one of the following types:
 
 has area_served => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area_served',
     json_ld   => 'areaServed',
 );
 
@@ -115,7 +115,7 @@ A eligible_region should be one of the following types:
 
 has eligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_eligible_region',
     json_ld   => 'eligibleRegion',
 );
 
@@ -151,7 +151,7 @@ A ineligible_region should be one of the following types:
 
 has ineligible_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ineligible_region',
     json_ld   => 'ineligibleRegion',
 );
 

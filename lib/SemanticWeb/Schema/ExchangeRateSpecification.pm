@@ -59,7 +59,7 @@ A currency should be one of the following types:
 
 has currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currency',
     json_ld   => 'currency',
 );
 
@@ -83,7 +83,7 @@ A current_exchange_rate should be one of the following types:
 
 has current_exchange_rate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_current_exchange_rate',
     json_ld   => 'currentExchangeRate',
 );
 
@@ -110,7 +110,7 @@ A exchange_rate_spread should be one of the following types:
 
 has exchange_rate_spread => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exchange_rate_spread',
     json_ld   => 'exchangeRateSpread',
 );
 

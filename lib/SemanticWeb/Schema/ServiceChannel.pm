@@ -58,7 +58,7 @@ A available_language should be one of the following types:
 
 has available_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_language',
     json_ld   => 'availableLanguage',
 );
 
@@ -82,7 +82,7 @@ A processing_time should be one of the following types:
 
 has processing_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_processing_time',
     json_ld   => 'processingTime',
 );
 
@@ -106,7 +106,7 @@ A provides_service should be one of the following types:
 
 has provides_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provides_service',
     json_ld   => 'providesService',
 );
 
@@ -131,7 +131,7 @@ A service_location should be one of the following types:
 
 has service_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_location',
     json_ld   => 'serviceLocation',
 );
 
@@ -155,7 +155,7 @@ A service_phone should be one of the following types:
 
 has service_phone => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_phone',
     json_ld   => 'servicePhone',
 );
 
@@ -179,7 +179,7 @@ A service_postal_address should be one of the following types:
 
 has service_postal_address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_postal_address',
     json_ld   => 'servicePostalAddress',
 );
 
@@ -203,7 +203,7 @@ A service_sms_number should be one of the following types:
 
 has service_sms_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_sms_number',
     json_ld   => 'serviceSmsNumber',
 );
 
@@ -227,7 +227,7 @@ A service_url should be one of the following types:
 
 has service_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_url',
     json_ld   => 'serviceUrl',
 );
 

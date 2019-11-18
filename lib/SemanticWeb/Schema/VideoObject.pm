@@ -50,7 +50,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -75,7 +75,7 @@ A actors should be one of the following types:
 
 has actors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actors',
     json_ld   => 'actors',
 );
 
@@ -108,7 +108,7 @@ A caption should be one of the following types:
 
 has caption => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_caption',
     json_ld   => 'caption',
 );
 
@@ -134,7 +134,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -159,7 +159,7 @@ A directors should be one of the following types:
 
 has directors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_directors',
     json_ld   => 'directors',
 );
 
@@ -185,7 +185,7 @@ A music_by should be one of the following types:
 
 has music_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_by',
     json_ld   => 'musicBy',
 );
 
@@ -209,7 +209,7 @@ A thumbnail should be one of the following types:
 
 has thumbnail => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_thumbnail',
     json_ld   => 'thumbnail',
 );
 
@@ -234,7 +234,7 @@ A transcript should be one of the following types:
 
 has transcript => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_transcript',
     json_ld   => 'transcript',
 );
 
@@ -258,7 +258,7 @@ A video_frame_size should be one of the following types:
 
 has video_frame_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video_frame_size',
     json_ld   => 'videoFrameSize',
 );
 
@@ -282,7 +282,7 @@ A video_quality should be one of the following types:
 
 has video_quality => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video_quality',
     json_ld   => 'videoQuality',
 );
 

@@ -51,7 +51,7 @@ A page_end should be one of the following types:
 
 has page_end => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_page_end',
     json_ld   => 'pageEnd',
 );
 
@@ -77,7 +77,7 @@ A page_start should be one of the following types:
 
 has page_start => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_page_start',
     json_ld   => 'pageStart',
 );
 
@@ -102,7 +102,7 @@ A pagination should be one of the following types:
 
 has pagination => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pagination',
     json_ld   => 'pagination',
 );
 

@@ -50,7 +50,7 @@ A aspect should be one of the following types:
 
 has aspect => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aspect',
     json_ld   => 'aspect',
 );
 

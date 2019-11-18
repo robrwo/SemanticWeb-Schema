@@ -50,7 +50,7 @@ A domain_includes should be one of the following types:
 
 has domain_includes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_domain_includes',
     json_ld   => 'domainIncludes',
 );
 
@@ -78,7 +78,7 @@ A inverse_of should be one of the following types:
 
 has inverse_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_inverse_of',
     json_ld   => 'inverseOf',
 );
 
@@ -103,7 +103,7 @@ A range_includes should be one of the following types:
 
 has range_includes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_range_includes',
     json_ld   => 'rangeIncludes',
 );
 
@@ -132,7 +132,7 @@ A superseded_by should be one of the following types:
 
 has superseded_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_superseded_by',
     json_ld   => 'supersededBy',
 );
 

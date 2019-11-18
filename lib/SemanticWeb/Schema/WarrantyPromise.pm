@@ -51,7 +51,7 @@ A duration_of_warranty should be one of the following types:
 
 has duration_of_warranty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration_of_warranty',
     json_ld   => 'durationOfWarranty',
 );
 
@@ -75,7 +75,7 @@ A warranty_scope should be one of the following types:
 
 has warranty_scope => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_warranty_scope',
     json_ld   => 'warrantyScope',
 );
 

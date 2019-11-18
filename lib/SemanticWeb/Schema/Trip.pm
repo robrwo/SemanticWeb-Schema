@@ -48,7 +48,7 @@ A arrival_time should be one of the following types:
 
 has arrival_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_time',
     json_ld   => 'arrivalTime',
 );
 
@@ -72,7 +72,7 @@ A departure_time should be one of the following types:
 
 has departure_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_time',
     json_ld   => 'departureTime',
 );
 
@@ -106,7 +106,7 @@ A itinerary should be one of the following types:
 
 has itinerary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_itinerary',
     json_ld   => 'itinerary',
 );
 
@@ -132,7 +132,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -162,7 +162,7 @@ A part_of_trip should be one of the following types:
 
 has part_of_trip => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_trip',
     json_ld   => 'partOfTrip',
 );
 
@@ -190,7 +190,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -220,7 +220,7 @@ A sub_trip should be one of the following types:
 
 has sub_trip => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_trip',
     json_ld   => 'subTrip',
 );
 

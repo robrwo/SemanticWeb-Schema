@@ -66,7 +66,7 @@ A item_list_element should be one of the following types:
 
 has item_list_element => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_list_element',
     json_ld   => 'itemListElement',
 );
 
@@ -92,7 +92,7 @@ A item_list_order should be one of the following types:
 
 has item_list_order => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_list_order',
     json_ld   => 'itemListOrder',
 );
 
@@ -118,7 +118,7 @@ A number_of_items should be one of the following types:
 
 has number_of_items => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_items',
     json_ld   => 'numberOfItems',
 );
 

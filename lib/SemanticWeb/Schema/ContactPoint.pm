@@ -54,7 +54,7 @@ A area_served should be one of the following types:
 
 has area_served => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area_served',
     json_ld   => 'areaServed',
 );
 
@@ -87,7 +87,7 @@ A available_language should be one of the following types:
 
 has available_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_language',
     json_ld   => 'availableLanguage',
 );
 
@@ -112,7 +112,7 @@ A contact_option should be one of the following types:
 
 has contact_option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contact_option',
     json_ld   => 'contactOption',
 );
 
@@ -138,7 +138,7 @@ A contact_type should be one of the following types:
 
 has contact_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contact_type',
     json_ld   => 'contactType',
 );
 
@@ -162,7 +162,7 @@ A email should be one of the following types:
 
 has email => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_email',
     json_ld   => 'email',
 );
 
@@ -186,7 +186,7 @@ A fax_number should be one of the following types:
 
 has fax_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fax_number',
     json_ld   => 'faxNumber',
 );
 
@@ -210,7 +210,7 @@ A hours_available should be one of the following types:
 
 has hours_available => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_hours_available',
     json_ld   => 'hoursAvailable',
 );
 
@@ -239,7 +239,7 @@ A product_supported should be one of the following types:
 
 has product_supported => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_product_supported',
     json_ld   => 'productSupported',
 );
 
@@ -267,7 +267,7 @@ A service_area should be one of the following types:
 
 has service_area => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_area',
     json_ld   => 'serviceArea',
 );
 
@@ -291,7 +291,7 @@ A telephone should be one of the following types:
 
 has telephone => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_telephone',
     json_ld   => 'telephone',
 );
 

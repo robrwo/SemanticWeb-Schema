@@ -50,7 +50,7 @@ A drug should be one of the following types:
 
 has drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug',
     json_ld   => 'drug',
 );
 

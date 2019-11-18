@@ -50,7 +50,7 @@ A result_review should be one of the following types:
 
 has result_review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_result_review',
     json_ld   => 'resultReview',
 );
 

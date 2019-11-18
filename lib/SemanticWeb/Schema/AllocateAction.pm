@@ -50,7 +50,7 @@ A purpose should be one of the following types:
 
 has purpose => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_purpose',
     json_ld   => 'purpose',
 );
 

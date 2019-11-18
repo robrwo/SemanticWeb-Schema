@@ -58,7 +58,7 @@ A event should be one of the following types:
 
 has event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_event',
     json_ld   => 'event',
 );
 

@@ -52,7 +52,7 @@ A activity_duration should be one of the following types:
 
 has activity_duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_activity_duration',
     json_ld   => 'activityDuration',
 );
 
@@ -78,7 +78,7 @@ A activity_frequency should be one of the following types:
 
 has activity_frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_activity_frequency',
     json_ld   => 'activityFrequency',
 );
 
@@ -105,7 +105,7 @@ A additional_variable should be one of the following types:
 
 has additional_variable => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_variable',
     json_ld   => 'additionalVariable',
 );
 
@@ -130,7 +130,7 @@ A exercise_type should be one of the following types:
 
 has exercise_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exercise_type',
     json_ld   => 'exerciseType',
 );
 
@@ -158,7 +158,7 @@ A intensity should be one of the following types:
 
 has intensity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_intensity',
     json_ld   => 'intensity',
 );
 
@@ -184,7 +184,7 @@ A repetitions should be one of the following types:
 
 has repetitions => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_repetitions',
     json_ld   => 'repetitions',
 );
 
@@ -210,7 +210,7 @@ A rest_periods should be one of the following types:
 
 has rest_periods => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rest_periods',
     json_ld   => 'restPeriods',
 );
 
@@ -237,7 +237,7 @@ A workload should be one of the following types:
 
 has workload => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_workload',
     json_ld   => 'workload',
 );
 

@@ -55,7 +55,7 @@ A query should be one of the following types:
 
 has query => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_query',
     json_ld   => 'query',
 );
 

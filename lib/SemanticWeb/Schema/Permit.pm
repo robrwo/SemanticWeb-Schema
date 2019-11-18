@@ -48,7 +48,7 @@ A issued_by should be one of the following types:
 
 has issued_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issued_by',
     json_ld   => 'issuedBy',
 );
 
@@ -72,7 +72,7 @@ A issued_through should be one of the following types:
 
 has issued_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issued_through',
     json_ld   => 'issuedThrough',
 );
 
@@ -96,7 +96,7 @@ A permit_audience should be one of the following types:
 
 has permit_audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_permit_audience',
     json_ld   => 'permitAudience',
 );
 
@@ -120,7 +120,7 @@ A valid_for should be one of the following types:
 
 has valid_for => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_for',
     json_ld   => 'validFor',
 );
 
@@ -144,7 +144,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -168,7 +168,7 @@ A valid_in should be one of the following types:
 
 has valid_in => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_in',
     json_ld   => 'validIn',
 );
 
@@ -192,7 +192,7 @@ A valid_until should be one of the following types:
 
 has valid_until => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_until',
     json_ld   => 'validUntil',
 );
 

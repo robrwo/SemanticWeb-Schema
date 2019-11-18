@@ -72,7 +72,7 @@ A dateline should be one of the following types:
 
 has dateline => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dateline',
     json_ld   => 'dateline',
 );
 
@@ -97,7 +97,7 @@ A print_column should be one of the following types:
 
 has print_column => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_print_column',
     json_ld   => 'printColumn',
 );
 
@@ -121,7 +121,7 @@ A print_edition should be one of the following types:
 
 has print_edition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_print_edition',
     json_ld   => 'printEdition',
 );
 
@@ -147,7 +147,7 @@ A print_page should be one of the following types:
 
 has print_page => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_print_page',
     json_ld   => 'printPage',
 );
 
@@ -172,7 +172,7 @@ A print_section should be one of the following types:
 
 has print_section => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_print_section',
     json_ld   => 'printSection',
 );
 

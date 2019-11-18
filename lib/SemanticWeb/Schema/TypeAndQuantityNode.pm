@@ -49,7 +49,7 @@ A amount_of_this_good should be one of the following types:
 
 has amount_of_this_good => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amount_of_this_good',
     json_ld   => 'amountOfThisGood',
 );
 
@@ -75,7 +75,7 @@ A business_function should be one of the following types:
 
 has business_function => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_business_function',
     json_ld   => 'businessFunction',
 );
 
@@ -101,7 +101,7 @@ A type_of_good should be one of the following types:
 
 has type_of_good => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_type_of_good',
     json_ld   => 'typeOfGood',
 );
 
@@ -127,7 +127,7 @@ A unit_code should be one of the following types:
 
 has unit_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_code',
     json_ld   => 'unitCode',
 );
 
@@ -156,7 +156,7 @@ A unit_text should be one of the following types:
 
 has unit_text => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unit_text',
     json_ld   => 'unitText',
 );
 

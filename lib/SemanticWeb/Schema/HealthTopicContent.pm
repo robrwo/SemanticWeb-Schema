@@ -77,7 +77,7 @@ A has_health_aspect should be one of the following types:
 
 has has_health_aspect => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_health_aspect',
     json_ld   => 'hasHealthAspect',
 );
 

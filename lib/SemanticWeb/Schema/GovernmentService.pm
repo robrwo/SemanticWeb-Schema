@@ -51,7 +51,7 @@ A service_operator should be one of the following types:
 
 has service_operator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_operator',
     json_ld   => 'serviceOperator',
 );
 

@@ -52,7 +52,7 @@ A geo_midpoint should be one of the following types:
 
 has geo_midpoint => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_midpoint',
     json_ld   => 'geoMidpoint',
 );
 
@@ -81,7 +81,7 @@ A geo_radius should be one of the following types:
 
 has geo_radius => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_geo_radius',
     json_ld   => 'geoRadius',
 );
 

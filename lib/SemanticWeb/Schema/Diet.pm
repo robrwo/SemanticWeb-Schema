@@ -52,7 +52,7 @@ A diet_features should be one of the following types:
 
 has diet_features => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diet_features',
     json_ld   => 'dietFeatures',
 );
 
@@ -78,7 +78,7 @@ A endorsers should be one of the following types:
 
 has endorsers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_endorsers',
     json_ld   => 'endorsers',
 );
 
@@ -102,7 +102,7 @@ A expert_considerations should be one of the following types:
 
 has expert_considerations => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expert_considerations',
     json_ld   => 'expertConsiderations',
 );
 
@@ -128,7 +128,7 @@ A overview should be one of the following types:
 
 has overview => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_overview',
     json_ld   => 'overview',
 );
 
@@ -152,7 +152,7 @@ A physiological_benefits should be one of the following types:
 
 has physiological_benefits => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_physiological_benefits',
     json_ld   => 'physiologicalBenefits',
 );
 
@@ -176,7 +176,7 @@ A risks should be one of the following types:
 
 has risks => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_risks',
     json_ld   => 'risks',
 );
 

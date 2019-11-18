@@ -66,7 +66,7 @@ A by_day should be one of the following types:
 
 has by_day => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_by_day',
     json_ld   => 'byDay',
 );
 
@@ -97,7 +97,7 @@ A by_month should be one of the following types:
 
 has by_month => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_by_month',
     json_ld   => 'byMonth',
 );
 
@@ -128,7 +128,7 @@ A by_month_day should be one of the following types:
 
 has by_month_day => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_by_month_day',
     json_ld   => 'byMonthDay',
 );
 
@@ -173,7 +173,7 @@ A event_schedule should be one of the following types:
 
 has event_schedule => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_event_schedule',
     json_ld   => 'eventSchedule',
 );
 
@@ -214,7 +214,7 @@ A except_date should be one of the following types:
 
 has except_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_except_date',
     json_ld   => 'exceptDate',
 );
 
@@ -243,7 +243,7 @@ A repeat_count should be one of the following types:
 
 has repeat_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_repeat_count',
     json_ld   => 'repeatCount',
 );
 
@@ -278,7 +278,7 @@ A repeat_frequency should be one of the following types:
 
 has repeat_frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_repeat_frequency',
     json_ld   => 'repeatFrequency',
 );
 

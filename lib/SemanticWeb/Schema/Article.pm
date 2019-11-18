@@ -56,7 +56,7 @@ A article_body should be one of the following types:
 
 has article_body => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_article_body',
     json_ld   => 'articleBody',
 );
 
@@ -81,7 +81,7 @@ A article_section should be one of the following types:
 
 has article_section => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_article_section',
     json_ld   => 'articleSection',
 );
 
@@ -117,7 +117,7 @@ A backstory should be one of the following types:
 
 has backstory => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_backstory',
     json_ld   => 'backstory',
 );
 
@@ -143,7 +143,7 @@ A page_end should be one of the following types:
 
 has page_end => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_page_end',
     json_ld   => 'pageEnd',
 );
 
@@ -169,7 +169,7 @@ A page_start should be one of the following types:
 
 has page_start => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_page_start',
     json_ld   => 'pageStart',
 );
 
@@ -194,7 +194,7 @@ A pagination should be one of the following types:
 
 has pagination => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pagination',
     json_ld   => 'pagination',
 );
 
@@ -245,7 +245,7 @@ A speakable should be one of the following types:
 
 has speakable => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_speakable',
     json_ld   => 'speakable',
 );
 
@@ -269,7 +269,7 @@ A word_count should be one of the following types:
 
 has word_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_word_count',
     json_ld   => 'wordCount',
 );
 

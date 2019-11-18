@@ -56,7 +56,7 @@ A address_country should be one of the following types:
 
 has address_country => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address_country',
     json_ld   => 'addressCountry',
 );
 
@@ -81,7 +81,7 @@ A address_locality should be one of the following types:
 
 has address_locality => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address_locality',
     json_ld   => 'addressLocality',
 );
 
@@ -112,7 +112,7 @@ A address_region should be one of the following types:
 
 has address_region => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address_region',
     json_ld   => 'addressRegion',
 );
 
@@ -136,7 +136,7 @@ A post_office_box_number should be one of the following types:
 
 has post_office_box_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_post_office_box_number',
     json_ld   => 'postOfficeBoxNumber',
 );
 
@@ -160,7 +160,7 @@ A postal_code should be one of the following types:
 
 has postal_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_postal_code',
     json_ld   => 'postalCode',
 );
 
@@ -184,7 +184,7 @@ A street_address should be one of the following types:
 
 has street_address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_street_address',
     json_ld   => 'streetAddress',
 );
 

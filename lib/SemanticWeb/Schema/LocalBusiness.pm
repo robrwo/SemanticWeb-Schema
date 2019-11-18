@@ -57,7 +57,7 @@ A branch_of should be one of the following types:
 
 has branch_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_branch_of',
     json_ld   => 'branchOf',
 );
 
@@ -92,7 +92,7 @@ A currencies_accepted should be one of the following types:
 
 has currencies_accepted => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currencies_accepted',
     json_ld   => 'currenciesAccepted',
 );
 
@@ -133,7 +133,7 @@ A opening_hours should be one of the following types:
 
 has opening_hours => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_opening_hours',
     json_ld   => 'openingHours',
 );
 
@@ -157,7 +157,7 @@ A payment_accepted should be one of the following types:
 
 has payment_accepted => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payment_accepted',
     json_ld   => 'paymentAccepted',
 );
 
@@ -185,7 +185,7 @@ A price_range should be one of the following types:
 
 has price_range => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_range',
     json_ld   => 'priceRange',
 );
 

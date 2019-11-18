@@ -54,7 +54,7 @@ A dropoff_location should be one of the following types:
 
 has dropoff_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dropoff_location',
     json_ld   => 'dropoffLocation',
 );
 
@@ -78,7 +78,7 @@ A dropoff_time should be one of the following types:
 
 has dropoff_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dropoff_time',
     json_ld   => 'dropoffTime',
 );
 
@@ -102,7 +102,7 @@ A pickup_location should be one of the following types:
 
 has pickup_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pickup_location',
     json_ld   => 'pickupLocation',
 );
 
@@ -126,7 +126,7 @@ A pickup_time should be one of the following types:
 
 has pickup_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pickup_time',
     json_ld   => 'pickupTime',
 );
 

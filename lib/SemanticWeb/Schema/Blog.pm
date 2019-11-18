@@ -48,7 +48,7 @@ A blog_post should be one of the following types:
 
 has blog_post => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_blog_post',
     json_ld   => 'blogPost',
 );
 
@@ -72,7 +72,7 @@ A blog_posts should be one of the following types:
 
 has blog_posts => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_blog_posts',
     json_ld   => 'blogPosts',
 );
 
@@ -98,7 +98,7 @@ A issn should be one of the following types:
 
 has issn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issn',
     json_ld   => 'issn',
 );
 

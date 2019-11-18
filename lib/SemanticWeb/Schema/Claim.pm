@@ -80,7 +80,7 @@ A appearance should be one of the following types:
 
 has appearance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_appearance',
     json_ld   => 'appearance',
 );
 
@@ -110,7 +110,7 @@ A first_appearance should be one of the following types:
 
 has first_appearance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_first_appearance',
     json_ld   => 'firstAppearance',
 );
 

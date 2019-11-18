@@ -50,7 +50,7 @@ A domiciled_mortgage should be one of the following types:
 
 has domiciled_mortgage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_domiciled_mortgage',
     json_ld   => 'domiciledMortgage',
 );
 
@@ -75,7 +75,7 @@ A loan_mortgage_mandate_amount should be one of the following types:
 
 has loan_mortgage_mandate_amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_mortgage_mandate_amount',
     json_ld   => 'loanMortgageMandateAmount',
 );
 

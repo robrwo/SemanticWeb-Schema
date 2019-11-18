@@ -52,7 +52,7 @@ A down_payment should be one of the following types:
 
 has down_payment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_down_payment',
     json_ld   => 'downPayment',
 );
 
@@ -77,7 +77,7 @@ A early_prepayment_penalty should be one of the following types:
 
 has early_prepayment_penalty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_early_prepayment_penalty',
     json_ld   => 'earlyPrepaymentPenalty',
 );
 
@@ -101,7 +101,7 @@ A loan_payment_amount should be one of the following types:
 
 has loan_payment_amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_payment_amount',
     json_ld   => 'loanPaymentAmount',
 );
 
@@ -126,7 +126,7 @@ A loan_payment_frequency should be one of the following types:
 
 has loan_payment_frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loan_payment_frequency',
     json_ld   => 'loanPaymentFrequency',
 );
 
@@ -152,7 +152,7 @@ A number_of_loan_payments should be one of the following types:
 
 has number_of_loan_payments => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_loan_payments',
     json_ld   => 'numberOfLoanPayments',
 );
 

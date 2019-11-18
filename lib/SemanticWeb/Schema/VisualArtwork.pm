@@ -52,7 +52,7 @@ A art_edition should be one of the following types:
 
 has art_edition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_art_edition',
     json_ld   => 'artEdition',
 );
 
@@ -78,7 +78,7 @@ A art_medium should be one of the following types:
 
 has art_medium => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_art_medium',
     json_ld   => 'artMedium',
 );
 
@@ -103,7 +103,7 @@ A artform should be one of the following types:
 
 has artform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_artform',
     json_ld   => 'artform',
 );
 
@@ -129,7 +129,7 @@ A artist should be one of the following types:
 
 has artist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_artist',
     json_ld   => 'artist',
 );
 
@@ -154,7 +154,7 @@ A artwork_surface should be one of the following types:
 
 has artwork_surface => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_artwork_surface',
     json_ld   => 'artworkSurface',
 );
 
@@ -178,7 +178,7 @@ A colorist should be one of the following types:
 
 has colorist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_colorist',
     json_ld   => 'colorist',
 );
 
@@ -204,7 +204,7 @@ A depth should be one of the following types:
 
 has depth => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_depth',
     json_ld   => 'depth',
 );
 
@@ -230,7 +230,7 @@ A height should be one of the following types:
 
 has height => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_height',
     json_ld   => 'height',
 );
 
@@ -255,7 +255,7 @@ A inker should be one of the following types:
 
 has inker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_inker',
     json_ld   => 'inker',
 );
 
@@ -280,7 +280,7 @@ A letterer should be one of the following types:
 
 has letterer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_letterer',
     json_ld   => 'letterer',
 );
 
@@ -304,7 +304,7 @@ A penciler should be one of the following types:
 
 has penciler => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_penciler',
     json_ld   => 'penciler',
 );
 
@@ -329,7 +329,7 @@ A surface should be one of the following types:
 
 has surface => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_surface',
     json_ld   => 'surface',
 );
 
@@ -355,7 +355,7 @@ A width should be one of the following types:
 
 has width => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_width',
     json_ld   => 'width',
 );
 

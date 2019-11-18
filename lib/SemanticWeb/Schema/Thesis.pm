@@ -49,7 +49,7 @@ A in_support_of should be one of the following types:
 
 has in_support_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_support_of',
     json_ld   => 'inSupportOf',
 );
 

@@ -79,7 +79,7 @@ A end_date should be one of the following types:
 
 has end_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_date',
     json_ld   => 'endDate',
 );
 
@@ -105,7 +105,7 @@ A issn should be one of the following types:
 
 has issn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issn',
     json_ld   => 'issn',
 );
 
@@ -134,7 +134,7 @@ A start_date should be one of the following types:
 
 has start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_date',
     json_ld   => 'startDate',
 );
 

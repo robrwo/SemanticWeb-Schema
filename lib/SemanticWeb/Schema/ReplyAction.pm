@@ -58,7 +58,7 @@ A result_comment should be one of the following types:
 
 has result_comment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_result_comment',
     json_ld   => 'resultComment',
 );
 

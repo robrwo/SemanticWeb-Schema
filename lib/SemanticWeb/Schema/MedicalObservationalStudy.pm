@@ -55,7 +55,7 @@ A study_design should be one of the following types:
 
 has study_design => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_study_design',
     json_ld   => 'studyDesign',
 );
 

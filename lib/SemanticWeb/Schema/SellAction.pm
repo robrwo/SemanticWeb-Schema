@@ -51,7 +51,7 @@ A buyer should be one of the following types:
 
 has buyer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_buyer',
     json_ld   => 'buyer',
 );
 
@@ -75,7 +75,7 @@ A warranty_promise should be one of the following types:
 
 has warranty_promise => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_warranty_promise',
     json_ld   => 'warrantyPromise',
 );
 

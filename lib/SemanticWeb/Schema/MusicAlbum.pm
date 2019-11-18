@@ -49,7 +49,7 @@ A album_production_type should be one of the following types:
 
 has album_production_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_album_production_type',
     json_ld   => 'albumProductionType',
 );
 
@@ -73,7 +73,7 @@ A album_release should be one of the following types:
 
 has album_release => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_album_release',
     json_ld   => 'albumRelease',
 );
 
@@ -97,7 +97,7 @@ A album_release_type should be one of the following types:
 
 has album_release_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_album_release_type',
     json_ld   => 'albumReleaseType',
 );
 
@@ -123,7 +123,7 @@ A by_artist should be one of the following types:
 
 has by_artist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_by_artist',
     json_ld   => 'byArtist',
 );
 

@@ -48,7 +48,7 @@ A code_value should be one of the following types:
 
 has code_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_code_value',
     json_ld   => 'codeValue',
 );
 
@@ -80,7 +80,7 @@ A in_code_set should be one of the following types:
 
 has in_code_set => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_code_set',
     json_ld   => 'inCodeSet',
 );
 

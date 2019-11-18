@@ -48,7 +48,7 @@ A arterial_branch should be one of the following types:
 
 has arterial_branch => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arterial_branch',
     json_ld   => 'arterialBranch',
 );
 
@@ -72,7 +72,7 @@ A source should be one of the following types:
 
 has source => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_source',
     json_ld   => 'source',
 );
 
@@ -96,7 +96,7 @@ A supply_to should be one of the following types:
 
 has supply_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_supply_to',
     json_ld   => 'supplyTo',
 );
 

@@ -48,7 +48,7 @@ A map_type should be one of the following types:
 
 has map_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_map_type',
     json_ld   => 'mapType',
 );
 
