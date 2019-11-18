@@ -32,7 +32,4 @@ cmp_json(
 
 note $json;
 
-eval { require SemanticWeb::Schema::Place; };
-ok(!$@, 'load SemanticWeb::Schema::Place') || diag $@;
-
 done_testing;
