@@ -4,7 +4,7 @@ SemanticWeb::Schema - Moo classes for http://schema.org/ classes
 
 # VERSION
 
-version v5.0.0
+version v5.0.1
 
 # SYNOPSIS
 
