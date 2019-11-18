@@ -52,7 +52,7 @@ A infectious_agent should be one of the following types:
 
 has infectious_agent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_infectious_agent',
     json_ld   => 'infectiousAgent',
 );
 
@@ -77,7 +77,7 @@ A infectious_agent_class should be one of the following types:
 
 has infectious_agent_class => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_infectious_agent_class',
     json_ld   => 'infectiousAgentClass',
 );
 
@@ -102,7 +102,7 @@ A transmission_method should be one of the following types:
 
 has transmission_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_transmission_method',
     json_ld   => 'transmissionMethod',
 );
 

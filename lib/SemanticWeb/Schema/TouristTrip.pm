@@ -63,7 +63,7 @@ A tourist_type should be one of the following types:
 
 has tourist_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tourist_type',
     json_ld   => 'touristType',
 );
 

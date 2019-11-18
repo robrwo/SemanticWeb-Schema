@@ -49,7 +49,7 @@ A item should be one of the following types:
 
 has item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item',
     json_ld   => 'item',
 );
 
@@ -73,7 +73,7 @@ A next_item should be one of the following types:
 
 has next_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_next_item',
     json_ld   => 'nextItem',
 );
 
@@ -99,7 +99,7 @@ A position should be one of the following types:
 
 has position => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_position',
     json_ld   => 'position',
 );
 
@@ -123,7 +123,7 @@ A previous_item should be one of the following types:
 
 has previous_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_previous_item',
     json_ld   => 'previousItem',
 );
 

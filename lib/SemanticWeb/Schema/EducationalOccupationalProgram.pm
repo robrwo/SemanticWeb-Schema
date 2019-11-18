@@ -57,7 +57,7 @@ A educational_credential_awarded should be one of the following types:
 
 has educational_credential_awarded => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_credential_awarded',
     json_ld   => 'educationalCredentialAwarded',
 );
 
@@ -85,7 +85,7 @@ A occupational_credential_awarded should be one of the following types:
 
 has occupational_credential_awarded => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupational_credential_awarded',
     json_ld   => 'occupationalCredentialAwarded',
 );
 
@@ -111,7 +111,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -141,7 +141,7 @@ A program_prerequisites should be one of the following types:
 
 has program_prerequisites => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_program_prerequisites',
     json_ld   => 'programPrerequisites',
 );
 
@@ -169,7 +169,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -193,7 +193,7 @@ A salary_upon_completion should be one of the following types:
 
 has salary_upon_completion => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_salary_upon_completion',
     json_ld   => 'salaryUponCompletion',
 );
 
@@ -217,7 +217,7 @@ A time_to_complete should be one of the following types:
 
 has time_to_complete => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_time_to_complete',
     json_ld   => 'timeToComplete',
 );
 

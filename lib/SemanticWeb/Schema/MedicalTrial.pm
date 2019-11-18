@@ -51,7 +51,7 @@ A phase should be one of the following types:
 
 has phase => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_phase',
     json_ld   => 'phase',
 );
 
@@ -75,7 +75,7 @@ A trial_design should be one of the following types:
 
 has trial_design => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trial_design',
     json_ld   => 'trialDesign',
 );
 

@@ -52,7 +52,7 @@ A estimated_cost should be one of the following types:
 
 has estimated_cost => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimated_cost',
     json_ld   => 'estimatedCost',
 );
 
@@ -83,7 +83,7 @@ A perform_time should be one of the following types:
 
 has perform_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_perform_time',
     json_ld   => 'performTime',
 );
 
@@ -114,7 +114,7 @@ A prep_time should be one of the following types:
 
 has prep_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_prep_time',
     json_ld   => 'prepTime',
 );
 
@@ -145,7 +145,7 @@ A step should be one of the following types:
 
 has step => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_step',
     json_ld   => 'step',
 );
 
@@ -174,7 +174,7 @@ A steps should be one of the following types:
 
 has steps => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_steps',
     json_ld   => 'steps',
 );
 
@@ -201,7 +201,7 @@ A supply should be one of the following types:
 
 has supply => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_supply',
     json_ld   => 'supply',
 );
 
@@ -228,7 +228,7 @@ A tool should be one of the following types:
 
 has tool => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tool',
     json_ld   => 'tool',
 );
 
@@ -259,7 +259,7 @@ A total_time should be one of the following types:
 
 has total_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_time',
     json_ld   => 'totalTime',
 );
 
@@ -286,7 +286,7 @@ A yield should be one of the following types:
 
 has yield => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_yield',
     json_ld   => 'yield',
 );
 

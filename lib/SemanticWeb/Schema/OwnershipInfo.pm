@@ -51,7 +51,7 @@ A acquired_from should be one of the following types:
 
 has acquired_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_acquired_from',
     json_ld   => 'acquiredFrom',
 );
 
@@ -75,7 +75,7 @@ A owned_from should be one of the following types:
 
 has owned_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_owned_from',
     json_ld   => 'ownedFrom',
 );
 
@@ -99,7 +99,7 @@ A owned_through should be one of the following types:
 
 has owned_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_owned_through',
     json_ld   => 'ownedThrough',
 );
 
@@ -125,7 +125,7 @@ A type_of_good should be one of the following types:
 
 has type_of_good => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_type_of_good',
     json_ld   => 'typeOfGood',
 );
 

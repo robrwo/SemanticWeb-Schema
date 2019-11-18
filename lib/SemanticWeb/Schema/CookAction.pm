@@ -51,7 +51,7 @@ A food_establishment should be one of the following types:
 
 has food_establishment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_food_establishment',
     json_ld   => 'foodEstablishment',
 );
 
@@ -76,7 +76,7 @@ A food_event should be one of the following types:
 
 has food_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_food_event',
     json_ld   => 'foodEvent',
 );
 
@@ -101,7 +101,7 @@ A recipe should be one of the following types:
 
 has recipe => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipe',
     json_ld   => 'recipe',
 );
 

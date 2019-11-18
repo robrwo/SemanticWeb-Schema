@@ -77,7 +77,7 @@ A price should be one of the following types:
 
 has price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price',
     json_ld   => 'price',
 );
 
@@ -115,7 +115,7 @@ A price_currency should be one of the following types:
 
 has price_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_currency',
     json_ld   => 'priceCurrency',
 );
 
@@ -140,7 +140,7 @@ A price_specification should be one of the following types:
 
 has price_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_specification',
     json_ld   => 'priceSpecification',
 );
 

@@ -50,7 +50,7 @@ A broadcast_channel_id should be one of the following types:
 
 has broadcast_channel_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_channel_id',
     json_ld   => 'broadcastChannelId',
 );
 
@@ -78,7 +78,7 @@ A broadcast_frequency should be one of the following types:
 
 has broadcast_frequency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_frequency',
     json_ld   => 'broadcastFrequency',
 );
 
@@ -103,7 +103,7 @@ A broadcast_service_tier should be one of the following types:
 
 has broadcast_service_tier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_service_tier',
     json_ld   => 'broadcastServiceTier',
 );
 
@@ -127,7 +127,7 @@ A genre should be one of the following types:
 
 has genre => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_genre',
     json_ld   => 'genre',
 );
 
@@ -151,7 +151,7 @@ A in_broadcast_lineup should be one of the following types:
 
 has in_broadcast_lineup => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_in_broadcast_lineup',
     json_ld   => 'inBroadcastLineup',
 );
 
@@ -175,7 +175,7 @@ A provides_broadcast_service should be one of the following types:
 
 has provides_broadcast_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provides_broadcast_service',
     json_ld   => 'providesBroadcastService',
 );
 

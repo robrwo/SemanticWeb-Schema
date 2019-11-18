@@ -61,7 +61,7 @@ A additional_property should be one of the following types:
 
 has additional_property => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_property',
     json_ld   => 'additionalProperty',
 );
 
@@ -86,7 +86,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -110,7 +110,7 @@ A audience should be one of the following types:
 
 has audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience',
     json_ld   => 'audience',
 );
 
@@ -134,7 +134,7 @@ A award should be one of the following types:
 
 has award => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_award',
     json_ld   => 'award',
 );
 
@@ -158,7 +158,7 @@ A awards should be one of the following types:
 
 has awards => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_awards',
     json_ld   => 'awards',
 );
 
@@ -185,7 +185,7 @@ A brand should be one of the following types:
 
 has brand => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_brand',
     json_ld   => 'brand',
 );
 
@@ -214,7 +214,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -238,7 +238,7 @@ A color should be one of the following types:
 
 has color => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_color',
     json_ld   => 'color',
 );
 
@@ -264,7 +264,7 @@ A depth should be one of the following types:
 
 has depth => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_depth',
     json_ld   => 'depth',
 );
 
@@ -313,7 +313,7 @@ A gtin should be one of the following types:
 
 has gtin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin',
     json_ld   => 'gtin',
 );
 
@@ -346,7 +346,7 @@ A gtin12 should be one of the following types:
 
 has gtin12 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin12',
     json_ld   => 'gtin12',
 );
 
@@ -379,7 +379,7 @@ A gtin13 should be one of the following types:
 
 has gtin13 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin13',
     json_ld   => 'gtin13',
 );
 
@@ -409,7 +409,7 @@ A gtin14 should be one of the following types:
 
 has gtin14 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin14',
     json_ld   => 'gtin14',
 );
 
@@ -442,7 +442,7 @@ A gtin8 should be one of the following types:
 
 has gtin8 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_gtin8',
     json_ld   => 'gtin8',
 );
 
@@ -466,7 +466,7 @@ A has_product_return_policy should be one of the following types:
 
 has has_product_return_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_product_return_policy',
     json_ld   => 'hasProductReturnPolicy',
 );
 
@@ -492,7 +492,7 @@ A height should be one of the following types:
 
 has height => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_height',
     json_ld   => 'height',
 );
 
@@ -517,7 +517,7 @@ A is_accessory_or_spare_part_for should be one of the following types:
 
 has is_accessory_or_spare_part_for => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accessory_or_spare_part_for',
     json_ld   => 'isAccessoryOrSparePartFor',
 );
 
@@ -542,7 +542,7 @@ A is_consumable_for should be one of the following types:
 
 has is_consumable_for => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_consumable_for',
     json_ld   => 'isConsumableFor',
 );
 
@@ -568,7 +568,7 @@ A is_related_to should be one of the following types:
 
 has is_related_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_related_to',
     json_ld   => 'isRelatedTo',
 );
 
@@ -594,7 +594,7 @@ A is_similar_to should be one of the following types:
 
 has is_similar_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_similar_to',
     json_ld   => 'isSimilarTo',
 );
 
@@ -620,7 +620,7 @@ A item_condition should be one of the following types:
 
 has item_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_condition',
     json_ld   => 'itemCondition',
 );
 
@@ -646,7 +646,7 @@ A logo should be one of the following types:
 
 has logo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_logo',
     json_ld   => 'logo',
 );
 
@@ -670,7 +670,7 @@ A manufacturer should be one of the following types:
 
 has manufacturer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_manufacturer',
     json_ld   => 'manufacturer',
 );
 
@@ -696,7 +696,7 @@ A material should be one of the following types:
 
 has material => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_material',
     json_ld   => 'material',
 );
 
@@ -725,7 +725,7 @@ A model should be one of the following types:
 
 has model => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_model',
     json_ld   => 'model',
 );
 
@@ -750,7 +750,7 @@ A mpn should be one of the following types:
 
 has mpn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mpn',
     json_ld   => 'mpn',
 );
 
@@ -781,7 +781,7 @@ A nsn should be one of the following types:
 
 has nsn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_nsn',
     json_ld   => 'nsn',
 );
 
@@ -807,7 +807,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -836,7 +836,7 @@ A product_id should be one of the following types:
 
 has product_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_product_id',
     json_ld   => 'productID',
 );
 
@@ -860,7 +860,7 @@ A production_date should be one of the following types:
 
 has production_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_date',
     json_ld   => 'productionDate',
 );
 
@@ -884,7 +884,7 @@ A purchase_date should be one of the following types:
 
 has purchase_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_purchase_date',
     json_ld   => 'purchaseDate',
 );
 
@@ -909,7 +909,7 @@ A release_date should be one of the following types:
 
 has release_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_release_date',
     json_ld   => 'releaseDate',
 );
 
@@ -933,7 +933,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -957,7 +957,7 @@ A reviews should be one of the following types:
 
 has reviews => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviews',
     json_ld   => 'reviews',
 );
 
@@ -982,7 +982,7 @@ A sku should be one of the following types:
 
 has sku => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sku',
     json_ld   => 'sku',
 );
 
@@ -1006,7 +1006,7 @@ A slogan should be one of the following types:
 
 has slogan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_slogan',
     json_ld   => 'slogan',
 );
 
@@ -1030,7 +1030,7 @@ A weight should be one of the following types:
 
 has weight => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_weight',
     json_ld   => 'weight',
 );
 
@@ -1056,7 +1056,7 @@ A width should be one of the following types:
 
 has width => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_width',
     json_ld   => 'width',
 );
 

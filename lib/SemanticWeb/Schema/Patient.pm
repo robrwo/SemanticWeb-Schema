@@ -49,7 +49,7 @@ A diagnosis should be one of the following types:
 
 has diagnosis => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diagnosis',
     json_ld   => 'diagnosis',
 );
 
@@ -73,7 +73,7 @@ A drug should be one of the following types:
 
 has drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug',
     json_ld   => 'drug',
 );
 
@@ -98,7 +98,7 @@ A health_condition should be one of the following types:
 
 has health_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_condition',
     json_ld   => 'healthCondition',
 );
 

@@ -50,7 +50,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -80,7 +80,7 @@ A area_served should be one of the following types:
 
 has area_served => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area_served',
     json_ld   => 'areaServed',
 );
 
@@ -104,7 +104,7 @@ A audience should be one of the following types:
 
 has audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience',
     json_ld   => 'audience',
 );
 
@@ -129,7 +129,7 @@ A available_channel should be one of the following types:
 
 has available_channel => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_channel',
     json_ld   => 'availableChannel',
 );
 
@@ -153,7 +153,7 @@ A award should be one of the following types:
 
 has award => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_award',
     json_ld   => 'award',
 );
 
@@ -180,7 +180,7 @@ A brand should be one of the following types:
 
 has brand => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_brand',
     json_ld   => 'brand',
 );
 
@@ -209,7 +209,7 @@ A broker should be one of the following types:
 
 has broker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broker',
     json_ld   => 'broker',
 );
 
@@ -238,7 +238,7 @@ A category should be one of the following types:
 
 has category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_category',
     json_ld   => 'category',
 );
 
@@ -263,7 +263,7 @@ A has_offer_catalog should be one of the following types:
 
 has has_offer_catalog => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_offer_catalog',
     json_ld   => 'hasOfferCatalog',
 );
 
@@ -287,7 +287,7 @@ A hours_available should be one of the following types:
 
 has hours_available => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_hours_available',
     json_ld   => 'hoursAvailable',
 );
 
@@ -313,7 +313,7 @@ A is_related_to should be one of the following types:
 
 has is_related_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_related_to',
     json_ld   => 'isRelatedTo',
 );
 
@@ -339,7 +339,7 @@ A is_similar_to should be one of the following types:
 
 has is_similar_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_similar_to',
     json_ld   => 'isSimilarTo',
 );
 
@@ -365,7 +365,7 @@ A logo should be one of the following types:
 
 has logo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_logo',
     json_ld   => 'logo',
 );
 
@@ -391,7 +391,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 
@@ -415,7 +415,7 @@ A produces should be one of the following types:
 
 has produces => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_produces',
     json_ld   => 'produces',
 );
 
@@ -443,7 +443,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -467,7 +467,7 @@ A provider_mobility should be one of the following types:
 
 has provider_mobility => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider_mobility',
     json_ld   => 'providerMobility',
 );
 
@@ -491,7 +491,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -519,7 +519,7 @@ A service_area should be one of the following types:
 
 has service_area => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_area',
     json_ld   => 'serviceArea',
 );
 
@@ -543,7 +543,7 @@ A service_audience should be one of the following types:
 
 has service_audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_audience',
     json_ld   => 'serviceAudience',
 );
 
@@ -567,7 +567,7 @@ A service_output should be one of the following types:
 
 has service_output => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_output',
     json_ld   => 'serviceOutput',
 );
 
@@ -592,7 +592,7 @@ A service_type should be one of the following types:
 
 has service_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_type',
     json_ld   => 'serviceType',
 );
 
@@ -616,7 +616,7 @@ A slogan should be one of the following types:
 
 has slogan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_slogan',
     json_ld   => 'slogan',
 );
 
@@ -640,7 +640,7 @@ A terms_of_service should be one of the following types:
 
 has terms_of_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_terms_of_service',
     json_ld   => 'termsOfService',
 );
 

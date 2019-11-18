@@ -51,7 +51,7 @@ A diagnosis should be one of the following types:
 
 has diagnosis => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diagnosis',
     json_ld   => 'diagnosis',
 );
 
@@ -76,7 +76,7 @@ A distinguishing_sign should be one of the following types:
 
 has distinguishing_sign => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_distinguishing_sign',
     json_ld   => 'distinguishingSign',
 );
 

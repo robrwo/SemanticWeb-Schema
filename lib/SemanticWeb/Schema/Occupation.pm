@@ -50,7 +50,7 @@ A education_requirements should be one of the following types:
 
 has education_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_education_requirements',
     json_ld   => 'educationRequirements',
 );
 
@@ -81,7 +81,7 @@ A estimated_salary should be one of the following types:
 
 has estimated_salary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimated_salary',
     json_ld   => 'estimatedSalary',
 );
 
@@ -105,7 +105,7 @@ A experience_requirements should be one of the following types:
 
 has experience_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_experience_requirements',
     json_ld   => 'experienceRequirements',
 );
 
@@ -131,7 +131,7 @@ A occupation_location should be one of the following types:
 
 has occupation_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupation_location',
     json_ld   => 'occupationLocation',
 );
 
@@ -169,7 +169,7 @@ A occupational_category should be one of the following types:
 
 has occupational_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupational_category',
     json_ld   => 'occupationalCategory',
 );
 
@@ -195,7 +195,7 @@ A qualifications should be one of the following types:
 
 has qualifications => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_qualifications',
     json_ld   => 'qualifications',
 );
 
@@ -219,7 +219,7 @@ A responsibilities should be one of the following types:
 
 has responsibilities => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_responsibilities',
     json_ld   => 'responsibilities',
 );
 
@@ -247,7 +247,7 @@ A skills should be one of the following types:
 
 has skills => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_skills',
     json_ld   => 'skills',
 );
 

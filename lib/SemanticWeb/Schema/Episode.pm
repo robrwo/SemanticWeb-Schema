@@ -51,7 +51,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -76,7 +76,7 @@ A actors should be one of the following types:
 
 has actors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actors',
     json_ld   => 'actors',
 );
 
@@ -102,7 +102,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -127,7 +127,7 @@ A directors should be one of the following types:
 
 has directors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_directors',
     json_ld   => 'directors',
 );
 
@@ -153,7 +153,7 @@ A episode_number should be one of the following types:
 
 has episode_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_episode_number',
     json_ld   => 'episodeNumber',
 );
 
@@ -179,7 +179,7 @@ A music_by should be one of the following types:
 
 has music_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_by',
     json_ld   => 'musicBy',
 );
 
@@ -203,7 +203,7 @@ A part_of_season should be one of the following types:
 
 has part_of_season => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_season',
     json_ld   => 'partOfSeason',
 );
 
@@ -227,7 +227,7 @@ A part_of_series should be one of the following types:
 
 has part_of_series => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_series',
     json_ld   => 'partOfSeries',
 );
 
@@ -252,7 +252,7 @@ A production_company should be one of the following types:
 
 has production_company => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_company',
     json_ld   => 'productionCompany',
 );
 
@@ -276,7 +276,7 @@ A trailer should be one of the following types:
 
 has trailer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trailer',
     json_ld   => 'trailer',
 );
 

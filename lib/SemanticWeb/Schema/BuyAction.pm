@@ -53,7 +53,7 @@ A seller should be one of the following types:
 
 has seller => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seller',
     json_ld   => 'seller',
 );
 
@@ -79,7 +79,7 @@ A vendor should be one of the following types:
 
 has vendor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vendor',
     json_ld   => 'vendor',
 );
 
@@ -103,7 +103,7 @@ A warranty_promise should be one of the following types:
 
 has warranty_promise => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_warranty_promise',
     json_ld   => 'warrantyPromise',
 );
 

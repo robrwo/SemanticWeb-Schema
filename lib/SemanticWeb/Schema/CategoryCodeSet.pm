@@ -48,7 +48,7 @@ A has_category_code should be one of the following types:
 
 has has_category_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_category_code',
     json_ld   => 'hasCategoryCode',
 );
 

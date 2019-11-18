@@ -48,7 +48,7 @@ A sub_test should be one of the following types:
 
 has sub_test => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_test',
     json_ld   => 'subTest',
 );
 

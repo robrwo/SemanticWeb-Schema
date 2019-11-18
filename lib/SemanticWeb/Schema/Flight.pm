@@ -50,7 +50,7 @@ A aircraft should be one of the following types:
 
 has aircraft => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aircraft',
     json_ld   => 'aircraft',
 );
 
@@ -74,7 +74,7 @@ A arrival_airport should be one of the following types:
 
 has arrival_airport => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_airport',
     json_ld   => 'arrivalAirport',
 );
 
@@ -98,7 +98,7 @@ A arrival_gate should be one of the following types:
 
 has arrival_gate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_gate',
     json_ld   => 'arrivalGate',
 );
 
@@ -122,7 +122,7 @@ A arrival_terminal should be one of the following types:
 
 has arrival_terminal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_terminal',
     json_ld   => 'arrivalTerminal',
 );
 
@@ -147,7 +147,7 @@ A boarding_policy should be one of the following types:
 
 has boarding_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_boarding_policy',
     json_ld   => 'boardingPolicy',
 );
 
@@ -172,7 +172,7 @@ A carrier should be one of the following types:
 
 has carrier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_carrier',
     json_ld   => 'carrier',
 );
 
@@ -196,7 +196,7 @@ A departure_airport should be one of the following types:
 
 has departure_airport => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_airport',
     json_ld   => 'departureAirport',
 );
 
@@ -220,7 +220,7 @@ A departure_gate should be one of the following types:
 
 has departure_gate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_gate',
     json_ld   => 'departureGate',
 );
 
@@ -244,7 +244,7 @@ A departure_terminal should be one of the following types:
 
 has departure_terminal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_terminal',
     json_ld   => 'departureTerminal',
 );
 
@@ -270,7 +270,7 @@ A estimated_flight_duration should be one of the following types:
 
 has estimated_flight_duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_estimated_flight_duration',
     json_ld   => 'estimatedFlightDuration',
 );
 
@@ -296,7 +296,7 @@ A flight_distance should be one of the following types:
 
 has flight_distance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_flight_distance',
     json_ld   => 'flightDistance',
 );
 
@@ -322,7 +322,7 @@ A flight_number should be one of the following types:
 
 has flight_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_flight_number',
     json_ld   => 'flightNumber',
 );
 
@@ -346,7 +346,7 @@ A meal_service should be one of the following types:
 
 has meal_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_meal_service',
     json_ld   => 'mealService',
 );
 
@@ -373,7 +373,7 @@ A seller should be one of the following types:
 
 has seller => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seller',
     json_ld   => 'seller',
 );
 
@@ -397,7 +397,7 @@ A web_checkin_time should be one of the following types:
 
 has web_checkin_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_web_checkin_time',
     json_ld   => 'webCheckinTime',
 );
 

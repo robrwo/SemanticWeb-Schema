@@ -49,7 +49,7 @@ A health_plan_coinsurance_option should be one of the following types:
 
 has health_plan_coinsurance_option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_coinsurance_option',
     json_ld   => 'healthPlanCoinsuranceOption',
 );
 
@@ -73,7 +73,7 @@ A health_plan_coinsurance_rate should be one of the following types:
 
 has health_plan_coinsurance_rate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_coinsurance_rate',
     json_ld   => 'healthPlanCoinsuranceRate',
 );
 
@@ -97,7 +97,7 @@ A health_plan_copay should be one of the following types:
 
 has health_plan_copay => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_copay',
     json_ld   => 'healthPlanCopay',
 );
 
@@ -122,7 +122,7 @@ A health_plan_copay_option should be one of the following types:
 
 has health_plan_copay_option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_copay_option',
     json_ld   => 'healthPlanCopayOption',
 );
 
@@ -146,7 +146,7 @@ A health_plan_pharmacy_category should be one of the following types:
 
 has health_plan_pharmacy_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_pharmacy_category',
     json_ld   => 'healthPlanPharmacyCategory',
 );
 

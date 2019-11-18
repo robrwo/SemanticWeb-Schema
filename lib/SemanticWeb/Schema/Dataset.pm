@@ -48,7 +48,7 @@ A catalog should be one of the following types:
 
 has catalog => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_catalog',
     json_ld   => 'catalog',
 );
 
@@ -73,7 +73,7 @@ A dataset_time_interval should be one of the following types:
 
 has dataset_time_interval => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dataset_time_interval',
     json_ld   => 'datasetTimeInterval',
 );
 
@@ -98,7 +98,7 @@ A distribution should be one of the following types:
 
 has distribution => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_distribution',
     json_ld   => 'distribution',
 );
 
@@ -123,7 +123,7 @@ A included_data_catalog should be one of the following types:
 
 has included_data_catalog => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_included_data_catalog',
     json_ld   => 'includedDataCatalog',
 );
 
@@ -147,7 +147,7 @@ A included_in_data_catalog should be one of the following types:
 
 has included_in_data_catalog => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_included_in_data_catalog',
     json_ld   => 'includedInDataCatalog',
 );
 
@@ -173,7 +173,7 @@ A issn should be one of the following types:
 
 has issn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issn',
     json_ld   => 'issn',
 );
 
@@ -228,7 +228,7 @@ A measurement_technique should be one of the following types:
 
 has measurement_technique => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_measurement_technique',
     json_ld   => 'measurementTechnique',
 );
 
@@ -256,7 +256,7 @@ A variable_measured should be one of the following types:
 
 has variable_measured => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_variable_measured',
     json_ld   => 'variableMeasured',
 );
 

@@ -53,7 +53,7 @@ A competency_required should be one of the following types:
 
 has competency_required => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_competency_required',
     json_ld   => 'competencyRequired',
 );
 
@@ -80,7 +80,7 @@ A credential_category should be one of the following types:
 
 has credential_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_credential_category',
     json_ld   => 'credentialCategory',
 );
 
@@ -108,7 +108,7 @@ A educational_level should be one of the following types:
 
 has educational_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_educational_level',
     json_ld   => 'educationalLevel',
 );
 
@@ -134,7 +134,7 @@ A recognized_by should be one of the following types:
 
 has recognized_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recognized_by',
     json_ld   => 'recognizedBy',
 );
 
@@ -158,7 +158,7 @@ A valid_for should be one of the following types:
 
 has valid_for => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_for',
     json_ld   => 'validFor',
 );
 
@@ -182,7 +182,7 @@ A valid_in should be one of the following types:
 
 has valid_in => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_in',
     json_ld   => 'validIn',
 );
 

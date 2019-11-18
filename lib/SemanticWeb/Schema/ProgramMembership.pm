@@ -50,7 +50,7 @@ A hosting_organization should be one of the following types:
 
 has hosting_organization => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_hosting_organization',
     json_ld   => 'hostingOrganization',
 );
 
@@ -77,7 +77,7 @@ A member should be one of the following types:
 
 has member => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_member',
     json_ld   => 'member',
 );
 
@@ -103,7 +103,7 @@ A members should be one of the following types:
 
 has members => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_members',
     json_ld   => 'members',
 );
 
@@ -127,7 +127,7 @@ A membership_number should be one of the following types:
 
 has membership_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_membership_number',
     json_ld   => 'membershipNumber',
 );
 
@@ -155,7 +155,7 @@ A membership_points_earned should be one of the following types:
 
 has membership_points_earned => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_membership_points_earned',
     json_ld   => 'membershipPointsEarned',
 );
 
@@ -179,7 +179,7 @@ A program_name should be one of the following types:
 
 has program_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_program_name',
     json_ld   => 'programName',
 );
 

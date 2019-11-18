@@ -55,7 +55,7 @@ A artist should be one of the following types:
 
 has artist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_artist',
     json_ld   => 'artist',
 );
 
@@ -79,7 +79,7 @@ A colorist should be one of the following types:
 
 has colorist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_colorist',
     json_ld   => 'colorist',
 );
 
@@ -104,7 +104,7 @@ A inker should be one of the following types:
 
 has inker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_inker',
     json_ld   => 'inker',
 );
 
@@ -129,7 +129,7 @@ A letterer should be one of the following types:
 
 has letterer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_letterer',
     json_ld   => 'letterer',
 );
 
@@ -153,7 +153,7 @@ A penciler should be one of the following types:
 
 has penciler => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_penciler',
     json_ld   => 'penciler',
 );
 
@@ -179,7 +179,7 @@ A variant_cover should be one of the following types:
 
 has variant_cover => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_variant_cover',
     json_ld   => 'variantCover',
 );
 

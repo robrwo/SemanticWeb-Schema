@@ -48,7 +48,7 @@ A available_test should be one of the following types:
 
 has available_test => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_test',
     json_ld   => 'availableTest',
 );
 

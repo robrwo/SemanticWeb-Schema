@@ -48,7 +48,7 @@ A part_of_tv_series should be one of the following types:
 
 has part_of_tv_series => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_tv_series',
     json_ld   => 'partOfTVSeries',
 );
 

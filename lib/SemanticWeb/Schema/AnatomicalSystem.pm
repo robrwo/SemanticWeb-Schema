@@ -55,7 +55,7 @@ A associated_pathophysiology should be one of the following types:
 
 has associated_pathophysiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_pathophysiology',
     json_ld   => 'associatedPathophysiology',
 );
 
@@ -83,7 +83,7 @@ A comprised_of should be one of the following types:
 
 has comprised_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comprised_of',
     json_ld   => 'comprisedOf',
 );
 
@@ -107,7 +107,7 @@ A related_condition should be one of the following types:
 
 has related_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_condition',
     json_ld   => 'relatedCondition',
 );
 
@@ -132,7 +132,7 @@ A related_structure should be one of the following types:
 
 has related_structure => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_structure',
     json_ld   => 'relatedStructure',
 );
 
@@ -156,7 +156,7 @@ A related_therapy should be one of the following types:
 
 has related_therapy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_therapy',
     json_ld   => 'relatedTherapy',
 );
 

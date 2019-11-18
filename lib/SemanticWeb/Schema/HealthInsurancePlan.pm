@@ -49,7 +49,7 @@ A benefits_summary_url should be one of the following types:
 
 has benefits_summary_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_benefits_summary_url',
     json_ld   => 'benefitsSummaryUrl',
 );
 
@@ -73,7 +73,7 @@ A contact_point should be one of the following types:
 
 has contact_point => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contact_point',
     json_ld   => 'contactPoint',
 );
 
@@ -97,7 +97,7 @@ A health_plan_drug_option should be one of the following types:
 
 has health_plan_drug_option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_drug_option',
     json_ld   => 'healthPlanDrugOption',
 );
 
@@ -121,7 +121,7 @@ A health_plan_drug_tier should be one of the following types:
 
 has health_plan_drug_tier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_drug_tier',
     json_ld   => 'healthPlanDrugTier',
 );
 
@@ -146,7 +146,7 @@ A health_plan_id should be one of the following types:
 
 has health_plan_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_id',
     json_ld   => 'healthPlanId',
 );
 
@@ -171,7 +171,7 @@ A health_plan_marketing_url should be one of the following types:
 
 has health_plan_marketing_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_marketing_url',
     json_ld   => 'healthPlanMarketingUrl',
 );
 
@@ -195,7 +195,7 @@ A includes_health_plan_formulary should be one of the following types:
 
 has includes_health_plan_formulary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_includes_health_plan_formulary',
     json_ld   => 'includesHealthPlanFormulary',
 );
 
@@ -219,7 +219,7 @@ A includes_health_plan_network should be one of the following types:
 
 has includes_health_plan_network => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_includes_health_plan_network',
     json_ld   => 'includesHealthPlanNetwork',
 );
 
@@ -244,7 +244,7 @@ A uses_health_plan_id_standard should be one of the following types:
 
 has uses_health_plan_id_standard => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_uses_health_plan_id_standard',
     json_ld   => 'usesHealthPlanIdStandard',
 );
 

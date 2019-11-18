@@ -92,7 +92,7 @@ A constraining_property should be one of the following types:
 
 has constraining_property => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_constraining_property',
     json_ld   => 'constrainingProperty',
 );
 
@@ -127,7 +127,7 @@ A num_constraints should be one of the following types:
 
 has num_constraints => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_num_constraints',
     json_ld   => 'numConstraints',
 );
 
@@ -158,7 +158,7 @@ A population_type should be one of the following types:
 
 has population_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_population_type',
     json_ld   => 'populationType',
 );
 

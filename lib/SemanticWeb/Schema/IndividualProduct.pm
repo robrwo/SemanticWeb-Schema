@@ -51,7 +51,7 @@ A serial_number should be one of the following types:
 
 has serial_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serial_number',
     json_ld   => 'serialNumber',
 );
 

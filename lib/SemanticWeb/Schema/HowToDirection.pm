@@ -52,7 +52,7 @@ A after_media should be one of the following types:
 
 has after_media => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_after_media',
     json_ld   => 'afterMedia',
 );
 
@@ -79,7 +79,7 @@ A before_media should be one of the following types:
 
 has before_media => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_before_media',
     json_ld   => 'beforeMedia',
 );
 
@@ -106,7 +106,7 @@ A during_media should be one of the following types:
 
 has during_media => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_during_media',
     json_ld   => 'duringMedia',
 );
 
@@ -137,7 +137,7 @@ A perform_time should be one of the following types:
 
 has perform_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_perform_time',
     json_ld   => 'performTime',
 );
 
@@ -168,7 +168,7 @@ A prep_time should be one of the following types:
 
 has prep_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_prep_time',
     json_ld   => 'prepTime',
 );
 
@@ -195,7 +195,7 @@ A supply should be one of the following types:
 
 has supply => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_supply',
     json_ld   => 'supply',
 );
 
@@ -222,7 +222,7 @@ A tool should be one of the following types:
 
 has tool => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tool',
     json_ld   => 'tool',
 );
 
@@ -253,7 +253,7 @@ A total_time should be one of the following types:
 
 has total_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_time',
     json_ld   => 'totalTime',
 );
 

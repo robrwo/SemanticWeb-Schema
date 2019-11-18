@@ -51,7 +51,7 @@ A action_option should be one of the following types:
 
 has action_option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action_option',
     json_ld   => 'actionOption',
 );
 
@@ -77,7 +77,7 @@ A option should be one of the following types:
 
 has option => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_option',
     json_ld   => 'option',
 );
 

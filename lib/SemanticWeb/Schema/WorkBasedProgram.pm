@@ -66,7 +66,7 @@ A occupational_category should be one of the following types:
 
 has occupational_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupational_category',
     json_ld   => 'occupationalCategory',
 );
 
@@ -90,7 +90,7 @@ A training_salary should be one of the following types:
 
 has training_salary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_training_salary',
     json_ld   => 'trainingSalary',
 );
 

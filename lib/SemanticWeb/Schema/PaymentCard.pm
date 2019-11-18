@@ -52,7 +52,7 @@ A cash_back should be one of the following types:
 
 has cash_back => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cash_back',
     json_ld   => 'cashBack',
 );
 
@@ -77,7 +77,7 @@ A contactless_payment should be one of the following types:
 
 has contactless_payment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contactless_payment',
     json_ld   => 'contactlessPayment',
 );
 
@@ -102,7 +102,7 @@ A floor_limit should be one of the following types:
 
 has floor_limit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_floor_limit',
     json_ld   => 'floorLimit',
 );
 

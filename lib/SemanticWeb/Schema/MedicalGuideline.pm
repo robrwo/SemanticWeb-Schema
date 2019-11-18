@@ -55,7 +55,7 @@ A evidence_level should be one of the following types:
 
 has evidence_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_evidence_level',
     json_ld   => 'evidenceLevel',
 );
 
@@ -80,7 +80,7 @@ A evidence_origin should be one of the following types:
 
 has evidence_origin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_evidence_origin',
     json_ld   => 'evidenceOrigin',
 );
 
@@ -104,7 +104,7 @@ A guideline_date should be one of the following types:
 
 has guideline_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_guideline_date',
     json_ld   => 'guidelineDate',
 );
 
@@ -129,7 +129,7 @@ A guideline_subject should be one of the following types:
 
 has guideline_subject => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_guideline_subject',
     json_ld   => 'guidelineSubject',
 );
 

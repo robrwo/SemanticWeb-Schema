@@ -48,7 +48,7 @@ A seat_number should be one of the following types:
 
 has seat_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seat_number',
     json_ld   => 'seatNumber',
 );
 
@@ -72,7 +72,7 @@ A seat_row should be one of the following types:
 
 has seat_row => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seat_row',
     json_ld   => 'seatRow',
 );
 
@@ -96,7 +96,7 @@ A seat_section should be one of the following types:
 
 has seat_section => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seat_section',
     json_ld   => 'seatSection',
 );
 
@@ -122,7 +122,7 @@ A seating_type should be one of the following types:
 
 has seating_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seating_type',
     json_ld   => 'seatingType',
 );
 

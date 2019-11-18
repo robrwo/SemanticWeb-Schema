@@ -55,7 +55,7 @@ A grantee should be one of the following types:
 
 has grantee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_grantee',
     json_ld   => 'grantee',
 );
 
@@ -79,7 +79,7 @@ A permission_type should be one of the following types:
 
 has permission_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_permission_type',
     json_ld   => 'permissionType',
 );
 

@@ -59,7 +59,7 @@ A currency should be one of the following types:
 
 has currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_currency',
     json_ld   => 'currency',
 );
 

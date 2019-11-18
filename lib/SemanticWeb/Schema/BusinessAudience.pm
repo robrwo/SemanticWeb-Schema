@@ -49,7 +49,7 @@ A number_of_employees should be one of the following types:
 
 has number_of_employees => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_employees',
     json_ld   => 'numberOfEmployees',
 );
 
@@ -73,7 +73,7 @@ A yearly_revenue should be one of the following types:
 
 has yearly_revenue => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_yearly_revenue',
     json_ld   => 'yearlyRevenue',
 );
 
@@ -97,7 +97,7 @@ A years_in_operation should be one of the following types:
 
 has years_in_operation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_years_in_operation',
     json_ld   => 'yearsInOperation',
 );
 

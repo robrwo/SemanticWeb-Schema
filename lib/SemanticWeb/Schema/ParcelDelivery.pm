@@ -50,7 +50,7 @@ A carrier should be one of the following types:
 
 has carrier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_carrier',
     json_ld   => 'carrier',
 );
 
@@ -74,7 +74,7 @@ A delivery_address should be one of the following types:
 
 has delivery_address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_delivery_address',
     json_ld   => 'deliveryAddress',
 );
 
@@ -99,7 +99,7 @@ A delivery_status should be one of the following types:
 
 has delivery_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_delivery_status',
     json_ld   => 'deliveryStatus',
 );
 
@@ -123,7 +123,7 @@ A expected_arrival_from should be one of the following types:
 
 has expected_arrival_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expected_arrival_from',
     json_ld   => 'expectedArrivalFrom',
 );
 
@@ -147,7 +147,7 @@ A expected_arrival_until should be one of the following types:
 
 has expected_arrival_until => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expected_arrival_until',
     json_ld   => 'expectedArrivalUntil',
 );
 
@@ -171,7 +171,7 @@ A has_delivery_method should be one of the following types:
 
 has has_delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_delivery_method',
     json_ld   => 'hasDeliveryMethod',
 );
 
@@ -195,7 +195,7 @@ A item_shipped should be one of the following types:
 
 has item_shipped => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_shipped',
     json_ld   => 'itemShipped',
 );
 
@@ -219,7 +219,7 @@ A origin_address should be one of the following types:
 
 has origin_address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_origin_address',
     json_ld   => 'originAddress',
 );
 
@@ -243,7 +243,7 @@ A part_of_order should be one of the following types:
 
 has part_of_order => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_order',
     json_ld   => 'partOfOrder',
 );
 
@@ -271,7 +271,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -295,7 +295,7 @@ A tracking_number should be one of the following types:
 
 has tracking_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tracking_number',
     json_ld   => 'trackingNumber',
 );
 
@@ -319,7 +319,7 @@ A tracking_url should be one of the following types:
 
 has tracking_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tracking_url',
     json_ld   => 'trackingUrl',
 );
 

@@ -48,7 +48,7 @@ A application_category should be one of the following types:
 
 has application_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_application_category',
     json_ld   => 'applicationCategory',
 );
 
@@ -72,7 +72,7 @@ A application_sub_category should be one of the following types:
 
 has application_sub_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_application_sub_category',
     json_ld   => 'applicationSubCategory',
 );
 
@@ -97,7 +97,7 @@ A application_suite should be one of the following types:
 
 has application_suite => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_application_suite',
     json_ld   => 'applicationSuite',
 );
 
@@ -122,7 +122,7 @@ A available_on_device should be one of the following types:
 
 has available_on_device => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_on_device',
     json_ld   => 'availableOnDevice',
 );
 
@@ -147,7 +147,7 @@ A countries_not_supported should be one of the following types:
 
 has countries_not_supported => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_countries_not_supported',
     json_ld   => 'countriesNotSupported',
 );
 
@@ -172,7 +172,7 @@ A countries_supported should be one of the following types:
 
 has countries_supported => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_countries_supported',
     json_ld   => 'countriesSupported',
 );
 
@@ -197,7 +197,7 @@ A device should be one of the following types:
 
 has device => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_device',
     json_ld   => 'device',
 );
 
@@ -221,7 +221,7 @@ A download_url should be one of the following types:
 
 has download_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_download_url',
     json_ld   => 'downloadUrl',
 );
 
@@ -246,7 +246,7 @@ A feature_list should be one of the following types:
 
 has feature_list => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_feature_list',
     json_ld   => 'featureList',
 );
 
@@ -271,7 +271,7 @@ A file_size should be one of the following types:
 
 has file_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_file_size',
     json_ld   => 'fileSize',
 );
 
@@ -296,7 +296,7 @@ A install_url should be one of the following types:
 
 has install_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_install_url',
     json_ld   => 'installUrl',
 );
 
@@ -320,7 +320,7 @@ A memory_requirements should be one of the following types:
 
 has memory_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_memory_requirements',
     json_ld   => 'memoryRequirements',
 );
 
@@ -344,7 +344,7 @@ A operating_system should be one of the following types:
 
 has operating_system => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_operating_system',
     json_ld   => 'operatingSystem',
 );
 
@@ -369,7 +369,7 @@ A permissions should be one of the following types:
 
 has permissions => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_permissions',
     json_ld   => 'permissions',
 );
 
@@ -393,7 +393,7 @@ A processor_requirements should be one of the following types:
 
 has processor_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_processor_requirements',
     json_ld   => 'processorRequirements',
 );
 
@@ -417,7 +417,7 @@ A release_notes should be one of the following types:
 
 has release_notes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_release_notes',
     json_ld   => 'releaseNotes',
 );
 
@@ -444,7 +444,7 @@ A requirements should be one of the following types:
 
 has requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_requirements',
     json_ld   => 'requirements',
 );
 
@@ -470,7 +470,7 @@ A screenshot should be one of the following types:
 
 has screenshot => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_screenshot',
     json_ld   => 'screenshot',
 );
 
@@ -494,7 +494,7 @@ A software_add_on should be one of the following types:
 
 has software_add_on => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_software_add_on',
     json_ld   => 'softwareAddOn',
 );
 
@@ -518,7 +518,7 @@ A software_help should be one of the following types:
 
 has software_help => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_software_help',
     json_ld   => 'softwareHelp',
 );
 
@@ -545,7 +545,7 @@ A software_requirements should be one of the following types:
 
 has software_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_software_requirements',
     json_ld   => 'softwareRequirements',
 );
 
@@ -569,7 +569,7 @@ A software_version should be one of the following types:
 
 has software_version => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_software_version',
     json_ld   => 'softwareVersion',
 );
 
@@ -593,7 +593,7 @@ A storage_requirements should be one of the following types:
 
 has storage_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_storage_requirements',
     json_ld   => 'storageRequirements',
 );
 
@@ -617,7 +617,7 @@ A supporting_data should be one of the following types:
 
 has supporting_data => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_supporting_data',
     json_ld   => 'supportingData',
 );
 

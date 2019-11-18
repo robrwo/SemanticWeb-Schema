@@ -50,7 +50,7 @@ A from_location should be one of the following types:
 
 has from_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_from_location',
     json_ld   => 'fromLocation',
 );
 
@@ -75,7 +75,7 @@ A to_location should be one of the following types:
 
 has to_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_to_location',
     json_ld   => 'toLocation',
 );
 

@@ -50,7 +50,7 @@ A active_ingredient should be one of the following types:
 
 has active_ingredient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_active_ingredient',
     json_ld   => 'activeIngredient',
 );
 
@@ -74,7 +74,7 @@ A available_in should be one of the following types:
 
 has available_in => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_in',
     json_ld   => 'availableIn',
 );
 
@@ -99,7 +99,7 @@ A maximum_intake should be one of the following types:
 
 has maximum_intake => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maximum_intake',
     json_ld   => 'maximumIntake',
 );
 
@@ -123,7 +123,7 @@ A strength_unit should be one of the following types:
 
 has strength_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_strength_unit',
     json_ld   => 'strengthUnit',
 );
 
@@ -147,7 +147,7 @@ A strength_value should be one of the following types:
 
 has strength_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_strength_value',
     json_ld   => 'strengthValue',
 );
 

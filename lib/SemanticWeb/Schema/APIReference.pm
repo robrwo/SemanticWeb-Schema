@@ -48,7 +48,7 @@ A assembly should be one of the following types:
 
 has assembly => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_assembly',
     json_ld   => 'assembly',
 );
 
@@ -72,7 +72,7 @@ A assembly_version should be one of the following types:
 
 has assembly_version => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_assembly_version',
     json_ld   => 'assemblyVersion',
 );
 
@@ -96,7 +96,7 @@ A executable_library_name should be one of the following types:
 
 has executable_library_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_executable_library_name',
     json_ld   => 'executableLibraryName',
 );
 
@@ -120,7 +120,7 @@ A programming_model should be one of the following types:
 
 has programming_model => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_programming_model',
     json_ld   => 'programmingModel',
 );
 
@@ -144,7 +144,7 @@ A target_platform should be one of the following types:
 
 has target_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_platform',
     json_ld   => 'targetPlatform',
 );
 

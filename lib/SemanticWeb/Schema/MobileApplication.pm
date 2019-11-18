@@ -50,7 +50,7 @@ A carrier_requirements should be one of the following types:
 
 has carrier_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_carrier_requirements',
     json_ld   => 'carrierRequirements',
 );
 

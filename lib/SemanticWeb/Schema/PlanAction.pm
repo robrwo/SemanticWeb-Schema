@@ -49,7 +49,7 @@ A scheduled_time should be one of the following types:
 
 has scheduled_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_scheduled_time',
     json_ld   => 'scheduledTime',
 );
 

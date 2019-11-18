@@ -48,7 +48,7 @@ A inventory_level should be one of the following types:
 
 has inventory_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_inventory_level',
     json_ld   => 'inventoryLevel',
 );
 

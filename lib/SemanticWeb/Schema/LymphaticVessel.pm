@@ -49,7 +49,7 @@ A originates_from should be one of the following types:
 
 has originates_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_originates_from',
     json_ld   => 'originatesFrom',
 );
 
@@ -76,7 +76,7 @@ A region_drained should be one of the following types:
 
 has region_drained => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_region_drained',
     json_ld   => 'regionDrained',
 );
 
@@ -100,7 +100,7 @@ A runs_to should be one of the following types:
 
 has runs_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_runs_to',
     json_ld   => 'runsTo',
 );
 

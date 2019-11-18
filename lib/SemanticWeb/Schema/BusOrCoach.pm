@@ -52,7 +52,7 @@ A acriss_code should be one of the following types:
 
 has acriss_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_acriss_code',
     json_ld   => 'acrissCode',
 );
 
@@ -93,7 +93,7 @@ A roof_load should be one of the following types:
 
 has roof_load => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_roof_load',
     json_ld   => 'roofLoad',
 );
 

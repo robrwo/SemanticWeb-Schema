@@ -50,7 +50,7 @@ A coverage_end_time should be one of the following types:
 
 has coverage_end_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_coverage_end_time',
     json_ld   => 'coverageEndTime',
 );
 
@@ -76,7 +76,7 @@ A coverage_start_time should be one of the following types:
 
 has coverage_start_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_coverage_start_time',
     json_ld   => 'coverageStartTime',
 );
 
@@ -100,7 +100,7 @@ A live_blog_update should be one of the following types:
 
 has live_blog_update => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_live_blog_update',
     json_ld   => 'liveBlogUpdate',
 );
 

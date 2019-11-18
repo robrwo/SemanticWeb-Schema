@@ -49,7 +49,7 @@ A replacee should be one of the following types:
 
 has replacee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_replacee',
     json_ld   => 'replacee',
 );
 
@@ -73,7 +73,7 @@ A replacer should be one of the following types:
 
 has replacer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_replacer',
     json_ld   => 'replacer',
 );
 

@@ -68,7 +68,7 @@ A accommodation_category should be one of the following types:
 
 has accommodation_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accommodation_category',
     json_ld   => 'accommodationCategory',
 );
 
@@ -95,7 +95,7 @@ A amenity_feature should be one of the following types:
 
 has amenity_feature => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amenity_feature',
     json_ld   => 'amenityFeature',
 );
 
@@ -128,7 +128,7 @@ A floor_level should be one of the following types:
 
 has floor_level => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_floor_level',
     json_ld   => 'floorLevel',
 );
 
@@ -154,7 +154,7 @@ A floor_size should be one of the following types:
 
 has floor_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_floor_size',
     json_ld   => 'floorSize',
 );
 
@@ -187,7 +187,7 @@ A lease_length should be one of the following types:
 
 has lease_length => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lease_length',
     json_ld   => 'leaseLength',
 );
 
@@ -222,7 +222,7 @@ A number_of_bathrooms_total should be one of the following types:
 
 has number_of_bathrooms_total => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_bathrooms_total',
     json_ld   => 'numberOfBathroomsTotal',
 );
 
@@ -255,7 +255,7 @@ A number_of_full_bathrooms should be one of the following types:
 
 has number_of_full_bathrooms => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_full_bathrooms',
     json_ld   => 'numberOfFullBathrooms',
 );
 
@@ -284,7 +284,7 @@ A number_of_rooms should be one of the following types:
 
 has number_of_rooms => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_rooms',
     json_ld   => 'numberOfRooms',
 );
 
@@ -308,7 +308,7 @@ A permitted_usage should be one of the following types:
 
 has permitted_usage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_permitted_usage',
     json_ld   => 'permittedUsage',
 );
 
@@ -335,7 +335,7 @@ A pets_allowed should be one of the following types:
 
 has pets_allowed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pets_allowed',
     json_ld   => 'petsAllowed',
 );
 

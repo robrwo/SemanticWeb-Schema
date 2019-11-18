@@ -52,7 +52,7 @@ A default_value should be one of the following types:
 
 has default_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_default_value',
     json_ld   => 'defaultValue',
 );
 
@@ -76,7 +76,7 @@ A max_value should be one of the following types:
 
 has max_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_max_value',
     json_ld   => 'maxValue',
 );
 
@@ -100,7 +100,7 @@ A min_value should be one of the following types:
 
 has min_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_min_value',
     json_ld   => 'minValue',
 );
 
@@ -124,7 +124,7 @@ A multiple_values should be one of the following types:
 
 has multiple_values => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_multiple_values',
     json_ld   => 'multipleValues',
 );
 
@@ -150,7 +150,7 @@ A readonly_value should be one of the following types:
 
 has readonly_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_readonly_value',
     json_ld   => 'readonlyValue',
 );
 
@@ -175,7 +175,7 @@ A step_value should be one of the following types:
 
 has step_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_step_value',
     json_ld   => 'stepValue',
 );
 
@@ -199,7 +199,7 @@ A value_max_length should be one of the following types:
 
 has value_max_length => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_max_length',
     json_ld   => 'valueMaxLength',
 );
 
@@ -224,7 +224,7 @@ A value_min_length should be one of the following types:
 
 has value_min_length => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_min_length',
     json_ld   => 'valueMinLength',
 );
 
@@ -249,7 +249,7 @@ A value_name should be one of the following types:
 
 has value_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_name',
     json_ld   => 'valueName',
 );
 
@@ -274,7 +274,7 @@ A value_pattern should be one of the following types:
 
 has value_pattern => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_pattern',
     json_ld   => 'valuePattern',
 );
 
@@ -299,7 +299,7 @@ A value_required should be one of the following types:
 
 has value_required => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_required',
     json_ld   => 'valueRequired',
 );
 

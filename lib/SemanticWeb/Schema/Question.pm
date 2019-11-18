@@ -53,7 +53,7 @@ A accepted_answer should be one of the following types:
 
 has accepted_answer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accepted_answer',
     json_ld   => 'acceptedAnswer',
 );
 
@@ -77,7 +77,7 @@ A answer_count should be one of the following types:
 
 has answer_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_answer_count',
     json_ld   => 'answerCount',
 );
 
@@ -102,7 +102,7 @@ A downvote_count should be one of the following types:
 
 has downvote_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_downvote_count',
     json_ld   => 'downvoteCount',
 );
 
@@ -129,7 +129,7 @@ A suggested_answer should be one of the following types:
 
 has suggested_answer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suggested_answer',
     json_ld   => 'suggestedAnswer',
 );
 
@@ -154,7 +154,7 @@ A upvote_count should be one of the following types:
 
 has upvote_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_upvote_count',
     json_ld   => 'upvoteCount',
 );
 

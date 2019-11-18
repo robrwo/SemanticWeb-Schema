@@ -51,7 +51,7 @@ A has_menu_item should be one of the following types:
 
 has has_menu_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_menu_item',
     json_ld   => 'hasMenuItem',
 );
 
@@ -75,7 +75,7 @@ A has_menu_section should be one of the following types:
 
 has has_menu_section => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_menu_section',
     json_ld   => 'hasMenuSection',
 );
 

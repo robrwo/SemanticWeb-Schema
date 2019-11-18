@@ -55,7 +55,7 @@ A subtitle_language should be one of the following types:
 
 has subtitle_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_subtitle_language',
     json_ld   => 'subtitleLanguage',
 );
 
@@ -80,7 +80,7 @@ A video_format should be one of the following types:
 
 has video_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video_format',
     json_ld   => 'videoFormat',
 );
 
@@ -104,7 +104,7 @@ A work_presented should be one of the following types:
 
 has work_presented => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_work_presented',
     json_ld   => 'workPresented',
 );
 

@@ -73,7 +73,7 @@ A followee should be one of the following types:
 
 has followee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_followee',
     json_ld   => 'followee',
 );
 

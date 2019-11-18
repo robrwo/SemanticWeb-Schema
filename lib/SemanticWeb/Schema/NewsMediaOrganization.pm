@@ -60,7 +60,7 @@ A actionable_feedback_policy should be one of the following types:
 
 has actionable_feedback_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actionable_feedback_policy',
     json_ld   => 'actionableFeedbackPolicy',
 );
 
@@ -95,7 +95,7 @@ A corrections_policy should be one of the following types:
 
 has corrections_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_corrections_policy',
     json_ld   => 'correctionsPolicy',
 );
 
@@ -132,7 +132,7 @@ A diversity_policy should be one of the following types:
 
 has diversity_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diversity_policy',
     json_ld   => 'diversityPolicy',
 );
 
@@ -167,7 +167,7 @@ A diversity_staffing_report should be one of the following types:
 
 has diversity_staffing_report => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diversity_staffing_report',
     json_ld   => 'diversityStaffingReport',
 );
 
@@ -205,7 +205,7 @@ A ethics_policy should be one of the following types:
 
 has ethics_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ethics_policy',
     json_ld   => 'ethicsPolicy',
 );
 
@@ -237,7 +237,7 @@ A masthead should be one of the following types:
 
 has masthead => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_masthead',
     json_ld   => 'masthead',
 );
 
@@ -270,7 +270,7 @@ A mission_coverage_priorities_policy should be one of the following types:
 
 has mission_coverage_priorities_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mission_coverage_priorities_policy',
     json_ld   => 'missionCoveragePrioritiesPolicy',
 );
 
@@ -304,7 +304,7 @@ A no_bylines_policy should be one of the following types:
 
 has no_bylines_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_no_bylines_policy',
     json_ld   => 'noBylinesPolicy',
 );
 
@@ -344,7 +344,7 @@ A ownership_funding_info should be one of the following types:
 
 has ownership_funding_info => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ownership_funding_info',
     json_ld   => 'ownershipFundingInfo',
 );
 
@@ -379,7 +379,7 @@ A unnamed_sources_policy should be one of the following types:
 
 has unnamed_sources_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unnamed_sources_policy',
     json_ld   => 'unnamedSourcesPolicy',
 );
 
@@ -413,7 +413,7 @@ A verification_fact_checking_policy should be one of the following types:
 
 has verification_fact_checking_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_verification_fact_checking_policy',
     json_ld   => 'verificationFactCheckingPolicy',
 );
 

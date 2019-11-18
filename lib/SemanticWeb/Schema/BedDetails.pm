@@ -57,7 +57,7 @@ A number_of_beds should be one of the following types:
 
 has number_of_beds => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_beds',
     json_ld   => 'numberOfBeds',
 );
 
@@ -84,7 +84,7 @@ A type_of_bed should be one of the following types:
 
 has type_of_bed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_type_of_bed',
     json_ld   => 'typeOfBed',
 );
 

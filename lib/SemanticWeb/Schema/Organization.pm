@@ -60,7 +60,7 @@ A actionable_feedback_policy should be one of the following types:
 
 has actionable_feedback_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actionable_feedback_policy',
     json_ld   => 'actionableFeedbackPolicy',
 );
 
@@ -86,7 +86,7 @@ A address should be one of the following types:
 
 has address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address',
     json_ld   => 'address',
 );
 
@@ -111,7 +111,7 @@ A aggregate_rating should be one of the following types:
 
 has aggregate_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
 );
 
@@ -135,7 +135,7 @@ A alumni should be one of the following types:
 
 has alumni => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alumni',
     json_ld   => 'alumni',
 );
 
@@ -165,7 +165,7 @@ A area_served should be one of the following types:
 
 has area_served => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_area_served',
     json_ld   => 'areaServed',
 );
 
@@ -189,7 +189,7 @@ A award should be one of the following types:
 
 has award => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_award',
     json_ld   => 'award',
 );
 
@@ -213,7 +213,7 @@ A awards should be one of the following types:
 
 has awards => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_awards',
     json_ld   => 'awards',
 );
 
@@ -240,7 +240,7 @@ A brand should be one of the following types:
 
 has brand => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_brand',
     json_ld   => 'brand',
 );
 
@@ -264,7 +264,7 @@ A contact_point should be one of the following types:
 
 has contact_point => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contact_point',
     json_ld   => 'contactPoint',
 );
 
@@ -288,7 +288,7 @@ A contact_points should be one of the following types:
 
 has contact_points => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contact_points',
     json_ld   => 'contactPoints',
 );
 
@@ -323,7 +323,7 @@ A corrections_policy should be one of the following types:
 
 has corrections_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_corrections_policy',
     json_ld   => 'correctionsPolicy',
 );
 
@@ -350,7 +350,7 @@ A department should be one of the following types:
 
 has department => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_department',
     json_ld   => 'department',
 );
 
@@ -374,7 +374,7 @@ A dissolution_date should be one of the following types:
 
 has dissolution_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dissolution_date',
     json_ld   => 'dissolutionDate',
 );
 
@@ -411,7 +411,7 @@ A diversity_policy should be one of the following types:
 
 has diversity_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diversity_policy',
     json_ld   => 'diversityPolicy',
 );
 
@@ -446,7 +446,7 @@ A diversity_staffing_report should be one of the following types:
 
 has diversity_staffing_report => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diversity_staffing_report',
     json_ld   => 'diversityStaffingReport',
 );
 
@@ -471,7 +471,7 @@ A duns should be one of the following types:
 
 has duns => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duns',
     json_ld   => 'duns',
 );
 
@@ -495,7 +495,7 @@ A email should be one of the following types:
 
 has email => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_email',
     json_ld   => 'email',
 );
 
@@ -519,7 +519,7 @@ A employee should be one of the following types:
 
 has employee => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_employee',
     json_ld   => 'employee',
 );
 
@@ -543,7 +543,7 @@ A employees should be one of the following types:
 
 has employees => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_employees',
     json_ld   => 'employees',
 );
 
@@ -581,7 +581,7 @@ A ethics_policy should be one of the following types:
 
 has ethics_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ethics_policy',
     json_ld   => 'ethicsPolicy',
 );
 
@@ -605,7 +605,7 @@ A event should be one of the following types:
 
 has event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_event',
     json_ld   => 'event',
 );
 
@@ -629,7 +629,7 @@ A events should be one of the following types:
 
 has events => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_events',
     json_ld   => 'events',
 );
 
@@ -653,7 +653,7 @@ A fax_number should be one of the following types:
 
 has fax_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fax_number',
     json_ld   => 'faxNumber',
 );
 
@@ -677,7 +677,7 @@ A founder should be one of the following types:
 
 has founder => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_founder',
     json_ld   => 'founder',
 );
 
@@ -701,7 +701,7 @@ A founders should be one of the following types:
 
 has founders => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_founders',
     json_ld   => 'founders',
 );
 
@@ -725,7 +725,7 @@ A founding_date should be one of the following types:
 
 has founding_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_founding_date',
     json_ld   => 'foundingDate',
 );
 
@@ -749,7 +749,7 @@ A founding_location should be one of the following types:
 
 has founding_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_founding_location',
     json_ld   => 'foundingLocation',
 );
 
@@ -776,7 +776,7 @@ A funder should be one of the following types:
 
 has funder => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_funder',
     json_ld   => 'funder',
 );
 
@@ -807,7 +807,7 @@ A global_location_number should be one of the following types:
 
 has global_location_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_global_location_number',
     json_ld   => 'globalLocationNumber',
 );
 
@@ -831,7 +831,7 @@ A has_credential should be one of the following types:
 
 has has_credential => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_credential',
     json_ld   => 'hasCredential',
 );
 
@@ -856,7 +856,7 @@ A has_offer_catalog should be one of the following types:
 
 has has_offer_catalog => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_offer_catalog',
     json_ld   => 'hasOfferCatalog',
 );
 
@@ -880,7 +880,7 @@ A has_pos should be one of the following types:
 
 has has_pos => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_pos',
     json_ld   => 'hasPOS',
 );
 
@@ -904,7 +904,7 @@ A has_product_return_policy should be one of the following types:
 
 has has_product_return_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_product_return_policy',
     json_ld   => 'hasProductReturnPolicy',
 );
 
@@ -930,7 +930,7 @@ A isic_v4 should be one of the following types:
 
 has isic_v4 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_isic_v4',
     json_ld   => 'isicV4',
 );
 
@@ -966,7 +966,7 @@ A knows_about should be one of the following types:
 
 has knows_about => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_knows_about',
     json_ld   => 'knowsAbout',
 );
 
@@ -1001,7 +1001,7 @@ A knows_language should be one of the following types:
 
 has knows_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_knows_language',
     json_ld   => 'knowsLanguage',
 );
 
@@ -1025,7 +1025,7 @@ A legal_name should be one of the following types:
 
 has legal_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legal_name',
     json_ld   => 'legalName',
 );
 
@@ -1050,7 +1050,7 @@ A lei_code should be one of the following types:
 
 has lei_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lei_code',
     json_ld   => 'leiCode',
 );
 
@@ -1079,7 +1079,7 @@ A location should be one of the following types:
 
 has location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_location',
     json_ld   => 'location',
 );
 
@@ -1105,7 +1105,7 @@ A logo should be one of the following types:
 
 has logo => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_logo',
     json_ld   => 'logo',
 );
 
@@ -1129,7 +1129,7 @@ A makes_offer should be one of the following types:
 
 has makes_offer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_makes_offer',
     json_ld   => 'makesOffer',
 );
 
@@ -1156,7 +1156,7 @@ A member should be one of the following types:
 
 has member => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_member',
     json_ld   => 'member',
 );
 
@@ -1183,7 +1183,7 @@ A member_of should be one of the following types:
 
 has member_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_member_of',
     json_ld   => 'memberOf',
 );
 
@@ -1209,7 +1209,7 @@ A members should be one of the following types:
 
 has members => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_members',
     json_ld   => 'members',
 );
 
@@ -1234,7 +1234,7 @@ A naics should be one of the following types:
 
 has naics => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_naics',
     json_ld   => 'naics',
 );
 
@@ -1258,7 +1258,7 @@ A number_of_employees should be one of the following types:
 
 has number_of_employees => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_employees',
     json_ld   => 'numberOfEmployees',
 );
 
@@ -1298,7 +1298,7 @@ A ownership_funding_info should be one of the following types:
 
 has ownership_funding_info => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ownership_funding_info',
     json_ld   => 'ownershipFundingInfo',
 );
 
@@ -1324,7 +1324,7 @@ A owns should be one of the following types:
 
 has owns => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_owns',
     json_ld   => 'owns',
 );
 
@@ -1353,7 +1353,7 @@ A parent_organization should be one of the following types:
 
 has parent_organization => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_parent_organization',
     json_ld   => 'parentOrganization',
 );
 
@@ -1398,7 +1398,7 @@ A publishing_principles should be one of the following types:
 
 has publishing_principles => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publishing_principles',
     json_ld   => 'publishingPrinciples',
 );
 
@@ -1422,7 +1422,7 @@ A review should be one of the following types:
 
 has review => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review',
     json_ld   => 'review',
 );
 
@@ -1446,7 +1446,7 @@ A reviews should be one of the following types:
 
 has reviews => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviews',
     json_ld   => 'reviews',
 );
 
@@ -1471,7 +1471,7 @@ A seeks should be one of the following types:
 
 has seeks => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seeks',
     json_ld   => 'seeks',
 );
 
@@ -1499,7 +1499,7 @@ A service_area should be one of the following types:
 
 has service_area => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_service_area',
     json_ld   => 'serviceArea',
 );
 
@@ -1523,7 +1523,7 @@ A slogan should be one of the following types:
 
 has slogan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_slogan',
     json_ld   => 'slogan',
 );
 
@@ -1551,7 +1551,7 @@ A sponsor should be one of the following types:
 
 has sponsor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sponsor',
     json_ld   => 'sponsor',
 );
 
@@ -1577,7 +1577,7 @@ A sub_organization should be one of the following types:
 
 has sub_organization => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_organization',
     json_ld   => 'subOrganization',
 );
 
@@ -1602,7 +1602,7 @@ A tax_id should be one of the following types:
 
 has tax_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tax_id',
     json_ld   => 'taxID',
 );
 
@@ -1626,7 +1626,7 @@ A telephone should be one of the following types:
 
 has telephone => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_telephone',
     json_ld   => 'telephone',
 );
 
@@ -1661,7 +1661,7 @@ A unnamed_sources_policy should be one of the following types:
 
 has unnamed_sources_policy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_unnamed_sources_policy',
     json_ld   => 'unnamedSourcesPolicy',
 );
 
@@ -1685,7 +1685,7 @@ A vat_id should be one of the following types:
 
 has vat_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vat_id',
     json_ld   => 'vatID',
 );
 

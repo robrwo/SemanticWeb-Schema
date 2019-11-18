@@ -49,7 +49,7 @@ A child_max_age should be one of the following types:
 
 has child_max_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_child_max_age',
     json_ld   => 'childMaxAge',
 );
 
@@ -73,7 +73,7 @@ A child_min_age should be one of the following types:
 
 has child_min_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_child_min_age',
     json_ld   => 'childMinAge',
 );
 

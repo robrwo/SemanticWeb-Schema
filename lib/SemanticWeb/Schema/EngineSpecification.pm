@@ -61,7 +61,7 @@ A engine_displacement should be one of the following types:
 
 has engine_displacement => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_engine_displacement',
     json_ld   => 'engineDisplacement',
 );
 
@@ -101,7 +101,7 @@ A engine_power should be one of the following types:
 
 has engine_power => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_engine_power',
     json_ld   => 'enginePower',
 );
 
@@ -127,7 +127,7 @@ A engine_type should be one of the following types:
 
 has engine_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_engine_type',
     json_ld   => 'engineType',
 );
 
@@ -155,7 +155,7 @@ A fuel_type should be one of the following types:
 
 has fuel_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fuel_type',
     json_ld   => 'fuelType',
 );
 
@@ -192,7 +192,7 @@ A torque should be one of the following types:
 
 has torque => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_torque',
     json_ld   => 'torque',
 );
 

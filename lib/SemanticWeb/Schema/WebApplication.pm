@@ -49,7 +49,7 @@ A browser_requirements should be one of the following types:
 
 has browser_requirements => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_browser_requirements',
     json_ld   => 'browserRequirements',
 );
 

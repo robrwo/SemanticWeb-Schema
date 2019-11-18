@@ -48,7 +48,7 @@ A item_reviewed should be one of the following types:
 
 has item_reviewed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_reviewed',
     json_ld   => 'itemReviewed',
 );
 
@@ -72,7 +72,7 @@ A rating_count should be one of the following types:
 
 has rating_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rating_count',
     json_ld   => 'ratingCount',
 );
 
@@ -96,7 +96,7 @@ A review_count should be one of the following types:
 
 has review_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review_count',
     json_ld   => 'reviewCount',
 );
 

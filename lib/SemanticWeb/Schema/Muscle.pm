@@ -56,7 +56,7 @@ A action should be one of the following types:
 
 has action => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action',
     json_ld   => 'action',
 );
 
@@ -80,7 +80,7 @@ A antagonist should be one of the following types:
 
 has antagonist => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_antagonist',
     json_ld   => 'antagonist',
 );
 
@@ -104,7 +104,7 @@ A blood_supply should be one of the following types:
 
 has blood_supply => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_blood_supply',
     json_ld   => 'bloodSupply',
 );
 
@@ -128,7 +128,7 @@ A insertion should be one of the following types:
 
 has insertion => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_insertion',
     json_ld   => 'insertion',
 );
 
@@ -152,7 +152,7 @@ A muscle_action should be one of the following types:
 
 has muscle_action => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_muscle_action',
     json_ld   => 'muscleAction',
 );
 
@@ -176,7 +176,7 @@ A nerve should be one of the following types:
 
 has nerve => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_nerve',
     json_ld   => 'nerve',
 );
 
@@ -200,7 +200,7 @@ A origin should be one of the following types:
 
 has origin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_origin',
     json_ld   => 'origin',
 );
 

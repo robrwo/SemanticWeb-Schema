@@ -57,7 +57,7 @@ A caption should be one of the following types:
 
 has caption => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_caption',
     json_ld   => 'caption',
 );
 
@@ -82,7 +82,7 @@ A transcript should be one of the following types:
 
 has transcript => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_transcript',
     json_ld   => 'transcript',
 );
 

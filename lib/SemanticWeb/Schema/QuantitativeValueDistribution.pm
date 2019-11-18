@@ -53,7 +53,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -77,7 +77,7 @@ A median should be one of the following types:
 
 has median => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_median',
     json_ld   => 'median',
 );
 
@@ -101,7 +101,7 @@ A percentile10 should be one of the following types:
 
 has percentile10 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_percentile10',
     json_ld   => 'percentile10',
 );
 
@@ -125,7 +125,7 @@ A percentile25 should be one of the following types:
 
 has percentile25 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_percentile25',
     json_ld   => 'percentile25',
 );
 
@@ -149,7 +149,7 @@ A percentile75 should be one of the following types:
 
 has percentile75 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_percentile75',
     json_ld   => 'percentile75',
 );
 
@@ -173,7 +173,7 @@ A percentile90 should be one of the following types:
 
 has percentile90 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_percentile90',
     json_ld   => 'percentile90',
 );
 

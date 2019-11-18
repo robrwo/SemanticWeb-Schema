@@ -62,7 +62,7 @@ A number_of_rooms should be one of the following types:
 
 has number_of_rooms => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_rooms',
     json_ld   => 'numberOfRooms',
 );
 
@@ -90,7 +90,7 @@ A occupancy should be one of the following types:
 
 has occupancy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_occupancy',
     json_ld   => 'occupancy',
 );
 

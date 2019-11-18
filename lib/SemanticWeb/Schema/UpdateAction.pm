@@ -48,7 +48,7 @@ A collection should be one of the following types:
 
 has collection => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_collection',
     json_ld   => 'collection',
 );
 
@@ -72,7 +72,7 @@ A target_collection should be one of the following types:
 
 has target_collection => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target_collection',
     json_ld   => 'targetCollection',
 );
 

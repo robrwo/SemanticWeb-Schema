@@ -50,7 +50,7 @@ A character_name should be one of the following types:
 
 has character_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_character_name',
     json_ld   => 'characterName',
 );
 

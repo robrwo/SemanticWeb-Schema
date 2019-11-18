@@ -52,7 +52,7 @@ A bcc_recipient should be one of the following types:
 
 has bcc_recipient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bcc_recipient',
     json_ld   => 'bccRecipient',
 );
 
@@ -80,7 +80,7 @@ A cc_recipient should be one of the following types:
 
 has cc_recipient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cc_recipient',
     json_ld   => 'ccRecipient',
 );
 
@@ -105,7 +105,7 @@ A date_read should be one of the following types:
 
 has date_read => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_read',
     json_ld   => 'dateRead',
 );
 
@@ -129,7 +129,7 @@ A date_received should be one of the following types:
 
 has date_received => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_received',
     json_ld   => 'dateReceived',
 );
 
@@ -153,7 +153,7 @@ A date_sent should be one of the following types:
 
 has date_sent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_sent',
     json_ld   => 'dateSent',
 );
 
@@ -177,7 +177,7 @@ A message_attachment should be one of the following types:
 
 has message_attachment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_message_attachment',
     json_ld   => 'messageAttachment',
 );
 
@@ -208,7 +208,7 @@ A recipient should be one of the following types:
 
 has recipient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipient',
     json_ld   => 'recipient',
 );
 
@@ -237,7 +237,7 @@ A sender should be one of the following types:
 
 has sender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sender',
     json_ld   => 'sender',
 );
 
@@ -268,7 +268,7 @@ A to_recipient should be one of the following types:
 
 has to_recipient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_to_recipient',
     json_ld   => 'toRecipient',
 );
 

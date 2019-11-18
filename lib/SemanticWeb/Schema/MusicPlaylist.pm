@@ -48,7 +48,7 @@ A num_tracks should be one of the following types:
 
 has num_tracks => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_num_tracks',
     json_ld   => 'numTracks',
 );
 
@@ -75,7 +75,7 @@ A track should be one of the following types:
 
 has track => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_track',
     json_ld   => 'track',
 );
 
@@ -99,7 +99,7 @@ A tracks should be one of the following types:
 
 has tracks => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tracks',
     json_ld   => 'tracks',
 );
 

@@ -48,7 +48,7 @@ A date_issued should be one of the following types:
 
 has date_issued => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_issued',
     json_ld   => 'dateIssued',
 );
 
@@ -72,7 +72,7 @@ A issued_by should be one of the following types:
 
 has issued_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issued_by',
     json_ld   => 'issuedBy',
 );
 
@@ -110,7 +110,7 @@ A price_currency should be one of the following types:
 
 has price_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_currency',
     json_ld   => 'priceCurrency',
 );
 
@@ -134,7 +134,7 @@ A ticket_number should be one of the following types:
 
 has ticket_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ticket_number',
     json_ld   => 'ticketNumber',
 );
 
@@ -159,7 +159,7 @@ A ticket_token should be one of the following types:
 
 has ticket_token => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ticket_token',
     json_ld   => 'ticketToken',
 );
 
@@ -183,7 +183,7 @@ A ticketed_seat should be one of the following types:
 
 has ticketed_seat => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ticketed_seat',
     json_ld   => 'ticketedSeat',
 );
 
@@ -220,7 +220,7 @@ A total_price should be one of the following types:
 
 has total_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_price',
     json_ld   => 'totalPrice',
 );
 
@@ -246,7 +246,7 @@ A under_name should be one of the following types:
 
 has under_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_under_name',
     json_ld   => 'underName',
 );
 

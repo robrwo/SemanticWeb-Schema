@@ -67,7 +67,7 @@ A css_selector should be one of the following types:
 
 has css_selector => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_css_selector',
     json_ld   => 'cssSelector',
 );
 
@@ -100,7 +100,7 @@ A xpath should be one of the following types:
 
 has xpath => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_xpath',
     json_ld   => 'xpath',
 );
 

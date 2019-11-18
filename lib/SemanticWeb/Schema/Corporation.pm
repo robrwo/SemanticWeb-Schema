@@ -52,7 +52,7 @@ A ticker_symbol should be one of the following types:
 
 has ticker_symbol => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_ticker_symbol',
     json_ld   => 'tickerSymbol',
 );
 

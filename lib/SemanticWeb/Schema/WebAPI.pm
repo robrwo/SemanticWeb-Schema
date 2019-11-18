@@ -51,7 +51,7 @@ A documentation should be one of the following types:
 
 has documentation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_documentation',
     json_ld   => 'documentation',
 );
 

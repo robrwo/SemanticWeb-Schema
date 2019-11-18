@@ -59,7 +59,7 @@ A action_status should be one of the following types:
 
 has action_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action_status',
     json_ld   => 'actionStatus',
 );
 
@@ -90,7 +90,7 @@ A agent should be one of the following types:
 
 has agent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_agent',
     json_ld   => 'agent',
 );
 
@@ -125,7 +125,7 @@ A end_time should be one of the following types:
 
 has end_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_time',
     json_ld   => 'endTime',
 );
 
@@ -149,7 +149,7 @@ A error should be one of the following types:
 
 has error => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_error',
     json_ld   => 'error',
 );
 
@@ -178,7 +178,7 @@ A instrument should be one of the following types:
 
 has instrument => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_instrument',
     json_ld   => 'instrument',
 );
 
@@ -207,7 +207,7 @@ A location should be one of the following types:
 
 has location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_location',
     json_ld   => 'location',
 );
 
@@ -238,7 +238,7 @@ A object should be one of the following types:
 
 has object => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_object',
     json_ld   => 'object',
 );
 
@@ -269,7 +269,7 @@ A participant should be one of the following types:
 
 has participant => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_participant',
     json_ld   => 'participant',
 );
 
@@ -297,7 +297,7 @@ A result should be one of the following types:
 
 has result => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_result',
     json_ld   => 'result',
 );
 
@@ -332,7 +332,7 @@ A start_time should be one of the following types:
 
 has start_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_time',
     json_ld   => 'startTime',
 );
 
@@ -356,7 +356,7 @@ A target should be one of the following types:
 
 has target => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_target',
     json_ld   => 'target',
 );
 

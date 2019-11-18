@@ -54,7 +54,7 @@ A superseded_by should be one of the following types:
 
 has superseded_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_superseded_by',
     json_ld   => 'supersededBy',
 );
 

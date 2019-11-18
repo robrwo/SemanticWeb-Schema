@@ -60,7 +60,7 @@ A booking_agent should be one of the following types:
 
 has booking_agent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_booking_agent',
     json_ld   => 'bookingAgent',
 );
 
@@ -84,7 +84,7 @@ A booking_time should be one of the following types:
 
 has booking_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_booking_time',
     json_ld   => 'bookingTime',
 );
 
@@ -113,7 +113,7 @@ A broker should be one of the following types:
 
 has broker => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broker',
     json_ld   => 'broker',
 );
 
@@ -137,7 +137,7 @@ A modified_time should be one of the following types:
 
 has modified_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_modified_time',
     json_ld   => 'modifiedTime',
 );
 
@@ -175,7 +175,7 @@ A price_currency should be one of the following types:
 
 has price_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_price_currency',
     json_ld   => 'priceCurrency',
 );
 
@@ -200,7 +200,7 @@ A program_membership_used should be one of the following types:
 
 has program_membership_used => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_program_membership_used',
     json_ld   => 'programMembershipUsed',
 );
 
@@ -228,7 +228,7 @@ A provider should be one of the following types:
 
 has provider => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_provider',
     json_ld   => 'provider',
 );
 
@@ -252,7 +252,7 @@ A reservation_for should be one of the following types:
 
 has reservation_for => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reservation_for',
     json_ld   => 'reservationFor',
 );
 
@@ -276,7 +276,7 @@ A reservation_id should be one of the following types:
 
 has reservation_id => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reservation_id',
     json_ld   => 'reservationId',
 );
 
@@ -300,7 +300,7 @@ A reservation_status should be one of the following types:
 
 has reservation_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reservation_status',
     json_ld   => 'reservationStatus',
 );
 
@@ -324,7 +324,7 @@ A reserved_ticket should be one of the following types:
 
 has reserved_ticket => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reserved_ticket',
     json_ld   => 'reservedTicket',
 );
 
@@ -361,7 +361,7 @@ A total_price should be one of the following types:
 
 has total_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_total_price',
     json_ld   => 'totalPrice',
 );
 
@@ -387,7 +387,7 @@ A under_name should be one of the following types:
 
 has under_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_under_name',
     json_ld   => 'underName',
 );
 

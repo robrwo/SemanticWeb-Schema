@@ -48,7 +48,7 @@ A drains_to should be one of the following types:
 
 has drains_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drains_to',
     json_ld   => 'drainsTo',
 );
 
@@ -75,7 +75,7 @@ A region_drained should be one of the following types:
 
 has region_drained => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_region_drained',
     json_ld   => 'regionDrained',
 );
 
@@ -100,7 +100,7 @@ A tributary should be one of the following types:
 
 has tributary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tributary',
     json_ld   => 'tributary',
 );
 

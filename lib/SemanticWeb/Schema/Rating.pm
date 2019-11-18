@@ -52,7 +52,7 @@ A author should be one of the following types:
 
 has author => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_author',
     json_ld   => 'author',
 );
 
@@ -79,7 +79,7 @@ A best_rating should be one of the following types:
 
 has best_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_best_rating',
     json_ld   => 'bestRating',
 );
 
@@ -111,7 +111,7 @@ A rating_explanation should be one of the following types:
 
 has rating_explanation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rating_explanation',
     json_ld   => 'ratingExplanation',
 );
 
@@ -146,7 +146,7 @@ A rating_value should be one of the following types:
 
 has rating_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rating_value',
     json_ld   => 'ratingValue',
 );
 
@@ -171,7 +171,7 @@ A review_aspect should be one of the following types:
 
 has review_aspect => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_review_aspect',
     json_ld   => 'reviewAspect',
 );
 
@@ -198,7 +198,7 @@ A worst_rating should be one of the following types:
 
 has worst_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_worst_rating',
     json_ld   => 'worstRating',
 );
 

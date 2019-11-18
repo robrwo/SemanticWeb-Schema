@@ -61,7 +61,7 @@ A spoken_by_character should be one of the following types:
 
 has spoken_by_character => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_spoken_by_character',
     json_ld   => 'spokenByCharacter',
 );
 

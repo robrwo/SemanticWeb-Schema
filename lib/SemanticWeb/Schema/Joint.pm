@@ -48,7 +48,7 @@ A biomechnical_class should be one of the following types:
 
 has biomechnical_class => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_biomechnical_class',
     json_ld   => 'biomechnicalClass',
 );
 
@@ -74,7 +74,7 @@ A functional_class should be one of the following types:
 
 has functional_class => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_functional_class',
     json_ld   => 'functionalClass',
 );
 
@@ -98,7 +98,7 @@ A structural_class should be one of the following types:
 
 has structural_class => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_structural_class',
     json_ld   => 'structuralClass',
 );
 

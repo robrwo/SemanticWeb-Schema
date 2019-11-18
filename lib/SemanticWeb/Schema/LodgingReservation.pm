@@ -55,7 +55,7 @@ A checkin_time should be one of the following types:
 
 has checkin_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_checkin_time',
     json_ld   => 'checkinTime',
 );
 
@@ -79,7 +79,7 @@ A checkout_time should be one of the following types:
 
 has checkout_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_checkout_time',
     json_ld   => 'checkoutTime',
 );
 
@@ -103,7 +103,7 @@ A lodging_unit_description should be one of the following types:
 
 has lodging_unit_description => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lodging_unit_description',
     json_ld   => 'lodgingUnitDescription',
 );
 
@@ -130,7 +130,7 @@ A lodging_unit_type should be one of the following types:
 
 has lodging_unit_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lodging_unit_type',
     json_ld   => 'lodgingUnitType',
 );
 
@@ -156,7 +156,7 @@ A num_adults should be one of the following types:
 
 has num_adults => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_num_adults',
     json_ld   => 'numAdults',
 );
 
@@ -182,7 +182,7 @@ A num_children should be one of the following types:
 
 has num_children => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_num_children',
     json_ld   => 'numChildren',
 );
 

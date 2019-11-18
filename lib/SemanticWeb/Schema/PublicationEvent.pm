@@ -50,7 +50,7 @@ A free should be one of the following types:
 
 has free => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_free',
     json_ld   => 'free',
 );
 
@@ -74,7 +74,7 @@ A is_accessible_for_free should be one of the following types:
 
 has is_accessible_for_free => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_accessible_for_free',
     json_ld   => 'isAccessibleForFree',
 );
 
@@ -100,7 +100,7 @@ A published_by should be one of the following types:
 
 has published_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_published_by',
     json_ld   => 'publishedBy',
 );
 
@@ -124,7 +124,7 @@ A published_on should be one of the following types:
 
 has published_on => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_published_on',
     json_ld   => 'publishedOn',
 );
 

@@ -52,7 +52,7 @@ A active_ingredient should be one of the following types:
 
 has active_ingredient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_active_ingredient',
     json_ld   => 'activeIngredient',
 );
 
@@ -76,7 +76,7 @@ A administration_route should be one of the following types:
 
 has administration_route => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_administration_route',
     json_ld   => 'administrationRoute',
 );
 
@@ -101,7 +101,7 @@ A alcohol_warning should be one of the following types:
 
 has alcohol_warning => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_alcohol_warning',
     json_ld   => 'alcoholWarning',
 );
 
@@ -125,7 +125,7 @@ A available_strength should be one of the following types:
 
 has available_strength => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_strength',
     json_ld   => 'availableStrength',
 );
 
@@ -150,7 +150,7 @@ A breastfeeding_warning should be one of the following types:
 
 has breastfeeding_warning => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_breastfeeding_warning',
     json_ld   => 'breastfeedingWarning',
 );
 
@@ -176,7 +176,7 @@ A clincal_pharmacology should be one of the following types:
 
 has clincal_pharmacology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_clincal_pharmacology',
     json_ld   => 'clincalPharmacology',
 );
 
@@ -202,7 +202,7 @@ A clinical_pharmacology should be one of the following types:
 
 has clinical_pharmacology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_clinical_pharmacology',
     json_ld   => 'clinicalPharmacology',
 );
 
@@ -226,7 +226,7 @@ A cost should be one of the following types:
 
 has cost => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cost',
     json_ld   => 'cost',
 );
 
@@ -251,7 +251,7 @@ A dosage_form should be one of the following types:
 
 has dosage_form => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dosage_form',
     json_ld   => 'dosageForm',
 );
 
@@ -276,7 +276,7 @@ A dose_schedule should be one of the following types:
 
 has dose_schedule => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dose_schedule',
     json_ld   => 'doseSchedule',
 );
 
@@ -300,7 +300,7 @@ A drug_class should be one of the following types:
 
 has drug_class => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug_class',
     json_ld   => 'drugClass',
 );
 
@@ -324,7 +324,7 @@ A drug_unit should be one of the following types:
 
 has drug_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug_unit',
     json_ld   => 'drugUnit',
 );
 
@@ -349,7 +349,7 @@ A food_warning should be one of the following types:
 
 has food_warning => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_food_warning',
     json_ld   => 'foodWarning',
 );
 
@@ -373,7 +373,7 @@ A included_in_health_insurance_plan should be one of the following types:
 
 has included_in_health_insurance_plan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_included_in_health_insurance_plan',
     json_ld   => 'includedInHealthInsurancePlan',
 );
 
@@ -399,7 +399,7 @@ A interacting_drug should be one of the following types:
 
 has interacting_drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_interacting_drug',
     json_ld   => 'interactingDrug',
 );
 
@@ -423,7 +423,7 @@ A is_available_generically should be one of the following types:
 
 has is_available_generically => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_available_generically',
     json_ld   => 'isAvailableGenerically',
 );
 
@@ -447,7 +447,7 @@ A is_proprietary should be one of the following types:
 
 has is_proprietary => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_proprietary',
     json_ld   => 'isProprietary',
 );
 
@@ -471,7 +471,7 @@ A label_details should be one of the following types:
 
 has label_details => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_label_details',
     json_ld   => 'labelDetails',
 );
 
@@ -500,7 +500,7 @@ A legal_status should be one of the following types:
 
 has legal_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_legal_status',
     json_ld   => 'legalStatus',
 );
 
@@ -524,7 +524,7 @@ A manufacturer should be one of the following types:
 
 has manufacturer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_manufacturer',
     json_ld   => 'manufacturer',
 );
 
@@ -549,7 +549,7 @@ A maximum_intake should be one of the following types:
 
 has maximum_intake => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_maximum_intake',
     json_ld   => 'maximumIntake',
 );
 
@@ -574,7 +574,7 @@ A mechanism_of_action should be one of the following types:
 
 has mechanism_of_action => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mechanism_of_action',
     json_ld   => 'mechanismOfAction',
 );
 
@@ -598,7 +598,7 @@ A non_proprietary_name should be one of the following types:
 
 has non_proprietary_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_non_proprietary_name',
     json_ld   => 'nonProprietaryName',
 );
 
@@ -623,7 +623,7 @@ A overdosage should be one of the following types:
 
 has overdosage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_overdosage',
     json_ld   => 'overdosage',
 );
 
@@ -647,7 +647,7 @@ A pregnancy_category should be one of the following types:
 
 has pregnancy_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pregnancy_category',
     json_ld   => 'pregnancyCategory',
 );
 
@@ -672,7 +672,7 @@ A pregnancy_warning should be one of the following types:
 
 has pregnancy_warning => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pregnancy_warning',
     json_ld   => 'pregnancyWarning',
 );
 
@@ -696,7 +696,7 @@ A prescribing_info should be one of the following types:
 
 has prescribing_info => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_prescribing_info',
     json_ld   => 'prescribingInfo',
 );
 
@@ -724,7 +724,7 @@ A prescription_status should be one of the following types:
 
 has prescription_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_prescription_status',
     json_ld   => 'prescriptionStatus',
 );
 
@@ -749,7 +749,7 @@ A proprietary_name should be one of the following types:
 
 has proprietary_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_proprietary_name',
     json_ld   => 'proprietaryName',
 );
 
@@ -774,7 +774,7 @@ A related_drug should be one of the following types:
 
 has related_drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_drug',
     json_ld   => 'relatedDrug',
 );
 
@@ -798,7 +798,7 @@ A rxcui should be one of the following types:
 
 has rxcui => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_rxcui',
     json_ld   => 'rxcui',
 );
 
@@ -822,7 +822,7 @@ A warning should be one of the following types:
 
 has warning => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_warning',
     json_ld   => 'warning',
 );
 

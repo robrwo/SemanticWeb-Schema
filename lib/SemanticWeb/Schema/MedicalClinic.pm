@@ -54,7 +54,7 @@ A available_service should be one of the following types:
 
 has available_service => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_service',
     json_ld   => 'availableService',
 );
 
@@ -78,7 +78,7 @@ A medical_specialty should be one of the following types:
 
 has medical_specialty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_medical_specialty',
     json_ld   => 'medicalSpecialty',
 );
 

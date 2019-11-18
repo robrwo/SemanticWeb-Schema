@@ -55,7 +55,7 @@ A question should be one of the following types:
 
 has question => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_question',
     json_ld   => 'question',
 );
 

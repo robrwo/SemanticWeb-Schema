@@ -48,7 +48,7 @@ A winner should be one of the following types:
 
 has winner => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_winner',
     json_ld   => 'winner',
 );
 

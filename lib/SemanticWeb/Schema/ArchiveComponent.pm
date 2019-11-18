@@ -56,7 +56,7 @@ A holding_archive should be one of the following types:
 
 has holding_archive => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_holding_archive',
     json_ld   => 'holdingArchive',
 );
 
@@ -84,7 +84,7 @@ A item_location should be one of the following types:
 
 has item_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item_location',
     json_ld   => 'itemLocation',
 );
 

@@ -53,7 +53,7 @@ A collection_size should be one of the following types:
 
 has collection_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_collection_size',
     json_ld   => 'collectionSize',
 );
 

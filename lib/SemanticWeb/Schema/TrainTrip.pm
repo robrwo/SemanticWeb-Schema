@@ -48,7 +48,7 @@ A arrival_platform should be one of the following types:
 
 has arrival_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_platform',
     json_ld   => 'arrivalPlatform',
 );
 
@@ -72,7 +72,7 @@ A arrival_station should be one of the following types:
 
 has arrival_station => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_station',
     json_ld   => 'arrivalStation',
 );
 
@@ -96,7 +96,7 @@ A departure_platform should be one of the following types:
 
 has departure_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_platform',
     json_ld   => 'departurePlatform',
 );
 
@@ -120,7 +120,7 @@ A departure_station should be one of the following types:
 
 has departure_station => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_station',
     json_ld   => 'departureStation',
 );
 
@@ -144,7 +144,7 @@ A train_name should be one of the following types:
 
 has train_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_train_name',
     json_ld   => 'trainName',
 );
 
@@ -168,7 +168,7 @@ A train_number should be one of the following types:
 
 has train_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_train_number',
     json_ld   => 'trainNumber',
 );
 

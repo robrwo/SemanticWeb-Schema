@@ -61,7 +61,7 @@ A high_price should be one of the following types:
 
 has high_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_high_price',
     json_ld   => 'highPrice',
 );
 
@@ -96,7 +96,7 @@ A low_price should be one of the following types:
 
 has low_price => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_low_price',
     json_ld   => 'lowPrice',
 );
 
@@ -120,7 +120,7 @@ A offer_count should be one of the following types:
 
 has offer_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offer_count',
     json_ld   => 'offerCount',
 );
 
@@ -146,7 +146,7 @@ A offers should be one of the following types:
 
 has offers => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers',
     json_ld   => 'offers',
 );
 

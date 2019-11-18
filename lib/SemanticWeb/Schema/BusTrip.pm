@@ -50,7 +50,7 @@ A arrival_bus_stop should be one of the following types:
 
 has arrival_bus_stop => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_arrival_bus_stop',
     json_ld   => 'arrivalBusStop',
 );
 
@@ -74,7 +74,7 @@ A bus_name should be one of the following types:
 
 has bus_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bus_name',
     json_ld   => 'busName',
 );
 
@@ -98,7 +98,7 @@ A bus_number should be one of the following types:
 
 has bus_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bus_number',
     json_ld   => 'busNumber',
 );
 
@@ -124,7 +124,7 @@ A departure_bus_stop should be one of the following types:
 
 has departure_bus_stop => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_departure_bus_stop',
     json_ld   => 'departureBusStop',
 );
 

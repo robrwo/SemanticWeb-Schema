@@ -49,7 +49,7 @@ A course should be one of the following types:
 
 has course => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_course',
     json_ld   => 'course',
 );
 
@@ -73,7 +73,7 @@ A diet should be one of the following types:
 
 has diet => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diet',
     json_ld   => 'diet',
 );
 
@@ -97,7 +97,7 @@ A distance should be one of the following types:
 
 has distance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_distance',
     json_ld   => 'distance',
 );
 
@@ -121,7 +121,7 @@ A exercise_course should be one of the following types:
 
 has exercise_course => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exercise_course',
     json_ld   => 'exerciseCourse',
 );
 
@@ -145,7 +145,7 @@ A exercise_plan should be one of the following types:
 
 has exercise_plan => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exercise_plan',
     json_ld   => 'exercisePlan',
 );
 
@@ -169,7 +169,7 @@ A exercise_related_diet should be one of the following types:
 
 has exercise_related_diet => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exercise_related_diet',
     json_ld   => 'exerciseRelatedDiet',
 );
 
@@ -194,7 +194,7 @@ A exercise_type should be one of the following types:
 
 has exercise_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exercise_type',
     json_ld   => 'exerciseType',
 );
 
@@ -219,7 +219,7 @@ A from_location should be one of the following types:
 
 has from_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_from_location',
     json_ld   => 'fromLocation',
 );
 
@@ -243,7 +243,7 @@ A opponent should be one of the following types:
 
 has opponent => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_opponent',
     json_ld   => 'opponent',
 );
 
@@ -268,7 +268,7 @@ A sports_activity_location should be one of the following types:
 
 has sports_activity_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sports_activity_location',
     json_ld   => 'sportsActivityLocation',
 );
 
@@ -292,7 +292,7 @@ A sports_event should be one of the following types:
 
 has sports_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sports_event',
     json_ld   => 'sportsEvent',
 );
 
@@ -317,7 +317,7 @@ A sports_team should be one of the following types:
 
 has sports_team => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sports_team',
     json_ld   => 'sportsTeam',
 );
 
@@ -342,7 +342,7 @@ A to_location should be one of the following types:
 
 has to_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_to_location',
     json_ld   => 'toLocation',
 );
 

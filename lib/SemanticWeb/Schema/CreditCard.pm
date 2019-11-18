@@ -63,7 +63,7 @@ A monthly_minimum_repayment_amount should be one of the following types:
 
 has monthly_minimum_repayment_amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_monthly_minimum_repayment_amount',
     json_ld   => 'monthlyMinimumRepaymentAmount',
 );
 

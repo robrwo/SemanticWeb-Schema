@@ -64,7 +64,7 @@ A acceleration_time should be one of the following types:
 
 has acceleration_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_acceleration_time',
     json_ld   => 'accelerationTime',
 );
 
@@ -91,7 +91,7 @@ A body_type should be one of the following types:
 
 has body_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_body_type',
     json_ld   => 'bodyType',
 );
 
@@ -121,7 +121,7 @@ A call_sign should be one of the following types:
 
 has call_sign => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_call_sign',
     json_ld   => 'callSign',
 );
 
@@ -153,7 +153,7 @@ A cargo_volume should be one of the following types:
 
 has cargo_volume => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cargo_volume',
     json_ld   => 'cargoVolume',
 );
 
@@ -178,7 +178,7 @@ A date_vehicle_first_registered should be one of the following types:
 
 has date_vehicle_first_registered => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_vehicle_first_registered',
     json_ld   => 'dateVehicleFirstRegistered',
 );
 
@@ -205,7 +205,7 @@ A drive_wheel_configuration should be one of the following types:
 
 has drive_wheel_configuration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drive_wheel_configuration',
     json_ld   => 'driveWheelConfiguration',
 );
 
@@ -231,7 +231,7 @@ A emissions_co2 should be one of the following types:
 
 has emissions_co2 => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_emissions_co2',
     json_ld   => 'emissionsCO2',
 );
 
@@ -263,7 +263,7 @@ A fuel_capacity should be one of the following types:
 
 has fuel_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fuel_capacity',
     json_ld   => 'fuelCapacity',
 );
 
@@ -305,7 +305,7 @@ A fuel_consumption should be one of the following types:
 
 has fuel_consumption => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fuel_consumption',
     json_ld   => 'fuelConsumption',
 );
 
@@ -347,7 +347,7 @@ A fuel_efficiency should be one of the following types:
 
 has fuel_efficiency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fuel_efficiency',
     json_ld   => 'fuelEfficiency',
 );
 
@@ -375,7 +375,7 @@ A fuel_type should be one of the following types:
 
 has fuel_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fuel_type',
     json_ld   => 'fuelType',
 );
 
@@ -399,7 +399,7 @@ A known_vehicle_damages should be one of the following types:
 
 has known_vehicle_damages => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_known_vehicle_damages',
     json_ld   => 'knownVehicleDamages',
 );
 
@@ -425,7 +425,7 @@ A meets_emission_standard should be one of the following types:
 
 has meets_emission_standard => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_meets_emission_standard',
     json_ld   => 'meetsEmissionStandard',
 );
 
@@ -455,7 +455,7 @@ A mileage_from_odometer should be one of the following types:
 
 has mileage_from_odometer => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_mileage_from_odometer',
     json_ld   => 'mileageFromOdometer',
 );
 
@@ -480,7 +480,7 @@ A model_date should be one of the following types:
 
 has model_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_model_date',
     json_ld   => 'modelDate',
 );
 
@@ -506,7 +506,7 @@ A number_of_airbags should be one of the following types:
 
 has number_of_airbags => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_airbags',
     json_ld   => 'numberOfAirbags',
 );
 
@@ -536,7 +536,7 @@ A number_of_axles should be one of the following types:
 
 has number_of_axles => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_axles',
     json_ld   => 'numberOfAxles',
 );
 
@@ -566,7 +566,7 @@ A number_of_doors should be one of the following types:
 
 has number_of_doors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_doors',
     json_ld   => 'numberOfDoors',
 );
 
@@ -597,7 +597,7 @@ A number_of_forward_gears should be one of the following types:
 
 has number_of_forward_gears => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_forward_gears',
     json_ld   => 'numberOfForwardGears',
 );
 
@@ -628,7 +628,7 @@ A number_of_previous_owners should be one of the following types:
 
 has number_of_previous_owners => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_previous_owners',
     json_ld   => 'numberOfPreviousOwners',
 );
 
@@ -672,7 +672,7 @@ A payload should be one of the following types:
 
 has payload => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_payload',
     json_ld   => 'payload',
 );
 
@@ -696,7 +696,7 @@ A production_date should be one of the following types:
 
 has production_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_date',
     json_ld   => 'productionDate',
 );
 
@@ -720,7 +720,7 @@ A purchase_date should be one of the following types:
 
 has purchase_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_purchase_date',
     json_ld   => 'purchaseDate',
 );
 
@@ -752,7 +752,7 @@ A seating_capacity should be one of the following types:
 
 has seating_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_seating_capacity',
     json_ld   => 'seatingCapacity',
 );
 
@@ -791,7 +791,7 @@ A speed should be one of the following types:
 
 has speed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_speed',
     json_ld   => 'speed',
 );
 
@@ -815,7 +815,7 @@ A steering_position should be one of the following types:
 
 has steering_position => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_steering_position',
     json_ld   => 'steeringPosition',
 );
 
@@ -857,7 +857,7 @@ A tongue_weight should be one of the following types:
 
 has tongue_weight => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tongue_weight',
     json_ld   => 'tongueWeight',
 );
 
@@ -896,7 +896,7 @@ A trailer_weight should be one of the following types:
 
 has trailer_weight => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_trailer_weight',
     json_ld   => 'trailerWeight',
 );
 
@@ -921,7 +921,7 @@ A vehicle_configuration should be one of the following types:
 
 has vehicle_configuration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_configuration',
     json_ld   => 'vehicleConfiguration',
 );
 
@@ -945,7 +945,7 @@ A vehicle_engine should be one of the following types:
 
 has vehicle_engine => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_engine',
     json_ld   => 'vehicleEngine',
 );
 
@@ -970,7 +970,7 @@ A vehicle_identification_number should be one of the following types:
 
 has vehicle_identification_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_identification_number',
     json_ld   => 'vehicleIdentificationNumber',
 );
 
@@ -994,7 +994,7 @@ A vehicle_interior_color should be one of the following types:
 
 has vehicle_interior_color => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_interior_color',
     json_ld   => 'vehicleInteriorColor',
 );
 
@@ -1021,7 +1021,7 @@ A vehicle_interior_type should be one of the following types:
 
 has vehicle_interior_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_interior_type',
     json_ld   => 'vehicleInteriorType',
 );
 
@@ -1046,7 +1046,7 @@ A vehicle_model_date should be one of the following types:
 
 has vehicle_model_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_model_date',
     json_ld   => 'vehicleModelDate',
 );
 
@@ -1078,7 +1078,7 @@ A vehicle_seating_capacity should be one of the following types:
 
 has vehicle_seating_capacity => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_seating_capacity',
     json_ld   => 'vehicleSeatingCapacity',
 );
 
@@ -1107,7 +1107,7 @@ A vehicle_special_usage should be one of the following types:
 
 has vehicle_special_usage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_special_usage',
     json_ld   => 'vehicleSpecialUsage',
 );
 
@@ -1134,7 +1134,7 @@ A vehicle_transmission should be one of the following types:
 
 has vehicle_transmission => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_vehicle_transmission',
     json_ld   => 'vehicleTransmission',
 );
 
@@ -1175,7 +1175,7 @@ A weight_total should be one of the following types:
 
 has weight_total => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_weight_total',
     json_ld   => 'weightTotal',
 );
 
@@ -1205,7 +1205,7 @@ A wheelbase should be one of the following types:
 
 has wheelbase => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_wheelbase',
     json_ld   => 'wheelbase',
 );
 

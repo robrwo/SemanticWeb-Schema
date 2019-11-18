@@ -53,7 +53,7 @@ A adverse_outcome should be one of the following types:
 
 has adverse_outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_adverse_outcome',
     json_ld   => 'adverseOutcome',
 );
 
@@ -78,7 +78,7 @@ A dose_schedule should be one of the following types:
 
 has dose_schedule => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_dose_schedule',
     json_ld   => 'doseSchedule',
 );
 
@@ -102,7 +102,7 @@ A drug should be one of the following types:
 
 has drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug',
     json_ld   => 'drug',
 );
 
@@ -130,7 +130,7 @@ A indication should be one of the following types:
 
 has indication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_indication',
     json_ld   => 'indication',
 );
 

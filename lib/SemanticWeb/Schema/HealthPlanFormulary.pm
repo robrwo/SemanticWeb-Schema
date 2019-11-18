@@ -50,7 +50,7 @@ A health_plan_cost_sharing should be one of the following types:
 
 has health_plan_cost_sharing => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_cost_sharing',
     json_ld   => 'healthPlanCostSharing',
 );
 
@@ -74,7 +74,7 @@ A health_plan_drug_tier should be one of the following types:
 
 has health_plan_drug_tier => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_plan_drug_tier',
     json_ld   => 'healthPlanDrugTier',
 );
 
@@ -98,7 +98,7 @@ A offers_prescription_by_mail should be one of the following types:
 
 has offers_prescription_by_mail => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_offers_prescription_by_mail',
     json_ld   => 'offersPrescriptionByMail',
 );
 

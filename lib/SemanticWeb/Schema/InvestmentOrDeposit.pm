@@ -52,7 +52,7 @@ A amount should be one of the following types:
 
 has amount => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amount',
     json_ld   => 'amount',
 );
 

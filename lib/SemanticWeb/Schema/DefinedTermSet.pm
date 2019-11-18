@@ -49,7 +49,7 @@ A has_defined_term should be one of the following types:
 
 has has_defined_term => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_defined_term',
     json_ld   => 'hasDefinedTerm',
 );
 

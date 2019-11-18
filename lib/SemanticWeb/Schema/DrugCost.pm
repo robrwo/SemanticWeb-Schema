@@ -54,7 +54,7 @@ A applicable_location should be one of the following types:
 
 has applicable_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_applicable_location',
     json_ld   => 'applicableLocation',
 );
 
@@ -78,7 +78,7 @@ A cost_category should be one of the following types:
 
 has cost_category => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cost_category',
     json_ld   => 'costCategory',
 );
 
@@ -103,7 +103,7 @@ A cost_currency should be one of the following types:
 
 has cost_currency => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cost_currency',
     json_ld   => 'costCurrency',
 );
 
@@ -128,7 +128,7 @@ A cost_origin should be one of the following types:
 
 has cost_origin => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cost_origin',
     json_ld   => 'costOrigin',
 );
 
@@ -156,7 +156,7 @@ A cost_per_unit should be one of the following types:
 
 has cost_per_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cost_per_unit',
     json_ld   => 'costPerUnit',
 );
 
@@ -180,7 +180,7 @@ A drug_unit should be one of the following types:
 
 has drug_unit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug_unit',
     json_ld   => 'drugUnit',
 );
 

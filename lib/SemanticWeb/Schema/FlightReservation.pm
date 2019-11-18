@@ -55,7 +55,7 @@ A boarding_group should be one of the following types:
 
 has boarding_group => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_boarding_group',
     json_ld   => 'boardingGroup',
 );
 
@@ -82,7 +82,7 @@ A passenger_priority_status should be one of the following types:
 
 has passenger_priority_status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_passenger_priority_status',
     json_ld   => 'passengerPriorityStatus',
 );
 
@@ -106,7 +106,7 @@ A passenger_sequence_number should be one of the following types:
 
 has passenger_sequence_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_passenger_sequence_number',
     json_ld   => 'passengerSequenceNumber',
 );
 
@@ -130,7 +130,7 @@ A security_screening should be one of the following types:
 
 has security_screening => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_security_screening',
     json_ld   => 'securityScreening',
 );
 

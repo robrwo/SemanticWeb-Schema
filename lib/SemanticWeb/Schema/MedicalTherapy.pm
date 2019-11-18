@@ -55,7 +55,7 @@ A contraindication should be one of the following types:
 
 has contraindication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contraindication',
     json_ld   => 'contraindication',
 );
 
@@ -79,7 +79,7 @@ A duplicate_therapy should be one of the following types:
 
 has duplicate_therapy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duplicate_therapy',
     json_ld   => 'duplicateTherapy',
 );
 
@@ -108,7 +108,7 @@ A serious_adverse_outcome should be one of the following types:
 
 has serious_adverse_outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serious_adverse_outcome',
     json_ld   => 'seriousAdverseOutcome',
 );
 

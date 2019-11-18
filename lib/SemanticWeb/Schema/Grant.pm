@@ -81,7 +81,7 @@ A funded_item should be one of the following types:
 
 has funded_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_funded_item',
     json_ld   => 'fundedItem',
 );
 
@@ -109,7 +109,7 @@ A sponsor should be one of the following types:
 
 has sponsor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sponsor',
     json_ld   => 'sponsor',
 );
 

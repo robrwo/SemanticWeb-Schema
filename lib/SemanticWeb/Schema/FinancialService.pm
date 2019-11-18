@@ -49,7 +49,7 @@ A fees_and_commissions_specification should be one of the following types:
 
 has fees_and_commissions_specification => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_fees_and_commissions_specification',
     json_ld   => 'feesAndCommissionsSpecification',
 );
 

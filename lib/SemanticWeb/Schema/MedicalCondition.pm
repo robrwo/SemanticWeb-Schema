@@ -55,7 +55,7 @@ A associated_anatomy should be one of the following types:
 
 has associated_anatomy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_anatomy',
     json_ld   => 'associatedAnatomy',
 );
 
@@ -81,7 +81,7 @@ A cause should be one of the following types:
 
 has cause => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_cause',
     json_ld   => 'cause',
 );
 
@@ -110,7 +110,7 @@ A differential_diagnosis should be one of the following types:
 
 has differential_diagnosis => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_differential_diagnosis',
     json_ld   => 'differentialDiagnosis',
 );
 
@@ -134,7 +134,7 @@ A drug should be one of the following types:
 
 has drug => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_drug',
     json_ld   => 'drug',
 );
 
@@ -158,7 +158,7 @@ A epidemiology should be one of the following types:
 
 has epidemiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_epidemiology',
     json_ld   => 'epidemiology',
 );
 
@@ -183,7 +183,7 @@ A expected_prognosis should be one of the following types:
 
 has expected_prognosis => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expected_prognosis',
     json_ld   => 'expectedPrognosis',
 );
 
@@ -208,7 +208,7 @@ A natural_progression should be one of the following types:
 
 has natural_progression => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_natural_progression',
     json_ld   => 'naturalProgression',
 );
 
@@ -233,7 +233,7 @@ A pathophysiology should be one of the following types:
 
 has pathophysiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pathophysiology',
     json_ld   => 'pathophysiology',
 );
 
@@ -259,7 +259,7 @@ A possible_complication should be one of the following types:
 
 has possible_complication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_possible_complication',
     json_ld   => 'possibleComplication',
 );
 
@@ -283,7 +283,7 @@ A possible_treatment should be one of the following types:
 
 has possible_treatment => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_possible_treatment',
     json_ld   => 'possibleTreatment',
 );
 
@@ -308,7 +308,7 @@ A primary_prevention should be one of the following types:
 
 has primary_prevention => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_primary_prevention',
     json_ld   => 'primaryPrevention',
 );
 
@@ -333,7 +333,7 @@ A risk_factor should be one of the following types:
 
 has risk_factor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_risk_factor',
     json_ld   => 'riskFactor',
 );
 
@@ -358,7 +358,7 @@ A secondary_prevention should be one of the following types:
 
 has secondary_prevention => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_secondary_prevention',
     json_ld   => 'secondaryPrevention',
 );
 
@@ -384,7 +384,7 @@ A sign_or_symptom should be one of the following types:
 
 has sign_or_symptom => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sign_or_symptom',
     json_ld   => 'signOrSymptom',
 );
 
@@ -408,7 +408,7 @@ A stage should be one of the following types:
 
 has stage => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_stage',
     json_ld   => 'stage',
 );
 
@@ -436,7 +436,7 @@ A status should be one of the following types:
 
 has status => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_status',
     json_ld   => 'status',
 );
 
@@ -461,7 +461,7 @@ A subtype should be one of the following types:
 
 has subtype => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_subtype',
     json_ld   => 'subtype',
 );
 
@@ -485,7 +485,7 @@ A typical_test should be one of the following types:
 
 has typical_test => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_typical_test',
     json_ld   => 'typicalTest',
 );
 

@@ -65,7 +65,7 @@ A end_date should be one of the following types:
 
 has end_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_date',
     json_ld   => 'endDate',
 );
 
@@ -91,7 +91,7 @@ A named_position should be one of the following types:
 
 has named_position => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_named_position',
     json_ld   => 'namedPosition',
 );
 
@@ -118,7 +118,7 @@ A role_name should be one of the following types:
 
 has role_name => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_role_name',
     json_ld   => 'roleName',
 );
 
@@ -147,7 +147,7 @@ A start_date should be one of the following types:
 
 has start_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_date',
     json_ld   => 'startDate',
 );
 

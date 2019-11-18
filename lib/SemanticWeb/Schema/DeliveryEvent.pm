@@ -48,7 +48,7 @@ A access_code should be one of the following types:
 
 has access_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_access_code',
     json_ld   => 'accessCode',
 );
 
@@ -72,7 +72,7 @@ A available_from should be one of the following types:
 
 has available_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_from',
     json_ld   => 'availableFrom',
 );
 
@@ -96,7 +96,7 @@ A available_through should be one of the following types:
 
 has available_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_through',
     json_ld   => 'availableThrough',
 );
 
@@ -120,7 +120,7 @@ A has_delivery_method should be one of the following types:
 
 has has_delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_delivery_method',
     json_ld   => 'hasDeliveryMethod',
 );
 

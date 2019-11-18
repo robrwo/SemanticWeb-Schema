@@ -51,7 +51,7 @@ A authenticator should be one of the following types:
 
 has authenticator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_authenticator',
     json_ld   => 'authenticator',
 );
 
@@ -76,7 +76,7 @@ A expects_acceptance_of should be one of the following types:
 
 has expects_acceptance_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_expects_acceptance_of',
     json_ld   => 'expectsAcceptanceOf',
 );
 

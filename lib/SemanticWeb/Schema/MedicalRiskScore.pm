@@ -49,7 +49,7 @@ A algorithm should be one of the following types:
 
 has algorithm => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_algorithm',
     json_ld   => 'algorithm',
 );
 

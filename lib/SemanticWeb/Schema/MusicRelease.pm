@@ -48,7 +48,7 @@ A catalog_number should be one of the following types:
 
 has catalog_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_catalog_number',
     json_ld   => 'catalogNumber',
 );
 
@@ -76,7 +76,7 @@ A credited_to should be one of the following types:
 
 has credited_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_credited_to',
     json_ld   => 'creditedTo',
 );
 
@@ -105,7 +105,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -130,7 +130,7 @@ A music_release_format should be one of the following types:
 
 has music_release_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_release_format',
     json_ld   => 'musicReleaseFormat',
 );
 
@@ -154,7 +154,7 @@ A record_label should be one of the following types:
 
 has record_label => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_record_label',
     json_ld   => 'recordLabel',
 );
 
@@ -178,7 +178,7 @@ A release_of should be one of the following types:
 
 has release_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_release_of',
     json_ld   => 'releaseOf',
 );
 

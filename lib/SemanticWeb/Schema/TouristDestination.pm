@@ -74,7 +74,7 @@ A includes_attraction should be one of the following types:
 
 has includes_attraction => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_includes_attraction',
     json_ld   => 'includesAttraction',
 );
 
@@ -101,7 +101,7 @@ A tourist_type should be one of the following types:
 
 has tourist_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tourist_type',
     json_ld   => 'touristType',
 );
 

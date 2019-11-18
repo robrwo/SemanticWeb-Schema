@@ -48,7 +48,7 @@ A code_value should be one of the following types:
 
 has code_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_code_value',
     json_ld   => 'codeValue',
 );
 
@@ -72,7 +72,7 @@ A coding_system should be one of the following types:
 
 has coding_system => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_coding_system',
     json_ld   => 'codingSystem',
 );
 

@@ -52,7 +52,7 @@ A associated_article should be one of the following types:
 
 has associated_article => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_article',
     json_ld   => 'associatedArticle',
 );
 
@@ -76,7 +76,7 @@ A bitrate should be one of the following types:
 
 has bitrate => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bitrate',
     json_ld   => 'bitrate',
 );
 
@@ -100,7 +100,7 @@ A content_size should be one of the following types:
 
 has content_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_size',
     json_ld   => 'contentSize',
 );
 
@@ -124,7 +124,7 @@ A content_url should be one of the following types:
 
 has content_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_url',
     json_ld   => 'contentUrl',
 );
 
@@ -153,7 +153,7 @@ A duration should be one of the following types:
 
 has duration => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_duration',
     json_ld   => 'duration',
 );
 
@@ -183,7 +183,7 @@ A embed_url should be one of the following types:
 
 has embed_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_embed_url',
     json_ld   => 'embedUrl',
 );
 
@@ -207,7 +207,7 @@ A encodes_creative_work should be one of the following types:
 
 has encodes_creative_work => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encodes_creative_work',
     json_ld   => 'encodesCreativeWork',
 );
 
@@ -249,7 +249,7 @@ A encoding_format should be one of the following types:
 
 has encoding_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encoding_format',
     json_ld   => 'encodingFormat',
 );
 
@@ -284,7 +284,7 @@ A end_time should be one of the following types:
 
 has end_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_time',
     json_ld   => 'endTime',
 );
 
@@ -310,7 +310,7 @@ A height should be one of the following types:
 
 has height => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_height',
     json_ld   => 'height',
 );
 
@@ -334,7 +334,7 @@ A player_type should be one of the following types:
 
 has player_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_player_type',
     json_ld   => 'playerType',
 );
 
@@ -359,7 +359,7 @@ A production_company should be one of the following types:
 
 has production_company => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_production_company',
     json_ld   => 'productionCompany',
 );
 
@@ -389,7 +389,7 @@ A regions_allowed should be one of the following types:
 
 has regions_allowed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_regions_allowed',
     json_ld   => 'regionsAllowed',
 );
 
@@ -421,7 +421,7 @@ A requires_subscription should be one of the following types:
 
 has requires_subscription => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_requires_subscription',
     json_ld   => 'requiresSubscription',
 );
 
@@ -456,7 +456,7 @@ A start_time should be one of the following types:
 
 has start_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_time',
     json_ld   => 'startTime',
 );
 
@@ -480,7 +480,7 @@ A upload_date should be one of the following types:
 
 has upload_date => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_upload_date',
     json_ld   => 'uploadDate',
 );
 
@@ -506,7 +506,7 @@ A width should be one of the following types:
 
 has width => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_width',
     json_ld   => 'width',
 );
 

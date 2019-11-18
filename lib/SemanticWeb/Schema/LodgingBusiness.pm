@@ -51,7 +51,7 @@ A amenity_feature should be one of the following types:
 
 has amenity_feature => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_amenity_feature',
     json_ld   => 'amenityFeature',
 );
 
@@ -75,7 +75,7 @@ A audience should be one of the following types:
 
 has audience => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_audience',
     json_ld   => 'audience',
 );
 
@@ -108,7 +108,7 @@ A available_language should be one of the following types:
 
 has available_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_available_language',
     json_ld   => 'availableLanguage',
 );
 
@@ -132,7 +132,7 @@ A checkin_time should be one of the following types:
 
 has checkin_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_checkin_time',
     json_ld   => 'checkinTime',
 );
 
@@ -156,7 +156,7 @@ A checkout_time should be one of the following types:
 
 has checkout_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_checkout_time',
     json_ld   => 'checkoutTime',
 );
 
@@ -185,7 +185,7 @@ A number_of_rooms should be one of the following types:
 
 has number_of_rooms => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_rooms',
     json_ld   => 'numberOfRooms',
 );
 
@@ -212,7 +212,7 @@ A pets_allowed should be one of the following types:
 
 has pets_allowed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pets_allowed',
     json_ld   => 'petsAllowed',
 );
 
@@ -239,7 +239,7 @@ A star_rating should be one of the following types:
 
 has star_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_star_rating',
     json_ld   => 'starRating',
 );
 

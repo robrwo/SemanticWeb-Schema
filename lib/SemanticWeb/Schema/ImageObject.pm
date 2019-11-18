@@ -57,7 +57,7 @@ A caption should be one of the following types:
 
 has caption => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_caption',
     json_ld   => 'caption',
 );
 
@@ -83,7 +83,7 @@ A exif_data should be one of the following types:
 
 has exif_data => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_exif_data',
     json_ld   => 'exifData',
 );
 
@@ -107,7 +107,7 @@ A representative_of_page should be one of the following types:
 
 has representative_of_page => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_representative_of_page',
     json_ld   => 'representativeOfPage',
 );
 
@@ -131,7 +131,7 @@ A thumbnail should be one of the following types:
 
 has thumbnail => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_thumbnail',
     json_ld   => 'thumbnail',
 );
 

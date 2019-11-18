@@ -60,7 +60,7 @@ A closes should be one of the following types:
 
 has closes => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_closes',
     json_ld   => 'closes',
 );
 
@@ -84,7 +84,7 @@ A day_of_week should be one of the following types:
 
 has day_of_week => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_day_of_week',
     json_ld   => 'dayOfWeek',
 );
 
@@ -108,7 +108,7 @@ A opens should be one of the following types:
 
 has opens => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_opens',
     json_ld   => 'opens',
 );
 
@@ -132,7 +132,7 @@ A valid_from should be one of the following types:
 
 has valid_from => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_from',
     json_ld   => 'validFrom',
 );
 
@@ -157,7 +157,7 @@ A valid_through should be one of the following types:
 
 has valid_through => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_valid_through',
     json_ld   => 'validThrough',
 );
 

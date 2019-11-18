@@ -56,7 +56,7 @@ A comment_text should be one of the following types:
 
 has comment_text => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comment_text',
     json_ld   => 'commentText',
 );
 
@@ -80,7 +80,7 @@ A comment_time should be one of the following types:
 
 has comment_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_comment_time',
     json_ld   => 'commentTime',
 );
 
@@ -107,7 +107,7 @@ A creator should be one of the following types:
 
 has creator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_creator',
     json_ld   => 'creator',
 );
 
@@ -131,7 +131,7 @@ A discusses should be one of the following types:
 
 has discusses => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_discusses',
     json_ld   => 'discusses',
 );
 
@@ -155,7 +155,7 @@ A reply_to_url should be one of the following types:
 
 has reply_to_url => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reply_to_url',
     json_ld   => 'replyToUrl',
 );
 

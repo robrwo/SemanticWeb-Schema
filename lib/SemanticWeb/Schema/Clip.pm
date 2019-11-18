@@ -50,7 +50,7 @@ A actor should be one of the following types:
 
 has actor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actor',
     json_ld   => 'actor',
 );
 
@@ -75,7 +75,7 @@ A actors should be one of the following types:
 
 has actors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_actors',
     json_ld   => 'actors',
 );
 
@@ -101,7 +101,7 @@ A clip_number should be one of the following types:
 
 has clip_number => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_clip_number',
     json_ld   => 'clipNumber',
 );
 
@@ -127,7 +127,7 @@ A director should be one of the following types:
 
 has director => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_director',
     json_ld   => 'director',
 );
 
@@ -152,7 +152,7 @@ A directors should be one of the following types:
 
 has directors => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_directors',
     json_ld   => 'directors',
 );
 
@@ -177,7 +177,7 @@ A end_offset should be one of the following types:
 
 has end_offset => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_offset',
     json_ld   => 'endOffset',
 );
 
@@ -203,7 +203,7 @@ A music_by should be one of the following types:
 
 has music_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_music_by',
     json_ld   => 'musicBy',
 );
 
@@ -227,7 +227,7 @@ A part_of_episode should be one of the following types:
 
 has part_of_episode => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_episode',
     json_ld   => 'partOfEpisode',
 );
 
@@ -251,7 +251,7 @@ A part_of_season should be one of the following types:
 
 has part_of_season => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_season',
     json_ld   => 'partOfSeason',
 );
 
@@ -275,7 +275,7 @@ A part_of_series should be one of the following types:
 
 has part_of_series => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_series',
     json_ld   => 'partOfSeries',
 );
 
@@ -300,7 +300,7 @@ A start_offset should be one of the following types:
 
 has start_offset => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_offset',
     json_ld   => 'startOffset',
 );
 

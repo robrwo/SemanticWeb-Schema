@@ -49,7 +49,7 @@ A tissue_sample should be one of the following types:
 
 has tissue_sample => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_tissue_sample',
     json_ld   => 'tissueSample',
 );
 

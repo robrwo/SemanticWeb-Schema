@@ -49,7 +49,7 @@ A identifying_exam should be one of the following types:
 
 has identifying_exam => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_identifying_exam',
     json_ld   => 'identifyingExam',
 );
 
@@ -73,7 +73,7 @@ A identifying_test should be one of the following types:
 
 has identifying_test => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_identifying_test',
     json_ld   => 'identifyingTest',
 );
 

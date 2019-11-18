@@ -59,7 +59,7 @@ A breadcrumb should be one of the following types:
 
 has breadcrumb => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_breadcrumb',
     json_ld   => 'breadcrumb',
 );
 
@@ -84,7 +84,7 @@ A last_reviewed should be one of the following types:
 
 has last_reviewed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_last_reviewed',
     json_ld   => 'lastReviewed',
 );
 
@@ -108,7 +108,7 @@ A main_content_of_page should be one of the following types:
 
 has main_content_of_page => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_main_content_of_page',
     json_ld   => 'mainContentOfPage',
 );
 
@@ -132,7 +132,7 @@ A primary_image_of_page should be one of the following types:
 
 has primary_image_of_page => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_primary_image_of_page',
     json_ld   => 'primaryImageOfPage',
 );
 
@@ -156,7 +156,7 @@ A related_link should be one of the following types:
 
 has related_link => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_link',
     json_ld   => 'relatedLink',
 );
 
@@ -183,7 +183,7 @@ A reviewed_by should be one of the following types:
 
 has reviewed_by => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_reviewed_by',
     json_ld   => 'reviewedBy',
 );
 
@@ -208,7 +208,7 @@ A significant_link should be one of the following types:
 
 has significant_link => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_significant_link',
     json_ld   => 'significantLink',
 );
 
@@ -233,7 +233,7 @@ A significant_links should be one of the following types:
 
 has significant_links => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_significant_links',
     json_ld   => 'significantLinks',
 );
 
@@ -284,7 +284,7 @@ A speakable should be one of the following types:
 
 has speakable => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_speakable',
     json_ld   => 'speakable',
 );
 
@@ -308,7 +308,7 @@ A specialty should be one of the following types:
 
 has specialty => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_specialty',
     json_ld   => 'specialty',
 );
 

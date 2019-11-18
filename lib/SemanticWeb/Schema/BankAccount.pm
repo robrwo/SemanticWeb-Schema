@@ -49,7 +49,7 @@ A account_minimum_inflow should be one of the following types:
 
 has account_minimum_inflow => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_account_minimum_inflow',
     json_ld   => 'accountMinimumInflow',
 );
 
@@ -76,7 +76,7 @@ A account_overdraft_limit should be one of the following types:
 
 has account_overdraft_limit => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_account_overdraft_limit',
     json_ld   => 'accountOverdraftLimit',
 );
 
@@ -100,7 +100,7 @@ A bank_account_type should be one of the following types:
 
 has bank_account_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_bank_account_type',
     json_ld   => 'bankAccountType',
 );
 

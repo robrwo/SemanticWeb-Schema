@@ -50,7 +50,7 @@ A health_condition should be one of the following types:
 
 has health_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_health_condition',
     json_ld   => 'healthCondition',
 );
 
@@ -74,7 +74,7 @@ A required_gender should be one of the following types:
 
 has required_gender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_required_gender',
     json_ld   => 'requiredGender',
 );
 
@@ -98,7 +98,7 @@ A required_max_age should be one of the following types:
 
 has required_max_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_required_max_age',
     json_ld   => 'requiredMaxAge',
 );
 
@@ -122,7 +122,7 @@ A required_min_age should be one of the following types:
 
 has required_min_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_required_min_age',
     json_ld   => 'requiredMinAge',
 );
 
@@ -146,7 +146,7 @@ A suggested_gender should be one of the following types:
 
 has suggested_gender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suggested_gender',
     json_ld   => 'suggestedGender',
 );
 
@@ -170,7 +170,7 @@ A suggested_max_age should be one of the following types:
 
 has suggested_max_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suggested_max_age',
     json_ld   => 'suggestedMaxAge',
 );
 
@@ -194,7 +194,7 @@ A suggested_min_age should be one of the following types:
 
 has suggested_min_age => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_suggested_min_age',
     json_ld   => 'suggestedMinAge',
 );
 

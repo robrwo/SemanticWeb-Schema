@@ -54,7 +54,7 @@ A publication_type should be one of the following types:
 
 has publication_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_publication_type',
     json_ld   => 'publicationType',
 );
 

@@ -59,7 +59,7 @@ A lender should be one of the following types:
 
 has lender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lender',
     json_ld   => 'lender',
 );
 

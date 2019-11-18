@@ -48,7 +48,7 @@ A action_application should be one of the following types:
 
 has action_application => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action_application',
     json_ld   => 'actionApplication',
 );
 
@@ -74,7 +74,7 @@ A action_platform should be one of the following types:
 
 has action_platform => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_action_platform',
     json_ld   => 'actionPlatform',
 );
 
@@ -98,7 +98,7 @@ A application should be one of the following types:
 
 has application => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_application',
     json_ld   => 'application',
 );
 
@@ -122,7 +122,7 @@ A content_type should be one of the following types:
 
 has content_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_content_type',
     json_ld   => 'contentType',
 );
 
@@ -146,7 +146,7 @@ A encoding_type should be one of the following types:
 
 has encoding_type => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_encoding_type',
     json_ld   => 'encodingType',
 );
 
@@ -171,7 +171,7 @@ A http_method should be one of the following types:
 
 has http_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_http_method',
     json_ld   => 'httpMethod',
 );
 
@@ -196,7 +196,7 @@ A url_template should be one of the following types:
 
 has url_template => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_url_template',
     json_ld   => 'urlTemplate',
 );
 

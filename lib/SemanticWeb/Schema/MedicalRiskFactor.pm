@@ -49,7 +49,7 @@ A increases_risk_of should be one of the following types:
 
 has increases_risk_of => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_increases_risk_of',
     json_ld   => 'increasesRiskOf',
 );
 

@@ -60,7 +60,7 @@ A additional_property should be one of the following types:
 
 has additional_property => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_additional_property',
     json_ld   => 'additionalProperty',
 );
 
@@ -85,7 +85,7 @@ A equal should be one of the following types:
 
 has equal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_equal',
     json_ld   => 'equal',
 );
 
@@ -110,7 +110,7 @@ A greater should be one of the following types:
 
 has greater => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_greater',
     json_ld   => 'greater',
 );
 
@@ -135,7 +135,7 @@ A greater_or_equal should be one of the following types:
 
 has greater_or_equal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_greater_or_equal',
     json_ld   => 'greaterOrEqual',
 );
 
@@ -160,7 +160,7 @@ A lesser should be one of the following types:
 
 has lesser => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lesser',
     json_ld   => 'lesser',
 );
 
@@ -185,7 +185,7 @@ A lesser_or_equal should be one of the following types:
 
 has lesser_or_equal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_lesser_or_equal',
     json_ld   => 'lesserOrEqual',
 );
 
@@ -210,7 +210,7 @@ A non_equal should be one of the following types:
 
 has non_equal => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_non_equal',
     json_ld   => 'nonEqual',
 );
 
@@ -243,7 +243,7 @@ A value_reference should be one of the following types:
 
 has value_reference => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_value_reference',
     json_ld   => 'valueReference',
 );
 

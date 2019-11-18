@@ -48,7 +48,7 @@ A abridged should be one of the following types:
 
 has abridged => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_abridged',
     json_ld   => 'abridged',
 );
 
@@ -72,7 +72,7 @@ A book_edition should be one of the following types:
 
 has book_edition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_book_edition',
     json_ld   => 'bookEdition',
 );
 
@@ -96,7 +96,7 @@ A book_format should be one of the following types:
 
 has book_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_book_format',
     json_ld   => 'bookFormat',
 );
 
@@ -120,7 +120,7 @@ A illustrator should be one of the following types:
 
 has illustrator => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_illustrator',
     json_ld   => 'illustrator',
 );
 
@@ -144,7 +144,7 @@ A isbn should be one of the following types:
 
 has isbn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_isbn',
     json_ld   => 'isbn',
 );
 
@@ -168,7 +168,7 @@ A number_of_pages should be one of the following types:
 
 has number_of_pages => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_pages',
     json_ld   => 'numberOfPages',
 );
 

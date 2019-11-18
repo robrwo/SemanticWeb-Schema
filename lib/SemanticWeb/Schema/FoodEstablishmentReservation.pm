@@ -65,7 +65,7 @@ A end_time should be one of the following types:
 
 has end_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_end_time',
     json_ld   => 'endTime',
 );
 
@@ -91,7 +91,7 @@ A party_size should be one of the following types:
 
 has party_size => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_party_size',
     json_ld   => 'partySize',
 );
 
@@ -126,7 +126,7 @@ A start_time should be one of the following types:
 
 has start_time => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_start_time',
     json_ld   => 'startTime',
 );
 

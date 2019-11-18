@@ -60,7 +60,7 @@ A delivery_method should be one of the following types:
 
 has delivery_method => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_delivery_method',
     json_ld   => 'deliveryMethod',
 );
 
@@ -89,7 +89,7 @@ A sender should be one of the following types:
 
 has sender => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sender',
     json_ld   => 'sender',
 );
 

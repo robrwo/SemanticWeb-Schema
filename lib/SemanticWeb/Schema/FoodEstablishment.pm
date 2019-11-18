@@ -56,7 +56,7 @@ A accepts_reservations should be one of the following types:
 
 has accepts_reservations => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_accepts_reservations',
     json_ld   => 'acceptsReservations',
 );
 
@@ -83,7 +83,7 @@ A has_menu should be one of the following types:
 
 has has_menu => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_has_menu',
     json_ld   => 'hasMenu',
 );
 
@@ -110,7 +110,7 @@ A menu should be one of the following types:
 
 has menu => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_menu',
     json_ld   => 'menu',
 );
 
@@ -134,7 +134,7 @@ A serves_cuisine should be one of the following types:
 
 has serves_cuisine => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serves_cuisine',
     json_ld   => 'servesCuisine',
 );
 
@@ -161,7 +161,7 @@ A star_rating should be one of the following types:
 
 has star_rating => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_star_rating',
     json_ld   => 'starRating',
 );
 

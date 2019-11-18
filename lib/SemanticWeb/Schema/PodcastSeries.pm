@@ -50,7 +50,7 @@ A web_feed should be one of the following types:
 
 has web_feed => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_web_feed',
     json_ld   => 'webFeed',
 );
 

@@ -51,7 +51,7 @@ A issn should be one of the following types:
 
 has issn => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_issn',
     json_ld   => 'issn',
 );
 

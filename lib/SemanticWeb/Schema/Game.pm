@@ -51,7 +51,7 @@ A character_attribute should be one of the following types:
 
 has character_attribute => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_character_attribute',
     json_ld   => 'characterAttribute',
 );
 
@@ -76,7 +76,7 @@ A game_item should be one of the following types:
 
 has game_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_item',
     json_ld   => 'gameItem',
 );
 
@@ -104,7 +104,7 @@ A game_location should be one of the following types:
 
 has game_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_game_location',
     json_ld   => 'gameLocation',
 );
 
@@ -128,7 +128,7 @@ A number_of_players should be one of the following types:
 
 has number_of_players => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_number_of_players',
     json_ld   => 'numberOfPlayers',
 );
 
@@ -153,7 +153,7 @@ A quest should be one of the following types:
 
 has quest => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_quest',
     json_ld   => 'quest',
 );
 

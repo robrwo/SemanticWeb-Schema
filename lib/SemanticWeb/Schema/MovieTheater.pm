@@ -48,7 +48,7 @@ A screen_count should be one of the following types:
 
 has screen_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_screen_count',
     json_ld   => 'screenCount',
 );
 

@@ -53,7 +53,7 @@ A adverse_outcome should be one of the following types:
 
 has adverse_outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_adverse_outcome',
     json_ld   => 'adverseOutcome',
 );
 
@@ -79,7 +79,7 @@ A contraindication should be one of the following types:
 
 has contraindication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_contraindication',
     json_ld   => 'contraindication',
 );
 
@@ -107,7 +107,7 @@ A indication should be one of the following types:
 
 has indication => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_indication',
     json_ld   => 'indication',
 );
 
@@ -132,7 +132,7 @@ A post_op should be one of the following types:
 
 has post_op => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_post_op',
     json_ld   => 'postOp',
 );
 
@@ -157,7 +157,7 @@ A pre_op should be one of the following types:
 
 has pre_op => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_pre_op',
     json_ld   => 'preOp',
 );
 
@@ -182,7 +182,7 @@ A procedure should be one of the following types:
 
 has procedure => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_procedure',
     json_ld   => 'procedure',
 );
 
@@ -208,7 +208,7 @@ A purpose should be one of the following types:
 
 has purpose => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_purpose',
     json_ld   => 'purpose',
 );
 
@@ -237,7 +237,7 @@ A serious_adverse_outcome should be one of the following types:
 
 has serious_adverse_outcome => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_serious_adverse_outcome',
     json_ld   => 'seriousAdverseOutcome',
 );
 

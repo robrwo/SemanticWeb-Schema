@@ -48,7 +48,7 @@ A broadcast_of_event should be one of the following types:
 
 has broadcast_of_event => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_of_event',
     json_ld   => 'broadcastOfEvent',
 );
 
@@ -72,7 +72,7 @@ A is_live_broadcast should be one of the following types:
 
 has is_live_broadcast => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_is_live_broadcast',
     json_ld   => 'isLiveBroadcast',
 );
 
@@ -103,7 +103,7 @@ A subtitle_language should be one of the following types:
 
 has subtitle_language => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_subtitle_language',
     json_ld   => 'subtitleLanguage',
 );
 
@@ -128,7 +128,7 @@ A video_format should be one of the following types:
 
 has video_format => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_video_format',
     json_ld   => 'videoFormat',
 );
 

@@ -49,7 +49,7 @@ A date_created should be one of the following types:
 
 has date_created => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_created',
     json_ld   => 'dateCreated',
 );
 
@@ -73,7 +73,7 @@ A date_deleted should be one of the following types:
 
 has date_deleted => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_deleted',
     json_ld   => 'dateDeleted',
 );
 
@@ -98,7 +98,7 @@ A date_modified should be one of the following types:
 
 has date_modified => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_date_modified',
     json_ld   => 'dateModified',
 );
 
@@ -123,7 +123,7 @@ A item should be one of the following types:
 
 has item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_item',
     json_ld   => 'item',
 );
 

@@ -49,7 +49,7 @@ A sport should be one of the following types:
 
 has sport => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sport',
     json_ld   => 'sport',
 );
 

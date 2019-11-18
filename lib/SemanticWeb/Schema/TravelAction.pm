@@ -49,7 +49,7 @@ A distance should be one of the following types:
 
 has distance => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_distance',
     json_ld   => 'distance',
 );
 

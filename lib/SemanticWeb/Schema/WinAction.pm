@@ -48,7 +48,7 @@ A loser should be one of the following types:
 
 has loser => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_loser',
     json_ld   => 'loser',
 );
 

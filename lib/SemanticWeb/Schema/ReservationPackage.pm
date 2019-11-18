@@ -50,7 +50,7 @@ A sub_reservation should be one of the following types:
 
 has sub_reservation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_reservation',
     json_ld   => 'subReservation',
 );
 

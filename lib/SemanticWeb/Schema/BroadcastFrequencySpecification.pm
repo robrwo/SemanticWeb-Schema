@@ -51,7 +51,7 @@ A broadcast_frequency_value should be one of the following types:
 
 has broadcast_frequency_value => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_frequency_value',
     json_ld   => 'broadcastFrequencyValue',
 );
 
@@ -77,7 +77,7 @@ A broadcast_signal_modulation should be one of the following types:
 
 has broadcast_signal_modulation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_signal_modulation',
     json_ld   => 'broadcastSignalModulation',
 );
 
@@ -101,7 +101,7 @@ A broadcast_sub_channel should be one of the following types:
 
 has broadcast_sub_channel => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_broadcast_sub_channel',
     json_ld   => 'broadcastSubChannel',
 );
 

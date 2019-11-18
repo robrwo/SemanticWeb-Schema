@@ -57,7 +57,7 @@ A borrower should be one of the following types:
 
 has borrower => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_borrower',
     json_ld   => 'borrower',
 );
 

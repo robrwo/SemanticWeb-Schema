@@ -57,7 +57,7 @@ A downvote_count should be one of the following types:
 
 has downvote_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_downvote_count',
     json_ld   => 'downvoteCount',
 );
 
@@ -81,7 +81,7 @@ A parent_item should be one of the following types:
 
 has parent_item => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_parent_item',
     json_ld   => 'parentItem',
 );
 
@@ -106,7 +106,7 @@ A upvote_count should be one of the following types:
 
 has upvote_count => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_upvote_count',
     json_ld   => 'upvoteCount',
 );
 

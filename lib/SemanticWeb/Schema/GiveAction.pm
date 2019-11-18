@@ -65,7 +65,7 @@ A recipient should be one of the following types:
 
 has recipient => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_recipient',
     json_ld   => 'recipient',
 );
 

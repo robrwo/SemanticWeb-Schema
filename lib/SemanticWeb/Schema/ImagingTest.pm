@@ -48,7 +48,7 @@ A imaging_technique should be one of the following types:
 
 has imaging_technique => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_imaging_technique',
     json_ld   => 'imagingTechnique',
 );
 

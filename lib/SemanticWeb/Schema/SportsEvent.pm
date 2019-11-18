@@ -50,7 +50,7 @@ A away_team should be one of the following types:
 
 has away_team => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_away_team',
     json_ld   => 'awayTeam',
 );
 
@@ -76,7 +76,7 @@ A competitor should be one of the following types:
 
 has competitor => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_competitor',
     json_ld   => 'competitor',
 );
 
@@ -102,7 +102,7 @@ A home_team should be one of the following types:
 
 has home_team => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_home_team',
     json_ld   => 'homeTeam',
 );
 

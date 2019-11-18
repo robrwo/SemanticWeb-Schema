@@ -50,7 +50,7 @@ A address should be one of the following types:
 
 has address => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address',
     json_ld   => 'address',
 );
 
@@ -82,7 +82,7 @@ A address_country should be one of the following types:
 
 has address_country => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_address_country',
     json_ld   => 'addressCountry',
 );
 
@@ -116,7 +116,7 @@ A elevation should be one of the following types:
 
 has elevation => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_elevation',
     json_ld   => 'elevation',
 );
 
@@ -147,7 +147,7 @@ A latitude should be one of the following types:
 
 has latitude => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_latitude',
     json_ld   => 'latitude',
 );
 
@@ -178,7 +178,7 @@ A longitude should be one of the following types:
 
 has longitude => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_longitude',
     json_ld   => 'longitude',
 );
 
@@ -202,7 +202,7 @@ A postal_code should be one of the following types:
 
 has postal_code => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_postal_code',
     json_ld   => 'postalCode',
 );
 

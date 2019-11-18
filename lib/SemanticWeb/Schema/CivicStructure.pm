@@ -65,7 +65,7 @@ A opening_hours should be one of the following types:
 
 has opening_hours => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_opening_hours',
     json_ld   => 'openingHours',
 );
 

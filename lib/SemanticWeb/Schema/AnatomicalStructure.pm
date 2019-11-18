@@ -51,7 +51,7 @@ A associated_pathophysiology should be one of the following types:
 
 has associated_pathophysiology => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_associated_pathophysiology',
     json_ld   => 'associatedPathophysiology',
 );
 
@@ -75,7 +75,7 @@ A body_location should be one of the following types:
 
 has body_location => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_body_location',
     json_ld   => 'bodyLocation',
 );
 
@@ -99,7 +99,7 @@ A connected_to should be one of the following types:
 
 has connected_to => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_connected_to',
     json_ld   => 'connectedTo',
 );
 
@@ -124,7 +124,7 @@ A diagram should be one of the following types:
 
 has diagram => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_diagram',
     json_ld   => 'diagram',
 );
 
@@ -148,7 +148,7 @@ A function should be one of the following types:
 
 has function => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_function',
     json_ld   => 'function',
 );
 
@@ -172,7 +172,7 @@ A part_of_system should be one of the following types:
 
 has part_of_system => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_part_of_system',
     json_ld   => 'partOfSystem',
 );
 
@@ -196,7 +196,7 @@ A related_condition should be one of the following types:
 
 has related_condition => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_condition',
     json_ld   => 'relatedCondition',
 );
 
@@ -220,7 +220,7 @@ A related_therapy should be one of the following types:
 
 has related_therapy => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_related_therapy',
     json_ld   => 'relatedTherapy',
 );
 
@@ -244,7 +244,7 @@ A sub_structure should be one of the following types:
 
 has sub_structure => (
     is        => 'rw',
-    predicate => 1,
+    predicate => '_has_sub_structure',
     json_ld   => 'subStructure',
 );
 
