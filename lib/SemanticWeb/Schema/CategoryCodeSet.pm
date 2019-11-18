@@ -44,6 +44,10 @@ A has_category_code should be one of the following types:
 
 =back
 
+=head2 C<_has_has_category_code>
+
+A predicate for the L</has_category_code> attribute.
+
 =cut
 
 has has_category_code => (

@@ -47,6 +47,10 @@ A buyer should be one of the following types:
 
 =back
 
+=head2 C<_has_buyer>
+
+A predicate for the L</buyer> attribute.
+
 =cut
 
 has buyer => (
@@ -70,6 +74,10 @@ A warranty_promise should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::WarrantyPromise']>
 
 =back
+
+=head2 C<_has_warranty_promise>
+
+A predicate for the L</warranty_promise> attribute.
 
 =cut
 

@@ -50,6 +50,10 @@ A publication_type should be one of the following types:
 
 =back
 
+=head2 C<_has_publication_type>
+
+A predicate for the L</publication_type> attribute.
+
 =cut
 
 has publication_type => (

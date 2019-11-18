@@ -46,6 +46,10 @@ A hours_available should be one of the following types:
 
 =back
 
+=head2 C<_has_hours_available>
+
+A predicate for the L</hours_available> attribute.
+
 =cut
 
 has hours_available => (
@@ -69,6 +73,10 @@ A valid_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
 
 =cut
 
@@ -94,6 +102,10 @@ A valid_through should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
 
 =cut
 

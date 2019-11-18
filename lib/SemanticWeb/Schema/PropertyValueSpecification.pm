@@ -48,6 +48,10 @@ A default_value should be one of the following types:
 
 =back
 
+=head2 C<_has_default_value>
+
+A predicate for the L</default_value> attribute.
+
 =cut
 
 has default_value => (
@@ -71,6 +75,10 @@ A max_value should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_max_value>
+
+A predicate for the L</max_value> attribute.
 
 =cut
 
@@ -96,6 +104,10 @@ A min_value should be one of the following types:
 
 =back
 
+=head2 C<_has_min_value>
+
+A predicate for the L</min_value> attribute.
+
 =cut
 
 has min_value => (
@@ -119,6 +131,10 @@ A multiple_values should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_multiple_values>
+
+A predicate for the L</multiple_values> attribute.
 
 =cut
 
@@ -146,6 +162,10 @@ A readonly_value should be one of the following types:
 
 =back
 
+=head2 C<_has_readonly_value>
+
+A predicate for the L</readonly_value> attribute.
+
 =cut
 
 has readonly_value => (
@@ -171,6 +191,10 @@ A step_value should be one of the following types:
 
 =back
 
+=head2 C<_has_step_value>
+
+A predicate for the L</step_value> attribute.
+
 =cut
 
 has step_value => (
@@ -194,6 +218,10 @@ A value_max_length should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_value_max_length>
+
+A predicate for the L</value_max_length> attribute.
 
 =cut
 
@@ -220,6 +248,10 @@ A value_min_length should be one of the following types:
 
 =back
 
+=head2 C<_has_value_min_length>
+
+A predicate for the L</value_min_length> attribute.
+
 =cut
 
 has value_min_length => (
@@ -244,6 +276,10 @@ A value_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_value_name>
+
+A predicate for the L</value_name> attribute.
 
 =cut
 
@@ -270,6 +306,10 @@ A value_pattern should be one of the following types:
 
 =back
 
+=head2 C<_has_value_pattern>
+
+A predicate for the L</value_pattern> attribute.
+
 =cut
 
 has value_pattern => (
@@ -294,6 +334,10 @@ A value_required should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_value_required>
+
+A predicate for the L</value_required> attribute.
 
 =cut
 

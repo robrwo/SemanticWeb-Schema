@@ -47,6 +47,10 @@ A acquired_from should be one of the following types:
 
 =back
 
+=head2 C<_has_acquired_from>
+
+A predicate for the L</acquired_from> attribute.
+
 =cut
 
 has acquired_from => (
@@ -71,6 +75,10 @@ A owned_from should be one of the following types:
 
 =back
 
+=head2 C<_has_owned_from>
+
+A predicate for the L</owned_from> attribute.
+
 =cut
 
 has owned_from => (
@@ -94,6 +102,10 @@ A owned_through should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_owned_through>
+
+A predicate for the L</owned_through> attribute.
 
 =cut
 
@@ -120,6 +132,10 @@ A type_of_good should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
+
+=head2 C<_has_type_of_good>
+
+A predicate for the L</type_of_good> attribute.
 
 =cut
 

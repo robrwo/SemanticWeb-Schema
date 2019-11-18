@@ -55,6 +55,10 @@ A course_mode should be one of the following types:
 
 =back
 
+=head2 C<_has_course_mode>
+
+A predicate for the L</course_mode> attribute.
+
 =cut
 
 has course_mode => (
@@ -81,6 +85,10 @@ A course_workload should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_course_workload>
+
+A predicate for the L</course_workload> attribute.
 
 =cut
 
@@ -111,6 +119,10 @@ A instructor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_instructor>
+
+A predicate for the L</instructor> attribute.
 
 =cut
 

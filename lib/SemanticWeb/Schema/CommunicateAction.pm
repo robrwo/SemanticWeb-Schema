@@ -45,6 +45,10 @@ A about should be one of the following types:
 
 =back
 
+=head2 C<_has_about>
+
+A predicate for the L</about> attribute.
+
 =cut
 
 has about => (
@@ -79,6 +83,10 @@ A in_language should be one of the following types:
 
 =back
 
+=head2 C<_has_in_language>
+
+A predicate for the L</in_language> attribute.
+
 =cut
 
 has in_language => (
@@ -102,6 +110,10 @@ A language should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Language']>
 
 =back
+
+=head2 C<_has_language>
+
+A predicate for the L</language> attribute.
 
 =cut
 
@@ -133,6 +145,10 @@ A recipient should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_recipient>
+
+A predicate for the L</recipient> attribute.
 
 =cut
 

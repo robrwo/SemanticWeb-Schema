@@ -46,6 +46,10 @@ A availability_ends should be one of the following types:
 
 =back
 
+=head2 C<_has_availability_ends>
+
+A predicate for the L</availability_ends> attribute.
+
 =cut
 
 has availability_ends => (
@@ -70,6 +74,10 @@ A availability_starts should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_availability_starts>
+
+A predicate for the L</availability_starts> attribute.
 
 =cut
 
@@ -99,6 +107,10 @@ A category should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_category>
+
+A predicate for the L</category> attribute.
 
 =cut
 
@@ -136,6 +148,10 @@ A eligible_region should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_region>
+
+A predicate for the L</eligible_region> attribute.
+
 =cut
 
 has eligible_region => (
@@ -160,6 +176,10 @@ A expects_acceptance_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_expects_acceptance_of>
+
+A predicate for the L</expects_acceptance_of> attribute.
 
 =cut
 
@@ -197,6 +217,10 @@ A ineligible_region should be one of the following types:
 
 =back
 
+=head2 C<_has_ineligible_region>
+
+A predicate for the L</ineligible_region> attribute.
+
 =cut
 
 has ineligible_region => (
@@ -228,6 +252,10 @@ A requires_subscription should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MediaSubscription']>
 
 =back
+
+=head2 C<_has_requires_subscription>
+
+A predicate for the L</requires_subscription> attribute.
 
 =cut
 

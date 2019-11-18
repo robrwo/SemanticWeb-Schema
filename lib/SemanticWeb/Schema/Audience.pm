@@ -46,6 +46,10 @@ A audience_type should be one of the following types:
 
 =back
 
+=head2 C<_has_audience_type>
+
+A predicate for the L</audience_type> attribute.
+
 =cut
 
 has audience_type => (
@@ -69,6 +73,10 @@ A geographic_area should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
+
+=head2 C<_has_geographic_area>
+
+A predicate for the L</geographic_area> attribute.
 
 =cut
 

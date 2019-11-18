@@ -51,6 +51,10 @@ A contraindication should be one of the following types:
 
 =back
 
+=head2 C<_has_contraindication>
+
+A predicate for the L</contraindication> attribute.
+
 =cut
 
 has contraindication => (
@@ -74,6 +78,10 @@ A duplicate_therapy should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTherapy']>
 
 =back
+
+=head2 C<_has_duplicate_therapy>
+
+A predicate for the L</duplicate_therapy> attribute.
 
 =cut
 
@@ -103,6 +111,10 @@ A serious_adverse_outcome should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
 
 =back
+
+=head2 C<_has_serious_adverse_outcome>
+
+A predicate for the L</serious_adverse_outcome> attribute.
 
 =cut
 

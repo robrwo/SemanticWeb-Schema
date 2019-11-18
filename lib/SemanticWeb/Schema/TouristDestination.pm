@@ -70,6 +70,10 @@ A includes_attraction should be one of the following types:
 
 =back
 
+=head2 C<_has_includes_attraction>
+
+A predicate for the L</includes_attraction> attribute.
+
 =cut
 
 has includes_attraction => (
@@ -96,6 +100,10 @@ A tourist_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_tourist_type>
+
+A predicate for the L</tourist_type> attribute.
 
 =cut
 

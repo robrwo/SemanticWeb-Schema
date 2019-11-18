@@ -44,6 +44,10 @@ A arrival_platform should be one of the following types:
 
 =back
 
+=head2 C<_has_arrival_platform>
+
+A predicate for the L</arrival_platform> attribute.
+
 =cut
 
 has arrival_platform => (
@@ -67,6 +71,10 @@ A arrival_station should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::TrainStation']>
 
 =back
+
+=head2 C<_has_arrival_station>
+
+A predicate for the L</arrival_station> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A departure_platform should be one of the following types:
 
 =back
 
+=head2 C<_has_departure_platform>
+
+A predicate for the L</departure_platform> attribute.
+
 =cut
 
 has departure_platform => (
@@ -115,6 +127,10 @@ A departure_station should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::TrainStation']>
 
 =back
+
+=head2 C<_has_departure_station>
+
+A predicate for the L</departure_station> attribute.
 
 =cut
 
@@ -140,6 +156,10 @@ A train_name should be one of the following types:
 
 =back
 
+=head2 C<_has_train_name>
+
+A predicate for the L</train_name> attribute.
+
 =cut
 
 has train_name => (
@@ -163,6 +183,10 @@ A train_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_train_number>
+
+A predicate for the L</train_number> attribute.
 
 =cut
 

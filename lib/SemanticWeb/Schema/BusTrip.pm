@@ -46,6 +46,10 @@ A arrival_bus_stop should be one of the following types:
 
 =back
 
+=head2 C<_has_arrival_bus_stop>
+
+A predicate for the L</arrival_bus_stop> attribute.
+
 =cut
 
 has arrival_bus_stop => (
@@ -70,6 +74,10 @@ A bus_name should be one of the following types:
 
 =back
 
+=head2 C<_has_bus_name>
+
+A predicate for the L</bus_name> attribute.
+
 =cut
 
 has bus_name => (
@@ -93,6 +101,10 @@ A bus_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_bus_number>
+
+A predicate for the L</bus_number> attribute.
 
 =cut
 
@@ -119,6 +131,10 @@ A departure_bus_stop should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BusStop']>
 
 =back
+
+=head2 C<_has_departure_bus_stop>
+
+A predicate for the L</departure_bus_stop> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A education_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_education_requirements>
+
+A predicate for the L</education_requirements> attribute.
+
 =cut
 
 has education_requirements => (
@@ -77,6 +81,10 @@ A estimated_salary should be one of the following types:
 
 =back
 
+=head2 C<_has_estimated_salary>
+
+A predicate for the L</estimated_salary> attribute.
+
 =cut
 
 has estimated_salary => (
@@ -100,6 +108,10 @@ A experience_requirements should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_experience_requirements>
+
+A predicate for the L</experience_requirements> attribute.
 
 =cut
 
@@ -126,6 +138,10 @@ A occupation_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
+
+=head2 C<_has_occupation_location>
+
+A predicate for the L</occupation_location> attribute.
 
 =cut
 
@@ -165,6 +181,10 @@ A occupational_category should be one of the following types:
 
 =back
 
+=head2 C<_has_occupational_category>
+
+A predicate for the L</occupational_category> attribute.
+
 =cut
 
 has occupational_category => (
@@ -191,6 +211,10 @@ A qualifications should be one of the following types:
 
 =back
 
+=head2 C<_has_qualifications>
+
+A predicate for the L</qualifications> attribute.
+
 =cut
 
 has qualifications => (
@@ -214,6 +238,10 @@ A responsibilities should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_responsibilities>
+
+A predicate for the L</responsibilities> attribute.
 
 =cut
 
@@ -242,6 +270,10 @@ A skills should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_skills>
+
+A predicate for the L</skills> attribute.
 
 =cut
 

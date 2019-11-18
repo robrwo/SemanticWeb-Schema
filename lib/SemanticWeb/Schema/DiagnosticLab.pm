@@ -44,6 +44,10 @@ A available_test should be one of the following types:
 
 =back
 
+=head2 C<_has_available_test>
+
+A predicate for the L</available_test> attribute.
+
 =cut
 
 has available_test => (

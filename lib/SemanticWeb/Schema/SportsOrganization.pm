@@ -45,6 +45,10 @@ A sport should be one of the following types:
 
 =back
 
+=head2 C<_has_sport>
+
+A predicate for the L</sport> attribute.
+
 =cut
 
 has sport => (

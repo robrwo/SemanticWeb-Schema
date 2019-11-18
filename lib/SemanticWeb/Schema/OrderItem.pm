@@ -45,6 +45,10 @@ A order_delivery should be one of the following types:
 
 =back
 
+=head2 C<_has_order_delivery>
+
+A predicate for the L</order_delivery> attribute.
+
 =cut
 
 has order_delivery => (
@@ -68,6 +72,10 @@ A order_item_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_order_item_number>
+
+A predicate for the L</order_item_number> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A order_item_status should be one of the following types:
 
 =back
 
+=head2 C<_has_order_item_status>
+
+A predicate for the L</order_item_status> attribute.
+
 =cut
 
 has order_item_status => (
@@ -117,6 +129,10 @@ A order_quantity should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_order_quantity>
+
+A predicate for the L</order_quantity> attribute.
 
 =cut
 
@@ -145,6 +161,10 @@ A ordered_item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
+
+=head2 C<_has_ordered_item>
+
+A predicate for the L</ordered_item> attribute.
 
 =cut
 

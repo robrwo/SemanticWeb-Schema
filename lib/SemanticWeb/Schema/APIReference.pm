@@ -44,6 +44,10 @@ A assembly should be one of the following types:
 
 =back
 
+=head2 C<_has_assembly>
+
+A predicate for the L</assembly> attribute.
+
 =cut
 
 has assembly => (
@@ -67,6 +71,10 @@ A assembly_version should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_assembly_version>
+
+A predicate for the L</assembly_version> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A executable_library_name should be one of the following types:
 
 =back
 
+=head2 C<_has_executable_library_name>
+
+A predicate for the L</executable_library_name> attribute.
+
 =cut
 
 has executable_library_name => (
@@ -116,6 +128,10 @@ A programming_model should be one of the following types:
 
 =back
 
+=head2 C<_has_programming_model>
+
+A predicate for the L</programming_model> attribute.
+
 =cut
 
 has programming_model => (
@@ -139,6 +155,10 @@ A target_platform should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_target_platform>
+
+A predicate for the L</target_platform> attribute.
 
 =cut
 

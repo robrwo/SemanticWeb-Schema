@@ -64,6 +64,10 @@ A accommodation_category should be one of the following types:
 
 =back
 
+=head2 C<_has_accommodation_category>
+
+A predicate for the L</accommodation_category> attribute.
+
 =cut
 
 has accommodation_category => (
@@ -90,6 +94,10 @@ A amenity_feature should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::LocationFeatureSpecification']>
 
 =back
+
+=head2 C<_has_amenity_feature>
+
+A predicate for the L</amenity_feature> attribute.
 
 =cut
 
@@ -124,6 +132,10 @@ A floor_level should be one of the following types:
 
 =back
 
+=head2 C<_has_floor_level>
+
+A predicate for the L</floor_level> attribute.
+
 =cut
 
 has floor_level => (
@@ -149,6 +161,10 @@ A floor_size should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_floor_size>
+
+A predicate for the L</floor_size> attribute.
 
 =cut
 
@@ -182,6 +198,10 @@ A lease_length should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_lease_length>
+
+A predicate for the L</lease_length> attribute.
 
 =cut
 
@@ -218,6 +238,10 @@ A number_of_bathrooms_total should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_bathrooms_total>
+
+A predicate for the L</number_of_bathrooms_total> attribute.
+
 =cut
 
 has number_of_bathrooms_total => (
@@ -251,6 +275,10 @@ A number_of_full_bathrooms should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_full_bathrooms>
+
+A predicate for the L</number_of_full_bathrooms> attribute.
+
 =cut
 
 has number_of_full_bathrooms => (
@@ -280,6 +308,10 @@ A number_of_rooms should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_rooms>
+
+A predicate for the L</number_of_rooms> attribute.
+
 =cut
 
 has number_of_rooms => (
@@ -303,6 +335,10 @@ A permitted_usage should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_permitted_usage>
+
+A predicate for the L</permitted_usage> attribute.
 
 =cut
 
@@ -330,6 +366,10 @@ A pets_allowed should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pets_allowed>
+
+A predicate for the L</pets_allowed> attribute.
 
 =cut
 

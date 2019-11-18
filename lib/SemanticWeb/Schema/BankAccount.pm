@@ -45,6 +45,10 @@ A account_minimum_inflow should be one of the following types:
 
 =back
 
+=head2 C<_has_account_minimum_inflow>
+
+A predicate for the L</account_minimum_inflow> attribute.
+
 =cut
 
 has account_minimum_inflow => (
@@ -72,6 +76,10 @@ A account_overdraft_limit should be one of the following types:
 
 =back
 
+=head2 C<_has_account_overdraft_limit>
+
+A predicate for the L</account_overdraft_limit> attribute.
+
 =cut
 
 has account_overdraft_limit => (
@@ -95,6 +103,10 @@ A bank_account_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_bank_account_type>
+
+A predicate for the L</bank_account_type> attribute.
 
 =cut
 

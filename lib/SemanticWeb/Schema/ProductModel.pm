@@ -47,6 +47,10 @@ A is_variant_of should be one of the following types:
 
 =back
 
+=head2 C<_has_is_variant_of>
+
+A predicate for the L</is_variant_of> attribute.
+
 =cut
 
 has is_variant_of => (
@@ -72,6 +76,10 @@ A predecessor_of should be one of the following types:
 
 =back
 
+=head2 C<_has_predecessor_of>
+
+A predicate for the L</predecessor_of> attribute.
+
 =cut
 
 has predecessor_of => (
@@ -96,6 +104,10 @@ A successor_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ProductModel']>
 
 =back
+
+=head2 C<_has_successor_of>
+
+A predicate for the L</successor_of> attribute.
 
 =cut
 

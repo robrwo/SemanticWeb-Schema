@@ -47,6 +47,10 @@ A documentation should be one of the following types:
 
 =back
 
+=head2 C<_has_documentation>
+
+A predicate for the L</documentation> attribute.
+
 =cut
 
 has documentation => (

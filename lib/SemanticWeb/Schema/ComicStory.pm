@@ -48,6 +48,10 @@ A artist should be one of the following types:
 
 =back
 
+=head2 C<_has_artist>
+
+A predicate for the L</artist> attribute.
+
 =cut
 
 has artist => (
@@ -71,6 +75,10 @@ A colorist should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_colorist>
+
+A predicate for the L</colorist> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A inker should be one of the following types:
 
 =back
 
+=head2 C<_has_inker>
+
+A predicate for the L</inker> attribute.
+
 =cut
 
 has inker => (
@@ -122,6 +134,10 @@ A letterer should be one of the following types:
 
 =back
 
+=head2 C<_has_letterer>
+
+A predicate for the L</letterer> attribute.
+
 =cut
 
 has letterer => (
@@ -145,6 +161,10 @@ A penciler should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_penciler>
+
+A predicate for the L</penciler> attribute.
 
 =cut
 

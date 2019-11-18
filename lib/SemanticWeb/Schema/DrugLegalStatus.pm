@@ -44,6 +44,10 @@ A applicable_location should be one of the following types:
 
 =back
 
+=head2 C<_has_applicable_location>
+
+A predicate for the L</applicable_location> attribute.
+
 =cut
 
 has applicable_location => (

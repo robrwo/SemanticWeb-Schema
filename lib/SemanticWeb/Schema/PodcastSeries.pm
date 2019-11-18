@@ -46,6 +46,10 @@ A web_feed should be one of the following types:
 
 =back
 
+=head2 C<_has_web_feed>
+
+A predicate for the L</web_feed> attribute.
+
 =cut
 
 has web_feed => (

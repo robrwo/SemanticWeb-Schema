@@ -49,6 +49,10 @@ A number_of_rooms should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_rooms>
+
+A predicate for the L</number_of_rooms> attribute.
+
 =cut
 
 has number_of_rooms => (
@@ -76,6 +80,10 @@ A occupancy should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_occupancy>
+
+A predicate for the L</occupancy> attribute.
 
 =cut
 

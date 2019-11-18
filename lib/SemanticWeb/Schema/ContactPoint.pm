@@ -50,6 +50,10 @@ A area_served should be one of the following types:
 
 =back
 
+=head2 C<_has_area_served>
+
+A predicate for the L</area_served> attribute.
+
 =cut
 
 has area_served => (
@@ -83,6 +87,10 @@ A available_language should be one of the following types:
 
 =back
 
+=head2 C<_has_available_language>
+
+A predicate for the L</available_language> attribute.
+
 =cut
 
 has available_language => (
@@ -107,6 +115,10 @@ A contact_option should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ContactPointOption']>
 
 =back
+
+=head2 C<_has_contact_option>
+
+A predicate for the L</contact_option> attribute.
 
 =cut
 
@@ -134,6 +146,10 @@ A contact_type should be one of the following types:
 
 =back
 
+=head2 C<_has_contact_type>
+
+A predicate for the L</contact_type> attribute.
+
 =cut
 
 has contact_type => (
@@ -157,6 +173,10 @@ A email should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_email>
+
+A predicate for the L</email> attribute.
 
 =cut
 
@@ -182,6 +202,10 @@ A fax_number should be one of the following types:
 
 =back
 
+=head2 C<_has_fax_number>
+
+A predicate for the L</fax_number> attribute.
+
 =cut
 
 has fax_number => (
@@ -205,6 +229,10 @@ A hours_available should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::OpeningHoursSpecification']>
 
 =back
+
+=head2 C<_has_hours_available>
+
+A predicate for the L</hours_available> attribute.
 
 =cut
 
@@ -235,6 +263,10 @@ A product_supported should be one of the following types:
 
 =back
 
+=head2 C<_has_product_supported>
+
+A predicate for the L</product_supported> attribute.
+
 =cut
 
 has product_supported => (
@@ -263,6 +295,10 @@ A service_area should be one of the following types:
 
 =back
 
+=head2 C<_has_service_area>
+
+A predicate for the L</service_area> attribute.
+
 =cut
 
 has service_area => (
@@ -286,6 +322,10 @@ A telephone should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_telephone>
+
+A predicate for the L</telephone> attribute.
 
 =cut
 

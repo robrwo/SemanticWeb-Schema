@@ -47,6 +47,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -71,6 +75,10 @@ A actors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_actors>
+
+A predicate for the L</actors> attribute.
 
 =cut
 
@@ -98,6 +106,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -122,6 +134,10 @@ A directors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_directors>
+
+A predicate for the L</directors> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A music_by should be one of the following types:
 
 =back
 
+=head2 C<_has_music_by>
+
+A predicate for the L</music_by> attribute.
+
 =cut
 
 has music_by => (
@@ -174,6 +194,10 @@ A production_company should be one of the following types:
 
 =back
 
+=head2 C<_has_production_company>
+
+A predicate for the L</production_company> attribute.
+
 =cut
 
 has production_company => (
@@ -197,6 +221,10 @@ A trailer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
 
 =back
+
+=head2 C<_has_trailer>
+
+A predicate for the L</trailer> attribute.
 
 =cut
 

@@ -44,6 +44,10 @@ A item_reviewed should be one of the following types:
 
 =back
 
+=head2 C<_has_item_reviewed>
+
+A predicate for the L</item_reviewed> attribute.
+
 =cut
 
 has item_reviewed => (
@@ -69,6 +73,10 @@ A review_aspect should be one of the following types:
 
 =back
 
+=head2 C<_has_review_aspect>
+
+A predicate for the L</review_aspect> attribute.
+
 =cut
 
 has review_aspect => (
@@ -92,6 +100,10 @@ A review_body should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_review_body>
+
+A predicate for the L</review_body> attribute.
 
 =cut
 
@@ -124,6 +136,10 @@ A review_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Rating']>
 
 =back
+
+=head2 C<_has_review_rating>
+
+A predicate for the L</review_rating> attribute.
 
 =cut
 

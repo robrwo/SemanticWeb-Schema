@@ -46,6 +46,10 @@ A health_plan_cost_sharing should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_cost_sharing>
+
+A predicate for the L</health_plan_cost_sharing> attribute.
+
 =cut
 
 has health_plan_cost_sharing => (
@@ -70,6 +74,10 @@ A health_plan_drug_tier should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_drug_tier>
+
+A predicate for the L</health_plan_drug_tier> attribute.
+
 =cut
 
 has health_plan_drug_tier => (
@@ -93,6 +101,10 @@ A offers_prescription_by_mail should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_offers_prescription_by_mail>
+
+A predicate for the L</offers_prescription_by_mail> attribute.
 
 =cut
 

@@ -45,6 +45,10 @@ A distance should be one of the following types:
 
 =back
 
+=head2 C<_has_distance>
+
+A predicate for the L</distance> attribute.
+
 =cut
 
 has distance => (

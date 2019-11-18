@@ -46,6 +46,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -70,6 +74,10 @@ A actors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_actors>
+
+A predicate for the L</actors> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A clip_number should be one of the following types:
 
 =back
 
+=head2 C<_has_clip_number>
+
+A predicate for the L</clip_number> attribute.
+
 =cut
 
 has clip_number => (
@@ -123,6 +135,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -148,6 +164,10 @@ A directors should be one of the following types:
 
 =back
 
+=head2 C<_has_directors>
+
+A predicate for the L</directors> attribute.
+
 =cut
 
 has directors => (
@@ -172,6 +192,10 @@ A end_offset should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_end_offset>
+
+A predicate for the L</end_offset> attribute.
 
 =cut
 
@@ -199,6 +223,10 @@ A music_by should be one of the following types:
 
 =back
 
+=head2 C<_has_music_by>
+
+A predicate for the L</music_by> attribute.
+
 =cut
 
 has music_by => (
@@ -222,6 +250,10 @@ A part_of_episode should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Episode']>
 
 =back
+
+=head2 C<_has_part_of_episode>
+
+A predicate for the L</part_of_episode> attribute.
 
 =cut
 
@@ -247,6 +279,10 @@ A part_of_season should be one of the following types:
 
 =back
 
+=head2 C<_has_part_of_season>
+
+A predicate for the L</part_of_season> attribute.
+
 =cut
 
 has part_of_season => (
@@ -270,6 +306,10 @@ A part_of_series should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWorkSeries']>
 
 =back
+
+=head2 C<_has_part_of_series>
+
+A predicate for the L</part_of_series> attribute.
 
 =cut
 
@@ -295,6 +335,10 @@ A start_offset should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_start_offset>
+
+A predicate for the L</start_offset> attribute.
 
 =cut
 

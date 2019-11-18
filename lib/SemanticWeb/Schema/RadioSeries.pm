@@ -47,6 +47,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -72,6 +76,10 @@ A actors should be one of the following types:
 
 =back
 
+=head2 C<_has_actors>
+
+A predicate for the L</actors> attribute.
+
 =cut
 
 has actors => (
@@ -95,6 +103,10 @@ A contains_season should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWorkSeason']>
 
 =back
+
+=head2 C<_has_contains_season>
+
+A predicate for the L</contains_season> attribute.
 
 =cut
 
@@ -122,6 +134,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -147,6 +163,10 @@ A directors should be one of the following types:
 
 =back
 
+=head2 C<_has_directors>
+
+A predicate for the L</directors> attribute.
+
 =cut
 
 has directors => (
@@ -171,6 +191,10 @@ A episode should be one of the following types:
 
 =back
 
+=head2 C<_has_episode>
+
+A predicate for the L</episode> attribute.
+
 =cut
 
 has episode => (
@@ -194,6 +218,10 @@ A episodes should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Episode']>
 
 =back
+
+=head2 C<_has_episodes>
+
+A predicate for the L</episodes> attribute.
 
 =cut
 
@@ -221,6 +249,10 @@ A music_by should be one of the following types:
 
 =back
 
+=head2 C<_has_music_by>
+
+A predicate for the L</music_by> attribute.
+
 =cut
 
 has music_by => (
@@ -245,6 +277,10 @@ A number_of_episodes should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_episodes>
+
+A predicate for the L</number_of_episodes> attribute.
+
 =cut
 
 has number_of_episodes => (
@@ -268,6 +304,10 @@ A number_of_seasons should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_number_of_seasons>
+
+A predicate for the L</number_of_seasons> attribute.
 
 =cut
 
@@ -294,6 +334,10 @@ A production_company should be one of the following types:
 
 =back
 
+=head2 C<_has_production_company>
+
+A predicate for the L</production_company> attribute.
+
 =cut
 
 has production_company => (
@@ -317,6 +361,10 @@ A season should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWorkSeason']>
 
 =back
+
+=head2 C<_has_season>
+
+A predicate for the L</season> attribute.
 
 =cut
 
@@ -342,6 +390,10 @@ A seasons should be one of the following types:
 
 =back
 
+=head2 C<_has_seasons>
+
+A predicate for the L</seasons> attribute.
+
 =cut
 
 has seasons => (
@@ -365,6 +417,10 @@ A trailer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
 
 =back
+
+=head2 C<_has_trailer>
+
+A predicate for the L</trailer> attribute.
 
 =cut
 

@@ -51,6 +51,10 @@ A evidence_level should be one of the following types:
 
 =back
 
+=head2 C<_has_evidence_level>
+
+A predicate for the L</evidence_level> attribute.
+
 =cut
 
 has evidence_level => (
@@ -76,6 +80,10 @@ A evidence_origin should be one of the following types:
 
 =back
 
+=head2 C<_has_evidence_origin>
+
+A predicate for the L</evidence_origin> attribute.
+
 =cut
 
 has evidence_origin => (
@@ -99,6 +107,10 @@ A guideline_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_guideline_date>
+
+A predicate for the L</guideline_date> attribute.
 
 =cut
 
@@ -124,6 +136,10 @@ A guideline_subject should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
 
 =back
+
+=head2 C<_has_guideline_subject>
+
+A predicate for the L</guideline_subject> attribute.
 
 =cut
 

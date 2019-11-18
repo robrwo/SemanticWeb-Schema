@@ -56,6 +56,10 @@ A delivery_method should be one of the following types:
 
 =back
 
+=head2 C<_has_delivery_method>
+
+A predicate for the L</delivery_method> attribute.
+
 =cut
 
 has delivery_method => (
@@ -84,6 +88,10 @@ A sender should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_sender>
+
+A predicate for the L</sender> attribute.
 
 =cut
 

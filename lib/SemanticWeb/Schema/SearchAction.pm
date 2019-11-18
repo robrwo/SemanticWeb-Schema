@@ -51,6 +51,10 @@ A query should be one of the following types:
 
 =back
 
+=head2 C<_has_query>
+
+A predicate for the L</query> attribute.
+
 =cut
 
 has query => (

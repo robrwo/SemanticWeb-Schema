@@ -49,6 +49,10 @@ A competency_required should be one of the following types:
 
 =back
 
+=head2 C<_has_competency_required>
+
+A predicate for the L</competency_required> attribute.
+
 =cut
 
 has competency_required => (
@@ -75,6 +79,10 @@ A credential_category should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_credential_category>
+
+A predicate for the L</credential_category> attribute.
 
 =cut
 
@@ -104,6 +112,10 @@ A educational_level should be one of the following types:
 
 =back
 
+=head2 C<_has_educational_level>
+
+A predicate for the L</educational_level> attribute.
+
 =cut
 
 has educational_level => (
@@ -130,6 +142,10 @@ A recognized_by should be one of the following types:
 
 =back
 
+=head2 C<_has_recognized_by>
+
+A predicate for the L</recognized_by> attribute.
+
 =cut
 
 has recognized_by => (
@@ -154,6 +170,10 @@ A valid_for should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_for>
+
+A predicate for the L</valid_for> attribute.
+
 =cut
 
 has valid_for => (
@@ -177,6 +197,10 @@ A valid_in should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
+
+=head2 C<_has_valid_in>
+
+A predicate for the L</valid_in> attribute.
 
 =cut
 

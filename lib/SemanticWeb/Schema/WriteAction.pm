@@ -54,6 +54,10 @@ A in_language should be one of the following types:
 
 =back
 
+=head2 C<_has_in_language>
+
+A predicate for the L</in_language> attribute.
+
 =cut
 
 has in_language => (
@@ -77,6 +81,10 @@ A language should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Language']>
 
 =back
+
+=head2 C<_has_language>
+
+A predicate for the L</language> attribute.
 
 =cut
 

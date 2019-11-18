@@ -47,6 +47,10 @@ A serial_number should be one of the following types:
 
 =back
 
+=head2 C<_has_serial_number>
+
+A predicate for the L</serial_number> attribute.
+
 =cut
 
 has serial_number => (

@@ -46,6 +46,10 @@ A code_repository should be one of the following types:
 
 =back
 
+=head2 C<_has_code_repository>
+
+A predicate for the L</code_repository> attribute.
+
 =cut
 
 has code_repository => (
@@ -70,6 +74,10 @@ A code_sample_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_code_sample_type>
+
+A predicate for the L</code_sample_type> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A programming_language should be one of the following types:
 
 =back
 
+=head2 C<_has_programming_language>
+
+A predicate for the L</programming_language> attribute.
+
 =cut
 
 has programming_language => (
@@ -121,6 +133,10 @@ A runtime should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_runtime>
+
+A predicate for the L</runtime> attribute.
 
 =cut
 
@@ -147,6 +163,10 @@ A runtime_platform should be one of the following types:
 
 =back
 
+=head2 C<_has_runtime_platform>
+
+A predicate for the L</runtime_platform> attribute.
+
 =cut
 
 has runtime_platform => (
@@ -172,6 +192,10 @@ A sample_type should be one of the following types:
 
 =back
 
+=head2 C<_has_sample_type>
+
+A predicate for the L</sample_type> attribute.
+
 =cut
 
 has sample_type => (
@@ -196,6 +220,10 @@ A target_product should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::SoftwareApplication']>
 
 =back
+
+=head2 C<_has_target_product>
+
+A predicate for the L</target_product> attribute.
 
 =cut
 

@@ -53,6 +53,10 @@ A caption should be one of the following types:
 
 =back
 
+=head2 C<_has_caption>
+
+A predicate for the L</caption> attribute.
+
 =cut
 
 has caption => (
@@ -77,6 +81,10 @@ A transcript should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_transcript>
+
+A predicate for the L</transcript> attribute.
 
 =cut
 

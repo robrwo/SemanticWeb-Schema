@@ -44,6 +44,10 @@ A arrival_time should be one of the following types:
 
 =back
 
+=head2 C<_has_arrival_time>
+
+A predicate for the L</arrival_time> attribute.
+
 =cut
 
 has arrival_time => (
@@ -67,6 +71,10 @@ A departure_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_departure_time>
+
+A predicate for the L</departure_time> attribute.
 
 =cut
 
@@ -102,6 +110,10 @@ A itinerary should be one of the following types:
 
 =back
 
+=head2 C<_has_itinerary>
+
+A predicate for the L</itinerary> attribute.
+
 =cut
 
 has itinerary => (
@@ -127,6 +139,10 @@ A offers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
 
 =cut
 
@@ -158,6 +174,10 @@ A part_of_trip should be one of the following types:
 
 =back
 
+=head2 C<_has_part_of_trip>
+
+A predicate for the L</part_of_trip> attribute.
+
 =cut
 
 has part_of_trip => (
@@ -185,6 +205,10 @@ A provider should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
 
 =cut
 
@@ -215,6 +239,10 @@ A sub_trip should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Trip']>
 
 =back
+
+=head2 C<_has_sub_trip>
+
+A predicate for the L</sub_trip> attribute.
 
 =cut
 

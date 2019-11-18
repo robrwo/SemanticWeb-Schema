@@ -48,6 +48,10 @@ A author should be one of the following types:
 
 =back
 
+=head2 C<_has_author>
+
+A predicate for the L</author> attribute.
+
 =cut
 
 has author => (
@@ -74,6 +78,10 @@ A best_rating should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_best_rating>
+
+A predicate for the L</best_rating> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A rating_explanation should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_rating_explanation>
+
+A predicate for the L</rating_explanation> attribute.
 
 =cut
 
@@ -142,6 +154,10 @@ A rating_value should be one of the following types:
 
 =back
 
+=head2 C<_has_rating_value>
+
+A predicate for the L</rating_value> attribute.
+
 =cut
 
 has rating_value => (
@@ -166,6 +182,10 @@ A review_aspect should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_review_aspect>
+
+A predicate for the L</review_aspect> attribute.
 
 =cut
 
@@ -193,6 +213,10 @@ A worst_rating should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_worst_rating>
+
+A predicate for the L</worst_rating> attribute.
 
 =cut
 

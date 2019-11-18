@@ -48,6 +48,10 @@ A diet_features should be one of the following types:
 
 =back
 
+=head2 C<_has_diet_features>
+
+A predicate for the L</diet_features> attribute.
+
 =cut
 
 has diet_features => (
@@ -74,6 +78,10 @@ A endorsers should be one of the following types:
 
 =back
 
+=head2 C<_has_endorsers>
+
+A predicate for the L</endorsers> attribute.
+
 =cut
 
 has endorsers => (
@@ -97,6 +105,10 @@ A expert_considerations should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_expert_considerations>
+
+A predicate for the L</expert_considerations> attribute.
 
 =cut
 
@@ -124,6 +136,10 @@ A overview should be one of the following types:
 
 =back
 
+=head2 C<_has_overview>
+
+A predicate for the L</overview> attribute.
+
 =cut
 
 has overview => (
@@ -148,6 +164,10 @@ A physiological_benefits should be one of the following types:
 
 =back
 
+=head2 C<_has_physiological_benefits>
+
+A predicate for the L</physiological_benefits> attribute.
+
 =cut
 
 has physiological_benefits => (
@@ -171,6 +191,10 @@ A risks should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_risks>
+
+A predicate for the L</risks> attribute.
 
 =cut
 

@@ -58,6 +58,10 @@ A cook_time should be one of the following types:
 
 =back
 
+=head2 C<_has_cook_time>
+
+A predicate for the L</cook_time> attribute.
+
 =cut
 
 has cook_time => (
@@ -81,6 +85,10 @@ A cooking_method should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_cooking_method>
+
+A predicate for the L</cooking_method> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A ingredients should be one of the following types:
 
 =back
 
+=head2 C<_has_ingredients>
+
+A predicate for the L</ingredients> attribute.
+
 =cut
 
 has ingredients => (
@@ -129,6 +141,10 @@ A nutrition should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::NutritionInformation']>
 
 =back
+
+=head2 C<_has_nutrition>
+
+A predicate for the L</nutrition> attribute.
 
 =cut
 
@@ -154,6 +170,10 @@ A recipe_category should be one of the following types:
 
 =back
 
+=head2 C<_has_recipe_category>
+
+A predicate for the L</recipe_category> attribute.
+
 =cut
 
 has recipe_category => (
@@ -178,6 +198,10 @@ A recipe_cuisine should be one of the following types:
 
 =back
 
+=head2 C<_has_recipe_cuisine>
+
+A predicate for the L</recipe_cuisine> attribute.
+
 =cut
 
 has recipe_cuisine => (
@@ -201,6 +225,10 @@ A recipe_ingredient should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_recipe_ingredient>
+
+A predicate for the L</recipe_ingredient> attribute.
 
 =cut
 
@@ -231,6 +259,10 @@ A recipe_instructions should be one of the following types:
 
 =back
 
+=head2 C<_has_recipe_instructions>
+
+A predicate for the L</recipe_instructions> attribute.
+
 =cut
 
 has recipe_instructions => (
@@ -258,6 +290,10 @@ A recipe_yield should be one of the following types:
 
 =back
 
+=head2 C<_has_recipe_yield>
+
+A predicate for the L</recipe_yield> attribute.
+
 =cut
 
 has recipe_yield => (
@@ -282,6 +318,10 @@ A suitable_for_diet should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RestrictedDiet']>
 
 =back
+
+=head2 C<_has_suitable_for_diet>
+
+A predicate for the L</suitable_for_diet> attribute.
 
 =cut
 

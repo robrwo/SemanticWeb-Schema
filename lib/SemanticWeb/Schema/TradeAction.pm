@@ -73,6 +73,10 @@ A price should be one of the following types:
 
 =back
 
+=head2 C<_has_price>
+
+A predicate for the L</price> attribute.
+
 =cut
 
 has price => (
@@ -111,6 +115,10 @@ A price_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_price_currency>
+
+A predicate for the L</price_currency> attribute.
+
 =cut
 
 has price_currency => (
@@ -135,6 +143,10 @@ A price_specification should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =back
+
+=head2 C<_has_price_specification>
+
+A predicate for the L</price_specification> attribute.
 
 =cut
 

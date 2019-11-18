@@ -45,6 +45,10 @@ A child_max_age should be one of the following types:
 
 =back
 
+=head2 C<_has_child_max_age>
+
+A predicate for the L</child_max_age> attribute.
+
 =cut
 
 has child_max_age => (
@@ -68,6 +72,10 @@ A child_min_age should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_child_min_age>
+
+A predicate for the L</child_min_age> attribute.
 
 =cut
 

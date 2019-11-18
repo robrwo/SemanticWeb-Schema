@@ -51,6 +51,10 @@ A grantee should be one of the following types:
 
 =back
 
+=head2 C<_has_grantee>
+
+A predicate for the L</grantee> attribute.
+
 =cut
 
 has grantee => (
@@ -74,6 +78,10 @@ A permission_type should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DigitalDocumentPermissionType']>
 
 =back
+
+=head2 C<_has_permission_type>
+
+A predicate for the L</permission_type> attribute.
 
 =cut
 

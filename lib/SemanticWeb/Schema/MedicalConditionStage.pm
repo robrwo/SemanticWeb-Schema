@@ -44,6 +44,10 @@ A stage_as_number should be one of the following types:
 
 =back
 
+=head2 C<_has_stage_as_number>
+
+A predicate for the L</stage_as_number> attribute.
+
 =cut
 
 has stage_as_number => (
@@ -67,6 +71,10 @@ A sub_stage_suffix should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_sub_stage_suffix>
+
+A predicate for the L</sub_stage_suffix> attribute.
 
 =cut
 

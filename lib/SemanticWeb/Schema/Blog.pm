@@ -44,6 +44,10 @@ A blog_post should be one of the following types:
 
 =back
 
+=head2 C<_has_blog_post>
+
+A predicate for the L</blog_post> attribute.
+
 =cut
 
 has blog_post => (
@@ -67,6 +71,10 @@ A blog_posts should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BlogPosting']>
 
 =back
+
+=head2 C<_has_blog_posts>
+
+A predicate for the L</blog_posts> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A issn should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_issn>
+
+A predicate for the L</issn> attribute.
 
 =cut
 

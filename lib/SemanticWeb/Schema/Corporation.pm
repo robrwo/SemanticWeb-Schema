@@ -48,6 +48,10 @@ A ticker_symbol should be one of the following types:
 
 =back
 
+=head2 C<_has_ticker_symbol>
+
+A predicate for the L</ticker_symbol> attribute.
+
 =cut
 
 has ticker_symbol => (

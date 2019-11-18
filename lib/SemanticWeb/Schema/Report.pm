@@ -45,6 +45,10 @@ A report_number should be one of the following types:
 
 =back
 
+=head2 C<_has_report_number>
+
+A predicate for the L</report_number> attribute.
+
 =cut
 
 has report_number => (

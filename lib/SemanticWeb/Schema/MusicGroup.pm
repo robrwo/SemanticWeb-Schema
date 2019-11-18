@@ -45,6 +45,10 @@ A album should be one of the following types:
 
 =back
 
+=head2 C<_has_album>
+
+A predicate for the L</album> attribute.
+
 =cut
 
 has album => (
@@ -68,6 +72,10 @@ A albums should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicAlbum']>
 
 =back
+
+=head2 C<_has_albums>
+
+A predicate for the L</albums> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A genre should be one of the following types:
 
 =back
 
+=head2 C<_has_genre>
+
+A predicate for the L</genre> attribute.
+
 =cut
 
 has genre => (
@@ -116,6 +128,10 @@ A music_group_member should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_music_group_member>
+
+A predicate for the L</music_group_member> attribute.
 
 =cut
 
@@ -144,6 +160,10 @@ A track should be one of the following types:
 
 =back
 
+=head2 C<_has_track>
+
+A predicate for the L</track> attribute.
+
 =cut
 
 has track => (
@@ -167,6 +187,10 @@ A tracks should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicRecording']>
 
 =back
+
+=head2 C<_has_tracks>
+
+A predicate for the L</tracks> attribute.
 
 =cut
 

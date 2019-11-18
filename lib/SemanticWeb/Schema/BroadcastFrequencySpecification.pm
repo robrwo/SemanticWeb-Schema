@@ -47,6 +47,10 @@ A broadcast_frequency_value should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_frequency_value>
+
+A predicate for the L</broadcast_frequency_value> attribute.
+
 =cut
 
 has broadcast_frequency_value => (
@@ -73,6 +77,10 @@ A broadcast_signal_modulation should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_signal_modulation>
+
+A predicate for the L</broadcast_signal_modulation> attribute.
+
 =cut
 
 has broadcast_signal_modulation => (
@@ -96,6 +104,10 @@ A broadcast_sub_channel should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_broadcast_sub_channel>
+
+A predicate for the L</broadcast_sub_channel> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A free should be one of the following types:
 
 =back
 
+=head2 C<_has_free>
+
+A predicate for the L</free> attribute.
+
 =cut
 
 has free => (
@@ -69,6 +73,10 @@ A is_accessible_for_free should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_accessible_for_free>
+
+A predicate for the L</is_accessible_for_free> attribute.
 
 =cut
 
@@ -96,6 +104,10 @@ A published_by should be one of the following types:
 
 =back
 
+=head2 C<_has_published_by>
+
+A predicate for the L</published_by> attribute.
+
 =cut
 
 has published_by => (
@@ -119,6 +131,10 @@ A published_on should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BroadcastService']>
 
 =back
+
+=head2 C<_has_published_on>
+
+A predicate for the L</published_on> attribute.
 
 =cut
 

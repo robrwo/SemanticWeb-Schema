@@ -44,6 +44,10 @@ A iata_code should be one of the following types:
 
 =back
 
+=head2 C<_has_iata_code>
+
+A predicate for the L</iata_code> attribute.
+
 =cut
 
 has iata_code => (
@@ -67,6 +71,10 @@ A icao_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_icao_code>
+
+A predicate for the L</icao_code> attribute.
 
 =cut
 

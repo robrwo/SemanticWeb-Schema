@@ -46,6 +46,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -70,6 +74,10 @@ A actors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_actors>
+
+A predicate for the L</actors> attribute.
 
 =cut
 
@@ -104,6 +112,10 @@ A caption should be one of the following types:
 
 =back
 
+=head2 C<_has_caption>
+
+A predicate for the L</caption> attribute.
+
 =cut
 
 has caption => (
@@ -130,6 +142,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -154,6 +170,10 @@ A directors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_directors>
+
+A predicate for the L</directors> attribute.
 
 =cut
 
@@ -181,6 +201,10 @@ A music_by should be one of the following types:
 
 =back
 
+=head2 C<_has_music_by>
+
+A predicate for the L</music_by> attribute.
+
 =cut
 
 has music_by => (
@@ -204,6 +228,10 @@ A thumbnail should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
 
 =back
+
+=head2 C<_has_thumbnail>
+
+A predicate for the L</thumbnail> attribute.
 
 =cut
 
@@ -230,6 +258,10 @@ A transcript should be one of the following types:
 
 =back
 
+=head2 C<_has_transcript>
+
+A predicate for the L</transcript> attribute.
+
 =cut
 
 has transcript => (
@@ -254,6 +286,10 @@ A video_frame_size should be one of the following types:
 
 =back
 
+=head2 C<_has_video_frame_size>
+
+A predicate for the L</video_frame_size> attribute.
+
 =cut
 
 has video_frame_size => (
@@ -277,6 +313,10 @@ A video_quality should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_video_quality>
+
+A predicate for the L</video_quality> attribute.
 
 =cut
 

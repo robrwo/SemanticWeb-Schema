@@ -45,6 +45,10 @@ A scheduled_time should be one of the following types:
 
 =back
 
+=head2 C<_has_scheduled_time>
+
+A predicate for the L</scheduled_time> attribute.
+
 =cut
 
 has scheduled_time => (

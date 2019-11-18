@@ -55,6 +55,10 @@ A price_component should be one of the following types:
 
 =back
 
+=head2 C<_has_price_component>
+
+A predicate for the L</price_component> attribute.
+
 =cut
 
 has price_component => (

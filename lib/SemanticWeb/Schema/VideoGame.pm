@@ -47,6 +47,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -72,6 +76,10 @@ A actors should be one of the following types:
 
 =back
 
+=head2 C<_has_actors>
+
+A predicate for the L</actors> attribute.
+
 =cut
 
 has actors => (
@@ -95,6 +103,10 @@ A cheat_code should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_cheat_code>
+
+A predicate for the L</cheat_code> attribute.
 
 =cut
 
@@ -122,6 +134,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -146,6 +162,10 @@ A directors should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_directors>
+
+A predicate for the L</directors> attribute.
 
 =cut
 
@@ -179,6 +199,10 @@ A game_platform should be one of the following types:
 
 =back
 
+=head2 C<_has_game_platform>
+
+A predicate for the L</game_platform> attribute.
+
 =cut
 
 has game_platform => (
@@ -203,6 +227,10 @@ A game_server should be one of the following types:
 
 =back
 
+=head2 C<_has_game_server>
+
+A predicate for the L</game_server> attribute.
+
 =cut
 
 has game_server => (
@@ -226,6 +254,10 @@ A game_tip should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_game_tip>
+
+A predicate for the L</game_tip> attribute.
 
 =cut
 
@@ -253,6 +285,10 @@ A music_by should be one of the following types:
 
 =back
 
+=head2 C<_has_music_by>
+
+A predicate for the L</music_by> attribute.
+
 =cut
 
 has music_by => (
@@ -279,6 +315,10 @@ A play_mode should be one of the following types:
 
 =back
 
+=head2 C<_has_play_mode>
+
+A predicate for the L</play_mode> attribute.
+
 =cut
 
 has play_mode => (
@@ -302,6 +342,10 @@ A trailer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
 
 =back
+
+=head2 C<_has_trailer>
+
+A predicate for the L</trailer> attribute.
 
 =cut
 

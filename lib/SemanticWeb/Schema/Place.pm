@@ -55,6 +55,10 @@ A additional_property should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_property>
+
+A predicate for the L</additional_property> attribute.
+
 =cut
 
 has additional_property => (
@@ -81,6 +85,10 @@ A address should be one of the following types:
 
 =back
 
+=head2 C<_has_address>
+
+A predicate for the L</address> attribute.
+
 =cut
 
 has address => (
@@ -105,6 +113,10 @@ A aggregate_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AggregateRating']>
 
 =back
+
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
 
 =cut
 
@@ -132,6 +144,10 @@ A amenity_feature should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::LocationFeatureSpecification']>
 
 =back
+
+=head2 C<_has_amenity_feature>
+
+A predicate for the L</amenity_feature> attribute.
 
 =cut
 
@@ -165,6 +181,10 @@ A branch_code should be one of the following types:
 
 =back
 
+=head2 C<_has_branch_code>
+
+A predicate for the L</branch_code> attribute.
+
 =cut
 
 has branch_code => (
@@ -189,6 +209,10 @@ A contained_in should be one of the following types:
 
 =back
 
+=head2 C<_has_contained_in>
+
+A predicate for the L</contained_in> attribute.
+
 =cut
 
 has contained_in => (
@@ -212,6 +236,10 @@ A contained_in_place should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_contained_in_place>
+
+A predicate for the L</contained_in_place> attribute.
 
 =cut
 
@@ -238,6 +266,10 @@ A contains_place should be one of the following types:
 
 =back
 
+=head2 C<_has_contains_place>
+
+A predicate for the L</contains_place> attribute.
+
 =cut
 
 has contains_place => (
@@ -261,6 +293,10 @@ A event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_event>
+
+A predicate for the L</event> attribute.
 
 =cut
 
@@ -286,6 +322,10 @@ A events should be one of the following types:
 
 =back
 
+=head2 C<_has_events>
+
+A predicate for the L</events> attribute.
+
 =cut
 
 has events => (
@@ -309,6 +349,10 @@ A fax_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_fax_number>
+
+A predicate for the L</fax_number> attribute.
 
 =cut
 
@@ -335,6 +379,10 @@ A geo should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
 
 =back
+
+=head2 C<_has_geo>
+
+A predicate for the L</geo> attribute.
 
 =cut
 
@@ -370,6 +418,10 @@ A geo_contains should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_contains>
+
+A predicate for the L</geo_contains> attribute.
+
 =cut
 
 has geo_contains => (
@@ -401,6 +453,10 @@ A geo_covered_by should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_covered_by>
+
+A predicate for the L</geo_covered_by> attribute.
 
 =cut
 
@@ -434,6 +490,10 @@ A geo_covers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_covers>
+
+A predicate for the L</geo_covers> attribute.
 
 =cut
 
@@ -469,6 +529,10 @@ A geo_crosses should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_crosses>
+
+A predicate for the L</geo_crosses> attribute.
+
 =cut
 
 has geo_crosses => (
@@ -501,6 +565,10 @@ A geo_disjoint should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_disjoint>
+
+A predicate for the L</geo_disjoint> attribute.
 
 =cut
 
@@ -537,6 +605,10 @@ A geo_equals should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_equals>
+
+A predicate for the L</geo_equals> attribute.
+
 =cut
 
 has geo_equals => (
@@ -568,6 +640,10 @@ A geo_intersects should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_intersects>
+
+A predicate for the L</geo_intersects> attribute.
 
 =cut
 
@@ -602,6 +678,10 @@ A geo_overlaps should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_overlaps>
+
+A predicate for the L</geo_overlaps> attribute.
+
 =cut
 
 has geo_overlaps => (
@@ -634,6 +714,10 @@ A geo_touches should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_touches>
+
+A predicate for the L</geo_touches> attribute.
 
 =cut
 
@@ -668,6 +752,10 @@ A geo_within should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_within>
+
+A predicate for the L</geo_within> attribute.
+
 =cut
 
 has geo_within => (
@@ -699,6 +787,10 @@ A global_location_number should be one of the following types:
 
 =back
 
+=head2 C<_has_global_location_number>
+
+A predicate for the L</global_location_number> attribute.
+
 =cut
 
 has global_location_number => (
@@ -725,6 +817,10 @@ A has_map should be one of the following types:
 
 =back
 
+=head2 C<_has_has_map>
+
+A predicate for the L</has_map> attribute.
+
 =cut
 
 has has_map => (
@@ -748,6 +844,10 @@ A is_accessible_for_free should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_accessible_for_free>
+
+A predicate for the L</is_accessible_for_free> attribute.
 
 =cut
 
@@ -774,6 +874,10 @@ A isic_v4 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_isic_v4>
+
+A predicate for the L</isic_v4> attribute.
 
 =cut
 
@@ -806,6 +910,10 @@ A latitude should be one of the following types:
 
 =back
 
+=head2 C<_has_latitude>
+
+A predicate for the L</latitude> attribute.
+
 =cut
 
 has latitude => (
@@ -831,6 +939,10 @@ A logo should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_logo>
+
+A predicate for the L</logo> attribute.
 
 =cut
 
@@ -863,6 +975,10 @@ A longitude should be one of the following types:
 
 =back
 
+=head2 C<_has_longitude>
+
+A predicate for the L</longitude> attribute.
+
 =cut
 
 has longitude => (
@@ -886,6 +1002,10 @@ A map should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_map>
+
+A predicate for the L</map> attribute.
 
 =cut
 
@@ -911,6 +1031,10 @@ A maps should be one of the following types:
 
 =back
 
+=head2 C<_has_maps>
+
+A predicate for the L</maps> attribute.
+
 =cut
 
 has maps => (
@@ -935,6 +1059,10 @@ A maximum_attendee_capacity should be one of the following types:
 
 =back
 
+=head2 C<_has_maximum_attendee_capacity>
+
+A predicate for the L</maximum_attendee_capacity> attribute.
+
 =cut
 
 has maximum_attendee_capacity => (
@@ -958,6 +1086,10 @@ A opening_hours_specification should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::OpeningHoursSpecification']>
 
 =back
+
+=head2 C<_has_opening_hours_specification>
+
+A predicate for the L</opening_hours_specification> attribute.
 
 =cut
 
@@ -985,6 +1117,10 @@ A photo should be one of the following types:
 
 =back
 
+=head2 C<_has_photo>
+
+A predicate for the L</photo> attribute.
+
 =cut
 
 has photo => (
@@ -1010,6 +1146,10 @@ A photos should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Photograph']>
 
 =back
+
+=head2 C<_has_photos>
+
+A predicate for the L</photos> attribute.
 
 =cut
 
@@ -1041,6 +1181,10 @@ A public_access should be one of the following types:
 
 =back
 
+=head2 C<_has_public_access>
+
+A predicate for the L</public_access> attribute.
+
 =cut
 
 has public_access => (
@@ -1064,6 +1208,10 @@ A review should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
 
 =cut
 
@@ -1089,6 +1237,10 @@ A reviews should be one of the following types:
 
 =back
 
+=head2 C<_has_reviews>
+
+A predicate for the L</reviews> attribute.
+
 =cut
 
 has reviews => (
@@ -1112,6 +1264,10 @@ A slogan should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_slogan>
+
+A predicate for the L</slogan> attribute.
 
 =cut
 
@@ -1137,6 +1293,10 @@ A smoking_allowed should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_smoking_allowed>
+
+A predicate for the L</smoking_allowed> attribute.
 
 =cut
 
@@ -1171,6 +1331,10 @@ A special_opening_hours_specification should be one of the following types:
 
 =back
 
+=head2 C<_has_special_opening_hours_specification>
+
+A predicate for the L</special_opening_hours_specification> attribute.
+
 =cut
 
 has special_opening_hours_specification => (
@@ -1194,6 +1358,10 @@ A telephone should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_telephone>
+
+A predicate for the L</telephone> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A action_accessibility_requirement should be one of the following types:
 
 =back
 
+=head2 C<_has_action_accessibility_requirement>
+
+A predicate for the L</action_accessibility_requirement> attribute.
+
 =cut
 
 has action_accessibility_requirement => (
@@ -70,6 +74,10 @@ A expects_acceptance_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_expects_acceptance_of>
+
+A predicate for the L</expects_acceptance_of> attribute.
 
 =cut
 

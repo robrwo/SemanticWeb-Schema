@@ -47,6 +47,10 @@ A amenity_feature should be one of the following types:
 
 =back
 
+=head2 C<_has_amenity_feature>
+
+A predicate for the L</amenity_feature> attribute.
+
 =cut
 
 has amenity_feature => (
@@ -70,6 +74,10 @@ A audience should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
+
+=head2 C<_has_audience>
+
+A predicate for the L</audience> attribute.
 
 =cut
 
@@ -104,6 +112,10 @@ A available_language should be one of the following types:
 
 =back
 
+=head2 C<_has_available_language>
+
+A predicate for the L</available_language> attribute.
+
 =cut
 
 has available_language => (
@@ -128,6 +140,10 @@ A checkin_time should be one of the following types:
 
 =back
 
+=head2 C<_has_checkin_time>
+
+A predicate for the L</checkin_time> attribute.
+
 =cut
 
 has checkin_time => (
@@ -151,6 +167,10 @@ A checkout_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_checkout_time>
+
+A predicate for the L</checkout_time> attribute.
 
 =cut
 
@@ -181,6 +201,10 @@ A number_of_rooms should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_rooms>
+
+A predicate for the L</number_of_rooms> attribute.
+
 =cut
 
 has number_of_rooms => (
@@ -208,6 +232,10 @@ A pets_allowed should be one of the following types:
 
 =back
 
+=head2 C<_has_pets_allowed>
+
+A predicate for the L</pets_allowed> attribute.
+
 =cut
 
 has pets_allowed => (
@@ -234,6 +262,10 @@ A star_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Rating']>
 
 =back
+
+=head2 C<_has_star_rating>
+
+A predicate for the L</star_rating> attribute.
 
 =cut
 

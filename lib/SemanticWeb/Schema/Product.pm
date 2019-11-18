@@ -57,6 +57,10 @@ A additional_property should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_property>
+
+A predicate for the L</additional_property> attribute.
+
 =cut
 
 has additional_property => (
@@ -82,6 +86,10 @@ A aggregate_rating should be one of the following types:
 
 =back
 
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
+
 =cut
 
 has aggregate_rating => (
@@ -105,6 +113,10 @@ A audience should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
+
+=head2 C<_has_audience>
+
+A predicate for the L</audience> attribute.
 
 =cut
 
@@ -130,6 +142,10 @@ A award should be one of the following types:
 
 =back
 
+=head2 C<_has_award>
+
+A predicate for the L</award> attribute.
+
 =cut
 
 has award => (
@@ -153,6 +169,10 @@ A awards should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_awards>
+
+A predicate for the L</awards> attribute.
 
 =cut
 
@@ -180,6 +200,10 @@ A brand should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_brand>
+
+A predicate for the L</brand> attribute.
 
 =cut
 
@@ -210,6 +234,10 @@ A category should be one of the following types:
 
 =back
 
+=head2 C<_has_category>
+
+A predicate for the L</category> attribute.
+
 =cut
 
 has category => (
@@ -233,6 +261,10 @@ A color should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_color>
+
+A predicate for the L</color> attribute.
 
 =cut
 
@@ -259,6 +291,10 @@ A depth should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_depth>
+
+A predicate for the L</depth> attribute.
 
 =cut
 
@@ -309,6 +345,10 @@ A gtin should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin>
+
+A predicate for the L</gtin> attribute.
+
 =cut
 
 has gtin => (
@@ -341,6 +381,10 @@ A gtin12 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_gtin12>
+
+A predicate for the L</gtin12> attribute.
 
 =cut
 
@@ -375,6 +419,10 @@ A gtin13 should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin13>
+
+A predicate for the L</gtin13> attribute.
+
 =cut
 
 has gtin13 => (
@@ -404,6 +452,10 @@ A gtin14 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_gtin14>
+
+A predicate for the L</gtin14> attribute.
 
 =cut
 
@@ -438,6 +490,10 @@ A gtin8 should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin8>
+
+A predicate for the L</gtin8> attribute.
+
 =cut
 
 has gtin8 => (
@@ -461,6 +517,10 @@ A has_product_return_policy should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
 
 =back
+
+=head2 C<_has_has_product_return_policy>
+
+A predicate for the L</has_product_return_policy> attribute.
 
 =cut
 
@@ -488,6 +548,10 @@ A height should be one of the following types:
 
 =back
 
+=head2 C<_has_height>
+
+A predicate for the L</height> attribute.
+
 =cut
 
 has height => (
@@ -513,6 +577,10 @@ A is_accessory_or_spare_part_for should be one of the following types:
 
 =back
 
+=head2 C<_has_is_accessory_or_spare_part_for>
+
+A predicate for the L</is_accessory_or_spare_part_for> attribute.
+
 =cut
 
 has is_accessory_or_spare_part_for => (
@@ -537,6 +605,10 @@ A is_consumable_for should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
+
+=head2 C<_has_is_consumable_for>
+
+A predicate for the L</is_consumable_for> attribute.
 
 =cut
 
@@ -564,6 +636,10 @@ A is_related_to should be one of the following types:
 
 =back
 
+=head2 C<_has_is_related_to>
+
+A predicate for the L</is_related_to> attribute.
+
 =cut
 
 has is_related_to => (
@@ -589,6 +665,10 @@ A is_similar_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
+
+=head2 C<_has_is_similar_to>
+
+A predicate for the L</is_similar_to> attribute.
 
 =cut
 
@@ -616,6 +696,10 @@ A item_condition should be one of the following types:
 
 =back
 
+=head2 C<_has_item_condition>
+
+A predicate for the L</item_condition> attribute.
+
 =cut
 
 has item_condition => (
@@ -642,6 +726,10 @@ A logo should be one of the following types:
 
 =back
 
+=head2 C<_has_logo>
+
+A predicate for the L</logo> attribute.
+
 =cut
 
 has logo => (
@@ -665,6 +753,10 @@ A manufacturer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_manufacturer>
+
+A predicate for the L</manufacturer> attribute.
 
 =cut
 
@@ -691,6 +783,10 @@ A material should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_material>
+
+A predicate for the L</material> attribute.
 
 =cut
 
@@ -721,6 +817,10 @@ A model should be one of the following types:
 
 =back
 
+=head2 C<_has_model>
+
+A predicate for the L</model> attribute.
+
 =cut
 
 has model => (
@@ -745,6 +845,10 @@ A mpn should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_mpn>
+
+A predicate for the L</mpn> attribute.
 
 =cut
 
@@ -777,6 +881,10 @@ A nsn should be one of the following types:
 
 =back
 
+=head2 C<_has_nsn>
+
+A predicate for the L</nsn> attribute.
+
 =cut
 
 has nsn => (
@@ -802,6 +910,10 @@ A offers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
 
 =cut
 
@@ -832,6 +944,10 @@ A product_id should be one of the following types:
 
 =back
 
+=head2 C<_has_product_id>
+
+A predicate for the L</product_id> attribute.
+
 =cut
 
 has product_id => (
@@ -856,6 +972,10 @@ A production_date should be one of the following types:
 
 =back
 
+=head2 C<_has_production_date>
+
+A predicate for the L</production_date> attribute.
+
 =cut
 
 has production_date => (
@@ -879,6 +999,10 @@ A purchase_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_purchase_date>
+
+A predicate for the L</purchase_date> attribute.
 
 =cut
 
@@ -905,6 +1029,10 @@ A release_date should be one of the following types:
 
 =back
 
+=head2 C<_has_release_date>
+
+A predicate for the L</release_date> attribute.
+
 =cut
 
 has release_date => (
@@ -929,6 +1057,10 @@ A review should be one of the following types:
 
 =back
 
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
+
 =cut
 
 has review => (
@@ -952,6 +1084,10 @@ A reviews should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_reviews>
+
+A predicate for the L</reviews> attribute.
 
 =cut
 
@@ -978,6 +1114,10 @@ A sku should be one of the following types:
 
 =back
 
+=head2 C<_has_sku>
+
+A predicate for the L</sku> attribute.
+
 =cut
 
 has sku => (
@@ -1002,6 +1142,10 @@ A slogan should be one of the following types:
 
 =back
 
+=head2 C<_has_slogan>
+
+A predicate for the L</slogan> attribute.
+
 =cut
 
 has slogan => (
@@ -1025,6 +1169,10 @@ A weight should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_weight>
+
+A predicate for the L</weight> attribute.
 
 =cut
 
@@ -1051,6 +1199,10 @@ A width should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_width>
+
+A predicate for the L</width> attribute.
 
 =cut
 

@@ -64,6 +64,10 @@ A currency should be one of the following types:
 
 =back
 
+=head2 C<_has_currency>
+
+A predicate for the L</currency> attribute.
+
 =cut
 
 has currency => (
@@ -87,6 +91,10 @@ A max_value should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_max_value>
+
+A predicate for the L</max_value> attribute.
 
 =cut
 
@@ -112,6 +120,10 @@ A min_value should be one of the following types:
 
 =back
 
+=head2 C<_has_min_value>
+
+A predicate for the L</min_value> attribute.
+
 =cut
 
 has min_value => (
@@ -135,6 +147,10 @@ A valid_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
 
 =cut
 
@@ -160,6 +176,10 @@ A valid_through should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
 
 =cut
 
@@ -205,6 +225,10 @@ A value should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_value>
+
+A predicate for the L</value> attribute.
 
 =cut
 

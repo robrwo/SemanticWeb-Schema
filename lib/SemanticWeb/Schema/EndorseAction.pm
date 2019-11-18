@@ -46,6 +46,10 @@ A endorsee should be one of the following types:
 
 =back
 
+=head2 C<_has_endorsee>
+
+A predicate for the L</endorsee> attribute.
+
 =cut
 
 has endorsee => (

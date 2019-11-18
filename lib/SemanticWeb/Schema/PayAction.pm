@@ -46,6 +46,10 @@ A purpose should be one of the following types:
 
 =back
 
+=head2 C<_has_purpose>
+
+A predicate for the L</purpose> attribute.
+
 =cut
 
 has purpose => (
@@ -76,6 +80,10 @@ A recipient should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_recipient>
+
+A predicate for the L</recipient> attribute.
 
 =cut
 

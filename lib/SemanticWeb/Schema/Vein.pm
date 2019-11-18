@@ -44,6 +44,10 @@ A drains_to should be one of the following types:
 
 =back
 
+=head2 C<_has_drains_to>
+
+A predicate for the L</drains_to> attribute.
+
 =cut
 
 has drains_to => (
@@ -71,6 +75,10 @@ A region_drained should be one of the following types:
 
 =back
 
+=head2 C<_has_region_drained>
+
+A predicate for the L</region_drained> attribute.
+
 =cut
 
 has region_drained => (
@@ -95,6 +103,10 @@ A tributary should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_tributary>
+
+A predicate for the L</tributary> attribute.
 
 =cut
 

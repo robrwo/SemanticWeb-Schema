@@ -48,6 +48,10 @@ A alignment_type should be one of the following types:
 
 =back
 
+=head2 C<_has_alignment_type>
+
+A predicate for the L</alignment_type> attribute.
+
 =cut
 
 has alignment_type => (
@@ -71,6 +75,10 @@ A educational_framework should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_educational_framework>
+
+A predicate for the L</educational_framework> attribute.
 
 =cut
 
@@ -96,6 +104,10 @@ A target_description should be one of the following types:
 
 =back
 
+=head2 C<_has_target_description>
+
+A predicate for the L</target_description> attribute.
+
 =cut
 
 has target_description => (
@@ -120,6 +132,10 @@ A target_name should be one of the following types:
 
 =back
 
+=head2 C<_has_target_name>
+
+A predicate for the L</target_name> attribute.
+
 =cut
 
 has target_name => (
@@ -143,6 +159,10 @@ A target_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_target_url>
+
+A predicate for the L</target_url> attribute.
 
 =cut
 

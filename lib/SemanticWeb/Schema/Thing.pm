@@ -49,6 +49,10 @@ A additional_type should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_type>
+
+A predicate for the L</additional_type> attribute.
+
 =cut
 
 has additional_type => (
@@ -73,6 +77,10 @@ A alternate_name should be one of the following types:
 
 =back
 
+=head2 C<_has_alternate_name>
+
+A predicate for the L</alternate_name> attribute.
+
 =cut
 
 has alternate_name => (
@@ -96,6 +104,10 @@ A description should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_description>
+
+A predicate for the L</description> attribute.
 
 =cut
 
@@ -123,6 +135,10 @@ A disambiguating_description should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_disambiguating_description>
+
+A predicate for the L</disambiguating_description> attribute.
 
 =cut
 
@@ -159,6 +175,10 @@ A identifier should be one of the following types:
 
 =back
 
+=head2 C<_has_identifier>
+
+A predicate for the L</identifier> attribute.
+
 =cut
 
 has identifier => (
@@ -190,6 +210,10 @@ A image should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_image>
+
+A predicate for the L</image> attribute.
 
 =cut
 
@@ -224,6 +248,10 @@ A main_entity_of_page should be one of the following types:
 
 =back
 
+=head2 C<_has_main_entity_of_page>
+
+A predicate for the L</main_entity_of_page> attribute.
+
 =cut
 
 has main_entity_of_page => (
@@ -247,6 +275,10 @@ A name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_name>
+
+A predicate for the L</name> attribute.
 
 =cut
 
@@ -272,6 +304,10 @@ A potential_action should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Action']>
 
 =back
+
+=head2 C<_has_potential_action>
+
+A predicate for the L</potential_action> attribute.
 
 =cut
 
@@ -299,6 +335,10 @@ A same_as should be one of the following types:
 
 =back
 
+=head2 C<_has_same_as>
+
+A predicate for the L</same_as> attribute.
+
 =cut
 
 has same_as => (
@@ -325,6 +365,10 @@ A subject_of should be one of the following types:
 
 =back
 
+=head2 C<_has_subject_of>
+
+A predicate for the L</subject_of> attribute.
+
 =cut
 
 has subject_of => (
@@ -348,6 +392,10 @@ A url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_url>
+
+A predicate for the L</url> attribute.
 
 =cut
 

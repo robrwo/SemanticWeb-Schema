@@ -44,6 +44,10 @@ A collection should be one of the following types:
 
 =back
 
+=head2 C<_has_collection>
+
+A predicate for the L</collection> attribute.
+
 =cut
 
 has collection => (
@@ -67,6 +71,10 @@ A target_collection should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_target_collection>
+
+A predicate for the L</target_collection> attribute.
 
 =cut
 

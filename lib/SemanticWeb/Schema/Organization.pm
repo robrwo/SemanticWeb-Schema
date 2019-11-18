@@ -56,6 +56,10 @@ A actionable_feedback_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_actionable_feedback_policy>
+
+A predicate for the L</actionable_feedback_policy> attribute.
+
 =cut
 
 has actionable_feedback_policy => (
@@ -82,6 +86,10 @@ A address should be one of the following types:
 
 =back
 
+=head2 C<_has_address>
+
+A predicate for the L</address> attribute.
+
 =cut
 
 has address => (
@@ -107,6 +115,10 @@ A aggregate_rating should be one of the following types:
 
 =back
 
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
+
 =cut
 
 has aggregate_rating => (
@@ -130,6 +142,10 @@ A alumni should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_alumni>
+
+A predicate for the L</alumni> attribute.
 
 =cut
 
@@ -161,6 +177,10 @@ A area_served should be one of the following types:
 
 =back
 
+=head2 C<_has_area_served>
+
+A predicate for the L</area_served> attribute.
+
 =cut
 
 has area_served => (
@@ -185,6 +205,10 @@ A award should be one of the following types:
 
 =back
 
+=head2 C<_has_award>
+
+A predicate for the L</award> attribute.
+
 =cut
 
 has award => (
@@ -208,6 +232,10 @@ A awards should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_awards>
+
+A predicate for the L</awards> attribute.
 
 =cut
 
@@ -236,6 +264,10 @@ A brand should be one of the following types:
 
 =back
 
+=head2 C<_has_brand>
+
+A predicate for the L</brand> attribute.
+
 =cut
 
 has brand => (
@@ -260,6 +292,10 @@ A contact_point should be one of the following types:
 
 =back
 
+=head2 C<_has_contact_point>
+
+A predicate for the L</contact_point> attribute.
+
 =cut
 
 has contact_point => (
@@ -283,6 +319,10 @@ A contact_points should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =back
+
+=head2 C<_has_contact_points>
+
+A predicate for the L</contact_points> attribute.
 
 =cut
 
@@ -319,6 +359,10 @@ A corrections_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_corrections_policy>
+
+A predicate for the L</corrections_policy> attribute.
+
 =cut
 
 has corrections_policy => (
@@ -346,6 +390,10 @@ A department should be one of the following types:
 
 =back
 
+=head2 C<_has_department>
+
+A predicate for the L</department> attribute.
+
 =cut
 
 has department => (
@@ -369,6 +417,10 @@ A dissolution_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_dissolution_date>
+
+A predicate for the L</dissolution_date> attribute.
 
 =cut
 
@@ -407,6 +459,10 @@ A diversity_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_diversity_policy>
+
+A predicate for the L</diversity_policy> attribute.
+
 =cut
 
 has diversity_policy => (
@@ -442,6 +498,10 @@ A diversity_staffing_report should be one of the following types:
 
 =back
 
+=head2 C<_has_diversity_staffing_report>
+
+A predicate for the L</diversity_staffing_report> attribute.
+
 =cut
 
 has diversity_staffing_report => (
@@ -467,6 +527,10 @@ A duns should be one of the following types:
 
 =back
 
+=head2 C<_has_duns>
+
+A predicate for the L</duns> attribute.
+
 =cut
 
 has duns => (
@@ -490,6 +554,10 @@ A email should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_email>
+
+A predicate for the L</email> attribute.
 
 =cut
 
@@ -515,6 +583,10 @@ A employee should be one of the following types:
 
 =back
 
+=head2 C<_has_employee>
+
+A predicate for the L</employee> attribute.
+
 =cut
 
 has employee => (
@@ -538,6 +610,10 @@ A employees should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_employees>
+
+A predicate for the L</employees> attribute.
 
 =cut
 
@@ -577,6 +653,10 @@ A ethics_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_ethics_policy>
+
+A predicate for the L</ethics_policy> attribute.
+
 =cut
 
 has ethics_policy => (
@@ -600,6 +680,10 @@ A event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_event>
+
+A predicate for the L</event> attribute.
 
 =cut
 
@@ -625,6 +709,10 @@ A events should be one of the following types:
 
 =back
 
+=head2 C<_has_events>
+
+A predicate for the L</events> attribute.
+
 =cut
 
 has events => (
@@ -648,6 +736,10 @@ A fax_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_fax_number>
+
+A predicate for the L</fax_number> attribute.
 
 =cut
 
@@ -673,6 +765,10 @@ A founder should be one of the following types:
 
 =back
 
+=head2 C<_has_founder>
+
+A predicate for the L</founder> attribute.
+
 =cut
 
 has founder => (
@@ -696,6 +792,10 @@ A founders should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_founders>
+
+A predicate for the L</founders> attribute.
 
 =cut
 
@@ -721,6 +821,10 @@ A founding_date should be one of the following types:
 
 =back
 
+=head2 C<_has_founding_date>
+
+A predicate for the L</founding_date> attribute.
+
 =cut
 
 has founding_date => (
@@ -744,6 +848,10 @@ A founding_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_founding_location>
+
+A predicate for the L</founding_location> attribute.
 
 =cut
 
@@ -771,6 +879,10 @@ A funder should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_funder>
+
+A predicate for the L</funder> attribute.
 
 =cut
 
@@ -803,6 +915,10 @@ A global_location_number should be one of the following types:
 
 =back
 
+=head2 C<_has_global_location_number>
+
+A predicate for the L</global_location_number> attribute.
+
 =cut
 
 has global_location_number => (
@@ -826,6 +942,10 @@ A has_credential should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
 
 =back
+
+=head2 C<_has_has_credential>
+
+A predicate for the L</has_credential> attribute.
 
 =cut
 
@@ -852,6 +972,10 @@ A has_offer_catalog should be one of the following types:
 
 =back
 
+=head2 C<_has_has_offer_catalog>
+
+A predicate for the L</has_offer_catalog> attribute.
+
 =cut
 
 has has_offer_catalog => (
@@ -876,6 +1000,10 @@ A has_pos should be one of the following types:
 
 =back
 
+=head2 C<_has_has_pos>
+
+A predicate for the L</has_pos> attribute.
+
 =cut
 
 has has_pos => (
@@ -899,6 +1027,10 @@ A has_product_return_policy should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
 
 =back
+
+=head2 C<_has_has_product_return_policy>
+
+A predicate for the L</has_product_return_policy> attribute.
 
 =cut
 
@@ -925,6 +1057,10 @@ A isic_v4 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_isic_v4>
+
+A predicate for the L</isic_v4> attribute.
 
 =cut
 
@@ -962,6 +1098,10 @@ A knows_about should be one of the following types:
 
 =back
 
+=head2 C<_has_knows_about>
+
+A predicate for the L</knows_about> attribute.
+
 =cut
 
 has knows_about => (
@@ -997,6 +1137,10 @@ A knows_language should be one of the following types:
 
 =back
 
+=head2 C<_has_knows_language>
+
+A predicate for the L</knows_language> attribute.
+
 =cut
 
 has knows_language => (
@@ -1020,6 +1164,10 @@ A legal_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_legal_name>
+
+A predicate for the L</legal_name> attribute.
 
 =cut
 
@@ -1045,6 +1193,10 @@ A lei_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_lei_code>
+
+A predicate for the L</lei_code> attribute.
 
 =cut
 
@@ -1075,6 +1227,10 @@ A location should be one of the following types:
 
 =back
 
+=head2 C<_has_location>
+
+A predicate for the L</location> attribute.
+
 =cut
 
 has location => (
@@ -1101,6 +1257,10 @@ A logo should be one of the following types:
 
 =back
 
+=head2 C<_has_logo>
+
+A predicate for the L</logo> attribute.
+
 =cut
 
 has logo => (
@@ -1124,6 +1284,10 @@ A makes_offer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_makes_offer>
+
+A predicate for the L</makes_offer> attribute.
 
 =cut
 
@@ -1152,6 +1316,10 @@ A member should be one of the following types:
 
 =back
 
+=head2 C<_has_member>
+
+A predicate for the L</member> attribute.
+
 =cut
 
 has member => (
@@ -1179,6 +1347,10 @@ A member_of should be one of the following types:
 
 =back
 
+=head2 C<_has_member_of>
+
+A predicate for the L</member_of> attribute.
+
 =cut
 
 has member_of => (
@@ -1205,6 +1377,10 @@ A members should be one of the following types:
 
 =back
 
+=head2 C<_has_members>
+
+A predicate for the L</members> attribute.
+
 =cut
 
 has members => (
@@ -1230,6 +1406,10 @@ A naics should be one of the following types:
 
 =back
 
+=head2 C<_has_naics>
+
+A predicate for the L</naics> attribute.
+
 =cut
 
 has naics => (
@@ -1253,6 +1433,10 @@ A number_of_employees should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_number_of_employees>
+
+A predicate for the L</number_of_employees> attribute.
 
 =cut
 
@@ -1294,6 +1478,10 @@ A ownership_funding_info should be one of the following types:
 
 =back
 
+=head2 C<_has_ownership_funding_info>
+
+A predicate for the L</ownership_funding_info> attribute.
+
 =cut
 
 has ownership_funding_info => (
@@ -1319,6 +1507,10 @@ A owns should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
+
+=head2 C<_has_owns>
+
+A predicate for the L</owns> attribute.
 
 =cut
 
@@ -1348,6 +1540,10 @@ A parent_organization should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_parent_organization>
+
+A predicate for the L</parent_organization> attribute.
 
 =cut
 
@@ -1394,6 +1590,10 @@ A publishing_principles should be one of the following types:
 
 =back
 
+=head2 C<_has_publishing_principles>
+
+A predicate for the L</publishing_principles> attribute.
+
 =cut
 
 has publishing_principles => (
@@ -1417,6 +1617,10 @@ A review should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
 
 =cut
 
@@ -1442,6 +1646,10 @@ A reviews should be one of the following types:
 
 =back
 
+=head2 C<_has_reviews>
+
+A predicate for the L</reviews> attribute.
+
 =cut
 
 has reviews => (
@@ -1466,6 +1674,10 @@ A seeks should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Demand']>
 
 =back
+
+=head2 C<_has_seeks>
+
+A predicate for the L</seeks> attribute.
 
 =cut
 
@@ -1495,6 +1707,10 @@ A service_area should be one of the following types:
 
 =back
 
+=head2 C<_has_service_area>
+
+A predicate for the L</service_area> attribute.
+
 =cut
 
 has service_area => (
@@ -1518,6 +1734,10 @@ A slogan should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_slogan>
+
+A predicate for the L</slogan> attribute.
 
 =cut
 
@@ -1547,6 +1767,10 @@ A sponsor should be one of the following types:
 
 =back
 
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
+
 =cut
 
 has sponsor => (
@@ -1573,6 +1797,10 @@ A sub_organization should be one of the following types:
 
 =back
 
+=head2 C<_has_sub_organization>
+
+A predicate for the L</sub_organization> attribute.
+
 =cut
 
 has sub_organization => (
@@ -1598,6 +1826,10 @@ A tax_id should be one of the following types:
 
 =back
 
+=head2 C<_has_tax_id>
+
+A predicate for the L</tax_id> attribute.
+
 =cut
 
 has tax_id => (
@@ -1621,6 +1853,10 @@ A telephone should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_telephone>
+
+A predicate for the L</telephone> attribute.
 
 =cut
 
@@ -1657,6 +1893,10 @@ A unnamed_sources_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_unnamed_sources_policy>
+
+A predicate for the L</unnamed_sources_policy> attribute.
+
 =cut
 
 has unnamed_sources_policy => (
@@ -1680,6 +1920,10 @@ A vat_id should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_vat_id>
+
+A predicate for the L</vat_id> attribute.
 
 =cut
 

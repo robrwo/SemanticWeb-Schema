@@ -48,6 +48,10 @@ A associated_article should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_article>
+
+A predicate for the L</associated_article> attribute.
+
 =cut
 
 has associated_article => (
@@ -71,6 +75,10 @@ A bitrate should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_bitrate>
+
+A predicate for the L</bitrate> attribute.
 
 =cut
 
@@ -96,6 +104,10 @@ A content_size should be one of the following types:
 
 =back
 
+=head2 C<_has_content_size>
+
+A predicate for the L</content_size> attribute.
+
 =cut
 
 has content_size => (
@@ -119,6 +131,10 @@ A content_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_content_url>
+
+A predicate for the L</content_url> attribute.
 
 =cut
 
@@ -148,6 +164,10 @@ A duration should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_duration>
+
+A predicate for the L</duration> attribute.
 
 =cut
 
@@ -179,6 +199,10 @@ A embed_url should be one of the following types:
 
 =back
 
+=head2 C<_has_embed_url>
+
+A predicate for the L</embed_url> attribute.
+
 =cut
 
 has embed_url => (
@@ -202,6 +226,10 @@ A encodes_creative_work should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_encodes_creative_work>
+
+A predicate for the L</encodes_creative_work> attribute.
 
 =cut
 
@@ -245,6 +273,10 @@ A encoding_format should be one of the following types:
 
 =back
 
+=head2 C<_has_encoding_format>
+
+A predicate for the L</encoding_format> attribute.
+
 =cut
 
 has encoding_format => (
@@ -280,6 +312,10 @@ A end_time should be one of the following types:
 
 =back
 
+=head2 C<_has_end_time>
+
+A predicate for the L</end_time> attribute.
+
 =cut
 
 has end_time => (
@@ -306,6 +342,10 @@ A height should be one of the following types:
 
 =back
 
+=head2 C<_has_height>
+
+A predicate for the L</height> attribute.
+
 =cut
 
 has height => (
@@ -329,6 +369,10 @@ A player_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_player_type>
+
+A predicate for the L</player_type> attribute.
 
 =cut
 
@@ -354,6 +398,10 @@ A production_company should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_production_company>
+
+A predicate for the L</production_company> attribute.
 
 =cut
 
@@ -384,6 +432,10 @@ A regions_allowed should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_regions_allowed>
+
+A predicate for the L</regions_allowed> attribute.
 
 =cut
 
@@ -416,6 +468,10 @@ A requires_subscription should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MediaSubscription']>
 
 =back
+
+=head2 C<_has_requires_subscription>
+
+A predicate for the L</requires_subscription> attribute.
 
 =cut
 
@@ -452,6 +508,10 @@ A start_time should be one of the following types:
 
 =back
 
+=head2 C<_has_start_time>
+
+A predicate for the L</start_time> attribute.
+
 =cut
 
 has start_time => (
@@ -475,6 +535,10 @@ A upload_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_upload_date>
+
+A predicate for the L</upload_date> attribute.
 
 =cut
 
@@ -501,6 +565,10 @@ A width should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_width>
+
+A predicate for the L</width> attribute.
 
 =cut
 

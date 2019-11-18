@@ -46,6 +46,10 @@ A aggregate_rating should be one of the following types:
 
 =back
 
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
+
 =cut
 
 has aggregate_rating => (
@@ -72,6 +76,10 @@ A logo should be one of the following types:
 
 =back
 
+=head2 C<_has_logo>
+
+A predicate for the L</logo> attribute.
+
 =cut
 
 has logo => (
@@ -96,6 +104,10 @@ A review should be one of the following types:
 
 =back
 
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
+
 =cut
 
 has review => (
@@ -119,6 +131,10 @@ A slogan should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_slogan>
+
+A predicate for the L</slogan> attribute.
 
 =cut
 

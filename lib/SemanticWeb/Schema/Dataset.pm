@@ -44,6 +44,10 @@ A catalog should be one of the following types:
 
 =back
 
+=head2 C<_has_catalog>
+
+A predicate for the L</catalog> attribute.
+
 =cut
 
 has catalog => (
@@ -68,6 +72,10 @@ A dataset_time_interval should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_dataset_time_interval>
+
+A predicate for the L</dataset_time_interval> attribute.
 
 =cut
 
@@ -94,6 +102,10 @@ A distribution should be one of the following types:
 
 =back
 
+=head2 C<_has_distribution>
+
+A predicate for the L</distribution> attribute.
+
 =cut
 
 has distribution => (
@@ -119,6 +131,10 @@ A included_data_catalog should be one of the following types:
 
 =back
 
+=head2 C<_has_included_data_catalog>
+
+A predicate for the L</included_data_catalog> attribute.
+
 =cut
 
 has included_data_catalog => (
@@ -142,6 +158,10 @@ A included_in_data_catalog should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DataCatalog']>
 
 =back
+
+=head2 C<_has_included_in_data_catalog>
+
+A predicate for the L</included_in_data_catalog> attribute.
 
 =cut
 
@@ -168,6 +188,10 @@ A issn should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_issn>
+
+A predicate for the L</issn> attribute.
 
 =cut
 
@@ -224,6 +248,10 @@ A measurement_technique should be one of the following types:
 
 =back
 
+=head2 C<_has_measurement_technique>
+
+A predicate for the L</measurement_technique> attribute.
+
 =cut
 
 has measurement_technique => (
@@ -251,6 +279,10 @@ A variable_measured should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_variable_measured>
+
+A predicate for the L</variable_measured> attribute.
 
 =cut
 

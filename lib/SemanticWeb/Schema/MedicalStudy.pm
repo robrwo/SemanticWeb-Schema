@@ -53,6 +53,10 @@ A health_condition should be one of the following types:
 
 =back
 
+=head2 C<_has_health_condition>
+
+A predicate for the L</health_condition> attribute.
+
 =cut
 
 has health_condition => (
@@ -79,6 +83,10 @@ A outcome should be one of the following types:
 
 =back
 
+=head2 C<_has_outcome>
+
+A predicate for the L</outcome> attribute.
+
 =cut
 
 has outcome => (
@@ -103,6 +111,10 @@ A population should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_population>
+
+A predicate for the L</population> attribute.
 
 =cut
 
@@ -132,6 +144,10 @@ A sponsor should be one of the following types:
 
 =back
 
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
+
 =cut
 
 has sponsor => (
@@ -160,6 +176,10 @@ A status should be one of the following types:
 
 =back
 
+=head2 C<_has_status>
+
+A predicate for the L</status> attribute.
+
 =cut
 
 has status => (
@@ -183,6 +203,10 @@ A study_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
+
+=head2 C<_has_study_location>
+
+A predicate for the L</study_location> attribute.
 
 =cut
 
@@ -208,6 +232,10 @@ A study_subject should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
 
 =back
+
+=head2 C<_has_study_subject>
+
+A predicate for the L</study_subject> attribute.
 
 =cut
 

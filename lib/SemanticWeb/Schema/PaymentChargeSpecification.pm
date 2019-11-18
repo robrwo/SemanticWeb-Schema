@@ -45,6 +45,10 @@ A applies_to_delivery_method should be one of the following types:
 
 =back
 
+=head2 C<_has_applies_to_delivery_method>
+
+A predicate for the L</applies_to_delivery_method> attribute.
+
 =cut
 
 has applies_to_delivery_method => (
@@ -68,6 +72,10 @@ A applies_to_payment_method should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PaymentMethod']>
 
 =back
+
+=head2 C<_has_applies_to_payment_method>
+
+A predicate for the L</applies_to_payment_method> attribute.
 
 =cut
 

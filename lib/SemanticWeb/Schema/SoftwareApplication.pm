@@ -44,6 +44,10 @@ A application_category should be one of the following types:
 
 =back
 
+=head2 C<_has_application_category>
+
+A predicate for the L</application_category> attribute.
+
 =cut
 
 has application_category => (
@@ -67,6 +71,10 @@ A application_sub_category should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_application_sub_category>
+
+A predicate for the L</application_sub_category> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A application_suite should be one of the following types:
 
 =back
 
+=head2 C<_has_application_suite>
+
+A predicate for the L</application_suite> attribute.
+
 =cut
 
 has application_suite => (
@@ -117,6 +129,10 @@ A available_on_device should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_available_on_device>
+
+A predicate for the L</available_on_device> attribute.
 
 =cut
 
@@ -143,6 +159,10 @@ A countries_not_supported should be one of the following types:
 
 =back
 
+=head2 C<_has_countries_not_supported>
+
+A predicate for the L</countries_not_supported> attribute.
+
 =cut
 
 has countries_not_supported => (
@@ -167,6 +187,10 @@ A countries_supported should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_countries_supported>
+
+A predicate for the L</countries_supported> attribute.
 
 =cut
 
@@ -193,6 +217,10 @@ A device should be one of the following types:
 
 =back
 
+=head2 C<_has_device>
+
+A predicate for the L</device> attribute.
+
 =cut
 
 has device => (
@@ -216,6 +244,10 @@ A download_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_download_url>
+
+A predicate for the L</download_url> attribute.
 
 =cut
 
@@ -242,6 +274,10 @@ A feature_list should be one of the following types:
 
 =back
 
+=head2 C<_has_feature_list>
+
+A predicate for the L</feature_list> attribute.
+
 =cut
 
 has feature_list => (
@@ -266,6 +302,10 @@ A file_size should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_file_size>
+
+A predicate for the L</file_size> attribute.
 
 =cut
 
@@ -292,6 +332,10 @@ A install_url should be one of the following types:
 
 =back
 
+=head2 C<_has_install_url>
+
+A predicate for the L</install_url> attribute.
+
 =cut
 
 has install_url => (
@@ -316,6 +360,10 @@ A memory_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_memory_requirements>
+
+A predicate for the L</memory_requirements> attribute.
+
 =cut
 
 has memory_requirements => (
@@ -339,6 +387,10 @@ A operating_system should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_operating_system>
+
+A predicate for the L</operating_system> attribute.
 
 =cut
 
@@ -365,6 +417,10 @@ A permissions should be one of the following types:
 
 =back
 
+=head2 C<_has_permissions>
+
+A predicate for the L</permissions> attribute.
+
 =cut
 
 has permissions => (
@@ -389,6 +445,10 @@ A processor_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_processor_requirements>
+
+A predicate for the L</processor_requirements> attribute.
+
 =cut
 
 has processor_requirements => (
@@ -412,6 +472,10 @@ A release_notes should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_release_notes>
+
+A predicate for the L</release_notes> attribute.
 
 =cut
 
@@ -440,6 +504,10 @@ A requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_requirements>
+
+A predicate for the L</requirements> attribute.
+
 =cut
 
 has requirements => (
@@ -466,6 +534,10 @@ A screenshot should be one of the following types:
 
 =back
 
+=head2 C<_has_screenshot>
+
+A predicate for the L</screenshot> attribute.
+
 =cut
 
 has screenshot => (
@@ -490,6 +562,10 @@ A software_add_on should be one of the following types:
 
 =back
 
+=head2 C<_has_software_add_on>
+
+A predicate for the L</software_add_on> attribute.
+
 =cut
 
 has software_add_on => (
@@ -513,6 +589,10 @@ A software_help should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_software_help>
+
+A predicate for the L</software_help> attribute.
 
 =cut
 
@@ -541,6 +621,10 @@ A software_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_software_requirements>
+
+A predicate for the L</software_requirements> attribute.
+
 =cut
 
 has software_requirements => (
@@ -564,6 +648,10 @@ A software_version should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_software_version>
+
+A predicate for the L</software_version> attribute.
 
 =cut
 
@@ -589,6 +677,10 @@ A storage_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_storage_requirements>
+
+A predicate for the L</storage_requirements> attribute.
+
 =cut
 
 has storage_requirements => (
@@ -612,6 +704,10 @@ A supporting_data should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DataFeed']>
 
 =back
+
+=head2 C<_has_supporting_data>
+
+A predicate for the L</supporting_data> attribute.
 
 =cut
 

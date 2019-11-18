@@ -55,6 +55,10 @@ A action_status should be one of the following types:
 
 =back
 
+=head2 C<_has_action_status>
+
+A predicate for the L</action_status> attribute.
+
 =cut
 
 has action_status => (
@@ -85,6 +89,10 @@ A agent should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_agent>
+
+A predicate for the L</agent> attribute.
 
 =cut
 
@@ -121,6 +129,10 @@ A end_time should be one of the following types:
 
 =back
 
+=head2 C<_has_end_time>
+
+A predicate for the L</end_time> attribute.
+
 =cut
 
 has end_time => (
@@ -144,6 +156,10 @@ A error should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_error>
+
+A predicate for the L</error> attribute.
 
 =cut
 
@@ -174,6 +190,10 @@ A instrument should be one of the following types:
 
 =back
 
+=head2 C<_has_instrument>
+
+A predicate for the L</instrument> attribute.
+
 =cut
 
 has instrument => (
@@ -202,6 +222,10 @@ A location should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_location>
+
+A predicate for the L</location> attribute.
 
 =cut
 
@@ -234,6 +258,10 @@ A object should be one of the following types:
 
 =back
 
+=head2 C<_has_object>
+
+A predicate for the L</object> attribute.
+
 =cut
 
 has object => (
@@ -265,6 +293,10 @@ A participant should be one of the following types:
 
 =back
 
+=head2 C<_has_participant>
+
+A predicate for the L</participant> attribute.
+
 =cut
 
 has participant => (
@@ -292,6 +324,10 @@ A result should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_result>
+
+A predicate for the L</result> attribute.
 
 =cut
 
@@ -328,6 +364,10 @@ A start_time should be one of the following types:
 
 =back
 
+=head2 C<_has_start_time>
+
+A predicate for the L</start_time> attribute.
+
 =cut
 
 has start_time => (
@@ -351,6 +391,10 @@ A target should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::EntryPoint']>
 
 =back
+
+=head2 C<_has_target>
+
+A predicate for the L</target> attribute.
 
 =cut
 

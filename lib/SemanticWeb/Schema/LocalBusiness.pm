@@ -53,6 +53,10 @@ A branch_of should be one of the following types:
 
 =back
 
+=head2 C<_has_branch_of>
+
+A predicate for the L</branch_of> attribute.
+
 =cut
 
 has branch_of => (
@@ -87,6 +91,10 @@ A currencies_accepted should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_currencies_accepted>
+
+A predicate for the L</currencies_accepted> attribute.
 
 =cut
 
@@ -129,6 +137,10 @@ A opening_hours should be one of the following types:
 
 =back
 
+=head2 C<_has_opening_hours>
+
+A predicate for the L</opening_hours> attribute.
+
 =cut
 
 has opening_hours => (
@@ -152,6 +164,10 @@ A payment_accepted should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_payment_accepted>
+
+A predicate for the L</payment_accepted> attribute.
 
 =cut
 
@@ -180,6 +196,10 @@ A price_range should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_price_range>
+
+A predicate for the L</price_range> attribute.
 
 =cut
 

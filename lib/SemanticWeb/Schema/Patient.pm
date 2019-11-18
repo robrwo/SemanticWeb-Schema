@@ -45,6 +45,10 @@ A diagnosis should be one of the following types:
 
 =back
 
+=head2 C<_has_diagnosis>
+
+A predicate for the L</diagnosis> attribute.
+
 =cut
 
 has diagnosis => (
@@ -68,6 +72,10 @@ A drug should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Drug']>
 
 =back
+
+=head2 C<_has_drug>
+
+A predicate for the L</drug> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A health_condition should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalCondition']>
 
 =back
+
+=head2 C<_has_health_condition>
+
+A predicate for the L</health_condition> attribute.
 
 =cut
 

@@ -59,6 +59,10 @@ A cause_of should be one of the following types:
 
 =back
 
+=head2 C<_has_cause_of>
+
+A predicate for the L</cause_of> attribute.
+
 =cut
 
 has cause_of => (

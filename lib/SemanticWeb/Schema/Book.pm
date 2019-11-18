@@ -44,6 +44,10 @@ A abridged should be one of the following types:
 
 =back
 
+=head2 C<_has_abridged>
+
+A predicate for the L</abridged> attribute.
+
 =cut
 
 has abridged => (
@@ -67,6 +71,10 @@ A book_edition should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_book_edition>
+
+A predicate for the L</book_edition> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A book_format should be one of the following types:
 
 =back
 
+=head2 C<_has_book_format>
+
+A predicate for the L</book_format> attribute.
+
 =cut
 
 has book_format => (
@@ -115,6 +127,10 @@ A illustrator should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_illustrator>
+
+A predicate for the L</illustrator> attribute.
 
 =cut
 
@@ -140,6 +156,10 @@ A isbn should be one of the following types:
 
 =back
 
+=head2 C<_has_isbn>
+
+A predicate for the L</isbn> attribute.
+
 =cut
 
 has isbn => (
@@ -163,6 +183,10 @@ A number_of_pages should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_number_of_pages>
+
+A predicate for the L</number_of_pages> attribute.
 
 =cut
 

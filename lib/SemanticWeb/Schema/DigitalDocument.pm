@@ -46,6 +46,10 @@ A has_digital_document_permission should be one of the following types:
 
 =back
 
+=head2 C<_has_has_digital_document_permission>
+
+A predicate for the L</has_digital_document_permission> attribute.
+
 =cut
 
 has has_digital_document_permission => (

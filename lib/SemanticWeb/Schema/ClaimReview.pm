@@ -45,6 +45,10 @@ A claim_reviewed should be one of the following types:
 
 =back
 
+=head2 C<_has_claim_reviewed>
+
+A predicate for the L</claim_reviewed> attribute.
+
 =cut
 
 has claim_reviewed => (

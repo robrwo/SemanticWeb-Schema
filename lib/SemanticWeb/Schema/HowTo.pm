@@ -48,6 +48,10 @@ A estimated_cost should be one of the following types:
 
 =back
 
+=head2 C<_has_estimated_cost>
+
+A predicate for the L</estimated_cost> attribute.
+
 =cut
 
 has estimated_cost => (
@@ -78,6 +82,10 @@ A perform_time should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_perform_time>
+
+A predicate for the L</perform_time> attribute.
 
 =cut
 
@@ -110,6 +118,10 @@ A prep_time should be one of the following types:
 
 =back
 
+=head2 C<_has_prep_time>
+
+A predicate for the L</prep_time> attribute.
+
 =cut
 
 has prep_time => (
@@ -141,6 +153,10 @@ A step should be one of the following types:
 
 =back
 
+=head2 C<_has_step>
+
+A predicate for the L</step> attribute.
+
 =cut
 
 has step => (
@@ -170,6 +186,10 @@ A steps should be one of the following types:
 
 =back
 
+=head2 C<_has_steps>
+
+A predicate for the L</steps> attribute.
+
 =cut
 
 has steps => (
@@ -197,6 +217,10 @@ A supply should be one of the following types:
 
 =back
 
+=head2 C<_has_supply>
+
+A predicate for the L</supply> attribute.
+
 =cut
 
 has supply => (
@@ -223,6 +247,10 @@ A tool should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_tool>
+
+A predicate for the L</tool> attribute.
 
 =cut
 
@@ -255,6 +283,10 @@ A total_time should be one of the following types:
 
 =back
 
+=head2 C<_has_total_time>
+
+A predicate for the L</total_time> attribute.
+
 =cut
 
 has total_time => (
@@ -281,6 +313,10 @@ A yield should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_yield>
+
+A predicate for the L</yield> attribute.
 
 =cut
 

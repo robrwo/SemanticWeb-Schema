@@ -45,6 +45,10 @@ A replacee should be one of the following types:
 
 =back
 
+=head2 C<_has_replacee>
+
+A predicate for the L</replacee> attribute.
+
 =cut
 
 has replacee => (
@@ -68,6 +72,10 @@ A replacer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_replacer>
+
+A predicate for the L</replacer> attribute.
 
 =cut
 

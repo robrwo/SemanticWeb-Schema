@@ -45,6 +45,10 @@ A applies_to_delivery_method should be one of the following types:
 
 =back
 
+=head2 C<_has_applies_to_delivery_method>
+
+A predicate for the L</applies_to_delivery_method> attribute.
+
 =cut
 
 has applies_to_delivery_method => (
@@ -74,6 +78,10 @@ A area_served should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_area_served>
+
+A predicate for the L</area_served> attribute.
 
 =cut
 
@@ -111,6 +119,10 @@ A eligible_region should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_region>
+
+A predicate for the L</eligible_region> attribute.
+
 =cut
 
 has eligible_region => (
@@ -146,6 +158,10 @@ A ineligible_region should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_ineligible_region>
+
+A predicate for the L</ineligible_region> attribute.
 
 =cut
 

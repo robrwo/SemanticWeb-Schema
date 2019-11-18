@@ -46,6 +46,10 @@ A result_review should be one of the following types:
 
 =back
 
+=head2 C<_has_result_review>
+
+A predicate for the L</result_review> attribute.
+
 =cut
 
 has result_review => (

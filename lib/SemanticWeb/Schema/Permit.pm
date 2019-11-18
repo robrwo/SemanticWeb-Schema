@@ -44,6 +44,10 @@ A issued_by should be one of the following types:
 
 =back
 
+=head2 C<_has_issued_by>
+
+A predicate for the L</issued_by> attribute.
+
 =cut
 
 has issued_by => (
@@ -67,6 +71,10 @@ A issued_through should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
+
+=head2 C<_has_issued_through>
+
+A predicate for the L</issued_through> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A permit_audience should be one of the following types:
 
 =back
 
+=head2 C<_has_permit_audience>
+
+A predicate for the L</permit_audience> attribute.
+
 =cut
 
 has permit_audience => (
@@ -115,6 +127,10 @@ A valid_for should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_valid_for>
+
+A predicate for the L</valid_for> attribute.
 
 =cut
 
@@ -140,6 +156,10 @@ A valid_from should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
+
 =cut
 
 has valid_from => (
@@ -164,6 +184,10 @@ A valid_in should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_in>
+
+A predicate for the L</valid_in> attribute.
+
 =cut
 
 has valid_in => (
@@ -187,6 +211,10 @@ A valid_until should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_until>
+
+A predicate for the L</valid_until> attribute.
 
 =cut
 

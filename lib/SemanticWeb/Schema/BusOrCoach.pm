@@ -48,6 +48,10 @@ A acriss_code should be one of the following types:
 
 =back
 
+=head2 C<_has_acriss_code>
+
+A predicate for the L</acriss_code> attribute.
+
 =cut
 
 has acriss_code => (
@@ -88,6 +92,10 @@ A roof_load should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_roof_load>
+
+A predicate for the L</roof_load> attribute.
 
 =cut
 

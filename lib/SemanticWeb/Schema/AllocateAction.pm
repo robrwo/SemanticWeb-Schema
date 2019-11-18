@@ -46,6 +46,10 @@ A purpose should be one of the following types:
 
 =back
 
+=head2 C<_has_purpose>
+
+A predicate for the L</purpose> attribute.
+
 =cut
 
 has purpose => (

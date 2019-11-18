@@ -48,6 +48,10 @@ A after_media should be one of the following types:
 
 =back
 
+=head2 C<_has_after_media>
+
+A predicate for the L</after_media> attribute.
+
 =cut
 
 has after_media => (
@@ -75,6 +79,10 @@ A before_media should be one of the following types:
 
 =back
 
+=head2 C<_has_before_media>
+
+A predicate for the L</before_media> attribute.
+
 =cut
 
 has before_media => (
@@ -101,6 +109,10 @@ A during_media should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_during_media>
+
+A predicate for the L</during_media> attribute.
 
 =cut
 
@@ -133,6 +145,10 @@ A perform_time should be one of the following types:
 
 =back
 
+=head2 C<_has_perform_time>
+
+A predicate for the L</perform_time> attribute.
+
 =cut
 
 has perform_time => (
@@ -164,6 +180,10 @@ A prep_time should be one of the following types:
 
 =back
 
+=head2 C<_has_prep_time>
+
+A predicate for the L</prep_time> attribute.
+
 =cut
 
 has prep_time => (
@@ -191,6 +211,10 @@ A supply should be one of the following types:
 
 =back
 
+=head2 C<_has_supply>
+
+A predicate for the L</supply> attribute.
+
 =cut
 
 has supply => (
@@ -217,6 +241,10 @@ A tool should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_tool>
+
+A predicate for the L</tool> attribute.
 
 =cut
 
@@ -248,6 +276,10 @@ A total_time should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_total_time>
+
+A predicate for the L</total_time> attribute.
 
 =cut
 

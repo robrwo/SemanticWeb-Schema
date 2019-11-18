@@ -49,6 +49,10 @@ A adverse_outcome should be one of the following types:
 
 =back
 
+=head2 C<_has_adverse_outcome>
+
+A predicate for the L</adverse_outcome> attribute.
+
 =cut
 
 has adverse_outcome => (
@@ -74,6 +78,10 @@ A dose_schedule should be one of the following types:
 
 =back
 
+=head2 C<_has_dose_schedule>
+
+A predicate for the L</dose_schedule> attribute.
+
 =cut
 
 has dose_schedule => (
@@ -97,6 +105,10 @@ A drug should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Drug']>
 
 =back
+
+=head2 C<_has_drug>
+
+A predicate for the L</drug> attribute.
 
 =cut
 
@@ -125,6 +137,10 @@ A indication should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalIndication']>
 
 =back
+
+=head2 C<_has_indication>
+
+A predicate for the L</indication> attribute.
 
 =cut
 

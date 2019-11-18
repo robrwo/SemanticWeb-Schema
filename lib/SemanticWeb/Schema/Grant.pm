@@ -77,6 +77,10 @@ A funded_item should be one of the following types:
 
 =back
 
+=head2 C<_has_funded_item>
+
+A predicate for the L</funded_item> attribute.
+
 =cut
 
 has funded_item => (
@@ -104,6 +108,10 @@ A sponsor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
 
 =cut
 

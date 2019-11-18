@@ -45,6 +45,10 @@ A result_comment should be one of the following types:
 
 =back
 
+=head2 C<_has_result_comment>
+
+A predicate for the L</result_comment> attribute.
+
 =cut
 
 has result_comment => (

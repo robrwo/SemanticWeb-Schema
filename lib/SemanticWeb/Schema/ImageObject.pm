@@ -53,6 +53,10 @@ A caption should be one of the following types:
 
 =back
 
+=head2 C<_has_caption>
+
+A predicate for the L</caption> attribute.
+
 =cut
 
 has caption => (
@@ -79,6 +83,10 @@ A exif_data should be one of the following types:
 
 =back
 
+=head2 C<_has_exif_data>
+
+A predicate for the L</exif_data> attribute.
+
 =cut
 
 has exif_data => (
@@ -103,6 +111,10 @@ A representative_of_page should be one of the following types:
 
 =back
 
+=head2 C<_has_representative_of_page>
+
+A predicate for the L</representative_of_page> attribute.
+
 =cut
 
 has representative_of_page => (
@@ -126,6 +138,10 @@ A thumbnail should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
 
 =back
+
+=head2 C<_has_thumbnail>
+
+A predicate for the L</thumbnail> attribute.
 
 =cut
 

@@ -56,6 +56,10 @@ A booking_agent should be one of the following types:
 
 =back
 
+=head2 C<_has_booking_agent>
+
+A predicate for the L</booking_agent> attribute.
+
 =cut
 
 has booking_agent => (
@@ -79,6 +83,10 @@ A booking_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_booking_time>
+
+A predicate for the L</booking_time> attribute.
 
 =cut
 
@@ -109,6 +117,10 @@ A broker should be one of the following types:
 
 =back
 
+=head2 C<_has_broker>
+
+A predicate for the L</broker> attribute.
+
 =cut
 
 has broker => (
@@ -132,6 +144,10 @@ A modified_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_modified_time>
+
+A predicate for the L</modified_time> attribute.
 
 =cut
 
@@ -171,6 +187,10 @@ A price_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_price_currency>
+
+A predicate for the L</price_currency> attribute.
+
 =cut
 
 has price_currency => (
@@ -195,6 +215,10 @@ A program_membership_used should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ProgramMembership']>
 
 =back
+
+=head2 C<_has_program_membership_used>
+
+A predicate for the L</program_membership_used> attribute.
 
 =cut
 
@@ -224,6 +248,10 @@ A provider should be one of the following types:
 
 =back
 
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
+
 =cut
 
 has provider => (
@@ -247,6 +275,10 @@ A reservation_for should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_reservation_for>
+
+A predicate for the L</reservation_for> attribute.
 
 =cut
 
@@ -272,6 +304,10 @@ A reservation_id should be one of the following types:
 
 =back
 
+=head2 C<_has_reservation_id>
+
+A predicate for the L</reservation_id> attribute.
+
 =cut
 
 has reservation_id => (
@@ -296,6 +332,10 @@ A reservation_status should be one of the following types:
 
 =back
 
+=head2 C<_has_reservation_status>
+
+A predicate for the L</reservation_status> attribute.
+
 =cut
 
 has reservation_status => (
@@ -319,6 +359,10 @@ A reserved_ticket should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Ticket']>
 
 =back
+
+=head2 C<_has_reserved_ticket>
+
+A predicate for the L</reserved_ticket> attribute.
 
 =cut
 
@@ -357,6 +401,10 @@ A total_price should be one of the following types:
 
 =back
 
+=head2 C<_has_total_price>
+
+A predicate for the L</total_price> attribute.
+
 =cut
 
 has total_price => (
@@ -382,6 +430,10 @@ A under_name should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_under_name>
+
+A predicate for the L</under_name> attribute.
 
 =cut
 

@@ -76,6 +76,10 @@ A appearance should be one of the following types:
 
 =back
 
+=head2 C<_has_appearance>
+
+A predicate for the L</appearance> attribute.
+
 =cut
 
 has appearance => (
@@ -105,6 +109,10 @@ A first_appearance should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_first_appearance>
+
+A predicate for the L</first_appearance> attribute.
 
 =cut
 

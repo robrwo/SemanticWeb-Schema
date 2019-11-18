@@ -44,6 +44,10 @@ A biomechnical_class should be one of the following types:
 
 =back
 
+=head2 C<_has_biomechnical_class>
+
+A predicate for the L</biomechnical_class> attribute.
+
 =cut
 
 has biomechnical_class => (
@@ -70,6 +74,10 @@ A functional_class should be one of the following types:
 
 =back
 
+=head2 C<_has_functional_class>
+
+A predicate for the L</functional_class> attribute.
+
 =cut
 
 has functional_class => (
@@ -93,6 +101,10 @@ A structural_class should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_structural_class>
+
+A predicate for the L</structural_class> attribute.
 
 =cut
 

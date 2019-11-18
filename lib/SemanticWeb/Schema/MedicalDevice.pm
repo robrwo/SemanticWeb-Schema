@@ -49,6 +49,10 @@ A adverse_outcome should be one of the following types:
 
 =back
 
+=head2 C<_has_adverse_outcome>
+
+A predicate for the L</adverse_outcome> attribute.
+
 =cut
 
 has adverse_outcome => (
@@ -74,6 +78,10 @@ A contraindication should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_contraindication>
+
+A predicate for the L</contraindication> attribute.
 
 =cut
 
@@ -103,6 +111,10 @@ A indication should be one of the following types:
 
 =back
 
+=head2 C<_has_indication>
+
+A predicate for the L</indication> attribute.
+
 =cut
 
 has indication => (
@@ -127,6 +139,10 @@ A post_op should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_post_op>
+
+A predicate for the L</post_op> attribute.
 
 =cut
 
@@ -153,6 +169,10 @@ A pre_op should be one of the following types:
 
 =back
 
+=head2 C<_has_pre_op>
+
+A predicate for the L</pre_op> attribute.
+
 =cut
 
 has pre_op => (
@@ -177,6 +197,10 @@ A procedure should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_procedure>
+
+A predicate for the L</procedure> attribute.
 
 =cut
 
@@ -203,6 +227,10 @@ A purpose should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_purpose>
+
+A predicate for the L</purpose> attribute.
 
 =cut
 
@@ -232,6 +260,10 @@ A serious_adverse_outcome should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
 
 =back
+
+=head2 C<_has_serious_adverse_outcome>
+
+A predicate for the L</serious_adverse_outcome> attribute.
 
 =cut
 

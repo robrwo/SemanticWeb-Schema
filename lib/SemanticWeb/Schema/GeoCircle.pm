@@ -48,6 +48,10 @@ A geo_midpoint should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_midpoint>
+
+A predicate for the L</geo_midpoint> attribute.
+
 =cut
 
 has geo_midpoint => (
@@ -76,6 +80,10 @@ A geo_radius should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_geo_radius>
+
+A predicate for the L</geo_radius> attribute.
 
 =cut
 

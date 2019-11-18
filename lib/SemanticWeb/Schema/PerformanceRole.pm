@@ -46,6 +46,10 @@ A character_name should be one of the following types:
 
 =back
 
+=head2 C<_has_character_name>
+
+A predicate for the L</character_name> attribute.
+
 =cut
 
 has character_name => (

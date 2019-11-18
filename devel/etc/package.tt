@@ -50,6 +50,10 @@ A [% name %] should be one of the following types:
 =back
 [% END -%]
 
+=head2 C<_has_[% name %]>
+
+A predicate for the L</[% name %]> attribute.
+
 =cut
 
 has [% name %] => (

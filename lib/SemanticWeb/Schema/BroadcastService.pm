@@ -45,6 +45,10 @@ A area should be one of the following types:
 
 =back
 
+=head2 C<_has_area>
+
+A predicate for the L</area> attribute.
+
 =cut
 
 has area => (
@@ -68,6 +72,10 @@ A broadcast_affiliate_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_broadcast_affiliate_of>
+
+A predicate for the L</broadcast_affiliate_of> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A broadcast_display_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_broadcast_display_name>
+
+A predicate for the L</broadcast_display_name> attribute.
 
 =cut
 
@@ -121,6 +133,10 @@ A broadcast_frequency should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_broadcast_frequency>
+
+A predicate for the L</broadcast_frequency> attribute.
 
 =cut
 
@@ -151,6 +167,10 @@ A broadcast_timezone should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_timezone>
+
+A predicate for the L</broadcast_timezone> attribute.
+
 =cut
 
 has broadcast_timezone => (
@@ -174,6 +194,10 @@ A broadcaster should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_broadcaster>
+
+A predicate for the L</broadcaster> attribute.
 
 =cut
 
@@ -205,6 +229,10 @@ A call_sign should be one of the following types:
 
 =back
 
+=head2 C<_has_call_sign>
+
+A predicate for the L</call_sign> attribute.
+
 =cut
 
 has call_sign => (
@@ -228,6 +256,10 @@ A has_broadcast_channel should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BroadcastChannel']>
 
 =back
+
+=head2 C<_has_has_broadcast_channel>
+
+A predicate for the L</has_broadcast_channel> attribute.
 
 =cut
 
@@ -254,6 +286,10 @@ A parent_service should be one of the following types:
 
 =back
 
+=head2 C<_has_parent_service>
+
+A predicate for the L</parent_service> attribute.
+
 =cut
 
 has parent_service => (
@@ -278,6 +314,10 @@ A video_format should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_video_format>
+
+A predicate for the L</video_format> attribute.
 
 =cut
 

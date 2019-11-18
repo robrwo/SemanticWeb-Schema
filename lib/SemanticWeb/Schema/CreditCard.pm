@@ -59,6 +59,10 @@ A monthly_minimum_repayment_amount should be one of the following types:
 
 =back
 
+=head2 C<_has_monthly_minimum_repayment_amount>
+
+A predicate for the L</monthly_minimum_repayment_amount> attribute.
+
 =cut
 
 has monthly_minimum_repayment_amount => (

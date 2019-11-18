@@ -50,6 +50,10 @@ A applicable_location should be one of the following types:
 
 =back
 
+=head2 C<_has_applicable_location>
+
+A predicate for the L</applicable_location> attribute.
+
 =cut
 
 has applicable_location => (
@@ -73,6 +77,10 @@ A cost_category should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DrugCostCategory']>
 
 =back
+
+=head2 C<_has_cost_category>
+
+A predicate for the L</cost_category> attribute.
 
 =cut
 
@@ -99,6 +107,10 @@ A cost_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_cost_currency>
+
+A predicate for the L</cost_currency> attribute.
+
 =cut
 
 has cost_currency => (
@@ -123,6 +135,10 @@ A cost_origin should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_cost_origin>
+
+A predicate for the L</cost_origin> attribute.
 
 =cut
 
@@ -152,6 +168,10 @@ A cost_per_unit should be one of the following types:
 
 =back
 
+=head2 C<_has_cost_per_unit>
+
+A predicate for the L</cost_per_unit> attribute.
+
 =cut
 
 has cost_per_unit => (
@@ -175,6 +195,10 @@ A drug_unit should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_drug_unit>
+
+A predicate for the L</drug_unit> attribute.
 
 =cut
 

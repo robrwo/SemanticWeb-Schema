@@ -51,6 +51,10 @@ A boarding_group should be one of the following types:
 
 =back
 
+=head2 C<_has_boarding_group>
+
+A predicate for the L</boarding_group> attribute.
+
 =cut
 
 has boarding_group => (
@@ -78,6 +82,10 @@ A passenger_priority_status should be one of the following types:
 
 =back
 
+=head2 C<_has_passenger_priority_status>
+
+A predicate for the L</passenger_priority_status> attribute.
+
 =cut
 
 has passenger_priority_status => (
@@ -102,6 +110,10 @@ A passenger_sequence_number should be one of the following types:
 
 =back
 
+=head2 C<_has_passenger_sequence_number>
+
+A predicate for the L</passenger_sequence_number> attribute.
+
 =cut
 
 has passenger_sequence_number => (
@@ -125,6 +137,10 @@ A security_screening should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_security_screening>
+
+A predicate for the L</security_screening> attribute.
 
 =cut
 

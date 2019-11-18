@@ -57,6 +57,10 @@ A high_price should be one of the following types:
 
 =back
 
+=head2 C<_has_high_price>
+
+A predicate for the L</high_price> attribute.
+
 =cut
 
 has high_price => (
@@ -92,6 +96,10 @@ A low_price should be one of the following types:
 
 =back
 
+=head2 C<_has_low_price>
+
+A predicate for the L</low_price> attribute.
+
 =cut
 
 has low_price => (
@@ -115,6 +123,10 @@ A offer_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_offer_count>
+
+A predicate for the L</offer_count> attribute.
 
 =cut
 
@@ -141,6 +153,10 @@ A offers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
 
 =cut
 

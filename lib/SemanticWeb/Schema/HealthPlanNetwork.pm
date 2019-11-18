@@ -45,6 +45,10 @@ A health_plan_cost_sharing should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_cost_sharing>
+
+A predicate for the L</health_plan_cost_sharing> attribute.
+
 =cut
 
 has health_plan_cost_sharing => (
@@ -70,6 +74,10 @@ A health_plan_network_id should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_network_id>
+
+A predicate for the L</health_plan_network_id> attribute.
+
 =cut
 
 has health_plan_network_id => (
@@ -93,6 +101,10 @@ A health_plan_network_tier should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_health_plan_network_tier>
+
+A predicate for the L</health_plan_network_tier> attribute.
 
 =cut
 

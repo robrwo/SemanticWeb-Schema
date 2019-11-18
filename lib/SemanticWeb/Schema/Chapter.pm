@@ -47,6 +47,10 @@ A page_end should be one of the following types:
 
 =back
 
+=head2 C<_has_page_end>
+
+A predicate for the L</page_end> attribute.
+
 =cut
 
 has page_end => (
@@ -73,6 +77,10 @@ A page_start should be one of the following types:
 
 =back
 
+=head2 C<_has_page_start>
+
+A predicate for the L</page_start> attribute.
+
 =cut
 
 has page_start => (
@@ -97,6 +105,10 @@ A pagination should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pagination>
+
+A predicate for the L</pagination> attribute.
 
 =cut
 

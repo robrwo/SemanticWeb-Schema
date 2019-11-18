@@ -61,6 +61,10 @@ A end_date should be one of the following types:
 
 =back
 
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
 =cut
 
 has end_date => (
@@ -86,6 +90,10 @@ A named_position should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_named_position>
+
+A predicate for the L</named_position> attribute.
 
 =cut
 
@@ -113,6 +121,10 @@ A role_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_role_name>
+
+A predicate for the L</role_name> attribute.
 
 =cut
 
@@ -142,6 +154,10 @@ A start_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
 
 =cut
 

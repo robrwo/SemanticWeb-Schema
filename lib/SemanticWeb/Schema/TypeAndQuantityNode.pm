@@ -45,6 +45,10 @@ A amount_of_this_good should be one of the following types:
 
 =back
 
+=head2 C<_has_amount_of_this_good>
+
+A predicate for the L</amount_of_this_good> attribute.
+
 =cut
 
 has amount_of_this_good => (
@@ -70,6 +74,10 @@ A business_function should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BusinessFunction']>
 
 =back
+
+=head2 C<_has_business_function>
+
+A predicate for the L</business_function> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A type_of_good should be one of the following types:
 
 =back
 
+=head2 C<_has_type_of_good>
+
+A predicate for the L</type_of_good> attribute.
+
 =cut
 
 has type_of_good => (
@@ -122,6 +134,10 @@ A unit_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_code>
+
+A predicate for the L</unit_code> attribute.
 
 =cut
 
@@ -151,6 +167,10 @@ A unit_text should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_text>
+
+A predicate for the L</unit_text> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A domain_includes should be one of the following types:
 
 =back
 
+=head2 C<_has_domain_includes>
+
+A predicate for the L</domain_includes> attribute.
+
 =cut
 
 has domain_includes => (
@@ -74,6 +78,10 @@ A inverse_of should be one of the following types:
 
 =back
 
+=head2 C<_has_inverse_of>
+
+A predicate for the L</inverse_of> attribute.
+
 =cut
 
 has inverse_of => (
@@ -98,6 +106,10 @@ A range_includes should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Class']>
 
 =back
+
+=head2 C<_has_range_includes>
+
+A predicate for the L</range_includes> attribute.
 
 =cut
 
@@ -127,6 +139,10 @@ A superseded_by should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Property']>
 
 =back
+
+=head2 C<_has_superseded_by>
+
+A predicate for the L</superseded_by> attribute.
 
 =cut
 

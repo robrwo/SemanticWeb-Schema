@@ -45,6 +45,10 @@ A numbered_position should be one of the following types:
 
 =back
 
+=head2 C<_has_numbered_position>
+
+A predicate for the L</numbered_position> attribute.
+
 =cut
 
 has numbered_position => (

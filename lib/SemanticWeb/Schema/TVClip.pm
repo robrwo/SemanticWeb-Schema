@@ -44,6 +44,10 @@ A part_of_tv_series should be one of the following types:
 
 =back
 
+=head2 C<_has_part_of_tv_series>
+
+A predicate for the L</part_of_tv_series> attribute.
+
 =cut
 
 has part_of_tv_series => (

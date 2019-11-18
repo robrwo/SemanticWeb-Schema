@@ -44,6 +44,10 @@ A map_type should be one of the following types:
 
 =back
 
+=head2 C<_has_map_type>
+
+A predicate for the L</map_type> attribute.
+
 =cut
 
 has map_type => (

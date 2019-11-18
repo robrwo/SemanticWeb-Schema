@@ -62,6 +62,10 @@ A by_day should be one of the following types:
 
 =back
 
+=head2 C<_has_by_day>
+
+A predicate for the L</by_day> attribute.
+
 =cut
 
 has by_day => (
@@ -93,6 +97,10 @@ A by_month should be one of the following types:
 
 =back
 
+=head2 C<_has_by_month>
+
+A predicate for the L</by_month> attribute.
+
 =cut
 
 has by_month => (
@@ -123,6 +131,10 @@ A by_month_day should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_by_month_day>
+
+A predicate for the L</by_month_day> attribute.
 
 =cut
 
@@ -169,6 +181,10 @@ A event_schedule should be one of the following types:
 
 =back
 
+=head2 C<_has_event_schedule>
+
+A predicate for the L</event_schedule> attribute.
+
 =cut
 
 has event_schedule => (
@@ -210,6 +226,10 @@ A except_date should be one of the following types:
 
 =back
 
+=head2 C<_has_except_date>
+
+A predicate for the L</except_date> attribute.
+
 =cut
 
 has except_date => (
@@ -238,6 +258,10 @@ A repeat_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_repeat_count>
+
+A predicate for the L</repeat_count> attribute.
 
 =cut
 
@@ -273,6 +297,10 @@ A repeat_frequency should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_repeat_frequency>
+
+A predicate for the L</repeat_frequency> attribute.
 
 =cut
 

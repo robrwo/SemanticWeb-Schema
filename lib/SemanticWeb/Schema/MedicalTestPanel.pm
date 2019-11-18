@@ -44,6 +44,10 @@ A sub_test should be one of the following types:
 
 =back
 
+=head2 C<_has_sub_test>
+
+A predicate for the L</sub_test> attribute.
+
 =cut
 
 has sub_test => (

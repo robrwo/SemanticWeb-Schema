@@ -45,6 +45,10 @@ A boarding_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_boarding_policy>
+
+A predicate for the L</boarding_policy> attribute.
+
 =cut
 
 has boarding_policy => (
@@ -68,6 +72,10 @@ A iata_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_iata_code>
+
+A predicate for the L</iata_code> attribute.
 
 =cut
 

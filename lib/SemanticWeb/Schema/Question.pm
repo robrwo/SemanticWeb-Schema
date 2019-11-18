@@ -49,6 +49,10 @@ A accepted_answer should be one of the following types:
 
 =back
 
+=head2 C<_has_accepted_answer>
+
+A predicate for the L</accepted_answer> attribute.
+
 =cut
 
 has accepted_answer => (
@@ -72,6 +76,10 @@ A answer_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_answer_count>
+
+A predicate for the L</answer_count> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A downvote_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_downvote_count>
+
+A predicate for the L</downvote_count> attribute.
 
 =cut
 
@@ -125,6 +137,10 @@ A suggested_answer should be one of the following types:
 
 =back
 
+=head2 C<_has_suggested_answer>
+
+A predicate for the L</suggested_answer> attribute.
+
 =cut
 
 has suggested_answer => (
@@ -149,6 +165,10 @@ A upvote_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_upvote_count>
+
+A predicate for the L</upvote_count> attribute.
 
 =cut
 

@@ -59,6 +59,10 @@ A accepted_payment_method should be one of the following types:
 
 =back
 
+=head2 C<_has_accepted_payment_method>
+
+A predicate for the L</accepted_payment_method> attribute.
+
 =cut
 
 has accepted_payment_method => (
@@ -85,6 +89,10 @@ A add_on should be one of the following types:
 
 =back
 
+=head2 C<_has_add_on>
+
+A predicate for the L</add_on> attribute.
+
 =cut
 
 has add_on => (
@@ -110,6 +118,10 @@ A advance_booking_requirement should be one of the following types:
 
 =back
 
+=head2 C<_has_advance_booking_requirement>
+
+A predicate for the L</advance_booking_requirement> attribute.
+
 =cut
 
 has advance_booking_requirement => (
@@ -134,6 +146,10 @@ A aggregate_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AggregateRating']>
 
 =back
+
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
 
 =cut
 
@@ -165,6 +181,10 @@ A area_served should be one of the following types:
 
 =back
 
+=head2 C<_has_area_served>
+
+A predicate for the L</area_served> attribute.
+
 =cut
 
 has area_served => (
@@ -189,6 +209,10 @@ A availability should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ItemAvailability']>
 
 =back
+
+=head2 C<_has_availability>
+
+A predicate for the L</availability> attribute.
 
 =cut
 
@@ -215,6 +239,10 @@ A availability_ends should be one of the following types:
 
 =back
 
+=head2 C<_has_availability_ends>
+
+A predicate for the L</availability_ends> attribute.
+
 =cut
 
 has availability_ends => (
@@ -240,6 +268,10 @@ A availability_starts should be one of the following types:
 
 =back
 
+=head2 C<_has_availability_starts>
+
+A predicate for the L</availability_starts> attribute.
+
 =cut
 
 has availability_starts => (
@@ -264,6 +296,10 @@ A available_at_or_from should be one of the following types:
 
 =back
 
+=head2 C<_has_available_at_or_from>
+
+A predicate for the L</available_at_or_from> attribute.
+
 =cut
 
 has available_at_or_from => (
@@ -287,6 +323,10 @@ A available_delivery_method should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DeliveryMethod']>
 
 =back
+
+=head2 C<_has_available_delivery_method>
+
+A predicate for the L</available_delivery_method> attribute.
 
 =cut
 
@@ -313,6 +353,10 @@ A business_function should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BusinessFunction']>
 
 =back
+
+=head2 C<_has_business_function>
+
+A predicate for the L</business_function> attribute.
 
 =cut
 
@@ -343,6 +387,10 @@ A category should be one of the following types:
 
 =back
 
+=head2 C<_has_category>
+
+A predicate for the L</category> attribute.
+
 =cut
 
 has category => (
@@ -369,6 +417,10 @@ A delivery_lead_time should be one of the following types:
 
 =back
 
+=head2 C<_has_delivery_lead_time>
+
+A predicate for the L</delivery_lead_time> attribute.
+
 =cut
 
 has delivery_lead_time => (
@@ -393,6 +445,10 @@ A eligible_customer_type should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_customer_type>
+
+A predicate for the L</eligible_customer_type> attribute.
+
 =cut
 
 has eligible_customer_type => (
@@ -416,6 +472,10 @@ A eligible_duration should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_eligible_duration>
+
+A predicate for the L</eligible_duration> attribute.
 
 =cut
 
@@ -442,6 +502,10 @@ A eligible_quantity should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_eligible_quantity>
+
+A predicate for the L</eligible_quantity> attribute.
 
 =cut
 
@@ -479,6 +543,10 @@ A eligible_region should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_region>
+
+A predicate for the L</eligible_region> attribute.
+
 =cut
 
 has eligible_region => (
@@ -505,6 +573,10 @@ A eligible_transaction_volume should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PriceSpecification']>
 
 =back
+
+=head2 C<_has_eligible_transaction_volume>
+
+A predicate for the L</eligible_transaction_volume> attribute.
 
 =cut
 
@@ -555,6 +627,10 @@ A gtin should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin>
+
+A predicate for the L</gtin> attribute.
+
 =cut
 
 has gtin => (
@@ -587,6 +663,10 @@ A gtin12 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_gtin12>
+
+A predicate for the L</gtin12> attribute.
 
 =cut
 
@@ -621,6 +701,10 @@ A gtin13 should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin13>
+
+A predicate for the L</gtin13> attribute.
+
 =cut
 
 has gtin13 => (
@@ -650,6 +734,10 @@ A gtin14 should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_gtin14>
+
+A predicate for the L</gtin14> attribute.
 
 =cut
 
@@ -684,6 +772,10 @@ A gtin8 should be one of the following types:
 
 =back
 
+=head2 C<_has_gtin8>
+
+A predicate for the L</gtin8> attribute.
+
 =cut
 
 has gtin8 => (
@@ -708,6 +800,10 @@ A includes_object should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::TypeAndQuantityNode']>
 
 =back
+
+=head2 C<_has_includes_object>
+
+A predicate for the L</includes_object> attribute.
 
 =cut
 
@@ -745,6 +841,10 @@ A ineligible_region should be one of the following types:
 
 =back
 
+=head2 C<_has_ineligible_region>
+
+A predicate for the L</ineligible_region> attribute.
+
 =cut
 
 has ineligible_region => (
@@ -768,6 +868,10 @@ A inventory_level should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_inventory_level>
+
+A predicate for the L</inventory_level> attribute.
 
 =cut
 
@@ -795,6 +899,10 @@ A item_condition should be one of the following types:
 
 =back
 
+=head2 C<_has_item_condition>
+
+A predicate for the L</item_condition> attribute.
+
 =cut
 
 has item_condition => (
@@ -821,6 +929,10 @@ A item_offered should be one of the following types:
 
 =back
 
+=head2 C<_has_item_offered>
+
+A predicate for the L</item_offered> attribute.
+
 =cut
 
 has item_offered => (
@@ -845,6 +957,10 @@ A mpn should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_mpn>
+
+A predicate for the L</mpn> attribute.
 
 =cut
 
@@ -871,6 +987,10 @@ A offered_by should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_offered_by>
+
+A predicate for the L</offered_by> attribute.
 
 =cut
 
@@ -923,6 +1043,10 @@ A price should be one of the following types:
 
 =back
 
+=head2 C<_has_price>
+
+A predicate for the L</price> attribute.
+
 =cut
 
 has price => (
@@ -961,6 +1085,10 @@ A price_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_price_currency>
+
+A predicate for the L</price_currency> attribute.
+
 =cut
 
 has price_currency => (
@@ -986,6 +1114,10 @@ A price_specification should be one of the following types:
 
 =back
 
+=head2 C<_has_price_specification>
+
+A predicate for the L</price_specification> attribute.
+
 =cut
 
 has price_specification => (
@@ -1009,6 +1141,10 @@ A price_valid_until should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_price_valid_until>
+
+A predicate for the L</price_valid_until> attribute.
 
 =cut
 
@@ -1034,6 +1170,10 @@ A review should be one of the following types:
 
 =back
 
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
+
 =cut
 
 has review => (
@@ -1057,6 +1197,10 @@ A reviews should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_reviews>
+
+A predicate for the L</reviews> attribute.
 
 =cut
 
@@ -1085,6 +1229,10 @@ A seller should be one of the following types:
 
 =back
 
+=head2 C<_has_seller>
+
+A predicate for the L</seller> attribute.
+
 =cut
 
 has seller => (
@@ -1111,6 +1259,10 @@ A serial_number should be one of the following types:
 
 =back
 
+=head2 C<_has_serial_number>
+
+A predicate for the L</serial_number> attribute.
+
 =cut
 
 has serial_number => (
@@ -1136,6 +1288,10 @@ A sku should be one of the following types:
 
 =back
 
+=head2 C<_has_sku>
+
+A predicate for the L</sku> attribute.
+
 =cut
 
 has sku => (
@@ -1159,6 +1315,10 @@ A valid_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
 
 =cut
 
@@ -1185,6 +1345,10 @@ A valid_through should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
+
 =cut
 
 has valid_through => (
@@ -1208,6 +1372,10 @@ A warranty should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::WarrantyPromise']>
 
 =back
+
+=head2 C<_has_warranty>
+
+A predicate for the L</warranty> attribute.
 
 =cut
 

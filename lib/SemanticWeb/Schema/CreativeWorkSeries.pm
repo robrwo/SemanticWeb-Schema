@@ -75,6 +75,10 @@ A end_date should be one of the following types:
 
 =back
 
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
 =cut
 
 has end_date => (
@@ -100,6 +104,10 @@ A issn should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_issn>
+
+A predicate for the L</issn> attribute.
 
 =cut
 
@@ -129,6 +137,10 @@ A start_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
 
 =cut
 

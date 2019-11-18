@@ -44,6 +44,10 @@ A code_value should be one of the following types:
 
 =back
 
+=head2 C<_has_code_value>
+
+A predicate for the L</code_value> attribute.
+
 =cut
 
 has code_value => (
@@ -67,6 +71,10 @@ A coding_system should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_coding_system>
+
+A predicate for the L</coding_system> attribute.
 
 =cut
 

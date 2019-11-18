@@ -47,6 +47,10 @@ A phase should be one of the following types:
 
 =back
 
+=head2 C<_has_phase>
+
+A predicate for the L</phase> attribute.
+
 =cut
 
 has phase => (
@@ -70,6 +74,10 @@ A trial_design should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTrialDesign']>
 
 =back
+
+=head2 C<_has_trial_design>
+
+A predicate for the L</trial_design> attribute.
 
 =cut
 

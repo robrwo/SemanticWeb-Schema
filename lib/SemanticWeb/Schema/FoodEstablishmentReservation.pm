@@ -61,6 +61,10 @@ A end_time should be one of the following types:
 
 =back
 
+=head2 C<_has_end_time>
+
+A predicate for the L</end_time> attribute.
+
 =cut
 
 has end_time => (
@@ -86,6 +90,10 @@ A party_size should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_party_size>
+
+A predicate for the L</party_size> attribute.
 
 =cut
 
@@ -121,6 +129,10 @@ A start_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_start_time>
+
+A predicate for the L</start_time> attribute.
 
 =cut
 

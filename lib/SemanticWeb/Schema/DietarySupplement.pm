@@ -48,6 +48,10 @@ A active_ingredient should be one of the following types:
 
 =back
 
+=head2 C<_has_active_ingredient>
+
+A predicate for the L</active_ingredient> attribute.
+
 =cut
 
 has active_ingredient => (
@@ -74,6 +78,10 @@ A background should be one of the following types:
 
 =back
 
+=head2 C<_has_background>
+
+A predicate for the L</background> attribute.
+
 =cut
 
 has background => (
@@ -97,6 +105,10 @@ A is_proprietary should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_proprietary>
+
+A predicate for the L</is_proprietary> attribute.
 
 =cut
 
@@ -127,6 +139,10 @@ A legal_status should be one of the following types:
 
 =back
 
+=head2 C<_has_legal_status>
+
+A predicate for the L</legal_status> attribute.
+
 =cut
 
 has legal_status => (
@@ -150,6 +166,10 @@ A manufacturer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_manufacturer>
+
+A predicate for the L</manufacturer> attribute.
 
 =cut
 
@@ -176,6 +196,10 @@ A maximum_intake should be one of the following types:
 
 =back
 
+=head2 C<_has_maximum_intake>
+
+A predicate for the L</maximum_intake> attribute.
+
 =cut
 
 has maximum_intake => (
@@ -201,6 +225,10 @@ A mechanism_of_action should be one of the following types:
 
 =back
 
+=head2 C<_has_mechanism_of_action>
+
+A predicate for the L</mechanism_of_action> attribute.
+
 =cut
 
 has mechanism_of_action => (
@@ -224,6 +252,10 @@ A non_proprietary_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_non_proprietary_name>
+
+A predicate for the L</non_proprietary_name> attribute.
 
 =cut
 
@@ -250,6 +282,10 @@ A proprietary_name should be one of the following types:
 
 =back
 
+=head2 C<_has_proprietary_name>
+
+A predicate for the L</proprietary_name> attribute.
+
 =cut
 
 has proprietary_name => (
@@ -274,6 +310,10 @@ A recommended_intake should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RecommendedDoseSchedule']>
 
 =back
+
+=head2 C<_has_recommended_intake>
+
+A predicate for the L</recommended_intake> attribute.
 
 =cut
 
@@ -301,6 +341,10 @@ A safety_consideration should be one of the following types:
 
 =back
 
+=head2 C<_has_safety_consideration>
+
+A predicate for the L</safety_consideration> attribute.
+
 =cut
 
 has safety_consideration => (
@@ -325,6 +369,10 @@ A target_population should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_target_population>
+
+A predicate for the L</target_population> attribute.
 
 =cut
 

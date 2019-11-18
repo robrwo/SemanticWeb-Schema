@@ -47,6 +47,10 @@ A food_establishment should be one of the following types:
 
 =back
 
+=head2 C<_has_food_establishment>
+
+A predicate for the L</food_establishment> attribute.
+
 =cut
 
 has food_establishment => (
@@ -72,6 +76,10 @@ A food_event should be one of the following types:
 
 =back
 
+=head2 C<_has_food_event>
+
+A predicate for the L</food_event> attribute.
+
 =cut
 
 has food_event => (
@@ -96,6 +104,10 @@ A recipe should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Recipe']>
 
 =back
+
+=head2 C<_has_recipe>
+
+A predicate for the L</recipe> attribute.
 
 =cut
 

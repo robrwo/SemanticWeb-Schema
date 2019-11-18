@@ -51,6 +51,10 @@ A associated_anatomy should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_anatomy>
+
+A predicate for the L</associated_anatomy> attribute.
+
 =cut
 
 has associated_anatomy => (
@@ -76,6 +80,10 @@ A cause should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalCause']>
 
 =back
+
+=head2 C<_has_cause>
+
+A predicate for the L</cause> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A differential_diagnosis should be one of the following types:
 
 =back
 
+=head2 C<_has_differential_diagnosis>
+
+A predicate for the L</differential_diagnosis> attribute.
+
 =cut
 
 has differential_diagnosis => (
@@ -130,6 +142,10 @@ A drug should be one of the following types:
 
 =back
 
+=head2 C<_has_drug>
+
+A predicate for the L</drug> attribute.
+
 =cut
 
 has drug => (
@@ -153,6 +169,10 @@ A epidemiology should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_epidemiology>
+
+A predicate for the L</epidemiology> attribute.
 
 =cut
 
@@ -179,6 +199,10 @@ A expected_prognosis should be one of the following types:
 
 =back
 
+=head2 C<_has_expected_prognosis>
+
+A predicate for the L</expected_prognosis> attribute.
+
 =cut
 
 has expected_prognosis => (
@@ -204,6 +228,10 @@ A natural_progression should be one of the following types:
 
 =back
 
+=head2 C<_has_natural_progression>
+
+A predicate for the L</natural_progression> attribute.
+
 =cut
 
 has natural_progression => (
@@ -228,6 +256,10 @@ A pathophysiology should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pathophysiology>
+
+A predicate for the L</pathophysiology> attribute.
 
 =cut
 
@@ -255,6 +287,10 @@ A possible_complication should be one of the following types:
 
 =back
 
+=head2 C<_has_possible_complication>
+
+A predicate for the L</possible_complication> attribute.
+
 =cut
 
 has possible_complication => (
@@ -278,6 +314,10 @@ A possible_treatment should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTherapy']>
 
 =back
+
+=head2 C<_has_possible_treatment>
+
+A predicate for the L</possible_treatment> attribute.
 
 =cut
 
@@ -304,6 +344,10 @@ A primary_prevention should be one of the following types:
 
 =back
 
+=head2 C<_has_primary_prevention>
+
+A predicate for the L</primary_prevention> attribute.
+
 =cut
 
 has primary_prevention => (
@@ -329,6 +373,10 @@ A risk_factor should be one of the following types:
 
 =back
 
+=head2 C<_has_risk_factor>
+
+A predicate for the L</risk_factor> attribute.
+
 =cut
 
 has risk_factor => (
@@ -353,6 +401,10 @@ A secondary_prevention should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTherapy']>
 
 =back
+
+=head2 C<_has_secondary_prevention>
+
+A predicate for the L</secondary_prevention> attribute.
 
 =cut
 
@@ -380,6 +432,10 @@ A sign_or_symptom should be one of the following types:
 
 =back
 
+=head2 C<_has_sign_or_symptom>
+
+A predicate for the L</sign_or_symptom> attribute.
+
 =cut
 
 has sign_or_symptom => (
@@ -403,6 +459,10 @@ A stage should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalConditionStage']>
 
 =back
+
+=head2 C<_has_stage>
+
+A predicate for the L</stage> attribute.
 
 =cut
 
@@ -432,6 +492,10 @@ A status should be one of the following types:
 
 =back
 
+=head2 C<_has_status>
+
+A predicate for the L</status> attribute.
+
 =cut
 
 has status => (
@@ -457,6 +521,10 @@ A subtype should be one of the following types:
 
 =back
 
+=head2 C<_has_subtype>
+
+A predicate for the L</subtype> attribute.
+
 =cut
 
 has subtype => (
@@ -480,6 +548,10 @@ A typical_test should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTest']>
 
 =back
+
+=head2 C<_has_typical_test>
+
+A predicate for the L</typical_test> attribute.
 
 =cut
 

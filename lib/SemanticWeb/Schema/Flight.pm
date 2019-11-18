@@ -46,6 +46,10 @@ A aircraft should be one of the following types:
 
 =back
 
+=head2 C<_has_aircraft>
+
+A predicate for the L</aircraft> attribute.
+
 =cut
 
 has aircraft => (
@@ -69,6 +73,10 @@ A arrival_airport should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Airport']>
 
 =back
+
+=head2 C<_has_arrival_airport>
+
+A predicate for the L</arrival_airport> attribute.
 
 =cut
 
@@ -94,6 +102,10 @@ A arrival_gate should be one of the following types:
 
 =back
 
+=head2 C<_has_arrival_gate>
+
+A predicate for the L</arrival_gate> attribute.
+
 =cut
 
 has arrival_gate => (
@@ -117,6 +129,10 @@ A arrival_terminal should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_arrival_terminal>
+
+A predicate for the L</arrival_terminal> attribute.
 
 =cut
 
@@ -143,6 +159,10 @@ A boarding_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_boarding_policy>
+
+A predicate for the L</boarding_policy> attribute.
+
 =cut
 
 has boarding_policy => (
@@ -168,6 +188,10 @@ A carrier should be one of the following types:
 
 =back
 
+=head2 C<_has_carrier>
+
+A predicate for the L</carrier> attribute.
+
 =cut
 
 has carrier => (
@@ -191,6 +215,10 @@ A departure_airport should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Airport']>
 
 =back
+
+=head2 C<_has_departure_airport>
+
+A predicate for the L</departure_airport> attribute.
 
 =cut
 
@@ -216,6 +244,10 @@ A departure_gate should be one of the following types:
 
 =back
 
+=head2 C<_has_departure_gate>
+
+A predicate for the L</departure_gate> attribute.
+
 =cut
 
 has departure_gate => (
@@ -239,6 +271,10 @@ A departure_terminal should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_departure_terminal>
+
+A predicate for the L</departure_terminal> attribute.
 
 =cut
 
@@ -266,6 +302,10 @@ A estimated_flight_duration should be one of the following types:
 
 =back
 
+=head2 C<_has_estimated_flight_duration>
+
+A predicate for the L</estimated_flight_duration> attribute.
+
 =cut
 
 has estimated_flight_duration => (
@@ -291,6 +331,10 @@ A flight_distance should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_flight_distance>
+
+A predicate for the L</flight_distance> attribute.
 
 =cut
 
@@ -318,6 +362,10 @@ A flight_number should be one of the following types:
 
 =back
 
+=head2 C<_has_flight_number>
+
+A predicate for the L</flight_number> attribute.
+
 =cut
 
 has flight_number => (
@@ -341,6 +389,10 @@ A meal_service should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_meal_service>
+
+A predicate for the L</meal_service> attribute.
 
 =cut
 
@@ -369,6 +421,10 @@ A seller should be one of the following types:
 
 =back
 
+=head2 C<_has_seller>
+
+A predicate for the L</seller> attribute.
+
 =cut
 
 has seller => (
@@ -392,6 +448,10 @@ A web_checkin_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_web_checkin_time>
+
+A predicate for the L</web_checkin_time> attribute.
 
 =cut
 

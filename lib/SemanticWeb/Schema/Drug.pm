@@ -48,6 +48,10 @@ A active_ingredient should be one of the following types:
 
 =back
 
+=head2 C<_has_active_ingredient>
+
+A predicate for the L</active_ingredient> attribute.
+
 =cut
 
 has active_ingredient => (
@@ -71,6 +75,10 @@ A administration_route should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_administration_route>
+
+A predicate for the L</administration_route> attribute.
 
 =cut
 
@@ -97,6 +105,10 @@ A alcohol_warning should be one of the following types:
 
 =back
 
+=head2 C<_has_alcohol_warning>
+
+A predicate for the L</alcohol_warning> attribute.
+
 =cut
 
 has alcohol_warning => (
@@ -120,6 +132,10 @@ A available_strength should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DrugStrength']>
 
 =back
+
+=head2 C<_has_available_strength>
+
+A predicate for the L</available_strength> attribute.
 
 =cut
 
@@ -145,6 +161,10 @@ A breastfeeding_warning should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_breastfeeding_warning>
+
+A predicate for the L</breastfeeding_warning> attribute.
 
 =cut
 
@@ -172,6 +192,10 @@ A clincal_pharmacology should be one of the following types:
 
 =back
 
+=head2 C<_has_clincal_pharmacology>
+
+A predicate for the L</clincal_pharmacology> attribute.
+
 =cut
 
 has clincal_pharmacology => (
@@ -198,6 +222,10 @@ A clinical_pharmacology should be one of the following types:
 
 =back
 
+=head2 C<_has_clinical_pharmacology>
+
+A predicate for the L</clinical_pharmacology> attribute.
+
 =cut
 
 has clinical_pharmacology => (
@@ -221,6 +249,10 @@ A cost should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DrugCost']>
 
 =back
+
+=head2 C<_has_cost>
+
+A predicate for the L</cost> attribute.
 
 =cut
 
@@ -247,6 +279,10 @@ A dosage_form should be one of the following types:
 
 =back
 
+=head2 C<_has_dosage_form>
+
+A predicate for the L</dosage_form> attribute.
+
 =cut
 
 has dosage_form => (
@@ -272,6 +308,10 @@ A dose_schedule should be one of the following types:
 
 =back
 
+=head2 C<_has_dose_schedule>
+
+A predicate for the L</dose_schedule> attribute.
+
 =cut
 
 has dose_schedule => (
@@ -296,6 +336,10 @@ A drug_class should be one of the following types:
 
 =back
 
+=head2 C<_has_drug_class>
+
+A predicate for the L</drug_class> attribute.
+
 =cut
 
 has drug_class => (
@@ -319,6 +363,10 @@ A drug_unit should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_drug_unit>
+
+A predicate for the L</drug_unit> attribute.
 
 =cut
 
@@ -345,6 +393,10 @@ A food_warning should be one of the following types:
 
 =back
 
+=head2 C<_has_food_warning>
+
+A predicate for the L</food_warning> attribute.
+
 =cut
 
 has food_warning => (
@@ -368,6 +420,10 @@ A included_in_health_insurance_plan should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::HealthInsurancePlan']>
 
 =back
+
+=head2 C<_has_included_in_health_insurance_plan>
+
+A predicate for the L</included_in_health_insurance_plan> attribute.
 
 =cut
 
@@ -395,6 +451,10 @@ A interacting_drug should be one of the following types:
 
 =back
 
+=head2 C<_has_interacting_drug>
+
+A predicate for the L</interacting_drug> attribute.
+
 =cut
 
 has interacting_drug => (
@@ -418,6 +478,10 @@ A is_available_generically should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_available_generically>
+
+A predicate for the L</is_available_generically> attribute.
 
 =cut
 
@@ -443,6 +507,10 @@ A is_proprietary should be one of the following types:
 
 =back
 
+=head2 C<_has_is_proprietary>
+
+A predicate for the L</is_proprietary> attribute.
+
 =cut
 
 has is_proprietary => (
@@ -466,6 +534,10 @@ A label_details should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_label_details>
+
+A predicate for the L</label_details> attribute.
 
 =cut
 
@@ -496,6 +568,10 @@ A legal_status should be one of the following types:
 
 =back
 
+=head2 C<_has_legal_status>
+
+A predicate for the L</legal_status> attribute.
+
 =cut
 
 has legal_status => (
@@ -519,6 +595,10 @@ A manufacturer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_manufacturer>
+
+A predicate for the L</manufacturer> attribute.
 
 =cut
 
@@ -545,6 +625,10 @@ A maximum_intake should be one of the following types:
 
 =back
 
+=head2 C<_has_maximum_intake>
+
+A predicate for the L</maximum_intake> attribute.
+
 =cut
 
 has maximum_intake => (
@@ -570,6 +654,10 @@ A mechanism_of_action should be one of the following types:
 
 =back
 
+=head2 C<_has_mechanism_of_action>
+
+A predicate for the L</mechanism_of_action> attribute.
+
 =cut
 
 has mechanism_of_action => (
@@ -593,6 +681,10 @@ A non_proprietary_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_non_proprietary_name>
+
+A predicate for the L</non_proprietary_name> attribute.
 
 =cut
 
@@ -619,6 +711,10 @@ A overdosage should be one of the following types:
 
 =back
 
+=head2 C<_has_overdosage>
+
+A predicate for the L</overdosage> attribute.
+
 =cut
 
 has overdosage => (
@@ -642,6 +738,10 @@ A pregnancy_category should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DrugPregnancyCategory']>
 
 =back
+
+=head2 C<_has_pregnancy_category>
+
+A predicate for the L</pregnancy_category> attribute.
 
 =cut
 
@@ -668,6 +768,10 @@ A pregnancy_warning should be one of the following types:
 
 =back
 
+=head2 C<_has_pregnancy_warning>
+
+A predicate for the L</pregnancy_warning> attribute.
+
 =cut
 
 has pregnancy_warning => (
@@ -691,6 +795,10 @@ A prescribing_info should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_prescribing_info>
+
+A predicate for the L</prescribing_info> attribute.
 
 =cut
 
@@ -720,6 +828,10 @@ A prescription_status should be one of the following types:
 
 =back
 
+=head2 C<_has_prescription_status>
+
+A predicate for the L</prescription_status> attribute.
+
 =cut
 
 has prescription_status => (
@@ -744,6 +856,10 @@ A proprietary_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_proprietary_name>
+
+A predicate for the L</proprietary_name> attribute.
 
 =cut
 
@@ -770,6 +886,10 @@ A related_drug should be one of the following types:
 
 =back
 
+=head2 C<_has_related_drug>
+
+A predicate for the L</related_drug> attribute.
+
 =cut
 
 has related_drug => (
@@ -794,6 +914,10 @@ A rxcui should be one of the following types:
 
 =back
 
+=head2 C<_has_rxcui>
+
+A predicate for the L</rxcui> attribute.
+
 =cut
 
 has rxcui => (
@@ -817,6 +941,10 @@ A warning should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_warning>
+
+A predicate for the L</warning> attribute.
 
 =cut
 

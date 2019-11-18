@@ -45,6 +45,10 @@ A course should be one of the following types:
 
 =back
 
+=head2 C<_has_course>
+
+A predicate for the L</course> attribute.
+
 =cut
 
 has course => (
@@ -68,6 +72,10 @@ A diet should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Diet']>
 
 =back
+
+=head2 C<_has_diet>
+
+A predicate for the L</diet> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A distance should be one of the following types:
 
 =back
 
+=head2 C<_has_distance>
+
+A predicate for the L</distance> attribute.
+
 =cut
 
 has distance => (
@@ -116,6 +128,10 @@ A exercise_course should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_exercise_course>
+
+A predicate for the L</exercise_course> attribute.
 
 =cut
 
@@ -141,6 +157,10 @@ A exercise_plan should be one of the following types:
 
 =back
 
+=head2 C<_has_exercise_plan>
+
+A predicate for the L</exercise_plan> attribute.
+
 =cut
 
 has exercise_plan => (
@@ -164,6 +184,10 @@ A exercise_related_diet should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Diet']>
 
 =back
+
+=head2 C<_has_exercise_related_diet>
+
+A predicate for the L</exercise_related_diet> attribute.
 
 =cut
 
@@ -190,6 +214,10 @@ A exercise_type should be one of the following types:
 
 =back
 
+=head2 C<_has_exercise_type>
+
+A predicate for the L</exercise_type> attribute.
+
 =cut
 
 has exercise_type => (
@@ -215,6 +243,10 @@ A from_location should be one of the following types:
 
 =back
 
+=head2 C<_has_from_location>
+
+A predicate for the L</from_location> attribute.
+
 =cut
 
 has from_location => (
@@ -238,6 +270,10 @@ A opponent should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_opponent>
+
+A predicate for the L</opponent> attribute.
 
 =cut
 
@@ -264,6 +300,10 @@ A sports_activity_location should be one of the following types:
 
 =back
 
+=head2 C<_has_sports_activity_location>
+
+A predicate for the L</sports_activity_location> attribute.
+
 =cut
 
 has sports_activity_location => (
@@ -287,6 +327,10 @@ A sports_event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::SportsEvent']>
 
 =back
+
+=head2 C<_has_sports_event>
+
+A predicate for the L</sports_event> attribute.
 
 =cut
 
@@ -313,6 +357,10 @@ A sports_team should be one of the following types:
 
 =back
 
+=head2 C<_has_sports_team>
+
+A predicate for the L</sports_team> attribute.
+
 =cut
 
 has sports_team => (
@@ -337,6 +385,10 @@ A to_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_to_location>
+
+A predicate for the L</to_location> attribute.
 
 =cut
 

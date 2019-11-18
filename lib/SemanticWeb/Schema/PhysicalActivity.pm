@@ -52,6 +52,10 @@ A associated_anatomy should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_anatomy>
+
+A predicate for the L</associated_anatomy> attribute.
+
 =cut
 
 has associated_anatomy => (
@@ -81,6 +85,10 @@ A category should be one of the following types:
 
 =back
 
+=head2 C<_has_category>
+
+A predicate for the L</category> attribute.
+
 =cut
 
 has category => (
@@ -104,6 +112,10 @@ A epidemiology should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_epidemiology>
+
+A predicate for the L</epidemiology> attribute.
 
 =cut
 
@@ -129,6 +141,10 @@ A pathophysiology should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pathophysiology>
+
+A predicate for the L</pathophysiology> attribute.
 
 =cut
 

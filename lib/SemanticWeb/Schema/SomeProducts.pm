@@ -44,6 +44,10 @@ A inventory_level should be one of the following types:
 
 =back
 
+=head2 C<_has_inventory_level>
+
+A predicate for the L</inventory_level> attribute.
+
 =cut
 
 has inventory_level => (

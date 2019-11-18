@@ -56,6 +56,10 @@ A actionable_feedback_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_actionable_feedback_policy>
+
+A predicate for the L</actionable_feedback_policy> attribute.
+
 =cut
 
 has actionable_feedback_policy => (
@@ -90,6 +94,10 @@ A corrections_policy should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_corrections_policy>
+
+A predicate for the L</corrections_policy> attribute.
 
 =cut
 
@@ -128,6 +136,10 @@ A diversity_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_diversity_policy>
+
+A predicate for the L</diversity_policy> attribute.
+
 =cut
 
 has diversity_policy => (
@@ -162,6 +174,10 @@ A diversity_staffing_report should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_diversity_staffing_report>
+
+A predicate for the L</diversity_staffing_report> attribute.
 
 =cut
 
@@ -201,6 +217,10 @@ A ethics_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_ethics_policy>
+
+A predicate for the L</ethics_policy> attribute.
+
 =cut
 
 has ethics_policy => (
@@ -232,6 +252,10 @@ A masthead should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_masthead>
+
+A predicate for the L</masthead> attribute.
 
 =cut
 
@@ -266,6 +290,10 @@ A mission_coverage_priorities_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_mission_coverage_priorities_policy>
+
+A predicate for the L</mission_coverage_priorities_policy> attribute.
+
 =cut
 
 has mission_coverage_priorities_policy => (
@@ -299,6 +327,10 @@ A no_bylines_policy should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_no_bylines_policy>
+
+A predicate for the L</no_bylines_policy> attribute.
 
 =cut
 
@@ -340,6 +372,10 @@ A ownership_funding_info should be one of the following types:
 
 =back
 
+=head2 C<_has_ownership_funding_info>
+
+A predicate for the L</ownership_funding_info> attribute.
+
 =cut
 
 has ownership_funding_info => (
@@ -375,6 +411,10 @@ A unnamed_sources_policy should be one of the following types:
 
 =back
 
+=head2 C<_has_unnamed_sources_policy>
+
+A predicate for the L</unnamed_sources_policy> attribute.
+
 =cut
 
 has unnamed_sources_policy => (
@@ -408,6 +448,10 @@ A verification_fact_checking_policy should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_verification_fact_checking_policy>
+
+A predicate for the L</verification_fact_checking_policy> attribute.
 
 =cut
 

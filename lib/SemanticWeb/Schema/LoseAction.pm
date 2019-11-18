@@ -44,6 +44,10 @@ A winner should be one of the following types:
 
 =back
 
+=head2 C<_has_winner>
+
+A predicate for the L</winner> attribute.
+
 =cut
 
 has winner => (

@@ -56,6 +56,10 @@ A closes should be one of the following types:
 
 =back
 
+=head2 C<_has_closes>
+
+A predicate for the L</closes> attribute.
+
 =cut
 
 has closes => (
@@ -79,6 +83,10 @@ A day_of_week should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DayOfWeek']>
 
 =back
+
+=head2 C<_has_day_of_week>
+
+A predicate for the L</day_of_week> attribute.
 
 =cut
 
@@ -104,6 +112,10 @@ A opens should be one of the following types:
 
 =back
 
+=head2 C<_has_opens>
+
+A predicate for the L</opens> attribute.
+
 =cut
 
 has opens => (
@@ -127,6 +139,10 @@ A valid_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
 
 =cut
 
@@ -152,6 +168,10 @@ A valid_through should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A health_plan_network_id should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_network_id>
+
+A predicate for the L</health_plan_network_id> attribute.
+
 =cut
 
 has health_plan_network_id => (
@@ -70,6 +74,10 @@ A is_accepting_new_patients should be one of the following types:
 
 =back
 
+=head2 C<_has_is_accepting_new_patients>
+
+A predicate for the L</is_accepting_new_patients> attribute.
+
 =cut
 
 has is_accepting_new_patients => (
@@ -93,6 +101,10 @@ A medical_specialty should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalSpecialty']>
 
 =back
+
+=head2 C<_has_medical_specialty>
+
+A predicate for the L</medical_specialty> attribute.
 
 =cut
 

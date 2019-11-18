@@ -53,6 +53,10 @@ A party_size should be one of the following types:
 
 =back
 
+=head2 C<_has_party_size>
+
+A predicate for the L</party_size> attribute.
+
 =cut
 
 has party_size => (
@@ -77,6 +81,10 @@ A pickup_location should be one of the following types:
 
 =back
 
+=head2 C<_has_pickup_location>
+
+A predicate for the L</pickup_location> attribute.
+
 =cut
 
 has pickup_location => (
@@ -100,6 +108,10 @@ A pickup_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pickup_time>
+
+A predicate for the L</pickup_time> attribute.
 
 =cut
 

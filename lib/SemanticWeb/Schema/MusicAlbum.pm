@@ -45,6 +45,10 @@ A album_production_type should be one of the following types:
 
 =back
 
+=head2 C<_has_album_production_type>
+
+A predicate for the L</album_production_type> attribute.
+
 =cut
 
 has album_production_type => (
@@ -69,6 +73,10 @@ A album_release should be one of the following types:
 
 =back
 
+=head2 C<_has_album_release>
+
+A predicate for the L</album_release> attribute.
+
 =cut
 
 has album_release => (
@@ -92,6 +100,10 @@ A album_release_type should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicAlbumReleaseType']>
 
 =back
+
+=head2 C<_has_album_release_type>
+
+A predicate for the L</album_release_type> attribute.
 
 =cut
 
@@ -118,6 +130,10 @@ A by_artist should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_by_artist>
+
+A predicate for the L</by_artist> attribute.
 
 =cut
 

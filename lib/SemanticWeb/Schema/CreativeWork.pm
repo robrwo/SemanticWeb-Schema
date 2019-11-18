@@ -45,6 +45,10 @@ A about should be one of the following types:
 
 =back
 
+=head2 C<_has_about>
+
+A predicate for the L</about> attribute.
+
 =cut
 
 has about => (
@@ -75,6 +79,10 @@ A abstract should be one of the following types:
 
 =back
 
+=head2 C<_has_abstract>
+
+A predicate for the L</abstract> attribute.
+
 =cut
 
 has abstract => (
@@ -102,6 +110,10 @@ A access_mode should be one of the following types:
 
 =back
 
+=head2 C<_has_access_mode>
+
+A predicate for the L</access_mode> attribute.
+
 =cut
 
 has access_mode => (
@@ -127,6 +139,10 @@ A access_mode_sufficient should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ItemList']>
 
 =back
+
+=head2 C<_has_access_mode_sufficient>
+
+A predicate for the L</access_mode_sufficient> attribute.
 
 =cut
 
@@ -159,6 +175,10 @@ A accessibility_api should be one of the following types:
 
 =back
 
+=head2 C<_has_accessibility_api>
+
+A predicate for the L</accessibility_api> attribute.
+
 =cut
 
 has accessibility_api => (
@@ -189,6 +209,10 @@ A accessibility_control should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_accessibility_control>
+
+A predicate for the L</accessibility_control> attribute.
 
 =cut
 
@@ -221,6 +245,10 @@ A accessibility_feature should be one of the following types:
 
 =back
 
+=head2 C<_has_accessibility_feature>
+
+A predicate for the L</accessibility_feature> attribute.
+
 =cut
 
 has accessibility_feature => (
@@ -252,6 +280,10 @@ A accessibility_hazard should be one of the following types:
 
 =back
 
+=head2 C<_has_accessibility_hazard>
+
+A predicate for the L</accessibility_hazard> attribute.
+
 =cut
 
 has accessibility_hazard => (
@@ -280,6 +312,10 @@ A accessibility_summary should be one of the following types:
 
 =back
 
+=head2 C<_has_accessibility_summary>
+
+A predicate for the L</accessibility_summary> attribute.
+
 =cut
 
 has accessibility_summary => (
@@ -303,6 +339,10 @@ A accountable_person should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_accountable_person>
+
+A predicate for the L</accountable_person> attribute.
 
 =cut
 
@@ -329,6 +369,10 @@ A aggregate_rating should be one of the following types:
 
 =back
 
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
+
 =cut
 
 has aggregate_rating => (
@@ -352,6 +396,10 @@ A alternative_headline should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_alternative_headline>
+
+A predicate for the L</alternative_headline> attribute.
 
 =cut
 
@@ -378,6 +426,10 @@ A associated_media should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_media>
+
+A predicate for the L</associated_media> attribute.
+
 =cut
 
 has associated_media => (
@@ -401,6 +453,10 @@ A audience should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
+
+=head2 C<_has_audience>
+
+A predicate for the L</audience> attribute.
 
 =cut
 
@@ -427,6 +483,10 @@ A audio should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Clip']>
 
 =back
+
+=head2 C<_has_audio>
+
+A predicate for the L</audio> attribute.
 
 =cut
 
@@ -456,6 +516,10 @@ A author should be one of the following types:
 
 =back
 
+=head2 C<_has_author>
+
+A predicate for the L</author> attribute.
+
 =cut
 
 has author => (
@@ -479,6 +543,10 @@ A award should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_award>
+
+A predicate for the L</award> attribute.
 
 =cut
 
@@ -504,6 +572,10 @@ A awards should be one of the following types:
 
 =back
 
+=head2 C<_has_awards>
+
+A predicate for the L</awards> attribute.
+
 =cut
 
 has awards => (
@@ -527,6 +599,10 @@ A character should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_character>
+
+A predicate for the L</character> attribute.
 
 =cut
 
@@ -555,6 +631,10 @@ A citation should be one of the following types:
 
 =back
 
+=head2 C<_has_citation>
+
+A predicate for the L</citation> attribute.
+
 =cut
 
 has citation => (
@@ -578,6 +658,10 @@ A comment should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Comment']>
 
 =back
+
+=head2 C<_has_comment>
+
+A predicate for the L</comment> attribute.
 
 =cut
 
@@ -604,6 +688,10 @@ A comment_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_comment_count>
+
+A predicate for the L</comment_count> attribute.
 
 =cut
 
@@ -642,6 +730,10 @@ A conditions_of_access should be one of the following types:
 
 =back
 
+=head2 C<_has_conditions_of_access>
+
+A predicate for the L</conditions_of_access> attribute.
+
 =cut
 
 has conditions_of_access => (
@@ -666,6 +758,10 @@ A content_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_content_location>
+
+A predicate for the L</content_location> attribute.
 
 =cut
 
@@ -693,6 +789,10 @@ A content_rating should be one of the following types:
 
 =back
 
+=head2 C<_has_content_rating>
+
+A predicate for the L</content_rating> attribute.
+
 =cut
 
 has content_rating => (
@@ -717,6 +817,10 @@ A content_reference_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_content_reference_time>
+
+A predicate for the L</content_reference_time> attribute.
 
 =cut
 
@@ -744,6 +848,10 @@ A contributor should be one of the following types:
 
 =back
 
+=head2 C<_has_contributor>
+
+A predicate for the L</contributor> attribute.
+
 =cut
 
 has contributor => (
@@ -770,6 +878,10 @@ A copyright_holder should be one of the following types:
 
 =back
 
+=head2 C<_has_copyright_holder>
+
+A predicate for the L</copyright_holder> attribute.
+
 =cut
 
 has copyright_holder => (
@@ -794,6 +906,10 @@ A copyright_year should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_copyright_year>
+
+A predicate for the L</copyright_year> attribute.
 
 =cut
 
@@ -829,6 +945,10 @@ A correction should be one of the following types:
 
 =back
 
+=head2 C<_has_correction>
+
+A predicate for the L</correction> attribute.
+
 =cut
 
 has correction => (
@@ -857,6 +977,10 @@ A creative_work_status should be one of the following types:
 
 =back
 
+=head2 C<_has_creative_work_status>
+
+A predicate for the L</creative_work_status> attribute.
+
 =cut
 
 has creative_work_status => (
@@ -884,6 +1008,10 @@ A creator should be one of the following types:
 
 =back
 
+=head2 C<_has_creator>
+
+A predicate for the L</creator> attribute.
+
 =cut
 
 has creator => (
@@ -908,6 +1036,10 @@ A date_created should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_created>
+
+A predicate for the L</date_created> attribute.
 
 =cut
 
@@ -934,6 +1066,10 @@ A date_modified should be one of the following types:
 
 =back
 
+=head2 C<_has_date_modified>
+
+A predicate for the L</date_modified> attribute.
+
 =cut
 
 has date_modified => (
@@ -957,6 +1093,10 @@ A date_published should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_published>
+
+A predicate for the L</date_published> attribute.
 
 =cut
 
@@ -982,6 +1122,10 @@ A discussion_url should be one of the following types:
 
 =back
 
+=head2 C<_has_discussion_url>
+
+A predicate for the L</discussion_url> attribute.
+
 =cut
 
 has discussion_url => (
@@ -1006,6 +1150,10 @@ A editor should be one of the following types:
 
 =back
 
+=head2 C<_has_editor>
+
+A predicate for the L</editor> attribute.
+
 =cut
 
 has editor => (
@@ -1029,6 +1177,10 @@ A educational_alignment should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AlignmentObject']>
 
 =back
+
+=head2 C<_has_educational_alignment>
+
+A predicate for the L</educational_alignment> attribute.
 
 =cut
 
@@ -1055,6 +1207,10 @@ A educational_use should be one of the following types:
 
 =back
 
+=head2 C<_has_educational_use>
+
+A predicate for the L</educational_use> attribute.
+
 =cut
 
 has educational_use => (
@@ -1079,6 +1235,10 @@ A encoding should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
 =back
+
+=head2 C<_has_encoding>
+
+A predicate for the L</encoding> attribute.
 
 =cut
 
@@ -1122,6 +1282,10 @@ A encoding_format should be one of the following types:
 
 =back
 
+=head2 C<_has_encoding_format>
+
+A predicate for the L</encoding_format> attribute.
+
 =cut
 
 has encoding_format => (
@@ -1145,6 +1309,10 @@ A encodings should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
 
 =back
+
+=head2 C<_has_encodings>
+
+A predicate for the L</encodings> attribute.
 
 =cut
 
@@ -1170,6 +1338,10 @@ A example_of_work should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_example_of_work>
+
+A predicate for the L</example_of_work> attribute.
 
 =cut
 
@@ -1206,6 +1378,10 @@ A expires should be one of the following types:
 
 =back
 
+=head2 C<_has_expires>
+
+A predicate for the L</expires> attribute.
+
 =cut
 
 has expires => (
@@ -1241,6 +1417,10 @@ A file_format should be one of the following types:
 
 =back
 
+=head2 C<_has_file_format>
+
+A predicate for the L</file_format> attribute.
+
 =cut
 
 has file_format => (
@@ -1268,6 +1448,10 @@ A funder should be one of the following types:
 
 =back
 
+=head2 C<_has_funder>
+
+A predicate for the L</funder> attribute.
+
 =cut
 
 has funder => (
@@ -1291,6 +1475,10 @@ A genre should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_genre>
+
+A predicate for the L</genre> attribute.
 
 =cut
 
@@ -1317,6 +1505,10 @@ A has_part should be one of the following types:
 
 =back
 
+=head2 C<_has_has_part>
+
+A predicate for the L</has_part> attribute.
+
 =cut
 
 has has_part => (
@@ -1340,6 +1532,10 @@ A headline should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_headline>
+
+A predicate for the L</headline> attribute.
 
 =cut
 
@@ -1375,6 +1571,10 @@ A in_language should be one of the following types:
 
 =back
 
+=head2 C<_has_in_language>
+
+A predicate for the L</in_language> attribute.
+
 =cut
 
 has in_language => (
@@ -1401,6 +1601,10 @@ A interaction_statistic should be one of the following types:
 
 =back
 
+=head2 C<_has_interaction_statistic>
+
+A predicate for the L</interaction_statistic> attribute.
+
 =cut
 
 has interaction_statistic => (
@@ -1426,6 +1630,10 @@ A interactivity_type should be one of the following types:
 
 =back
 
+=head2 C<_has_interactivity_type>
+
+A predicate for the L</interactivity_type> attribute.
+
 =cut
 
 has interactivity_type => (
@@ -1449,6 +1657,10 @@ A is_accessible_for_free should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_accessible_for_free>
+
+A predicate for the L</is_accessible_for_free> attribute.
 
 =cut
 
@@ -1478,6 +1690,10 @@ A is_based_on should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_is_based_on>
+
+A predicate for the L</is_based_on> attribute.
 
 =cut
 
@@ -1509,6 +1725,10 @@ A is_based_on_url should be one of the following types:
 
 =back
 
+=head2 C<_has_is_based_on_url>
+
+A predicate for the L</is_based_on_url> attribute.
+
 =cut
 
 has is_based_on_url => (
@@ -1532,6 +1752,10 @@ A is_family_friendly should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_family_friendly>
+
+A predicate for the L</is_family_friendly> attribute.
 
 =cut
 
@@ -1558,6 +1782,10 @@ A is_part_of should be one of the following types:
 
 =back
 
+=head2 C<_has_is_part_of>
+
+A predicate for the L</is_part_of> attribute.
+
 =cut
 
 has is_part_of => (
@@ -1583,6 +1811,10 @@ A keywords should be one of the following types:
 
 =back
 
+=head2 C<_has_keywords>
+
+A predicate for the L</keywords> attribute.
+
 =cut
 
 has keywords => (
@@ -1607,6 +1839,10 @@ A learning_resource_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_learning_resource_type>
+
+A predicate for the L</learning_resource_type> attribute.
 
 =cut
 
@@ -1635,6 +1871,10 @@ A license should be one of the following types:
 
 =back
 
+=head2 C<_has_license>
+
+A predicate for the L</license> attribute.
+
 =cut
 
 has license => (
@@ -1660,6 +1900,10 @@ A location_created should be one of the following types:
 
 =back
 
+=head2 C<_has_location_created>
+
+A predicate for the L</location_created> attribute.
+
 =cut
 
 has location_created => (
@@ -1683,6 +1927,10 @@ A main_entity should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_main_entity>
+
+A predicate for the L</main_entity> attribute.
 
 =cut
 
@@ -1709,6 +1957,10 @@ A material should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_material>
+
+A predicate for the L</material> attribute.
 
 =cut
 
@@ -1737,6 +1989,10 @@ A material_extent should be one of the following types:
 
 =back
 
+=head2 C<_has_material_extent>
+
+A predicate for the L</material_extent> attribute.
+
 =cut
 
 has material_extent => (
@@ -1761,6 +2017,10 @@ A mentions should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_mentions>
+
+A predicate for the L</mentions> attribute.
 
 =cut
 
@@ -1788,6 +2048,10 @@ A offers should be one of the following types:
 
 =back
 
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
+
 =cut
 
 has offers => (
@@ -1813,6 +2077,10 @@ A position should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_position>
+
+A predicate for the L</position> attribute.
 
 =cut
 
@@ -1840,6 +2108,10 @@ A producer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_producer>
+
+A predicate for the L</producer> attribute.
 
 =cut
 
@@ -1869,6 +2141,10 @@ A provider should be one of the following types:
 
 =back
 
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
+
 =cut
 
 has provider => (
@@ -1892,6 +2168,10 @@ A publication should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PublicationEvent']>
 
 =back
+
+=head2 C<_has_publication>
+
+A predicate for the L</publication> attribute.
 
 =cut
 
@@ -1919,6 +2199,10 @@ A publisher should be one of the following types:
 
 =back
 
+=head2 C<_has_publisher>
+
+A predicate for the L</publisher> attribute.
+
 =cut
 
 has publisher => (
@@ -1942,6 +2226,10 @@ A publisher_imprint should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_publisher_imprint>
+
+A predicate for the L</publisher_imprint> attribute.
 
 =cut
 
@@ -1988,6 +2276,10 @@ A publishing_principles should be one of the following types:
 
 =back
 
+=head2 C<_has_publishing_principles>
+
+A predicate for the L</publishing_principles> attribute.
+
 =cut
 
 has publishing_principles => (
@@ -2013,6 +2305,10 @@ A recorded_at should be one of the following types:
 
 =back
 
+=head2 C<_has_recorded_at>
+
+A predicate for the L</recorded_at> attribute.
+
 =cut
 
 has recorded_at => (
@@ -2036,6 +2332,10 @@ A released_event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PublicationEvent']>
 
 =back
+
+=head2 C<_has_released_event>
+
+A predicate for the L</released_event> attribute.
 
 =cut
 
@@ -2061,6 +2361,10 @@ A review should be one of the following types:
 
 =back
 
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
+
 =cut
 
 has review => (
@@ -2084,6 +2388,10 @@ A reviews should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_reviews>
+
+A predicate for the L</reviews> attribute.
 
 =cut
 
@@ -2111,6 +2419,10 @@ A schema_version should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_schema_version>
+
+A predicate for the L</schema_version> attribute.
 
 =cut
 
@@ -2142,6 +2454,10 @@ A sd_date_published should be one of the following types:
 
 =back
 
+=head2 C<_has_sd_date_published>
+
+A predicate for the L</sd_date_published> attribute.
+
 =cut
 
 has sd_date_published => (
@@ -2168,6 +2484,10 @@ A sd_license should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_sd_license>
+
+A predicate for the L</sd_license> attribute.
 
 =cut
 
@@ -2206,6 +2526,10 @@ A sd_publisher should be one of the following types:
 
 =back
 
+=head2 C<_has_sd_publisher>
+
+A predicate for the L</sd_publisher> attribute.
+
 =cut
 
 has sd_publisher => (
@@ -2229,6 +2553,10 @@ A source_organization should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_source_organization>
+
+A predicate for the L</source_organization> attribute.
 
 =cut
 
@@ -2265,6 +2593,10 @@ A spatial should be one of the following types:
 
 =back
 
+=head2 C<_has_spatial>
+
+A predicate for the L</spatial> attribute.
+
 =cut
 
 has spatial => (
@@ -2294,6 +2626,10 @@ A spatial_coverage should be one of the following types:
 
 =back
 
+=head2 C<_has_spatial_coverage>
+
+A predicate for the L</spatial_coverage> attribute.
+
 =cut
 
 has spatial_coverage => (
@@ -2321,6 +2657,10 @@ A sponsor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
 
 =cut
 
@@ -2356,6 +2696,10 @@ A temporal should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_temporal>
+
+A predicate for the L</temporal> attribute.
 
 =cut
 
@@ -2400,6 +2744,10 @@ A temporal_coverage should be one of the following types:
 
 =back
 
+=head2 C<_has_temporal_coverage>
+
+A predicate for the L</temporal_coverage> attribute.
+
 =cut
 
 has temporal_coverage => (
@@ -2424,6 +2772,10 @@ A text should be one of the following types:
 
 =back
 
+=head2 C<_has_text>
+
+A predicate for the L</text> attribute.
+
 =cut
 
 has text => (
@@ -2447,6 +2799,10 @@ A thumbnail_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_thumbnail_url>
+
+A predicate for the L</thumbnail_url> attribute.
 
 =cut
 
@@ -2473,6 +2829,10 @@ A time_required should be one of the following types:
 
 =back
 
+=head2 C<_has_time_required>
+
+A predicate for the L</time_required> attribute.
+
 =cut
 
 has time_required => (
@@ -2497,6 +2857,10 @@ A translation_of_work should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_translation_of_work>
+
+A predicate for the L</translation_of_work> attribute.
 
 =cut
 
@@ -2526,6 +2890,10 @@ A translator should be one of the following types:
 
 =back
 
+=head2 C<_has_translator>
+
+A predicate for the L</translator> attribute.
+
 =cut
 
 has translator => (
@@ -2549,6 +2917,10 @@ A typical_age_range should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_typical_age_range>
+
+A predicate for the L</typical_age_range> attribute.
 
 =cut
 
@@ -2576,6 +2948,10 @@ A version should be one of the following types:
 
 =back
 
+=head2 C<_has_version>
+
+A predicate for the L</version> attribute.
+
 =cut
 
 has version => (
@@ -2602,6 +2978,10 @@ A video should be one of the following types:
 
 =back
 
+=head2 C<_has_video>
+
+A predicate for the L</video> attribute.
+
 =cut
 
 has video => (
@@ -2626,6 +3006,10 @@ A work_example should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_work_example>
+
+A predicate for the L</work_example> attribute.
 
 =cut
 
@@ -2653,6 +3037,10 @@ A work_translation should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_work_translation>
+
+A predicate for the L</work_translation> attribute.
 
 =cut
 

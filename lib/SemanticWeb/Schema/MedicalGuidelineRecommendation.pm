@@ -45,6 +45,10 @@ A recommendation_strength should be one of the following types:
 
 =back
 
+=head2 C<_has_recommendation_strength>
+
+A predicate for the L</recommendation_strength> attribute.
+
 =cut
 
 has recommendation_strength => (

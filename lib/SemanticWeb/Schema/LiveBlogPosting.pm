@@ -46,6 +46,10 @@ A coverage_end_time should be one of the following types:
 
 =back
 
+=head2 C<_has_coverage_end_time>
+
+A predicate for the L</coverage_end_time> attribute.
+
 =cut
 
 has coverage_end_time => (
@@ -72,6 +76,10 @@ A coverage_start_time should be one of the following types:
 
 =back
 
+=head2 C<_has_coverage_start_time>
+
+A predicate for the L</coverage_start_time> attribute.
+
 =cut
 
 has coverage_start_time => (
@@ -95,6 +103,10 @@ A live_blog_update should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BlogPosting']>
 
 =back
+
+=head2 C<_has_live_blog_update>
+
+A predicate for the L</live_blog_update> attribute.
 
 =cut
 

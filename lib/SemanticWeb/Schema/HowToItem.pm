@@ -49,6 +49,10 @@ A required_quantity should be one of the following types:
 
 =back
 
+=head2 C<_has_required_quantity>
+
+A predicate for the L</required_quantity> attribute.
+
 =cut
 
 has required_quantity => (

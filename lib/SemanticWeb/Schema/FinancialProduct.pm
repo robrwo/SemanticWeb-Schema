@@ -52,6 +52,10 @@ A annual_percentage_rate should be one of the following types:
 
 =back
 
+=head2 C<_has_annual_percentage_rate>
+
+A predicate for the L</annual_percentage_rate> attribute.
+
 =cut
 
 has annual_percentage_rate => (
@@ -76,6 +80,10 @@ A fees_and_commissions_specification should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_fees_and_commissions_specification>
+
+A predicate for the L</fees_and_commissions_specification> attribute.
 
 =cut
 
@@ -103,6 +111,10 @@ A interest_rate should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_interest_rate>
+
+A predicate for the L</interest_rate> attribute.
 
 =cut
 

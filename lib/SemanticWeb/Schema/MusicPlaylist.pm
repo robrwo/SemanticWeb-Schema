@@ -44,6 +44,10 @@ A num_tracks should be one of the following types:
 
 =back
 
+=head2 C<_has_num_tracks>
+
+A predicate for the L</num_tracks> attribute.
+
 =cut
 
 has num_tracks => (
@@ -71,6 +75,10 @@ A track should be one of the following types:
 
 =back
 
+=head2 C<_has_track>
+
+A predicate for the L</track> attribute.
+
 =cut
 
 has track => (
@@ -94,6 +102,10 @@ A tracks should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicRecording']>
 
 =back
+
+=head2 C<_has_tracks>
+
+A predicate for the L</tracks> attribute.
 
 =cut
 

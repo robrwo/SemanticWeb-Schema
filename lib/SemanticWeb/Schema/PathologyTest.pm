@@ -45,6 +45,10 @@ A tissue_sample should be one of the following types:
 
 =back
 
+=head2 C<_has_tissue_sample>
+
+A predicate for the L</tissue_sample> attribute.
+
 =cut
 
 has tissue_sample => (

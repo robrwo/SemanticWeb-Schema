@@ -46,6 +46,10 @@ A active_ingredient should be one of the following types:
 
 =back
 
+=head2 C<_has_active_ingredient>
+
+A predicate for the L</active_ingredient> attribute.
+
 =cut
 
 has active_ingredient => (
@@ -69,6 +73,10 @@ A available_in should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AdministrativeArea']>
 
 =back
+
+=head2 C<_has_available_in>
+
+A predicate for the L</available_in> attribute.
 
 =cut
 
@@ -95,6 +103,10 @@ A maximum_intake should be one of the following types:
 
 =back
 
+=head2 C<_has_maximum_intake>
+
+A predicate for the L</maximum_intake> attribute.
+
 =cut
 
 has maximum_intake => (
@@ -119,6 +131,10 @@ A strength_unit should be one of the following types:
 
 =back
 
+=head2 C<_has_strength_unit>
+
+A predicate for the L</strength_unit> attribute.
+
 =cut
 
 has strength_unit => (
@@ -142,6 +158,10 @@ A strength_value should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_strength_value>
+
+A predicate for the L</strength_value> attribute.
 
 =cut
 

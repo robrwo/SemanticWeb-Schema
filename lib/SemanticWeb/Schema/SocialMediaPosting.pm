@@ -46,6 +46,10 @@ A shared_content should be one of the following types:
 
 =back
 
+=head2 C<_has_shared_content>
+
+A predicate for the L</shared_content> attribute.
+
 =cut
 
 has shared_content => (

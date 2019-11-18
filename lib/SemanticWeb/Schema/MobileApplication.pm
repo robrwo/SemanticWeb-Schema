@@ -46,6 +46,10 @@ A carrier_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_carrier_requirements>
+
+A predicate for the L</carrier_requirements> attribute.
+
 =cut
 
 has carrier_requirements => (

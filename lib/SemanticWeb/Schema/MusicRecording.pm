@@ -46,6 +46,10 @@ A by_artist should be one of the following types:
 
 =back
 
+=head2 C<_has_by_artist>
+
+A predicate for the L</by_artist> attribute.
+
 =cut
 
 has by_artist => (
@@ -75,6 +79,10 @@ A duration should be one of the following types:
 
 =back
 
+=head2 C<_has_duration>
+
+A predicate for the L</duration> attribute.
+
 =cut
 
 has duration => (
@@ -98,6 +106,10 @@ A in_album should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicAlbum']>
 
 =back
+
+=head2 C<_has_in_album>
+
+A predicate for the L</in_album> attribute.
 
 =cut
 
@@ -123,6 +135,10 @@ A in_playlist should be one of the following types:
 
 =back
 
+=head2 C<_has_in_playlist>
+
+A predicate for the L</in_playlist> attribute.
+
 =cut
 
 has in_playlist => (
@@ -147,6 +163,10 @@ A isrc_code should be one of the following types:
 
 =back
 
+=head2 C<_has_isrc_code>
+
+A predicate for the L</isrc_code> attribute.
+
 =cut
 
 has isrc_code => (
@@ -170,6 +190,10 @@ A recording_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicComposition']>
 
 =back
+
+=head2 C<_has_recording_of>
+
+A predicate for the L</recording_of> attribute.
 
 =cut
 

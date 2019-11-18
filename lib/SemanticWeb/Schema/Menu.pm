@@ -45,6 +45,10 @@ A has_menu_item should be one of the following types:
 
 =back
 
+=head2 C<_has_has_menu_item>
+
+A predicate for the L</has_menu_item> attribute.
+
 =cut
 
 has has_menu_item => (
@@ -68,6 +72,10 @@ A has_menu_section should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MenuSection']>
 
 =back
+
+=head2 C<_has_has_menu_section>
+
+A predicate for the L</has_menu_section> attribute.
 
 =cut
 

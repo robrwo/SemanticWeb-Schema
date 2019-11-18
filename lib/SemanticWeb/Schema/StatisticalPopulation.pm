@@ -88,6 +88,10 @@ A constraining_property should be one of the following types:
 
 =back
 
+=head2 C<_has_constraining_property>
+
+A predicate for the L</constraining_property> attribute.
+
 =cut
 
 has constraining_property => (
@@ -123,6 +127,10 @@ A num_constraints should be one of the following types:
 
 =back
 
+=head2 C<_has_num_constraints>
+
+A predicate for the L</num_constraints> attribute.
+
 =cut
 
 has num_constraints => (
@@ -153,6 +161,10 @@ A population_type should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Class']>
 
 =back
+
+=head2 C<_has_population_type>
+
+A predicate for the L</population_type> attribute.
 
 =cut
 

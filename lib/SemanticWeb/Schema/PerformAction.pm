@@ -45,6 +45,10 @@ A entertainment_business should be one of the following types:
 
 =back
 
+=head2 C<_has_entertainment_business>
+
+A predicate for the L</entertainment_business> attribute.
+
 =cut
 
 has entertainment_business => (

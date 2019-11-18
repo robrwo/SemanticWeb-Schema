@@ -49,6 +49,10 @@ A data_feed_element should be one of the following types:
 
 =back
 
+=head2 C<_has_data_feed_element>
+
+A predicate for the L</data_feed_element> attribute.
+
 =cut
 
 has data_feed_element => (

@@ -44,6 +44,10 @@ A educational_role should be one of the following types:
 
 =back
 
+=head2 C<_has_educational_role>
+
+A predicate for the L</educational_role> attribute.
+
 =cut
 
 has educational_role => (

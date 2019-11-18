@@ -51,6 +51,10 @@ A checkin_time should be one of the following types:
 
 =back
 
+=head2 C<_has_checkin_time>
+
+A predicate for the L</checkin_time> attribute.
+
 =cut
 
 has checkin_time => (
@@ -75,6 +79,10 @@ A checkout_time should be one of the following types:
 
 =back
 
+=head2 C<_has_checkout_time>
+
+A predicate for the L</checkout_time> attribute.
+
 =cut
 
 has checkout_time => (
@@ -98,6 +106,10 @@ A lodging_unit_description should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_lodging_unit_description>
+
+A predicate for the L</lodging_unit_description> attribute.
 
 =cut
 
@@ -126,6 +138,10 @@ A lodging_unit_type should be one of the following types:
 
 =back
 
+=head2 C<_has_lodging_unit_type>
+
+A predicate for the L</lodging_unit_type> attribute.
+
 =cut
 
 has lodging_unit_type => (
@@ -152,6 +168,10 @@ A num_adults should be one of the following types:
 
 =back
 
+=head2 C<_has_num_adults>
+
+A predicate for the L</num_adults> attribute.
+
 =cut
 
 has num_adults => (
@@ -177,6 +197,10 @@ A num_children should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_num_children>
+
+A predicate for the L</num_children> attribute.
 
 =cut
 

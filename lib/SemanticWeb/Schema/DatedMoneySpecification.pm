@@ -55,6 +55,10 @@ A amount should be one of the following types:
 
 =back
 
+=head2 C<_has_amount>
+
+A predicate for the L</amount> attribute.
+
 =cut
 
 has amount => (
@@ -90,6 +94,10 @@ A currency should be one of the following types:
 
 =back
 
+=head2 C<_has_currency>
+
+A predicate for the L</currency> attribute.
+
 =cut
 
 has currency => (
@@ -119,6 +127,10 @@ A end_date should be one of the following types:
 
 =back
 
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
 =cut
 
 has end_date => (
@@ -147,6 +159,10 @@ A start_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
 
 =cut
 

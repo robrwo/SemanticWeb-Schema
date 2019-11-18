@@ -53,6 +53,10 @@ A educational_credential_awarded should be one of the following types:
 
 =back
 
+=head2 C<_has_educational_credential_awarded>
+
+A predicate for the L</educational_credential_awarded> attribute.
+
 =cut
 
 has educational_credential_awarded => (
@@ -81,6 +85,10 @@ A occupational_credential_awarded should be one of the following types:
 
 =back
 
+=head2 C<_has_occupational_credential_awarded>
+
+A predicate for the L</occupational_credential_awarded> attribute.
+
 =cut
 
 has occupational_credential_awarded => (
@@ -106,6 +114,10 @@ A offers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
 
 =cut
 
@@ -137,6 +149,10 @@ A program_prerequisites should be one of the following types:
 
 =back
 
+=head2 C<_has_program_prerequisites>
+
+A predicate for the L</program_prerequisites> attribute.
+
 =cut
 
 has program_prerequisites => (
@@ -165,6 +181,10 @@ A provider should be one of the following types:
 
 =back
 
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
+
 =cut
 
 has provider => (
@@ -189,6 +209,10 @@ A salary_upon_completion should be one of the following types:
 
 =back
 
+=head2 C<_has_salary_upon_completion>
+
+A predicate for the L</salary_upon_completion> attribute.
+
 =cut
 
 has salary_upon_completion => (
@@ -212,6 +236,10 @@ A time_to_complete should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_time_to_complete>
+
+A predicate for the L</time_to_complete> attribute.
 
 =cut
 

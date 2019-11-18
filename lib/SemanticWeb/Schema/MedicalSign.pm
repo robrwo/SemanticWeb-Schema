@@ -45,6 +45,10 @@ A identifying_exam should be one of the following types:
 
 =back
 
+=head2 C<_has_identifying_exam>
+
+A predicate for the L</identifying_exam> attribute.
+
 =cut
 
 has identifying_exam => (
@@ -68,6 +72,10 @@ A identifying_test should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTest']>
 
 =back
+
+=head2 C<_has_identifying_test>
+
+A predicate for the L</identifying_test> attribute.
 
 =cut
 

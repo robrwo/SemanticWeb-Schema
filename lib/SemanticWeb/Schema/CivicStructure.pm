@@ -61,6 +61,10 @@ A opening_hours should be one of the following types:
 
 =back
 
+=head2 C<_has_opening_hours>
+
+A predicate for the L</opening_hours> attribute.
+
 =cut
 
 has opening_hours => (

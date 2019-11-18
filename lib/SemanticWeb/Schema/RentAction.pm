@@ -48,6 +48,10 @@ A landlord should be one of the following types:
 
 =back
 
+=head2 C<_has_landlord>
+
+A predicate for the L</landlord> attribute.
+
 =cut
 
 has landlord => (
@@ -72,6 +76,10 @@ A real_estate_agent should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RealEstateAgent']>
 
 =back
+
+=head2 C<_has_real_estate_agent>
+
+A predicate for the L</real_estate_agent> attribute.
 
 =cut
 

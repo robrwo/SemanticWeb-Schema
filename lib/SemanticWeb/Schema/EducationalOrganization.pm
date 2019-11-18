@@ -44,6 +44,10 @@ A alumni should be one of the following types:
 
 =back
 
+=head2 C<_has_alumni>
+
+A predicate for the L</alumni> attribute.
+
 =cut
 
 has alumni => (

@@ -50,6 +50,10 @@ A superseded_by should be one of the following types:
 
 =back
 
+=head2 C<_has_superseded_by>
+
+A predicate for the L</superseded_by> attribute.
+
 =cut
 
 has superseded_by => (

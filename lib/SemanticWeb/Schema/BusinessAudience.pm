@@ -45,6 +45,10 @@ A number_of_employees should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_employees>
+
+A predicate for the L</number_of_employees> attribute.
+
 =cut
 
 has number_of_employees => (
@@ -69,6 +73,10 @@ A yearly_revenue should be one of the following types:
 
 =back
 
+=head2 C<_has_yearly_revenue>
+
+A predicate for the L</yearly_revenue> attribute.
+
 =cut
 
 has yearly_revenue => (
@@ -92,6 +100,10 @@ A years_in_operation should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_years_in_operation>
+
+A predicate for the L</years_in_operation> attribute.
 
 =cut
 

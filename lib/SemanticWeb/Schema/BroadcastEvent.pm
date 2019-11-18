@@ -44,6 +44,10 @@ A broadcast_of_event should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_of_event>
+
+A predicate for the L</broadcast_of_event> attribute.
+
 =cut
 
 has broadcast_of_event => (
@@ -67,6 +71,10 @@ A is_live_broadcast should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_live_broadcast>
+
+A predicate for the L</is_live_broadcast> attribute.
 
 =cut
 
@@ -99,6 +107,10 @@ A subtitle_language should be one of the following types:
 
 =back
 
+=head2 C<_has_subtitle_language>
+
+A predicate for the L</subtitle_language> attribute.
+
 =cut
 
 has subtitle_language => (
@@ -123,6 +135,10 @@ A video_format should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_video_format>
+
+A predicate for the L</video_format> attribute.
 
 =cut
 

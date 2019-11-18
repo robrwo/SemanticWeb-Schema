@@ -45,6 +45,10 @@ A originates_from should be one of the following types:
 
 =back
 
+=head2 C<_has_originates_from>
+
+A predicate for the L</originates_from> attribute.
+
 =cut
 
 has originates_from => (
@@ -72,6 +76,10 @@ A region_drained should be one of the following types:
 
 =back
 
+=head2 C<_has_region_drained>
+
+A predicate for the L</region_drained> attribute.
+
 =cut
 
 has region_drained => (
@@ -95,6 +103,10 @@ A runs_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Vessel']>
 
 =back
+
+=head2 C<_has_runs_to>
+
+A predicate for the L</runs_to> attribute.
 
 =cut
 

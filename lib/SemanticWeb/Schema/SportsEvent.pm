@@ -46,6 +46,10 @@ A away_team should be one of the following types:
 
 =back
 
+=head2 C<_has_away_team>
+
+A predicate for the L</away_team> attribute.
+
 =cut
 
 has away_team => (
@@ -72,6 +76,10 @@ A competitor should be one of the following types:
 
 =back
 
+=head2 C<_has_competitor>
+
+A predicate for the L</competitor> attribute.
+
 =cut
 
 has competitor => (
@@ -97,6 +105,10 @@ A home_team should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::SportsTeam']>
 
 =back
+
+=head2 C<_has_home_team>
+
+A predicate for the L</home_team> attribute.
 
 =cut
 

@@ -55,6 +55,10 @@ A additional_property should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_property>
+
+A predicate for the L</additional_property> attribute.
+
 =cut
 
 has additional_property => (
@@ -79,6 +83,10 @@ A max_value should be one of the following types:
 
 =back
 
+=head2 C<_has_max_value>
+
+A predicate for the L</max_value> attribute.
+
 =cut
 
 has max_value => (
@@ -102,6 +110,10 @@ A min_value should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_min_value>
+
+A predicate for the L</min_value> attribute.
 
 =cut
 
@@ -128,6 +140,10 @@ A unit_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_code>
+
+A predicate for the L</unit_code> attribute.
 
 =cut
 
@@ -157,6 +173,10 @@ A unit_text should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_text>
+
+A predicate for the L</unit_text> attribute.
 
 =cut
 
@@ -203,6 +223,10 @@ A value should be one of the following types:
 
 =back
 
+=head2 C<_has_value>
+
+A predicate for the L</value> attribute.
+
 =cut
 
 has value => (
@@ -235,6 +259,10 @@ A value_reference should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
 
 =back
+
+=head2 C<_has_value_reference>
+
+A predicate for the L</value_reference> attribute.
 
 =cut
 

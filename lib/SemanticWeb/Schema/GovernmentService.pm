@@ -47,6 +47,10 @@ A service_operator should be one of the following types:
 
 =back
 
+=head2 C<_has_service_operator>
+
+A predicate for the L</service_operator> attribute.
+
 =cut
 
 has service_operator => (

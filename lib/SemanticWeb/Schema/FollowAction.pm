@@ -69,6 +69,10 @@ A followee should be one of the following types:
 
 =back
 
+=head2 C<_has_followee>
+
+A predicate for the L</followee> attribute.
+
 =cut
 
 has followee => (

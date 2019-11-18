@@ -44,6 +44,10 @@ A affected_by should be one of the following types:
 
 =back
 
+=head2 C<_has_affected_by>
+
+A predicate for the L</affected_by> attribute.
+
 =cut
 
 has affected_by => (
@@ -70,6 +74,10 @@ A normal_range should be one of the following types:
 
 =back
 
+=head2 C<_has_normal_range>
+
+A predicate for the L</normal_range> attribute.
+
 =cut
 
 has normal_range => (
@@ -93,6 +101,10 @@ A sign_detected should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalSign']>
 
 =back
+
+=head2 C<_has_sign_detected>
+
+A predicate for the L</sign_detected> attribute.
 
 =cut
 
@@ -118,6 +130,10 @@ A used_to_diagnose should be one of the following types:
 
 =back
 
+=head2 C<_has_used_to_diagnose>
+
+A predicate for the L</used_to_diagnose> attribute.
+
 =cut
 
 has used_to_diagnose => (
@@ -141,6 +157,10 @@ A uses_device should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalDevice']>
 
 =back
+
+=head2 C<_has_uses_device>
+
+A predicate for the L</uses_device> attribute.
 
 =cut
 

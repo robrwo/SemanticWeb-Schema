@@ -55,6 +55,10 @@ A geo_contains should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_contains>
+
+A predicate for the L</geo_contains> attribute.
+
 =cut
 
 has geo_contains => (
@@ -86,6 +90,10 @@ A geo_covered_by should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_covered_by>
+
+A predicate for the L</geo_covered_by> attribute.
 
 =cut
 
@@ -119,6 +127,10 @@ A geo_covers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_covers>
+
+A predicate for the L</geo_covers> attribute.
 
 =cut
 
@@ -154,6 +166,10 @@ A geo_crosses should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_crosses>
+
+A predicate for the L</geo_crosses> attribute.
+
 =cut
 
 has geo_crosses => (
@@ -186,6 +202,10 @@ A geo_disjoint should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_disjoint>
+
+A predicate for the L</geo_disjoint> attribute.
 
 =cut
 
@@ -222,6 +242,10 @@ A geo_equals should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_equals>
+
+A predicate for the L</geo_equals> attribute.
+
 =cut
 
 has geo_equals => (
@@ -253,6 +277,10 @@ A geo_intersects should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_intersects>
+
+A predicate for the L</geo_intersects> attribute.
 
 =cut
 
@@ -287,6 +315,10 @@ A geo_overlaps should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_overlaps>
+
+A predicate for the L</geo_overlaps> attribute.
+
 =cut
 
 has geo_overlaps => (
@@ -320,6 +352,10 @@ A geo_touches should be one of the following types:
 
 =back
 
+=head2 C<_has_geo_touches>
+
+A predicate for the L</geo_touches> attribute.
+
 =cut
 
 has geo_touches => (
@@ -352,6 +388,10 @@ A geo_within should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_geo_within>
+
+A predicate for the L</geo_within> attribute.
 
 =cut
 

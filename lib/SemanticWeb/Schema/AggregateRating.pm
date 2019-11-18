@@ -44,6 +44,10 @@ A item_reviewed should be one of the following types:
 
 =back
 
+=head2 C<_has_item_reviewed>
+
+A predicate for the L</item_reviewed> attribute.
+
 =cut
 
 has item_reviewed => (
@@ -68,6 +72,10 @@ A rating_count should be one of the following types:
 
 =back
 
+=head2 C<_has_rating_count>
+
+A predicate for the L</rating_count> attribute.
+
 =cut
 
 has rating_count => (
@@ -91,6 +99,10 @@ A review_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_review_count>
+
+A predicate for the L</review_count> attribute.
 
 =cut
 

@@ -56,6 +56,10 @@ A course_code should be one of the following types:
 
 =back
 
+=head2 C<_has_course_code>
+
+A predicate for the L</course_code> attribute.
+
 =cut
 
 has course_code => (
@@ -92,6 +96,10 @@ A course_prerequisites should be one of the following types:
 
 =back
 
+=head2 C<_has_course_prerequisites>
+
+A predicate for the L</course_prerequisites> attribute.
+
 =cut
 
 has course_prerequisites => (
@@ -120,6 +128,10 @@ A educational_credential_awarded should be one of the following types:
 
 =back
 
+=head2 C<_has_educational_credential_awarded>
+
+A predicate for the L</educational_credential_awarded> attribute.
+
 =cut
 
 has educational_credential_awarded => (
@@ -144,6 +156,10 @@ A has_course_instance should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CourseInstance']>
 
 =back
+
+=head2 C<_has_has_course_instance>
+
+A predicate for the L</has_course_instance> attribute.
 
 =cut
 
@@ -172,6 +188,10 @@ A occupational_credential_awarded should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_occupational_credential_awarded>
+
+A predicate for the L</occupational_credential_awarded> attribute.
 
 =cut
 

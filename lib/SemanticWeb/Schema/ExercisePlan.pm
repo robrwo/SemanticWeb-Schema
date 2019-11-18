@@ -48,6 +48,10 @@ A activity_duration should be one of the following types:
 
 =back
 
+=head2 C<_has_activity_duration>
+
+A predicate for the L</activity_duration> attribute.
+
 =cut
 
 has activity_duration => (
@@ -73,6 +77,10 @@ A activity_frequency should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_activity_frequency>
+
+A predicate for the L</activity_frequency> attribute.
 
 =cut
 
@@ -101,6 +109,10 @@ A additional_variable should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_variable>
+
+A predicate for the L</additional_variable> attribute.
+
 =cut
 
 has additional_variable => (
@@ -125,6 +137,10 @@ A exercise_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_exercise_type>
+
+A predicate for the L</exercise_type> attribute.
 
 =cut
 
@@ -154,6 +170,10 @@ A intensity should be one of the following types:
 
 =back
 
+=head2 C<_has_intensity>
+
+A predicate for the L</intensity> attribute.
+
 =cut
 
 has intensity => (
@@ -179,6 +199,10 @@ A repetitions should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_repetitions>
+
+A predicate for the L</repetitions> attribute.
 
 =cut
 
@@ -206,6 +230,10 @@ A rest_periods should be one of the following types:
 
 =back
 
+=head2 C<_has_rest_periods>
+
+A predicate for the L</rest_periods> attribute.
+
 =cut
 
 has rest_periods => (
@@ -232,6 +260,10 @@ A workload should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
+
+=head2 C<_has_workload>
+
+A predicate for the L</workload> attribute.
 
 =cut
 

@@ -51,6 +51,10 @@ A associated_pathophysiology should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_pathophysiology>
+
+A predicate for the L</associated_pathophysiology> attribute.
+
 =cut
 
 has associated_pathophysiology => (
@@ -79,6 +83,10 @@ A comprised_of should be one of the following types:
 
 =back
 
+=head2 C<_has_comprised_of>
+
+A predicate for the L</comprised_of> attribute.
+
 =cut
 
 has comprised_of => (
@@ -102,6 +110,10 @@ A related_condition should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalCondition']>
 
 =back
+
+=head2 C<_has_related_condition>
+
+A predicate for the L</related_condition> attribute.
 
 =cut
 
@@ -128,6 +140,10 @@ A related_structure should be one of the following types:
 
 =back
 
+=head2 C<_has_related_structure>
+
+A predicate for the L</related_structure> attribute.
+
 =cut
 
 has related_structure => (
@@ -151,6 +167,10 @@ A related_therapy should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTherapy']>
 
 =back
+
+=head2 C<_has_related_therapy>
+
+A predicate for the L</related_therapy> attribute.
 
 =cut
 

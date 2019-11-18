@@ -52,6 +52,10 @@ A article_body should be one of the following types:
 
 =back
 
+=head2 C<_has_article_body>
+
+A predicate for the L</article_body> attribute.
+
 =cut
 
 has article_body => (
@@ -76,6 +80,10 @@ A article_section should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_article_section>
+
+A predicate for the L</article_section> attribute.
 
 =cut
 
@@ -113,6 +121,10 @@ A backstory should be one of the following types:
 
 =back
 
+=head2 C<_has_backstory>
+
+A predicate for the L</backstory> attribute.
+
 =cut
 
 has backstory => (
@@ -138,6 +150,10 @@ A page_end should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_page_end>
+
+A predicate for the L</page_end> attribute.
 
 =cut
 
@@ -165,6 +181,10 @@ A page_start should be one of the following types:
 
 =back
 
+=head2 C<_has_page_start>
+
+A predicate for the L</page_start> attribute.
+
 =cut
 
 has page_start => (
@@ -189,6 +209,10 @@ A pagination should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_pagination>
+
+A predicate for the L</pagination> attribute.
 
 =cut
 
@@ -241,6 +265,10 @@ A speakable should be one of the following types:
 
 =back
 
+=head2 C<_has_speakable>
+
+A predicate for the L</speakable> attribute.
+
 =cut
 
 has speakable => (
@@ -264,6 +292,10 @@ A word_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_word_count>
+
+A predicate for the L</word_count> attribute.
 
 =cut
 

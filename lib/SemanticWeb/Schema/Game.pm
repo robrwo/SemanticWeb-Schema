@@ -47,6 +47,10 @@ A character_attribute should be one of the following types:
 
 =back
 
+=head2 C<_has_character_attribute>
+
+A predicate for the L</character_attribute> attribute.
+
 =cut
 
 has character_attribute => (
@@ -71,6 +75,10 @@ A game_item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_game_item>
+
+A predicate for the L</game_item> attribute.
 
 =cut
 
@@ -100,6 +108,10 @@ A game_location should be one of the following types:
 
 =back
 
+=head2 C<_has_game_location>
+
+A predicate for the L</game_location> attribute.
+
 =cut
 
 has game_location => (
@@ -123,6 +135,10 @@ A number_of_players should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_number_of_players>
+
+A predicate for the L</number_of_players> attribute.
 
 =cut
 
@@ -148,6 +164,10 @@ A quest should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_quest>
+
+A predicate for the L</quest> attribute.
 
 =cut
 

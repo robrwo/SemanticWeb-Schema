@@ -57,6 +57,10 @@ A spoken_by_character should be one of the following types:
 
 =back
 
+=head2 C<_has_spoken_by_character>
+
+A predicate for the L</spoken_by_character> attribute.
+
 =cut
 
 has spoken_by_character => (

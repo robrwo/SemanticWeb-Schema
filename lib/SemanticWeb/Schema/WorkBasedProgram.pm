@@ -62,6 +62,10 @@ A occupational_category should be one of the following types:
 
 =back
 
+=head2 C<_has_occupational_category>
+
+A predicate for the L</occupational_category> attribute.
+
 =cut
 
 has occupational_category => (
@@ -85,6 +89,10 @@ A training_salary should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmountDistribution']>
 
 =back
+
+=head2 C<_has_training_salary>
+
+A predicate for the L</training_salary> attribute.
 
 =cut
 

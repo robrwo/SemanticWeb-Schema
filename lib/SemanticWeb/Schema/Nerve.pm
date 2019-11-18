@@ -51,6 +51,10 @@ A branch should be one of the following types:
 
 =back
 
+=head2 C<_has_branch>
+
+A predicate for the L</branch> attribute.
+
 =cut
 
 has branch => (
@@ -74,6 +78,10 @@ A nerve_motor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Muscle']>
 
 =back
+
+=head2 C<_has_nerve_motor>
+
+A predicate for the L</nerve_motor> attribute.
 
 =cut
 
@@ -102,6 +110,10 @@ A sensory_unit should be one of the following types:
 
 =back
 
+=head2 C<_has_sensory_unit>
+
+A predicate for the L</sensory_unit> attribute.
+
 =cut
 
 has sensory_unit => (
@@ -125,6 +137,10 @@ A sourced_from should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BrainStructure']>
 
 =back
+
+=head2 C<_has_sourced_from>
+
+A predicate for the L</sourced_from> attribute.
 
 =cut
 

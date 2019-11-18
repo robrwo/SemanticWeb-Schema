@@ -44,6 +44,10 @@ A dose_unit should be one of the following types:
 
 =back
 
+=head2 C<_has_dose_unit>
+
+A predicate for the L</dose_unit> attribute.
+
 =cut
 
 has dose_unit => (
@@ -70,6 +74,10 @@ A dose_value should be one of the following types:
 
 =back
 
+=head2 C<_has_dose_value>
+
+A predicate for the L</dose_value> attribute.
+
 =cut
 
 has dose_value => (
@@ -93,6 +101,10 @@ A frequency should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_frequency>
+
+A predicate for the L</frequency> attribute.
 
 =cut
 
@@ -118,6 +130,10 @@ A target_population should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_target_population>
+
+A predicate for the L</target_population> attribute.
 
 =cut
 

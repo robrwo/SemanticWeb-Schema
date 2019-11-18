@@ -48,6 +48,10 @@ A interaction_service should be one of the following types:
 
 =back
 
+=head2 C<_has_interaction_service>
+
+A predicate for the L</interaction_service> attribute.
+
 =cut
 
 has interaction_service => (
@@ -80,6 +84,10 @@ A interaction_type should be one of the following types:
 
 =back
 
+=head2 C<_has_interaction_type>
+
+A predicate for the L</interaction_type> attribute.
+
 =cut
 
 has interaction_type => (
@@ -104,6 +112,10 @@ A user_interaction_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_user_interaction_count>
+
+A predicate for the L</user_interaction_count> attribute.
 
 =cut
 

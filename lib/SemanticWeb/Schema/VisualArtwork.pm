@@ -48,6 +48,10 @@ A art_edition should be one of the following types:
 
 =back
 
+=head2 C<_has_art_edition>
+
+A predicate for the L</art_edition> attribute.
+
 =cut
 
 has art_edition => (
@@ -74,6 +78,10 @@ A art_medium should be one of the following types:
 
 =back
 
+=head2 C<_has_art_medium>
+
+A predicate for the L</art_medium> attribute.
+
 =cut
 
 has art_medium => (
@@ -98,6 +106,10 @@ A artform should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_artform>
+
+A predicate for the L</artform> attribute.
 
 =cut
 
@@ -125,6 +137,10 @@ A artist should be one of the following types:
 
 =back
 
+=head2 C<_has_artist>
+
+A predicate for the L</artist> attribute.
+
 =cut
 
 has artist => (
@@ -150,6 +166,10 @@ A artwork_surface should be one of the following types:
 
 =back
 
+=head2 C<_has_artwork_surface>
+
+A predicate for the L</artwork_surface> attribute.
+
 =cut
 
 has artwork_surface => (
@@ -173,6 +193,10 @@ A colorist should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_colorist>
+
+A predicate for the L</colorist> attribute.
 
 =cut
 
@@ -200,6 +224,10 @@ A depth should be one of the following types:
 
 =back
 
+=head2 C<_has_depth>
+
+A predicate for the L</depth> attribute.
+
 =cut
 
 has depth => (
@@ -226,6 +254,10 @@ A height should be one of the following types:
 
 =back
 
+=head2 C<_has_height>
+
+A predicate for the L</height> attribute.
+
 =cut
 
 has height => (
@@ -250,6 +282,10 @@ A inker should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_inker>
+
+A predicate for the L</inker> attribute.
 
 =cut
 
@@ -276,6 +312,10 @@ A letterer should be one of the following types:
 
 =back
 
+=head2 C<_has_letterer>
+
+A predicate for the L</letterer> attribute.
+
 =cut
 
 has letterer => (
@@ -299,6 +339,10 @@ A penciler should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_penciler>
+
+A predicate for the L</penciler> attribute.
 
 =cut
 
@@ -325,6 +369,10 @@ A surface should be one of the following types:
 
 =back
 
+=head2 C<_has_surface>
+
+A predicate for the L</surface> attribute.
+
 =cut
 
 has surface => (
@@ -350,6 +398,10 @@ A width should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_width>
+
+A predicate for the L</width> attribute.
 
 =cut
 

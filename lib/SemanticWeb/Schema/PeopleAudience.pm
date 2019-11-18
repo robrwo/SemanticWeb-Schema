@@ -46,6 +46,10 @@ A health_condition should be one of the following types:
 
 =back
 
+=head2 C<_has_health_condition>
+
+A predicate for the L</health_condition> attribute.
+
 =cut
 
 has health_condition => (
@@ -69,6 +73,10 @@ A required_gender should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_required_gender>
+
+A predicate for the L</required_gender> attribute.
 
 =cut
 
@@ -94,6 +102,10 @@ A required_max_age should be one of the following types:
 
 =back
 
+=head2 C<_has_required_max_age>
+
+A predicate for the L</required_max_age> attribute.
+
 =cut
 
 has required_max_age => (
@@ -117,6 +129,10 @@ A required_min_age should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_required_min_age>
+
+A predicate for the L</required_min_age> attribute.
 
 =cut
 
@@ -142,6 +158,10 @@ A suggested_gender should be one of the following types:
 
 =back
 
+=head2 C<_has_suggested_gender>
+
+A predicate for the L</suggested_gender> attribute.
+
 =cut
 
 has suggested_gender => (
@@ -166,6 +186,10 @@ A suggested_max_age should be one of the following types:
 
 =back
 
+=head2 C<_has_suggested_max_age>
+
+A predicate for the L</suggested_max_age> attribute.
+
 =cut
 
 has suggested_max_age => (
@@ -189,6 +213,10 @@ A suggested_min_age should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_suggested_min_age>
+
+A predicate for the L</suggested_min_age> attribute.
 
 =cut
 

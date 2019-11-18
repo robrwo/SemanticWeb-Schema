@@ -75,6 +75,10 @@ A measurement_technique should be one of the following types:
 
 =back
 
+=head2 C<_has_measurement_technique>
+
+A predicate for the L</measurement_technique> attribute.
+
 =cut
 
 has measurement_technique => (

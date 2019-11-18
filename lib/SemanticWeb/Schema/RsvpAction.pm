@@ -46,6 +46,10 @@ A additional_number_of_guests should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_number_of_guests>
+
+A predicate for the L</additional_number_of_guests> attribute.
+
 =cut
 
 has additional_number_of_guests => (
@@ -70,6 +74,10 @@ A comment should be one of the following types:
 
 =back
 
+=head2 C<_has_comment>
+
+A predicate for the L</comment> attribute.
+
 =cut
 
 has comment => (
@@ -93,6 +101,10 @@ A rsvp_response should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RsvpResponseType']>
 
 =back
+
+=head2 C<_has_rsvp_response>
+
+A predicate for the L</rsvp_response> attribute.
 
 =cut
 

@@ -45,6 +45,10 @@ A country_of_origin should be one of the following types:
 
 =back
 
+=head2 C<_has_country_of_origin>
+
+A predicate for the L</country_of_origin> attribute.
+
 =cut
 
 has country_of_origin => (
@@ -68,6 +72,10 @@ A part_of_tv_series should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::TVSeries']>
 
 =back
+
+=head2 C<_has_part_of_tv_series>
+
+A predicate for the L</part_of_tv_series> attribute.
 
 =cut
 
@@ -99,6 +107,10 @@ A subtitle_language should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_subtitle_language>
+
+A predicate for the L</subtitle_language> attribute.
 
 =cut
 

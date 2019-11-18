@@ -45,6 +45,10 @@ A date_created should be one of the following types:
 
 =back
 
+=head2 C<_has_date_created>
+
+A predicate for the L</date_created> attribute.
+
 =cut
 
 has date_created => (
@@ -68,6 +72,10 @@ A date_deleted should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_deleted>
+
+A predicate for the L</date_deleted> attribute.
 
 =cut
 
@@ -94,6 +102,10 @@ A date_modified should be one of the following types:
 
 =back
 
+=head2 C<_has_date_modified>
+
+A predicate for the L</date_modified> attribute.
+
 =cut
 
 has date_modified => (
@@ -118,6 +130,10 @@ A item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
 
 =back
+
+=head2 C<_has_item>
+
+A predicate for the L</item> attribute.
 
 =cut
 

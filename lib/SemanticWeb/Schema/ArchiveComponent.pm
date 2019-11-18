@@ -52,6 +52,10 @@ A holding_archive should be one of the following types:
 
 =back
 
+=head2 C<_has_holding_archive>
+
+A predicate for the L</holding_archive> attribute.
+
 =cut
 
 has holding_archive => (
@@ -79,6 +83,10 @@ A item_location should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_item_location>
+
+A predicate for the L</item_location> attribute.
 
 =cut
 

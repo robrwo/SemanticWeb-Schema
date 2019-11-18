@@ -55,6 +55,10 @@ A lender should be one of the following types:
 
 =back
 
+=head2 C<_has_lender>
+
+A predicate for the L</lender> attribute.
+
 =cut
 
 has lender => (

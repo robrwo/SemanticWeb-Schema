@@ -48,6 +48,10 @@ A bcc_recipient should be one of the following types:
 
 =back
 
+=head2 C<_has_bcc_recipient>
+
+A predicate for the L</bcc_recipient> attribute.
+
 =cut
 
 has bcc_recipient => (
@@ -76,6 +80,10 @@ A cc_recipient should be one of the following types:
 
 =back
 
+=head2 C<_has_cc_recipient>
+
+A predicate for the L</cc_recipient> attribute.
+
 =cut
 
 has cc_recipient => (
@@ -101,6 +109,10 @@ A date_read should be one of the following types:
 
 =back
 
+=head2 C<_has_date_read>
+
+A predicate for the L</date_read> attribute.
+
 =cut
 
 has date_read => (
@@ -124,6 +136,10 @@ A date_received should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_received>
+
+A predicate for the L</date_received> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A date_sent should be one of the following types:
 
 =back
 
+=head2 C<_has_date_sent>
+
+A predicate for the L</date_sent> attribute.
+
 =cut
 
 has date_sent => (
@@ -172,6 +192,10 @@ A message_attachment should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_message_attachment>
+
+A predicate for the L</message_attachment> attribute.
 
 =cut
 
@@ -204,6 +228,10 @@ A recipient should be one of the following types:
 
 =back
 
+=head2 C<_has_recipient>
+
+A predicate for the L</recipient> attribute.
+
 =cut
 
 has recipient => (
@@ -232,6 +260,10 @@ A sender should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_sender>
+
+A predicate for the L</sender> attribute.
 
 =cut
 
@@ -263,6 +295,10 @@ A to_recipient should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_to_recipient>
+
+A predicate for the L</to_recipient> attribute.
 
 =cut
 

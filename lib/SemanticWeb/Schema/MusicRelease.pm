@@ -44,6 +44,10 @@ A catalog_number should be one of the following types:
 
 =back
 
+=head2 C<_has_catalog_number>
+
+A predicate for the L</catalog_number> attribute.
+
 =cut
 
 has catalog_number => (
@@ -71,6 +75,10 @@ A credited_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_credited_to>
+
+A predicate for the L</credited_to> attribute.
 
 =cut
 
@@ -101,6 +109,10 @@ A duration should be one of the following types:
 
 =back
 
+=head2 C<_has_duration>
+
+A predicate for the L</duration> attribute.
+
 =cut
 
 has duration => (
@@ -126,6 +138,10 @@ A music_release_format should be one of the following types:
 
 =back
 
+=head2 C<_has_music_release_format>
+
+A predicate for the L</music_release_format> attribute.
+
 =cut
 
 has music_release_format => (
@@ -150,6 +166,10 @@ A record_label should be one of the following types:
 
 =back
 
+=head2 C<_has_record_label>
+
+A predicate for the L</record_label> attribute.
+
 =cut
 
 has record_label => (
@@ -173,6 +193,10 @@ A release_of should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicAlbum']>
 
 =back
+
+=head2 C<_has_release_of>
+
+A predicate for the L</release_of> attribute.
 
 =cut
 

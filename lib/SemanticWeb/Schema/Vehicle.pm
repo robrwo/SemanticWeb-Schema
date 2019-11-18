@@ -60,6 +60,10 @@ A acceleration_time should be one of the following types:
 
 =back
 
+=head2 C<_has_acceleration_time>
+
+A predicate for the L</acceleration_time> attribute.
+
 =cut
 
 has acceleration_time => (
@@ -86,6 +90,10 @@ A body_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_body_type>
+
+A predicate for the L</body_type> attribute.
 
 =cut
 
@@ -116,6 +124,10 @@ A call_sign should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_call_sign>
+
+A predicate for the L</call_sign> attribute.
 
 =cut
 
@@ -149,6 +161,10 @@ A cargo_volume should be one of the following types:
 
 =back
 
+=head2 C<_has_cargo_volume>
+
+A predicate for the L</cargo_volume> attribute.
+
 =cut
 
 has cargo_volume => (
@@ -173,6 +189,10 @@ A date_vehicle_first_registered should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_vehicle_first_registered>
+
+A predicate for the L</date_vehicle_first_registered> attribute.
 
 =cut
 
@@ -201,6 +221,10 @@ A drive_wheel_configuration should be one of the following types:
 
 =back
 
+=head2 C<_has_drive_wheel_configuration>
+
+A predicate for the L</drive_wheel_configuration> attribute.
+
 =cut
 
 has drive_wheel_configuration => (
@@ -226,6 +250,10 @@ A emissions_co2 should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_emissions_co2>
+
+A predicate for the L</emissions_co2> attribute.
 
 =cut
 
@@ -258,6 +286,10 @@ A fuel_capacity should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_fuel_capacity>
+
+A predicate for the L</fuel_capacity> attribute.
 
 =cut
 
@@ -301,6 +333,10 @@ A fuel_consumption should be one of the following types:
 
 =back
 
+=head2 C<_has_fuel_consumption>
+
+A predicate for the L</fuel_consumption> attribute.
+
 =cut
 
 has fuel_consumption => (
@@ -343,6 +379,10 @@ A fuel_efficiency should be one of the following types:
 
 =back
 
+=head2 C<_has_fuel_efficiency>
+
+A predicate for the L</fuel_efficiency> attribute.
+
 =cut
 
 has fuel_efficiency => (
@@ -371,6 +411,10 @@ A fuel_type should be one of the following types:
 
 =back
 
+=head2 C<_has_fuel_type>
+
+A predicate for the L</fuel_type> attribute.
+
 =cut
 
 has fuel_type => (
@@ -394,6 +438,10 @@ A known_vehicle_damages should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_known_vehicle_damages>
+
+A predicate for the L</known_vehicle_damages> attribute.
 
 =cut
 
@@ -420,6 +468,10 @@ A meets_emission_standard should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_meets_emission_standard>
+
+A predicate for the L</meets_emission_standard> attribute.
 
 =cut
 
@@ -451,6 +503,10 @@ A mileage_from_odometer should be one of the following types:
 
 =back
 
+=head2 C<_has_mileage_from_odometer>
+
+A predicate for the L</mileage_from_odometer> attribute.
+
 =cut
 
 has mileage_from_odometer => (
@@ -475,6 +531,10 @@ A model_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_model_date>
+
+A predicate for the L</model_date> attribute.
 
 =cut
 
@@ -501,6 +561,10 @@ A number_of_airbags should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_number_of_airbags>
+
+A predicate for the L</number_of_airbags> attribute.
 
 =cut
 
@@ -532,6 +596,10 @@ A number_of_axles should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_axles>
+
+A predicate for the L</number_of_axles> attribute.
+
 =cut
 
 has number_of_axles => (
@@ -561,6 +629,10 @@ A number_of_doors should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_number_of_doors>
+
+A predicate for the L</number_of_doors> attribute.
 
 =cut
 
@@ -593,6 +665,10 @@ A number_of_forward_gears should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_forward_gears>
+
+A predicate for the L</number_of_forward_gears> attribute.
+
 =cut
 
 has number_of_forward_gears => (
@@ -623,6 +699,10 @@ A number_of_previous_owners should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_number_of_previous_owners>
+
+A predicate for the L</number_of_previous_owners> attribute.
 
 =cut
 
@@ -668,6 +748,10 @@ A payload should be one of the following types:
 
 =back
 
+=head2 C<_has_payload>
+
+A predicate for the L</payload> attribute.
+
 =cut
 
 has payload => (
@@ -692,6 +776,10 @@ A production_date should be one of the following types:
 
 =back
 
+=head2 C<_has_production_date>
+
+A predicate for the L</production_date> attribute.
+
 =cut
 
 has production_date => (
@@ -715,6 +803,10 @@ A purchase_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_purchase_date>
+
+A predicate for the L</purchase_date> attribute.
 
 =cut
 
@@ -747,6 +839,10 @@ A seating_capacity should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_seating_capacity>
+
+A predicate for the L</seating_capacity> attribute.
 
 =cut
 
@@ -787,6 +883,10 @@ A speed should be one of the following types:
 
 =back
 
+=head2 C<_has_speed>
+
+A predicate for the L</speed> attribute.
+
 =cut
 
 has speed => (
@@ -810,6 +910,10 @@ A steering_position should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::SteeringPositionValue']>
 
 =back
+
+=head2 C<_has_steering_position>
+
+A predicate for the L</steering_position> attribute.
 
 =cut
 
@@ -853,6 +957,10 @@ A tongue_weight should be one of the following types:
 
 =back
 
+=head2 C<_has_tongue_weight>
+
+A predicate for the L</tongue_weight> attribute.
+
 =cut
 
 has tongue_weight => (
@@ -892,6 +1000,10 @@ A trailer_weight should be one of the following types:
 
 =back
 
+=head2 C<_has_trailer_weight>
+
+A predicate for the L</trailer_weight> attribute.
+
 =cut
 
 has trailer_weight => (
@@ -917,6 +1029,10 @@ A vehicle_configuration should be one of the following types:
 
 =back
 
+=head2 C<_has_vehicle_configuration>
+
+A predicate for the L</vehicle_configuration> attribute.
+
 =cut
 
 has vehicle_configuration => (
@@ -940,6 +1056,10 @@ A vehicle_engine should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::EngineSpecification']>
 
 =back
+
+=head2 C<_has_vehicle_engine>
+
+A predicate for the L</vehicle_engine> attribute.
 
 =cut
 
@@ -966,6 +1086,10 @@ A vehicle_identification_number should be one of the following types:
 
 =back
 
+=head2 C<_has_vehicle_identification_number>
+
+A predicate for the L</vehicle_identification_number> attribute.
+
 =cut
 
 has vehicle_identification_number => (
@@ -989,6 +1113,10 @@ A vehicle_interior_color should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_vehicle_interior_color>
+
+A predicate for the L</vehicle_interior_color> attribute.
 
 =cut
 
@@ -1017,6 +1145,10 @@ A vehicle_interior_type should be one of the following types:
 
 =back
 
+=head2 C<_has_vehicle_interior_type>
+
+A predicate for the L</vehicle_interior_type> attribute.
+
 =cut
 
 has vehicle_interior_type => (
@@ -1041,6 +1173,10 @@ A vehicle_model_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_vehicle_model_date>
+
+A predicate for the L</vehicle_model_date> attribute.
 
 =cut
 
@@ -1074,6 +1210,10 @@ A vehicle_seating_capacity should be one of the following types:
 
 =back
 
+=head2 C<_has_vehicle_seating_capacity>
+
+A predicate for the L</vehicle_seating_capacity> attribute.
+
 =cut
 
 has vehicle_seating_capacity => (
@@ -1103,6 +1243,10 @@ A vehicle_special_usage should be one of the following types:
 
 =back
 
+=head2 C<_has_vehicle_special_usage>
+
+A predicate for the L</vehicle_special_usage> attribute.
+
 =cut
 
 has vehicle_special_usage => (
@@ -1129,6 +1273,10 @@ A vehicle_transmission should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_vehicle_transmission>
+
+A predicate for the L</vehicle_transmission> attribute.
 
 =cut
 
@@ -1171,6 +1319,10 @@ A weight_total should be one of the following types:
 
 =back
 
+=head2 C<_has_weight_total>
+
+A predicate for the L</weight_total> attribute.
+
 =cut
 
 has weight_total => (
@@ -1200,6 +1352,10 @@ A wheelbase should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_wheelbase>
+
+A predicate for the L</wheelbase> attribute.
 
 =cut
 

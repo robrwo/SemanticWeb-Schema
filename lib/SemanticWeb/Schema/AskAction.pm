@@ -51,6 +51,10 @@ A question should be one of the following types:
 
 =back
 
+=head2 C<_has_question>
+
+A predicate for the L</question> attribute.
+
 =cut
 
 has question => (

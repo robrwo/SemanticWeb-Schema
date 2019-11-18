@@ -46,6 +46,10 @@ A aspect should be one of the following types:
 
 =back
 
+=head2 C<_has_aspect>
+
+A predicate for the L</aspect> attribute.
+
 =cut
 
 has aspect => (

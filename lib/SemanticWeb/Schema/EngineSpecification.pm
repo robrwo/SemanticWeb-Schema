@@ -57,6 +57,10 @@ A engine_displacement should be one of the following types:
 
 =back
 
+=head2 C<_has_engine_displacement>
+
+A predicate for the L</engine_displacement> attribute.
+
 =cut
 
 has engine_displacement => (
@@ -97,6 +101,10 @@ A engine_power should be one of the following types:
 
 =back
 
+=head2 C<_has_engine_power>
+
+A predicate for the L</engine_power> attribute.
+
 =cut
 
 has engine_power => (
@@ -122,6 +130,10 @@ A engine_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_engine_type>
+
+A predicate for the L</engine_type> attribute.
 
 =cut
 
@@ -150,6 +162,10 @@ A fuel_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_fuel_type>
+
+A predicate for the L</fuel_type> attribute.
 
 =cut
 
@@ -187,6 +203,10 @@ A torque should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_torque>
+
+A predicate for the L</torque> attribute.
 
 =cut
 

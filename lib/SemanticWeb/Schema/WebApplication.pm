@@ -45,6 +45,10 @@ A browser_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_browser_requirements>
+
+A predicate for the L</browser_requirements> attribute.
+
 =cut
 
 has browser_requirements => (

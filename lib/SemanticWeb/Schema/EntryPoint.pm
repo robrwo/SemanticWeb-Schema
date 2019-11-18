@@ -44,6 +44,10 @@ A action_application should be one of the following types:
 
 =back
 
+=head2 C<_has_action_application>
+
+A predicate for the L</action_application> attribute.
+
 =cut
 
 has action_application => (
@@ -70,6 +74,10 @@ A action_platform should be one of the following types:
 
 =back
 
+=head2 C<_has_action_platform>
+
+A predicate for the L</action_platform> attribute.
+
 =cut
 
 has action_platform => (
@@ -93,6 +101,10 @@ A application should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::SoftwareApplication']>
 
 =back
+
+=head2 C<_has_application>
+
+A predicate for the L</application> attribute.
 
 =cut
 
@@ -118,6 +130,10 @@ A content_type should be one of the following types:
 
 =back
 
+=head2 C<_has_content_type>
+
+A predicate for the L</content_type> attribute.
+
 =cut
 
 has content_type => (
@@ -141,6 +157,10 @@ A encoding_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_encoding_type>
+
+A predicate for the L</encoding_type> attribute.
 
 =cut
 
@@ -167,6 +187,10 @@ A http_method should be one of the following types:
 
 =back
 
+=head2 C<_has_http_method>
+
+A predicate for the L</http_method> attribute.
+
 =cut
 
 has http_method => (
@@ -191,6 +215,10 @@ A url_template should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_url_template>
+
+A predicate for the L</url_template> attribute.
 
 =cut
 

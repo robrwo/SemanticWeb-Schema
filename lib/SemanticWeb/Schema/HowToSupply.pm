@@ -48,6 +48,10 @@ A estimated_cost should be one of the following types:
 
 =back
 
+=head2 C<_has_estimated_cost>
+
+A predicate for the L</estimated_cost> attribute.
+
 =cut
 
 has estimated_cost => (

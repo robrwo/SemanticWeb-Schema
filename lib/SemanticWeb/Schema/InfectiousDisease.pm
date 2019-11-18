@@ -48,6 +48,10 @@ A infectious_agent should be one of the following types:
 
 =back
 
+=head2 C<_has_infectious_agent>
+
+A predicate for the L</infectious_agent> attribute.
+
 =cut
 
 has infectious_agent => (
@@ -73,6 +77,10 @@ A infectious_agent_class should be one of the following types:
 
 =back
 
+=head2 C<_has_infectious_agent_class>
+
+A predicate for the L</infectious_agent_class> attribute.
+
 =cut
 
 has infectious_agent_class => (
@@ -97,6 +105,10 @@ A transmission_method should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_transmission_method>
+
+A predicate for the L</transmission_method> attribute.
 
 =cut
 

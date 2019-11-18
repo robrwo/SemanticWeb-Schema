@@ -47,6 +47,10 @@ A associated_pathophysiology should be one of the following types:
 
 =back
 
+=head2 C<_has_associated_pathophysiology>
+
+A predicate for the L</associated_pathophysiology> attribute.
+
 =cut
 
 has associated_pathophysiology => (
@@ -71,6 +75,10 @@ A body_location should be one of the following types:
 
 =back
 
+=head2 C<_has_body_location>
+
+A predicate for the L</body_location> attribute.
+
 =cut
 
 has body_location => (
@@ -94,6 +102,10 @@ A connected_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_connected_to>
+
+A predicate for the L</connected_to> attribute.
 
 =cut
 
@@ -120,6 +132,10 @@ A diagram should be one of the following types:
 
 =back
 
+=head2 C<_has_diagram>
+
+A predicate for the L</diagram> attribute.
+
 =cut
 
 has diagram => (
@@ -143,6 +159,10 @@ A function should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_function>
+
+A predicate for the L</function> attribute.
 
 =cut
 
@@ -168,6 +188,10 @@ A part_of_system should be one of the following types:
 
 =back
 
+=head2 C<_has_part_of_system>
+
+A predicate for the L</part_of_system> attribute.
+
 =cut
 
 has part_of_system => (
@@ -191,6 +215,10 @@ A related_condition should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalCondition']>
 
 =back
+
+=head2 C<_has_related_condition>
+
+A predicate for the L</related_condition> attribute.
 
 =cut
 
@@ -216,6 +244,10 @@ A related_therapy should be one of the following types:
 
 =back
 
+=head2 C<_has_related_therapy>
+
+A predicate for the L</related_therapy> attribute.
+
 =cut
 
 has related_therapy => (
@@ -239,6 +271,10 @@ A sub_structure should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_sub_structure>
+
+A predicate for the L</sub_structure> attribute.
 
 =cut
 

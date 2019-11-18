@@ -53,6 +53,10 @@ A from_location should be one of the following types:
 
 =back
 
+=head2 C<_has_from_location>
+
+A predicate for the L</from_location> attribute.
+
 =cut
 
 has from_location => (
@@ -77,6 +81,10 @@ A to_location should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_to_location>
+
+A predicate for the L</to_location> attribute.
 
 =cut
 

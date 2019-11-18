@@ -47,6 +47,10 @@ A action_option should be one of the following types:
 
 =back
 
+=head2 C<_has_action_option>
+
+A predicate for the L</action_option> attribute.
+
 =cut
 
 has action_option => (
@@ -72,6 +76,10 @@ A option should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_option>
+
+A predicate for the L</option> attribute.
 
 =cut
 

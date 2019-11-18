@@ -75,6 +75,10 @@ A margin_of_error should be one of the following types:
 
 =back
 
+=head2 C<_has_margin_of_error>
+
+A predicate for the L</margin_of_error> attribute.
+
 =cut
 
 has margin_of_error => (
@@ -107,6 +111,10 @@ A measured_property should be one of the following types:
 
 =back
 
+=head2 C<_has_measured_property>
+
+A predicate for the L</measured_property> attribute.
+
 =cut
 
 has measured_property => (
@@ -136,6 +144,10 @@ A measured_value should be one of the following types:
 
 =back
 
+=head2 C<_has_measured_value>
+
+A predicate for the L</measured_value> attribute.
+
 =cut
 
 has measured_value => (
@@ -164,6 +176,10 @@ A observation_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_observation_date>
+
+A predicate for the L</observation_date> attribute.
 
 =cut
 
@@ -196,6 +212,10 @@ A observed_node should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::StatisticalPopulation']>
 
 =back
+
+=head2 C<_has_observed_node>
+
+A predicate for the L</observed_node> attribute.
 
 =cut
 

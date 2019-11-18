@@ -55,6 +55,10 @@ A currency should be one of the following types:
 
 =back
 
+=head2 C<_has_currency>
+
+A predicate for the L</currency> attribute.
+
 =cut
 
 has currency => (
@@ -78,6 +82,10 @@ A current_exchange_rate should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::UnitPriceSpecification']>
 
 =back
+
+=head2 C<_has_current_exchange_rate>
+
+A predicate for the L</current_exchange_rate> attribute.
 
 =cut
 
@@ -105,6 +113,10 @@ A exchange_rate_spread should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_exchange_rate_spread>
+
+A predicate for the L</exchange_rate_spread> attribute.
 
 =cut
 

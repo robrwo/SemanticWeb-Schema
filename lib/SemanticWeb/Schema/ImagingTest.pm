@@ -44,6 +44,10 @@ A imaging_technique should be one of the following types:
 
 =back
 
+=head2 C<_has_imaging_technique>
+
+A predicate for the L</imaging_technique> attribute.
+
 =cut
 
 has imaging_technique => (

@@ -49,6 +49,10 @@ A legislation_legal_value should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_legal_value>
+
+A predicate for the L</legislation_legal_value> attribute.
+
 =cut
 
 has legislation_legal_value => (

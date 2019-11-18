@@ -46,6 +46,10 @@ A address should be one of the following types:
 
 =back
 
+=head2 C<_has_address>
+
+A predicate for the L</address> attribute.
+
 =cut
 
 has address => (
@@ -77,6 +81,10 @@ A address_country should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_address_country>
+
+A predicate for the L</address_country> attribute.
 
 =cut
 
@@ -112,6 +120,10 @@ A elevation should be one of the following types:
 
 =back
 
+=head2 C<_has_elevation>
+
+A predicate for the L</elevation> attribute.
+
 =cut
 
 has elevation => (
@@ -142,6 +154,10 @@ A latitude should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_latitude>
+
+A predicate for the L</latitude> attribute.
 
 =cut
 
@@ -174,6 +190,10 @@ A longitude should be one of the following types:
 
 =back
 
+=head2 C<_has_longitude>
+
+A predicate for the L</longitude> attribute.
+
 =cut
 
 has longitude => (
@@ -197,6 +217,10 @@ A postal_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_postal_code>
+
+A predicate for the L</postal_code> attribute.
 
 =cut
 

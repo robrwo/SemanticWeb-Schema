@@ -44,6 +44,10 @@ A date_issued should be one of the following types:
 
 =back
 
+=head2 C<_has_date_issued>
+
+A predicate for the L</date_issued> attribute.
+
 =cut
 
 has date_issued => (
@@ -67,6 +71,10 @@ A issued_by should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_issued_by>
+
+A predicate for the L</issued_by> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A price_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_price_currency>
+
+A predicate for the L</price_currency> attribute.
+
 =cut
 
 has price_currency => (
@@ -129,6 +141,10 @@ A ticket_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_ticket_number>
+
+A predicate for the L</ticket_number> attribute.
 
 =cut
 
@@ -155,6 +171,10 @@ A ticket_token should be one of the following types:
 
 =back
 
+=head2 C<_has_ticket_token>
+
+A predicate for the L</ticket_token> attribute.
+
 =cut
 
 has ticket_token => (
@@ -178,6 +198,10 @@ A ticketed_seat should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Seat']>
 
 =back
+
+=head2 C<_has_ticketed_seat>
+
+A predicate for the L</ticketed_seat> attribute.
 
 =cut
 
@@ -216,6 +240,10 @@ A total_price should be one of the following types:
 
 =back
 
+=head2 C<_has_total_price>
+
+A predicate for the L</total_price> attribute.
+
 =cut
 
 has total_price => (
@@ -241,6 +269,10 @@ A under_name should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_under_name>
+
+A predicate for the L</under_name> attribute.
 
 =cut
 

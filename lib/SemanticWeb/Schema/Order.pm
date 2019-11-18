@@ -47,6 +47,10 @@ A accepted_offer should be one of the following types:
 
 =back
 
+=head2 C<_has_accepted_offer>
+
+A predicate for the L</accepted_offer> attribute.
+
 =cut
 
 has accepted_offer => (
@@ -70,6 +74,10 @@ A billing_address should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
 
 =back
+
+=head2 C<_has_billing_address>
+
+A predicate for the L</billing_address> attribute.
 
 =cut
 
@@ -100,6 +108,10 @@ A broker should be one of the following types:
 
 =back
 
+=head2 C<_has_broker>
+
+A predicate for the L</broker> attribute.
+
 =cut
 
 has broker => (
@@ -123,6 +135,10 @@ A confirmation_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_confirmation_number>
+
+A predicate for the L</confirmation_number> attribute.
 
 =cut
 
@@ -150,6 +166,10 @@ A customer should be one of the following types:
 
 =back
 
+=head2 C<_has_customer>
+
+A predicate for the L</customer> attribute.
+
 =cut
 
 has customer => (
@@ -176,6 +196,10 @@ A discount should be one of the following types:
 
 =back
 
+=head2 C<_has_discount>
+
+A predicate for the L</discount> attribute.
+
 =cut
 
 has discount => (
@@ -199,6 +223,10 @@ A discount_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_discount_code>
+
+A predicate for the L</discount_code> attribute.
 
 =cut
 
@@ -235,6 +263,10 @@ A discount_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_discount_currency>
+
+A predicate for the L</discount_currency> attribute.
+
 =cut
 
 has discount_currency => (
@@ -258,6 +290,10 @@ A is_gift should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_gift>
+
+A predicate for the L</is_gift> attribute.
 
 =cut
 
@@ -285,6 +321,10 @@ A merchant should be one of the following types:
 
 =back
 
+=head2 C<_has_merchant>
+
+A predicate for the L</merchant> attribute.
+
 =cut
 
 has merchant => (
@@ -308,6 +348,10 @@ A order_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_order_date>
+
+A predicate for the L</order_date> attribute.
 
 =cut
 
@@ -333,6 +377,10 @@ A order_delivery should be one of the following types:
 
 =back
 
+=head2 C<_has_order_delivery>
+
+A predicate for the L</order_delivery> attribute.
+
 =cut
 
 has order_delivery => (
@@ -357,6 +405,10 @@ A order_number should be one of the following types:
 
 =back
 
+=head2 C<_has_order_number>
+
+A predicate for the L</order_number> attribute.
+
 =cut
 
 has order_number => (
@@ -380,6 +432,10 @@ A order_status should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::OrderStatus']>
 
 =back
+
+=head2 C<_has_order_status>
+
+A predicate for the L</order_status> attribute.
 
 =cut
 
@@ -409,6 +465,10 @@ A ordered_item should be one of the following types:
 
 =back
 
+=head2 C<_has_ordered_item>
+
+A predicate for the L</ordered_item> attribute.
+
 =cut
 
 has ordered_item => (
@@ -432,6 +492,10 @@ A part_of_invoice should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Invoice']>
 
 =back
+
+=head2 C<_has_part_of_invoice>
+
+A predicate for the L</part_of_invoice> attribute.
 
 =cut
 
@@ -457,6 +521,10 @@ A payment_due should be one of the following types:
 
 =back
 
+=head2 C<_has_payment_due>
+
+A predicate for the L</payment_due> attribute.
+
 =cut
 
 has payment_due => (
@@ -481,6 +549,10 @@ A payment_due_date should be one of the following types:
 
 =back
 
+=head2 C<_has_payment_due_date>
+
+A predicate for the L</payment_due_date> attribute.
+
 =cut
 
 has payment_due_date => (
@@ -504,6 +576,10 @@ A payment_method should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PaymentMethod']>
 
 =back
+
+=head2 C<_has_payment_method>
+
+A predicate for the L</payment_method> attribute.
 
 =cut
 
@@ -530,6 +606,10 @@ A payment_method_id should be one of the following types:
 
 =back
 
+=head2 C<_has_payment_method_id>
+
+A predicate for the L</payment_method_id> attribute.
+
 =cut
 
 has payment_method_id => (
@@ -553,6 +633,10 @@ A payment_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_payment_url>
+
+A predicate for the L</payment_url> attribute.
 
 =cut
 
@@ -580,6 +664,10 @@ A seller should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_seller>
+
+A predicate for the L</seller> attribute.
 
 =cut
 

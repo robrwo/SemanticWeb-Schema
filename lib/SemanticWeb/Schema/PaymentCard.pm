@@ -48,6 +48,10 @@ A cash_back should be one of the following types:
 
 =back
 
+=head2 C<_has_cash_back>
+
+A predicate for the L</cash_back> attribute.
+
 =cut
 
 has cash_back => (
@@ -73,6 +77,10 @@ A contactless_payment should be one of the following types:
 
 =back
 
+=head2 C<_has_contactless_payment>
+
+A predicate for the L</contactless_payment> attribute.
+
 =cut
 
 has contactless_payment => (
@@ -97,6 +105,10 @@ A floor_limit should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
 =back
+
+=head2 C<_has_floor_limit>
+
+A predicate for the L</floor_limit> attribute.
 
 =cut
 

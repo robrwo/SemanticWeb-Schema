@@ -52,6 +52,10 @@ A comment_text should be one of the following types:
 
 =back
 
+=head2 C<_has_comment_text>
+
+A predicate for the L</comment_text> attribute.
+
 =cut
 
 has comment_text => (
@@ -75,6 +79,10 @@ A comment_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_comment_time>
+
+A predicate for the L</comment_time> attribute.
 
 =cut
 
@@ -103,6 +111,10 @@ A creator should be one of the following types:
 
 =back
 
+=head2 C<_has_creator>
+
+A predicate for the L</creator> attribute.
+
 =cut
 
 has creator => (
@@ -127,6 +139,10 @@ A discusses should be one of the following types:
 
 =back
 
+=head2 C<_has_discusses>
+
+A predicate for the L</discusses> attribute.
+
 =cut
 
 has discusses => (
@@ -150,6 +166,10 @@ A reply_to_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_reply_to_url>
+
+A predicate for the L</reply_to_url> attribute.
 
 =cut
 

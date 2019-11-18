@@ -45,6 +45,10 @@ A algorithm should be one of the following types:
 
 =back
 
+=head2 C<_has_algorithm>
+
+A predicate for the L</algorithm> attribute.
+
 =cut
 
 has algorithm => (

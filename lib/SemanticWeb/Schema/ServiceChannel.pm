@@ -54,6 +54,10 @@ A available_language should be one of the following types:
 
 =back
 
+=head2 C<_has_available_language>
+
+A predicate for the L</available_language> attribute.
+
 =cut
 
 has available_language => (
@@ -78,6 +82,10 @@ A processing_time should be one of the following types:
 
 =back
 
+=head2 C<_has_processing_time>
+
+A predicate for the L</processing_time> attribute.
+
 =cut
 
 has processing_time => (
@@ -101,6 +109,10 @@ A provides_service should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
 
 =back
+
+=head2 C<_has_provides_service>
+
+A predicate for the L</provides_service> attribute.
 
 =cut
 
@@ -127,6 +139,10 @@ A service_location should be one of the following types:
 
 =back
 
+=head2 C<_has_service_location>
+
+A predicate for the L</service_location> attribute.
+
 =cut
 
 has service_location => (
@@ -150,6 +166,10 @@ A service_phone should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =back
+
+=head2 C<_has_service_phone>
+
+A predicate for the L</service_phone> attribute.
 
 =cut
 
@@ -175,6 +195,10 @@ A service_postal_address should be one of the following types:
 
 =back
 
+=head2 C<_has_service_postal_address>
+
+A predicate for the L</service_postal_address> attribute.
+
 =cut
 
 has service_postal_address => (
@@ -199,6 +223,10 @@ A service_sms_number should be one of the following types:
 
 =back
 
+=head2 C<_has_service_sms_number>
+
+A predicate for the L</service_sms_number> attribute.
+
 =cut
 
 has service_sms_number => (
@@ -222,6 +250,10 @@ A service_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_service_url>
+
+A predicate for the L</service_url> attribute.
 
 =cut
 

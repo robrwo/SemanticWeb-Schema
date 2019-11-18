@@ -50,6 +50,10 @@ A steps should be one of the following types:
 
 =back
 
+=head2 C<_has_steps>
+
+A predicate for the L</steps> attribute.
+
 =cut
 
 has steps => (

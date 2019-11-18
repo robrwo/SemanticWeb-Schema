@@ -44,6 +44,10 @@ A screen_count should be one of the following types:
 
 =back
 
+=head2 C<_has_screen_count>
+
+A predicate for the L</screen_count> attribute.
+
 =cut
 
 has screen_count => (

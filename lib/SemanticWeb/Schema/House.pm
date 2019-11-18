@@ -57,6 +57,10 @@ A number_of_rooms should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_rooms>
+
+A predicate for the L</number_of_rooms> attribute.
+
 =cut
 
 has number_of_rooms => (

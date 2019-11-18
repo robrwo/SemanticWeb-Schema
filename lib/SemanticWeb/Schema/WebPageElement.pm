@@ -53,6 +53,10 @@ A css_selector should be one of the following types:
 
 =back
 
+=head2 C<_has_css_selector>
+
+A predicate for the L</css_selector> attribute.
+
 =cut
 
 has css_selector => (
@@ -85,6 +89,10 @@ A xpath should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::XPathType']>
 
 =back
+
+=head2 C<_has_xpath>
+
+A predicate for the L</xpath> attribute.
 
 =cut
 

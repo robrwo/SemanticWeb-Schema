@@ -45,6 +45,10 @@ A fees_and_commissions_specification should be one of the following types:
 
 =back
 
+=head2 C<_has_fees_and_commissions_specification>
+
+A predicate for the L</fees_and_commissions_specification> attribute.
+
 =cut
 
 has fees_and_commissions_specification => (

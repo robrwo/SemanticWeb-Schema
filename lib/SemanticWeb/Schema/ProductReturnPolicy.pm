@@ -51,6 +51,10 @@ A in_store_returns_offered should be one of the following types:
 
 =back
 
+=head2 C<_has_in_store_returns_offered>
+
+A predicate for the L</in_store_returns_offered> attribute.
+
 =cut
 
 has in_store_returns_offered => (
@@ -76,6 +80,10 @@ A product_return_days should be one of the following types:
 
 =back
 
+=head2 C<_has_product_return_days>
+
+A predicate for the L</product_return_days> attribute.
+
 =cut
 
 has product_return_days => (
@@ -100,6 +108,10 @@ A product_return_link should be one of the following types:
 
 =back
 
+=head2 C<_has_product_return_link>
+
+A predicate for the L</product_return_link> attribute.
+
 =cut
 
 has product_return_link => (
@@ -123,6 +135,10 @@ A refund_type should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RefundTypeEnumeration']>
 
 =back
+
+=head2 C<_has_refund_type>
+
+A predicate for the L</refund_type> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A return_fees should be one of the following types:
 
 =back
 
+=head2 C<_has_return_fees>
+
+A predicate for the L</return_fees> attribute.
+
 =cut
 
 has return_fees => (
@@ -173,6 +193,10 @@ A return_policy_category should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ProductReturnEnumeration']>
 
 =back
+
+=head2 C<_has_return_policy_category>
+
+A predicate for the L</return_policy_category> attribute.
 
 =cut
 

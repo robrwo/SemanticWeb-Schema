@@ -47,6 +47,10 @@ A composer should be one of the following types:
 
 =back
 
+=head2 C<_has_composer>
+
+A predicate for the L</composer> attribute.
+
 =cut
 
 has composer => (
@@ -70,6 +74,10 @@ A first_performance should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_first_performance>
+
+A predicate for the L</first_performance> attribute.
 
 =cut
 
@@ -95,6 +103,10 @@ A included_composition should be one of the following types:
 
 =back
 
+=head2 C<_has_included_composition>
+
+A predicate for the L</included_composition> attribute.
+
 =cut
 
 has included_composition => (
@@ -118,6 +130,10 @@ A iswc_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_iswc_code>
+
+A predicate for the L</iswc_code> attribute.
 
 =cut
 
@@ -143,6 +159,10 @@ A lyricist should be one of the following types:
 
 =back
 
+=head2 C<_has_lyricist>
+
+A predicate for the L</lyricist> attribute.
+
 =cut
 
 has lyricist => (
@@ -166,6 +186,10 @@ A lyrics should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_lyrics>
+
+A predicate for the L</lyrics> attribute.
 
 =cut
 
@@ -191,6 +215,10 @@ A music_arrangement should be one of the following types:
 
 =back
 
+=head2 C<_has_music_arrangement>
+
+A predicate for the L</music_arrangement> attribute.
+
 =cut
 
 has music_arrangement => (
@@ -214,6 +242,10 @@ A music_composition_form should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_music_composition_form>
+
+A predicate for the L</music_composition_form> attribute.
 
 =cut
 
@@ -239,6 +271,10 @@ A musical_key should be one of the following types:
 
 =back
 
+=head2 C<_has_musical_key>
+
+A predicate for the L</musical_key> attribute.
+
 =cut
 
 has musical_key => (
@@ -262,6 +298,10 @@ A recorded_as should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MusicRecording']>
 
 =back
+
+=head2 C<_has_recorded_as>
+
+A predicate for the L</recorded_as> attribute.
 
 =cut
 

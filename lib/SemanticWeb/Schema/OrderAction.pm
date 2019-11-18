@@ -44,6 +44,10 @@ A delivery_method should be one of the following types:
 
 =back
 
+=head2 C<_has_delivery_method>
+
+A predicate for the L</delivery_method> attribute.
+
 =cut
 
 has delivery_method => (

@@ -69,6 +69,10 @@ A available_language should be one of the following types:
 
 =back
 
+=head2 C<_has_available_language>
+
+A predicate for the L</available_language> attribute.
+
 =cut
 
 has available_language => (
@@ -95,6 +99,10 @@ A tourist_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_tourist_type>
+
+A predicate for the L</tourist_type> attribute.
 
 =cut
 

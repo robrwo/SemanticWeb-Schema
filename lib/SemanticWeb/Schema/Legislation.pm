@@ -56,6 +56,10 @@ A legislation_applies should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_applies>
+
+A predicate for the L</legislation_applies> attribute.
+
 =cut
 
 has legislation_applies => (
@@ -91,6 +95,10 @@ A legislation_changes should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_changes>
+
+A predicate for the L</legislation_changes> attribute.
+
 =cut
 
 has legislation_changes => (
@@ -119,6 +127,10 @@ A legislation_consolidates should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_consolidates>
+
+A predicate for the L</legislation_consolidates> attribute.
+
 =cut
 
 has legislation_consolidates => (
@@ -144,6 +156,10 @@ A legislation_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_legislation_date>
+
+A predicate for the L</legislation_date> attribute.
 
 =cut
 
@@ -172,6 +188,10 @@ A legislation_date_version should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_date_version>
+
+A predicate for the L</legislation_date_version> attribute.
+
 =cut
 
 has legislation_date_version => (
@@ -199,6 +219,10 @@ A legislation_identifier should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_identifier>
+
+A predicate for the L</legislation_identifier> attribute.
+
 =cut
 
 has legislation_identifier => (
@@ -225,6 +249,10 @@ A legislation_jurisdiction should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_jurisdiction>
+
+A predicate for the L</legislation_jurisdiction> attribute.
+
 =cut
 
 has legislation_jurisdiction => (
@@ -249,6 +277,10 @@ A legislation_legal_force should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::LegalForceStatus']>
 
 =back
+
+=head2 C<_has_legislation_legal_force>
+
+A predicate for the L</legislation_legal_force> attribute.
 
 =cut
 
@@ -279,6 +311,10 @@ A legislation_passed_by should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_passed_by>
+
+A predicate for the L</legislation_passed_by> attribute.
+
 =cut
 
 has legislation_passed_by => (
@@ -308,6 +344,10 @@ A legislation_responsible should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_responsible>
+
+A predicate for the L</legislation_responsible> attribute.
+
 =cut
 
 has legislation_responsible => (
@@ -336,6 +376,10 @@ A legislation_transposes should be one of the following types:
 
 =back
 
+=head2 C<_has_legislation_transposes>
+
+A predicate for the L</legislation_transposes> attribute.
+
 =cut
 
 has legislation_transposes => (
@@ -363,6 +407,10 @@ A legislation_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_legislation_type>
+
+A predicate for the L</legislation_type> attribute.
 
 =cut
 

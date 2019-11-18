@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::HealthTopicContent;
 
-# ABSTRACT: HealthTopicContent is WebContent that is about some aspect of a health topic
+# ABSTRACT:  HealthTopicContent is WebContent that is about some aspect of a health topic
 
 use Moo;
 
@@ -72,6 +72,10 @@ A has_health_aspect should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::HealthAspectEnumeration']>
 
 =back
+
+=head2 C<_has_has_health_aspect>
+
+A predicate for the L</has_health_aspect> attribute.
 
 =cut
 

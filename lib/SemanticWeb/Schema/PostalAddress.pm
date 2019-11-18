@@ -52,6 +52,10 @@ A address_country should be one of the following types:
 
 =back
 
+=head2 C<_has_address_country>
+
+A predicate for the L</address_country> attribute.
+
 =cut
 
 has address_country => (
@@ -76,6 +80,10 @@ A address_locality should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_address_locality>
+
+A predicate for the L</address_locality> attribute.
 
 =cut
 
@@ -108,6 +116,10 @@ A address_region should be one of the following types:
 
 =back
 
+=head2 C<_has_address_region>
+
+A predicate for the L</address_region> attribute.
+
 =cut
 
 has address_region => (
@@ -131,6 +143,10 @@ A post_office_box_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_post_office_box_number>
+
+A predicate for the L</post_office_box_number> attribute.
 
 =cut
 
@@ -156,6 +172,10 @@ A postal_code should be one of the following types:
 
 =back
 
+=head2 C<_has_postal_code>
+
+A predicate for the L</postal_code> attribute.
+
 =cut
 
 has postal_code => (
@@ -179,6 +199,10 @@ A street_address should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_street_address>
+
+A predicate for the L</street_address> attribute.
 
 =cut
 

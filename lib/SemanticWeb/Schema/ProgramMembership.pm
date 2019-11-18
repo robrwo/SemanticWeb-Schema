@@ -46,6 +46,10 @@ A hosting_organization should be one of the following types:
 
 =back
 
+=head2 C<_has_hosting_organization>
+
+A predicate for the L</hosting_organization> attribute.
+
 =cut
 
 has hosting_organization => (
@@ -73,6 +77,10 @@ A member should be one of the following types:
 
 =back
 
+=head2 C<_has_member>
+
+A predicate for the L</member> attribute.
+
 =cut
 
 has member => (
@@ -99,6 +107,10 @@ A members should be one of the following types:
 
 =back
 
+=head2 C<_has_members>
+
+A predicate for the L</members> attribute.
+
 =cut
 
 has members => (
@@ -122,6 +134,10 @@ A membership_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_membership_number>
+
+A predicate for the L</membership_number> attribute.
 
 =cut
 
@@ -151,6 +167,10 @@ A membership_points_earned should be one of the following types:
 
 =back
 
+=head2 C<_has_membership_points_earned>
+
+A predicate for the L</membership_points_earned> attribute.
+
 =cut
 
 has membership_points_earned => (
@@ -174,6 +194,10 @@ A program_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_program_name>
+
+A predicate for the L</program_name> attribute.
 
 =cut
 

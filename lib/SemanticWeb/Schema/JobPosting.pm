@@ -47,6 +47,10 @@ A applicant_location_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_applicant_location_requirements>
+
+A predicate for the L</applicant_location_requirements> attribute.
+
 =cut
 
 has applicant_location_requirements => (
@@ -75,6 +79,10 @@ A base_salary should be one of the following types:
 
 =back
 
+=head2 C<_has_base_salary>
+
+A predicate for the L</base_salary> attribute.
+
 =cut
 
 has base_salary => (
@@ -99,6 +107,10 @@ A benefits should be one of the following types:
 
 =back
 
+=head2 C<_has_benefits>
+
+A predicate for the L</benefits> attribute.
+
 =cut
 
 has benefits => (
@@ -122,6 +134,10 @@ A date_posted should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_date_posted>
+
+A predicate for the L</date_posted> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A education_requirements should be one of the following types:
 
 =back
 
+=head2 C<_has_education_requirements>
+
+A predicate for the L</education_requirements> attribute.
+
 =cut
 
 has education_requirements => (
@@ -174,6 +194,10 @@ A employment_type should be one of the following types:
 
 =back
 
+=head2 C<_has_employment_type>
+
+A predicate for the L</employment_type> attribute.
+
 =cut
 
 has employment_type => (
@@ -198,6 +222,10 @@ A employment_unit should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_employment_unit>
+
+A predicate for the L</employment_unit> attribute.
 
 =cut
 
@@ -230,6 +258,10 @@ A estimated_salary should be one of the following types:
 
 =back
 
+=head2 C<_has_estimated_salary>
+
+A predicate for the L</estimated_salary> attribute.
+
 =cut
 
 has estimated_salary => (
@@ -253,6 +285,10 @@ A experience_requirements should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_experience_requirements>
+
+A predicate for the L</experience_requirements> attribute.
 
 =cut
 
@@ -278,6 +314,10 @@ A hiring_organization should be one of the following types:
 
 =back
 
+=head2 C<_has_hiring_organization>
+
+A predicate for the L</hiring_organization> attribute.
+
 =cut
 
 has hiring_organization => (
@@ -301,6 +341,10 @@ A incentive_compensation should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_incentive_compensation>
+
+A predicate for the L</incentive_compensation> attribute.
 
 =cut
 
@@ -326,6 +370,10 @@ A incentives should be one of the following types:
 
 =back
 
+=head2 C<_has_incentives>
+
+A predicate for the L</incentives> attribute.
+
 =cut
 
 has incentives => (
@@ -349,6 +397,10 @@ A industry should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_industry>
+
+A predicate for the L</industry> attribute.
 
 =cut
 
@@ -374,6 +426,10 @@ A job_benefits should be one of the following types:
 
 =back
 
+=head2 C<_has_job_benefits>
+
+A predicate for the L</job_benefits> attribute.
+
 =cut
 
 has job_benefits => (
@@ -397,6 +453,10 @@ A job_immediate_start should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_job_immediate_start>
+
+A predicate for the L</job_immediate_start> attribute.
 
 =cut
 
@@ -422,6 +482,10 @@ A job_location should be one of the following types:
 
 =back
 
+=head2 C<_has_job_location>
+
+A predicate for the L</job_location> attribute.
+
 =cut
 
 has job_location => (
@@ -445,6 +509,10 @@ A job_location_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_job_location_type>
+
+A predicate for the L</job_location_type> attribute.
 
 =cut
 
@@ -472,6 +540,10 @@ A job_start_date should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_job_start_date>
+
+A predicate for the L</job_start_date> attribute.
 
 =cut
 
@@ -511,6 +583,10 @@ A occupational_category should be one of the following types:
 
 =back
 
+=head2 C<_has_occupational_category>
+
+A predicate for the L</occupational_category> attribute.
+
 =cut
 
 has occupational_category => (
@@ -537,6 +613,10 @@ A qualifications should be one of the following types:
 
 =back
 
+=head2 C<_has_qualifications>
+
+A predicate for the L</qualifications> attribute.
+
 =cut
 
 has qualifications => (
@@ -561,6 +641,10 @@ A relevant_occupation should be one of the following types:
 
 =back
 
+=head2 C<_has_relevant_occupation>
+
+A predicate for the L</relevant_occupation> attribute.
+
 =cut
 
 has relevant_occupation => (
@@ -584,6 +668,10 @@ A responsibilities should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_responsibilities>
+
+A predicate for the L</responsibilities> attribute.
 
 =cut
 
@@ -615,6 +703,10 @@ A salary_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_salary_currency>
+
+A predicate for the L</salary_currency> attribute.
+
 =cut
 
 has salary_currency => (
@@ -643,6 +735,10 @@ A skills should be one of the following types:
 
 =back
 
+=head2 C<_has_skills>
+
+A predicate for the L</skills> attribute.
+
 =cut
 
 has skills => (
@@ -668,6 +764,10 @@ A special_commitments should be one of the following types:
 
 =back
 
+=head2 C<_has_special_commitments>
+
+A predicate for the L</special_commitments> attribute.
+
 =cut
 
 has special_commitments => (
@@ -691,6 +791,10 @@ A title should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_title>
+
+A predicate for the L</title> attribute.
 
 =cut
 
@@ -717,6 +821,10 @@ A total_job_openings should be one of the following types:
 
 =back
 
+=head2 C<_has_total_job_openings>
+
+A predicate for the L</total_job_openings> attribute.
+
 =cut
 
 has total_job_openings => (
@@ -742,6 +850,10 @@ A valid_through should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
+
 =cut
 
 has valid_through => (
@@ -766,6 +878,10 @@ A work_hours should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_work_hours>
+
+A predicate for the L</work_hours> attribute.
 
 =cut
 

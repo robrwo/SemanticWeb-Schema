@@ -48,6 +48,10 @@ A down_payment should be one of the following types:
 
 =back
 
+=head2 C<_has_down_payment>
+
+A predicate for the L</down_payment> attribute.
+
 =cut
 
 has down_payment => (
@@ -73,6 +77,10 @@ A early_prepayment_penalty should be one of the following types:
 
 =back
 
+=head2 C<_has_early_prepayment_penalty>
+
+A predicate for the L</early_prepayment_penalty> attribute.
+
 =cut
 
 has early_prepayment_penalty => (
@@ -96,6 +104,10 @@ A loan_payment_amount should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
 =back
+
+=head2 C<_has_loan_payment_amount>
+
+A predicate for the L</loan_payment_amount> attribute.
 
 =cut
 
@@ -122,6 +134,10 @@ A loan_payment_frequency should be one of the following types:
 
 =back
 
+=head2 C<_has_loan_payment_frequency>
+
+A predicate for the L</loan_payment_frequency> attribute.
+
 =cut
 
 has loan_payment_frequency => (
@@ -147,6 +163,10 @@ A number_of_loan_payments should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_number_of_loan_payments>
+
+A predicate for the L</number_of_loan_payments> attribute.
 
 =cut
 

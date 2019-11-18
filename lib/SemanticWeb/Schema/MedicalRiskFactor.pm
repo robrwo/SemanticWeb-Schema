@@ -45,6 +45,10 @@ A increases_risk_of should be one of the following types:
 
 =back
 
+=head2 C<_has_increases_risk_of>
+
+A predicate for the L</increases_risk_of> attribute.
+
 =cut
 
 has increases_risk_of => (

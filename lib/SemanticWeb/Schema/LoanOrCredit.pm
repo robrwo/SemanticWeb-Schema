@@ -47,6 +47,10 @@ A amount should be one of the following types:
 
 =back
 
+=head2 C<_has_amount>
+
+A predicate for the L</amount> attribute.
+
 =cut
 
 has amount => (
@@ -82,6 +86,10 @@ A currency should be one of the following types:
 
 =back
 
+=head2 C<_has_currency>
+
+A predicate for the L</currency> attribute.
+
 =cut
 
 has currency => (
@@ -106,6 +114,10 @@ A grace_period should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Duration']>
 
 =back
+
+=head2 C<_has_grace_period>
+
+A predicate for the L</grace_period> attribute.
 
 =cut
 
@@ -133,6 +145,10 @@ A loan_repayment_form should be one of the following types:
 
 =back
 
+=head2 C<_has_loan_repayment_form>
+
+A predicate for the L</loan_repayment_form> attribute.
+
 =cut
 
 has loan_repayment_form => (
@@ -157,6 +173,10 @@ A loan_term should be one of the following types:
 
 =back
 
+=head2 C<_has_loan_term>
+
+A predicate for the L</loan_term> attribute.
+
 =cut
 
 has loan_term => (
@@ -180,6 +200,10 @@ A loan_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_loan_type>
+
+A predicate for the L</loan_type> attribute.
 
 =cut
 
@@ -207,6 +231,10 @@ A recourse_loan should be one of the following types:
 
 =back
 
+=head2 C<_has_recourse_loan>
+
+A predicate for the L</recourse_loan> attribute.
+
 =cut
 
 has recourse_loan => (
@@ -231,6 +259,10 @@ A renegotiable_loan should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_renegotiable_loan>
+
+A predicate for the L</renegotiable_loan> attribute.
 
 =cut
 
@@ -258,6 +290,10 @@ A required_collateral should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_required_collateral>
+
+A predicate for the L</required_collateral> attribute.
 
 =cut
 

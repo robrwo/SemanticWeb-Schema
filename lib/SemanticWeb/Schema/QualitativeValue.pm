@@ -56,6 +56,10 @@ A additional_property should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_property>
+
+A predicate for the L</additional_property> attribute.
+
 =cut
 
 has additional_property => (
@@ -80,6 +84,10 @@ A equal should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
+
+=head2 C<_has_equal>
+
+A predicate for the L</equal> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A greater should be one of the following types:
 
 =back
 
+=head2 C<_has_greater>
+
+A predicate for the L</greater> attribute.
+
 =cut
 
 has greater => (
@@ -130,6 +142,10 @@ A greater_or_equal should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
+
+=head2 C<_has_greater_or_equal>
+
+A predicate for the L</greater_or_equal> attribute.
 
 =cut
 
@@ -156,6 +172,10 @@ A lesser should be one of the following types:
 
 =back
 
+=head2 C<_has_lesser>
+
+A predicate for the L</lesser> attribute.
+
 =cut
 
 has lesser => (
@@ -181,6 +201,10 @@ A lesser_or_equal should be one of the following types:
 
 =back
 
+=head2 C<_has_lesser_or_equal>
+
+A predicate for the L</lesser_or_equal> attribute.
+
 =cut
 
 has lesser_or_equal => (
@@ -205,6 +229,10 @@ A non_equal should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QualitativeValue']>
 
 =back
+
+=head2 C<_has_non_equal>
+
+A predicate for the L</non_equal> attribute.
 
 =cut
 
@@ -238,6 +266,10 @@ A value_reference should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
 
 =back
+
+=head2 C<_has_value_reference>
+
+A predicate for the L</value_reference> attribute.
 
 =cut
 

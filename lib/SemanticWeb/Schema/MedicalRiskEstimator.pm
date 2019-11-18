@@ -45,6 +45,10 @@ A estimates_risk_of should be one of the following types:
 
 =back
 
+=head2 C<_has_estimates_risk_of>
+
+A predicate for the L</estimates_risk_of> attribute.
+
 =cut
 
 has estimates_risk_of => (
@@ -69,6 +73,10 @@ A included_risk_factor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalRiskFactor']>
 
 =back
+
+=head2 C<_has_included_risk_factor>
+
+A predicate for the L</included_risk_factor> attribute.
 
 =cut
 

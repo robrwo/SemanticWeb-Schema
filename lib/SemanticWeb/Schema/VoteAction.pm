@@ -45,6 +45,10 @@ A candidate should be one of the following types:
 
 =back
 
+=head2 C<_has_candidate>
+
+A predicate for the L</candidate> attribute.
+
 =cut
 
 has candidate => (

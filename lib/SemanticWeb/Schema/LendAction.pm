@@ -53,6 +53,10 @@ A borrower should be one of the following types:
 
 =back
 
+=head2 C<_has_borrower>
+
+A predicate for the L</borrower> attribute.
+
 =cut
 
 has borrower => (

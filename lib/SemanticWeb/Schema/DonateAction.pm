@@ -52,6 +52,10 @@ A recipient should be one of the following types:
 
 =back
 
+=head2 C<_has_recipient>
+
+A predicate for the L</recipient> attribute.
+
 =cut
 
 has recipient => (

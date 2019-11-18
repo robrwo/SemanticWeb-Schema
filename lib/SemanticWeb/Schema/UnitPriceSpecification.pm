@@ -46,6 +46,10 @@ A billing_increment should be one of the following types:
 
 =back
 
+=head2 C<_has_billing_increment>
+
+A predicate for the L</billing_increment> attribute.
+
 =cut
 
 has billing_increment => (
@@ -71,6 +75,10 @@ A price_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_price_type>
+
+A predicate for the L</price_type> attribute.
 
 =cut
 
@@ -98,6 +106,10 @@ A reference_quantity should be one of the following types:
 
 =back
 
+=head2 C<_has_reference_quantity>
+
+A predicate for the L</reference_quantity> attribute.
+
 =cut
 
 has reference_quantity => (
@@ -123,6 +135,10 @@ A unit_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_code>
+
+A predicate for the L</unit_code> attribute.
 
 =cut
 
@@ -152,6 +168,10 @@ A unit_text should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_unit_text>
+
+A predicate for the L</unit_text> attribute.
 
 =cut
 

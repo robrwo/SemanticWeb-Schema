@@ -52,6 +52,10 @@ A accepts_reservations should be one of the following types:
 
 =back
 
+=head2 C<_has_accepts_reservations>
+
+A predicate for the L</accepts_reservations> attribute.
+
 =cut
 
 has accepts_reservations => (
@@ -78,6 +82,10 @@ A has_menu should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_has_menu>
+
+A predicate for the L</has_menu> attribute.
 
 =cut
 
@@ -106,6 +114,10 @@ A menu should be one of the following types:
 
 =back
 
+=head2 C<_has_menu>
+
+A predicate for the L</menu> attribute.
+
 =cut
 
 has menu => (
@@ -129,6 +141,10 @@ A serves_cuisine should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_serves_cuisine>
+
+A predicate for the L</serves_cuisine> attribute.
 
 =cut
 
@@ -156,6 +172,10 @@ A star_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Rating']>
 
 =back
+
+=head2 C<_has_star_rating>
+
+A predicate for the L</star_rating> attribute.
 
 =cut
 

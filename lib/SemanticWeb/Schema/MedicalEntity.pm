@@ -46,6 +46,10 @@ A code should be one of the following types:
 
 =back
 
+=head2 C<_has_code>
+
+A predicate for the L</code> attribute.
+
 =cut
 
 has code => (
@@ -69,6 +73,10 @@ A guideline should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalGuideline']>
 
 =back
+
+=head2 C<_has_guideline>
+
+A predicate for the L</guideline> attribute.
 
 =cut
 
@@ -99,6 +107,10 @@ A legal_status should be one of the following types:
 
 =back
 
+=head2 C<_has_legal_status>
+
+A predicate for the L</legal_status> attribute.
+
 =cut
 
 has legal_status => (
@@ -123,6 +135,10 @@ A medicine_system should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicineSystem']>
 
 =back
+
+=head2 C<_has_medicine_system>
+
+A predicate for the L</medicine_system> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A recognizing_authority should be one of the following types:
 
 =back
 
+=head2 C<_has_recognizing_authority>
+
+A predicate for the L</recognizing_authority> attribute.
+
 =cut
 
 has recognizing_authority => (
@@ -173,6 +193,10 @@ A relevant_specialty should be one of the following types:
 
 =back
 
+=head2 C<_has_relevant_specialty>
+
+A predicate for the L</relevant_specialty> attribute.
+
 =cut
 
 has relevant_specialty => (
@@ -196,6 +220,10 @@ A study should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalStudy']>
 
 =back
+
+=head2 C<_has_study>
+
+A predicate for the L</study> attribute.
 
 =cut
 

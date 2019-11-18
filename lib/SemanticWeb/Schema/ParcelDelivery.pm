@@ -46,6 +46,10 @@ A carrier should be one of the following types:
 
 =back
 
+=head2 C<_has_carrier>
+
+A predicate for the L</carrier> attribute.
+
 =cut
 
 has carrier => (
@@ -69,6 +73,10 @@ A delivery_address should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
 
 =back
+
+=head2 C<_has_delivery_address>
+
+A predicate for the L</delivery_address> attribute.
 
 =cut
 
@@ -95,6 +103,10 @@ A delivery_status should be one of the following types:
 
 =back
 
+=head2 C<_has_delivery_status>
+
+A predicate for the L</delivery_status> attribute.
+
 =cut
 
 has delivery_status => (
@@ -118,6 +130,10 @@ A expected_arrival_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_expected_arrival_from>
+
+A predicate for the L</expected_arrival_from> attribute.
 
 =cut
 
@@ -143,6 +159,10 @@ A expected_arrival_until should be one of the following types:
 
 =back
 
+=head2 C<_has_expected_arrival_until>
+
+A predicate for the L</expected_arrival_until> attribute.
+
 =cut
 
 has expected_arrival_until => (
@@ -166,6 +186,10 @@ A has_delivery_method should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DeliveryMethod']>
 
 =back
+
+=head2 C<_has_has_delivery_method>
+
+A predicate for the L</has_delivery_method> attribute.
 
 =cut
 
@@ -191,6 +215,10 @@ A item_shipped should be one of the following types:
 
 =back
 
+=head2 C<_has_item_shipped>
+
+A predicate for the L</item_shipped> attribute.
+
 =cut
 
 has item_shipped => (
@@ -215,6 +243,10 @@ A origin_address should be one of the following types:
 
 =back
 
+=head2 C<_has_origin_address>
+
+A predicate for the L</origin_address> attribute.
+
 =cut
 
 has origin_address => (
@@ -238,6 +270,10 @@ A part_of_order should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Order']>
 
 =back
+
+=head2 C<_has_part_of_order>
+
+A predicate for the L</part_of_order> attribute.
 
 =cut
 
@@ -267,6 +303,10 @@ A provider should be one of the following types:
 
 =back
 
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
+
 =cut
 
 has provider => (
@@ -291,6 +331,10 @@ A tracking_number should be one of the following types:
 
 =back
 
+=head2 C<_has_tracking_number>
+
+A predicate for the L</tracking_number> attribute.
+
 =cut
 
 has tracking_number => (
@@ -314,6 +358,10 @@ A tracking_url should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_tracking_url>
+
+A predicate for the L</tracking_url> attribute.
 
 =cut
 

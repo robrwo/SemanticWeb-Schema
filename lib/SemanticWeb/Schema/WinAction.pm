@@ -44,6 +44,10 @@ A loser should be one of the following types:
 
 =back
 
+=head2 C<_has_loser>
+
+A predicate for the L</loser> attribute.
+
 =cut
 
 has loser => (

@@ -54,6 +54,10 @@ A eligible_quantity should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_quantity>
+
+A predicate for the L</eligible_quantity> attribute.
+
 =cut
 
 has eligible_quantity => (
@@ -81,6 +85,10 @@ A eligible_transaction_volume should be one of the following types:
 
 =back
 
+=head2 C<_has_eligible_transaction_volume>
+
+A predicate for the L</eligible_transaction_volume> attribute.
+
 =cut
 
 has eligible_transaction_volume => (
@@ -105,6 +113,10 @@ A max_price should be one of the following types:
 
 =back
 
+=head2 C<_has_max_price>
+
+A predicate for the L</max_price> attribute.
+
 =cut
 
 has max_price => (
@@ -128,6 +140,10 @@ A min_price should be one of the following types:
 =item C<Num>
 
 =back
+
+=head2 C<_has_min_price>
+
+A predicate for the L</min_price> attribute.
 
 =cut
 
@@ -180,6 +196,10 @@ A price should be one of the following types:
 
 =back
 
+=head2 C<_has_price>
+
+A predicate for the L</price> attribute.
+
 =cut
 
 has price => (
@@ -218,6 +238,10 @@ A price_currency should be one of the following types:
 
 =back
 
+=head2 C<_has_price_currency>
+
+A predicate for the L</price_currency> attribute.
+
 =cut
 
 has price_currency => (
@@ -241,6 +265,10 @@ A valid_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_valid_from>
+
+A predicate for the L</valid_from> attribute.
 
 =cut
 
@@ -267,6 +295,10 @@ A valid_through should be one of the following types:
 
 =back
 
+=head2 C<_has_valid_through>
+
+A predicate for the L</valid_through> attribute.
+
 =cut
 
 has valid_through => (
@@ -291,6 +323,10 @@ A value_added_tax_included should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_value_added_tax_included>
+
+A predicate for the L</value_added_tax_included> attribute.
 
 =cut
 

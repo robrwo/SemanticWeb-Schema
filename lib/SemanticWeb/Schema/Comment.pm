@@ -53,6 +53,10 @@ A downvote_count should be one of the following types:
 
 =back
 
+=head2 C<_has_downvote_count>
+
+A predicate for the L</downvote_count> attribute.
+
 =cut
 
 has downvote_count => (
@@ -76,6 +80,10 @@ A parent_item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Question']>
 
 =back
+
+=head2 C<_has_parent_item>
+
+A predicate for the L</parent_item> attribute.
 
 =cut
 
@@ -101,6 +109,10 @@ A upvote_count should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_upvote_count>
+
+A predicate for the L</upvote_count> attribute.
 
 =cut
 

@@ -44,6 +44,10 @@ A calories should be one of the following types:
 
 =back
 
+=head2 C<_has_calories>
+
+A predicate for the L</calories> attribute.
+
 =cut
 
 has calories => (
@@ -67,6 +71,10 @@ A carbohydrate_content should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Mass']>
 
 =back
+
+=head2 C<_has_carbohydrate_content>
+
+A predicate for the L</carbohydrate_content> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A cholesterol_content should be one of the following types:
 
 =back
 
+=head2 C<_has_cholesterol_content>
+
+A predicate for the L</cholesterol_content> attribute.
+
 =cut
 
 has cholesterol_content => (
@@ -115,6 +127,10 @@ A fat_content should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Mass']>
 
 =back
+
+=head2 C<_has_fat_content>
+
+A predicate for the L</fat_content> attribute.
 
 =cut
 
@@ -140,6 +156,10 @@ A fiber_content should be one of the following types:
 
 =back
 
+=head2 C<_has_fiber_content>
+
+A predicate for the L</fiber_content> attribute.
+
 =cut
 
 has fiber_content => (
@@ -163,6 +183,10 @@ A protein_content should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Mass']>
 
 =back
+
+=head2 C<_has_protein_content>
+
+A predicate for the L</protein_content> attribute.
 
 =cut
 
@@ -188,6 +212,10 @@ A saturated_fat_content should be one of the following types:
 
 =back
 
+=head2 C<_has_saturated_fat_content>
+
+A predicate for the L</saturated_fat_content> attribute.
+
 =cut
 
 has saturated_fat_content => (
@@ -211,6 +239,10 @@ A serving_size should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_serving_size>
+
+A predicate for the L</serving_size> attribute.
 
 =cut
 
@@ -236,6 +268,10 @@ A sodium_content should be one of the following types:
 
 =back
 
+=head2 C<_has_sodium_content>
+
+A predicate for the L</sodium_content> attribute.
+
 =cut
 
 has sodium_content => (
@@ -259,6 +295,10 @@ A sugar_content should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Mass']>
 
 =back
+
+=head2 C<_has_sugar_content>
+
+A predicate for the L</sugar_content> attribute.
 
 =cut
 
@@ -284,6 +324,10 @@ A trans_fat_content should be one of the following types:
 
 =back
 
+=head2 C<_has_trans_fat_content>
+
+A predicate for the L</trans_fat_content> attribute.
+
 =cut
 
 has trans_fat_content => (
@@ -307,6 +351,10 @@ A unsaturated_fat_content should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Mass']>
 
 =back
+
+=head2 C<_has_unsaturated_fat_content>
+
+A predicate for the L</unsaturated_fat_content> attribute.
 
 =cut
 

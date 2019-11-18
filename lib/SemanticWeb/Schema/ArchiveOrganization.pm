@@ -52,6 +52,10 @@ A archive_held should be one of the following types:
 
 =back
 
+=head2 C<_has_archive_held>
+
+A predicate for the L</archive_held> attribute.
+
 =cut
 
 has archive_held => (

@@ -55,6 +55,10 @@ A breadcrumb should be one of the following types:
 
 =back
 
+=head2 C<_has_breadcrumb>
+
+A predicate for the L</breadcrumb> attribute.
+
 =cut
 
 has breadcrumb => (
@@ -80,6 +84,10 @@ A last_reviewed should be one of the following types:
 
 =back
 
+=head2 C<_has_last_reviewed>
+
+A predicate for the L</last_reviewed> attribute.
+
 =cut
 
 has last_reviewed => (
@@ -103,6 +111,10 @@ A main_content_of_page should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::WebPageElement']>
 
 =back
+
+=head2 C<_has_main_content_of_page>
+
+A predicate for the L</main_content_of_page> attribute.
 
 =cut
 
@@ -128,6 +140,10 @@ A primary_image_of_page should be one of the following types:
 
 =back
 
+=head2 C<_has_primary_image_of_page>
+
+A predicate for the L</primary_image_of_page> attribute.
+
 =cut
 
 has primary_image_of_page => (
@@ -151,6 +167,10 @@ A related_link should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_related_link>
+
+A predicate for the L</related_link> attribute.
 
 =cut
 
@@ -179,6 +199,10 @@ A reviewed_by should be one of the following types:
 
 =back
 
+=head2 C<_has_reviewed_by>
+
+A predicate for the L</reviewed_by> attribute.
+
 =cut
 
 has reviewed_by => (
@@ -204,6 +228,10 @@ A significant_link should be one of the following types:
 
 =back
 
+=head2 C<_has_significant_link>
+
+A predicate for the L</significant_link> attribute.
+
 =cut
 
 has significant_link => (
@@ -228,6 +256,10 @@ A significant_links should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_significant_links>
+
+A predicate for the L</significant_links> attribute.
 
 =cut
 
@@ -280,6 +312,10 @@ A speakable should be one of the following types:
 
 =back
 
+=head2 C<_has_speakable>
+
+A predicate for the L</speakable> attribute.
+
 =cut
 
 has speakable => (
@@ -303,6 +339,10 @@ A specialty should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Specialty']>
 
 =back
+
+=head2 C<_has_specialty>
+
+A predicate for the L</specialty> attribute.
 
 =cut
 

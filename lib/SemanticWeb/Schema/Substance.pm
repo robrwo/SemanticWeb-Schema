@@ -46,6 +46,10 @@ A active_ingredient should be one of the following types:
 
 =back
 
+=head2 C<_has_active_ingredient>
+
+A predicate for the L</active_ingredient> attribute.
+
 =cut
 
 has active_ingredient => (
@@ -70,6 +74,10 @@ A maximum_intake should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MaximumDoseSchedule']>
 
 =back
+
+=head2 C<_has_maximum_intake>
+
+A predicate for the L</maximum_intake> attribute.
 
 =cut
 

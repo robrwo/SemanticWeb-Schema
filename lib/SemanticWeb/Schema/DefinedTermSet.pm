@@ -45,6 +45,10 @@ A has_defined_term should be one of the following types:
 
 =back
 
+=head2 C<_has_has_defined_term>
+
+A predicate for the L</has_defined_term> attribute.
+
 =cut
 
 has has_defined_term => (

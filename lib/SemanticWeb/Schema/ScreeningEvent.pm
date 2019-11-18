@@ -51,6 +51,10 @@ A subtitle_language should be one of the following types:
 
 =back
 
+=head2 C<_has_subtitle_language>
+
+A predicate for the L</subtitle_language> attribute.
+
 =cut
 
 has subtitle_language => (
@@ -76,6 +80,10 @@ A video_format should be one of the following types:
 
 =back
 
+=head2 C<_has_video_format>
+
+A predicate for the L</video_format> attribute.
+
 =cut
 
 has video_format => (
@@ -99,6 +107,10 @@ A work_presented should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Movie']>
 
 =back
+
+=head2 C<_has_work_presented>
+
+A predicate for the L</work_presented> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A domiciled_mortgage should be one of the following types:
 
 =back
 
+=head2 C<_has_domiciled_mortgage>
+
+A predicate for the L</domiciled_mortgage> attribute.
+
 =cut
 
 has domiciled_mortgage => (
@@ -70,6 +74,10 @@ A loan_mortgage_mandate_amount should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
 
 =back
+
+=head2 C<_has_loan_mortgage_mandate_amount>
+
+A predicate for the L</loan_mortgage_mandate_amount> attribute.
 
 =cut
 

@@ -47,6 +47,10 @@ A diagnosis should be one of the following types:
 
 =back
 
+=head2 C<_has_diagnosis>
+
+A predicate for the L</diagnosis> attribute.
+
 =cut
 
 has diagnosis => (
@@ -71,6 +75,10 @@ A distinguishing_sign should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalSignOrSymptom']>
 
 =back
+
+=head2 C<_has_distinguishing_sign>
+
+A predicate for the L</distinguishing_sign> attribute.
 
 =cut
 

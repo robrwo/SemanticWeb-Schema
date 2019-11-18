@@ -62,6 +62,10 @@ A item_list_element should be one of the following types:
 
 =back
 
+=head2 C<_has_item_list_element>
+
+A predicate for the L</item_list_element> attribute.
+
 =cut
 
 has item_list_element => (
@@ -88,6 +92,10 @@ A item_list_order should be one of the following types:
 
 =back
 
+=head2 C<_has_item_list_order>
+
+A predicate for the L</item_list_order> attribute.
+
 =cut
 
 has item_list_order => (
@@ -113,6 +121,10 @@ A number_of_items should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_number_of_items>
+
+A predicate for the L</number_of_items> attribute.
 
 =cut
 

@@ -45,6 +45,10 @@ A athlete should be one of the following types:
 
 =back
 
+=head2 C<_has_athlete>
+
+A predicate for the L</athlete> attribute.
+
 =cut
 
 has athlete => (
@@ -68,6 +72,10 @@ A coach should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_coach>
+
+A predicate for the L</coach> attribute.
 
 =cut
 
@@ -108,6 +116,10 @@ A gender should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_gender>
+
+A predicate for the L</gender> attribute.
 
 =cut
 

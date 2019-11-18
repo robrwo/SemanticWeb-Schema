@@ -46,6 +46,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -71,6 +75,10 @@ A director should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
 
 =cut
 
@@ -101,6 +109,10 @@ A end_date should be one of the following types:
 
 =back
 
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
 =cut
 
 has end_date => (
@@ -124,6 +136,10 @@ A episode should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Episode']>
 
 =back
+
+=head2 C<_has_episode>
+
+A predicate for the L</episode> attribute.
 
 =cut
 
@@ -149,6 +165,10 @@ A episodes should be one of the following types:
 
 =back
 
+=head2 C<_has_episodes>
+
+A predicate for the L</episodes> attribute.
+
 =cut
 
 has episodes => (
@@ -173,6 +193,10 @@ A number_of_episodes should be one of the following types:
 
 =back
 
+=head2 C<_has_number_of_episodes>
+
+A predicate for the L</number_of_episodes> attribute.
+
 =cut
 
 has number_of_episodes => (
@@ -196,6 +220,10 @@ A part_of_series should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWorkSeries']>
 
 =back
+
+=head2 C<_has_part_of_series>
+
+A predicate for the L</part_of_series> attribute.
 
 =cut
 
@@ -222,6 +250,10 @@ A production_company should be one of the following types:
 
 =back
 
+=head2 C<_has_production_company>
+
+A predicate for the L</production_company> attribute.
+
 =cut
 
 has production_company => (
@@ -247,6 +279,10 @@ A season_number should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_season_number>
+
+A predicate for the L</season_number> attribute.
 
 =cut
 
@@ -277,6 +313,10 @@ A start_date should be one of the following types:
 
 =back
 
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
+
 =cut
 
 has start_date => (
@@ -300,6 +340,10 @@ A trailer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::VideoObject']>
 
 =back
+
+=head2 C<_has_trailer>
+
+A predicate for the L</trailer> attribute.
 
 =cut
 

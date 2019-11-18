@@ -44,6 +44,10 @@ A additional_name should be one of the following types:
 
 =back
 
+=head2 C<_has_additional_name>
+
+A predicate for the L</additional_name> attribute.
+
 =cut
 
 has additional_name => (
@@ -70,6 +74,10 @@ A address should be one of the following types:
 
 =back
 
+=head2 C<_has_address>
+
+A predicate for the L</address> attribute.
+
 =cut
 
 has address => (
@@ -94,6 +102,10 @@ A affiliation should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_affiliation>
+
+A predicate for the L</affiliation> attribute.
 
 =cut
 
@@ -121,6 +133,10 @@ A alumni_of should be one of the following types:
 
 =back
 
+=head2 C<_has_alumni_of>
+
+A predicate for the L</alumni_of> attribute.
+
 =cut
 
 has alumni_of => (
@@ -144,6 +160,10 @@ A award should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_award>
+
+A predicate for the L</award> attribute.
 
 =cut
 
@@ -169,6 +189,10 @@ A awards should be one of the following types:
 
 =back
 
+=head2 C<_has_awards>
+
+A predicate for the L</awards> attribute.
+
 =cut
 
 has awards => (
@@ -193,6 +217,10 @@ A birth_date should be one of the following types:
 
 =back
 
+=head2 C<_has_birth_date>
+
+A predicate for the L</birth_date> attribute.
+
 =cut
 
 has birth_date => (
@@ -216,6 +244,10 @@ A birth_place should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_birth_place>
+
+A predicate for the L</birth_place> attribute.
 
 =cut
 
@@ -243,6 +275,10 @@ A brand should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_brand>
+
+A predicate for the L</brand> attribute.
 
 =cut
 
@@ -274,6 +310,10 @@ A call_sign should be one of the following types:
 
 =back
 
+=head2 C<_has_call_sign>
+
+A predicate for the L</call_sign> attribute.
+
 =cut
 
 has call_sign => (
@@ -297,6 +337,10 @@ A children should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_children>
+
+A predicate for the L</children> attribute.
 
 =cut
 
@@ -324,6 +368,10 @@ A colleague should be one of the following types:
 
 =back
 
+=head2 C<_has_colleague>
+
+A predicate for the L</colleague> attribute.
+
 =cut
 
 has colleague => (
@@ -347,6 +395,10 @@ A colleagues should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_colleagues>
+
+A predicate for the L</colleagues> attribute.
 
 =cut
 
@@ -372,6 +424,10 @@ A contact_point should be one of the following types:
 
 =back
 
+=head2 C<_has_contact_point>
+
+A predicate for the L</contact_point> attribute.
+
 =cut
 
 has contact_point => (
@@ -395,6 +451,10 @@ A contact_points should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =back
+
+=head2 C<_has_contact_points>
+
+A predicate for the L</contact_points> attribute.
 
 =cut
 
@@ -420,6 +480,10 @@ A death_date should be one of the following types:
 
 =back
 
+=head2 C<_has_death_date>
+
+A predicate for the L</death_date> attribute.
+
 =cut
 
 has death_date => (
@@ -443,6 +507,10 @@ A death_place should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_death_place>
+
+A predicate for the L</death_place> attribute.
 
 =cut
 
@@ -469,6 +537,10 @@ A duns should be one of the following types:
 
 =back
 
+=head2 C<_has_duns>
+
+A predicate for the L</duns> attribute.
+
 =cut
 
 has duns => (
@@ -492,6 +564,10 @@ A email should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_email>
+
+A predicate for the L</email> attribute.
 
 =cut
 
@@ -518,6 +594,10 @@ A family_name should be one of the following types:
 
 =back
 
+=head2 C<_has_family_name>
+
+A predicate for the L</family_name> attribute.
+
 =cut
 
 has family_name => (
@@ -542,6 +622,10 @@ A fax_number should be one of the following types:
 
 =back
 
+=head2 C<_has_fax_number>
+
+A predicate for the L</fax_number> attribute.
+
 =cut
 
 has fax_number => (
@@ -565,6 +649,10 @@ A follows should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_follows>
+
+A predicate for the L</follows> attribute.
 
 =cut
 
@@ -592,6 +680,10 @@ A funder should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_funder>
+
+A predicate for the L</funder> attribute.
 
 =cut
 
@@ -633,6 +725,10 @@ A gender should be one of the following types:
 
 =back
 
+=head2 C<_has_gender>
+
+A predicate for the L</gender> attribute.
+
 =cut
 
 has gender => (
@@ -657,6 +753,10 @@ A given_name should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_given_name>
+
+A predicate for the L</given_name> attribute.
 
 =cut
 
@@ -689,6 +789,10 @@ A global_location_number should be one of the following types:
 
 =back
 
+=head2 C<_has_global_location_number>
+
+A predicate for the L</global_location_number> attribute.
+
 =cut
 
 has global_location_number => (
@@ -712,6 +816,10 @@ A has_credential should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::EducationalOccupationalCredential']>
 
 =back
+
+=head2 C<_has_has_credential>
+
+A predicate for the L</has_credential> attribute.
 
 =cut
 
@@ -738,6 +846,10 @@ A has_occupation should be one of the following types:
 
 =back
 
+=head2 C<_has_has_occupation>
+
+A predicate for the L</has_occupation> attribute.
+
 =cut
 
 has has_occupation => (
@@ -763,6 +875,10 @@ A has_offer_catalog should be one of the following types:
 
 =back
 
+=head2 C<_has_has_offer_catalog>
+
+A predicate for the L</has_offer_catalog> attribute.
+
 =cut
 
 has has_offer_catalog => (
@@ -786,6 +902,10 @@ A has_pos should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Place']>
 
 =back
+
+=head2 C<_has_has_pos>
+
+A predicate for the L</has_pos> attribute.
 
 =cut
 
@@ -813,6 +933,10 @@ A height should be one of the following types:
 
 =back
 
+=head2 C<_has_height>
+
+A predicate for the L</height> attribute.
+
 =cut
 
 has height => (
@@ -839,6 +963,10 @@ A home_location should be one of the following types:
 
 =back
 
+=head2 C<_has_home_location>
+
+A predicate for the L</home_location> attribute.
+
 =cut
 
 has home_location => (
@@ -863,6 +991,10 @@ A honorific_prefix should be one of the following types:
 
 =back
 
+=head2 C<_has_honorific_prefix>
+
+A predicate for the L</honorific_prefix> attribute.
+
 =cut
 
 has honorific_prefix => (
@@ -886,6 +1018,10 @@ A honorific_suffix should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_honorific_suffix>
+
+A predicate for the L</honorific_suffix> attribute.
 
 =cut
 
@@ -913,6 +1049,10 @@ A isic_v4 should be one of the following types:
 
 =back
 
+=head2 C<_has_isic_v4>
+
+A predicate for the L</isic_v4> attribute.
+
 =cut
 
 has isic_v4 => (
@@ -939,6 +1079,10 @@ A job_title should be one of the following types:
 
 =back
 
+=head2 C<_has_job_title>
+
+A predicate for the L</job_title> attribute.
+
 =cut
 
 has job_title => (
@@ -962,6 +1106,10 @@ A knows should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_knows>
+
+A predicate for the L</knows> attribute.
 
 =cut
 
@@ -999,6 +1147,10 @@ A knows_about should be one of the following types:
 
 =back
 
+=head2 C<_has_knows_about>
+
+A predicate for the L</knows_about> attribute.
+
 =cut
 
 has knows_about => (
@@ -1034,6 +1186,10 @@ A knows_language should be one of the following types:
 
 =back
 
+=head2 C<_has_knows_language>
+
+A predicate for the L</knows_language> attribute.
+
 =cut
 
 has knows_language => (
@@ -1057,6 +1213,10 @@ A makes_offer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 
 =back
+
+=head2 C<_has_makes_offer>
+
+A predicate for the L</makes_offer> attribute.
 
 =cut
 
@@ -1085,6 +1245,10 @@ A member_of should be one of the following types:
 
 =back
 
+=head2 C<_has_member_of>
+
+A predicate for the L</member_of> attribute.
+
 =cut
 
 has member_of => (
@@ -1110,6 +1274,10 @@ A naics should be one of the following types:
 
 =back
 
+=head2 C<_has_naics>
+
+A predicate for the L</naics> attribute.
+
 =cut
 
 has naics => (
@@ -1133,6 +1301,10 @@ A nationality should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Country']>
 
 =back
+
+=head2 C<_has_nationality>
+
+A predicate for the L</nationality> attribute.
 
 =cut
 
@@ -1161,6 +1333,10 @@ A net_worth should be one of the following types:
 
 =back
 
+=head2 C<_has_net_worth>
+
+A predicate for the L</net_worth> attribute.
+
 =cut
 
 has net_worth => (
@@ -1187,6 +1363,10 @@ A owns should be one of the following types:
 
 =back
 
+=head2 C<_has_owns>
+
+A predicate for the L</owns> attribute.
+
 =cut
 
 has owns => (
@@ -1210,6 +1390,10 @@ A parent should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_parent>
+
+A predicate for the L</parent> attribute.
 
 =cut
 
@@ -1235,6 +1419,10 @@ A parents should be one of the following types:
 
 =back
 
+=head2 C<_has_parents>
+
+A predicate for the L</parents> attribute.
+
 =cut
 
 has parents => (
@@ -1258,6 +1446,10 @@ A performer_in should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_performer_in>
+
+A predicate for the L</performer_in> attribute.
 
 =cut
 
@@ -1304,6 +1496,10 @@ A publishing_principles should be one of the following types:
 
 =back
 
+=head2 C<_has_publishing_principles>
+
+A predicate for the L</publishing_principles> attribute.
+
 =cut
 
 has publishing_principles => (
@@ -1327,6 +1523,10 @@ A related_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_related_to>
+
+A predicate for the L</related_to> attribute.
 
 =cut
 
@@ -1353,6 +1553,10 @@ A seeks should be one of the following types:
 
 =back
 
+=head2 C<_has_seeks>
+
+A predicate for the L</seeks> attribute.
+
 =cut
 
 has seeks => (
@@ -1377,6 +1581,10 @@ A sibling should be one of the following types:
 
 =back
 
+=head2 C<_has_sibling>
+
+A predicate for the L</sibling> attribute.
+
 =cut
 
 has sibling => (
@@ -1400,6 +1608,10 @@ A siblings should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_siblings>
+
+A predicate for the L</siblings> attribute.
 
 =cut
 
@@ -1429,6 +1641,10 @@ A sponsor should be one of the following types:
 
 =back
 
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
+
 =cut
 
 has sponsor => (
@@ -1452,6 +1668,10 @@ A spouse should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_spouse>
+
+A predicate for the L</spouse> attribute.
 
 =cut
 
@@ -1478,6 +1698,10 @@ A tax_id should be one of the following types:
 
 =back
 
+=head2 C<_has_tax_id>
+
+A predicate for the L</tax_id> attribute.
+
 =cut
 
 has tax_id => (
@@ -1501,6 +1725,10 @@ A telephone should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_telephone>
+
+A predicate for the L</telephone> attribute.
 
 =cut
 
@@ -1526,6 +1754,10 @@ A vat_id should be one of the following types:
 
 =back
 
+=head2 C<_has_vat_id>
+
+A predicate for the L</vat_id> attribute.
+
 =cut
 
 has vat_id => (
@@ -1549,6 +1781,10 @@ A weight should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =back
+
+=head2 C<_has_weight>
+
+A predicate for the L</weight> attribute.
 
 =cut
 
@@ -1576,6 +1812,10 @@ A work_location should be one of the following types:
 
 =back
 
+=head2 C<_has_work_location>
+
+A predicate for the L</work_location> attribute.
+
 =cut
 
 has work_location => (
@@ -1599,6 +1839,10 @@ A works_for should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =back
+
+=head2 C<_has_works_for>
+
+A predicate for the L</works_for> attribute.
 
 =cut
 

@@ -44,6 +44,10 @@ A code_value should be one of the following types:
 
 =back
 
+=head2 C<_has_code_value>
+
+A predicate for the L</code_value> attribute.
+
 =cut
 
 has code_value => (
@@ -75,6 +79,10 @@ A in_code_set should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_in_code_set>
+
+A predicate for the L</in_code_set> attribute.
 
 =cut
 

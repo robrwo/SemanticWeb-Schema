@@ -45,6 +45,10 @@ A item should be one of the following types:
 
 =back
 
+=head2 C<_has_item>
+
+A predicate for the L</item> attribute.
+
 =cut
 
 has item => (
@@ -68,6 +72,10 @@ A next_item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ListItem']>
 
 =back
+
+=head2 C<_has_next_item>
+
+A predicate for the L</next_item> attribute.
 
 =cut
 
@@ -95,6 +103,10 @@ A position should be one of the following types:
 
 =back
 
+=head2 C<_has_position>
+
+A predicate for the L</position> attribute.
+
 =cut
 
 has position => (
@@ -118,6 +130,10 @@ A previous_item should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ListItem']>
 
 =back
+
+=head2 C<_has_previous_item>
+
+A predicate for the L</previous_item> attribute.
 
 =cut
 

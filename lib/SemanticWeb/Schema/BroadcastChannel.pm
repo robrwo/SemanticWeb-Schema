@@ -46,6 +46,10 @@ A broadcast_channel_id should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_channel_id>
+
+A predicate for the L</broadcast_channel_id> attribute.
+
 =cut
 
 has broadcast_channel_id => (
@@ -74,6 +78,10 @@ A broadcast_frequency should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_frequency>
+
+A predicate for the L</broadcast_frequency> attribute.
+
 =cut
 
 has broadcast_frequency => (
@@ -99,6 +107,10 @@ A broadcast_service_tier should be one of the following types:
 
 =back
 
+=head2 C<_has_broadcast_service_tier>
+
+A predicate for the L</broadcast_service_tier> attribute.
+
 =cut
 
 has broadcast_service_tier => (
@@ -122,6 +134,10 @@ A genre should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_genre>
+
+A predicate for the L</genre> attribute.
 
 =cut
 
@@ -147,6 +163,10 @@ A in_broadcast_lineup should be one of the following types:
 
 =back
 
+=head2 C<_has_in_broadcast_lineup>
+
+A predicate for the L</in_broadcast_lineup> attribute.
+
 =cut
 
 has in_broadcast_lineup => (
@@ -170,6 +190,10 @@ A provides_broadcast_service should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::BroadcastService']>
 
 =back
+
+=head2 C<_has_provides_broadcast_service>
+
+A predicate for the L</provides_broadcast_service> attribute.
 
 =cut
 

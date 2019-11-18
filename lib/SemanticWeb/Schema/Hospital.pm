@@ -48,6 +48,10 @@ A available_service should be one of the following types:
 
 =back
 
+=head2 C<_has_available_service>
+
+A predicate for the L</available_service> attribute.
+
 =cut
 
 has available_service => (
@@ -71,6 +75,10 @@ A medical_specialty should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalSpecialty']>
 
 =back
+
+=head2 C<_has_medical_specialty>
+
+A predicate for the L</medical_specialty> attribute.
 
 =cut
 

@@ -46,6 +46,10 @@ A body_location should be one of the following types:
 
 =back
 
+=head2 C<_has_body_location>
+
+A predicate for the L</body_location> attribute.
+
 =cut
 
 has body_location => (
@@ -70,6 +74,10 @@ A followup should be one of the following types:
 
 =back
 
+=head2 C<_has_followup>
+
+A predicate for the L</followup> attribute.
+
 =cut
 
 has followup => (
@@ -93,6 +101,10 @@ A how_performed should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_how_performed>
+
+A predicate for the L</how_performed> attribute.
 
 =cut
 
@@ -122,6 +134,10 @@ A indication should be one of the following types:
 
 =back
 
+=head2 C<_has_indication>
+
+A predicate for the L</indication> attribute.
+
 =cut
 
 has indication => (
@@ -147,6 +163,10 @@ A outcome should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_outcome>
+
+A predicate for the L</outcome> attribute.
 
 =cut
 
@@ -175,6 +195,10 @@ A preparation should be one of the following types:
 
 =back
 
+=head2 C<_has_preparation>
+
+A predicate for the L</preparation> attribute.
+
 =cut
 
 has preparation => (
@@ -198,6 +222,10 @@ A procedure_type should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalProcedureType']>
 
 =back
+
+=head2 C<_has_procedure_type>
+
+A predicate for the L</procedure_type> attribute.
 
 =cut
 
@@ -226,6 +254,10 @@ A status should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_status>
+
+A predicate for the L</status> attribute.
 
 =cut
 

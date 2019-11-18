@@ -65,6 +65,10 @@ A lease_length should be one of the following types:
 
 =back
 
+=head2 C<_has_lease_length>
+
+A predicate for the L</lease_length> attribute.
+
 =cut
 
 has lease_length => (

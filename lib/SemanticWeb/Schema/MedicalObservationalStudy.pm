@@ -51,6 +51,10 @@ A study_design should be one of the following types:
 
 =back
 
+=head2 C<_has_study_design>
+
+A predicate for the L</study_design> attribute.
+
 =cut
 
 has study_design => (

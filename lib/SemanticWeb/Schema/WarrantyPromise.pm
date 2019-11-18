@@ -47,6 +47,10 @@ A duration_of_warranty should be one of the following types:
 
 =back
 
+=head2 C<_has_duration_of_warranty>
+
+A predicate for the L</duration_of_warranty> attribute.
+
 =cut
 
 has duration_of_warranty => (
@@ -70,6 +74,10 @@ A warranty_scope should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::WarrantyScope']>
 
 =back
+
+=head2 C<_has_warranty_scope>
+
+A predicate for the L</warranty_scope> attribute.
 
 =cut
 

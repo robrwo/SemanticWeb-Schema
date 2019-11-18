@@ -51,6 +51,10 @@ A about should be one of the following types:
 
 =back
 
+=head2 C<_has_about>
+
+A predicate for the L</about> attribute.
+
 =cut
 
 has about => (
@@ -77,6 +81,10 @@ A actor should be one of the following types:
 
 =back
 
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
 =cut
 
 has actor => (
@@ -101,6 +109,10 @@ A aggregate_rating should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AggregateRating']>
 
 =back
+
+=head2 C<_has_aggregate_rating>
+
+A predicate for the L</aggregate_rating> attribute.
 
 =cut
 
@@ -128,6 +140,10 @@ A attendee should be one of the following types:
 
 =back
 
+=head2 C<_has_attendee>
+
+A predicate for the L</attendee> attribute.
+
 =cut
 
 has attendee => (
@@ -154,6 +170,10 @@ A attendees should be one of the following types:
 
 =back
 
+=head2 C<_has_attendees>
+
+A predicate for the L</attendees> attribute.
+
 =cut
 
 has attendees => (
@@ -177,6 +197,10 @@ A audience should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Audience']>
 
 =back
+
+=head2 C<_has_audience>
+
+A predicate for the L</audience> attribute.
 
 =cut
 
@@ -205,6 +229,10 @@ A composer should be one of the following types:
 
 =back
 
+=head2 C<_has_composer>
+
+A predicate for the L</composer> attribute.
+
 =cut
 
 has composer => (
@@ -230,6 +258,10 @@ A contributor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_contributor>
+
+A predicate for the L</contributor> attribute.
 
 =cut
 
@@ -257,6 +289,10 @@ A director should be one of the following types:
 
 =back
 
+=head2 C<_has_director>
+
+A predicate for the L</director> attribute.
+
 =cut
 
 has director => (
@@ -280,6 +316,10 @@ A door_time should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_door_time>
+
+A predicate for the L</door_time> attribute.
 
 =cut
 
@@ -310,6 +350,10 @@ A duration should be one of the following types:
 
 =back
 
+=head2 C<_has_duration>
+
+A predicate for the L</duration> attribute.
+
 =cut
 
 has duration => (
@@ -339,6 +383,10 @@ A end_date should be one of the following types:
 
 =back
 
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
 =cut
 
 has end_date => (
@@ -363,6 +411,10 @@ A event_status should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::EventStatusType']>
 
 =back
+
+=head2 C<_has_event_status>
+
+A predicate for the L</event_status> attribute.
 
 =cut
 
@@ -390,6 +442,10 @@ A funder should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_funder>
+
+A predicate for the L</funder> attribute.
 
 =cut
 
@@ -425,6 +481,10 @@ A in_language should be one of the following types:
 
 =back
 
+=head2 C<_has_in_language>
+
+A predicate for the L</in_language> attribute.
+
 =cut
 
 has in_language => (
@@ -448,6 +508,10 @@ A is_accessible_for_free should be one of the following types:
 =item C<Bool>
 
 =back
+
+=head2 C<_has_is_accessible_for_free>
+
+A predicate for the L</is_accessible_for_free> attribute.
 
 =cut
 
@@ -478,6 +542,10 @@ A location should be one of the following types:
 
 =back
 
+=head2 C<_has_location>
+
+A predicate for the L</location> attribute.
+
 =cut
 
 has location => (
@@ -501,6 +569,10 @@ A maximum_attendee_capacity should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Integer']>
 
 =back
+
+=head2 C<_has_maximum_attendee_capacity>
+
+A predicate for the L</maximum_attendee_capacity> attribute.
 
 =cut
 
@@ -528,6 +600,10 @@ A offers should be one of the following types:
 
 =back
 
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
+
 =cut
 
 has offers => (
@@ -553,6 +629,10 @@ A organizer should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_organizer>
+
+A predicate for the L</organizer> attribute.
 
 =cut
 
@@ -581,6 +661,10 @@ A performer should be one of the following types:
 
 =back
 
+=head2 C<_has_performer>
+
+A predicate for the L</performer> attribute.
+
 =cut
 
 has performer => (
@@ -607,6 +691,10 @@ A performers should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_performers>
+
+A predicate for the L</performers> attribute.
 
 =cut
 
@@ -636,6 +724,10 @@ A previous_start_date should be one of the following types:
 
 =back
 
+=head2 C<_has_previous_start_date>
+
+A predicate for the L</previous_start_date> attribute.
+
 =cut
 
 has previous_start_date => (
@@ -659,6 +751,10 @@ A recorded_in should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_recorded_in>
+
+A predicate for the L</recorded_in> attribute.
 
 =cut
 
@@ -684,6 +780,10 @@ A remaining_attendee_capacity should be one of the following types:
 
 =back
 
+=head2 C<_has_remaining_attendee_capacity>
+
+A predicate for the L</remaining_attendee_capacity> attribute.
+
 =cut
 
 has remaining_attendee_capacity => (
@@ -707,6 +807,10 @@ A review should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Review']>
 
 =back
+
+=head2 C<_has_review>
+
+A predicate for the L</review> attribute.
 
 =cut
 
@@ -735,6 +839,10 @@ A sponsor should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 
 =back
+
+=head2 C<_has_sponsor>
+
+A predicate for the L</sponsor> attribute.
 
 =cut
 
@@ -765,6 +873,10 @@ A start_date should be one of the following types:
 
 =back
 
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
+
 =cut
 
 has start_date => (
@@ -789,6 +901,10 @@ A sub_event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_sub_event>
+
+A predicate for the L</sub_event> attribute.
 
 =cut
 
@@ -815,6 +931,10 @@ A sub_events should be one of the following types:
 
 =back
 
+=head2 C<_has_sub_events>
+
+A predicate for the L</sub_events> attribute.
+
 =cut
 
 has sub_events => (
@@ -840,6 +960,10 @@ A super_event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_super_event>
+
+A predicate for the L</super_event> attribute.
 
 =cut
 
@@ -869,6 +993,10 @@ A translator should be one of the following types:
 
 =back
 
+=head2 C<_has_translator>
+
+A predicate for the L</translator> attribute.
+
 =cut
 
 has translator => (
@@ -892,6 +1020,10 @@ A typical_age_range should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_typical_age_range>
+
+A predicate for the L</typical_age_range> attribute.
 
 =cut
 
@@ -919,6 +1051,10 @@ A work_featured should be one of the following types:
 
 =back
 
+=head2 C<_has_work_featured>
+
+A predicate for the L</work_featured> attribute.
+
 =cut
 
 has work_featured => (
@@ -943,6 +1079,10 @@ A work_performed should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
+
+=head2 C<_has_work_performed>
+
+A predicate for the L</work_performed> attribute.
 
 =cut
 

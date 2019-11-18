@@ -49,6 +49,10 @@ A collection_size should be one of the following types:
 
 =back
 
+=head2 C<_has_collection_size>
+
+A predicate for the L</collection_size> attribute.
+
 =cut
 
 has collection_size => (

@@ -46,6 +46,10 @@ A sub_reservation should be one of the following types:
 
 =back
 
+=head2 C<_has_sub_reservation>
+
+A predicate for the L</sub_reservation> attribute.
+
 =cut
 
 has sub_reservation => (

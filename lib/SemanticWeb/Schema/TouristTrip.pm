@@ -59,6 +59,10 @@ A tourist_type should be one of the following types:
 
 =back
 
+=head2 C<_has_tourist_type>
+
+A predicate for the L</tourist_type> attribute.
+
 =cut
 
 has tourist_type => (

@@ -45,6 +45,10 @@ A dependencies should be one of the following types:
 
 =back
 
+=head2 C<_has_dependencies>
+
+A predicate for the L</dependencies> attribute.
+
 =cut
 
 has dependencies => (
@@ -68,6 +72,10 @@ A proficiency_level should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_proficiency_level>
+
+A predicate for the L</proficiency_level> attribute.
 
 =cut
 

@@ -47,6 +47,10 @@ A cause should be one of the following types:
 
 =back
 
+=head2 C<_has_cause>
+
+A predicate for the L</cause> attribute.
+
 =cut
 
 has cause => (
@@ -70,6 +74,10 @@ A possible_treatment should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::MedicalTherapy']>
 
 =back
+
+=head2 C<_has_possible_treatment>
+
+A predicate for the L</possible_treatment> attribute.
 
 =cut
 

@@ -68,6 +68,10 @@ A dateline should be one of the following types:
 
 =back
 
+=head2 C<_has_dateline>
+
+A predicate for the L</dateline> attribute.
+
 =cut
 
 has dateline => (
@@ -93,6 +97,10 @@ A print_column should be one of the following types:
 
 =back
 
+=head2 C<_has_print_column>
+
+A predicate for the L</print_column> attribute.
+
 =cut
 
 has print_column => (
@@ -116,6 +124,10 @@ A print_edition should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_print_edition>
+
+A predicate for the L</print_edition> attribute.
 
 =cut
 
@@ -143,6 +155,10 @@ A print_page should be one of the following types:
 
 =back
 
+=head2 C<_has_print_page>
+
+A predicate for the L</print_page> attribute.
+
 =cut
 
 has print_page => (
@@ -167,6 +183,10 @@ A print_section should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_print_section>
+
+A predicate for the L</print_section> attribute.
 
 =cut
 

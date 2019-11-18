@@ -56,6 +56,10 @@ A in_defined_term_set should be one of the following types:
 
 =back
 
+=head2 C<_has_in_defined_term_set>
+
+A predicate for the L</in_defined_term_set> attribute.
+
 =cut
 
 has in_defined_term_set => (
@@ -86,6 +90,10 @@ A term_code should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_term_code>
+
+A predicate for the L</term_code> attribute.
 
 =cut
 

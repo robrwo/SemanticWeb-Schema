@@ -44,6 +44,10 @@ A seat_number should be one of the following types:
 
 =back
 
+=head2 C<_has_seat_number>
+
+A predicate for the L</seat_number> attribute.
+
 =cut
 
 has seat_number => (
@@ -68,6 +72,10 @@ A seat_row should be one of the following types:
 
 =back
 
+=head2 C<_has_seat_row>
+
+A predicate for the L</seat_row> attribute.
+
 =cut
 
 has seat_row => (
@@ -91,6 +99,10 @@ A seat_section should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_seat_section>
+
+A predicate for the L</seat_section> attribute.
 
 =cut
 
@@ -117,6 +129,10 @@ A seating_type should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_seating_type>
+
+A predicate for the L</seating_type> attribute.
 
 =cut
 

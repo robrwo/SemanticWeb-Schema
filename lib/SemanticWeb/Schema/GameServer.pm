@@ -44,6 +44,10 @@ A game should be one of the following types:
 
 =back
 
+=head2 C<_has_game>
+
+A predicate for the L</game> attribute.
+
 =cut
 
 has game => (
@@ -68,6 +72,10 @@ A players_online should be one of the following types:
 
 =back
 
+=head2 C<_has_players_online>
+
+A predicate for the L</players_online> attribute.
+
 =cut
 
 has players_online => (
@@ -91,6 +99,10 @@ A server_status should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::GameServerStatus']>
 
 =back
+
+=head2 C<_has_server_status>
+
+A predicate for the L</server_status> attribute.
 
 =cut
 

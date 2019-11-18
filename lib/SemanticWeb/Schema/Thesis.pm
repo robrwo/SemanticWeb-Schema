@@ -45,6 +45,10 @@ A in_support_of should be one of the following types:
 
 =back
 
+=head2 C<_has_in_support_of>
+
+A predicate for the L</in_support_of> attribute.
+
 =cut
 
 has in_support_of => (

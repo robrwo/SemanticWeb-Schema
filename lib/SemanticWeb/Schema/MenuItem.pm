@@ -48,6 +48,10 @@ A menu_add_on should be one of the following types:
 
 =back
 
+=head2 C<_has_menu_add_on>
+
+A predicate for the L</menu_add_on> attribute.
+
 =cut
 
 has menu_add_on => (
@@ -71,6 +75,10 @@ A nutrition should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::NutritionInformation']>
 
 =back
+
+=head2 C<_has_nutrition>
+
+A predicate for the L</nutrition> attribute.
 
 =cut
 
@@ -98,6 +106,10 @@ A offers should be one of the following types:
 
 =back
 
+=head2 C<_has_offers>
+
+A predicate for the L</offers> attribute.
+
 =cut
 
 has offers => (
@@ -122,6 +134,10 @@ A suitable_for_diet should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::RestrictedDiet']>
 
 =back
+
+=head2 C<_has_suitable_for_diet>
+
+A predicate for the L</suitable_for_diet> attribute.
 
 =cut
 

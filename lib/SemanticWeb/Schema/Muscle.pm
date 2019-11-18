@@ -52,6 +52,10 @@ A action should be one of the following types:
 
 =back
 
+=head2 C<_has_action>
+
+A predicate for the L</action> attribute.
+
 =cut
 
 has action => (
@@ -75,6 +79,10 @@ A antagonist should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Muscle']>
 
 =back
+
+=head2 C<_has_antagonist>
+
+A predicate for the L</antagonist> attribute.
 
 =cut
 
@@ -100,6 +108,10 @@ A blood_supply should be one of the following types:
 
 =back
 
+=head2 C<_has_blood_supply>
+
+A predicate for the L</blood_supply> attribute.
+
 =cut
 
 has blood_supply => (
@@ -123,6 +135,10 @@ A insertion should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_insertion>
+
+A predicate for the L</insertion> attribute.
 
 =cut
 
@@ -148,6 +164,10 @@ A muscle_action should be one of the following types:
 
 =back
 
+=head2 C<_has_muscle_action>
+
+A predicate for the L</muscle_action> attribute.
+
 =cut
 
 has muscle_action => (
@@ -172,6 +192,10 @@ A nerve should be one of the following types:
 
 =back
 
+=head2 C<_has_nerve>
+
+A predicate for the L</nerve> attribute.
+
 =cut
 
 has nerve => (
@@ -195,6 +219,10 @@ A origin should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_origin>
+
+A predicate for the L</origin> attribute.
 
 =cut
 

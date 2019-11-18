@@ -48,6 +48,10 @@ A amount should be one of the following types:
 
 =back
 
+=head2 C<_has_amount>
+
+A predicate for the L</amount> attribute.
+
 =cut
 
 has amount => (

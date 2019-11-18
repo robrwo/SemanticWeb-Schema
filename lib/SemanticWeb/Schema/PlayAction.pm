@@ -57,6 +57,10 @@ A audience should be one of the following types:
 
 =back
 
+=head2 C<_has_audience>
+
+A predicate for the L</audience> attribute.
+
 =cut
 
 has audience => (
@@ -80,6 +84,10 @@ A event should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::Event']>
 
 =back
+
+=head2 C<_has_event>
+
+A predicate for the L</event> attribute.
 
 =cut
 

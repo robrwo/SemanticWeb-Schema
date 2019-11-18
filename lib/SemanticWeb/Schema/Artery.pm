@@ -44,6 +44,10 @@ A arterial_branch should be one of the following types:
 
 =back
 
+=head2 C<_has_arterial_branch>
+
+A predicate for the L</arterial_branch> attribute.
+
 =cut
 
 has arterial_branch => (
@@ -68,6 +72,10 @@ A source should be one of the following types:
 
 =back
 
+=head2 C<_has_source>
+
+A predicate for the L</source> attribute.
+
 =cut
 
 has source => (
@@ -91,6 +99,10 @@ A supply_to should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
 
 =back
+
+=head2 C<_has_supply_to>
+
+A predicate for the L</supply_to> attribute.
 
 =cut
 

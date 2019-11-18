@@ -44,6 +44,10 @@ A access_code should be one of the following types:
 
 =back
 
+=head2 C<_has_access_code>
+
+A predicate for the L</access_code> attribute.
+
 =cut
 
 has access_code => (
@@ -67,6 +71,10 @@ A available_from should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_available_from>
+
+A predicate for the L</available_from> attribute.
 
 =cut
 
@@ -92,6 +100,10 @@ A available_through should be one of the following types:
 
 =back
 
+=head2 C<_has_available_through>
+
+A predicate for the L</available_through> attribute.
+
 =cut
 
 has available_through => (
@@ -115,6 +127,10 @@ A has_delivery_method should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DeliveryMethod']>
 
 =back
+
+=head2 C<_has_has_delivery_method>
+
+A predicate for the L</has_delivery_method> attribute.
 
 =cut
 

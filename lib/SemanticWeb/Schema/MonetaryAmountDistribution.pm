@@ -55,6 +55,10 @@ A currency should be one of the following types:
 
 =back
 
+=head2 C<_has_currency>
+
+A predicate for the L</currency> attribute.
+
 =cut
 
 has currency => (

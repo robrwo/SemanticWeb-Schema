@@ -45,6 +45,10 @@ A benefits_summary_url should be one of the following types:
 
 =back
 
+=head2 C<_has_benefits_summary_url>
+
+A predicate for the L</benefits_summary_url> attribute.
+
 =cut
 
 has benefits_summary_url => (
@@ -68,6 +72,10 @@ A contact_point should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
 
 =back
+
+=head2 C<_has_contact_point>
+
+A predicate for the L</contact_point> attribute.
 
 =cut
 
@@ -93,6 +101,10 @@ A health_plan_drug_option should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_drug_option>
+
+A predicate for the L</health_plan_drug_option> attribute.
+
 =cut
 
 has health_plan_drug_option => (
@@ -116,6 +128,10 @@ A health_plan_drug_tier should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_health_plan_drug_tier>
+
+A predicate for the L</health_plan_drug_tier> attribute.
 
 =cut
 
@@ -142,6 +158,10 @@ A health_plan_id should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_id>
+
+A predicate for the L</health_plan_id> attribute.
+
 =cut
 
 has health_plan_id => (
@@ -167,6 +187,10 @@ A health_plan_marketing_url should be one of the following types:
 
 =back
 
+=head2 C<_has_health_plan_marketing_url>
+
+A predicate for the L</health_plan_marketing_url> attribute.
+
 =cut
 
 has health_plan_marketing_url => (
@@ -190,6 +214,10 @@ A includes_health_plan_formulary should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::HealthPlanFormulary']>
 
 =back
+
+=head2 C<_has_includes_health_plan_formulary>
+
+A predicate for the L</includes_health_plan_formulary> attribute.
 
 =cut
 
@@ -215,6 +243,10 @@ A includes_health_plan_network should be one of the following types:
 
 =back
 
+=head2 C<_has_includes_health_plan_network>
+
+A predicate for the L</includes_health_plan_network> attribute.
+
 =cut
 
 has includes_health_plan_network => (
@@ -239,6 +271,10 @@ A uses_health_plan_id_standard should be one of the following types:
 =item C<Str>
 
 =back
+
+=head2 C<_has_uses_health_plan_id_standard>
+
+A predicate for the L</uses_health_plan_id_standard> attribute.
 
 =cut
 
