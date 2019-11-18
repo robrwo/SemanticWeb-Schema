@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::HealthTopicContent;
 
-# ABSTRACT:  HealthTopicContent is WebContent that is about some aspect of a health topic
+# ABSTRACT: HealthTopicContent is WebContent that is about some aspect of a health topic
 
 use Moo;
 
