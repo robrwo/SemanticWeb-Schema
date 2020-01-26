@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -26,7 +26,12 @@ our $VERSION = 'v5.0.2';
 <p>An offer to transfer some rights to an item or to provide a service â
 for example, an offer to sell tickets to an event, to rent the DVD of a
 movie, to stream a TV show over the internet, to repair a motorcycle, or to
-loan a book.<br/><br/> For <a
+loan a book.<br/><br/> Note: As the <a class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a> property,
+which identifies the form of offer (e.g. sell, lease, repair, dispose),
+defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a
+defined businessFunction value can be assumed to be an offer to
+sell.<br/><br/> For <a
 href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GTIN</a>-related
 fields, see <a
 href="http://www.gs1.org/barcodes/support/check_digit_calculator">Check
@@ -916,16 +921,35 @@ has item_condition => (
 
 C<itemOffered>
 
-The item being offered.
+=begin html
+
+<p>An item being offered (or demanded). The transactional nature of the
+offer or demand is documented using <a class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a>, e.g. sell,
+lease etc. While several common expected types are listed explicitly in
+this definition, others can be used. Using a second type, such as Product
+or a subtype of Product, can clarify the nature of the offer.<p>
+
+=end html
 
 
 A item_offered should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AggregateOffer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Event']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MenuItem']>
+
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Trip']>
 
 =back
 
@@ -939,6 +963,43 @@ has item_offered => (
     is        => 'rw',
     predicate => '_has_item_offered',
     json_ld   => 'itemOffered',
+);
+
+
+=head2 C<lease_length>
+
+C<leaseLength>
+
+=begin html
+
+<p>Length of the lease for some <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, either particular
+to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
+some cases intrinsic to the property.<p>
+
+=end html
+
+
+A lease_length should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=head2 C<_has_lease_length>
+
+A predicate for the L</lease_length> attribute.
+
+=cut
+
+has lease_length => (
+    is        => 'rw',
+    predicate => '_has_lease_length',
+    json_ld   => 'leaseLength',
 );
 
 

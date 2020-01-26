@@ -6,7 +6,7 @@ package SemanticWeb::Schema::ImageGallery;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CollectionPage /;
+extends qw/ SemanticWeb::Schema::MediaGallery /;
 
 
 use MooX::JSON_LD 'ImageGallery';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ Web page type: Image gallery page.
 
 
 
-L<SemanticWeb::Schema::CollectionPage>
+L<SemanticWeb::Schema::MediaGallery>
 
 =cut
 

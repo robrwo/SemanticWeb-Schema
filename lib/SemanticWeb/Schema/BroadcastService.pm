@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -267,6 +267,44 @@ has has_broadcast_channel => (
     is        => 'rw',
     predicate => '_has_has_broadcast_channel',
     json_ld   => 'hasBroadcastChannel',
+);
+
+
+=head2 C<in_language>
+
+C<inLanguage>
+
+=begin html
+
+<p>The language of the content or performance or used in an action. Please
+use one of the language codes from the <a
+href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
+<a class="localLink"
+href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
+
+=end html
+
+
+A in_language should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Language']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_in_language>
+
+A predicate for the L</in_language> attribute.
+
+=cut
+
+has in_language => (
+    is        => 'rw',
+    predicate => '_has_in_language',
+    json_ld   => 'inLanguage',
 );
 
 

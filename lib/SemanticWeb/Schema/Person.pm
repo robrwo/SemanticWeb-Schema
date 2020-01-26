@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -1029,6 +1029,36 @@ has honorific_suffix => (
     is        => 'rw',
     predicate => '_has_honorific_suffix',
     json_ld   => 'honorificSuffix',
+);
+
+
+=head2 C<interaction_statistic>
+
+C<interactionStatistic>
+
+The number of interactions for the CreativeWork using the WebSite or
+SoftwareApplication. The most specific child type of InteractionCounter
+should be used.
+
+
+A interaction_statistic should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::InteractionCounter']>
+
+=back
+
+=head2 C<_has_interaction_statistic>
+
+A predicate for the L</interaction_statistic> attribute.
+
+=cut
+
+has interaction_statistic => (
+    is        => 'rw',
+    predicate => '_has_interaction_statistic',
+    json_ld   => 'interactionStatistic',
 );
 
 

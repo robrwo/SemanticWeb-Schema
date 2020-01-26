@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -814,16 +814,35 @@ has item_condition => (
 
 C<itemOffered>
 
-The item being offered.
+=begin html
+
+<p>An item being offered (or demanded). The transactional nature of the
+offer or demand is documented using <a class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a>, e.g. sell,
+lease etc. While several common expected types are listed explicitly in
+this definition, others can be used. Using a second type, such as Product
+or a subtype of Product, can clarify the nature of the offer.<p>
+
+=end html
 
 
 A item_offered should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::AggregateOffer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Event']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MenuItem']>
+
 =item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Service']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Trip']>
 
 =back
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -39,6 +39,34 @@ class="localLink" href="http://schema.org/WebPage">WebPage</a>.<p>
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<date_posted>
+
+C<datePosted>
+
+Publication date of an online listing.
+
+
+A date_posted should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_date_posted>
+
+A predicate for the L</date_posted> attribute.
+
+=cut
+
+has date_posted => (
+    is        => 'rw',
+    predicate => '_has_date_posted',
+    json_ld   => 'datePosted',
+);
 
 
 =head2 C<lease_length>

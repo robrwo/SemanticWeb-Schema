@@ -15,15 +15,24 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-When a single product is associated with multiple offers (for example, the
-same pair of shoes is offered by different merchants), then AggregateOffer
-can be used.
+=begin html
+
+<p>When a single product is associated with multiple offers (for example,
+the same pair of shoes is offered by different merchants), then
+AggregateOffer can be used.<br/><br/> Note: AggregateOffers are normally
+expected to associate multiple offers that all share the same defined <a
+class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a> value, or
+default to http://purl.org/goodrelations/v1#Sell if businessFunction is not
+explicitly defined.<p>
+
+=end html
 
 
 
@@ -141,14 +150,27 @@ has offer_count => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
+=begin html
+
+<p>An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event.
+to an event. Use <a class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a> to indicate
+the kind of transaction offered, i.e. sell, lease, etc. This property can
+also be used to describe a <a class="localLink"
+href="http://schema.org/Demand">Demand</a>. While this property is listed
+as expected on a number of common types, it can be used in others. In that
+case, using a second type, such as Product or a subtype of Product, can
+clarify the nature of the offer.<p>
+
+=end html
 
 
 A offers should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::Demand']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 

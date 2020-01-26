@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -116,6 +116,34 @@ has home_team => (
     is        => 'rw',
     predicate => '_has_home_team',
     json_ld   => 'homeTeam',
+);
+
+
+=head2 C<sport>
+
+
+
+A type of sport (e.g. Baseball).
+
+
+A sport should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_sport>
+
+A predicate for the L</sport> attribute.
+
+=cut
+
+has sport => (
+    is        => 'rw',
+    predicate => '_has_sport',
+    json_ld   => 'sport',
 );
 
 

@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Updated classes to Version 6.0 of the schema.
+
   [Documentation]
   - Update copyright year.
 

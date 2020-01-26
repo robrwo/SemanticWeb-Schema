@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -49,7 +49,11 @@ C<byDay>
 =begin html
 
 <p>Defines the day(s) of the week on which a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> takes place<p>
+href="http://schema.org/Event">Event</a> takes place. May be specified
+using either <a class="localLink"
+href="http://schema.org/DayOfWeek">DayOfWeek</a>, or alternatively <a
+class="localLink" href="http://schema.org/Text">Text</a> conforming to
+iCal's syntax for byDay recurrence rules<p>
 
 =end html
 
@@ -59,6 +63,8 @@ A by_day should be one of the following types:
 =over
 
 =item C<InstanceOf['SemanticWeb::Schema::DayOfWeek']>
+
+=item C<Str>
 
 =back
 
@@ -145,35 +151,19 @@ has by_month_day => (
 );
 
 
-=head2 C<event_schedule>
+=head2 C<duration>
 
-C<eventSchedule>
+
 
 =begin html
 
-<p>Associates an <a class="localLink"
-href="http://schema.org/Event">Event</a> with a <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a>. There are circumstances
-where it is preferable to share a schedule for a series of repeating events
-rather than data on the individual events themselves. For example, a
-website or application might prefer to publish a schedule for a weekly gym
-class rather than provide data on every event. A schedule could be
-processed by applications to add forthcoming events to a calendar. An <a
-class="localLink" href="http://schema.org/Event">Event</a> that is
-associated with a <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a> using this property should
-not have <a class="localLink"
-href="http://schema.org/startDate">startDate</a> or <a class="localLink"
-href="http://schema.org/endDate">endDate</a> properties. These are instead
-defined within the associated <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a>, this avoids any ambiguity
-for clients using the data. The propery might have repeated values to
-specify different schedules, e.g. for different months or seasons.<p>
+<p>The duration of the item (movie, audio recording, event, etc.) in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
 
 =end html
 
 
-A event_schedule should be one of the following types:
+A duration should be one of the following types:
 
 =over
 
@@ -181,16 +171,16 @@ A event_schedule should be one of the following types:
 
 =back
 
-=head2 C<_has_event_schedule>
+=head2 C<_has_duration>
 
-A predicate for the L</event_schedule> attribute.
+A predicate for the L</duration> attribute.
 
 =cut
 
-has event_schedule => (
+has duration => (
     is        => 'rw',
-    predicate => '_has_event_schedule',
-    json_ld   => 'eventSchedule',
+    predicate => '_has_duration',
+    json_ld   => 'duration',
 );
 
 
@@ -308,6 +298,41 @@ has repeat_frequency => (
     is        => 'rw',
     predicate => '_has_repeat_frequency',
     json_ld   => 'repeatFrequency',
+);
+
+
+=head2 C<schedule_timezone>
+
+C<scheduleTimezone>
+
+=begin html
+
+<p>Indicates the timezone for which the time(s) indicated in the <a
+class="localLink" href="http://schema.org/Schedule">Schedule</a> are given.
+The value provided should be among those listed in the IANA Time Zone
+Database.<p>
+
+=end html
+
+
+A schedule_timezone should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_schedule_timezone>
+
+A predicate for the L</schedule_timezone> attribute.
+
+=cut
+
+has schedule_timezone => (
+    is        => 'rw',
+    predicate => '_has_schedule_timezone',
+    json_ld   => 'scheduleTimezone',
 );
 
 

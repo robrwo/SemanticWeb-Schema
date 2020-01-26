@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -167,6 +167,37 @@ has has_course_instance => (
     is        => 'rw',
     predicate => '_has_has_course_instance',
     json_ld   => 'hasCourseInstance',
+);
+
+
+=head2 C<number_of_credits>
+
+C<numberOfCredits>
+
+The number of credits or units awarded by a Course or required to complete
+an EducationalOccupationalProgram.
+
+
+A number_of_credits should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
+=back
+
+=head2 C<_has_number_of_credits>
+
+A predicate for the L</number_of_credits> attribute.
+
+=cut
+
+has number_of_credits => (
+    is        => 'rw',
+    predicate => '_has_number_of_credits',
+    json_ld   => 'numberOfCredits',
 );
 
 

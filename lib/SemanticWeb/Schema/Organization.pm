@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -956,6 +956,34 @@ has has_credential => (
 );
 
 
+=head2 C<has_merchant_return_policy>
+
+C<hasMerchantReturnPolicy>
+
+Indicates a MerchantReturnPolicy that may be applicable.
+
+
+A has_merchant_return_policy should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MerchantReturnPolicy']>
+
+=back
+
+=head2 C<_has_has_merchant_return_policy>
+
+A predicate for the L</has_merchant_return_policy> attribute.
+
+=cut
+
+has has_merchant_return_policy => (
+    is        => 'rw',
+    predicate => '_has_has_merchant_return_policy',
+    json_ld   => 'hasMerchantReturnPolicy',
+);
+
+
 =head2 C<has_offer_catalog>
 
 C<hasOfferCatalog>
@@ -1013,31 +1041,33 @@ has has_pos => (
 );
 
 
-=head2 C<has_product_return_policy>
+=head2 C<interaction_statistic>
 
-C<hasProductReturnPolicy>
+C<interactionStatistic>
 
-Indicates a ProductReturnPolicy that may be applicable.
+The number of interactions for the CreativeWork using the WebSite or
+SoftwareApplication. The most specific child type of InteractionCounter
+should be used.
 
 
-A has_product_return_policy should be one of the following types:
+A interaction_statistic should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
+=item C<InstanceOf['SemanticWeb::Schema::InteractionCounter']>
 
 =back
 
-=head2 C<_has_has_product_return_policy>
+=head2 C<_has_interaction_statistic>
 
-A predicate for the L</has_product_return_policy> attribute.
+A predicate for the L</interaction_statistic> attribute.
 
 =cut
 
-has has_product_return_policy => (
+has interaction_statistic => (
     is        => 'rw',
-    predicate => '_has_has_product_return_policy',
-    json_ld   => 'hasProductReturnPolicy',
+    predicate => '_has_interaction_statistic',
+    json_ld   => 'interactionStatistic',
 );
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -503,31 +503,31 @@ has gtin8 => (
 );
 
 
-=head2 C<has_product_return_policy>
+=head2 C<has_merchant_return_policy>
 
-C<hasProductReturnPolicy>
+C<hasMerchantReturnPolicy>
 
-Indicates a ProductReturnPolicy that may be applicable.
+Indicates a MerchantReturnPolicy that may be applicable.
 
 
-A has_product_return_policy should be one of the following types:
+A has_merchant_return_policy should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
+=item C<InstanceOf['SemanticWeb::Schema::MerchantReturnPolicy']>
 
 =back
 
-=head2 C<_has_has_product_return_policy>
+=head2 C<_has_has_merchant_return_policy>
 
-A predicate for the L</has_product_return_policy> attribute.
+A predicate for the L</has_merchant_return_policy> attribute.
 
 =cut
 
-has has_product_return_policy => (
+has has_merchant_return_policy => (
     is        => 'rw',
-    predicate => '_has_has_product_return_policy',
-    json_ld   => 'hasProductReturnPolicy',
+    predicate => '_has_has_merchant_return_policy',
+    json_ld   => 'hasMerchantReturnPolicy',
 );
 
 
@@ -898,14 +898,27 @@ has nsn => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
+=begin html
+
+<p>An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event.
+to an event. Use <a class="localLink"
+href="http://schema.org/businessFunction">businessFunction</a> to indicate
+the kind of transaction offered, i.e. sell, lease, etc. This property can
+also be used to describe a <a class="localLink"
+href="http://schema.org/Demand">Demand</a>. While this property is listed
+as expected on a number of common types, it can be used in others. In that
+case, using a second type, such as Product or a subtype of Product, can
+clarify the nature of the offer.<p>
+
+=end html
 
 
 A offers should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::Demand']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Offer']>
 

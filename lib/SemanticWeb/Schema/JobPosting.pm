@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v5.0.2';
+our $VERSION = 'v6.0.0';
 
 =encoding utf8
 
@@ -57,6 +57,34 @@ has applicant_location_requirements => (
     is        => 'rw',
     predicate => '_has_applicant_location_requirements',
     json_ld   => 'applicantLocationRequirements',
+);
+
+
+=head2 C<application_contact>
+
+C<applicationContact>
+
+Contact details for further information relevant to this job posting.
+
+
+A application_contact should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ContactPoint']>
+
+=back
+
+=head2 C<_has_application_contact>
+
+A predicate for the L</application_contact> attribute.
+
+=cut
+
+has application_contact => (
+    is        => 'rw',
+    predicate => '_has_application_contact',
+    json_ld   => 'applicationContact',
 );
 
 
@@ -124,7 +152,7 @@ has benefits => (
 
 C<datePosted>
 
-Publication date for the job posting.
+Publication date of an online listing.
 
 
 A date_posted should be one of the following types:
@@ -175,6 +203,35 @@ has education_requirements => (
     is        => 'rw',
     predicate => '_has_education_requirements',
     json_ld   => 'educationRequirements',
+);
+
+
+=head2 C<employer_overview>
+
+C<employerOverview>
+
+A description of the employer, career opportunities and work environment
+for this position.
+
+
+A employer_overview should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_employer_overview>
+
+A predicate for the L</employer_overview> attribute.
+
+=cut
+
+has employer_overview => (
+    is        => 'rw',
+    predicate => '_has_employer_overview',
+    json_ld   => 'employerOverview',
 );
 
 
@@ -394,6 +451,8 @@ A industry should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
 =item C<Str>
 
 =back
@@ -596,6 +655,39 @@ has occupational_category => (
 );
 
 
+=head2 C<physical_requirement>
+
+C<physicalRequirement>
+
+A description of the types of physical activity associated with the job.
+Defined terms such as those in O*net may be used, but note that there is no
+way to specify the level of ability as well as its nature when using a
+defined term.
+
+
+A physical_requirement should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_physical_requirement>
+
+A predicate for the L</physical_requirement> attribute.
+
+=cut
+
+has physical_requirement => (
+    is        => 'rw',
+    predicate => '_has_physical_requirement',
+    json_ld   => 'physicalRequirement',
+);
+
+
 =head2 C<qualifications>
 
 
@@ -713,6 +805,67 @@ has salary_currency => (
     is        => 'rw',
     predicate => '_has_salary_currency',
     json_ld   => 'salaryCurrency',
+);
+
+
+=head2 C<security_clearance_requirement>
+
+C<securityClearanceRequirement>
+
+A description of any security clearance requirements of the job.
+
+
+A security_clearance_requirement should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_security_clearance_requirement>
+
+A predicate for the L</security_clearance_requirement> attribute.
+
+=cut
+
+has security_clearance_requirement => (
+    is        => 'rw',
+    predicate => '_has_security_clearance_requirement',
+    json_ld   => 'securityClearanceRequirement',
+);
+
+
+=head2 C<sensory_requirement>
+
+C<sensoryRequirement>
+
+A description of any sensory requirements and levels necessary to function
+on the job, including hearing and vision. Defined terms such as those in
+O*net may be used, but note that there is no way to specify the level of
+ability as well as its nature when using a defined term.
+
+
+A sensory_requirement should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_sensory_requirement>
+
+A predicate for the L</sensory_requirement> attribute.
+
+=cut
+
+has sensory_requirement => (
+    is        => 'rw',
+    predicate => '_has_sensory_requirement',
+    json_ld   => 'sensoryRequirement',
 );
 
 
