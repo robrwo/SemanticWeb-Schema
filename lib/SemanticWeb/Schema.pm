@@ -24,6 +24,11 @@ our $VERSION = 'v6.0.1';
 
 =encoding utf8
 
+=head1 append:VERSION
+
+The version number of this distribution is based on the corresponding
+version of schema classes.
+
 =head1 SYNOPSIS
 
   use aliased 'SemanticWeb::Schema::Person' => 'Person';
@@ -37,6 +42,10 @@ our $VERSION = 'v6.0.1';
   print $person->json_ld;
 
 =head1 DESCRIPTION
+
+This distribution contains Perl classes for L<https://schema.org>
+semantic markup. These can be used to generate JSON-LD
+to embed in websites.
 
 This is a base class for the C<SemanticWeb::Schema> classes, which
 were generated automatically from the following sources:
