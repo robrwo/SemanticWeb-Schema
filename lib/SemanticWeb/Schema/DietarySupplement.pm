@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -58,36 +58,6 @@ has active_ingredient => (
     is        => 'rw',
     predicate => '_has_active_ingredient',
     json_ld   => 'activeIngredient',
-);
-
-
-=head2 C<background>
-
-
-
-Descriptive information establishing a historical perspective on the
-supplement. May include the rationale for the name, the population where
-the supplement first came to prominence, etc.
-
-
-A background should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_background>
-
-A predicate for the L</background> attribute.
-
-=cut
-
-has background => (
-    is        => 'rw',
-    predicate => '_has_background',
-    json_ld   => 'background',
 );
 
 

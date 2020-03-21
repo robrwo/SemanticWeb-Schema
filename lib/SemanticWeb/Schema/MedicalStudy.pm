@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -63,65 +63,6 @@ has health_condition => (
     is        => 'rw',
     predicate => '_has_health_condition',
     json_ld   => 'healthCondition',
-);
-
-
-=head2 C<outcome>
-
-
-
-Expected or actual outcomes of the study.
-
-
-A outcome should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_outcome>
-
-A predicate for the L</outcome> attribute.
-
-=cut
-
-has outcome => (
-    is        => 'rw',
-    predicate => '_has_outcome',
-    json_ld   => 'outcome',
-);
-
-
-=head2 C<population>
-
-
-
-Any characteristics of the population used in the study, e.g. 'males under
-65'.
-
-
-A population should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_population>
-
-A predicate for the L</population> attribute.
-
-=cut
-
-has population => (
-    is        => 'rw',
-    predicate => '_has_population',
-    json_ld   => 'population',
 );
 
 

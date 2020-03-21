@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -232,34 +232,6 @@ has clinical_pharmacology => (
     is        => 'rw',
     predicate => '_has_clinical_pharmacology',
     json_ld   => 'clinicalPharmacology',
-);
-
-
-=head2 C<cost>
-
-
-
-Cost per unit of the drug, as reported by the source being tagged.
-
-
-A cost should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::DrugCost']>
-
-=back
-
-=head2 C<_has_cost>
-
-A predicate for the L</cost> attribute.
-
-=cut
-
-has cost => (
-    is        => 'rw',
-    predicate => '_has_cost',
-    json_ld   => 'cost',
 );
 
 

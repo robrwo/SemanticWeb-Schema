@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -723,34 +723,6 @@ has slogan => (
     is        => 'rw',
     predicate => '_has_slogan',
     json_ld   => 'slogan',
-);
-
-
-=head2 C<terms_of_service>
-
-C<termsOfService>
-
-Human-readable terms of service documentation.
-
-
-A terms_of_service should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_terms_of_service>
-
-A predicate for the L</terms_of_service> attribute.
-
-=cut
-
-has terms_of_service => (
-    is        => 'rw',
-    predicate => '_has_terms_of_service',
-    json_ld   => 'termsOfService',
 );
 
 

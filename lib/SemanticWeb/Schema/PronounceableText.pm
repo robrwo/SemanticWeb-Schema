@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.1';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -64,42 +64,6 @@ has in_language => (
     is        => 'rw',
     predicate => '_has_in_language',
     json_ld   => 'inLanguage',
-);
-
-
-=head2 C<phonetic_text>
-
-C<phoneticText>
-
-=begin html
-
-<p>Representation of a text <a class="localLink"
-href="http://schema.org/textValue">textValue</a> using the specified <a
-class="localLink"
-href="http://schema.org/speechToTextMarkup">speechToTextMarkup</a>. For
-example the city name of Houston in IPA: /ËhjuËstÉn/.<p>
-
-=end html
-
-
-A phonetic_text should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_phonetic_text>
-
-A predicate for the L</phonetic_text> attribute.
-
-=cut
-
-has phonetic_text => (
-    is        => 'rw',
-    predicate => '_has_phonetic_text',
-    json_ld   => 'phoneticText',
 );
 
 

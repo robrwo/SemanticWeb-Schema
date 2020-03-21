@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -112,68 +112,6 @@ has how_performed => (
     is        => 'rw',
     predicate => '_has_how_performed',
     json_ld   => 'howPerformed',
-);
-
-
-=head2 C<indication>
-
-
-
-A factor that indicates use of this therapy for treatment and/or prevention
-of a condition, symptom, etc. For therapies such as drugs, indications can
-include both officially-approved indications as well as off-label uses.
-These can be distinguished by using the ApprovedIndication subtype of
-MedicalIndication.
-
-
-A indication should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalIndication']>
-
-=back
-
-=head2 C<_has_indication>
-
-A predicate for the L</indication> attribute.
-
-=cut
-
-has indication => (
-    is        => 'rw',
-    predicate => '_has_indication',
-    json_ld   => 'indication',
-);
-
-
-=head2 C<outcome>
-
-
-
-Expected or actual outcomes of the study.
-
-
-A outcome should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_outcome>
-
-A predicate for the L</outcome> attribute.
-
-=cut
-
-has outcome => (
-    is        => 'rw',
-    predicate => '_has_outcome',
-    json_ld   => 'outcome',
 );
 
 

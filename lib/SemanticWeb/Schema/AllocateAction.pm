@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -26,39 +26,7 @@ The act of organizing tasks/objects/events by associating resources to it.
 
 
 
-=head1 ATTRIBUTES
-
-
-=head2 C<purpose>
-
-
-
-A goal towards an action is taken. Can be concrete or abstract.
-
-
-A purpose should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalDevicePurpose']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
-
-=back
-
-=head2 C<_has_purpose>
-
-A predicate for the L</purpose> attribute.
-
 =cut
-
-has purpose => (
-    is        => 'rw',
-    predicate => '_has_purpose',
-    json_ld   => 'purpose',
-);
-
-
 
 
 =head1 SEE ALSO

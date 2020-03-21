@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -350,6 +350,37 @@ has accountable_person => (
     is        => 'rw',
     predicate => '_has_accountable_person',
     json_ld   => 'accountablePerson',
+);
+
+
+=head2 C<acquire_license_page>
+
+C<acquireLicensePage>
+
+Indicates a page documenting how licenses can be purchased or otherwise
+acquired, for the current item.
+
+
+A acquire_license_page should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_acquire_license_page>
+
+A predicate for the L</acquire_license_page> attribute.
+
+=cut
+
+has acquire_license_page => (
+    is        => 'rw',
+    predicate => '_has_acquire_license_page',
+    json_ld   => 'acquireLicensePage',
 );
 
 
@@ -2999,6 +3030,54 @@ has typical_age_range => (
     is        => 'rw',
     predicate => '_has_typical_age_range',
     json_ld   => 'typicalAgeRange',
+);
+
+
+=head2 C<usage_info>
+
+C<usageInfo>
+
+=begin html
+
+<p>The schema.org <a class="localLink"
+href="http://schema.org/usageInfo">usageInfo</a> property indicates further
+information about a <a class="localLink"
+href="http://schema.org/CreativeWork">CreativeWork</a>. This property is
+applicable both to works that are freely available and to those that
+require payment or other transactions. It can reference additional
+information e.g. community expectations on preferred linking and citation
+conventions, as well as purchasing details. For something that can be
+commercially licensed, usageInfo can provide detailed, resource-specific
+information about licensing options.<br/><br/> This property can be used
+alongside the license property which indicates license(s) applicable to
+some piece of content. The usageInfo property can provide information about
+other licensing options, e.g. acquiring commercial usage rights for an
+image that is also available under non-commercial creative commons
+licenses.<p>
+
+=end html
+
+
+A usage_info should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_usage_info>
+
+A predicate for the L</usage_info> attribute.
+
+=cut
+
+has usage_info => (
+    is        => 'rw',
+    predicate => '_has_usage_info',
+    json_ld   => 'usageInfo',
 );
 
 

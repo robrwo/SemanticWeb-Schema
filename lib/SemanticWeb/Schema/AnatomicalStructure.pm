@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -142,34 +142,6 @@ has diagram => (
     is        => 'rw',
     predicate => '_has_diagram',
     json_ld   => 'diagram',
-);
-
-
-=head2 C<function>
-
-
-
-Function of the anatomical structure.
-
-
-A function should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_function>
-
-A predicate for the L</function> attribute.
-
-=cut
-
-has function => (
-    is        => 'rw',
-    predicate => '_has_function',
-    json_ld   => 'function',
 );
 
 

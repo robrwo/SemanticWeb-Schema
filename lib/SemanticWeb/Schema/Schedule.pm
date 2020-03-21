@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -184,6 +184,39 @@ has duration => (
 );
 
 
+=head2 C<end_date>
+
+C<endDate>
+
+=begin html
+
+<p>The end date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
+
+=end html
+
+
+A end_date should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_end_date>
+
+A predicate for the L</end_date> attribute.
+
+=cut
+
+has end_date => (
+    is        => 'rw',
+    predicate => '_has_end_date',
+    json_ld   => 'endDate',
+);
+
+
 =head2 C<except_date>
 
 C<exceptDate>
@@ -333,6 +366,39 @@ has schedule_timezone => (
     is        => 'rw',
     predicate => '_has_schedule_timezone',
     json_ld   => 'scheduleTimezone',
+);
+
+
+=head2 C<start_date>
+
+C<startDate>
+
+=begin html
+
+<p>The start date and time of the item (in <a
+href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
+
+=end html
+
+
+A start_date should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_start_date>
+
+A predicate for the L</start_date> attribute.
+
+=cut
+
+has start_date => (
+    is        => 'rw',
+    predicate => '_has_start_date',
+    json_ld   => 'startDate',
 );
 
 

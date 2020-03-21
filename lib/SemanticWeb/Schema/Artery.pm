@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -54,34 +54,6 @@ has arterial_branch => (
     is        => 'rw',
     predicate => '_has_arterial_branch',
     json_ld   => 'arterialBranch',
-);
-
-
-=head2 C<source>
-
-
-
-The anatomical or organ system that the artery originates from.
-
-
-A source should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
-
-=back
-
-=head2 C<_has_source>
-
-A predicate for the L</source> attribute.
-
-=cut
-
-has source => (
-    is        => 'rw',
-    predicate => '_has_source',
-    json_ld   => 'source',
 );
 
 

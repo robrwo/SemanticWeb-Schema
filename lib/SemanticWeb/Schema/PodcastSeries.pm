@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -34,13 +34,15 @@ user can download and listen to.
 
 C<webFeed>
 
-The URL for the feed associated with the podcast series. This is usually
-RSS or Atom.
+The URL for a feed, e.g. associated with a podcast series, blog, or series
+of date-stamped updates. This is usually RSS or Atom.
 
 
 A web_feed should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::DataFeed']>
 
 =item C<Str>
 

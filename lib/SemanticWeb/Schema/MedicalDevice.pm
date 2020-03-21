@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -89,38 +89,6 @@ has contraindication => (
     is        => 'rw',
     predicate => '_has_contraindication',
     json_ld   => 'contraindication',
-);
-
-
-=head2 C<indication>
-
-
-
-A factor that indicates use of this therapy for treatment and/or prevention
-of a condition, symptom, etc. For therapies such as drugs, indications can
-include both officially-approved indications as well as off-label uses.
-These can be distinguished by using the ApprovedIndication subtype of
-MedicalIndication.
-
-
-A indication should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalIndication']>
-
-=back
-
-=head2 C<_has_indication>
-
-A predicate for the L</indication> attribute.
-
-=cut
-
-has indication => (
-    is        => 'rw',
-    predicate => '_has_indication',
-    json_ld   => 'indication',
 );
 
 
@@ -208,36 +176,6 @@ has procedure => (
     is        => 'rw',
     predicate => '_has_procedure',
     json_ld   => 'procedure',
-);
-
-
-=head2 C<purpose>
-
-
-
-A goal towards an action is taken. Can be concrete or abstract.
-
-
-A purpose should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalDevicePurpose']>
-
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
-
-=back
-
-=head2 C<_has_purpose>
-
-A predicate for the L</purpose> attribute.
-
-=cut
-
-has purpose => (
-    is        => 'rw',
-    predicate => '_has_purpose',
-    json_ld   => 'purpose',
 );
 
 

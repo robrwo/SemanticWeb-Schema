@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -116,36 +116,6 @@ has expert_considerations => (
     is        => 'rw',
     predicate => '_has_expert_considerations',
     json_ld   => 'expertConsiderations',
-);
-
-
-=head2 C<overview>
-
-
-
-Descriptive information establishing the overarching theory/philosophy of
-the plan. May include the rationale for the name, the population where the
-plan first came to prominence, etc.
-
-
-A overview should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_overview>
-
-A predicate for the L</overview> attribute.
-
-=cut
-
-has overview => (
-    is        => 'rw',
-    predicate => '_has_overview',
-    json_ld   => 'overview',
 );
 
 

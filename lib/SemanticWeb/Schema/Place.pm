@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -800,6 +800,46 @@ has global_location_number => (
 );
 
 
+=head2 C<has_drive_through_service>
+
+C<hasDriveThroughService>
+
+=begin html
+
+<p>Indicates whether some facility (e.g. <a class="localLink"
+href="http://schema.org/FoodEstablishment">FoodEstablishment</a>, <a
+class="localLink"
+href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a>)
+offers a service that can be used by driving through in a car. In the case
+of <a class="localLink"
+href="http://schema.org/CovidTestingFacility">CovidTestingFacility</a> such
+facilities could potentially help with social distancing from other
+potentially-infected users.<p>
+
+=end html
+
+
+A has_drive_through_service should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_has_drive_through_service>
+
+A predicate for the L</has_drive_through_service> attribute.
+
+=cut
+
+has has_drive_through_service => (
+    is        => 'rw',
+    predicate => '_has_has_drive_through_service',
+    json_ld   => 'hasDriveThroughService',
+);
+
+
 =head2 C<has_map>
 
 C<hasMap>
@@ -1369,6 +1409,43 @@ has telephone => (
     is        => 'rw',
     predicate => '_has_telephone',
     json_ld   => 'telephone',
+);
+
+
+=head2 C<tour_booking_page>
+
+C<tourBookingPage>
+
+=begin html
+
+<p>A page providing information on how to book a tour of some <a
+class="localLink" href="http://schema.org/Place">Place</a>, such as an <a
+class="localLink" href="http://schema.org/Accommodation">Accommodation</a>
+or <a class="localLink"
+href="http://schema.org/ApartmentComplex">ApartmentComplex</a> in a real
+estate setting, as well as other kinds of tours as appropriate.<p>
+
+=end html
+
+
+A tour_booking_page should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_tour_booking_page>
+
+A predicate for the L</tour_booking_page> attribute.
+
+=cut
+
+has tour_booking_page => (
+    is        => 'rw',
+    predicate => '_has_tour_booking_page',
+    json_ld   => 'tourBookingPage',
 );
 
 

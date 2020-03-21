@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -284,6 +284,44 @@ has number_of_bathrooms_total => (
 );
 
 
+=head2 C<number_of_bedrooms>
+
+C<numberOfBedrooms>
+
+=begin html
+
+<p>The total integer number of bedrooms in a some <a class="localLink"
+href="http://schema.org/Accommodation">Accommodation</a>, <a
+class="localLink"
+href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or <a
+class="localLink" href="http://schema.org/FloorPlan">FloorPlan</a>.<p>
+
+=end html
+
+
+A number_of_bedrooms should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Num>
+
+=back
+
+=head2 C<_has_number_of_bedrooms>
+
+A predicate for the L</number_of_bedrooms> attribute.
+
+=cut
+
+has number_of_bedrooms => (
+    is        => 'rw',
+    predicate => '_has_number_of_bedrooms',
+    json_ld   => 'numberOfBedrooms',
+);
+
+
 =head2 C<number_of_full_bathrooms>
 
 C<numberOfFullBathrooms>
@@ -447,6 +485,43 @@ has pets_allowed => (
     is        => 'rw',
     predicate => '_has_pets_allowed',
     json_ld   => 'petsAllowed',
+);
+
+
+=head2 C<tour_booking_page>
+
+C<tourBookingPage>
+
+=begin html
+
+<p>A page providing information on how to book a tour of some <a
+class="localLink" href="http://schema.org/Place">Place</a>, such as an <a
+class="localLink" href="http://schema.org/Accommodation">Accommodation</a>
+or <a class="localLink"
+href="http://schema.org/ApartmentComplex">ApartmentComplex</a> in a real
+estate setting, as well as other kinds of tours as appropriate.<p>
+
+=end html
+
+
+A tour_booking_page should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_tour_booking_page>
+
+A predicate for the L</tour_booking_page> attribute.
+
+=cut
+
+has tour_booking_page => (
+    is        => 'rw',
+    predicate => '_has_tour_booking_page',
+    json_ld   => 'tourBookingPage',
 );
 
 

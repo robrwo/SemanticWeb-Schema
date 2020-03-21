@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -307,6 +307,48 @@ has number_of_credits => (
 );
 
 
+=head2 C<occupational_category>
+
+C<occupationalCategory>
+
+=begin html
+
+<p>A category describing the job, preferably using a term from a taxonomy
+such as <a href="http://www.onetcenter.org/taxonomy.html">BLS
+O*NET-SOC</a>, <a
+href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/">ISCO-08<
+/a> or similar, with the property repeated for each applicable value.
+Ideally the taxonomy should be identified, and both the textual label and
+formal code for the category should be provided.<br/><br/> Note: for
+historical reasons, any textual label and formal code provided as a literal
+may be assumed to be from O*NET-SOC.<p>
+
+=end html
+
+
+A occupational_category should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CategoryCode']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_occupational_category>
+
+A predicate for the L</occupational_category> attribute.
+
+=cut
+
+has occupational_category => (
+    is        => 'rw',
+    predicate => '_has_occupational_category',
+    json_ld   => 'occupationalCategory',
+);
+
+
 =head2 C<occupational_credential_awarded>
 
 C<occupationalCredentialAwarded>
@@ -413,6 +455,37 @@ has program_prerequisites => (
     is        => 'rw',
     predicate => '_has_program_prerequisites',
     json_ld   => 'programPrerequisites',
+);
+
+
+=head2 C<program_type>
+
+C<programType>
+
+The type of educational or occupational program. For example, classroom,
+internship, alternance, etc..
+
+
+A program_type should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_program_type>
+
+A predicate for the L</program_type> attribute.
+
+=cut
+
+has program_type => (
+    is        => 'rw',
+    predicate => '_has_program_type',
+    json_ld   => 'programType',
 );
 
 
@@ -598,31 +671,31 @@ has time_of_day => (
 );
 
 
-=head2 C<time_to_complete>
+=head2 C<training_salary>
 
-C<timeToComplete>
+C<trainingSalary>
 
-The expected length of time to complete the program if attending full-time.
+The estimated salary earned while in the program.
 
 
-A time_to_complete should be one of the following types:
+A training_salary should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmountDistribution']>
 
 =back
 
-=head2 C<_has_time_to_complete>
+=head2 C<_has_training_salary>
 
-A predicate for the L</time_to_complete> attribute.
+A predicate for the L</training_salary> attribute.
 
 =cut
 
-has time_to_complete => (
+has training_salary => (
     is        => 'rw',
-    predicate => '_has_time_to_complete',
-    json_ld   => 'timeToComplete',
+    predicate => '_has_training_salary',
+    json_ld   => 'trainingSalary',
 );
 
 

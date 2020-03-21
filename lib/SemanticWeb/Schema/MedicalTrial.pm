@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -30,34 +30,6 @@ allocated at random to the different treatment and/or control groups.
 
 
 =head1 ATTRIBUTES
-
-
-=head2 C<phase>
-
-
-
-The phase of the clinical trial.
-
-
-A phase should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_phase>
-
-A predicate for the L</phase> attribute.
-
-=cut
-
-has phase => (
-    is        => 'rw',
-    predicate => '_has_phase',
-    json_ld   => 'phase',
-);
 
 
 =head2 C<trial_design>

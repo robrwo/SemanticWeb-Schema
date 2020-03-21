@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -28,41 +28,6 @@ tissue that animals use to effect movement.
 
 
 =head1 ATTRIBUTES
-
-
-=head2 C<action>
-
-
-
-=begin html
-
-<p>Obsolete term for <a class="localLink"
-href="http://schema.org/muscleAction">muscleAction</a>. Not to be confused
-with <a class="localLink"
-href="http://schema.org/potentialAction">potentialAction</a>.<p>
-
-=end html
-
-
-A action should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_action>
-
-A predicate for the L</action> attribute.
-
-=cut
-
-has action => (
-    is        => 'rw',
-    predicate => '_has_action',
-    json_ld   => 'action',
-);
 
 
 =head2 C<antagonist>
@@ -202,34 +167,6 @@ has nerve => (
     is        => 'rw',
     predicate => '_has_nerve',
     json_ld   => 'nerve',
-);
-
-
-=head2 C<origin>
-
-
-
-The place or point where a muscle arises.
-
-
-A origin should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::AnatomicalStructure']>
-
-=back
-
-=head2 C<_has_origin>
-
-A predicate for the L</origin> attribute.
-
-=cut
-
-has origin => (
-    is        => 'rw',
-    predicate => '_has_origin',
-    json_ld   => 'origin',
 );
 
 

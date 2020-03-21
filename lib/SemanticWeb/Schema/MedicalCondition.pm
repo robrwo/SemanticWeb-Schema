@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v6.0.2';
+our $VERSION = 'v7.0.0';
 
 =encoding utf8
 
@@ -61,36 +61,6 @@ has associated_anatomy => (
     is        => 'rw',
     predicate => '_has_associated_anatomy',
     json_ld   => 'associatedAnatomy',
-);
-
-
-=head2 C<cause>
-
-
-
-Specifying a cause of something in general. e.g in medicine , one of the
-causative agent(s) that are most directly responsible for the
-pathophysiologic process that eventually results in the occurrence.
-
-
-A cause should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MedicalCause']>
-
-=back
-
-=head2 C<_has_cause>
-
-A predicate for the L</cause> attribute.
-
-=cut
-
-has cause => (
-    is        => 'rw',
-    predicate => '_has_cause',
-    json_ld   => 'cause',
 );
 
 
@@ -502,35 +472,6 @@ has status => (
     is        => 'rw',
     predicate => '_has_status',
     json_ld   => 'status',
-);
-
-
-=head2 C<subtype>
-
-
-
-A more specific type of the condition, where applicable, for example 'Type
-1 Diabetes', 'Type 2 Diabetes', or 'Gestational Diabetes' for Diabetes.
-
-
-A subtype should be one of the following types:
-
-=over
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_subtype>
-
-A predicate for the L</subtype> attribute.
-
-=cut
-
-has subtype => (
-    is        => 'rw',
-    predicate => '_has_subtype',
-    json_ld   => 'subtype',
 );
 
 
