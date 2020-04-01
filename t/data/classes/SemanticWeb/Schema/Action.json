@@ -20,8 +20,8 @@
          "rdfs:label" : "agent",
          "schema:domainIncludes" : "schema:Action",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:endTime" : {
@@ -34,8 +34,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:error" : {
@@ -57,13 +57,13 @@
          "rdfs:comment" : "The location of for example where the event is happening, an organization is located, or where an action takes place.",
          "rdfs:label" : "location",
          "schema:domainIncludes" : [
-            "schema:Action",
             "schema:Event",
+            "schema:Action",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:PostalAddress",
+            "schema:Text",
             "schema:VirtualLocation",
             "schema:Place"
          ]
@@ -81,8 +81,8 @@
          "rdfs:label" : "participant",
          "schema:domainIncludes" : "schema:Action",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:result" : {
@@ -102,8 +102,8 @@
             "schema:Action"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       },
       "schema:target" : {

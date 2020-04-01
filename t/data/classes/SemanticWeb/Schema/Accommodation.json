@@ -18,19 +18,6 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text"
       },
-      "schema:accommodationFloorPlan" : {
-         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2373",
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A floorplan of some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>.",
-         "rdfs:label" : "accommodationFloorPlan",
-         "schema:category" : "issue-2373",
-         "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:Residence"
-         ],
-         "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:FloorPlan"
-      },
       "schema:amenityFeature" : {
          "dc:source" : "schemadotorgsources2:STI_Accommodation_Ontology",
          "rdf:type" : "rdf:Property",
@@ -38,9 +25,9 @@
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
+            "schema:LodgingBusiness",
             "schema:Accommodation",
-            "schema:Place",
-            "schema:LodgingBusiness"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
@@ -72,9 +59,9 @@
          "rdfs:label" : "leaseLength",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:RealEstateListing",
+            "schema:Offer",
             "schema:Accommodation",
-            "schema:Offer"
+            "schema:RealEstateListing"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -89,8 +76,8 @@
          "rdfs:label" : "numberOfBathroomsTotal",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer"
@@ -103,8 +90,8 @@
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
             "schema:ApartmentComplex",
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -119,8 +106,8 @@
          "rdfs:label" : "numberOfFullBathrooms",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number"
@@ -132,8 +119,8 @@
          "rdfs:label" : "numberOfPartialBathrooms",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number"
@@ -144,17 +131,17 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:SingleFamilyResidence",
-            "schema:Suite",
-            "schema:FloorPlan",
-            "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:Apartment",
-            "schema:House"
+            "schema:FloorPlan",
+            "schema:House",
+            "schema:Accommodation",
+            "schema:Suite",
+            "schema:LodgingBusiness",
+            "schema:SingleFamilyResidence"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:permittedUsage" : {
@@ -171,8 +158,8 @@
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:LodgingBusiness",
+            "schema:Accommodation",
             "schema:FloorPlan",
             "schema:ApartmentComplex"
          ],
@@ -188,9 +175,9 @@
          "rdfs:label" : "tourBookingPage",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
+            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:Place",
-            "schema:ApartmentComplex"
+            "schema:Place"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:URL"

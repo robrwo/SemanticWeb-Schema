@@ -13,8 +13,8 @@
          "rdfs:label" : "numberOfAccommodationUnits",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -40,8 +40,8 @@
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
             "schema:ApartmentComplex",
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -55,8 +55,8 @@
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:LodgingBusiness",
+            "schema:Accommodation",
             "schema:FloorPlan",
             "schema:ApartmentComplex"
          ],
@@ -72,9 +72,9 @@
          "rdfs:label" : "tourBookingPage",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
+            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:Place",
-            "schema:ApartmentComplex"
+            "schema:Place"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:URL"

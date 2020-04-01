@@ -16,8 +16,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:partySize" : {
@@ -25,8 +25,8 @@
          "rdfs:comment" : "Number of people the reservation should accommodate.",
          "rdfs:label" : "partySize",
          "schema:domainIncludes" : [
-            "schema:FoodEstablishmentReservation",
-            "schema:TaxiReservation"
+            "schema:TaxiReservation",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -43,8 +43,8 @@
             "schema:Action"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       }
    }

@@ -34,8 +34,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:QualitativeValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:QualitativeValue"
          ]
       },
       "schema:fuelType" : {
@@ -48,8 +48,8 @@
             "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:URL",
+            "schema:QualitativeValue",
             "schema:Text"
          ]
       },

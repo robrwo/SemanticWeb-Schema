@@ -13,15 +13,15 @@
          "rdfs:label" : "subtitleLanguage",
          "schema:category" : "issue-2110",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:TVEpisode",
+            "schema:BroadcastEvent",
             "schema:ScreeningEvent",
-            "schema:BroadcastEvent"
+            "schema:TVEpisode",
+            "schema:Movie"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:videoFormat" : {
@@ -29,9 +29,9 @@
          "rdfs:comment" : "The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).",
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
+            "schema:BroadcastService",
             "schema:ScreeningEvent",
-            "schema:BroadcastEvent",
-            "schema:BroadcastService"
+            "schema:BroadcastEvent"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

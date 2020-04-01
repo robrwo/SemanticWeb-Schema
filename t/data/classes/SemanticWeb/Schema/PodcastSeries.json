@@ -18,8 +18,8 @@
          "schema:domainIncludes" : "schema:PodcastSeries",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DataFeed",
-            "schema:URL"
+            "schema:URL",
+            "schema:DataFeed"
          ]
       }
    }

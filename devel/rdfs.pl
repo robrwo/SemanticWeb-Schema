@@ -20,7 +20,7 @@ use Text::Wrap qw/ wrap /;
 use Types::Standard -types;
 use URI;
 
-our $VERSION = 'v7.0.1';
+our $VERSION = 'v7.0.2';
 
 const my $MAX_ABSTRACT_LENGTH => 44;    # See ExtUtils::ModuleMaker
 
@@ -104,15 +104,15 @@ has definition => (
     default => sub {
         [
             ## 'http://dublincore.org/2012/06/14/dcterms.rdf',
-#            'https://schema.org/version/7.01/all-layers.rdf',
-#            'https://schema.org/version/7.01/ext-attic.rdf',
-            'https://schema.org/version/7.01/ext-auto.rdf',
-            'https://schema.org/version/7.01/ext-bib.rdf',
-            'https://schema.org/version/7.01/ext-health-lifesci.rdf',
-            # 'https://schema.org/version/7.01/ext-iot.rdf',
-            'https://schema.org/version/7.01/ext-meta.rdf',
-            'https://schema.org/version/7.01/ext-pending.rdf',
-            'https://schema.org/version/7.01/schema.rdf',
+#            'https://schema.org/version/7.02/all-layers.rdf',
+#            'https://schema.org/version/7.02/ext-attic.rdf',
+            'https://schema.org/version/7.02/ext-auto.rdf',
+            'https://schema.org/version/7.02/ext-bib.rdf',
+            'https://schema.org/version/7.02/ext-health-lifesci.rdf',
+            # 'https://schema.org/version/7.02/ext-iot.rdf',
+            'https://schema.org/version/7.02/ext-meta.rdf',
+            'https://schema.org/version/7.02/ext-pending.rdf',
+            'https://schema.org/version/7.02/schema.rdf',
         ]
     },
 );

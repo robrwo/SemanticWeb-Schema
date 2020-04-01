@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Updated classes to Version 7.02 of the schema.
 
 v7.0.1    2020-04-01 21:36:58+01:00 Europe/London
   [Enhancements]

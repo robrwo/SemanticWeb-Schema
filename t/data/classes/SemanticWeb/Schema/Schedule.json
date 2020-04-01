@@ -18,8 +18,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DayOfWeek"
+            "schema:DayOfWeek",
+            "schema:Text"
          ]
       },
       "schema:byMonth" : {
@@ -56,13 +56,13 @@
          ],
          "schema:domainIncludes" : [
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRecording",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:MediaObject",
+            "schema:Movie",
             "schema:MusicRelease",
             "schema:Audiobook",
-            "schema:Movie"
+            "schema:Schedule",
+            "schema:MusicRecording",
+            "schema:Event",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       },
@@ -74,16 +74,16 @@
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
             "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
+            "schema:EducationalOccupationalProgram",
             "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeason",
+            "schema:Schedule",
             "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:exceptDate" : {
@@ -140,12 +140,12 @@
          "rdfs:label" : "startDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:Event",
-            "schema:CreativeWorkSeries",
             "schema:Schedule",
             "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:Event",
+            "schema:CreativeWorkSeries",
             "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [

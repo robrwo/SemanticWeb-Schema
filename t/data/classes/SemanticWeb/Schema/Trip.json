@@ -13,8 +13,8 @@
          "rdfs:label" : "arrivalTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:departureTime" : {
@@ -23,8 +23,8 @@
          "rdfs:label" : "departureTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:itinerary" : {
@@ -47,19 +47,19 @@
          "rdfs:label" : "offers",
          "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:AggregateOffer",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
             "schema:CreativeWork",
+            "schema:AggregateOffer",
+            "schema:EducationalOccupationalProgram",
+            "schema:Product",
             "schema:MenuItem",
             "schema:Service",
-            "schema:Product"
+            "schema:Trip",
+            "schema:Event"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ]
       },
       "schema:partOfTrip" : {
@@ -80,13 +80,13 @@
          "rdfs:label" : "provider",
          "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:Reservation",
             "schema:ParcelDelivery",
-            "schema:Service",
+            "schema:Reservation",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram",
+            "schema:Service",
             "schema:Invoice",
-            "schema:CreativeWork"
+            "schema:Trip"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",

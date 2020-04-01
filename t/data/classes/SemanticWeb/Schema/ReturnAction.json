@@ -13,20 +13,20 @@
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
             "schema:Message",
-            "schema:TipAction",
             "schema:SendAction",
-            "schema:GiveAction",
-            "schema:AuthorizeAction",
-            "schema:CommunicateAction",
             "schema:ReturnAction",
             "schema:PayAction",
+            "schema:GiveAction",
+            "schema:AuthorizeAction",
+            "schema:TipAction",
+            "schema:CommunicateAction",
             "schema:DonateAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
+            "schema:Person",
             "schema:Organization",
-            "schema:ContactPoint",
-            "schema:Person"
+            "schema:Audience",
+            "schema:ContactPoint"
          ]
       }
    }

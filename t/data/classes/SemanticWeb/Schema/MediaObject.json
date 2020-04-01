@@ -48,13 +48,13 @@
          ],
          "schema:domainIncludes" : [
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRecording",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:MediaObject",
+            "schema:Movie",
             "schema:MusicRelease",
             "schema:Audiobook",
-            "schema:Movie"
+            "schema:Schedule",
+            "schema:MusicRecording",
+            "schema:Event",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       },
@@ -78,8 +78,8 @@
          "rdfs:comment" : "Media type typically expressed using a MIME format (see <a href=\"http://www.iana.org/assignments/media-types/media-types.xhtml\">IANA site</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types\">MDN reference</a>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).<br/><br/>\n\nIn cases where a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> has several media type representations, <a class=\"localLink\" href=\"http://schema.org/encoding\">encoding</a> can be used to indicate each <a class=\"localLink\" href=\"http://schema.org/MediaObject\">MediaObject</a> alongside particular <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> information.<br/><br/>\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
          "rdfs:label" : "encodingFormat",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -96,8 +96,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:height" : {
@@ -105,10 +105,10 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:VisualArtwork",
+            "schema:MediaObject",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:Person",
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",
@@ -127,14 +127,14 @@
          "rdfs:comment" : "The production company or studio responsible for the item e.g. series, video game, episode etc.",
          "rdfs:label" : "productionCompany",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:MovieSeries",
-            "schema:Movie",
-            "schema:TVSeries",
-            "schema:RadioSeries",
-            "schema:CreativeWorkSeason",
             "schema:VideoGameSeries",
-            "schema:Episode"
+            "schema:MovieSeries",
+            "schema:Episode",
+            "schema:RadioSeries",
+            "schema:MediaObject",
+            "schema:Movie",
+            "schema:CreativeWorkSeason",
+            "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -156,8 +156,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaSubscription",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:MediaSubscription"
          ]
       },
       "schema:startTime" : {
@@ -170,8 +170,8 @@
             "schema:Action"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       },
       "schema:uploadDate" : {
@@ -186,8 +186,8 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:MediaObject",
+            "schema:Product",
             "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [

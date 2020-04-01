@@ -3,8 +3,8 @@
       "dc:source" : "schemadotorgsources:source_DatasetClass",
       "owl:equivalentClass" : [
          "dcat:Dataset",
-         "dcmitype:Dataset",
-         "void:Dataset"
+         "void:Dataset",
+         "dcmitype:Dataset"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A body of structured information describing some topic(s) of interest.",
@@ -59,10 +59,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Dataset",
             "schema:CreativeWorkSeries",
+            "schema:Blog",
             "schema:WebSite",
-            "schema:Blog"
+            "schema:Dataset"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -73,10 +73,10 @@
          "rdfs:label" : "measurementTechnique",
          "schema:category" : "issue-1425",
          "schema:domainIncludes" : [
-            "schema:DataCatalog",
+            "schema:Dataset",
             "schema:PropertyValue",
             "schema:DataDownload",
-            "schema:Dataset"
+            "schema:DataCatalog"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

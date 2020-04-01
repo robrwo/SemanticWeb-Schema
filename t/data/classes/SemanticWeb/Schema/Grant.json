@@ -19,8 +19,8 @@
          "rdfs:comment" : "Indicates an item funded or sponsored through a <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a>.",
          "rdfs:label" : "fundedItem",
          "schema:category" : [
-            "issue-383",
-            "issue-1688"
+            "issue-1688",
+            "issue-383"
          ],
          "schema:domainIncludes" : "schema:Grant",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -31,16 +31,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
             "schema:Event",
-            "schema:Grant",
-            "schema:Organization",
+            "schema:MedicalStudy",
             "schema:CreativeWork",
-            "schema:Person"
+            "schema:Organization",
+            "schema:Person",
+            "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

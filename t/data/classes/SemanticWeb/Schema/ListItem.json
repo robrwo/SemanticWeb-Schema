@@ -28,8 +28,8 @@
          "rdfs:comment" : "The position of an item in a series or sequence of items.",
          "rdfs:label" : "position",
          "schema:domainIncludes" : [
-            "schema:ListItem",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:ListItem"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

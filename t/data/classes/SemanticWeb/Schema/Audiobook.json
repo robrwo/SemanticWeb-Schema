@@ -24,13 +24,13 @@
          ],
          "schema:domainIncludes" : [
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRecording",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:MediaObject",
+            "schema:Movie",
             "schema:MusicRelease",
             "schema:Audiobook",
-            "schema:Movie"
+            "schema:Schedule",
+            "schema:MusicRecording",
+            "schema:Event",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       },

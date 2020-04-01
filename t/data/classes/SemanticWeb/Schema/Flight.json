@@ -42,8 +42,8 @@
          "rdfs:comment" : "The type of boarding policy used by the airline (e.g. zone-based or group-based).",
          "rdfs:label" : "boardingPolicy",
          "schema:domainIncludes" : [
-            "schema:Airline",
-            "schema:Flight"
+            "schema:Flight",
+            "schema:Airline"
          ],
          "schema:rangeIncludes" : "schema:BoardingPolicyType"
       },
@@ -123,12 +123,12 @@
             "schema:Order",
             "schema:Flight",
             "schema:Offer",
-            "schema:BuyAction",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:BuyAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:webCheckinTime" : {

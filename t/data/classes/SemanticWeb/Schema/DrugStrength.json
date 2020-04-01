@@ -12,10 +12,10 @@
          "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
          "rdfs:label" : "activeIngredient",
          "schema:domainIncludes" : [
-            "schema:DrugStrength",
-            "schema:DietarySupplement",
             "schema:Drug",
-            "schema:Substance"
+            "schema:DrugStrength",
+            "schema:Substance",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -34,9 +34,9 @@
          "rdfs:label" : "maximumIntake",
          "schema:domainIncludes" : [
             "schema:DrugStrength",
-            "schema:DietarySupplement",
             "schema:Drug",
-            "schema:Substance"
+            "schema:Substance",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MaximumDoseSchedule"

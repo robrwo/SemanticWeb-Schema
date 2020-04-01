@@ -13,9 +13,9 @@
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
             "schema:Place",
-            "schema:QualitativeValue",
+            "schema:QuantitativeValue",
             "schema:Product",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
       },
@@ -73,16 +73,16 @@
          "rdfs:comment" : "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
-            "schema:QualitativeValue",
+            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:Enumeration",
-            "schema:StructuredValue",
-            "schema:QualitativeValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:StructuredValue",
+            "schema:Enumeration",
+            "schema:PropertyValue",
+            "schema:QualitativeValue"
          ]
       }
    }

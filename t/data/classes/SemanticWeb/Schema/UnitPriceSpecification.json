@@ -40,14 +40,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue",
             "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:unitText" : {
@@ -56,9 +56,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification",
+            "schema:PropertyValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

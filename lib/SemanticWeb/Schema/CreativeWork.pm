@@ -2060,37 +2060,6 @@ has material => (
 );
 
 
-=head2 C<material_extent>
-
-C<materialExtent>
-
-The quantity of the materials being described or an expression of the
-physical space they occupy.
-
-
-A material_extent should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
-
-=item C<Str>
-
-=back
-
-=head2 C<_has_material_extent>
-
-A predicate for the L</material_extent> attribute.
-
-=cut
-
-has material_extent => (
-    is        => 'rw',
-    predicate => '_has_material_extent',
-    json_ld   => 'materialExtent',
-);
-
-
 =head2 C<mentions>
 
 

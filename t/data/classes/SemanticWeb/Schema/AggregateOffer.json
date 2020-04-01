@@ -12,8 +12,8 @@
          "rdfs:label" : "highPrice",
          "schema:domainIncludes" : "schema:AggregateOffer",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:lowPrice" : {
@@ -40,19 +40,19 @@
          "rdfs:label" : "offers",
          "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:Trip",
-            "schema:AggregateOffer",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
             "schema:CreativeWork",
+            "schema:AggregateOffer",
+            "schema:EducationalOccupationalProgram",
+            "schema:Product",
             "schema:MenuItem",
             "schema:Service",
-            "schema:Product"
+            "schema:Trip",
+            "schema:Event"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ]
       }
    }

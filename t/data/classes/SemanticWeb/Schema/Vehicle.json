@@ -23,8 +23,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:URL",
+            "schema:Text",
             "schema:QualitativeValue"
          ]
       },
@@ -36,9 +36,9 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:category" : "issue-2109",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
             "schema:BroadcastService",
-            "schema:Person"
+            "schema:Person",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -66,8 +66,8 @@
          "rdfs:label" : "driveWheelConfiguration",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:DriveWheelConfigurationValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:DriveWheelConfigurationValue"
          ]
       },
       "schema:emissionsCO2" : {
@@ -114,8 +114,8 @@
             "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:URL",
+            "schema:QualitativeValue",
             "schema:Text"
          ]
       },
@@ -136,8 +136,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:URL"
          ]
       },
       "schema:mileageFromOdometer" : {
@@ -175,8 +175,8 @@
          "rdfs:label" : "numberOfAxles",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numberOfDoors" : {
@@ -186,8 +186,8 @@
          "rdfs:label" : "numberOfDoors",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:numberOfForwardGears" : {
@@ -208,8 +208,8 @@
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:payload" : {
@@ -238,8 +238,8 @@
          "rdfs:comment" : "The date the item e.g. vehicle was purchased by the current owner.",
          "rdfs:label" : "purchaseDate",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date"
       },
@@ -369,9 +369,9 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:QualitativeValue",
             "schema:Text",
-            "schema:QualitativeValue"
+            "schema:URL"
          ]
       },
       "schema:weightTotal" : {

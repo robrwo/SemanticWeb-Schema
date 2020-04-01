@@ -17,9 +17,9 @@
             "schema:Suite"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:BedType",
             "schema:BedDetails",
-            "schema:BedType"
+            "schema:Text"
          ]
       },
       "schema:occupancy" : {

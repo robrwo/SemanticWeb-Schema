@@ -13,9 +13,9 @@
          "rdfs:label" : "about",
          "schema:category" : "issue-1670",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:Event",
             "schema:CommunicateAction",
-            "schema:Event"
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing"
@@ -27,17 +27,17 @@
          "rdfs:label" : "inLanguage",
          "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:LinkRole",
-            "schema:PronounceableText",
             "schema:BroadcastService",
-            "schema:Event",
             "schema:CommunicateAction",
             "schema:CreativeWork",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:LinkRole",
+            "schema:Event",
+            "schema:PronounceableText"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:language" : {
@@ -59,20 +59,20 @@
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
             "schema:Message",
-            "schema:TipAction",
             "schema:SendAction",
-            "schema:GiveAction",
-            "schema:AuthorizeAction",
-            "schema:CommunicateAction",
             "schema:ReturnAction",
             "schema:PayAction",
+            "schema:GiveAction",
+            "schema:AuthorizeAction",
+            "schema:TipAction",
+            "schema:CommunicateAction",
             "schema:DonateAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
+            "schema:Person",
             "schema:Organization",
-            "schema:ContactPoint",
-            "schema:Person"
+            "schema:Audience",
+            "schema:ContactPoint"
          ]
       }
    }
