@@ -31,11 +31,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:GeoCoordinates",
             "schema:Place",
-            "schema:GeoShape",
-            "schema:Person"
+            "schema:Organization",
+            "schema:Person",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -47,14 +47,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:Brand",
-            "schema:Event",
             "schema:Place",
-            "schema:Product",
-            "schema:Organization",
             "schema:CreativeWork",
+            "schema:Organization",
+            "schema:Event",
+            "schema:Product",
             "schema:Service",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Brand"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -74,18 +74,18 @@
          "rdfs:comment" : "The geographic area where a service or offered item is provided.",
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand",
-            "schema:Service",
-            "schema:DeliveryChargeSpecification",
             "schema:Organization",
-            "schema:ContactPoint"
+            "schema:DeliveryChargeSpecification",
+            "schema:Demand",
+            "schema:Offer",
+            "schema:ContactPoint",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:Place",
             "schema:AdministrativeArea",
             "schema:GeoShape",
-            "schema:Place"
+            "schema:Text"
          ]
       },
       "schema:award" : {
@@ -94,10 +94,10 @@
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:Organization",
             "schema:Product",
             "schema:Person",
-            "schema:Service"
+            "schema:Service",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -106,10 +106,10 @@
          "rdfs:comment" : "Awards won by or for this item.",
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Organization",
             "schema:Person",
-            "schema:Product"
+            "schema:Product",
+            "schema:CreativeWork",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:supersededBy" : "schema:award"
@@ -119,10 +119,10 @@
          "rdfs:comment" : "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Person",
             "schema:Organization",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Brand",
@@ -134,8 +134,8 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Person",
+            "schema:Organization",
             "schema:HealthInsurancePlan"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
@@ -162,13 +162,13 @@
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
          "schema:category" : "issue-1525",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:NewsMediaOrganization"
+            "schema:NewsMediaOrganization",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ]
       },
       "schema:department" : {
@@ -200,14 +200,14 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ]
       },
       "schema:diversityStaffingReport" : {
          "dc:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/1525"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (often but not necessarily a <a class=\"localLink\" href=\"http://schema.org/NewsMediaOrganization\">NewsMediaOrganization</a>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.",
@@ -215,13 +215,13 @@
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
          "schema:category" : "issue-1525",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:NewsMediaOrganization"
+            "schema:NewsMediaOrganization",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Article"
+            "schema:Article",
+            "schema:URL"
          ]
       },
       "schema:duns" : {
@@ -269,8 +269,8 @@
          "rdfs:label" : "ethicsPolicy",
          "schema:category" : "issue-1525",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -283,12 +283,12 @@
          "rdfs:comment" : "Upcoming or past event associated with this place, organization, or action.",
          "rdfs:label" : "event",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:InformAction",
+            "schema:PlayAction",
+            "schema:JoinAction",
             "schema:InviteAction",
             "schema:LeaveAction",
-            "schema:JoinAction",
-            "schema:PlayAction",
-            "schema:Place",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Event"
@@ -309,10 +309,10 @@
          "rdfs:comment" : "The fax number.",
          "rdfs:label" : "faxNumber",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:Organization",
-            "schema:Place",
-            "schema:ContactPoint"
+            "schema:Person",
+            "schema:ContactPoint",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -351,15 +351,15 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Organization",
             "schema:MonetaryGrant",
+            "schema:CreativeWork",
             "schema:Person",
-            "schema:Event"
+            "schema:Event",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:globalLocationNumber" : {
@@ -370,8 +370,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:Place",
-            "schema:Person"
+            "schema:Person",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -395,8 +395,8 @@
          "rdfs:label" : "hasMerchantReturnPolicy",
          "schema:category" : "issue-2288",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MerchantReturnPolicy"
@@ -406,9 +406,9 @@
          "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
+            "schema:Person",
             "schema:Service",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -418,8 +418,8 @@
          "rdfs:comment" : "Points-of-Sales operated by the organization or person.",
          "rdfs:label" : "hasPOS",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Place"
       },
@@ -442,16 +442,16 @@
          "rdfs:comment" : "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
          "rdfs:label" : "isicV4",
          "schema:domainIncludes" : [
+            "schema:Organization",
             "schema:Person",
-            "schema:Place",
-            "schema:Organization"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:knowsAbout" : {
          "dc:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1688"
+            "https://github.com/schemaorg/schemaorg/issues/1688",
+            "schemadotorgsources2:TP"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Of a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a>, and less typically of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or <a class=\"localLink\" href=\"http://schema.org/JobPosting\">JobPosting</a> descriptions.",
@@ -497,8 +497,8 @@
       },
       "schema:leiCode" : {
          "dc:source" : [
-            "schemadotorgsources:GLEIF",
-            "schemadotorgsources:FIBO"
+            "schemadotorgsources:FIBO",
+            "schemadotorgsources:GLEIF"
          ],
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.",
@@ -512,15 +512,15 @@
          "rdfs:comment" : "The location of for example where the event is happening, an organization is located, or where an action takes place.",
          "rdfs:label" : "location",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Action",
-            "schema:Event"
+            "schema:Event",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:PostalAddress",
             "schema:VirtualLocation",
-            "schema:Place",
-            "schema:Text"
+            "schema:Place"
          ]
       },
       "schema:logo" : {
@@ -530,15 +530,15 @@
          "rdfs:label" : "logo",
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
+            "schema:Organization",
+            "schema:Service",
             "schema:Product",
             "schema:Brand",
-            "schema:Service",
-            "schema:Organization",
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:ImageObject"
+            "schema:ImageObject",
+            "schema:URL"
          ]
       },
       "schema:makesOffer" : {
@@ -586,12 +586,12 @@
          "rdfs:comment" : "A member of this organization.",
          "rdfs:label" : "members",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:ProgramMembership"
+            "schema:ProgramMembership",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:supersededBy" : "schema:member"
       },
@@ -601,8 +601,8 @@
          "rdfs:comment" : "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
          "rdfs:label" : "naics",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -632,10 +632,10 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
             "schema:Text",
-            "schema:URL",
-            "schema:AboutPage"
+            "schema:CreativeWork",
+            "schema:AboutPage",
+            "schema:URL"
          ]
       },
       "schema:owns" : {
@@ -648,8 +648,8 @@
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
-            "schema:OwnershipInfo"
+            "schema:OwnershipInfo",
+            "schema:Product"
          ]
       },
       "schema:parentOrganization" : {
@@ -665,13 +665,13 @@
          "rdfs:comment" : "The publishingPrinciples property indicates (typically via <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a>) a document describing the editorial principles of an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> (or individual e.g. a <a class=\"localLink\" href=\"http://schema.org/Person\">Person</a> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a> (e.g. <a class=\"localLink\" href=\"http://schema.org/NewsArticle\">NewsArticle</a>) the principles are those of the party primarily responsible for the creation of the <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.<br/><br/>\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a <a class=\"localLink\" href=\"http://schema.org/funder\">funder</a>) can be expressed using schema.org terminology.",
          "rdfs:label" : "publishingPrinciples",
          "schema:domainIncludes" : [
-            "schema:Organization",
+            "schema:CreativeWork",
             "schema:Person",
-            "schema:CreativeWork"
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ]
       },
       "schema:review" : {
@@ -679,14 +679,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:Brand",
-            "schema:Service",
-            "schema:Offer",
-            "schema:Product",
             "schema:CreativeWork",
+            "schema:Service",
+            "schema:Brand",
+            "schema:Event",
             "schema:Organization",
-            "schema:Place"
+            "schema:Place",
+            "schema:Product",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -695,11 +695,11 @@
          "rdfs:comment" : "Review of the item.",
          "rdfs:label" : "reviews",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:CreativeWork",
-            "schema:Offer",
+            "schema:Organization",
+            "schema:Place",
             "schema:Product",
-            "schema:Place"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:Review",
          "schema:supersededBy" : "schema:review"
@@ -710,8 +710,8 @@
          "rdfs:comment" : "A pointer to products or services sought by the organization or person (demand).",
          "rdfs:label" : "seeks",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Demand"
       },
@@ -725,9 +725,9 @@
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
             "schema:GeoShape",
-            "schema:AdministrativeArea"
+            "schema:AdministrativeArea",
+            "schema:Place"
          ],
          "schema:supersededBy" : "schema:areaServed"
       },
@@ -736,11 +736,11 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Place",
+            "schema:Product",
             "schema:Organization",
             "schema:Service",
             "schema:Brand",
-            "schema:Product"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -749,16 +749,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:MedicalStudy",
+            "schema:Event",
             "schema:Grant",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:CreativeWork",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:subOrganization" : {
@@ -776,8 +776,8 @@
          "rdfs:label" : "taxID",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -787,9 +787,9 @@
          "rdfs:label" : "telephone",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:Person",
             "schema:Place",
-            "schema:ContactPoint"
+            "schema:ContactPoint",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

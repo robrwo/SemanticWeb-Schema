@@ -12,8 +12,8 @@
          "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:Patient",
             "schema:TherapeuticProcedure",
+            "schema:Patient",
             "schema:DrugClass",
             "schema:MedicalCondition"
          ],

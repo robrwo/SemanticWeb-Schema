@@ -12,8 +12,8 @@
          "rdfs:label" : "aircraft",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Vehicle",
-            "schema:Text"
+            "schema:Text",
+            "schema:Vehicle"
          ]
       },
       "schema:arrivalAirport" : {
@@ -42,8 +42,8 @@
          "rdfs:comment" : "The type of boarding policy used by the airline (e.g. zone-based or group-based).",
          "rdfs:label" : "boardingPolicy",
          "schema:domainIncludes" : [
-            "schema:Flight",
-            "schema:Airline"
+            "schema:Airline",
+            "schema:Flight"
          ],
          "schema:rangeIncludes" : "schema:BoardingPolicyType"
       },
@@ -52,8 +52,8 @@
          "rdfs:comment" : "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
          "rdfs:label" : "carrier",
          "schema:domainIncludes" : [
-            "schema:ParcelDelivery",
-            "schema:Flight"
+            "schema:Flight",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : "schema:Organization",
          "schema:supersededBy" : "schema:provider"
@@ -85,8 +85,8 @@
          "rdfs:label" : "estimatedFlightDuration",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Duration",
-            "schema:Text"
+            "schema:Text",
+            "schema:Duration"
          ]
       },
       "schema:flightDistance" : {
@@ -95,8 +95,8 @@
          "rdfs:label" : "flightDistance",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:Text"
+            "schema:Text",
+            "schema:Distance"
          ]
       },
       "schema:flightNumber" : {
@@ -120,15 +120,15 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Flight",
             "schema:Order",
+            "schema:Flight",
+            "schema:Offer",
             "schema:BuyAction",
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:webCheckinTime" : {

@@ -40,17 +40,17 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Demand",
             "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
             "schema:Permit",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:Offer"
+            "schema:Demand",
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:validThrough" : {
@@ -60,16 +60,16 @@
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Demand",
             "schema:MonetaryAmount",
-            "schema:JobPosting",
+            "schema:Demand",
             "schema:OpeningHoursSpecification",
+            "schema:JobPosting",
             "schema:PriceSpecification",
             "schema:LocationFeatureSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       }
    }

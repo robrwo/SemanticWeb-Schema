@@ -55,13 +55,13 @@
             "issue-1698"
          ],
          "schema:domainIncludes" : [
-            "schema:Audiobook",
-            "schema:MusicRelease",
-            "schema:Event",
-            "schema:MediaObject",
-            "schema:MusicRecording",
             "schema:QuantitativeValueDistribution",
+            "schema:MusicRecording",
+            "schema:Event",
             "schema:Schedule",
+            "schema:MediaObject",
+            "schema:MusicRelease",
+            "schema:Audiobook",
             "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Duration"
@@ -73,17 +73,17 @@
          "rdfs:label" : "endDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
-            "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification",
-            "schema:Role",
-            "schema:Schedule",
             "schema:Event",
-            "schema:CreativeWorkSeries"
+            "schema:EducationalOccupationalProgram",
+            "schema:Schedule",
+            "schema:CreativeWorkSeries",
+            "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:exceptDate" : {
@@ -95,8 +95,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:repeatCount" : {
@@ -119,8 +119,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Duration"
+            "schema:Duration",
+            "schema:Text"
          ]
       },
       "schema:scheduleTimezone" : {
@@ -141,12 +141,12 @@
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
             "schema:CreativeWorkSeason",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeries",
-            "schema:Event",
             "schema:DatedMoneySpecification",
+            "schema:Event",
+            "schema:CreativeWorkSeries",
+            "schema:Schedule",
             "schema:Role",
-            "schema:Schedule"
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

@@ -139,6 +139,34 @@ has category => (
 );
 
 
+=head2 C<date_posted>
+
+C<datePosted>
+
+Publication date of an online listing.
+
+
+A date_posted should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_date_posted>
+
+A predicate for the L</date_posted> attribute.
+
+=cut
+
+has date_posted => (
+    is        => 'rw',
+    predicate => '_has_date_posted',
+    json_ld   => 'datePosted',
+);
+
+
 =head2 C<disease_prevention_info>
 
 C<diseasePreventionInfo>

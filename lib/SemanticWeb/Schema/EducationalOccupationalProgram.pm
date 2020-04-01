@@ -671,6 +671,34 @@ has time_of_day => (
 );
 
 
+=head2 C<time_to_complete>
+
+C<timeToComplete>
+
+The expected length of time to complete the program if attending full-time.
+
+
+A time_to_complete should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=back
+
+=head2 C<_has_time_to_complete>
+
+A predicate for the L</time_to_complete> attribute.
+
+=cut
+
+has time_to_complete => (
+    is        => 'rw',
+    predicate => '_has_time_to_complete',
+    json_ld   => 'timeToComplete',
+);
+
+
 =head2 C<training_salary>
 
 C<trainingSalary>

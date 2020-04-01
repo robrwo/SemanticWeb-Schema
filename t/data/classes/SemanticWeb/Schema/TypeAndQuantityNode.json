@@ -22,8 +22,8 @@
          "rdfs:label" : "businessFunction",
          "schema:domainIncludes" : [
             "schema:Demand",
-            "schema:Offer",
-            "schema:TypeAndQuantityNode"
+            "schema:TypeAndQuantityNode",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:BusinessFunction"
       },
@@ -48,9 +48,9 @@
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:TypeAndQuantityNode",
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification"
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -62,10 +62,10 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:PropertyValue",
+            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue"
+            "schema:TypeAndQuantityNode",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

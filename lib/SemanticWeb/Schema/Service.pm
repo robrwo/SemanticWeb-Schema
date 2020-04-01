@@ -726,6 +726,34 @@ has slogan => (
 );
 
 
+=head2 C<terms_of_service>
+
+C<termsOfService>
+
+Human-readable terms of service documentation.
+
+
+A terms_of_service should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_terms_of_service>
+
+A predicate for the L</terms_of_service> attribute.
+
+=cut
+
+has terms_of_service => (
+    is        => 'rw',
+    predicate => '_has_terms_of_service',
+    json_ld   => 'termsOfService',
+);
+
+
 
 
 =head1 SEE ALSO

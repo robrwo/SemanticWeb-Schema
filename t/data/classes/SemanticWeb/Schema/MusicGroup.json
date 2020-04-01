@@ -31,8 +31,8 @@
             "schema:BroadcastChannel"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:musicGroupMember" : {
@@ -53,8 +53,8 @@
             "schema:MusicGroup"
          ],
          "schema:rangeIncludes" : [
-            "schema:ItemList",
-            "schema:MusicRecording"
+            "schema:MusicRecording",
+            "schema:ItemList"
          ]
       },
       "schema:tracks" : {
@@ -62,8 +62,8 @@
          "rdfs:comment" : "A music recording (track)&#x2014;usually a single song.",
          "rdfs:label" : "tracks",
          "schema:domainIncludes" : [
-            "schema:MusicGroup",
-            "schema:MusicPlaylist"
+            "schema:MusicPlaylist",
+            "schema:MusicGroup"
          ],
          "schema:rangeIncludes" : "schema:MusicRecording",
          "schema:supersededBy" : "schema:track"

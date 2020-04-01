@@ -14,8 +14,8 @@
          "schema:category" : "issue-1541",
          "schema:domainIncludes" : "schema:MenuItem",
          "schema:rangeIncludes" : [
-            "schema:MenuItem",
-            "schema:MenuSection"
+            "schema:MenuSection",
+            "schema:MenuItem"
          ]
       },
       "schema:nutrition" : {
@@ -35,14 +35,14 @@
          "rdfs:label" : "offers",
          "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:MenuItem",
-            "schema:Product",
-            "schema:Event",
             "schema:Trip",
-            "schema:CreativeWork",
+            "schema:AggregateOffer",
+            "schema:Event",
             "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
+            "schema:MenuItem",
             "schema:Service",
-            "schema:AggregateOffer"
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [

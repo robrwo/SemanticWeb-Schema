@@ -18,14 +18,14 @@
          "rdfs:label" : "availabilityEnds",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:ActionAccessSpecification",
             "schema:Offer",
-            "schema:Demand",
-            "schema:ActionAccessSpecification"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
+            "schema:Time",
             "schema:Date",
-            "schema:DateTime",
-            "schema:Time"
+            "schema:DateTime"
          ]
       },
       "schema:availabilityStarts" : {
@@ -38,14 +38,14 @@
          "rdfs:label" : "availabilityStarts",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:ActionAccessSpecification",
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Time",
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:category" : {
@@ -58,20 +58,20 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:Invoice",
+            "schema:Service",
             "schema:PhysicalActivity",
-            "schema:Offer",
+            "schema:Invoice",
             "schema:URL",
+            "schema:Recommendation",
+            "schema:Offer",
             "schema:Product",
             "schema:SpecialAnnouncement",
-            "schema:Recommendation",
-            "schema:Service"
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Thing",
-            "schema:PhysicalActivityCategory",
-            "schema:Text"
+            "schema:PhysicalActivityCategory"
          ]
       },
       "schema:eligibleRegion" : {
@@ -85,14 +85,14 @@
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:Offer",
-            "schema:ActionAccessSpecification"
+            "schema:Demand",
+            "schema:ActionAccessSpecification",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:GeoShape",
+            "schema:Text",
             "schema:Place"
          ]
       },
@@ -103,8 +103,8 @@
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
             "schema:MediaSubscription",
+            "schema:ActionAccessSpecification",
             "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer"
@@ -116,16 +116,16 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:category" : "issue-2242",
          "schema:domainIncludes" : [
-            "schema:DeliveryChargeSpecification",
-            "schema:ActionAccessSpecification",
             "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:DeliveryChargeSpecification",
+            "schema:ActionAccessSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:GeoShape",
             "schema:Place",
-            "schema:Text",
-            "schema:GeoShape"
+            "schema:Text"
          ]
       },
       "schema:requiresSubscription" : {
@@ -135,8 +135,8 @@
          "rdfs:label" : "requiresSubscription",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:ActionAccessSpecification"
+            "schema:ActionAccessSpecification",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:MediaSubscription",

@@ -19,20 +19,36 @@
          "rdfs:label" : "category",
          "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:Invoice",
+            "schema:Service",
             "schema:PhysicalActivity",
-            "schema:Offer",
+            "schema:Invoice",
             "schema:URL",
+            "schema:Recommendation",
+            "schema:Offer",
             "schema:Product",
             "schema:SpecialAnnouncement",
-            "schema:Recommendation",
-            "schema:Service"
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Thing",
-            "schema:PhysicalActivityCategory",
-            "schema:Text"
+            "schema:PhysicalActivityCategory"
+         ]
+      },
+      "schema:datePosted" : {
+         "dc:source" : "https://github.com/schemaorg/schemaorg/issues/2490",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Publication date of an online listing.",
+         "rdfs:label" : "datePosted",
+         "schema:category" : "issue-2490",
+         "schema:domainIncludes" : [
+            "schema:JobPosting",
+            "schema:SpecialAnnouncement",
+            "schema:RealEstateListing"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:diseasePreventionInfo" : {
@@ -57,10 +73,10 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Observation",
             "schema:WebContent",
-            "schema:Dataset"
+            "schema:Observation",
+            "schema:Dataset",
+            "schema:URL"
          ]
       },
       "schema:gettingTestedInfo" : {
@@ -72,8 +88,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ]
       },
       "schema:newsUpdatesAndGuidelines" : {
@@ -85,8 +101,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ]
       },
       "schema:publicTransportClosuresInfo" : {
@@ -98,8 +114,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ]
       },
       "schema:quarantineGuidelines" : {
@@ -111,8 +127,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ]
       },
       "schema:schoolClosuresInfo" : {
@@ -137,8 +153,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ]
       }
    }

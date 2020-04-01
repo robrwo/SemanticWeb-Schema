@@ -25,14 +25,14 @@
          "rdfs:comment" : "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
-            "schema:Reservation",
             "schema:Service",
+            "schema:Order",
             "schema:Invoice",
-            "schema:Order"
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:confirmationNumber" : {
@@ -55,8 +55,8 @@
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:discount" : {
@@ -96,8 +96,8 @@
          "rdfs:label" : "merchant",
          "schema:domainIncludes" : "schema:Order",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:supersededBy" : "schema:seller"
       },
@@ -116,8 +116,8 @@
          "rdfs:comment" : "The delivery of the parcel related to this order or order item.",
          "rdfs:label" : "orderDelivery",
          "schema:domainIncludes" : [
-            "schema:OrderItem",
-            "schema:Order"
+            "schema:Order",
+            "schema:OrderItem"
          ],
          "schema:rangeIncludes" : "schema:ParcelDelivery"
       },
@@ -141,8 +141,8 @@
          "rdfs:comment" : "The item ordered.",
          "rdfs:label" : "orderedItem",
          "schema:domainIncludes" : [
-            "schema:OrderItem",
-            "schema:Order"
+            "schema:Order",
+            "schema:OrderItem"
          ],
          "schema:rangeIncludes" : [
             "schema:Product",
@@ -162,8 +162,8 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDue",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:DateTime",
          "schema:supersededBy" : "schema:paymentDueDate"
@@ -186,8 +186,8 @@
          "rdfs:comment" : "The name of the credit card or other method of payment for the order.",
          "rdfs:label" : "paymentMethod",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:PaymentMethod"
       },
@@ -214,15 +214,15 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Flight",
             "schema:Order",
+            "schema:Flight",
+            "schema:Offer",
             "schema:BuyAction",
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

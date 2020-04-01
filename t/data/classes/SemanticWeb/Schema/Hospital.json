@@ -5,8 +5,8 @@
       "rdfs:label" : "Hospital",
       "rdfs:subClassOf" : [
          "schema:MedicalOrganization",
-         "schema:EmergencyService",
-         "schema:CivicStructure"
+         "schema:CivicStructure",
+         "schema:EmergencyService"
       ]
    },
    "properties" : {
@@ -31,10 +31,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
-            "schema:Physician",
             "schema:Hospital",
-            "schema:MedicalClinic"
+            "schema:MedicalClinic",
+            "schema:Physician",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

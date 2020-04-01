@@ -12,9 +12,9 @@
          "rdfs:label" : "deliveryMethod",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:TrackAction",
-            "schema:SendAction",
             "schema:OrderAction",
+            "schema:SendAction",
+            "schema:TrackAction",
             "schema:ReceiveAction"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
@@ -29,9 +29,9 @@
             "schema:ReceiveAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
             "schema:Audience",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

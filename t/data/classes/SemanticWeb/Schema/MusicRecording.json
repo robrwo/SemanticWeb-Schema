@@ -32,13 +32,13 @@
             "issue-1698"
          ],
          "schema:domainIncludes" : [
-            "schema:Audiobook",
-            "schema:MusicRelease",
-            "schema:Event",
-            "schema:MediaObject",
-            "schema:MusicRecording",
             "schema:QuantitativeValueDistribution",
+            "schema:MusicRecording",
+            "schema:Event",
             "schema:Schedule",
+            "schema:MediaObject",
+            "schema:MusicRelease",
+            "schema:Audiobook",
             "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Duration"

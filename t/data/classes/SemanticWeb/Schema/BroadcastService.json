@@ -39,8 +39,8 @@
             "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : [
-            "schema:BroadcastFrequencySpecification",
-            "schema:Text"
+            "schema:Text",
+            "schema:BroadcastFrequencySpecification"
          ]
       },
       "schema:broadcastTimezone" : {
@@ -65,8 +65,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:category" : "issue-2109",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
             "schema:Vehicle",
+            "schema:BroadcastService",
             "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -89,17 +89,17 @@
          "rdfs:label" : "inLanguage",
          "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:WriteAction",
+            "schema:LinkRole",
+            "schema:PronounceableText",
             "schema:BroadcastService",
             "schema:Event",
             "schema:CommunicateAction",
-            "schema:PronounceableText",
             "schema:CreativeWork",
-            "schema:LinkRole"
+            "schema:WriteAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ]
       },
       "schema:parentService" : {
@@ -114,9 +114,9 @@
          "rdfs:comment" : "The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).",
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
             "schema:ScreeningEvent",
-            "schema:BroadcastEvent"
+            "schema:BroadcastEvent",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

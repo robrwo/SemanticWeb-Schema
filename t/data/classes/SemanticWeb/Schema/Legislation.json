@@ -19,8 +19,8 @@
       "schema:legislationApplies" : {
          "core:exactMatch" : "ontology:implements",
          "dc:source" : [
-            "eli:index.html",
-            "https://github.com/schemaorg/schemaorg/issues/1156"
+            "https://github.com/schemaorg/schemaorg/issues/1156",
+            "eli:index.html"
          ],
          "owl:equivalentProperty" : "ontology:implements",
          "rdf:type" : "rdf:Property",
@@ -64,8 +64,8 @@
       "schema:legislationDate" : {
          "core:exactMatch" : "ontology:date_document",
          "dc:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ],
          "owl:equivalentProperty" : "ontology:date_document",
          "rdf:type" : "rdf:Property",
@@ -80,8 +80,8 @@
       "schema:legislationDateVersion" : {
          "core:exactMatch" : "ontology:version_date",
          "dc:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ],
          "owl:equivalentProperty" : "ontology:version_date",
          "rdf:type" : "rdf:Property",
@@ -106,15 +106,15 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:legislationJurisdiction" : {
          "core:exactMatch" : "ontology:jurisdiction",
          "dc:source" : [
-            "eli:index.html",
-            "https://github.com/schemaorg/schemaorg/issues/1156"
+            "https://github.com/schemaorg/schemaorg/issues/1156",
+            "eli:index.html"
          ],
          "owl:equivalentProperty" : "ontology:jurisdiction",
          "rdf:type" : "rdf:Property",
@@ -125,15 +125,15 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AdministrativeArea",
-            "schema:Text"
+            "schema:Text",
+            "schema:AdministrativeArea"
          ]
       },
       "schema:legislationLegalForce" : {
          "core:exactMatch" : "ontology:in_force",
          "dc:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ],
          "owl:equivalentProperty" : "ontology:in_force",
          "rdf:type" : "rdf:Property",
@@ -166,8 +166,8 @@
       "schema:legislationResponsible" : {
          "core:exactMatch" : "ontology:responsibility_of",
          "dc:source" : [
-            "eli:index.html",
-            "https://github.com/schemaorg/schemaorg/issues/1156"
+            "https://github.com/schemaorg/schemaorg/issues/1156",
+            "eli:index.html"
          ],
          "owl:equivalentProperty" : "ontology:responsibility_of",
          "rdf:type" : "rdf:Property",

@@ -53,17 +53,17 @@ were generated automatically from the following sources:
 =over
 
 
-=item L<https://schema.org/version/7.0/ext-auto.rdf>
+=item L<https://schema.org/version/7.01/ext-auto.rdf>
 
-=item L<https://schema.org/version/7.0/ext-bib.rdf>
+=item L<https://schema.org/version/7.01/ext-bib.rdf>
 
-=item L<https://schema.org/version/7.0/ext-health-lifesci.rdf>
+=item L<https://schema.org/version/7.01/ext-health-lifesci.rdf>
 
-=item L<https://schema.org/version/7.0/ext-meta.rdf>
+=item L<https://schema.org/version/7.01/ext-meta.rdf>
 
-=item L<https://schema.org/version/7.0/ext-pending.rdf>
+=item L<https://schema.org/version/7.01/ext-pending.rdf>
 
-=item L<https://schema.org/version/7.0/schema.rdf>
+=item L<https://schema.org/version/7.01/schema.rdf>
 
 =back
 
