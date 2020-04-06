@@ -61,6 +61,42 @@ has available_service => (
 );
 
 
+=head2 C<healthcare_reporting_data>
+
+C<healthcareReportingData>
+
+=begin html
+
+<p>Indicates data describing a hospital, e.g. a CDC <a class="localLink"
+href="http://schema.org/CDCPMDRecord">CDCPMDRecord</a> or as some kind of
+<a class="localLink" href="http://schema.org/Dataset">Dataset</a>.<p>
+
+=end html
+
+
+A healthcare_reporting_data should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CDCPMDRecord']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Dataset']>
+
+=back
+
+=head2 C<_has_healthcare_reporting_data>
+
+A predicate for the L</healthcare_reporting_data> attribute.
+
+=cut
+
+has healthcare_reporting_data => (
+    is        => 'rw',
+    predicate => '_has_healthcare_reporting_data',
+    json_ld   => 'healthcareReportingData',
+);
+
+
 =head2 C<medical_specialty>
 
 C<medicalSpecialty>

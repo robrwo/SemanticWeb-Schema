@@ -6,7 +6,7 @@ package SemanticWeb::Schema::3DModel;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::MediaObject /;
 
 
 use MooX::JSON_LD '3DModel';
@@ -53,7 +53,7 @@ href="http://schema.org/3DModel">3DModel</a>.<p>
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::MediaObject>
 
 =cut
 
