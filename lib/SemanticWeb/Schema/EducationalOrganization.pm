@@ -6,7 +6,7 @@ package SemanticWeb::Schema::EducationalOrganization;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Organization /;
+extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::Organization /;
 
 
 use MooX::JSON_LD 'EducationalOrganization';

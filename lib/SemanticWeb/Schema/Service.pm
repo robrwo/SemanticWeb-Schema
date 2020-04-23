@@ -681,6 +681,8 @@ A service_type should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::GovernmentBenefitsType']>
+
 =item C<Str>
 
 =back

@@ -340,6 +340,35 @@ has getting_tested_info => (
 );
 
 
+=head2 C<government_benefits_info>
+
+C<governmentBenefitsInfo>
+
+governmentBenefitsInfo provides information about government benefits
+associated with a SpecialAnnouncement.
+
+
+A government_benefits_info should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::GovernmentService']>
+
+=back
+
+=head2 C<_has_government_benefits_info>
+
+A predicate for the L</government_benefits_info> attribute.
+
+=cut
+
+has government_benefits_info => (
+    is        => 'rw',
+    predicate => '_has_government_benefits_info',
+    json_ld   => 'governmentBenefitsInfo',
+);
+
+
 =head2 C<news_updates_and_guidelines>
 
 C<newsUpdatesAndGuidelines>
