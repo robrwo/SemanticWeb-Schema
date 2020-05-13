@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v7.0.5';
+our $VERSION = 'v8.0.0';
 
 =encoding utf8
 
@@ -1330,6 +1330,39 @@ has serial_number => (
     is        => 'rw',
     predicate => '_has_serial_number',
     json_ld   => 'serialNumber',
+);
+
+
+=head2 C<shipping_details>
+
+C<shippingDetails>
+
+=begin html
+
+<p>Indicates information about the shipping policies and options associated
+with an <a class="localLink" href="http://schema.org/Offer">Offer</a>.<p>
+
+=end html
+
+
+A shipping_details should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::OfferShippingDetails']>
+
+=back
+
+=head2 C<_has_shipping_details>
+
+A predicate for the L</shipping_details> attribute.
+
+=cut
+
+has shipping_details => (
+    is        => 'rw',
+    predicate => '_has_shipping_details',
+    json_ld   => 'shippingDetails',
 );
 
 

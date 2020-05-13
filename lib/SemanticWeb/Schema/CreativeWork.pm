@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v7.0.5';
+our $VERSION = 'v8.0.0';
 
 =encoding utf8
 
@@ -438,6 +438,37 @@ has alternative_headline => (
     is        => 'rw',
     predicate => '_has_alternative_headline',
     json_ld   => 'alternativeHeadline',
+);
+
+
+=head2 C<assesses>
+
+
+
+The item being described is intended to assess the competency or learning
+outcome defined by the referenced term.
+
+
+A assesses should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_assesses>
+
+A predicate for the L</assesses> attribute.
+
+=cut
+
+has assesses => (
+    is        => 'rw',
+    predicate => '_has_assesses',
+    json_ld   => 'assesses',
 );
 
 
@@ -1168,6 +1199,53 @@ has discussion_url => (
 );
 
 
+=head2 C<edit_eidr>
+
+C<editEIDR>
+
+=begin html
+
+<p>An <a href="https://eidr.org/">EIDR</a> (Entertainment Identifier
+Registry) <a class="localLink"
+href="http://schema.org/identifier">identifier</a> representing a specific
+edit / edition for a work of film or television.<br/><br/> For example, the
+motion picture known as "Ghostbusters" whose <a class="localLink"
+href="http://schema.org/titleEIDR">titleEIDR</a> is
+"10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g.
+"10.5240/1F2A-E1C5-680A-14C6-E76B-I" and
+"10.5240/8A35-3BEE-6497-5D12-9E4F-3".<br/><br/> Since schema.org types like
+<a class="localLink" href="http://schema.org/Movie">Movie</a> and <a
+class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be
+used for both works and their multiple expressions, it is possible to use
+<a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone
+(for a general description), or alongside <a class="localLink"
+href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific
+description.<p>
+
+=end html
+
+
+A edit_eidr should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_edit_eidr>
+
+A predicate for the L</edit_eidr> attribute.
+
+=cut
+
+has edit_eidr => (
+    is        => 'rw',
+    predicate => '_has_edit_eidr',
+    json_ld   => 'editEIDR',
+);
+
+
 =head2 C<editor>
 
 
@@ -1200,7 +1278,16 @@ has editor => (
 
 C<educationalAlignment>
 
-An alignment to an established educational framework.
+=begin html
+
+<p>An alignment to an established educational framework.<br/><br/> This
+property should not be used where the nature of the alignment can be
+described using a simple property, for example to express that a resource
+<a class="localLink" href="http://schema.org/teaches">teaches</a> or <a
+class="localLink" href="http://schema.org/assesses">assesses</a> a
+competency.<p>
+
+=end html
 
 
 A educational_alignment should be one of the following types:
@@ -1221,6 +1308,38 @@ has educational_alignment => (
     is        => 'rw',
     predicate => '_has_educational_alignment',
     json_ld   => 'educationalAlignment',
+);
+
+
+=head2 C<educational_level>
+
+C<educationalLevel>
+
+The level in terms of progression through an educational or training
+context. Examples of educational levels include 'beginner', 'intermediate'
+or 'advanced', and formal sets of level indicators.
+
+
+A educational_level should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_educational_level>
+
+A predicate for the L</educational_level> attribute.
+
+=cut
+
+has educational_level => (
+    is        => 'rw',
+    predicate => '_has_educational_level',
+    json_ld   => 'educationalLevel',
 );
 
 
@@ -2770,6 +2889,37 @@ has sponsor => (
     is        => 'rw',
     predicate => '_has_sponsor',
     json_ld   => 'sponsor',
+);
+
+
+=head2 C<teaches>
+
+
+
+The item being described is intended to help a person learn the competency
+or learning outcome defined by the referenced term.
+
+
+A teaches should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_teaches>
+
+A predicate for the L</teaches> attribute.
+
+=cut
+
+has teaches => (
+    is        => 'rw',
+    predicate => '_has_teaches',
+    json_ld   => 'teaches',
 );
 
 

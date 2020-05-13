@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::AlignmentObject;
 
-# ABSTRACT: An intangible item that describes an alignment between a learning resource and a node in an educational framework.
+# ABSTRACT: An intangible item that describes an alignment between a learning resource and a node in an educational framework
 
 use Moo;
 
@@ -15,14 +15,22 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v7.0.5';
+our $VERSION = 'v8.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-An intangible item that describes an alignment between a learning resource
-and a node in an educational framework.
+=begin html
+
+<p>An intangible item that describes an alignment between a learning
+resource and a node in an educational framework.<br/><br/> Should not be
+used where the nature of the alignment can be described using a simple
+property, for example to express that a resource <a class="localLink"
+href="http://schema.org/teaches">teaches</a> or <a class="localLink"
+href="http://schema.org/assesses">assesses</a> a competency.<p>
+
+=end html
 
 
 
@@ -35,9 +43,8 @@ and a node in an educational framework.
 C<alignmentType>
 
 A category of alignment between the learning resource and the framework
-node. Recommended values include: 'assesses', 'teaches', 'requires',
-'textComplexity', 'readingLevel', 'educationalSubject', and
-'educationalLevel'.
+node. Recommended values include: 'requires', 'textComplexity',
+'readingLevel', and 'educationalSubject'.
 
 
 A alignment_type should be one of the following types:

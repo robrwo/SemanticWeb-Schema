@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v7.0.5';
+our $VERSION = 'v8.0.0';
 
 =encoding utf8
 
@@ -1448,6 +1448,35 @@ has naics => (
     is        => 'rw',
     predicate => '_has_naics',
     json_ld   => 'naics',
+);
+
+
+=head2 C<nonprofit_status>
+
+C<nonprofitStatus>
+
+nonprofit Status indicates the legal status of a non-profit organization in
+its primary place of business.
+
+
+A nonprofit_status should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::NonprofitType']>
+
+=back
+
+=head2 C<_has_nonprofit_status>
+
+A predicate for the L</nonprofit_status> attribute.
+
+=cut
+
+has nonprofit_status => (
+    is        => 'rw',
+    predicate => '_has_nonprofit_status',
+    json_ld   => 'nonprofitStatus',
 );
 
 
