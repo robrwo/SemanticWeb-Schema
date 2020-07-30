@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.1';
 
 =encoding utf8
 
