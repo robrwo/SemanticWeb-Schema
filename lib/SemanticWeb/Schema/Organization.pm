@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -1038,6 +1038,34 @@ has has_pos => (
     is        => 'rw',
     predicate => '_has_has_pos',
     json_ld   => 'hasPOS',
+);
+
+
+=head2 C<has_product_return_policy>
+
+C<hasProductReturnPolicy>
+
+Indicates a ProductReturnPolicy that may be applicable.
+
+
+A has_product_return_policy should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
+
+=back
+
+=head2 C<_has_has_product_return_policy>
+
+A predicate for the L</has_product_return_policy> attribute.
+
+=cut
+
+has has_product_return_policy => (
+    is        => 'rw',
+    predicate => '_has_has_product_return_policy',
+    json_ld   => 'hasProductReturnPolicy',
 );
 
 

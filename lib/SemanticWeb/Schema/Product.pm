@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -531,6 +531,34 @@ has has_merchant_return_policy => (
 );
 
 
+=head2 C<has_product_return_policy>
+
+C<hasProductReturnPolicy>
+
+Indicates a ProductReturnPolicy that may be applicable.
+
+
+A has_product_return_policy should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ProductReturnPolicy']>
+
+=back
+
+=head2 C<_has_has_product_return_policy>
+
+A predicate for the L</has_product_return_policy> attribute.
+
+=cut
+
+has has_product_return_policy => (
+    is        => 'rw',
+    predicate => '_has_has_product_return_policy',
+    json_ld   => 'hasProductReturnPolicy',
+);
+
+
 =head2 C<height>
 
 
@@ -558,6 +586,42 @@ has height => (
     is        => 'rw',
     predicate => '_has_height',
     json_ld   => 'height',
+);
+
+
+=head2 C<in_product_group_with_id>
+
+C<inProductGroupWithID>
+
+=begin html
+
+<p>Indicates the <a class="localLink"
+href="http://schema.org/productGroupID">productGroupID</a> for a <a
+class="localLink" href="http://schema.org/ProductGroup">ProductGroup</a>
+that this product <a class="localLink"
+href="http://schema.org/isVariantOf">isVariantOf</a>.<p>
+
+=end html
+
+
+A in_product_group_with_id should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_in_product_group_with_id>
+
+A predicate for the L</in_product_group_with_id> attribute.
+
+=cut
+
+has in_product_group_with_id => (
+    is        => 'rw',
+    predicate => '_has_in_product_group_with_id',
+    json_ld   => 'inProductGroupWithID',
 );
 
 
@@ -676,6 +740,54 @@ has is_similar_to => (
     is        => 'rw',
     predicate => '_has_is_similar_to',
     json_ld   => 'isSimilarTo',
+);
+
+
+=head2 C<is_variant_of>
+
+C<isVariantOf>
+
+=begin html
+
+<p>Indicates the kind of product that this is a variant of. In the case of
+<a class="localLink"
+href="http://schema.org/ProductModel">ProductModel</a>, this is a pointer
+(from a ProductModel) to a base product from which this product is a
+variant. It is safe to infer that the variant inherits all product features
+from the base model, unless defined locally. This is not transitive. In the
+case of a <a class="localLink"
+href="http://schema.org/ProductGroup">ProductGroup</a>, the group
+description also serves as a template, representing a set of Products that
+vary on explicitly defined, specific dimensions only (so it defines both a
+set of variants, as well as which values distinguish amongst those
+variants). When used with <a class="localLink"
+href="http://schema.org/ProductGroup">ProductGroup</a>, this property can
+apply to any <a class="localLink"
+href="http://schema.org/Product">Product</a> included in the group.<p>
+
+=end html
+
+
+A is_variant_of should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ProductGroup']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ProductModel']>
+
+=back
+
+=head2 C<_has_is_variant_of>
+
+A predicate for the L</is_variant_of> attribute.
+
+=cut
+
+has is_variant_of => (
+    is        => 'rw',
+    predicate => '_has_is_variant_of',
+    json_ld   => 'isVariantOf',
 );
 
 
@@ -937,6 +1049,38 @@ has offers => (
 );
 
 
+=head2 C<pattern>
+
+
+
+A pattern that something has, for example 'polka dot', 'striped', 'Canadian
+flag'. Values are typically expressed as text, although links to controlled
+value schemes are also supported.
+
+
+A pattern should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_pattern>
+
+A predicate for the L</pattern> attribute.
+
+=cut
+
+has pattern => (
+    is        => 'rw',
+    predicate => '_has_pattern',
+    json_ld   => 'pattern',
+);
+
+
 =head2 C<product_id>
 
 C<productID>
@@ -1108,6 +1252,43 @@ has reviews => (
     is        => 'rw',
     predicate => '_has_reviews',
     json_ld   => 'reviews',
+);
+
+
+=head2 C<size>
+
+
+
+A standardized size of a product or creative work, often simplifying richer
+information into a simple textual string, either through referring to named
+sizes or (in the case of product markup), by adopting conventional
+simplifications. Use of QuantitativeValue with a unitCode or unitText can
+add more structure; in other cases, the /width, /height, /depth and /weight
+properties may be more applicable.
+
+
+A size should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_size>
+
+A predicate for the L</size> attribute.
+
+=cut
+
+has size => (
+    is        => 'rw',
+    predicate => '_has_size',
+    json_ld   => 'size',
 );
 
 

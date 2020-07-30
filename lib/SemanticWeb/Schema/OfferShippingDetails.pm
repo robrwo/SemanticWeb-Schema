@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -75,9 +75,7 @@ C<doesNotShip>
 
 =begin html
 
-<p>Indicates, as part of an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>,
-when shipping to a particular <a class="localLink"
+<p>Indicates when shipping to a particular <a class="localLink"
 href="http://schema.org/shippingDestination">shippingDestination</a> is not
 available.<p>
 

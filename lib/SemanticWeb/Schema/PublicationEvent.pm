@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -56,34 +56,6 @@ has free => (
     is        => 'rw',
     predicate => '_has_free',
     json_ld   => 'free',
-);
-
-
-=head2 C<is_accessible_for_free>
-
-C<isAccessibleForFree>
-
-A flag to signal that the item, event, or place is accessible for free.
-
-
-A is_accessible_for_free should be one of the following types:
-
-=over
-
-=item C<Bool>
-
-=back
-
-=head2 C<_has_is_accessible_for_free>
-
-A predicate for the L</is_accessible_for_free> attribute.
-
-=cut
-
-has is_accessible_for_free => (
-    is        => 'rw',
-    predicate => '_has_is_accessible_for_free',
-    json_ld   => 'isAccessibleForFree',
 );
 
 

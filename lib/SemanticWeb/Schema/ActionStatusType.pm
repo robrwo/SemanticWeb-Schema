@@ -6,7 +6,7 @@ package SemanticWeb::Schema::ActionStatusType;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Enumeration /;
+extends qw/ SemanticWeb::Schema::StatusEnumeration /;
 
 
 use MooX::JSON_LD 'ActionStatusType';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ The status of an Action.
 
 
 
-L<SemanticWeb::Schema::Enumeration>
+L<SemanticWeb::Schema::StatusEnumeration>
 
 =cut
 

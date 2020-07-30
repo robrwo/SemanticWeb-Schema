@@ -15,7 +15,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Class::XSAccessor 1.18
@@ -53,17 +53,7 @@ were generated automatically from the following sources:
 =over
 
 
-=item L<https://schema.org/version/8.0/ext-auto.rdf>
-
-=item L<https://schema.org/version/8.0/ext-bib.rdf>
-
-=item L<https://schema.org/version/8.0/ext-health-lifesci.rdf>
-
-=item L<https://schema.org/version/8.0/ext-meta.rdf>
-
-=item L<https://schema.org/version/8.0/ext-pending.rdf>
-
-=item L<https://schema.org/version/8.0/schema.rdf>
+=item L<https://schema.org/version/9.0/schemaorg-all-http.rdf>
 
 =back
 

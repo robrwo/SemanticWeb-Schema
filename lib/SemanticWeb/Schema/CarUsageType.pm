@@ -6,7 +6,7 @@ package SemanticWeb::Schema::CarUsageType;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::QualitativeValue /;
+extends qw/ SemanticWeb::Schema::Enumeration /;
 
 
 use MooX::JSON_LD 'CarUsageType';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ driving school, or as a taxi.
 
 
 
-L<SemanticWeb::Schema::QualitativeValue>
+L<SemanticWeb::Schema::Enumeration>
 
 =cut
 

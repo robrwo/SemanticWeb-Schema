@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -56,6 +56,36 @@ has aspect => (
     is        => 'rw',
     predicate => '_has_aspect',
     json_ld   => 'aspect',
+);
+
+
+=head2 C<medical_audience>
+
+C<medicalAudience>
+
+Medical audience for page.
+
+
+A medical_audience should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalAudience']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalAudienceType']>
+
+=back
+
+=head2 C<_has_medical_audience>
+
+A predicate for the L</medical_audience> attribute.
+
+=cut
+
+has medical_audience => (
+    is        => 'rw',
+    predicate => '_has_medical_audience',
+    json_ld   => 'medicalAudience',
 );
 
 

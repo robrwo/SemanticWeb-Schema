@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -148,6 +148,37 @@ has by_month_day => (
     is        => 'rw',
     predicate => '_has_by_month_day',
     json_ld   => 'byMonthDay',
+);
+
+
+=head2 C<by_month_week>
+
+C<byMonthWeek>
+
+Defines the week(s) of the month on which a recurring Event takes place.
+Specified as an Integer between 1-5. For clarity, byMonthWeek is best used
+in conjunction with byDay to indicate concepts like the first and third
+Mondays of a month.
+
+
+A by_month_week should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=back
+
+=head2 C<_has_by_month_week>
+
+A predicate for the L</by_month_week> attribute.
+
+=cut
+
+has by_month_week => (
+    is        => 'rw',
+    predicate => '_has_by_month_week',
+    json_ld   => 'byMonthWeek',
 );
 
 

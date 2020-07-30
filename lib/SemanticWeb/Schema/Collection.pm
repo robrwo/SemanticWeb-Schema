@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Collection;
 
-# ABSTRACT: A created collection of Creative Works or other artefacts.
+# ABSTRACT: A collection of items e
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A created collection of Creative Works or other artefacts.
+A collection of items e.g. creative works or products.
 
 
 

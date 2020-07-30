@@ -6,7 +6,7 @@ package SemanticWeb::Schema::MedicalTrialDesign;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Enumeration SemanticWeb::Schema::MedicalEnumeration /;
+extends qw/ SemanticWeb::Schema::MedicalEnumeration /;
 
 
 use MooX::JSON_LD 'MedicalTrialDesign';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 

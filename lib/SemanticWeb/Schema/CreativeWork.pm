@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -2282,6 +2282,38 @@ has offers => (
 );
 
 
+=head2 C<pattern>
+
+
+
+A pattern that something has, for example 'polka dot', 'striped', 'Canadian
+flag'. Values are typically expressed as text, although links to controlled
+value schemes are also supported.
+
+
+A pattern should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_pattern>
+
+A predicate for the L</pattern> attribute.
+
+=cut
+
+has pattern => (
+    is        => 'rw',
+    predicate => '_has_pattern',
+    json_ld   => 'pattern',
+);
+
+
 =head2 C<position>
 
 
@@ -2757,6 +2789,43 @@ has sd_publisher => (
     is        => 'rw',
     predicate => '_has_sd_publisher',
     json_ld   => 'sdPublisher',
+);
+
+
+=head2 C<size>
+
+
+
+A standardized size of a product or creative work, often simplifying richer
+information into a simple textual string, either through referring to named
+sizes or (in the case of product markup), by adopting conventional
+simplifications. Use of QuantitativeValue with a unitCode or unitText can
+add more structure; in other cases, the /width, /height, /depth and /weight
+properties may be more applicable.
+
+
+A size should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_size>
+
+A predicate for the L</size> attribute.
+
+=cut
+
+has size => (
+    is        => 'rw',
+    predicate => '_has_size',
+    json_ld   => 'size',
 );
 
 

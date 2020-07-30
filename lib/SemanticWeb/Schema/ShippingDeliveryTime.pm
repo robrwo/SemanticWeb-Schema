@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -70,9 +70,9 @@ will no longer process orders received on that day. For orders processed
 after cutoff time, one day gets added to the delivery time estimate. This
 property is expected to be most typically used via the <a class="localLink"
 href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>
-publication pattern. The time is indicated using the time notation from the
-ISO-8601 DateTime format, e.g. 14:45:15Z would represent a daily cutoff at
-14:45h UTC.<p>
+publication pattern. The time is indicated using the ISO-8601 Time format,
+e.g. "23:30:00-05:00" would represent 6:30 pm Eastern Standard Time (EST)
+which is 5 hours behind Coordinated Universal Time (UTC).<p>
 
 =end html
 

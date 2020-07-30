@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -687,8 +687,14 @@ has gtin8 => (
 
 C<includesObject>
 
-This links to a node or nodes indicating the exact quantity of the products
-included in the offer.
+=begin html
+
+<p>This links to a node or nodes indicating the exact quantity of the
+products included in an <a class="localLink"
+href="http://schema.org/Offer">Offer</a> or <a class="localLink"
+href="http://schema.org/ProductCollection">ProductCollection</a>.<p>
+
+=end html
 
 
 A includes_object should be one of the following types:

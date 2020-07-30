@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -27,11 +27,10 @@ our $VERSION = 'v8.0.1';
 information. It is designed for publication on an URL that may be
 referenced via the <a class="localLink"
 href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-property of a <a class="localLink"
-href="http://schema.org/OfferShippingSpecification">OfferShippingSpecificat
-ion</a>. Several occurrences can be published, distinguished and matched
-(i.e. identified/referenced) by their different values for <a
-class="localLink"
+property of an <a class="localLink"
+href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>.
+Several occurrences can be published, distinguished and matched (i.e.
+identified/referenced) by their different values for <a class="localLink"
 href="http://schema.org/shippingLabel">shippingLabel</a>.<p>
 
 =end html
@@ -48,9 +47,7 @@ C<doesNotShip>
 
 =begin html
 
-<p>Indicates, as part of an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>,
-when shipping to a particular <a class="localLink"
+<p>Indicates when shipping to a particular <a class="localLink"
 href="http://schema.org/shippingDestination">shippingDestination</a> is not
 available.<p>
 
@@ -86,11 +83,11 @@ C<freeShippingThreshold>
 
 <p>A monetary value above which (or equal to) the shipping rate becomes
 free. Intended to be used via an <a class="localLink"
-href="http://schema.org/OfferShippingSpecification">OfferShippingSpecificat
-ion</a> with <a class="localLink"
+href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with
+<a class="localLink"
 href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
 matching this <a class="localLink"
-href="http://schema.org/ShippingSettings">ShippingSettings</a>.<p>
+href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>.<p>
 
 =end html
 
@@ -124,14 +121,21 @@ C<isUnlabelledFallback>
 
 =begin html
 
-<p>This can be marked 'true' to indicate that some published
-ShippingRateSettings are intended to apply to all <a class="localLink"
+<p>This can be marked 'true' to indicate that some published <a
+class="localLink"
+href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> or
+<a class="localLink"
+href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> are
+intended to apply to all <a class="localLink"
 href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>
 published by the same merchant, when referenced by a <a class="localLink"
 href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> in
 those settings. It is not meaningful to use a 'true' value for this
-property alongside a shippingLabel, since this property is for use with
-unlabelled ShippingRateSettings.<p>
+property alongside a transitTimeLabel (for <a class="localLink"
+href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a>) or
+shippingLabel (for <a class="localLink"
+href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>),
+since this property is for use with unlabelled settings.<p>
 
 =end html
 

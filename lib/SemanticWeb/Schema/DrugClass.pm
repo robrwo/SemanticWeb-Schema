@@ -6,7 +6,7 @@ package SemanticWeb::Schema::DrugClass;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::MedicalEnumeration /;
+extends qw/ SemanticWeb::Schema::MedicalEntity /;
 
 
 use MooX::JSON_LD 'DrugClass';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -65,7 +65,7 @@ has drug => (
 
 
 
-L<SemanticWeb::Schema::MedicalEnumeration>
+L<SemanticWeb::Schema::MedicalEntity>
 
 =cut
 

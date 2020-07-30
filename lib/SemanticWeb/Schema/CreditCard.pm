@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -38,40 +38,7 @@ supplies the card account.<br/><br/> Commonly used values:<br/><br/> <ul>
 
 
 
-=head1 ATTRIBUTES
-
-
-=head2 C<monthly_minimum_repayment_amount>
-
-C<monthlyMinimumRepaymentAmount>
-
-The minimum payment is the lowest amount of money that one is required to
-pay on a credit card statement each month.
-
-
-A monthly_minimum_repayment_amount should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::MonetaryAmount']>
-
-=item C<Num>
-
-=back
-
-=head2 C<_has_monthly_minimum_repayment_amount>
-
-A predicate for the L</monthly_minimum_repayment_amount> attribute.
-
 =cut
-
-has monthly_minimum_repayment_amount => (
-    is        => 'rw',
-    predicate => '_has_monthly_minimum_repayment_amount',
-    json_ld   => 'monthlyMinimumRepaymentAmount',
-);
-
-
 
 
 =head1 SEE ALSO

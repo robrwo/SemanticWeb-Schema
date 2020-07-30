@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v8.0.1';
+our $VERSION = 'v9.0.0';
 
 =encoding utf8
 
@@ -28,10 +28,10 @@ information, relating to timing. It is designed for publication on an URL
 that may be referenced via the <a class="localLink"
 href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
 property of a <a class="localLink"
-href="http://schema.org/OfferShippingSpecification">OfferShippingSpecificat
-ion</a>. Several occurrences can be published, distinguished (and
+href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>.
+Several occurrences can be published, distinguished (and
 identified/referenced) by their different values for <a class="localLink"
-href="http://schema.org/shippingLabel">shippingLabel</a>.<p>
+href="http://schema.org/transitTimeLabel">transitTimeLabel</a>.<p>
 
 =end html
 
@@ -67,6 +67,52 @@ has delivery_time => (
     is        => 'rw',
     predicate => '_has_delivery_time',
     json_ld   => 'deliveryTime',
+);
+
+
+=head2 C<is_unlabelled_fallback>
+
+C<isUnlabelledFallback>
+
+=begin html
+
+<p>This can be marked 'true' to indicate that some published <a
+class="localLink"
+href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> or
+<a class="localLink"
+href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> are
+intended to apply to all <a class="localLink"
+href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>
+published by the same merchant, when referenced by a <a class="localLink"
+href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> in
+those settings. It is not meaningful to use a 'true' value for this
+property alongside a transitTimeLabel (for <a class="localLink"
+href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a>) or
+shippingLabel (for <a class="localLink"
+href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>),
+since this property is for use with unlabelled settings.<p>
+
+=end html
+
+
+A is_unlabelled_fallback should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_is_unlabelled_fallback>
+
+A predicate for the L</is_unlabelled_fallback> attribute.
+
+=cut
+
+has is_unlabelled_fallback => (
+    is        => 'rw',
+    predicate => '_has_is_unlabelled_fallback',
+    json_ld   => 'isUnlabelledFallback',
 );
 
 
