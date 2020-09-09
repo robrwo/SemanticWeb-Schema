@@ -4,8 +4,8 @@
       "rdfs:comment" : "A payment method using a credit, debit, store or other card to associate the payment with an account.",
       "rdfs:label" : "PaymentCard",
       "rdfs:subClassOf" : [
-         "schema:PaymentMethod",
-         "schema:FinancialProduct"
+         "schema:FinancialProduct",
+         "schema:PaymentMethod"
       ],
       "schema:source" : "schemadotorgsources:FIBO"
    },
@@ -18,12 +18,12 @@
          "schema:domainIncludes" : "schema:PaymentCard",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:Number"
          ],
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:contactlessPayment" : {
@@ -35,8 +35,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
+            "schemadotorgsources:FIBO",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:floorLimit" : {
@@ -48,8 +48,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
+            "schemadotorgsources:FIBO",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:monthlyMinimumRepaymentAmount" : {

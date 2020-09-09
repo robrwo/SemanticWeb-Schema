@@ -15,17 +15,17 @@
          "rdfs:label" : "endDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:Role",
+            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeries"
+            "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -36,10 +36,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Blog",
             "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:WebSite"
+            "schema:WebSite",
+            "schema:Blog"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_bibex"
@@ -50,17 +50,17 @@
          "rdfs:label" : "startDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Role",
-            "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:DatedMoneySpecification",
             "schema:EducationalOccupationalProgram",
             "schema:Event",
-            "schema:CreativeWorkSeason"
+            "schema:Schedule",
+            "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       }

@@ -31,13 +31,13 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:FoodEstablishmentReservation",
             "schema:MediaObject",
-            "schema:Action"
+            "schema:Action",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -65,10 +65,10 @@
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:PostalAddress",
-            "schema:Place",
             "schema:Text",
-            "schema:VirtualLocation"
+            "schema:VirtualLocation",
+            "schema:PostalAddress",
+            "schema:Place"
          ]
       },
       "schema:object" : {
@@ -84,8 +84,8 @@
          "rdfs:label" : "participant",
          "schema:domainIncludes" : "schema:Action",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:result" : {
@@ -102,9 +102,9 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:FoodEstablishmentReservation",
-            "schema:Schedule",
             "schema:Action",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

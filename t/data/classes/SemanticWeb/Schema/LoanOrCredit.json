@@ -12,19 +12,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:category" : [
-            "issue-1698",
-            "issue-1253"
+            "issue-1253",
+            "issue-1698"
          ],
          "schema:domainIncludes" : [
+            "schema:LoanOrCredit",
+            "schema:MonetaryGrant",
             "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
-            "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
             "schema:InvestmentOrDeposit"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1253",
@@ -39,8 +39,8 @@
          "schema:domainIncludes" : [
             "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution",
             "schema:LoanOrCredit",
+            "schema:MonetaryAmountDistribution",
             "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
@@ -55,8 +55,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:loanRepaymentForm" : {
@@ -89,12 +89,12 @@
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
+            "schemadotorgsources:FIBO",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:recourseLoan" : {
@@ -106,8 +106,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:renegotiableLoan" : {
@@ -119,8 +119,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:requiredCollateral" : {

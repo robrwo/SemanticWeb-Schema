@@ -12,19 +12,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:category" : [
-            "issue-1698",
-            "issue-1253"
+            "issue-1253",
+            "issue-1698"
          ],
          "schema:domainIncludes" : [
+            "schema:LoanOrCredit",
+            "schema:MonetaryGrant",
             "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
-            "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
             "schema:InvestmentOrDeposit"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1253",

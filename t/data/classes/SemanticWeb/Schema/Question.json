@@ -3,7 +3,7 @@
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
       "rdfs:label" : "Question",
-      "rdfs:subClassOf" : "schema:CreativeWork",
+      "rdfs:subClassOf" : "schema:Comment",
       "schema:source" : "schemadotorgsources:source_QAStackExchange"
    },
    "properties" : {
@@ -14,8 +14,8 @@
          "rdfs:subPropertyOf" : "schema:suggestedAnswer",
          "schema:domainIncludes" : "schema:Question",
          "schema:rangeIncludes" : [
-            "schema:Answer",
-            "schema:ItemList"
+            "schema:ItemList",
+            "schema:Answer"
          ]
       },
       "schema:answerCount" : {
@@ -25,15 +25,15 @@
          "schema:domainIncludes" : "schema:Question",
          "schema:rangeIncludes" : "schema:Integer"
       },
-      "schema:downvoteCount" : {
+      "schema:eduQuestionType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of downvotes this question, answer or comment has received from the community.",
-         "rdfs:label" : "downvoteCount",
-         "schema:domainIncludes" : [
-            "schema:Question",
-            "schema:Comment"
-         ],
-         "schema:rangeIncludes" : "schema:Integer"
+         "rdfs:comment" : "For questions that are part of learning resources (e.g. Quiz), eduQuestionType indicates the format of question being given. Example: \"Multiple choice\", \"Open ended\", \"Flashcard\".",
+         "rdfs:label" : "eduQuestionType",
+         "schema:category" : "issue-2636",
+         "schema:domainIncludes" : "schema:Question",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
       },
       "schema:suggestedAnswer" : {
          "rdf:type" : "rdf:Property",
@@ -41,19 +41,9 @@
          "rdfs:label" : "suggestedAnswer",
          "schema:domainIncludes" : "schema:Question",
          "schema:rangeIncludes" : [
-            "schema:ItemList",
-            "schema:Answer"
+            "schema:Answer",
+            "schema:ItemList"
          ]
-      },
-      "schema:upvoteCount" : {
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of upvotes this question, answer or comment has received from the community.",
-         "rdfs:label" : "upvoteCount",
-         "schema:domainIncludes" : [
-            "schema:Comment",
-            "schema:Question"
-         ],
-         "schema:rangeIncludes" : "schema:Integer"
       }
    }
 }

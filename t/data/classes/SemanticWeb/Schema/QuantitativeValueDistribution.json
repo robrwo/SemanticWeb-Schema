@@ -19,17 +19,17 @@
          "schema:domainIncludes" : [
             "schema:Audiobook",
             "schema:Schedule",
-            "schema:MusicRelease",
-            "schema:QuantitativeValueDistribution",
             "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
+            "schema:MusicRelease",
             "schema:Movie",
-            "schema:Event",
-            "schema:MediaObject"
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1457"
+            "https://github.com/schemaorg/schemaorg/issues/1457",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:median" : {

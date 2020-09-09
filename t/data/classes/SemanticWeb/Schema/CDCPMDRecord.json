@@ -17,8 +17,8 @@
          "schema:domainIncludes" : "schema:CDCPMDRecord",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -187,8 +187,8 @@
             "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",

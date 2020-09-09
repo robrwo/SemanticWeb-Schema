@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Used to indicate whether a product is EnergyStar certified",
+      "rdfs:label" : "EnergyStarEnergyEfficiencyEnumeration",
+      "rdfs:subClassOf" : "schema:EnergyEfficiencyEnumeration",
+      "schema:category" : "issue-2670",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
+   },
+   "properties" : {}
+}

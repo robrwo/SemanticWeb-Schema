@@ -6,7 +6,7 @@ package SemanticWeb::Schema::SkiResort;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::SportsActivityLocation /;
+extends qw/ SemanticWeb::Schema::Resort SemanticWeb::Schema::SportsActivityLocation /;
 
 
 use MooX::JSON_LD 'SkiResort';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 

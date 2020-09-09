@@ -12,13 +12,13 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
+            "schema:House",
+            "schema:Suite",
+            "schema:Accommodation",
+            "schema:Apartment",
             "schema:LodgingBusiness",
             "schema:FloorPlan",
-            "schema:Suite",
-            "schema:SingleFamilyResidence",
-            "schema:House",
-            "schema:Accommodation",
-            "schema:Apartment"
+            "schema:SingleFamilyResidence"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -32,8 +32,8 @@
          "rdfs:label" : "occupancy",
          "schema:domainIncludes" : [
             "schema:SingleFamilyResidence",
-            "schema:Suite",
             "schema:HotelRoom",
+            "schema:Suite",
             "schema:Apartment"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -582,8 +582,7 @@ has email => (
 
 C<familyName>
 
-Family name. In the U.S., the last name of an Person. This can be used
-along with givenName instead of the name property.
+Family name. In the U.S., the last name of a Person.
 
 
 A family_name should be one of the following types:
@@ -742,8 +741,7 @@ has gender => (
 
 C<givenName>
 
-Given name. In the U.S., the first name of a Person. This can be used along
-with familyName instead of the name property.
+Given name. In the U.S., the first name of a Person.
 
 
 A given_name should be one of the following types:
@@ -1008,7 +1006,7 @@ has honorific_prefix => (
 
 C<honorificSuffix>
 
-An honorific suffix preceding a Person's name such as M.D. /PhD/MSCSW.
+An honorific suffix following a Person's name such as M.D. /PhD/MSCSW.
 
 
 A honorific_suffix should be one of the following types:

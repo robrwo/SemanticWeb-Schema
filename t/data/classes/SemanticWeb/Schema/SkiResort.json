@@ -3,7 +3,10 @@
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A ski resort.",
       "rdfs:label" : "SkiResort",
-      "rdfs:subClassOf" : "schema:SportsActivityLocation"
+      "rdfs:subClassOf" : [
+         "schema:SportsActivityLocation",
+         "schema:Resort"
+      ]
    },
    "properties" : {}
 }

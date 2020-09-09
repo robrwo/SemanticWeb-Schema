@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -176,6 +176,35 @@ has educational_use => (
     is        => 'rw',
     predicate => '_has_educational_use',
     json_ld   => 'educationalUse',
+);
+
+
+=head2 C<learning_resource_type>
+
+C<learningResourceType>
+
+The predominant type or kind characterizing the learning resource. For
+example, 'presentation', 'handout'.
+
+
+A learning_resource_type should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_learning_resource_type>
+
+A predicate for the L</learning_resource_type> attribute.
+
+=cut
+
+has learning_resource_type => (
+    is        => 'rw',
+    predicate => '_has_learning_resource_type',
+    json_ld   => 'learningResourceType',
 );
 
 

@@ -24,8 +24,8 @@
             "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",
@@ -38,9 +38,9 @@
          "rdfs:label" : "leaseLength",
          "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
-            "schema:RealEstateListing",
+            "schema:Offer",
             "schema:Accommodation",
-            "schema:Offer"
+            "schema:RealEstateListing"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

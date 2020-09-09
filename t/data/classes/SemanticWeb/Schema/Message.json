@@ -13,8 +13,8 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
-            "schema:ContactPoint",
             "schema:Person",
+            "schema:ContactPoint",
             "schema:Organization"
          ]
       },
@@ -25,8 +25,8 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
-            "schema:Person",
             "schema:ContactPoint",
+            "schema:Person",
             "schema:Organization"
          ]
       },
@@ -67,21 +67,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:DonateAction",
-            "schema:SendAction",
-            "schema:AuthorizeAction",
-            "schema:ReturnAction",
-            "schema:Message",
             "schema:PayAction",
-            "schema:CommunicateAction",
+            "schema:DonateAction",
+            "schema:Message",
+            "schema:SendAction",
+            "schema:ReturnAction",
             "schema:TipAction",
-            "schema:GiveAction"
+            "schema:CommunicateAction",
+            "schema:GiveAction",
+            "schema:AuthorizeAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
             "schema:Person",
+            "schema:ContactPoint",
             "schema:Organization",
-            "schema:ContactPoint"
+            "schema:Audience"
          ]
       },
       "schema:sender" : {
@@ -95,8 +95,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Audience",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:toRecipient" : {
@@ -106,9 +106,9 @@
          "rdfs:subPropertyOf" : "schema:recipient",
          "schema:domainIncludes" : "schema:Message",
          "schema:rangeIncludes" : [
+            "schema:Person",
             "schema:ContactPoint",
             "schema:Audience",
-            "schema:Person",
             "schema:Organization"
          ]
       }

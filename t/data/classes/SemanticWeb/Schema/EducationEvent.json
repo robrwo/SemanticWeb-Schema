@@ -12,14 +12,14 @@
          "rdfs:label" : "assesses",
          "schema:category" : "issue-2427",
          "schema:domainIncludes" : [
-            "schema:LearningResource",
             "schema:EducationEvent",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:LearningResource"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
       },
@@ -37,8 +37,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
       },
@@ -49,8 +49,8 @@
          "schema:category" : "issue-2427",
          "schema:domainIncludes" : [
             "schema:LearningResource",
-            "schema:CreativeWork",
-            "schema:EducationEvent"
+            "schema:EducationEvent",
+            "schema:CreativeWork"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

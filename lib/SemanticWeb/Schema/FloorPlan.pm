@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -134,6 +134,36 @@ has is_plan_for_apartment => (
     is        => 'rw',
     predicate => '_has_is_plan_for_apartment',
     json_ld   => 'isPlanForApartment',
+);
+
+
+=head2 C<layout_image>
+
+C<layoutImage>
+
+A schematic image showing the floorplan layout.
+
+
+A layout_image should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_layout_image>
+
+A predicate for the L</layout_image> attribute.
+
+=cut
+
+has layout_image => (
+    is        => 'rw',
+    predicate => '_has_layout_image',
+    json_ld   => 'layoutImage',
 );
 
 

@@ -6,5 +6,19 @@
       "rdfs:subClassOf" : "schema:Comment",
       "schema:source" : "schemadotorgsources:source_QAStackExchange"
    },
-   "properties" : {}
+   "properties" : {
+      "schema:answerExplanation" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A step-by-step or full explanation about Answer. Can outline how this Answer was achieved or contain more broad clarification or statement about it.",
+         "rdfs:label" : "answerExplanation",
+         "schema:category" : "issue-2636",
+         "schema:domainIncludes" : "schema:Answer",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Comment",
+            "schema:WebContent"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
+      }
+   }
 }

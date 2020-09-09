@@ -13,13 +13,13 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:FoodEstablishmentReservation",
             "schema:MediaObject",
-            "schema:Action"
+            "schema:Action",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -28,8 +28,8 @@
          "rdfs:comment" : "Number of people the reservation should accommodate.",
          "rdfs:label" : "partySize",
          "schema:domainIncludes" : [
-            "schema:TaxiReservation",
-            "schema:FoodEstablishmentReservation"
+            "schema:FoodEstablishmentReservation",
+            "schema:TaxiReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -43,9 +43,9 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:FoodEstablishmentReservation",
-            "schema:Schedule",
             "schema:Action",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

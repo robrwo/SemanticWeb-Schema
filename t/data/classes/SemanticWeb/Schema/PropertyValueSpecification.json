@@ -23,8 +23,8 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
             "schema:MonetaryAmount",
+            "schema:QuantitativeValue",
             "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number",
@@ -35,8 +35,8 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:PropertyValue",
             "schema:QuantitativeValue"
          ],

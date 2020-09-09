@@ -12,14 +12,14 @@
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
             "schema:Place",
-            "schema:GeoShape",
-            "schema:Organization",
             "schema:GeoCoordinates",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:PostalAddress"
+            "schema:PostalAddress",
+            "schema:Text"
          ]
       },
       "schema:addressCountry" : {
@@ -28,10 +28,10 @@
          "rdfs:label" : "addressCountry",
          "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
-            "schema:DefinedRegion",
+            "schema:PostalAddress",
             "schema:GeoCoordinates",
-            "schema:PostalAddress"
+            "schema:DefinedRegion",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -61,8 +61,8 @@
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:longitude" : {
@@ -84,10 +84,10 @@
          "rdfs:label" : "postalCode",
          "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
+            "schema:DefinedRegion",
             "schema:GeoShape",
             "schema:PostalAddress",
-            "schema:GeoCoordinates",
-            "schema:DefinedRegion"
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

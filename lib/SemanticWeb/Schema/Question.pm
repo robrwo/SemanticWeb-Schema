@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Question;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::Comment /;
 
 
 use MooX::JSON_LD 'Question';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -90,32 +90,33 @@ has answer_count => (
 );
 
 
-=head2 C<downvote_count>
+=head2 C<edu_question_type>
 
-C<downvoteCount>
+C<eduQuestionType>
 
-The number of downvotes this question, answer or comment has received from
-the community.
+For questions that are part of learning resources (e.g. Quiz),
+eduQuestionType indicates the format of question being given. Example:
+"Multiple choice", "Open ended", "Flashcard".
 
 
-A downvote_count should be one of the following types:
+A edu_question_type should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+=item C<Str>
 
 =back
 
-=head2 C<_has_downvote_count>
+=head2 C<_has_edu_question_type>
 
-A predicate for the L</downvote_count> attribute.
+A predicate for the L</edu_question_type> attribute.
 
 =cut
 
-has downvote_count => (
+has edu_question_type => (
     is        => 'rw',
-    predicate => '_has_downvote_count',
-    json_ld   => 'downvoteCount',
+    predicate => '_has_edu_question_type',
+    json_ld   => 'eduQuestionType',
 );
 
 
@@ -150,42 +151,13 @@ has suggested_answer => (
 );
 
 
-=head2 C<upvote_count>
-
-C<upvoteCount>
-
-The number of upvotes this question, answer or comment has received from
-the community.
-
-
-A upvote_count should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Integer']>
-
-=back
-
-=head2 C<_has_upvote_count>
-
-A predicate for the L</upvote_count> attribute.
-
-=cut
-
-has upvote_count => (
-    is        => 'rw',
-    predicate => '_has_upvote_count',
-    json_ld   => 'upvoteCount',
-);
-
-
 
 
 =head1 SEE ALSO
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::Comment>
 
 =cut
 

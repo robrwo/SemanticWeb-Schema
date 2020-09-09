@@ -17,8 +17,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DayOfWeek",
-            "schema:Text"
+            "schema:Text",
+            "schema:DayOfWeek"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -63,17 +63,17 @@
          "schema:domainIncludes" : [
             "schema:Audiobook",
             "schema:Schedule",
-            "schema:MusicRelease",
-            "schema:QuantitativeValueDistribution",
             "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
+            "schema:MusicRelease",
             "schema:Movie",
-            "schema:Event",
-            "schema:MediaObject"
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1457"
+            "https://github.com/schemaorg/schemaorg/issues/1457",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:endDate" : {
@@ -82,17 +82,17 @@
          "rdfs:label" : "endDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:Role",
+            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeries"
+            "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -103,13 +103,13 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:FoodEstablishmentReservation",
             "schema:MediaObject",
-            "schema:Action"
+            "schema:Action",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -121,8 +121,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -166,17 +166,17 @@
          "rdfs:label" : "startDate",
          "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Role",
-            "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:DatedMoneySpecification",
             "schema:EducationalOccupationalProgram",
             "schema:Event",
-            "schema:CreativeWorkSeason"
+            "schema:Schedule",
+            "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -187,9 +187,9 @@
          "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:FoodEstablishmentReservation",
-            "schema:Schedule",
             "schema:Action",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

@@ -10,10 +10,7 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of downvotes this question, answer or comment has received from the community.",
          "rdfs:label" : "downvoteCount",
-         "schema:domainIncludes" : [
-            "schema:Question",
-            "schema:Comment"
-         ],
+         "schema:domainIncludes" : "schema:Comment",
          "schema:rangeIncludes" : "schema:Integer"
       },
       "schema:parentItem" : {
@@ -21,16 +18,13 @@
          "rdfs:comment" : "The parent of a question, answer or item in general.",
          "rdfs:label" : "parentItem",
          "schema:domainIncludes" : "schema:Comment",
-         "schema:rangeIncludes" : "schema:Question"
+         "schema:rangeIncludes" : "schema:Comment"
       },
       "schema:upvoteCount" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of upvotes this question, answer or comment has received from the community.",
          "rdfs:label" : "upvoteCount",
-         "schema:domainIncludes" : [
-            "schema:Comment",
-            "schema:Question"
-         ],
+         "schema:domainIncludes" : "schema:Comment",
          "schema:rangeIncludes" : "schema:Integer"
       }
    }

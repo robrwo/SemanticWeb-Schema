@@ -21,8 +21,8 @@
          "rdfs:label" : "businessFunction",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:TypeAndQuantityNode",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : "schema:BusinessFunction",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -36,8 +36,8 @@
             "schema:OwnershipInfo"
          ],
          "schema:rangeIncludes" : [
-            "schema:Service",
-            "schema:Product"
+            "schema:Product",
+            "schema:Service"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -46,14 +46,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
-            "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:UnitPriceSpecification",
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },

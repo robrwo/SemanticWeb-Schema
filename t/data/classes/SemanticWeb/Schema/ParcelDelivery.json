@@ -88,13 +88,13 @@
          "rdfs:label" : "provider",
          "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
+            "schema:Reservation",
+            "schema:ParcelDelivery",
+            "schema:EducationalOccupationalProgram",
+            "schema:Trip",
             "schema:Invoice",
             "schema:Service",
-            "schema:Reservation",
-            "schema:Trip",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:ParcelDelivery"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",

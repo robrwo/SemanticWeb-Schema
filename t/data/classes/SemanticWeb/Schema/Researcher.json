@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Researchers.",
+      "rdfs:label" : "Researcher",
+      "rdfs:subClassOf" : "schema:Audience"
+   },
+   "properties" : {}
+}

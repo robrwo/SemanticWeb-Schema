@@ -16,9 +16,9 @@
             "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : [
-            "schema:BedType",
+            "schema:Text",
             "schema:BedDetails",
-            "schema:Text"
+            "schema:BedType"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
@@ -28,8 +28,8 @@
          "rdfs:label" : "occupancy",
          "schema:domainIncludes" : [
             "schema:SingleFamilyResidence",
-            "schema:Suite",
             "schema:HotelRoom",
+            "schema:Suite",
             "schema:Apartment"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",

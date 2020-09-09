@@ -5,8 +5,8 @@
       "rdfs:label" : "Hospital",
       "rdfs:subClassOf" : [
          "schema:CivicStructure",
-         "schema:EmergencyService",
-         "schema:MedicalOrganization"
+         "schema:MedicalOrganization",
+         "schema:EmergencyService"
       ]
    },
    "properties" : {
@@ -15,14 +15,14 @@
          "rdfs:comment" : "A medical service available from this provider.",
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
-            "schema:Hospital",
+            "schema:MedicalClinic",
             "schema:Physician",
-            "schema:MedicalClinic"
+            "schema:Hospital"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalProcedure",
             "schema:MedicalTherapy",
+            "schema:MedicalProcedure",
             "schema:MedicalTest"
          ]
       },
@@ -34,8 +34,8 @@
          "schema:domainIncludes" : "schema:Hospital",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CDCPMDRecord",
-            "schema:Dataset"
+            "schema:Dataset",
+            "schema:CDCPMDRecord"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -44,10 +44,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:Hospital",
-            "schema:MedicalOrganization",
             "schema:MedicalClinic",
-            "schema:Physician"
+            "schema:Physician",
+            "schema:MedicalOrganization",
+            "schema:Hospital"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

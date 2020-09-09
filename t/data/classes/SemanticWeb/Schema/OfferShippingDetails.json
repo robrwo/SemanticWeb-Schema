@@ -41,9 +41,9 @@
          "rdfs:label" : "shippingDestination",
          "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
+            "schema:OfferShippingDetails",
             "schema:DeliveryTimeSettings",
-            "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -55,8 +55,8 @@
          "rdfs:label" : "shippingLabel",
          "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

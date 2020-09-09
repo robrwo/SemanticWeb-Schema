@@ -12,8 +12,8 @@
          "rdfs:label" : "sport",
          "schema:category" : "issue-1951",
          "schema:domainIncludes" : [
-            "schema:SportsEvent",
-            "schema:SportsOrganization"
+            "schema:SportsOrganization",
+            "schema:SportsEvent"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

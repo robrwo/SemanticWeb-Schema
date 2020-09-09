@@ -20,7 +20,7 @@ use Text::Wrap qw/ wrap /;
 use Types::Standard -types;
 use URI;
 
-our $VERSION = 'v9.0.0';
+our $VERSION = 'v10.0.0';
 
 const my $MAX_ABSTRACT_LENGTH => 44;    # See ExtUtils::ModuleMaker
 
@@ -112,7 +112,7 @@ has definition => (
 #             # 'https://schema.org/version/8.0/ext-iot.rdf',
 #             'https://schema.org/version/8.0/ext-meta.rdf',
 #             'https://schema.org/version/8.0/ext-pending.rdf',
-            'https://schema.org/version/9.0/schemaorg-all-http.rdf',
+            'https://schema.org/version/10.0/schemaorg-all-http.rdf',
         ]
     },
 );

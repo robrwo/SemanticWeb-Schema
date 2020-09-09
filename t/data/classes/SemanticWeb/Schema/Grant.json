@@ -14,15 +14,15 @@
          "rdfs:comment" : "Indicates an item funded or sponsored through a <a class=\"localLink\" href=\"http://schema.org/Grant\">Grant</a>.",
          "rdfs:label" : "fundedItem",
          "schema:category" : [
-            "issue-1688",
-            "issue-383"
+            "issue-383",
+            "issue-1688"
          ],
          "schema:domainIncludes" : "schema:Grant",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Thing",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/383",
             "https://github.com/schemaorg/schemaorg/issues/1950",
+            "https://github.com/schemaorg/schemaorg/issues/383",
             "schemadotorgsources2:TP"
          ]
       },
@@ -31,16 +31,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
+            "schema:Person",
             "schema:Organization",
             "schema:Grant",
-            "schema:MedicalStudy",
+            "schema:Event",
             "schema:CreativeWork",
-            "schema:Person",
-            "schema:Event"
+            "schema:MedicalStudy"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

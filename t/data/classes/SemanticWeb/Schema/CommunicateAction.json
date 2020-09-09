@@ -13,8 +13,8 @@
          "schema:category" : "issue-1670",
          "schema:domainIncludes" : [
             "schema:CommunicateAction",
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing",
@@ -26,17 +26,17 @@
          "rdfs:label" : "inLanguage",
          "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:WriteAction",
             "schema:PronounceableText",
             "schema:BroadcastService",
-            "schema:CommunicateAction",
-            "schema:LinkRole"
+            "schema:WriteAction",
+            "schema:LinkRole",
+            "schema:Event",
+            "schema:CreativeWork",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2382"
       },
@@ -58,21 +58,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:DonateAction",
-            "schema:SendAction",
-            "schema:AuthorizeAction",
-            "schema:ReturnAction",
-            "schema:Message",
             "schema:PayAction",
-            "schema:CommunicateAction",
+            "schema:DonateAction",
+            "schema:Message",
+            "schema:SendAction",
+            "schema:ReturnAction",
             "schema:TipAction",
-            "schema:GiveAction"
+            "schema:CommunicateAction",
+            "schema:GiveAction",
+            "schema:AuthorizeAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
             "schema:Person",
+            "schema:ContactPoint",
             "schema:Organization",
-            "schema:ContactPoint"
+            "schema:Audience"
          ]
       }
    }

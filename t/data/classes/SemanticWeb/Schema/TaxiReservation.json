@@ -11,8 +11,8 @@
          "rdfs:comment" : "Number of people the reservation should accommodate.",
          "rdfs:label" : "partySize",
          "schema:domainIncludes" : [
-            "schema:TaxiReservation",
-            "schema:FoodEstablishmentReservation"
+            "schema:FoodEstablishmentReservation",
+            "schema:TaxiReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -34,8 +34,8 @@
          "rdfs:comment" : "When a taxi will pickup a passenger or a rental car can be picked up.",
          "rdfs:label" : "pickupTime",
          "schema:domainIncludes" : [
-            "schema:TaxiReservation",
-            "schema:RentalCarReservation"
+            "schema:RentalCarReservation",
+            "schema:TaxiReservation"
          ],
          "schema:rangeIncludes" : "schema:DateTime"
       }

@@ -15,8 +15,8 @@
          "rdfs:label" : "webFeed",
          "schema:category" : "issue-373",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:PodcastSeries"
+            "schema:PodcastSeries",
+            "schema:SpecialAnnouncement"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

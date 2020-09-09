@@ -13,8 +13,8 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
             "schema:MonetaryAmount",
+            "schema:QuantitativeValue",
             "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number",
@@ -26,10 +26,10 @@
          "rdfs:label" : "measurementTechnique",
          "schema:category" : "issue-1425",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:DataCatalog",
+            "schema:DataDownload",
             "schema:Dataset",
-            "schema:DataDownload"
+            "schema:DataCatalog",
+            "schema:PropertyValue"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -43,8 +43,8 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:PropertyValue",
             "schema:QuantitativeValue"
          ],
@@ -57,8 +57,8 @@
          "rdfs:label" : "propertyID",
          "schema:domainIncludes" : "schema:PropertyValue",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitCode" : {
@@ -66,14 +66,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
-            "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:UnitPriceSpecification",
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -95,14 +95,14 @@
          "rdfs:label" : "value",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:MonetaryAmount",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
+            "schema:Number",
             "schema:StructuredValue",
-            "schema:Boolean",
-            "schema:Number"
+            "schema:Boolean"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -111,16 +111,16 @@
          "rdfs:comment" : "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
             "schema:QualitativeValue",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:Enumeration",
             "schema:QuantitativeValue",
+            "schema:PropertyValue",
             "schema:StructuredValue",
-            "schema:PropertyValue"
+            "schema:QualitativeValue"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

@@ -1,8 +1,8 @@
 {
    "class" : {
       "owl:equivalentClass" : [
-         "dcmitype:Dataset",
          "dcat:Dataset",
+         "dcmitype:Dataset",
          "void:Dataset"
       ],
       "rdf:type" : "rdfs:Class",
@@ -58,10 +58,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Blog",
             "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:WebSite"
+            "schema:WebSite",
+            "schema:Blog"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_bibex"
@@ -72,10 +72,10 @@
          "rdfs:label" : "measurementTechnique",
          "schema:category" : "issue-1425",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:DataCatalog",
+            "schema:DataDownload",
             "schema:Dataset",
-            "schema:DataDownload"
+            "schema:DataCatalog",
+            "schema:PropertyValue"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

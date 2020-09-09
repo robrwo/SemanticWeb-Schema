@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -1960,6 +1960,8 @@ keywords list are typically delimited by commas.
 A keywords should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
 
 =item C<Str>
 

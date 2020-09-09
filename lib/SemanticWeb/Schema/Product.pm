@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v9.0.1';
+our $VERSION = 'v10.0.0';
 
 =encoding utf8
 
@@ -500,6 +500,35 @@ has gtin8 => (
     is        => 'rw',
     predicate => '_has_gtin8',
     json_ld   => 'gtin8',
+);
+
+
+=head2 C<has_energy_consumption_details>
+
+C<hasEnergyConsumptionDetails>
+
+Defines the energy efficiency Category (also known as "class" or "rating")
+for a product according to an international energy efficiency standard
+
+
+A has_energy_consumption_details should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::EnergyConsumptionDetails']>
+
+=back
+
+=head2 C<_has_has_energy_consumption_details>
+
+A predicate for the L</has_energy_consumption_details> attribute.
+
+=cut
+
+has has_energy_consumption_details => (
+    is        => 'rw',
+    predicate => '_has_has_energy_consumption_details',
+    json_ld   => 'hasEnergyConsumptionDetails',
 );
 
 

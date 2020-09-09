@@ -16,8 +16,8 @@
          "schema:domainIncludes" : [
             "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution",
             "schema:LoanOrCredit",
+            "schema:MonetaryAmountDistribution",
             "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",

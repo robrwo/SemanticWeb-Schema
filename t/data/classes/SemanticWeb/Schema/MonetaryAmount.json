@@ -15,8 +15,8 @@
          "schema:domainIncludes" : [
             "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution",
             "schema:LoanOrCredit",
+            "schema:MonetaryAmountDistribution",
             "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
@@ -28,8 +28,8 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
             "schema:MonetaryAmount",
+            "schema:QuantitativeValue",
             "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number",
@@ -40,8 +40,8 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:PropertyValue",
             "schema:QuantitativeValue"
          ],
@@ -53,13 +53,13 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand",
             "schema:PriceSpecification",
-            "schema:OpeningHoursSpecification",
+            "schema:MonetaryAmount",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
             "schema:Permit",
-            "schema:MonetaryAmount"
+            "schema:Demand",
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -72,13 +72,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:MonetaryAmount",
-            "schema:OpeningHoursSpecification",
             "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:Offer",
+            "schema:JobPosting",
             "schema:Demand",
-            "schema:JobPosting"
+            "schema:LocationFeatureSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -92,14 +92,14 @@
          "rdfs:label" : "value",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:MonetaryAmount",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
+            "schema:Number",
             "schema:StructuredValue",
-            "schema:Boolean",
-            "schema:Number"
+            "schema:Boolean"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }
