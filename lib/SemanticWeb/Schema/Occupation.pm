@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -126,7 +126,7 @@ has experience_requirements => (
 
 C<occupationLocation>
 
-The region/country for which this occupational description is appropriate.
+ The region/country for which this occupational description is appropriate.
 Note that educational requirements and qualifications can vary between
 jurisdictions.
 
@@ -156,19 +156,14 @@ has occupation_location => (
 
 C<occupationalCategory>
 
-=begin html
-
-<p>A category describing the job, preferably using a term from a taxonomy
-such as <a href="http://www.onetcenter.org/taxonomy.html">BLS
-O*NET-SOC</a>, <a
-href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/">ISCO-08<
-/a> or similar, with the property repeated for each applicable value.
-Ideally the taxonomy should be identified, and both the textual label and
-formal code for the category should be provided.<br/><br/> Note: for
-historical reasons, any textual label and formal code provided as a literal
-may be assumed to be from O*NET-SOC.<p>
-
-=end html
+A category describing the job, preferably using a term from a taxonomy such
+as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html),
+[ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or
+similar, with the property repeated for each applicable value. Ideally the
+taxonomy should be identified, and both the textual label and formal code
+for the category should be provided.\n Note: for historical reasons, any
+textual label and formal code provided as a literal may be assumed to be
+from O*NET-SOC.
 
 
 A occupational_category should be one of the following types:

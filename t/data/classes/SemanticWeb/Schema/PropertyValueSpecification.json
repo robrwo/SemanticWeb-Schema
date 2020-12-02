@@ -4,7 +4,7 @@
       "rdfs:comment" : "A Property value specification.",
       "rdfs:label" : "PropertyValueSpecification",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:source" : "schemadotorgsources:source_ActionCollabClass"
+      "schema:source" : "schemadotorgsources2:source_ActionCollabClass"
    },
    "properties" : {
       "schema:defaultValue" : {
@@ -13,8 +13,8 @@
          "rdfs:label" : "defaultValue",
          "schema:domainIncludes" : "schema:PropertyValueSpecification",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:Text"
          ]
       },
       "schema:maxValue" : {
@@ -28,20 +28,20 @@
             "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:minValue" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PropertyValueSpecification",
             "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification"
          ],
          "schema:rangeIncludes" : "schema:Number",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:multipleValues" : {
          "rdf:type" : "rdf:Property",

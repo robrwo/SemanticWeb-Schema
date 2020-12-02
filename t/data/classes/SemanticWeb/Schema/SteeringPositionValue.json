@@ -4,7 +4,7 @@
       "rdfs:comment" : "A value indicating a steering position.",
       "rdfs:label" : "SteeringPositionValue",
       "rdfs:subClassOf" : "schema:QualitativeValue",
-      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+      "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
    },
    "properties" : {}
 }

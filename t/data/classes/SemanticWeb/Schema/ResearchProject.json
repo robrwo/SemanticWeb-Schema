@@ -4,9 +4,11 @@
       "rdfs:comment" : "A Research project.",
       "rdfs:label" : "ResearchProject",
       "rdfs:subClassOf" : "schema:Project",
-      "schema:category" : "issue-383",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : "schemadotorgsources2:FundInfoCollab"
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/383",
+         "schemadotorgsources:FundInfoCollab"
+      ]
    },
    "properties" : {}
 }

@@ -26,36 +26,35 @@
          "rdfs:comment" : "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
-            "schema:Invoice",
             "schema:Order",
-            "schema:Reservation",
-            "schema:Service"
+            "schema:Service",
+            "schema:Invoice",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:category" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:PhysicalActivity",
-            "schema:Invoice",
             "schema:Recommendation",
             "schema:Product",
+            "schema:Invoice",
             "schema:SpecialAnnouncement",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:PhysicalActivityCategory",
-            "schema:URL",
             "schema:Text",
-            "schema:Thing"
+            "schema:URL",
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -68,8 +67,8 @@
          "rdfs:label" : "confirmationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -92,8 +91,8 @@
          "rdfs:label" : "minimumPaymentDue",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount"
          ]
       },
       "schema:paymentDue" : {
@@ -112,12 +111,12 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDueDate",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:paymentMethod" : {
@@ -125,8 +124,8 @@
          "rdfs:comment" : "The name of the credit card or other method of payment for the order.",
          "rdfs:label" : "paymentMethod",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : "schema:PaymentMethod"
       },
@@ -154,19 +153,18 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
-         "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:Reservation",
             "schema:ParcelDelivery",
-            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
             "schema:Trip",
-            "schema:Invoice",
+            "schema:Reservation",
+            "schema:EducationalOccupationalProgram",
             "schema:Service",
-            "schema:CreativeWork"
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -190,8 +188,8 @@
          "rdfs:label" : "totalPaymentDue",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:PriceSpecification",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification"
          ]
       }
    }

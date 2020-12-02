@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -29,7 +29,7 @@ overnight stays, but this is not a mandatory requirement. For more specific
 types of accommodations not defined in schema.org, one can use
 additionalType with external vocabularies. <br /><br /> See also the <a
 href="/docs/hotels.html">dedicated document on the use of schema.org for
-marking up hotels and other forms of accommodations</a>.<p>
+marking up hotels and other forms of accommodations</a>. <p>
 
 =end html
 
@@ -43,17 +43,12 @@ marking up hotels and other forms of accommodations</a>.<p>
 
 C<accommodationCategory>
 
-=begin html
-
-<p>Category of an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, following real
-estate conventions e.g. RESO (see <a
-href="https://ddwiki.reso.org/display/DDW17/PropertySubType+Field">Property
-SubType</a>, and <a
-href="https://ddwiki.reso.org/display/DDW17/PropertyType+Field">PropertyTyp
-e</a> fields for suggested values).<p>
-
-=end html
+Category of an [[Accommodation]], following real estate conventions e.g.
+RESO (see
+[PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Fie
+ld), and
+[PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field)
+fields for suggested values).
 
 
 A accommodation_category should be one of the following types:
@@ -81,12 +76,7 @@ has accommodation_category => (
 
 C<accommodationFloorPlan>
 
-=begin html
-
-<p>A floorplan of some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>.<p>
-
-=end html
+A floorplan of some [[Accommodation]].
 
 
 A accommodation_floor_plan should be one of the following types:
@@ -145,16 +135,10 @@ has amenity_feature => (
 
 C<floorLevel>
 
-=begin html
-
-<p>The floor level for an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a> in a multi-storey
-building. Since counting systems <a
-href="https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designa
-tions">vary internationally</a>, the local system should be used where
-possible.<p>
-
-=end html
+The floor level for an [[Accommodation]] in a multi-storey building. Since
+counting systems [vary
+internationally](https://en.wikipedia.org/wiki/Storey#Consecutive_number_fl
+oor_designations), the local system should be used where possible.
 
 
 A floor_level should be one of the following types:
@@ -184,7 +168,7 @@ C<floorSize>
 
 The size of the accommodation, e.g. in square meter or squarefoot. Typical
 unit code(s): MTK for square meter, FTK for square foot, or YDK for square
-yard
+yard 
 
 
 A floor_size should be one of the following types:
@@ -212,14 +196,8 @@ has floor_size => (
 
 C<leaseLength>
 
-=begin html
-
-<p>Length of the lease for some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, either particular
-to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
-some cases intrinsic to the property.<p>
-
-=end html
+Length of the lease for some [[Accommodation]], either particular to some
+[[Offer]] or in some cases intrinsic to the property.
 
 
 A lease_length should be one of the following types:
@@ -249,18 +227,12 @@ has lease_length => (
 
 C<numberOfBathroomsTotal>
 
-=begin html
-
-<p>The total integer number of bathrooms in a some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, following real
-estate conventions as <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field">do
-cumented in RESO</a>: "The simple sum of the number of bathrooms. For
-example for a property with two Full Bathrooms and one Half Bathroom, the
-Bathrooms Total Integer will be 3.". See also <a class="localLink"
-href="http://schema.org/numberOfRooms">numberOfRooms</a>.<p>
-
-=end html
+The total integer number of bathrooms in a some [[Accommodation]],
+following real estate conventions as [documented in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field):
+"The simple sum of the number of bathrooms. For example for a property with
+two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will
+be 3.". See also [[numberOfRooms]].
 
 
 A number_of_bathrooms_total should be one of the following types:
@@ -288,15 +260,8 @@ has number_of_bathrooms_total => (
 
 C<numberOfBedrooms>
 
-=begin html
-
-<p>The total integer number of bedrooms in a some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or <a
-class="localLink" href="http://schema.org/FloorPlan">FloorPlan</a>.<p>
-
-=end html
+The total integer number of bedrooms in a some [[Accommodation]],
+[[ApartmentComplex]] or [[FloorPlan]].
 
 
 A number_of_bedrooms should be one of the following types:
@@ -326,16 +291,9 @@ has number_of_bedrooms => (
 
 C<numberOfFullBathrooms>
 
-=begin html
-
-<p>Number of full bathrooms - The total number of full and Â¾ bathrooms in
-an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>. This corresponds
-to the <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field">BathroomsF
-ull field in RESO</a>.<p>
-
-=end html
+Number of full bathrooms - The total number of full and Â¾ bathrooms in an
+[[Accommodation]]. This corresponds to the [BathroomsFull field in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).
 
 
 A number_of_full_bathrooms should be one of the following types:
@@ -363,16 +321,9 @@ has number_of_full_bathrooms => (
 
 C<numberOfPartialBathrooms>
 
-=begin html
-
-<p>Number of partial bathrooms - The total number of half and Â¼ bathrooms
-in an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>. This corresponds
-to the <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field">Bathroo
-msPartial field in RESO</a>.<p>
-
-=end html
+Number of partial bathrooms - The total number of half and Â¼ bathrooms in
+an [[Accommodation]]. This corresponds to the [BathroomsPartial field in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). 
 
 
 A number_of_partial_bathrooms should be one of the following types:
@@ -492,16 +443,9 @@ has pets_allowed => (
 
 C<tourBookingPage>
 
-=begin html
-
-<p>A page providing information on how to book a tour of some <a
-class="localLink" href="http://schema.org/Place">Place</a>, such as an <a
-class="localLink" href="http://schema.org/Accommodation">Accommodation</a>
-or <a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> in a real
-estate setting, as well as other kinds of tours as appropriate.<p>
-
-=end html
+A page providing information on how to book a tour of some [[Place]], such
+as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting,
+as well as other kinds of tours as appropriate.
 
 
 A tour_booking_page should be one of the following types:
@@ -529,15 +473,9 @@ has tour_booking_page => (
 
 C<yearBuilt>
 
-=begin html
-
-<p>The year an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a> was constructed.
-This corresponds to the <a
-href="https://ddwiki.reso.org/display/DDW17/YearBuilt+Field">YearBuilt
-field in RESO</a>.<p>
-
-=end html
+The year an [[Accommodation]] was constructed. This corresponds to the
+[YearBuilt field in
+RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). 
 
 
 A year_built should be one of the following types:

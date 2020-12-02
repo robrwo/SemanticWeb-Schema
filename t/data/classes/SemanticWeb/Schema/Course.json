@@ -11,35 +11,34 @@
    "properties" : {
       "schema:courseCode" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The identifier for the <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> used by the course <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> (e.g. CS101 or 6.001).",
+         "rdfs:comment" : "The identifier for the [[Course]] used by the course [[provider]] (e.g. CS101 or 6.001).",
          "rdfs:label" : "courseCode",
          "schema:domainIncludes" : "schema:Course",
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:coursePrerequisites" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Requirements for taking the Course. May be completion of another <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using <a class=\"localLink\" href=\"http://schema.org/AlignmentObject\">AlignmentObject</a>.",
+         "rdfs:comment" : "Requirements for taking the Course. May be completion of another [[Course]] or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using [[AlignmentObject]].",
          "rdfs:label" : "coursePrerequisites",
          "schema:domainIncludes" : "schema:Course",
          "schema:rangeIncludes" : [
             "schema:Course",
-            "schema:AlignmentObject",
-            "schema:Text"
+            "schema:Text",
+            "schema:AlignmentObject"
          ]
       },
       "schema:educationalCredentialAwarded" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "educationalCredentialAwarded",
-         "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
+            "schema:Text",
             "schema:URL",
-            "schema:Text"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -54,15 +53,14 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of credits or units awarded by a Course or required to complete an EducationalOccupationalProgram.",
          "rdfs:label" : "numberOfCredits",
-         "schema:category" : "issue-2419",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:StructuredValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:StructuredValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       },
@@ -70,16 +68,15 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "occupationalCredentialAwarded",
-         "schema:category" : "issue-2289",
          "schema:domainIncludes" : [
-            "schema:Course",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:Course"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:EducationalOccupationalCredential",
-            "schema:Text",
-            "schema:URL"
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       }

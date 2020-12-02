@@ -4,7 +4,6 @@
       "rdfs:comment" : "Enumerates the EU energy efficiency classes A-G as well as A+, A++, and A+++ as defined in EU directive 2017/1369",
       "rdfs:label" : "EUEnergyEfficiencyEnumeration",
       "rdfs:subClassOf" : "schema:EnergyEfficiencyEnumeration",
-      "schema:category" : "issue-2670",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
    },

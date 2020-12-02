@@ -4,7 +4,6 @@
       "rdfs:comment" : "USNonprofitType: Non-profit organization type originating from the United States.",
       "rdfs:label" : "USNonprofitType",
       "rdfs:subClassOf" : "schema:NonprofitType",
-      "schema:category" : "issue-2543",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
    },

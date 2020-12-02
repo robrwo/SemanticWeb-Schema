@@ -15,24 +15,18 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal
-language code tags expressed in <a
-href="https://en.wikipedia.org/wiki/IETF_language_tag">BCP 47</a> can be
-used via the <a class="localLink"
-href="http://schema.org/alternateName">alternateName</a> property. The
-Language type previously also covered programming languages such as Scheme
-and Lisp, which are now best represented using <a class="localLink"
-href="http://schema.org/ComputerLanguage">ComputerLanguage</a>.<p>
-
-=end html
+Natural languages such as Spanish, Tamil, Hindi, English, etc. Formal
+language code tags expressed in [BCP
+47](https://en.wikipedia.org/wiki/IETF_language_tag) can be used via the
+[[alternateName]] property. The Language type previously also covered
+programming languages such as Scheme and Lisp, which are now best
+represented using [[ComputerLanguage]].
 
 
 

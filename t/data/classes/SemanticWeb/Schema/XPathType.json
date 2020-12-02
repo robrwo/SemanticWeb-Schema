@@ -4,7 +4,6 @@
       "rdfs:comment" : "Text representing an XPath (typically but not necessarily version 1.0).",
       "rdfs:label" : "XPathType",
       "rdfs:subClassOf" : "schema:Text",
-      "schema:category" : "issue-1672",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1672"
    },

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Recommendation;
 
-# ABSTRACT:  Recommendation is a type of Review that suggests or proposes something as the best option or best course of action
+# ABSTRACT: [[Recommendation]] is a type of [[Review]] that suggests or proposes something as the best option or best course of action
 
 use Moo;
 
@@ -15,27 +15,18 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p><a class="localLink"
-href="http://schema.org/Recommendation">Recommendation</a> is a type of <a
-class="localLink" href="http://schema.org/Review">Review</a> that suggests
-or proposes something as the best option or best course of action.
-Recommendations may be for products or services, or other concrete things,
-as in the case of a ranked list or product guide. A <a class="localLink"
-href="http://schema.org/Guide">Guide</a> may list multiple recommendations
-for different categories. For example, in a <a class="localLink"
-href="http://schema.org/Guide">Guide</a> about which TVs to buy, the author
-may have several <a class="localLink"
-href="http://schema.org/Recommendation">Recommendation</a>s.<p>
-
-=end html
+[[Recommendation]] is a type of [[Review]] that suggests or proposes
+something as the best option or best course of action. Recommendations may
+be for products or services, or other concrete things, as in the case of a
+ranked list or product guide. A [[Guide]] may list multiple recommendations
+for different categories. For example, in a [[Guide]] about which TVs to
+buy, the author may have several [[Recommendation]]s.
 
 
 

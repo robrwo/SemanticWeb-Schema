@@ -5,8 +5,8 @@
       "rdfs:label" : "Hospital",
       "rdfs:subClassOf" : [
          "schema:CivicStructure",
-         "schema:MedicalOrganization",
-         "schema:EmergencyService"
+         "schema:EmergencyService",
+         "schema:MedicalOrganization"
       ]
    },
    "properties" : {
@@ -16,8 +16,8 @@
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
             "schema:MedicalClinic",
-            "schema:Physician",
-            "schema:Hospital"
+            "schema:Hospital",
+            "schema:Physician"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
@@ -28,14 +28,13 @@
       },
       "schema:healthcareReportingData" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates data describing a hospital, e.g. a CDC <a class=\"localLink\" href=\"http://schema.org/CDCPMDRecord\">CDCPMDRecord</a> or as some kind of <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>.",
+         "rdfs:comment" : "Indicates data describing a hospital, e.g. a CDC [[CDCPMDRecord]] or as some kind of [[Dataset]].",
          "rdfs:label" : "healthcareReportingData",
-         "schema:category" : "issue-2521",
          "schema:domainIncludes" : "schema:Hospital",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Dataset",
-            "schema:CDCPMDRecord"
+            "schema:CDCPMDRecord",
+            "schema:Dataset"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -44,9 +43,9 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalClinic",
-            "schema:Physician",
             "schema:MedicalOrganization",
+            "schema:Physician",
+            "schema:MedicalClinic",
             "schema:Hospital"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",

@@ -1,15 +1,15 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.<br/><br/>\n\nCommonly used values:<br/><br/>\n\n<ul>\n<li>http://purl.org/goodrelations/v1#AmericanExpress</li>\n<li>http://purl.org/goodrelations/v1#DinersClub</li>\n<li>http://purl.org/goodrelations/v1#Discover</li>\n<li>http://purl.org/goodrelations/v1#JCB</li>\n<li>http://purl.org/goodrelations/v1#MasterCard</li>\n<li>http://purl.org/goodrelations/v1#VISA</li>\n</ul>\n",
+      "rdfs:comment" : "A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.\\n\\nCommonly used values:\\n\\n* http://purl.org/goodrelations/v1#AmericanExpress\\n* http://purl.org/goodrelations/v1#DinersClub\\n* http://purl.org/goodrelations/v1#Discover\\n* http://purl.org/goodrelations/v1#JCB\\n* http://purl.org/goodrelations/v1#MasterCard\\n* http://purl.org/goodrelations/v1#VISA\n       ",
       "rdfs:label" : "CreditCard",
       "rdfs:subClassOf" : [
-         "schema:PaymentCard",
-         "schema:LoanOrCredit"
+         "schema:LoanOrCredit",
+         "schema:PaymentCard"
       ],
       "schema:source" : [
-         "schemadotorgsources:FIBO",
-         "schemadotorgsources:source_GoodRelationsClass"
+         "schemadotorgsources2:source_GoodRelationsClass",
+         "schemadotorgsources2:FIBO"
       ]
    },
    "properties" : {}

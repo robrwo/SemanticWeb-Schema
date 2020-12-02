@@ -1,0 +1,33 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A HyperToc represents a hypertext table of contents for complex media objects, such as [[VideoObject]], [[AudioObject]]. Items in the table of contents are indicated using the [[tocEntry]] property, and typed [[HyperTocEntry]]. For cases where the same larger work is split into multiple files, [[associatedMedia]] can be used on individual [[HyperTocEntry]] items.",
+      "rdfs:label" : "HyperToc",
+      "rdfs:subClassOf" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2766"
+   },
+   "properties" : {
+      "schema:associatedMedia" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
+         "rdfs:label" : "associatedMedia",
+         "schema:domainIncludes" : [
+            "schema:HyperToc",
+            "schema:HyperTocEntry",
+            "schema:CreativeWork"
+         ],
+         "schema:rangeIncludes" : "schema:MediaObject"
+      },
+      "schema:tocEntry" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates a [[HyperTocEntry]] in a [[HyperToc]].",
+         "rdfs:label" : "tocEntry",
+         "rdfs:subPropertyOf" : "schema:hasPart",
+         "schema:domainIncludes" : "schema:HyperToc",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:HyperTocEntry",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2766"
+      }
+   }
+}

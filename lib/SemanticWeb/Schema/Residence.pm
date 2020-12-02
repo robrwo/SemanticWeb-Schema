@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,12 +33,7 @@ The place where a person lives.
 
 C<accommodationFloorPlan>
 
-=begin html
-
-<p>A floorplan of some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>.<p>
-
-=end html
+A floorplan of some [[Accommodation]].
 
 
 A accommodation_floor_plan should be one of the following types:

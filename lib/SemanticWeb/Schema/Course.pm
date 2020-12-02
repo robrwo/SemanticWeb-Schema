@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -38,14 +38,8 @@ learners.
 
 C<courseCode>
 
-=begin html
-
-<p>The identifier for the <a class="localLink"
-href="http://schema.org/Course">Course</a> used by the course <a
-class="localLink" href="http://schema.org/provider">provider</a> (e.g.
-CS101 or 6.001).<p>
-
-=end html
+The identifier for the [[Course]] used by the course [[provider]] (e.g.
+CS101 or 6.001).
 
 
 A course_code should be one of the following types:
@@ -73,15 +67,9 @@ has course_code => (
 
 C<coursePrerequisites>
 
-=begin html
-
-<p>Requirements for taking the Course. May be completion of another <a
-class="localLink" href="http://schema.org/Course">Course</a> or a textual
-description like "permission of instructor". Requirements may be a
-pre-requisite competency, referenced using <a class="localLink"
-href="http://schema.org/AlignmentObject">AlignmentObject</a>.<p>
-
-=end html
+Requirements for taking the Course. May be completion of another [[Course]]
+or a textual description like "permission of instructor". Requirements may
+be a pre-requisite competency, referenced using [[AlignmentObject]].
 
 
 A course_prerequisites should be one of the following types:

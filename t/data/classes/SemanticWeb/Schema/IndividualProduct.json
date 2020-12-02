@@ -4,7 +4,7 @@
       "rdfs:comment" : "A single, identifiable product instance (e.g. a laptop with a particular serial number).",
       "rdfs:label" : "IndividualProduct",
       "rdfs:subClassOf" : "schema:Product",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:source" : "schemadotorgsources2:source_GoodRelationsClass"
    },
    "properties" : {
       "schema:serialNumber" : {
@@ -14,11 +14,11 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:IndividualProduct",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:IndividualProduct"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       }
    }
 }

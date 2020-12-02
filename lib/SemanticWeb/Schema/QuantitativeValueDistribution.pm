@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,12 +33,8 @@ A statistical distribution of values.
 
 
 
-=begin html
-
-<p>The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
-
-=end html
+The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
+date format](http://en.wikipedia.org/wiki/ISO_8601).
 
 
 A duration should be one of the following types:

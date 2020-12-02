@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -90,21 +90,14 @@ has coach => (
 
 
 
-=begin html
-
-<p>Gender of something, typically a <a class="localLink"
-href="http://schema.org/Person">Person</a>, but possibly also fictional
+Gender of something, typically a [[Person]], but possibly also fictional
 characters, animals, etc. While http://schema.org/Male and
 http://schema.org/Female may be used, text strings are also acceptable for
-people who do not identify as a binary gender. The <a class="localLink"
-href="http://schema.org/gender">gender</a> property can also be used in an
-extended sense to cover e.g. the gender of sports teams. As with the gender
-of individuals, we do not try to enumerate all possibilities. A
-mixed-gender <a class="localLink"
-href="http://schema.org/SportsTeam">SportsTeam</a> can be indicated with a
-text value of "Mixed".<p>
-
-=end html
+people who do not identify as a binary gender. The [[gender]] property can
+also be used in an extended sense to cover e.g. the gender of sports teams.
+As with the gender of individuals, we do not try to enumerate all
+possibilities. A mixed-gender [[SportsTeam]] can be indicated with a text
+value of "Mixed".
 
 
 A gender should be one of the following types:

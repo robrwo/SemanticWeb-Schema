@@ -4,7 +4,7 @@
       "rdfs:comment" : "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.",
       "rdfs:label" : "LocationFeatureSpecification",
       "rdfs:subClassOf" : "schema:PropertyValue",
-      "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+      "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
    },
    "properties" : {
       "schema:hoursAvailable" : {
@@ -23,38 +23,38 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
-            "schema:MonetaryAmount",
             "schema:Offer",
-            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification",
             "schema:Permit",
-            "schema:Demand",
-            "schema:OpeningHoursSpecification"
+            "schema:LocationFeatureSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:validThrough" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:Demand",
+            "schema:MonetaryAmount",
             "schema:OpeningHoursSpecification",
             "schema:Offer",
-            "schema:JobPosting",
-            "schema:Demand",
-            "schema:LocationFeatureSpecification",
-            "schema:MonetaryAmount"
+            "schema:PriceSpecification",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       }
    }
 }

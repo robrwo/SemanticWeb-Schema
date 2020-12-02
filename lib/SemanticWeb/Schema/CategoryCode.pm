@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -61,13 +61,7 @@ has code_value => (
 
 C<inCodeSet>
 
-=begin html
-
-<p>A <a class="localLink"
-href="http://schema.org/CategoryCodeSet">CategoryCodeSet</a> that contains
-this category code.<p>
-
-=end html
+A [[CategoryCodeSet]] that contains this category code.
 
 
 A in_code_set should be one of the following types:

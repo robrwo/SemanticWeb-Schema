@@ -4,7 +4,7 @@
       "rdfs:comment" : "A MusicRelease is a specific release of a music album.",
       "rdfs:label" : "MusicRelease",
       "rdfs:subClassOf" : "schema:MusicPlaylist",
-      "schema:source" : "schemadotorgsources:MBZ"
+      "schema:source" : "schemadotorgsources2:MBZ"
    },
    "properties" : {
       "schema:catalogNumber" : {
@@ -13,7 +13,7 @@
          "rdfs:label" : "catalogNumber",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:source" : "schemadotorgsources2:MBZ"
       },
       "schema:creditedTo" : {
          "rdf:type" : "rdf:Property",
@@ -24,25 +24,21 @@
             "schema:Organization",
             "schema:Person"
          ],
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:source" : "schemadotorgsources2:MBZ"
       },
       "schema:duration" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>.",
+         "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
-         "schema:category" : [
-            "issue-1698",
-            "issue-1457"
-         ],
          "schema:domainIncludes" : [
-            "schema:Audiobook",
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:MediaObject",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRelease",
+            "schema:Audiobook",
+            "schema:MediaObject",
             "schema:Movie",
-            "schema:Event"
+            "schema:Event",
+            "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
@@ -56,7 +52,7 @@
          "rdfs:label" : "musicReleaseFormat",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:MusicReleaseFormatType",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:source" : "schemadotorgsources2:MBZ"
       },
       "schema:recordLabel" : {
          "owl:equivalentProperty" : "mo:label",
@@ -65,7 +61,7 @@
          "rdfs:label" : "recordLabel",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:Organization",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:source" : "schemadotorgsources2:MBZ"
       },
       "schema:releaseOf" : {
          "rdf:type" : "rdf:Property",
@@ -74,7 +70,7 @@
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:inverseOf" : "schema:albumRelease",
          "schema:rangeIncludes" : "schema:MusicAlbum",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:source" : "schemadotorgsources2:MBZ"
       }
    }
 }

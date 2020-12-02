@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of notifying someone that a future event/action is going to
-happen as expected.<br/><br/> Related actions:<br/><br/> <ul> <li><a
-class="localLink" href="http://schema.org/CancelAction">CancelAction</a>:
-The antonym of ConfirmAction.</li> </ul> <p>
-
-=end html
+The act of notifying someone that a future event/action is going to happen
+as expected.\n\nRelated actions:\n\n* [[CancelAction]]: The antonym of
+ConfirmAction.
 
 
 

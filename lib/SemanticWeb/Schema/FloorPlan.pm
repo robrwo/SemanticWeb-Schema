@@ -15,32 +15,21 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A FloorPlan is an explicit representation of a collection of similar
+A FloorPlan is an explicit representation of a collection of similar
 accommodations, allowing the provision of common information (room counts,
 sizes, layout diagrams) and offers for rental or sale. In typical use, some
-<a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> has an <a
-class="localLink"
-href="http://schema.org/accommodationFloorPlan">accommodationFloorPlan</a>
-which is a <a class="localLink"
-href="http://schema.org/FloorPlan">FloorPlan</a>. A FloorPlan is always in
-the context of a particular place, either a larger <a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or a single
-<a class="localLink" href="http://schema.org/Apartment">Apartment</a>. The
-visual/spatial aspects of a floor plan (i.e. room layout, <a
-href="https://en.wikipedia.org/wiki/Floor_plan">see wikipedia</a>) can be
-indicated using <a class="localLink"
-href="http://schema.org/image">image</a>.<p>
-
-=end html
+[[ApartmentComplex]] has an [[accommodationFloorPlan]] which is a
+[[FloorPlan]]. A FloorPlan is always in the context of a particular place,
+either a larger [[ApartmentComplex]] or a single [[Apartment]]. The
+visual/spatial aspects of a floor plan (i.e. room layout, [see
+wikipedia](https://en.wikipedia.org/wiki/Floor_plan)) can be indicated
+using [[image]]. 
 
 
 
@@ -85,7 +74,7 @@ C<floorSize>
 
 The size of the accommodation, e.g. in square meter or squarefoot. Typical
 unit code(s): MTK for square meter, FTK for square foot, or YDK for square
-yard
+yard 
 
 
 A floor_size should be one of the following types:
@@ -171,20 +160,10 @@ has layout_image => (
 
 C<numberOfAccommodationUnits>
 
-=begin html
-
-<p>Indicates the total (available plus unavailable) number of accommodation
-units in an <a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>, or the
-number of accommodation units for a specific <a class="localLink"
-href="http://schema.org/FloorPlan">FloorPlan</a> (within its specific <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>). See also
-<a class="localLink"
-href="http://schema.org/numberOfAvailableAccommodationUnits">numberOfAvaila
-bleAccommodationUnits</a>.<p>
-
-=end html
+Indicates the total (available plus unavailable) number of accommodation
+units in an [[ApartmentComplex]], or the number of accommodation units for
+a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See
+also [[numberOfAvailableAccommodationUnits]].
 
 
 A number_of_accommodation_units should be one of the following types:
@@ -212,20 +191,10 @@ has number_of_accommodation_units => (
 
 C<numberOfAvailableAccommodationUnits>
 
-=begin html
-
-<p>Indicates the number of available accommodation units in an <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>, or the
-number of accommodation units for a specific <a class="localLink"
-href="http://schema.org/FloorPlan">FloorPlan</a> (within its specific <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>). See also
-<a class="localLink"
-href="http://schema.org/numberOfAccommodationUnits">numberOfAccommodationUn
-its</a>.<p>
-
-=end html
+Indicates the number of available accommodation units in an
+[[ApartmentComplex]], or the number of accommodation units for a specific
+[[FloorPlan]] (within its specific [[ApartmentComplex]]). See also
+[[numberOfAccommodationUnits]].
 
 
 A number_of_available_accommodation_units should be one of the following types:
@@ -253,18 +222,12 @@ has number_of_available_accommodation_units => (
 
 C<numberOfBathroomsTotal>
 
-=begin html
-
-<p>The total integer number of bathrooms in a some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, following real
-estate conventions as <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field">do
-cumented in RESO</a>: "The simple sum of the number of bathrooms. For
-example for a property with two Full Bathrooms and one Half Bathroom, the
-Bathrooms Total Integer will be 3.". See also <a class="localLink"
-href="http://schema.org/numberOfRooms">numberOfRooms</a>.<p>
-
-=end html
+The total integer number of bathrooms in a some [[Accommodation]],
+following real estate conventions as [documented in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field):
+"The simple sum of the number of bathrooms. For example for a property with
+two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will
+be 3.". See also [[numberOfRooms]].
 
 
 A number_of_bathrooms_total should be one of the following types:
@@ -292,15 +255,8 @@ has number_of_bathrooms_total => (
 
 C<numberOfBedrooms>
 
-=begin html
-
-<p>The total integer number of bedrooms in a some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or <a
-class="localLink" href="http://schema.org/FloorPlan">FloorPlan</a>.<p>
-
-=end html
+The total integer number of bedrooms in a some [[Accommodation]],
+[[ApartmentComplex]] or [[FloorPlan]].
 
 
 A number_of_bedrooms should be one of the following types:
@@ -330,16 +286,9 @@ has number_of_bedrooms => (
 
 C<numberOfFullBathrooms>
 
-=begin html
-
-<p>Number of full bathrooms - The total number of full and Â¾ bathrooms in
-an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>. This corresponds
-to the <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field">BathroomsF
-ull field in RESO</a>.<p>
-
-=end html
+Number of full bathrooms - The total number of full and Â¾ bathrooms in an
+[[Accommodation]]. This corresponds to the [BathroomsFull field in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).
 
 
 A number_of_full_bathrooms should be one of the following types:
@@ -367,16 +316,9 @@ has number_of_full_bathrooms => (
 
 C<numberOfPartialBathrooms>
 
-=begin html
-
-<p>Number of partial bathrooms - The total number of half and Â¼ bathrooms
-in an <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>. This corresponds
-to the <a
-href="https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field">Bathroo
-msPartial field in RESO</a>.<p>
-
-=end html
+Number of partial bathrooms - The total number of half and Â¼ bathrooms in
+an [[Accommodation]]. This corresponds to the [BathroomsPartial field in
+RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). 
 
 
 A number_of_partial_bathrooms should be one of the following types:

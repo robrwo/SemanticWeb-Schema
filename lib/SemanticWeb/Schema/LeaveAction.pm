@@ -15,23 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An agent leaves an event / group with participants/friends at a
-location.<br/><br/> Related actions:<br/><br/> <ul> <li><a
-class="localLink" href="http://schema.org/JoinAction">JoinAction</a>: The
-antonym of LeaveAction.</li> <li><a class="localLink"
-href="http://schema.org/UnRegisterAction">UnRegisterAction</a>: Unlike
-UnRegisterAction, LeaveAction implies leaving a group/team of people rather
-than a service.</li> </ul> <p>
-
-=end html
+An agent leaves an event / group with participants/friends at a
+location.\n\nRelated actions:\n\n* [[JoinAction]]: The antonym of
+LeaveAction.\n* [[UnRegisterAction]]: Unlike UnRegisterAction, LeaveAction
+implies leaving a group/team of people rather than a service.
 
 
 

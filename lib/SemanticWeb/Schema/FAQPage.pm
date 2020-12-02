@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::FAQPage;
 
-# ABSTRACT: A FAQPage is a WebPage presenting one or more " Frequently asked questions " (see also QAPage ).
+# ABSTRACT: A [[FAQPage]] is a [[WebPage]] presenting one or more "[Frequently asked questions](https://en
 
 use Moo;
 
@@ -15,22 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a class="localLink" href="http://schema.org/FAQPage">FAQPage</a> is a
-<a class="localLink" href="http://schema.org/WebPage">WebPage</a>
-presenting one or more "<a
-href="https://en.wikipedia.org/wiki/FAQ">Frequently asked questions</a>"
-(see also <a class="localLink"
-href="http://schema.org/QAPage">QAPage</a>).<p>
-
-=end html
+A [[FAQPage]] is a [[WebPage]] presenting one or more "[Frequently asked
+questions](https://en.wikipedia.org/wiki/FAQ)" (see also [[QAPage]]).
 
 
 

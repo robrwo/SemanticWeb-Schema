@@ -22,8 +22,8 @@
          "schema:domainIncludes" : "schema:DoseSchedule",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:Number"
          ]
       },
       "schema:frequency" : {

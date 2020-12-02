@@ -15,22 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A range of of services that will be provided to a customer free of
-charge in case of a defect or malfunction of a product.<br/><br/> Commonly
-used values:<br/><br/> <ul>
-<li>http://purl.org/goodrelations/v1#Labor-BringIn</li>
-<li>http://purl.org/goodrelations/v1#PartsAndLabor-BringIn</li>
-<li>http://purl.org/goodrelations/v1#PartsAndLabor-PickUp</li> </ul> <p>
-
-=end html
+A range of of services that will be provided to a customer free of charge
+in case of a defect or malfunction of a product.\n\nCommonly used
+values:\n\n* http://purl.org/goodrelations/v1#Labor-BringIn\n*
+http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\n*
+http://purl.org/goodrelations/v1#PartsAndLabor-PickUp 
 
 
 

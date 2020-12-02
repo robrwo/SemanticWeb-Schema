@@ -1,18 +1,16 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A SpeakableSpecification indicates (typically via <a class=\"localLink\" href=\"http://schema.org/xpath\">xpath</a> or <a class=\"localLink\" href=\"http://schema.org/cssSelector\">cssSelector</a>) sections of a document that are highlighted as particularly <a class=\"localLink\" href=\"http://schema.org/speakable\">speakable</a>. Instances of this type are expected to be used primarily as values of the <a class=\"localLink\" href=\"http://schema.org/speakable\">speakable</a> property.",
+      "rdfs:comment" : "A SpeakableSpecification indicates (typically via [[xpath]] or [[cssSelector]]) sections of a document that are highlighted as particularly [[speakable]]. Instances of this type are expected to be used primarily as values of the [[speakable]] property.",
       "rdfs:label" : "SpeakableSpecification",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-1389",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1389"
    },
    "properties" : {
       "schema:cssSelector" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A CSS selector, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
+         "rdfs:comment" : "A CSS selector, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
          "rdfs:label" : "cssSelector",
-         "schema:category" : "issue-1389",
          "schema:domainIncludes" : [
             "schema:WebPageElement",
             "schema:SpeakableSpecification"
@@ -22,12 +20,11 @@
       },
       "schema:xpath" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An XPath, e.g. of a <a class=\"localLink\" href=\"http://schema.org/SpeakableSpecification\">SpeakableSpecification</a> or <a class=\"localLink\" href=\"http://schema.org/WebPageElement\">WebPageElement</a>. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
+         "rdfs:comment" : "An XPath, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In the latter case, multiple matches within a page can constitute a single conceptual \"Web page element\".",
          "rdfs:label" : "xpath",
-         "schema:category" : "issue-1389",
          "schema:domainIncludes" : [
-            "schema:SpeakableSpecification",
-            "schema:WebPageElement"
+            "schema:WebPageElement",
+            "schema:SpeakableSpecification"
          ],
          "schema:rangeIncludes" : "schema:XPathType",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1389"

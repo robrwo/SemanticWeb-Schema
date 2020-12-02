@@ -4,22 +4,20 @@
       "rdfs:comment" : "Data type: PronounceableText.",
       "rdfs:label" : "PronounceableText",
       "rdfs:subClassOf" : "schema:Text",
-      "schema:category" : "issue-2108",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2108"
    },
    "properties" : {
       "schema:inLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>.",
+         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
-         "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:PronounceableText",
             "schema:BroadcastService",
-            "schema:WriteAction",
-            "schema:LinkRole",
             "schema:Event",
+            "schema:LinkRole",
+            "schema:PronounceableText",
+            "schema:WriteAction",
             "schema:CreativeWork",
             "schema:CommunicateAction"
          ],
@@ -31,9 +29,8 @@
       },
       "schema:phoneticText" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Representation of a text <a class=\"localLink\" href=\"http://schema.org/textValue\">textValue</a> using the specified <a class=\"localLink\" href=\"http://schema.org/speechToTextMarkup\">speechToTextMarkup</a>. For example the city name of Houston in IPA: /ËhjuËstÉn/.",
+         "rdfs:comment" : "Representation of a text [[textValue]] using the specified [[speechToTextMarkup]]. For example the city name of Houston in IPA: /ËhjuËstÉn/.",
          "rdfs:label" : "phoneticText",
-         "schema:category" : "issue-2108",
          "schema:domainIncludes" : "schema:PronounceableText",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -41,9 +38,8 @@
       },
       "schema:speechToTextMarkup" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Form of markup used. eg. <a href=\"https://www.w3.org/TR/speech-synthesis11\">SSML</a> or <a href=\"https://www.wikidata.org/wiki/Property:P898\">IPA</a>.",
+         "rdfs:comment" : "Form of markup used. eg. [SSML](https://www.w3.org/TR/speech-synthesis11) or [IPA](https://www.wikidata.org/wiki/Property:P898).",
          "rdfs:label" : "speechToTextMarkup",
-         "schema:category" : "issue-2108",
          "schema:domainIncludes" : "schema:PronounceableText",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -53,7 +49,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Text value being annotated.",
          "rdfs:label" : "textValue",
-         "schema:category" : "issue-2108",
          "schema:domainIncludes" : "schema:PronounceableText",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

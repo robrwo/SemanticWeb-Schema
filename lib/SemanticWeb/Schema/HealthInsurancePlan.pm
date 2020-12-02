@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A US-style health insurance plan, including PPOs, EPOs, and HMOs.
+A US-style health insurance plan, including PPOs, EPOs, and HMOs. 
 
 
 
@@ -261,7 +261,7 @@ has includes_health_plan_network => (
 C<usesHealthPlanIdStandard>
 
 The standard for interpreting thePlan ID. The preferred is "HIOS". See the
-Centers for Medicare &amp; Medicaid Services for more details.
+Centers for Medicare & Medicaid Services for more details.
 
 
 A uses_health_plan_id_standard should be one of the following types:

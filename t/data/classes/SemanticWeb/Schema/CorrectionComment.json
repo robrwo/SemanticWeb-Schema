@@ -1,10 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A <a class=\"localLink\" href=\"http://schema.org/comment\">comment</a> that corrects <a class=\"localLink\" href=\"http://schema.org/CreativeWork\">CreativeWork</a>.",
+      "rdfs:comment" : "A [[comment]] that corrects [[CreativeWork]].",
       "rdfs:label" : "CorrectionComment",
       "rdfs:subClassOf" : "schema:Comment",
-      "schema:category" : "issue-1950",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1950"
    },

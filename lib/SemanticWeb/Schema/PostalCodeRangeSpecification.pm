@@ -15,21 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>Indicates a range of postalcodes, usually defined as the set of valid
-codes between <a class="localLink"
-href="http://schema.org/postalCodeBegin">postalCodeBegin</a> and <a
-class="localLink" href="http://schema.org/postalCodeEnd">postalCodeEnd</a>,
-inclusively.<p>
-
-=end html
+Indicates a range of postalcodes, usually defined as the set of valid codes
+between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.
 
 
 
@@ -69,13 +62,8 @@ has postal_code_begin => (
 
 C<postalCodeEnd>
 
-=begin html
-
-<p>Last postal code in the range (included). Needs to be after <a
-class="localLink"
-href="http://schema.org/postalCodeBegin">postalCodeBegin</a>.<p>
-
-=end html
+Last postal code in the range (included). Needs to be after
+[[postalCodeBegin]].
 
 
 A postal_code_end should be one of the following types:

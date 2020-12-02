@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -418,15 +418,9 @@ has eligible_quantity => (
 
 C<eligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is valid.<br/><br/> See also <a
-class="localLink"
-href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is valid.\n\nSee also [[ineligibleRegion]]. 
 
 
 A eligible_region should be one of the following types:
@@ -489,32 +483,22 @@ has eligible_transaction_volume => (
 
 
 
-=begin html
-
-<p>A Global Trade Item Number (<a
-href="https://www.gs1.org/standards/id-keys/gtin">GTIN</a>). GTINs identify
-trade items, including products and services, using numeric identification
-codes. The <a class="localLink" href="http://schema.org/gtin">gtin</a>
-property generalizes the earlier <a class="localLink"
-href="http://schema.org/gtin8">gtin8</a>, <a class="localLink"
-href="http://schema.org/gtin12">gtin12</a>, <a class="localLink"
-href="http://schema.org/gtin13">gtin13</a>, and <a class="localLink"
-href="http://schema.org/gtin14">gtin14</a> properties. The GS1 <a
-href="https://www.gs1.org/standards/Digital-Link/">digital link
-specifications</a> express GTINs as URLs. A correct <a class="localLink"
-href="http://schema.org/gtin">gtin</a> value should be a valid GTIN, which
-means that it should be an all-numeric string of either 8, 12, 13 or 14
-digits, or a "GS1 Digital Link" URL based on such a string. The numeric
-component should also have a <a
-href="https://www.gs1.org/services/check-digit-calculator">valid GS1 check
-digit</a> and meet the other rules for valid GTINs. See also <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1's GTIN
-Summary</a> and <a
-href="https://en.wikipedia.org/wiki/Global_Trade_Item_Number">Wikipedia</a>
-for more details. Left-padding of the gtin values is not required or
-encouraged.<p>
-
-=end html
+A Global Trade Item Number
+([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
+items, including products and services, using numeric identification codes.
+The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
+[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
+specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
+as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
+it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
+"GS1 Digital Link" URL based on such a string. The numeric component should
+also have a [valid GS1 check
+digit](https://www.gs1.org/services/check-digit-calculator) and meet the
+other rules for valid GTINs. See also [GS1's GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
+[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
+more details. Left-padding of the gtin values is not required or
+encouraged. 
 
 
 A gtin should be one of the following types:
@@ -542,16 +526,12 @@ has gtin => (
 
 
 
-=begin html
-
-<p>The GTIN-12 code of the product, or the product to which the offer
-refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a
-U.P.C. Company Prefix, Item Reference, and Check Digit used to identify
-trade items. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-12 code of the product, or the product to which the offer refers.
+The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C.
+Company Prefix, Item Reference, and Check Digit used to identify trade
+items. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin12 should be one of the following types:
@@ -579,16 +559,12 @@ has gtin12 => (
 
 
 
-=begin html
-
-<p>The GTIN-13 code of the product, or the product to which the offer
-refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former
-12-digit UPC codes can be converted into a GTIN-13 code by simply adding a
-preceeding zero. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-13 code of the product, or the product to which the offer refers.
+This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit
+UPC codes can be converted into a GTIN-13 code by simply adding a preceding
+zero. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin13 should be one of the following types:
@@ -616,13 +592,9 @@ has gtin13 => (
 
 
 
-=begin html
-
-<p>The GTIN-14 code of the product, or the product to which the offer
-refers. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1
-GTIN Summary</a> for more details.<p>
-
-=end html
+The GTIN-14 code of the product, or the product to which the offer refers.
+See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin)
+for more details.
 
 
 A gtin14 should be one of the following types:
@@ -650,16 +622,11 @@ has gtin14 => (
 
 
 
-=begin html
-
-<p>The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx">GTIN-8</a> code
-of the product, or the product to which the offer refers. This code is also
-known as EAN/UCC-8 or 8-digit EAN. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of
+the product, or the product to which the offer refers. This code is also
+known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin8 should be one of the following types:
@@ -687,14 +654,8 @@ has gtin8 => (
 
 C<includesObject>
 
-=begin html
-
-<p>This links to a node or nodes indicating the exact quantity of the
-products included in an <a class="localLink"
-href="http://schema.org/Offer">Offer</a> or <a class="localLink"
-href="http://schema.org/ProductCollection">ProductCollection</a>.<p>
-
-=end html
+This links to a node or nodes indicating the exact quantity of the products
+included in an [[Offer]] or [[ProductCollection]].
 
 
 A includes_object should be one of the following types:
@@ -722,15 +683,10 @@ has includes_object => (
 
 C<ineligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is not valid, e.g. a region where the
-transaction is not allowed.<br/><br/> See also <a class="localLink"
-href="http://schema.org/eligibleRegion">eligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is not valid, e.g. a region where the transaction is
+not allowed.\n\nSee also [[eligibleRegion]]. 
 
 
 A ineligible_region should be one of the following types:
@@ -820,16 +776,11 @@ has item_condition => (
 
 C<itemOffered>
 
-=begin html
-
-<p>An item being offered (or demanded). The transactional nature of the
-offer or demand is documented using <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a>, e.g. sell,
-lease etc. While several common expected types are listed explicitly in
-this definition, others can be used. Using a second type, such as Product
-or a subtype of Product, can clarify the nature of the offer.<p>
-
-=end html
+An item being offered (or demanded). The transactional nature of the offer
+or demand is documented using [[businessFunction]], e.g. sell, lease etc.
+While several common expected types are listed explicitly in this
+definition, others can be used. Using a second type, such as Product or a
+subtype of Product, can clarify the nature of the offer.
 
 
 A item_offered should be one of the following types:

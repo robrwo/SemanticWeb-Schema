@@ -4,7 +4,6 @@
       "rdfs:comment" : "A set of requirements that a must be fulfilled in order to perform an Action.",
       "rdfs:label" : "ActionAccessSpecification",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-1741",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
    },
    "properties" : {
@@ -12,39 +11,37 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityEnds",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:ActionAccessSpecification",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
+            "schema:DateTime",
             "schema:Date",
-            "schema:Time",
-            "schema:DateTime"
+            "schema:Time"
          ],
          "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "schemadotorgsources2:source_GoodRelationsTerms"
          ]
       },
       "schema:availabilityStarts" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The beginning of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityStarts",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
             "schema:Demand",
             "schema:Offer",
             "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
             "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ],
          "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
+            "schemadotorgsources2:source_GoodRelationsTerms",
             "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
@@ -52,22 +49,21 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:PhysicalActivity",
-            "schema:Invoice",
             "schema:Recommendation",
             "schema:Product",
+            "schema:Invoice",
             "schema:SpecialAnnouncement",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:PhysicalActivityCategory",
-            "schema:URL",
             "schema:Text",
-            "schema:Thing"
+            "schema:URL",
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -76,66 +72,62 @@
       },
       "schema:eligibleRegion" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.<br/><br/>\n\nSee also <a class=\"localLink\" href=\"http://schema.org/ineligibleRegion\">ineligibleRegion</a>.",
+         "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
+            "schema:Demand",
             "schema:Offer",
             "schema:DeliveryChargeSpecification",
-            "schema:Demand"
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:GeoShape",
-            "schema:Text",
-            "schema:Place"
+            "schema:Place",
+            "schema:Text"
          ],
          "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "schemadotorgsources2:source_GoodRelationsTerms"
          ]
       },
       "schema:expectsAcceptanceOf" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:ActionAccessSpecification",
             "schema:MediaSubscription",
-            "schema:ConsumeAction",
-            "schema:ActionAccessSpecification"
+            "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:ineligibleRegion" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.<br/><br/>\n\nSee also <a class=\"localLink\" href=\"http://schema.org/eligibleRegion\">eligibleRegion</a>.",
+         "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
          "rdfs:label" : "ineligibleRegion",
-         "schema:category" : "issue-2242",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:Demand",
             "schema:ActionAccessSpecification",
-            "schema:DeliveryChargeSpecification",
-            "schema:Offer"
+            "schema:DeliveryChargeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:GeoShape",
-            "schema:Place",
-            "schema:Text"
+            "schema:Text",
+            "schema:Place"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2242"
       },
       "schema:requiresSubscription" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates if use of the media require a subscription  (either paid or free). Allowed values are <code>true</code> or <code>false</code> (note that an earlier version had 'yes', 'no').",
+         "rdfs:comment" : "Indicates if use of the media require a subscription  (either paid or free). Allowed values are ```true``` or ```false``` (note that an earlier version had 'yes', 'no').",
          "rdfs:label" : "requiresSubscription",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Boolean",

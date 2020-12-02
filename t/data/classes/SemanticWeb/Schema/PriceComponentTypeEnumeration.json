@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates different price components that together make up the total price for an offered product.",
+      "rdfs:label" : "PriceComponentTypeEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
+   },
+   "properties" : {}
+}

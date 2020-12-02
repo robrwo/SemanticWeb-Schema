@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::LearningResource;
 
-# ABSTRACT: The LearningResource type can be used to indicate CreativeWork s (whether physical or digital) that have a particular and explicit orientation towards learning
+# ABSTRACT: The LearningResource type can be used to indicate [[CreativeWork]]s (whether physical or digital) that have a particular and explicit orientation towards learning
 
 use Moo;
 
@@ -15,34 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The LearningResource type can be used to indicate <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>s (whether physical
-or digital) that have a particular and explicit orientation towards
-learning, education, skill acquisition, and other educational
-purposes.<br/><br/> <a class="localLink"
-href="http://schema.org/LearningResource">LearningResource</a> is expected
-to be used as an addition to a primary type such as <a class="localLink"
-href="http://schema.org/Book">Book</a>, <a class="localLink"
-href="http://schema.org/Video">Video</a>, <a class="localLink"
-href="http://schema.org/Product">Product</a> etc.<br/><br/> <a
-class="localLink"
-href="http://schema.org/EducationEvent">EducationEvent</a> serves a similar
-purpose for event-like things (e.g. a <a class="localLink"
-href="http://schema.org/Trip">Trip</a>). A <a class="localLink"
-href="http://schema.org/LearningResource">LearningResource</a> may be
-created as a result of an <a class="localLink"
-href="http://schema.org/EducationEvent">EducationEvent</a>, for example by
-recording one.<p>
-
-=end html
+The LearningResource type can be used to indicate [[CreativeWork]]s
+(whether physical or digital) that have a particular and explicit
+orientation towards learning, education, skill acquisition, and other
+educational purposes. [[LearningResource]] is expected to be used as an
+addition to a primary type such as [[Book]], [[Video]], [[Product]] etc.
+[[EducationEvent]] serves a similar purpose for event-like things (e.g. a
+[[Trip]]). A [[LearningResource]] may be created as a result of an
+[[EducationEvent]], for example by recording one.
 
 
 
@@ -81,20 +67,46 @@ has assesses => (
 );
 
 
+=head2 C<competency_required>
+
+C<competencyRequired>
+
+Knowledge, skill, ability or personal attribute that must be demonstrated
+by a person or other entity in order to do something such as earn an
+Educational Occupational Credential or understand a LearningResource.
+
+
+A competency_required should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_competency_required>
+
+A predicate for the L</competency_required> attribute.
+
+=cut
+
+has competency_required => (
+    is        => 'rw',
+    predicate => '_has_competency_required',
+    json_ld   => 'competencyRequired',
+);
+
+
 =head2 C<educational_alignment>
 
 C<educationalAlignment>
 
-=begin html
-
-<p>An alignment to an established educational framework.<br/><br/> This
-property should not be used where the nature of the alignment can be
-described using a simple property, for example to express that a resource
-<a class="localLink" href="http://schema.org/teaches">teaches</a> or <a
-class="localLink" href="http://schema.org/assesses">assesses</a> a
-competency.<p>
-
-=end html
+An alignment to an established educational framework. This property should
+not be used where the nature of the alignment can be described using a
+simple property, for example to express that a resource [[teaches]] or
+[[assesses]] a competency.
 
 
 A educational_alignment should be one of the following types:
@@ -162,6 +174,8 @@ A educational_use should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
 =item C<Str>
 
 =back
@@ -190,6 +204,8 @@ example, 'presentation', 'handout'.
 A learning_resource_type should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
 
 =item C<Str>
 

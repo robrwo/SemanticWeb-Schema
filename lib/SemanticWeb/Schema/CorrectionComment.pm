@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::CorrectionComment;
 
-# ABSTRACT: A comment that corrects CreativeWork .
+# ABSTRACT: A [[comment]] that corrects [[CreativeWork]].
 
 use Moo;
 
@@ -15,19 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a class="localLink" href="http://schema.org/comment">comment</a> that
-corrects <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
-
-=end html
+A [[comment]] that corrects [[CreativeWork]].
 
 
 

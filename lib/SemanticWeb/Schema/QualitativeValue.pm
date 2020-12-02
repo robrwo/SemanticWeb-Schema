@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -34,18 +34,13 @@ type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.
 
 C<additionalProperty>
 
-=begin html
-
-<p>A property-value pair representing an additional characteristics of the
+A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.<br/><br/> Note: Publishers should be
-aware that applications designed to use specific schema.org properties
-(e.g. http://schema.org/width, http://schema.org/color,
-http://schema.org/gtin13, ...) will typically expect such data to be
-provided using those properties, rather than using the generic
-property/value mechanism.<p>
-
-=end html
+is no matching property in schema.org.\n\nNote: Publishers should be aware
+that applications designed to use specific schema.org properties (e.g.
+http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
+...) will typically expect such data to be provided using those properties,
+rather than using the generic property/value mechanism. 
 
 
 A additional_property should be one of the following types:

@@ -1,0 +1,24 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A math solver which is capable of solving a subset of mathematical problems.",
+      "rdfs:label" : "MathSolver",
+      "rdfs:subClassOf" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2740"
+   },
+   "properties" : {
+      "schema:mathExpression" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A mathematical expression (e.g. 'x^2-3x=0') that may be solved for a specific variable, simplified, or transformed. This can take many formats, e.g. LaTeX, Ascii-Math, or math as you would write with a keyboard.",
+         "rdfs:label" : "mathExpression",
+         "schema:domainIncludes" : "schema:MathSolver",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:SolveMathAction",
+            "schema:Text"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2740"
+      }
+   }
+}

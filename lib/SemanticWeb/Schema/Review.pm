@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -118,15 +118,10 @@ has review_body => (
 
 C<reviewRating>
 
-=begin html
-
-<p>The rating given in this review. Note that reviews can themselves be
-rated. The <code>reviewRating</code> applies to rating given by the review.
-The <a class="localLink"
-href="http://schema.org/aggregateRating">aggregateRating</a> property
-applies to the review itself, as a creative work.<p>
-
-=end html
+The rating given in this review. Note that reviews can themselves be rated.
+The ```reviewRating``` applies to rating given by the review. The
+[[aggregateRating]] property applies to the review itself, as a creative
+work.
 
 
 A review_rating should be one of the following types:

@@ -15,23 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of physically/electronically dispatching an object for transfer
-from an origin to a destination.Related actions:<br/><br/> <ul> <li><a
-class="localLink" href="http://schema.org/ReceiveAction">ReceiveAction</a>:
-The reciprocal of SendAction.</li> <li><a class="localLink"
-href="http://schema.org/GiveAction">GiveAction</a>: Unlike GiveAction,
+The act of physically/electronically dispatching an object for transfer
+from an origin to a destination.Related actions:\n\n* [[ReceiveAction]]:
+The reciprocal of SendAction.\n* [[GiveAction]]: Unlike GiveAction,
 SendAction does not imply the transfer of ownership (e.g. I can send you my
-laptop, but I'm not necessarily giving it to you).</li> </ul> <p>
-
-=end html
+laptop, but I'm not necessarily giving it to you).
 
 
 

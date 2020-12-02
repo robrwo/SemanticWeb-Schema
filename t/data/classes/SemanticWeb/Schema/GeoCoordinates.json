@@ -11,11 +11,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:GeoCoordinates",
-            "schema:Person",
             "schema:Organization",
-            "schema:GeoShape"
+            "schema:Person",
+            "schema:Place",
+            "schema:GeoShape",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:PostalAddress",
@@ -24,12 +24,11 @@
       },
       "schema:addressCountry" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>.",
+         "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
-            "schema:PostalAddress",
             "schema:GeoCoordinates",
+            "schema:PostalAddress",
             "schema:DefinedRegion",
             "schema:GeoShape"
          ],
@@ -41,7 +40,7 @@
       },
       "schema:elevation" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The elevation of a location (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+         "rdfs:comment" : "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
          "rdfs:label" : "elevation",
          "schema:domainIncludes" : [
             "schema:GeoShape",
@@ -54,40 +53,39 @@
       },
       "schema:latitude" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The latitude of a location. For example <code>37.42242</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>).",
+         "rdfs:comment" : "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
          "rdfs:label" : "latitude",
          "schema:domainIncludes" : [
             "schema:GeoCoordinates",
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:longitude" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The longitude of a location. For example <code>-122.08585</code> (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>).",
+         "rdfs:comment" : "The longitude of a location. For example ```-122.08585``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
          "rdfs:label" : "longitude",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:postalCode" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
             "schema:DefinedRegion",
             "schema:GeoShape",
-            "schema:PostalAddress",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:PostalAddress"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

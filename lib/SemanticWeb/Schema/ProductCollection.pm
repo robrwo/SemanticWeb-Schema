@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ProductCollection;
 
-# ABSTRACT: A set of products (either ProductGroup s or specific variants) that are listed together e
+# ABSTRACT: A set of products (either [[ProductGroup]]s or specific variants) that are listed together e
 
 use Moo;
 
@@ -15,20 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A set of products (either <a class="localLink"
-href="http://schema.org/ProductGroup">ProductGroup</a>s or specific
-variants) that are listed together e.g. in an <a class="localLink"
-href="http://schema.org/Offer">Offer</a>.<p>
-
-=end html
+A set of products (either [[ProductGroup]]s or specific variants) that are
+listed together e.g. in an [[Offer]].
 
 
 
@@ -40,14 +34,8 @@ href="http://schema.org/Offer">Offer</a>.<p>
 
 C<includesObject>
 
-=begin html
-
-<p>This links to a node or nodes indicating the exact quantity of the
-products included in an <a class="localLink"
-href="http://schema.org/Offer">Offer</a> or <a class="localLink"
-href="http://schema.org/ProductCollection">ProductCollection</a>.<p>
-
-=end html
+This links to a node or nodes indicating the exact quantity of the products
+included in an [[Offer]] or [[ProductCollection]].
 
 
 A includes_object should be one of the following types:

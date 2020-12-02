@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -65,15 +65,9 @@ has interaction_service => (
 
 C<interactionType>
 
-=begin html
-
-<p>The Action representing the type of interaction. For up votes, +1s, etc.
-use <a class="localLink"
-href="http://schema.org/LikeAction">LikeAction</a>. For down votes use <a
-class="localLink" href="http://schema.org/DislikeAction">DislikeAction</a>.
-Otherwise, use the most specific Action.<p>
-
-=end html
+The Action representing the type of interaction. For up votes, +1s, etc.
+use [[LikeAction]]. For down votes use [[DislikeAction]]. Otherwise, use
+the most specific Action.
 
 
 A interaction_type should be one of the following types:

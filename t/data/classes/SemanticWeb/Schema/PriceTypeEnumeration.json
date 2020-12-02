@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates different price types, for example list price, invoice price, and sale price.",
+      "rdfs:label" : "PriceTypeEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

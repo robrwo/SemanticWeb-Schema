@@ -1,19 +1,17 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A schedule defines a repeating time period used to describe a regularly occurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>. At a minimum a schedule will specify <a class=\"localLink\" href=\"http://schema.org/repeatFrequency\">repeatFrequency</a> which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.\n      This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also\n      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.",
+      "rdfs:comment" : "A schedule defines a repeating time period used to describe a regularly occurring [[Event]]. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.\n      This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also\n      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.",
       "rdfs:label" : "Schedule",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-1457",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
    },
    "properties" : {
       "schema:byDay" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the day(s) of the week on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. May be specified using either <a class=\"localLink\" href=\"http://schema.org/DayOfWeek\">DayOfWeek</a>, or alternatively <a class=\"localLink\" href=\"http://schema.org/Text\">Text</a> conforming to iCal's syntax for byDay recurrence rules",
+         "rdfs:comment" : "Defines the day(s) of the week on which a recurring [[Event]] takes place. May be specified using either [[DayOfWeek]], or alternatively [[Text]] conforming to iCal's syntax for byDay recurrence rules",
          "rdfs:label" : "byDay",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -24,9 +22,8 @@
       },
       "schema:byMonth" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the month(s) of the year on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. Specified as an <a class=\"localLink\" href=\"http://schema.org/Integer\">Integer</a> between 1-12. January is 1.",
+         "rdfs:comment" : "Defines the month(s) of the year on which a recurring [[Event]] takes place. Specified as an [[Integer]] between 1-12. January is 1.",
          "rdfs:label" : "byMonth",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -34,9 +31,8 @@
       },
       "schema:byMonthDay" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the day(s) of the month on which a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> takes place. Specified as an <a class=\"localLink\" href=\"http://schema.org/Integer\">Integer</a> between 1-31.",
+         "rdfs:comment" : "Defines the day(s) of the month on which a recurring [[Event]] takes place. Specified as an [[Integer]] between 1-31.",
          "rdfs:label" : "byMonthDay",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -46,7 +42,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Defines the week(s) of the month on which a recurring Event takes place. Specified as an Integer between 1-5. For clarity, byMonthWeek is best used in conjunction with byDay to indicate concepts like the first and third Mondays of a month.",
          "rdfs:label" : "byMonthWeek",
-         "schema:category" : "issue-2599",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -54,21 +49,17 @@
       },
       "schema:duration" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>.",
+         "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
-         "schema:category" : [
-            "issue-1698",
-            "issue-1457"
-         ],
          "schema:domainIncludes" : [
-            "schema:Audiobook",
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:MediaObject",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRelease",
+            "schema:Audiobook",
+            "schema:MediaObject",
             "schema:Movie",
-            "schema:Event"
+            "schema:Event",
+            "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
@@ -78,17 +69,16 @@
       },
       "schema:endDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Role",
-            "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
+            "schema:Event",
             "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -98,26 +88,24 @@
       },
       "schema:endTime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to <em>December</em>. For media, including audio and video, it's the time offset of the end of a clip within a larger file.<br/><br/>\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+         "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
-         "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:MediaObject",
             "schema:Action",
+            "schema:MediaObject",
             "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
       "schema:exceptDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines a <a class=\"localLink\" href=\"http://schema.org/Date\">Date</a> or <a class=\"localLink\" href=\"http://schema.org/DateTime\">DateTime</a> during which a scheduled <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> will not take place. The property allows exceptions to\n      a <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a> to be specified. If an exception is specified as a <a class=\"localLink\" href=\"http://schema.org/DateTime\">DateTime</a> then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a <a class=\"localLink\" href=\"http://schema.org/Date\">Date</a> then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
+         "rdfs:comment" : "Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will not take place. The property allows exceptions to\n      a [[Schedule]] to be specified. If an exception is specified as a [[DateTime]] then only the event that would have started at that specific date and time\n      should be excluded from the schedule. If an exception is specified as a [[Date]] then any event that is scheduled for that 24 hour period should be\n      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.",
          "rdfs:label" : "exceptDate",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -128,9 +116,8 @@
       },
       "schema:repeatCount" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the number of times a recurring <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a> will take place",
+         "rdfs:comment" : "Defines the number of times a recurring [[Event]] will take place",
          "rdfs:label" : "repeatCount",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -138,23 +125,21 @@
       },
       "schema:repeatFrequency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the frequency at which <a class=\"localLink\" href=\"http://schema.org/Events\">Events</a> will occur according to a schedule <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a>. The intervals between\n      events should be defined as a <a class=\"localLink\" href=\"http://schema.org/Duration\">Duration</a> of time.",
+         "rdfs:comment" : "Defines the frequency at which [[Events]] will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.",
          "rdfs:label" : "repeatFrequency",
          "rdfs:subPropertyOf" : "schema:frequency",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Duration",
-            "schema:Text"
+            "schema:Text",
+            "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
       "schema:scheduleTimezone" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates the timezone for which the time(s) indicated in the <a class=\"localLink\" href=\"http://schema.org/Schedule\">Schedule</a> are given. The value provided should be among those listed in the IANA Time Zone Database.",
+         "rdfs:comment" : "Indicates the timezone for which the time(s) indicated in the [[Schedule]] are given. The value provided should be among those listed in the IANA Time Zone Database.",
          "rdfs:label" : "scheduleTimezone",
-         "schema:category" : "issue-1457",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -162,17 +147,16 @@
       },
       "schema:startDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:Role",
             "schema:CreativeWorkSeason",
+            "schema:Event",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -182,14 +166,13 @@
       },
       "schema:startTime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from <em>January</em> to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.<br/><br/>\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+         "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
-         "schema:category" : "issue-2493",
          "schema:domainIncludes" : [
-            "schema:FoodEstablishmentReservation",
             "schema:Action",
+            "schema:Schedule",
             "schema:MediaObject",
-            "schema:Schedule"
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

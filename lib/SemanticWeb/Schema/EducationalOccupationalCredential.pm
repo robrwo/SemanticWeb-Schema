@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -36,7 +36,8 @@ or other entity that meets the requirements defined by the credentialer.
 C<competencyRequired>
 
 Knowledge, skill, ability or personal attribute that must be demonstrated
-by a person or other entity.
+by a person or other entity in order to do something such as earn an
+Educational Occupational Credential or understand a LearningResource.
 
 
 A competency_required should be one of the following types:

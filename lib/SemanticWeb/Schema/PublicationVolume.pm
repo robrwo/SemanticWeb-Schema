@@ -15,21 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A part of a successively published publication such as a periodical or
+A part of a successively published publication such as a periodical or
 multi-volume work, often numbered. It may represent a time span, such as a
-year.<br/><br/> See also <a
-href="http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
-html">blog post</a>.<p>
-
-=end html
+year.\n\nSee also [blog
+post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
+html).
 
 
 

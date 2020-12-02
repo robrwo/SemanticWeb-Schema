@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -62,13 +62,7 @@ has about => (
 
 
 
-=begin html
-
-<p>An abstract is a short description that summarizes a <a
-class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.<p>
-
-=end html
+An abstract is a short description that summarizes a [[CreativeWork]].
 
 
 A abstract should be one of the following types:
@@ -99,7 +93,7 @@ C<accessMode>
 The human sensory perceptual system or cognitive faculty through which a
 person may process or perceive information. Expected values include:
 auditory, tactile, textual, visual, colorDependent, chartOnVisual,
-chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual.
+chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual. 
 
 
 A access_mode should be one of the following types:
@@ -129,7 +123,7 @@ C<accessModeSufficient>
 
 A list of single or combined accessModes that are sufficient to understand
 all the intellectual content of a resource. Expected values include:
-auditory, tactile, textual, visual.
+auditory, tactile, textual, visual. 
 
 
 A access_mode_sufficient should be one of the following types:
@@ -157,14 +151,9 @@ has access_mode_sufficient => (
 
 C<accessibilityAPI>
 
-=begin html
-
-<p>Indicates that the resource is compatible with the referenced
-accessibility API (<a
-href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).<p>
-
-=end html
+Indicates that the resource is compatible with the referenced accessibility
+API ([WebSchemas wiki lists possible
+values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
 
 
 A accessibility_api should be one of the following types:
@@ -192,14 +181,9 @@ has accessibility_api => (
 
 C<accessibilityControl>
 
-=begin html
-
-<p>Identifies input methods that are sufficient to fully control the
-described resource (<a
-href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).<p>
-
-=end html
+Identifies input methods that are sufficient to fully control the described
+resource ([WebSchemas wiki lists possible
+values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
 
 
 A accessibility_control should be one of the following types:
@@ -227,14 +211,9 @@ has accessibility_control => (
 
 C<accessibilityFeature>
 
-=begin html
-
-<p>Content features of the resource, such as accessible media, alternatives
-and supported enhancements for accessibility (<a
-href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).<p>
-
-=end html
+Content features of the resource, such as accessible media, alternatives
+and supported enhancements for accessibility ([WebSchemas wiki lists
+possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
 
 
 A accessibility_feature should be one of the following types:
@@ -262,14 +241,10 @@ has accessibility_feature => (
 
 C<accessibilityHazard>
 
-=begin html
-
-<p>A characteristic of the described resource that is physiologically
-dangerous to some users. Related to WCAG 2.0 guideline 2.3 (<a
-href="http://www.w3.org/wiki/WebSchemas/Accessibility">WebSchemas wiki
-lists possible values</a>).<p>
-
-=end html
+A characteristic of the described resource that is physiologically
+dangerous to some users. Related to WCAG 2.0 guideline 2.3 ([WebSchemas
+wiki lists possible
+values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
 
 
 A accessibility_hazard should be one of the following types:
@@ -770,20 +745,12 @@ has comment_count => (
 
 C<conditionsOfAccess>
 
-=begin html
-
-<p>Conditions that affect the availability of, or method(s) of access to,
-an item. Typically used for real world items such as an <a
-class="localLink"
-href="http://schema.org/ArchiveComponent">ArchiveComponent</a> held by an
-<a class="localLink"
-href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>. This
-property is not suitable for use as a general Web access control mechanism.
-It is expressed only in natural language.<br/><br/> For example "Available
-by appointment from the Reading Room" or "Accessible only from logged-in
-accounts ".<p>
-
-=end html
+Conditions that affect the availability of, or method(s) of access to, an
+item. Typically used for real world items such as an [[ArchiveComponent]]
+held by an [[ArchiveOrganization]]. This property is not suitable for use
+as a general Web access control mechanism. It is expressed only in natural
+language.\n\nFor example "Available by appointment from the Reading Room"
+or "Accessible only from logged-in accounts ". 
 
 
 A conditions_of_access should be one of the following types:
@@ -955,6 +922,35 @@ has copyright_holder => (
 );
 
 
+=head2 C<copyright_notice>
+
+C<copyrightNotice>
+
+Text of a notice appropriate for describing the copyright aspects of this
+Creative Work, ideally indicating the owner of the copyright for the Work.
+
+
+A copyright_notice should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_copyright_notice>
+
+A predicate for the L</copyright_notice> attribute.
+
+=cut
+
+has copyright_notice => (
+    is        => 'rw',
+    predicate => '_has_copyright_notice',
+    json_ld   => 'copyrightNotice',
+);
+
+
 =head2 C<copyright_year>
 
 C<copyrightYear>
@@ -988,15 +984,8 @@ has copyright_year => (
 
 
 
-=begin html
-
-<p>Indicates a correction to a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>, either via a <a
-class="localLink"
-href="http://schema.org/CorrectionComment">CorrectionComment</a>, textually
-or in another document.<p>
-
-=end html
+Indicates a correction to a [[CreativeWork]], either via a
+[[CorrectionComment]], textually or in another document.
 
 
 A correction should be one of the following types:
@@ -1082,6 +1071,35 @@ has creator => (
     is        => 'rw',
     predicate => '_has_creator',
     json_ld   => 'creator',
+);
+
+
+=head2 C<credit_text>
+
+C<creditText>
+
+Text that can be used to credit person(s) and/or organization(s) associated
+with a published Creative Work.
+
+
+A credit_text should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_credit_text>
+
+A predicate for the L</credit_text> attribute.
+
+=cut
+
+has credit_text => (
+    is        => 'rw',
+    predicate => '_has_credit_text',
+    json_ld   => 'creditText',
 );
 
 
@@ -1203,26 +1221,16 @@ has discussion_url => (
 
 C<editEIDR>
 
-=begin html
-
-<p>An <a href="https://eidr.org/">EIDR</a> (Entertainment Identifier
-Registry) <a class="localLink"
-href="http://schema.org/identifier">identifier</a> representing a specific
-edit / edition for a work of film or television.<br/><br/> For example, the
-motion picture known as "Ghostbusters" whose <a class="localLink"
-href="http://schema.org/titleEIDR">titleEIDR</a> is
-"10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g.
-"10.5240/1F2A-E1C5-680A-14C6-E76B-I" and
-"10.5240/8A35-3BEE-6497-5D12-9E4F-3".<br/><br/> Since schema.org types like
-<a class="localLink" href="http://schema.org/Movie">Movie</a> and <a
-class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a> can be
-used for both works and their multiple expressions, it is possible to use
-<a class="localLink" href="http://schema.org/titleEIDR">titleEIDR</a> alone
-(for a general description), or alongside <a class="localLink"
-href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific
-description.<p>
-
-=end html
+An [EIDR](https://eidr.org/) (Entertainment Identifier Registry)
+[[identifier]] representing a specific edit / edition for a work of film or
+television. For example, the motion picture known as "Ghostbusters" whose
+[[titleEIDR]] is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits
+e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and
+"10.5240/8A35-3BEE-6497-5D12-9E4F-3". Since schema.org types like [[Movie]]
+and [[TVEpisode]] can be used for both works and their multiple
+expressions, it is possible to use [[titleEIDR]] alone (for a general
+description), or alongside [[editEIDR]] for a more edit-specific
+description. 
 
 
 A edit_eidr should be one of the following types:
@@ -1278,16 +1286,10 @@ has editor => (
 
 C<educationalAlignment>
 
-=begin html
-
-<p>An alignment to an established educational framework.<br/><br/> This
-property should not be used where the nature of the alignment can be
-described using a simple property, for example to express that a resource
-<a class="localLink" href="http://schema.org/teaches">teaches</a> or <a
-class="localLink" href="http://schema.org/assesses">assesses</a> a
-competency.<p>
-
-=end html
+An alignment to an established educational framework. This property should
+not be used where the nature of the alignment can be described using a
+simple property, for example to express that a resource [[teaches]] or
+[[assesses]] a competency.
 
 
 A educational_alignment should be one of the following types:
@@ -1355,6 +1357,8 @@ A educational_use should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
 =item C<Str>
 
 =back
@@ -1405,25 +1409,17 @@ has encoding => (
 
 C<encodingFormat>
 
-=begin html
-
-<p>Media type typically expressed using a MIME format (see <a
-href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
-site</a> and <a
-href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME
-_types">MDN reference</a>) e.g. application/zip for a SoftwareApplication
-binary, audio/mpeg for .mp3 etc.).<br/><br/> In cases where a <a
-class="localLink" href="http://schema.org/CreativeWork">CreativeWork</a>
-has several media type representations, <a class="localLink"
-href="http://schema.org/encoding">encoding</a> can be used to indicate each
-<a class="localLink" href="http://schema.org/MediaObject">MediaObject</a>
-alongside particular <a class="localLink"
-href="http://schema.org/encodingFormat">encodingFormat</a>
-information.<br/><br/> Unregistered or niche encoding and file formats can
-be indicated instead via the most appropriate URL, e.g. defining Web page
-or a Wikipedia/Wikidata entry.<p>
-
-=end html
+Media type typically expressed using a MIME format (see [IANA
+site](http://www.iana.org/assignments/media-types/media-types.xhtml) and
+[MDN
+reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP
+/MIME_types)) e.g. application/zip for a SoftwareApplication binary,
+audio/mpeg for .mp3 etc.). In cases where a [[CreativeWork]] has several
+media type representations, [[encoding]] can be used to indicate each
+[[MediaObject]] alongside particular [[encodingFormat]] information.
+Unregistered or niche encoding and file formats can be indicated instead
+via the most appropriate URL, e.g. defining Web page or a
+Wikipedia/Wikidata entry.
 
 
 A encoding_format should be one of the following types:
@@ -1508,18 +1504,11 @@ has example_of_work => (
 
 
 
-=begin html
-
-<p>Date the content expires and is no longer useful or available. For
-example a <a class="localLink"
-href="http://schema.org/VideoObject">VideoObject</a> or <a
-class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>
-whose availability or relevance is time-limited, or a <a class="localLink"
-href="http://schema.org/ClaimReview">ClaimReview</a> fact check whose
-publisher wants to indicate that it may no longer be relevant (or helpful
-to highlight) after some date.<p>
-
-=end html
+Date the content expires and is no longer useful or available. For example
+a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is
+time-limited, or a [[ClaimReview]] fact check whose publisher wants to
+indicate that it may no longer be relevant (or helpful to highlight) after
+some date.
 
 
 A expires should be one of the following types:
@@ -1547,18 +1536,13 @@ has expires => (
 
 C<fileFormat>
 
-=begin html
-
-<p>Media type, typically MIME format (see <a
-href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
-site</a>) of the content e.g. application/zip of a SoftwareApplication
-binary. In cases where a CreativeWork has several media type
-representations, 'encoding' can be used to indicate each MediaObject
-alongside particular fileFormat information. Unregistered or niche file
-formats can be indicated instead via the most appropriate URL, e.g.
-defining Web page or a Wikipedia entry.<p>
-
-=end html
+Media type, typically MIME format (see [IANA
+site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of
+the content e.g. application/zip of a SoftwareApplication binary. In cases
+where a CreativeWork has several media type representations, 'encoding' can
+be used to indicate each MediaObject alongside particular fileFormat
+information. Unregistered or niche file formats can be indicated instead
+via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.
 
 
 A file_format should be one of the following types:
@@ -1702,15 +1686,10 @@ has headline => (
 
 C<inLanguage>
 
-=begin html
-
-<p>The language of the content or performance or used in an action. Please
-use one of the language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink"
-href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
-
-=end html
+The language of the content or performance or used in an action. Please use
+one of the language codes from the [IETF BCP 47
+standard](http://tools.ietf.org/html/bcp47). See also
+[[availableLanguage]].
 
 
 A in_language should be one of the following types:
@@ -1992,6 +1971,8 @@ A learning_resource_type should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
 =item C<Str>
 
 =back
@@ -2101,31 +2082,18 @@ has main_entity => (
 
 
 
-=begin html
-
-<p>A maintainer of a <a class="localLink"
-href="http://schema.org/Dataset">Dataset</a>, software package (<a
-class="localLink"
-href="http://schema.org/SoftwareApplication">SoftwareApplication</a>), or
-other <a class="localLink" href="http://schema.org/Project">Project</a>. A
-maintainer is a <a class="localLink"
-href="http://schema.org/Person">Person</a> or <a class="localLink"
-href="http://schema.org/Organization">Organization</a> that manages
-contributions to, and/or publication of, some (typically complex) artifact.
-It is common for distributions of software and data to be based on
-"upstream" sources. When <a class="localLink"
-href="http://schema.org/maintainer">maintainer</a> is applied to a specific
-version of something e.g. a particular version or packaging of a <a
-class="localLink" href="http://schema.org/Dataset">Dataset</a>, it is
-always possible that the upstream source has a different maintainer. The <a
-class="localLink" href="http://schema.org/isBasedOn">isBasedOn</a> property
-can be used to indicate such relationships between datasets to make the
-different maintenance roles clear. Similarly in the case of software, a
-package may have dedicated maintainers working on integration into software
-distributions such as Ubuntu, as well as upstream maintainers of the
-underlying work.<p>
-
-=end html
+A maintainer of a [[Dataset]], software package ([[SoftwareApplication]]),
+or other [[Project]]. A maintainer is a [[Person]] or [[Organization]] that
+manages contributions to, and/or publication of, some (typically complex)
+artifact. It is common for distributions of software and data to be based
+on "upstream" sources. When [[maintainer]] is applied to a specific version
+of something e.g. a particular version or packaging of a [[Dataset]], it is
+always possible that the upstream source has a different maintainer. The
+[[isBasedOn]] property can be used to indicate such relationships between
+datasets to make the different maintenance roles clear. Similarly in the
+case of software, a package may have dedicated maintainers working on
+integration into software distributions such as Ubuntu, as well as upstream
+maintainers of the underlying work. 
 
 
 A maintainer should be one of the following types:
@@ -2245,20 +2213,14 @@ has mentions => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:
@@ -2499,26 +2461,15 @@ has publisher_imprint => (
 
 C<publishingPrinciples>
 
-=begin html
-
-<p>The publishingPrinciples property indicates (typically via <a
-class="localLink" href="http://schema.org/URL">URL</a>) a document
-describing the editorial principles of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (or individual e.g.
-a <a class="localLink" href="http://schema.org/Person">Person</a> writing a
-blog) that relate to their activities as a publisher, e.g. ethics or
-diversity policies. When applied to a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a> (e.g. <a
-class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>) the
-principles are those of the party primarily responsible for the creation of
-the <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
-such policies are most typically expressed in natural language, sometimes
-related information (e.g. indicating a <a class="localLink"
-href="http://schema.org/funder">funder</a>) can be expressed using
-schema.org terminology.<p>
-
-=end html
+The publishingPrinciples property indicates (typically via [[URL]]) a
+document describing the editorial principles of an [[Organization]] (or
+individual e.g. a [[Person]] writing a blog) that relate to their
+activities as a publisher, e.g. ethics or diversity policies. When applied
+to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
+the party primarily responsible for the creation of the [[CreativeWork]].
+While such policies are most typically expressed in natural language,
+sometimes related information (e.g. indicating a [[funder]]) can be
+expressed using schema.org terminology. 
 
 
 A publishing_principles should be one of the following types:
@@ -2664,7 +2615,7 @@ C<schemaVersion>
 Indicates (by URL or string) a particular version of a schema used in some
 CreativeWork. For example, a document could declare a schemaVersion using
 an URL such as http://schema.org/version/2.0/ if precise indication of
-schema version was required by some application.
+schema version was required by some application. 
 
 
 A schema_version should be one of the following types:
@@ -2692,13 +2643,8 @@ has schema_version => (
 
 C<sdDatePublished>
 
-=begin html
-
-<p>Indicates the date on which the current structured data was generated /
-published. Typically used alongside <a class="localLink"
-href="http://schema.org/sdPublisher">sdPublisher</a><p>
-
-=end html
+Indicates the date on which the current structured data was generated /
+published. Typically used alongside [[sdPublisher]]
 
 
 A sd_date_published should be one of the following types:
@@ -2757,18 +2703,12 @@ has sd_license => (
 
 C<sdPublisher>
 
-=begin html
-
-<p>Indicates the party responsible for generating and publishing the
-current structured data markup, typically in cases where the structured
-data is derived automatically from existing published content but published
-on a different site. For example, student projects and open data
-initiatives often re-publish existing content with more explicitly
-structured metadata. The <a class="localLink"
-href="http://schema.org/sdPublisher">sdPublisher</a> property helps make
-such practices more explicit.<p>
-
-=end html
+Indicates the party responsible for generating and publishing the current
+structured data markup, typically in cases where the structured data is
+derived automatically from existing published content but published on a
+different site. For example, student projects and open data initiatives
+often re-publish existing content with more explicitly structured metadata.
+The [[sdPublisher]] property helps make such practices more explicit.
 
 
 A sd_publisher should be one of the following types:
@@ -2803,7 +2743,7 @@ information into a simple textual string, either through referring to named
 sizes or (in the case of product markup), by adopting conventional
 simplifications. Use of QuantitativeValue with a unitCode or unitText can
 add more structure; in other cases, the /width, /height, /depth and /weight
-properties may be more applicable.
+properties may be more applicable. 
 
 
 A size should be one of the following types:
@@ -2863,18 +2803,9 @@ has source_organization => (
 
 
 
-=begin html
-
-<p>The "spatial" property can be used in cases when more specific
-properties (e.g. <a class="localLink"
-href="http://schema.org/locationCreated">locationCreated</a>, <a
-class="localLink"
-href="http://schema.org/spatialCoverage">spatialCoverage</a>, <a
-class="localLink"
-href="http://schema.org/contentLocation">contentLocation</a>) are not known
-to be appropriate.<p>
-
-=end html
+The "spatial" property can be used in cases when more specific properties
+(e.g. [[locationCreated]], [[spatialCoverage]], [[contentLocation]]) are
+not known to be appropriate.
 
 
 A spatial should be one of the following types:
@@ -2998,18 +2929,9 @@ has teaches => (
 
 
 
-=begin html
-
-<p>The "temporal" property can be used in cases where more specific
-properties (e.g. <a class="localLink"
-href="http://schema.org/temporalCoverage">temporalCoverage</a>, <a
-class="localLink" href="http://schema.org/dateCreated">dateCreated</a>, <a
-class="localLink" href="http://schema.org/dateModified">dateModified</a>,
-<a class="localLink"
-href="http://schema.org/datePublished">datePublished</a>) are not known to
-be appropriate.<p>
-
-=end html
+The "temporal" property can be used in cases where more specific properties
+(e.g. [[temporalCoverage]], [[dateCreated]], [[dateModified]],
+[[datePublished]]) are not known to be appropriate.
 
 
 A temporal should be one of the following types:
@@ -3037,26 +2959,21 @@ has temporal => (
 
 C<temporalCoverage>
 
-=begin html
-
-<p>The temporalCoverage of a CreativeWork indicates the period that the
+The temporalCoverage of a CreativeWork indicates the period that the
 content applies to, i.e. that it describes, either as a DateTime or as a
-textual string indicating a time period in <a
-href="https://en.wikipedia.org/wiki/ISO_8601#Time_intervals">ISO 8601 time
-interval format</a>. In the case of a Dataset it will typically indicate
-the relevant time period in a precise notation (e.g. for a 2011 census
-dataset, the year 2011 would be written "2011/2012"). Other forms of
-content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate
-their temporalCoverage in broader terms - textually or via well-known URL.
-Written works such as books may sometimes have precise temporal coverage
-too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval
-format format via "1939/1945".<br/><br/> Open-ended date ranges can be
-written with ".." in place of the end date. For example, "2015-11/.."
-indicates a range beginning in November 2015 and with no specified final
-date. This is tentative and might be updated in future when ISO 8601 is
-officially updated.<p>
-
-=end html
+textual string indicating a time period in [ISO 8601 time interval
+format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case
+of a Dataset it will typically indicate the relevant time period in a
+precise notation (e.g. for a 2011 census dataset, the year 2011 would be
+written "2011/2012"). Other forms of content e.g. ScholarlyArticle, Book,
+TVSeries or TVEpisode may indicate their temporalCoverage in broader terms
+- textually or via well-known URL. Written works such as books may
+sometimes have precise temporal coverage too, e.g. a work set in 1939 -
+1945 can be indicated in ISO 8601 interval format format via "1939/1945".
+Open-ended date ranges can be written with ".." in place of the end date.
+For example, "2015-11/.." indicates a range beginning in November 2015 and
+with no specified final date. This is tentative and might be updated in
+future when ISO 8601 is officially updated.
 
 
 A temporal_coverage should be one of the following types:
@@ -3258,25 +3175,18 @@ has typical_age_range => (
 
 C<usageInfo>
 
-=begin html
-
-<p>The schema.org <a class="localLink"
-href="http://schema.org/usageInfo">usageInfo</a> property indicates further
-information about a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>. This property is
-applicable both to works that are freely available and to those that
-require payment or other transactions. It can reference additional
-information e.g. community expectations on preferred linking and citation
-conventions, as well as purchasing details. For something that can be
-commercially licensed, usageInfo can provide detailed, resource-specific
-information about licensing options.<br/><br/> This property can be used
-alongside the license property which indicates license(s) applicable to
-some piece of content. The usageInfo property can provide information about
-other licensing options, e.g. acquiring commercial usage rights for an
-image that is also available under non-commercial creative commons
-licenses.<p>
-
-=end html
+The schema.org [[usageInfo]] property indicates further information about a
+[[CreativeWork]]. This property is applicable both to works that are freely
+available and to those that require payment or other transactions. It can
+reference additional information e.g. community expectations on preferred
+linking and citation conventions, as well as purchasing details. For
+something that can be commercially licensed, usageInfo can provide
+detailed, resource-specific information about licensing options. This
+property can be used alongside the license property which indicates
+license(s) applicable to some piece of content. The usageInfo property can
+provide information about other licensing options, e.g. acquiring
+commercial usage rights for an image that is also available under
+non-commercial creative commons licenses.
 
 
 A usage_info should be one of the following types:

@@ -15,21 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>HealthAspectEnumeration enumerates several aspects of health content
-online, each of which might be described using <a class="localLink"
-href="http://schema.org/hasHealthAspect">hasHealthAspect</a> and <a
-class="localLink"
-href="http://schema.org/HealthTopicContent">HealthTopicContent</a>.<p>
-
-=end html
+HealthAspectEnumeration enumerates several aspects of health content
+online, each of which might be described using [[hasHealthAspect]] and
+[[HealthTopicContent]].
 
 
 

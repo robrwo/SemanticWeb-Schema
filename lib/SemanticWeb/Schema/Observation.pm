@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Observation;
 
-# ABSTRACT: Instances of the class Observation are used to specify observations about an entity (which may or may not be an instance of a StatisticalPopulation )
+# ABSTRACT: Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]])
 
 use Moo;
 
@@ -15,39 +15,22 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>Instances of the class <a class="localLink"
-href="http://schema.org/Observation">Observation</a> are used to specify
-observations about an entity (which may or may not be an instance of a <a
-class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>),
-at a particular time. The principal properties of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a> are <a
-class="localLink" href="http://schema.org/observedNode">observedNode</a>,
-<a class="localLink"
-href="http://schema.org/measuredProperty">measuredProperty</a>, <a
-class="localLink" href="http://schema.org/measuredValue">measuredValue</a>
-(or <a class="localLink" href="http://schema.org/median">median</a>, etc.)
-and <a class="localLink"
-href="http://schema.org/observationDate">observationDate</a> (<a
-class="localLink"
-href="http://schema.org/measuredProperty">measuredProperty</a> properties
-can, but need not always, be W3C RDF Data Cube "measure properties", as in
-the <a
-href="https://www.w3.org/TR/vocab-data-cube/#dsd-example">lifeExpectancy
-example</a>). See also <a class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>,
-and the <a href="/docs/data-and-datasets.html">data and datasets</a>
-overview for more details.<p>
-
-=end html
+Instances of the class [[Observation]] are used to specify observations
+about an entity (which may or may not be an instance of a
+[[StatisticalPopulation]]), at a particular time. The principal properties
+of an [[Observation]] are [[observedNode]], [[measuredProperty]],
+[[measuredValue]] (or [[median]], etc.) and [[observationDate]]
+([[measuredProperty]] properties can, but need not always, be W3C RDF Data
+Cube "measure properties", as in the [lifeExpectancy
+example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)). See also
+[[StatisticalPopulation]], and the [data and
+datasets](/docs/data-and-datasets.html) overview for more details. 
 
 
 
@@ -59,12 +42,7 @@ overview for more details.<p>
 
 C<marginOfError>
 
-=begin html
-
-<p>A marginOfError for an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.<p>
-
-=end html
+A marginOfError for an [[Observation]].
 
 
 A margin_of_error should be one of the following types:
@@ -92,15 +70,10 @@ has margin_of_error => (
 
 C<measuredProperty>
 
-=begin html
-
-<p>The measuredProperty of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>, either a schema.org
-property, a property from other RDF-compatible systems e.g. W3C RDF Data
-Cube, or schema.org extensions such as <a
-href="https://www.gs1.org/voc/?show=properties">GS1's</a>.<p>
-
-=end html
+The measuredProperty of an [[Observation]], either a schema.org property, a
+property from other RDF-compatible systems e.g. W3C RDF Data Cube, or
+schema.org extensions such as
+[GS1's](https://www.gs1.org/voc/?show=properties).
 
 
 A measured_property should be one of the following types:
@@ -128,12 +101,7 @@ has measured_property => (
 
 C<measuredValue>
 
-=begin html
-
-<p>The measuredValue of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.<p>
-
-=end html
+The measuredValue of an [[Observation]].
 
 
 A measured_value should be one of the following types:
@@ -161,12 +129,7 @@ has measured_value => (
 
 C<observationDate>
 
-=begin html
-
-<p>The observationDate of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>.<p>
-
-=end html
+The observationDate of an [[Observation]].
 
 
 A observation_date should be one of the following types:
@@ -194,15 +157,7 @@ has observation_date => (
 
 C<observedNode>
 
-=begin html
-
-<p>The observedNode of an <a class="localLink"
-href="http://schema.org/Observation">Observation</a>, often a <a
-class="localLink"
-href="http://schema.org/StatisticalPopulation">StatisticalPopulation</a>.<p
->
-
-=end html
+The observedNode of an [[Observation]], often a [[StatisticalPopulation]].
 
 
 A observed_node should be one of the following types:

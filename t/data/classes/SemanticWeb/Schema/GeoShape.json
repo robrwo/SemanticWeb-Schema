@@ -4,7 +4,7 @@
       "rdfs:comment" : "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.",
       "rdfs:label" : "GeoShape",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources:source_rNews"
+      "schema:source" : "schemadotorgsources2:source_rNews"
    },
    "properties" : {
       "schema:address" : {
@@ -12,11 +12,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:GeoCoordinates",
-            "schema:Person",
             "schema:Organization",
-            "schema:GeoShape"
+            "schema:Person",
+            "schema:Place",
+            "schema:GeoShape",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:PostalAddress",
@@ -25,12 +25,11 @@
       },
       "schema:addressCountry" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter <a href=\"http://en.wikipedia.org/wiki/ISO_3166-1\">ISO 3166-1 alpha-2 country code</a>.",
+         "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
-            "schema:PostalAddress",
             "schema:GeoCoordinates",
+            "schema:PostalAddress",
             "schema:DefinedRegion",
             "schema:GeoShape"
          ],
@@ -56,7 +55,7 @@
       },
       "schema:elevation" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The elevation of a location (<a href=\"https://en.wikipedia.org/wiki/World_Geodetic_System\">WGS 84</a>). Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
+         "rdfs:comment" : "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
          "rdfs:label" : "elevation",
          "schema:domainIncludes" : [
             "schema:GeoShape",
@@ -85,12 +84,11 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : [
             "schema:DefinedRegion",
             "schema:GeoShape",
-            "schema:PostalAddress",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:PostalAddress"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

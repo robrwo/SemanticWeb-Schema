@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An event happening at a certain time and location, such as a concert,
-lecture, or festival. Ticketing information may be added via the <a
-class="localLink" href="http://schema.org/offers">offers</a> property.
-Repeated events may be structured as separate Event objects.<p>
-
-=end html
+An event happening at a certain time and location, such as a concert,
+lecture, or festival. Ticketing information may be added via the [[offers]]
+property. Repeated events may be structured as separate Event objects.
 
 
 
@@ -334,12 +329,8 @@ has door_time => (
 
 
 
-=begin html
-
-<p>The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
-
-=end html
+The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
+date format](http://en.wikipedia.org/wiki/ISO_8601).
 
 
 A duration should be one of the following types:
@@ -367,12 +358,8 @@ has duration => (
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -429,28 +416,17 @@ has event_attendance_mode => (
 
 C<eventSchedule>
 
-=begin html
-
-<p>Associates an <a class="localLink"
-href="http://schema.org/Event">Event</a> with a <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a>. There are circumstances
-where it is preferable to share a schedule for a series of repeating events
+Associates an [[Event]] with a [[Schedule]]. There are circumstances where
+it is preferable to share a schedule for a series of repeating events
 rather than data on the individual events themselves. For example, a
 website or application might prefer to publish a schedule for a weekly gym
 class rather than provide data on every event. A schedule could be
-processed by applications to add forthcoming events to a calendar. An <a
-class="localLink" href="http://schema.org/Event">Event</a> that is
-associated with a <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a> using this property should
-not have <a class="localLink"
-href="http://schema.org/startDate">startDate</a> or <a class="localLink"
-href="http://schema.org/endDate">endDate</a> properties. These are instead
-defined within the associated <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a>, this avoids any ambiguity
-for clients using the data. The property might have repeated values to
-specify different schedules, e.g. for different months or seasons.<p>
-
-=end html
+processed by applications to add forthcoming events to a calendar. An
+[[Event]] that is associated with a [[Schedule]] using this property should
+not have [[startDate]] or [[endDate]] properties. These are instead defined
+within the associated [[Schedule]], this avoids any ambiguity for clients
+using the data. The property might have repeated values to specify
+different schedules, e.g. for different months or seasons.
 
 
 A event_schedule should be one of the following types:
@@ -538,15 +514,10 @@ has funder => (
 
 C<inLanguage>
 
-=begin html
-
-<p>The language of the content or performance or used in an action. Please
-use one of the language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink"
-href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
-
-=end html
+The language of the content or performance or used in an action. Please use
+one of the language codes from the [IETF BCP 47
+standard](http://tools.ietf.org/html/bcp47). See also
+[[availableLanguage]].
 
 
 A in_language should be one of the following types:
@@ -604,8 +575,8 @@ has is_accessible_for_free => (
 
 
 
-The location of for example where the event is happening, an organization
-is located, or where an action takes place.
+The location of, for example, where an event is happening, where an
+organization is located, or where an action takes place.
 
 
 A location should be one of the following types:
@@ -667,18 +638,9 @@ has maximum_attendee_capacity => (
 
 C<maximumPhysicalAttendeeCapacity>
 
-=begin html
-
-<p>The maximum physical attendee capacity of an <a class="localLink"
-href="http://schema.org/Event">Event</a> whose <a class="localLink"
-href="http://schema.org/eventAttendanceMode">eventAttendanceMode</a> is <a
-class="localLink"
-href="http://schema.org/OfflineEventAttendanceMode">OfflineEventAttendanceM
-ode</a> (or the offline aspects, in the case of a <a class="localLink"
-href="http://schema.org/MixedEventAttendanceMode">MixedEventAttendanceMode<
-/a>).<p>
-
-=end html
+The maximum physical attendee capacity of an [[Event]] whose
+[[eventAttendanceMode]] is [[OfflineEventAttendanceMode]] (or the offline
+aspects, in the case of a [[MixedEventAttendanceMode]]). 
 
 
 A maximum_physical_attendee_capacity should be one of the following types:
@@ -706,18 +668,9 @@ has maximum_physical_attendee_capacity => (
 
 C<maximumVirtualAttendeeCapacity>
 
-=begin html
-
-<p>The maximum physical attendee capacity of an <a class="localLink"
-href="http://schema.org/Event">Event</a> whose <a class="localLink"
-href="http://schema.org/eventAttendanceMode">eventAttendanceMode</a> is <a
-class="localLink"
-href="http://schema.org/OnlineEventAttendanceMode">OnlineEventAttendanceMod
-e</a> (or the online aspects, in the case of a <a class="localLink"
-href="http://schema.org/MixedEventAttendanceMode">MixedEventAttendanceMode<
-/a>).<p>
-
-=end html
+The maximum physical attendee capacity of an [[Event]] whose
+[[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online
+aspects, in the case of a [[MixedEventAttendanceMode]]). 
 
 
 A maximum_virtual_attendee_capacity should be one of the following types:
@@ -745,20 +698,14 @@ has maximum_virtual_attendee_capacity => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:
@@ -1028,12 +975,8 @@ has sponsor => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:

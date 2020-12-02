@@ -15,29 +15,18 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A tourist attraction. In principle any Thing can be a <a
-class="localLink"
-href="http://schema.org/TouristAttraction">TouristAttraction</a>, from a <a
-class="localLink" href="http://schema.org/Mountain">Mountain</a> and <a
-class="localLink"
-href="http://schema.org/LandmarksOrHistoricalBuildings">LandmarksOrHistoric
-alBuildings</a> to a <a class="localLink"
-href="http://schema.org/LocalBusiness">LocalBusiness</a>. This Type can be
-used on its own to describe a general <a class="localLink"
-href="http://schema.org/TouristAttraction">TouristAttraction</a>, or be
-used as an <a class="localLink"
-href="http://schema.org/additionalType">additionalType</a> to add tourist
-attraction properties to any other type. (See examples below)<p>
-
-=end html
+A tourist attraction. In principle any Thing can be a
+[[TouristAttraction]], from a [[Mountain]] and
+[[LandmarksOrHistoricalBuildings]] to a [[LocalBusiness]]. This Type can be
+used on its own to describe a general [[TouristAttraction]], or be used as
+an [[additionalType]] to add tourist attraction properties to any other
+type. (See examples below)
 
 
 
@@ -49,14 +38,9 @@ attraction properties to any other type. (See examples below)<p>
 
 C<availableLanguage>
 
-=begin html
-
-<p>A language someone may use with or at the item, service or place. Please
-use one of the language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink" href="http://schema.org/inLanguage">inLanguage</a><p>
-
-=end html
+A language someone may use with or at the item, service or place. Please
+use one of the language codes from the [IETF BCP 47
+standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]
 
 
 A available_language should be one of the following types:
@@ -87,7 +71,7 @@ has available_language => (
 C<touristType>
 
 Attraction suitable for type(s) of tourist. eg. Children, visitors from a
-particular country, etc.
+particular country, etc. 
 
 
 A tourist_type should be one of the following types:

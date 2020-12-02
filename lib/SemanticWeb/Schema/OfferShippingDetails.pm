@@ -15,24 +15,19 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>OfferShippingDetails represents information about shipping
-destinations.<br/><br/> Multiple of these entities can be used to represent
-different shipping rates for different destinations:<br/><br/> One entity
-for Alaska/Hawaii. A different one for continental US.A different one for
-all France.<br/><br/> Multiple of these entities can be used to represent
-different shipping costs and delivery times.<br/><br/> Two entities that
-are identical but differ in rate and time:<br/><br/> e.g. Cheaper and
-slower: $5 in 5-7days or Fast and expensive: $15 in 1-2 days<p>
-
-=end html
+OfferShippingDetails represents information about shipping destinations.
+Multiple of these entities can be used to represent different shipping
+rates for different destinations: One entity for Alaska/Hawaii. A different
+one for continental US.A different one for all France. Multiple of these
+entities can be used to represent different shipping costs and delivery
+times. Two entities that are identical but differ in rate and time: e.g.
+Cheaper and slower: $5 in 5-7days or Fast and expensive: $15 in 1-2 days 
 
 
 
@@ -73,13 +68,8 @@ has delivery_time => (
 
 C<doesNotShip>
 
-=begin html
-
-<p>Indicates when shipping to a particular <a class="localLink"
-href="http://schema.org/shippingDestination">shippingDestination</a> is not
-available.<p>
-
-=end html
+Indicates when shipping to a particular [[shippingDestination]] is not
+available.
 
 
 A does_not_ship should be one of the following types:
@@ -136,17 +126,8 @@ has shipping_destination => (
 
 C<shippingLabel>
 
-=begin html
-
-<p>Label to match an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with
-a <a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>
-(within the context of a <a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-cross-reference).<p>
-
-=end html
+Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]]
+(within the context of a [[shippingSettingsLink]] cross-reference).
 
 
 A shipping_label should be one of the following types:
@@ -174,14 +155,9 @@ has shipping_label => (
 
 C<shippingRate>
 
-=begin html
-
-<p>The shipping rate is the cost of shipping to the specified destination.
-Typically, the maxValue and currency values (of the <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>) are most
-appropriate.<p>
-
-=end html
+The shipping rate is the cost of shipping to the specified destination.
+Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
+most appropriate.
 
 
 A shipping_rate should be one of the following types:
@@ -209,15 +185,8 @@ has shipping_rate => (
 
 C<shippingSettingsLink>
 
-=begin html
-
-<p>Link to a page containing <a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> and
-<a class="localLink"
-href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a>
-details.<p>
-
-=end html
+Link to a page containing [[ShippingRateSettings]] and
+[[DeliveryTimeSettings]] details.
 
 
 A shipping_settings_link should be one of the following types:
@@ -245,17 +214,8 @@ has shipping_settings_link => (
 
 C<transitTimeLabel>
 
-=begin html
-
-<p>Label to match an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with
-a <a class="localLink"
-href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a>
-(within the context of a <a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-cross-reference).<p>
-
-=end html
+Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]]
+(within the context of a [[shippingSettingsLink]] cross-reference).
 
 
 A transit_time_label should be one of the following types:

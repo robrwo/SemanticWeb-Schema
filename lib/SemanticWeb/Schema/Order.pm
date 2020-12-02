@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -241,18 +241,12 @@ has discount_code => (
 
 C<discountCurrency>
 
-=begin html
-
-<p>The currency of the discount.<br/><br/> Use standard formats: <a
-href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency format</a>
-e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".<p>
-
-=end html
+The currency of the discount.\n\nUse standard formats: [ISO 4217 currency
+format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR".
 
 
 A discount_currency should be one of the following types:

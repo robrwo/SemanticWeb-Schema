@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,17 +33,10 @@ An organization such as a school, NGO, corporation, club, etc.
 
 C<actionableFeedbackPolicy>
 
-=begin html
-
-<p>For a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a> or
-other news-related <a class="localLink"
-href="http://schema.org/Organization">Organization</a>, a statement about
-public engagement activities (for news media, the newsroomâs), including
-involving the public - digitally or otherwise -- in coverage decisions,
-reporting and activities after publication.<p>
-
-=end html
+For a [[NewsMediaOrganization]] or other news-related [[Organization]], a
+statement about public engagement activities (for news media, the
+newsroomâs), including involving the public - digitally or otherwise --
+in coverage decisions, reporting and activities after publication.
 
 
 A actionable_feedback_policy should be one of the following types:
@@ -337,16 +330,9 @@ has contact_points => (
 
 C<correctionsPolicy>
 
-=begin html
-
-<p>For an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (e.g. <a
-class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
-a statement describing (in news media, the newsroomâs) disclosure and
-correction policy for errors.<p>
-
-=end html
+For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement
+describing (in news media, the newsroomâs) disclosure and correction
+policy for errors.
 
 
 A corrections_policy should be one of the following types:
@@ -435,18 +421,10 @@ has dissolution_date => (
 
 C<diversityPolicy>
 
-=begin html
-
-<p>Statement on diversity policy by an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> e.g. a <a
-class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>.
-For a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>, a
-statement describing the newsroomâs diversity policy on both staffing and
-sources, typically providing staffing data.<p>
-
-=end html
+Statement on diversity policy by an [[Organization]] e.g. a
+[[NewsMediaOrganization]]. For a [[NewsMediaOrganization]], a statement
+describing the newsroomâs diversity policy on both staffing and sources,
+typically providing staffing data.
 
 
 A diversity_policy should be one of the following types:
@@ -476,16 +454,10 @@ has diversity_policy => (
 
 C<diversityStaffingReport>
 
-=begin html
-
-<p>For an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (often but not
-necessarily a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
-a report on staffing diversity issues. In a news context this might be for
-example ASNE or RTDNA (US) reports, or self-reported.<p>
-
-=end html
+For an [[Organization]] (often but not necessarily a
+[[NewsMediaOrganization]]), a report on staffing diversity issues. In a
+news context this might be for example ASNE or RTDNA (US) reports, or
+self-reported.
 
 
 A diversity_staffing_report should be one of the following types:
@@ -515,7 +487,7 @@ has diversity_staffing_report => (
 
 
 
-The Dun &amp; Bradstreet DUNS number for identifying an organization or
+The Dun & Bradstreet DUNS number for identifying an organization or
 business person.
 
 
@@ -628,19 +600,12 @@ has employees => (
 
 C<ethicsPolicy>
 
-=begin html
-
-<p>Statement about ethics policy, e.g. of a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>
-regarding journalistic and publishing practices, or of a <a
-class="localLink" href="http://schema.org/Restaurant">Restaurant</a>, a
-page describing food source policies. In the case of a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>,
-an ethicsPolicy is typically a statement describing the personal,
-organizational, and corporate standards of behavior expected by the
-organization.<p>
-
-=end html
+Statement about ethics policy, e.g. of a [[NewsMediaOrganization]]
+regarding journalistic and publishing practices, or of a [[Restaurant]], a
+page describing food source policies. In the case of a
+[[NewsMediaOrganization]], an ethicsPolicy is typically a statement
+describing the personal, organizational, and corporate standards of
+behavior expected by the organization.
 
 
 A ethics_policy should be one of the following types:
@@ -897,14 +862,10 @@ has funder => (
 
 C<globalLocationNumber>
 
-=begin html
-
-<p>The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
-sometimes also referred to as International Location Number or ILN) of the
-respective organization, person, or place. The GLN is a 13-digit number
-used to identify parties and physical locations.<p>
-
-=end html
+The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also
+referred to as International Location Number or ILN) of the respective
+organization, person, or place. The GLN is a 13-digit number used to
+identify parties and physical locations.
 
 
 A global_location_number should be one of the following types:
@@ -1133,17 +1094,10 @@ has isic_v4 => (
 
 C<knowsAbout>
 
-=begin html
-
-<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
-and less typically of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a>, to indicate a topic
-that is known about - suggesting possible expertise but not implying it. We
-do not distinguish skill levels here, or relate this to educational
-content, events, objectives or <a class="localLink"
-href="http://schema.org/JobPosting">JobPosting</a> descriptions.<p>
-
-=end html
+Of a [[Person]], and less typically of an [[Organization]], to indicate a
+topic that is known about - suggesting possible expertise but not implying
+it. We do not distinguish skill levels here, or relate this to educational
+content, events, objectives or [[JobPosting]] descriptions.
 
 
 A knows_about should be one of the following types:
@@ -1173,16 +1127,10 @@ has knows_about => (
 
 C<knowsLanguage>
 
-=begin html
-
-<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
-and less typically of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a>, to indicate a known
-language. We do not distinguish skill levels or
-reading/writing/speaking/signing here. Use language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.<p>
-
-=end html
+Of a [[Person]], and less typically of an [[Organization]], to indicate a
+known language. We do not distinguish skill levels or
+reading/writing/speaking/signing here. Use language codes from the [IETF
+BCP 47 standard](http://tools.ietf.org/html/bcp47).
 
 
 A knows_language should be one of the following types:
@@ -1269,8 +1217,8 @@ has lei_code => (
 
 
 
-The location of for example where the event is happening, an organization
-is located, or where an action takes place.
+The location of, for example, where an event is happening, where an
+organization is located, or where an action takes place.
 
 
 A location should be one of the following types:
@@ -1540,19 +1488,12 @@ has number_of_employees => (
 
 C<ownershipFundingInfo>
 
-=begin html
-
-<p>For an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (often but not
-necessarily a <a class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
-a description of organizational ownership structure; funding and grants. In
-a news/media setting, this is with particular reference to editorial
-independence. Note that the <a class="localLink"
-href="http://schema.org/funder">funder</a> is also available and can be
-used to make basic funder information machine-readable.<p>
-
-=end html
+For an [[Organization]] (often but not necessarily a
+[[NewsMediaOrganization]]), a description of organizational ownership
+structure; funding and grants. In a news/media setting, this is with
+particular reference to editorial independence. Note that the [[funder]] is
+also available and can be used to make basic funder information
+machine-readable.
 
 
 A ownership_funding_info should be one of the following types:
@@ -1614,12 +1555,8 @@ has owns => (
 
 C<parentOrganization>
 
-=begin html
-
-<p>The larger organization that this organization is a <a class="localLink"
-href="http://schema.org/subOrganization">subOrganization</a> of, if any.<p>
-
-=end html
+The larger organization that this organization is a [[subOrganization]] of,
+if any.
 
 
 A parent_organization should be one of the following types:
@@ -1647,26 +1584,15 @@ has parent_organization => (
 
 C<publishingPrinciples>
 
-=begin html
-
-<p>The publishingPrinciples property indicates (typically via <a
-class="localLink" href="http://schema.org/URL">URL</a>) a document
-describing the editorial principles of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (or individual e.g.
-a <a class="localLink" href="http://schema.org/Person">Person</a> writing a
-blog) that relate to their activities as a publisher, e.g. ethics or
-diversity policies. When applied to a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a> (e.g. <a
-class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>) the
-principles are those of the party primarily responsible for the creation of
-the <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
-such policies are most typically expressed in natural language, sometimes
-related information (e.g. indicating a <a class="localLink"
-href="http://schema.org/funder">funder</a>) can be expressed using
-schema.org terminology.<p>
-
-=end html
+The publishingPrinciples property indicates (typically via [[URL]]) a
+document describing the editorial principles of an [[Organization]] (or
+individual e.g. a [[Person]] writing a blog) that relate to their
+activities as a publisher, e.g. ethics or diversity policies. When applied
+to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
+the party primarily responsible for the creation of the [[CreativeWork]].
+While such policies are most typically expressed in natural language,
+sometimes related information (e.g. indicating a [[funder]]) can be
+expressed using schema.org terminology. 
 
 
 A publishing_principles should be one of the following types:
@@ -1960,16 +1886,9 @@ has telephone => (
 
 C<unnamedSourcesPolicy>
 
-=begin html
-
-<p>For an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (typically a <a
-class="localLink"
-href="http://schema.org/NewsMediaOrganization">NewsMediaOrganization</a>),
-a statement about policy on use of unnamed sources and the decision process
-required.<p>
-
-=end html
+For an [[Organization]] (typically a [[NewsMediaOrganization]]), a
+statement about policy on use of unnamed sources and the decision process
+required.
 
 
 A unnamed_sources_policy should be one of the following types:

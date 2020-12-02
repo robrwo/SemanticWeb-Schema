@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,13 +33,9 @@ A scholarly article in the medical domain.
 
 C<publicationType>
 
-=begin html
-
-<p>The type of the medical article, taken from the US NLM MeSH publication
-type catalog. See also <a
-href="http://www.nlm.nih.gov/mesh/pubtypes.html">MeSH documentation</a>.<p>
-
-=end html
+The type of the medical article, taken from the US NLM MeSH publication
+type catalog. See also [MeSH
+documentation](http://www.nlm.nih.gov/mesh/pubtypes.html).
 
 
 A publication_type should be one of the following types:

@@ -4,7 +4,6 @@
       "rdfs:comment" : "The artwork on the outer surface of a CreativeWork.",
       "rdfs:label" : "CoverArt",
       "rdfs:subClassOf" : "schema:VisualArtwork",
-      "schema:category" : "Comics",
       "schema:isPartOf" : "http:bib.schema.org"
    },
    "properties" : {}

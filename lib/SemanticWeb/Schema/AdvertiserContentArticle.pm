@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::AdvertiserContentArticle;
 
-# ABSTRACT: An Article that an external entity has paid to place or to produce to its specifications
+# ABSTRACT: An [[Article]] that an external entity has paid to place or to produce to its specifications
 
 use Moo;
 
@@ -15,21 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An <a class="localLink" href="http://schema.org/Article">Article</a>
-that an external entity has paid to place or to produce to its
-specifications. Includes <a
-href="https://en.wikipedia.org/wiki/Advertorial">advertorials</a>,
-sponsored content, native advertising and other paid content.<p>
-
-=end html
+An [[Article]] that an external entity has paid to place or to produce to
+its specifications. Includes
+[advertorials](https://en.wikipedia.org/wiki/Advertorial), sponsored
+content, native advertising and other paid content.
 
 
 

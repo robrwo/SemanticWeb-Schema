@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -293,13 +293,9 @@ has brand => (
 
 C<callSign>
 
-=begin html
-
-<p>A <a href="https://en.wikipedia.org/wiki/Call_sign">callsign</a>, as
-used in broadcasting and radio communications to identify people, radio and
-TV stations, or vehicles.<p>
-
-=end html
+A [callsign](https://en.wikipedia.org/wiki/Call_sign), as used in
+broadcasting and radio communications to identify people, radio and TV
+stations, or vehicles.
 
 
 A call_sign should be one of the following types:
@@ -525,7 +521,7 @@ has death_place => (
 
 
 
-The Dun &amp; Bradstreet DUNS number for identifying an organization or
+The Dun & Bradstreet DUNS number for identifying an organization or
 business person.
 
 
@@ -697,21 +693,14 @@ has funder => (
 
 
 
-=begin html
-
-<p>Gender of something, typically a <a class="localLink"
-href="http://schema.org/Person">Person</a>, but possibly also fictional
+Gender of something, typically a [[Person]], but possibly also fictional
 characters, animals, etc. While http://schema.org/Male and
 http://schema.org/Female may be used, text strings are also acceptable for
-people who do not identify as a binary gender. The <a class="localLink"
-href="http://schema.org/gender">gender</a> property can also be used in an
-extended sense to cover e.g. the gender of sports teams. As with the gender
-of individuals, we do not try to enumerate all possibilities. A
-mixed-gender <a class="localLink"
-href="http://schema.org/SportsTeam">SportsTeam</a> can be indicated with a
-text value of "Mixed".<p>
-
-=end html
+people who do not identify as a binary gender. The [[gender]] property can
+also be used in an extended sense to cover e.g. the gender of sports teams.
+As with the gender of individuals, we do not try to enumerate all
+possibilities. A mixed-gender [[SportsTeam]] can be indicated with a text
+value of "Mixed".
 
 
 A gender should be one of the following types:
@@ -769,14 +758,10 @@ has given_name => (
 
 C<globalLocationNumber>
 
-=begin html
-
-<p>The <a href="http://www.gs1.org/gln">Global Location Number</a> (GLN,
-sometimes also referred to as International Location Number or ILN) of the
-respective organization, person, or place. The GLN is a 13-digit number
-used to identify parties and physical locations.<p>
-
-=end html
+The [Global Location Number](http://www.gs1.org/gln) (GLN, sometimes also
+referred to as International Location Number or ILN) of the respective
+organization, person, or place. The GLN is a 13-digit number used to
+identify parties and physical locations.
 
 
 A global_location_number should be one of the following types:
@@ -1152,17 +1137,10 @@ has knows => (
 
 C<knowsAbout>
 
-=begin html
-
-<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
-and less typically of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a>, to indicate a topic
-that is known about - suggesting possible expertise but not implying it. We
-do not distinguish skill levels here, or relate this to educational
-content, events, objectives or <a class="localLink"
-href="http://schema.org/JobPosting">JobPosting</a> descriptions.<p>
-
-=end html
+Of a [[Person]], and less typically of an [[Organization]], to indicate a
+topic that is known about - suggesting possible expertise but not implying
+it. We do not distinguish skill levels here, or relate this to educational
+content, events, objectives or [[JobPosting]] descriptions.
 
 
 A knows_about should be one of the following types:
@@ -1192,16 +1170,10 @@ has knows_about => (
 
 C<knowsLanguage>
 
-=begin html
-
-<p>Of a <a class="localLink" href="http://schema.org/Person">Person</a>,
-and less typically of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a>, to indicate a known
-language. We do not distinguish skill levels or
-reading/writing/speaking/signing here. Use language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>.<p>
-
-=end html
+Of a [[Person]], and less typically of an [[Organization]], to indicate a
+known language. We do not distinguish skill levels or
+reading/writing/speaking/signing here. Use language codes from the [IETF
+BCP 47 standard](http://tools.ietf.org/html/bcp47).
 
 
 A knows_language should be one of the following types:
@@ -1492,26 +1464,15 @@ has performer_in => (
 
 C<publishingPrinciples>
 
-=begin html
-
-<p>The publishingPrinciples property indicates (typically via <a
-class="localLink" href="http://schema.org/URL">URL</a>) a document
-describing the editorial principles of an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> (or individual e.g.
-a <a class="localLink" href="http://schema.org/Person">Person</a> writing a
-blog) that relate to their activities as a publisher, e.g. ethics or
-diversity policies. When applied to a <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a> (e.g. <a
-class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a>) the
-principles are those of the party primarily responsible for the creation of
-the <a class="localLink"
-href="http://schema.org/CreativeWork">CreativeWork</a>.<br/><br/> While
-such policies are most typically expressed in natural language, sometimes
-related information (e.g. indicating a <a class="localLink"
-href="http://schema.org/funder">funder</a>) can be expressed using
-schema.org terminology.<p>
-
-=end html
+The publishingPrinciples property indicates (typically via [[URL]]) a
+document describing the editorial principles of an [[Organization]] (or
+individual e.g. a [[Person]] writing a blog) that relate to their
+activities as a publisher, e.g. ethics or diversity policies. When applied
+to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
+the party primarily responsible for the creation of the [[CreativeWork]].
+While such policies are most typically expressed in natural language,
+sometimes related information (e.g. indicating a [[funder]]) can be
+expressed using schema.org terminology. 
 
 
 A publishing_principles should be one of the following types:

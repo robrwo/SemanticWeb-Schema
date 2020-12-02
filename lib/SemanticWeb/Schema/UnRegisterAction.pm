@@ -15,24 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of un-registering from a service.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/RegisterAction">RegisterAction</a>: antonym of
-UnRegisterAction.</li> <li><a class="localLink"
-href="http://schema.org/LeaveAction">LeaveAction</a>: Unlike LeaveAction,
-UnRegisterAction implies that you are unregistering from a service you
-werer previously registered, rather than leaving a team/group of
-people.</li> </ul> <p>
-
-=end html
+The act of un-registering from a service.\n\nRelated actions:\n\n*
+[[RegisterAction]]: antonym of UnRegisterAction.\n* [[LeaveAction]]: Unlike
+LeaveAction, UnRegisterAction implies that you are unregistering from a
+service you werer previously registered, rather than leaving a team/group
+of people.
 
 
 

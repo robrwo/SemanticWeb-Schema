@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -153,16 +153,11 @@ has disambiguating_description => (
 
 
 
-=begin html
-
-<p>The identifier property represents any kind of identifier for any kind
-of <a class="localLink" href="http://schema.org/Thing">Thing</a>, such as
-ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for
-representing many of these, either as textual strings or as URL (URI)
-links. See <a href="/docs/datamodel.html#identifierBg">background notes</a>
-for more details.<p>
-
-=end html
+The identifier property represents any kind of identifier for any kind of
+[[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides
+dedicated properties for representing many of these, either as textual
+strings or as URL (URI) links. See [background
+notes](/docs/datamodel.html#identifierBg) for more details. 
 
 
 A identifier should be one of the following types:
@@ -192,13 +187,8 @@ has identifier => (
 
 
 
-=begin html
-
-<p>An image of the item. This can be a <a class="localLink"
-href="http://schema.org/URL">URL</a> or a fully described <a
-class="localLink" href="http://schema.org/ImageObject">ImageObject</a>.<p>
-
-=end html
+An image of the item. This can be a [[URL]] or a fully described
+[[ImageObject]].
 
 
 A image should be one of the following types:
@@ -228,14 +218,9 @@ has image => (
 
 C<mainEntityOfPage>
 
-=begin html
-
-<p>Indicates a page (or other CreativeWork) for which this thing is the
-main entity being described. See <a
-href="/docs/datamodel.html#mainEntityBackground">background notes</a> for
-details.<p>
-
-=end html
+Indicates a page (or other CreativeWork) for which this thing is the main
+entity being described. See [background
+notes](/docs/datamodel.html#mainEntityBackground) for details.
 
 
 A main_entity_of_page should be one of the following types:

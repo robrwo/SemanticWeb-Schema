@@ -22,19 +22,18 @@
       },
       "schema:subtitleLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Languages in which subtitles/captions are available, in <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard format</a>.",
+         "rdfs:comment" : "Languages in which subtitles/captions are available, in [IETF BCP 47 standard format](http://tools.ietf.org/html/bcp47).",
          "rdfs:label" : "subtitleLanguage",
-         "schema:category" : "issue-2110",
          "schema:domainIncludes" : [
-            "schema:TVEpisode",
             "schema:ScreeningEvent",
-            "schema:BroadcastEvent",
-            "schema:Movie"
+            "schema:Movie",
+            "schema:TVEpisode",
+            "schema:BroadcastEvent"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2110"
       },
@@ -44,8 +43,8 @@
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
             "schema:BroadcastEvent",
-            "schema:ScreeningEvent",
-            "schema:BroadcastService"
+            "schema:BroadcastService",
+            "schema:ScreeningEvent"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

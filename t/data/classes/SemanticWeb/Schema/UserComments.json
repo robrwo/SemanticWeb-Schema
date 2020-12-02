@@ -1,10 +1,10 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use <a class=\"localLink\" href=\"http://schema.org/Action\">Action</a>-based vocabulary, alongside types such as <a class=\"localLink\" href=\"http://schema.org/Comment\">Comment</a>.",
+      "rdfs:comment" : "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use [[Action]]-based vocabulary, alongside types such as [[Comment]].",
       "rdfs:label" : "UserComments",
       "rdfs:subClassOf" : "schema:UserInteraction",
-      "schema:source" : "schemadotorgsources:source_rNews",
+      "schema:source" : "schemadotorgsources2:source_rNews",
       "schema:supersededBy" : "schema:InteractionCounter"
    },
    "properties" : {
@@ -21,8 +21,8 @@
          "rdfs:label" : "commentTime",
          "schema:domainIncludes" : "schema:UserComments",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:creator" : {

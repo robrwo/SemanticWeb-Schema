@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>This type covers computer programming languages such as Scheme and Lisp,
-as well as other language-like computer representations. Natural languages
-are best represented with the <a class="localLink"
-href="http://schema.org/Language">Language</a> type.<p>
-
-=end html
+This type covers computer programming languages such as Scheme and Lisp, as
+well as other language-like computer representations. Natural languages are
+best represented with the [[Language]] type.
 
 
 

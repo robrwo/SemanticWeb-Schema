@@ -39,34 +39,34 @@
       "schema:identifier" : {
          "owl:equivalentProperty" : "dc:identifier",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The identifier property represents any kind of identifier for any kind of <a class=\"localLink\" href=\"http://schema.org/Thing\">Thing</a>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See <a href=\"/docs/datamodel.html#identifierBg\">background notes</a> for more details.",
+         "rdfs:comment" : "The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        ",
          "rdfs:label" : "identifier",
          "schema:domainIncludes" : "schema:Thing",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:PropertyValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:PropertyValue"
          ]
       },
       "schema:image" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An image of the item. This can be a <a class=\"localLink\" href=\"http://schema.org/URL\">URL</a> or a fully described <a class=\"localLink\" href=\"http://schema.org/ImageObject\">ImageObject</a>.",
+         "rdfs:comment" : "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]].",
          "rdfs:label" : "image",
          "schema:domainIncludes" : "schema:Thing",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:ImageObject"
+            "schema:ImageObject",
+            "schema:URL"
          ]
       },
       "schema:mainEntityOfPage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See <a href=\"/docs/datamodel.html#mainEntityBackground\">background notes</a> for details.",
+         "rdfs:comment" : "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See [background notes](/docs/datamodel.html#mainEntityBackground) for details.",
          "rdfs:label" : "mainEntityOfPage",
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:mainEntity",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ]
       },
       "schema:name" : {
@@ -96,7 +96,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A CreativeWork or Event about this Thing.",
          "rdfs:label" : "subjectOf",
-         "schema:category" : "issue-1670",
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:about",
          "schema:rangeIncludes" : [

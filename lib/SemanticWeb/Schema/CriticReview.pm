@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::CriticReview;
 
-# ABSTRACT: A CriticReview is a more specialized form of Review written or published by a source that is recognized for its reviewing activities
+# ABSTRACT: A [[CriticReview]] is a more specialized form of Review written or published by a source that is recognized for its reviewing activities
 
 use Moo;
 
@@ -15,29 +15,21 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a class="localLink"
-href="http://schema.org/CriticReview">CriticReview</a> is a more
-specialized form of Review written or published by a source that is
-recognized for its reviewing activities. These can include online columns,
-travel and food guides, TV and radio shows, blogs and other independent Web
-sites. <a class="localLink"
-href="http://schema.org/CriticReview">CriticReview</a>s are typically more
-in-depth and professionally written. For simpler, casually written
-user/visitor/viewer/customer reviews, it is more appropriate to use the <a
-class="localLink" href="http://schema.org/UserReview">UserReview</a> type.
-Review aggregator sites such as Metacritic already separate out the site's
-user reviews from selected critic reviews that originate from third-party
-sources.<p>
-
-=end html
+A [[CriticReview]] is a more specialized form of Review written or
+published by a source that is recognized for its reviewing activities.
+These can include online columns, travel and food guides, TV and radio
+shows, blogs and other independent Web sites. [[CriticReview]]s are
+typically more in-depth and professionally written. For simpler, casually
+written user/visitor/viewer/customer reviews, it is more appropriate to use
+the [[UserReview]] type. Review aggregator sites such as Metacritic already
+separate out the site's user reviews from selected critic reviews that
+originate from third-party sources.
 
 
 

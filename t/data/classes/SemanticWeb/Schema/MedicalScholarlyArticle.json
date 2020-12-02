@@ -9,7 +9,7 @@
    "properties" : {
       "schema:publicationType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The type of the medical article, taken from the US NLM MeSH publication type catalog. See also <a href=\"http://www.nlm.nih.gov/mesh/pubtypes.html\">MeSH documentation</a>.",
+         "rdfs:comment" : "The type of the medical article, taken from the US NLM MeSH publication type catalog. See also [MeSH documentation](http://www.nlm.nih.gov/mesh/pubtypes.html).",
          "rdfs:label" : "publicationType",
          "schema:domainIncludes" : "schema:MedicalScholarlyArticle",
          "schema:isPartOf" : "http:health-lifesci.schema.org",

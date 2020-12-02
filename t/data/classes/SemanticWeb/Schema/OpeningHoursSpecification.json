@@ -1,10 +1,10 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A structured value providing information about the opening hours of a place or a certain service inside a place.<br/><br/>\n\nThe place is <strong>open</strong> if the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property is specified, and <strong>closed</strong> otherwise.<br/><br/>\n\nIf the value for the <a class=\"localLink\" href=\"http://schema.org/closes\">closes</a> property is less than the value for the <a class=\"localLink\" href=\"http://schema.org/opens\">opens</a> property then the hour range is assumed to span over the next day.",
+      "rdfs:comment" : "A structured value providing information about the opening hours of a place or a certain service inside a place.\\n\\n\nThe place is __open__ if the [[opens]] property is specified, and __closed__ otherwise.\\n\\nIf the value for the [[closes]] property is less than the value for the [[opens]] property then the hour range is assumed to span over the next day.\n      ",
       "rdfs:label" : "OpeningHoursSpecification",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:source" : "schemadotorgsources2:source_GoodRelationsClass"
    },
    "properties" : {
       "schema:closes" : {
@@ -13,7 +13,7 @@
          "rdfs:label" : "closes",
          "schema:domainIncludes" : "schema:OpeningHoursSpecification",
          "schema:rangeIncludes" : "schema:Time",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:dayOfWeek" : {
          "rdf:type" : "rdf:Property",
@@ -24,7 +24,7 @@
             "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : "schema:DayOfWeek",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:opens" : {
          "rdf:type" : "rdf:Property",
@@ -32,45 +32,45 @@
          "rdfs:label" : "opens",
          "schema:domainIncludes" : "schema:OpeningHoursSpecification",
          "schema:rangeIncludes" : "schema:Time",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:validFrom" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
-            "schema:MonetaryAmount",
             "schema:Offer",
-            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification",
             "schema:Permit",
-            "schema:Demand",
-            "schema:OpeningHoursSpecification"
+            "schema:LocationFeatureSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:validThrough" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:Demand",
+            "schema:MonetaryAmount",
             "schema:OpeningHoursSpecification",
             "schema:Offer",
-            "schema:JobPosting",
-            "schema:Demand",
-            "schema:LocationFeatureSpecification",
-            "schema:MonetaryAmount"
+            "schema:PriceSpecification",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       }
    }
 }

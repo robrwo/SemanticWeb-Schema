@@ -15,22 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An intangible item that describes an alignment between a learning
-resource and a node in an educational framework.<br/><br/> Should not be
-used where the nature of the alignment can be described using a simple
-property, for example to express that a resource <a class="localLink"
-href="http://schema.org/teaches">teaches</a> or <a class="localLink"
-href="http://schema.org/assesses">assesses</a> a competency.<p>
-
-=end html
+An intangible item that describes an alignment between a learning resource
+and a node in an educational framework. Should not be used where the nature
+of the alignment can be described using a simple property, for example to
+express that a resource [[teaches]] or [[assesses]] a competency.
 
 
 

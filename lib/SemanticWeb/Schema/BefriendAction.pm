@@ -15,22 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of forming a personal connection with someone (object)
-mutually/bidirectionally/symmetrically.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/FollowAction">FollowAction</a>: Unlike
-FollowAction, BefriendAction implies that the connection is
-reciprocal.</li> </ul> <p>
-
-=end html
+The act of forming a personal connection with someone (object)
+mutually/bidirectionally/symmetrically.\n\nRelated actions:\n\n*
+[[FollowAction]]: Unlike FollowAction, BefriendAction implies that the
+connection is reciprocal.
 
 
 

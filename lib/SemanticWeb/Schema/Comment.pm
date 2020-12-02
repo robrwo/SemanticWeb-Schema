@@ -15,21 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A comment on an item - for example, a comment on a blog post. The
-comment's content is expressed via the <a class="localLink"
-href="http://schema.org/text">text</a> property, and its topic via <a
-class="localLink" href="http://schema.org/about">about</a>, properties
-shared with all CreativeWorks.<p>
-
-=end html
+A comment on an item - for example, a comment on a blog post. The comment's
+content is expressed via the [[text]] property, and its topic via
+[[about]], properties shared with all CreativeWorks.
 
 
 

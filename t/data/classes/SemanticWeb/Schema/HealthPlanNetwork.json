@@ -1,10 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A US-style health insurance plan network.",
+      "rdfs:comment" : "A US-style health insurance plan network. ",
       "rdfs:label" : "HealthPlanNetwork",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-1062",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
    },
@@ -13,7 +12,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Whether The costs to the patient for services under this network or formulary.",
          "rdfs:label" : "healthPlanCostSharing",
-         "schema:category" : "issue-1062",
          "schema:domainIncludes" : [
             "schema:HealthPlanFormulary",
             "schema:HealthPlanNetwork"
@@ -26,10 +24,9 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Name or unique ID of network. (Networks are often reused across different insurance plans).",
          "rdfs:label" : "healthPlanNetworkId",
-         "schema:category" : "issue-1062",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
-            "schema:HealthPlanNetwork"
+            "schema:HealthPlanNetwork",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -39,7 +36,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The tier(s) for this network.",
          "rdfs:label" : "healthPlanNetworkTier",
-         "schema:category" : "issue-1062",
          "schema:domainIncludes" : "schema:HealthPlanNetwork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

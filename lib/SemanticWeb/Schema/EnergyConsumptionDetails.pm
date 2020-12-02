@@ -15,24 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>EnergyConsumptionDetails represents information related to the energy
+EnergyConsumptionDetails represents information related to the energy
 efficiency of a product that consumes energy. The information that can be
-provided is based on international regulations such as for example <a
-href="https://eur-lex.europa.eu/eli/reg/2017/1369/oj">EU directive
-2017/1369</a> for energy labeling and the <a
-href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-pr
-oceedings/energy-water-use-labeling-consumer">Energy labeling rule</a>
-under the Energy Policy and Conservation Act (EPCA) in the US<p>
-
-=end html
+provided is based on international regulations such as for example [EU
+directive 2017/1369](https://eur-lex.europa.eu/eli/reg/2017/1369/oj) for
+energy labeling and the [Energy labeling
+rule](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-pr
+oceedings/energy-water-use-labeling-consumer) under the Energy Policy and
+Conservation Act (EPCA) in the US
 
 
 

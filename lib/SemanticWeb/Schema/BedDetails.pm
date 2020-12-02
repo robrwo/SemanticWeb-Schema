@@ -15,21 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An entity holding detailed information about the available bed types,
-e.g. the quantity of twin beds for a hotel room. For the single case of
-just one bed of a certain type, you can use bed directly with a text. See
-also <a class="localLink" href="http://schema.org/BedType">BedType</a>
-(under development).<p>
-
-=end html
+An entity holding detailed information about the available bed types, e.g.
+the quantity of twin beds for a hotel room. For the single case of just one
+bed of a certain type, you can use bed directly with a text. See also
+[[BedType]] (under development).
 
 
 

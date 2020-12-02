@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ProductReturnPolicy;
 
-# ABSTRACT: A ProductReturnPolicy provides information about product return policies associated with an Organization or Product .
+# ABSTRACT: A ProductReturnPolicy provides information about product return policies associated with an [[Organization]] or [[Product]].
 
 use Moo;
 
@@ -15,20 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A ProductReturnPolicy provides information about product return policies
-associated with an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> or <a
-class="localLink" href="http://schema.org/Product">Product</a>.<p>
-
-=end html
+A ProductReturnPolicy provides information about product return policies
+associated with an [[Organization]] or [[Product]].
 
 
 

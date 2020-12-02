@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A reservation for lodging at a hotel, motel, inn, etc.<br/><br/> Note:
-This type is for information about actual reservations, e.g. in
-confirmation emails or HTML pages with individual confirmations of
-reservations.<p>
-
-=end html
+A reservation for lodging at a hotel, motel, inn, etc.\n\nNote: This type
+is for information about actual reservations, e.g. in confirmation emails
+or HTML pages with individual confirmations of reservations.
 
 
 

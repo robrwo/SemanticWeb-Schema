@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -65,13 +65,8 @@ has available_service => (
 
 C<healthcareReportingData>
 
-=begin html
-
-<p>Indicates data describing a hospital, e.g. a CDC <a class="localLink"
-href="http://schema.org/CDCPMDRecord">CDCPMDRecord</a> or as some kind of
-<a class="localLink" href="http://schema.org/Dataset">Dataset</a>.<p>
-
-=end html
+Indicates data describing a hospital, e.g. a CDC [[CDCPMDRecord]] or as
+some kind of [[Dataset]].
 
 
 A healthcare_reporting_data should be one of the following types:

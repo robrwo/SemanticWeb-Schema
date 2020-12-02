@@ -15,20 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A CDCPMDRecord is a data structure representing a record in a CDC
-tabular data format used for hospital data reporting. See <a
-href="/docs/cdc-covid.html">documentation</a> for details, and the linked
-CDC materials for authoritative definitions used as the source here.<p>
-
-=end html
+A CDCPMDRecord is a data structure representing a record in a CDC tabular
+data format used for hospital data reporting. See
+[documentation](/docs/cdc-covid.html) for details, and the linked CDC
+materials for authoritative definitions used as the source here. 
 
 
 
@@ -68,17 +64,9 @@ has cvd_collection_date => (
 
 C<cvdFacilityCounty>
 
-=begin html
-
-<p>Name of the County of the NHSN facility that this data record applies
-to. Use <a class="localLink"
-href="http://schema.org/cvdFacilityId">cvdFacilityId</a> to identify the
-facility. To provide other details, <a class="localLink"
-href="http://schema.org/healthcareReportingData">healthcareReportingData</a
-> can be used on a <a class="localLink"
-href="http://schema.org/Hospital">Hospital</a> entry.<p>
-
-=end html
+Name of the County of the NHSN facility that this data record applies to.
+Use [[cvdFacilityId]] to identify the facility. To provide other details,
+[[healthcareReportingData]] can be used on a [[Hospital]] entry.
 
 
 A cvd_facility_county should be one of the following types:
@@ -106,17 +94,9 @@ has cvd_facility_county => (
 
 C<cvdFacilityId>
 
-=begin html
-
-<p>Identifier of the NHSN facility that this data record applies to. Use <a
-class="localLink"
-href="http://schema.org/cvdFacilityCounty">cvdFacilityCounty</a> to
-indicate the county. To provide other details, <a class="localLink"
-href="http://schema.org/healthcareReportingData">healthcareReportingData</a
-> can be used on a <a class="localLink"
-href="http://schema.org/Hospital">Hospital</a> entry.<p>
-
-=end html
+Identifier of the NHSN facility that this data record applies to. Use
+[[cvdFacilityCounty]] to indicate the county. To provide other details,
+[[healthcareReportingData]] can be used on a [[Hospital]] entry.
 
 
 A cvd_facility_id should be one of the following types:

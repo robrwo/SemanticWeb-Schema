@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 A diet restricted to certain foods or preparations for cultural, religious,
-health or lifestyle reasons.
+health or lifestyle reasons. 
 
 
 

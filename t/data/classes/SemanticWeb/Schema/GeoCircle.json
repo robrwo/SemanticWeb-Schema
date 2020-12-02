@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A GeoCircle is a GeoShape representing a circular geographic area. As it is a GeoShape\n          it provides the simple textual property 'circle', but also allows the combination of postalCode alongside geoRadius.\n          The center of the circle can be indicated via the 'geoMidpoint' property, or more approximately using 'address', 'postalCode'.",
+      "rdfs:comment" : "A GeoCircle is a GeoShape representing a circular geographic area. As it is a GeoShape\n          it provides the simple textual property 'circle', but also allows the combination of postalCode alongside geoRadius.\n          The center of the circle can be indicated via the 'geoMidpoint' property, or more approximately using 'address', 'postalCode'.\n       ",
       "rdfs:label" : "GeoCircle",
       "rdfs:subClassOf" : "schema:GeoShape"
    },
@@ -19,9 +19,9 @@
          "rdfs:label" : "geoRadius",
          "schema:domainIncludes" : "schema:GeoCircle",
          "schema:rangeIncludes" : [
-            "schema:Number",
+            "schema:Distance",
             "schema:Text",
-            "schema:Distance"
+            "schema:Number"
          ]
       }
    }

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -37,13 +37,7 @@ code allocated, use description to provide the definition of the term.
 
 C<inDefinedTermSet>
 
-=begin html
-
-<p>A <a class="localLink"
-href="http://schema.org/DefinedTermSet">DefinedTermSet</a> that contains
-this term.<p>
-
-=end html
+A [[DefinedTermSet]] that contains this term.
 
 
 A in_defined_term_set should be one of the following types:
@@ -73,14 +67,7 @@ has in_defined_term_set => (
 
 C<termCode>
 
-=begin html
-
-<p>A code that identifies this <a class="localLink"
-href="http://schema.org/DefinedTerm">DefinedTerm</a> within a <a
-class="localLink"
-href="http://schema.org/DefinedTermSet">DefinedTermSet</a><p>
-
-=end html
+A code that identifies this [[DefinedTerm]] within a [[DefinedTermSet]]
 
 
 A term_code should be one of the following types:

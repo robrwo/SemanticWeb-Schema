@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "The act of physically/electronically taking delivery of an object thathas been transferred from an origin to a destination. Reciprocal of SendAction.<br/><br/>\n\nRelated actions:<br/><br/>\n\n<ul>\n<li><a class=\"localLink\" href=\"http://schema.org/SendAction\">SendAction</a>: The reciprocal of ReceiveAction.</li>\n<li><a class=\"localLink\" href=\"http://schema.org/TakeAction\">TakeAction</a>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).</li>\n</ul>\n",
+      "rdfs:comment" : "The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction.\\n\\nRelated actions:\\n\\n* [[SendAction]]: The reciprocal of ReceiveAction.\\n* [[TakeAction]]: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).",
       "rdfs:label" : "ReceiveAction",
       "rdfs:subClassOf" : "schema:TransferAction"
    },
@@ -14,8 +14,8 @@
          "schema:domainIncludes" : [
             "schema:TrackAction",
             "schema:OrderAction",
-            "schema:SendAction",
-            "schema:ReceiveAction"
+            "schema:ReceiveAction",
+            "schema:SendAction"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       },
@@ -29,9 +29,9 @@
             "schema:Message"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:Audience"
          ]
       }
    }

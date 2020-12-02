@@ -8,15 +8,14 @@
    "properties" : {
       "schema:inLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>.",
+         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
-         "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:PronounceableText",
             "schema:BroadcastService",
-            "schema:WriteAction",
-            "schema:LinkRole",
             "schema:Event",
+            "schema:LinkRole",
+            "schema:PronounceableText",
+            "schema:WriteAction",
             "schema:CreativeWork",
             "schema:CommunicateAction"
          ],

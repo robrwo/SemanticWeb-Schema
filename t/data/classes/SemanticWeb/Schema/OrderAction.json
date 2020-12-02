@@ -14,8 +14,8 @@
          "schema:domainIncludes" : [
             "schema:TrackAction",
             "schema:OrderAction",
-            "schema:SendAction",
-            "schema:ReceiveAction"
+            "schema:ReceiveAction",
+            "schema:SendAction"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       }

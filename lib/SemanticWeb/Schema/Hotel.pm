@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -27,7 +27,7 @@ our $VERSION = 'v10.0.1';
 basis (Source: Wikipedia, the free encyclopedia, see
 http://en.wikipedia.org/wiki/Hotel). <br /><br /> See also the <a
 href="/docs/hotels.html">dedicated document on the use of schema.org for
-marking up hotels and other forms of accommodations</a>.<p>
+marking up hotels and other forms of accommodations</a>. <p>
 
 =end html
 

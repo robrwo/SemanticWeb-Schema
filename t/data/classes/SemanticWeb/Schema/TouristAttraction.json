@@ -1,38 +1,37 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A tourist attraction.  In principle any Thing can be a <a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>, from a <a class=\"localLink\" href=\"http://schema.org/Mountain\">Mountain</a> and <a class=\"localLink\" href=\"http://schema.org/LandmarksOrHistoricalBuildings\">LandmarksOrHistoricalBuildings</a> to a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a>.  This Type can be used on its own to describe a general <a class=\"localLink\" href=\"http://schema.org/TouristAttraction\">TouristAttraction</a>, or be used as an <a class=\"localLink\" href=\"http://schema.org/additionalType\">additionalType</a> to add tourist attraction properties to any other type.  (See examples below)",
+      "rdfs:comment" : "A tourist attraction.  In principle any Thing can be a [[TouristAttraction]], from a [[Mountain]] and [[LandmarksOrHistoricalBuildings]] to a [[LocalBusiness]].  This Type can be used on its own to describe a general [[TouristAttraction]], or be used as an [[additionalType]] to add tourist attraction properties to any other type.  (See examples below)",
       "rdfs:label" : "TouristAttraction",
       "rdfs:subClassOf" : "schema:Place",
       "schema:source" : [
-         "schemadotorgsources:Tourism",
-         "schemadotorgsources:IIT-CNR.it"
+         "schemadotorgsources2:Tourism",
+         "schemadotorgsources2:IIT-CNR.it"
       ]
    },
    "properties" : {
       "schema:availableLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>",
+         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
             "schema:TouristAttraction",
+            "schema:LodgingBusiness",
             "schema:ServiceChannel",
             "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:touristType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc.",
+         "rdfs:comment" : "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc. ",
          "rdfs:label" : "touristType",
-         "schema:category" : "issue-1810",
          "schema:domainIncludes" : [
-            "schema:TouristTrip",
             "schema:TouristAttraction",
+            "schema:TouristTrip",
             "schema:TouristDestination"
          ],
          "schema:rangeIncludes" : [
@@ -40,8 +39,8 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "schemadotorgsources:Tourism",
-            "schemadotorgsources:IIT-CNR.it"
+            "schemadotorgsources2:Tourism",
+            "schemadotorgsources2:IIT-CNR.it"
          ]
       }
    }

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -34,13 +34,8 @@ transmitted along each of the axons.
 
 
 
-=begin html
-
-<p>The branches that delineate from the nerve bundle. Not to be confused
-with <a class="localLink"
-href="http://schema.org/branchOf">branchOf</a>.<p>
-
-=end html
+The branches that delineate from the nerve bundle. Not to be confused with
+[[branchOf]].
 
 
 A branch should be one of the following types:

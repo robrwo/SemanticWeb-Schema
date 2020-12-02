@@ -4,7 +4,6 @@
       "rdfs:comment" : "Lists or enumerations dealing with status types.",
       "rdfs:label" : "StatusEnumeration",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:category" : "issue-2604",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2604"
    },
    "properties" : {}

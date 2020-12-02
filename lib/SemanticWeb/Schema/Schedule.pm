@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Schedule;
 
-# ABSTRACT: A schedule defines a repeating time period used to describe a regularly occurring Event 
+# ABSTRACT: A schedule defines a repeating time period used to describe a regularly occurring [[Event]]
 
 use Moo;
 
@@ -15,26 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A schedule defines a repeating time period used to describe a regularly
-occurring <a class="localLink" href="http://schema.org/Event">Event</a>. At
-a minimum a schedule will specify <a class="localLink"
-href="http://schema.org/repeatFrequency">repeatFrequency</a> which
-describes the interval between occurences of the event. Additional
-information can be provided to specify the schedule more precisely. This
-includes identifying the day(s) of the week or month when the recurring
-event will take place, in addition to its start and end time. Schedules may
-also have start and end dates to indicate when they are active, e.g. to
-define a limited calendar of events.<p>
-
-=end html
+A schedule defines a repeating time period used to describe a regularly
+occurring [[Event]]. At a minimum a schedule will specify
+[[repeatFrequency]] which describes the interval between occurences of the
+event. Additional information can be provided to specify the schedule more
+precisely. This includes identifying the day(s) of the week or month when
+the recurring event will take place, in addition to its start and end time.
+Schedules may also have start and end dates to indicate when they are
+active, e.g. to define a limited calendar of events.
 
 
 
@@ -46,16 +40,9 @@ define a limited calendar of events.<p>
 
 C<byDay>
 
-=begin html
-
-<p>Defines the day(s) of the week on which a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> takes place. May be specified
-using either <a class="localLink"
-href="http://schema.org/DayOfWeek">DayOfWeek</a>, or alternatively <a
-class="localLink" href="http://schema.org/Text">Text</a> conforming to
-iCal's syntax for byDay recurrence rules<p>
-
-=end html
+Defines the day(s) of the week on which a recurring [[Event]] takes place.
+May be specified using either [[DayOfWeek]], or alternatively [[Text]]
+conforming to iCal's syntax for byDay recurrence rules
 
 
 A by_day should be one of the following types:
@@ -85,14 +72,8 @@ has by_day => (
 
 C<byMonth>
 
-=begin html
-
-<p>Defines the month(s) of the year on which a recurring <a
-class="localLink" href="http://schema.org/Event">Event</a> takes place.
-Specified as an <a class="localLink"
-href="http://schema.org/Integer">Integer</a> between 1-12. January is 1.<p>
-
-=end html
+Defines the month(s) of the year on which a recurring [[Event]] takes
+place. Specified as an [[Integer]] between 1-12. January is 1.
 
 
 A by_month should be one of the following types:
@@ -120,14 +101,8 @@ has by_month => (
 
 C<byMonthDay>
 
-=begin html
-
-<p>Defines the day(s) of the month on which a recurring <a
-class="localLink" href="http://schema.org/Event">Event</a> takes place.
-Specified as an <a class="localLink"
-href="http://schema.org/Integer">Integer</a> between 1-31.<p>
-
-=end html
+Defines the day(s) of the month on which a recurring [[Event]] takes place.
+Specified as an [[Integer]] between 1-31.
 
 
 A by_month_day should be one of the following types:
@@ -186,12 +161,8 @@ has by_month_week => (
 
 
 
-=begin html
-
-<p>The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
-
-=end html
+The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
+date format](http://en.wikipedia.org/wiki/ISO_8601).
 
 
 A duration should be one of the following types:
@@ -219,12 +190,8 @@ has duration => (
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -252,18 +219,14 @@ has end_date => (
 
 C<endTime>
 
-=begin html
-
-<p>The endTime of something. For a reserved event or service (e.g.
+The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from January to <em>December</em>. For media, including
-audio and video, it's the time offset of the end of a clip within a larger
-file.<br/><br/> Note that Event uses startDate/endDate instead of
+John wrote a book from January to *December*. For media, including audio
+and video, it's the time offset of the end of a clip within a larger
+file.\n\nNote that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.<p>
-
-=end html
+may be clarified in future revisions.
 
 
 A end_time should be one of the following types:
@@ -291,24 +254,14 @@ has end_time => (
 
 C<exceptDate>
 
-=begin html
-
-<p>Defines a <a class="localLink" href="http://schema.org/Date">Date</a> or
-<a class="localLink" href="http://schema.org/DateTime">DateTime</a> during
-which a scheduled <a class="localLink"
-href="http://schema.org/Event">Event</a> will not take place. The property
-allows exceptions to a <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a> to be specified. If an
-exception is specified as a <a class="localLink"
-href="http://schema.org/DateTime">DateTime</a> then only the event that
-would have started at that specific date and time should be excluded from
-the schedule. If an exception is specified as a <a class="localLink"
-href="http://schema.org/Date">Date</a> then any event that is scheduled for
-that 24 hour period should be excluded from the schedule. This allows a
-whole day to be excluded from the schedule without having to itemise every
-scheduled event.<p>
-
-=end html
+Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will
+not take place. The property allows exceptions to a [[Schedule]] to be
+specified. If an exception is specified as a [[DateTime]] then only the
+event that would have started at that specific date and time should be
+excluded from the schedule. If an exception is specified as a [[Date]] then
+any event that is scheduled for that 24 hour period should be excluded from
+the schedule. This allows a whole day to be excluded from the schedule
+without having to itemise every scheduled event.
 
 
 A except_date should be one of the following types:
@@ -336,12 +289,7 @@ has except_date => (
 
 C<repeatCount>
 
-=begin html
-
-<p>Defines the number of times a recurring <a class="localLink"
-href="http://schema.org/Event">Event</a> will take place<p>
-
-=end html
+Defines the number of times a recurring [[Event]] will take place
 
 
 A repeat_count should be one of the following types:
@@ -369,16 +317,9 @@ has repeat_count => (
 
 C<repeatFrequency>
 
-=begin html
-
-<p>Defines the frequency at which <a class="localLink"
-href="http://schema.org/Events">Events</a> will occur according to a
-schedule <a class="localLink"
-href="http://schema.org/Schedule">Schedule</a>. The intervals between
-events should be defined as a <a class="localLink"
-href="http://schema.org/Duration">Duration</a> of time.<p>
-
-=end html
+Defines the frequency at which [[Events]] will occur according to a
+schedule [[Schedule]]. The intervals between events should be defined as a
+[[Duration]] of time.
 
 
 A repeat_frequency should be one of the following types:
@@ -408,14 +349,9 @@ has repeat_frequency => (
 
 C<scheduleTimezone>
 
-=begin html
-
-<p>Indicates the timezone for which the time(s) indicated in the <a
-class="localLink" href="http://schema.org/Schedule">Schedule</a> are given.
-The value provided should be among those listed in the IANA Time Zone
-Database.<p>
-
-=end html
+Indicates the timezone for which the time(s) indicated in the [[Schedule]]
+are given. The value provided should be among those listed in the IANA Time
+Zone Database.
 
 
 A schedule_timezone should be one of the following types:
@@ -443,12 +379,8 @@ has schedule_timezone => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:
@@ -476,18 +408,14 @@ has start_date => (
 
 C<startTime>
 
-=begin html
-
-<p>The startTime of something. For a reserved event or service (e.g.
+The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from <em>January</em> to December. For media, including
-audio and video, it's the time offset of the start of a clip within a
-larger file.<br/><br/> Note that Event uses startDate/endDate instead of
+John wrote a book from *January* to December. For media, including audio
+and video, it's the time offset of the start of a clip within a larger
+file.\n\nNote that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.<p>
-
-=end html
+may be clarified in future revisions.
 
 
 A start_time should be one of the following types:

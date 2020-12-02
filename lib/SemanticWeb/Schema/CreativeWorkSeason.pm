@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -93,12 +93,8 @@ has director => (
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -297,12 +293,8 @@ has season_number => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:

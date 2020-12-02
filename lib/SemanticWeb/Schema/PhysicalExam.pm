@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::PhysicalExam;
 
-# ABSTRACT: A type of physical examination of a patient performed by a physician.
+# ABSTRACT: A type of physical examination of a patient performed by a physician
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A type of physical examination of a patient performed by a physician.
+A type of physical examination of a patient performed by a physician. 
 
 
 

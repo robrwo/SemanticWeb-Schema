@@ -15,41 +15,24 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A grant, typically financial or otherwise quantifiable, of resources.
-Typically a <a class="localLink" href="http://schema.org/funder">funder</a>
-sponsors some <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a> to an <a
-class="localLink" href="http://schema.org/Organization">Organization</a> or
-<a class="localLink" href="http://schema.org/Person">Person</a>, sometimes
-not necessarily via a dedicated or long-lived <a class="localLink"
-href="http://schema.org/Project">Project</a>, resulting in one or more
-outputs, or <a class="localLink"
-href="http://schema.org/fundedItem">fundedItem</a>s. For financial
-sponsorship, indicate the <a class="localLink"
-href="http://schema.org/funder">funder</a> of a <a class="localLink"
-href="http://schema.org/MonetaryGrant">MonetaryGrant</a>. For non-financial
-support, indicate <a class="localLink"
-href="http://schema.org/sponsor">sponsor</a> of <a class="localLink"
-href="http://schema.org/Grant">Grant</a>s of resources (e.g. office
-space).<br/><br/> Grants support activities directed towards some agreed
-collective goals, often but not always organized as <a class="localLink"
-href="http://schema.org/Project">Project</a>s. Long-lived projects are
-sometimes sponsored by a variety of grants over time, but it is also common
-for a project to be associated with a single grant.<br/><br/> The amount of
-a <a class="localLink" href="http://schema.org/Grant">Grant</a> is
-represented using <a class="localLink"
-href="http://schema.org/amount">amount</a> as a <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>.<p>
-
-=end html
+A grant, typically financial or otherwise quantifiable, of resources.
+Typically a [[funder]] sponsors some [[MonetaryAmount]] to an
+[[Organization]] or [[Person]], sometimes not necessarily via a dedicated
+or long-lived [[Project]], resulting in one or more outputs, or
+[[fundedItem]]s. For financial sponsorship, indicate the [[funder]] of a
+[[MonetaryGrant]]. For non-financial support, indicate [[sponsor]] of
+[[Grant]]s of resources (e.g. office space). Grants support activities
+directed towards some agreed collective goals, often but not always
+organized as [[Project]]s. Long-lived projects are sometimes sponsored by a
+variety of grants over time, but it is also common for a project to be
+associated with a single grant. The amount of a [[Grant]] is represented
+using [[amount]] as a [[MonetaryAmount]]. 
 
 
 
@@ -61,12 +44,7 @@ href="http://schema.org/MonetaryAmount">MonetaryAmount</a>.<p>
 
 C<fundedItem>
 
-=begin html
-
-<p>Indicates an item funded or sponsored through a <a class="localLink"
-href="http://schema.org/Grant">Grant</a>.<p>
-
-=end html
+Indicates an item funded or sponsored through a [[Grant]].
 
 
 A funded_item should be one of the following types:

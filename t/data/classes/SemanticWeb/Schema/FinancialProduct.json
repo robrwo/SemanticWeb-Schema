@@ -4,7 +4,7 @@
       "rdfs:comment" : "A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and investment companies which comprise the financial services industry.",
       "rdfs:label" : "FinancialProduct",
       "rdfs:subClassOf" : "schema:Service",
-      "schema:source" : "schemadotorgsources:FIBO"
+      "schema:source" : "schemadotorgsources2:FIBO"
    },
    "properties" : {
       "schema:annualPercentageRate" : {
@@ -13,10 +13,10 @@
          "rdfs:label" : "annualPercentageRate",
          "schema:domainIncludes" : "schema:FinancialProduct",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:FIBO"
+         "schema:source" : "schemadotorgsources2:FIBO"
       },
       "schema:feesAndCommissionsSpecification" : {
          "rdf:type" : "rdf:Property",
@@ -30,7 +30,7 @@
             "schema:Text",
             "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources:FIBO"
+         "schema:source" : "schemadotorgsources2:FIBO"
       },
       "schema:interestRate" : {
          "rdf:type" : "rdf:Property",
@@ -38,10 +38,10 @@
          "rdfs:label" : "interestRate",
          "schema:domainIncludes" : "schema:FinancialProduct",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:FIBO"
+         "schema:source" : "schemadotorgsources2:FIBO"
       }
    }
 }

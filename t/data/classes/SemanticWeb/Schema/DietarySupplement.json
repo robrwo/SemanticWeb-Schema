@@ -12,9 +12,9 @@
          "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
          "rdfs:label" : "activeIngredient",
          "schema:domainIncludes" : [
+            "schema:DietarySupplement",
             "schema:DrugStrength",
             "schema:Substance",
-            "schema:DietarySupplement",
             "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
@@ -37,14 +37,14 @@
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
             "schema:Drug",
-            "schema:DietarySupplement",
-            "schema:MedicalEntity"
+            "schema:MedicalEntity",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
             "schema:MedicalEnumeration",
-            "schema:DrugLegalStatus",
-            "schema:Text"
+            "schema:Text",
+            "schema:DrugLegalStatus"
          ]
       },
       "schema:manufacturer" : {
@@ -52,9 +52,9 @@
          "rdfs:comment" : "The manufacturer of the product.",
          "rdfs:label" : "manufacturer",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
             "schema:Drug",
-            "schema:Product"
+            "schema:Product",
+            "schema:DietarySupplement"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -63,10 +63,10 @@
          "rdfs:comment" : "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
          "rdfs:label" : "maximumIntake",
          "schema:domainIncludes" : [
-            "schema:Substance",
-            "schema:DietarySupplement",
+            "schema:DrugStrength",
             "schema:Drug",
-            "schema:DrugStrength"
+            "schema:Substance",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MaximumDoseSchedule"

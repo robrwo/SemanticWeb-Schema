@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -34,14 +34,8 @@ set of properties required to describe archival items and collections.
 
 C<holdingArchive>
 
-=begin html
-
-<p><a class="localLink"
-href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a> that
-holds, keeps or maintains the <a class="localLink"
-href="http://schema.org/ArchiveComponent">ArchiveComponent</a>.<p>
-
-=end html
+[[ArchiveOrganization]] that holds, keeps or maintains the
+[[ArchiveComponent]].
 
 
 A holding_archive should be one of the following types:

@@ -1,19 +1,17 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Instances of the class <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a> are used to specify observations about an entity (which may or may not be an instance of a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>), at a particular time. The principal properties of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a> are <a class=\"localLink\" href=\"http://schema.org/observedNode\">observedNode</a>, <a class=\"localLink\" href=\"http://schema.org/measuredProperty\">measuredProperty</a>, <a class=\"localLink\" href=\"http://schema.org/measuredValue\">measuredValue</a> (or <a class=\"localLink\" href=\"http://schema.org/median\">median</a>, etc.) and <a class=\"localLink\" href=\"http://schema.org/observationDate\">observationDate</a> (<a class=\"localLink\" href=\"http://schema.org/measuredProperty\">measuredProperty</a> properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the <a href=\"https://www.w3.org/TR/vocab-data-cube/#dsd-example\">lifeExpectancy example</a>).\nSee also <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>, and the <a href=\"/docs/data-and-datasets.html\">data and datasets</a> overview for more details.",
+      "rdfs:comment" : "Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]]), at a particular time. The principal properties of an [[Observation]] are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the [lifeExpectancy example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)).\nSee also [[StatisticalPopulation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
       "rdfs:label" : "Observation",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-2291",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
    },
    "properties" : {
       "schema:marginOfError" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A marginOfError for an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>.",
+         "rdfs:comment" : "A marginOfError for an [[Observation]].",
          "rdfs:label" : "marginOfError",
-         "schema:category" : "issue-2291",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DateTime",
@@ -21,9 +19,8 @@
       },
       "schema:measuredProperty" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The measuredProperty of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as <a href=\"https://www.gs1.org/voc/?show=properties\">GS1's</a>.",
+         "rdfs:comment" : "The measuredProperty of an [[Observation]], either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
          "rdfs:label" : "measuredProperty",
-         "schema:category" : "issue-2291",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Property",
@@ -31,9 +28,8 @@
       },
       "schema:measuredValue" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The measuredValue of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>.",
+         "rdfs:comment" : "The measuredValue of an [[Observation]].",
          "rdfs:label" : "measuredValue",
-         "schema:category" : "issue-2291",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DataType",
@@ -41,9 +37,8 @@
       },
       "schema:observationDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The observationDate of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>.",
+         "rdfs:comment" : "The observationDate of an [[Observation]].",
          "rdfs:label" : "observationDate",
-         "schema:category" : "issue-2291",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DateTime",
@@ -51,9 +46,8 @@
       },
       "schema:observedNode" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The observedNode of an <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>, often a <a class=\"localLink\" href=\"http://schema.org/StatisticalPopulation\">StatisticalPopulation</a>.",
+         "rdfs:comment" : "The observedNode of an [[Observation]], often a [[StatisticalPopulation]].",
          "rdfs:label" : "observedNode",
-         "schema:category" : "issue-2291",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:StatisticalPopulation",

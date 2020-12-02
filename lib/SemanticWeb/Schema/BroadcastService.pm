@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -151,12 +151,8 @@ has broadcast_frequency => (
 
 C<broadcastTimezone>
 
-=begin html
-
-<p>The timezone in <a href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601
-format</a> for which the service bases its broadcasts<p>
-
-=end html
+The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)
+for which the service bases its broadcasts
 
 
 A broadcast_timezone should be one of the following types:
@@ -212,13 +208,9 @@ has broadcaster => (
 
 C<callSign>
 
-=begin html
-
-<p>A <a href="https://en.wikipedia.org/wiki/Call_sign">callsign</a>, as
-used in broadcasting and radio communications to identify people, radio and
-TV stations, or vehicles.<p>
-
-=end html
+A [callsign](https://en.wikipedia.org/wiki/Call_sign), as used in
+broadcasting and radio communications to identify people, radio and TV
+stations, or vehicles.
 
 
 A call_sign should be one of the following types:
@@ -274,15 +266,10 @@ has has_broadcast_channel => (
 
 C<inLanguage>
 
-=begin html
-
-<p>The language of the content or performance or used in an action. Please
-use one of the language codes from the <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard</a>. See also
-<a class="localLink"
-href="http://schema.org/availableLanguage">availableLanguage</a>.<p>
-
-=end html
+The language of the content or performance or used in an action. Please use
+one of the language codes from the [IETF BCP 47
+standard](http://tools.ietf.org/html/bcp47). See also
+[[availableLanguage]].
 
 
 A in_language should be one of the following types:

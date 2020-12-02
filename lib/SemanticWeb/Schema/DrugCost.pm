@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -96,7 +96,7 @@ has cost_category => (
 C<costCurrency>
 
 The currency (in 3-letter of the drug cost. See:
-http://en.wikipedia.org/wiki/ISO_4217
+http://en.wikipedia.org/wiki/ISO_4217 
 
 
 A cost_currency should be one of the following types:

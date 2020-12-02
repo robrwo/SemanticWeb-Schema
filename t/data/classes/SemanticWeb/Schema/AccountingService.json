@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Accountancy business.<br/><br/>\n\nAs a <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> it can be described as a <a class=\"localLink\" href=\"http://schema.org/provider\">provider</a> of one or more <a class=\"localLink\" href=\"http://schema.org/Service\">Service</a>(s).",
+      "rdfs:comment" : "Accountancy business.\\n\\nAs a [[LocalBusiness]] it can be described as a [[provider]] of one or more [[Service]]\\(s).\n      ",
       "rdfs:label" : "AccountingService",
       "rdfs:subClassOf" : "schema:FinancialService"
    },

@@ -15,22 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A DatedMoneySpecification represents monetary values with optional start
+A DatedMoneySpecification represents monetary values with optional start
 and end dates. For example, this could represent an employee's salary over
-a specific period of time. <strong>Note:</strong> This type has been
-superseded by <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a> use of that type
-is recommended<p>
-
-=end html
+a specific period of time. __Note:__ This type has been superseded by
+[[MonetaryAmount]] use of that type is recommended
 
 
 
@@ -72,18 +66,13 @@ has amount => (
 
 
 
-=begin html
-
-<p>The currency in which the monetary amount is expressed.<br/><br/> Use
-standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217
-currency format</a> e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".<p>
-
-=end html
+The currency in which the monetary amount is expressed.\n\nUse standard
+formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
+e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR".
 
 
 A currency should be one of the following types:
@@ -111,12 +100,8 @@ has currency => (
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -144,12 +129,8 @@ has end_date => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:

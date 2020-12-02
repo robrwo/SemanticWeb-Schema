@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -189,6 +189,8 @@ A end_offset should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::HyperTocEntry']>
+
 =item C<Num>
 
 =back
@@ -331,6 +333,8 @@ beginning of the work.
 A start_offset should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::HyperTocEntry']>
 
 =item C<Num>
 

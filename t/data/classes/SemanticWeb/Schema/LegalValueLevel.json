@@ -5,7 +5,6 @@
       "rdfs:comment" : "A list of possible levels for the legal validity of a legislation.",
       "rdfs:label" : "LegalValueLevel",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:category" : "issue-1156",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
          "https://github.com/schemaorg/schemaorg/issues/1156",

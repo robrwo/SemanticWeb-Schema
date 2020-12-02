@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Consortium;
 
-# ABSTRACT: A Consortium is a membership Organization whose members are typically Organizations.
+# ABSTRACT: A Consortium is a membership [[Organization]] whose members are typically Organizations.
 
 use Moo;
 
@@ -15,19 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A Consortium is a membership <a class="localLink"
-href="http://schema.org/Organization">Organization</a> whose members are
-typically Organizations.<p>
-
-=end html
+A Consortium is a membership [[Organization]] whose members are typically
+Organizations.
 
 
 

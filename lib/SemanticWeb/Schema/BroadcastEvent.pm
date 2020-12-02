@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -89,12 +89,8 @@ has is_live_broadcast => (
 
 C<subtitleLanguage>
 
-=begin html
-
-<p>Languages in which subtitles/captions are available, in <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard format</a>.<p>
-
-=end html
+Languages in which subtitles/captions are available, in [IETF BCP 47
+standard format](http://tools.ietf.org/html/bcp47).
 
 
 A subtitle_language should be one of the following types:

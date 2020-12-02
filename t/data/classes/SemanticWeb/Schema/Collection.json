@@ -9,9 +9,8 @@
    "properties" : {
       "schema:collectionSize" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of items in the <a class=\"localLink\" href=\"http://schema.org/Collection\">Collection</a>.",
+         "rdfs:comment" : "The number of items in the [[Collection]].",
          "rdfs:label" : "collectionSize",
-         "schema:category" : "issue-1759",
          "schema:domainIncludes" : "schema:Collection",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",

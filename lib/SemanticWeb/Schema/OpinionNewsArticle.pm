@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::OpinionNewsArticle;
 
-# ABSTRACT: An OpinionNewsArticle is a NewsArticle that primarily expresses opinions rather than journalistic reporting of news and events
+# ABSTRACT: An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses opinions rather than journalistic reporting of news and events
 
 use Moo;
 
@@ -15,25 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An <a class="localLink"
-href="http://schema.org/OpinionNewsArticle">OpinionNewsArticle</a> is a <a
-class="localLink" href="http://schema.org/NewsArticle">NewsArticle</a> that
-primarily expresses opinions rather than journalistic reporting of news and
-events. For example, a <a class="localLink"
-href="http://schema.org/NewsArticle">NewsArticle</a> consisting of a column
-or <a class="localLink" href="http://schema.org/Blog">Blog</a>/<a
-class="localLink" href="http://schema.org/BlogPosting">BlogPosting</a>
-entry in the Opinions section of a news publication.<p>
-
-=end html
+An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses
+opinions rather than journalistic reporting of news and events. For
+example, a [[NewsArticle]] consisting of a column or
+[[Blog]]/[[BlogPosting]] entry in the Opinions section of a news
+publication. 
 
 
 

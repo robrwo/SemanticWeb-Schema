@@ -4,7 +4,7 @@
       "rdfs:comment" : "A structured value providing information about when a certain organization or person owned a certain product.",
       "rdfs:label" : "OwnershipInfo",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:source" : "schemadotorgsources2:source_GoodRelationsClass"
    },
    "properties" : {
       "schema:acquiredFrom" : {
@@ -16,7 +16,7 @@
             "schema:Organization",
             "schema:Person"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:ownedFrom" : {
          "rdf:type" : "rdf:Property",
@@ -24,7 +24,7 @@
          "rdfs:label" : "ownedFrom",
          "schema:domainIncludes" : "schema:OwnershipInfo",
          "schema:rangeIncludes" : "schema:DateTime",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:ownedThrough" : {
          "rdf:type" : "rdf:Property",
@@ -32,7 +32,7 @@
          "rdfs:label" : "ownedThrough",
          "schema:domainIncludes" : "schema:OwnershipInfo",
          "schema:rangeIncludes" : "schema:DateTime",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       },
       "schema:typeOfGood" : {
          "rdf:type" : "rdf:Property",
@@ -43,10 +43,10 @@
             "schema:OwnershipInfo"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
       }
    }
 }

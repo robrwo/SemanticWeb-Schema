@@ -15,27 +15,21 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A FundingScheme combines organizational, project and policy aspects of
+A FundingScheme combines organizational, project and policy aspects of
 grant-based funding that sets guidelines, principles and mechanisms to
 support other kinds of projects and activities. Funding is typically
-organized via <a class="localLink" href="http://schema.org/Grant">Grant</a>
-funding. Examples of funding schemes: Swiss Priority Programmes (SPPs); EU
-Framework 7 (FP7); Horizon 2020; the NIH-R01 Grant Program; Wellcome
-institutional strategic support fund. For large scale public sector
-funding, the management and administration of grant awards is often handled
-by other, dedicated, organizations - <a class="localLink"
-href="http://schema.org/FundingAgency">FundingAgency</a>s such as ERC, REA,
-...<p>
-
-=end html
+organized via [[Grant]] funding. Examples of funding schemes: Swiss
+Priority Programmes (SPPs); EU Framework 7 (FP7); Horizon 2020; the NIH-R01
+Grant Program; Wellcome institutional strategic support fund. For large
+scale public sector funding, the management and administration of grant
+awards is often handled by other, dedicated, organizations -
+[[FundingAgency]]s such as ERC, REA, ...
 
 
 

@@ -15,22 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of responding to a question/message asked/sent by the object.
-Related to <a class="localLink"
-href="http://schema.org/AskAction">AskAction</a><br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/AskAction">AskAction</a>: Appears generally as an
-origin of a ReplyAction.</li> </ul> <p>
-
-=end html
+The act of responding to a question/message asked/sent by the object.
+Related to [[AskAction]]\n\nRelated actions:\n\n* [[AskAction]]: Appears
+generally as an origin of a ReplyAction.
 
 
 

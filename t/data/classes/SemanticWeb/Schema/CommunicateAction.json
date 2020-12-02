@@ -10,10 +10,9 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The subject matter of the content.",
          "rdfs:label" : "about",
-         "schema:category" : "issue-1670",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
             "schema:CreativeWork",
+            "schema:CommunicateAction",
             "schema:Event"
          ],
          "schema:inverseOf" : "schema:subjectOf",
@@ -22,15 +21,14 @@
       },
       "schema:inLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/availableLanguage\">availableLanguage</a>.",
+         "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
-         "schema:category" : "issue-2382",
          "schema:domainIncludes" : [
-            "schema:PronounceableText",
             "schema:BroadcastService",
-            "schema:WriteAction",
-            "schema:LinkRole",
             "schema:Event",
+            "schema:LinkRole",
+            "schema:PronounceableText",
+            "schema:WriteAction",
             "schema:CreativeWork",
             "schema:CommunicateAction"
          ],
@@ -58,21 +56,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:ReturnAction",
+            "schema:AuthorizeAction",
+            "schema:GiveAction",
             "schema:PayAction",
             "schema:DonateAction",
-            "schema:Message",
-            "schema:SendAction",
-            "schema:ReturnAction",
             "schema:TipAction",
             "schema:CommunicateAction",
-            "schema:GiveAction",
-            "schema:AuthorizeAction"
+            "schema:Message",
+            "schema:SendAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
+            "schema:Audience",
             "schema:ContactPoint",
             "schema:Organization",
-            "schema:Audience"
+            "schema:Person"
          ]
       }
    }

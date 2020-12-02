@@ -8,12 +8,12 @@
    "properties" : {
       "schema:accelerationTime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The time needed to accelerate the vehicle from a given start velocity to a given target velocity.<br/><br/>\n\nTypical unit code(s): SEC for seconds<br/><br/>\n\n<ul>\n<li>Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a>, or use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> with a <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> of 0..60 mph or 0..100 km/h to specify the reference speeds.</li>\n</ul>\n",
+         "rdfs:comment" : "The time needed to accelerate the vehicle from a given start velocity to a given target velocity.\\n\\nTypical unit code(s): SEC for seconds\\n\\n* Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use \"SEC\" for seconds and indicate the velocities in the [[name]] of the [[QuantitativeValue]], or use [[valueReference]] with a [[QuantitativeValue]] of 0..60 mph or 0..100 km/h to specify the reference speeds.",
          "rdfs:label" : "accelerationTime",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:bodyType" : {
          "rdf:type" : "rdf:Property",
@@ -26,17 +26,16 @@
             "schema:Text",
             "schema:QualitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:callSign" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A <a href=\"https://en.wikipedia.org/wiki/Call_sign\">callsign</a>, as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles.",
+         "rdfs:comment" : "A [callsign](https://en.wikipedia.org/wiki/Call_sign), as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles.",
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
-         "schema:category" : "issue-2109",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
             "schema:BroadcastService",
+            "schema:Vehicle",
             "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -45,11 +44,11 @@
       },
       "schema:cargoVolume" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.<br/><br/>\n\nTypical unit code(s): LTR for liters, FTQ for cubic foot/feet<br/><br/>\n\nNote: You can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.",
+         "rdfs:comment" : "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.\\n\\nTypical unit code(s): LTR for liters, FTQ for cubic foot/feet\\n\\nNote: You can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "cargoVolume",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:dateVehicleFirstRegistered" : {
          "rdf:type" : "rdf:Property",
@@ -57,7 +56,7 @@
          "rdfs:label" : "dateVehicleFirstRegistered",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:driveWheelConfiguration" : {
          "rdf:type" : "rdf:Property",
@@ -68,7 +67,7 @@
             "schema:Text",
             "schema:DriveWheelConfigurationValue"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:emissionsCO2" : {
          "rdf:type" : "rdf:Property",
@@ -77,32 +76,32 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Number",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:fuelCapacity" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type.<br/><br/>\n\nTypical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for ampere-hours (for electrical vehicles).",
+         "rdfs:comment" : "The capacity of the fuel tank or in the case of electric cars, the battery. If there are multiple components for storage, this should indicate the total of all storage of the same type.\\n\\nTypical unit code(s): LTR for liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for ampere-hours (for electrical vehicles).",
          "rdfs:label" : "fuelCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:fuelConsumption" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use <a class=\"localLink\" href=\"http://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. L/100 km.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"http://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"http://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> to link the value for the fuel consumption to another value.</li>\n</ul>\n",
+         "rdfs:comment" : "The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).\\n\\n* Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use [[unitText]] to indicate the unit of measurement, e.g. L/100 km.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel consumption to another value.",
          "rdfs:label" : "fuelConsumption",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:fuelEfficiency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).<br/><br/>\n\n<ul>\n<li>Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use <a class=\"localLink\" href=\"http://schema.org/unitText\">unitText</a> to indicate the unit of measurement, e.g. mpg or km/L.</li>\n<li>Note 2: There are two ways of indicating the fuel consumption, <a class=\"localLink\" href=\"http://schema.org/fuelConsumption\">fuelConsumption</a> (e.g. 8 liters per 100 km) and <a class=\"localLink\" href=\"http://schema.org/fuelEfficiency\">fuelEfficiency</a> (e.g. 30 miles per gallon). They are reciprocal.</li>\n<li>Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> to link the value for the fuel economy to another value.</li>\n</ul>\n",
+         "rdfs:comment" : "The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).\\n\\n* Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\\n* Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.\\n* Note 3: Often, the absolute value is useful only when related to driving speed (\"at 80 km/h\") or usage pattern (\"city traffic\"). You can use [[valueReference]] to link the value for the fuel economy to another value.",
          "rdfs:label" : "fuelEfficiency",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:fuelType" : {
          "rdf:type" : "rdf:Property",
@@ -113,11 +112,11 @@
             "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:Text",
+            "schema:QualitativeValue",
             "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:knownVehicleDamages" : {
          "rdf:type" : "rdf:Property",
@@ -125,7 +124,7 @@
          "rdfs:label" : "knownVehicleDamages",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:meetsEmissionStandard" : {
          "rdf:type" : "rdf:Property",
@@ -134,19 +133,19 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:QualitativeValue",
             "schema:Text",
-            "schema:QualitativeValue"
+            "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:mileageFromOdometer" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.<br/><br/>\n\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
+         "rdfs:comment" : "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
          "rdfs:label" : "mileageFromOdometer",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:modelDate" : {
          "rdf:type" : "rdf:Property",
@@ -155,7 +154,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfAirbags" : {
          "rdf:type" : "rdf:Property",
@@ -163,74 +162,74 @@
          "rdfs:label" : "numberOfAirbags",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfAxles" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of axles.<br/><br/>\n\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of axles.\\n\\nTypical unit code(s): C62",
          "rdfs:label" : "numberOfAxles",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfDoors" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of doors.<br/><br/>\n\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of doors.\\n\\nTypical unit code(s): C62",
          "rdfs:label" : "numberOfDoors",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfForwardGears" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The total number of forward gears available for the transmission system of the vehicle.<br/><br/>\n\nTypical unit code(s): C62",
+         "rdfs:comment" : "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62",
          "rdfs:label" : "numberOfForwardGears",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfPreviousOwners" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of owners of the vehicle, including the current one.<br/><br/>\n\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62",
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:payload" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of <a class=\"localLink\" href=\"http://schema.org/weight\">weight</a> and <a class=\"localLink\" href=\"http://schema.org/payload\">payload</a></li>\n<li>Note 2: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 3: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 4: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n",
+         "rdfs:comment" : "The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of [[weight]] and [[payload]]\\n* Note 2: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 3: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 4: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "payload",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:productionDate" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date of production of the item, e.g. vehicle.",
          "rdfs:label" : "productionDate",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:purchaseDate" : {
          "rdf:type" : "rdf:Property",
@@ -241,28 +240,28 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:seatingCapacity" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.<br/><br/>\n\nTypical unit code(s): C62 for persons",
+         "rdfs:comment" : "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ",
          "rdfs:label" : "seatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:speed" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> should be the maximum speed achievable under regular conditions.<br/><br/>\n\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot<br/><br/>\n\n*Note 1: Use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate the range. Typically, the minimal value is zero.\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a> property.",
+         "rdfs:comment" : "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]] should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
          "rdfs:label" : "speed",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:steeringPosition" : {
          "rdf:type" : "rdf:Property",
@@ -270,36 +269,36 @@
          "rdfs:label" : "steeringPosition",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:SteeringPositionValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:stupidProperty" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:StupidType"
+            "schema:StupidType",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:tongueWeight" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n",
+         "rdfs:comment" : "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "tongueWeight",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:trailerWeight" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted weight of a trailer attached to the vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound\n* Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.\n* Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.\n* Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.",
+         "rdfs:comment" : "The permitted weight of a trailer attached to the vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "trailerWeight",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleConfiguration" : {
          "rdf:type" : "rdf:Property",
@@ -307,7 +306,7 @@
          "rdfs:label" : "vehicleConfiguration",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleEngine" : {
          "rdf:type" : "rdf:Property",
@@ -315,7 +314,7 @@
          "rdfs:label" : "vehicleEngine",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:EngineSpecification",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleIdentificationNumber" : {
          "rdf:type" : "rdf:Property",
@@ -324,7 +323,7 @@
          "rdfs:subPropertyOf" : "schema:serialNumber",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleInteriorColor" : {
          "rdf:type" : "rdf:Property",
@@ -332,7 +331,7 @@
          "rdfs:label" : "vehicleInteriorColor",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleInteriorType" : {
          "rdf:type" : "rdf:Property",
@@ -340,7 +339,7 @@
          "rdfs:label" : "vehicleInteriorType",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleModelDate" : {
          "rdf:type" : "rdf:Property",
@@ -348,18 +347,18 @@
          "rdfs:label" : "vehicleModelDate",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleSeatingCapacity" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.<br/><br/>\n\nTypical unit code(s): C62 for persons.",
+         "rdfs:comment" : "The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
          "rdfs:label" : "vehicleSeatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleSpecialUsage" : {
          "rdf:type" : "rdf:Property",
@@ -368,10 +367,10 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CarUsageType",
-            "schema:Text"
+            "schema:Text",
+            "schema:CarUsageType"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleTransmission" : {
          "rdf:type" : "rdf:Property",
@@ -379,29 +378,29 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
+            "schema:Text",
             "schema:URL",
-            "schema:Text"
+            "schema:QualitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:weightTotal" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.<br/><br/>\n\nTypical unit code(s): KGM for kilogram, LBR for pound<br/><br/>\n\n<ul>\n<li>Note 1: You can indicate additional information in the <a class=\"localLink\" href=\"http://schema.org/name\">name</a> of the <a class=\"localLink\" href=\"http://schema.org/QuantitativeValue\">QuantitativeValue</a> node.</li>\n<li>Note 2: You may also link to a <a class=\"localLink\" href=\"http://schema.org/QualitativeValue\">QualitativeValue</a> node that provides additional information using <a class=\"localLink\" href=\"http://schema.org/valueReference\">valueReference</a>.</li>\n<li>Note 3: Note that you can use <a class=\"localLink\" href=\"http://schema.org/minValue\">minValue</a> and <a class=\"localLink\" href=\"http://schema.org/maxValue\">maxValue</a> to indicate ranges.</li>\n</ul>\n",
+         "rdfs:comment" : "The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "weightTotal",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       },
       "schema:wheelbase" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The distance between the centers of the front and rear wheels.<br/><br/>\n\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
+         "rdfs:comment" : "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
          "rdfs:label" : "wheelbase",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
       }
    }
 }

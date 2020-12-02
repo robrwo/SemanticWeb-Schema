@@ -15,20 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A reservation for air travel.<br/><br/> Note: This type is for
-information about actual reservations, e.g. in confirmation emails or HTML
-pages with individual confirmations of reservations. For offers of tickets,
-use <a class="localLink" href="http://schema.org/Offer">Offer</a>.<p>
-
-=end html
+A reservation for air travel.\n\nNote: This type is for information about
+actual reservations, e.g. in confirmation emails or HTML pages with
+individual confirmations of reservations. For offers of tickets, use
+[[Offer]].
 
 
 

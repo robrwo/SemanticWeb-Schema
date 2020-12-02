@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::RealEstateListing;
 
-# ABSTRACT: A RealEstateListing is a listing that describes one or more real-estate Offer s (whose businessFunction is typically to lease out
+# ABSTRACT: A [[RealEstateListing]] is a listing that describes one or more real-estate [[Offer]]s (whose [[businessFunction]] is typically to lease out
 
 use Moo;
 
@@ -15,25 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a class="localLink"
-href="http://schema.org/RealEstateListing">RealEstateListing</a> is a
-listing that describes one or more real-estate <a class="localLink"
-href="http://schema.org/Offer">Offer</a>s (whose <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> is typically
-to lease out, or to sell). The <a class="localLink"
-href="http://schema.org/RealEstateListing">RealEstateListing</a> type
-itself represents the overall listing, as manifested in some <a
-class="localLink" href="http://schema.org/WebPage">WebPage</a>.<p>
-
-=end html
+A [[RealEstateListing]] is a listing that describes one or more real-estate
+[[Offer]]s (whose [[businessFunction]] is typically to lease out, or to
+sell). The [[RealEstateListing]] type itself represents the overall
+listing, as manifested in some [[WebPage]]. 
 
 
 
@@ -73,14 +64,8 @@ has date_posted => (
 
 C<leaseLength>
 
-=begin html
-
-<p>Length of the lease for some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, either particular
-to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
-some cases intrinsic to the property.<p>
-
-=end html
+Length of the lease for some [[Accommodation]], either particular to some
+[[Offer]] or in some cases intrinsic to the property.
 
 
 A lease_length should be one of the following types:

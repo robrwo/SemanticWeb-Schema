@@ -15,22 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A play is a form of literature, usually consisting of dialogue between
+A play is a form of literature, usually consisting of dialogue between
 characters, intended for theatrical performance rather than just reading.
-Note the peformance of a Play would be a <a class="localLink"
-href="http://schema.org/TheaterEvent">TheaterEvent</a> - the <em>Play</em>
-being the <a class="localLink"
-href="http://schema.org/workPerformed">workPerformed</a>.<p>
-
-=end html
+Note the peformance of a Play would be a [[TheaterEvent]] - the *Play*
+being the [[workPerformed]].
 
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -89,15 +89,9 @@ has departure_time => (
 
 
 
-=begin html
-
-<p>Destination(s) ( <a class="localLink"
-href="http://schema.org/Place">Place</a> ) that make up a trip. For a trip
-where destination order is important use <a class="localLink"
-href="http://schema.org/ItemList">ItemList</a> to specify that order (see
-examples).<p>
-
-=end html
+Destination(s) ( [[Place]] ) that make up a trip. For a trip where
+destination order is important use [[ItemList]] to specify that order (see
+examples).
 
 
 A itinerary should be one of the following types:
@@ -127,20 +121,14 @@ has itinerary => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:
@@ -170,13 +158,8 @@ has offers => (
 
 C<partOfTrip>
 
-=begin html
-
-<p>Identifies that this <a class="localLink"
-href="http://schema.org/Trip">Trip</a> is a subTrip of another Trip. For
-example Day 1, Day 2, etc. of a multi-day trip.<p>
-
-=end html
+Identifies that this [[Trip]] is a subTrip of another Trip. For example Day
+1, Day 2, etc. of a multi-day trip.
 
 
 A part_of_trip should be one of the following types:
@@ -236,13 +219,8 @@ has provider => (
 
 C<subTrip>
 
-=begin html
-
-<p>Identifies a <a class="localLink" href="http://schema.org/Trip">Trip</a>
-that is a subTrip of this Trip. For example Day 1, Day 2, etc. of a
-multi-day trip.<p>
-
-=end html
+Identifies a [[Trip]] that is a subTrip of this Trip. For example Day 1,
+Day 2, etc. of a multi-day trip.
 
 
 A sub_trip should be one of the following types:

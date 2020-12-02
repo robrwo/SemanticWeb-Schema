@@ -38,13 +38,13 @@
          "rdfs:label" : "supersededBy",
          "schema:domainIncludes" : [
             "schema:Class",
-            "schema:Enumeration",
-            "schema:Property"
+            "schema:Property",
+            "schema:Enumeration"
          ],
          "schema:isPartOf" : "http:meta.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Class",
             "schema:Property",
+            "schema:Class",
             "schema:Enumeration"
          ]
       }

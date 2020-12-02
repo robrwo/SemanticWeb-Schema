@@ -15,24 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An enterprise (potentially individual but typically collaborative),
-planned to achieve a particular aim. Use properties from <a
-class="localLink" href="http://schema.org/Organization">Organization</a>,
-<a class="localLink"
-href="http://schema.org/subOrganization">subOrganization</a>/<a
-class="localLink"
-href="http://schema.org/parentOrganization">parentOrganization</a> to
-indicate project sub-structures.<p>
-
-=end html
+An enterprise (potentially individual but typically collaborative), planned
+to achieve a particular aim. Use properties from [[Organization]],
+[[subOrganization]]/[[parentOrganization]] to indicate project
+sub-structures. 
 
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,13 +33,9 @@ A food-related business.
 
 C<acceptsReservations>
 
-=begin html
-
-<p>Indicates whether a FoodEstablishment accepts reservations. Values can
-be Boolean, an URL at which reservations can be made or (for backwards
-compatibility) the strings <code>Yes</code> or <code>No</code>.<p>
-
-=end html
+Indicates whether a FoodEstablishment accepts reservations. Values can be
+Boolean, an URL at which reservations can be made or (for backwards
+compatibility) the strings ```Yes``` or ```No```.
 
 
 A accepts_reservations should be one of the following types:

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -25,7 +25,7 @@ A GeoCircle is a GeoShape representing a circular geographic area. As it is
 a GeoShape it provides the simple textual property 'circle', but also
 allows the combination of postalCode alongside geoRadius. The center of the
 circle can be indicated via the 'geoMidpoint' property, or more
-approximately using 'address', 'postalCode'.
+approximately using 'address', 'postalCode'. 
 
 
 

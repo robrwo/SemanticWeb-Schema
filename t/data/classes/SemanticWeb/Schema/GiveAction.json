@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "The act of transferring ownership of an object to a destination. Reciprocal of TakeAction.<br/><br/>\n\nRelated actions:<br/><br/>\n\n<ul>\n<li><a class=\"localLink\" href=\"http://schema.org/TakeAction\">TakeAction</a>: Reciprocal of GiveAction.</li>\n<li><a class=\"localLink\" href=\"http://schema.org/SendAction\">SendAction</a>: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).</li>\n</ul>\n",
+      "rdfs:comment" : "The act of transferring ownership of an object to a destination. Reciprocal of TakeAction.\\n\\nRelated actions:\\n\\n* [[TakeAction]]: Reciprocal of GiveAction.\\n* [[SendAction]]: Unlike SendAction, GiveAction implies that ownership is being transferred (e.g. I may send my laptop to you, but that doesn't mean I'm giving it to you).",
       "rdfs:label" : "GiveAction",
       "rdfs:subClassOf" : "schema:TransferAction"
    },
@@ -12,21 +12,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:ReturnAction",
+            "schema:AuthorizeAction",
+            "schema:GiveAction",
             "schema:PayAction",
             "schema:DonateAction",
-            "schema:Message",
-            "schema:SendAction",
-            "schema:ReturnAction",
             "schema:TipAction",
             "schema:CommunicateAction",
-            "schema:GiveAction",
-            "schema:AuthorizeAction"
+            "schema:Message",
+            "schema:SendAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
+            "schema:Audience",
             "schema:ContactPoint",
             "schema:Organization",
-            "schema:Audience"
+            "schema:Person"
          ]
       }
    }

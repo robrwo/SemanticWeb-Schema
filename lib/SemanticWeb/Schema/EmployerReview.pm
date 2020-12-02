@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::EmployerReview;
 
-# ABSTRACT: An EmployerReview is a review of an Organization regarding its role as an employer
+# ABSTRACT: An [[EmployerReview]] is a review of an [[Organization]] regarding its role as an employer
 
 use Moo;
 
@@ -15,22 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An <a class="localLink"
-href="http://schema.org/EmployerReview">EmployerReview</a> is a review of
-an <a class="localLink"
-href="http://schema.org/Organization">Organization</a> regarding its role
+An [[EmployerReview]] is a review of an [[Organization]] regarding its role
 as an employer, written by a current or former employee of that
-organization.<p>
-
-=end html
+organization.
 
 
 

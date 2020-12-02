@@ -15,31 +15,25 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An offer to transfer some rights to an item or to provide a service â
-for example, an offer to sell tickets to an event, to rent the DVD of a
-movie, to stream a TV show over the internet, to repair a motorcycle, or to
-loan a book.<br/><br/> Note: As the <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> property,
-which identifies the form of offer (e.g. sell, lease, repair, dispose),
-defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a
-defined businessFunction value can be assumed to be an offer to
-sell.<br/><br/> For <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GTIN</a>-related
-fields, see <a
-href="http://www.gs1.org/barcodes/support/check_digit_calculator">Check
-Digit calculator</a> and <a
-href="http://www.gs1us.org/resources/standards/gtin-validation-guide">valid
-ation guide</a> from <a href="http://www.gs1.org/">GS1</a>.<p>
-
-=end html
+An offer to transfer some rights to an item or to provide a service â for
+example, an offer to sell tickets to an event, to rent the DVD of a movie,
+to stream a TV show over the internet, to repair a motorcycle, or to loan a
+book.\n\nNote: As the [[businessFunction]] property, which identifies the
+form of offer (e.g. sell, lease, repair, dispose), defaults to
+http://purl.org/goodrelations/v1#Sell; an Offer without a defined
+businessFunction value can be assumed to be an offer to sell.\n\nFor
+[GTIN](http://www.gs1.org/barcodes/technical/idkeys/gtin)-related fields,
+see [Check Digit
+calculator](http://www.gs1.org/barcodes/support/check_digit_calculator) and
+[validation
+guide](http://www.gs1us.org/resources/standards/gtin-validation-guide) from
+[GS1](http://www.gs1.org/).
 
 
 
@@ -525,15 +519,9 @@ has eligible_quantity => (
 
 C<eligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is valid.<br/><br/> See also <a
-class="localLink"
-href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is valid.\n\nSee also [[ineligibleRegion]]. 
 
 
 A eligible_region should be one of the following types:
@@ -596,32 +584,22 @@ has eligible_transaction_volume => (
 
 
 
-=begin html
-
-<p>A Global Trade Item Number (<a
-href="https://www.gs1.org/standards/id-keys/gtin">GTIN</a>). GTINs identify
-trade items, including products and services, using numeric identification
-codes. The <a class="localLink" href="http://schema.org/gtin">gtin</a>
-property generalizes the earlier <a class="localLink"
-href="http://schema.org/gtin8">gtin8</a>, <a class="localLink"
-href="http://schema.org/gtin12">gtin12</a>, <a class="localLink"
-href="http://schema.org/gtin13">gtin13</a>, and <a class="localLink"
-href="http://schema.org/gtin14">gtin14</a> properties. The GS1 <a
-href="https://www.gs1.org/standards/Digital-Link/">digital link
-specifications</a> express GTINs as URLs. A correct <a class="localLink"
-href="http://schema.org/gtin">gtin</a> value should be a valid GTIN, which
-means that it should be an all-numeric string of either 8, 12, 13 or 14
-digits, or a "GS1 Digital Link" URL based on such a string. The numeric
-component should also have a <a
-href="https://www.gs1.org/services/check-digit-calculator">valid GS1 check
-digit</a> and meet the other rules for valid GTINs. See also <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1's GTIN
-Summary</a> and <a
-href="https://en.wikipedia.org/wiki/Global_Trade_Item_Number">Wikipedia</a>
-for more details. Left-padding of the gtin values is not required or
-encouraged.<p>
-
-=end html
+A Global Trade Item Number
+([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
+items, including products and services, using numeric identification codes.
+The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
+[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
+specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
+as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
+it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
+"GS1 Digital Link" URL based on such a string. The numeric component should
+also have a [valid GS1 check
+digit](https://www.gs1.org/services/check-digit-calculator) and meet the
+other rules for valid GTINs. See also [GS1's GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
+[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
+more details. Left-padding of the gtin values is not required or
+encouraged. 
 
 
 A gtin should be one of the following types:
@@ -649,16 +627,12 @@ has gtin => (
 
 
 
-=begin html
-
-<p>The GTIN-12 code of the product, or the product to which the offer
-refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a
-U.P.C. Company Prefix, Item Reference, and Check Digit used to identify
-trade items. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-12 code of the product, or the product to which the offer refers.
+The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C.
+Company Prefix, Item Reference, and Check Digit used to identify trade
+items. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin12 should be one of the following types:
@@ -686,16 +660,12 @@ has gtin12 => (
 
 
 
-=begin html
-
-<p>The GTIN-13 code of the product, or the product to which the offer
-refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former
-12-digit UPC codes can be converted into a GTIN-13 code by simply adding a
-preceeding zero. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-13 code of the product, or the product to which the offer refers.
+This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit
+UPC codes can be converted into a GTIN-13 code by simply adding a preceding
+zero. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin13 should be one of the following types:
@@ -723,13 +693,9 @@ has gtin13 => (
 
 
 
-=begin html
-
-<p>The GTIN-14 code of the product, or the product to which the offer
-refers. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1
-GTIN Summary</a> for more details.<p>
-
-=end html
+The GTIN-14 code of the product, or the product to which the offer refers.
+See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin)
+for more details.
 
 
 A gtin14 should be one of the following types:
@@ -757,16 +723,11 @@ has gtin14 => (
 
 
 
-=begin html
-
-<p>The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx">GTIN-8</a> code
-of the product, or the product to which the offer refers. This code is also
-known as EAN/UCC-8 or 8-digit EAN. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of
+the product, or the product to which the offer refers. This code is also
+known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin8 should be one of the following types:
@@ -794,14 +755,8 @@ has gtin8 => (
 
 C<includesObject>
 
-=begin html
-
-<p>This links to a node or nodes indicating the exact quantity of the
-products included in an <a class="localLink"
-href="http://schema.org/Offer">Offer</a> or <a class="localLink"
-href="http://schema.org/ProductCollection">ProductCollection</a>.<p>
-
-=end html
+This links to a node or nodes indicating the exact quantity of the products
+included in an [[Offer]] or [[ProductCollection]].
 
 
 A includes_object should be one of the following types:
@@ -829,15 +784,10 @@ has includes_object => (
 
 C<ineligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is not valid, e.g. a region where the
-transaction is not allowed.<br/><br/> See also <a class="localLink"
-href="http://schema.org/eligibleRegion">eligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is not valid, e.g. a region where the transaction is
+not allowed.\n\nSee also [[eligibleRegion]]. 
 
 
 A ineligible_region should be one of the following types:
@@ -927,16 +877,11 @@ has item_condition => (
 
 C<itemOffered>
 
-=begin html
-
-<p>An item being offered (or demanded). The transactional nature of the
-offer or demand is documented using <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a>, e.g. sell,
-lease etc. While several common expected types are listed explicitly in
-this definition, others can be used. Using a second type, such as Product
-or a subtype of Product, can clarify the nature of the offer.<p>
-
-=end html
+An item being offered (or demanded). The transactional nature of the offer
+or demand is documented using [[businessFunction]], e.g. sell, lease etc.
+While several common expected types are listed explicitly in this
+definition, others can be used. Using a second type, such as Product or a
+subtype of Product, can clarify the nature of the offer.
 
 
 A item_offered should be one of the following types:
@@ -976,14 +921,8 @@ has item_offered => (
 
 C<leaseLength>
 
-=begin html
-
-<p>Length of the lease for some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, either particular
-to some <a class="localLink" href="http://schema.org/Offer">Offer</a> or in
-some cases intrinsic to the property.<p>
-
-=end html
+Length of the lease for some [[Accommodation]], either particular to some
+[[Offer]] or in some cases intrinsic to the property.
 
 
 A lease_length should be one of the following types:
@@ -1072,32 +1011,24 @@ has offered_by => (
 
 
 
-=begin html
-
-<p>The offer price of a product, or of a price component when attached to
-PriceSpecification and its subtypes.<br/><br/> Usage guidelines:<br/><br/>
-<ul> <li>Use the <a class="localLink"
-href="http://schema.org/priceCurrency">priceCurrency</a> property (with
-standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217
-currency format</a> e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR") instead of including <a
-href="http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_doll
-ar_or_peso_sign">ambiguous symbols</a> such as '$' in the value.</li>
-<li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
-decimal point. Avoid using these symbols as a readability separator.</li>
-<li>Note that both <a
-href="http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute">
-RDFa</a> and Microdata syntax allow the use of a "content=" attribute for
-publishing simple machine-readable values alongside more human-friendly
-formatting.</li> <li>Use values from 0123456789 (Unicode 'DIGIT ZERO'
-(U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar
-Unicode symbols.</li> </ul> <p>
-
-=end html
+The offer price of a product, or of a price component when attached to
+PriceSpecification and its subtypes.\n\nUsage guidelines:\n\n* Use the
+[[priceCurrency]] property (with standard formats: [ISO 4217 currency
+format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR") instead of including
+[ambiguous
+symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_d
+ollar_or_peso_sign) such as '$' in the value.\n* Use '.' (Unicode 'FULL
+STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using
+these symbols as a readability separator.\n* Note that both
+[RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute)
+and Microdata syntax allow the use of a "content=" attribute for publishing
+simple machine-readable values alongside more human-friendly formatting.\n*
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+(U+0039)) rather than superficially similiar Unicode symbols. 
 
 
 A price should be one of the following types:
@@ -1127,21 +1058,13 @@ has price => (
 
 C<priceCurrency>
 
-=begin html
-
-<p>The currency of the price, or a price component when attached to <a
-class="localLink"
-href="http://schema.org/PriceSpecification">PriceSpecification</a> and its
-subtypes.<br/><br/> Use standard formats: <a
-href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217 currency format</a>
-e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".<p>
-
-=end html
+The currency of the price, or a price component when attached to
+[[PriceSpecification]] and its subtypes.\n\nUse standard formats: [ISO 4217
+currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR".
 
 
 A price_currency should be one of the following types:
@@ -1343,12 +1266,8 @@ has serial_number => (
 
 C<shippingDetails>
 
-=begin html
-
-<p>Indicates information about the shipping policies and options associated
-with an <a class="localLink" href="http://schema.org/Offer">Offer</a>.<p>
-
-=end html
+Indicates information about the shipping policies and options associated
+with an [[Offer]].
 
 
 A shipping_details should be one of the following types:

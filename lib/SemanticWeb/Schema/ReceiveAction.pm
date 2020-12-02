@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ReceiveAction;
 
-# ABSTRACT: The act of physically/electronically taking delivery of an object thathas been transferred from an origin to a destination
+# ABSTRACT: The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination
 
 use Moo;
 
@@ -15,25 +15,18 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of physically/electronically taking delivery of an object
-thathas been transferred from an origin to a destination. Reciprocal of
-SendAction.<br/><br/> Related actions:<br/><br/> <ul> <li><a
-class="localLink" href="http://schema.org/SendAction">SendAction</a>: The
-reciprocal of ReceiveAction.</li> <li><a class="localLink"
-href="http://schema.org/TakeAction">TakeAction</a>: Unlike TakeAction,
-ReceiveAction does not imply that the ownership has been transfered (e.g. I
-can receive a package, but it does not mean the package is now mine).</li>
-</ul> <p>
-
-=end html
+The act of physically/electronically taking delivery of an object that has
+been transferred from an origin to a destination. Reciprocal of
+SendAction.\n\nRelated actions:\n\n* [[SendAction]]: The reciprocal of
+ReceiveAction.\n* [[TakeAction]]: Unlike TakeAction, ReceiveAction does not
+imply that the ownership has been transfered (e.g. I can receive a package,
+but it does not mean the package is now mine).
 
 
 

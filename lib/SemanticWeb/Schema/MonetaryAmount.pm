@@ -15,22 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A monetary value or range. This type can be used to describe an amount
-of money such as $50 USD, or a range as in describing a bank account being
+A monetary value or range. This type can be used to describe an amount of
+money such as $50 USD, or a range as in describing a bank account being
 suitable for a balance between Â£1,000 and Â£1,000,000 GBP, or the value of
-a salary, etc. It is recommended to use <a class="localLink"
-href="http://schema.org/PriceSpecification">PriceSpecification</a> Types to
-describe the price of an Offer, Invoice, etc.<p>
-
-=end html
+a salary, etc. It is recommended to use [[PriceSpecification]] Types to
+describe the price of an Offer, Invoice, etc.
 
 
 
@@ -42,18 +37,13 @@ describe the price of an Offer, Invoice, etc.<p>
 
 
 
-=begin html
-
-<p>The currency in which the monetary amount is expressed.<br/><br/> Use
-standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217
-currency format</a> e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".<p>
-
-=end html
+The currency in which the monetary amount is expressed.\n\nUse standard
+formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
+e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR".
 
 
 A currency should be one of the following types:
@@ -194,22 +184,14 @@ has valid_through => (
 
 
 
-=begin html
-
-<p>The value of the quantitative value or property value node.<br/><br/>
-<ul> <li>For <a class="localLink"
-href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
-class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>, the recommended
-type for values is 'Number'.</li> <li>For <a class="localLink"
-href="http://schema.org/PropertyValue">PropertyValue</a>, it can be
-'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li> <li>Use values
-from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
-rather than superficially similiar Unicode symbols.</li> <li>Use '.'
-(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
-Avoid using these symbols as a readability separator.</li> </ul> <p>
-
-=end html
+The value of the quantitative value or property value node.\n\n* For
+[[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for
+values is 'Number'.\n* For [[PropertyValue]], it can be 'Text;', 'Number',
+'Boolean', or 'StructuredValue'.\n* Use values from 0123456789 (Unicode
+'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
+similiar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather
+than ',' to indicate a decimal point. Avoid using these symbols as a
+readability separator.
 
 
 A value should be one of the following types:

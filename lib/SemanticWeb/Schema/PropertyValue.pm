@@ -15,23 +15,19 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A property-value pair, e.g. representing a feature of a product or
-place. Use the 'name' property for the name of the property. If there is an
+A property-value pair, e.g. representing a feature of a product or place.
+Use the 'name' property for the name of the property. If there is an
 additional human-readable version of the value, put that into the
-'description' property.<br/><br/> Always use specific schema.org properties
-when a) they exist and b) you can populate them. Using PropertyValue as a
+'description' property.\n\n Always use specific schema.org properties when
+a) they exist and b) you can populate them. Using PropertyValue as a
 substitute will typically not trigger the same effect as using the
-original, specific property.<p>
-
-=end html
+original, specific property. 
 
 
 
@@ -71,38 +67,20 @@ has max_value => (
 
 C<measurementTechnique>
 
-=begin html
-
-<p>A technique or technology used in a <a class="localLink"
-href="http://schema.org/Dataset">Dataset</a> (or <a class="localLink"
-href="http://schema.org/DataDownload">DataDownload</a>, <a
-class="localLink" href="http://schema.org/DataCatalog">DataCatalog</a>),
-corresponding to the method used for measuring the corresponding
-variable(s) (described using <a class="localLink"
-href="http://schema.org/variableMeasured">variableMeasured</a>). This is
+A technique or technology used in a [[Dataset]] (or [[DataDownload]],
+[[DataCatalog]]), corresponding to the method used for measuring the
+corresponding variable(s) (described using [[variableMeasured]]). This is
 oriented towards scientific and scholarly dataset publication but may have
 broader applicability; it is not intended as a full representation of
-measurement, but rather as a high level summary for dataset
-discovery.<br/><br/> For example, if <a class="localLink"
-href="http://schema.org/variableMeasured">variableMeasured</a> is: molecule
-concentration, <a class="localLink"
-href="http://schema.org/measurementTechnique">measurementTechnique</a>
-could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or
-"immunofluorescence".<br/><br/> If the <a class="localLink"
-href="http://schema.org/variableMeasured">variableMeasured</a> is
-"depression rating", the <a class="localLink"
-href="http://schema.org/measurementTechnique">measurementTechnique</a>
-could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".<br/><br/>
-If there are several <a class="localLink"
-href="http://schema.org/variableMeasured">variableMeasured</a> properties
-recorded for some given data object, use a <a class="localLink"
-href="http://schema.org/PropertyValue">PropertyValue</a> for each <a
-class="localLink"
-href="http://schema.org/variableMeasured">variableMeasured</a> and attach
-the corresponding <a class="localLink"
-href="http://schema.org/measurementTechnique">measurementTechnique</a>.<p>
-
-=end html
+measurement, but rather as a high level summary for dataset discovery. For
+example, if [[variableMeasured]] is: molecule concentration,
+[[measurementTechnique]] could be: "mass spectrometry" or "nmr
+spectroscopy" or "colorimetry" or "immunofluorescence". If the
+[[variableMeasured]] is "depression rating", the [[measurementTechnique]]
+could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory". If there
+are several [[variableMeasured]] properties recorded for some given data
+object, use a [[PropertyValue]] for each [[variableMeasured]] and attach
+the corresponding [[measurementTechnique]]. 
 
 
 A measurement_technique should be one of the following types:
@@ -257,22 +235,14 @@ has unit_text => (
 
 
 
-=begin html
-
-<p>The value of the quantitative value or property value node.<br/><br/>
-<ul> <li>For <a class="localLink"
-href="http://schema.org/QuantitativeValue">QuantitativeValue</a> and <a
-class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>, the recommended
-type for values is 'Number'.</li> <li>For <a class="localLink"
-href="http://schema.org/PropertyValue">PropertyValue</a>, it can be
-'Text;', 'Number', 'Boolean', or 'StructuredValue'.</li> <li>Use values
-from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039))
-rather than superficially similiar Unicode symbols.</li> <li>Use '.'
-(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
-Avoid using these symbols as a readability separator.</li> </ul> <p>
-
-=end html
+The value of the quantitative value or property value node.\n\n* For
+[[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for
+values is 'Number'.\n* For [[PropertyValue]], it can be 'Text;', 'Number',
+'Boolean', or 'StructuredValue'.\n* Use values from 0123456789 (Unicode
+'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
+similiar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather
+than ',' to indicate a decimal point. Avoid using these symbols as a
+readability separator.
 
 
 A value should be one of the following types:

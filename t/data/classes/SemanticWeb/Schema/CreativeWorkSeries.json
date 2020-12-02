@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike <a class=\"localLink\" href=\"http://schema.org/ItemList\">ItemList</a> which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).<br/><br/>\n\nSpecific subtypes are available for describing <a class=\"localLink\" href=\"http://schema.org/TVSeries\">TVSeries</a>, <a class=\"localLink\" href=\"http://schema.org/RadioSeries\">RadioSeries</a>, <a class=\"localLink\" href=\"http://schema.org/MovieSeries\">MovieSeries</a>, <a class=\"localLink\" href=\"http://schema.org/BookSeries\">BookSeries</a>, <a class=\"localLink\" href=\"http://schema.org/Periodical\">Periodical</a> and <a class=\"localLink\" href=\"http://schema.org/VideoGameSeries\">VideoGameSeries</a>. In each case, the <a class=\"localLink\" href=\"http://schema.org/hasPart\">hasPart</a> / <a class=\"localLink\" href=\"http://schema.org/isPartOf\">isPartOf</a> properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.<br/><br/>\n\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.",
+      "rdfs:comment" : "A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. CreativeWorkSeries are usually organized into some order, often chronological. Unlike [[ItemList]] which is a general purpose data structure for lists of things, the emphasis with CreativeWorkSeries is on published materials (written e.g. books and periodicals, or media such as tv, radio and games).\\n\\nSpecific subtypes are available for describing [[TVSeries]], [[RadioSeries]], [[MovieSeries]], [[BookSeries]], [[Periodical]] and [[VideoGameSeries]]. In each case, the [[hasPart]] / [[isPartOf]] properties can be used to relate the CreativeWorkSeries to its parts. The general CreativeWorkSeries type serves largely just to organize these more specific and practical subtypes.\\n\\nIt is common for properties applicable to an item from the series to be usefully applied to the containing group. Schema.org attempts to anticipate some of these cases, but publishers should be free to apply properties of the series parts to the series as a whole wherever they seem appropriate.\n\t  ",
       "rdfs:label" : "CreativeWorkSeries",
       "rdfs:subClassOf" : [
          "schema:CreativeWork",
@@ -11,17 +11,16 @@
    "properties" : {
       "schema:endDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Role",
-            "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
+            "schema:Event",
             "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -36,27 +35,26 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
+            "schema:Blog",
             "schema:CreativeWorkSeries",
-            "schema:Dataset",
             "schema:WebSite",
-            "schema:Blog"
+            "schema:Dataset"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:source" : "schemadotorgsources2:source_bibex"
       },
       "schema:startDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:Role",
             "schema:CreativeWorkSeason",
+            "schema:Event",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

@@ -19,10 +19,10 @@
             "schema:Article"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:source" : "schemadotorgsources2:source_bibex"
       },
       "schema:pageStart" : {
          "owl:equivalentProperty" : "bibo:pageStart",
@@ -30,16 +30,16 @@
          "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
          "rdfs:label" : "pageStart",
          "schema:domainIncludes" : [
-            "schema:Chapter",
-            "schema:PublicationVolume",
             "schema:Article",
-            "schema:PublicationIssue"
+            "schema:PublicationIssue",
+            "schema:Chapter",
+            "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : [
             "schema:Integer",
             "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:source" : "schemadotorgsources2:source_bibex"
       },
       "schema:pagination" : {
          "owl:equivalentProperty" : "bibo:pages",
@@ -47,13 +47,13 @@
          "rdfs:comment" : "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
          "rdfs:label" : "pagination",
          "schema:domainIncludes" : [
-            "schema:PublicationIssue",
             "schema:Chapter",
             "schema:Article",
+            "schema:PublicationIssue",
             "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:source" : "schemadotorgsources2:source_bibex"
       }
    }
 }

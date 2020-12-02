@@ -8,17 +8,17 @@
    "properties" : {
       "schema:availableLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the <a href=\"http://tools.ietf.org/html/bcp47\">IETF BCP 47 standard</a>. See also <a class=\"localLink\" href=\"http://schema.org/inLanguage\">inLanguage</a>",
+         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
             "schema:TouristAttraction",
+            "schema:LodgingBusiness",
             "schema:ServiceChannel",
             "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:processingTime" : {

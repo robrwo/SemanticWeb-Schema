@@ -15,20 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of rejecting to/adopting an object.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/AcceptAction">AcceptAction</a>: The antonym of
-RejectAction.</li> </ul> <p>
-
-=end html
+The act of rejecting to/adopting an object.\n\nRelated actions:\n\n*
+[[AcceptAction]]: The antonym of RejectAction.
 
 
 

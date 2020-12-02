@@ -4,7 +4,6 @@
       "rdfs:comment" : "ReturnFeesEnumeration expresses policies for return fees.",
       "rdfs:label" : "ReturnFeesEnumeration",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:category" : "issue-2288",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
    },

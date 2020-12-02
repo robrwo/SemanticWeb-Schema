@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -125,15 +125,9 @@ has category => (
 
 C<eligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is valid.<br/><br/> See also <a
-class="localLink"
-href="http://schema.org/ineligibleRegion">ineligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is valid.\n\nSee also [[ineligibleRegion]]. 
 
 
 A eligible_region should be one of the following types:
@@ -194,15 +188,10 @@ has expects_acceptance_of => (
 
 C<ineligibleRegion>
 
-=begin html
-
-<p>The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or
-the GeoShape for the geo-political region(s) for which the offer or
-delivery charge specification is not valid, e.g. a region where the
-transaction is not allowed.<br/><br/> See also <a class="localLink"
-href="http://schema.org/eligibleRegion">eligibleRegion</a>.<p>
-
-=end html
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
+GeoShape for the geo-political region(s) for which the offer or delivery
+charge specification is not valid, e.g. a region where the transaction is
+not allowed.\n\nSee also [[eligibleRegion]]. 
 
 
 A ineligible_region should be one of the following types:
@@ -234,13 +223,9 @@ has ineligible_region => (
 
 C<requiresSubscription>
 
-=begin html
-
-<p>Indicates if use of the media require a subscription (either paid or
-free). Allowed values are <code>true</code> or <code>false</code> (note
-that an earlier version had 'yes', 'no').<p>
-
-=end html
+Indicates if use of the media require a subscription (either paid or free).
+Allowed values are ```true``` or ```false``` (note that an earlier version
+had 'yes', 'no').
 
 
 A requires_subscription should be one of the following types:

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -36,7 +36,7 @@ C<answerExplanation>
 
 A step-by-step or full explanation about Answer. Can outline how this
 Answer was achieved or contain more broad clarification or statement about
-it.
+it. 
 
 
 A answer_explanation should be one of the following types:

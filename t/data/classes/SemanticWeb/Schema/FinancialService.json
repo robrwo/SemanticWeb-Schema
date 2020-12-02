@@ -18,7 +18,7 @@
             "schema:Text",
             "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources:FIBO"
+         "schema:source" : "schemadotorgsources2:FIBO"
       }
    }
 }

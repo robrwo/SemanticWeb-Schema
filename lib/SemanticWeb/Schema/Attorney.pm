@@ -15,19 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>Professional service: Attorney. <br/><br/> This type is deprecated - <a
-class="localLink" href="http://schema.org/LegalService">LegalService</a> is
-more inclusive and less ambiguous.<p>
-
-=end html
+Professional service: Attorney. \n\nThis type is deprecated -
+[[LegalService]] is more inclusive and less ambiguous.
 
 
 

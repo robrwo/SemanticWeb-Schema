@@ -1,25 +1,23 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.<br/><br/>\n\nFor work in progress guidelines on Coronavirus-related markup see <a href=\"https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#\">this doc</a>.<br/><br/>\n\nThe motivating scenario for SpecialAnnouncement is the <a href=\"https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic\">Coronavirus pandemic</a>, and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual <a href=\"https://github.com/schemaorg/schemaorg/issues/2490\">Github entry</a>, feedback comments can also be provided in <a href=\"https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#\">this document</a>.<br/><br/>\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like <a href=\"https://en.wikipedia.org/wiki/Common_Alerting_Protocol\">CAP</a>, although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.<br/><br/>\n\nSeveral kinds of information can be provided:<br/><br/>\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20_coronavirus_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".<br/><br/>\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> type, and provide the url as a property of that, alongside at least a simple \"<a class=\"localLink\" href=\"http://schema.org/text\">text</a>\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.<br/><br/>\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, <a class=\"localLink\" href=\"http://schema.org/openingHours\">openingHours</a>, <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>, <a class=\"localLink\" href=\"http://schema.org/FAQPage\">FAQPage</a> etc. By linking to those pages from a <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the <a class=\"localLink\" href=\"http://schema.org/category\">category</a> property of the <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a>.<br/><br/>\n\nMany <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a>s will relate to particular regions and to identifiable local organizations. Use <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a> for the region, and <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a> to indicate specific <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a>es and <a class=\"localLink\" href=\"http://schema.org/CivicStructures\">CivicStructures</a>. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a> and <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a>.<br/><br/>\n\nThe <a class=\"localLink\" href=\"http://schema.org/about\">about</a> property can be used to indicate entities that are the focus of the announcement. We now recommend using <a class=\"localLink\" href=\"http://schema.org/about\">about</a> only\nfor representing non-location entities (e.g. a <a class=\"localLink\" href=\"http://schema.org/Course\">Course</a> or a <a class=\"localLink\" href=\"http://schema.org/RadioStation\">RadioStation</a>). For places, use <a class=\"localLink\" href=\"http://schema.org/announcementLocation\">announcementLocation</a> and <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a>. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.<br/><br/>\n\nThe basic content of <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> is similar to that of an <a href=\"https://en.wikipedia.org/wiki/RSS\">RSS</a> or <a href=\"https://en.wikipedia.org/wiki/Atom_(Web_standard)\">Atom</a> feed. For publishers without such feeds, basic feed-like information can be shared by posting\n<a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the <a class=\"localLink\" href=\"http://schema.org/webFeed\">webFeed</a> property. This can be a simple URL, or an inline <a class=\"localLink\" href=\"http://schema.org/DataFeed\">DataFeed</a> object, with <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a> providing\nmedia type information e.g. \"application/rss+xml\" or \"application/atom+xml\".",
+      "rdfs:comment" : "A SpecialAnnouncement combines a simple date-stamped textual information update\n      with contextualized Web links and other structured data.  It represents an information update made by a\n      locally-oriented organization, for example schools, pharmacies, healthcare providers,  community groups, police,\n      local government.\n\nFor work in progress guidelines on Coronavirus-related markup see [this doc](https://docs.google.com/document/d/14ikaGCKxo50rRM7nvKSlbUpjyIk2WMQd3IkB1lItlrM/edit#).\n\nThe motivating scenario for SpecialAnnouncement is the [Coronavirus pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), and the initial vocabulary is oriented to this urgent situation. Schema.org\nexpect to improve the markup iteratively as it is deployed and as feedback emerges from use. In addition to our\nusual [Github entry](https://github.com/schemaorg/schemaorg/issues/2490), feedback comments can also be provided in [this document](https://docs.google.com/document/d/1fpdFFxk8s87CWwACs53SGkYv3aafSxz_DTtOQxMrBJQ/edit#).\n\n\nWhile this schema is designed to communicate urgent crisis-related information, it is not the same as an emergency warning technology like [CAP](https://en.wikipedia.org/wiki/Common_Alerting_Protocol), although there may be overlaps. The intent is to cover\nthe kinds of everyday practical information being posted to existing websites during an emergency situation.\n\nSeveral kinds of information can be provided:\n\nWe encourage the provision of \"name\", \"text\", \"datePosted\", \"expires\" (if appropriate), \"category\" and\n\"url\" as a simple baseline. It is important to provide a value for \"category\" where possible, most ideally as a well known\nURL from Wikipedia or Wikidata. In the case of the 2019-2020 Coronavirus pandemic, this should be \"https://en.wikipedia.org/w/index.php?title=2019-20\\_coronavirus\\_pandemic\" or \"https://www.wikidata.org/wiki/Q81068910\".\n\nFor many of the possible properties, values can either be simple links or an inline description, depending on whether a summary is available. For a link, provide just the URL of the appropriate page as the property's value. For an inline description, use a [[WebContent]] type, and provide the url as a property of that, alongside at least a simple \"[[text]]\" summary of the page. It is\nunlikely that a single SpecialAnnouncement will need all of the possible properties simultaneously.\n\nWe expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], [[Event]], [[FAQPage]] etc. By linking to those pages from a [[SpecialAnnouncement]] you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the [[SpecialAnnouncement]].\n\nMany [[SpecialAnnouncement]]s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific [[LocalBusiness]]es and [[CivicStructures]]. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].\n\nThe [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only\nfor representing non-location entities (e.g. a [[Course]] or a [[RadioStation]]). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.\n\nThe basic content of [[SpecialAnnouncement]] is similar to that of an [RSS](https://en.wikipedia.org/wiki/RSS) or [Atom](https://en.wikipedia.org/wiki/Atom_(Web_standard)) feed. For publishers without such feeds, basic feed-like information can be shared by posting\n[[SpecialAnnouncement]] updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed\nwith the [[webFeed]] property. This can be a simple URL, or an inline [[DataFeed]] object, with [[encodingFormat]] providing\nmedia type information e.g. \"application/rss+xml\" or \"application/atom+xml\".\n",
       "rdfs:label" : "SpecialAnnouncement",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:category" : "issue-2490",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
    },
    "properties" : {
       "schema:announcementLocation" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates a specific <a class=\"localLink\" href=\"http://schema.org/CivicStructure\">CivicStructure</a> or <a class=\"localLink\" href=\"http://schema.org/LocalBusiness\">LocalBusiness</a> associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use <a class=\"localLink\" href=\"http://schema.org/spatialCoverage\">spatialCoverage</a>.",
+         "rdfs:comment" : "Indicates a specific [[CivicStructure]] or [[LocalBusiness]] associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use [[spatialCoverage]].",
          "rdfs:label" : "announcementLocation",
          "rdfs:subPropertyOf" : "schema:spatialCoverage",
-         "schema:category" : "issue-2514",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CivicStructure",
-            "schema:LocalBusiness"
+            "schema:LocalBusiness",
+            "schema:CivicStructure"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2514"
       },
@@ -27,22 +25,21 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:PhysicalActivity",
-            "schema:Invoice",
             "schema:Recommendation",
             "schema:Product",
+            "schema:Invoice",
             "schema:SpecialAnnouncement",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:PhysicalActivityCategory",
-            "schema:URL",
             "schema:Text",
-            "schema:Thing"
+            "schema:URL",
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -53,30 +50,25 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
-         "schema:category" : [
-            "issue-2490",
-            "issue-2521"
-         ],
          "schema:domainIncludes" : [
-            "schema:CDCPMDRecord",
             "schema:RealEstateListing",
+            "schema:SpecialAnnouncement",
             "schema:JobPosting",
-            "schema:SpecialAnnouncement"
+            "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
             "schema:DateTime"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2521",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/2521"
          ]
       },
       "schema:diseasePreventionInfo" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Information about disease prevention.",
          "rdfs:label" : "diseasePreventionInfo",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -87,24 +79,22 @@
       },
       "schema:diseaseSpreadStatistics" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Statistical information about the spread of a disease, either as <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a>, or\n  described directly as a <a class=\"localLink\" href=\"http://schema.org/Dataset\">Dataset</a>, or the specific <a class=\"localLink\" href=\"http://schema.org/Observation\">Observation</a>s in the dataset. When a <a class=\"localLink\" href=\"http://schema.org/WebContent\">WebContent</a> URL is\n  provided, the page indicated might also contain more such markup.",
+         "rdfs:comment" : "Statistical information about the spread of a disease, either as [[WebContent]], or\n  described directly as a [[Dataset]], or the specific [[Observation]]s in the dataset. When a [[WebContent]] URL is\n  provided, the page indicated might also contain more such markup.",
          "rdfs:label" : "diseaseSpreadStatistics",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Dataset",
             "schema:URL",
             "schema:Observation",
-            "schema:Dataset",
             "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
       "schema:gettingTestedInfo" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Information about getting tested (for a <a class=\"localLink\" href=\"http://schema.org/MedicalCondition\">MedicalCondition</a>), e.g. in the context of a pandemic.",
+         "rdfs:comment" : "Information about getting tested (for a [[MedicalCondition]]), e.g. in the context of a pandemic.",
          "rdfs:label" : "gettingTestedInfo",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -117,7 +107,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "governmentBenefitsInfo provides information about government benefits associated with a SpecialAnnouncement.",
          "rdfs:label" : "governmentBenefitsInfo",
-         "schema:category" : "issue-2534",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:GovernmentService",
@@ -125,14 +114,13 @@
       },
       "schema:newsUpdatesAndGuidelines" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates a page with news updates and guidelines. This could often be (but is not required to be) the main page containing <a class=\"localLink\" href=\"http://schema.org/SpecialAnnouncement\">SpecialAnnouncement</a> markup on a site.",
+         "rdfs:comment" : "Indicates a page with news updates and guidelines. This could often be (but is not required to be) the main page containing [[SpecialAnnouncement]] markup on a site.",
          "rdfs:label" : "newsUpdatesAndGuidelines",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -140,12 +128,11 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Information about public transport closures.",
          "rdfs:label" : "publicTransportClosuresInfo",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -153,7 +140,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Guidelines about quarantine rules, e.g. in the context of a pandemic.",
          "rdfs:label" : "quarantineGuidelines",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -166,7 +152,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Information about school closures.",
          "rdfs:label" : "schoolClosuresInfo",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -179,7 +164,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Information about travel bans, e.g. in the context of a pandemic.",
          "rdfs:label" : "travelBans",
-         "schema:category" : "issue-2490",
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -192,10 +176,9 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The URL for a feed, e.g. associated with a podcast series, blog, or series of date-stamped updates. This is usually RSS or Atom.",
          "rdfs:label" : "webFeed",
-         "schema:category" : "issue-373",
          "schema:domainIncludes" : [
-            "schema:PodcastSeries",
-            "schema:SpecialAnnouncement"
+            "schema:SpecialAnnouncement",
+            "schema:PodcastSeries"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

@@ -4,7 +4,7 @@
       "rdfs:comment" : "A service to convert funds from one currency to another currency.",
       "rdfs:label" : "CurrencyConversionService",
       "rdfs:subClassOf" : "schema:FinancialProduct",
-      "schema:source" : "schemadotorgsources:FIBO"
+      "schema:source" : "schemadotorgsources2:FIBO"
    },
    "properties" : {}
 }

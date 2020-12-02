@@ -15,30 +15,26 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The business function specifies the type of activity or access (i.e.,
-the bundle of rights) offered by the organization or business person
-through the offer. Typical are sell, rental or lease, maintenance or
-repair, manufacture / produce, recycle / dispose, engineering /
-construction, or installation. Proprietary specifications of access rights
-are also instances of this class.<br/><br/> Commonly used values:<br/><br/>
-<ul> <li>http://purl.org/goodrelations/v1#ConstructionInstallation</li>
-<li>http://purl.org/goodrelations/v1#Dispose</li>
-<li>http://purl.org/goodrelations/v1#LeaseOut</li>
-<li>http://purl.org/goodrelations/v1#Maintain</li>
-<li>http://purl.org/goodrelations/v1#ProvideService</li>
-<li>http://purl.org/goodrelations/v1#Repair</li>
-<li>http://purl.org/goodrelations/v1#Sell</li>
-<li>http://purl.org/goodrelations/v1#Buy</li> </ul> <p>
-
-=end html
+The business function specifies the type of activity or access (i.e., the
+bundle of rights) offered by the organization or business person through
+the offer. Typical are sell, rental or lease, maintenance or repair,
+manufacture / produce, recycle / dispose, engineering / construction, or
+installation. Proprietary specifications of access rights are also
+instances of this class.\n\nCommonly used values:\n\n*
+http://purl.org/goodrelations/v1#ConstructionInstallation\n*
+http://purl.org/goodrelations/v1#Dispose\n*
+http://purl.org/goodrelations/v1#LeaseOut\n*
+http://purl.org/goodrelations/v1#Maintain\n*
+http://purl.org/goodrelations/v1#ProvideService\n*
+http://purl.org/goodrelations/v1#Repair\n*
+http://purl.org/goodrelations/v1#Sell\n*
+http://purl.org/goodrelations/v1#Buy 
 
 
 

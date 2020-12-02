@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -90,12 +90,8 @@ has part_of_tv_series => (
 
 C<subtitleLanguage>
 
-=begin html
-
-<p>Languages in which subtitles/captions are available, in <a
-href="http://tools.ietf.org/html/bcp47">IETF BCP 47 standard format</a>.<p>
-
-=end html
+Languages in which subtitles/captions are available, in [IETF BCP 47
+standard format](http://tools.ietf.org/html/bcp47).
 
 
 A subtitle_language should be one of the following types:
@@ -125,26 +121,15 @@ has subtitle_language => (
 
 C<titleEIDR>
 
-=begin html
-
-<p>An <a href="https://eidr.org/">EIDR</a> (Entertainment Identifier
-Registry) <a class="localLink"
-href="http://schema.org/identifier">identifier</a> representing at the most
-general/abstract level, a work of film or television.<br/><br/> For
-example, the motion picture known as "Ghostbusters" has a titleEIDR of
-"10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or work) may have several
-variants, which EIDR calls "edits". See <a class="localLink"
-href="http://schema.org/editEIDR">editEIDR</a>.<br/><br/> Since schema.org
-types like <a class="localLink" href="http://schema.org/Movie">Movie</a>
-and <a class="localLink" href="http://schema.org/TVEpisode">TVEpisode</a>
-can be used for both works and their multiple expressions, it is possible
-to use <a class="localLink"
-href="http://schema.org/titleEIDR">titleEIDR</a> alone (for a general
-description), or alongside <a class="localLink"
-href="http://schema.org/editEIDR">editEIDR</a> for a more edit-specific
-description.<p>
-
-=end html
+An [EIDR](https://eidr.org/) (Entertainment Identifier Registry)
+[[identifier]] representing at the most general/abstract level, a work of
+film or television. For example, the motion picture known as "Ghostbusters"
+has a titleEIDR of "10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or
+work) may have several variants, which EIDR calls "edits". See
+[[editEIDR]]. Since schema.org types like [[Movie]] and [[TVEpisode]] can
+be used for both works and their multiple expressions, it is possible to
+use [[titleEIDR]] alone (for a general description), or alongside
+[[editEIDR]] for a more edit-specific description. 
 
 
 A title_eidr should be one of the following types:

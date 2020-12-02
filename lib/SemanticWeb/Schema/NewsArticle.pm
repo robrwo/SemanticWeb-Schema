@@ -15,20 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A NewsArticle is an article whose content reports news, or provides
-background context and supporting materials for understanding the
-news.<br/><br/> A more detailed overview of <a
-href="/docs/news.html">schema.org News markup</a> is also available.<p>
-
-=end html
+A NewsArticle is an article whose content reports news, or provides
+background context and supporting materials for understanding the news. A
+more detailed overview of [schema.org News markup](/docs/news.html) is also
+available. 
 
 
 
@@ -40,24 +36,18 @@ href="/docs/news.html">schema.org News markup</a> is also available.<p>
 
 
 
-=begin html
-
-<p>A <a href="https://en.wikipedia.org/wiki/Dateline">dateline</a> is a
-brief piece of text included in news articles that describes where and when
-the story was written or filed though the date is often omitted. Sometimes
-only a placename is provided.<br/><br/> Structured representations of
-dateline-related information can also be expressed more explicitly using <a
-class="localLink"
-href="http://schema.org/locationCreated">locationCreated</a> (which
-represents where a work was created e.g. where a news report was written).
-For location depicted or described in the content, use <a class="localLink"
-href="http://schema.org/contentLocation">contentLocation</a>.<br/><br/>
-Dateline summaries are oriented more towards human readers than towards
-automated processing, and can vary substantially. Some examples: "BEIRUT,
-Lebanon, June 2.", "Paris, France", "December 19, 2017 11:43AM Reporting
-from Washington", "Beijing/Moscow", "QUEZON CITY, Philippines".<p>
-
-=end html
+A [dateline](https://en.wikipedia.org/wiki/Dateline) is a brief piece of
+text included in news articles that describes where and when the story was
+written or filed though the date is often omitted. Sometimes only a
+placename is provided. Structured representations of dateline-related
+information can also be expressed more explicitly using [[locationCreated]]
+(which represents where a work was created e.g. where a news report was
+written). For location depicted or described in the content, use
+[[contentLocation]]. Dateline summaries are oriented more towards human
+readers than towards automated processing, and can vary substantially. Some
+examples: "BEIRUT, Lebanon, June 2.", "Paris, France", "December 19, 2017
+11:43AM Reporting from Washington", "Beijing/Moscow", "QUEZON CITY,
+Philippines". 
 
 
 A dateline should be one of the following types:

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ProductGroup;
 
-# ABSTRACT: A ProductGroup represents a group of Product s that vary only in certain well-described ways
+# ABSTRACT: A ProductGroup represents a group of [[Product]]s that vary only in certain well-described ways
 
 use Moo;
 
@@ -15,34 +15,23 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A ProductGroup represents a group of <a class="localLink"
-href="http://schema.org/Product">Product</a>s that vary only in certain
-well-described ways, such as by <a class="localLink"
-href="http://schema.org/size">size</a>, <a class="localLink"
-href="http://schema.org/color">color</a>, <a class="localLink"
-href="http://schema.org/material">material</a> etc.<br/><br/> While a
-ProductGroup itself is not directly offered for sale, the various varying
-products that it represents can be. The ProductGroup serves as a prototype
-or template, standing in for all of the products who have an <a
-class="localLink" href="http://schema.org/isVariantOf">isVariantOf</a>
-relationship to it. As such, properties (including additional types) can be
-applied to the ProductGroup to represent characteristics shared by each of
-the (possibly very many) variants. Properties that reference a ProductGroup
-are not included in this mechanism; neither are the following specific
-properties <a class="localLink"
-href="http://schema.org/variesBy">variesBy</a>, <a class="localLink"
-href="http://schema.org/hasVariant">hasVariant</a>, <a class="localLink"
-href="http://schema.org/url">url</a>.<p>
-
-=end html
+A ProductGroup represents a group of [[Product]]s that vary only in certain
+well-described ways, such as by [[size]], [[color]], [[material]] etc.
+While a ProductGroup itself is not directly offered for sale, the various
+varying products that it represents can be. The ProductGroup serves as a
+prototype or template, standing in for all of the products who have an
+[[isVariantOf]] relationship to it. As such, properties (including
+additional types) can be applied to the ProductGroup to represent
+characteristics shared by each of the (possibly very many) variants.
+Properties that reference a ProductGroup are not included in this
+mechanism; neither are the following specific properties [[variesBy]],
+[[hasVariant]], [[url]]. 
 
 
 
@@ -54,15 +43,8 @@ href="http://schema.org/url">url</a>.<p>
 
 C<hasVariant>
 
-=begin html
-
-<p>Indicates a <a class="localLink"
-href="http://schema.org/Product">Product</a> that is a member of this <a
-class="localLink" href="http://schema.org/ProductGroup">ProductGroup</a>
-(or <a class="localLink"
-href="http://schema.org/ProductModel">ProductModel</a>).<p>
-
-=end html
+Indicates a [[Product]] that is a member of this [[ProductGroup]] (or
+[[ProductModel]]).
 
 
 A has_variant should be one of the following types:
@@ -118,15 +100,10 @@ has product_group_id => (
 
 C<variesBy>
 
-=begin html
-
-<p>Indicates the property or properties by which the variants in a <a
-class="localLink" href="http://schema.org/ProductGroup">ProductGroup</a>
-vary, e.g. their size, color etc. Schema.org properties can be referenced
-by their short name e.g. "color"; terms defined elsewhere can be referenced
-with their URIs.<p>
-
-=end html
+Indicates the property or properties by which the variants in a
+[[ProductGroup]] vary, e.g. their size, color etc. Schema.org properties
+can be referenced by their short name e.g. "color"; terms defined elsewhere
+can be referenced with their URIs.
 
 
 A varies_by should be one of the following types:

@@ -4,7 +4,6 @@
       "rdfs:comment" : "A distillery.",
       "rdfs:label" : "Distillery",
       "rdfs:subClassOf" : "schema:FoodEstablishment",
-      "schema:category" : "issue-743",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/743"
    },
    "properties" : {}

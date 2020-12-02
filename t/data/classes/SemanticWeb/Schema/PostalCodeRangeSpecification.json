@@ -1,10 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Indicates a range of postalcodes, usually defined as the set of valid codes between <a class=\"localLink\" href=\"http://schema.org/postalCodeBegin\">postalCodeBegin</a> and <a class=\"localLink\" href=\"http://schema.org/postalCodeEnd\">postalCodeEnd</a>, inclusively.",
+      "rdfs:comment" : "Indicates a range of postalcodes, usually defined as the set of valid codes between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.",
       "rdfs:label" : "PostalCodeRangeSpecification",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:category" : "issue-2506",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
    },
@@ -13,7 +12,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "First postal code in a range (included).",
          "rdfs:label" : "postalCodeBegin",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : "schema:PostalCodeRangeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -21,9 +19,8 @@
       },
       "schema:postalCodeEnd" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Last postal code in the range (included). Needs to be after <a class=\"localLink\" href=\"http://schema.org/postalCodeBegin\">postalCodeBegin</a>.",
+         "rdfs:comment" : "Last postal code in the range (included). Needs to be after [[postalCodeBegin]].",
          "rdfs:label" : "postalCodeEnd",
-         "schema:category" : "issue-2506",
          "schema:domainIncludes" : "schema:PostalCodeRangeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

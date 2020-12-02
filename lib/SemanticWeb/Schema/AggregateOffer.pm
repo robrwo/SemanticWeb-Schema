@@ -15,24 +15,18 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>When a single product is associated with multiple offers (for example,
-the same pair of shoes is offered by different merchants), then
-AggregateOffer can be used.<br/><br/> Note: AggregateOffers are normally
-expected to associate multiple offers that all share the same defined <a
-class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> value, or
-default to http://purl.org/goodrelations/v1#Sell if businessFunction is not
-explicitly defined.<p>
-
-=end html
+When a single product is associated with multiple offers (for example, the
+same pair of shoes is offered by different merchants), then AggregateOffer
+can be used.\n\nNote: AggregateOffers are normally expected to associate
+multiple offers that all share the same defined [[businessFunction]] value,
+or default to http://purl.org/goodrelations/v1#Sell if businessFunction is
+not explicitly defined.
 
 
 
@@ -44,16 +38,11 @@ explicitly defined.<p>
 
 C<highPrice>
 
-=begin html
-
-<p>The highest price of all offers available.<br/><br/> Usage
-guidelines:<br/><br/> <ul> <li>Use values from 0123456789 (Unicode 'DIGIT
-ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar
-Unicode symbols.</li> <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather
-than ',' to indicate a decimal point. Avoid using these symbols as a
-readability separator.</li> </ul> <p>
-
-=end html
+The highest price of all offers available.\n\nUsage guidelines:\n\n* Use
+values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+(U+0039)) rather than superficially similiar Unicode symbols.\n* Use '.'
+(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
+Avoid using these symbols as a readability separator.
 
 
 A high_price should be one of the following types:
@@ -83,16 +72,11 @@ has high_price => (
 
 C<lowPrice>
 
-=begin html
-
-<p>The lowest price of all offers available.<br/><br/> Usage
-guidelines:<br/><br/> <ul> <li>Use values from 0123456789 (Unicode 'DIGIT
-ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar
-Unicode symbols.</li> <li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather
-than ',' to indicate a decimal point. Avoid using these symbols as a
-readability separator.</li> </ul> <p>
-
-=end html
+The lowest price of all offers available.\n\nUsage guidelines:\n\n* Use
+values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
+(U+0039)) rather than superficially similiar Unicode symbols.\n* Use '.'
+(Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point.
+Avoid using these symbols as a readability separator.
 
 
 A low_price should be one of the following types:
@@ -150,20 +134,14 @@ has offer_count => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:

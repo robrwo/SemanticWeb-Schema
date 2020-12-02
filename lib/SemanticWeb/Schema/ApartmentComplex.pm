@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,20 +33,10 @@ Residence type: Apartment complex.
 
 C<numberOfAccommodationUnits>
 
-=begin html
-
-<p>Indicates the total (available plus unavailable) number of accommodation
-units in an <a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>, or the
-number of accommodation units for a specific <a class="localLink"
-href="http://schema.org/FloorPlan">FloorPlan</a> (within its specific <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>). See also
-<a class="localLink"
-href="http://schema.org/numberOfAvailableAccommodationUnits">numberOfAvaila
-bleAccommodationUnits</a>.<p>
-
-=end html
+Indicates the total (available plus unavailable) number of accommodation
+units in an [[ApartmentComplex]], or the number of accommodation units for
+a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See
+also [[numberOfAvailableAccommodationUnits]].
 
 
 A number_of_accommodation_units should be one of the following types:
@@ -74,20 +64,10 @@ has number_of_accommodation_units => (
 
 C<numberOfAvailableAccommodationUnits>
 
-=begin html
-
-<p>Indicates the number of available accommodation units in an <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>, or the
-number of accommodation units for a specific <a class="localLink"
-href="http://schema.org/FloorPlan">FloorPlan</a> (within its specific <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a>). See also
-<a class="localLink"
-href="http://schema.org/numberOfAccommodationUnits">numberOfAccommodationUn
-its</a>.<p>
-
-=end html
+Indicates the number of available accommodation units in an
+[[ApartmentComplex]], or the number of accommodation units for a specific
+[[FloorPlan]] (within its specific [[ApartmentComplex]]). See also
+[[numberOfAccommodationUnits]].
 
 
 A number_of_available_accommodation_units should be one of the following types:
@@ -115,15 +95,8 @@ has number_of_available_accommodation_units => (
 
 C<numberOfBedrooms>
 
-=begin html
-
-<p>The total integer number of bedrooms in a some <a class="localLink"
-href="http://schema.org/Accommodation">Accommodation</a>, <a
-class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> or <a
-class="localLink" href="http://schema.org/FloorPlan">FloorPlan</a>.<p>
-
-=end html
+The total integer number of bedrooms in a some [[Accommodation]],
+[[ApartmentComplex]] or [[FloorPlan]].
 
 
 A number_of_bedrooms should be one of the following types:
@@ -184,16 +157,9 @@ has pets_allowed => (
 
 C<tourBookingPage>
 
-=begin html
-
-<p>A page providing information on how to book a tour of some <a
-class="localLink" href="http://schema.org/Place">Place</a>, such as an <a
-class="localLink" href="http://schema.org/Accommodation">Accommodation</a>
-or <a class="localLink"
-href="http://schema.org/ApartmentComplex">ApartmentComplex</a> in a real
-estate setting, as well as other kinds of tours as appropriate.<p>
-
-=end html
+A page providing information on how to book a tour of some [[Place]], such
+as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting,
+as well as other kinds of tours as appropriate.
 
 
 A tour_booking_page should be one of the following types:

@@ -15,25 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A tourist trip. A created itinerary of visits to one or more places of
-interest (<a class="localLink"
-href="http://schema.org/TouristAttraction">TouristAttraction</a>/<a
-class="localLink"
-href="http://schema.org/TouristDestination">TouristDestination</a>) often
-linked by a similar theme, geographic area, or interest to a particular <a
-class="localLink" href="http://schema.org/touristType">touristType</a>. The
-<a href="http://www2.unwto.org/">UNWTO</a> defines tourism trip as the Trip
-taken by visitors. (See examples below).<p>
-
-=end html
+A tourist trip. A created itinerary of visits to one or more places of
+interest ([[TouristAttraction]]/[[TouristDestination]]) often linked by a
+similar theme, geographic area, or interest to a particular
+[[touristType]]. The [UNWTO](http://www2.unwto.org/) defines tourism trip
+as the Trip taken by visitors. (See examples below).
 
 
 
@@ -46,7 +38,7 @@ taken by visitors. (See examples below).<p>
 C<touristType>
 
 Attraction suitable for type(s) of tourist. eg. Children, visitors from a
-particular country, etc.
+particular country, etc. 
 
 
 A tourist_type should be one of the following types:

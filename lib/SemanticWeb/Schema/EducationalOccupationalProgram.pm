@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -188,12 +188,8 @@ has educational_program_mode => (
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -342,19 +338,14 @@ has number_of_credits => (
 
 C<occupationalCategory>
 
-=begin html
-
-<p>A category describing the job, preferably using a term from a taxonomy
-such as <a href="http://www.onetcenter.org/taxonomy.html">BLS
-O*NET-SOC</a>, <a
-href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/">ISCO-08<
-/a> or similar, with the property repeated for each applicable value.
-Ideally the taxonomy should be identified, and both the textual label and
-formal code for the category should be provided.<br/><br/> Note: for
-historical reasons, any textual label and formal code provided as a literal
-may be assumed to be from O*NET-SOC.<p>
-
-=end html
+A category describing the job, preferably using a term from a taxonomy such
+as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html),
+[ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or
+similar, with the property repeated for each applicable value. Ideally the
+taxonomy should be identified, and both the textual label and formal code
+for the category should be provided.\n Note: for historical reasons, any
+textual label and formal code provided as a literal may be assumed to be
+from O*NET-SOC.
 
 
 A occupational_category should be one of the following types:
@@ -416,20 +407,14 @@ has occupational_credential_awarded => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:
@@ -584,12 +569,8 @@ has salary_upon_completion => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:

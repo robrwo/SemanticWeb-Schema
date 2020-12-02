@@ -1,10 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use <a class=\"localLink\" href=\"http://schema.org/isBasedOn\">isBasedOn</a> to link to source/origin. The <a class=\"localLink\" href=\"http://schema.org/recordedIn\">recordedIn</a> property can be used to reference a Quotation from an <a class=\"localLink\" href=\"http://schema.org/Event\">Event</a>.",
+      "rdfs:comment" : "A quotation. Often but not necessarily from some written work, attributable to a real world author and - if associated with a fictional character - to any fictional Person. Use [[isBasedOn]] to link to source/origin. The [[recordedIn]] property can be used to reference a Quotation from an [[Event]].",
       "rdfs:label" : "Quotation",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:category" : "issue-271",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/271"
    },
@@ -13,7 +12,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The (e.g. fictional) character, Person or Organization to whom the quotation is attributed within the containing CreativeWork.",
          "rdfs:label" : "spokenByCharacter",
-         "schema:category" : "issue-271",
          "schema:domainIncludes" : "schema:Quotation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

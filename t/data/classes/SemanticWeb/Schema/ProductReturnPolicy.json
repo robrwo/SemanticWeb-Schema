@@ -1,10 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A ProductReturnPolicy provides information about product return policies associated with an <a class=\"localLink\" href=\"http://schema.org/Organization\">Organization</a> or <a class=\"localLink\" href=\"http://schema.org/Product\">Product</a>.",
+      "rdfs:comment" : "A ProductReturnPolicy provides information about product return policies associated with an [[Organization]] or [[Product]].",
       "rdfs:label" : "ProductReturnPolicy",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-2288",
       "schema:isPartOf" : "http:attic.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
       "schema:supersededBy" : "schema:MerchantReturnPolicy"
@@ -14,7 +13,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable.",
          "rdfs:label" : "productReturnDays",
-         "schema:category" : "issue-2288",
          "schema:domainIncludes" : "schema:ProductReturnPolicy",
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -25,7 +23,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates a Web page or service by URL, for product return.",
          "rdfs:label" : "productReturnLink",
-         "schema:category" : "issue-2288",
          "schema:domainIncludes" : "schema:ProductReturnPolicy",
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:URL",

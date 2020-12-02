@@ -15,25 +15,21 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A card payment method of a particular brand or name. Used to mark up a
+A card payment method of a particular brand or name. Used to mark up a
 particular payment method and/or the financial product/service that
-supplies the card account.<br/><br/> Commonly used values:<br/><br/> <ul>
-<li>http://purl.org/goodrelations/v1#AmericanExpress</li>
-<li>http://purl.org/goodrelations/v1#DinersClub</li>
-<li>http://purl.org/goodrelations/v1#Discover</li>
-<li>http://purl.org/goodrelations/v1#JCB</li>
-<li>http://purl.org/goodrelations/v1#MasterCard</li>
-<li>http://purl.org/goodrelations/v1#VISA</li> </ul> <p>
-
-=end html
+supplies the card account.\n\nCommonly used values:\n\n*
+http://purl.org/goodrelations/v1#AmericanExpress\n*
+http://purl.org/goodrelations/v1#DinersClub\n*
+http://purl.org/goodrelations/v1#Discover\n*
+http://purl.org/goodrelations/v1#JCB\n*
+http://purl.org/goodrelations/v1#MasterCard\n*
+http://purl.org/goodrelations/v1#VISA 
 
 
 

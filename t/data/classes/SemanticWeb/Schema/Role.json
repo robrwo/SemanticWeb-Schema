@@ -1,24 +1,23 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.<br/><br/>\n\nSee also <a href=\"http://blog.schema.org/2014/06/introducing-role.html\">blog post</a>.",
+      "rdfs:comment" : "Represents additional information about a relationship or property. For example a Role can be used to say that a 'member' role linking some SportsTeam to a player occurred during a particular time period. Or that a Person's 'actor' role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like 'member' or 'actor'.\\n\\nSee also [blog post](http://blog.schema.org/2014/06/introducing-role.html).",
       "rdfs:label" : "Role",
       "rdfs:subClassOf" : "schema:Intangible"
    },
    "properties" : {
       "schema:endDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The end date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:Role",
-            "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
+            "schema:Event",
             "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -32,8 +31,8 @@
          "rdfs:label" : "namedPosition",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:roleName"
       },
@@ -43,23 +42,22 @@
          "rdfs:label" : "roleName",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:startDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The start date and time of the item (in <a href=\"http://en.wikipedia.org/wiki/ISO_8601\">ISO 8601 date format</a>).",
+         "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
-         "schema:category" : "issue-2486",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Event",
-            "schema:Schedule",
-            "schema:Role",
             "schema:CreativeWorkSeason",
+            "schema:Event",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

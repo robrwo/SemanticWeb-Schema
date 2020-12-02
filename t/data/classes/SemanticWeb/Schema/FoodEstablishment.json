@@ -8,12 +8,12 @@
    "properties" : {
       "schema:acceptsReservations" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates whether a FoodEstablishment accepts reservations. Values can be Boolean, an URL at which reservations can be made or (for backwards compatibility) the strings <code>Yes</code> or <code>No</code>.",
+         "rdfs:comment" : "Indicates whether a FoodEstablishment accepts reservations. Values can be Boolean, an URL at which reservations can be made or (for backwards compatibility) the strings ```Yes``` or ```No```.",
          "rdfs:label" : "acceptsReservations",
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
-            "schema:Boolean",
             "schema:Text",
+            "schema:Boolean",
             "schema:URL"
          ]
       },
@@ -23,8 +23,8 @@
          "rdfs:label" : "hasMenu",
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:Menu",
+            "schema:Text",
             "schema:URL"
          ]
       },
@@ -34,9 +34,9 @@
          "rdfs:label" : "menu",
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:URL",
-            "schema:Menu"
+            "schema:Menu",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:hasMenu"
       },
@@ -56,7 +56,7 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:Rating",
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
       }
    }
 }

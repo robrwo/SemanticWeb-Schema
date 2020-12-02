@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::OfferForPurchase;
 
-# ABSTRACT: An OfferForPurchase in Schema
+# ABSTRACT: An [[OfferForPurchase]] in Schema
 
 use Moo;
 
@@ -15,26 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An <a class="localLink"
-href="http://schema.org/OfferForPurchase">OfferForPurchase</a> in
-Schema.org represents an <a class="localLink"
-href="http://schema.org/Offer">Offer</a> to sell something, i.e. an <a
-class="localLink" href="http://schema.org/Offer">Offer</a> whose <a
-class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> is <a
-href="http://purl.org/goodrelations/v1#Sell.">sell</a>. See <a
-href="https://en.wikipedia.org/wiki/GoodRelations">Good Relations</a> for
-background on the underlying concepts.<p>
-
-=end html
+An [[OfferForPurchase]] in Schema.org represents an [[Offer]] to sell
+something, i.e. an [[Offer]] whose [[businessFunction]] is
+[sell](http://purl.org/goodrelations/v1#Sell.). See [Good
+Relations](https://en.wikipedia.org/wiki/GoodRelations) for background on
+the underlying concepts. 
 
 
 

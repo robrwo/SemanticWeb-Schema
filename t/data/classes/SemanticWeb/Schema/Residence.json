@@ -8,9 +8,8 @@
    "properties" : {
       "schema:accommodationFloorPlan" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A floorplan of some <a class=\"localLink\" href=\"http://schema.org/Accommodation\">Accommodation</a>.",
+         "rdfs:comment" : "A floorplan of some [[Accommodation]].",
          "rdfs:label" : "accommodationFloorPlan",
-         "schema:category" : "issue-2373",
          "schema:domainIncludes" : [
             "schema:Accommodation",
             "schema:Residence"

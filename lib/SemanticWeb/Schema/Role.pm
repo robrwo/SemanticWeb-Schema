@@ -15,25 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>Represents additional information about a relationship or property. For
+Represents additional information about a relationship or property. For
 example a Role can be used to say that a 'member' role linking some
 SportsTeam to a player occurred during a particular time period. Or that a
 Person's 'actor' role in a Movie was for some particular characterName.
 Such properties can be attached to a Role entity, which is then associated
 with the main entities using ordinary properties like 'member' or
-'actor'.<br/><br/> See also <a
-href="http://blog.schema.org/2014/06/introducing-role.html">blog
-post</a>.<p>
-
-=end html
+'actor'.\n\nSee also [blog
+post](http://blog.schema.org/2014/06/introducing-role.html).
 
 
 
@@ -45,12 +40,8 @@ post</a>.<p>
 
 C<endDate>
 
-=begin html
-
-<p>The end date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The end date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A end_date should be one of the following types:
@@ -139,12 +130,8 @@ has role_name => (
 
 C<startDate>
 
-=begin html
-
-<p>The start date and time of the item (in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>).<p>
-
-=end html
+The start date and time of the item (in [ISO 8601 date
+format](http://en.wikipedia.org/wiki/ISO_8601)).
 
 
 A start_date should be one of the following types:

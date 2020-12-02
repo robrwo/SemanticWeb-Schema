@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -63,13 +63,8 @@ has address => (
 
 C<addressCountry>
 
-=begin html
-
-<p>The country. For example, USA. You can also provide the two-letter <a
-href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2 country
-code</a>.<p>
-
-=end html
+The country. For example, USA. You can also provide the two-letter [ISO
+3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).
 
 
 A address_country should be one of the following types:
@@ -99,15 +94,10 @@ has address_country => (
 
 
 
-=begin html
-
-<p>The elevation of a location (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).
-Values may be of the form 'NUMBER UNIT<em>OF</em>MEASUREMENT' (e.g., '1,000
-m', '3,200 ft') while numbers alone should be assumed to be a value in
-meters.<p>
-
-=end html
+The elevation of a location ([WGS
+84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of
+the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while
+numbers alone should be assumed to be a value in meters.
 
 
 A elevation should be one of the following types:
@@ -137,12 +127,8 @@ has elevation => (
 
 
 
-=begin html
-
-<p>The latitude of a location. For example <code>37.42242</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
-
-=end html
+The latitude of a location. For example ```37.42242``` ([WGS
+84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
 
 
 A latitude should be one of the following types:
@@ -172,12 +158,8 @@ has latitude => (
 
 
 
-=begin html
-
-<p>The longitude of a location. For example <code>-122.08585</code> (<a
-href="https://en.wikipedia.org/wiki/World_Geodetic_System">WGS 84</a>).<p>
-
-=end html
+The longitude of a location. For example ```-122.08585``` ([WGS
+84](https://en.wikipedia.org/wiki/World_Geodetic_System)).
 
 
 A longitude should be one of the following types:

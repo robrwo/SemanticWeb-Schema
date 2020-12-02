@@ -12,7 +12,7 @@
    "properties" : {
       "schema:branchOf" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)<a class=\"localLink\" href=\"http://schema.org/branch\">branch</a>.",
+         "rdfs:comment" : "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)[[branch]].",
          "rdfs:label" : "branchOf",
          "schema:domainIncludes" : "schema:LocalBusiness",
          "schema:rangeIncludes" : "schema:Organization",
@@ -20,14 +20,14 @@
       },
       "schema:currenciesAccepted" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The currency accepted.<br/><br/>\n\nUse standard formats: <a href=\"http://en.wikipedia.org/wiki/ISO_4217\">ISO 4217 currency format</a> e.g. \"USD\"; <a href=\"https://en.wikipedia.org/wiki/List_of_cryptocurrencies\">Ticker symbol</a> for cryptocurrencies e.g. \"BTC\"; well known names for <a href=\"https://en.wikipedia.org/wiki/Local_exchange_trading_system\">Local Exchange Tradings Systems</a> (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+         "rdfs:comment" : "The currency accepted.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currenciesAccepted",
          "schema:domainIncludes" : "schema:LocalBusiness",
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:openingHours" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.<br/><br/>\n\n<ul>\n<li>Days are specified using the following two-letter combinations: <code>Mo</code>, <code>Tu</code>, <code>We</code>, <code>Th</code>, <code>Fr</code>, <code>Sa</code>, <code>Su</code>.</li>\n<li>Times are specified using 24:00 time. For example, 3pm is specified as <code>15:00</code>. </li>\n<li>Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.</li>\n<li>If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.</li>\n</ul>\n",
+         "rdfs:comment" : "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.\\n\\n* Days are specified using the following two-letter combinations: ```Mo```, ```Tu```, ```We```, ```Th```, ```Fr```, ```Sa```, ```Su```.\\n* Times are specified using 24:00 format. For example, 3pm is specified as ```15:00```, 10am as ```10:00```. \\n* Here is an example: <code>&lt;time itemprop=\"openingHours\" datetime=&quot;Tu,Th 16:00-20:00&quot;&gt;Tuesdays and Thursdays 4-8pm&lt;/time&gt;</code>.\\n* If a business is open 7 days a week, then it can be specified as <code>&lt;time itemprop=&quot;openingHours&quot; datetime=&quot;Mo-Su&quot;&gt;Monday through Sunday, all day&lt;/time&gt;</code>.",
          "rdfs:label" : "openingHours",
          "schema:domainIncludes" : [
             "schema:CivicStructure",
@@ -44,7 +44,7 @@
       },
       "schema:priceRange" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The price range of the business, for example <code>$$$</code>.",
+         "rdfs:comment" : "The price range of the business, for example ```$$$```.",
          "rdfs:label" : "priceRange",
          "schema:domainIncludes" : "schema:LocalBusiness",
          "schema:rangeIncludes" : "schema:Text"

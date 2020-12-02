@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -35,18 +35,13 @@ online.
 
 C<additionalProperty>
 
-=begin html
-
-<p>A property-value pair representing an additional characteristics of the
+A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.<br/><br/> Note: Publishers should be
-aware that applications designed to use specific schema.org properties
-(e.g. http://schema.org/width, http://schema.org/color,
-http://schema.org/gtin13, ...) will typically expect such data to be
-provided using those properties, rather than using the generic
-property/value mechanism.<p>
-
-=end html
+is no matching property in schema.org.\n\nNote: Publishers should be aware
+that applications designed to use specific schema.org properties (e.g.
+http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
+...) will typically expect such data to be provided using those properties,
+rather than using the generic property/value mechanism. 
 
 
 A additional_property should be one of the following types:
@@ -309,32 +304,22 @@ has depth => (
 
 
 
-=begin html
-
-<p>A Global Trade Item Number (<a
-href="https://www.gs1.org/standards/id-keys/gtin">GTIN</a>). GTINs identify
-trade items, including products and services, using numeric identification
-codes. The <a class="localLink" href="http://schema.org/gtin">gtin</a>
-property generalizes the earlier <a class="localLink"
-href="http://schema.org/gtin8">gtin8</a>, <a class="localLink"
-href="http://schema.org/gtin12">gtin12</a>, <a class="localLink"
-href="http://schema.org/gtin13">gtin13</a>, and <a class="localLink"
-href="http://schema.org/gtin14">gtin14</a> properties. The GS1 <a
-href="https://www.gs1.org/standards/Digital-Link/">digital link
-specifications</a> express GTINs as URLs. A correct <a class="localLink"
-href="http://schema.org/gtin">gtin</a> value should be a valid GTIN, which
-means that it should be an all-numeric string of either 8, 12, 13 or 14
-digits, or a "GS1 Digital Link" URL based on such a string. The numeric
-component should also have a <a
-href="https://www.gs1.org/services/check-digit-calculator">valid GS1 check
-digit</a> and meet the other rules for valid GTINs. See also <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1's GTIN
-Summary</a> and <a
-href="https://en.wikipedia.org/wiki/Global_Trade_Item_Number">Wikipedia</a>
-for more details. Left-padding of the gtin values is not required or
-encouraged.<p>
-
-=end html
+A Global Trade Item Number
+([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
+items, including products and services, using numeric identification codes.
+The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
+[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
+specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
+as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
+it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
+"GS1 Digital Link" URL based on such a string. The numeric component should
+also have a [valid GS1 check
+digit](https://www.gs1.org/services/check-digit-calculator) and meet the
+other rules for valid GTINs. See also [GS1's GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
+[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
+more details. Left-padding of the gtin values is not required or
+encouraged. 
 
 
 A gtin should be one of the following types:
@@ -362,16 +347,12 @@ has gtin => (
 
 
 
-=begin html
-
-<p>The GTIN-12 code of the product, or the product to which the offer
-refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a
-U.P.C. Company Prefix, Item Reference, and Check Digit used to identify
-trade items. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-12 code of the product, or the product to which the offer refers.
+The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C.
+Company Prefix, Item Reference, and Check Digit used to identify trade
+items. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin12 should be one of the following types:
@@ -399,16 +380,12 @@ has gtin12 => (
 
 
 
-=begin html
-
-<p>The GTIN-13 code of the product, or the product to which the offer
-refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former
-12-digit UPC codes can be converted into a GTIN-13 code by simply adding a
-preceeding zero. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The GTIN-13 code of the product, or the product to which the offer refers.
+This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit
+UPC codes can be converted into a GTIN-13 code by simply adding a preceding
+zero. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin13 should be one of the following types:
@@ -436,13 +413,9 @@ has gtin13 => (
 
 
 
-=begin html
-
-<p>The GTIN-14 code of the product, or the product to which the offer
-refers. See <a href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1
-GTIN Summary</a> for more details.<p>
-
-=end html
+The GTIN-14 code of the product, or the product to which the offer refers.
+See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin)
+for more details.
 
 
 A gtin14 should be one of the following types:
@@ -470,16 +443,11 @@ has gtin14 => (
 
 
 
-=begin html
-
-<p>The <a
-href="http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx">GTIN-8</a> code
-of the product, or the product to which the offer refers. This code is also
-known as EAN/UCC-8 or 8-digit EAN. See <a
-href="http://www.gs1.org/barcodes/technical/idkeys/gtin">GS1 GTIN
-Summary</a> for more details.<p>
-
-=end html
+The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of
+the product, or the product to which the offer refers. This code is also
+known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN
+Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
+details.
 
 
 A gtin8 should be one of the following types:
@@ -622,15 +590,8 @@ has height => (
 
 C<inProductGroupWithID>
 
-=begin html
-
-<p>Indicates the <a class="localLink"
-href="http://schema.org/productGroupID">productGroupID</a> for a <a
-class="localLink" href="http://schema.org/ProductGroup">ProductGroup</a>
-that this product <a class="localLink"
-href="http://schema.org/isVariantOf">isVariantOf</a>.<p>
-
-=end html
+Indicates the [[productGroupID]] for a [[ProductGroup]] that this product
+[[isVariantOf]]. 
 
 
 A in_product_group_with_id should be one of the following types:
@@ -776,25 +737,16 @@ has is_similar_to => (
 
 C<isVariantOf>
 
-=begin html
-
-<p>Indicates the kind of product that this is a variant of. In the case of
-<a class="localLink"
-href="http://schema.org/ProductModel">ProductModel</a>, this is a pointer
-(from a ProductModel) to a base product from which this product is a
-variant. It is safe to infer that the variant inherits all product features
-from the base model, unless defined locally. This is not transitive. In the
-case of a <a class="localLink"
-href="http://schema.org/ProductGroup">ProductGroup</a>, the group
+Indicates the kind of product that this is a variant of. In the case of
+[[ProductModel]], this is a pointer (from a ProductModel) to a base product
+from which this product is a variant. It is safe to infer that the variant
+inherits all product features from the base model, unless defined locally.
+This is not transitive. In the case of a [[ProductGroup]], the group
 description also serves as a template, representing a set of Products that
 vary on explicitly defined, specific dimensions only (so it defines both a
 set of variants, as well as which values distinguish amongst those
-variants). When used with <a class="localLink"
-href="http://schema.org/ProductGroup">ProductGroup</a>, this property can
-apply to any <a class="localLink"
-href="http://schema.org/Product">Product</a> included in the group.<p>
-
-=end html
+variants). When used with [[ProductGroup]], this property can apply to any
+[[Product]] included in the group.
 
 
 A is_variant_of should be one of the following types:
@@ -1004,14 +956,9 @@ has mpn => (
 
 
 
-=begin html
-
-<p>Indicates the <a
-href="https://en.wikipedia.org/wiki/NATO_Stock_Number">NATO stock
-number</a> (nsn) of a <a class="localLink"
-href="http://schema.org/Product">Product</a>.<p>
-
-=end html
+Indicates the [NATO stock
+number](https://en.wikipedia.org/wiki/NATO_Stock_Number) (nsn) of a
+[[Product]]. 
 
 
 A nsn should be one of the following types:
@@ -1039,20 +986,14 @@ has nsn => (
 
 
 
-=begin html
-
-<p>An offer to provide this item&#x2014;for example, an offer to sell a
+An offer to provide this item&#x2014;for example, an offer to sell a
 product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> to indicate
-the kind of transaction offered, i.e. sell, lease, etc. This property can
-also be used to describe a <a class="localLink"
-href="http://schema.org/Demand">Demand</a>. While this property is listed
-as expected on a number of common types, it can be used in others. In that
-case, using a second type, such as Product or a subtype of Product, can
-clarify the nature of the offer.<p>
-
-=end html
+to an event. Use [[businessFunction]] to indicate the kind of transaction
+offered, i.e. sell, lease, etc. This property can also be used to describe
+a [[Demand]]. While this property is listed as expected on a number of
+common types, it can be used in others. In that case, using a second type,
+such as Product or a subtype of Product, can clarify the nature of the
+offer. 
 
 
 A offers should be one of the following types:
@@ -1114,12 +1055,8 @@ has pattern => (
 
 C<productID>
 
-=begin html
-
-<p>The product identifier, such as ISBN. For example: <code>meta
-itemprop="productID" content="isbn:123-456-789"</code>.<p>
-
-=end html
+The product identifier, such as ISBN. For example: ``` meta
+itemprop="productID" content="isbn:123-456-789" ```.
 
 
 A product_id should be one of the following types:
@@ -1293,7 +1230,7 @@ information into a simple textual string, either through referring to named
 sizes or (in the case of product markup), by adopting conventional
 simplifications. Use of QuantitativeValue with a unitCode or unitText can
 add more structure; in other cases, the /width, /height, /depth and /weight
-properties may be more applicable.
+properties may be more applicable. 
 
 
 A size should be one of the following types:

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::HealthTopicContent;
 
-# ABSTRACT:  HealthTopicContent is WebContent that is about some aspect of a health topic
+# ABSTRACT: [[HealthTopicContent]] is [[WebContent]] that is about some aspect of a health topic
 
 use Moo;
 
@@ -15,34 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p><a class="localLink"
-href="http://schema.org/HealthTopicContent">HealthTopicContent</a> is <a
-class="localLink" href="http://schema.org/WebContent">WebContent</a> that
-is about some aspect of a health topic, e.g. a condition, its symptoms or
-treatments. Such content may be comprised of several parts or sections and
-use different types of media. Multiple instances of <a class="localLink"
-href="http://schema.org/WebContent">WebContent</a> (and hence <a
-class="localLink"
-href="http://schema.org/HealthTopicContent">HealthTopicContent</a>) can be
-related using <a class="localLink"
-href="http://schema.org/hasPart">hasPart</a> / <a class="localLink"
-href="http://schema.org/isPartOf">isPartOf</a> where there is some kind of
-content hierarchy, and their content described with <a class="localLink"
-href="http://schema.org/about">about</a> and <a class="localLink"
-href="http://schema.org/mentions">mentions</a> e.g. building upon the
-existing <a class="localLink"
-href="http://schema.org/MedicalCondition">MedicalCondition</a>
-vocabulary.<p>
-
-=end html
+[[HealthTopicContent]] is [[WebContent]] that is about some aspect of a
+health topic, e.g. a condition, its symptoms or treatments. Such content
+may be comprised of several parts or sections and use different types of
+media. Multiple instances of [[WebContent]] (and hence
+[[HealthTopicContent]]) can be related using [[hasPart]] / [[isPartOf]]
+where there is some kind of content hierarchy, and their content described
+with [[about]] and [[mentions]] e.g. building upon the existing
+[[MedicalCondition]] vocabulary. 
 
 
 
@@ -54,15 +40,9 @@ vocabulary.<p>
 
 C<hasHealthAspect>
 
-=begin html
-
-<p>Indicates the aspect or aspects specifically addressed in some <a
-class="localLink"
-href="http://schema.org/HealthTopicContent">HealthTopicContent</a>. For
-example, that the content is an overview, or that it talks about treatment,
-self-care, treatments or their side-effects.<p>
-
-=end html
+Indicates the aspect or aspects specifically addressed in some
+[[HealthTopicContent]]. For example, that the content is an overview, or
+that it talks about treatment, self-care, treatments or their side-effects.
 
 
 A has_health_aspect should be one of the following types:

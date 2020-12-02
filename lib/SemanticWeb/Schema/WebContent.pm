@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::WebContent;
 
-# ABSTRACT: WebContent is a type representing all WebPage 
+# ABSTRACT: WebContent is a type representing all [[WebPage]]
 
 use Moo;
 
@@ -15,31 +15,20 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>WebContent is a type representing all <a class="localLink"
-href="http://schema.org/WebPage">WebPage</a>, <a class="localLink"
-href="http://schema.org/WebSite">WebSite</a> and <a class="localLink"
-href="http://schema.org/WebPageElement">WebPageElement</a> content. It is
-sometimes the case that detailed distinctions between Web pages, sites and
-their parts is not always important or obvious. The <a class="localLink"
-href="http://schema.org/WebContent">WebContent</a> type makes it easier to
-describe Web-addressable content without requiring such distinctions to
-always be stated. (The intent is that the existing types <a
-class="localLink" href="http://schema.org/WebPage">WebPage</a>, <a
-class="localLink" href="http://schema.org/WebSite">WebSite</a> and <a
-class="localLink"
-href="http://schema.org/WebPageElement">WebPageElement</a> will eventually
-be declared as subtypes of <a class="localLink"
-href="http://schema.org/WebContent">WebContent</a>.)<p>
-
-=end html
+WebContent is a type representing all [[WebPage]], [[WebSite]] and
+[[WebPageElement]] content. It is sometimes the case that detailed
+distinctions between Web pages, sites and their parts is not always
+important or obvious. The [[WebContent]] type makes it easier to describe
+Web-addressable content without requiring such distinctions to always be
+stated. (The intent is that the existing types [[WebPage]], [[WebSite]] and
+[[WebPageElement]] will eventually be declared as subtypes of
+[[WebContent]].) 
 
 
 

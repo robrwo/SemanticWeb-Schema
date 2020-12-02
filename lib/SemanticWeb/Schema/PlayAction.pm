@@ -15,26 +15,19 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of playing/exercising/training/performing for enjoyment,
-leisure, recreation, Competition or exercise.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/ListenAction">ListenAction</a>: Unlike ListenAction
-(which is under ConsumeAction), PlayAction refers to performing for an
-audience or at an event, rather than consuming music.</li> <li><a
-class="localLink" href="http://schema.org/WatchAction">WatchAction</a>:
-Unlike WatchAction (which is under ConsumeAction), PlayAction refers to
-showing/displaying for an audience or at an event, rather than consuming
-visual content.</li> </ul> <p>
-
-=end html
+The act of playing/exercising/training/performing for enjoyment, leisure,
+recreation, Competition or exercise.\n\nRelated actions:\n\n*
+[[ListenAction]]: Unlike ListenAction (which is under ConsumeAction),
+PlayAction refers to performing for an audience or at an event, rather than
+consuming music.\n* [[WatchAction]]: Unlike WatchAction (which is under
+ConsumeAction), PlayAction refers to showing/displaying for an audience or
+at an event, rather than consuming visual content.
 
 
 

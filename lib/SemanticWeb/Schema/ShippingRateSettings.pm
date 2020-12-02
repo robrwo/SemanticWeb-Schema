@@ -15,25 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A ShippingRateSettings represents re-usable pieces of shipping
-information. It is designed for publication on an URL that may be
-referenced via the <a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-property of an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>.
-Several occurrences can be published, distinguished and matched (i.e.
-identified/referenced) by their different values for <a class="localLink"
-href="http://schema.org/shippingLabel">shippingLabel</a>.<p>
-
-=end html
+A ShippingRateSettings represents re-usable pieces of shipping information.
+It is designed for publication on an URL that may be referenced via the
+[[shippingSettingsLink]] property of an [[OfferShippingDetails]]. Several
+occurrences can be published, distinguished and matched (i.e.
+identified/referenced) by their different values for [[shippingLabel]].
 
 
 
@@ -45,13 +37,8 @@ href="http://schema.org/shippingLabel">shippingLabel</a>.<p>
 
 C<doesNotShip>
 
-=begin html
-
-<p>Indicates when shipping to a particular <a class="localLink"
-href="http://schema.org/shippingDestination">shippingDestination</a> is not
-available.<p>
-
-=end html
+Indicates when shipping to a particular [[shippingDestination]] is not
+available.
 
 
 A does_not_ship should be one of the following types:
@@ -79,17 +66,9 @@ has does_not_ship => (
 
 C<freeShippingThreshold>
 
-=begin html
-
-<p>A monetary value above which (or equal to) the shipping rate becomes
-free. Intended to be used via an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with
-<a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-matching this <a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>.<p>
-
-=end html
+A monetary value above which (or equal to) the shipping rate becomes free.
+Intended to be used via an [[OfferShippingDetails]] with
+[[shippingSettingsLink]] matching this [[ShippingRateSettings]].
 
 
 A free_shipping_threshold should be one of the following types:
@@ -119,25 +98,14 @@ has free_shipping_threshold => (
 
 C<isUnlabelledFallback>
 
-=begin html
-
-<p>This can be marked 'true' to indicate that some published <a
-class="localLink"
-href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a> or
-<a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a> are
-intended to apply to all <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a>
-published by the same merchant, when referenced by a <a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a> in
-those settings. It is not meaningful to use a 'true' value for this
-property alongside a transitTimeLabel (for <a class="localLink"
-href="http://schema.org/DeliveryTimeSettings">DeliveryTimeSettings</a>) or
-shippingLabel (for <a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>),
-since this property is for use with unlabelled settings.<p>
-
-=end html
+This can be marked 'true' to indicate that some published
+[[DeliveryTimeSettings]] or [[ShippingRateSettings]] are intended to apply
+to all [[OfferShippingDetails]] published by the same merchant, when
+referenced by a [[shippingSettingsLink]] in those settings. It is not
+meaningful to use a 'true' value for this property alongside a
+transitTimeLabel (for [[DeliveryTimeSettings]]) or shippingLabel (for
+[[ShippingRateSettings]]), since this property is for use with unlabelled
+settings.
 
 
 A is_unlabelled_fallback should be one of the following types:
@@ -194,17 +162,8 @@ has shipping_destination => (
 
 C<shippingLabel>
 
-=begin html
-
-<p>Label to match an <a class="localLink"
-href="http://schema.org/OfferShippingDetails">OfferShippingDetails</a> with
-a <a class="localLink"
-href="http://schema.org/ShippingRateSettings">ShippingRateSettings</a>
-(within the context of a <a class="localLink"
-href="http://schema.org/shippingSettingsLink">shippingSettingsLink</a>
-cross-reference).<p>
-
-=end html
+Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]]
+(within the context of a [[shippingSettingsLink]] cross-reference).
 
 
 A shipping_label should be one of the following types:
@@ -232,14 +191,9 @@ has shipping_label => (
 
 C<shippingRate>
 
-=begin html
-
-<p>The shipping rate is the cost of shipping to the specified destination.
-Typically, the maxValue and currency values (of the <a class="localLink"
-href="http://schema.org/MonetaryAmount">MonetaryAmount</a>) are most
-appropriate.<p>
-
-=end html
+The shipping rate is the cost of shipping to the specified destination.
+Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
+most appropriate.
 
 
 A shipping_rate should be one of the following types:

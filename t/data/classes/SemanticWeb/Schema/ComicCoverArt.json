@@ -7,7 +7,6 @@
          "schema:ComicStory",
          "schema:CoverArt"
       ],
-      "schema:category" : "Comics",
       "schema:isPartOf" : "http:bib.schema.org"
    },
    "properties" : {}

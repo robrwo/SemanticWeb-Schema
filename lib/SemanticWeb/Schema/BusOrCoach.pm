@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -65,24 +65,13 @@ has acriss_code => (
 
 C<roofLoad>
 
-=begin html
-
-<p>The permitted total weight of cargo and installations (e.g. a roof rack)
-on top of the vehicle.<br/><br/> Typical unit code(s): KGM for kilogram,
-LBR for pound<br/><br/> <ul> <li>Note 1: You can indicate additional
-information in the <a class="localLink"
-href="http://schema.org/name">name</a> of the <a class="localLink"
-href="http://schema.org/QuantitativeValue">QuantitativeValue</a> node.</li>
-<li>Note 2: You may also link to a <a class="localLink"
-href="http://schema.org/QualitativeValue">QualitativeValue</a> node that
-provides additional information using <a class="localLink"
-href="http://schema.org/valueReference">valueReference</a></li> <li>Note 3:
-Note that you can use <a class="localLink"
-href="http://schema.org/minValue">minValue</a> and <a class="localLink"
-href="http://schema.org/maxValue">maxValue</a> to indicate ranges.</li>
-</ul> <p>
-
-=end html
+The permitted total weight of cargo and installations (e.g. a roof rack) on
+top of the vehicle.\n\nTypical unit code(s): KGM for kilogram, LBR for
+pound\n\n* Note 1: You can indicate additional information in the [[name]]
+of the [[QuantitativeValue]] node.\n* Note 2: You may also link to a
+[[QualitativeValue]] node that provides additional information using
+[[valueReference]]\n* Note 3: Note that you can use [[minValue]] and
+[[maxValue]] to indicate ranges.
 
 
 A roof_load should be one of the following types:

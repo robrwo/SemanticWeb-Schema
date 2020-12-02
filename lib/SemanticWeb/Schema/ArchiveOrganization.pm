@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -35,13 +35,8 @@ public.
 
 C<archiveHeld>
 
-=begin html
-
-<p>Collection, <a href="https://en.wikipedia.org/wiki/Fonds">fonds</a>, or
-item held, kept or maintained by an <a class="localLink"
-href="http://schema.org/ArchiveOrganization">ArchiveOrganization</a>.<p>
-
-=end html
+Collection, [fonds](https://en.wikipedia.org/wiki/Fonds), or item held,
+kept or maintained by an [[ArchiveOrganization]].
 
 
 A archive_held should be one of the following types:

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::LoanOrCredit;
 
-# ABSTRACT: A financial product for the loaning of an amount of money under agreed terms and charges.
+# ABSTRACT: A financial product for the loaning of an amount of money
 
 use Moo;
 
@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A financial product for the loaning of an amount of money under agreed
-terms and charges.
+A financial product for the loaning of an amount of money, or line of
+credit, under agreed terms and charges.
 
 
 
@@ -64,18 +64,13 @@ has amount => (
 
 
 
-=begin html
-
-<p>The currency in which the monetary amount is expressed.<br/><br/> Use
-standard formats: <a href="http://en.wikipedia.org/wiki/ISO_4217">ISO 4217
-currency format</a> e.g. "USD"; <a
-href="https://en.wikipedia.org/wiki/List_of_cryptocurrencies">Ticker
-symbol</a> for cryptocurrencies e.g. "BTC"; well known names for <a
-href="https://en.wikipedia.org/wiki/Local_exchange_trading_system">Local
-Exchange Tradings Systems</a> (LETS) and other currency types e.g. "Ithaca
-HOUR".<p>
-
-=end html
+The currency in which the monetary amount is expressed.\n\nUse standard
+formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
+e.g. "USD"; [Ticker
+symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
+cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
+(LETS) and other currency types e.g. "Ithaca HOUR".
 
 
 A currency should be one of the following types:

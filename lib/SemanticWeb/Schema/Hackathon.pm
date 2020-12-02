@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Hackathon;
 
-# ABSTRACT: A hackathon event.
+# ABSTRACT: A [hackathon](https://en
 
 use Moo;
 
@@ -15,18 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a href="https://en.wikipedia.org/wiki/Hackathon">hackathon</a>
-event.<p>
-
-=end html
+A [hackathon](https://en.wikipedia.org/wiki/Hackathon) event.
 
 
 

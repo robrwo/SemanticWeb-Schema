@@ -15,24 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An agent tracks an object for updates.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/FollowAction">FollowAction</a>: Unlike
-FollowAction, TrackAction refers to the interest on the location of
-innanimates objects.</li> <li><a class="localLink"
-href="http://schema.org/SubscribeAction">SubscribeAction</a>: Unlike
+An agent tracks an object for updates.\n\nRelated actions:\n\n*
+[[FollowAction]]: Unlike FollowAction, TrackAction refers to the interest
+on the location of innanimates objects.\n* [[SubscribeAction]]: Unlike
 SubscribeAction, TrackAction refers to the interest on the location of
-innanimate objects.</li> </ul> <p>
-
-=end html
+innanimate objects.
 
 
 

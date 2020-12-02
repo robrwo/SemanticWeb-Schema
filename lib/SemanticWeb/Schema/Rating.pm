@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -96,15 +96,10 @@ has best_rating => (
 
 C<ratingExplanation>
 
-=begin html
-
-<p>A short explanation (e.g. one to two sentences) providing background
+A short explanation (e.g. one to two sentences) providing background
 context and other information that led to the conclusion expressed in the
 rating. This is particularly applicable to ratings associated with "fact
-check" markup using <a class="localLink"
-href="http://schema.org/ClaimReview">ClaimReview</a>.<p>
-
-=end html
+check" markup using [[ClaimReview]].
 
 
 A rating_explanation should be one of the following types:
@@ -132,16 +127,11 @@ has rating_explanation => (
 
 C<ratingValue>
 
-=begin html
-
-<p>The rating for the content.<br/><br/> Usage guidelines:<br/><br/> <ul>
-<li>Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT
-NINE' (U+0039)) rather than superficially similiar Unicode symbols.</li>
-<li>Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a
-decimal point. Avoid using these symbols as a readability separator.</li>
-</ul> <p>
-
-=end html
+The rating for the content.\n\nUsage guidelines:\n\n* Use values from
+0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather
+than superficially similiar Unicode symbols.\n* Use '.' (Unicode 'FULL
+STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using
+these symbols as a readability separator.
 
 
 A rating_value should be one of the following types:

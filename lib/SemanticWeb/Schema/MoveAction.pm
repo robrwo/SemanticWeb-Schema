@@ -15,21 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of an agent relocating to a place.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/TransferAction">TransferAction</a>: Unlike
-TransferAction, the subject of the move is a living Person or Organization
-rather than an inanimate object.</li> </ul> <p>
-
-=end html
+The act of an agent relocating to a place.\n\nRelated actions:\n\n*
+[[TransferAction]]: Unlike TransferAction, the subject of the move is a
+living Person or Organization rather than an inanimate object.
 
 
 

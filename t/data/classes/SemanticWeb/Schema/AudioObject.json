@@ -4,21 +4,21 @@
       "rdfs:comment" : "An audio file.",
       "rdfs:label" : "AudioObject",
       "rdfs:subClassOf" : "schema:MediaObject",
-      "schema:source" : "schemadotorgsources:source_rNews"
+      "schema:source" : "schemadotorgsources2:source_rNews"
    },
    "properties" : {
       "schema:caption" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the <a class=\"localLink\" href=\"http://schema.org/encodingFormat\">encodingFormat</a>.",
+         "rdfs:comment" : "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the [[encodingFormat]].",
          "rdfs:label" : "caption",
          "schema:domainIncludes" : [
-            "schema:ImageObject",
             "schema:VideoObject",
+            "schema:ImageObject",
             "schema:AudioObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Text"
          ]
       },
       "schema:transcript" : {

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -149,12 +149,8 @@ has content_url => (
 
 
 
-=begin html
-
-<p>The duration of the item (movie, audio recording, event, etc.) in <a
-href="http://en.wikipedia.org/wiki/ISO_8601">ISO 8601 date format</a>.<p>
-
-=end html
+The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
+date format](http://en.wikipedia.org/wiki/ISO_8601).
 
 
 A duration should be one of the following types:
@@ -182,13 +178,9 @@ has duration => (
 
 C<embedUrl>
 
-=begin html
-
-<p>A URL pointing to a player for a specific video. In general, this is the
-information in the <code>src</code> element of an <code>embed</code> tag
-and should not be the same as the content of the <code>loc</code> tag.<p>
-
-=end html
+A URL pointing to a player for a specific video. In general, this is the
+information in the ```src``` element of an ```embed``` tag and should not
+be the same as the content of the ```loc``` tag.
 
 
 A embed_url should be one of the following types:
@@ -244,25 +236,17 @@ has encodes_creative_work => (
 
 C<encodingFormat>
 
-=begin html
-
-<p>Media type typically expressed using a MIME format (see <a
-href="http://www.iana.org/assignments/media-types/media-types.xhtml">IANA
-site</a> and <a
-href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME
-_types">MDN reference</a>) e.g. application/zip for a SoftwareApplication
-binary, audio/mpeg for .mp3 etc.).<br/><br/> In cases where a <a
-class="localLink" href="http://schema.org/CreativeWork">CreativeWork</a>
-has several media type representations, <a class="localLink"
-href="http://schema.org/encoding">encoding</a> can be used to indicate each
-<a class="localLink" href="http://schema.org/MediaObject">MediaObject</a>
-alongside particular <a class="localLink"
-href="http://schema.org/encodingFormat">encodingFormat</a>
-information.<br/><br/> Unregistered or niche encoding and file formats can
-be indicated instead via the most appropriate URL, e.g. defining Web page
-or a Wikipedia/Wikidata entry.<p>
-
-=end html
+Media type typically expressed using a MIME format (see [IANA
+site](http://www.iana.org/assignments/media-types/media-types.xhtml) and
+[MDN
+reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP
+/MIME_types)) e.g. application/zip for a SoftwareApplication binary,
+audio/mpeg for .mp3 etc.). In cases where a [[CreativeWork]] has several
+media type representations, [[encoding]] can be used to indicate each
+[[MediaObject]] alongside particular [[encodingFormat]] information.
+Unregistered or niche encoding and file formats can be indicated instead
+via the most appropriate URL, e.g. defining Web page or a
+Wikipedia/Wikidata entry.
 
 
 A encoding_format should be one of the following types:
@@ -290,18 +274,14 @@ has encoding_format => (
 
 C<endTime>
 
-=begin html
-
-<p>The endTime of something. For a reserved event or service (e.g.
+The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from January to <em>December</em>. For media, including
-audio and video, it's the time offset of the end of a clip within a larger
-file.<br/><br/> Note that Event uses startDate/endDate instead of
+John wrote a book from January to *December*. For media, including audio
+and video, it's the time offset of the end of a clip within a larger
+file.\n\nNote that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.<p>
-
-=end html
+may be clarified in future revisions.
 
 
 A end_time should be one of the following types:
@@ -416,13 +396,9 @@ has production_company => (
 
 C<regionsAllowed>
 
-=begin html
-
-<p>The regions where the media is allowed. If not specified, then it's
-assumed to be allowed everywhere. Specify the countries in <a
-href="http://en.wikipedia.org/wiki/ISO_3166">ISO 3166 format</a>.<p>
-
-=end html
+The regions where the media is allowed. If not specified, then it's assumed
+to be allowed everywhere. Specify the countries in [ISO 3166
+format](http://en.wikipedia.org/wiki/ISO_3166).
 
 
 A regions_allowed should be one of the following types:
@@ -450,13 +426,9 @@ has regions_allowed => (
 
 C<requiresSubscription>
 
-=begin html
-
-<p>Indicates if use of the media require a subscription (either paid or
-free). Allowed values are <code>true</code> or <code>false</code> (note
-that an earlier version had 'yes', 'no').<p>
-
-=end html
+Indicates if use of the media require a subscription (either paid or free).
+Allowed values are ```true``` or ```false``` (note that an earlier version
+had 'yes', 'no').
 
 
 A requires_subscription should be one of the following types:
@@ -486,18 +458,14 @@ has requires_subscription => (
 
 C<startTime>
 
-=begin html
-
-<p>The startTime of something. For a reserved event or service (e.g.
+The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
-John wrote a book from <em>January</em> to December. For media, including
-audio and video, it's the time offset of the start of a clip within a
-larger file.<br/><br/> Note that Event uses startDate/endDate instead of
+John wrote a book from *January* to December. For media, including audio
+and video, it's the time offset of the start of a clip within a larger
+file.\n\nNote that Event uses startDate/endDate instead of
 startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.<p>
-
-=end html
+may be clarified in future revisions.
 
 
 A start_time should be one of the following types:

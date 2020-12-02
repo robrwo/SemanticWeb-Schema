@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of searching for an object.<br/><br/> Related actions:<br/><br/>
-<ul> <li><a class="localLink"
-href="http://schema.org/FindAction">FindAction</a>: SearchAction generally
-leads to a FindAction, but not necessarily.</li> </ul> <p>
-
-=end html
+The act of searching for an object.\n\nRelated actions:\n\n*
+[[FindAction]]: SearchAction generally leads to a FindAction, but not
+necessarily.
 
 
 

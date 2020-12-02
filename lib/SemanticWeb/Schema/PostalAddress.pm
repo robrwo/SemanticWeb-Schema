@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -33,13 +33,8 @@ The mailing address.
 
 C<addressCountry>
 
-=begin html
-
-<p>The country. For example, USA. You can also provide the two-letter <a
-href="http://en.wikipedia.org/wiki/ISO_3166-1">ISO 3166-1 alpha-2 country
-code</a>.<p>
-
-=end html
+The country. For example, USA. You can also provide the two-letter [ISO
+3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).
 
 
 A address_country should be one of the following types:
@@ -98,14 +93,10 @@ has address_locality => (
 
 C<addressRegion>
 
-=begin html
-
-<p>The region in which the locality is, and which is in the country. For
-example, California or another appropriate first-level <a
-href="https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_cou
-ntry">Administrative division</a><p>
-
-=end html
+The region in which the locality is, and which is in the country. For
+example, California or another appropriate first-level [Administrative
+division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by
+_country) 
 
 
 A address_region should be one of the following types:

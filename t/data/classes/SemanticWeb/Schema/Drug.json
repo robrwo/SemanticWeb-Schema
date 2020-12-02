@@ -13,9 +13,9 @@
          "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
          "rdfs:label" : "activeIngredient",
          "schema:domainIncludes" : [
+            "schema:DietarySupplement",
             "schema:DrugStrength",
             "schema:Substance",
-            "schema:DietarySupplement",
             "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
@@ -83,8 +83,8 @@
          "rdfs:comment" : "A dosing schedule for the drug for a given population, either observed, recommended, or maximum dose based on the type used.",
          "rdfs:label" : "doseSchedule",
          "schema:domainIncludes" : [
-            "schema:TherapeuticProcedure",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:DoseSchedule"
@@ -102,8 +102,8 @@
          "rdfs:comment" : "The unit in which the drug is measured, e.g. '5 mg tablet'.",
          "rdfs:label" : "drugUnit",
          "schema:domainIncludes" : [
-            "schema:Drug",
-            "schema:DrugCost"
+            "schema:DrugCost",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -120,7 +120,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The insurance plans that cover this drug.",
          "rdfs:label" : "includedInHealthInsurancePlan",
-         "schema:category" : "issue-1062",
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:HealthInsurancePlan",
@@ -167,14 +166,14 @@
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
             "schema:Drug",
-            "schema:DietarySupplement",
-            "schema:MedicalEntity"
+            "schema:MedicalEntity",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
             "schema:MedicalEnumeration",
-            "schema:DrugLegalStatus",
-            "schema:Text"
+            "schema:Text",
+            "schema:DrugLegalStatus"
          ]
       },
       "schema:manufacturer" : {
@@ -182,9 +181,9 @@
          "rdfs:comment" : "The manufacturer of the product.",
          "rdfs:label" : "manufacturer",
          "schema:domainIncludes" : [
-            "schema:DietarySupplement",
             "schema:Drug",
-            "schema:Product"
+            "schema:Product",
+            "schema:DietarySupplement"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -193,10 +192,10 @@
          "rdfs:comment" : "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
          "rdfs:label" : "maximumIntake",
          "schema:domainIncludes" : [
-            "schema:Substance",
-            "schema:DietarySupplement",
+            "schema:DrugStrength",
             "schema:Drug",
-            "schema:DrugStrength"
+            "schema:Substance",
+            "schema:DietarySupplement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MaximumDoseSchedule"
@@ -262,8 +261,8 @@
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DrugPrescriptionStatus",
-            "schema:Text"
+            "schema:Text",
+            "schema:DrugPrescriptionStatus"
          ]
       },
       "schema:proprietaryName" : {
@@ -289,7 +288,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The RxCUI drug identifier from RXNORM.",
          "rdfs:label" : "rxcui",
-         "schema:category" : "issue-1062",
          "schema:domainIncludes" : "schema:Drug",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

@@ -15,23 +15,16 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A construction business.<br/><br/> A HomeAndConstructionBusiness is a <a
-class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
-that provides services around homes and buildings.<br/><br/> As a <a
-class="localLink" href="http://schema.org/LocalBusiness">LocalBusiness</a>
-it can be described as a <a class="localLink"
-href="http://schema.org/provider">provider</a> of one or more <a
-class="localLink" href="http://schema.org/Service">Service</a>(s).<p>
-
-=end html
+A construction business.\n\nA HomeAndConstructionBusiness is a
+[[LocalBusiness]] that provides services around homes and buildings.\n\nAs
+a [[LocalBusiness]] it can be described as a [[provider]] of one or more
+[[Service]]\(s).
 
 
 

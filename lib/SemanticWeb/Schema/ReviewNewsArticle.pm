@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ReviewNewsArticle;
 
-# ABSTRACT: A NewsArticle and CriticReview providing a professional critic's assessment of a service
+# ABSTRACT: A [[NewsArticle]] and [[CriticReview]] providing a professional critic's assessment of a service
 
 use Moo;
 
@@ -15,21 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>A <a class="localLink"
-href="http://schema.org/NewsArticle">NewsArticle</a> and <a
-class="localLink" href="http://schema.org/CriticReview">CriticReview</a>
-providing a professional critic's assessment of a service, product,
-performance, or artistic or literary work.<p>
-
-=end html
+A [[NewsArticle]] and [[CriticReview]] providing a professional critic's
+assessment of a service, product, performance, or artistic or literary
+work.
 
 
 

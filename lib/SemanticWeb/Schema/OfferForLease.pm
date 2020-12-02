@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::OfferForLease;
 
-# ABSTRACT: An OfferForLease in Schema
+# ABSTRACT: An [[OfferForLease]] in Schema
 
 use Moo;
 
@@ -15,25 +15,17 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An <a class="localLink"
-href="http://schema.org/OfferForLease">OfferForLease</a> in Schema.org
-represents an <a class="localLink" href="http://schema.org/Offer">Offer</a>
-to lease out something, i.e. an <a class="localLink"
-href="http://schema.org/Offer">Offer</a> whose <a class="localLink"
-href="http://schema.org/businessFunction">businessFunction</a> is <a
-href="http://purl.org/goodrelations/v1#LeaseOut.">lease out</a>. See <a
-href="https://en.wikipedia.org/wiki/GoodRelations">Good Relations</a> for
-background on the underlying concepts.<p>
-
-=end html
+An [[OfferForLease]] in Schema.org represents an [[Offer]] to lease out
+something, i.e. an [[Offer]] whose [[businessFunction]] is [lease
+out](http://purl.org/goodrelations/v1#LeaseOut.). See [Good
+Relations](https://en.wikipedia.org/wiki/GoodRelations) for background on
+the underlying concepts. 
 
 
 

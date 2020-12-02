@@ -15,20 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>The act of posing a question / favor to someone.<br/><br/> Related
-actions:<br/><br/> <ul> <li><a class="localLink"
-href="http://schema.org/ReplyAction">ReplyAction</a>: Appears generally as
-a response to AskAction.</li> </ul> <p>
-
-=end html
+The act of posing a question / favor to someone.\n\nRelated actions:\n\n*
+[[ReplyAction]]: Appears generally as a response to AskAction.
 
 
 

@@ -4,7 +4,6 @@
       "rdfs:comment" : "A subscription which allows a user to access media including audio, video, books, etc.",
       "rdfs:label" : "MediaSubscription",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:category" : "issue-1741",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
    },
    "properties" : {
@@ -12,7 +11,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
          "rdfs:label" : "authenticator",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : "schema:MediaSubscription",
          "schema:rangeIncludes" : "schema:Organization",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
@@ -21,11 +19,10 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
-         "schema:category" : "issue-1741",
          "schema:domainIncludes" : [
+            "schema:ActionAccessSpecification",
             "schema:MediaSubscription",
-            "schema:ConsumeAction",
-            "schema:ActionAccessSpecification"
+            "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"

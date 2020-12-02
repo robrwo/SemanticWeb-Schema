@@ -15,21 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>UserInteraction and its subtypes is an old way of talking about users
-interacting with pages. It is generally better to use <a class="localLink"
-href="http://schema.org/Action">Action</a>-based vocabulary, alongside
-types such as <a class="localLink"
-href="http://schema.org/Comment">Comment</a>.<p>
-
-=end html
+UserInteraction and its subtypes is an old way of talking about users
+interacting with pages. It is generally better to use [[Action]]-based
+vocabulary, alongside types such as [[Comment]].
 
 
 

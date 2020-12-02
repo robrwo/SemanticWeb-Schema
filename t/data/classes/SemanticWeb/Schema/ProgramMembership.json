@@ -32,12 +32,12 @@
          "rdfs:comment" : "A member of this organization.",
          "rdfs:label" : "members",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:ProgramMembership"
+            "schema:ProgramMembership",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:supersededBy" : "schema:member"
       },
@@ -52,7 +52,6 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (e.g. stars, miles, etc.)",
          "rdfs:label" : "membershipPointsEarned",
-         "schema:category" : "issue-2085",
          "schema:domainIncludes" : "schema:ProgramMembership",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

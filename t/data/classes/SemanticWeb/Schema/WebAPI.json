@@ -4,7 +4,6 @@
       "rdfs:comment" : "An application programming interface accessible over Web/Internet technologies.",
       "rdfs:label" : "WebAPI",
       "rdfs:subClassOf" : "schema:Service",
-      "schema:category" : "issue-1423",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1423"
    },
@@ -13,12 +12,11 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Further documentation describing the Web API in more detail.",
          "rdfs:label" : "documentation",
-         "schema:category" : "issue-1423",
          "schema:domainIncludes" : "schema:WebAPI",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1423"
       }

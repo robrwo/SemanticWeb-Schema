@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::AnalysisNewsArticle;
 
-# ABSTRACT: An AnalysisNewsArticle is a NewsArticle that
+# ABSTRACT: An AnalysisNewsArticle is a [[NewsArticle]] that
 
 use Moo;
 
@@ -15,20 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-=begin html
-
-<p>An AnalysisNewsArticle is a <a class="localLink"
-href="http://schema.org/NewsArticle">NewsArticle</a> that, while based on
-factual reporting, incorporates the expertise of the author/producer,
-offering interpretations and conclusions.<p>
-
-=end html
+An AnalysisNewsArticle is a [[NewsArticle]] that, while based on factual
+reporting, incorporates the expertise of the author/producer, offering
+interpretations and conclusions.
 
 
 

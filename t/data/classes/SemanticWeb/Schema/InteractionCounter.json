@@ -18,7 +18,7 @@
       },
       "schema:interactionType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The Action representing the type of interaction. For up votes, +1s, etc. use <a class=\"localLink\" href=\"http://schema.org/LikeAction\">LikeAction</a>. For down votes use <a class=\"localLink\" href=\"http://schema.org/DislikeAction\">DislikeAction</a>. Otherwise, use the most specific Action.",
+         "rdfs:comment" : "The Action representing the type of interaction. For up votes, +1s, etc. use [[LikeAction]]. For down votes use [[DislikeAction]]. Otherwise, use the most specific Action.",
          "rdfs:label" : "interactionType",
          "schema:domainIncludes" : "schema:InteractionCounter",
          "schema:rangeIncludes" : "schema:Action"

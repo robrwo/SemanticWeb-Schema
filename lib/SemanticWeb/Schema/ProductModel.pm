@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v10.0.1';
+our $VERSION = 'v11.0.0';
 
 =encoding utf8
 
@@ -34,25 +34,16 @@ prototypical description).
 
 C<isVariantOf>
 
-=begin html
-
-<p>Indicates the kind of product that this is a variant of. In the case of
-<a class="localLink"
-href="http://schema.org/ProductModel">ProductModel</a>, this is a pointer
-(from a ProductModel) to a base product from which this product is a
-variant. It is safe to infer that the variant inherits all product features
-from the base model, unless defined locally. This is not transitive. In the
-case of a <a class="localLink"
-href="http://schema.org/ProductGroup">ProductGroup</a>, the group
+Indicates the kind of product that this is a variant of. In the case of
+[[ProductModel]], this is a pointer (from a ProductModel) to a base product
+from which this product is a variant. It is safe to infer that the variant
+inherits all product features from the base model, unless defined locally.
+This is not transitive. In the case of a [[ProductGroup]], the group
 description also serves as a template, representing a set of Products that
 vary on explicitly defined, specific dimensions only (so it defines both a
 set of variants, as well as which values distinguish amongst those
-variants). When used with <a class="localLink"
-href="http://schema.org/ProductGroup">ProductGroup</a>, this property can
-apply to any <a class="localLink"
-href="http://schema.org/Product">Product</a> included in the group.<p>
-
-=end html
+variants). When used with [[ProductGroup]], this property can apply to any
+[[Product]] included in the group.
 
 
 A is_variant_of should be one of the following types:
