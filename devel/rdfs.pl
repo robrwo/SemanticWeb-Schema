@@ -410,6 +410,8 @@ sub comment_to_pod {
 
         $buffer =~ s/\[\[([A-Z0-9]\w+)\]\]/L<SemanticWeb::Schema::$1>/g;
 
+        $buffer =~ s/E<#x2014>/-- /g; # mdash poorly handled
+
     }
     else {
 
