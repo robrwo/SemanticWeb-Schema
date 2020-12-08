@@ -5,7 +5,7 @@
       "rdfs:label" : "MedicalTrialDesign",
       "rdfs:subClassOf" : "schema:MedicalEnumeration",
       "schema:isPartOf" : "http:health-lifesci.schema.org",
-      "schema:source" : "schemadotorgsources2:source_WikiDoc"
+      "schema:source" : "schemadotorgsources:source_WikiDoc"
    },
    "properties" : {}
 }

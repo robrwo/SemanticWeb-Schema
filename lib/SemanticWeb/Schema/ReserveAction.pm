@@ -15,16 +15,15 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.0.1';
+our $VERSION = 'v11.01.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Reserving a concrete object.\n\nRelated actions:\n\n*
-[[ScheduleAction]]</a>: Unlike ScheduleAction, ReserveAction reserves
-concrete objects (e.g. a table, a hotel) towards a time slot / spatial
-allocation.
+Reserving a concrete object.\n\nRelated actions:\n\n* [[ScheduleAction]]:
+Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a
+table, a hotel) towards a time slot / spatial allocation.
 
 
 

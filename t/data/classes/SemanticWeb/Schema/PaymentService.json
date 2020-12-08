@@ -4,7 +4,7 @@
       "rdfs:comment" : "A Service to transfer funds from a person or organization to a beneficiary person or organization.",
       "rdfs:label" : "PaymentService",
       "rdfs:subClassOf" : "schema:FinancialProduct",
-      "schema:source" : "schemadotorgsources2:FIBO"
+      "schema:source" : "schemadotorgsources:FIBO"
    },
    "properties" : {}
 }

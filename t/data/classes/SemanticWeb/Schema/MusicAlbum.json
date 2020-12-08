@@ -12,7 +12,7 @@
          "rdfs:label" : "albumProductionType",
          "schema:domainIncludes" : "schema:MusicAlbum",
          "schema:rangeIncludes" : "schema:MusicAlbumProductionType",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:albumRelease" : {
          "rdf:type" : "rdf:Property",
@@ -28,7 +28,7 @@
          "rdfs:label" : "albumReleaseType",
          "schema:domainIncludes" : "schema:MusicAlbum",
          "schema:rangeIncludes" : "schema:MusicAlbumReleaseType",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:byArtist" : {
          "rdf:type" : "rdf:Property",

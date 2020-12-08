@@ -5,7 +5,7 @@
       "rdfs:label" : "BusOrCoach",
       "rdfs:subClassOf" : "schema:Vehicle",
       "schema:isPartOf" : "http:auto.schema.org",
-      "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
    },
    "properties" : {
       "schema:acrissCode" : {
@@ -18,7 +18,7 @@
          ],
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:roofLoad" : {
          "rdf:type" : "rdf:Property",
@@ -30,7 +30,7 @@
          ],
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       }
    }
 }

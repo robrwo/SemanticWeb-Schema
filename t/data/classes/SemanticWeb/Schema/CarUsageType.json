@@ -5,7 +5,7 @@
       "rdfs:label" : "CarUsageType",
       "rdfs:subClassOf" : "schema:Enumeration",
       "schema:isPartOf" : "http:auto.schema.org",
-      "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
    },
    "properties" : {}
 }

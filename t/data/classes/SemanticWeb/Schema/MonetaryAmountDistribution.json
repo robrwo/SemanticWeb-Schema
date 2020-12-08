@@ -13,10 +13,10 @@
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
             "schema:LoanOrCredit",
-            "schema:MonetaryAmount",
             "schema:DatedMoneySpecification",
-            "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution"
+            "schema:MonetaryAmountDistribution",
+            "schema:MonetaryAmount",
+            "schema:ExchangeRateSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"

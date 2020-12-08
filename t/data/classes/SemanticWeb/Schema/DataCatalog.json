@@ -5,7 +5,7 @@
       "rdfs:comment" : "A collection of datasets.",
       "rdfs:label" : "DataCatalog",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources2:source_DatasetClass"
+      "schema:source" : "schemadotorgsources:source_DatasetClass"
    },
    "properties" : {
       "schema:dataset" : {
@@ -22,9 +22,9 @@
          "rdfs:label" : "measurementTechnique",
          "schema:domainIncludes" : [
             "schema:DataDownload",
-            "schema:Dataset",
             "schema:PropertyValue",
-            "schema:DataCatalog"
+            "schema:DataCatalog",
+            "schema:Dataset"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

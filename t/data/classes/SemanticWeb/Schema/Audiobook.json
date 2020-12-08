@@ -17,11 +17,11 @@
          "schema:domainIncludes" : [
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:QuantitativeValueDistribution",
-            "schema:Audiobook",
-            "schema:MediaObject",
             "schema:Movie",
             "schema:Event",
+            "schema:Audiobook",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
             "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",

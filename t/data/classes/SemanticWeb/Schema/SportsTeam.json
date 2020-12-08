@@ -30,8 +30,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:GenderType",
-            "schema:Text"
+            "schema:Text",
+            "schema:GenderType"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2341"
       }

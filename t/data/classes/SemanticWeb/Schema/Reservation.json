@@ -12,8 +12,8 @@
          "rdfs:label" : "bookingAgent",
          "schema:domainIncludes" : "schema:Reservation",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:broker"
       },
@@ -35,8 +35,8 @@
             "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:modifiedTime" : {
@@ -51,10 +51,10 @@
          "rdfs:comment" : "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
-            "schema:TradeAction",
+            "schema:PriceSpecification",
             "schema:Reservation",
             "schema:Offer",
-            "schema:PriceSpecification",
+            "schema:TradeAction",
             "schema:Ticket"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -72,11 +72,11 @@
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
             "schema:ParcelDelivery",
-            "schema:CreativeWork",
-            "schema:Trip",
             "schema:Reservation",
-            "schema:EducationalOccupationalProgram",
             "schema:Service",
+            "schema:CreativeWork",
+            "schema:EducationalOccupationalProgram",
+            "schema:Trip",
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
@@ -123,8 +123,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
-            "schema:Text",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:Text"
          ]
       },
       "schema:underName" : {

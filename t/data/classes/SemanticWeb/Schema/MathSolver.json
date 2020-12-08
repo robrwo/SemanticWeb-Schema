@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:MathSolver",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:SolveMathAction",
-            "schema:Text"
+            "schema:Text",
+            "schema:SolveMathAction"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2740"
       }

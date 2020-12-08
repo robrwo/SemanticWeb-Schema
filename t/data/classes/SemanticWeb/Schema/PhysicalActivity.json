@@ -12,14 +12,14 @@
          "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
          "rdfs:label" : "associatedAnatomy",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:AnatomicalSystem",
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure",
-            "schema:AnatomicalSystem"
+            "schema:AnatomicalStructure"
          ]
       },
       "schema:category" : {
@@ -27,8 +27,8 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Recommendation",
             "schema:Product",
+            "schema:Recommendation",
             "schema:Invoice",
             "schema:SpecialAnnouncement",
             "schema:Offer",
@@ -38,13 +38,13 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:PhysicalActivityCategory",
+            "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:epidemiology" : {

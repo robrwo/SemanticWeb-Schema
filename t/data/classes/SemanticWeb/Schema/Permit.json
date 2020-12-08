@@ -11,8 +11,8 @@
          "rdfs:comment" : "The organization issuing the ticket or permit.",
          "rdfs:label" : "issuedBy",
          "schema:domainIncludes" : [
-            "schema:Ticket",
-            "schema:Permit"
+            "schema:Permit",
+            "schema:Ticket"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -35,8 +35,8 @@
          "rdfs:comment" : "The duration of validity of a permit or similar thing.",
          "rdfs:label" : "validFor",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
@@ -46,19 +46,19 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Demand",
             "schema:OpeningHoursSpecification",
-            "schema:MonetaryAmount",
+            "schema:Offer",
             "schema:PriceSpecification",
-            "schema:Permit",
             "schema:LocationFeatureSpecification",
-            "schema:Demand"
+            "schema:MonetaryAmount",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:validIn" : {
          "rdf:type" : "rdf:Property",

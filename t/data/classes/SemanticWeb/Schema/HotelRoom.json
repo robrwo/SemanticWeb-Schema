@@ -4,7 +4,7 @@
       "rdfs:comment" : "A hotel room is a single room in a hotel.\n<br /><br />\nSee also the <a href=\"/docs/hotels.html\">dedicated document on the use of schema.org for marking up hotels and other forms of accommodations</a>.\n",
       "rdfs:label" : "HotelRoom",
       "rdfs:subClassOf" : "schema:Room",
-      "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+      "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
    },
    "properties" : {
       "schema:bed" : {
@@ -16,24 +16,24 @@
             "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : [
-            "schema:BedDetails",
             "schema:BedType",
+            "schema:BedDetails",
             "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
       "schema:occupancy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
          "rdfs:label" : "occupancy",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:SingleFamilyResidence",
             "schema:Suite",
-            "schema:HotelRoom"
+            "schema:HotelRoom",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       }
    }
 }

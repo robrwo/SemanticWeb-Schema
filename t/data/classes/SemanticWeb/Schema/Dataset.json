@@ -9,7 +9,7 @@
       "rdfs:comment" : "A body of structured information describing some topic(s) of interest.",
       "rdfs:label" : "Dataset",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources2:source_DatasetClass"
+      "schema:source" : "schemadotorgsources:source_DatasetClass"
    },
    "properties" : {
       "schema:catalog" : {
@@ -58,13 +58,13 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Blog",
+            "schema:Dataset",
             "schema:CreativeWorkSeries",
-            "schema:WebSite",
-            "schema:Dataset"
+            "schema:Blog",
+            "schema:WebSite"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_bibex"
+         "schema:source" : "schemadotorgsources:source_bibex"
       },
       "schema:measurementTechnique" : {
          "rdf:type" : "rdf:Property",
@@ -72,9 +72,9 @@
          "rdfs:label" : "measurementTechnique",
          "schema:domainIncludes" : [
             "schema:DataDownload",
-            "schema:Dataset",
             "schema:PropertyValue",
-            "schema:DataCatalog"
+            "schema:DataCatalog",
+            "schema:Dataset"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -90,8 +90,8 @@
          "schema:domainIncludes" : "schema:Dataset",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:PropertyValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:PropertyValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1083"
       },
@@ -102,8 +102,8 @@
          "schema:domainIncludes" : "schema:Dataset",
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : [
-            "schema:PropertyValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:PropertyValue"
          ]
       }
    }

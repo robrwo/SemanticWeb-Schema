@@ -13,7 +13,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:bodyType" : {
          "rdf:type" : "rdf:Property",
@@ -22,11 +22,11 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:callSign" : {
          "rdf:type" : "rdf:Property",
@@ -34,9 +34,9 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
+            "schema:Person",
             "schema:BroadcastService",
-            "schema:Vehicle",
-            "schema:Person"
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -48,7 +48,7 @@
          "rdfs:label" : "cargoVolume",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:dateVehicleFirstRegistered" : {
          "rdf:type" : "rdf:Property",
@@ -56,7 +56,7 @@
          "rdfs:label" : "dateVehicleFirstRegistered",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:driveWheelConfiguration" : {
          "rdf:type" : "rdf:Property",
@@ -64,10 +64,10 @@
          "rdfs:label" : "driveWheelConfiguration",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DriveWheelConfigurationValue"
+            "schema:DriveWheelConfigurationValue",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:emissionsCO2" : {
          "rdf:type" : "rdf:Property",
@@ -76,7 +76,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Number",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:fuelCapacity" : {
          "rdf:type" : "rdf:Property",
@@ -85,7 +85,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:fuelConsumption" : {
          "rdf:type" : "rdf:Property",
@@ -93,7 +93,7 @@
          "rdfs:label" : "fuelConsumption",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:fuelEfficiency" : {
          "rdf:type" : "rdf:Property",
@@ -101,7 +101,7 @@
          "rdfs:label" : "fuelEfficiency",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:fuelType" : {
          "rdf:type" : "rdf:Property",
@@ -116,7 +116,7 @@
             "schema:QualitativeValue",
             "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:knownVehicleDamages" : {
          "rdf:type" : "rdf:Property",
@@ -124,7 +124,7 @@
          "rdfs:label" : "knownVehicleDamages",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:meetsEmissionStandard" : {
          "rdf:type" : "rdf:Property",
@@ -133,11 +133,11 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:QualitativeValue"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:mileageFromOdometer" : {
          "rdf:type" : "rdf:Property",
@@ -145,7 +145,7 @@
          "rdfs:label" : "mileageFromOdometer",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:modelDate" : {
          "rdf:type" : "rdf:Property",
@@ -154,7 +154,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfAirbags" : {
          "rdf:type" : "rdf:Property",
@@ -162,10 +162,10 @@
          "rdfs:label" : "numberOfAirbags",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfAxles" : {
          "rdf:type" : "rdf:Property",
@@ -173,10 +173,10 @@
          "rdfs:label" : "numberOfAxles",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfDoors" : {
          "rdf:type" : "rdf:Property",
@@ -184,10 +184,10 @@
          "rdfs:label" : "numberOfDoors",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfForwardGears" : {
          "rdf:type" : "rdf:Property",
@@ -198,7 +198,7 @@
             "schema:QuantitativeValue",
             "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:numberOfPreviousOwners" : {
          "rdf:type" : "rdf:Property",
@@ -206,10 +206,10 @@
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:payload" : {
          "rdf:type" : "rdf:Property",
@@ -218,7 +218,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:productionDate" : {
          "rdf:type" : "rdf:Property",
@@ -229,7 +229,7 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:purchaseDate" : {
          "rdf:type" : "rdf:Property",
@@ -240,7 +240,7 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:seatingCapacity" : {
          "rdf:type" : "rdf:Property",
@@ -249,10 +249,10 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:speed" : {
          "rdf:type" : "rdf:Property",
@@ -261,7 +261,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:steeringPosition" : {
          "rdf:type" : "rdf:Property",
@@ -269,15 +269,15 @@
          "rdfs:label" : "steeringPosition",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:SteeringPositionValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:stupidProperty" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:StupidType",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:StupidType"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -289,7 +289,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:trailerWeight" : {
          "rdf:type" : "rdf:Property",
@@ -298,7 +298,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleConfiguration" : {
          "rdf:type" : "rdf:Property",
@@ -306,7 +306,7 @@
          "rdfs:label" : "vehicleConfiguration",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleEngine" : {
          "rdf:type" : "rdf:Property",
@@ -314,7 +314,7 @@
          "rdfs:label" : "vehicleEngine",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:EngineSpecification",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleIdentificationNumber" : {
          "rdf:type" : "rdf:Property",
@@ -323,7 +323,7 @@
          "rdfs:subPropertyOf" : "schema:serialNumber",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleInteriorColor" : {
          "rdf:type" : "rdf:Property",
@@ -331,7 +331,7 @@
          "rdfs:label" : "vehicleInteriorColor",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleInteriorType" : {
          "rdf:type" : "rdf:Property",
@@ -339,7 +339,7 @@
          "rdfs:label" : "vehicleInteriorType",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleModelDate" : {
          "rdf:type" : "rdf:Property",
@@ -347,7 +347,7 @@
          "rdfs:label" : "vehicleModelDate",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleSeatingCapacity" : {
          "rdf:type" : "rdf:Property",
@@ -355,10 +355,10 @@
          "rdfs:label" : "vehicleSeatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleSpecialUsage" : {
          "rdf:type" : "rdf:Property",
@@ -367,10 +367,10 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CarUsageType"
+            "schema:CarUsageType",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:vehicleTransmission" : {
          "rdf:type" : "rdf:Property",
@@ -378,11 +378,11 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:URL",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:weightTotal" : {
          "rdf:type" : "rdf:Property",
@@ -391,7 +391,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:wheelbase" : {
          "rdf:type" : "rdf:Property",
@@ -400,7 +400,7 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       }
    }
 }

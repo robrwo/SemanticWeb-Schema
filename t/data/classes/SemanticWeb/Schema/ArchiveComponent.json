@@ -26,8 +26,8 @@
          "schema:domainIncludes" : "schema:ArchiveComponent",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:PostalAddress",
             "schema:Text",
+            "schema:PostalAddress",
             "schema:Place"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1758"

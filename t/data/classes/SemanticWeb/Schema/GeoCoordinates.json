@@ -11,15 +11,15 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
+            "schema:GeoCoordinates",
+            "schema:GeoShape",
             "schema:Organization",
             "schema:Person",
-            "schema:Place",
-            "schema:GeoShape",
-            "schema:GeoCoordinates"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:PostalAddress",
-            "schema:Text"
+            "schema:Text",
+            "schema:PostalAddress"
          ]
       },
       "schema:addressCountry" : {
@@ -27,10 +27,10 @@
          "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
+            "schema:GeoShape",
             "schema:PostalAddress",
             "schema:DefinedRegion",
-            "schema:GeoShape"
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -43,12 +43,12 @@
          "rdfs:comment" : "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
          "rdfs:label" : "elevation",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:latitude" : {
@@ -56,8 +56,8 @@
          "rdfs:comment" : "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
          "rdfs:label" : "latitude",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -73,8 +73,8 @@
             "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:postalCode" : {
@@ -82,9 +82,9 @@
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
-            "schema:DefinedRegion",
             "schema:GeoShape",
             "schema:GeoCoordinates",
+            "schema:DefinedRegion",
             "schema:PostalAddress"
          ],
          "schema:rangeIncludes" : "schema:Text",

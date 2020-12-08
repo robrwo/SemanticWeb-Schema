@@ -12,8 +12,8 @@
          "rdfs:label" : "aircraft",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Vehicle",
-            "schema:Text"
+            "schema:Text",
+            "schema:Vehicle"
          ]
       },
       "schema:arrivalAirport" : {
@@ -42,8 +42,8 @@
          "rdfs:comment" : "The type of boarding policy used by the airline (e.g. zone-based or group-based).",
          "rdfs:label" : "boardingPolicy",
          "schema:domainIncludes" : [
-            "schema:Flight",
-            "schema:Airline"
+            "schema:Airline",
+            "schema:Flight"
          ],
          "schema:rangeIncludes" : "schema:BoardingPolicyType"
       },
@@ -120,11 +120,11 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Flight",
-            "schema:BuyAction",
-            "schema:Offer",
+            "schema:Order",
             "schema:Demand",
-            "schema:Order"
+            "schema:Offer",
+            "schema:Flight",
+            "schema:BuyAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",

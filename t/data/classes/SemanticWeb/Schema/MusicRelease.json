@@ -4,7 +4,7 @@
       "rdfs:comment" : "A MusicRelease is a specific release of a music album.",
       "rdfs:label" : "MusicRelease",
       "rdfs:subClassOf" : "schema:MusicPlaylist",
-      "schema:source" : "schemadotorgsources2:MBZ"
+      "schema:source" : "schemadotorgsources:MBZ"
    },
    "properties" : {
       "schema:catalogNumber" : {
@@ -13,7 +13,7 @@
          "rdfs:label" : "catalogNumber",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:creditedTo" : {
          "rdf:type" : "rdf:Property",
@@ -21,10 +21,10 @@
          "rdfs:label" : "creditedTo",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:duration" : {
          "rdf:type" : "rdf:Property",
@@ -33,11 +33,11 @@
          "schema:domainIncludes" : [
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:QuantitativeValueDistribution",
-            "schema:Audiobook",
-            "schema:MediaObject",
             "schema:Movie",
             "schema:Event",
+            "schema:Audiobook",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
             "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",
@@ -52,7 +52,7 @@
          "rdfs:label" : "musicReleaseFormat",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:MusicReleaseFormatType",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:recordLabel" : {
          "owl:equivalentProperty" : "mo:label",
@@ -61,7 +61,7 @@
          "rdfs:label" : "recordLabel",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : "schema:Organization",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:releaseOf" : {
          "rdf:type" : "rdf:Property",
@@ -70,7 +70,7 @@
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:inverseOf" : "schema:albumRelease",
          "schema:rangeIncludes" : "schema:MusicAlbum",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       }
    }
 }

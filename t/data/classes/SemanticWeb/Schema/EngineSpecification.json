@@ -4,7 +4,7 @@
       "rdfs:comment" : "Information about the engine of the vehicle. A vehicle can have multiple engines represented by multiple engine specification entities.",
       "rdfs:label" : "EngineSpecification",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
    },
    "properties" : {
       "schema:engineDisplacement" : {
@@ -14,7 +14,7 @@
          "schema:domainIncludes" : "schema:EngineSpecification",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:enginePower" : {
          "rdf:type" : "rdf:Property",
@@ -23,7 +23,7 @@
          "schema:domainIncludes" : "schema:EngineSpecification",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:engineType" : {
          "rdf:type" : "rdf:Property",
@@ -33,10 +33,10 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:QualitativeValue",
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:fuelType" : {
          "rdf:type" : "rdf:Property",
@@ -51,7 +51,7 @@
             "schema:QualitativeValue",
             "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:torque" : {
          "rdf:type" : "rdf:Property",
@@ -60,7 +60,7 @@
          "schema:domainIncludes" : "schema:EngineSpecification",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       }
    }
 }

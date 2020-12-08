@@ -4,7 +4,7 @@
       "rdfs:comment" : "The kind of release which this album is: single, EP or album.",
       "rdfs:label" : "MusicAlbumReleaseType",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:source" : "schemadotorgsources2:MBZ"
+      "schema:source" : "schemadotorgsources:MBZ"
    },
    "properties" : {}
 }

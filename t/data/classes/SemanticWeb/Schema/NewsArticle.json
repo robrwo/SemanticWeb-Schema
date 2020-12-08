@@ -5,8 +5,8 @@
       "rdfs:label" : "NewsArticle",
       "rdfs:subClassOf" : "schema:Article",
       "schema:source" : [
-         "schemadotorgsources:TP-draws",
-         "schemadotorgsources2:source_rNews"
+         "schemadotorgsources2:TP-draws",
+         "schemadotorgsources:source_rNews"
       ]
    },
    "properties" : {

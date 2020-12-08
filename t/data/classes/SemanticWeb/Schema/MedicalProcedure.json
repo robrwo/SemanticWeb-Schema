@@ -42,8 +42,8 @@
          "schema:domainIncludes" : "schema:MedicalProcedure",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalEntity",
-            "schema:Text"
+            "schema:Text",
+            "schema:MedicalEntity"
          ]
       },
       "schema:procedureType" : {
@@ -65,9 +65,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:EventStatusType",
-            "schema:MedicalStudyStatus",
-            "schema:Text"
+            "schema:MedicalStudyStatus"
          ]
       }
    }

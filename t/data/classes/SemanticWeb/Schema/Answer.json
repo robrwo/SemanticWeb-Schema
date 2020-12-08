@@ -4,7 +4,7 @@
       "rdfs:comment" : "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
       "rdfs:label" : "Answer",
       "rdfs:subClassOf" : "schema:Comment",
-      "schema:source" : "schemadotorgsources2:source_QAStackExchange"
+      "schema:source" : "schemadotorgsources:source_QAStackExchange"
    },
    "properties" : {
       "schema:answerExplanation" : {

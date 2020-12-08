@@ -11,9 +11,9 @@
          "rdfs:comment" : "The subject matter of the content.",
          "rdfs:label" : "about",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
             "schema:CommunicateAction",
-            "schema:Event"
+            "schema:Event",
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing",
@@ -24,13 +24,13 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
-            "schema:Event",
-            "schema:LinkRole",
-            "schema:PronounceableText",
-            "schema:WriteAction",
             "schema:CreativeWork",
-            "schema:CommunicateAction"
+            "schema:BroadcastService",
+            "schema:LinkRole",
+            "schema:CommunicateAction",
+            "schema:Event",
+            "schema:PronounceableText",
+            "schema:WriteAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -44,8 +44,8 @@
          "rdfs:label" : "language",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : "schema:Language",
          "schema:supersededBy" : "schema:inLanguage"
@@ -56,21 +56,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:ReturnAction",
-            "schema:AuthorizeAction",
             "schema:GiveAction",
-            "schema:PayAction",
-            "schema:DonateAction",
-            "schema:TipAction",
-            "schema:CommunicateAction",
+            "schema:AuthorizeAction",
             "schema:Message",
+            "schema:PayAction",
+            "schema:ReturnAction",
+            "schema:CommunicateAction",
+            "schema:TipAction",
+            "schema:DonateAction",
             "schema:SendAction"
          ],
          "schema:rangeIncludes" : [
+            "schema:Person",
             "schema:Audience",
             "schema:ContactPoint",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ]
       }
    }

@@ -4,7 +4,7 @@
       "rdfs:comment" : "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.",
       "rdfs:label" : "Product",
       "rdfs:subClassOf" : "schema:Thing",
-      "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+      "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
    },
    "properties" : {
       "schema:additionalProperty" : {
@@ -24,14 +24,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Brand",
+            "schema:Organization",
+            "schema:Product",
+            "schema:CreativeWork",
             "schema:Place",
             "schema:Service",
-            "schema:CreativeWork",
             "schema:Offer",
-            "schema:Event",
-            "schema:Product"
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -40,12 +40,12 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
+            "schema:LodgingBusiness",
+            "schema:PlayAction",
             "schema:Service",
-            "schema:Product",
             "schema:Event",
             "schema:CreativeWork",
-            "schema:LodgingBusiness",
-            "schema:PlayAction"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Audience"
       },
@@ -54,11 +54,11 @@
          "rdfs:comment" : "An award won by or for this item.",
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Product",
-            "schema:Organization",
             "schema:CreativeWork",
-            "schema:Person"
+            "schema:Service",
+            "schema:Organization",
+            "schema:Person",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -68,9 +68,9 @@
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:Person",
             "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:supersededBy" : "schema:award"
@@ -80,9 +80,9 @@
          "rdfs:comment" : "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person",
             "schema:Product",
+            "schema:Person",
+            "schema:Organization",
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
@@ -95,8 +95,8 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Recommendation",
             "schema:Product",
+            "schema:Recommendation",
             "schema:Invoice",
             "schema:SpecialAnnouncement",
             "schema:Offer",
@@ -106,13 +106,13 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:PhysicalActivityCategory",
+            "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:color" : {
@@ -121,21 +121,21 @@
          "rdfs:label" : "color",
          "schema:domainIncludes" : "schema:Product",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:depth" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:Distance"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:gtin" : {
          "rdf:type" : "rdf:Property",
@@ -143,8 +143,8 @@
          "rdfs:label" : "gtin",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
+            "schema:Product",
             "schema:Demand"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -161,8 +161,8 @@
          ],
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Demand",
-            "schema:Product"
+            "schema:Product",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -171,8 +171,8 @@
          "rdfs:comment" : "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceding zero. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
          "rdfs:label" : "gtin13",
          "rdfs:subPropertyOf" : [
-            "schema:gtin",
-            "schema:identifier"
+            "schema:identifier",
+            "schema:gtin"
          ],
          "schema:domainIncludes" : [
             "schema:Product",
@@ -180,7 +180,7 @@
             "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:gtin14" : {
          "rdf:type" : "rdf:Property",
@@ -191,28 +191,28 @@
             "schema:identifier"
          ],
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Product",
             "schema:Demand",
-            "schema:Product"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:gtin8" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
          "rdfs:label" : "gtin8",
          "rdfs:subPropertyOf" : [
-            "schema:gtin",
-            "schema:identifier"
+            "schema:identifier",
+            "schema:gtin"
          ],
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:hasEnergyConsumptionDetails" : {
          "rdf:type" : "rdf:Property",
@@ -253,14 +253,14 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:Person",
+            "schema:VisualArtwork",
             "schema:Product",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       },
       "schema:inProductGroupWithID" : {
@@ -278,7 +278,7 @@
          "rdfs:label" : "isAccessoryOrSparePartFor",
          "schema:domainIncludes" : "schema:Product",
          "schema:rangeIncludes" : "schema:Product",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:isConsumableFor" : {
          "rdf:type" : "rdf:Property",
@@ -286,21 +286,21 @@
          "rdfs:label" : "isConsumableFor",
          "schema:domainIncludes" : "schema:Product",
          "schema:rangeIncludes" : "schema:Product",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:isRelatedTo" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A pointer to another, somehow related product (or multiple products).",
          "rdfs:label" : "isRelatedTo",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:Product",
             "schema:Service"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:isSimilarTo" : {
          "rdf:type" : "rdf:Property",
@@ -314,31 +314,31 @@
             "schema:Product",
             "schema:Service"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:isVariantOf" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates the kind of product that this is a variant of. In the case of [[ProductModel]], this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a [[ProductGroup]], the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with [[ProductGroup]], this property can apply to any [[Product]] included in the group.",
          "rdfs:label" : "isVariantOf",
          "schema:domainIncludes" : [
-            "schema:ProductModel",
-            "schema:Product"
+            "schema:Product",
+            "schema:ProductModel"
          ],
          "schema:inverseOf" : "schema:hasVariant",
          "schema:rangeIncludes" : [
-            "schema:ProductModel",
-            "schema:ProductGroup"
+            "schema:ProductGroup",
+            "schema:ProductModel"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:itemCondition" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.",
          "rdfs:label" : "itemCondition",
          "schema:domainIncludes" : [
-            "schema:Product",
+            "schema:Demand",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
       },
@@ -349,25 +349,25 @@
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:Place",
-            "schema:Product",
             "schema:Organization",
-            "schema:Brand"
+            "schema:Place",
+            "schema:Brand",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:ImageObject"
+            "schema:ImageObject",
+            "schema:URL"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:manufacturer" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The manufacturer of the product.",
          "rdfs:label" : "manufacturer",
          "schema:domainIncludes" : [
-            "schema:Drug",
             "schema:Product",
-            "schema:DietarySupplement"
+            "schema:DietarySupplement",
+            "schema:Drug"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -376,12 +376,12 @@
          "rdfs:comment" : "A material that something is made from, e.g. leather, wool, cotton, paper.",
          "rdfs:label" : "material",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
             "schema:Text",
+            "schema:Product",
             "schema:URL"
          ]
       },
@@ -391,8 +391,8 @@
          "rdfs:label" : "model",
          "schema:domainIncludes" : "schema:Product",
          "schema:rangeIncludes" : [
-            "schema:ProductModel",
-            "schema:Text"
+            "schema:Text",
+            "schema:ProductModel"
          ]
       },
       "schema:mpn" : {
@@ -400,12 +400,12 @@
          "rdfs:comment" : "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
          "rdfs:label" : "mpn",
          "schema:domainIncludes" : [
-            "schema:Product",
+            "schema:Offer",
             "schema:Demand",
-            "schema:Offer"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:nsn" : {
          "rdf:type" : "rdf:Property",
@@ -422,19 +422,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Event",
+            "schema:CreativeWork",
             "schema:Product",
             "schema:AggregateOffer",
+            "schema:Service",
             "schema:Trip",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
             "schema:MenuItem",
-            "schema:Service"
+            "schema:Event",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -443,8 +443,8 @@
          "rdfs:comment" : "A pattern that something has, for example 'polka dot', 'striped', 'Canadian flag'. Values are typically expressed as text, although links to controlled value schemes are also supported.",
          "rdfs:label" : "pattern",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -470,7 +470,7 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:purchaseDate" : {
          "rdf:type" : "rdf:Property",
@@ -481,7 +481,7 @@
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:releaseDate" : {
          "rdf:type" : "rdf:Property",
@@ -489,20 +489,20 @@
          "rdfs:label" : "releaseDate",
          "schema:domainIncludes" : "schema:Product",
          "schema:rangeIncludes" : "schema:Date",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:review" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Event",
-            "schema:Organization",
             "schema:Place",
             "schema:Service",
-            "schema:CreativeWork",
+            "schema:Organization",
+            "schema:Event",
             "schema:Offer",
+            "schema:CreativeWork",
+            "schema:Product",
             "schema:Brand"
          ],
          "schema:rangeIncludes" : "schema:Review"
@@ -531,9 +531,9 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:QuantitativeValue",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1797"
       },
@@ -543,23 +543,23 @@
          "rdfs:label" : "sku",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
+            "schema:Demand",
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:slogan" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Brand",
-            "schema:Service",
-            "schema:Place",
             "schema:Organization",
-            "schema:Product"
+            "schema:Product",
+            "schema:Place",
+            "schema:Brand",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -572,7 +572,7 @@
             "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:width" : {
          "rdf:type" : "rdf:Property",

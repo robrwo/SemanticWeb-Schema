@@ -26,11 +26,11 @@
          "schema:domainIncludes" : [
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:QuantitativeValueDistribution",
-            "schema:Audiobook",
-            "schema:MediaObject",
             "schema:Movie",
             "schema:Event",
+            "schema:Audiobook",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
             "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",
@@ -59,7 +59,7 @@
          "rdfs:label" : "isrcCode",
          "schema:domainIncludes" : "schema:MusicRecording",
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       },
       "schema:recordingOf" : {
          "rdf:type" : "rdf:Property",
@@ -68,7 +68,7 @@
          "schema:domainIncludes" : "schema:MusicRecording",
          "schema:inverseOf" : "schema:recordedAs",
          "schema:rangeIncludes" : "schema:MusicComposition",
-         "schema:source" : "schemadotorgsources2:MBZ"
+         "schema:source" : "schemadotorgsources:MBZ"
       }
    }
 }

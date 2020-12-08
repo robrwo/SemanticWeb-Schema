@@ -6,9 +6,9 @@
       "rdfs:subClassOf" : "schema:Trip",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "schemadotorgsources2:IIT-CNR.it",
-         "schemadotorgsources2:Tourism",
-         "https://github.com/schemaorg/schemaorg/issues/1810"
+         "https://github.com/schemaorg/schemaorg/issues/1810",
+         "schemadotorgsources:Tourism",
+         "schemadotorgsources:IIT-CNR.it"
       ]
    },
    "properties" : {
@@ -17,17 +17,17 @@
          "rdfs:comment" : "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc. ",
          "rdfs:label" : "touristType",
          "schema:domainIncludes" : [
+            "schema:TouristDestination",
             "schema:TouristAttraction",
-            "schema:TouristTrip",
-            "schema:TouristDestination"
+            "schema:TouristTrip"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
-            "schema:Text"
+            "schema:Text",
+            "schema:Audience"
          ],
          "schema:source" : [
-            "schemadotorgsources2:Tourism",
-            "schemadotorgsources2:IIT-CNR.it"
+            "schemadotorgsources:IIT-CNR.it",
+            "schemadotorgsources:Tourism"
          ]
       }
    }

@@ -15,8 +15,8 @@
             "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:pickupLocation" : {
@@ -24,8 +24,8 @@
          "rdfs:comment" : "Where a taxi will pick up a passenger or a rental car can be picked up.",
          "rdfs:label" : "pickupLocation",
          "schema:domainIncludes" : [
-            "schema:TaxiReservation",
-            "schema:RentalCarReservation"
+            "schema:RentalCarReservation",
+            "schema:TaxiReservation"
          ],
          "schema:rangeIncludes" : "schema:Place"
       },

@@ -4,7 +4,7 @@
       "rdfs:comment" : "An article, such as a news article or piece of investigative report. Newspapers and magazines have articles of many different types and this is intended to cover them all.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       "rdfs:label" : "Article",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources2:source_rNews"
+      "schema:source" : "schemadotorgsources:source_rNews"
    },
    "properties" : {
       "schema:articleBody" : {
@@ -28,11 +28,11 @@
          "schema:domainIncludes" : "schema:Article",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:Text"
+            "schema:Text",
+            "schema:CreativeWork"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
+            "schemadotorgsources2:TP",
             "https://github.com/schemaorg/schemaorg/issues/1688"
          ]
       },
@@ -42,16 +42,16 @@
          "rdfs:comment" : "The page on which the work ends; for example \"138\" or \"xvi\".",
          "rdfs:label" : "pageEnd",
          "schema:domainIncludes" : [
-            "schema:PublicationIssue",
             "schema:Chapter",
+            "schema:PublicationIssue",
             "schema:PublicationVolume",
             "schema:Article"
          ],
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ],
-         "schema:source" : "schemadotorgsources2:source_bibex"
+         "schema:source" : "schemadotorgsources:source_bibex"
       },
       "schema:pageStart" : {
          "owl:equivalentProperty" : "bibo:pageStart",
@@ -60,15 +60,15 @@
          "rdfs:label" : "pageStart",
          "schema:domainIncludes" : [
             "schema:Article",
-            "schema:PublicationIssue",
+            "schema:PublicationVolume",
             "schema:Chapter",
-            "schema:PublicationVolume"
+            "schema:PublicationIssue"
          ],
          "schema:rangeIncludes" : [
             "schema:Integer",
             "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources2:source_bibex"
+         "schema:source" : "schemadotorgsources:source_bibex"
       },
       "schema:pagination" : {
          "owl:equivalentProperty" : "bibo:pages",
@@ -76,21 +76,21 @@
          "rdfs:comment" : "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
          "rdfs:label" : "pagination",
          "schema:domainIncludes" : [
-            "schema:Chapter",
             "schema:Article",
+            "schema:Chapter",
             "schema:PublicationIssue",
             "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources2:source_bibex"
+         "schema:source" : "schemadotorgsources:source_bibex"
       },
       "schema:speakable" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates sections of a Web page that are particularly 'speakable' in the sense of being highlighted as being especially appropriate for text-to-speech conversion. Other sections of a page may also be usefully spoken in particular circumstances; the 'speakable' property serves to indicate the parts most likely to be generally useful for speech.\n\nThe *speakable* property can be repeated an arbitrary number of times, with three kinds of possible 'content-locator' values:\n\n1.) *id-value* URL references - uses *id-value* of an element in the page being annotated. The simplest use of *speakable* has (potentially relative) URL values, referencing identified sections of the document concerned.\n\n2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the [[cssSelector]] property.\n\n3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the [[xpath]] property.\n\n\nFor more sophisticated markup of speakable sections beyond simple ID references, either CSS selectors or XPath expressions to pick out document section(s) as speakable. For this\nwe define a supporting type, [[SpeakableSpecification]]  which is defined to be a possible value of the *speakable* property.\n         ",
          "rdfs:label" : "speakable",
          "schema:domainIncludes" : [
-            "schema:WebPage",
-            "schema:Article"
+            "schema:Article",
+            "schema:WebPage"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",

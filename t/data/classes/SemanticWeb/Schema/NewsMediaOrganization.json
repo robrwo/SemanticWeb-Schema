@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Organization",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "schemadotorgsources:TP",
-         "https://github.com/schemaorg/schemaorg/issues/1525"
+         "https://github.com/schemaorg/schemaorg/issues/1525",
+         "schemadotorgsources2:TP"
       ]
    },
    "properties" : {
@@ -27,7 +27,7 @@
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources:TP"
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:correctionsPolicy" : {
@@ -45,7 +45,7 @@
             "schema:CreativeWork"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
+            "schemadotorgsources2:TP",
             "https://github.com/schemaorg/schemaorg/issues/1525"
          ]
       },
@@ -63,8 +63,8 @@
             "schema:URL"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1525"
+            "https://github.com/schemaorg/schemaorg/issues/1525",
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:diversityStaffingReport" : {
@@ -78,12 +78,12 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Article"
+            "schema:Article",
+            "schema:URL"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources:TP"
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:ethicsPolicy" : {
@@ -113,8 +113,8 @@
             "schema:CreativeWork"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1525"
+            "https://github.com/schemaorg/schemaorg/issues/1525",
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:missionCoveragePrioritiesPolicy" : {
@@ -129,8 +129,8 @@
             "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/1525"
          ]
       },
       "schema:noBylinesPolicy" : {
@@ -145,8 +145,8 @@
             "schema:CreativeWork"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1688"
+            "https://github.com/schemaorg/schemaorg/issues/1688",
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:ownershipFundingInfo" : {
@@ -155,19 +155,19 @@
          "rdfs:label" : "ownershipFundingInfo",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:AboutPage",
-            "schema:URL",
+            "schema:Text",
             "schema:CreativeWork",
-            "schema:Text"
+            "schema:URL"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources:TP"
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:unnamedSourcesPolicy" : {
@@ -176,8 +176,8 @@
          "rdfs:label" : "unnamedSourcesPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -186,7 +186,7 @@
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources:TP"
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:verificationFactCheckingPolicy" : {
@@ -197,11 +197,11 @@
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ],
          "schema:source" : [
-            "schemadotorgsources:TP",
+            "schemadotorgsources2:TP",
             "https://github.com/schemaorg/schemaorg/issues/1525"
          ]
       }

@@ -4,7 +4,7 @@
       "rdfs:comment" : "UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use [[Action]]-based vocabulary, alongside types such as [[Comment]].",
       "rdfs:label" : "UserComments",
       "rdfs:subClassOf" : "schema:UserInteraction",
-      "schema:source" : "schemadotorgsources2:source_rNews",
+      "schema:source" : "schemadotorgsources:source_rNews",
       "schema:supersededBy" : "schema:InteractionCounter"
    },
    "properties" : {
@@ -21,8 +21,8 @@
          "rdfs:label" : "commentTime",
          "schema:domainIncludes" : "schema:UserComments",
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:creator" : {
@@ -30,8 +30,8 @@
          "rdfs:comment" : "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
          "rdfs:label" : "creator",
          "schema:domainIncludes" : [
-            "schema:UserComments",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:UserComments"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",

@@ -4,7 +4,7 @@
       "rdfs:comment" : "A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.",
       "rdfs:label" : "WarrantyPromise",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources2:source_GoodRelationsClass"
+      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
    },
    "properties" : {
       "schema:durationOfWarranty" : {
@@ -13,7 +13,7 @@
          "rdfs:label" : "durationOfWarranty",
          "schema:domainIncludes" : "schema:WarrantyPromise",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:warrantyScope" : {
          "rdf:type" : "rdf:Property",
@@ -21,7 +21,7 @@
          "rdfs:label" : "warrantyScope",
          "schema:domainIncludes" : "schema:WarrantyPromise",
          "schema:rangeIncludes" : "schema:WarrantyScope",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }
    }
 }

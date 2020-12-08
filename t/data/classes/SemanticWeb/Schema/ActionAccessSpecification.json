@@ -13,17 +13,17 @@
          "rdfs:label" : "availabilityEnds",
          "schema:domainIncludes" : [
             "schema:ActionAccessSpecification",
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Time",
             "schema:DateTime",
-            "schema:Date",
-            "schema:Time"
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources2:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms"
          ]
       },
       "schema:availabilityStarts" : {
@@ -36,13 +36,13 @@
             "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
             "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:Date"
          ],
          "schema:source" : [
-            "schemadotorgsources2:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "schemadotorgsources:source_GoodRelationsTerms"
          ]
       },
       "schema:category" : {
@@ -50,8 +50,8 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Recommendation",
             "schema:Product",
+            "schema:Recommendation",
             "schema:Invoice",
             "schema:SpecialAnnouncement",
             "schema:Offer",
@@ -61,13 +61,13 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:PhysicalActivityCategory",
+            "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:eligibleRegion" : {
@@ -76,19 +76,19 @@
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:Offer",
             "schema:DeliveryChargeSpecification",
+            "schema:Offer",
+            "schema:Demand",
             "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
             "schema:Place",
+            "schema:GeoShape",
             "schema:Text"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources2:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms"
          ]
       },
       "schema:expectsAcceptanceOf" : {
@@ -96,9 +96,9 @@
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
+            "schema:ConsumeAction",
             "schema:MediaSubscription",
-            "schema:ConsumeAction"
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
@@ -108,15 +108,15 @@
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand",
             "schema:ActionAccessSpecification",
+            "schema:Demand",
+            "schema:Offer",
             "schema:DeliveryChargeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
             "schema:Text",
+            "schema:GeoShape",
             "schema:Place"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2242"

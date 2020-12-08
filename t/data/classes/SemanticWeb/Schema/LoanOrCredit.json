@@ -4,7 +4,7 @@
       "rdfs:comment" : "A financial product for the loaning of an amount of money, or line of credit, under agreed terms and charges.",
       "rdfs:label" : "LoanOrCredit",
       "rdfs:subClassOf" : "schema:FinancialProduct",
-      "schema:source" : "schemadotorgsources2:FIBO"
+      "schema:source" : "schemadotorgsources:FIBO"
    },
    "properties" : {
       "schema:amount" : {
@@ -12,19 +12,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:InvestmentOrDeposit",
+            "schema:MonetaryGrant",
             "schema:MoneyTransfer",
-            "schema:LoanOrCredit",
-            "schema:MonetaryGrant"
+            "schema:DatedMoneySpecification",
+            "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:MonetaryAmount"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:currency" : {
@@ -33,10 +33,10 @@
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
             "schema:LoanOrCredit",
-            "schema:MonetaryAmount",
             "schema:DatedMoneySpecification",
-            "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmountDistribution"
+            "schema:MonetaryAmountDistribution",
+            "schema:MonetaryAmount",
+            "schema:ExchangeRateSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -49,7 +49,7 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "schemadotorgsources2:FIBO",
+            "schemadotorgsources:FIBO",
             "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
@@ -62,7 +62,7 @@
          "schema:rangeIncludes" : "schema:RepaymentSpecification",
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources2:FIBO"
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:loanTerm" : {
@@ -72,7 +72,7 @@
          "rdfs:subPropertyOf" : "schema:duration",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:FIBO"
+         "schema:source" : "schemadotorgsources:FIBO"
       },
       "schema:loanType" : {
          "rdf:type" : "rdf:Property",
@@ -85,8 +85,8 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources2:FIBO"
+            "schemadotorgsources:FIBO",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:recourseLoan" : {
@@ -97,8 +97,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "schemadotorgsources2:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:renegotiableLoan" : {
@@ -109,7 +109,7 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "schemadotorgsources2:FIBO",
+            "schemadotorgsources:FIBO",
             "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
@@ -119,10 +119,10 @@
          "rdfs:label" : "requiredCollateral",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources2:FIBO"
+         "schema:source" : "schemadotorgsources:FIBO"
       }
    }
 }

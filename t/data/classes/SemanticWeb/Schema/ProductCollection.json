@@ -16,12 +16,12 @@
          "rdfs:comment" : "This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].",
          "rdfs:label" : "includesObject",
          "schema:domainIncludes" : [
+            "schema:ProductCollection",
             "schema:Offer",
-            "schema:Demand",
-            "schema:ProductCollection"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:TypeAndQuantityNode",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }
    }
 }

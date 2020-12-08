@@ -6,7 +6,7 @@
       "rdfs:subClassOf" : "schema:InvestmentOrDeposit",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "schemadotorgsources2:FIBO",
+         "schemadotorgsources:FIBO",
          "https://github.com/schemaorg/schemaorg/issues/1253"
       ]
    },

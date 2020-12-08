@@ -11,25 +11,25 @@
          "rdfs:comment" : "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:FloorPlan",
-            "schema:Place"
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
       "schema:audience" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
+            "schema:LodgingBusiness",
+            "schema:PlayAction",
             "schema:Service",
-            "schema:Product",
             "schema:Event",
             "schema:CreativeWork",
-            "schema:LodgingBusiness",
-            "schema:PlayAction"
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Audience"
       },
@@ -38,14 +38,14 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
+            "schema:ContactPoint",
             "schema:TouristAttraction",
             "schema:LodgingBusiness",
-            "schema:ServiceChannel",
-            "schema:ContactPoint"
+            "schema:ServiceChannel"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ]
       },
       "schema:checkinTime" : {
@@ -53,8 +53,8 @@
          "rdfs:comment" : "The earliest someone may check into a lodging establishment.",
          "rdfs:label" : "checkinTime",
          "schema:domainIncludes" : [
-            "schema:LodgingReservation",
-            "schema:LodgingBusiness"
+            "schema:LodgingBusiness",
+            "schema:LodgingReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:Time",
@@ -70,8 +70,8 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       },
       "schema:numberOfRooms" : {
@@ -79,11 +79,11 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:SingleFamilyResidence",
+            "schema:FloorPlan",
+            "schema:House",
             "schema:LodgingBusiness",
             "schema:Suite",
-            "schema:House",
-            "schema:FloorPlan",
+            "schema:SingleFamilyResidence",
             "schema:Accommodation",
             "schema:Apartment"
          ],
@@ -91,23 +91,23 @@
             "schema:Number",
             "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
       "schema:petsAllowed" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
+            "schema:ApartmentComplex",
             "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:FloorPlan",
-            "schema:ApartmentComplex"
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:Text"
          ],
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
       "schema:starRating" : {
          "rdf:type" : "rdf:Property",
@@ -118,7 +118,7 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:Rating",
-         "schema:source" : "schemadotorgsources:STI_Accommodation_Ontology"
+         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       }
    }
 }

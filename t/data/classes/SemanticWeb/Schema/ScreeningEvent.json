@@ -12,9 +12,9 @@
          "rdfs:label" : "subtitleLanguage",
          "schema:domainIncludes" : [
             "schema:ScreeningEvent",
+            "schema:BroadcastEvent",
             "schema:Movie",
-            "schema:TVEpisode",
-            "schema:BroadcastEvent"
+            "schema:TVEpisode"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

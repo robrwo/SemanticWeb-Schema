@@ -4,7 +4,7 @@
       "rdfs:comment" : "A value indicating which roadwheels will receive torque.",
       "rdfs:label" : "DriveWheelConfigurationValue",
       "rdfs:subClassOf" : "schema:QualitativeValue",
-      "schema:source" : "schemadotorgsources2:Automotive_Ontology_Working_Group"
+      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
    },
    "properties" : {}
 }

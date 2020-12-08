@@ -7,7 +7,7 @@
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
          "https://github.com/schemaorg/schemaorg/issues/383",
-         "schemadotorgsources:FundInfoCollab"
+         "schemadotorgsources2:FundInfoCollab"
       ]
    },
    "properties" : {}

@@ -4,7 +4,7 @@
       "rdfs:comment" : "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.",
       "rdfs:label" : "QualitativeValue",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:source" : "schemadotorgsources2:source_GoodRelationsClass"
+      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
    },
    "properties" : {
       "schema:additionalProperty" : {
@@ -25,7 +25,7 @@
          "rdfs:label" : "equal",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:greater" : {
          "rdf:type" : "rdf:Property",
@@ -33,7 +33,7 @@
          "rdfs:label" : "greater",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:greaterOrEqual" : {
          "rdf:type" : "rdf:Property",
@@ -41,7 +41,7 @@
          "rdfs:label" : "greaterOrEqual",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:lesser" : {
          "rdf:type" : "rdf:Property",
@@ -49,7 +49,7 @@
          "rdfs:label" : "lesser",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:lesserOrEqual" : {
          "rdf:type" : "rdf:Property",
@@ -57,7 +57,7 @@
          "rdfs:label" : "lesserOrEqual",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:nonEqual" : {
          "rdf:type" : "rdf:Property",
@@ -65,7 +65,7 @@
          "rdfs:label" : "nonEqual",
          "schema:domainIncludes" : "schema:QualitativeValue",
          "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:valueReference" : {
          "rdf:type" : "rdf:Property",
@@ -73,17 +73,17 @@
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
             "schema:PropertyValue",
-            "schema:QuantitativeValue",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:StructuredValue",
-            "schema:Enumeration",
+            "schema:PropertyValue",
             "schema:QualitativeValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:Enumeration"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }
    }
 }

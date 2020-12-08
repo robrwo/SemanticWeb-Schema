@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DayOfWeek"
+            "schema:DayOfWeek",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -54,11 +54,11 @@
          "schema:domainIncludes" : [
             "schema:Schedule",
             "schema:MusicRecording",
-            "schema:QuantitativeValueDistribution",
-            "schema:Audiobook",
-            "schema:MediaObject",
             "schema:Movie",
             "schema:Event",
+            "schema:Audiobook",
+            "schema:MediaObject",
+            "schema:QuantitativeValueDistribution",
             "schema:MusicRelease"
          ],
          "schema:rangeIncludes" : "schema:Duration",
@@ -73,16 +73,16 @@
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
             "schema:Event",
-            "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
+            "schema:CreativeWorkSeason",
             "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:Role",
-            "schema:CreativeWorkSeries"
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -93,8 +93,8 @@
          "schema:domainIncludes" : [
             "schema:Schedule",
             "schema:Action",
-            "schema:MediaObject",
-            "schema:FoodEstablishmentReservation"
+            "schema:FoodEstablishmentReservation",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -109,8 +109,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -131,8 +131,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Duration"
+            "schema:Duration",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -150,17 +150,17 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
+            "schema:DatedMoneySpecification",
+            "schema:Schedule",
+            "schema:CreativeWorkSeries",
+            "schema:Role",
             "schema:CreativeWorkSeason",
             "schema:Event",
-            "schema:CreativeWorkSeries",
-            "schema:DatedMoneySpecification",
-            "schema:Role",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -169,10 +169,10 @@
          "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
          "schema:domainIncludes" : [
+            "schema:FoodEstablishmentReservation",
             "schema:Action",
             "schema:Schedule",
-            "schema:MediaObject",
-            "schema:FoodEstablishmentReservation"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

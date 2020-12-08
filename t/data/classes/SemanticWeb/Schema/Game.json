@@ -11,8 +11,8 @@
          "rdfs:comment" : "A piece of data that represents a particular aspect of a fictional character (skill, power, character points, advantage, disadvantage).",
          "rdfs:label" : "characterAttribute",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
-            "schema:Game"
+            "schema:Game",
+            "schema:VideoGameSeries"
          ],
          "schema:rangeIncludes" : "schema:Thing"
       },
@@ -35,9 +35,9 @@
             "schema:Game"
          ],
          "schema:rangeIncludes" : [
-            "schema:PostalAddress",
+            "schema:Place",
             "schema:URL",
-            "schema:Place"
+            "schema:PostalAddress"
          ]
       },
       "schema:numberOfPlayers" : {

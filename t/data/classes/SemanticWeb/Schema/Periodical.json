@@ -5,7 +5,7 @@
       "rdfs:comment" : "A publication in any medium issued in successive parts bearing numerical or chronological designations and intended, such as a magazine, scholarly journal, or newspaper to continue indefinitely.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       "rdfs:label" : "Periodical",
       "rdfs:subClassOf" : "schema:CreativeWorkSeries",
-      "schema:source" : "schemadotorgsources2:source_bibex"
+      "schema:source" : "schemadotorgsources:source_bibex"
    },
    "properties" : {}
 }

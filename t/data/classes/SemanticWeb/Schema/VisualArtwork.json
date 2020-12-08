@@ -4,7 +4,7 @@
       "rdfs:comment" : "A work of art that is primarily visual in character.",
       "rdfs:label" : "VisualArtwork",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources2:source_VisualArtworkClass"
+      "schema:source" : "schemadotorgsources:source_VisualArtworkClass"
    },
    "properties" : {
       "schema:artEdition" : {
@@ -24,8 +24,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:artform" : {
@@ -44,8 +44,8 @@
          "rdfs:label" : "artist",
          "schema:domainIncludes" : [
             "schema:ComicStory",
-            "schema:ComicIssue",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -56,8 +56,8 @@
          "rdfs:label" : "artworkSurface",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:colorist" : {
@@ -65,8 +65,8 @@
          "rdfs:comment" : "The individual who adds color to inked drawings.",
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
-            "schema:ComicIssue",
             "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -77,28 +77,28 @@
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:Distance"
          ],
-         "schema:source" : "schemadotorgsources2:source_GoodRelationsTerms"
+         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:height" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:Person",
+            "schema:VisualArtwork",
             "schema:Product",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       },
       "schema:inker" : {
@@ -106,9 +106,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:ComicStory",
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -118,8 +118,8 @@
          "rdfs:comment" : "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicIssue",
+            "schema:VisualArtwork",
             "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -130,8 +130,8 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
+            "schema:VisualArtwork",
             "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",

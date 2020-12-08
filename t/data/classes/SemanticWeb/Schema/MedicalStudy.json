@@ -12,9 +12,9 @@
          "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
-            "schema:Patient",
             "schema:MedicalStudy",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -24,12 +24,12 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Person",
-            "schema:Organization",
-            "schema:MedicalStudy",
             "schema:Grant",
-            "schema:Event"
+            "schema:CreativeWork",
+            "schema:MedicalStudy",
+            "schema:Organization",
+            "schema:Event",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -47,9 +47,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:EventStatusType",
-            "schema:MedicalStudyStatus",
-            "schema:Text"
+            "schema:MedicalStudyStatus"
          ]
       },
       "schema:studyLocation" : {
