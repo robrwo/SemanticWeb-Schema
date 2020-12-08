@@ -21,9 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of finding an object.\n\nRelated actions:\n\n* [[SearchAction]]:
-FindAction is generally lead by a SearchAction, but not necessarily.
+The act of finding an object.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::SearchAction>: FindAction is generally lead by a SearchAction, but not necessarily.
+
+
+=back
 
 
 

@@ -21,9 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of committing to/adopting an object.\n\nRelated actions:\n\n*
-[[RejectAction]]: The antonym of AcceptAction.
+The act of committing to/adopting an object.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::RejectAction>: The antonym of AcceptAction.
+
+
+=back
 
 
 

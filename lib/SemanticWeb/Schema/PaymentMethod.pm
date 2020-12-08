@@ -21,20 +21,58 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A payment method is a standardized procedure for transferring the monetary
-amount for a purchase. Payment methods are characterized by the legal and
-technical structures used, and by the organization or group carrying out
-the transaction.\n\nCommonly used values:\n\n*
-http://purl.org/goodrelations/v1#ByBankTransferInAdvance\n*
-http://purl.org/goodrelations/v1#ByInvoice\n*
-http://purl.org/goodrelations/v1#Cash\n*
-http://purl.org/goodrelations/v1#CheckInAdvance\n*
-http://purl.org/goodrelations/v1#COD\n*
-http://purl.org/goodrelations/v1#DirectDebit\n*
-http://purl.org/goodrelations/v1#GoogleCheckout\n*
-http://purl.org/goodrelations/v1#PayPal\n*
-http://purl.org/goodrelations/v1#PaySwarm 
+A payment method is a standardized procedure for transferring the monetary amount for a purchase. Payment methods are characterized by the legal and technical structures used, and by the organization or group carrying out the transaction.
 
+Commonly used values:
+
+=over
+
+=item *
+
+http://purl.org/goodrelations/v1#ByBankTransferInAdvance
+
+
+=item *
+
+http://purl.org/goodrelations/v1#ByInvoice
+
+
+=item *
+
+http://purl.org/goodrelations/v1#Cash
+
+
+=item *
+
+http://purl.org/goodrelations/v1#CheckInAdvance
+
+
+=item *
+
+http://purl.org/goodrelations/v1#COD
+
+
+=item *
+
+http://purl.org/goodrelations/v1#DirectDebit
+
+
+=item *
+
+http://purl.org/goodrelations/v1#GoogleCheckout
+
+
+=item *
+
+http://purl.org/goodrelations/v1#PayPal
+
+
+=item *
+
+http://purl.org/goodrelations/v1#PaySwarm
+
+
+=back
 
 
 

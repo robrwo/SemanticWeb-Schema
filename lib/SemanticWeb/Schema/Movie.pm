@@ -299,16 +299,11 @@ has subtitle_language => (
 
 C<titleEIDR>
 
-An [EIDR](https://eidr.org/) (Entertainment Identifier Registry)
-[[identifier]] representing at the most general/abstract level, a work of
-film or television. For example, the motion picture known as "Ghostbusters"
-has a titleEIDR of "10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or
-work) may have several variants, which EIDR calls "edits". See
-[[editEIDR]]. Since schema.org types like [[Movie]] and [[TVEpisode]] can
-be used for both works and their multiple expressions, it is possible to
-use [[titleEIDR]] alone (for a general description), or alongside
-[[editEIDR]] for a more edit-specific description. 
+An L<EIDR|https://eidr.org/> (Entertainment Identifier Registry) [[identifier]] representing at the most general/abstract level, a work of film or television.
 
+For example, the motion picture known as "Ghostbusters" has a titleEIDR of  "10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or work) may have several variants, which EIDR calls "edits". See [[editEIDR]].
+
+Since schema.org types like L<SemanticWeb::Schema::Movie> and L<SemanticWeb::Schema::TVEpisode> can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.
 
 A title_eidr should be one of the following types:
 

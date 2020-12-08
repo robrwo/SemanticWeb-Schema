@@ -21,10 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A LegalService is a business that provides legally-oriented services,
-advice and representation, e.g. law firms.\n\nAs a [[LocalBusiness]] it can
-be described as a [[provider]] of one or more [[Service]]\(s).
+A LegalService is a business that provides legally-oriented services, advice and representation, e.g. law firms.
 
+As a L<SemanticWeb::Schema::LocalBusiness> it can be described as a [[provider]] of one or more L<SemanticWeb::Schema::Service>(s).
 
 
 

@@ -21,16 +21,28 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of an agent communicating (service provider, social media, etc)
-their arrival by registering/confirming for a previously reserved service
-(e.g. flight check in) or at a place (e.g. hotel), possibly resulting in a
-result (boarding pass, etc).\n\nRelated actions:\n\n* [[CheckOutAction]]:
-The antonym of CheckInAction.\n* [[ArriveAction]]: Unlike ArriveAction,
-CheckInAction implies that the agent is informing/confirming the start of a
-previously reserved service.\n* [[ConfirmAction]]: Unlike ConfirmAction,
-CheckInAction implies that the agent is informing/confirming the *start* of
-a previously reserved service rather than its validity/existence.
+The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight check in) or at a place (e.g. hotel), possibly resulting in a result (boarding pass, etc).
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::CheckOutAction>: The antonym of CheckInAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::ArriveAction>: Unlike ArriveAction, CheckInAction implies that the agent is informing/confirming the start of a previously reserved service.
+
+
+=item *
+
+L<SemanticWeb::Schema::ConfirmAction>: Unlike ConfirmAction, CheckInAction implies that the agent is informing/confirming the I<start> of a previously reserved service rather than its validity/existence.
+
+
+=back
 
 
 

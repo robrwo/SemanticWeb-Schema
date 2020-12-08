@@ -4,6 +4,13 @@ Revision history for {{$dist->name}}:
   [Enhancements]
   - Updated classes to Version 11.01 of the schema.
 
+  [Documentation]
+  - Fixed escaped newlines.
+
+  - Fixed embedded HTML.
+
+  - Improve translation of Markdown into POD.
+
 v11.0.0   2020-12-02 14:09:39+00:00 Europe/London
   [Enhancements]
   - Updated classes to Version 11.0 of the schema.

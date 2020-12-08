@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[NewsArticle]] expressing an open call by a [[NewsMediaOrganization]]
-asking the public for input, insights, clarifications, anecdotes,
-documentation, etc., on an issue, for reporting purposes.
-
+A L<SemanticWeb::Schema::NewsArticle> expressing an open call by a L<SemanticWeb::Schema::NewsMediaOrganization> asking the public for input, insights, clarifications, anecdotes, documentation, etc., on an issue, for reporting purposes.
 
 
 

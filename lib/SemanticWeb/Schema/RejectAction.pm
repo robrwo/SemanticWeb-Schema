@@ -21,9 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of rejecting to/adopting an object.\n\nRelated actions:\n\n*
-[[AcceptAction]]: The antonym of RejectAction.
+The act of rejecting to/adopting an object.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::AcceptAction>: The antonym of RejectAction.
+
+
+=back
 
 
 

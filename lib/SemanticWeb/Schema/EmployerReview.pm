@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An [[EmployerReview]] is a review of an [[Organization]] regarding its role
-as an employer, written by a current or former employee of that
-organization.
-
+An L<SemanticWeb::Schema::EmployerReview> is a review of an L<SemanticWeb::Schema::Organization> regarding its role as an employer, written by a current or former employee of that organization.
 
 
 

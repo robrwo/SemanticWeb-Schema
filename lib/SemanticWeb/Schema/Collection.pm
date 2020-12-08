@@ -33,8 +33,7 @@ A collection of items e.g. creative works or products.
 
 C<collectionSize>
 
-The number of items in the [[Collection]].
-
+The number of items in the L<SemanticWeb::Schema::Collection>.
 
 A collection_size should be one of the following types:
 

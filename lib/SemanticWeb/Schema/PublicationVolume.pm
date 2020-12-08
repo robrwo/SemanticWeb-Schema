@@ -23,7 +23,7 @@ our $VERSION = 'v11.01.0';
 
 A part of a successively published publication such as a periodical or
 multi-volume work, often numbered. It may represent a time span, such as a
-year.\n\nSee also [blog
+year. See also [blog
 post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
 html).
 

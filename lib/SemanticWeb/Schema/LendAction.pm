@@ -21,10 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of providing an object under an agreement that it will be returned
-at a later date. Reciprocal of BorrowAction.\n\nRelated actions:\n\n*
-[[BorrowAction]]: Reciprocal of LendAction.
+The act of providing an object under an agreement that it will be returned at a later date. Reciprocal of BorrowAction.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::BorrowAction>: Reciprocal of LendAction.
+
+
+=back
 
 
 

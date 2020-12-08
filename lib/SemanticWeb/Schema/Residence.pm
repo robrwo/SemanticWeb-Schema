@@ -33,8 +33,7 @@ The place where a person lives.
 
 C<accommodationFloorPlan>
 
-A floorplan of some [[Accommodation]].
-
+A floorplan of some L<SemanticWeb::Schema::Accommodation>.
 
 A accommodation_floor_plan should be one of the following types:
 

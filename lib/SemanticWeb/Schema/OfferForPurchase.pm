@@ -21,12 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An [[OfferForPurchase]] in Schema.org represents an [[Offer]] to sell
-something, i.e. an [[Offer]] whose [[businessFunction]] is
-[sell](http://purl.org/goodrelations/v1#Sell.). See [Good
-Relations](https://en.wikipedia.org/wiki/GoodRelations) for background on
-the underlying concepts. 
-
+An L<SemanticWeb::Schema::OfferForPurchase> in Schema.org represents an L<SemanticWeb::Schema::Offer> to sell something, i.e. an L<SemanticWeb::Schema::Offer> whose
+  [[businessFunction]] is L<sell|http://purl.org/goodrelations/v1#Sell.>. See L<Good Relations|https://en.wikipedia.org/wiki/GoodRelations> for
+  background on the underlying concepts.
 
 
 

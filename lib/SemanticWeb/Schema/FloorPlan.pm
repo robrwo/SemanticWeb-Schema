@@ -21,16 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A FloorPlan is an explicit representation of a collection of similar
-accommodations, allowing the provision of common information (room counts,
-sizes, layout diagrams) and offers for rental or sale. In typical use, some
-[[ApartmentComplex]] has an [[accommodationFloorPlan]] which is a
-[[FloorPlan]]. A FloorPlan is always in the context of a particular place,
-either a larger [[ApartmentComplex]] or a single [[Apartment]]. The
-visual/spatial aspects of a floor plan (i.e. room layout, [see
-wikipedia](https://en.wikipedia.org/wiki/Floor_plan)) can be indicated
-using [[image]]. 
-
+A FloorPlan is an explicit representation of a collection of similar accommodations, allowing the provision of common information (room counts, sizes, layout diagrams) and offers for rental or sale. In typical use, some L<SemanticWeb::Schema::ApartmentComplex> has an [[accommodationFloorPlan]] which is a L<SemanticWeb::Schema::FloorPlan>.  A FloorPlan is always in the context of a particular place, either a larger L<SemanticWeb::Schema::ApartmentComplex> or a single L<SemanticWeb::Schema::Apartment>. The visual/spatial aspects of a floor plan (i.e. room layout, L<see wikipedia|https://en.wikipedia.org/wiki/Floor_plan>) can be indicated using [[image]]. 
 
 
 
@@ -160,11 +151,7 @@ has layout_image => (
 
 C<numberOfAccommodationUnits>
 
-Indicates the total (available plus unavailable) number of accommodation
-units in an [[ApartmentComplex]], or the number of accommodation units for
-a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See
-also [[numberOfAvailableAccommodationUnits]].
-
+Indicates the total (available plus unavailable) number of accommodation units in an L<SemanticWeb::Schema::ApartmentComplex>, or the number of accommodation units for a specific L<SemanticWeb::Schema::FloorPlan> (within its specific L<SemanticWeb::Schema::ApartmentComplex>). See also [[numberOfAvailableAccommodationUnits]].
 
 A number_of_accommodation_units should be one of the following types:
 
@@ -191,11 +178,7 @@ has number_of_accommodation_units => (
 
 C<numberOfAvailableAccommodationUnits>
 
-Indicates the number of available accommodation units in an
-[[ApartmentComplex]], or the number of accommodation units for a specific
-[[FloorPlan]] (within its specific [[ApartmentComplex]]). See also
-[[numberOfAccommodationUnits]].
-
+Indicates the number of available accommodation units in an L<SemanticWeb::Schema::ApartmentComplex>, or the number of accommodation units for a specific L<SemanticWeb::Schema::FloorPlan> (within its specific L<SemanticWeb::Schema::ApartmentComplex>). See also [[numberOfAccommodationUnits]].
 
 A number_of_available_accommodation_units should be one of the following types:
 
@@ -222,13 +205,7 @@ has number_of_available_accommodation_units => (
 
 C<numberOfBathroomsTotal>
 
-The total integer number of bathrooms in a some [[Accommodation]],
-following real estate conventions as [documented in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field):
-"The simple sum of the number of bathrooms. For example for a property with
-two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will
-be 3.". See also [[numberOfRooms]].
-
+The total integer number of bathrooms in a some L<SemanticWeb::Schema::Accommodation>, following real estate conventions as L<documented in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field>: "The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.". See also [[numberOfRooms]].
 
 A number_of_bathrooms_total should be one of the following types:
 
@@ -255,9 +232,7 @@ has number_of_bathrooms_total => (
 
 C<numberOfBedrooms>
 
-The total integer number of bedrooms in a some [[Accommodation]],
-[[ApartmentComplex]] or [[FloorPlan]].
-
+The total integer number of bedrooms in a some L<SemanticWeb::Schema::Accommodation>, L<SemanticWeb::Schema::ApartmentComplex> or L<SemanticWeb::Schema::FloorPlan>.
 
 A number_of_bedrooms should be one of the following types:
 
@@ -286,10 +261,7 @@ has number_of_bedrooms => (
 
 C<numberOfFullBathrooms>
 
-Number of full bathrooms - The total number of full and Â¾ bathrooms in an
-[[Accommodation]]. This corresponds to the [BathroomsFull field in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).
-
+Number of full bathrooms - The total number of full and Â¾ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsFull field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field>.
 
 A number_of_full_bathrooms should be one of the following types:
 
@@ -316,10 +288,7 @@ has number_of_full_bathrooms => (
 
 C<numberOfPartialBathrooms>
 
-Number of partial bathrooms - The total number of half and Â¼ bathrooms in
-an [[Accommodation]]. This corresponds to the [BathroomsPartial field in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). 
-
+Number of partial bathrooms - The total number of half and Â¼ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsPartial field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field>. 
 
 A number_of_partial_bathrooms should be one of the following types:
 

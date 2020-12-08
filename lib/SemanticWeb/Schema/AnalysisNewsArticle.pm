@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An AnalysisNewsArticle is a [[NewsArticle]] that, while based on factual
-reporting, incorporates the expertise of the author/producer, offering
-interpretations and conclusions.
-
+An AnalysisNewsArticle is a L<SemanticWeb::Schema::NewsArticle> that, while based on factual reporting, incorporates the expertise of the author/producer, offering interpretations and conclusions.
 
 
 

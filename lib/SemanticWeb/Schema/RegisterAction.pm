@@ -21,15 +21,28 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of registering to be a user of a service, product or web
-page.\n\nRelated actions:\n\n* [[JoinAction]]: Unlike JoinAction,
-RegisterAction implies you are registering to be a user of a service, *not*
-a group/team of people.\n* [FollowAction]]: Unlike FollowAction,
-RegisterAction doesn't imply that the agent is expecting to poll for
-updates from the object.\n* [[SubscribeAction]]: Unlike SubscribeAction,
-RegisterAction doesn't imply that the agent is expecting updates from the
-object.
+The act of registering to be a user of a service, product or web page.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::JoinAction>: Unlike JoinAction, RegisterAction implies you are registering to be a user of a service, I<not> a group/team of people.
+
+
+=item *
+
+[FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.
+
+
+=item *
+
+L<SemanticWeb::Schema::SubscribeAction>: Unlike SubscribeAction, RegisterAction doesn't imply that the agent is expecting updates from the object.
+
+
+=back
 
 
 

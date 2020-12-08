@@ -21,11 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A play is a form of literature, usually consisting of dialogue between
-characters, intended for theatrical performance rather than just reading.
-Note the peformance of a Play would be a [[TheaterEvent]] - the *Play*
-being the [[workPerformed]].
-
+A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note the peformance of a Play would be a L<SemanticWeb::Schema::TheaterEvent> - the I<Play> being the [[workPerformed]].
 
 
 

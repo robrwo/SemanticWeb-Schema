@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-This is the [[Action]] of navigating to a specific [[startOffset]]
-timestamp within a [[VideoObject]], typically represented with a URL
-template structure.
-
+This is the L<SemanticWeb::Schema::Action> of navigating to a specific [[startOffset]] timestamp within a L<SemanticWeb::Schema::VideoObject>, typically represented with a URL template structure.
 
 
 

@@ -21,16 +21,43 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A card payment method of a particular brand or name. Used to mark up a
-particular payment method and/or the financial product/service that
-supplies the card account.\n\nCommonly used values:\n\n*
-http://purl.org/goodrelations/v1#AmericanExpress\n*
-http://purl.org/goodrelations/v1#DinersClub\n*
-http://purl.org/goodrelations/v1#Discover\n*
-http://purl.org/goodrelations/v1#JCB\n*
-http://purl.org/goodrelations/v1#MasterCard\n*
-http://purl.org/goodrelations/v1#VISA 
+A card payment method of a particular brand or name.  Used to mark up a particular payment method and/or the financial product/service that supplies the card account.
 
+Commonly used values:
+
+=over
+
+=item *
+
+http://purl.org/goodrelations/v1#AmericanExpress
+
+
+=item *
+
+http://purl.org/goodrelations/v1#DinersClub
+
+
+=item *
+
+http://purl.org/goodrelations/v1#Discover
+
+
+=item *
+
+http://purl.org/goodrelations/v1#JCB
+
+
+=item *
+
+http://purl.org/goodrelations/v1#MasterCard
+
+
+=item *
+
+http://purl.org/goodrelations/v1#VISA
+
+
+=back
 
 
 

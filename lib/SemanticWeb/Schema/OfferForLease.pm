@@ -21,12 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An [[OfferForLease]] in Schema.org represents an [[Offer]] to lease out
-something, i.e. an [[Offer]] whose [[businessFunction]] is [lease
-out](http://purl.org/goodrelations/v1#LeaseOut.). See [Good
-Relations](https://en.wikipedia.org/wiki/GoodRelations) for background on
-the underlying concepts. 
-
+An L<SemanticWeb::Schema::OfferForLease> in Schema.org represents an L<SemanticWeb::Schema::Offer> to lease out something, i.e. an L<SemanticWeb::Schema::Offer> whose
+  [[businessFunction]] is L<lease out|http://purl.org/goodrelations/v1#LeaseOut.>. See L<Good Relations|https://en.wikipedia.org/wiki/GoodRelations> for
+  background on the underlying concepts.
 
 
 

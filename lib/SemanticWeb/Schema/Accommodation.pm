@@ -29,7 +29,7 @@ overnight stays, but this is not a mandatory requirement. For more specific
 types of accommodations not defined in schema.org, one can use
 additionalType with external vocabularies. <br /><br /> See also the <a
 href="/docs/hotels.html">dedicated document on the use of schema.org for
-marking up hotels and other forms of accommodations</a>. <p>
+marking up hotels and other forms of accommodations</a>. </p>
 
 =end html
 
@@ -43,13 +43,7 @@ marking up hotels and other forms of accommodations</a>. <p>
 
 C<accommodationCategory>
 
-Category of an [[Accommodation]], following real estate conventions e.g.
-RESO (see
-[PropertySubType](https://ddwiki.reso.org/display/DDW17/PropertySubType+Fie
-ld), and
-[PropertyType](https://ddwiki.reso.org/display/DDW17/PropertyType+Field)
-fields for suggested values).
-
+Category of an L<SemanticWeb::Schema::Accommodation>, following real estate conventions e.g. RESO (see L<PropertySubType|https://ddwiki.reso.org/display/DDW17/PropertySubType+Field>, and L<PropertyType|https://ddwiki.reso.org/display/DDW17/PropertyType+Field> fields  for suggested values).
 
 A accommodation_category should be one of the following types:
 
@@ -76,8 +70,7 @@ has accommodation_category => (
 
 C<accommodationFloorPlan>
 
-A floorplan of some [[Accommodation]].
-
+A floorplan of some L<SemanticWeb::Schema::Accommodation>.
 
 A accommodation_floor_plan should be one of the following types:
 
@@ -135,11 +128,8 @@ has amenity_feature => (
 
 C<floorLevel>
 
-The floor level for an [[Accommodation]] in a multi-storey building. Since
-counting systems [vary
-internationally](https://en.wikipedia.org/wiki/Storey#Consecutive_number_fl
-oor_designations), the local system should be used where possible.
-
+The floor level for an L<SemanticWeb::Schema::Accommodation> in a multi-storey building. Since counting
+  systems L<vary internationally|https://en.wikipedia.org/wiki/Storey#Consecutive_number_floor_designations>, the local system should be used where possible.
 
 A floor_level should be one of the following types:
 
@@ -196,9 +186,7 @@ has floor_size => (
 
 C<leaseLength>
 
-Length of the lease for some [[Accommodation]], either particular to some
-[[Offer]] or in some cases intrinsic to the property.
-
+Length of the lease for some L<SemanticWeb::Schema::Accommodation>, either particular to some L<SemanticWeb::Schema::Offer> or in some cases intrinsic to the property.
 
 A lease_length should be one of the following types:
 
@@ -227,13 +215,7 @@ has lease_length => (
 
 C<numberOfBathroomsTotal>
 
-The total integer number of bathrooms in a some [[Accommodation]],
-following real estate conventions as [documented in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field):
-"The simple sum of the number of bathrooms. For example for a property with
-two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will
-be 3.". See also [[numberOfRooms]].
-
+The total integer number of bathrooms in a some L<SemanticWeb::Schema::Accommodation>, following real estate conventions as L<documented in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field>: "The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.". See also [[numberOfRooms]].
 
 A number_of_bathrooms_total should be one of the following types:
 
@@ -260,9 +242,7 @@ has number_of_bathrooms_total => (
 
 C<numberOfBedrooms>
 
-The total integer number of bedrooms in a some [[Accommodation]],
-[[ApartmentComplex]] or [[FloorPlan]].
-
+The total integer number of bedrooms in a some L<SemanticWeb::Schema::Accommodation>, L<SemanticWeb::Schema::ApartmentComplex> or L<SemanticWeb::Schema::FloorPlan>.
 
 A number_of_bedrooms should be one of the following types:
 
@@ -291,10 +271,7 @@ has number_of_bedrooms => (
 
 C<numberOfFullBathrooms>
 
-Number of full bathrooms - The total number of full and Â¾ bathrooms in an
-[[Accommodation]]. This corresponds to the [BathroomsFull field in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).
-
+Number of full bathrooms - The total number of full and Â¾ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsFull field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field>.
 
 A number_of_full_bathrooms should be one of the following types:
 
@@ -321,10 +298,7 @@ has number_of_full_bathrooms => (
 
 C<numberOfPartialBathrooms>
 
-Number of partial bathrooms - The total number of half and Â¼ bathrooms in
-an [[Accommodation]]. This corresponds to the [BathroomsPartial field in
-RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). 
-
+Number of partial bathrooms - The total number of half and Â¼ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsPartial field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field>. 
 
 A number_of_partial_bathrooms should be one of the following types:
 
@@ -443,10 +417,7 @@ has pets_allowed => (
 
 C<tourBookingPage>
 
-A page providing information on how to book a tour of some [[Place]], such
-as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting,
-as well as other kinds of tours as appropriate.
-
+A page providing information on how to book a tour of some L<SemanticWeb::Schema::Place>, such as an L<SemanticWeb::Schema::Accommodation> or L<SemanticWeb::Schema::ApartmentComplex> in a real estate setting, as well as other kinds of tours as appropriate.
 
 A tour_booking_page should be one of the following types:
 
@@ -473,10 +444,7 @@ has tour_booking_page => (
 
 C<yearBuilt>
 
-The year an [[Accommodation]] was constructed. This corresponds to the
-[YearBuilt field in
-RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). 
-
+The year an L<SemanticWeb::Schema::Accommodation> was constructed. This corresponds to the L<YearBuilt field in RESO|https://ddwiki.reso.org/display/DDW17/YearBuilt+Field>. 
 
 A year_built should be one of the following types:
 

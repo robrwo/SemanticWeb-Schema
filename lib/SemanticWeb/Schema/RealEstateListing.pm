@@ -21,11 +21,8 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[RealEstateListing]] is a listing that describes one or more real-estate
-[[Offer]]s (whose [[businessFunction]] is typically to lease out, or to
-sell). The [[RealEstateListing]] type itself represents the overall
-listing, as manifested in some [[WebPage]]. 
-
+A L<SemanticWeb::Schema::RealEstateListing> is a listing that describes one or more real-estate L<SemanticWeb::Schema::Offer>s (whose [[businessFunction]] is typically to lease out, or to sell).
+  The L<SemanticWeb::Schema::RealEstateListing> type itself represents the overall listing, as manifested in some L<SemanticWeb::Schema::WebPage>.
 
 
 
@@ -64,9 +61,7 @@ has date_posted => (
 
 C<leaseLength>
 
-Length of the lease for some [[Accommodation]], either particular to some
-[[Offer]] or in some cases intrinsic to the property.
-
+Length of the lease for some L<SemanticWeb::Schema::Accommodation>, either particular to some L<SemanticWeb::Schema::Offer> or in some cases intrinsic to the property.
 
 A lease_length should be one of the following types:
 

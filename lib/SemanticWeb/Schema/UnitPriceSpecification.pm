@@ -159,14 +159,7 @@ has price_component_type => (
 
 C<priceType>
 
-Defines the type of a price specified for an offered product, for example a
-list price, a (temporary) sale price or a manufacturer suggested retail
-price. If multiple prices are specified for an offer the [[priceType]]
-property can be used to identify the type of each such specified price. The
-value of priceType can be specified as a value from enumeration
-PriceTypeEnumeration or as a free form text string for price types that are
-not already predefined in PriceTypeEnumeration.
-
+Defines the type of a price specified for an offered product, for example a list price, a (temporary) sale price or a manufacturer suggested retail price. If multiple prices are specified for an offer the [[priceType]] property can be used to identify the type of each such specified price. The value of priceType can be specified as a value from enumeration PriceTypeEnumeration or as a free form text string for price types that are not already predefined in PriceTypeEnumeration.
 
 A price_type should be one of the following types:
 
@@ -258,7 +251,8 @@ C<unitText>
 =begin html
 
 <p>A string or text indicating the unit of measurement. Useful if you
-cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
+cannot provide a standard unit code for <a
+href='unitCode'>unitCode</a>.</p>
 
 =end html
 

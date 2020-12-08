@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An event happening at a certain time and location, such as a concert,
-lecture, or festival. Ticketing information may be added via the [[offers]]
-property. Repeated events may be structured as separate Event objects.
-
+An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects.
 
 
 
@@ -416,18 +413,12 @@ has event_attendance_mode => (
 
 C<eventSchedule>
 
-Associates an [[Event]] with a [[Schedule]]. There are circumstances where
-it is preferable to share a schedule for a series of repeating events
-rather than data on the individual events themselves. For example, a
-website or application might prefer to publish a schedule for a weekly gym
-class rather than provide data on every event. A schedule could be
-processed by applications to add forthcoming events to a calendar. An
-[[Event]] that is associated with a [[Schedule]] using this property should
-not have [[startDate]] or [[endDate]] properties. These are instead defined
-within the associated [[Schedule]], this avoids any ambiguity for clients
-using the data. The property might have repeated values to specify
-different schedules, e.g. for different months or seasons.
-
+Associates an L<SemanticWeb::Schema::Event> with a L<SemanticWeb::Schema::Schedule>. There are circumstances where it is preferable to share a schedule for a series of
+      repeating events rather than data on the individual events themselves. For example, a website or application might prefer to publish a schedule for a weekly
+      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An L<SemanticWeb::Schema::Event> that
+      is associated with a L<SemanticWeb::Schema::Schedule> using this property should not have [[startDate]] or [[endDate]] properties. These are instead defined within the associated
+      L<SemanticWeb::Schema::Schedule>, this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules, e.g. for different months
+      or seasons.
 
 A event_schedule should be one of the following types:
 
@@ -514,11 +505,7 @@ has funder => (
 
 C<inLanguage>
 
-The language of the content or performance or used in an action. Please use
-one of the language codes from the [IETF BCP 47
-standard](http://tools.ietf.org/html/bcp47). See also
-[[availableLanguage]].
-
+The language of the content or performance or used in an action. Please use one of the language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>. See also [[availableLanguage]].
 
 A in_language should be one of the following types:
 
@@ -638,10 +625,7 @@ has maximum_attendee_capacity => (
 
 C<maximumPhysicalAttendeeCapacity>
 
-The maximum physical attendee capacity of an [[Event]] whose
-[[eventAttendanceMode]] is [[OfflineEventAttendanceMode]] (or the offline
-aspects, in the case of a [[MixedEventAttendanceMode]]). 
-
+The maximum physical attendee capacity of an L<SemanticWeb::Schema::Event> whose [[eventAttendanceMode]] is L<SemanticWeb::Schema::OfflineEventAttendanceMode> (or the offline aspects, in the case of a L<SemanticWeb::Schema::MixedEventAttendanceMode>). 
 
 A maximum_physical_attendee_capacity should be one of the following types:
 
@@ -668,10 +652,7 @@ has maximum_physical_attendee_capacity => (
 
 C<maximumVirtualAttendeeCapacity>
 
-The maximum physical attendee capacity of an [[Event]] whose
-[[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online
-aspects, in the case of a [[MixedEventAttendanceMode]]). 
-
+The maximum physical attendee capacity of an L<SemanticWeb::Schema::Event> whose [[eventAttendanceMode]] is L<SemanticWeb::Schema::OnlineEventAttendanceMode> (or the online aspects, in the case of a L<SemanticWeb::Schema::MixedEventAttendanceMode>). 
 
 A maximum_virtual_attendee_capacity should be one of the following types:
 
@@ -698,15 +679,7 @@ has maximum_virtual_attendee_capacity => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
-product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use [[businessFunction]] to indicate the kind of transaction
-offered, i.e. sell, lease, etc. This property can also be used to describe
-a [[Demand]]. While this property is listed as expected on a number of
-common types, it can be used in others. In that case, using a second type,
-such as Product or a subtype of Product, can clarify the nature of the
-offer. 
-
+An offer to provide this itemE<#x2014>for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a L<SemanticWeb::Schema::Demand>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A offers should be one of the following types:
 

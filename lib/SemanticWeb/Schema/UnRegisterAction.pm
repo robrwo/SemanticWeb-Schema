@@ -21,12 +21,23 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of un-registering from a service.\n\nRelated actions:\n\n*
-[[RegisterAction]]: antonym of UnRegisterAction.\n* [[LeaveAction]]: Unlike
-LeaveAction, UnRegisterAction implies that you are unregistering from a
-service you werer previously registered, rather than leaving a team/group
-of people.
+The act of un-registering from a service.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::RegisterAction>: antonym of UnRegisterAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::LeaveAction>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.
+
+
+=back
 
 
 

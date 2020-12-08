@@ -96,11 +96,7 @@ has best_rating => (
 
 C<ratingExplanation>
 
-A short explanation (e.g. one to two sentences) providing background
-context and other information that led to the conclusion expressed in the
-rating. This is particularly applicable to ratings associated with "fact
-check" markup using [[ClaimReview]].
-
+A short explanation (e.g. one to two sentences) providing background context and other information that led to the conclusion expressed in the rating. This is particularly applicable to ratings associated with "fact check" markup using L<SemanticWeb::Schema::ClaimReview>.
 
 A rating_explanation should be one of the following types:
 
@@ -127,12 +123,23 @@ has rating_explanation => (
 
 C<ratingValue>
 
-The rating for the content.\n\nUsage guidelines:\n\n* Use values from
-0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather
-than superficially similiar Unicode symbols.\n* Use '.' (Unicode 'FULL
-STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using
-these symbols as a readability separator.
+The rating for the content.
 
+Usage guidelines:
+
+=over
+
+=item *
+
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+
+
+=item *
+
+Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
+
+
+=back
 
 A rating_value should be one of the following types:
 

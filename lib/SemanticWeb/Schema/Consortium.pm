@@ -21,9 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A Consortium is a membership [[Organization]] whose members are typically
-Organizations.
-
+A Consortium is a membership L<SemanticWeb::Schema::Organization> whose members are typically Organizations.
 
 
 

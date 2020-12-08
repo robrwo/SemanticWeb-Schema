@@ -35,7 +35,7 @@ C<additionalProperty>
 
 A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.\n\nNote: Publishers should be aware
+is no matching property in schema.org. Note: Publishers should be aware
 that applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
@@ -156,7 +156,8 @@ C<unitText>
 =begin html
 
 <p>A string or text indicating the unit of measurement. Useful if you
-cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
+cannot provide a standard unit code for <a
+href='unitCode'>unitCode</a>.</p>
 
 =end html
 
@@ -186,15 +187,31 @@ has unit_text => (
 
 
 
-The value of the quantitative value or property value node.\n\n* For
-[[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for
-values is 'Number'.\n* For [[PropertyValue]], it can be 'Text;', 'Number',
-'Boolean', or 'StructuredValue'.\n* Use values from 0123456789 (Unicode
-'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
-similiar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather
-than ',' to indicate a decimal point. Avoid using these symbols as a
-readability separator.
+The value of the quantitative value or property value node.
 
+=over
+
+=item *
+
+For L<SemanticWeb::Schema::QuantitativeValue> and L<SemanticWeb::Schema::MonetaryAmount>, the recommended type for values is 'Number'.
+
+
+=item *
+
+For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
+
+
+=item *
+
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+
+
+=item *
+
+Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
+
+
+=back
 
 A value should be one of the following types:
 

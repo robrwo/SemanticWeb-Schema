@@ -21,15 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A schedule defines a repeating time period used to describe a regularly
-occurring [[Event]]. At a minimum a schedule will specify
-[[repeatFrequency]] which describes the interval between occurences of the
-event. Additional information can be provided to specify the schedule more
-precisely. This includes identifying the day(s) of the week or month when
-the recurring event will take place, in addition to its start and end time.
-Schedules may also have start and end dates to indicate when they are
-active, e.g. to define a limited calendar of events.
-
+A schedule defines a repeating time period used to describe a regularly occurring L<SemanticWeb::Schema::Event>. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.
+      This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also
+      have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.
 
 
 
@@ -40,10 +34,7 @@ active, e.g. to define a limited calendar of events.
 
 C<byDay>
 
-Defines the day(s) of the week on which a recurring [[Event]] takes place.
-May be specified using either [[DayOfWeek]], or alternatively [[Text]]
-conforming to iCal's syntax for byDay recurrence rules
-
+Defines the day(s) of the week on which a recurring L<SemanticWeb::Schema::Event> takes place. May be specified using either L<SemanticWeb::Schema::DayOfWeek>, or alternatively L<SemanticWeb::Schema::Text> conforming to iCal's syntax for byDay recurrence rules
 
 A by_day should be one of the following types:
 
@@ -72,9 +63,7 @@ has by_day => (
 
 C<byMonth>
 
-Defines the month(s) of the year on which a recurring [[Event]] takes
-place. Specified as an [[Integer]] between 1-12. January is 1.
-
+Defines the month(s) of the year on which a recurring L<SemanticWeb::Schema::Event> takes place. Specified as an L<SemanticWeb::Schema::Integer> between 1-12. January is 1.
 
 A by_month should be one of the following types:
 
@@ -101,9 +90,7 @@ has by_month => (
 
 C<byMonthDay>
 
-Defines the day(s) of the month on which a recurring [[Event]] takes place.
-Specified as an [[Integer]] between 1-31.
-
+Defines the day(s) of the month on which a recurring L<SemanticWeb::Schema::Event> takes place. Specified as an L<SemanticWeb::Schema::Integer> between 1-31.
 
 A by_month_day should be one of the following types:
 
@@ -223,10 +210,10 @@ The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from January to *December*. For media, including audio
-and video, it's the time offset of the end of a clip within a larger
-file.\n\nNote that Event uses startDate/endDate instead of
-startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+and video, it's the time offset of the end of a clip within a larger file.
+Note that Event uses startDate/endDate instead of startTime/endTime, even
+when describing dates with times. This situation may be clarified in future
+revisions.
 
 
 A end_time should be one of the following types:
@@ -254,15 +241,10 @@ has end_time => (
 
 C<exceptDate>
 
-Defines a [[Date]] or [[DateTime]] during which a scheduled [[Event]] will
-not take place. The property allows exceptions to a [[Schedule]] to be
-specified. If an exception is specified as a [[DateTime]] then only the
-event that would have started at that specific date and time should be
-excluded from the schedule. If an exception is specified as a [[Date]] then
-any event that is scheduled for that 24 hour period should be excluded from
-the schedule. This allows a whole day to be excluded from the schedule
-without having to itemise every scheduled event.
-
+Defines a L<SemanticWeb::Schema::Date> or L<SemanticWeb::Schema::DateTime> during which a scheduled L<SemanticWeb::Schema::Event> will not take place. The property allows exceptions to
+      a L<SemanticWeb::Schema::Schedule> to be specified. If an exception is specified as a L<SemanticWeb::Schema::DateTime> then only the event that would have started at that specific date and time
+      should be excluded from the schedule. If an exception is specified as a L<SemanticWeb::Schema::Date> then any event that is scheduled for that 24 hour period should be
+      excluded from the schedule. This allows a whole day to be excluded from the schedule without having to itemise every scheduled event.
 
 A except_date should be one of the following types:
 
@@ -289,8 +271,7 @@ has except_date => (
 
 C<repeatCount>
 
-Defines the number of times a recurring [[Event]] will take place
-
+Defines the number of times a recurring L<SemanticWeb::Schema::Event> will take place
 
 A repeat_count should be one of the following types:
 
@@ -317,10 +298,8 @@ has repeat_count => (
 
 C<repeatFrequency>
 
-Defines the frequency at which [[Events]] will occur according to a
-schedule [[Schedule]]. The intervals between events should be defined as a
-[[Duration]] of time.
-
+Defines the frequency at which L<SemanticWeb::Schema::Events> will occur according to a schedule L<SemanticWeb::Schema::Schedule>. The intervals between
+      events should be defined as a L<SemanticWeb::Schema::Duration> of time.
 
 A repeat_frequency should be one of the following types:
 
@@ -349,10 +328,7 @@ has repeat_frequency => (
 
 C<scheduleTimezone>
 
-Indicates the timezone for which the time(s) indicated in the [[Schedule]]
-are given. The value provided should be among those listed in the IANA Time
-Zone Database.
-
+Indicates the timezone for which the time(s) indicated in the L<SemanticWeb::Schema::Schedule> are given. The value provided should be among those listed in the IANA Time Zone Database.
 
 A schedule_timezone should be one of the following types:
 
@@ -413,9 +389,9 @@ FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from *January* to December. For media, including audio
 and video, it's the time offset of the start of a clip within a larger
-file.\n\nNote that Event uses startDate/endDate instead of
-startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+file. Note that Event uses startDate/endDate instead of startTime/endTime,
+even when describing dates with times. This situation may be clarified in
+future revisions.
 
 
 A start_time should be one of the following types:

@@ -34,14 +34,18 @@ over land, water, air, or through space.
 
 C<accelerationTime>
 
-The time needed to accelerate the vehicle from a given start velocity to a
-given target velocity.\n\nTypical unit code(s): SEC for seconds\n\n* Note:
-There are unfortunately no standard unit codes for seconds/0..100 km/h or
-seconds/0..60 mph. Simply use "SEC" for seconds and indicate the velocities
-in the [[name]] of the [[QuantitativeValue]], or use [[valueReference]]
-with a [[QuantitativeValue]] of 0..60 mph or 0..100 km/h to specify the
-reference speeds.
+The time needed to accelerate the vehicle from a given start velocity to a given target velocity.
 
+Typical unit code(s): SEC for seconds
+
+=over
+
+=item *
+
+Note: There are unfortunately no standard unit codes for seconds/0..100 km/h or seconds/0..60 mph. Simply use "SEC" for seconds and indicate the velocities in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue>, or use [[valueReference]] with a L<SemanticWeb::Schema::QuantitativeValue> of 0..60 mph or 0..100 km/h to specify the reference speeds.
+
+
+=back
 
 A acceleration_time should be one of the following types:
 
@@ -129,11 +133,11 @@ has call_sign => (
 
 C<cargoVolume>
 
-The available volume for cargo or luggage. For automobiles, this is usually
-the trunk volume.\n\nTypical unit code(s): LTR for liters, FTQ for cubic
-foot/feet\n\nNote: You can use [[minValue]] and [[maxValue]] to indicate
-ranges.
+The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.
 
+Typical unit code(s): LTR for liters, FTQ for cubic foot/feet
+
+Note: You can use [[minValue]] and [[maxValue]] to indicate ranges.
 
 A cargo_volume should be one of the following types:
 
@@ -252,7 +256,7 @@ C<fuelCapacity>
 
 The capacity of the fuel tank or in the case of electric cars, the battery.
 If there are multiple components for storage, this should indicate the
-total of all storage of the same type.\n\nTypical unit code(s): LTR for
+total of all storage of the same type. Typical unit code(s): LTR for
 liters, GLL of US gallons, GLI for UK / imperial gallons, AMH for
 ampere-hours (for electrical vehicles).
 
@@ -282,17 +286,26 @@ has fuel_capacity => (
 
 C<fuelConsumption>
 
-The amount of fuel consumed for traveling a particular distance or temporal
-duration with the given vehicle (e.g. liters per 100 km).\n\n* Note 1:
-There are unfortunately no standard unit codes for liters per 100 km. Use
-[[unitText]] to indicate the unit of measurement, e.g. L/100 km.\n* Note 2:
-There are two ways of indicating the fuel consumption, [[fuelConsumption]]
-(e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per
-gallon). They are reciprocal.\n* Note 3: Often, the absolute value is
-useful only when related to driving speed ("at 80 km/h") or usage pattern
-("city traffic"). You can use [[valueReference]] to link the value for the
-fuel consumption to another value.
+The amount of fuel consumed for traveling a particular distance or temporal duration with the given vehicle (e.g. liters per 100 km).
 
+=over
+
+=item *
+
+Note 1: There are unfortunately no standard unit codes for liters per 100 km.  Use [[unitText]] to indicate the unit of measurement, e.g. L/100 km.
+
+
+=item *
+
+Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.
+
+
+=item *
+
+Note 3: Often, the absolute value is useful only when related to driving speed ("at 80 km/h") or usage pattern ("city traffic"). You can use [[valueReference]] to link the value for the fuel consumption to another value.
+
+
+=back
 
 A fuel_consumption should be one of the following types:
 
@@ -319,17 +332,26 @@ has fuel_consumption => (
 
 C<fuelEfficiency>
 
-The distance traveled per unit of fuel used; most commonly miles per gallon
-(mpg) or kilometers per liter (km/L).\n\n* Note 1: There are unfortunately
-no standard unit codes for miles per gallon or kilometers per liter. Use
-[[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.\n* Note
-2: There are two ways of indicating the fuel consumption,
-[[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g.
-30 miles per gallon). They are reciprocal.\n* Note 3: Often, the absolute
-value is useful only when related to driving speed ("at 80 km/h") or usage
-pattern ("city traffic"). You can use [[valueReference]] to link the value
-for the fuel economy to another value.
+The distance traveled per unit of fuel used; most commonly miles per gallon (mpg) or kilometers per liter (km/L).
 
+=over
+
+=item *
+
+Note 1: There are unfortunately no standard unit codes for miles per gallon or kilometers per liter. Use [[unitText]] to indicate the unit of measurement, e.g. mpg or km/L.
+
+
+=item *
+
+Note 2: There are two ways of indicating the fuel consumption, [[fuelConsumption]] (e.g. 8 liters per 100 km) and [[fuelEfficiency]] (e.g. 30 miles per gallon). They are reciprocal.
+
+
+=item *
+
+Note 3: Often, the absolute value is useful only when related to driving speed ("at 80 km/h") or usage pattern ("city traffic"). You can use [[valueReference]] to link the value for the fuel economy to another value.
+
+
+=back
 
 A fuel_efficiency should be one of the following types:
 
@@ -447,7 +469,7 @@ has meets_emission_standard => (
 C<mileageFromOdometer>
 
 The total distance travelled by the particular vehicle since its initial
-production, as read from its odometer.\n\nTypical unit code(s): KMT for
+production, as read from its odometer. Typical unit code(s): KMT for
 kilometers, SMI for statute miles
 
 
@@ -535,7 +557,7 @@ has number_of_airbags => (
 
 C<numberOfAxles>
 
-The number of axles.\n\nTypical unit code(s): C62
+The number of axles. Typical unit code(s): C62
 
 
 A number_of_axles should be one of the following types:
@@ -565,7 +587,7 @@ has number_of_axles => (
 
 C<numberOfDoors>
 
-The number of doors.\n\nTypical unit code(s): C62
+The number of doors. Typical unit code(s): C62
 
 
 A number_of_doors should be one of the following types:
@@ -596,7 +618,7 @@ has number_of_doors => (
 C<numberOfForwardGears>
 
 The total number of forward gears available for the transmission system of
-the vehicle.\n\nTypical unit code(s): C62
+the vehicle. Typical unit code(s): C62
 
 
 A number_of_forward_gears should be one of the following types:
@@ -626,7 +648,7 @@ has number_of_forward_gears => (
 
 C<numberOfPreviousOwners>
 
-The number of owners of the vehicle, including the current one.\n\nTypical
+The number of owners of the vehicle, including the current one. Typical
 unit code(s): C62
 
 
@@ -657,16 +679,33 @@ has number_of_previous_owners => (
 
 
 
-The permitted weight of passengers and cargo, EXCLUDING the weight of the
-empty vehicle.\n\nTypical unit code(s): KGM for kilogram, LBR for
-pound\n\n* Note 1: Many databases specify the permitted TOTAL weight
-instead, which is the sum of [[weight]] and [[payload]]\n* Note 2: You can
-indicate additional information in the [[name]] of the
-[[QuantitativeValue]] node.\n* Note 3: You may also link to a
-[[QualitativeValue]] node that provides additional information using
-[[valueReference]].\n* Note 4: Note that you can use [[minValue]] and
-[[maxValue]] to indicate ranges.
+The permitted weight of passengers and cargo, EXCLUDING the weight of the empty vehicle.
 
+Typical unit code(s): KGM for kilogram, LBR for pound
+
+=over
+
+=item *
+
+Note 1: Many databases specify the permitted TOTAL weight instead, which is the sum of [[weight]] and [[payload]]
+
+
+=item *
+
+Note 2: You can indicate additional information in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue> node.
+
+
+=item *
+
+Note 3: You may also link to a L<SemanticWeb::Schema::QualitativeValue> node that provides additional information using [[valueReference]].
+
+
+=item *
+
+Note 4: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.
+
+
+=back
 
 A payload should be one of the following types:
 
@@ -750,8 +789,8 @@ has purchase_date => (
 C<seatingCapacity>
 
 The number of persons that can be seated (e.g. in a vehicle), both in terms
-of the physical space available, and in terms of limitations set by
-law.\n\nTypical unit code(s): C62 for persons 
+of the physical space available, and in terms of limitations set by law.
+Typical unit code(s): C62 for persons 
 
 
 A seating_capacity should be one of the following types:
@@ -781,15 +820,12 @@ has seating_capacity => (
 
 
 
-The speed range of the vehicle. If the vehicle is powered by an engine, the
-upper limit of the speed range (indicated by [[maxValue]] should be the
-maximum speed achievable under regular conditions.\n\nTypical unit code(s):
-KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\n\n*Note 1:
-Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the
-minimal value is zero.\n* Note 2: There are many different ways of
-measuring the speed range. You can link to information about how the given
-value has been determined using the [[valueReference]] property.
+The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]] should be the maximum speed achievable under regular conditions.
 
+Typical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot
+
+I<Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.
+> Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.
 
 A speed should be one of the following types:
 
@@ -872,15 +908,28 @@ has stupid_property => (
 
 C<tongueWeight>
 
-The permitted vertical load (TWR) of a trailer attached to the vehicle.
-Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating
-(VLR)\n\nTypical unit code(s): KGM for kilogram, LBR for pound\n\n* Note 1:
-You can indicate additional information in the [[name]] of the
-[[QuantitativeValue]] node.\n* Note 2: You may also link to a
-[[QualitativeValue]] node that provides additional information using
-[[valueReference]].\n* Note 3: Note that you can use [[minValue]] and
-[[maxValue]] to indicate ranges.
+The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)
 
+Typical unit code(s): KGM for kilogram, LBR for pound
+
+=over
+
+=item *
+
+Note 1: You can indicate additional information in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue> node.
+
+
+=item *
+
+Note 2: You may also link to a L<SemanticWeb::Schema::QualitativeValue> node that provides additional information using [[valueReference]].
+
+
+=item *
+
+Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.
+
+
+=back
 
 A tongue_weight should be one of the following types:
 
@@ -907,13 +956,12 @@ has tongue_weight => (
 
 C<trailerWeight>
 
-The permitted weight of a trailer attached to the vehicle.\n\nTypical unit
-code(s): KGM for kilogram, LBR for pound\n* Note 1: You can indicate
-additional information in the [[name]] of the [[QuantitativeValue]]
-node.\n* Note 2: You may also link to a [[QualitativeValue]] node that
-provides additional information using [[valueReference]].\n* Note 3: Note
-that you can use [[minValue]] and [[maxValue]] to indicate ranges.
+The permitted weight of a trailer attached to the vehicle.
 
+Typical unit code(s): KGM for kilogram, LBR for pound
+I< Note 1: You can indicate additional information in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue> node.
+> Note 2: You may also link to a L<SemanticWeb::Schema::QualitativeValue> node that provides additional information using [[valueReference]].
+* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.
 
 A trailer_weight should be one of the following types:
 
@@ -1115,8 +1163,8 @@ has vehicle_model_date => (
 C<vehicleSeatingCapacity>
 
 The number of passengers that can be seated in the vehicle, both in terms
-of the physical space available, and in terms of limitations set by
-law.\n\nTypical unit code(s): C62 for persons.
+of the physical space available, and in terms of limitations set by law.
+Typical unit code(s): C62 for persons.
 
 
 A vehicle_seating_capacity should be one of the following types:
@@ -1210,14 +1258,28 @@ has vehicle_transmission => (
 
 C<weightTotal>
 
-The permitted total weight of the loaded vehicle, including passengers and
-cargo and the weight of the empty vehicle.\n\nTypical unit code(s): KGM for
-kilogram, LBR for pound\n\n* Note 1: You can indicate additional
-information in the [[name]] of the [[QuantitativeValue]] node.\n* Note 2:
-You may also link to a [[QualitativeValue]] node that provides additional
-information using [[valueReference]].\n* Note 3: Note that you can use
-[[minValue]] and [[maxValue]] to indicate ranges.
+The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle.
 
+Typical unit code(s): KGM for kilogram, LBR for pound
+
+=over
+
+=item *
+
+Note 1: You can indicate additional information in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue> node.
+
+
+=item *
+
+Note 2: You may also link to a L<SemanticWeb::Schema::QualitativeValue> node that provides additional information using [[valueReference]].
+
+
+=item *
+
+Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.
+
+
+=back
 
 A weight_total should be one of the following types:
 
@@ -1244,8 +1306,8 @@ has weight_total => (
 
 
 
-The distance between the centers of the front and rear wheels.\n\nTypical
-unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for
+The distance between the centers of the front and rear wheels. Typical unit
+code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for
 foot/feet
 
 

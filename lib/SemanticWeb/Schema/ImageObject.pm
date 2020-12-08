@@ -33,10 +33,7 @@ An image file.
 
 
 
-The caption for this object. For downloadable machine formats (closed
-caption, subtitles etc.) use MediaObject and indicate the
-[[encodingFormat]].
-
+The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the [[encodingFormat]].
 
 A caption should be one of the following types:
 

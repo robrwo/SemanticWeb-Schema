@@ -21,11 +21,23 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of gaining ownership of an object from an origin. Reciprocal of
-GiveAction.\n\nRelated actions:\n\n* [[GiveAction]]: The reciprocal of
-TakeAction.\n* [[ReceiveAction]]: Unlike ReceiveAction, TakeAction implies
-that ownership has been transfered.
+The act of gaining ownership of an object from an origin. Reciprocal of GiveAction.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::GiveAction>: The reciprocal of TakeAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::ReceiveAction>: Unlike ReceiveAction, TakeAction implies that ownership has been transfered.
+
+
+=back
 
 
 

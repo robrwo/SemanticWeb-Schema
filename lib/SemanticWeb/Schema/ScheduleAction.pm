@@ -21,11 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Scheduling future actions, events, or tasks.\n\nRelated actions:\n\n*
-[[ReserveAction]]: Unlike ReserveAction, ScheduleAction allocates future
-actions (e.g. an event, a task, etc) towards a time slot / spatial
-allocation.
+Scheduling future actions, events, or tasks.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::ReserveAction>: Unlike ReserveAction, ScheduleAction allocates future actions (e.g. an event, a task, etc) towards a time slot / spatial allocation.
+
+
+=back
 
 
 

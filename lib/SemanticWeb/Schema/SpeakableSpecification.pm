@@ -21,11 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A SpeakableSpecification indicates (typically via [[xpath]] or
-[[cssSelector]]) sections of a document that are highlighted as
-particularly [[speakable]]. Instances of this type are expected to be used
-primarily as values of the [[speakable]] property.
-
+A SpeakableSpecification indicates (typically via [[xpath]] or [[cssSelector]]) sections of a document that are highlighted as particularly [[speakable]]. Instances of this type are expected to be used primarily as values of the [[speakable]] property.
 
 
 
@@ -36,10 +32,7 @@ primarily as values of the [[speakable]] property.
 
 C<cssSelector>
 
-A CSS selector, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]].
-In the latter case, multiple matches within a page can constitute a single
-conceptual "Web page element".
-
+A CSS selector, e.g. of a L<SemanticWeb::Schema::SpeakableSpecification> or L<SemanticWeb::Schema::WebPageElement>. In the latter case, multiple matches within a page can constitute a single conceptual "Web page element".
 
 A css_selector should be one of the following types:
 
@@ -66,10 +59,7 @@ has css_selector => (
 
 
 
-An XPath, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In
-the latter case, multiple matches within a page can constitute a single
-conceptual "Web page element".
-
+An XPath, e.g. of a L<SemanticWeb::Schema::SpeakableSpecification> or L<SemanticWeb::Schema::WebPageElement>. In the latter case, multiple matches within a page can constitute a single conceptual "Web page element".
 
 A xpath should be one of the following types:
 

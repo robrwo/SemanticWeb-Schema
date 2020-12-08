@@ -21,16 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A HyperToEntry is an item within a [[HyperToc]], which represents a
-hypertext table of contents for complex media objects, such as
-[[VideoObject]], [[AudioObject]]. The media object itself is indicated
-using [[associatedMedia]]. Each section of interest within that content can
-be described with a [[HyperTocEntry]], with associated [[startOffset]] and
-[[endOffset]]. When several entries are all from the same file,
-[[associatedMedia]] is used on the overarching [[HyperTocEntry]]; if the
-content has been split into multiple files, they can be referenced using
-[[associatedMedia]] on each [[HyperTocEntry]].
-
+A HyperToEntry is an item within a L<SemanticWeb::Schema::HyperToc>, which represents a hypertext table of contents for complex media objects, such as L<SemanticWeb::Schema::VideoObject>, L<SemanticWeb::Schema::AudioObject>. The media object itself is indicated using [[associatedMedia]]. Each section of interest within that content can be described with a L<SemanticWeb::Schema::HyperTocEntry>, with associated [[startOffset]] and [[endOffset]]. When several entries are all from the same file, [[associatedMedia]] is used on the overarching L<SemanticWeb::Schema::HyperTocEntry>; if the content has been split into multiple files, they can be referenced using [[associatedMedia]] on each L<SemanticWeb::Schema::HyperTocEntry>.
 
 
 
@@ -70,10 +61,7 @@ has associated_media => (
 
 C<tocContinuation>
 
-A [[HyperTocEntry]] can have a [[tocContinuation]] indicated, which is
-another [[HyperTocEntry]] that would be the default next item to play or
-render.
-
+A L<SemanticWeb::Schema::HyperTocEntry> can have a [[tocContinuation]] indicated, which is another L<SemanticWeb::Schema::HyperTocEntry> that would be the default next item to play or render.
 
 A toc_continuation should be one of the following types:
 
@@ -100,9 +88,7 @@ has toc_continuation => (
 
 
 
-Text of an utterances (spoken words, lyrics etc.) that occurs at a certain
-section of a media object, represented as a [[HyperTocEntry]].
-
+Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a L<SemanticWeb::Schema::HyperTocEntry>.
 
 A utterances should be one of the following types:
 

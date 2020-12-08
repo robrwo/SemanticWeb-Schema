@@ -21,11 +21,8 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An enterprise (potentially individual but typically collaborative), planned
-to achieve a particular aim. Use properties from [[Organization]],
-[[subOrganization]]/[[parentOrganization]] to indicate project
-sub-structures. 
-
+An enterprise (potentially individual but typically collaborative), planned to achieve a particular aim.
+Use properties from L<SemanticWeb::Schema::Organization>, [[subOrganization]]/[[parentOrganization]] to indicate project sub-structures. 
 
 
 

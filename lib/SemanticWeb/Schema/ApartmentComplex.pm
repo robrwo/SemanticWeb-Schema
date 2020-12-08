@@ -33,11 +33,7 @@ Residence type: Apartment complex.
 
 C<numberOfAccommodationUnits>
 
-Indicates the total (available plus unavailable) number of accommodation
-units in an [[ApartmentComplex]], or the number of accommodation units for
-a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See
-also [[numberOfAvailableAccommodationUnits]].
-
+Indicates the total (available plus unavailable) number of accommodation units in an L<SemanticWeb::Schema::ApartmentComplex>, or the number of accommodation units for a specific L<SemanticWeb::Schema::FloorPlan> (within its specific L<SemanticWeb::Schema::ApartmentComplex>). See also [[numberOfAvailableAccommodationUnits]].
 
 A number_of_accommodation_units should be one of the following types:
 
@@ -64,11 +60,7 @@ has number_of_accommodation_units => (
 
 C<numberOfAvailableAccommodationUnits>
 
-Indicates the number of available accommodation units in an
-[[ApartmentComplex]], or the number of accommodation units for a specific
-[[FloorPlan]] (within its specific [[ApartmentComplex]]). See also
-[[numberOfAccommodationUnits]].
-
+Indicates the number of available accommodation units in an L<SemanticWeb::Schema::ApartmentComplex>, or the number of accommodation units for a specific L<SemanticWeb::Schema::FloorPlan> (within its specific L<SemanticWeb::Schema::ApartmentComplex>). See also [[numberOfAccommodationUnits]].
 
 A number_of_available_accommodation_units should be one of the following types:
 
@@ -95,9 +87,7 @@ has number_of_available_accommodation_units => (
 
 C<numberOfBedrooms>
 
-The total integer number of bedrooms in a some [[Accommodation]],
-[[ApartmentComplex]] or [[FloorPlan]].
-
+The total integer number of bedrooms in a some L<SemanticWeb::Schema::Accommodation>, L<SemanticWeb::Schema::ApartmentComplex> or L<SemanticWeb::Schema::FloorPlan>.
 
 A number_of_bedrooms should be one of the following types:
 
@@ -157,10 +147,7 @@ has pets_allowed => (
 
 C<tourBookingPage>
 
-A page providing information on how to book a tour of some [[Place]], such
-as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting,
-as well as other kinds of tours as appropriate.
-
+A page providing information on how to book a tour of some L<SemanticWeb::Schema::Place>, such as an L<SemanticWeb::Schema::Accommodation> or L<SemanticWeb::Schema::ApartmentComplex> in a real estate setting, as well as other kinds of tours as appropriate.
 
 A tour_booking_page should be one of the following types:
 

@@ -155,7 +155,8 @@ C<unitText>
 =begin html
 
 <p>A string or text indicating the unit of measurement. Useful if you
-cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
+cannot provide a standard unit code for <a
+href='unitCode'>unitCode</a>.</p>
 
 =end html
 

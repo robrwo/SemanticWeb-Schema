@@ -21,10 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of responding to a question/message asked/sent by the object.
-Related to [[AskAction]]\n\nRelated actions:\n\n* [[AskAction]]: Appears
-generally as an origin of a ReplyAction.
+The act of responding to a question/message asked/sent by the object. Related to L<SemanticWeb::Schema::AskAction>
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::AskAction>: Appears generally as an origin of a ReplyAction.
+
+
+=back
 
 
 

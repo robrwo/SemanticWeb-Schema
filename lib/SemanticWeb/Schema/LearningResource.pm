@@ -21,15 +21,11 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The LearningResource type can be used to indicate [[CreativeWork]]s
-(whether physical or digital) that have a particular and explicit
-orientation towards learning, education, skill acquisition, and other
-educational purposes. [[LearningResource]] is expected to be used as an
-addition to a primary type such as [[Book]], [[Video]], [[Product]] etc.
-[[EducationEvent]] serves a similar purpose for event-like things (e.g. a
-[[Trip]]). A [[LearningResource]] may be created as a result of an
-[[EducationEvent]], for example by recording one.
+The LearningResource type can be used to indicate L<SemanticWeb::Schema::CreativeWork>s (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes.
 
+L<SemanticWeb::Schema::LearningResource> is expected to be used as an addition to a primary type such as L<SemanticWeb::Schema::Book>, L<SemanticWeb::Schema::Video>, L<SemanticWeb::Schema::Product> etc.
+
+L<SemanticWeb::Schema::EducationEvent> serves a similar purpose for event-like things (e.g. a L<SemanticWeb::Schema::Trip>). A L<SemanticWeb::Schema::LearningResource> may be created as a result of an L<SemanticWeb::Schema::EducationEvent>, for example by recording one.
 
 
 
@@ -103,11 +99,9 @@ has competency_required => (
 
 C<educationalAlignment>
 
-An alignment to an established educational framework. This property should
-not be used where the nature of the alignment can be described using a
-simple property, for example to express that a resource [[teaches]] or
-[[assesses]] a competency.
+An alignment to an established educational framework.
 
+This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource [[teaches]] or [[assesses]] a competency.
 
 A educational_alignment should be one of the following types:
 

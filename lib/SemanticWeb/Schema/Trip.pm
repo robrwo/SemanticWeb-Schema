@@ -89,10 +89,7 @@ has departure_time => (
 
 
 
-Destination(s) ( [[Place]] ) that make up a trip. For a trip where
-destination order is important use [[ItemList]] to specify that order (see
-examples).
-
+Destination(s) ( L<SemanticWeb::Schema::Place> ) that make up a trip. For a trip where destination order is important use L<SemanticWeb::Schema::ItemList> to specify that order (see examples).
 
 A itinerary should be one of the following types:
 
@@ -121,15 +118,7 @@ has itinerary => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
-product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use [[businessFunction]] to indicate the kind of transaction
-offered, i.e. sell, lease, etc. This property can also be used to describe
-a [[Demand]]. While this property is listed as expected on a number of
-common types, it can be used in others. In that case, using a second type,
-such as Product or a subtype of Product, can clarify the nature of the
-offer. 
-
+An offer to provide this itemE<#x2014>for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a L<SemanticWeb::Schema::Demand>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A offers should be one of the following types:
 
@@ -158,9 +147,7 @@ has offers => (
 
 C<partOfTrip>
 
-Identifies that this [[Trip]] is a subTrip of another Trip. For example Day
-1, Day 2, etc. of a multi-day trip.
-
+Identifies that this L<SemanticWeb::Schema::Trip> is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.
 
 A part_of_trip should be one of the following types:
 
@@ -219,9 +206,7 @@ has provider => (
 
 C<subTrip>
 
-Identifies a [[Trip]] that is a subTrip of this Trip. For example Day 1,
-Day 2, etc. of a multi-day trip.
-
+Identifies a L<SemanticWeb::Schema::Trip> that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip.
 
 A sub_trip should be one of the following types:
 

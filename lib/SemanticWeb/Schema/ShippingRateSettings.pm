@@ -21,12 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A ShippingRateSettings represents re-usable pieces of shipping information.
-It is designed for publication on an URL that may be referenced via the
-[[shippingSettingsLink]] property of an [[OfferShippingDetails]]. Several
-occurrences can be published, distinguished and matched (i.e.
-identified/referenced) by their different values for [[shippingLabel]].
-
+A ShippingRateSettings represents re-usable pieces of shipping information. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of an L<SemanticWeb::Schema::OfferShippingDetails>. Several occurrences can be published, distinguished and matched (i.e. identified/referenced) by their different values for [[shippingLabel]].
 
 
 
@@ -37,9 +32,7 @@ identified/referenced) by their different values for [[shippingLabel]].
 
 C<doesNotShip>
 
-Indicates when shipping to a particular [[shippingDestination]] is not
-available.
-
+Indicates when shipping to a particular [[shippingDestination]] is not available.
 
 A does_not_ship should be one of the following types:
 
@@ -66,10 +59,7 @@ has does_not_ship => (
 
 C<freeShippingThreshold>
 
-A monetary value above which (or equal to) the shipping rate becomes free.
-Intended to be used via an [[OfferShippingDetails]] with
-[[shippingSettingsLink]] matching this [[ShippingRateSettings]].
-
+A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an L<SemanticWeb::Schema::OfferShippingDetails> with [[shippingSettingsLink]] matching this L<SemanticWeb::Schema::ShippingRateSettings>.
 
 A free_shipping_threshold should be one of the following types:
 
@@ -98,15 +88,7 @@ has free_shipping_threshold => (
 
 C<isUnlabelledFallback>
 
-This can be marked 'true' to indicate that some published
-[[DeliveryTimeSettings]] or [[ShippingRateSettings]] are intended to apply
-to all [[OfferShippingDetails]] published by the same merchant, when
-referenced by a [[shippingSettingsLink]] in those settings. It is not
-meaningful to use a 'true' value for this property alongside a
-transitTimeLabel (for [[DeliveryTimeSettings]]) or shippingLabel (for
-[[ShippingRateSettings]]), since this property is for use with unlabelled
-settings.
-
+This can be marked 'true' to indicate that some published L<SemanticWeb::Schema::DeliveryTimeSettings> or L<SemanticWeb::Schema::ShippingRateSettings> are intended to apply to all L<SemanticWeb::Schema::OfferShippingDetails> published by the same merchant, when referenced by a [[shippingSettingsLink]] in those settings. It is not meaningful to use a 'true' value for this property alongside a transitTimeLabel (for L<SemanticWeb::Schema::DeliveryTimeSettings>) or shippingLabel (for L<SemanticWeb::Schema::ShippingRateSettings>), since this property is for use with unlabelled settings.
 
 A is_unlabelled_fallback should be one of the following types:
 
@@ -162,9 +144,7 @@ has shipping_destination => (
 
 C<shippingLabel>
 
-Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]]
-(within the context of a [[shippingSettingsLink]] cross-reference).
-
+Label to match an L<SemanticWeb::Schema::OfferShippingDetails> with a L<SemanticWeb::Schema::ShippingRateSettings> (within the context of a [[shippingSettingsLink]] cross-reference).
 
 A shipping_label should be one of the following types:
 
@@ -191,10 +171,7 @@ has shipping_label => (
 
 C<shippingRate>
 
-The shipping rate is the cost of shipping to the specified destination.
-Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
-most appropriate.
-
+The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the L<SemanticWeb::Schema::MonetaryAmount>) are most appropriate.
 
 A shipping_rate should be one of the following types:
 

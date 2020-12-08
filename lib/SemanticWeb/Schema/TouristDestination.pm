@@ -21,18 +21,8 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A tourist destination. In principle any [[Place]] can be a
-[[TouristDestination]] from a [[City]], [[Region]] or [[Country]] to an
-[[AmusementPark]] or [[Hotel]]. This Type can be used on its own to
-describe a general [[TouristDestination]], or be used as an
-[[additionalType]] to add tourist relevant properties to any other
-[[Place]]. A [[TouristDestination]] is defined as a [[Place]] that
-contains, or is colocated with, one or more [[TouristAttraction]]s, often
-linked by a similar theme or interest to a particular [[touristType]]. The
-[UNWTO](http://www2.unwto.org/) defines Destination (main destination of a
-tourism trip) as the place visited that is central to the decision to take
-the trip. (See examples below).
-
+A tourist destination. In principle any L<SemanticWeb::Schema::Place> can be a L<SemanticWeb::Schema::TouristDestination> from a L<SemanticWeb::Schema::City>, L<SemanticWeb::Schema::Region> or L<SemanticWeb::Schema::Country> to an L<SemanticWeb::Schema::AmusementPark> or L<SemanticWeb::Schema::Hotel>. This Type can be used on its own to describe a general L<SemanticWeb::Schema::TouristDestination>, or be used as an [[additionalType]] to add tourist relevant properties to any other L<SemanticWeb::Schema::Place>.  A L<SemanticWeb::Schema::TouristDestination> is defined as a L<SemanticWeb::Schema::Place> that contains, or is colocated with, one or more L<SemanticWeb::Schema::TouristAttraction>s, often linked by a similar theme or interest to a particular [[touristType]]. The L<UNWTO|http://www2.unwto.org/> defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
+  (See examples below).
 
 
 

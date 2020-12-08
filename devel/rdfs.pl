@@ -10,6 +10,7 @@ use HTML::Strip;
 use JSON::MaybeXS;
 use List::Util 1.33 qw/ any pairgrep uniqstr /;
 use LWP::UserAgent;
+use Markdown::Pod;
 use Path::Tiny;
 use RDF::Prefixes;
 use RDF::Trine;
@@ -382,19 +383,41 @@ sub translate_types {
 sub comment_to_pod {
     my ( $self, $comment ) = @_;
 
-    $comment =~ s/\s+/ /g;
-
     my $buffer = "";
 
-    my $is_html = $comment =~ /\<\w+.*\>/;
+    $comment =~ s/\\n/\n/g;
 
-    $comment = "<p>" . $comment . "<p>" if $is_html;
+    if ($comment =~ /\<\w+.*\>/) {
 
-    $buffer .= "=begin html\n\n" if $is_html;
+        $comment =~ s/\s+/ /g;
 
-    $buffer .= wrap( '', '', $comment ) . "\n\n";
+        $comment = "<p>" . $comment . "</p>";
 
-    $buffer .= "=end html\n\n" if $is_html;
+        $buffer .= "=begin html\n\n";
+
+        $buffer .= wrap( '', '', $comment ) . "\n\n";
+
+        $buffer .= "=end html\n\n";
+
+    }
+    elsif ($comment =~ /\n\* / || $comment =~ /\[\[\w+\]\]/) {
+
+        my $m2p = Markdown::Pod->new;
+
+        $buffer .= $m2p->markdown_to_pod(
+            markdown => $comment,
+        );
+
+        $buffer =~ s/\[\[([A-Z0-9]\w+)\]\]/L<SemanticWeb::Schema::$1>/g;
+
+    }
+    else {
+
+        $comment =~ s/\s+/ /g;
+
+        $buffer .= wrap( '', '', $comment ) . "\n\n";
+
+    }
 
     return $buffer;
 }

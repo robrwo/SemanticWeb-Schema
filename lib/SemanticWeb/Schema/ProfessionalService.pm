@@ -21,15 +21,11 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Original definition: "provider of professional services."\n\nThe general
-[[ProfessionalService]] type for local businesses was deprecated due to
-confusion with [[Service]]. For reference, the types that it included were:
-[[Dentist]], [[AccountingService]], [[Attorney]], [[Notary]], as well as
-types for several kinds of [[HomeAndConstructionBusiness]]:
-[[Electrician]], [[GeneralContractor]], [[HousePainter]], [[Locksmith]],
-[[Plumber]], [[RoofingContractor]]. [[LegalService]] was introduced as a
-more inclusive supertype of [[Attorney]].
+Original definition: "provider of professional services."
 
+The general L<SemanticWeb::Schema::ProfessionalService> type for local businesses was deprecated due to confusion with L<SemanticWeb::Schema::Service>. For reference, the types that it included were: L<SemanticWeb::Schema::Dentist>,
+        L<SemanticWeb::Schema::AccountingService>, L<SemanticWeb::Schema::Attorney>, L<SemanticWeb::Schema::Notary>, as well as types for several kinds of L<SemanticWeb::Schema::HomeAndConstructionBusiness>: L<SemanticWeb::Schema::Electrician>, L<SemanticWeb::Schema::GeneralContractor>,
+        L<SemanticWeb::Schema::HousePainter>, L<SemanticWeb::Schema::Locksmith>, L<SemanticWeb::Schema::Plumber>, L<SemanticWeb::Schema::RoofingContractor>. L<SemanticWeb::Schema::LegalService> was introduced as a more inclusive supertype of L<SemanticWeb::Schema::Attorney>.
 
 
 

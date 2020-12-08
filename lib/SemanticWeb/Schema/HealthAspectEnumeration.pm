@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-HealthAspectEnumeration enumerates several aspects of health content
-online, each of which might be described using [[hasHealthAspect]] and
-[[HealthTopicContent]].
-
+HealthAspectEnumeration enumerates several aspects of health content online, each of which might be described using [[hasHealthAspect]] and L<SemanticWeb::Schema::HealthTopicContent>.
 
 
 

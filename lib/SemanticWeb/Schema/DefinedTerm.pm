@@ -37,8 +37,7 @@ code allocated, use description to provide the definition of the term.
 
 C<inDefinedTermSet>
 
-A [[DefinedTermSet]] that contains this term.
-
+A L<SemanticWeb::Schema::DefinedTermSet> that contains this term.
 
 A in_defined_term_set should be one of the following types:
 
@@ -67,8 +66,7 @@ has in_defined_term_set => (
 
 C<termCode>
 
-A code that identifies this [[DefinedTerm]] within a [[DefinedTermSet]]
-
+A code that identifies this L<SemanticWeb::Schema::DefinedTerm> within a L<SemanticWeb::Schema::DefinedTermSet>
 
 A term_code should be one of the following types:
 

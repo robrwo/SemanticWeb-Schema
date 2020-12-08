@@ -21,11 +21,23 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An agent leaves an event / group with participants/friends at a
-location.\n\nRelated actions:\n\n* [[JoinAction]]: The antonym of
-LeaveAction.\n* [[UnRegisterAction]]: Unlike UnRegisterAction, LeaveAction
-implies leaving a group/team of people rather than a service.
+An agent leaves an event / group with participants/friends at a location.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::JoinAction>: The antonym of LeaveAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::UnRegisterAction>: Unlike UnRegisterAction, LeaveAction implies leaving a group/team of people rather than a service.
+
+
+=back
 
 
 

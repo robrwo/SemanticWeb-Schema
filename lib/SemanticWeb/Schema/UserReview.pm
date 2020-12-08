@@ -21,9 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A review created by an end-user (e.g. consumer, purchaser, attendee etc.),
-in contrast with [[CriticReview]].
-
+A review created by an end-user (e.g. consumer, purchaser, attendee etc.), in contrast with L<SemanticWeb::Schema::CriticReview>.
 
 
 

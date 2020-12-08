@@ -21,13 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A HyperToc represents a hypertext table of contents for complex media
-objects, such as [[VideoObject]], [[AudioObject]]. Items in the table of
-contents are indicated using the [[tocEntry]] property, and typed
-[[HyperTocEntry]]. For cases where the same larger work is split into
-multiple files, [[associatedMedia]] can be used on individual
-[[HyperTocEntry]] items.
-
+A HyperToc represents a hypertext table of contents for complex media objects, such as L<SemanticWeb::Schema::VideoObject>, L<SemanticWeb::Schema::AudioObject>. Items in the table of contents are indicated using the [[tocEntry]] property, and typed L<SemanticWeb::Schema::HyperTocEntry>. For cases where the same larger work is split into multiple files, [[associatedMedia]] can be used on individual L<SemanticWeb::Schema::HyperTocEntry> items.
 
 
 
@@ -67,8 +61,7 @@ has associated_media => (
 
 C<tocEntry>
 
-Indicates a [[HyperTocEntry]] in a [[HyperToc]].
-
+Indicates a L<SemanticWeb::Schema::HyperTocEntry> in a L<SemanticWeb::Schema::HyperToc>.
 
 A toc_entry should be one of the following types:
 

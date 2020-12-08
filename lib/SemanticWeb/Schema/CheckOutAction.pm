@@ -21,15 +21,28 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of an agent communicating (service provider, social media, etc)
-their departure of a previously reserved service (e.g. flight check in) or
-place (e.g. hotel).\n\nRelated actions:\n\n* [[CheckInAction]]: The antonym
-of CheckOutAction.\n* [[DepartAction]]: Unlike DepartAction, CheckOutAction
-implies that the agent is informing/confirming the end of a previously
-reserved service.\n* [[CancelAction]]: Unlike CancelAction, CheckOutAction
-implies that the agent is informing/confirming the end of a previously
-reserved service.
+The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check in) or place (e.g. hotel).
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::CheckInAction>: The antonym of CheckOutAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::DepartAction>: Unlike DepartAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.
+
+
+=item *
+
+L<SemanticWeb::Schema::CancelAction>: Unlike CancelAction, CheckOutAction implies that the agent is informing/confirming the end of a previously reserved service.
+
+
+=back
 
 
 

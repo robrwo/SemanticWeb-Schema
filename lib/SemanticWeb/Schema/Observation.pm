@@ -21,17 +21,8 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Instances of the class [[Observation]] are used to specify observations
-about an entity (which may or may not be an instance of a
-[[StatisticalPopulation]]), at a particular time. The principal properties
-of an [[Observation]] are [[observedNode]], [[measuredProperty]],
-[[measuredValue]] (or [[median]], etc.) and [[observationDate]]
-([[measuredProperty]] properties can, but need not always, be W3C RDF Data
-Cube "measure properties", as in the [lifeExpectancy
-example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)). See also
-[[StatisticalPopulation]], and the [data and
-datasets](/docs/data-and-datasets.html) overview for more details. 
-
+Instances of the class L<SemanticWeb::Schema::Observation> are used to specify observations about an entity (which may or may not be an instance of a L<SemanticWeb::Schema::StatisticalPopulation>), at a particular time. The principal properties of an L<SemanticWeb::Schema::Observation> are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube "measure properties", as in the L<lifeExpectancy example|https://www.w3.org/TR/vocab-data-cube/#dsd-example>).
+See also L<SemanticWeb::Schema::StatisticalPopulation>, and the L<data and datasets|/docs/data-and-datasets.html> overview for more details.
 
 
 
@@ -42,8 +33,7 @@ datasets](/docs/data-and-datasets.html) overview for more details.
 
 C<marginOfError>
 
-A marginOfError for an [[Observation]].
-
+A marginOfError for an L<SemanticWeb::Schema::Observation>.
 
 A margin_of_error should be one of the following types:
 
@@ -70,11 +60,7 @@ has margin_of_error => (
 
 C<measuredProperty>
 
-The measuredProperty of an [[Observation]], either a schema.org property, a
-property from other RDF-compatible systems e.g. W3C RDF Data Cube, or
-schema.org extensions such as
-[GS1's](https://www.gs1.org/voc/?show=properties).
-
+The measuredProperty of an L<SemanticWeb::Schema::Observation>, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as L<GS1's|https://www.gs1.org/voc/?show=properties>.
 
 A measured_property should be one of the following types:
 
@@ -101,8 +87,7 @@ has measured_property => (
 
 C<measuredValue>
 
-The measuredValue of an [[Observation]].
-
+The measuredValue of an L<SemanticWeb::Schema::Observation>.
 
 A measured_value should be one of the following types:
 
@@ -129,8 +114,7 @@ has measured_value => (
 
 C<observationDate>
 
-The observationDate of an [[Observation]].
-
+The observationDate of an L<SemanticWeb::Schema::Observation>.
 
 A observation_date should be one of the following types:
 
@@ -157,8 +141,7 @@ has observation_date => (
 
 C<observedNode>
 
-The observedNode of an [[Observation]], often a [[StatisticalPopulation]].
-
+The observedNode of an L<SemanticWeb::Schema::Observation>, often a L<SemanticWeb::Schema::StatisticalPopulation>.
 
 A observed_node should be one of the following types:
 

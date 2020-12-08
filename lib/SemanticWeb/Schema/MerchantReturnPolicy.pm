@@ -21,9 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A MerchantReturnPolicy provides information about product return policies
-associated with an [[Organization]] or [[Product]].
-
+A MerchantReturnPolicy provides information about product return policies associated with an L<SemanticWeb::Schema::Organization> or L<SemanticWeb::Schema::Product>.
 
 
 

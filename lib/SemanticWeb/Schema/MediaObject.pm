@@ -236,18 +236,11 @@ has encodes_creative_work => (
 
 C<encodingFormat>
 
-Media type typically expressed using a MIME format (see [IANA
-site](http://www.iana.org/assignments/media-types/media-types.xhtml) and
-[MDN
-reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP
-/MIME_types)) e.g. application/zip for a SoftwareApplication binary,
-audio/mpeg for .mp3 etc.). In cases where a [[CreativeWork]] has several
-media type representations, [[encoding]] can be used to indicate each
-[[MediaObject]] alongside particular [[encodingFormat]] information.
-Unregistered or niche encoding and file formats can be indicated instead
-via the most appropriate URL, e.g. defining Web page or a
-Wikipedia/Wikidata entry.
+Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).
 
+In cases where a L<SemanticWeb::Schema::CreativeWork> has several media type representations, [[encoding]] can be used to indicate each L<SemanticWeb::Schema::MediaObject> alongside particular [[encodingFormat]] information.
+
+Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.
 
 A encoding_format should be one of the following types:
 
@@ -278,10 +271,10 @@ The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from January to *December*. For media, including audio
-and video, it's the time offset of the end of a clip within a larger
-file.\n\nNote that Event uses startDate/endDate instead of
-startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+and video, it's the time offset of the end of a clip within a larger file.
+Note that Event uses startDate/endDate instead of startTime/endTime, even
+when describing dates with times. This situation may be clarified in future
+revisions.
 
 
 A end_time should be one of the following types:
@@ -463,9 +456,9 @@ FoodEstablishmentReservation), the time that it is expected to start. For
 actions that span a period of time, when the action was performed. e.g.
 John wrote a book from *January* to December. For media, including audio
 and video, it's the time offset of the start of a clip within a larger
-file.\n\nNote that Event uses startDate/endDate instead of
-startTime/endTime, even when describing dates with times. This situation
-may be clarified in future revisions.
+file. Note that Event uses startDate/endDate instead of startTime/endTime,
+even when describing dates with times. This situation may be clarified in
+future revisions.
 
 
 A start_time should be one of the following types:

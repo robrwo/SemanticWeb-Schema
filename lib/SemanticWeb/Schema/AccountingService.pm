@@ -21,9 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Accountancy business.\n\nAs a [[LocalBusiness]] it can be described as a
-[[provider]] of one or more [[Service]]\(s). 
+Accountancy business.
 
+As a L<SemanticWeb::Schema::LocalBusiness> it can be described as a [[provider]] of one or more L<SemanticWeb::Schema::Service>(s).
 
 
 

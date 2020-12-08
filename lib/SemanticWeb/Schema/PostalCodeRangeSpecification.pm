@@ -21,9 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Indicates a range of postalcodes, usually defined as the set of valid codes
-between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.
-
+Indicates a range of postalcodes, usually defined as the set of valid codes between [[postalCodeBegin]] and [[postalCodeEnd]], inclusively.
 
 
 
@@ -62,9 +60,7 @@ has postal_code_begin => (
 
 C<postalCodeEnd>
 
-Last postal code in the range (included). Needs to be after
-[[postalCodeBegin]].
-
+Last postal code in the range (included). Needs to be after [[postalCodeBegin]].
 
 A postal_code_end should be one of the following types:
 

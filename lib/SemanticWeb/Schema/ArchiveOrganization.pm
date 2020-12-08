@@ -35,9 +35,7 @@ public.
 
 C<archiveHeld>
 
-Collection, [fonds](https://en.wikipedia.org/wiki/Fonds), or item held,
-kept or maintained by an [[ArchiveOrganization]].
-
+Collection, L<fonds|https://en.wikipedia.org/wiki/Fonds>, or item held, kept or maintained by an L<SemanticWeb::Schema::ArchiveOrganization>.
 
 A archive_held should be one of the following types:
 

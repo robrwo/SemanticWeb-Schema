@@ -34,9 +34,7 @@ transmitted along each of the axons.
 
 
 
-The branches that delineate from the nerve bundle. Not to be confused with
-[[branchOf]].
-
+The branches that delineate from the nerve bundle. Not to be confused with [[branchOf]].
 
 A branch should be one of the following types:
 

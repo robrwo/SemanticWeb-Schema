@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An instance of a [[Course]] which is distinct from other instances because
-it is offered at a different time or location or through different media or
-modes of study or to a specific section of students.
-
+An instance of a L<SemanticWeb::Schema::Course> which is distinct from other instances because it is offered at a different time or location or through different media or modes of study or to a specific section of students.
 
 
 
@@ -98,9 +95,7 @@ has course_workload => (
 
 
 
-A person assigned to instruct or provide instructional assistance for the
-[[CourseInstance]].
-
+A person assigned to instruct or provide instructional assistance for the L<SemanticWeb::Schema::CourseInstance>.
 
 A instructor should be one of the following types:
 

@@ -65,9 +65,7 @@ has available_service => (
 
 C<healthcareReportingData>
 
-Indicates data describing a hospital, e.g. a CDC [[CDCPMDRecord]] or as
-some kind of [[Dataset]].
-
+Indicates data describing a hospital, e.g. a CDC L<SemanticWeb::Schema::CDCPMDRecord> or as some kind of L<SemanticWeb::Schema::Dataset>.
 
 A healthcare_reporting_data should be one of the following types:
 

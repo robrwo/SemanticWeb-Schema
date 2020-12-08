@@ -693,15 +693,7 @@ has funder => (
 
 
 
-Gender of something, typically a [[Person]], but possibly also fictional
-characters, animals, etc. While http://schema.org/Male and
-http://schema.org/Female may be used, text strings are also acceptable for
-people who do not identify as a binary gender. The [[gender]] property can
-also be used in an extended sense to cover e.g. the gender of sports teams.
-As with the gender of individuals, we do not try to enumerate all
-possibilities. A mixed-gender [[SportsTeam]] can be indicated with a text
-value of "Mixed".
-
+Gender of something, typically a L<SemanticWeb::Schema::Person>, but possibly also fictional characters, animals, etc. While http://schema.org/Male and http://schema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender. The [[gender]] property can also be used in an extended sense to cover e.g. the gender of sports teams. As with the gender of individuals, we do not try to enumerate all possibilities. A mixed-gender L<SemanticWeb::Schema::SportsTeam> can be indicated with a text value of "Mixed".
 
 A gender should be one of the following types:
 
@@ -1137,11 +1129,7 @@ has knows => (
 
 C<knowsAbout>
 
-Of a [[Person]], and less typically of an [[Organization]], to indicate a
-topic that is known about - suggesting possible expertise but not implying
-it. We do not distinguish skill levels here, or relate this to educational
-content, events, objectives or [[JobPosting]] descriptions.
-
+Of a L<SemanticWeb::Schema::Person>, and less typically of an L<SemanticWeb::Schema::Organization>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or L<SemanticWeb::Schema::JobPosting> descriptions.
 
 A knows_about should be one of the following types:
 
@@ -1170,11 +1158,7 @@ has knows_about => (
 
 C<knowsLanguage>
 
-Of a [[Person]], and less typically of an [[Organization]], to indicate a
-known language. We do not distinguish skill levels or
-reading/writing/speaking/signing here. Use language codes from the [IETF
-BCP 47 standard](http://tools.ietf.org/html/bcp47).
-
+Of a L<SemanticWeb::Schema::Person>, and less typically of an L<SemanticWeb::Schema::Organization>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>.
 
 A knows_language should be one of the following types:
 
@@ -1464,16 +1448,9 @@ has performer_in => (
 
 C<publishingPrinciples>
 
-The publishingPrinciples property indicates (typically via [[URL]]) a
-document describing the editorial principles of an [[Organization]] (or
-individual e.g. a [[Person]] writing a blog) that relate to their
-activities as a publisher, e.g. ethics or diversity policies. When applied
-to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
-the party primarily responsible for the creation of the [[CreativeWork]].
-While such policies are most typically expressed in natural language,
-sometimes related information (e.g. indicating a [[funder]]) can be
-expressed using schema.org terminology. 
+The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
 
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.
 
 A publishing_principles should be one of the following types:
 

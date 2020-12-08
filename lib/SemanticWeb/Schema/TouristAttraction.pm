@@ -21,13 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A tourist attraction. In principle any Thing can be a
-[[TouristAttraction]], from a [[Mountain]] and
-[[LandmarksOrHistoricalBuildings]] to a [[LocalBusiness]]. This Type can be
-used on its own to describe a general [[TouristAttraction]], or be used as
-an [[additionalType]] to add tourist attraction properties to any other
-type. (See examples below)
-
+A tourist attraction.  In principle any Thing can be a L<SemanticWeb::Schema::TouristAttraction>, from a L<SemanticWeb::Schema::Mountain> and L<SemanticWeb::Schema::LandmarksOrHistoricalBuildings> to a L<SemanticWeb::Schema::LocalBusiness>.  This Type can be used on its own to describe a general L<SemanticWeb::Schema::TouristAttraction>, or be used as an [[additionalType]] to add tourist attraction properties to any other type.  (See examples below)
 
 
 
@@ -38,10 +32,7 @@ type. (See examples below)
 
 C<availableLanguage>
 
-A language someone may use with or at the item, service or place. Please
-use one of the language codes from the [IETF BCP 47
-standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]
-
+A language someone may use with or at the item, service or place. Please use one of the language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>. See also [[inLanguage]]
 
 A available_language should be one of the following types:
 

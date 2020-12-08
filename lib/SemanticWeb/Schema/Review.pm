@@ -118,11 +118,7 @@ has review_body => (
 
 C<reviewRating>
 
-The rating given in this review. Note that reviews can themselves be rated.
-The ```reviewRating``` applies to rating given by the review. The
-[[aggregateRating]] property applies to the review itself, as a creative
-work.
-
+The rating given in this review. Note that reviews can themselves be rated. The C<reviewRating> applies to rating given by the review. The [[aggregateRating]] property applies to the review itself, as a creative work.
 
 A review_rating should be one of the following types:
 

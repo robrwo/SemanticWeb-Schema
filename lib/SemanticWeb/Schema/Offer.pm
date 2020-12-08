@@ -21,20 +21,11 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An offer to transfer some rights to an item or to provide a service â for
-example, an offer to sell tickets to an event, to rent the DVD of a movie,
-to stream a TV show over the internet, to repair a motorcycle, or to loan a
-book.\n\nNote: As the [[businessFunction]] property, which identifies the
-form of offer (e.g. sell, lease, repair, dispose), defaults to
-http://purl.org/goodrelations/v1#Sell; an Offer without a defined
-businessFunction value can be assumed to be an offer to sell.\n\nFor
-[GTIN](http://www.gs1.org/barcodes/technical/idkeys/gtin)-related fields,
-see [Check Digit
-calculator](http://www.gs1.org/barcodes/support/check_digit_calculator) and
-[validation
-guide](http://www.gs1us.org/resources/standards/gtin-validation-guide) from
-[GS1](http://www.gs1.org/).
+An offer to transfer some rights to an item or to provide a service â for example, an offer to sell tickets to an event, to rent the DVD of a movie, to stream a TV show over the internet, to repair a motorcycle, or to loan a book.
 
+Note: As the [[businessFunction]] property, which identifies the form of offer (e.g. sell, lease, repair, dispose), defaults to http://purl.org/goodrelations/v1#Sell; an Offer without a defined businessFunction value can be assumed to be an offer to sell.
+
+For L<GTIN|http://www.gs1.org/barcodes/technical/idkeys/gtin>-related fields, see L<Check Digit calculator|http://www.gs1.org/barcodes/support/check_digit_calculator> and L<validation guide|http://www.gs1us.org/resources/standards/gtin-validation-guide> from L<GS1|http://www.gs1.org/>.
 
 
 
@@ -519,10 +510,9 @@ has eligible_quantity => (
 
 C<eligibleRegion>
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is valid.\n\nSee also [[ineligibleRegion]]. 
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
 
+See also [[ineligibleRegion]].
 
 A eligible_region should be one of the following types:
 
@@ -584,23 +574,7 @@ has eligible_transaction_volume => (
 
 
 
-A Global Trade Item Number
-([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
-items, including products and services, using numeric identification codes.
-The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
-[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
-specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
-as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
-it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
-"GS1 Digital Link" URL based on such a string. The numeric component should
-also have a [valid GS1 check
-digit](https://www.gs1.org/services/check-digit-calculator) and meet the
-other rules for valid GTINs. See also [GS1's GTIN
-Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
-[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
-more details. Left-padding of the gtin values is not required or
-encouraged. 
-
+A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged.
 
 A gtin should be one of the following types:
 
@@ -755,9 +729,7 @@ has gtin8 => (
 
 C<includesObject>
 
-This links to a node or nodes indicating the exact quantity of the products
-included in an [[Offer]] or [[ProductCollection]].
-
+This links to a node or nodes indicating the exact quantity of the products included in  an L<SemanticWeb::Schema::Offer> or L<SemanticWeb::Schema::ProductCollection>.
 
 A includes_object should be one of the following types:
 
@@ -784,11 +756,9 @@ has includes_object => (
 
 C<ineligibleRegion>
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is not valid, e.g. a region where the transaction is
-not allowed.\n\nSee also [[eligibleRegion]]. 
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.
 
+See also [[eligibleRegion]].
 
 A ineligible_region should be one of the following types:
 
@@ -877,12 +847,7 @@ has item_condition => (
 
 C<itemOffered>
 
-An item being offered (or demanded). The transactional nature of the offer
-or demand is documented using [[businessFunction]], e.g. sell, lease etc.
-While several common expected types are listed explicitly in this
-definition, others can be used. Using a second type, such as Product or a
-subtype of Product, can clarify the nature of the offer.
-
+An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A item_offered should be one of the following types:
 
@@ -921,9 +886,7 @@ has item_offered => (
 
 C<leaseLength>
 
-Length of the lease for some [[Accommodation]], either particular to some
-[[Offer]] or in some cases intrinsic to the property.
-
+Length of the lease for some L<SemanticWeb::Schema::Accommodation>, either particular to some L<SemanticWeb::Schema::Offer> or in some cases intrinsic to the property.
 
 A lease_length should be one of the following types:
 
@@ -1011,25 +974,33 @@ has offered_by => (
 
 
 
-The offer price of a product, or of a price component when attached to
-PriceSpecification and its subtypes.\n\nUsage guidelines:\n\n* Use the
-[[priceCurrency]] property (with standard formats: [ISO 4217 currency
-format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
-symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
-cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
-Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
-(LETS) and other currency types e.g. "Ithaca HOUR") instead of including
-[ambiguous
-symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_d
-ollar_or_peso_sign) such as '$' in the value.\n* Use '.' (Unicode 'FULL
-STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using
-these symbols as a readability separator.\n* Note that both
-[RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute)
-and Microdata syntax allow the use of a "content=" attribute for publishing
-simple machine-readable values alongside more human-friendly formatting.\n*
-Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE'
-(U+0039)) rather than superficially similiar Unicode symbols. 
+The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.
 
+Usage guidelines:
+
+=over
+
+=item *
+
+Use the [[priceCurrency]] property (with standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217> e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies e.g. "BTC"; well known names for L<Local Exchange Tradings Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types e.g. "Ithaca HOUR") instead of including L<ambiguous symbols|http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign> such as '$' in the value.
+
+
+=item *
+
+Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
+
+
+=item *
+
+Note that both L<RDFa|http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute> and Microdata syntax allow the use of a "content=" attribute for publishing simple machine-readable values alongside more human-friendly formatting.
+
+
+=item *
+
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+
+
+=back
 
 A price should be one of the following types:
 
@@ -1058,14 +1029,9 @@ has price => (
 
 C<priceCurrency>
 
-The currency of the price, or a price component when attached to
-[[PriceSpecification]] and its subtypes.\n\nUse standard formats: [ISO 4217
-currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
-symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
-cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
-Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
-(LETS) and other currency types e.g. "Ithaca HOUR".
+The currency of the price, or a price component when attached to L<SemanticWeb::Schema::PriceSpecification> and its subtypes.
 
+Use standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217> e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies e.g. "BTC"; well known names for L<Local Exchange Tradings Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types e.g. "Ithaca HOUR".
 
 A price_currency should be one of the following types:
 
@@ -1266,9 +1232,7 @@ has serial_number => (
 
 C<shippingDetails>
 
-Indicates information about the shipping policies and options associated
-with an [[Offer]].
-
+Indicates information about the shipping policies and options associated with an L<SemanticWeb::Schema::Offer>.
 
 A shipping_details should be one of the following types:
 

@@ -21,10 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Reserving a concrete object.\n\nRelated actions:\n\n* [[ScheduleAction]]:
-Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a
-table, a hotel) towards a time slot / spatial allocation.
+Reserving a concrete object.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::ScheduleAction>: Unlike ScheduleAction, ReserveAction reserves concrete objects (e.g. a table, a hotel) towards a time slot / spatial allocation.
+
+
+=back
 
 
 

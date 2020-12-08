@@ -21,9 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of posing a question / favor to someone.\n\nRelated actions:\n\n*
-[[ReplyAction]]: Appears generally as a response to AskAction.
+The act of posing a question / favor to someone.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::ReplyAction>: Appears generally as a response to AskAction.
+
+
+=back
 
 
 

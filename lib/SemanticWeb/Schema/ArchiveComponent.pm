@@ -34,9 +34,7 @@ set of properties required to describe archival items and collections.
 
 C<holdingArchive>
 
-[[ArchiveOrganization]] that holds, keeps or maintains the
-[[ArchiveComponent]].
-
+L<SemanticWeb::Schema::ArchiveOrganization> that holds, keeps or maintains the L<SemanticWeb::Schema::ArchiveComponent>.
 
 A holding_archive should be one of the following types:
 

@@ -21,11 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of forming a personal connection with someone (object)
-mutually/bidirectionally/symmetrically.\n\nRelated actions:\n\n*
-[[FollowAction]]: Unlike FollowAction, BefriendAction implies that the
-connection is reciprocal.
+The act of forming a personal connection with someone (object) mutually/bidirectionally/symmetrically.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::FollowAction>: Unlike FollowAction, BefriendAction implies that the connection is reciprocal.
+
+
+=back
 
 
 

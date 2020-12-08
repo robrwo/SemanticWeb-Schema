@@ -37,7 +37,7 @@ C<additionalProperty>
 
 A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.\n\nNote: Publishers should be aware
+is no matching property in schema.org. Note: Publishers should be aware
 that applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
@@ -304,23 +304,7 @@ has depth => (
 
 
 
-A Global Trade Item Number
-([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
-items, including products and services, using numeric identification codes.
-The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
-[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
-specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
-as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
-it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
-"GS1 Digital Link" URL based on such a string. The numeric component should
-also have a [valid GS1 check
-digit](https://www.gs1.org/services/check-digit-calculator) and meet the
-other rules for valid GTINs. See also [GS1's GTIN
-Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
-[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
-more details. Left-padding of the gtin values is not required or
-encouraged. 
-
+A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged.
 
 A gtin should be one of the following types:
 
@@ -590,9 +574,7 @@ has height => (
 
 C<inProductGroupWithID>
 
-Indicates the [[productGroupID]] for a [[ProductGroup]] that this product
-[[isVariantOf]]. 
-
+Indicates the [[productGroupID]] for a L<SemanticWeb::Schema::ProductGroup> that this product [[isVariantOf]]. 
 
 A in_product_group_with_id should be one of the following types:
 
@@ -737,17 +719,7 @@ has is_similar_to => (
 
 C<isVariantOf>
 
-Indicates the kind of product that this is a variant of. In the case of
-[[ProductModel]], this is a pointer (from a ProductModel) to a base product
-from which this product is a variant. It is safe to infer that the variant
-inherits all product features from the base model, unless defined locally.
-This is not transitive. In the case of a [[ProductGroup]], the group
-description also serves as a template, representing a set of Products that
-vary on explicitly defined, specific dimensions only (so it defines both a
-set of variants, as well as which values distinguish amongst those
-variants). When used with [[ProductGroup]], this property can apply to any
-[[Product]] included in the group.
-
+Indicates the kind of product that this is a variant of. In the case of L<SemanticWeb::Schema::ProductModel>, this is a pointer (from a ProductModel) to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive. In the case of a L<SemanticWeb::Schema::ProductGroup>, the group description also serves as a template, representing a set of Products that vary on explicitly defined, specific dimensions only (so it defines both a set of variants, as well as which values distinguish amongst those variants). When used with L<SemanticWeb::Schema::ProductGroup>, this property can apply to any L<SemanticWeb::Schema::Product> included in the group.
 
 A is_variant_of should be one of the following types:
 
@@ -956,10 +928,7 @@ has mpn => (
 
 
 
-Indicates the [NATO stock
-number](https://en.wikipedia.org/wiki/NATO_Stock_Number) (nsn) of a
-[[Product]]. 
-
+Indicates the L<NATO stock number|https://en.wikipedia.org/wiki/NATO_Stock_Number> (nsn) of a L<SemanticWeb::Schema::Product>. 
 
 A nsn should be one of the following types:
 
@@ -986,15 +955,7 @@ has nsn => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
-product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use [[businessFunction]] to indicate the kind of transaction
-offered, i.e. sell, lease, etc. This property can also be used to describe
-a [[Demand]]. While this property is listed as expected on a number of
-common types, it can be used in others. In that case, using a second type,
-such as Product or a subtype of Product, can clarify the nature of the
-offer. 
-
+An offer to provide this itemE<#x2014>for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a L<SemanticWeb::Schema::Demand>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A offers should be one of the following types:
 

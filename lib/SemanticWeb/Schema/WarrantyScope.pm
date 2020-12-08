@@ -21,12 +21,28 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A range of of services that will be provided to a customer free of charge
-in case of a defect or malfunction of a product.\n\nCommonly used
-values:\n\n* http://purl.org/goodrelations/v1#Labor-BringIn\n*
-http://purl.org/goodrelations/v1#PartsAndLabor-BringIn\n*
-http://purl.org/goodrelations/v1#PartsAndLabor-PickUp 
+A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
 
+Commonly used values:
+
+=over
+
+=item *
+
+http://purl.org/goodrelations/v1#Labor-BringIn
+
+
+=item *
+
+http://purl.org/goodrelations/v1#PartsAndLabor-BringIn
+
+
+=item *
+
+http://purl.org/goodrelations/v1#PartsAndLabor-PickUp
+
+
+=back
 
 
 

@@ -33,7 +33,7 @@ A structured value representing exchange rate.
 
 
 
-The currency in which the monetary amount is expressed.\n\nUse standard
+The currency in which the monetary amount is expressed. Use standard
 formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
 e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for

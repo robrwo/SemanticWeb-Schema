@@ -33,10 +33,7 @@ A web page element, like a table or an image.
 
 C<cssSelector>
 
-A CSS selector, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]].
-In the latter case, multiple matches within a page can constitute a single
-conceptual "Web page element".
-
+A CSS selector, e.g. of a L<SemanticWeb::Schema::SpeakableSpecification> or L<SemanticWeb::Schema::WebPageElement>. In the latter case, multiple matches within a page can constitute a single conceptual "Web page element".
 
 A css_selector should be one of the following types:
 
@@ -63,10 +60,7 @@ has css_selector => (
 
 
 
-An XPath, e.g. of a [[SpeakableSpecification]] or [[WebPageElement]]. In
-the latter case, multiple matches within a page can constitute a single
-conceptual "Web page element".
-
+An XPath, e.g. of a L<SemanticWeb::Schema::SpeakableSpecification> or L<SemanticWeb::Schema::WebPageElement>. In the latter case, multiple matches within a page can constitute a single conceptual "Web page element".
 
 A xpath should be one of the following types:
 

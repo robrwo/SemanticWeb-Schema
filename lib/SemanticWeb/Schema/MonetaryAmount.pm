@@ -21,12 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A monetary value or range. This type can be used to describe an amount of
-money such as $50 USD, or a range as in describing a bank account being
-suitable for a balance between Â£1,000 and Â£1,000,000 GBP, or the value of
-a salary, etc. It is recommended to use [[PriceSpecification]] Types to
-describe the price of an Offer, Invoice, etc.
-
+A monetary value or range. This type can be used to describe an amount of money such as $50 USD, or a range as in describing a bank account being suitable for a balance between Â£1,000 and Â£1,000,000 GBP, or the value of a salary, etc. It is recommended to use L<SemanticWeb::Schema::PriceSpecification> Types to describe the price of an Offer, Invoice, etc.
 
 
 
@@ -37,7 +32,7 @@ describe the price of an Offer, Invoice, etc.
 
 
 
-The currency in which the monetary amount is expressed.\n\nUse standard
+The currency in which the monetary amount is expressed. Use standard
 formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
 e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
@@ -184,15 +179,31 @@ has valid_through => (
 
 
 
-The value of the quantitative value or property value node.\n\n* For
-[[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for
-values is 'Number'.\n* For [[PropertyValue]], it can be 'Text;', 'Number',
-'Boolean', or 'StructuredValue'.\n* Use values from 0123456789 (Unicode
-'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
-similiar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather
-than ',' to indicate a decimal point. Avoid using these symbols as a
-readability separator.
+The value of the quantitative value or property value node.
 
+=over
+
+=item *
+
+For L<SemanticWeb::Schema::QuantitativeValue> and L<SemanticWeb::Schema::MonetaryAmount>, the recommended type for values is 'Number'.
+
+
+=item *
+
+For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
+
+
+=item *
+
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+
+
+=item *
+
+Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
+
+
+=back
 
 A value should be one of the following types:
 

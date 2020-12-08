@@ -22,12 +22,8 @@ our $VERSION = 'v11.01.0';
 =head1 DESCRIPTION
 
 (editorial work in progress, this definition is incomplete and unreviewed)
-A [[MediaReview]] is a more specialized form of Review dedicated to the
-evaluation of media content online, typically in the context of
-fact-checking and misinformation. For more general reviews of media in the
-broader sense, use [[UserReview]], [[CriticReview]] or other [[Review]]
-types.
-
+    A L<SemanticWeb::Schema::MediaReview> is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.
+    For more general reviews of media in the broader sense, use L<SemanticWeb::Schema::UserReview>, L<SemanticWeb::Schema::CriticReview> or other L<SemanticWeb::Schema::Review> types.
 
 
 

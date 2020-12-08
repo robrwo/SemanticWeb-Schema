@@ -27,7 +27,7 @@ our $VERSION = 'v11.01.0';
 for habitation by humans or other creatures (Source: Wikipedia, the free
 encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/House">http://en.wikipedia.org/wiki/Hous
-e</a>).<p>
+e</a>).</p>
 
 =end html
 

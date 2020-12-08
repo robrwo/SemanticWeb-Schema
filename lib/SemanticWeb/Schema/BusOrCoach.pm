@@ -65,14 +65,28 @@ has acriss_code => (
 
 C<roofLoad>
 
-The permitted total weight of cargo and installations (e.g. a roof rack) on
-top of the vehicle.\n\nTypical unit code(s): KGM for kilogram, LBR for
-pound\n\n* Note 1: You can indicate additional information in the [[name]]
-of the [[QuantitativeValue]] node.\n* Note 2: You may also link to a
-[[QualitativeValue]] node that provides additional information using
-[[valueReference]]\n* Note 3: Note that you can use [[minValue]] and
-[[maxValue]] to indicate ranges.
+The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.
 
+Typical unit code(s): KGM for kilogram, LBR for pound
+
+=over
+
+=item *
+
+Note 1: You can indicate additional information in the [[name]] of the L<SemanticWeb::Schema::QuantitativeValue> node.
+
+
+=item *
+
+Note 2: You may also link to a L<SemanticWeb::Schema::QualitativeValue> node that provides additional information using [[valueReference]]
+
+
+=item *
+
+Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.
+
+
+=back
 
 A roof_load should be one of the following types:
 

@@ -21,8 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[LibrarySystem]] is a collaborative system amongst several libraries.
-
+A L<SemanticWeb::Schema::LibrarySystem> is a collaborative system amongst several libraries.
 
 
 

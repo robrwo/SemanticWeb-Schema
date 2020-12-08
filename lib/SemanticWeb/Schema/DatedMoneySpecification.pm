@@ -21,11 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A DatedMoneySpecification represents monetary values with optional start
-and end dates. For example, this could represent an employee's salary over
-a specific period of time. __Note:__ This type has been superseded by
-[[MonetaryAmount]] use of that type is recommended
-
+A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. B<Note:> This type has been superseded by L<SemanticWeb::Schema::MonetaryAmount> use of that type is recommended
 
 
 
@@ -66,7 +62,7 @@ has amount => (
 
 
 
-The currency in which the monetary amount is expressed.\n\nUse standard
+The currency in which the monetary amount is expressed. Use standard
 formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
 e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for

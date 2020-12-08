@@ -62,8 +62,7 @@ has about => (
 
 
 
-An abstract is a short description that summarizes a [[CreativeWork]].
-
+An abstract is a short description that summarizes a L<SemanticWeb::Schema::CreativeWork>.
 
 A abstract should be one of the following types:
 
@@ -745,13 +744,9 @@ has comment_count => (
 
 C<conditionsOfAccess>
 
-Conditions that affect the availability of, or method(s) of access to, an
-item. Typically used for real world items such as an [[ArchiveComponent]]
-held by an [[ArchiveOrganization]]. This property is not suitable for use
-as a general Web access control mechanism. It is expressed only in natural
-language.\n\nFor example "Available by appointment from the Reading Room"
-or "Accessible only from logged-in accounts ". 
+Conditions that affect the availability of, or method(s) of access to, an item. Typically used for real world items such as an L<SemanticWeb::Schema::ArchiveComponent> held by an L<SemanticWeb::Schema::ArchiveOrganization>. This property is not suitable for use as a general Web access control mechanism. It is expressed only in natural language.
 
+For example "Available by appointment from the Reading Room" or "Accessible only from logged-in accounts ". 
 
 A conditions_of_access should be one of the following types:
 
@@ -984,9 +979,7 @@ has copyright_year => (
 
 
 
-Indicates a correction to a [[CreativeWork]], either via a
-[[CorrectionComment]], textually or in another document.
-
+Indicates a correction to a L<SemanticWeb::Schema::CreativeWork>, either via a L<SemanticWeb::Schema::CorrectionComment>, textually or in another document.
 
 A correction should be one of the following types:
 
@@ -1221,17 +1214,11 @@ has discussion_url => (
 
 C<editEIDR>
 
-An [EIDR](https://eidr.org/) (Entertainment Identifier Registry)
-[[identifier]] representing a specific edit / edition for a work of film or
-television. For example, the motion picture known as "Ghostbusters" whose
-[[titleEIDR]] is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits
-e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and
-"10.5240/8A35-3BEE-6497-5D12-9E4F-3". Since schema.org types like [[Movie]]
-and [[TVEpisode]] can be used for both works and their multiple
-expressions, it is possible to use [[titleEIDR]] alone (for a general
-description), or alongside [[editEIDR]] for a more edit-specific
-description. 
+An L<EIDR|https://eidr.org/> (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.
 
+For example, the motion picture known as "Ghostbusters" whose [[titleEIDR]] is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and "10.5240/8A35-3BEE-6497-5D12-9E4F-3".
+
+Since schema.org types like L<SemanticWeb::Schema::Movie> and L<SemanticWeb::Schema::TVEpisode> can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.
 
 A edit_eidr should be one of the following types:
 
@@ -1286,11 +1273,9 @@ has editor => (
 
 C<educationalAlignment>
 
-An alignment to an established educational framework. This property should
-not be used where the nature of the alignment can be described using a
-simple property, for example to express that a resource [[teaches]] or
-[[assesses]] a competency.
+An alignment to an established educational framework.
 
+This property should not be used where the nature of the alignment can be described using a simple property, for example to express that a resource [[teaches]] or [[assesses]] a competency.
 
 A educational_alignment should be one of the following types:
 
@@ -1409,18 +1394,11 @@ has encoding => (
 
 C<encodingFormat>
 
-Media type typically expressed using a MIME format (see [IANA
-site](http://www.iana.org/assignments/media-types/media-types.xhtml) and
-[MDN
-reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP
-/MIME_types)) e.g. application/zip for a SoftwareApplication binary,
-audio/mpeg for .mp3 etc.). In cases where a [[CreativeWork]] has several
-media type representations, [[encoding]] can be used to indicate each
-[[MediaObject]] alongside particular [[encodingFormat]] information.
-Unregistered or niche encoding and file formats can be indicated instead
-via the most appropriate URL, e.g. defining Web page or a
-Wikipedia/Wikidata entry.
+Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).
 
+In cases where a L<SemanticWeb::Schema::CreativeWork> has several media type representations, [[encoding]] can be used to indicate each L<SemanticWeb::Schema::MediaObject> alongside particular [[encodingFormat]] information.
+
+Unregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.
 
 A encoding_format should be one of the following types:
 
@@ -1504,12 +1482,7 @@ has example_of_work => (
 
 
 
-Date the content expires and is no longer useful or available. For example
-a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is
-time-limited, or a [[ClaimReview]] fact check whose publisher wants to
-indicate that it may no longer be relevant (or helpful to highlight) after
-some date.
-
+Date the content expires and is no longer useful or available. For example a L<SemanticWeb::Schema::VideoObject> or L<SemanticWeb::Schema::NewsArticle> whose availability or relevance is time-limited, or a L<SemanticWeb::Schema::ClaimReview> fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date.
 
 A expires should be one of the following types:
 
@@ -1686,11 +1659,7 @@ has headline => (
 
 C<inLanguage>
 
-The language of the content or performance or used in an action. Please use
-one of the language codes from the [IETF BCP 47
-standard](http://tools.ietf.org/html/bcp47). See also
-[[availableLanguage]].
-
+The language of the content or performance or used in an action. Please use one of the language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>. See also [[availableLanguage]].
 
 A in_language should be one of the following types:
 
@@ -2082,19 +2051,7 @@ has main_entity => (
 
 
 
-A maintainer of a [[Dataset]], software package ([[SoftwareApplication]]),
-or other [[Project]]. A maintainer is a [[Person]] or [[Organization]] that
-manages contributions to, and/or publication of, some (typically complex)
-artifact. It is common for distributions of software and data to be based
-on "upstream" sources. When [[maintainer]] is applied to a specific version
-of something e.g. a particular version or packaging of a [[Dataset]], it is
-always possible that the upstream source has a different maintainer. The
-[[isBasedOn]] property can be used to indicate such relationships between
-datasets to make the different maintenance roles clear. Similarly in the
-case of software, a package may have dedicated maintainers working on
-integration into software distributions such as Ubuntu, as well as upstream
-maintainers of the underlying work. 
-
+A maintainer of a L<SemanticWeb::Schema::Dataset>, software package (L<SemanticWeb::Schema::SoftwareApplication>), or other L<SemanticWeb::Schema::Project>. A maintainer is a L<SemanticWeb::Schema::Person> or L<SemanticWeb::Schema::Organization> that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on "upstream" sources. When [[maintainer]] is applied to a specific version of something e.g. a particular version or packaging of a L<SemanticWeb::Schema::Dataset>, it is always  possible that the upstream source has a different maintainer. The [[isBasedOn]] property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.
 
 A maintainer should be one of the following types:
 
@@ -2213,15 +2170,7 @@ has mentions => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
-product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use [[businessFunction]] to indicate the kind of transaction
-offered, i.e. sell, lease, etc. This property can also be used to describe
-a [[Demand]]. While this property is listed as expected on a number of
-common types, it can be used in others. In that case, using a second type,
-such as Product or a subtype of Product, can clarify the nature of the
-offer. 
-
+An offer to provide this itemE<#x2014>for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a L<SemanticWeb::Schema::Demand>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A offers should be one of the following types:
 
@@ -2461,16 +2410,9 @@ has publisher_imprint => (
 
 C<publishingPrinciples>
 
-The publishingPrinciples property indicates (typically via [[URL]]) a
-document describing the editorial principles of an [[Organization]] (or
-individual e.g. a [[Person]] writing a blog) that relate to their
-activities as a publisher, e.g. ethics or diversity policies. When applied
-to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
-the party primarily responsible for the creation of the [[CreativeWork]].
-While such policies are most typically expressed in natural language,
-sometimes related information (e.g. indicating a [[funder]]) can be
-expressed using schema.org terminology. 
+The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
 
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.
 
 A publishing_principles should be one of the following types:
 
@@ -2643,9 +2585,7 @@ has schema_version => (
 
 C<sdDatePublished>
 
-Indicates the date on which the current structured data was generated /
-published. Typically used alongside [[sdPublisher]]
-
+Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]]
 
 A sd_date_published should be one of the following types:
 
@@ -2703,13 +2643,8 @@ has sd_license => (
 
 C<sdPublisher>
 
-Indicates the party responsible for generating and publishing the current
-structured data markup, typically in cases where the structured data is
-derived automatically from existing published content but published on a
-different site. For example, student projects and open data initiatives
-often re-publish existing content with more explicitly structured metadata.
-The [[sdPublisher]] property helps make such practices more explicit.
-
+Indicates the party responsible for generating and publishing the current structured data markup, typically in cases where the structured data is derived automatically from existing published content but published on a different site. For example, student projects and open data initiatives often re-publish existing content with more explicitly structured metadata. The
+[[sdPublisher]] property helps make such practices more explicit.
 
 A sd_publisher should be one of the following types:
 
@@ -2804,9 +2739,7 @@ has source_organization => (
 
 
 The "spatial" property can be used in cases when more specific properties
-(e.g. [[locationCreated]], [[spatialCoverage]], [[contentLocation]]) are
-not known to be appropriate.
-
+(e.g. [[locationCreated]], [[spatialCoverage]], [[contentLocation]]) are not known to be appropriate.
 
 A spatial should be one of the following types:
 
@@ -2930,9 +2863,7 @@ has teaches => (
 
 
 The "temporal" property can be used in cases where more specific properties
-(e.g. [[temporalCoverage]], [[dateCreated]], [[dateModified]],
-[[datePublished]]) are not known to be appropriate.
-
+(e.g. [[temporalCoverage]], [[dateCreated]], [[dateModified]], [[datePublished]]) are not known to be appropriate.
 
 A temporal should be one of the following types:
 
@@ -3175,19 +3106,9 @@ has typical_age_range => (
 
 C<usageInfo>
 
-The schema.org [[usageInfo]] property indicates further information about a
-[[CreativeWork]]. This property is applicable both to works that are freely
-available and to those that require payment or other transactions. It can
-reference additional information e.g. community expectations on preferred
-linking and citation conventions, as well as purchasing details. For
-something that can be commercially licensed, usageInfo can provide
-detailed, resource-specific information about licensing options. This
-property can be used alongside the license property which indicates
-license(s) applicable to some piece of content. The usageInfo property can
-provide information about other licensing options, e.g. acquiring
-commercial usage rights for an image that is also available under
-non-commercial creative commons licenses.
+The schema.org [[usageInfo]] property indicates further information about a L<SemanticWeb::Schema::CreativeWork>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.
 
+This property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.
 
 A usage_info should be one of the following types:
 

@@ -21,12 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses
-opinions rather than journalistic reporting of news and events. For
-example, a [[NewsArticle]] consisting of a column or
-[[Blog]]/[[BlogPosting]] entry in the Opinions section of a news
-publication. 
-
+An L<SemanticWeb::Schema::OpinionNewsArticle> is a L<SemanticWeb::Schema::NewsArticle> that primarily expresses opinions rather than journalistic reporting of news and events. For example, a L<SemanticWeb::Schema::NewsArticle> consisting of a column or L<SemanticWeb::Schema::Blog>/L<SemanticWeb::Schema::BlogPosting> entry in the Opinions section of a news publication. 
 
 
 

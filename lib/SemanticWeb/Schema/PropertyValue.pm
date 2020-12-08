@@ -24,8 +24,8 @@ our $VERSION = 'v11.01.0';
 A property-value pair, e.g. representing a feature of a product or place.
 Use the 'name' property for the name of the property. If there is an
 additional human-readable version of the value, put that into the
-'description' property.\n\n Always use specific schema.org properties when
-a) they exist and b) you can populate them. Using PropertyValue as a
+'description' property. Always use specific schema.org properties when a)
+they exist and b) you can populate them. Using PropertyValue as a
 substitute will typically not trigger the same effect as using the
 original, specific property. 
 
@@ -67,21 +67,14 @@ has max_value => (
 
 C<measurementTechnique>
 
-A technique or technology used in a [[Dataset]] (or [[DataDownload]],
-[[DataCatalog]]), corresponding to the method used for measuring the
-corresponding variable(s) (described using [[variableMeasured]]). This is
-oriented towards scientific and scholarly dataset publication but may have
-broader applicability; it is not intended as a full representation of
-measurement, but rather as a high level summary for dataset discovery. For
-example, if [[variableMeasured]] is: molecule concentration,
-[[measurementTechnique]] could be: "mass spectrometry" or "nmr
-spectroscopy" or "colorimetry" or "immunofluorescence". If the
-[[variableMeasured]] is "depression rating", the [[measurementTechnique]]
-could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory". If there
-are several [[variableMeasured]] properties recorded for some given data
-object, use a [[PropertyValue]] for each [[variableMeasured]] and attach
-the corresponding [[measurementTechnique]]. 
+A technique or technology used in a L<SemanticWeb::Schema::Dataset> (or L<SemanticWeb::Schema::DataDownload>, L<SemanticWeb::Schema::DataCatalog>),
+corresponding to the method used for measuring the corresponding variable(s) (described using [[variableMeasured]]). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.
 
+For example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: "mass spectrometry" or "nmr spectroscopy" or "colorimetry" or "immunofluorescence".
+
+If the [[variableMeasured]] is "depression rating", the [[measurementTechnique]] could be "Zung Scale" or "HAM-D" or "Beck Depression Inventory".
+
+If there are several [[variableMeasured]] properties recorded for some given data object, use a L<SemanticWeb::Schema::PropertyValue> for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]].
 
 A measurement_technique should be one of the following types:
 
@@ -205,7 +198,8 @@ C<unitText>
 =begin html
 
 <p>A string or text indicating the unit of measurement. Useful if you
-cannot provide a standard unit code for <a href='unitCode'>unitCode</a>.<p>
+cannot provide a standard unit code for <a
+href='unitCode'>unitCode</a>.</p>
 
 =end html
 
@@ -235,15 +229,31 @@ has unit_text => (
 
 
 
-The value of the quantitative value or property value node.\n\n* For
-[[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for
-values is 'Number'.\n* For [[PropertyValue]], it can be 'Text;', 'Number',
-'Boolean', or 'StructuredValue'.\n* Use values from 0123456789 (Unicode
-'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially
-similiar Unicode symbols.\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather
-than ',' to indicate a decimal point. Avoid using these symbols as a
-readability separator.
+The value of the quantitative value or property value node.
 
+=over
+
+=item *
+
+For L<SemanticWeb::Schema::QuantitativeValue> and L<SemanticWeb::Schema::MonetaryAmount>, the recommended type for values is 'Number'.
+
+
+=item *
+
+For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
+
+
+=item *
+
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+
+
+=item *
+
+Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.
+
+
+=back
 
 A value should be one of the following types:
 

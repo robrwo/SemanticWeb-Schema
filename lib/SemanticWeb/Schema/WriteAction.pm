@@ -33,11 +33,7 @@ The act of authoring written creative content.
 
 C<inLanguage>
 
-The language of the content or performance or used in an action. Please use
-one of the language codes from the [IETF BCP 47
-standard](http://tools.ietf.org/html/bcp47). See also
-[[availableLanguage]].
-
+The language of the content or performance or used in an action. Please use one of the language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>. See also [[availableLanguage]].
 
 A in_language should be one of the following types:
 

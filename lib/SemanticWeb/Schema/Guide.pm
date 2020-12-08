@@ -21,13 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-[[Guide]] is a page or article that recommend specific products or
-services, or aspects of a thing for a user to consider. A [[Guide]] may
-represent a Buying Guide and detail aspects of products or services for a
-user to consider. A [[Guide]] may represent a Product Guide and recommend
-specific products or services. A [[Guide]] may represent a Ranked List and
-recommend specific products or services with ranking.
-
+L<SemanticWeb::Schema::Guide> is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Buying Guide and detail aspects of products or services for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Product Guide and recommend specific products or services. A L<SemanticWeb::Schema::Guide> may represent a Ranked List and recommend specific products or services with ranking.
 
 
 

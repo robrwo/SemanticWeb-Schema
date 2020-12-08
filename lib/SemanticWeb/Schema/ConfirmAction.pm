@@ -21,10 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of notifying someone that a future event/action is going to happen
-as expected.\n\nRelated actions:\n\n* [[CancelAction]]: The antonym of
-ConfirmAction.
+The act of notifying someone that a future event/action is going to happen as expected.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::CancelAction>: The antonym of ConfirmAction.
+
+
+=back
 
 
 

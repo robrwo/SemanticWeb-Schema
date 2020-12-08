@@ -35,7 +35,7 @@ C<additionalProperty>
 
 A property-value pair representing an additional characteristics of the
 entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org.\n\nNote: Publishers should be aware
+is no matching property in schema.org. Note: Publishers should be aware
 that applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
@@ -159,7 +159,7 @@ C<branchCode>
 
 A short textual code (also called "store code") that uniquely identifies a
 place of business. The code is typically assigned by the parentOrganization
-and used in structured URLs.\n\nFor example, in the URL
+and used in structured URLs. For example, in the URL
 http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code "3047" is
 a branchCode for a particular branch. 
 
@@ -751,12 +751,7 @@ has global_location_number => (
 
 C<hasDriveThroughService>
 
-Indicates whether some facility (e.g. [[FoodEstablishment]],
-[[CovidTestingFacility]]) offers a service that can be used by driving
-through in a car. In the case of [[CovidTestingFacility]] such facilities
-could potentially help with social distancing from other
-potentially-infected users.
-
+Indicates whether some facility (e.g. L<SemanticWeb::Schema::FoodEstablishment>, L<SemanticWeb::Schema::CovidTestingFacility>) offers a service that can be used by driving through in a car. In the case of L<SemanticWeb::Schema::CovidTestingFacility> such facilities could potentially help with social distancing from other potentially-infected users.
 
 A has_drive_through_service should be one of the following types:
 
@@ -1135,9 +1130,7 @@ has photos => (
 
 C<publicAccess>
 
-A flag to signal that the [[Place]] is open to public visitors. If this
-property is omitted there is no assumed default boolean value
-
+A flag to signal that the L<SemanticWeb::Schema::Place> is open to public visitors.  If this property is omitted there is no assumed default boolean value
 
 A public_access should be one of the following types:
 
@@ -1277,10 +1270,9 @@ has smoking_allowed => (
 
 C<specialOpeningHoursSpecification>
 
-The special opening hours of a certain place.\n\nUse this to explicitly
-override general opening hours brought in scope by
-[[openingHoursSpecification]] or [[openingHours]]. 
+The special opening hours of a certain place.
 
+Use this to explicitly override general opening hours brought in scope by [[openingHoursSpecification]] or [[openingHours]].
 
 A special_opening_hours_specification should be one of the following types:
 
@@ -1335,10 +1327,7 @@ has telephone => (
 
 C<tourBookingPage>
 
-A page providing information on how to book a tour of some [[Place]], such
-as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting,
-as well as other kinds of tours as appropriate.
-
+A page providing information on how to book a tour of some L<SemanticWeb::Schema::Place>, such as an L<SemanticWeb::Schema::Accommodation> or L<SemanticWeb::Schema::ApartmentComplex> in a real estate setting, as well as other kinds of tours as appropriate.
 
 A tour_booking_page should be one of the following types:
 

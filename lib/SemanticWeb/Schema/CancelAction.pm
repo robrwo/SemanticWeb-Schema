@@ -21,10 +21,18 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of asserting that a future event/action is no longer going to
-happen.\n\nRelated actions:\n\n* [[ConfirmAction]]: The antonym of
-CancelAction.
+The act of asserting that a future event/action is no longer going to happen.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::ConfirmAction>: The antonym of CancelAction.
+
+
+=back
 
 
 

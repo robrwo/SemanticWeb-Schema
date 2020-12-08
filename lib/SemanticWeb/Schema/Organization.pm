@@ -33,11 +33,7 @@ An organization such as a school, NGO, corporation, club, etc.
 
 C<actionableFeedbackPolicy>
 
-For a [[NewsMediaOrganization]] or other news-related [[Organization]], a
-statement about public engagement activities (for news media, the
-newsroomâs), including involving the public - digitally or otherwise --
-in coverage decisions, reporting and activities after publication.
-
+For a L<SemanticWeb::Schema::NewsMediaOrganization> or other news-related L<SemanticWeb::Schema::Organization>, a statement about public engagement activities (for news media, the newsroomâs), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.
 
 A actionable_feedback_policy should be one of the following types:
 
@@ -330,10 +326,7 @@ has contact_points => (
 
 C<correctionsPolicy>
 
-For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement
-describing (in news media, the newsroomâs) disclosure and correction
-policy for errors.
-
+For an L<SemanticWeb::Schema::Organization> (e.g. L<SemanticWeb::Schema::NewsMediaOrganization>), a statement describing (in news media, the newsroomâs) disclosure and correction policy for errors.
 
 A corrections_policy should be one of the following types:
 
@@ -421,11 +414,7 @@ has dissolution_date => (
 
 C<diversityPolicy>
 
-Statement on diversity policy by an [[Organization]] e.g. a
-[[NewsMediaOrganization]]. For a [[NewsMediaOrganization]], a statement
-describing the newsroomâs diversity policy on both staffing and sources,
-typically providing staffing data.
-
+Statement on diversity policy by an L<SemanticWeb::Schema::Organization> e.g. a L<SemanticWeb::Schema::NewsMediaOrganization>. For a L<SemanticWeb::Schema::NewsMediaOrganization>, a statement describing the newsroomâs diversity policy on both staffing and sources, typically providing staffing data.
 
 A diversity_policy should be one of the following types:
 
@@ -454,11 +443,7 @@ has diversity_policy => (
 
 C<diversityStaffingReport>
 
-For an [[Organization]] (often but not necessarily a
-[[NewsMediaOrganization]]), a report on staffing diversity issues. In a
-news context this might be for example ASNE or RTDNA (US) reports, or
-self-reported.
-
+For an L<SemanticWeb::Schema::Organization> (often but not necessarily a L<SemanticWeb::Schema::NewsMediaOrganization>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.
 
 A diversity_staffing_report should be one of the following types:
 
@@ -600,13 +585,7 @@ has employees => (
 
 C<ethicsPolicy>
 
-Statement about ethics policy, e.g. of a [[NewsMediaOrganization]]
-regarding journalistic and publishing practices, or of a [[Restaurant]], a
-page describing food source policies. In the case of a
-[[NewsMediaOrganization]], an ethicsPolicy is typically a statement
-describing the personal, organizational, and corporate standards of
-behavior expected by the organization.
-
+Statement about ethics policy, e.g. of a L<SemanticWeb::Schema::NewsMediaOrganization> regarding journalistic and publishing practices, or of a L<SemanticWeb::Schema::Restaurant>, a page describing food source policies. In the case of a L<SemanticWeb::Schema::NewsMediaOrganization>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.
 
 A ethics_policy should be one of the following types:
 
@@ -1094,11 +1073,7 @@ has isic_v4 => (
 
 C<knowsAbout>
 
-Of a [[Person]], and less typically of an [[Organization]], to indicate a
-topic that is known about - suggesting possible expertise but not implying
-it. We do not distinguish skill levels here, or relate this to educational
-content, events, objectives or [[JobPosting]] descriptions.
-
+Of a L<SemanticWeb::Schema::Person>, and less typically of an L<SemanticWeb::Schema::Organization>, to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or L<SemanticWeb::Schema::JobPosting> descriptions.
 
 A knows_about should be one of the following types:
 
@@ -1127,11 +1102,7 @@ has knows_about => (
 
 C<knowsLanguage>
 
-Of a [[Person]], and less typically of an [[Organization]], to indicate a
-known language. We do not distinguish skill levels or
-reading/writing/speaking/signing here. Use language codes from the [IETF
-BCP 47 standard](http://tools.ietf.org/html/bcp47).
-
+Of a L<SemanticWeb::Schema::Person>, and less typically of an L<SemanticWeb::Schema::Organization>, to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>.
 
 A knows_language should be one of the following types:
 
@@ -1488,13 +1459,7 @@ has number_of_employees => (
 
 C<ownershipFundingInfo>
 
-For an [[Organization]] (often but not necessarily a
-[[NewsMediaOrganization]]), a description of organizational ownership
-structure; funding and grants. In a news/media setting, this is with
-particular reference to editorial independence. Note that the [[funder]] is
-also available and can be used to make basic funder information
-machine-readable.
-
+For an L<SemanticWeb::Schema::Organization> (often but not necessarily a L<SemanticWeb::Schema::NewsMediaOrganization>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.
 
 A ownership_funding_info should be one of the following types:
 
@@ -1555,9 +1520,7 @@ has owns => (
 
 C<parentOrganization>
 
-The larger organization that this organization is a [[subOrganization]] of,
-if any.
-
+The larger organization that this organization is a [[subOrganization]] of, if any.
 
 A parent_organization should be one of the following types:
 
@@ -1584,16 +1547,9 @@ has parent_organization => (
 
 C<publishingPrinciples>
 
-The publishingPrinciples property indicates (typically via [[URL]]) a
-document describing the editorial principles of an [[Organization]] (or
-individual e.g. a [[Person]] writing a blog) that relate to their
-activities as a publisher, e.g. ethics or diversity policies. When applied
-to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of
-the party primarily responsible for the creation of the [[CreativeWork]].
-While such policies are most typically expressed in natural language,
-sometimes related information (e.g. indicating a [[funder]]) can be
-expressed using schema.org terminology. 
+The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
 
+While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.
 
 A publishing_principles should be one of the following types:
 
@@ -1886,10 +1842,7 @@ has telephone => (
 
 C<unnamedSourcesPolicy>
 
-For an [[Organization]] (typically a [[NewsMediaOrganization]]), a
-statement about policy on use of unnamed sources and the decision process
-required.
-
+For an L<SemanticWeb::Schema::Organization> (typically a L<SemanticWeb::Schema::NewsMediaOrganization>), a statement about policy on use of unnamed sources and the decision process required.
 
 A unnamed_sources_policy should be one of the following types:
 

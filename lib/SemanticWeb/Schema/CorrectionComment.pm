@@ -21,8 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[comment]] that corrects [[CreativeWork]].
-
+A [[comment]] that corrects L<SemanticWeb::Schema::CreativeWork>.
 
 
 

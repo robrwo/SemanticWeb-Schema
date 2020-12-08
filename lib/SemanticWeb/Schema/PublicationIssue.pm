@@ -23,7 +23,7 @@ our $VERSION = 'v11.01.0';
 
 A part of a successively published publication such as a periodical or
 publication volume, often numbered, usually containing a grouping of works
-such as articles.\n\nSee also [blog
+such as articles. See also [blog
 post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.
 html).
 

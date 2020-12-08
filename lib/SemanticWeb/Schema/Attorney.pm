@@ -21,9 +21,9 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-Professional service: Attorney. \n\nThis type is deprecated -
-[[LegalService]] is more inclusive and less ambiguous.
+Professional service: Attorney. 
 
+This type is deprecated - L<SemanticWeb::Schema::LegalService> is more inclusive and less ambiguous.
 
 
 

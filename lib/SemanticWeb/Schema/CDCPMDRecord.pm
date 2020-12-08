@@ -64,10 +64,7 @@ has cvd_collection_date => (
 
 C<cvdFacilityCounty>
 
-Name of the County of the NHSN facility that this data record applies to.
-Use [[cvdFacilityId]] to identify the facility. To provide other details,
-[[healthcareReportingData]] can be used on a [[Hospital]] entry.
-
+Name of the County of the NHSN facility that this data record applies to. Use [[cvdFacilityId]] to identify the facility. To provide other details, [[healthcareReportingData]] can be used on a L<SemanticWeb::Schema::Hospital> entry.
 
 A cvd_facility_county should be one of the following types:
 
@@ -94,10 +91,7 @@ has cvd_facility_county => (
 
 C<cvdFacilityId>
 
-Identifier of the NHSN facility that this data record applies to. Use
-[[cvdFacilityCounty]] to indicate the county. To provide other details,
-[[healthcareReportingData]] can be used on a [[Hospital]] entry.
-
+Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a L<SemanticWeb::Schema::Hospital> entry.
 
 A cvd_facility_id should be one of the following types:
 

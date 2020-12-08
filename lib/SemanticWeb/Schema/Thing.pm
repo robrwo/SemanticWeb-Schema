@@ -153,12 +153,7 @@ has disambiguating_description => (
 
 
 
-The identifier property represents any kind of identifier for any kind of
-[[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides
-dedicated properties for representing many of these, either as textual
-strings or as URL (URI) links. See [background
-notes](/docs/datamodel.html#identifierBg) for more details. 
-
+The identifier property represents any kind of identifier for any kind of L<SemanticWeb::Schema::Thing>, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See L<background notes|/docs/datamodel.html#identifierBg> for more details.
 
 A identifier should be one of the following types:
 
@@ -187,9 +182,7 @@ has identifier => (
 
 
 
-An image of the item. This can be a [[URL]] or a fully described
-[[ImageObject]].
-
+An image of the item. This can be a L<SemanticWeb::Schema::URL> or a fully described L<SemanticWeb::Schema::ImageObject>.
 
 A image should be one of the following types:
 

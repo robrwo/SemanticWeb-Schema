@@ -21,12 +21,8 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A tourist trip. A created itinerary of visits to one or more places of
-interest ([[TouristAttraction]]/[[TouristDestination]]) often linked by a
-similar theme, geographic area, or interest to a particular
-[[touristType]]. The [UNWTO](http://www2.unwto.org/) defines tourism trip
-as the Trip taken by visitors. (See examples below).
-
+A tourist trip. A created itinerary of visits to one or more places of interest (L<SemanticWeb::Schema::TouristAttraction>/L<SemanticWeb::Schema::TouristDestination>) often linked by a similar theme, geographic area, or interest to a particular [[touristType]]. The L<UNWTO|http://www2.unwto.org/> defines tourism trip as the Trip taken by visitors.
+  (See examples below).
 
 
 

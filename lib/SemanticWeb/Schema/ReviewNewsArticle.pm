@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[NewsArticle]] and [[CriticReview]] providing a professional critic's
-assessment of a service, product, performance, or artistic or literary
-work.
-
+A L<SemanticWeb::Schema::NewsArticle> and L<SemanticWeb::Schema::CriticReview> providing a professional critic's assessment of a service, product, performance, or artistic or literary work.
 
 
 

@@ -74,7 +74,7 @@ of transposition, use the <a
 href="/legislationTransposes">legislationTransposes</a> property. For
 example an informative consolidated law of a European Union's member state
 "applies" the consolidated version of the European Directive implemented in
-it.<p>
+it.</p>
 
 =end html
 
@@ -113,7 +113,7 @@ consequential or indirect change. The property is to be used to express the
 existence of a change relationship between two acts rather than the
 existence of a consolidated version of the text that shows the result of
 the change. For consolidation relationships, use the <a
-href="/legislationConsolidates">legislationConsolidates</a> property.<p>
+href="/legislationConsolidates">legislationConsolidates</a> property.</p>
 
 =end html
 

@@ -21,9 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A set of products (either [[ProductGroup]]s or specific variants) that are
-listed together e.g. in an [[Offer]].
-
+A set of products (either L<SemanticWeb::Schema::ProductGroup>s or specific variants) that are listed together e.g. in an L<SemanticWeb::Schema::Offer>.
 
 
 
@@ -34,9 +32,7 @@ listed together e.g. in an [[Offer]].
 
 C<includesObject>
 
-This links to a node or nodes indicating the exact quantity of the products
-included in an [[Offer]] or [[ProductCollection]].
-
+This links to a node or nodes indicating the exact quantity of the products included in  an L<SemanticWeb::Schema::Offer> or L<SemanticWeb::Schema::ProductCollection>.
 
 A includes_object should be one of the following types:
 

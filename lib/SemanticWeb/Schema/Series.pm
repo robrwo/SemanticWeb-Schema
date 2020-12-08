@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A Series in schema.org is a group of related items, typically but not
-necessarily of the same kind. See also [[CreativeWorkSeries]],
-[[EventSeries]].
-
+A Series in schema.org is a group of related items, typically but not necessarily of the same kind. See also L<SemanticWeb::Schema::CreativeWorkSeries>, L<SemanticWeb::Schema::EventSeries>.
 
 
 

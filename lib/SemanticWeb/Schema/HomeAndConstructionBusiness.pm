@@ -21,11 +21,11 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A construction business.\n\nA HomeAndConstructionBusiness is a
-[[LocalBusiness]] that provides services around homes and buildings.\n\nAs
-a [[LocalBusiness]] it can be described as a [[provider]] of one or more
-[[Service]]\(s).
+A construction business.
 
+A HomeAndConstructionBusiness is a L<SemanticWeb::Schema::LocalBusiness> that provides services around homes and buildings.
+
+As a L<SemanticWeb::Schema::LocalBusiness> it can be described as a [[provider]] of one or more L<SemanticWeb::Schema::Service>(s).
 
 
 

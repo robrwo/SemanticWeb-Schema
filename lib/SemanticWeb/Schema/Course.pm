@@ -38,9 +38,7 @@ learners.
 
 C<courseCode>
 
-The identifier for the [[Course]] used by the course [[provider]] (e.g.
-CS101 or 6.001).
-
+The identifier for the L<SemanticWeb::Schema::Course> used by the course [[provider]] (e.g. CS101 or 6.001).
 
 A course_code should be one of the following types:
 
@@ -67,10 +65,7 @@ has course_code => (
 
 C<coursePrerequisites>
 
-Requirements for taking the Course. May be completion of another [[Course]]
-or a textual description like "permission of instructor". Requirements may
-be a pre-requisite competency, referenced using [[AlignmentObject]].
-
+Requirements for taking the Course. May be completion of another L<SemanticWeb::Schema::Course> or a textual description like "permission of instructor". Requirements may be a pre-requisite competency, referenced using L<SemanticWeb::Schema::AlignmentObject>.
 
 A course_prerequisites should be one of the following types:
 

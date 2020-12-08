@@ -241,7 +241,7 @@ has discount_code => (
 
 C<discountCurrency>
 
-The currency of the discount.\n\nUse standard formats: [ISO 4217 currency
+The currency of the discount. Use standard formats: [ISO 4217 currency
 format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
 cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings

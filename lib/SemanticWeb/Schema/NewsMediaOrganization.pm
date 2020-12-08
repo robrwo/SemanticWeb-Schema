@@ -33,11 +33,7 @@ A News/Media organization such as a newspaper or TV station.
 
 C<actionableFeedbackPolicy>
 
-For a [[NewsMediaOrganization]] or other news-related [[Organization]], a
-statement about public engagement activities (for news media, the
-newsroomâs), including involving the public - digitally or otherwise --
-in coverage decisions, reporting and activities after publication.
-
+For a L<SemanticWeb::Schema::NewsMediaOrganization> or other news-related L<SemanticWeb::Schema::Organization>, a statement about public engagement activities (for news media, the newsroomâs), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.
 
 A actionable_feedback_policy should be one of the following types:
 
@@ -66,10 +62,7 @@ has actionable_feedback_policy => (
 
 C<correctionsPolicy>
 
-For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement
-describing (in news media, the newsroomâs) disclosure and correction
-policy for errors.
-
+For an L<SemanticWeb::Schema::Organization> (e.g. L<SemanticWeb::Schema::NewsMediaOrganization>), a statement describing (in news media, the newsroomâs) disclosure and correction policy for errors.
 
 A corrections_policy should be one of the following types:
 
@@ -98,11 +91,7 @@ has corrections_policy => (
 
 C<diversityPolicy>
 
-Statement on diversity policy by an [[Organization]] e.g. a
-[[NewsMediaOrganization]]. For a [[NewsMediaOrganization]], a statement
-describing the newsroomâs diversity policy on both staffing and sources,
-typically providing staffing data.
-
+Statement on diversity policy by an L<SemanticWeb::Schema::Organization> e.g. a L<SemanticWeb::Schema::NewsMediaOrganization>. For a L<SemanticWeb::Schema::NewsMediaOrganization>, a statement describing the newsroomâs diversity policy on both staffing and sources, typically providing staffing data.
 
 A diversity_policy should be one of the following types:
 
@@ -131,11 +120,7 @@ has diversity_policy => (
 
 C<diversityStaffingReport>
 
-For an [[Organization]] (often but not necessarily a
-[[NewsMediaOrganization]]), a report on staffing diversity issues. In a
-news context this might be for example ASNE or RTDNA (US) reports, or
-self-reported.
-
+For an L<SemanticWeb::Schema::Organization> (often but not necessarily a L<SemanticWeb::Schema::NewsMediaOrganization>), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.
 
 A diversity_staffing_report should be one of the following types:
 
@@ -164,13 +149,7 @@ has diversity_staffing_report => (
 
 C<ethicsPolicy>
 
-Statement about ethics policy, e.g. of a [[NewsMediaOrganization]]
-regarding journalistic and publishing practices, or of a [[Restaurant]], a
-page describing food source policies. In the case of a
-[[NewsMediaOrganization]], an ethicsPolicy is typically a statement
-describing the personal, organizational, and corporate standards of
-behavior expected by the organization.
-
+Statement about ethics policy, e.g. of a L<SemanticWeb::Schema::NewsMediaOrganization> regarding journalistic and publishing practices, or of a L<SemanticWeb::Schema::Restaurant>, a page describing food source policies. In the case of a L<SemanticWeb::Schema::NewsMediaOrganization>, an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.
 
 A ethics_policy should be one of the following types:
 
@@ -199,9 +178,7 @@ has ethics_policy => (
 
 
 
-For a [[NewsMediaOrganization]], a link to the masthead page or a page
-listing top editorial management.
-
+For a L<SemanticWeb::Schema::NewsMediaOrganization>, a link to the masthead page or a page listing top editorial management.
 
 A masthead should be one of the following types:
 
@@ -230,9 +207,7 @@ has masthead => (
 
 C<missionCoveragePrioritiesPolicy>
 
-For a [[NewsMediaOrganization]], a statement on coverage priorities,
-including any public agenda or stance on issues.
-
+For a L<SemanticWeb::Schema::NewsMediaOrganization>, a statement on coverage priorities, including any public agenda or stance on issues.
 
 A mission_coverage_priorities_policy should be one of the following types:
 
@@ -261,9 +236,7 @@ has mission_coverage_priorities_policy => (
 
 C<noBylinesPolicy>
 
-For a [[NewsMediaOrganization]] or other news-related [[Organization]], a
-statement explaining when authors of articles are not named in bylines.
-
+For a L<SemanticWeb::Schema::NewsMediaOrganization> or other news-related L<SemanticWeb::Schema::Organization>, a statement explaining when authors of articles are not named in bylines.
 
 A no_bylines_policy should be one of the following types:
 
@@ -292,13 +265,7 @@ has no_bylines_policy => (
 
 C<ownershipFundingInfo>
 
-For an [[Organization]] (often but not necessarily a
-[[NewsMediaOrganization]]), a description of organizational ownership
-structure; funding and grants. In a news/media setting, this is with
-particular reference to editorial independence. Note that the [[funder]] is
-also available and can be used to make basic funder information
-machine-readable.
-
+For an L<SemanticWeb::Schema::Organization> (often but not necessarily a L<SemanticWeb::Schema::NewsMediaOrganization>), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.
 
 A ownership_funding_info should be one of the following types:
 
@@ -329,10 +296,7 @@ has ownership_funding_info => (
 
 C<unnamedSourcesPolicy>
 
-For an [[Organization]] (typically a [[NewsMediaOrganization]]), a
-statement about policy on use of unnamed sources and the decision process
-required.
-
+For an L<SemanticWeb::Schema::Organization> (typically a L<SemanticWeb::Schema::NewsMediaOrganization>), a statement about policy on use of unnamed sources and the decision process required.
 
 A unnamed_sources_policy should be one of the following types:
 
@@ -361,9 +325,7 @@ has unnamed_sources_policy => (
 
 C<verificationFactCheckingPolicy>
 
-Disclosure about verification and fact-checking processes for a
-[[NewsMediaOrganization]] or other fact-checking [[Organization]].
-
+Disclosure about verification and fact-checking processes for a L<SemanticWeb::Schema::NewsMediaOrganization> or other fact-checking L<SemanticWeb::Schema::Organization>.
 
 A verification_fact_checking_policy should be one of the following types:
 

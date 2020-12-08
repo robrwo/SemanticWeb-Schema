@@ -21,10 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-UserInteraction and its subtypes is an old way of talking about users
-interacting with pages. It is generally better to use [[Action]]-based
-vocabulary, alongside types such as [[Comment]].
-
+UserInteraction and its subtypes is an old way of talking about users interacting with pages. It is generally better to use L<SemanticWeb::Schema::Action>-based vocabulary, alongside types such as L<SemanticWeb::Schema::Comment>.
 
 
 

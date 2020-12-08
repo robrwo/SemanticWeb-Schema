@@ -65,10 +65,7 @@ has interaction_service => (
 
 C<interactionType>
 
-The Action representing the type of interaction. For up votes, +1s, etc.
-use [[LikeAction]]. For down votes use [[DislikeAction]]. Otherwise, use
-the most specific Action.
-
+The Action representing the type of interaction. For up votes, +1s, etc. use L<SemanticWeb::Schema::LikeAction>. For down votes use L<SemanticWeb::Schema::DislikeAction>. Otherwise, use the most specific Action.
 
 A interaction_type should be one of the following types:
 

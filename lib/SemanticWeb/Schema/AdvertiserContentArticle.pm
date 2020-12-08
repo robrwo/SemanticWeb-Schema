@@ -21,11 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-An [[Article]] that an external entity has paid to place or to produce to
-its specifications. Includes
-[advertorials](https://en.wikipedia.org/wiki/Advertorial), sponsored
-content, native advertising and other paid content.
-
+An L<SemanticWeb::Schema::Article> that an external entity has paid to place or to produce to its specifications. Includes L<advertorials|https://en.wikipedia.org/wiki/Advertorial>, sponsored content, native advertising and other paid content.
 
 
 

@@ -61,8 +61,7 @@ has code_value => (
 
 C<inCodeSet>
 
-A [[CategoryCodeSet]] that contains this category code.
-
+A L<SemanticWeb::Schema::CategoryCodeSet> that contains this category code.
 
 A in_code_set should be one of the following types:
 

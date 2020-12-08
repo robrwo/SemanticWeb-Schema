@@ -21,13 +21,23 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-The act of physically/electronically taking delivery of an object that has
-been transferred from an origin to a destination. Reciprocal of
-SendAction.\n\nRelated actions:\n\n* [[SendAction]]: The reciprocal of
-ReceiveAction.\n* [[TakeAction]]: Unlike TakeAction, ReceiveAction does not
-imply that the ownership has been transfered (e.g. I can receive a package,
-but it does not mean the package is now mine).
+The act of physically/electronically taking delivery of an object that has been transferred from an origin to a destination. Reciprocal of SendAction.
 
+Related actions:
+
+=over
+
+=item *
+
+L<SemanticWeb::Schema::SendAction>: The reciprocal of ReceiveAction.
+
+
+=item *
+
+L<SemanticWeb::Schema::TakeAction>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).
+
+
+=back
 
 
 

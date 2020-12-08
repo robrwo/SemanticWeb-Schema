@@ -418,10 +418,9 @@ has eligible_quantity => (
 
 C<eligibleRegion>
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is valid.\n\nSee also [[ineligibleRegion]]. 
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.
 
+See also [[ineligibleRegion]].
 
 A eligible_region should be one of the following types:
 
@@ -483,23 +482,7 @@ has eligible_transaction_volume => (
 
 
 
-A Global Trade Item Number
-([GTIN](https://www.gs1.org/standards/id-keys/gtin)). GTINs identify trade
-items, including products and services, using numeric identification codes.
-The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]],
-[[gtin13]], and [[gtin14]] properties. The GS1 [digital link
-specifications](https://www.gs1.org/standards/Digital-Link/) express GTINs
-as URLs. A correct [[gtin]] value should be a valid GTIN, which means that
-it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a
-"GS1 Digital Link" URL based on such a string. The numeric component should
-also have a [valid GS1 check
-digit](https://www.gs1.org/services/check-digit-calculator) and meet the
-other rules for valid GTINs. See also [GS1's GTIN
-Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) and
-[Wikipedia](https://en.wikipedia.org/wiki/Global_Trade_Item_Number) for
-more details. Left-padding of the gtin values is not required or
-encouraged. 
-
+A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged.
 
 A gtin should be one of the following types:
 
@@ -654,9 +637,7 @@ has gtin8 => (
 
 C<includesObject>
 
-This links to a node or nodes indicating the exact quantity of the products
-included in an [[Offer]] or [[ProductCollection]].
-
+This links to a node or nodes indicating the exact quantity of the products included in  an L<SemanticWeb::Schema::Offer> or L<SemanticWeb::Schema::ProductCollection>.
 
 A includes_object should be one of the following types:
 
@@ -683,11 +664,9 @@ has includes_object => (
 
 C<ineligibleRegion>
 
-The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the
-GeoShape for the geo-political region(s) for which the offer or delivery
-charge specification is not valid, e.g. a region where the transaction is
-not allowed.\n\nSee also [[eligibleRegion]]. 
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.
 
+See also [[eligibleRegion]].
 
 A ineligible_region should be one of the following types:
 
@@ -776,12 +755,7 @@ has item_condition => (
 
 C<itemOffered>
 
-An item being offered (or demanded). The transactional nature of the offer
-or demand is documented using [[businessFunction]], e.g. sell, lease etc.
-While several common expected types are listed explicitly in this
-definition, others can be used. Using a second type, such as Product or a
-subtype of Product, can clarify the nature of the offer.
-
+An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A item_offered should be one of the following types:
 

@@ -21,15 +21,7 @@ our $VERSION = 'v11.01.0';
 
 =head1 DESCRIPTION
 
-A [[NewsArticle]] providing historical context, definition and detail on a
-specific topic (aka "explainer" or "backgrounder"). For example, an
-in-depth article or frequently-asked-questions
-([FAQ](https://en.wikipedia.org/wiki/FAQ)) document on topics such as
-Climate Change or the European Union. Other kinds of background material
-from a non-news setting are often described using [[Book]] or [[Article]],
-in particular [[ScholarlyArticle]]. See also [[NewsArticle]] for related
-vocabulary from a learning/education perspective.
-
+A L<SemanticWeb::Schema::NewsArticle> providing historical context, definition and detail on a specific topic (aka "explainer" or "backgrounder"). For example, an in-depth article or frequently-asked-questions (L<FAQ|https://en.wikipedia.org/wiki/FAQ>) document on topics such as Climate Change or the European Union. Other kinds of background material from a non-news setting are often described using L<SemanticWeb::Schema::Book> or L<SemanticWeb::Schema::Article>, in particular L<SemanticWeb::Schema::ScholarlyArticle>. See also L<SemanticWeb::Schema::NewsArticle> for related vocabulary from a learning/education perspective.
 
 
 

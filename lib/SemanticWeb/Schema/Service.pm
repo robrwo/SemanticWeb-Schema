@@ -426,15 +426,7 @@ has logo => (
 
 
 
-An offer to provide this item&#x2014;for example, an offer to sell a
-product, rent the DVD of a movie, perform a service, or give away tickets
-to an event. Use [[businessFunction]] to indicate the kind of transaction
-offered, i.e. sell, lease, etc. This property can also be used to describe
-a [[Demand]]. While this property is listed as expected on a number of
-common types, it can be used in others. In that case, using a second type,
-such as Product or a subtype of Product, can clarify the nature of the
-offer. 
-
+An offer to provide this itemE<#x2014>for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a L<SemanticWeb::Schema::Demand>. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.
 
 A offers should be one of the following types:
 

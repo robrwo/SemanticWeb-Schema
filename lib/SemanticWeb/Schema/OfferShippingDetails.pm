@@ -68,9 +68,7 @@ has delivery_time => (
 
 C<doesNotShip>
 
-Indicates when shipping to a particular [[shippingDestination]] is not
-available.
-
+Indicates when shipping to a particular [[shippingDestination]] is not available.
 
 A does_not_ship should be one of the following types:
 
@@ -126,9 +124,7 @@ has shipping_destination => (
 
 C<shippingLabel>
 
-Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]]
-(within the context of a [[shippingSettingsLink]] cross-reference).
-
+Label to match an L<SemanticWeb::Schema::OfferShippingDetails> with a L<SemanticWeb::Schema::ShippingRateSettings> (within the context of a [[shippingSettingsLink]] cross-reference).
 
 A shipping_label should be one of the following types:
 
@@ -155,10 +151,7 @@ has shipping_label => (
 
 C<shippingRate>
 
-The shipping rate is the cost of shipping to the specified destination.
-Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are
-most appropriate.
-
+The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the L<SemanticWeb::Schema::MonetaryAmount>) are most appropriate.
 
 A shipping_rate should be one of the following types:
 
@@ -185,9 +178,7 @@ has shipping_rate => (
 
 C<shippingSettingsLink>
 
-Link to a page containing [[ShippingRateSettings]] and
-[[DeliveryTimeSettings]] details.
-
+Link to a page containing L<SemanticWeb::Schema::ShippingRateSettings> and L<SemanticWeb::Schema::DeliveryTimeSettings> details.
 
 A shipping_settings_link should be one of the following types:
 
@@ -214,9 +205,7 @@ has shipping_settings_link => (
 
 C<transitTimeLabel>
 
-Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]]
-(within the context of a [[shippingSettingsLink]] cross-reference).
-
+Label to match an L<SemanticWeb::Schema::OfferShippingDetails> with a L<SemanticWeb::Schema::DeliveryTimeSettings> (within the context of a [[shippingSettingsLink]] cross-reference).
 
 A transit_time_label should be one of the following types:
 
