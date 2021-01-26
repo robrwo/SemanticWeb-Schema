@@ -9,6 +9,7 @@ requires "Ref::Util" => "0";
 requires "Types::Standard" => "0";
 requires "namespace::autoclean" => "0";
 requires "perl" => "v5.10.1";
+requires "utf8" => "0";
 recommends "Class::XSAccessor" => "1.18";
 recommends "Ref::Util::XS" => "0";
 recommends "Type::Tiny::XS" => "0";
@@ -21,6 +22,8 @@ on 'test' => sub {
   requires "Test::More" => "0";
   requires "Test::Most" => "0";
   requires "aliased" => "0";
+  requires "strict" => "0";
+  requires "warnings" => "0";
 };
 
 on 'test' => sub {
@@ -33,6 +36,7 @@ on 'configure' => sub {
 
 on 'develop' => sub {
   requires "Test::CleanNamespaces" => "0.15";
+  requires "Test::Compile" => "0";
   requires "Test::EOF" => "0";
   requires "Test::MinimumVersion" => "0";
   requires "Test::More" => "0";
