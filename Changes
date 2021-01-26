@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Tests]
+  - Added compilation tests. (Note that this does not catch GH#5 yet.)
 
 v11.01.0  2020-12-08 23:18:29+00:00 Europe/London
   [Enhancements]
