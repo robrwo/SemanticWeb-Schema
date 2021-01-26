@@ -70,6 +70,7 @@ Robert Rothenberg <rrwo@cpan.org>
 
 # CONTRIBUTORS
 
+- Mathias Reitinger <reitinger@cpan.org>
 - Arikawa Takaya <tky.c10.ver@gmail.com>
 - Mohammad S Anwar <mohammad.anwar@yahoo.com>
 

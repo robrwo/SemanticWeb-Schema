@@ -1,12 +1,11 @@
 use utf8;
-
 package SemanticWeb::Schema::Dentist;
 
 # ABSTRACT: A dentist.
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::LocalBusiness SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
+extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
 
 
 use MooX::JSON_LD 'Dentist';

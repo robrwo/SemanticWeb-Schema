@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Bug Fixes]
+  - Add a manual for for Dentist schema, GH #5.
+
   [Tests]
   - Added compilation tests. (Note that this does not catch GH#5 yet.)
 
