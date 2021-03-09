@@ -13,8 +13,8 @@
          "rdfs:label" : "annualPercentageRate",
          "schema:domainIncludes" : "schema:FinancialProduct",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:FIBO"
       },

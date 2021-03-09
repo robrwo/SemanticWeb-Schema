@@ -12,13 +12,13 @@
          "rdfs:comment" : "Educational background needed for the position or Occupation.",
          "rdfs:label" : "educationRequirements",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Text"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1698",
@@ -48,7 +48,10 @@
             "schema:Occupation",
             "schema:JobPosting"
          ],
-         "schema:rangeIncludes" : "schema:Text",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:OccupationalExperienceRequirements"
+         ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
       "schema:occupationLocation" : {
@@ -64,10 +67,10 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
+            "schema:Occupation",
             "schema:JobPosting",
             "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram",
-            "schema:Occupation"
+            "schema:WorkBasedProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -75,10 +78,10 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2192",
             "https://github.com/schemaorg/schemaorg/issues/2460",
-            "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2192",
+            "https://github.com/schemaorg/schemaorg/issues/2289"
          ]
       },
       "schema:qualifications" : {
@@ -119,8 +122,8 @@
             "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1698",

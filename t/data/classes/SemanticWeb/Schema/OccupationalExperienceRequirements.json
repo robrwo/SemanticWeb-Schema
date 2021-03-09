@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Indicates employment-related experience requirements, e.g. [[monthsOfExperience]].",
+      "rdfs:label" : "OccupationalExperienceRequirements",
+      "rdfs:subClassOf" : "schema:Intangible",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2681"
+   },
+   "properties" : {
+      "schema:monthsOfExperience" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates the minimal number of months of experience required for a position.",
+         "rdfs:label" : "monthsOfExperience",
+         "schema:domainIncludes" : "schema:OccupationalExperienceRequirements",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Number",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2681"
+      }
+   }
+}

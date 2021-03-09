@@ -46,12 +46,12 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:Offer",
-            "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
             "schema:MonetaryAmount",
+            "schema:PriceSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:Demand",
+            "schema:Offer",
+            "schema:LocationFeatureSpecification",
             "schema:Permit"
          ],
          "schema:rangeIncludes" : [

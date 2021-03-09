@@ -1,9 +1,13 @@
 use utf8;
+
 package SemanticWeb::Schema::Dentist;
 
 # ABSTRACT: A dentist.
 
 use Moo;
+
+# Note: this has been manually updated until the generation script can
+# be fixed GH#5.
 
 extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
 
@@ -14,7 +18,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 

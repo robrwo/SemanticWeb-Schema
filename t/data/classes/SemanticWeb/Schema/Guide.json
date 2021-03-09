@@ -13,9 +13,9 @@
          "rdfs:comment" : "This Review or Rating is relevant to this part or facet of the itemReviewed.",
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
-            "schema:Review",
             "schema:Guide",
-            "schema:Rating"
+            "schema:Rating",
+            "schema:Review"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1689"

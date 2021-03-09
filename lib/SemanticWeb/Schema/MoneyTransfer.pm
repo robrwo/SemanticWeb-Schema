@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -66,7 +66,7 @@ C<beneficiaryBank>
 
 A bank or bankâs branch, financial institution or international financial
 institution operating the beneficiaryâs bank account or releasing funds
-for the beneficiary
+for the beneficiary.
 
 
 A beneficiary_bank should be one of the following types:

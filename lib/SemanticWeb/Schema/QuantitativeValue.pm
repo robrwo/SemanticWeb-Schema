@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -244,15 +244,19 @@ has value => (
 
 C<valueReference>
 
-A pointer to a secondary value that provides additional information on the
-original value, e.g. a reference temperature.
+A secondary value that provides additional information on the original
+value, e.g. a reference temperature or a type of measurement.
 
 
 A value_reference should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
 =item C<InstanceOf['SemanticWeb::Schema::Enumeration']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MeasurementTypeEnumeration']>
 
 =item C<InstanceOf['SemanticWeb::Schema::PropertyValue']>
 
@@ -261,6 +265,8 @@ A value_reference should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
 
 =item C<InstanceOf['SemanticWeb::Schema::StructuredValue']>
+
+=item C<Str>
 
 =back
 

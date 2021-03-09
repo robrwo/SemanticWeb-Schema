@@ -12,13 +12,13 @@
          "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
          "rdfs:label" : "associatedAnatomy",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AnatomicalSystem",
             "schema:SuperficialAnatomy",
+            "schema:AnatomicalSystem",
             "schema:AnatomicalStructure"
          ]
       },
@@ -32,13 +32,13 @@
       },
       "schema:drug" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure",
+         "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure.",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:Patient",
-            "schema:TherapeuticProcedure",
+            "schema:DrugClass",
             "schema:MedicalCondition",
-            "schema:DrugClass"
+            "schema:Patient",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -48,8 +48,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -75,8 +75,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -145,15 +145,15 @@
          "rdfs:comment" : "The status of the study (enumerated).",
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:MedicalProcedure",
             "schema:MedicalCondition",
-            "schema:MedicalProcedure"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:EventStatusType",
-            "schema:MedicalStudyStatus"
+            "schema:MedicalStudyStatus",
+            "schema:EventStatusType"
          ]
       },
       "schema:typicalTest" : {

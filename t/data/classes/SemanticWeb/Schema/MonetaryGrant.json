@@ -16,10 +16,10 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
             "schema:MoneyTransfer",
             "schema:DatedMoneySpecification",
+            "schema:InvestmentOrDeposit",
             "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : [
@@ -37,11 +37,11 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization",
-            "schema:MonetaryGrant",
             "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:MonetaryGrant",
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",

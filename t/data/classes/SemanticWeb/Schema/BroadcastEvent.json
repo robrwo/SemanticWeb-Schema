@@ -15,7 +15,7 @@
       },
       "schema:isLiveBroadcast" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "True is the broadcast is of a live event.",
+         "rdfs:comment" : "True if the broadcast is of a live event.",
          "rdfs:label" : "isLiveBroadcast",
          "schema:domainIncludes" : "schema:BroadcastEvent",
          "schema:rangeIncludes" : "schema:Boolean"
@@ -27,8 +27,8 @@
          "schema:domainIncludes" : [
             "schema:ScreeningEvent",
             "schema:BroadcastEvent",
-            "schema:Movie",
-            "schema:TVEpisode"
+            "schema:TVEpisode",
+            "schema:Movie"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -43,8 +43,8 @@
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
             "schema:BroadcastEvent",
-            "schema:BroadcastService",
-            "schema:ScreeningEvent"
+            "schema:ScreeningEvent",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

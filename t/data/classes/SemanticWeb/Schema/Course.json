@@ -22,9 +22,9 @@
          "rdfs:label" : "coursePrerequisites",
          "schema:domainIncludes" : "schema:Course",
          "schema:rangeIncludes" : [
-            "schema:Course",
             "schema:Text",
-            "schema:AlignmentObject"
+            "schema:AlignmentObject",
+            "schema:Course"
          ]
       },
       "schema:educationalCredentialAwarded" : {
@@ -32,13 +32,13 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "educationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:Text",
             "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -74,9 +74,9 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       }

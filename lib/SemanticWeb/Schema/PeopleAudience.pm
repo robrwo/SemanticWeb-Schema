@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -143,16 +143,48 @@ has required_min_age => (
 );
 
 
+=head2 C<suggested_age>
+
+C<suggestedAge>
+
+The age or age range for the intended audience or person, for example 3-12
+months for infants, 1-5 years for toddlers.
+
+
+A suggested_age should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=head2 C<_has_suggested_age>
+
+A predicate for the L</suggested_age> attribute.
+
+=cut
+
+has suggested_age => (
+    is        => 'rw',
+    predicate => '_has_suggested_age',
+    json_ld   => 'suggestedAge',
+);
+
+
 =head2 C<suggested_gender>
 
 C<suggestedGender>
 
-The gender of the person or audience.
+The suggested gender of the intended person or audience, for example
+"male", "female", or "unisex".
 
 
 A suggested_gender should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::GenderType']>
 
 =item C<Str>
 
@@ -175,7 +207,7 @@ has suggested_gender => (
 
 C<suggestedMaxAge>
 
-Maximal age recommended for viewing content.
+Maximum recommended age in years for the audience or user.
 
 
 A suggested_max_age should be one of the following types:
@@ -199,11 +231,41 @@ has suggested_max_age => (
 );
 
 
+=head2 C<suggested_measurement>
+
+C<suggestedMeasurement>
+
+A suggested range of body measurements for the intended audience or person,
+for example inseam between 32 and 34 inches or height between 170 and 190
+cm. Typically found on a size chart for wearable products.
+
+
+A suggested_measurement should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=head2 C<_has_suggested_measurement>
+
+A predicate for the L</suggested_measurement> attribute.
+
+=cut
+
+has suggested_measurement => (
+    is        => 'rw',
+    predicate => '_has_suggested_measurement',
+    json_ld   => 'suggestedMeasurement',
+);
+
+
 =head2 C<suggested_min_age>
 
 C<suggestedMinAge>
 
-Minimal age recommended for viewing content.
+Minimum recommended age in years for the audience or user.
 
 
 A suggested_min_age should be one of the following types:

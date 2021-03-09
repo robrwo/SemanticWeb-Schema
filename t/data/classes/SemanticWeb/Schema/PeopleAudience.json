@@ -11,9 +11,9 @@
          "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:Patient",
             "schema:PeopleAudience",
-            "schema:Patient"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -39,23 +39,53 @@
          "schema:domainIncludes" : "schema:PeopleAudience",
          "schema:rangeIncludes" : "schema:Integer"
       },
+      "schema:suggestedAge" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The age or age range for the intended audience or person, for example 3-12 months for infants, 1-5 years for toddlers.",
+         "rdfs:label" : "suggestedAge",
+         "schema:domainIncludes" : [
+            "schema:PeopleAudience",
+            "schema:SizeSpecification"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:QuantitativeValue",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+      },
       "schema:suggestedGender" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The gender of the person or audience.",
+         "rdfs:comment" : "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
          "rdfs:label" : "suggestedGender",
-         "schema:domainIncludes" : "schema:PeopleAudience",
-         "schema:rangeIncludes" : "schema:Text"
+         "schema:domainIncludes" : [
+            "schema:PeopleAudience",
+            "schema:SizeSpecification"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:GenderType",
+            "schema:Text"
+         ]
       },
       "schema:suggestedMaxAge" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Maximal age recommended for viewing content.",
+         "rdfs:comment" : "Maximum recommended age in years for the audience or user.",
          "rdfs:label" : "suggestedMaxAge",
          "schema:domainIncludes" : "schema:PeopleAudience",
          "schema:rangeIncludes" : "schema:Number"
       },
+      "schema:suggestedMeasurement" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A suggested range of body measurements for the intended audience or person, for example inseam between 32 and 34 inches or height between 170 and 190 cm. Typically found on a size chart for wearable products.",
+         "rdfs:label" : "suggestedMeasurement",
+         "schema:domainIncludes" : [
+            "schema:SizeSpecification",
+            "schema:PeopleAudience"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:QuantitativeValue",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+      },
       "schema:suggestedMinAge" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Minimal age recommended for viewing content.",
+         "rdfs:comment" : "Minimum recommended age in years for the audience or user.",
          "rdfs:label" : "suggestedMinAge",
          "schema:domainIncludes" : "schema:PeopleAudience",
          "schema:rangeIncludes" : "schema:Number"

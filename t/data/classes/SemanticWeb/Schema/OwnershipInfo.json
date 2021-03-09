@@ -13,8 +13,8 @@
          "rdfs:label" : "acquiredFrom",
          "schema:domainIncludes" : "schema:OwnershipInfo",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -39,8 +39,8 @@
          "rdfs:comment" : "The product that this structured value is referring to.",
          "rdfs:label" : "typeOfGood",
          "schema:domainIncludes" : [
-            "schema:OwnershipInfo",
-            "schema:TypeAndQuantityNode"
+            "schema:TypeAndQuantityNode",
+            "schema:OwnershipInfo"
          ],
          "schema:rangeIncludes" : [
             "schema:Service",

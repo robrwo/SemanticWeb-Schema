@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Used to indicate whether a product is EnergyStar certified",
+      "rdfs:comment" : "Used to indicate whether a product is EnergyStar certified.",
       "rdfs:label" : "EnergyStarEnergyEfficiencyEnumeration",
       "rdfs:subClassOf" : "schema:EnergyEfficiencyEnumeration",
       "schema:isPartOf" : "http:pending.schema.org",

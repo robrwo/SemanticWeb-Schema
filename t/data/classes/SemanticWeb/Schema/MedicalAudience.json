@@ -4,8 +4,8 @@
       "rdfs:comment" : "Target audiences for medical web pages.",
       "rdfs:label" : "MedicalAudience",
       "rdfs:subClassOf" : [
-         "schema:PeopleAudience",
-         "schema:Audience"
+         "schema:Audience",
+         "schema:PeopleAudience"
       ],
       "schema:isPartOf" : "http:health-lifesci.schema.org"
    },

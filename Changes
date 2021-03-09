@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Updated classes to Version 12.0 of the schema.
+
   [Toolchain]
   - Include core prereqs and fix develop prereqs.
 

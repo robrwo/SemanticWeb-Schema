@@ -11,17 +11,17 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:Role"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:Event",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -51,13 +51,13 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:Role",
+            "schema:EducationalOccupationalProgram",
             "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:Role",
             "schema:Event",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

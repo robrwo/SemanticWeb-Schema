@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates common size groups (also known as \"size types\") for wearable products.",
+      "rdfs:label" : "WearableSizeGroupEnumeration",
+      "rdfs:subClassOf" : "schema:SizeGroupEnumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

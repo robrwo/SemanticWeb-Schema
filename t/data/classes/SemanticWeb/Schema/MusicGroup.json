@@ -31,8 +31,8 @@
             "schema:MusicGroup"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:musicGroupMember" : {

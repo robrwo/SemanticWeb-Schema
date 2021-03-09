@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 A loan in which property or real estate is used as collateral. (A loan
-securitized against some real estate.)
+securitized against some real estate).
 
 
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -27,7 +27,7 @@ rates for different destinations: One entity for Alaska/Hawaii. A different
 one for continental US.A different one for all France. Multiple of these
 entities can be used to represent different shipping costs and delivery
 times. Two entities that are identical but differ in rate and time: e.g.
-Cheaper and slower: $5 in 5-7days or Fast and expensive: $15 in 1-2 days 
+Cheaper and slower: $5 in 5-7days or Fast and expensive: $15 in 1-2 days.
 
 
 

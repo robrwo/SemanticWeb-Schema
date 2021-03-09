@@ -23,17 +23,17 @@
          "rdfs:comment" : "The geographic area where a service or offered item is provided.",
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:Offer",
-            "schema:Service",
-            "schema:Organization",
             "schema:DeliveryChargeSpecification",
-            "schema:ContactPoint"
+            "schema:Demand",
+            "schema:Organization",
+            "schema:Service",
+            "schema:ContactPoint",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:AdministrativeArea",
             "schema:GeoShape",
+            "schema:AdministrativeArea",
+            "schema:Place",
             "schema:Text"
          ]
       },
@@ -43,15 +43,15 @@
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:domainIncludes" : [
-            "schema:DeliveryChargeSpecification",
-            "schema:Offer",
+            "schema:ActionAccessSpecification",
             "schema:Demand",
-            "schema:ActionAccessSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
             "schema:GeoShape",
-            "schema:Text"
+            "schema:Text",
+            "schema:Place"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -64,9 +64,10 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
             "schema:ActionAccessSpecification",
+            "schema:DeliveryChargeSpecification",
             "schema:Demand",
-            "schema:Offer",
-            "schema:DeliveryChargeSpecification"
+            "schema:MediaObject",
+            "schema:Offer"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

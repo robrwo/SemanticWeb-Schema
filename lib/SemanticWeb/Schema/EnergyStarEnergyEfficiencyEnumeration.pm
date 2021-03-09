@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::EnergyStarEnergyEfficiencyEnumeration;
 
-# ABSTRACT: Used to indicate whether a product is EnergyStar certified
+# ABSTRACT: Used to indicate whether a product is EnergyStar certified.
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Used to indicate whether a product is EnergyStar certified
+Used to indicate whether a product is EnergyStar certified.
 
 
 

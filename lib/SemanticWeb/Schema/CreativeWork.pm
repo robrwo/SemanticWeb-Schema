@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -2555,9 +2555,13 @@ has reviews => (
 C<schemaVersion>
 
 Indicates (by URL or string) a particular version of a schema used in some
-CreativeWork. For example, a document could declare a schemaVersion using
-an URL such as http://schema.org/version/2.0/ if precise indication of
-schema version was required by some application. 
+CreativeWork. This property was created primarily to indicate the use of a
+specific schema.org release, e.g. ```10.0``` as a simple string, or more
+explicitly via URL, ```http://schema.org/docs/releases.html#v10.0```. There
+may be situations in which other schemas might usefully be referenced this
+way, e.g.
+```http://dublincore.org/specifications/dublin-core/dces/1999-07-02/``` but
+this has not been carefully explored in the community.
 
 
 A schema_version should be one of the following types:
@@ -2673,13 +2677,7 @@ has sd_publisher => (
 
 
 
-A standardized size of a product or creative work, often simplifying richer
-information into a simple textual string, either through referring to named
-sizes or (in the case of product markup), by adopting conventional
-simplifications. Use of QuantitativeValue with a unitCode or unitText can
-add more structure; in other cases, the /width, /height, /depth and /weight
-properties may be more applicable. 
-
+A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a  QuantitativeValue with a unitCode, or a comprehensive and structured L<SemanticWeb::Schema::SizeSpecification>; in other cases, the [[width]], [[height]], [[depth]] and [[weight]] properties may be more applicable. 
 
 A size should be one of the following types:
 
@@ -2688,6 +2686,8 @@ A size should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
 
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::SizeSpecification']>
 
 =item C<Str>
 

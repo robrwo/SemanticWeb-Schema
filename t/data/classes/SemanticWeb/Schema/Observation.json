@@ -14,7 +14,7 @@
          "rdfs:label" : "marginOfError",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:DateTime",
+         "schema:rangeIncludes" : "schema:QuantitativeValue",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
       },
       "schema:measuredProperty" : {

@@ -4,7 +4,7 @@ SemanticWeb::Schema - Moo classes for http://schema.org/ classes
 
 # VERSION
 
-version v11.1.1
+version v12.0.0
 
 The version number of this distribution is based on the corresponding
 version of schema classes.
@@ -32,7 +32,7 @@ to embed in websites.
 This is a base class for the `SemanticWeb::Schema` classes, which
 were generated automatically from the following sources:
 
-- [https://schema.org/version/11.01/schemaorg-all-http.rdf](https://schema.org/version/11.01/schemaorg-all-http.rdf)
+- [https://schema.org/version/12.0/schemaorg-all-http.rdf](https://schema.org/version/12.0/schemaorg-all-http.rdf)
 
 # ATTRIBUTES
 

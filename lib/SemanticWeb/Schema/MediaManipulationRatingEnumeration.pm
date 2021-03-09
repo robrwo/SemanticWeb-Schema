@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::MediaManipulationRatingEnumeration;
 
-# ABSTRACT: (editorial work in progress
+# ABSTRACT:  Codes for use with the [[mediaAuthenticityCategory]] property
 
 use Moo;
 
@@ -15,17 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-(editorial work in progress, this definition is incomplete and unreviewed)
-MediaManipulationRatingEnumeration classifies a number of ways in which a
-media item (video, image, audio) can be manipulated, taking into account
-the context within which they are published or presented.
-
+ Codes for use with the [[mediaAuthenticityCategory]] property, indicating the authenticity of a media object (in the context of how it was published or shared). In general these codes are not mutually exclusive, although some combinations (such as 'original' versus 'transformed', 'edited' and 'staged') would be contradictory if applied in the same L<SemanticWeb::Schema::MediaReview>. Note that the application of these codes is with regard to a piece of media shared or published in a particular context.
 
 
 

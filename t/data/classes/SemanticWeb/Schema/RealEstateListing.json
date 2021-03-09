@@ -19,8 +19,8 @@
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",
@@ -33,13 +33,13 @@
          "rdfs:label" : "leaseLength",
          "schema:domainIncludes" : [
             "schema:RealEstateListing",
-            "schema:Accommodation",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Duration",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       }

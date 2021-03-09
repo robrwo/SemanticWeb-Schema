@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -427,9 +427,8 @@ has gtin14 => (
 
 
 
-The [GTIN-8](http://apps.gs1.org/GDD/glossary/Pages/GTIN-8.aspx) code of
-the product, or the product to which the offer refers. This code is also
-known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN
+The GTIN-8 code of the product, or the product to which the offer refers.
+This code is also known as EAN/UCC-8 or 8-digit EAN. See [GS1 GTIN
 Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more
 details.
 
@@ -460,7 +459,7 @@ has gtin8 => (
 C<hasEnergyConsumptionDetails>
 
 Defines the energy efficiency Category (also known as "class" or "rating")
-for a product according to an international energy efficiency standard
+for a product according to an international energy efficiency standard.
 
 
 A has_energy_consumption_details should be one of the following types:
@@ -481,6 +480,37 @@ has has_energy_consumption_details => (
     is        => 'rw',
     predicate => '_has_has_energy_consumption_details',
     json_ld   => 'hasEnergyConsumptionDetails',
+);
+
+
+=head2 C<has_measurement>
+
+C<hasMeasurement>
+
+A product measurement, for example the inseam of pants, the wheel size of a
+bicycle, or the gauge of a screw. Usually an exact measurement, but can
+also be a range of measurements for adjustable products, for example belts
+and ski bindings.
+
+
+A has_measurement should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=back
+
+=head2 C<_has_has_measurement>
+
+A predicate for the L</has_measurement> attribute.
+
+=cut
+
+has has_measurement => (
+    is        => 'rw',
+    predicate => '_has_has_measurement',
+    json_ld   => 'hasMeasurement',
 );
 
 
@@ -1186,13 +1216,7 @@ has reviews => (
 
 
 
-A standardized size of a product or creative work, often simplifying richer
-information into a simple textual string, either through referring to named
-sizes or (in the case of product markup), by adopting conventional
-simplifications. Use of QuantitativeValue with a unitCode or unitText can
-add more structure; in other cases, the /width, /height, /depth and /weight
-properties may be more applicable. 
-
+A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a  QuantitativeValue with a unitCode, or a comprehensive and structured L<SemanticWeb::Schema::SizeSpecification>; in other cases, the [[width]], [[height]], [[depth]] and [[weight]] properties may be more applicable. 
 
 A size should be one of the following types:
 
@@ -1201,6 +1225,8 @@ A size should be one of the following types:
 =item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
 
 =item C<InstanceOf['SemanticWeb::Schema::QuantitativeValue']>
+
+=item C<InstanceOf['SemanticWeb::Schema::SizeSpecification']>
 
 =item C<Str>
 

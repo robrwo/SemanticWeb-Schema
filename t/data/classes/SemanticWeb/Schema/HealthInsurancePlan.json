@@ -23,8 +23,8 @@
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
             "schema:HealthInsurancePlan",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -92,8 +92,8 @@
          "schema:domainIncludes" : "schema:HealthInsurancePlan",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
       }

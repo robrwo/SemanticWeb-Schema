@@ -12,9 +12,9 @@
          "rdfs:comment" : "The subject matter of the content.",
          "rdfs:label" : "about",
          "schema:domainIncludes" : [
+            "schema:CreativeWork",
             "schema:CommunicateAction",
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:Event"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing",
@@ -25,17 +25,17 @@
          "rdfs:comment" : "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "actor",
          "schema:domainIncludes" : [
-            "schema:Event",
             "schema:VideoObject",
-            "schema:TVSeries",
+            "schema:Event",
             "schema:VideoGame",
             "schema:MovieSeries",
-            "schema:Clip",
-            "schema:VideoGameSeries",
             "schema:CreativeWorkSeason",
+            "schema:TVSeries",
+            "schema:Clip",
             "schema:Episode",
-            "schema:Movie",
-            "schema:RadioSeries"
+            "schema:VideoGameSeries",
+            "schema:RadioSeries",
+            "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -44,14 +44,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
+            "schema:Place",
+            "schema:Product",
+            "schema:Event",
             "schema:Brand",
             "schema:Organization",
-            "schema:Product",
-            "schema:CreativeWork",
-            "schema:Place",
             "schema:Service",
-            "schema:Offer",
-            "schema:Event"
+            "schema:CreativeWork",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -71,8 +71,8 @@
          "rdfs:label" : "attendees",
          "schema:domainIncludes" : "schema:Event",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:supersededBy" : "schema:attendee"
       },
@@ -81,11 +81,11 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:PlayAction",
-            "schema:Service",
             "schema:Event",
+            "schema:PlayAction",
             "schema:CreativeWork",
+            "schema:Service",
+            "schema:LodgingBusiness",
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Audience"
@@ -99,8 +99,8 @@
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : "schemadotorgsources:MBZ"
       },
@@ -109,12 +109,12 @@
          "rdfs:comment" : "A secondary contributor to the CreativeWork or Event.",
          "rdfs:label" : "contributor",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:director" : {
@@ -122,17 +122,17 @@
          "rdfs:comment" : "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "director",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
-            "schema:MovieSeries",
-            "schema:Movie",
-            "schema:CreativeWorkSeason",
-            "schema:RadioSeries",
-            "schema:Clip",
-            "schema:TVSeries",
-            "schema:VideoGame",
-            "schema:Episode",
             "schema:Event",
-            "schema:VideoObject"
+            "schema:VideoGame",
+            "schema:VideoObject",
+            "schema:CreativeWorkSeason",
+            "schema:TVSeries",
+            "schema:Clip",
+            "schema:Episode",
+            "schema:MovieSeries",
+            "schema:VideoGameSeries",
+            "schema:RadioSeries",
+            "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -151,14 +151,15 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:MusicRecording",
             "schema:Movie",
             "schema:Event",
             "schema:Audiobook",
+            "schema:Schedule",
             "schema:MediaObject",
+            "schema:MusicRecording",
+            "schema:MusicRelease",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRelease"
+            "schema:Episode"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
@@ -171,17 +172,17 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:Role"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:Event",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -216,11 +217,11 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization",
-            "schema:MonetaryGrant",
             "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:MonetaryGrant",
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -232,17 +233,17 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:BroadcastService",
-            "schema:LinkRole",
+            "schema:WriteAction",
             "schema:CommunicateAction",
+            "schema:BroadcastService",
             "schema:Event",
-            "schema:PronounceableText",
-            "schema:WriteAction"
+            "schema:LinkRole",
+            "schema:CreativeWork",
+            "schema:PronounceableText"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2382"
       },
@@ -251,9 +252,9 @@
          "rdfs:comment" : "A flag to signal that the item, event, or place is accessible for free.",
          "rdfs:label" : "isAccessibleForFree",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:Event",
             "schema:Place",
-            "schema:Event"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Boolean"
       },
@@ -262,15 +263,15 @@
          "rdfs:comment" : "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
          "rdfs:label" : "location",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Event",
-            "schema:Action"
+            "schema:Action",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
             "schema:PostalAddress",
             "schema:Text",
-            "schema:VirtualLocation",
-            "schema:Place"
+            "schema:Place",
+            "schema:VirtualLocation"
          ]
       },
       "schema:maximumAttendeeCapacity" : {
@@ -278,8 +279,8 @@
          "rdfs:comment" : "The total number of individuals that may attend an event or venue.",
          "rdfs:label" : "maximumAttendeeCapacity",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:Place"
+            "schema:Place",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Integer"
       },
@@ -306,19 +307,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:Service",
+            "schema:Event",
             "schema:Product",
             "schema:AggregateOffer",
-            "schema:Service",
             "schema:Trip",
             "schema:MenuItem",
-            "schema:Event",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -328,8 +329,8 @@
          "rdfs:label" : "organizer",
          "schema:domainIncludes" : "schema:Event",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:performer" : {
@@ -338,8 +339,8 @@
          "rdfs:label" : "performer",
          "schema:domainIncludes" : "schema:Event",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:performers" : {
@@ -348,8 +349,8 @@
          "rdfs:label" : "performers",
          "schema:domainIncludes" : "schema:Event",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:performer"
       },
@@ -380,14 +381,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:Service",
-            "schema:Organization",
+            "schema:Brand",
             "schema:Event",
+            "schema:Organization",
             "schema:Offer",
-            "schema:CreativeWork",
+            "schema:Place",
             "schema:Product",
-            "schema:Brand"
+            "schema:Service",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -396,10 +397,10 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
-            "schema:CreativeWork",
-            "schema:MedicalStudy",
             "schema:Organization",
+            "schema:MedicalStudy",
+            "schema:CreativeWork",
+            "schema:Grant",
             "schema:Event",
             "schema:Person"
          ],
@@ -413,13 +414,13 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:Role",
+            "schema:EducationalOccupationalProgram",
             "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:Role",
             "schema:Event",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -456,12 +457,12 @@
          "rdfs:comment" : "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.",
          "rdfs:label" : "translator",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:typicalAgeRange" : {
@@ -469,8 +470,8 @@
          "rdfs:comment" : "The typical expected age range, e.g. '7-9', '11-'.",
          "rdfs:label" : "typicalAgeRange",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

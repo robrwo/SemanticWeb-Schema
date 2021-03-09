@@ -10,13 +10,13 @@
    "properties" : {
       "schema:byDay" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the day(s) of the week on which a recurring [[Event]] takes place. May be specified using either [[DayOfWeek]], or alternatively [[Text]] conforming to iCal's syntax for byDay recurrence rules",
+         "rdfs:comment" : "Defines the day(s) of the week on which a recurring [[Event]] takes place. May be specified using either [[DayOfWeek]], or alternatively [[Text]] conforming to iCal's syntax for byDay recurrence rules.",
          "rdfs:label" : "byDay",
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DayOfWeek",
-            "schema:Text"
+            "schema:Text",
+            "schema:DayOfWeek"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -52,14 +52,15 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:MusicRecording",
             "schema:Movie",
             "schema:Event",
             "schema:Audiobook",
+            "schema:Schedule",
             "schema:MediaObject",
+            "schema:MusicRecording",
+            "schema:MusicRelease",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRelease"
+            "schema:Episode"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
@@ -72,17 +73,17 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:Role"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:Event",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -91,14 +92,14 @@
          "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
+            "schema:MediaObject",
             "schema:Schedule",
             "schema:Action",
-            "schema:FoodEstablishmentReservation",
-            "schema:MediaObject"
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -125,7 +126,7 @@
       },
       "schema:repeatFrequency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Defines the frequency at which [[Events]] will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.",
+         "rdfs:comment" : "Defines the frequency at which [[Event]]s will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.",
          "rdfs:label" : "repeatFrequency",
          "rdfs:subPropertyOf" : "schema:frequency",
          "schema:domainIncludes" : "schema:Schedule",
@@ -150,13 +151,13 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:Role",
+            "schema:EducationalOccupationalProgram",
             "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:Role",
             "schema:Event",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -169,10 +170,10 @@
          "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
          "schema:domainIncludes" : [
-            "schema:FoodEstablishmentReservation",
-            "schema:Action",
             "schema:Schedule",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Action",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

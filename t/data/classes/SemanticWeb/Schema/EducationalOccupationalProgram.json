@@ -42,13 +42,13 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "educationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:Text",
             "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -59,8 +59,8 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       },
@@ -69,17 +69,17 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
-            "schema:Role"
+            "schema:Role",
+            "schema:Schedule",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:Event",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -133,10 +133,10 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
+            "schema:Occupation",
             "schema:JobPosting",
             "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram",
-            "schema:Occupation"
+            "schema:WorkBasedProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -144,10 +144,10 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2192",
             "https://github.com/schemaorg/schemaorg/issues/2460",
-            "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2192",
+            "https://github.com/schemaorg/schemaorg/issues/2289"
          ]
       },
       "schema:occupationalCredentialAwarded" : {
@@ -160,9 +160,9 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -171,19 +171,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:Service",
+            "schema:Event",
             "schema:Product",
             "schema:AggregateOffer",
-            "schema:Service",
             "schema:Trip",
             "schema:MenuItem",
-            "schema:Event",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -194,10 +194,10 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
-            "schema:Course",
             "schema:Text",
-            "schema:AlignmentObject"
+            "schema:Course",
+            "schema:AlignmentObject",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -208,8 +208,8 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2460"
       },
@@ -218,17 +218,17 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:ParcelDelivery",
-            "schema:Reservation",
+            "schema:Invoice",
+            "schema:Trip",
+            "schema:EducationalOccupationalProgram",
             "schema:Service",
             "schema:CreativeWork",
-            "schema:EducationalOccupationalProgram",
-            "schema:Trip",
-            "schema:Invoice"
+            "schema:Reservation",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -246,13 +246,13 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:Schedule",
-            "schema:CreativeWorkSeries",
-            "schema:Role",
+            "schema:EducationalOccupationalProgram",
             "schema:CreativeWorkSeason",
+            "schema:DatedMoneySpecification",
+            "schema:Role",
             "schema:Event",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -301,14 +301,14 @@
          "rdfs:comment" : "The estimated salary earned while in the program.",
          "rdfs:label" : "trainingSalary",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:WorkBasedProgram",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmountDistribution",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2460",
-            "https://github.com/schemaorg/schemaorg/issues/2289"
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2460"
          ]
       },
       "schema:typicalCreditsPerTerm" : {
@@ -318,8 +318,8 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:StructuredValue"
+            "schema:StructuredValue",
+            "schema:Integer"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       }

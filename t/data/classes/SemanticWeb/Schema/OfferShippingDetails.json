@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US.A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\ne.g. Cheaper and slower: $5 in 5-7days\nor Fast and expensive: $15 in 1-2 days\n",
+      "rdfs:comment" : "OfferShippingDetails represents information about shipping destinations.\n\nMultiple of these entities can be used to represent different shipping rates for different destinations:\n\nOne entity for Alaska/Hawaii. A different one for continental US.A different one for all France.\n\nMultiple of these entities can be used to represent different shipping costs and delivery times.\n\nTwo entities that are identical but differ in rate and time:\n\ne.g. Cheaper and slower: $5 in 5-7days\nor Fast and expensive: $15 in 1-2 days.",
       "rdfs:label" : "OfferShippingDetails",
       "rdfs:subClassOf" : "schema:StructuredValue",
       "schema:isPartOf" : "http:pending.schema.org",
@@ -25,8 +25,8 @@
          "rdfs:comment" : "Indicates when shipping to a particular [[shippingDestination]] is not available.",
          "rdfs:label" : "doesNotShip",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -38,8 +38,8 @@
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
             "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:DeliveryTimeSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -62,8 +62,8 @@
          "rdfs:comment" : "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.",
          "rdfs:label" : "shippingRate",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",
@@ -83,8 +83,8 @@
          "rdfs:comment" : "Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within the context of a [[shippingSettingsLink]] cross-reference).",
          "rdfs:label" : "transitTimeLabel",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:DeliveryTimeSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

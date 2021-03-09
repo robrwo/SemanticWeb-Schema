@@ -13,8 +13,8 @@
          "schema:domainIncludes" : [
             "schema:ScreeningEvent",
             "schema:BroadcastEvent",
-            "schema:Movie",
-            "schema:TVEpisode"
+            "schema:TVEpisode",
+            "schema:Movie"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -29,8 +29,8 @@
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
             "schema:BroadcastEvent",
-            "schema:BroadcastService",
-            "schema:ScreeningEvent"
+            "schema:ScreeningEvent",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

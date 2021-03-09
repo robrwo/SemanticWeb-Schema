@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -37,7 +37,7 @@ Specifies for how long this price (or price component) will be billed. Can
 be used, for example, to model the contractual duration of a subscription
 or payment plan. Type can be either a Duration or a Number (in which case
 the unit of measurement, for example month, is specified by the unitCode
-property)
+property).
 
 
 A billing_duration should be one of the following types:
@@ -102,7 +102,7 @@ C<billingStart>
 Specifies after how much time this price (or price component) becomes valid
 and billing starts. Can be used, for example, to model a price increase
 after the first year of a subscription. The unit of measurement is
-specified by the unitCode property
+specified by the unitCode property.
 
 
 A billing_start should be one of the following types:

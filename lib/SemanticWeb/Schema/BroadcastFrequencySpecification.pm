@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -64,7 +64,7 @@ has broadcast_frequency_value => (
 
 C<broadcastSignalModulation>
 
-The modulation (e.g. FM, AM, etc) used by a particular broadcast service
+The modulation (e.g. FM, AM, etc) used by a particular broadcast service.
 
 
 A broadcast_signal_modulation should be one of the following types:

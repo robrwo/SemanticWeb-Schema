@@ -12,8 +12,8 @@
          "rdfs:label" : "breadcrumb",
          "schema:domainIncludes" : "schema:WebPage",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:BreadcrumbList"
+            "schema:BreadcrumbList",
+            "schema:Text"
          ]
       },
       "schema:lastReviewed" : {
@@ -78,8 +78,8 @@
             "schema:WebPage"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:SpeakableSpecification"
+            "schema:SpeakableSpecification",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1389"
       },

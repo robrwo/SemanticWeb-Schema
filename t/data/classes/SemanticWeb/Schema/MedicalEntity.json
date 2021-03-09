@@ -29,14 +29,14 @@
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
             "schema:MedicalEntity",
-            "schema:Drug",
-            "schema:DietarySupplement"
+            "schema:DietarySupplement",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DrugLegalStatus",
             "schema:MedicalEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:DrugLegalStatus"
          ]
       },
       "schema:medicineSystem" : {

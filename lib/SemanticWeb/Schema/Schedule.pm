@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ A schedule defines a repeating time period used to describe a regularly occurrin
 
 C<byDay>
 
-Defines the day(s) of the week on which a recurring L<SemanticWeb::Schema::Event> takes place. May be specified using either L<SemanticWeb::Schema::DayOfWeek>, or alternatively L<SemanticWeb::Schema::Text> conforming to iCal's syntax for byDay recurrence rules
+Defines the day(s) of the week on which a recurring L<SemanticWeb::Schema::Event> takes place. May be specified using either L<SemanticWeb::Schema::DayOfWeek>, or alternatively L<SemanticWeb::Schema::Text> conforming to iCal's syntax for byDay recurrence rules.
 
 A by_day should be one of the following types:
 
@@ -298,7 +298,7 @@ has repeat_count => (
 
 C<repeatFrequency>
 
-Defines the frequency at which L<SemanticWeb::Schema::Events> will occur according to a schedule L<SemanticWeb::Schema::Schedule>. The intervals between
+Defines the frequency at which L<SemanticWeb::Schema::Event>s will occur according to a schedule L<SemanticWeb::Schema::Schedule>. The intervals between
       events should be defined as a L<SemanticWeb::Schema::Duration> of time.
 
 A repeat_frequency should be one of the following types:

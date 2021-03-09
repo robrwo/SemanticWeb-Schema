@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -23,7 +23,7 @@ our $VERSION = 'v11.1.2';
 
 The LearningResource type can be used to indicate L<SemanticWeb::Schema::CreativeWork>s (whether physical or digital) that have a particular and explicit orientation towards learning, education, skill acquisition, and other educational purposes.
 
-L<SemanticWeb::Schema::LearningResource> is expected to be used as an addition to a primary type such as L<SemanticWeb::Schema::Book>, L<SemanticWeb::Schema::Video>, L<SemanticWeb::Schema::Product> etc.
+L<SemanticWeb::Schema::LearningResource> is expected to be used as an addition to a primary type such as L<SemanticWeb::Schema::Book>, L<SemanticWeb::Schema::VideoObject>, L<SemanticWeb::Schema::Product> etc.
 
 L<SemanticWeb::Schema::EducationEvent> serves a similar purpose for event-like things (e.g. a L<SemanticWeb::Schema::Trip>). A L<SemanticWeb::Schema::LearningResource> may be created as a result of an L<SemanticWeb::Schema::EducationEvent>, for example by recording one.
 

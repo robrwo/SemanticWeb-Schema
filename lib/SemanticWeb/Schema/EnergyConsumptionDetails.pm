@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -28,7 +28,7 @@ directive 2017/1369](https://eur-lex.europa.eu/eli/reg/2017/1369/oj) for
 energy labeling and the [Energy labeling
 rule](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-pr
 oceedings/energy-water-use-labeling-consumer) under the Energy Policy and
-Conservation Act (EPCA) in the US
+Conservation Act (EPCA) in the US.
 
 
 
@@ -104,7 +104,7 @@ C<hasEnergyEfficiencyCategory>
 
 Defines the energy efficiency Category (which could be either a rating out
 of range of values or a yes/no certification) for a product according to an
-international energy efficiency standard
+international energy efficiency standard.
 
 
 A has_energy_efficiency_category should be one of the following types:

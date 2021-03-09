@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates common types of measurement for wearables products.",
+      "rdfs:label" : "WearableMeasurementTypeEnumeration",
+      "rdfs:subClassOf" : "schema:MeasurementTypeEnumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

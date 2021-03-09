@@ -12,11 +12,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:DatedMoneySpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:MonetaryAmount",
-            "schema:ExchangeRateSpecification"
+            "schema:DatedMoneySpecification",
+            "schema:ExchangeRateSpecification",
+            "schema:LoanOrCredit",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -27,8 +27,8 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
-            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
+            "schema:PropertyValueSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number",
@@ -39,10 +39,10 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -52,12 +52,12 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:Offer",
-            "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
             "schema:MonetaryAmount",
+            "schema:PriceSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:Demand",
+            "schema:Offer",
+            "schema:LocationFeatureSpecification",
             "schema:Permit"
          ],
          "schema:rangeIncludes" : [
@@ -71,13 +71,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:Offer",
             "schema:MonetaryAmount",
-            "schema:JobPosting",
-            "schema:PriceSpecification",
             "schema:Demand",
-            "schema:LocationFeatureSpecification"
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:JobPosting",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -91,14 +91,14 @@
          "rdfs:label" : "value",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Number",
-            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text"
+            "schema:StructuredValue"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

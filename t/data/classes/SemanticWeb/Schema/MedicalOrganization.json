@@ -11,8 +11,8 @@
          "rdfs:comment" : "Name or unique ID of network. (Networks are often reused across different insurance plans).",
          "rdfs:label" : "healthPlanNetworkId",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
-            "schema:HealthPlanNetwork"
+            "schema:HealthPlanNetwork",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

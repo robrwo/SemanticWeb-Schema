@@ -12,10 +12,10 @@
          "rdfs:comment" : "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:QuantitativeValue",
-            "schema:QualitativeValue",
             "schema:Product",
-            "schema:Place"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
       },
@@ -25,8 +25,8 @@
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
-            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
+            "schema:PropertyValueSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number",
@@ -37,10 +37,10 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -50,14 +50,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
-            "schema:UnitPriceSpecification",
+            "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -67,9 +67,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification",
+            "schema:PropertyValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -79,32 +79,35 @@
          "rdfs:label" : "value",
          "schema:domainIncludes" : [
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Number",
-            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text"
+            "schema:StructuredValue"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
       "schema:valueReference" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.",
+         "rdfs:comment" : "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:QuantitativeValue"
-         ],
-         "schema:rangeIncludes" : [
-            "schema:StructuredValue",
-            "schema:PropertyValue",
             "schema:QualitativeValue",
             "schema:QuantitativeValue",
-            "schema:Enumeration"
+            "schema:PropertyValue"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:PropertyValue",
+            "schema:QuantitativeValue",
+            "schema:QualitativeValue",
+            "schema:Enumeration",
+            "schema:StructuredValue",
+            "schema:MeasurementTypeEnumeration",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

@@ -13,8 +13,8 @@
          "rdfs:label" : "eligibleQuantity",
          "schema:domainIncludes" : [
             "schema:PriceSpecification",
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -52,9 +52,9 @@
          "rdfs:comment" : "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\\n\\nUsage guidelines:\\n\\n* Use the [[priceCurrency]] property (with standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including [ambiguous symbols](http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign) such as '$' in the value.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\\n* Note that both [RDFa](http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-attribute) and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\n      ",
          "rdfs:label" : "price",
          "schema:domainIncludes" : [
+            "schema:TradeAction",
             "schema:PriceSpecification",
-            "schema:Offer",
-            "schema:TradeAction"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -66,11 +66,11 @@
          "rdfs:comment" : "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
-            "schema:Reservation",
             "schema:Offer",
+            "schema:Ticket",
+            "schema:Reservation",
             "schema:TradeAction",
-            "schema:Ticket"
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -79,12 +79,12 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:Offer",
-            "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
             "schema:MonetaryAmount",
+            "schema:PriceSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:Demand",
+            "schema:Offer",
+            "schema:LocationFeatureSpecification",
             "schema:Permit"
          ],
          "schema:rangeIncludes" : [
@@ -98,13 +98,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:Offer",
             "schema:MonetaryAmount",
-            "schema:JobPosting",
-            "schema:PriceSpecification",
             "schema:Demand",
-            "schema:LocationFeatureSpecification"
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:JobPosting",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

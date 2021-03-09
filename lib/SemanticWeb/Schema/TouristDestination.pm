@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A tourist destination. In principle any L<SemanticWeb::Schema::Place> can be a L<SemanticWeb::Schema::TouristDestination> from a L<SemanticWeb::Schema::City>, L<SemanticWeb::Schema::Region> or L<SemanticWeb::Schema::Country> to an L<SemanticWeb::Schema::AmusementPark> or L<SemanticWeb::Schema::Hotel>. This Type can be used on its own to describe a general L<SemanticWeb::Schema::TouristDestination>, or be used as an [[additionalType]] to add tourist relevant properties to any other L<SemanticWeb::Schema::Place>.  A L<SemanticWeb::Schema::TouristDestination> is defined as a L<SemanticWeb::Schema::Place> that contains, or is colocated with, one or more L<SemanticWeb::Schema::TouristAttraction>s, often linked by a similar theme or interest to a particular [[touristType]]. The L<UNWTO|http://www2.unwto.org/> defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
+A tourist destination. In principle any L<SemanticWeb::Schema::Place> can be a L<SemanticWeb::Schema::TouristDestination> from a L<SemanticWeb::Schema::City>, Region or L<SemanticWeb::Schema::Country> to an L<SemanticWeb::Schema::AmusementPark> or L<SemanticWeb::Schema::Hotel>. This Type can be used on its own to describe a general L<SemanticWeb::Schema::TouristDestination>, or be used as an [[additionalType]] to add tourist relevant properties to any other L<SemanticWeb::Schema::Place>.  A L<SemanticWeb::Schema::TouristDestination> is defined as a L<SemanticWeb::Schema::Place> that contains, or is colocated with, one or more L<SemanticWeb::Schema::TouristAttraction>s, often linked by a similar theme or interest to a particular [[touristType]]. The L<UNWTO|http://www2.unwto.org/> defines Destination (main destination of a tourism trip) as the place visited that is central to the decision to take the trip.
   (See examples below).
 
 

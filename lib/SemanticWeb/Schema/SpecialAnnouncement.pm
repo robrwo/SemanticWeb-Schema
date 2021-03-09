@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -46,7 +46,7 @@ unlikely that a single SpecialAnnouncement will need all of the possible propert
 
 We expect that in many cases the page referenced might contain more specialized structured data, e.g. contact info, [[openingHours]], L<SemanticWeb::Schema::Event>, L<SemanticWeb::Schema::FAQPage> etc. By linking to those pages from a L<SemanticWeb::Schema::SpecialAnnouncement> you can help make it clearer that the events are related to the situation (e.g. Coronavirus) indicated by the [[category]] property of the L<SemanticWeb::Schema::SpecialAnnouncement>.
 
-Many L<SemanticWeb::Schema::SpecialAnnouncement>s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific L<SemanticWeb::Schema::LocalBusiness>es and L<SemanticWeb::Schema::CivicStructures>. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].
+Many L<SemanticWeb::Schema::SpecialAnnouncement>s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific L<SemanticWeb::Schema::LocalBusiness>es and L<SemanticWeb::Schema::CivicStructure>s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].
 
 The [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only
 for representing non-location entities (e.g. a L<SemanticWeb::Schema::Course> or a L<SemanticWeb::Schema::RadioStation>). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.

@@ -28,8 +28,8 @@
          "schema:domainIncludes" : [
             "schema:Order",
             "schema:Service",
-            "schema:Invoice",
-            "schema:Reservation"
+            "schema:Reservation",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -41,24 +41,24 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Recommendation",
-            "schema:Invoice",
-            "schema:SpecialAnnouncement",
             "schema:Offer",
+            "schema:Product",
+            "schema:Service",
+            "schema:Invoice",
             "schema:ActionAccessSpecification",
+            "schema:Recommendation",
             "schema:PhysicalActivity",
-            "schema:Service"
+            "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:Text",
-            "schema:Thing",
             "schema:PhysicalActivityCategory",
-            "schema:URL"
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:confirmationNumber" : {
@@ -67,8 +67,8 @@
          "rdfs:label" : "confirmationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -77,8 +77,8 @@
          "rdfs:comment" : "Party placing the order or paying the invoice.",
          "rdfs:label" : "customer",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -100,8 +100,8 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDue",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : "schema:DateTime",
          "schema:supersededBy" : "schema:paymentDueDate"
@@ -111,8 +111,8 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDueDate",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -134,8 +134,8 @@
          "rdfs:comment" : "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
          "rdfs:label" : "paymentMethodId",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -154,17 +154,17 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:ParcelDelivery",
-            "schema:Reservation",
+            "schema:Invoice",
+            "schema:Trip",
+            "schema:EducationalOccupationalProgram",
             "schema:Service",
             "schema:CreativeWork",
-            "schema:EducationalOccupationalProgram",
-            "schema:Trip",
-            "schema:Invoice"
+            "schema:Reservation",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -188,8 +188,8 @@
          "rdfs:label" : "totalPaymentDue",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:PriceSpecification",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification"
          ]
       }
    }

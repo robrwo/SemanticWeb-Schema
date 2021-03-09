@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -145,6 +145,35 @@ has directors => (
     is        => 'rw',
     predicate => '_has_directors',
     json_ld   => 'directors',
+);
+
+
+=head2 C<duration>
+
+
+
+The duration of the item (movie, audio recording, event, etc.) in [ISO 8601
+date format](http://en.wikipedia.org/wiki/ISO_8601).
+
+
+A duration should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Duration']>
+
+=back
+
+=head2 C<_has_duration>
+
+A predicate for the L</duration> attribute.
+
+=cut
+
+has duration => (
+    is        => 'rw',
+    predicate => '_has_duration',
+    json_ld   => 'duration',
 );
 
 

@@ -23,8 +23,8 @@
          "rdfs:label" : "competitor",
          "schema:domainIncludes" : "schema:SportsEvent",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:SportsTeam"
+            "schema:SportsTeam",
+            "schema:Person"
          ]
       },
       "schema:homeTeam" : {
@@ -43,13 +43,13 @@
          "rdfs:comment" : "A type of sport (e.g. Baseball).",
          "rdfs:label" : "sport",
          "schema:domainIncludes" : [
-            "schema:SportsEvent",
-            "schema:SportsOrganization"
+            "schema:SportsOrganization",
+            "schema:SportsEvent"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1951"
       }

@@ -7,8 +7,8 @@
       "rdfs:subClassOf" : "schema:StatusEnumeration",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "eli:index.html",
-         "https://github.com/schemaorg/schemaorg/issues/1156"
+         "https://github.com/schemaorg/schemaorg/issues/1156",
+         "eli:index.html"
       ]
    },
    "properties" : {}

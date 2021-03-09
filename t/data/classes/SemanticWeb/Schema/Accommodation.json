@@ -22,8 +22,8 @@
          "rdfs:comment" : "A floorplan of some [[Accommodation]].",
          "rdfs:label" : "accommodationFloorPlan",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:Residence"
+            "schema:Residence",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:FloorPlan",
@@ -34,10 +34,10 @@
          "rdfs:comment" : "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:LodgingBusiness",
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:Place",
+            "schema:FloorPlan"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
@@ -56,8 +56,8 @@
          "rdfs:comment" : "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
          "rdfs:label" : "floorSize",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
@@ -68,13 +68,13 @@
          "rdfs:label" : "leaseLength",
          "schema:domainIncludes" : [
             "schema:RealEstateListing",
-            "schema:Accommodation",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Duration",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       },
@@ -95,14 +95,14 @@
          "rdfs:comment" : "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
          "rdfs:label" : "numberOfBedrooms",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
             "schema:Accommodation",
+            "schema:FloorPlan",
             "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       },
@@ -123,8 +123,8 @@
          "rdfs:comment" : "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
          "rdfs:label" : "numberOfPartialBathrooms",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number",
@@ -135,17 +135,17 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
             "schema:House",
-            "schema:LodgingBusiness",
             "schema:Suite",
-            "schema:SingleFamilyResidence",
+            "schema:LodgingBusiness",
             "schema:Accommodation",
+            "schema:FloorPlan",
+            "schema:SingleFamilyResidence",
             "schema:Apartment"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
@@ -162,10 +162,10 @@
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
+            "schema:Accommodation",
             "schema:LodgingBusiness",
             "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:ApartmentComplex"
          ],
          "schema:rangeIncludes" : [
             "schema:Boolean",
@@ -178,8 +178,8 @@
          "rdfs:comment" : "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
          "rdfs:label" : "tourBookingPage",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
             "schema:Place",
+            "schema:ApartmentComplex",
             "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",

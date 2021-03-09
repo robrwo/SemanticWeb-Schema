@@ -27,8 +27,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:PostalAddress",
-            "schema:Place"
+            "schema:Place",
+            "schema:PostalAddress"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1758"
       }

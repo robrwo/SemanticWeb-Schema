@@ -14,11 +14,7 @@
          "schema:domainIncludes" : "schema:Nerve",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:AnatomicalStructure",
-         "schema:supersededBy" : [
-            "schema:veinBranch",
-            "schema:nerveBranch",
-            "schema:arterialBranch"
-         ]
+         "schema:supersededBy" : "schema:arterialBranch"
       },
       "schema:nerveMotor" : {
          "rdf:type" : "rdf:Property",

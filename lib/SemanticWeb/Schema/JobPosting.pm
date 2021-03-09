@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -357,6 +357,33 @@ has estimated_salary => (
 );
 
 
+=head2 C<experience_in_place_of_education>
+
+C<experienceInPlaceOfEducation>
+
+Indicates whether a L<SemanticWeb::Schema::JobPosting> will accept experience (as indicated by L<SemanticWeb::Schema::OccupationalExperienceRequirements>) in place of its formal educational qualifications (as indicated by [[educationRequirements]]). If true, indicates that satisfying one of these requirements is sufficient.
+
+A experience_in_place_of_education should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_experience_in_place_of_education>
+
+A predicate for the L</experience_in_place_of_education> attribute.
+
+=cut
+
+has experience_in_place_of_education => (
+    is        => 'rw',
+    predicate => '_has_experience_in_place_of_education',
+    json_ld   => 'experienceInPlaceOfEducation',
+);
+
+
 =head2 C<experience_requirements>
 
 C<experienceRequirements>
@@ -367,6 +394,8 @@ Description of skills and experience needed for the position or Occupation.
 A experience_requirements should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::OccupationalExperienceRequirements']>
 
 =item C<Str>
 

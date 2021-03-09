@@ -12,10 +12,10 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
             "schema:MoneyTransfer",
             "schema:DatedMoneySpecification",
+            "schema:InvestmentOrDeposit",
             "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : [
@@ -32,11 +32,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:DatedMoneySpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:MonetaryAmount",
-            "schema:ExchangeRateSpecification"
+            "schema:DatedMoneySpecification",
+            "schema:ExchangeRateSpecification",
+            "schema:LoanOrCredit",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -49,8 +49,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:loanRepaymentForm" : {
@@ -81,8 +81,8 @@
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : [
             "schemadotorgsources:FIBO",
@@ -119,8 +119,8 @@
          "rdfs:label" : "requiredCollateral",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:rangeIncludes" : [
-            "schema:Thing",
-            "schema:Text"
+            "schema:Text",
+            "schema:Thing"
          ],
          "schema:source" : "schemadotorgsources:FIBO"
       }

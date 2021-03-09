@@ -34,8 +34,8 @@
          "rdfs:label" : "artform",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:artist" : {
@@ -65,9 +65,9 @@
          "rdfs:comment" : "The individual who adds color to inked drawings.",
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:ComicStory",
             "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -93,8 +93,8 @@
          "schema:domainIncludes" : [
             "schema:Person",
             "schema:VisualArtwork",
-            "schema:Product",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -106,9 +106,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:ComicIssue",
-            "schema:ComicStory",
-            "schema:VisualArtwork"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -118,8 +118,8 @@
          "rdfs:comment" : "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
-            "schema:ComicIssue",
             "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -130,9 +130,9 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
+            "schema:ComicIssue",
             "schema:VisualArtwork",
-            "schema:ComicIssue"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -144,8 +144,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -154,13 +154,13 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:MediaObject",
-            "schema:Product"
+            "schema:Product",
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       }
    }

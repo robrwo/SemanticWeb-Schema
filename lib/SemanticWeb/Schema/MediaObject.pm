@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -325,6 +325,39 @@ has height => (
     is        => 'rw',
     predicate => '_has_height',
     json_ld   => 'height',
+);
+
+
+=head2 C<ineligible_region>
+
+C<ineligibleRegion>
+
+The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.
+
+See also [[eligibleRegion]].
+
+A ineligible_region should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::GeoShape']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_ineligible_region>
+
+A predicate for the L</ineligible_region> attribute.
+
+=cut
+
+has ineligible_region => (
+    is        => 'rw',
+    predicate => '_has_ineligible_region',
+    json_ld   => 'ineligibleRegion',
 );
 
 

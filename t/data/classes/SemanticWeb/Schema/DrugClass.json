@@ -9,13 +9,13 @@
    "properties" : {
       "schema:drug" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure",
+         "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure.",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:Patient",
-            "schema:TherapeuticProcedure",
+            "schema:DrugClass",
             "schema:MedicalCondition",
-            "schema:DrugClass"
+            "schema:Patient",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"

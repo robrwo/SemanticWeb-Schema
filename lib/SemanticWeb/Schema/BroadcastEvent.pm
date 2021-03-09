@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -61,7 +61,7 @@ has broadcast_of_event => (
 
 C<isLiveBroadcast>
 
-True is the broadcast is of a live event.
+True if the broadcast is of a live event.
 
 
 A is_live_broadcast should be one of the following types:

@@ -22,9 +22,9 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -34,9 +34,9 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
+            "schema:Vehicle",
             "schema:Person",
-            "schema:BroadcastService",
-            "schema:Vehicle"
+            "schema:BroadcastService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -113,8 +113,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -162,8 +162,8 @@
          "rdfs:label" : "numberOfAirbags",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -225,8 +225,8 @@
          "rdfs:comment" : "The date of production of the item, e.g. vehicle.",
          "rdfs:label" : "productionDate",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date",
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
@@ -249,8 +249,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -276,8 +276,8 @@
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:StupidType"
+            "schema:StupidType",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -355,8 +355,8 @@
          "rdfs:label" : "vehicleSeatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -378,8 +378,8 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:QualitativeValue",
+            "schema:URL",
             "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"

@@ -13,8 +13,8 @@
          "rdfs:comment" : "Whether The costs to the patient for services under this network or formulary.",
          "rdfs:label" : "healthPlanCostSharing",
          "schema:domainIncludes" : [
-            "schema:HealthPlanNetwork",
-            "schema:HealthPlanFormulary"
+            "schema:HealthPlanFormulary",
+            "schema:HealthPlanNetwork"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -25,8 +25,8 @@
          "rdfs:comment" : "Name or unique ID of network. (Networks are often reused across different insurance plans).",
          "rdfs:label" : "healthPlanNetworkId",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
-            "schema:HealthPlanNetwork"
+            "schema:HealthPlanNetwork",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

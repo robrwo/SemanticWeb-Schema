@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
@@ -35,7 +35,7 @@ effects, etc.
 
 
 
-Specifying a drug or medicine used in a medication procedure
+Specifying a drug or medicine used in a medication procedure.
 
 
 A drug should be one of the following types:

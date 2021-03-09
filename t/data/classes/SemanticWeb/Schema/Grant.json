@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Intangible",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "https://github.com/schemaorg/schemaorg/issues/383",
-         "schemadotorgsources2:FundInfoCollab"
+         "schemadotorgsources2:FundInfoCollab",
+         "https://github.com/schemaorg/schemaorg/issues/383"
       ]
    },
    "properties" : {
@@ -19,9 +19,9 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Thing",
          "schema:source" : [
+            "schemadotorgsources2:TP",
             "https://github.com/schemaorg/schemaorg/issues/383",
-            "https://github.com/schemaorg/schemaorg/issues/1950",
-            "schemadotorgsources2:TP"
+            "https://github.com/schemaorg/schemaorg/issues/1950"
          ]
       },
       "schema:sponsor" : {
@@ -29,10 +29,10 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
-            "schema:CreativeWork",
-            "schema:MedicalStudy",
             "schema:Organization",
+            "schema:MedicalStudy",
+            "schema:CreativeWork",
+            "schema:Grant",
             "schema:Event",
             "schema:Person"
          ],

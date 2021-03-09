@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v11.1.2';
+our $VERSION = 'v12.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 Enumerates the EU energy efficiency classes A-G as well as A+, A++, and
-A+++ as defined in EU directive 2017/1369
+A+++ as defined in EU directive 2017/1369.
 
 
 

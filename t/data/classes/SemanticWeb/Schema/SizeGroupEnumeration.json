@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates common size groups for various product categories.",
+      "rdfs:label" : "SizeGroupEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

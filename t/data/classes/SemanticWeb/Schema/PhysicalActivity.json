@@ -12,13 +12,13 @@
          "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
          "rdfs:label" : "associatedAnatomy",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AnatomicalSystem",
             "schema:SuperficialAnatomy",
+            "schema:AnatomicalSystem",
             "schema:AnatomicalStructure"
          ]
       },
@@ -27,24 +27,24 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Recommendation",
-            "schema:Invoice",
-            "schema:SpecialAnnouncement",
             "schema:Offer",
+            "schema:Product",
+            "schema:Service",
+            "schema:Invoice",
             "schema:ActionAccessSpecification",
+            "schema:Recommendation",
             "schema:PhysicalActivity",
-            "schema:Service"
+            "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:Text",
-            "schema:Thing",
             "schema:PhysicalActivityCategory",
-            "schema:URL"
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:epidemiology" : {
@@ -52,8 +52,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -63,8 +63,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

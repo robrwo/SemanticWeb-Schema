@@ -12,11 +12,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
             "schema:GeoShape",
+            "schema:Place",
             "schema:Organization",
             "schema:Person",
-            "schema:Place"
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -28,10 +28,10 @@
          "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
             "schema:PostalAddress",
+            "schema:GeoCoordinates",
             "schema:DefinedRegion",
-            "schema:GeoCoordinates"
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -58,8 +58,8 @@
          "rdfs:comment" : "The elevation of a location ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)). Values may be of the form 'NUMBER UNIT_OF_MEASUREMENT' (e.g., '1,000 m', '3,200 ft') while numbers alone should be assumed to be a value in meters.",
          "rdfs:label" : "elevation",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
-            "schema:GeoShape"
+            "schema:GeoShape",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -85,10 +85,10 @@
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
-            "schema:GeoCoordinates",
             "schema:DefinedRegion",
-            "schema:PostalAddress"
+            "schema:PostalAddress",
+            "schema:GeoCoordinates",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

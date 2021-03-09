@@ -18,8 +18,8 @@
          "rdfs:comment" : "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
          "rdfs:label" : "member",
          "schema:domainIncludes" : [
-            "schema:ProgramMembership",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:ProgramMembership"
          ],
          "schema:inverseOf" : "schema:memberOf",
          "schema:rangeIncludes" : [
@@ -36,8 +36,8 @@
             "schema:ProgramMembership"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:member"
       },
@@ -55,8 +55,8 @@
          "schema:domainIncludes" : "schema:ProgramMembership",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2085"
       },

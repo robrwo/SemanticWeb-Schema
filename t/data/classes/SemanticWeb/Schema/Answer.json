@@ -14,8 +14,8 @@
          "schema:domainIncludes" : "schema:Answer",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Comment",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:Comment"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
       }

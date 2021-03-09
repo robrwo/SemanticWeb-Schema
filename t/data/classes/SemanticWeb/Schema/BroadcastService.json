@@ -33,12 +33,12 @@
          "rdfs:comment" : "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
          "rdfs:label" : "broadcastFrequency",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
-            "schema:BroadcastChannel"
+            "schema:BroadcastChannel",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:BroadcastFrequencySpecification"
+            "schema:BroadcastFrequencySpecification",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
       },
@@ -62,9 +62,9 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
+            "schema:Vehicle",
             "schema:Person",
-            "schema:BroadcastService",
-            "schema:Vehicle"
+            "schema:BroadcastService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -84,17 +84,17 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:BroadcastService",
-            "schema:LinkRole",
+            "schema:WriteAction",
             "schema:CommunicateAction",
+            "schema:BroadcastService",
             "schema:Event",
-            "schema:PronounceableText",
-            "schema:WriteAction"
+            "schema:LinkRole",
+            "schema:CreativeWork",
+            "schema:PronounceableText"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2382"
       },
@@ -111,8 +111,8 @@
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
             "schema:BroadcastEvent",
-            "schema:BroadcastService",
-            "schema:ScreeningEvent"
+            "schema:ScreeningEvent",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

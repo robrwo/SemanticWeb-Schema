@@ -12,9 +12,9 @@
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
             "schema:TVSeries",
+            "schema:Movie",
             "schema:TVEpisode",
-            "schema:TVSeason",
-            "schema:Movie"
+            "schema:TVSeason"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -24,9 +24,9 @@
          "rdfs:label" : "partOfTVSeries",
          "rdfs:subPropertyOf" : "schema:isPartOf",
          "schema:domainIncludes" : [
-            "schema:TVClip",
+            "schema:TVSeason",
             "schema:TVEpisode",
-            "schema:TVSeason"
+            "schema:TVClip"
          ],
          "schema:rangeIncludes" : "schema:TVSeries",
          "schema:supersededBy" : "schema:partOfSeries"
@@ -38,8 +38,8 @@
          "schema:domainIncludes" : [
             "schema:ScreeningEvent",
             "schema:BroadcastEvent",
-            "schema:Movie",
-            "schema:TVEpisode"
+            "schema:TVEpisode",
+            "schema:Movie"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -54,13 +54,13 @@
          "rdfs:label" : "titleEIDR",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:TVEpisode"
+            "schema:TVEpisode",
+            "schema:Movie"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2469"
       }
