@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -55,6 +55,33 @@ has caption => (
     is        => 'rw',
     predicate => '_has_caption',
     json_ld   => 'caption',
+);
+
+
+=head2 C<embedded_text_caption>
+
+C<embeddedTextCaption>
+
+Represents textual captioning from a L<SemanticWeb::Schema::MediaObject>, e.g. text of a 'meme'.
+
+A embedded_text_caption should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_embedded_text_caption>
+
+A predicate for the L</embedded_text_caption> attribute.
+
+=cut
+
+has embedded_text_caption => (
+    is        => 'rw',
+    predicate => '_has_embedded_text_caption',
+    json_ld   => 'embeddedTextCaption',
 );
 
 

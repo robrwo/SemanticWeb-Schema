@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ReturnFeesEnumeration;
 
-# ABSTRACT: ReturnFeesEnumeration expresses policies for return fees.
+# ABSTRACT: Enumerates several kinds of policies for product return fees.
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-ReturnFeesEnumeration expresses policies for return fees.
+Enumerates several kinds of policies for product return fees.
 
 
 

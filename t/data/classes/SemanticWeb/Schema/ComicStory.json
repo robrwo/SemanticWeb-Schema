@@ -24,9 +24,9 @@
          "rdfs:comment" : "The individual who adds color to inked drawings.",
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:ComicStory",
-            "schema:ComicIssue",
-            "schema:VisualArtwork"
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -36,9 +36,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:ComicStory",
             "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -49,8 +49,8 @@
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:ComicStory",
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -60,8 +60,8 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
-            "schema:ComicIssue",
             "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",

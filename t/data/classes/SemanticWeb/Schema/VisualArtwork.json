@@ -13,8 +13,8 @@
          "rdfs:label" : "artEdition",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:Text"
          ]
       },
       "schema:artMedium" : {
@@ -24,8 +24,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:artform" : {
@@ -34,8 +34,8 @@
          "rdfs:label" : "artform",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:artist" : {
@@ -65,9 +65,9 @@
          "rdfs:comment" : "The individual who adds color to inked drawings.",
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:ComicStory",
-            "schema:ComicIssue",
-            "schema:VisualArtwork"
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -77,8 +77,8 @@
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
-            "schema:Product"
+            "schema:Product",
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -91,10 +91,10 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:Person",
             "schema:VisualArtwork",
-            "schema:MediaObject",
-            "schema:Product"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -106,9 +106,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:ComicStory",
             "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -119,8 +119,8 @@
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:ComicStory",
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -130,8 +130,8 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
-            "schema:ComicIssue",
             "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -144,8 +144,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -154,9 +154,9 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
+            "schema:VisualArtwork",
             "schema:Product",
-            "schema:VisualArtwork"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",

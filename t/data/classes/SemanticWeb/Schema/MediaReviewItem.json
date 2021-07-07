@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Represents an item or group of closely related items treated as a unit for the sake of evaluation in a [[MediaReview]]. Authorship etc. apply to the items rather than to the curation/grouping or reviewing party.",
+      "rdfs:label" : "MediaReviewItem",
+      "rdfs:subClassOf" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {
+      "schema:mediaItemAppearance" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "In the context of a [[MediaReview]], indicates specific media item(s) that are grouped using a [[MediaReviewItem]].",
+         "rdfs:label" : "mediaItemAppearance",
+         "schema:domainIncludes" : "schema:MediaReviewItem",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:MediaObject",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+      }
+   }
+}

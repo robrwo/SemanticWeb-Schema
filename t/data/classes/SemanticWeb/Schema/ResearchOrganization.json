@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A Research Organization (e.g. scientific institute, research company).",
+      "rdfs:label" : "ResearchOrganization",
+      "rdfs:subClassOf" : "schema:Organization",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2877"
+   },
+   "properties" : {}
+}

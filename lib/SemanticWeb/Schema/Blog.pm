@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Blog;
 
-# ABSTRACT: A blog.
+# ABSTRACT: A [blog](https://en
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A blog.
-
+A L<blog|https://en.wikipedia.org/wiki/Blog>, sometimes known as a "weblog". Note that the individual posts (L<SemanticWeb::Schema::BlogPosting>s) in a L<SemanticWeb::Schema::Blog> are often colloqually referred to by the same term.
 
 
 
@@ -61,8 +60,7 @@ has blog_post => (
 
 C<blogPosts>
 
-The postings that are part of this blog.
-
+Indicates a post that is part of a L<SemanticWeb::Schema::Blog>. Note that historically, what we term a "Blog" was once known as a "weblog", and that what we term a "BlogPosting" is now often colloquially referred to as a "blog".
 
 A blog_posts should be one of the following types:
 

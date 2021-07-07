@@ -67,8 +67,8 @@
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
          "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsProperties",
-            "schemadotorgsources:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms",
+            "schemadotorgsources:source_GoodRelationsProperties"
          ]
       },
       "schema:unitCode" : {
@@ -76,14 +76,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification",
-            "schema:TypeAndQuantityNode"
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -93,9 +93,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:PropertyValue",
+            "schema:UnitPriceSpecification",
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification"
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

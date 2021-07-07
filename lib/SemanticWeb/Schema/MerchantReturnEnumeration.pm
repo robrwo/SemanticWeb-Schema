@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::MerchantReturnEnumeration;
 
-# ABSTRACT: MerchantReturnEnumeration enumerates several kinds of product return policy
+# ABSTRACT: Enumerates several kinds of product return policies.
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-MerchantReturnEnumeration enumerates several kinds of product return
-policy. Note that this structure may not capture all aspects of the policy.
+Enumerates several kinds of product return policies.
 
 
 

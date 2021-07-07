@@ -1,0 +1,58 @@
+{
+   "class" : {
+      "dc:source" : "http:bioschemas.org",
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A discrete unit of inheritance which affects one or more biological traits (Source: [https://en.wikipedia.org/wiki/Gene](https://en.wikipedia.org/wiki/Gene)). Examples include FOXP2 (Forkhead box protein P2), SCARNA21 (small Cajal body-specific RNA 21), A- (agouti genotype).",
+      "rdfs:label" : "Gene",
+      "rdfs:subClassOf" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org"
+   },
+   "properties" : {
+      "schema:alternativeOf" : {
+         "dc:source" : "www.bioschemas:Gene",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Another gene which is a variation of this one.",
+         "rdfs:label" : "alternativeOf",
+         "schema:domainIncludes" : "schema:Gene",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Gene"
+      },
+      "schema:encodesBioChemEntity" : {
+         "dc:source" : "www.bioschemas:Gene",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Another BioChemEntity encoded by this one. ",
+         "rdfs:label" : "encodesBioChemEntity",
+         "schema:domainIncludes" : "schema:Gene",
+         "schema:inverseOf" : "schema:isEncodedByBioChemEntity",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:BioChemEntity"
+      },
+      "schema:expressedIn" : {
+         "dc:source" : "www.bioschemas:Gene",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
+         "rdfs:label" : "expressedIn",
+         "schema:domainIncludes" : "schema:Gene",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:AnatomicalStructure",
+            "schema:DefinedTerm",
+            "schema:AnatomicalSystem",
+            "schema:BioChemEntity"
+         ]
+      },
+      "schema:hasBioPolymerSequence" : {
+         "dc:source" : "www.bioschemas:Gene",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A symbolic representation of a BioChemEnity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
+         "rdfs:label" : "hasBioPolymerSequence",
+         "rdfs:subPropertyOf" : "schema:hasRepresentation",
+         "schema:domainIncludes" : [
+            "schema:Gene",
+            "schema:Protein"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text"
+      }
+   }
+}

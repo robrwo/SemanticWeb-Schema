@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -57,6 +57,64 @@ has media_authenticity_category => (
     is        => 'rw',
     predicate => '_has_media_authenticity_category',
     json_ld   => 'mediaAuthenticityCategory',
+);
+
+
+=head2 C<original_media_context_description>
+
+C<originalMediaContextDescription>
+
+Describes, in a L<SemanticWeb::Schema::MediaReview> when dealing with L<SemanticWeb::Schema::DecontextualizedContent>, background information that can contribute to better interpretation of the L<SemanticWeb::Schema::MediaObject>.
+
+A original_media_context_description should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_original_media_context_description>
+
+A predicate for the L</original_media_context_description> attribute.
+
+=cut
+
+has original_media_context_description => (
+    is        => 'rw',
+    predicate => '_has_original_media_context_description',
+    json_ld   => 'originalMediaContextDescription',
+);
+
+
+=head2 C<original_media_link>
+
+C<originalMediaLink>
+
+Link to the page containing an original version of the content, or directly to an online copy of the original L<SemanticWeb::Schema::MediaObject> content, e.g. video file.
+
+A original_media_link should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MediaObject']>
+
+=item C<InstanceOf['SemanticWeb::Schema::WebPage']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_original_media_link>
+
+A predicate for the L</original_media_link> attribute.
+
+=cut
+
+has original_media_link => (
+    is        => 'rw',
+    predicate => '_has_original_media_link',
+    json_ld   => 'originalMediaLink',
 );
 
 

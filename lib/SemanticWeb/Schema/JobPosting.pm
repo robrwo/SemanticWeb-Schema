@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -173,6 +173,33 @@ has date_posted => (
     is        => 'rw',
     predicate => '_has_date_posted',
     json_ld   => 'datePosted',
+);
+
+
+=head2 C<direct_apply>
+
+C<directApply>
+
+Indicates whether an [[url]] that is associated with a L<SemanticWeb::Schema::JobPosting> enables direct application for the job, via the posting website. A job posting is considered to have directApply of L<SemanticWeb::Schema::True> if an application process for the specified job can be directly initiated via the url(s) given (noting that e.g. multiple internet domains might nevertheless be involved at an implementation level). A value of L<SemanticWeb::Schema::False> is appropriate if there is no clear path to applying directly online for the specified job, navigating directly from the JobPosting url(s) supplied.
+
+A direct_apply should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_direct_apply>
+
+A predicate for the L</direct_apply> attribute.
+
+=cut
+
+has direct_apply => (
+    is        => 'rw',
+    predicate => '_has_direct_apply',
+    json_ld   => 'directApply',
 );
 
 

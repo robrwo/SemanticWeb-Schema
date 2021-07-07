@@ -11,8 +11,8 @@
          "rdfs:comment" : "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
          "rdfs:label" : "carrier",
          "schema:domainIncludes" : [
-            "schema:Flight",
-            "schema:ParcelDelivery"
+            "schema:ParcelDelivery",
+            "schema:Flight"
          ],
          "schema:rangeIncludes" : "schema:Organization",
          "schema:supersededBy" : "schema:provider"
@@ -37,8 +37,8 @@
          "rdfs:label" : "expectedArrivalFrom",
          "schema:domainIncludes" : "schema:ParcelDelivery",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:expectedArrivalUntil" : {
@@ -47,8 +47,8 @@
          "rdfs:label" : "expectedArrivalUntil",
          "schema:domainIncludes" : "schema:ParcelDelivery",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:hasDeliveryMethod" : {
@@ -88,16 +88,16 @@
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
             "schema:Invoice",
-            "schema:Trip",
             "schema:EducationalOccupationalProgram",
             "schema:Service",
+            "schema:ParcelDelivery",
+            "schema:Trip",
             "schema:CreativeWork",
-            "schema:Reservation",
-            "schema:ParcelDelivery"
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },

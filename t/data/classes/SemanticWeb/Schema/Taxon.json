@@ -1,0 +1,65 @@
+{
+   "class" : {
+      "dc:source" : "http:bioschemas.org",
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A set of organisms asserted to represent a natural cohesive biological unit.",
+      "rdfs:label" : "Taxon",
+      "rdfs:subClassOf" : "schema:Thing",
+      "schema:isPartOf" : "http:pending.schema.org"
+   },
+   "properties" : {
+      "schema:childTaxon" : {
+         "dc:source" : "www.bioschemas:Taxon",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Closest child taxa of the taxon in question.",
+         "rdfs:label" : "childTaxon",
+         "schema:domainIncludes" : "schema:Taxon",
+         "schema:inverseOf" : "schema:parentTaxon",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:Taxon",
+            "schema:URL"
+         ]
+      },
+      "schema:hasDefinedTerm" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A Defined Term contained in this term set.",
+         "rdfs:label" : "hasDefinedTerm",
+         "schema:domainIncludes" : [
+            "schema:Taxon",
+            "schema:DefinedTermSet"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:DefinedTerm",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
+      },
+      "schema:parentTaxon" : {
+         "dc:source" : "www.bioschemas:Taxon",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Closest parent taxon of the taxon in question.",
+         "rdfs:label" : "parentTaxon",
+         "schema:domainIncludes" : "schema:Taxon",
+         "schema:inverseOf" : "schema:childTaxon",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:URL",
+            "schema:Taxon"
+         ]
+      },
+      "schema:taxonRank" : {
+         "dc:source" : "www.bioschemas:Taxon",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary â (typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs).",
+         "rdfs:label" : "taxonRank",
+         "schema:domainIncludes" : "schema:Taxon",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:PropertyValue",
+            "schema:URL"
+         ]
+      }
+   }
+}

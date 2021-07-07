@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note the peformance of a Play would be a L<SemanticWeb::Schema::TheaterEvent> - the I<Play> being the [[workPerformed]].
+A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. Note: A performance of a Play would be a L<SemanticWeb::Schema::TheaterEvent> or L<SemanticWeb::Schema::BroadcastEvent> - the I<Play> being the [[workPerformed]].
 
 
 

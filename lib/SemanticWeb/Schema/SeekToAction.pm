@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -25,7 +25,40 @@ This is the L<SemanticWeb::Schema::Action> of navigating to a specific [[startOf
 
 
 
+=head1 ATTRIBUTES
+
+
+=head2 C<start_offset>
+
+C<startOffset>
+
+The start time of the clip expressed as the number of seconds from the
+beginning of the work.
+
+
+A start_offset should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::HyperTocEntry']>
+
+=item C<Num>
+
+=back
+
+=head2 C<_has_start_offset>
+
+A predicate for the L</start_offset> attribute.
+
 =cut
+
+has start_offset => (
+    is        => 'rw',
+    predicate => '_has_start_offset',
+    json_ld   => 'startOffset',
+);
+
+
 
 
 =head1 SEE ALSO

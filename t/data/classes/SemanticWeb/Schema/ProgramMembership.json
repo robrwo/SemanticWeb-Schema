@@ -23,8 +23,8 @@
          ],
          "schema:inverseOf" : "schema:memberOf",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:members" : {
@@ -32,8 +32,8 @@
          "rdfs:comment" : "A member of this organization.",
          "rdfs:label" : "members",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:ProgramMembership"
+            "schema:ProgramMembership",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",

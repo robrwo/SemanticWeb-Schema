@@ -21,13 +21,27 @@
             "schema:Text"
          ]
       },
+      "schema:embeddedTextCaption" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Represents textual captioning from a [[MediaObject]], e.g. text of a 'meme'.",
+         "rdfs:label" : "embeddedTextCaption",
+         "rdfs:subPropertyOf" : "schema:caption",
+         "schema:domainIncludes" : [
+            "schema:ImageObject",
+            "schema:AudioObject",
+            "schema:VideoObject"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+      },
       "schema:transcript" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "If this MediaObject is an AudioObject or VideoObject, the transcript of that object.",
          "rdfs:label" : "transcript",
          "schema:domainIncludes" : [
-            "schema:AudioObject",
-            "schema:VideoObject"
+            "schema:VideoObject",
+            "schema:AudioObject"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

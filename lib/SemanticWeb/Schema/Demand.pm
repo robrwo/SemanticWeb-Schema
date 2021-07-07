@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -724,9 +724,10 @@ has inventory_level => (
 
 C<itemCondition>
 
-A predefined value from OfferItemCondition or a textual description of the
-condition of the product or service, or the products or services included
-in the offer.
+A predefined value from OfferItemCondition specifying the condition of the
+product or service, or the products or services included in the offer. Also
+used for product return policies to specify the condition of products
+accepted for returns.
 
 
 A item_condition should be one of the following types:

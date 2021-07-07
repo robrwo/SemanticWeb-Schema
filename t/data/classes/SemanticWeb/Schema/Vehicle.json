@@ -108,8 +108,8 @@
          "rdfs:comment" : "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.",
          "rdfs:label" : "fuelType",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:EngineSpecification"
+            "schema:EngineSpecification",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -133,9 +133,9 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
+            "schema:QualitativeValue",
             "schema:URL",
-            "schema:Text",
-            "schema:QualitativeValue"
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -162,8 +162,8 @@
          "rdfs:label" : "numberOfAirbags",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -184,8 +184,8 @@
          "rdfs:label" : "numberOfDoors",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -206,8 +206,8 @@
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -236,8 +236,8 @@
          "rdfs:comment" : "The date the item e.g. vehicle was purchased by the current owner.",
          "rdfs:label" : "purchaseDate",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date",
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
@@ -276,8 +276,8 @@
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:StupidType",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:StupidType"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -355,8 +355,8 @@
          "rdfs:label" : "vehicleSeatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -378,9 +378,9 @@
          "rdfs:label" : "vehicleTransmission",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
+            "schema:Text",
             "schema:URL",
-            "schema:Text"
+            "schema:QualitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },

@@ -4,8 +4,8 @@
       "rdfs:comment" : "Fitness-related activity designed for a specific health-related purpose, including defined exercise routines as well as activity prescribed by a clinician.",
       "rdfs:label" : "ExercisePlan",
       "rdfs:subClassOf" : [
-         "schema:CreativeWork",
-         "schema:PhysicalActivity"
+         "schema:PhysicalActivity",
+         "schema:CreativeWork"
       ],
       "schema:isPartOf" : "http:health-lifesci.schema.org"
    },
@@ -17,8 +17,8 @@
          "schema:domainIncludes" : "schema:ExercisePlan",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Duration"
+            "schema:Duration",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:activityFrequency" : {
@@ -91,8 +91,8 @@
          "schema:domainIncludes" : "schema:ExercisePlan",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Energy"
+            "schema:Energy",
+            "schema:QuantitativeValue"
          ]
       }
    }

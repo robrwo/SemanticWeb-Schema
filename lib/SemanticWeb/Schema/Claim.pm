@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -56,6 +56,36 @@ has appearance => (
     is        => 'rw',
     predicate => '_has_appearance',
     json_ld   => 'appearance',
+);
+
+
+=head2 C<claim_interpreter>
+
+C<claimInterpreter>
+
+For a L<SemanticWeb::Schema::Claim> interpreted from L<SemanticWeb::Schema::MediaObject> content
+    sed to indicate a claim contained, implied or refined from the content of a L<SemanticWeb::Schema::MediaObject>.
+
+A claim_interpreter should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=head2 C<_has_claim_interpreter>
+
+A predicate for the L</claim_interpreter> attribute.
+
+=cut
+
+has claim_interpreter => (
+    is        => 'rw',
+    predicate => '_has_claim_interpreter',
+    json_ld   => 'claimInterpreter',
 );
 
 

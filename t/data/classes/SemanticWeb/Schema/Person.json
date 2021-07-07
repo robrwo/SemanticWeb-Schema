@@ -20,11 +20,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
             "schema:Place",
             "schema:Organization",
-            "schema:Person",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:GeoShape",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -55,11 +55,11 @@
          "rdfs:comment" : "An award won by or for this item.",
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Organization",
             "schema:Person",
             "schema:Product",
-            "schema:CreativeWork"
+            "schema:Service",
+            "schema:CreativeWork",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -68,10 +68,10 @@
          "rdfs:comment" : "Awards won by or for this item.",
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:CreativeWork",
             "schema:Organization",
-            "schema:Product"
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:supersededBy" : "schema:award"
@@ -96,9 +96,9 @@
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
             "schema:Service",
+            "schema:Organization",
             "schema:Product",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -149,9 +149,9 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
+            "schema:Organization",
             "schema:HealthInsurancePlan",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -160,8 +160,8 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoints",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint",
          "schema:supersededBy" : "schema:contactPoint"
@@ -186,8 +186,8 @@
          "rdfs:label" : "duns",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -215,10 +215,10 @@
          "rdfs:comment" : "The fax number.",
          "rdfs:label" : "faxNumber",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:Organization",
             "schema:Person",
-            "schema:ContactPoint",
-            "schema:Place"
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -235,15 +235,15 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
+            "schema:Person",
             "schema:Event",
             "schema:CreativeWork",
             "schema:MonetaryGrant",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:gender" : {
@@ -256,8 +256,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:GenderType",
-            "schema:Text"
+            "schema:Text",
+            "schema:GenderType"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2341"
       },
@@ -275,8 +275,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:Place",
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -306,9 +306,9 @@
          "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Service",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -317,8 +317,8 @@
          "rdfs:comment" : "Points-of-Sales operated by the organization or person.",
          "rdfs:label" : "hasPOS",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Place",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -328,10 +328,10 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:Person",
             "schema:VisualArtwork",
-            "schema:MediaObject",
-            "schema:Product"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -345,8 +345,8 @@
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:ContactPoint"
+            "schema:ContactPoint",
+            "schema:Place"
          ]
       },
       "schema:honorificPrefix" : {
@@ -368,9 +368,9 @@
          "rdfs:comment" : "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.",
          "rdfs:label" : "interactionStatistic",
          "schema:domainIncludes" : [
+            "schema:CreativeWork",
             "schema:Organization",
-            "schema:Person",
-            "schema:CreativeWork"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:InteractionCounter",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2421"
@@ -380,9 +380,9 @@
          "rdfs:comment" : "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
          "rdfs:label" : "isicV4",
          "schema:domainIncludes" : [
-            "schema:Place",
+            "schema:Organization",
             "schema:Person",
-            "schema:Organization"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -411,18 +411,18 @@
          "rdfs:comment" : "Of a [[Person]], and less typically of an [[Organization]], to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or [[JobPosting]] descriptions.",
          "rdfs:label" : "knowsAbout",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:Thing",
-            "schema:Text",
-            "schema:URL"
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1688",
-            "schemadotorgsources2:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/1688"
          ]
       },
       "schema:knowsLanguage" : {
@@ -430,17 +430,17 @@
          "rdfs:comment" : "Of a [[Person]], and less typically of an [[Organization]], to indicate a known language. We do not distinguish skill levels or reading/writing/speaking/signing here. Use language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47).",
          "rdfs:label" : "knowsLanguage",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1688"
+            "https://github.com/schemaorg/schemaorg/issues/1688",
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:makesOffer" : {
@@ -460,8 +460,8 @@
          "rdfs:comment" : "An Organization (or ProgramMembership) to which this Person or Organization belongs.",
          "rdfs:label" : "memberOf",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:inverseOf" : "schema:member",
          "schema:rangeIncludes" : [
@@ -474,8 +474,8 @@
          "rdfs:comment" : "The North American Industry Classification System (NAICS) code for a particular organization or business person.",
          "rdfs:label" : "naics",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -502,8 +502,8 @@
          "rdfs:comment" : "Products owned by the organization or person.",
          "rdfs:label" : "owns",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:Product",
@@ -559,8 +559,8 @@
          "rdfs:comment" : "A pointer to products or services sought by the organization or person (demand).",
          "rdfs:label" : "seeks",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Demand",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -585,16 +585,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:MedicalStudy",
             "schema:CreativeWork",
-            "schema:Grant",
+            "schema:Organization",
             "schema:Event",
-            "schema:Person"
+            "schema:Person",
+            "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:spouse" : {
@@ -622,8 +622,8 @@
          "rdfs:label" : "telephone",
          "schema:domainIncludes" : [
             "schema:Place",
-            "schema:Organization",
             "schema:ContactPoint",
+            "schema:Organization",
             "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"

@@ -12,15 +12,15 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:Order",
             "schema:Demand",
             "schema:BuyAction",
             "schema:Offer",
-            "schema:Order",
             "schema:Flight"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:vendor" : {
@@ -40,8 +40,8 @@
          "rdfs:comment" : "The warranty promise(s) included in the offer.",
          "rdfs:label" : "warrantyPromise",
          "schema:domainIncludes" : [
-            "schema:SellAction",
-            "schema:BuyAction"
+            "schema:BuyAction",
+            "schema:SellAction"
          ],
          "schema:rangeIncludes" : "schema:WarrantyPromise",
          "schema:supersededBy" : "schema:warranty"

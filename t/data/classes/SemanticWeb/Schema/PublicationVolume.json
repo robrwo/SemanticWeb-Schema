@@ -14,23 +14,6 @@
          "rdfs:label" : "pageEnd",
          "schema:domainIncludes" : [
             "schema:PublicationIssue",
-            "schema:PublicationVolume",
-            "schema:Article",
-            "schema:Chapter"
-         ],
-         "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
-         ],
-         "schema:source" : "schemadotorgsources:source_bibex"
-      },
-      "schema:pageStart" : {
-         "owl:equivalentProperty" : "bibo:pageStart",
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
-         "rdfs:label" : "pageStart",
-         "schema:domainIncludes" : [
-            "schema:PublicationIssue",
             "schema:Article",
             "schema:PublicationVolume",
             "schema:Chapter"
@@ -41,16 +24,33 @@
          ],
          "schema:source" : "schemadotorgsources:source_bibex"
       },
+      "schema:pageStart" : {
+         "owl:equivalentProperty" : "bibo:pageStart",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
+         "rdfs:label" : "pageStart",
+         "schema:domainIncludes" : [
+            "schema:PublicationIssue",
+            "schema:Chapter",
+            "schema:PublicationVolume",
+            "schema:Article"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:Integer"
+         ],
+         "schema:source" : "schemadotorgsources:source_bibex"
+      },
       "schema:pagination" : {
          "owl:equivalentProperty" : "bibo:pages",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
          "rdfs:label" : "pagination",
          "schema:domainIncludes" : [
-            "schema:PublicationIssue",
-            "schema:Chapter",
             "schema:Article",
-            "schema:PublicationVolume"
+            "schema:PublicationVolume",
+            "schema:Chapter",
+            "schema:PublicationIssue"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_bibex"

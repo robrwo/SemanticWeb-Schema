@@ -11,9 +11,9 @@
          "rdfs:comment" : "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
          "rdfs:label" : "assesses",
          "schema:domainIncludes" : [
-            "schema:EducationEvent",
             "schema:CreativeWork",
-            "schema:LearningResource"
+            "schema:LearningResource",
+            "schema:EducationEvent"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -28,15 +28,15 @@
          "rdfs:label" : "educationalLevel",
          "schema:domainIncludes" : [
             "schema:EducationEvent",
-            "schema:EducationalOccupationalCredential",
+            "schema:LearningResource",
             "schema:CreativeWork",
-            "schema:LearningResource"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
             "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
       },
@@ -46,8 +46,8 @@
          "rdfs:label" : "teaches",
          "schema:domainIncludes" : [
             "schema:EducationEvent",
-            "schema:CreativeWork",
-            "schema:LearningResource"
+            "schema:LearningResource",
+            "schema:CreativeWork"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

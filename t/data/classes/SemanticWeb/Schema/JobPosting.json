@@ -29,13 +29,13 @@
          "rdfs:comment" : "The base salary of the job or of an employee in an EmployeeRole.",
          "rdfs:label" : "baseSalary",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:EmployeeRole"
+            "schema:EmployeeRole",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
+            "schema:PriceSpecification",
             "schema:Number",
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:MonetaryAmount"
          ]
       },
       "schema:benefits" : {
@@ -52,26 +52,35 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:JobPosting",
             "schema:RealEstateListing",
-            "schema:CDCPMDRecord"
+            "schema:CDCPMDRecord",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",
             "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
+      "schema:directApply" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates whether an [[url]] that is associated with a [[JobPosting]] enables direct application for the job, via the posting website. A job posting is considered to have directApply of [[True]] if an application process for the specified job can be directly initiated via the url(s) given (noting that e.g. multiple internet domains might nevertheless be involved at an implementation level). A value of [[False]] is appropriate if there is no clear path to applying directly online for the specified job, navigating directly from the JobPosting url(s) supplied.",
+         "rdfs:label" : "directApply",
+         "schema:domainIncludes" : "schema:JobPosting",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Boolean",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2907"
+      },
       "schema:educationRequirements" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Educational background needed for the position or Occupation.",
          "rdfs:label" : "educationRequirements",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -79,8 +88,8 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1779"
+            "https://github.com/schemaorg/schemaorg/issues/1779",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:eligibilityToWorkRequirement" : {
@@ -126,9 +135,9 @@
             "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
+            "schema:MonetaryAmount",
             "schema:MonetaryAmountDistribution",
-            "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:Number"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -146,12 +155,12 @@
          "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
          "rdfs:label" : "experienceRequirements",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:OccupationalExperienceRequirements"
+            "schema:OccupationalExperienceRequirements",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -183,8 +192,8 @@
          "rdfs:label" : "industry",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ]
       },
       "schema:jobBenefits" : {
@@ -236,21 +245,21 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
+            "schema:WorkBasedProgram",
             "schema:Occupation",
-            "schema:JobPosting",
             "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:JobPosting"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CategoryCode",
-            "schema:Text"
+            "schema:Text",
+            "schema:CategoryCode"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2460",
             "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/2192",
-            "https://github.com/schemaorg/schemaorg/issues/2289"
+            "https://github.com/schemaorg/schemaorg/issues/2460"
          ]
       },
       "schema:physicalRequirement" : {
@@ -260,9 +269,9 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -276,8 +285,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:Text",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1698",
@@ -297,8 +306,8 @@
          "rdfs:comment" : "Responsibilities associated with this role or Occupation.",
          "rdfs:label" : "responsibilities",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
@@ -320,8 +329,8 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -343,16 +352,16 @@
          "rdfs:comment" : "A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation.",
          "rdfs:label" : "skills",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/2322"
+            "https://github.com/schemaorg/schemaorg/issues/2322",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:specialCommitments" : {
@@ -383,17 +392,17 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
             "schema:LocationFeatureSpecification",
             "schema:JobPosting",
-            "schema:Offer"
+            "schema:MonetaryAmount",
+            "schema:OpeningHoursSpecification",
+            "schema:Offer",
+            "schema:Demand",
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },

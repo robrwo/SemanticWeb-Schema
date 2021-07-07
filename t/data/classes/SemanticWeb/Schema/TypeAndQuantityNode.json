@@ -20,9 +20,9 @@
          "rdfs:comment" : "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
          "rdfs:label" : "businessFunction",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
-            "schema:TypeAndQuantityNode"
+            "schema:TypeAndQuantityNode",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:BusinessFunction",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -32,8 +32,8 @@
          "rdfs:comment" : "The product that this structured value is referring to.",
          "rdfs:label" : "typeOfGood",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:OwnershipInfo"
+            "schema:OwnershipInfo",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
             "schema:Service",
@@ -46,14 +46,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification",
-            "schema:TypeAndQuantityNode"
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -63,9 +63,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:PropertyValue",
+            "schema:UnitPriceSpecification",
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification"
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

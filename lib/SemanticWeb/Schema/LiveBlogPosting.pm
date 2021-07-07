@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::LiveBlogPosting;
 
-# ABSTRACT: A blog post intended to provide a rolling textual coverage of an ongoing event through continuous updates.
+# ABSTRACT: A [[LiveBlogPosting]] is a [[BlogPosting]] intended to provide a rolling textual coverage of an ongoing event through continuous updates.
 
 use Moo;
 
@@ -15,15 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A blog post intended to provide a rolling textual coverage of an ongoing
-event through continuous updates.
-
+A L<SemanticWeb::Schema::LiveBlogPosting> is a L<SemanticWeb::Schema::BlogPosting> intended to provide a rolling textual coverage of an ongoing event through continuous updates.
 
 
 

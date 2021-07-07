@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -900,7 +900,7 @@ has has_credential => (
 
 C<hasMerchantReturnPolicy>
 
-Indicates a MerchantReturnPolicy that may be applicable.
+Specifies a MerchantReturnPolicy that may be applicable.
 
 
 A has_merchant_return_policy should be one of the following types:

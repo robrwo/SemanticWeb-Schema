@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumerates several types of product return methods.",
+      "rdfs:label" : "ReturnMethodEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

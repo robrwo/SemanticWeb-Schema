@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -28,6 +28,36 @@ user can download and listen to.
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<actor>
+
+
+
+An actor, e.g. in tv, radio, movie, video games etc., or in an event.
+Actors can be associated with individual items or with a series, episode,
+clip.
+
+
+A actor should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=head2 C<_has_actor>
+
+A predicate for the L</actor> attribute.
+
+=cut
+
+has actor => (
+    is        => 'rw',
+    predicate => '_has_actor',
+    json_ld   => 'actor',
+);
 
 
 =head2 C<web_feed>

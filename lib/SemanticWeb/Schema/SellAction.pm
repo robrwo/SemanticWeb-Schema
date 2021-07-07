@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -42,6 +42,8 @@ bought the object.
 A buyer should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Person']>
 

@@ -15,8 +15,8 @@
          "rdfs:label" : "afterMedia",
          "schema:domainIncludes" : "schema:HowToDirection",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:URL"
          ]
       },
       "schema:beforeMedia" : {
@@ -65,8 +65,8 @@
          "rdfs:label" : "supply",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:HowToDirection",
-            "schema:HowTo"
+            "schema:HowTo",
+            "schema:HowToDirection"
          ],
          "schema:rangeIncludes" : [
             "schema:HowToSupply",
@@ -79,8 +79,8 @@
          "rdfs:label" : "tool",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:HowTo",
-            "schema:HowToDirection"
+            "schema:HowToDirection",
+            "schema:HowTo"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -92,8 +92,8 @@
          "rdfs:comment" : "The total time required to perform instructions or a direction (including time to prepare the supplies), in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "totalTime",
          "schema:domainIncludes" : [
-            "schema:HowTo",
-            "schema:HowToDirection"
+            "schema:HowToDirection",
+            "schema:HowTo"
          ],
          "schema:rangeIncludes" : "schema:Duration"
       }

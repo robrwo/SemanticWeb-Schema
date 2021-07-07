@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -29,6 +29,41 @@ interaction.
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<end_time>
+
+C<endTime>
+
+The endTime of something. For a reserved event or service (e.g.
+FoodEstablishmentReservation), the time that it is expected to end. For
+actions that span a period of time, when the action was performed. e.g.
+John wrote a book from January to *December*. For media, including audio
+and video, it's the time offset of the end of a clip within a larger file.
+Note that Event uses startDate/endDate instead of startTime/endTime, even
+when describing dates with times. This situation may be clarified in future
+revisions.
+
+
+A end_time should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_end_time>
+
+A predicate for the L</end_time> attribute.
+
+=cut
+
+has end_time => (
+    is        => 'rw',
+    predicate => '_has_end_time',
+    json_ld   => 'endTime',
+);
 
 
 =head2 C<interaction_service>
@@ -85,6 +120,76 @@ has interaction_type => (
     is        => 'rw',
     predicate => '_has_interaction_type',
     json_ld   => 'interactionType',
+);
+
+
+=head2 C<location>
+
+
+
+The location of, for example, where an event is happening, where an
+organization is located, or where an action takes place.
+
+
+A location should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=item C<InstanceOf['SemanticWeb::Schema::PostalAddress']>
+
+=item C<InstanceOf['SemanticWeb::Schema::VirtualLocation']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_location>
+
+A predicate for the L</location> attribute.
+
+=cut
+
+has location => (
+    is        => 'rw',
+    predicate => '_has_location',
+    json_ld   => 'location',
+);
+
+
+=head2 C<start_time>
+
+C<startTime>
+
+The startTime of something. For a reserved event or service (e.g.
+FoodEstablishmentReservation), the time that it is expected to start. For
+actions that span a period of time, when the action was performed. e.g.
+John wrote a book from *January* to December. For media, including audio
+and video, it's the time offset of the start of a clip within a larger
+file. Note that Event uses startDate/endDate instead of startTime/endTime,
+even when describing dates with times. This situation may be clarified in
+future revisions.
+
+
+A start_time should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_start_time>
+
+A predicate for the L</start_time> attribute.
+
+=cut
+
+has start_time => (
+    is        => 'rw',
+    predicate => '_has_start_time',
+    json_ld   => 'startTime',
 );
 
 

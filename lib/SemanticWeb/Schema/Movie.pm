@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -92,9 +92,11 @@ has actors => (
 
 C<countryOfOrigin>
 
-The country of the principal offices of the production company or
-individual responsible for the movie or program.
+The country of origin of something, including products as well as creative  works such as movie and TV content.
 
+In the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of L<SemanticWeb::Schema::CreativeWork> it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.
+
+In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.
 
 A country_of_origin should be one of the following types:
 

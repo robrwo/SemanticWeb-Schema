@@ -35,8 +35,8 @@
          "rdfs:comment" : "Nutrition information about the recipe or menu item.",
          "rdfs:label" : "nutrition",
          "schema:domainIncludes" : [
-            "schema:Recipe",
-            "schema:MenuItem"
+            "schema:MenuItem",
+            "schema:Recipe"
          ],
          "schema:rangeIncludes" : "schema:NutritionInformation"
       },
@@ -69,9 +69,9 @@
          "rdfs:subPropertyOf" : "schema:step",
          "schema:domainIncludes" : "schema:Recipe",
          "schema:rangeIncludes" : [
+            "schema:CreativeWork",
             "schema:Text",
-            "schema:ItemList",
-            "schema:CreativeWork"
+            "schema:ItemList"
          ]
       },
       "schema:recipeYield" : {

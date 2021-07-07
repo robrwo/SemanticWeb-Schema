@@ -19,8 +19,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       },
       "schema:loanMortgageMandateAmount" : {
@@ -31,8 +31,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",
          "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "schemadotorgsources:FIBO"
          ]
       }
    }

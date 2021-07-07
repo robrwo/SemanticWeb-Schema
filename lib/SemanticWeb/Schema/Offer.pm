@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -755,6 +755,34 @@ has has_measurement => (
 );
 
 
+=head2 C<has_merchant_return_policy>
+
+C<hasMerchantReturnPolicy>
+
+Specifies a MerchantReturnPolicy that may be applicable.
+
+
+A has_merchant_return_policy should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::MerchantReturnPolicy']>
+
+=back
+
+=head2 C<_has_has_merchant_return_policy>
+
+A predicate for the L</has_merchant_return_policy> attribute.
+
+=cut
+
+has has_merchant_return_policy => (
+    is        => 'rw',
+    predicate => '_has_has_merchant_return_policy',
+    json_ld   => 'hasMerchantReturnPolicy',
+);
+
+
 =head2 C<includes_object>
 
 C<includesObject>
@@ -847,9 +875,10 @@ has inventory_level => (
 
 C<itemCondition>
 
-A predefined value from OfferItemCondition or a textual description of the
-condition of the product or service, or the products or services included
-in the offer.
+A predefined value from OfferItemCondition specifying the condition of the
+product or service, or the products or services included in the offer. Also
+used for product return policies to specify the condition of products
+accepted for returns.
 
 
 A item_condition should be one of the following types:

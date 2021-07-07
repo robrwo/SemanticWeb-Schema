@@ -27,23 +27,23 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Product",
-            "schema:Service",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
-            "schema:SpecialAnnouncement"
+            "schema:Product",
+            "schema:Recommendation",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:datePosted" : {
@@ -52,13 +52,13 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:JobPosting",
             "schema:RealEstateListing",
-            "schema:CDCPMDRecord"
+            "schema:CDCPMDRecord",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",
@@ -85,9 +85,9 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:WebContent",
-            "schema:Dataset",
+            "schema:URL",
             "schema:Observation",
-            "schema:URL"
+            "schema:Dataset"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -98,8 +98,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -119,8 +119,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -131,8 +131,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -143,8 +143,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -155,8 +155,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -182,8 +182,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DataFeed",
-            "schema:URL"
+            "schema:URL",
+            "schema:DataFeed"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/373"
       }

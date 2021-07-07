@@ -17,8 +17,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:BedType",
-            "schema:BedDetails",
-            "schema:Text"
+            "schema:Text",
+            "schema:BedDetails"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },

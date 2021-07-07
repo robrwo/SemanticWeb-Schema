@@ -13,8 +13,8 @@
          "rdfs:subPropertyOf" : "schema:competitor",
          "schema:domainIncludes" : "schema:SportsEvent",
          "schema:rangeIncludes" : [
-            "schema:SportsTeam",
-            "schema:Person"
+            "schema:Person",
+            "schema:SportsTeam"
          ]
       },
       "schema:competitor" : {
@@ -23,8 +23,8 @@
          "rdfs:label" : "competitor",
          "schema:domainIncludes" : "schema:SportsEvent",
          "schema:rangeIncludes" : [
-            "schema:SportsTeam",
-            "schema:Person"
+            "schema:Person",
+            "schema:SportsTeam"
          ]
       },
       "schema:homeTeam" : {
@@ -34,8 +34,8 @@
          "rdfs:subPropertyOf" : "schema:competitor",
          "schema:domainIncludes" : "schema:SportsEvent",
          "schema:rangeIncludes" : [
-            "schema:SportsTeam",
-            "schema:Person"
+            "schema:Person",
+            "schema:SportsTeam"
          ]
       },
       "schema:sport" : {
@@ -43,13 +43,13 @@
          "rdfs:comment" : "A type of sport (e.g. Baseball).",
          "rdfs:label" : "sport",
          "schema:domainIncludes" : [
-            "schema:SportsOrganization",
-            "schema:SportsEvent"
+            "schema:SportsEvent",
+            "schema:SportsOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1951"
       }

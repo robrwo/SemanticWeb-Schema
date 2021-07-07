@@ -28,8 +28,8 @@
             "schema:LodgingReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:lodgingUnitDescription" : {
@@ -65,8 +65,8 @@
          "rdfs:label" : "numChildren",
          "schema:domainIncludes" : "schema:LodgingReservation",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Integer"
          ]
       }
    }

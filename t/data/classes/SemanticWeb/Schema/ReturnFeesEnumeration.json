@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "ReturnFeesEnumeration expresses policies for return fees.",
+      "rdfs:comment" : "Enumerates several kinds of policies for product return fees.",
       "rdfs:label" : "ReturnFeesEnumeration",
       "rdfs:subClassOf" : "schema:Enumeration",
       "schema:isPartOf" : "http:pending.schema.org",

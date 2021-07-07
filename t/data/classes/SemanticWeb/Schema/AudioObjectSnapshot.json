@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A specific and exact (byte-for-byte) version of an [[AudioObject]]. Two byte-for-byte identical files, for the purposes of this type, considered identical. If they have different embedded metadata the files will differ. Different external facts about the files, e.g. creator or dateCreated that aren't represented in their actual content, do not affect this notion of identity.",
+      "rdfs:label" : "AudioObjectSnapshot",
+      "rdfs:subClassOf" : "schema:AudioObject",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

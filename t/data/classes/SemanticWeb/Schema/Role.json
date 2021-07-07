@@ -11,13 +11,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Role",
-            "schema:Schedule",
             "schema:CreativeWorkSeason",
             "schema:CreativeWorkSeries",
-            "schema:Event",
-            "schema:DatedMoneySpecification"
+            "schema:EducationalOccupationalProgram",
+            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Schedule",
+            "schema:Role",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -31,8 +32,8 @@
          "rdfs:label" : "namedPosition",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:roleName"
       },
@@ -52,12 +53,13 @@
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
+            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
-            "schema:Role",
             "schema:Event",
-            "schema:CreativeWorkSeries"
+            "schema:Role",
+            "schema:CreativeWorkSeries",
+            "schema:EducationalOccupationalProgram",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

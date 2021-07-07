@@ -13,8 +13,8 @@
          "rdfs:label" : "broadcastFrequencyValue",
          "schema:domainIncludes" : "schema:BroadcastFrequencySpecification",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
       },
@@ -25,8 +25,8 @@
          "schema:domainIncludes" : "schema:BroadcastFrequencySpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2111"
       },

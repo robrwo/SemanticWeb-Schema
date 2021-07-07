@@ -17,9 +17,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:SuperficialAnatomy",
+            "schema:AnatomicalStructure",
             "schema:AnatomicalSystem",
-            "schema:AnatomicalStructure"
+            "schema:SuperficialAnatomy"
          ]
       },
       "schema:category" : {
@@ -28,23 +28,23 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Product",
-            "schema:Service",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
-            "schema:SpecialAnnouncement"
+            "schema:Product",
+            "schema:Recommendation",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:epidemiology" : {
@@ -63,8 +63,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

@@ -1,9 +1,9 @@
 {
    "class" : {
       "owl:equivalentClass" : [
+         "void:Dataset",
          "dcat:Dataset",
-         "dcmitype:Dataset",
-         "void:Dataset"
+         "dcmitype:Dataset"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A body of structured information describing some topic(s) of interest.",
@@ -58,10 +58,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Blog",
-            "schema:CreativeWorkSeries",
             "schema:WebSite",
-            "schema:Dataset"
+            "schema:Blog",
+            "schema:Dataset",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_bibex"
@@ -71,10 +71,10 @@
          "rdfs:comment" : "A technique or technology used in a [[Dataset]] (or [[DataDownload]], [[DataCatalog]]),\ncorresponding to the method used for measuring the corresponding variable(s) (described using [[variableMeasured]]). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.\n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".\n\nIf the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".\n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]].\n      ",
          "rdfs:label" : "measurementTechnique",
          "schema:domainIncludes" : [
-            "schema:Dataset",
             "schema:DataDownload",
-            "schema:PropertyValue",
-            "schema:DataCatalog"
+            "schema:Dataset",
+            "schema:DataCatalog",
+            "schema:PropertyValue"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

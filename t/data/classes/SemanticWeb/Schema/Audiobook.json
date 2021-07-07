@@ -4,8 +4,8 @@
       "rdfs:comment" : "An audiobook.",
       "rdfs:label" : "Audiobook",
       "rdfs:subClassOf" : [
-         "schema:AudioObject",
-         "schema:Book"
+         "schema:Book",
+         "schema:AudioObject"
       ],
       "schema:isPartOf" : "http:bib.schema.org"
    },
@@ -15,20 +15,20 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:Event",
-            "schema:Audiobook",
+            "schema:Episode",
             "schema:Schedule",
             "schema:MediaObject",
-            "schema:MusicRecording",
-            "schema:MusicRelease",
+            "schema:Event",
             "schema:QuantitativeValueDistribution",
-            "schema:Episode"
+            "schema:MusicRecording",
+            "schema:Movie",
+            "schema:MusicRelease",
+            "schema:Audiobook"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1457",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1457"
          ]
       },
       "schema:readBy" : {

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -270,6 +270,92 @@ has color => (
 );
 
 
+=head2 C<country_of_assembly>
+
+C<countryOfAssembly>
+
+The place where the product was assembled.
+
+
+A country_of_assembly should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_country_of_assembly>
+
+A predicate for the L</country_of_assembly> attribute.
+
+=cut
+
+has country_of_assembly => (
+    is        => 'rw',
+    predicate => '_has_country_of_assembly',
+    json_ld   => 'countryOfAssembly',
+);
+
+
+=head2 C<country_of_last_processing>
+
+C<countryOfLastProcessing>
+
+The place where the item (typically L<SemanticWeb::Schema::Product>) was last processed and tested before importation.
+
+A country_of_last_processing should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_country_of_last_processing>
+
+A predicate for the L</country_of_last_processing> attribute.
+
+=cut
+
+has country_of_last_processing => (
+    is        => 'rw',
+    predicate => '_has_country_of_last_processing',
+    json_ld   => 'countryOfLastProcessing',
+);
+
+
+=head2 C<country_of_origin>
+
+C<countryOfOrigin>
+
+The country of origin of something, including products as well as creative  works such as movie and TV content.
+
+In the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of L<SemanticWeb::Schema::CreativeWork> it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.
+
+In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.
+
+A country_of_origin should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Country']>
+
+=back
+
+=head2 C<_has_country_of_origin>
+
+A predicate for the L</country_of_origin> attribute.
+
+=cut
+
+has country_of_origin => (
+    is        => 'rw',
+    predicate => '_has_country_of_origin',
+    json_ld   => 'countryOfOrigin',
+);
+
+
 =head2 C<depth>
 
 
@@ -518,7 +604,7 @@ has has_measurement => (
 
 C<hasMerchantReturnPolicy>
 
-Indicates a MerchantReturnPolicy that may be applicable.
+Specifies a MerchantReturnPolicy that may be applicable.
 
 
 A has_merchant_return_policy should be one of the following types:
@@ -778,9 +864,10 @@ has is_variant_of => (
 
 C<itemCondition>
 
-A predefined value from OfferItemCondition or a textual description of the
-condition of the product or service, or the products or services included
-in the offer.
+A predefined value from OfferItemCondition specifying the condition of the
+product or service, or the products or services included in the offer. Also
+used for product return policies to specify the condition of products
+accepted for returns.
 
 
 A item_condition should be one of the following types:

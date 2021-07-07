@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -27,6 +27,87 @@ A review of an item - for example, of a restaurant, movie, or store.
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<associated_claim_review>
+
+C<associatedClaimReview>
+
+An associated L<SemanticWeb::Schema::ClaimReview>, related by specific common content, topic or claim. The expectation is that this property would be most typically used in cases where a single activity is conducting both claim reviews and media reviews, in which case [[relatedMediaReview]] would commonly be used on a L<SemanticWeb::Schema::ClaimReview>, while [[relatedClaimReview]] would be used on L<SemanticWeb::Schema::MediaReview>.
+
+A associated_claim_review should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Review']>
+
+=back
+
+=head2 C<_has_associated_claim_review>
+
+A predicate for the L</associated_claim_review> attribute.
+
+=cut
+
+has associated_claim_review => (
+    is        => 'rw',
+    predicate => '_has_associated_claim_review',
+    json_ld   => 'associatedClaimReview',
+);
+
+
+=head2 C<associated_media_review>
+
+C<associatedMediaReview>
+
+An associated L<SemanticWeb::Schema::MediaReview>, related by specific common content, topic or claim. The expectation is that this property would be most typically used in cases where a single activity is conducting both claim reviews and media reviews, in which case [[relatedMediaReview]] would commonly be used on a L<SemanticWeb::Schema::ClaimReview>, while [[relatedClaimReview]] would be used on L<SemanticWeb::Schema::MediaReview>.
+
+A associated_media_review should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Review']>
+
+=back
+
+=head2 C<_has_associated_media_review>
+
+A predicate for the L</associated_media_review> attribute.
+
+=cut
+
+has associated_media_review => (
+    is        => 'rw',
+    predicate => '_has_associated_media_review',
+    json_ld   => 'associatedMediaReview',
+);
+
+
+=head2 C<associated_review>
+
+C<associatedReview>
+
+An associated L<SemanticWeb::Schema::Review>.
+
+A associated_review should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Review']>
+
+=back
+
+=head2 C<_has_associated_review>
+
+A predicate for the L</associated_review> attribute.
+
+=cut
+
+has associated_review => (
+    is        => 'rw',
+    predicate => '_has_associated_review',
+    json_ld   => 'associatedReview',
+);
 
 
 =head2 C<item_reviewed>
@@ -54,6 +135,72 @@ has item_reviewed => (
     is        => 'rw',
     predicate => '_has_item_reviewed',
     json_ld   => 'itemReviewed',
+);
+
+
+=head2 C<negative_notes>
+
+C<negativeNotes>
+
+Indicates, in the context of a L<SemanticWeb::Schema::Review> (e.g. framed as 'pro' vs 'con' considerations), negative considerations - either as unstructured text, or a list.
+
+A negative_notes should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ListItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::WebContent']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_negative_notes>
+
+A predicate for the L</negative_notes> attribute.
+
+=cut
+
+has negative_notes => (
+    is        => 'rw',
+    predicate => '_has_negative_notes',
+    json_ld   => 'negativeNotes',
+);
+
+
+=head2 C<positive_notes>
+
+C<positiveNotes>
+
+Indicates, in the context of a L<SemanticWeb::Schema::Review> (e.g. framed as 'pro' vs 'con' considerations), positive considerations - either as unstructured text, or a list.
+
+A positive_notes should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ListItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::WebContent']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_positive_notes>
+
+A predicate for the L</positive_notes> attribute.
+
+=cut
+
+has positive_notes => (
+    is        => 'rw',
+    predicate => '_has_positive_notes',
+    json_ld   => 'positiveNotes',
 );
 
 

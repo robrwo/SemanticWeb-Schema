@@ -16,6 +16,29 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MediaManipulationRatingEnumeration",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+      },
+      "schema:originalMediaContextDescription" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Describes, in a [[MediaReview]] when dealing with [[DecontextualizedContent]], background information that can contribute to better interpretation of the [[MediaObject]].",
+         "rdfs:label" : "originalMediaContextDescription",
+         "rdfs:subPropertyOf" : "schema:description",
+         "schema:domainIncludes" : "schema:MediaReview",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+      },
+      "schema:originalMediaLink" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Link to the page containing an original version of the content, or directly to an online copy of the original [[MediaObject]] content, e.g. video file.",
+         "rdfs:label" : "originalMediaLink",
+         "schema:domainIncludes" : "schema:MediaReview",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:URL",
+            "schema:MediaObject",
+            "schema:WebPage"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
       }
    }
 }

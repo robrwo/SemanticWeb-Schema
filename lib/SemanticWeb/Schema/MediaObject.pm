@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -361,6 +361,33 @@ has ineligible_region => (
 );
 
 
+=head2 C<interpreted_as_claim>
+
+C<interpretedAsClaim>
+
+Used to indicate a specific claim contained, implied, translated or refined from the content of a L<SemanticWeb::Schema::MediaObject> or other L<SemanticWeb::Schema::CreativeWork>. The interpreting party can be indicated using [[claimInterpreter]].
+
+A interpreted_as_claim should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Claim']>
+
+=back
+
+=head2 C<_has_interpreted_as_claim>
+
+A predicate for the L</interpreted_as_claim> attribute.
+
+=cut
+
+has interpreted_as_claim => (
+    is        => 'rw',
+    predicate => '_has_interpreted_as_claim',
+    json_ld   => 'interpretedAsClaim',
+);
+
+
 =head2 C<player_type>
 
 C<playerType>
@@ -477,6 +504,36 @@ has requires_subscription => (
     is        => 'rw',
     predicate => '_has_requires_subscription',
     json_ld   => 'requiresSubscription',
+);
+
+
+=head2 C<sha256>
+
+
+
+The [SHA-2](https://en.wikipedia.org/wiki/SHA-2) SHA256 hash of the content
+of the item. For example, a zero-length input has value
+'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+
+
+A sha256 should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_sha256>
+
+A predicate for the L</sha256> attribute.
+
+=cut
+
+has sha256 => (
+    is        => 'rw',
+    predicate => '_has_sha256',
+    json_ld   => 'sha256',
 );
 
 

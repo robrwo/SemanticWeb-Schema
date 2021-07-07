@@ -26,8 +26,8 @@
          "rdfs:comment" : "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.",
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
-            "schema:Order",
             "schema:Service",
+            "schema:Order",
             "schema:Reservation",
             "schema:Invoice"
          ],
@@ -42,23 +42,23 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Product",
-            "schema:Service",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
-            "schema:SpecialAnnouncement"
+            "schema:Product",
+            "schema:Recommendation",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:PhysicalActivityCategory"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:confirmationNumber" : {
@@ -67,8 +67,8 @@
          "rdfs:label" : "confirmationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -77,8 +77,8 @@
          "rdfs:comment" : "Party placing the order or paying the invoice.",
          "rdfs:label" : "customer",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -100,8 +100,8 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDue",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:DateTime",
          "schema:supersededBy" : "schema:paymentDueDate"
@@ -115,8 +115,8 @@
             "schema:Order"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:paymentMethod" : {
@@ -145,8 +145,8 @@
          "rdfs:label" : "paymentStatus",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:PaymentStatusType",
-            "schema:Text"
+            "schema:Text",
+            "schema:PaymentStatusType"
          ]
       },
       "schema:provider" : {
@@ -155,16 +155,16 @@
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
             "schema:Invoice",
-            "schema:Trip",
             "schema:EducationalOccupationalProgram",
             "schema:Service",
+            "schema:ParcelDelivery",
+            "schema:Trip",
             "schema:CreativeWork",
-            "schema:Reservation",
-            "schema:ParcelDelivery"
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -188,8 +188,8 @@
          "rdfs:label" : "totalPaymentDue",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount"
          ]
       }
    }

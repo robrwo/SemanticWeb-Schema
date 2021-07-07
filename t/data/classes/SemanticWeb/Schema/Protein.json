@@ -1,0 +1,25 @@
+{
+   "class" : {
+      "dc:source" : "http:bioschemas.org",
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type schema:Protein. A protein can thus be a subclass of another protein, e.g. schema:Protein as a UniProt record can have multiple isoforms inside it which would also be schema:Protein. They can be imagined, synthetic, hypothetical or naturally occurring.",
+      "rdfs:label" : "Protein",
+      "rdfs:subClassOf" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org"
+   },
+   "properties" : {
+      "schema:hasBioPolymerSequence" : {
+         "dc:source" : "www.bioschemas:Gene",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A symbolic representation of a BioChemEnity. For example, a nucleotide sequence of a Gene or an amino acid sequence of a Protein.",
+         "rdfs:label" : "hasBioPolymerSequence",
+         "rdfs:subPropertyOf" : "schema:hasRepresentation",
+         "schema:domainIncludes" : [
+            "schema:Gene",
+            "schema:Protein"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text"
+      }
+   }
+}

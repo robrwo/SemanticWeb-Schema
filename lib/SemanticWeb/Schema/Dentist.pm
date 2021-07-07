@@ -6,10 +6,7 @@ package SemanticWeb::Schema::Dentist;
 
 use Moo;
 
-# Note: this has been manually updated until the generation script can
-# be fixed GH#5.
-
-extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
+extends qw/ SemanticWeb::Schema::LocalBusiness SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;
 
 
 use MooX::JSON_LD 'Dentist';
@@ -18,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 

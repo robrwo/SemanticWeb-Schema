@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:CDCPMDRecord",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Text"
+            "schema:Text",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -161,13 +161,13 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:JobPosting",
             "schema:RealEstateListing",
-            "schema:CDCPMDRecord"
+            "schema:CDCPMDRecord",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2521",

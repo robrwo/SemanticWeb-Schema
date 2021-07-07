@@ -12,8 +12,8 @@
          "rdfs:label" : "about",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:CommunicateAction",
-            "schema:Event"
+            "schema:Event",
+            "schema:CommunicateAction"
          ],
          "schema:inverseOf" : "schema:subjectOf",
          "schema:rangeIncludes" : "schema:Thing",
@@ -24,13 +24,13 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:WriteAction",
-            "schema:CommunicateAction",
             "schema:BroadcastService",
-            "schema:Event",
-            "schema:LinkRole",
+            "schema:WriteAction",
             "schema:CreativeWork",
-            "schema:PronounceableText"
+            "schema:PronounceableText",
+            "schema:CommunicateAction",
+            "schema:LinkRole",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Language",
@@ -56,20 +56,20 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Message",
-            "schema:TipAction",
-            "schema:DonateAction",
             "schema:GiveAction",
             "schema:SendAction",
             "schema:PayAction",
-            "schema:ReturnAction",
+            "schema:TipAction",
             "schema:AuthorizeAction",
-            "schema:CommunicateAction"
+            "schema:Message",
+            "schema:CommunicateAction",
+            "schema:DonateAction",
+            "schema:ReturnAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Audience",
             "schema:Person",
+            "schema:Audience",
+            "schema:Organization",
             "schema:ContactPoint"
          ]
       }

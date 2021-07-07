@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
@@ -412,6 +412,35 @@ has alternative_headline => (
     is        => 'rw',
     predicate => '_has_alternative_headline',
     json_ld   => 'alternativeHeadline',
+);
+
+
+=head2 C<archived_at>
+
+C<archivedAt>
+
+Indicates a page or other link involved in archival of a L<SemanticWeb::Schema::CreativeWork>. In the case of L<SemanticWeb::Schema::MediaReview>, the items in a L<SemanticWeb::Schema::MediaReviewItem> may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content.
+
+A archived_at should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::WebPage']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_archived_at>
+
+A predicate for the L</archived_at> attribute.
+
+=cut
+
+has archived_at => (
+    is        => 'rw',
+    predicate => '_has_archived_at',
+    json_ld   => 'archivedAt',
 );
 
 
@@ -1001,6 +1030,37 @@ has correction => (
     is        => 'rw',
     predicate => '_has_correction',
     json_ld   => 'correction',
+);
+
+
+=head2 C<country_of_origin>
+
+C<countryOfOrigin>
+
+The country of origin of something, including products as well as creative  works such as movie and TV content.
+
+In the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of L<SemanticWeb::Schema::CreativeWork> it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.
+
+In the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.
+
+A country_of_origin should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Country']>
+
+=back
+
+=head2 C<_has_country_of_origin>
+
+A predicate for the L</country_of_origin> attribute.
+
+=cut
+
+has country_of_origin => (
+    is        => 'rw',
+    predicate => '_has_country_of_origin',
+    json_ld   => 'countryOfOrigin',
 );
 
 
@@ -1740,6 +1800,33 @@ has interactivity_type => (
     is        => 'rw',
     predicate => '_has_interactivity_type',
     json_ld   => 'interactivityType',
+);
+
+
+=head2 C<interpreted_as_claim>
+
+C<interpretedAsClaim>
+
+Used to indicate a specific claim contained, implied, translated or refined from the content of a L<SemanticWeb::Schema::MediaObject> or other L<SemanticWeb::Schema::CreativeWork>. The interpreting party can be indicated using [[claimInterpreter]].
+
+A interpreted_as_claim should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Claim']>
+
+=back
+
+=head2 C<_has_interpreted_as_claim>
+
+A predicate for the L</interpreted_as_claim> attribute.
+
+=cut
+
+has interpreted_as_claim => (
+    is        => 'rw',
+    predicate => '_has_interpreted_as_claim',
+    json_ld   => 'interpretedAsClaim',
 );
 
 

@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::RefundTypeEnumeration;
 
-# ABSTRACT: RefundTypeEnumeration enumerates several kinds of product return refund types.
+# ABSTRACT: Enumerates several kinds of product return refund types.
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v12.0.1';
+our $VERSION = 'v13.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-RefundTypeEnumeration enumerates several kinds of product return refund
-types.
+Enumerates several kinds of product return refund types.
 
 
 
