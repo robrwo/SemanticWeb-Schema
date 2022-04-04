@@ -32,7 +32,7 @@ to embed in websites.
 This is a base class for the `SemanticWeb::Schema` classes, which
 were generated automatically from the following sources:
 
-- [https://schema.org/version/13.0/schemaorg-all-http.rdf](https://schema.org/version/13.0/schemaorg-all-http.rdf)
+- [https://schema.org/version/14.0/schemaorg-all-http.rdf](https://schema.org/version/14.0/schemaorg-all-http.rdf)
 
 # ATTRIBUTES
 
