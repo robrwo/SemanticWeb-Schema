@@ -35,10 +35,10 @@
          "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure.",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:TherapeuticProcedure",
             "schema:MedicalCondition",
+            "schema:Patient",
             "schema:DrugClass",
-            "schema:Patient"
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -48,8 +48,8 @@
          "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
          "rdfs:label" : "epidemiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -145,15 +145,15 @@
          "rdfs:comment" : "The status of the study (enumerated).",
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:MedicalCondition",
             "schema:MedicalProcedure",
-            "schema:MedicalCondition"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalStudyStatus",
+            "schema:Text",
             "schema:EventStatusType",
-            "schema:Text"
+            "schema:MedicalStudyStatus"
          ]
       },
       "schema:typicalTest" : {

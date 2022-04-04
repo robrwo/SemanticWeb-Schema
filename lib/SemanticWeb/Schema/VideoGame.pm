@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -173,6 +173,34 @@ has directors => (
     is        => 'rw',
     predicate => '_has_directors',
     json_ld   => 'directors',
+);
+
+
+=head2 C<game_edition>
+
+C<gameEdition>
+
+The edition of a video game.
+
+
+A game_edition should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_game_edition>
+
+A predicate for the L</game_edition> attribute.
+
+=cut
+
+has game_edition => (
+    is        => 'rw',
+    predicate => '_has_game_edition',
+    json_ld   => 'gameEdition',
 );
 
 

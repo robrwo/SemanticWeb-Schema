@@ -12,9 +12,9 @@
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
-            "schema:LodgingBusiness",
+            "schema:Accommodation",
             "schema:Place",
-            "schema:Accommodation"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
@@ -24,11 +24,11 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Service",
-            "schema:PlayAction",
             "schema:Product",
+            "schema:CreativeWork",
             "schema:Event",
+            "schema:PlayAction",
+            "schema:Service",
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:Audience"
@@ -38,14 +38,14 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
             "schema:ServiceChannel",
+            "schema:ContactPoint",
             "schema:TouristAttraction",
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:checkinTime" : {
@@ -66,12 +66,12 @@
          "rdfs:comment" : "The latest someone may check out of a lodging establishment.",
          "rdfs:label" : "checkoutTime",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:LodgingReservation"
+            "schema:LodgingReservation",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       },
       "schema:numberOfRooms" : {
@@ -79,17 +79,17 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:Suite",
+            "schema:Accommodation",
             "schema:LodgingBusiness",
-            "schema:FloorPlan",
-            "schema:SingleFamilyResidence",
             "schema:Apartment",
-            "schema:House"
+            "schema:House",
+            "schema:SingleFamilyResidence",
+            "schema:FloorPlan"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
@@ -98,14 +98,14 @@
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:LodgingBusiness",
             "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Boolean",
-            "schema:Text"
+            "schema:Text",
+            "schema:Boolean"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
@@ -114,8 +114,8 @@
          "rdfs:comment" : "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies. Use the author property to indicate the rating organization, e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).",
          "rdfs:label" : "starRating",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:FoodEstablishment"
+            "schema:FoodEstablishment",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:Rating",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"

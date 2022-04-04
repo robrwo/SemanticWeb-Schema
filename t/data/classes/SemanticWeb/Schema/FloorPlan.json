@@ -14,9 +14,9 @@
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
-            "schema:LodgingBusiness",
+            "schema:Accommodation",
             "schema:Place",
-            "schema:Accommodation"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
@@ -49,8 +49,8 @@
          "schema:domainIncludes" : "schema:FloorPlan",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:ImageObject"
+            "schema:ImageObject",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2690"
       },
@@ -96,13 +96,13 @@
          "rdfs:label" : "numberOfBedrooms",
          "schema:domainIncludes" : [
             "schema:ApartmentComplex",
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       },
@@ -135,17 +135,17 @@
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:Suite",
+            "schema:Accommodation",
             "schema:LodgingBusiness",
-            "schema:FloorPlan",
-            "schema:SingleFamilyResidence",
             "schema:Apartment",
-            "schema:House"
+            "schema:House",
+            "schema:SingleFamilyResidence",
+            "schema:FloorPlan"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       },
@@ -154,14 +154,14 @@
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:LodgingBusiness",
             "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Boolean",
-            "schema:Text"
+            "schema:Text",
+            "schema:Boolean"
          ],
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
       }

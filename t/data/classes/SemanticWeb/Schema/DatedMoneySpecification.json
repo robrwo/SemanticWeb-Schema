@@ -12,19 +12,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
-            "schema:MoneyTransfer",
             "schema:MonetaryGrant",
-            "schema:DatedMoneySpecification",
-            "schema:LoanOrCredit"
+            "schema:MoneyTransfer",
+            "schema:LoanOrCredit",
+            "schema:InvestmentOrDeposit",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:currency" : {
@@ -32,11 +32,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:ExchangeRateSpecification",
-            "schema:MonetaryAmount",
             "schema:LoanOrCredit",
-            "schema:MonetaryAmountDistribution"
+            "schema:MonetaryAmount",
+            "schema:MonetaryAmountDistribution",
+            "schema:ExchangeRateSpecification",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -46,14 +46,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
             "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Schedule",
             "schema:Role",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Event",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -66,14 +66,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:CreativeWorkSeason",
-            "schema:Event",
-            "schema:Role",
             "schema:CreativeWorkSeries",
             "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification"
+            "schema:CreativeWorkSeason",
+            "schema:Schedule",
+            "schema:Event",
+            "schema:Role",
+            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

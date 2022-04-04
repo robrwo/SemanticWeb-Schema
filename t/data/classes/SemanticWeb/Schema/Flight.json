@@ -85,8 +85,8 @@
          "rdfs:label" : "estimatedFlightDuration",
          "schema:domainIncludes" : "schema:Flight",
          "schema:rangeIncludes" : [
-            "schema:Duration",
-            "schema:Text"
+            "schema:Text",
+            "schema:Duration"
          ]
       },
       "schema:flightDistance" : {
@@ -120,11 +120,11 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Order",
+            "schema:Flight",
             "schema:Demand",
             "schema:BuyAction",
             "schema:Offer",
-            "schema:Flight"
+            "schema:Order"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",

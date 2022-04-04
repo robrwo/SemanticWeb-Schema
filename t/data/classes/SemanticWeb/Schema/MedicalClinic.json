@@ -4,8 +4,8 @@
       "rdfs:comment" : "A facility, often associated with a hospital or medical school, that is devoted to the specific diagnosis and/or healthcare. Previously limited to outpatients but with evolution it may be open to inpatients as well.",
       "rdfs:label" : "MedicalClinic",
       "rdfs:subClassOf" : [
-         "schema:MedicalBusiness",
-         "schema:MedicalOrganization"
+         "schema:MedicalOrganization",
+         "schema:MedicalBusiness"
       ],
       "schema:isPartOf" : "http:health-lifesci.schema.org"
    },
@@ -16,14 +16,14 @@
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
             "schema:Physician",
-            "schema:MedicalClinic",
-            "schema:Hospital"
+            "schema:Hospital",
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:MedicalTest",
             "schema:MedicalProcedure",
-            "schema:MedicalTherapy",
-            "schema:MedicalTest"
+            "schema:MedicalTherapy"
          ]
       },
       "schema:medicalSpecialty" : {
@@ -31,10 +31,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalClinic",
-            "schema:Physician",
+            "schema:Hospital",
             "schema:MedicalOrganization",
-            "schema:Hospital"
+            "schema:Physician",
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

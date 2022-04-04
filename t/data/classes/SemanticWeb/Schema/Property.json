@@ -44,8 +44,8 @@
          "schema:isPartOf" : "http:meta.schema.org",
          "schema:rangeIncludes" : [
             "schema:Enumeration",
-            "schema:Property",
-            "schema:Class"
+            "schema:Class",
+            "schema:Property"
          ]
       }
    }

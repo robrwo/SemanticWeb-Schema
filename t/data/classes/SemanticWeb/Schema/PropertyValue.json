@@ -12,10 +12,10 @@
          "rdfs:comment" : "The upper value of some characteristic or property.",
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
+            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
             "schema:PropertyValue",
-            "schema:PropertyValueSpecification"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -25,10 +25,10 @@
          "rdfs:comment" : "A technique or technology used in a [[Dataset]] (or [[DataDownload]], [[DataCatalog]]),\ncorresponding to the method used for measuring the corresponding variable(s) (described using [[variableMeasured]]). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.\n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".\n\nIf the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".\n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]].\n      ",
          "rdfs:label" : "measurementTechnique",
          "schema:domainIncludes" : [
-            "schema:DataDownload",
-            "schema:Dataset",
+            "schema:PropertyValue",
             "schema:DataCatalog",
-            "schema:PropertyValue"
+            "schema:Dataset",
+            "schema:DataDownload"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -42,10 +42,10 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -56,8 +56,8 @@
          "rdfs:label" : "propertyID",
          "schema:domainIncludes" : "schema:PropertyValue",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:unitCode" : {
@@ -65,14 +65,14 @@
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification"
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -81,10 +81,10 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -93,15 +93,15 @@
          "rdfs:comment" : "The value of the quantitative value or property value node.\\n\\n* For [[QuantitativeValue]] and [[MonetaryAmount]], the recommended type for values is 'Number'.\\n* For [[PropertyValue]], it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
          "rdfs:label" : "value",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
             "schema:QuantitativeValue",
+            "schema:PropertyValue",
             "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
-            "schema:StructuredValue",
             "schema:Text",
-            "schema:Boolean",
-            "schema:Number"
+            "schema:Number",
+            "schema:StructuredValue",
+            "schema:Boolean"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -110,19 +110,19 @@
          "rdfs:comment" : "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
          "rdfs:label" : "valueReference",
          "schema:domainIncludes" : [
-            "schema:QualitativeValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : [
+            "schema:Enumeration",
             "schema:DefinedTerm",
-            "schema:MeasurementTypeEnumeration",
-            "schema:QuantitativeValue",
             "schema:Text",
+            "schema:MeasurementTypeEnumeration",
+            "schema:QualitativeValue",
             "schema:StructuredValue",
             "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:Enumeration"
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

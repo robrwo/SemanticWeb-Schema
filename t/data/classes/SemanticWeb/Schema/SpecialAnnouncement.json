@@ -26,24 +26,25 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Service",
+            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
             "schema:Product",
-            "schema:Recommendation",
-            "schema:Service"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
+            "schema:PhysicalActivityCategory",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:CategoryCode"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:datePosted" : {
@@ -51,18 +52,18 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:RealEstateListing",
             "schema:CDCPMDRecord",
-            "schema:JobPosting"
+            "schema:RealEstateListing",
+            "schema:JobPosting",
+            "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2521",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/2521"
          ]
       },
       "schema:diseasePreventionInfo" : {
@@ -72,8 +73,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -84,10 +85,10 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL",
+            "schema:Dataset",
             "schema:Observation",
-            "schema:Dataset"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -131,8 +132,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -177,13 +178,13 @@
          "rdfs:comment" : "The URL for a feed, e.g. associated with a podcast series, blog, or series of date-stamped updates. This is usually RSS or Atom.",
          "rdfs:label" : "webFeed",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:PodcastSeries"
+            "schema:PodcastSeries",
+            "schema:SpecialAnnouncement"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:DataFeed"
+            "schema:DataFeed",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/373"
       }

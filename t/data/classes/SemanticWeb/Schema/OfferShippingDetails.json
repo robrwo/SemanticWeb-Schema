@@ -13,8 +13,8 @@
          "rdfs:comment" : "The total delay between the receipt of the order and the goods reaching the final customer.",
          "rdfs:label" : "deliveryTime",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:DeliveryTimeSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:ShippingDeliveryTime",
@@ -37,9 +37,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:DeliveryTimeSettings",
             "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -83,8 +83,8 @@
          "rdfs:comment" : "Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within the context of a [[shippingSettingsLink]] cross-reference).",
          "rdfs:label" : "transitTimeLabel",
          "schema:domainIncludes" : [
-            "schema:DeliveryTimeSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

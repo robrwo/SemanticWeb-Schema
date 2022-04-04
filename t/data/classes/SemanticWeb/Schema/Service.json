@@ -11,14 +11,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Offer",
-            "schema:Organization",
-            "schema:Event",
-            "schema:Place",
             "schema:Brand",
+            "schema:CreativeWork",
+            "schema:Place",
             "schema:Product",
-            "schema:Service"
+            "schema:Event",
+            "schema:Offer",
+            "schema:Service",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -28,17 +28,17 @@
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
             "schema:Organization",
+            "schema:Offer",
             "schema:Service",
             "schema:Demand",
-            "schema:Offer",
             "schema:DeliveryChargeSpecification",
             "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : [
             "schema:AdministrativeArea",
-            "schema:Place",
+            "schema:GeoShape",
             "schema:Text",
-            "schema:GeoShape"
+            "schema:Place"
          ]
       },
       "schema:audience" : {
@@ -46,11 +46,11 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Service",
-            "schema:PlayAction",
             "schema:Product",
+            "schema:CreativeWork",
             "schema:Event",
+            "schema:PlayAction",
+            "schema:Service",
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:Audience"
@@ -67,9 +67,9 @@
          "rdfs:comment" : "An award won by or for this item.",
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Product",
             "schema:Service",
+            "schema:Product",
+            "schema:Person",
             "schema:CreativeWork",
             "schema:Organization"
          ],
@@ -80,8 +80,8 @@
          "rdfs:comment" : "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
-            "schema:Service",
             "schema:Organization",
+            "schema:Service",
             "schema:Product",
             "schema:Person"
          ],
@@ -101,8 +101,8 @@
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:category" : {
@@ -110,24 +110,25 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Service",
+            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
             "schema:Product",
-            "schema:Recommendation",
-            "schema:Service"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
+            "schema:PhysicalActivityCategory",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:CategoryCode"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:hasOfferCatalog" : {
@@ -135,9 +136,9 @@
          "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
-            "schema:Service",
             "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -146,8 +147,8 @@
          "rdfs:comment" : "The hours during which this service or contact is available.",
          "rdfs:label" : "hoursAvailable",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
             "schema:ContactPoint",
+            "schema:LocationFeatureSpecification",
             "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
@@ -157,12 +158,12 @@
          "rdfs:comment" : "A pointer to another, somehow related product (or multiple products).",
          "rdfs:label" : "isRelatedTo",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
-            "schema:Service"
+            "schema:Service",
+            "schema:Product"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -186,15 +187,15 @@
          "rdfs:label" : "logo",
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Brand",
-            "schema:Organization",
+            "schema:Product",
             "schema:Place",
-            "schema:Product"
+            "schema:Organization",
+            "schema:Service",
+            "schema:Brand"
          ],
          "schema:rangeIncludes" : [
-            "schema:ImageObject",
-            "schema:URL"
+            "schema:URL",
+            "schema:ImageObject"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -203,19 +204,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Event",
             "schema:MenuItem",
-            "schema:Product",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:Trip",
             "schema:CreativeWork",
-            "schema:AggregateOffer"
+            "schema:AggregateOffer",
+            "schema:Event",
+            "schema:Trip",
+            "schema:EducationalOccupationalProgram",
+            "schema:Product",
+            "schema:Service"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -232,19 +233,24 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Invoice",
+            "schema:Action",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram",
             "schema:Service",
             "schema:ParcelDelivery",
-            "schema:Trip",
-            "schema:CreativeWork",
-            "schema:Reservation"
+            "schema:Invoice",
+            "schema:Reservation",
+            "schema:Trip"
          ],
+         "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Organization",
             "schema:Person"
          ],
-         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+         "schema:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2927"
+         ]
       },
       "schema:providerMobility" : {
          "rdf:type" : "rdf:Property",
@@ -258,14 +264,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Organization",
-            "schema:Service",
+            "schema:Offer",
             "schema:Product",
             "schema:Brand",
+            "schema:Organization",
+            "schema:Service",
             "schema:Event",
             "schema:Place",
-            "schema:Offer"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -274,13 +280,13 @@
          "rdfs:comment" : "The geographic area where the service is provided.",
          "rdfs:label" : "serviceArea",
          "schema:domainIncludes" : [
-            "schema:Service",
             "schema:Organization",
-            "schema:ContactPoint"
+            "schema:ContactPoint",
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:AdministrativeArea",
             "schema:GeoShape",
+            "schema:AdministrativeArea",
             "schema:Place"
          ],
          "schema:supersededBy" : "schema:areaServed"
@@ -315,10 +321,10 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Organization",
             "schema:Product",
             "schema:Brand",
+            "schema:Service",
+            "schema:Organization",
             "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"

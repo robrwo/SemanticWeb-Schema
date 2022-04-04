@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -837,6 +837,33 @@ has funder => (
 );
 
 
+=head2 C<funding>
+
+
+
+A L<SemanticWeb::Schema::Grant> that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].
+
+A funding should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Grant']>
+
+=back
+
+=head2 C<_has_funding>
+
+A predicate for the L</funding> attribute.
+
+=cut
+
+has funding => (
+    is        => 'rw',
+    predicate => '_has_funding',
+    json_ld   => 'funding',
+);
+
+
 =head2 C<global_location_number>
 
 C<globalLocationNumber>
@@ -1066,6 +1093,70 @@ has isic_v4 => (
     is        => 'rw',
     predicate => '_has_isic_v4',
     json_ld   => 'isicV4',
+);
+
+
+=head2 C<iso6523code>
+
+C<iso6523Code>
+
+An organization identifier as defined in ISO 6523(-1). Note that many
+existing organization identifiers such as
+[leiCode](http://schema.org/leiCode), [duns](http://schema.org/duns) and
+[vatID](http://schema.org/vatID) can be expressed as an ISO 6523 identifier
+by setting the ICD part of the ISO 6523 identifier accordingly. 
+
+
+A iso6523code should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_iso6523code>
+
+A predicate for the L</iso6523code> attribute.
+
+=cut
+
+has iso6523code => (
+    is        => 'rw',
+    predicate => '_has_iso6523code',
+    json_ld   => 'iso6523Code',
+);
+
+
+=head2 C<keywords>
+
+
+
+Keywords or tags used to describe some item. Multiple textual entries in a
+keywords list are typically delimited by commas, or by repeating the
+property.
+
+
+A keywords should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_keywords>
+
+A predicate for the L</keywords> attribute.
+
+=cut
+
+has keywords => (
+    is        => 'rw',
+    predicate => '_has_keywords',
+    json_ld   => 'keywords',
 );
 
 

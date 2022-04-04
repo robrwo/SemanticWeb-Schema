@@ -12,8 +12,8 @@
          "rdfs:label" : "bookingAgent",
          "schema:domainIncludes" : "schema:Reservation",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:broker"
       },
@@ -35,8 +35,8 @@
             "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:modifiedTime" : {
@@ -53,9 +53,9 @@
          "schema:domainIncludes" : [
             "schema:Ticket",
             "schema:Offer",
-            "schema:TradeAction",
             "schema:PriceSpecification",
-            "schema:Reservation"
+            "schema:Reservation",
+            "schema:TradeAction"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -71,19 +71,24 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Invoice",
+            "schema:Action",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram",
             "schema:Service",
             "schema:ParcelDelivery",
-            "schema:Trip",
-            "schema:CreativeWork",
-            "schema:Reservation"
+            "schema:Invoice",
+            "schema:Reservation",
+            "schema:Trip"
          ],
+         "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Organization",
             "schema:Person"
          ],
-         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+         "schema:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2927"
+         ]
       },
       "schema:reservationFor" : {
          "rdf:type" : "rdf:Property",
@@ -118,13 +123,13 @@
          "rdfs:comment" : "The total price for the reservation or ticket, including applicable taxes, shipping, etc.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
          "rdfs:label" : "totalPrice",
          "schema:domainIncludes" : [
-            "schema:Ticket",
-            "schema:Reservation"
+            "schema:Reservation",
+            "schema:Ticket"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:PriceSpecification",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:underName" : {
@@ -136,8 +141,8 @@
             "schema:Ticket"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       }
    }

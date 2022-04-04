@@ -13,14 +13,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
             "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Schedule",
             "schema:Role",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Event",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -33,8 +33,8 @@
          "rdfs:comment" : "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the [[returnPolicyCategory]] property is specified as [[MerchantReturnFiniteReturnWindow]].",
          "rdfs:label" : "merchantReturnDays",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -61,14 +61,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:CreativeWorkSeason",
-            "schema:Event",
-            "schema:Role",
             "schema:CreativeWorkSeries",
             "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification"
+            "schema:CreativeWorkSeason",
+            "schema:Schedule",
+            "schema:Event",
+            "schema:Role",
+            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

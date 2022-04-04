@@ -26,9 +26,9 @@
          "rdfs:comment" : "Genre of the creative work, broadcast channel or group.",
          "rdfs:label" : "genre",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:MusicGroup",
             "schema:BroadcastChannel",
-            "schema:MusicGroup"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -52,8 +52,8 @@
             "schema:MusicPlaylist"
          ],
          "schema:rangeIncludes" : [
-            "schema:MusicRecording",
-            "schema:ItemList"
+            "schema:ItemList",
+            "schema:MusicRecording"
          ],
          "schema:source" : "schemadotorgsources:MBZ"
       },

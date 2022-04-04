@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -859,6 +859,38 @@ has isic_v4 => (
     is        => 'rw',
     predicate => '_has_isic_v4',
     json_ld   => 'isicV4',
+);
+
+
+=head2 C<keywords>
+
+
+
+Keywords or tags used to describe some item. Multiple textual entries in a
+keywords list are typically delimited by commas, or by repeating the
+property.
+
+
+A keywords should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_keywords>
+
+A predicate for the L</keywords> attribute.
+
+=cut
+
+has keywords => (
+    is        => 'rw',
+    predicate => '_has_keywords',
+    json_ld   => 'keywords',
 );
 
 

@@ -6,9 +6,9 @@
       "rdfs:subClassOf" : "schema:Place",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "https://github.com/schemaorg/schemaorg/issues/1810",
          "schemadotorgsources:IIT-CNR.it",
-         "schemadotorgsources:Tourism"
+         "schemadotorgsources:Tourism",
+         "https://github.com/schemaorg/schemaorg/issues/1810"
       ]
    },
    "properties" : {
@@ -21,8 +21,8 @@
          "schema:rangeIncludes" : "schema:TouristAttraction",
          "schema:source" : [
             "schemadotorgsources:Tourism",
-            "https://github.com/schemaorg/schemaorg/issues/1810",
-            "schemadotorgsources:IIT-CNR.it"
+            "schemadotorgsources:IIT-CNR.it",
+            "https://github.com/schemaorg/schemaorg/issues/1810"
          ]
       },
       "schema:touristType" : {
@@ -31,16 +31,16 @@
          "rdfs:label" : "touristType",
          "schema:domainIncludes" : [
             "schema:TouristTrip",
-            "schema:TouristAttraction",
-            "schema:TouristDestination"
+            "schema:TouristDestination",
+            "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
             "schema:Audience",
             "schema:Text"
          ],
          "schema:source" : [
-            "schemadotorgsources:Tourism",
-            "schemadotorgsources:IIT-CNR.it"
+            "schemadotorgsources:IIT-CNR.it",
+            "schemadotorgsources:Tourism"
          ]
       }
    }

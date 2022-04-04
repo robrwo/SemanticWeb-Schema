@@ -13,8 +13,8 @@
          "rdfs:label" : "arrivalTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:departureTime" : {
@@ -23,8 +23,8 @@
          "rdfs:label" : "departureTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:itinerary" : {
@@ -47,19 +47,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:Event",
             "schema:MenuItem",
-            "schema:Product",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:Trip",
             "schema:CreativeWork",
-            "schema:AggregateOffer"
+            "schema:AggregateOffer",
+            "schema:Event",
+            "schema:Trip",
+            "schema:EducationalOccupationalProgram",
+            "schema:Product",
+            "schema:Service"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -81,19 +81,24 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Invoice",
+            "schema:Action",
+            "schema:CreativeWork",
             "schema:EducationalOccupationalProgram",
             "schema:Service",
             "schema:ParcelDelivery",
-            "schema:Trip",
-            "schema:CreativeWork",
-            "schema:Reservation"
+            "schema:Invoice",
+            "schema:Reservation",
+            "schema:Trip"
          ],
+         "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Organization",
             "schema:Person"
          ],
-         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+         "schema:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2927"
+         ]
       },
       "schema:subTrip" : {
          "rdf:type" : "rdf:Property",
@@ -104,8 +109,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Trip",
          "schema:source" : [
-            "schemadotorgsources:Tourism",
-            "https://github.com/schemaorg/schemaorg/issues/1810"
+            "https://github.com/schemaorg/schemaorg/issues/1810",
+            "schemadotorgsources:Tourism"
          ]
       }
    }

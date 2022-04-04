@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -37,13 +37,25 @@ The amount of a L<SemanticWeb::Schema::Grant> is represented using [[amount]] as
 
 C<fundedItem>
 
-Indicates an item funded or sponsored through a L<SemanticWeb::Schema::Grant>.
+Indicates something directly or indirectly funded or sponsored through a L<SemanticWeb::Schema::Grant>. See also [[ownershipFundingInfo]].
 
 A funded_item should be one of the following types:
 
 =over
 
-=item C<InstanceOf['SemanticWeb::Schema::Thing']>
+=item C<InstanceOf['SemanticWeb::Schema::BioChemEntity']>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Event']>
+
+=item C<InstanceOf['SemanticWeb::Schema::MedicalEntity']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Product']>
 
 =back
 
@@ -57,6 +69,37 @@ has funded_item => (
     is        => 'rw',
     predicate => '_has_funded_item',
     json_ld   => 'fundedItem',
+);
+
+
+=head2 C<funder>
+
+
+
+A person or organization that supports (sponsors) something through some
+kind of financial contribution.
+
+
+A funder should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=head2 C<_has_funder>
+
+A predicate for the L</funder> attribute.
+
+=cut
+
+has funder => (
+    is        => 'rw',
+    predicate => '_has_funder',
+    json_ld   => 'funder',
 );
 
 

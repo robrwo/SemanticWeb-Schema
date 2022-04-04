@@ -6,7 +6,7 @@ package SemanticWeb::Schema::AmpStory;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::CreativeWork /;
+extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::MediaObject /;
 
 
 use MooX::JSON_LD 'AmpStory';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ online, particularly on mobile devices.
 
 
 
-L<SemanticWeb::Schema::CreativeWork>
+L<SemanticWeb::Schema::MediaObject>
 
 =cut
 

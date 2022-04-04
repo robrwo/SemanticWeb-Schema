@@ -33,8 +33,8 @@
             "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceSpecification",
             "schema:Number",
+            "schema:PriceSpecification",
             "schema:MonetaryAmount"
          ]
       },
@@ -51,18 +51,18 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:RealEstateListing",
             "schema:CDCPMDRecord",
-            "schema:JobPosting"
+            "schema:RealEstateListing",
+            "schema:JobPosting",
+            "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2521",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/2521"
          ]
       },
       "schema:directApply" : {
@@ -79,8 +79,8 @@
          "rdfs:comment" : "Educational background needed for the position or Occupation.",
          "rdfs:label" : "educationRequirements",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -88,8 +88,8 @@
             "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1779",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1779"
          ]
       },
       "schema:eligibilityToWorkRequirement" : {
@@ -131,12 +131,12 @@
          "rdfs:comment" : "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
          "rdfs:label" : "estimatedSalary",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
             "schema:MonetaryAmountDistribution",
+            "schema:MonetaryAmount",
             "schema:Number"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
@@ -155,12 +155,12 @@
          "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
          "rdfs:label" : "experienceRequirements",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:OccupationalExperienceRequirements",
-            "schema:Text"
+            "schema:Text",
+            "schema:OccupationalExperienceRequirements"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -245,21 +245,21 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
-            "schema:WorkBasedProgram",
-            "schema:Occupation",
+            "schema:JobPosting",
             "schema:EducationalOccupationalProgram",
-            "schema:JobPosting"
+            "schema:Occupation",
+            "schema:WorkBasedProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2460",
             "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/2192",
-            "https://github.com/schemaorg/schemaorg/issues/2460"
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:physicalRequirement" : {
@@ -306,8 +306,8 @@
          "rdfs:comment" : "Responsibilities associated with this role or Occupation.",
          "rdfs:label" : "responsibilities",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
@@ -317,8 +317,8 @@
          "rdfs:comment" : "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) ) used for the main salary information in this job posting or for this employee.",
          "rdfs:label" : "salaryCurrency",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:EmployeeRole"
+            "schema:EmployeeRole",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -329,8 +329,8 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -342,8 +342,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:DefinedTerm",
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -392,17 +392,17 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
-            "schema:MonetaryAmount",
             "schema:OpeningHoursSpecification",
-            "schema:Offer",
             "schema:Demand",
-            "schema:PriceSpecification"
+            "schema:Offer",
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },

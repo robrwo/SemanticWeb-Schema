@@ -14,12 +14,24 @@
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:QualitativeValue",
-            "schema:MerchantReturnPolicy",
             "schema:Place",
-            "schema:Product"
+            "schema:Product",
+            "schema:MerchantReturnPolicy",
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
+      },
+      "schema:applicableCountry" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A country where a particular merchant return policy applies to, for example the two-letter ISO 3166-1 alpha-2 country code.",
+         "rdfs:label" : "applicableCountry",
+         "schema:domainIncludes" : "schema:MerchantReturnPolicy",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:Country"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3001"
       },
       "schema:customerRemorseReturnFees" : {
          "rdf:type" : "rdf:Property",
@@ -62,10 +74,10 @@
          "rdfs:comment" : "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
          "rdfs:label" : "itemCondition",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
             "schema:Demand",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
       },
@@ -101,8 +113,8 @@
          "rdfs:comment" : "Specifies either a fixed return date or the number of days (from the delivery date) that a product can be returned. Used when the [[returnPolicyCategory]] property is specified as [[MerchantReturnFiniteReturnWindow]].",
          "rdfs:label" : "merchantReturnDays",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

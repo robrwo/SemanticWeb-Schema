@@ -12,10 +12,10 @@
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
             "schema:QuantitativeValue",
-            "schema:QualitativeValue",
-            "schema:MerchantReturnPolicy",
             "schema:Place",
-            "schema:Product"
+            "schema:Product",
+            "schema:MerchantReturnPolicy",
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
       },
@@ -24,11 +24,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:Organization",
-            "schema:GeoCoordinates",
             "schema:GeoShape",
-            "schema:Person"
+            "schema:Person",
+            "schema:GeoCoordinates",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -40,14 +40,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Offer",
-            "schema:Organization",
-            "schema:Event",
-            "schema:Place",
             "schema:Brand",
+            "schema:CreativeWork",
+            "schema:Place",
             "schema:Product",
-            "schema:Service"
+            "schema:Event",
+            "schema:Offer",
+            "schema:Service",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -57,9 +57,9 @@
          "rdfs:label" : "amenityFeature",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
-            "schema:LodgingBusiness",
+            "schema:Accommodation",
             "schema:Place",
-            "schema:Accommodation"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
          "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
@@ -101,11 +101,11 @@
          "rdfs:label" : "event",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:InformAction",
-            "schema:PlayAction",
-            "schema:Place",
             "schema:LeaveAction",
             "schema:JoinAction",
+            "schema:InformAction",
+            "schema:Place",
+            "schema:PlayAction",
             "schema:InviteAction"
          ],
          "schema:rangeIncludes" : "schema:Event"
@@ -115,8 +115,8 @@
          "rdfs:comment" : "Upcoming or past events associated with this place or organization.",
          "rdfs:label" : "events",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Place"
+            "schema:Place",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Event",
          "schema:supersededBy" : "schema:event"
@@ -126,10 +126,10 @@
          "rdfs:comment" : "The fax number.",
          "rdfs:label" : "faxNumber",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:Organization",
+            "schema:ContactPoint",
             "schema:Person",
-            "schema:ContactPoint"
+            "schema:Organization",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -139,8 +139,8 @@
          "rdfs:label" : "geo",
          "schema:domainIncludes" : "schema:Place",
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:GeoShape"
          ]
       },
       "schema:geoContains" : {
@@ -152,8 +152,8 @@
             "schema:GeospatialGeometry"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeospatialGeometry",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeospatialGeometry"
          ]
       },
       "schema:geoCoveredBy" : {
@@ -161,8 +161,8 @@
          "rdfs:comment" : "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that covers it. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
          "rdfs:label" : "geoCoveredBy",
          "schema:domainIncludes" : [
-            "schema:GeospatialGeometry",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeospatialGeometry"
          ],
          "schema:rangeIncludes" : [
             "schema:Place",
@@ -174,8 +174,8 @@
          "rdfs:comment" : "Represents a relationship between two geometries (or the places they represent), relating a covering geometry to a covered geometry. \"Every point of b is a point of (the interior or boundary of) a\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
          "rdfs:label" : "geoCovers",
          "schema:domainIncludes" : [
-            "schema:GeospatialGeometry",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeospatialGeometry"
          ],
          "schema:rangeIncludes" : [
             "schema:GeospatialGeometry",
@@ -187,12 +187,12 @@
          "rdfs:comment" : "Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: \"a crosses b: they have some but not all interior points in common, and the dimension of the intersection is less than that of at least one of them\". As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
          "rdfs:label" : "geoCrosses",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ]
       },
       "schema:geoDisjoint" : {
@@ -200,12 +200,12 @@
          "rdfs:comment" : "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. They form a set of disconnected geometries.\" (a symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM))",
          "rdfs:label" : "geoDisjoint",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ]
       },
       "schema:geoEquals" : {
@@ -217,8 +217,8 @@
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeospatialGeometry",
-            "schema:Place"
+            "schema:Place",
+            "schema:GeospatialGeometry"
          ]
       },
       "schema:geoIntersects" : {
@@ -230,8 +230,8 @@
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ]
       },
       "schema:geoOverlaps" : {
@@ -243,8 +243,8 @@
             "schema:Place"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ]
       },
       "schema:geoTouches" : {
@@ -265,8 +265,8 @@
          "rdfs:comment" : "Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within) its interior. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
          "rdfs:label" : "geoWithin",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:GeospatialGeometry"
+            "schema:GeospatialGeometry",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
             "schema:Place",
@@ -279,9 +279,9 @@
          "rdfs:label" : "globalLocationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -301,8 +301,8 @@
          "rdfs:label" : "hasMap",
          "schema:domainIncludes" : "schema:Place",
          "schema:rangeIncludes" : [
-            "schema:Map",
-            "schema:URL"
+            "schema:URL",
+            "schema:Map"
          ]
       },
       "schema:isAccessibleForFree" : {
@@ -310,9 +310,9 @@
          "rdfs:comment" : "A flag to signal that the item, event, or place is accessible for free.",
          "rdfs:label" : "isAccessibleForFree",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:Event",
-            "schema:CreativeWork",
-            "schema:Place"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Boolean"
       },
@@ -321,12 +321,29 @@
          "rdfs:comment" : "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.",
          "rdfs:label" : "isicV4",
          "schema:domainIncludes" : [
+            "schema:Place",
             "schema:Organization",
-            "schema:Person",
-            "schema:Place"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+      },
+      "schema:keywords" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+         "rdfs:label" : "keywords",
+         "schema:domainIncludes" : [
+            "schema:Place",
+            "schema:CreativeWork",
+            "schema:Organization",
+            "schema:Product",
+            "schema:Event"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:Text",
+            "schema:URL"
+         ]
       },
       "schema:latitude" : {
          "rdf:type" : "rdf:Property",
@@ -347,15 +364,15 @@
          "rdfs:label" : "logo",
          "rdfs:subPropertyOf" : "schema:image",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Brand",
-            "schema:Organization",
+            "schema:Product",
             "schema:Place",
-            "schema:Product"
+            "schema:Organization",
+            "schema:Service",
+            "schema:Brand"
          ],
          "schema:rangeIncludes" : [
-            "schema:ImageObject",
-            "schema:URL"
+            "schema:URL",
+            "schema:ImageObject"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -393,8 +410,8 @@
          "rdfs:comment" : "The total number of individuals that may attend an event or venue.",
          "rdfs:label" : "maximumAttendeeCapacity",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:Place"
+            "schema:Place",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Integer"
       },
@@ -440,14 +457,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Organization",
-            "schema:Service",
+            "schema:Offer",
             "schema:Product",
             "schema:Brand",
+            "schema:Organization",
+            "schema:Service",
             "schema:Event",
             "schema:Place",
-            "schema:Offer"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -456,11 +473,11 @@
          "rdfs:comment" : "Review of the item.",
          "rdfs:label" : "reviews",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Product",
-            "schema:Offer",
             "schema:Place",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Offer",
+            "schema:Product",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Review",
          "schema:supersededBy" : "schema:review"
@@ -470,10 +487,10 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Organization",
             "schema:Product",
             "schema:Brand",
+            "schema:Service",
+            "schema:Organization",
             "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -498,10 +515,10 @@
          "rdfs:comment" : "The telephone number.",
          "rdfs:label" : "telephone",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:ContactPoint",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:Place",
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -510,9 +527,9 @@
          "rdfs:comment" : "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
          "rdfs:label" : "tourBookingPage",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:Place"
+            "schema:Place",
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:URL",

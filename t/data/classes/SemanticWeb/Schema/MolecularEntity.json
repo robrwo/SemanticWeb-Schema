@@ -88,8 +88,8 @@
          "rdfs:comment" : "Intended use of the BioChemEntity by humans.",
          "rdfs:label" : "potentialUse",
          "schema:domainIncludes" : [
-            "schema:MolecularEntity",
-            "schema:ChemicalSubstance"
+            "schema:ChemicalSubstance",
+            "schema:MolecularEntity"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm"

@@ -43,9 +43,9 @@
          "rdfs:label" : "identifier",
          "schema:domainIncludes" : "schema:Thing",
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:Text",
-            "schema:PropertyValue",
-            "schema:URL"
+            "schema:PropertyValue"
          ]
       },
       "schema:image" : {
@@ -65,8 +65,8 @@
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:mainEntity",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ]
       },
       "schema:name" : {
@@ -99,8 +99,8 @@
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:about",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:Event"
+            "schema:Event",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1670"
       },

@@ -12,11 +12,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:Organization",
-            "schema:GeoCoordinates",
             "schema:GeoShape",
-            "schema:Person"
+            "schema:Person",
+            "schema:GeoCoordinates",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -30,12 +30,12 @@
          "schema:domainIncludes" : [
             "schema:DefinedRegion",
             "schema:GeoShape",
-            "schema:PostalAddress",
-            "schema:GeoCoordinates"
+            "schema:GeoCoordinates",
+            "schema:PostalAddress"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Country"
+            "schema:Country",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
       },
@@ -62,8 +62,8 @@
             "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:line" : {
@@ -85,10 +85,10 @@
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
+            "schema:PostalAddress",
             "schema:DefinedRegion",
-            "schema:GeoShape",
             "schema:GeoCoordinates",
-            "schema:PostalAddress"
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

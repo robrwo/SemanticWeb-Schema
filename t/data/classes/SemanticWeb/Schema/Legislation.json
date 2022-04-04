@@ -1,8 +1,8 @@
 {
    "class" : {
       "core:closeMatch" : [
-         "ontology:LegalExpression",
-         "ontology:LegalResource"
+         "ontology:LegalResource",
+         "ontology:LegalExpression"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A legal document such as an act, decree, bill, etc. (enforceable or not) or a component of a legal act (like an article).",
@@ -20,13 +20,13 @@
          "rdfs:comment" : "Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.",
          "rdfs:label" : "jurisdiction",
          "schema:domainIncludes" : [
-            "schema:Legislation",
-            "schema:GovernmentService"
+            "schema:GovernmentService",
+            "schema:Legislation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:AdministrativeArea",
-            "schema:Text"
+            "schema:Text",
+            "schema:AdministrativeArea"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
       },
@@ -68,8 +68,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Legislation",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationDate" : {
@@ -83,8 +83,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Date",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationDateVersion" : {
@@ -110,12 +110,12 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationJurisdiction" : {
@@ -125,18 +125,18 @@
          "rdfs:comment" : "The jurisdiction from which the legislation originates.",
          "rdfs:label" : "legislationJurisdiction",
          "rdfs:subPropertyOf" : [
-            "schema:spatialCoverage",
-            "schema:jurisdiction"
+            "schema:jurisdiction",
+            "schema:spatialCoverage"
          ],
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:AdministrativeArea"
+            "schema:AdministrativeArea",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationLegalForce" : {
@@ -163,8 +163,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : [
             "eli:index.html",
@@ -184,8 +184,8 @@
             "schema:Person"
          ],
          "schema:source" : [
-            "eli:index.html",
-            "https://github.com/schemaorg/schemaorg/issues/1156"
+            "https://github.com/schemaorg/schemaorg/issues/1156",
+            "eli:index.html"
          ]
       },
       "schema:legislationTransposes" : {
@@ -213,12 +213,12 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       }
    }

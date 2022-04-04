@@ -11,17 +11,17 @@
          "rdfs:comment" : "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "actor",
          "schema:domainIncludes" : [
-            "schema:VideoGame",
-            "schema:CreativeWorkSeason",
-            "schema:Clip",
             "schema:Event",
-            "schema:Episode",
-            "schema:VideoObject",
-            "schema:Movie",
-            "schema:MovieSeries",
-            "schema:PodcastSeries",
-            "schema:RadioSeries",
             "schema:VideoGameSeries",
+            "schema:PodcastSeries",
+            "schema:VideoGame",
+            "schema:Clip",
+            "schema:Episode",
+            "schema:MovieSeries",
+            "schema:VideoObject",
+            "schema:RadioSeries",
+            "schema:CreativeWorkSeason",
+            "schema:Movie",
             "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Person"
@@ -31,17 +31,17 @@
          "rdfs:comment" : "A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "director",
          "schema:domainIncludes" : [
-            "schema:TVSeries",
-            "schema:VideoGame",
-            "schema:VideoObject",
             "schema:Event",
+            "schema:Episode",
+            "schema:Clip",
+            "schema:Movie",
             "schema:CreativeWorkSeason",
             "schema:MovieSeries",
-            "schema:Clip",
-            "schema:VideoGameSeries",
-            "schema:Movie",
+            "schema:TVSeries",
+            "schema:VideoGame",
             "schema:RadioSeries",
-            "schema:Episode"
+            "schema:VideoGameSeries",
+            "schema:VideoObject"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -50,14 +50,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeason",
             "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Schedule",
             "schema:Role",
-            "schema:Event"
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Event",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -71,9 +71,9 @@
          "rdfs:label" : "episode",
          "rdfs:subPropertyOf" : "schema:hasPart",
          "schema:domainIncludes" : [
+            "schema:RadioSeries",
             "schema:TVSeries",
             "schema:VideoGameSeries",
-            "schema:RadioSeries",
             "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : "schema:Episode"
@@ -83,10 +83,10 @@
          "rdfs:comment" : "An episode of a TV/radio series or season.",
          "rdfs:label" : "episodes",
          "schema:domainIncludes" : [
+            "schema:VideoGameSeries",
             "schema:TVSeries",
             "schema:CreativeWorkSeason",
-            "schema:RadioSeries",
-            "schema:VideoGameSeries"
+            "schema:RadioSeries"
          ],
          "schema:rangeIncludes" : "schema:Episode",
          "schema:supersededBy" : "schema:episode"
@@ -96,10 +96,10 @@
          "rdfs:comment" : "The number of episodes in this season or series.",
          "rdfs:label" : "numberOfEpisodes",
          "schema:domainIncludes" : [
+            "schema:VideoGameSeries",
             "schema:TVSeries",
-            "schema:RadioSeries",
             "schema:CreativeWorkSeason",
-            "schema:VideoGameSeries"
+            "schema:RadioSeries"
          ],
          "schema:rangeIncludes" : "schema:Integer"
       },
@@ -110,8 +110,8 @@
          "rdfs:subPropertyOf" : "schema:isPartOf",
          "schema:domainIncludes" : [
             "schema:CreativeWorkSeason",
-            "schema:Clip",
-            "schema:Episode"
+            "schema:Episode",
+            "schema:Clip"
          ],
          "schema:rangeIncludes" : "schema:CreativeWorkSeries"
       },
@@ -120,14 +120,14 @@
          "rdfs:comment" : "The production company or studio responsible for the item e.g. series, video game, episode etc.",
          "rdfs:label" : "productionCompany",
          "schema:domainIncludes" : [
-            "schema:Episode",
-            "schema:MediaObject",
-            "schema:CreativeWorkSeason",
-            "schema:MovieSeries",
-            "schema:VideoGameSeries",
             "schema:RadioSeries",
             "schema:Movie",
-            "schema:TVSeries"
+            "schema:MediaObject",
+            "schema:Episode",
+            "schema:CreativeWorkSeason",
+            "schema:TVSeries",
+            "schema:MovieSeries",
+            "schema:VideoGameSeries"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -147,14 +147,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:CreativeWorkSeason",
-            "schema:Event",
-            "schema:Role",
             "schema:CreativeWorkSeries",
             "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification"
+            "schema:CreativeWorkSeason",
+            "schema:Schedule",
+            "schema:Event",
+            "schema:Role",
+            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -167,13 +167,13 @@
          "rdfs:comment" : "The trailer of a movie or tv/radio series, season, episode, etc.",
          "rdfs:label" : "trailer",
          "schema:domainIncludes" : [
-            "schema:TVSeries",
-            "schema:VideoGame",
-            "schema:RadioSeries",
-            "schema:Movie",
             "schema:VideoGameSeries",
+            "schema:RadioSeries",
+            "schema:VideoGame",
             "schema:CreativeWorkSeason",
             "schema:MovieSeries",
+            "schema:TVSeries",
+            "schema:Movie",
             "schema:Episode"
          ],
          "schema:rangeIncludes" : "schema:VideoObject"

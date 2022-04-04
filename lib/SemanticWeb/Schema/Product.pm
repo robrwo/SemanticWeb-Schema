@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -221,6 +221,8 @@ A category should be one of the following types:
 
 =over
 
+=item C<InstanceOf['SemanticWeb::Schema::CategoryCode']>
+
 =item C<InstanceOf['SemanticWeb::Schema::PhysicalActivityCategory']>
 
 =item C<InstanceOf['SemanticWeb::Schema::Thing']>
@@ -386,6 +388,33 @@ has depth => (
 );
 
 
+=head2 C<funding>
+
+
+
+A L<SemanticWeb::Schema::Grant> that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].
+
+A funding should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Grant']>
+
+=back
+
+=head2 C<_has_funding>
+
+A predicate for the L</funding> attribute.
+
+=cut
+
+has funding => (
+    is        => 'rw',
+    predicate => '_has_funding',
+    json_ld   => 'funding',
+);
+
+
 =head2 C<gtin>
 
 
@@ -537,6 +566,35 @@ has gtin8 => (
     is        => 'rw',
     predicate => '_has_gtin8',
     json_ld   => 'gtin8',
+);
+
+
+=head2 C<has_adult_consideration>
+
+C<hasAdultConsideration>
+
+Used to tag an item to be intended or suitable for consumption or use by
+adults only.
+
+
+A has_adult_consideration should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::AdultOrientedEnumeration']>
+
+=back
+
+=head2 C<_has_has_adult_consideration>
+
+A predicate for the L</has_adult_consideration> attribute.
+
+=cut
+
+has has_adult_consideration => (
+    is        => 'rw',
+    predicate => '_has_has_adult_consideration',
+    json_ld   => 'hasAdultConsideration',
 );
 
 
@@ -771,6 +829,34 @@ has is_consumable_for => (
 );
 
 
+=head2 C<is_family_friendly>
+
+C<isFamilyFriendly>
+
+Indicates whether this content is family friendly.
+
+
+A is_family_friendly should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_is_family_friendly>
+
+A predicate for the L</is_family_friendly> attribute.
+
+=cut
+
+has is_family_friendly => (
+    is        => 'rw',
+    predicate => '_has_is_family_friendly',
+    json_ld   => 'isFamilyFriendly',
+);
+
+
 =head2 C<is_related_to>
 
 C<isRelatedTo>
@@ -888,6 +974,38 @@ has item_condition => (
     is        => 'rw',
     predicate => '_has_item_condition',
     json_ld   => 'itemCondition',
+);
+
+
+=head2 C<keywords>
+
+
+
+Keywords or tags used to describe some item. Multiple textual entries in a
+keywords list are typically delimited by commas, or by repeating the
+property.
+
+
+A keywords should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_keywords>
+
+A predicate for the L</keywords> attribute.
+
+=cut
+
+has keywords => (
+    is        => 'rw',
+    predicate => '_has_keywords',
+    json_ld   => 'keywords',
 );
 
 

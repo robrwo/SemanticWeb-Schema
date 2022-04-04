@@ -40,8 +40,8 @@
          "rdfs:comment" : "The item that is being reviewed/rated.",
          "rdfs:label" : "itemReviewed",
          "schema:domainIncludes" : [
-            "schema:AggregateRating",
-            "schema:Review"
+            "schema:Review",
+            "schema:AggregateRating"
          ],
          "schema:rangeIncludes" : "schema:Thing"
       },
@@ -52,10 +52,10 @@
          "schema:domainIncludes" : "schema:Review",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:ListItem",
             "schema:Text",
             "schema:WebContent",
-            "schema:ItemList",
-            "schema:ListItem"
+            "schema:ItemList"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2832"
       },
@@ -66,8 +66,8 @@
          "schema:domainIncludes" : "schema:Review",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:WebContent",
+            "schema:Text",
             "schema:ListItem",
             "schema:ItemList"
          ],
@@ -78,9 +78,9 @@
          "rdfs:comment" : "This Review or Rating is relevant to this part or facet of the itemReviewed.",
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
+            "schema:Review",
             "schema:Guide",
-            "schema:Rating",
-            "schema:Review"
+            "schema:Rating"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1689"

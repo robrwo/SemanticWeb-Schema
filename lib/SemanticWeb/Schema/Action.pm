@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -280,6 +280,38 @@ has participant => (
     is        => 'rw',
     predicate => '_has_participant',
     json_ld   => 'participant',
+);
+
+
+=head2 C<provider>
+
+
+
+The service provider, service operator, or service performer; the goods
+producer. Another party (a seller) may offer those services or goods on
+behalf of the provider. A provider may also serve as the seller.
+
+
+A provider should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Organization']>
+
+=item C<InstanceOf['SemanticWeb::Schema::Person']>
+
+=back
+
+=head2 C<_has_provider>
+
+A predicate for the L</provider> attribute.
+
+=cut
+
+has provider => (
+    is        => 'rw',
+    predicate => '_has_provider',
+    json_ld   => 'provider',
 );
 
 

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A Search and Rescue organization of some kind.",
+      "rdfs:label" : "SearchRescueOrganization",
+      "rdfs:subClassOf" : "schema:Organization",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3052"
+   },
+   "properties" : {}
+}

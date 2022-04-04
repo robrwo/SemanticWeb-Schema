@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "Enumeration of considerations that make a product relevant or potentially restricted for adults only.",
+      "rdfs:label" : "AdultOrientedEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

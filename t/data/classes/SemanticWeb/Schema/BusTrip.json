@@ -36,8 +36,8 @@
          "rdfs:label" : "departureBusStop",
          "schema:domainIncludes" : "schema:BusTrip",
          "schema:rangeIncludes" : [
-            "schema:BusStation",
-            "schema:BusStop"
+            "schema:BusStop",
+            "schema:BusStation"
          ]
       }
    }

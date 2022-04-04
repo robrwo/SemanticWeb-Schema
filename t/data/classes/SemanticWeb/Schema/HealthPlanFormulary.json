@@ -25,8 +25,8 @@
          "rdfs:comment" : "The tier(s) of drugs offered by this formulary or insurance plan.",
          "rdfs:label" : "healthPlanDrugTier",
          "schema:domainIncludes" : [
-            "schema:HealthPlanFormulary",
-            "schema:HealthInsurancePlan"
+            "schema:HealthInsurancePlan",
+            "schema:HealthPlanFormulary"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

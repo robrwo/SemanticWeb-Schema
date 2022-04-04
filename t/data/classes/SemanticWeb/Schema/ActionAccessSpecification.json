@@ -17,9 +17,9 @@
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
+            "schema:Date",
             "schema:DateTime",
-            "schema:Date"
+            "schema:Time"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -37,8 +37,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Time",
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -50,24 +50,25 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Service",
+            "schema:Recommendation",
+            "schema:SpecialAnnouncement",
             "schema:Invoice",
             "schema:ActionAccessSpecification",
-            "schema:SpecialAnnouncement",
             "schema:PhysicalActivity",
             "schema:Product",
-            "schema:Recommendation",
-            "schema:Service"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:Text",
+            "schema:PhysicalActivityCategory",
             "schema:Thing",
-            "schema:PhysicalActivityCategory"
+            "schema:CategoryCode"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:eligibleRegion" : {
@@ -77,18 +78,18 @@
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:ActionAccessSpecification",
+            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:Demand"
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
+            "schema:GeoShape",
             "schema:Text",
-            "schema:Place",
-            "schema:GeoShape"
+            "schema:Place"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:expectsAcceptanceOf" : {
@@ -96,8 +97,8 @@
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
             "schema:MediaSubscription",
+            "schema:ActionAccessSpecification",
             "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer",
@@ -108,17 +109,17 @@
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:Demand",
             "schema:Offer",
             "schema:ActionAccessSpecification",
-            "schema:DeliveryChargeSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:Demand",
+            "schema:MediaObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
+            "schema:Place",
             "schema:Text",
-            "schema:Place"
+            "schema:GeoShape"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2242"
       },
@@ -127,12 +128,12 @@
          "rdfs:comment" : "Indicates if use of the media require a subscription  (either paid or free). Allowed values are ```true``` or ```false``` (note that an earlier version had 'yes', 'no').",
          "rdfs:label" : "requiresSubscription",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Boolean",
-            "schema:MediaSubscription"
+            "schema:MediaSubscription",
+            "schema:Boolean"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       }

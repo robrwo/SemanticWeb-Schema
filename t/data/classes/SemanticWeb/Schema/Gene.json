@@ -36,9 +36,9 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:AnatomicalStructure",
+            "schema:BioChemEntity",
             "schema:DefinedTerm",
-            "schema:AnatomicalSystem",
-            "schema:BioChemEntity"
+            "schema:AnatomicalSystem"
          ]
       },
       "schema:hasBioPolymerSequence" : {

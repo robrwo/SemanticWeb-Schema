@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -686,6 +686,33 @@ has funder => (
     is        => 'rw',
     predicate => '_has_funder',
     json_ld   => 'funder',
+);
+
+
+=head2 C<funding>
+
+
+
+A L<SemanticWeb::Schema::Grant> that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].
+
+A funding should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Grant']>
+
+=back
+
+=head2 C<_has_funding>
+
+A predicate for the L</funding> attribute.
+
+=cut
+
+has funding => (
+    is        => 'rw',
+    predicate => '_has_funding',
+    json_ld   => 'funding',
 );
 
 

@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Grant",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "schemadotorgsources2:FundInfoCollab",
-         "https://github.com/schemaorg/schemaorg/issues/383"
+         "https://github.com/schemaorg/schemaorg/issues/383",
+         "schemadotorgsources2:FundInfoCollab"
       ]
    },
    "properties" : {
@@ -16,19 +16,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
-            "schema:MoneyTransfer",
             "schema:MonetaryGrant",
-            "schema:DatedMoneySpecification",
-            "schema:LoanOrCredit"
+            "schema:MoneyTransfer",
+            "schema:LoanOrCredit",
+            "schema:InvestmentOrDeposit",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:funder" : {
@@ -37,15 +37,16 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
+            "schema:Grant",
             "schema:Person",
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:MonetaryGrant",
+            "schema:CreativeWork",
+            "schema:Event",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       }
    }

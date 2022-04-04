@@ -15,8 +15,8 @@
             "schema:HowTo"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Text"
+            "schema:Text",
+            "schema:MonetaryAmount"
          ]
       }
    }

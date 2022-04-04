@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -59,6 +59,37 @@ has additional_property => (
     is        => 'rw',
     predicate => '_has_additional_property',
     json_ld   => 'additionalProperty',
+);
+
+
+=head2 C<applicable_country>
+
+C<applicableCountry>
+
+A country where a particular merchant return policy applies to, for example
+the two-letter ISO 3166-1 alpha-2 country code.
+
+
+A applicable_country should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Country']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_applicable_country>
+
+A predicate for the L</applicable_country> attribute.
+
+=cut
+
+has applicable_country => (
+    is        => 'rw',
+    predicate => '_has_applicable_country',
+    json_ld   => 'applicableCountry',
 );
 
 

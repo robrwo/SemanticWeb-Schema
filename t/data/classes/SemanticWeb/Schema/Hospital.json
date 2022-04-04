@@ -16,14 +16,14 @@
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
             "schema:Physician",
-            "schema:MedicalClinic",
-            "schema:Hospital"
+            "schema:Hospital",
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:MedicalTest",
             "schema:MedicalProcedure",
-            "schema:MedicalTherapy",
-            "schema:MedicalTest"
+            "schema:MedicalTherapy"
          ]
       },
       "schema:healthcareReportingData" : {
@@ -33,8 +33,8 @@
          "schema:domainIncludes" : "schema:Hospital",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CDCPMDRecord",
-            "schema:Dataset"
+            "schema:Dataset",
+            "schema:CDCPMDRecord"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -43,10 +43,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalClinic",
-            "schema:Physician",
+            "schema:Hospital",
             "schema:MedicalOrganization",
-            "schema:Hospital"
+            "schema:Physician",
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

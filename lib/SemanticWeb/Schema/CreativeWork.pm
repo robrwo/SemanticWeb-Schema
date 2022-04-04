@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -90,9 +90,10 @@ has abstract => (
 C<accessMode>
 
 The human sensory perceptual system or cognitive faculty through which a
-person may process or perceive information. Expected values include:
-auditory, tactile, textual, visual, colorDependent, chartOnVisual,
-chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual. 
+person may process or perceive information. Values should be drawn from the
+[approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessMode-vo
+cabulary).
 
 
 A access_mode should be one of the following types:
@@ -121,8 +122,10 @@ has access_mode => (
 C<accessModeSufficient>
 
 A list of single or combined accessModes that are sufficient to understand
-all the intellectual content of a resource. Expected values include:
-auditory, tactile, textual, visual. 
+all the intellectual content of a resource. Values should be drawn from the
+[approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessModeSuf
+ficient-vocabulary).
 
 
 A access_mode_sufficient should be one of the following types:
@@ -151,8 +154,9 @@ has access_mode_sufficient => (
 C<accessibilityAPI>
 
 Indicates that the resource is compatible with the referenced accessibility
-API ([WebSchemas wiki lists possible
-values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
+API. Values should be drawn from the [approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibility
+API-vocabulary).
 
 
 A accessibility_api should be one of the following types:
@@ -181,8 +185,9 @@ has accessibility_api => (
 C<accessibilityControl>
 
 Identifies input methods that are sufficient to fully control the described
-resource ([WebSchemas wiki lists possible
-values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
+resource. Values should be drawn from the [approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibility
+Control-vocabulary).
 
 
 A accessibility_control should be one of the following types:
@@ -211,8 +216,10 @@ has accessibility_control => (
 C<accessibilityFeature>
 
 Content features of the resource, such as accessible media, alternatives
-and supported enhancements for accessibility ([WebSchemas wiki lists
-possible values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
+and supported enhancements for accessibility. Values should be drawn from
+the [approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibility
+Feature-vocabulary).
 
 
 A accessibility_feature should be one of the following types:
@@ -241,9 +248,10 @@ has accessibility_feature => (
 C<accessibilityHazard>
 
 A characteristic of the described resource that is physiologically
-dangerous to some users. Related to WCAG 2.0 guideline 2.3 ([WebSchemas
-wiki lists possible
-values](http://www.w3.org/wiki/WebSchemas/Accessibility)).
+dangerous to some users. Related to WCAG 2.0 guideline 2.3. Values should
+be drawn from the [approved
+vocabulary](https://www.w3.org/2021/a11y-discov-vocab/latest/#accessibility
+Hazard-vocabulary).
 
 
 A accessibility_hazard should be one of the following types:
@@ -1630,6 +1638,33 @@ has funder => (
 );
 
 
+=head2 C<funding>
+
+
+
+A L<SemanticWeb::Schema::Grant> that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].
+
+A funding should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Grant']>
+
+=back
+
+=head2 C<_has_funding>
+
+A predicate for the L</funding> attribute.
+
+=cut
+
+has funding => (
+    is        => 'rw',
+    predicate => '_has_funding',
+    json_ld   => 'funding',
+);
+
+
 =head2 C<genre>
 
 
@@ -1988,8 +2023,9 @@ has is_part_of => (
 
 
 
-Keywords or tags used to describe this content. Multiple entries in a
-keywords list are typically delimited by commas.
+Keywords or tags used to describe some item. Multiple textual entries in a
+keywords list are typically delimited by commas, or by repeating the
+property.
 
 
 A keywords should be one of the following types:

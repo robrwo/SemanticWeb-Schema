@@ -13,8 +13,8 @@
          "rdfs:comment" : "A Defined Term contained in this term set.",
          "rdfs:label" : "hasDefinedTerm",
          "schema:domainIncludes" : [
-            "schema:Taxon",
-            "schema:DefinedTermSet"
+            "schema:DefinedTermSet",
+            "schema:Taxon"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",

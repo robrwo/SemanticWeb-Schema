@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v13.0.1';
+our $VERSION = 'v14.0.0';
 
 =encoding utf8
 
@@ -368,6 +368,8 @@ indicate a category hierarchy.
 A category should be one of the following types:
 
 =over
+
+=item C<InstanceOf['SemanticWeb::Schema::CategoryCode']>
 
 =item C<InstanceOf['SemanticWeb::Schema::PhysicalActivityCategory']>
 
@@ -724,6 +726,35 @@ has gtin8 => (
 );
 
 
+=head2 C<has_adult_consideration>
+
+C<hasAdultConsideration>
+
+Used to tag an item to be intended or suitable for consumption or use by
+adults only.
+
+
+A has_adult_consideration should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::AdultOrientedEnumeration']>
+
+=back
+
+=head2 C<_has_has_adult_consideration>
+
+A predicate for the L</has_adult_consideration> attribute.
+
+=cut
+
+has has_adult_consideration => (
+    is        => 'rw',
+    predicate => '_has_has_adult_consideration',
+    json_ld   => 'hasAdultConsideration',
+);
+
+
 =head2 C<has_measurement>
 
 C<hasMeasurement>
@@ -868,6 +899,34 @@ has inventory_level => (
     is        => 'rw',
     predicate => '_has_inventory_level',
     json_ld   => 'inventoryLevel',
+);
+
+
+=head2 C<is_family_friendly>
+
+C<isFamilyFriendly>
+
+Indicates whether this content is family friendly.
+
+
+A is_family_friendly should be one of the following types:
+
+=over
+
+=item C<Bool>
+
+=back
+
+=head2 C<_has_is_family_friendly>
+
+A predicate for the L</is_family_friendly> attribute.
+
+=cut
+
+has is_family_friendly => (
+    is        => 'rw',
+    predicate => '_has_is_family_friendly',
+    json_ld   => 'isFamilyFriendly',
 );
 
 

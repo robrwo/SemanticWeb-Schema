@@ -27,8 +27,8 @@
          "rdfs:comment" : "A Defined Term contained in this term set.",
          "rdfs:label" : "hasDefinedTerm",
          "schema:domainIncludes" : [
-            "schema:Taxon",
-            "schema:DefinedTermSet"
+            "schema:DefinedTermSet",
+            "schema:Taxon"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",
@@ -43,9 +43,9 @@
          "schema:inverseOf" : "schema:childTaxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:URL",
-            "schema:Taxon"
+            "schema:Taxon",
+            "schema:Text"
          ]
       },
       "schema:taxonRank" : {
@@ -56,9 +56,9 @@
          "schema:domainIncludes" : "schema:Taxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:PropertyValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       }
    }

@@ -43,9 +43,9 @@
          "rdfs:comment" : "The primary artist for a work\n    \tin a medium other than pencils or digital line art--for example, if the\n    \tprimary artwork is done in watercolors or digital paints.",
          "rdfs:label" : "artist",
          "schema:domainIncludes" : [
+            "schema:ComicIssue",
             "schema:ComicStory",
-            "schema:VisualArtwork",
-            "schema:ComicIssue"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -77,12 +77,12 @@
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -97,8 +97,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:inker" : {
@@ -106,9 +106,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:ComicStory",
-            "schema:ComicIssue",
-            "schema:VisualArtwork"
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -118,9 +118,9 @@
          "rdfs:comment" : "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicIssue",
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -131,8 +131,8 @@
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:ComicIssue",
-            "schema:ComicStory"
+            "schema:ComicStory",
+            "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -144,8 +144,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -154,13 +154,13 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:Product",
+            "schema:VisualArtwork",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       }
    }

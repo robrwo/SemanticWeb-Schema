@@ -32,8 +32,8 @@
          "schema:domainIncludes" : "schema:EngineSpecification",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:QualitativeValue",
+            "schema:URL",
             "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"

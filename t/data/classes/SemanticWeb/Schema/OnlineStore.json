@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "An eCommerce site.",
+      "rdfs:label" : "OnlineStore",
+      "rdfs:subClassOf" : "schema:OnlineBusiness",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3028"
+   },
+   "properties" : {}
+}

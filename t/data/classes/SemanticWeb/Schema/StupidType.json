@@ -12,8 +12,8 @@
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:StupidType"
+            "schema:StupidType",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"

@@ -17,8 +17,8 @@
          ],
          "schema:inverseOf" : "schema:hasVariant",
          "schema:rangeIncludes" : [
-            "schema:ProductGroup",
-            "schema:ProductModel"
+            "schema:ProductModel",
+            "schema:ProductGroup"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },

@@ -1,8 +1,8 @@
 {
    "class" : {
       "dc:source" : [
-         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999",
-         "http:bioschemas.org"
+         "http:bioschemas.org",
+         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A chemical substance is 'a portion of matter of constant composition, composed of molecular entities of the same type or of different types' (source: [ChEBI:59999](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999)).",
@@ -38,8 +38,8 @@
          "rdfs:comment" : "Intended use of the BioChemEntity by humans.",
          "rdfs:label" : "potentialUse",
          "schema:domainIncludes" : [
-            "schema:MolecularEntity",
-            "schema:ChemicalSubstance"
+            "schema:ChemicalSubstance",
+            "schema:MolecularEntity"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm"

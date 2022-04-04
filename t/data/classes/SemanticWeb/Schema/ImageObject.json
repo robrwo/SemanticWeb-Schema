@@ -12,13 +12,13 @@
          "rdfs:comment" : "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the [[encodingFormat]].",
          "rdfs:label" : "caption",
          "schema:domainIncludes" : [
-            "schema:VideoObject",
+            "schema:AudioObject",
             "schema:ImageObject",
-            "schema:AudioObject"
+            "schema:VideoObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaObject",
-            "schema:Text"
+            "schema:Text",
+            "schema:MediaObject"
          ]
       },
       "schema:embeddedTextCaption" : {
@@ -27,9 +27,9 @@
          "rdfs:label" : "embeddedTextCaption",
          "rdfs:subPropertyOf" : "schema:caption",
          "schema:domainIncludes" : [
-            "schema:ImageObject",
+            "schema:VideoObject",
             "schema:AudioObject",
-            "schema:VideoObject"
+            "schema:ImageObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -57,8 +57,8 @@
          "rdfs:comment" : "Thumbnail image for an image or video.",
          "rdfs:label" : "thumbnail",
          "schema:domainIncludes" : [
-            "schema:ImageObject",
-            "schema:VideoObject"
+            "schema:VideoObject",
+            "schema:ImageObject"
          ],
          "schema:rangeIncludes" : "schema:ImageObject"
       }

@@ -40,14 +40,14 @@
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
             "schema:Episode",
-            "schema:Schedule",
-            "schema:MediaObject",
-            "schema:Event",
-            "schema:QuantitativeValueDistribution",
             "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:Audiobook",
             "schema:Movie",
+            "schema:QuantitativeValueDistribution",
+            "schema:Event",
             "schema:MusicRelease",
-            "schema:Audiobook"
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
@@ -75,8 +75,8 @@
          "rdfs:comment" : "Media type typically expressed using a MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml) and [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).\n\nIn cases where a [[CreativeWork]] has several media type representations, [[encoding]] can be used to indicate each [[MediaObject]] alongside particular [[encodingFormat]] information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
          "rdfs:label" : "encodingFormat",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -89,10 +89,10 @@
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
             "schema:Schedule",
-            "schema:MediaObject",
+            "schema:FoodEstablishmentReservation",
             "schema:Action",
             "schema:InteractionCounter",
-            "schema:FoodEstablishmentReservation"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -111,8 +111,8 @@
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
+            "schema:Distance",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:ineligibleRegion" : {
@@ -120,17 +120,17 @@
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:Demand",
             "schema:Offer",
             "schema:ActionAccessSpecification",
-            "schema:DeliveryChargeSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:Demand",
+            "schema:MediaObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
+            "schema:Place",
             "schema:Text",
-            "schema:Place"
+            "schema:GeoShape"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2242"
       },
@@ -140,8 +140,8 @@
          "rdfs:label" : "interpretedAsClaim",
          "rdfs:subPropertyOf" : "schema:description",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:MediaObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Claim",
@@ -159,14 +159,14 @@
          "rdfs:comment" : "The production company or studio responsible for the item e.g. series, video game, episode etc.",
          "rdfs:label" : "productionCompany",
          "schema:domainIncludes" : [
-            "schema:Episode",
-            "schema:MediaObject",
-            "schema:CreativeWorkSeason",
-            "schema:MovieSeries",
-            "schema:VideoGameSeries",
             "schema:RadioSeries",
             "schema:Movie",
-            "schema:TVSeries"
+            "schema:MediaObject",
+            "schema:Episode",
+            "schema:CreativeWorkSeason",
+            "schema:TVSeries",
+            "schema:MovieSeries",
+            "schema:VideoGameSeries"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -182,12 +182,12 @@
          "rdfs:comment" : "Indicates if use of the media require a subscription  (either paid or free). Allowed values are ```true``` or ```false``` (note that an earlier version had 'yes', 'no').",
          "rdfs:label" : "requiresSubscription",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Boolean",
-            "schema:MediaSubscription"
+            "schema:MediaSubscription",
+            "schema:Boolean"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
@@ -206,15 +206,15 @@
          "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
          "schema:domainIncludes" : [
-            "schema:InteractionCounter",
             "schema:Action",
             "schema:Schedule",
             "schema:FoodEstablishmentReservation",
+            "schema:InteractionCounter",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -230,13 +230,13 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:Product",
+            "schema:VisualArtwork",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       }
    }

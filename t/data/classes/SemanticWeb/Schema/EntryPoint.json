@@ -21,7 +21,8 @@
          "schema:domainIncludes" : "schema:EntryPoint",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:DigitalPlatformEnumeration"
          ]
       },
       "schema:application" : {

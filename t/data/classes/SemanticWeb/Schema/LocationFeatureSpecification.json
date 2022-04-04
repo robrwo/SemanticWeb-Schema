@@ -12,8 +12,8 @@
          "rdfs:comment" : "The hours during which this service or contact is available.",
          "rdfs:label" : "hoursAvailable",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
             "schema:ContactPoint",
+            "schema:LocationFeatureSpecification",
             "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
@@ -23,13 +23,13 @@
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
          "schema:domainIncludes" : [
+            "schema:OpeningHoursSpecification",
+            "schema:Offer",
             "schema:Permit",
             "schema:Demand",
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification",
-            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification"
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -42,17 +42,17 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
-            "schema:MonetaryAmount",
             "schema:OpeningHoursSpecification",
-            "schema:Offer",
             "schema:Demand",
-            "schema:PriceSpecification"
+            "schema:Offer",
+            "schema:MonetaryAmount",
+            "schema:PriceSpecification",
+            "schema:LocationFeatureSpecification",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

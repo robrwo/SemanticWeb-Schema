@@ -5,8 +5,8 @@
       "rdfs:label" : "TouristAttraction",
       "rdfs:subClassOf" : "schema:Place",
       "schema:source" : [
-         "schemadotorgsources:IIT-CNR.it",
-         "schemadotorgsources:Tourism"
+         "schemadotorgsources:Tourism",
+         "schemadotorgsources:IIT-CNR.it"
       ]
    },
    "properties" : {
@@ -15,14 +15,14 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
             "schema:ServiceChannel",
+            "schema:ContactPoint",
             "schema:TouristAttraction",
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:touristType" : {
@@ -31,16 +31,16 @@
          "rdfs:label" : "touristType",
          "schema:domainIncludes" : [
             "schema:TouristTrip",
-            "schema:TouristAttraction",
-            "schema:TouristDestination"
+            "schema:TouristDestination",
+            "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
             "schema:Audience",
             "schema:Text"
          ],
          "schema:source" : [
-            "schemadotorgsources:Tourism",
-            "schemadotorgsources:IIT-CNR.it"
+            "schemadotorgsources:IIT-CNR.it",
+            "schemadotorgsources:Tourism"
          ]
       }
    }

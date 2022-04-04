@@ -22,8 +22,8 @@
             "schema:MusicPlaylist"
          ],
          "schema:rangeIncludes" : [
-            "schema:MusicRecording",
-            "schema:ItemList"
+            "schema:ItemList",
+            "schema:MusicRecording"
          ],
          "schema:source" : "schemadotorgsources:MBZ"
       },

@@ -13,18 +13,18 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:RealEstateListing",
             "schema:CDCPMDRecord",
-            "schema:JobPosting"
+            "schema:RealEstateListing",
+            "schema:JobPosting",
+            "schema:SpecialAnnouncement"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2521",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/2521"
          ]
       },
       "schema:leaseLength" : {
@@ -32,9 +32,9 @@
          "rdfs:comment" : "Length of the lease for some [[Accommodation]], either particular to some [[Offer]] or in some cases intrinsic to the property.",
          "rdfs:label" : "leaseLength",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
+            "schema:RealEstateListing",
             "schema:Offer",
-            "schema:RealEstateListing"
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

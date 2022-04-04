@@ -4,8 +4,8 @@
       "rdfs:comment" : "An audiobook.",
       "rdfs:label" : "Audiobook",
       "rdfs:subClassOf" : [
-         "schema:Book",
-         "schema:AudioObject"
+         "schema:AudioObject",
+         "schema:Book"
       ],
       "schema:isPartOf" : "http:bib.schema.org"
    },
@@ -16,14 +16,14 @@
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
             "schema:Episode",
-            "schema:Schedule",
-            "schema:MediaObject",
-            "schema:Event",
-            "schema:QuantitativeValueDistribution",
             "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:Audiobook",
             "schema:Movie",
+            "schema:QuantitativeValueDistribution",
+            "schema:Event",
             "schema:MusicRelease",
-            "schema:Audiobook"
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
