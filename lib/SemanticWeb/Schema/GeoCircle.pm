@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -37,7 +37,7 @@ approximately using 'address', 'postalCode'.
 
 C<geoMidpoint>
 
-Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle.
+Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.
 
 
 A geo_midpoint should be one of the following types:

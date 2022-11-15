@@ -15,18 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A media object, such as an image, video, or audio object embedded in a web
-page or a downloadable dataset i.e. DataDownload. Note that a creative work
-may have many media objects associated with it on the same web page. For
-example, a page about a single song (MusicRecording) may have a music video
-(VideoObject), and a high and low bandwidth audio stream (2 AudioObject's).
-
+A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset, i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 L<SemanticWeb::Schema::AudioObject>s).
 
 
 
@@ -93,7 +88,7 @@ has bitrate => (
 
 C<contentSize>
 
-File size in (mega/kilo) bytes.
+File size in (mega/kilo)bytes.
 
 
 A content_size should be one of the following types:
@@ -236,7 +231,7 @@ has encodes_creative_work => (
 
 C<encodingFormat>
 
-Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).
+Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.
 
 In cases where a L<SemanticWeb::Schema::CreativeWork> has several media type representations, [[encoding]] can be used to indicate each L<SemanticWeb::Schema::MediaObject> alongside particular [[encodingFormat]] information.
 
@@ -269,7 +264,7 @@ C<endTime>
 
 The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
-actions that span a period of time, when the action was performed. e.g.
+actions that span a period of time, when the action was performed. E.g.
 John wrote a book from January to *December*. For media, including audio
 and video, it's the time offset of the end of a clip within a larger file.
 Note that Event uses startDate/endDate instead of startTime/endTime, even
@@ -420,7 +415,7 @@ has player_type => (
 
 C<productionCompany>
 
-The production company or studio responsible for the item e.g. series,
+The production company or studio responsible for the item, e.g. series,
 video game, episode etc.
 
 
@@ -543,7 +538,7 @@ C<startTime>
 
 The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
-actions that span a period of time, when the action was performed. e.g.
+actions that span a period of time, when the action was performed. E.g.
 John wrote a book from *January* to December. For media, including audio
 and video, it's the time offset of the start of a clip within a larger
 file. Note that Event uses startDate/endDate instead of startTime/endTime,

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -760,7 +760,7 @@ has production_date => (
 
 C<purchaseDate>
 
-The date the item e.g. vehicle was purchased by the current owner.
+The date the item, e.g. vehicle, was purchased by the current owner.
 
 
 A purchase_date should be one of the following types:
@@ -820,7 +820,7 @@ has seating_capacity => (
 
 
 
-The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]] should be the maximum speed achievable under regular conditions.
+The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]]) should be the maximum speed achievable under regular conditions.
 
 Typical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot
 
@@ -908,7 +908,7 @@ has stupid_property => (
 
 C<tongueWeight>
 
-The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)
+The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).
 
 Typical unit code(s): KGM for kilogram, LBR for pound
 

@@ -10,7 +10,7 @@
    "properties" : {
       "schema:healthPlanCostSharing" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Whether The costs to the patient for services under this network or formulary.",
+         "rdfs:comment" : "The costs to the patient for services under this network or formulary.",
          "rdfs:label" : "healthPlanCostSharing",
          "schema:domainIncludes" : [
             "schema:HealthPlanFormulary",

@@ -10,7 +10,7 @@
    "properties" : {
       "schema:appearance" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates an occurence of a [[Claim]] in some [[CreativeWork]].",
+         "rdfs:comment" : "Indicates an occurrence of a [[Claim]] in some [[CreativeWork]].",
          "rdfs:label" : "appearance",
          "rdfs:subPropertyOf" : "schema:workExample",
          "schema:domainIncludes" : "schema:Claim",
@@ -32,7 +32,7 @@
       },
       "schema:firstAppearance" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Indicates the first known occurence of a [[Claim]] in some [[CreativeWork]].",
+         "rdfs:comment" : "Indicates the first known occurrence of a [[Claim]] in some [[CreativeWork]].",
          "rdfs:label" : "firstAppearance",
          "rdfs:subPropertyOf" : "schema:workExample",
          "schema:domainIncludes" : "schema:Claim",

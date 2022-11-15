@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::PublicationEvent;
 
-# ABSTRACT: A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type e
+# ABSTRACT: A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type
 
 use Moo;
 
@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 A PublicationEvent corresponds indifferently to the event of publication
-for a CreativeWork of any type e.g. a broadcast event, an on-demand event,
+for a CreativeWork of any type, e.g. a broadcast event, an on-demand event,
 a book/journal publication via a variety of delivery media.
 
 

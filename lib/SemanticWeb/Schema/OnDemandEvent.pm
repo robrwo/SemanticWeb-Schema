@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::OnDemandEvent;
 
-# ABSTRACT: A publication event e
+# ABSTRACT: A publication event, e
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A publication event e.g. catch-up TV or radio podcast, during which a
+A publication event, e.g. catch-up TV or radio podcast, during which a
 program is available on-demand.
 
 

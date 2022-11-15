@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include differents business run by health professionals.",
+      "rdfs:comment" : "A particular physical or virtual business of an organization for medical purposes. Examples of MedicalBusiness include different businesses run by health professionals.",
       "rdfs:label" : "MedicalBusiness",
       "rdfs:subClassOf" : "schema:LocalBusiness",
       "schema:isPartOf" : "http:health-lifesci.schema.org"

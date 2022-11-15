@@ -14,8 +14,8 @@
          "rdfs:label" : "codeValue",
          "rdfs:subPropertyOf" : "schema:termCode",
          "schema:domainIncludes" : [
-            "schema:MedicalCode",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:MedicalCode"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -29,8 +29,8 @@
          "schema:domainIncludes" : "schema:CategoryCode",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CategoryCodeSet",
-            "schema:URL"
+            "schema:URL",
+            "schema:CategoryCodeSet"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
       }

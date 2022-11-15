@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -36,7 +36,7 @@ A L<SemanticWeb::Schema::Claim> in Schema.org represents a specific, factually-o
 
 
 
-Indicates an occurence of a L<SemanticWeb::Schema::Claim> in some L<SemanticWeb::Schema::CreativeWork>.
+Indicates an occurrence of a L<SemanticWeb::Schema::Claim> in some L<SemanticWeb::Schema::CreativeWork>.
 
 A appearance should be one of the following types:
 
@@ -93,7 +93,7 @@ has claim_interpreter => (
 
 C<firstAppearance>
 
-Indicates the first known occurence of a L<SemanticWeb::Schema::Claim> in some L<SemanticWeb::Schema::CreativeWork>.
+Indicates the first known occurrence of a L<SemanticWeb::Schema::Claim> in some L<SemanticWeb::Schema::CreativeWork>.
 
 A first_appearance should be one of the following types:
 

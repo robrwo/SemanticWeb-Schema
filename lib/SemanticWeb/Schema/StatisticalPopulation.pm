@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a L<SemanticWeb::Schema::StatisticalPopulation> representing all L<SemanticWeb::Schema::Person>s with a [[homeLocation]] of East Podunk California, would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a L<SemanticWeb::Schema::StatisticalPopulation> item that stands for that set of people.
+A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. The property [[populationType]] is used to specify the type. Any property that can be used on instances of that type can appear on the statistical population. For example, a L<SemanticWeb::Schema::StatisticalPopulation> representing all L<SemanticWeb::Schema::Person>s with a [[homeLocation]] of East Podunk California would be described by applying the appropriate [[homeLocation]] and [[populationType]] properties to a L<SemanticWeb::Schema::StatisticalPopulation> item that stands for that set of people.
 The properties [[numConstraints]] and [[constrainingProperty]] are used to specify which of the populations properties are used to specify the population. Note that the sense of "population" used here is the general sense of a statistical
 population, and does not imply that the population consists of people. For example, a [[populationType]] of L<SemanticWeb::Schema::Event> or L<SemanticWeb::Schema::NewsArticle> could be used. See also L<SemanticWeb::Schema::Observation>, and the L<data and datasets|/docs/data-and-datasets.html> overview for more details.
 

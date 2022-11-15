@@ -75,8 +75,8 @@
          "rdfs:label" : "featureList",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:fileSize" : {
@@ -105,7 +105,7 @@
       },
       "schema:operatingSystem" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Operating systems supported (Windows 7, OSX 10.6, Android 1.6).",
+         "rdfs:comment" : "Operating systems supported (Windows 7, OS X 10.6, Android 1.6).",
          "rdfs:label" : "operatingSystem",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : "schema:Text"
@@ -130,18 +130,18 @@
          "rdfs:label" : "releaseNotes",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:requirements" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).",
+         "rdfs:comment" : "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime).",
          "rdfs:label" : "requirements",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:softwareRequirements"
       },
@@ -151,8 +151,8 @@
          "rdfs:label" : "screenshot",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : [
-            "schema:ImageObject",
-            "schema:URL"
+            "schema:URL",
+            "schema:ImageObject"
          ]
       },
       "schema:softwareAddOn" : {
@@ -171,12 +171,12 @@
       },
       "schema:softwareRequirements" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).",
+         "rdfs:comment" : "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (examples: DirectX, Java or .NET runtime).",
          "rdfs:label" : "softwareRequirements",
          "schema:domainIncludes" : "schema:SoftwareApplication",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:softwareVersion" : {

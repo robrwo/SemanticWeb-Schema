@@ -16,9 +16,9 @@
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:MedicalCondition",
             "schema:PropertyValue",
-            "schema:MedicalCondition"
+            "schema:URL"
          ]
       },
       "schema:bioChemInteraction" : {
@@ -53,20 +53,20 @@
          "rdfs:comment" : "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
          "rdfs:label" : "funding",
          "schema:domainIncludes" : [
-            "schema:BioChemEntity",
             "schema:CreativeWork",
             "schema:Event",
+            "schema:BioChemEntity",
             "schema:Organization",
             "schema:MedicalEntity",
-            "schema:Product",
-            "schema:Person"
+            "schema:Person",
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Grant",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/383",
-            "schemadotorgsources2:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/383"
          ]
       },
       "schema:hasBioChemEntityPart" : {
@@ -87,9 +87,9 @@
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:PropertyValue",
+            "schema:URL",
             "schema:DefinedTerm",
-            "schema:URL"
+            "schema:PropertyValue"
          ]
       },
       "schema:hasRepresentation" : {
@@ -100,8 +100,8 @@
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:PropertyValue",
+            "schema:Text",
             "schema:URL"
          ]
       },
@@ -124,8 +124,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:PropertyValue",
-            "schema:URL",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:URL"
          ]
       },
       "schema:isLocatedInSubcellularLocation" : {
@@ -137,8 +137,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:PropertyValue",
-            "schema:DefinedTerm",
-            "schema:URL"
+            "schema:URL",
+            "schema:DefinedTerm"
          ]
       },
       "schema:isPartOfBioChemEntity" : {
@@ -154,14 +154,14 @@
       "schema:taxonomicRange" : {
          "dc:source" : "http:www.bioschemas.org",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity.",
+         "rdfs:comment" : "The taxonomic grouping of the organism that expresses, encodes, or in some way related to the BioChemEntity.",
          "rdfs:label" : "taxonomicRange",
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
             "schema:DefinedTerm",
-            "schema:Text",
             "schema:Taxon"
          ]
       }

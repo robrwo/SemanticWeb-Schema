@@ -28,7 +28,7 @@
       },
       "schema:costCurrency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The currency (in 3-letter of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217. ",
+         "rdfs:comment" : "The currency (in 3-letter) of the drug cost. See: http://en.wikipedia.org/wiki/ISO_4217. ",
          "rdfs:label" : "costCurrency",
          "schema:domainIncludes" : "schema:DrugCost",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
@@ -59,8 +59,8 @@
          "rdfs:comment" : "The unit in which the drug is measured, e.g. '5 mg tablet'.",
          "rdfs:label" : "drugUnit",
          "schema:domainIncludes" : [
-            "schema:Drug",
-            "schema:DrugCost"
+            "schema:DrugCost",
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

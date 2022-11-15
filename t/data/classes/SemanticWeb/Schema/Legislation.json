@@ -20,13 +20,13 @@
          "rdfs:comment" : "Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.",
          "rdfs:label" : "jurisdiction",
          "schema:domainIncludes" : [
-            "schema:GovernmentService",
-            "schema:Legislation"
+            "schema:Legislation",
+            "schema:GovernmentService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:AdministrativeArea"
+            "schema:AdministrativeArea",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
       },
@@ -54,8 +54,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Legislation",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationConsolidates" : {
@@ -91,7 +91,7 @@
          "core:exactMatch" : "ontology:version_date",
          "owl:equivalentProperty" : "ontology:version_date",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The point-in-time at which the provided description of the legislation is valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
+         "rdfs:comment" : "The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the consolidation of 2015-04-12 of the \"National Insurance Contributions Act 2015\")",
          "rdfs:label" : "legislationDateVersion",
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -110,8 +110,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : [
             "eli:index.html",
@@ -157,7 +157,7 @@
          "core:exactMatch" : "ontology:passed_by",
          "owl:equivalentProperty" : "ontology:passed_by",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The person or organization that originally passed or made the law : typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
+         "rdfs:comment" : "The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
          "rdfs:label" : "legislationPassedBy",
          "rdfs:subPropertyOf" : "schema:creator",
          "schema:domainIncludes" : "schema:Legislation",
@@ -180,12 +180,12 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationTransposes" : {
@@ -199,8 +199,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Legislation",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1156",
-            "eli:index.html"
+            "eli:index.html",
+            "https://github.com/schemaorg/schemaorg/issues/1156"
          ]
       },
       "schema:legislationType" : {

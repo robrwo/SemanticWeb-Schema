@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -60,7 +60,7 @@ has margin_of_error => (
 
 C<measuredProperty>
 
-The measuredProperty of an L<SemanticWeb::Schema::Observation>, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org extensions such as L<GS1's|https://www.gs1.org/voc/?show=properties>.
+The measuredProperty of an L<SemanticWeb::Schema::Observation>, either a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, or schema.org extensions such as L<GS1's|https://www.gs1.org/voc/?show=properties>.
 
 A measured_property should be one of the following types:
 

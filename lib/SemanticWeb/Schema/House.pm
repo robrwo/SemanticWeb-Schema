@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::House;
 
-# ABSTRACT: A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (Source: Wikipedia
+# ABSTRACT: A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia
 
 use Moo;
 
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -24,7 +24,7 @@ our $VERSION = 'v14.0.1';
 =begin html
 
 <p>A house is a building or structure that has the ability to be occupied
-for habitation by humans or other creatures (Source: Wikipedia, the free
+for habitation by humans or other creatures (source: Wikipedia, the free
 encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/House">http://en.wikipedia.org/wiki/Hous
 e</a>).</p>

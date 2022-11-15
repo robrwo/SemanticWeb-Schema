@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -59,7 +59,7 @@ has does_not_ship => (
 
 C<freeShippingThreshold>
 
-A monetary value above which (or equal to) the shipping rate becomes free. Intended to be used via an L<SemanticWeb::Schema::OfferShippingDetails> with [[shippingSettingsLink]] matching this L<SemanticWeb::Schema::ShippingRateSettings>.
+A monetary value above (or at) which the shipping rate becomes free. Intended to be used via an L<SemanticWeb::Schema::OfferShippingDetails> with [[shippingSettingsLink]] matching this L<SemanticWeb::Schema::ShippingRateSettings>.
 
 A free_shipping_threshold should be one of the following types:
 
@@ -116,7 +116,7 @@ has is_unlabelled_fallback => (
 C<shippingDestination>
 
 indicates (possibly multiple) shipping destinations. These can be defined
-in several ways e.g. postalCode ranges.
+in several ways, e.g. postalCode ranges.
 
 
 A shipping_destination should be one of the following types:

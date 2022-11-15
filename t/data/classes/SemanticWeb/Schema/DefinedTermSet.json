@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A set of defined terms for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
+      "rdfs:comment" : "A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration.",
       "rdfs:label" : "DefinedTermSet",
       "rdfs:subClassOf" : "schema:CreativeWork",
       "schema:isPartOf" : "http:pending.schema.org",
@@ -13,8 +13,8 @@
          "rdfs:comment" : "A Defined Term contained in this term set.",
          "rdfs:label" : "hasDefinedTerm",
          "schema:domainIncludes" : [
-            "schema:DefinedTermSet",
-            "schema:Taxon"
+            "schema:Taxon",
+            "schema:DefinedTermSet"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -156,7 +156,7 @@ C<priceCurrency>
 
 The currency of the price, or a price component when attached to L<SemanticWeb::Schema::PriceSpecification> and its subtypes.
 
-Use standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217> e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies e.g. "BTC"; well known names for L<Local Exchange Tradings Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types e.g. "Ithaca HOUR".
+Use standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217>, e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies, e.g. "BTC"; well known names for L<Local Exchange Trading Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types, e.g. "Ithaca HOUR".
 
 A price_currency should be one of the following types:
 
@@ -244,7 +244,7 @@ has provider => (
 
 C<reservationFor>
 
-The thing -- flight, event, restaurant,etc. being reserved.
+The thing -- flight, event, restaurant, etc. being reserved.
 
 
 A reservation_for should be one of the following types:
@@ -364,7 +364,7 @@ Usage guidelines:
 
 =item *
 
-Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.
 
 
 =item *

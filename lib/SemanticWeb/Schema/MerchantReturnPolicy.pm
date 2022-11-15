@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -32,10 +32,10 @@ A MerchantReturnPolicy provides information about product return policies associ
 
 C<additionalProperty>
 
-A property-value pair representing an additional characteristics of the
-entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org. Note: Publishers should be aware
-that applications designed to use specific schema.org properties (e.g.
+A property-value pair representing an additional characteristic of the
+entity, e.g. a product feature or another characteristic for which there is
+no matching property in schema.org. Note: Publishers should be aware that
+applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
 rather than using the generic property/value mechanism. 
@@ -181,7 +181,7 @@ has customer_remorse_return_shipping_fees_amount => (
 
 C<inStoreReturnsOffered>
 
-Are in-store returns offered? (for more advanced return methods use the [[returnMethod]] property)
+Are in-store returns offered? (For more advanced return methods use the [[returnMethod]] property.)
 
 A in_store_returns_offered should be one of the following types:
 
@@ -437,7 +437,7 @@ has restocking_fee => (
 
 C<returnFees>
 
-The type of return fees for purchased products (for any return reason)
+The type of return fees for purchased products (for any return reason).
 
 
 A return_fees should be one of the following types:
@@ -550,7 +550,7 @@ has return_policy_category => (
 
 C<returnPolicyCountry>
 
-The country where the product has to be sent to for returns, for example "Ireland" using the [[name]] property of L<SemanticWeb::Schema::Country>. You can also provide the two-letter L<ISO 3166-1 alpha-2 country code|http://en.wikipedia.org/wiki/ISO_3166-1>. Note that this can be different from the country where the product was originally shipped from or sent too.
+The country where the product has to be sent to for returns, for example "Ireland" using the [[name]] property of L<SemanticWeb::Schema::Country>. You can also provide the two-letter L<ISO 3166-1 alpha-2 country code|http://en.wikipedia.org/wiki/ISO_3166-1>. Note that this can be different from the country where the product was originally shipped from or sent to.
 
 A return_policy_country should be one of the following types:
 

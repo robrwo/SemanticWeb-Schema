@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -156,7 +156,7 @@ has educational_credential_awarded => (
 
 C<educationalProgramMode>
 
-Similar to courseMode, The medium or means of delivery of the program as a
+Similar to courseMode, the medium or means of delivery of the program as a
 whole. The value may either be a text label (e.g. "online", "onsite" or
 "blended"; "synchronous" or "asynchronous"; "full-time" or "part-time") or
 a URL reference to a term from a controlled vocabulary (e.g.
@@ -471,7 +471,7 @@ has program_prerequisites => (
 C<programType>
 
 The type of educational or occupational program. For example, classroom,
-internship, alternance, etc..
+internship, alternance, etc.
 
 
 A program_type should be one of the following types:

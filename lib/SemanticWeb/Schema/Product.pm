@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -35,10 +35,10 @@ online.
 
 C<additionalProperty>
 
-A property-value pair representing an additional characteristics of the
-entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org. Note: Publishers should be aware
-that applications designed to use specific schema.org properties (e.g.
+A property-value pair representing an additional characteristic of the
+entity, e.g. a product feature or another characteristic for which there is
+no matching property in schema.org. Note: Publishers should be aware that
+applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
 rather than using the generic property/value mechanism. 
@@ -91,6 +91,42 @@ has aggregate_rating => (
     is        => 'rw',
     predicate => '_has_aggregate_rating',
     json_ld   => 'aggregateRating',
+);
+
+
+=head2 C<asin>
+
+
+
+An Amazon Standard Identification Number (ASIN) is a 10-character
+alphanumeric unique identifier assigned by Amazon.com and its partners for
+product identification within the Amazon organization (summary from
+[Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Nu
+mber)'s article). Note also that this is a definition for how to include
+ASINs in Schema.org data, and not a definition of ASINs in general - see
+documentation from Amazon for authoritative details. ASINs are most
+commonly encoded as text strings, but the [asin] property supports URL/URI
+as potential values too.
+
+
+A asin should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_asin>
+
+A predicate for the L</asin> attribute.
+
+=cut
+
+has asin => (
+    is        => 'rw',
+    predicate => '_has_asin',
+    json_ld   => 'asin',
 );
 
 
@@ -419,7 +455,11 @@ has funding => (
 
 
 
-A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged.
+A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes.
+
+The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also L<schema.org tracking issue|https://github.com/schemaorg/schemaorg/issues/3156#issuecomment-1209522809> for schema.org-specific discussion. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.
+
+Note also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.
 
 A gtin should be one of the following types:
 
@@ -1097,6 +1137,35 @@ has material => (
 );
 
 
+=head2 C<mobile_url>
+
+C<mobileUrl>
+
+The [[mobileUrl]] property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated 'mobile site'.
+
+To discourage over-use, and reflecting intial usecases, the property is expected only on L<SemanticWeb::Schema::Product> and L<SemanticWeb::Schema::Offer>, rather than L<SemanticWeb::Schema::Thing>. The general trend in web technology is towards L<responsive design|https://en.wikipedia.org/wiki/Responsive_web_design> in which content can be flexibly adapted to a wide range of browsing environments. Pages and sites referenced with the long-established [[url]] property should ideally also be usable on a wide variety of devices, including mobile phones. In most cases, it would be pointless and counter productive to attempt to update all [[url]] markup to use [[mobileUrl]] for more mobile-oriented pages. The property is intended for the case when items (primarily L<SemanticWeb::Schema::Product> and L<SemanticWeb::Schema::Offer>) have extra URLs hosted on an additional "mobile site" alongside the main one. It should not be taken as an endorsement of this publication style.
+
+A mobile_url should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_mobile_url>
+
+A predicate for the L</mobile_url> attribute.
+
+=cut
+
+has mobile_url => (
+    is        => 'rw',
+    predicate => '_has_mobile_url',
+    json_ld   => 'mobileUrl',
+);
+
+
 =head2 C<model>
 
 
@@ -1156,6 +1225,44 @@ has mpn => (
     is        => 'rw',
     predicate => '_has_mpn',
     json_ld   => 'mpn',
+);
+
+
+=head2 C<negative_notes>
+
+C<negativeNotes>
+
+Provides negative considerations regarding something, most typically in pro/con lists for reviews (alongside [[positiveNotes]]). For symmetry 
+
+In the case of a L<SemanticWeb::Schema::Review>, the property describes the [[itemReviewed]] from the perspective of the review; in the case of a L<SemanticWeb::Schema::Product>, the product itself is being described. Since product descriptions 
+tend to emphasise positive claims, it may be relatively unusual to find [[negativeNotes]] used in this way. Nevertheless for the sake of symmetry, [[negativeNotes]] can be used on L<SemanticWeb::Schema::Product>.
+
+The property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most negative is at the beginning of the list).
+
+A negative_notes should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ListItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::WebContent']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_negative_notes>
+
+A predicate for the L</negative_notes> attribute.
+
+=cut
+
+has negative_notes => (
+    is        => 'rw',
+    predicate => '_has_negative_notes',
+    json_ld   => 'negativeNotes',
 );
 
 
@@ -1247,6 +1354,43 @@ has pattern => (
 );
 
 
+=head2 C<positive_notes>
+
+C<positiveNotes>
+
+Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.
+
+In the case of a L<SemanticWeb::Schema::Review>, the property describes the [[itemReviewed]] from the perspective of the review; in the case of a L<SemanticWeb::Schema::Product>, the product itself is being described.
+
+The property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).
+
+A positive_notes should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ItemList']>
+
+=item C<InstanceOf['SemanticWeb::Schema::ListItem']>
+
+=item C<InstanceOf['SemanticWeb::Schema::WebContent']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_positive_notes>
+
+A predicate for the L</positive_notes> attribute.
+
+=cut
+
+has positive_notes => (
+    is        => 'rw',
+    predicate => '_has_positive_notes',
+    json_ld   => 'positiveNotes',
+);
+
+
 =head2 C<product_id>
 
 C<productID>
@@ -1308,7 +1452,7 @@ has production_date => (
 
 C<purchaseDate>
 
-The date the item e.g. vehicle was purchased by the current owner.
+The date the item, e.g. vehicle, was purchased by the current owner.
 
 
 A purchase_date should be one of the following types:

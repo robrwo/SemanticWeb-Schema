@@ -29,13 +29,13 @@
          "rdfs:comment" : "The base salary of the job or of an employee in an EmployeeRole.",
          "rdfs:label" : "baseSalary",
          "schema:domainIncludes" : [
-            "schema:EmployeeRole",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:EmployeeRole"
          ],
          "schema:rangeIncludes" : [
+            "schema:MonetaryAmount",
             "schema:Number",
-            "schema:PriceSpecification",
-            "schema:MonetaryAmount"
+            "schema:PriceSpecification"
          ]
       },
       "schema:benefits" : {
@@ -51,14 +51,14 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:CDCPMDRecord",
-            "schema:RealEstateListing",
+            "schema:SpecialAnnouncement",
             "schema:JobPosting",
-            "schema:SpecialAnnouncement"
+            "schema:CDCPMDRecord",
+            "schema:RealEstateListing"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -135,9 +135,9 @@
             "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmountDistribution",
             "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmountDistribution"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -155,8 +155,8 @@
          "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
          "rdfs:label" : "experienceRequirements",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -166,10 +166,13 @@
       },
       "schema:hiringOrganization" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Organization offering the job position.",
+         "rdfs:comment" : "Organization or Person offering the job position.",
          "rdfs:label" : "hiringOrganization",
          "schema:domainIncludes" : "schema:JobPosting",
-         "schema:rangeIncludes" : "schema:Organization"
+         "schema:rangeIncludes" : [
+            "schema:Organization",
+            "schema:Person"
+         ]
       },
       "schema:incentiveCompensation" : {
          "rdf:type" : "rdf:Property",
@@ -192,8 +195,8 @@
          "rdfs:label" : "industry",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ]
       },
       "schema:jobBenefits" : {
@@ -221,7 +224,7 @@
       },
       "schema:jobLocationType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A description of the job location (e.g TELECOMMUTE for telecommute jobs).",
+         "rdfs:comment" : "A description of the job location (e.g. TELECOMMUTE for telecommute jobs).",
          "rdfs:label" : "jobLocationType",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -246,19 +249,19 @@
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
             "schema:JobPosting",
-            "schema:EducationalOccupationalProgram",
             "schema:Occupation",
-            "schema:WorkBasedProgram"
+            "schema:WorkBasedProgram",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CategoryCode",
-            "schema:Text"
+            "schema:Text",
+            "schema:CategoryCode"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2460",
-            "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/2192",
+            "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
@@ -269,9 +272,9 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:DefinedTerm",
             "schema:Text",
-            "schema:DefinedTerm"
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -285,12 +288,12 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1779"
+            "https://github.com/schemaorg/schemaorg/issues/1779",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:relevantOccupation" : {
@@ -306,19 +309,19 @@
          "rdfs:comment" : "Responsibilities associated with this role or Occupation.",
          "rdfs:label" : "responsibilities",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
       "schema:salaryCurrency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217) ) used for the main salary information in this job posting or for this employee.",
+         "rdfs:comment" : "The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)) used for the main salary information in this job posting or for this employee.",
          "rdfs:label" : "salaryCurrency",
          "schema:domainIncludes" : [
-            "schema:EmployeeRole",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:EmployeeRole"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -329,8 +332,8 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -341,8 +344,8 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
             "schema:URL",
+            "schema:DefinedTerm",
             "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
@@ -352,8 +355,8 @@
          "rdfs:comment" : "A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in this occupation.",
          "rdfs:label" : "skills",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -392,13 +395,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:Demand",
             "schema:Offer",
+            "schema:JobPosting",
+            "schema:LocationFeatureSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

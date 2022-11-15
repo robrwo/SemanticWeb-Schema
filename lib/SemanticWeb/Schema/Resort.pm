@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -25,7 +25,7 @@ our $VERSION = 'v14.0.1';
 
 <p>A resort is a place used for relaxation or recreation, attracting
 visitors for holidays or vacations. Resorts are places, towns or sometimes
-commercial establishment operated by a single company (Source: Wikipedia,
+commercial establishments operated by a single company (source: Wikipedia,
 the free encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/Resort">http://en.wikipedia.org/wiki/Res
 ort</a>). <br /><br /> See also the <a href="/docs/hotels.html">dedicated

@@ -12,8 +12,8 @@
          "rdfs:comment" : "The hours during which this service or contact is available.",
          "rdfs:label" : "hoursAvailable",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
             "schema:LocationFeatureSpecification",
+            "schema:ContactPoint",
             "schema:Service"
          ],
          "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
@@ -25,15 +25,15 @@
          "schema:domainIncludes" : [
             "schema:OpeningHoursSpecification",
             "schema:Offer",
-            "schema:Permit",
             "schema:Demand",
+            "schema:MonetaryAmount",
             "schema:LocationFeatureSpecification",
             "schema:PriceSpecification",
-            "schema:MonetaryAmount"
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -42,13 +42,13 @@
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:Demand",
             "schema:Offer",
+            "schema:JobPosting",
+            "schema:LocationFeatureSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:PriceSpecification",
-            "schema:LocationFeatureSpecification",
-            "schema:JobPosting"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.",
+      "rdfs:comment" : "A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type, e.g. a broadcast event, an on-demand event, a book/journal publication via a variety of delivery media.",
       "rdfs:label" : "PublicationEvent",
       "rdfs:subClassOf" : "schema:Event"
    },
@@ -21,8 +21,8 @@
          "schema:domainIncludes" : "schema:PublicationEvent",
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:publishedOn" : {

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -62,7 +62,7 @@ has health_plan_coinsurance_option => (
 
 C<healthPlanCoinsuranceRate>
 
-Whether The rate of coinsurance expressed as a number between 0.0 and 1.0.
+The rate of coinsurance expressed as a number between 0.0 and 1.0.
 
 
 A health_plan_coinsurance_rate should be one of the following types:
@@ -90,7 +90,7 @@ has health_plan_coinsurance_rate => (
 
 C<healthPlanCopay>
 
-Whether The copay amount.
+The copay amount.
 
 
 A health_plan_copay should be one of the following types:

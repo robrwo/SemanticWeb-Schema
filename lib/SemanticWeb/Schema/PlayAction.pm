@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.
+The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise.
 
 Related actions:
 

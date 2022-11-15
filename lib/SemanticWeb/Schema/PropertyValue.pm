@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -133,7 +133,7 @@ A commonly used identifier for the characteristic represented by the
 property, e.g. a manufacturer or a standard code for a property. propertyID
 can be (1) a prefixed string, mainly meant to be used with standards for
 product properties; (2) a site-specific, non-prefixed string (e.g. the
-primary key of the property or the vendor-specific id of the property), or
+primary key of the property or the vendor-specific ID of the property), or
 (3) a URL indicating the type of the property, either pointing to an
 external vocabulary, or a Web resource that describes the property (e.g. a
 glossary entry). Standards bodies should promote a standard prefix for the
@@ -240,12 +240,12 @@ For L<SemanticWeb::Schema::QuantitativeValue> and L<SemanticWeb::Schema::Monetar
 
 =item *
 
-For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
+For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.
 
 
 =item *
 
-Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.
 
 
 =item *

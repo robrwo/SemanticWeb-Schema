@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::ActionAccessSpecification;
 
-# ABSTRACT: A set of requirements that a must be fulfilled in order to perform an Action.
+# ABSTRACT: A set of requirements that must be fulfilled in order to perform an Action.
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A set of requirements that a must be fulfilled in order to perform an
-Action.
+A set of requirements that must be fulfilled in order to perform an Action.
 
 
 

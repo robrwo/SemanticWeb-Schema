@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,12 +33,12 @@ A monetary value or range. This type can be used to describe an amount of money 
 
 
 The currency in which the monetary amount is expressed. Use standard
-formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
+formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217),
 e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
-cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading
 Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
-(LETS) and other currency types e.g. "Ithaca HOUR".
+(LETS) and other currency types, e.g. "Ithaca HOUR".
 
 
 A currency should be one of the following types:
@@ -190,12 +190,12 @@ For L<SemanticWeb::Schema::QuantitativeValue> and L<SemanticWeb::Schema::Monetar
 
 =item *
 
-For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text;', 'Number', 'Boolean', or 'StructuredValue'.
+For L<SemanticWeb::Schema::PropertyValue>, it can be 'Text', 'Number', 'Boolean', or 'StructuredValue'.
 
 
 =item *
 
-Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.
 
 
 =item *

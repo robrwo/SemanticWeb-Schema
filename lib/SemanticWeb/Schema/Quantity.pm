@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 Quantities such as distance, time, mass, weight, etc. Particular instances
-of say Mass are entities like '3 Kg' or '4 milligrams'.
+of say Mass are entities like '3 kg' or '4 milligrams'.
 
 
 

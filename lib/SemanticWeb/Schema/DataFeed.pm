@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ or topics.
 
 C<dataFeedElement>
 
-An item within in a data feed. Data feeds may have many elements.
+An item within a data feed. Data feeds may have many elements.
 
 
 A data_feed_element should be one of the following types:

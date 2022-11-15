@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -23,7 +23,7 @@ our $VERSION = 'v14.0.1';
 
 A camping site, campsite, or L<SemanticWeb::Schema::Campground> is a place used for overnight stay in the outdoors, typically containing individual L<SemanticWeb::Schema::CampingPitch> locations. 
 
-In British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (Source: Wikipedia see L<https://en.wikipedia.org/wiki/Campsite|https://en.wikipedia.org/wiki/Campsite>).
+In British English a campsite is an area, usually divided into a number of pitches, where people can camp overnight using tents or camper vans or caravans; this British English use of the word is synonymous with the American English expression campground. In American English the term campsite generally means an area where an individual, family, group, or military unit can pitch a tent or park a camper; a campground may contain many campsites (source: Wikipedia, see L<https://en.wikipedia.org/wiki/Campsite|https://en.wikipedia.org/wiki/Campsite>).
 
 See also the dedicated L<document on the use of schema.org for marking up hotels and other forms of accommodations|/docs/hotels.html>.
 

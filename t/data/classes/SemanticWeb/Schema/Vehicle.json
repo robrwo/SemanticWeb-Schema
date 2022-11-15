@@ -22,9 +22,9 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -35,8 +35,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:BroadcastService",
-            "schema:Person",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -108,8 +108,8 @@
          "rdfs:comment" : "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.",
          "rdfs:label" : "fuelType",
          "schema:domainIncludes" : [
-            "schema:EngineSpecification",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -162,8 +162,8 @@
          "rdfs:label" : "numberOfAirbags",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -184,8 +184,8 @@
          "rdfs:label" : "numberOfDoors",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -195,8 +195,8 @@
          "rdfs:label" : "numberOfForwardGears",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -206,8 +206,8 @@
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -225,19 +225,19 @@
          "rdfs:comment" : "The date of production of the item, e.g. vehicle.",
          "rdfs:label" : "productionDate",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date",
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:purchaseDate" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The date the item e.g. vehicle was purchased by the current owner.",
+         "rdfs:comment" : "The date the item, e.g. vehicle, was purchased by the current owner.",
          "rdfs:label" : "purchaseDate",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date",
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
@@ -249,14 +249,14 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
       "schema:speed" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]] should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
+         "rdfs:comment" : "The speed range of the vehicle. If the vehicle is powered by an engine, the upper limit of the speed range (indicated by [[maxValue]]) should be the maximum speed achievable under regular conditions.\\n\\nTypical unit code(s): KMH for km/h, HM for mile per hour (0.447 04 m/s), KNT for knot\\n\\n*Note 1: Use [[minValue]] and [[maxValue]] to indicate the range. Typically, the minimal value is zero.\\n* Note 2: There are many different ways of measuring the speed range. You can link to information about how the given value has been determined using the [[valueReference]] property.",
          "rdfs:label" : "speed",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
@@ -284,7 +284,7 @@
       },
       "schema:tongueWeight" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR)\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+         "rdfs:comment" : "The permitted vertical load (TWR) of a trailer attached to the vehicle. Also referred to as Tongue Load Rating (TLR) or Vertical Load Rating (VLR).\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]].\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
          "rdfs:label" : "tongueWeight",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
@@ -355,8 +355,8 @@
          "rdfs:label" : "vehicleSeatingCapacity",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -367,8 +367,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CarUsageType",
-            "schema:Text"
+            "schema:Text",
+            "schema:CarUsageType"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },
@@ -379,8 +379,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ],
          "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
       },

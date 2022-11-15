@@ -6,7 +6,7 @@ package SemanticWeb::Schema::DietarySupplement;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Substance /;
+extends qw/ SemanticWeb::Schema::Product SemanticWeb::Schema::Substance /;
 
 
 use MooX::JSON_LD 'DietarySupplement';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -119,34 +119,6 @@ has legal_status => (
     is        => 'rw',
     predicate => '_has_legal_status',
     json_ld   => 'legalStatus',
-);
-
-
-=head2 C<manufacturer>
-
-
-
-The manufacturer of the product.
-
-
-A manufacturer should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=back
-
-=head2 C<_has_manufacturer>
-
-A predicate for the L</manufacturer> attribute.
-
-=cut
-
-has manufacturer => (
-    is        => 'rw',
-    predicate => '_has_manufacturer',
-    json_ld   => 'manufacturer',
 );
 
 

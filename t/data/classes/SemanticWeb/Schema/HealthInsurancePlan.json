@@ -23,8 +23,8 @@
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:HealthInsurancePlan",
-            "schema:Person"
+            "schema:Person",
+            "schema:HealthInsurancePlan"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -87,7 +87,7 @@
       },
       "schema:usesHealthPlanIdStandard" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The standard for interpreting thePlan ID. The preferred is \"HIOS\". See the Centers for Medicare & Medicaid Services for more details.",
+         "rdfs:comment" : "The standard for interpreting the Plan ID. The preferred is \"HIOS\". See the Centers for Medicare & Medicaid Services for more details.",
          "rdfs:label" : "usesHealthPlanIdStandard",
          "schema:domainIncludes" : "schema:HealthInsurancePlan",
          "schema:isPartOf" : "http:pending.schema.org",

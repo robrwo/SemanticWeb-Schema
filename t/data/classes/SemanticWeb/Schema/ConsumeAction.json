@@ -8,7 +8,7 @@
    "properties" : {
       "schema:actionAccessibilityRequirement" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A set of requirements that a must be fulfilled in order to perform an Action. If more than one value is specied, fulfilling one set of requirements will allow the Action to be performed.",
+         "rdfs:comment" : "A set of requirements that must be fulfilled in order to perform an Action. If more than one value is specified, fulfilling one set of requirements will allow the Action to be performed.",
          "rdfs:label" : "actionAccessibilityRequirement",
          "schema:domainIncludes" : "schema:ConsumeAction",
          "schema:rangeIncludes" : "schema:ActionAccessSpecification",
@@ -19,9 +19,9 @@
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:MediaSubscription",
+            "schema:ConsumeAction",
             "schema:ActionAccessSpecification",
-            "schema:ConsumeAction"
+            "schema:MediaSubscription"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"

@@ -10,12 +10,12 @@
    "properties" : {
       "schema:additionalProperty" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
+         "rdfs:comment" : "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
+            "schema:Product",
             "schema:QuantitativeValue",
             "schema:Place",
-            "schema:Product",
             "schema:MerchantReturnPolicy",
             "schema:QualitativeValue"
          ],
@@ -28,8 +28,8 @@
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Country"
+            "schema:Country",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3001"
       },
@@ -62,7 +62,7 @@
       },
       "schema:inStoreReturnsOffered" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Are in-store returns offered? (for more advanced return methods use the [[returnMethod]] property)",
+         "rdfs:comment" : "Are in-store returns offered? (For more advanced return methods use the [[returnMethod]] property.)",
          "rdfs:label" : "inStoreReturnsOffered",
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -74,10 +74,10 @@
          "rdfs:comment" : "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
          "rdfs:label" : "itemCondition",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:Demand",
-            "schema:MerchantReturnPolicy",
-            "schema:Product"
+            "schema:Product",
+            "schema:Offer",
+            "schema:MerchantReturnPolicy"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
       },
@@ -118,8 +118,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
             "schema:Integer",
+            "schema:DateTime",
             "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
@@ -156,7 +156,7 @@
       },
       "schema:returnFees" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The type of return fees for purchased products (for any return reason)",
+         "rdfs:comment" : "The type of return fees for purchased products (for any return reason).",
          "rdfs:label" : "returnFees",
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -186,8 +186,8 @@
          "rdfs:comment" : "Specifies an applicable return policy (from an enumeration).",
          "rdfs:label" : "returnPolicyCategory",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MerchantReturnEnumeration",
@@ -195,7 +195,7 @@
       },
       "schema:returnPolicyCountry" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The country where the product has to be sent to for returns, for example \"Ireland\" using the [[name]] property of [[Country]]. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1). Note that this can be different from the country where the product was originally shipped from or sent too.",
+         "rdfs:comment" : "The country where the product has to be sent to for returns, for example \"Ireland\" using the [[name]] property of [[Country]]. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1). Note that this can be different from the country where the product was originally shipped from or sent to.",
          "rdfs:label" : "returnPolicyCountry",
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",

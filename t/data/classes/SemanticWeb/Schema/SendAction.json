@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "The act of physically/electronically dispatching an object for transfer from an origin to a destination.Related actions:\\n\\n* [[ReceiveAction]]: The reciprocal of SendAction.\\n* [[GiveAction]]: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).",
+      "rdfs:comment" : "The act of physically/electronically dispatching an object for transfer from an origin to a destination. Related actions:\\n\\n* [[ReceiveAction]]: The reciprocal of SendAction.\\n* [[GiveAction]]: Unlike GiveAction, SendAction does not imply the transfer of ownership (e.g. I can send you my laptop, but I'm not necessarily giving it to you).",
       "rdfs:label" : "SendAction",
       "rdfs:subClassOf" : "schema:TransferAction"
    },
@@ -12,10 +12,10 @@
          "rdfs:label" : "deliveryMethod",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:ReceiveAction",
-            "schema:OrderAction",
             "schema:TrackAction",
-            "schema:SendAction"
+            "schema:ReceiveAction",
+            "schema:SendAction",
+            "schema:OrderAction"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       },
@@ -25,21 +25,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:CommunicateAction",
+            "schema:PayAction",
+            "schema:DonateAction",
             "schema:Message",
             "schema:SendAction",
             "schema:AuthorizeAction",
+            "schema:TipAction",
             "schema:ReturnAction",
-            "schema:PayAction",
-            "schema:DonateAction",
-            "schema:CommunicateAction",
-            "schema:GiveAction",
-            "schema:TipAction"
+            "schema:GiveAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Audience",
+            "schema:Organization",
             "schema:ContactPoint",
-            "schema:Organization"
+            "schema:Person",
+            "schema:Audience"
          ]
       }
    }

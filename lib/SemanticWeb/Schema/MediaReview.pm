@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -24,7 +24,7 @@ our $VERSION = 'v14.0.1';
 A L<SemanticWeb::Schema::MediaReview> is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and misinformation.
     For more general reviews of media in the broader sense, use L<SemanticWeb::Schema::UserReview>, L<SemanticWeb::Schema::CriticReview> or other L<SemanticWeb::Schema::Review> types. This definition is
     a work in progress. While the L<SemanticWeb::Schema::MediaManipulationRatingEnumeration> list reflects significant community review amongst fact-checkers and others working
-    to combat misinformation, the specific structures for representing media objects, their versions and publication context, is still evolving. Similarly, best practices for the relationship between L<SemanticWeb::Schema::MediaReview> and L<SemanticWeb::Schema::ClaimReview> markup has not yet been finalized.
+    to combat misinformation, the specific structures for representing media objects, their versions and publication context, are still evolving. Similarly, best practices for the relationship between L<SemanticWeb::Schema::MediaReview> and L<SemanticWeb::Schema::ClaimReview> markup have not yet been finalized.
 
 
 

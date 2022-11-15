@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -37,7 +37,7 @@ The exchange traded instrument associated with a Corporation object. The
 tickerSymbol is expressed as an exchange and an instrument name separated
 by a space character. For the exchange component of the tickerSymbol
 attribute, we recommend using the controlled vocabulary of Market
-Identifier Codes (MIC) specified in ISO15022.
+Identifier Codes (MIC) specified in ISO 15022.
 
 
 A ticker_symbol should be one of the following types:

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -206,7 +206,7 @@ has legislation_date => (
 C<legislationDateVersion>
 
 The point-in-time at which the provided description of the legislation is
-valid (e.g. : when looking at the law on the 2016-04-07 (= dateVersion), I
+valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I
 get the consolidation of 2015-04-12 of the "National Insurance
 Contributions Act 2015")
 
@@ -326,7 +326,7 @@ has legislation_legal_force => (
 
 C<legislationPassedBy>
 
-The person or organization that originally passed or made the law :
+The person or organization that originally passed or made the law:
 typically parliament (for primary legislation) or government (for secondary
 legislation). This indicates the "legal author" of the law, as opposed to
 its physical author.

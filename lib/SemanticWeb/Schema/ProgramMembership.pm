@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -153,7 +153,7 @@ has membership_number => (
 C<membershipPointsEarned>
 
 The number of membership points earned by the member. If necessary, the
-unitText can be used to express the units the points are issued in. (e.g.
+unitText can be used to express the units the points are issued in. (E.g.
 stars, miles, etc.)
 
 

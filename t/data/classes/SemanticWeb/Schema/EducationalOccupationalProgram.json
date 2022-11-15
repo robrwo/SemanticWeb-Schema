@@ -31,8 +31,8 @@
          "rdfs:comment" : "The day of the week for which these opening hours are valid.",
          "rdfs:label" : "dayOfWeek",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : "schema:DayOfWeek",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -42,25 +42,25 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "educationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:Course",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:Course"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
       "schema:educationalProgramMode" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Similar to courseMode, The medium or means of delivery of the program as a whole. The value may either be a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous ).",
+         "rdfs:comment" : "Similar to courseMode, the medium or means of delivery of the program as a whole. The value may either be a text label (e.g. \"online\", \"onsite\" or \"blended\"; \"synchronous\" or \"asynchronous\"; \"full-time\" or \"part-time\") or a URL reference to a term from a controlled vocabulary (e.g. https://ceds.ed.gov/element/001311#Asynchronous ).",
          "rdfs:label" : "educationalProgramMode",
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       },
@@ -69,18 +69,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:EducationalOccupationalProgram",
             "schema:Role",
             "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
             "schema:Event",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -124,8 +124,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:StructuredValue"
+            "schema:StructuredValue",
+            "schema:Integer"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       },
@@ -135,19 +135,19 @@
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
             "schema:JobPosting",
-            "schema:EducationalOccupationalProgram",
             "schema:Occupation",
-            "schema:WorkBasedProgram"
+            "schema:WorkBasedProgram",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CategoryCode",
-            "schema:Text"
+            "schema:Text",
+            "schema:CategoryCode"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2460",
-            "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/2192",
+            "https://github.com/schemaorg/schemaorg/issues/2289",
             "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
@@ -156,8 +156,8 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "occupationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:Course",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:Course"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -172,14 +172,14 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
+            "schema:AggregateOffer",
+            "schema:EducationalOccupationalProgram",
+            "schema:Service",
             "schema:MenuItem",
             "schema:CreativeWork",
-            "schema:AggregateOffer",
-            "schema:Event",
-            "schema:Trip",
-            "schema:EducationalOccupationalProgram",
             "schema:Product",
-            "schema:Service"
+            "schema:Event",
+            "schema:Trip"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
@@ -196,21 +196,21 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:AlignmentObject",
-            "schema:Course",
+            "schema:Text",
             "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:Course"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
       "schema:programType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The type of educational or occupational program. For example, classroom, internship, alternance, etc..",
+         "rdfs:comment" : "The type of educational or occupational program. For example, classroom, internship, alternance, etc.",
          "rdfs:label" : "programType",
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2460"
       },
@@ -219,23 +219,23 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Action",
-            "schema:CreativeWork",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:ParcelDelivery",
-            "schema:Invoice",
             "schema:Reservation",
-            "schema:Trip"
+            "schema:ParcelDelivery",
+            "schema:Service",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
+            "schema:Trip",
+            "schema:Invoice",
+            "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/2927"
+            "https://github.com/schemaorg/schemaorg/issues/2927",
+            "https://github.com/schemaorg/schemaorg/issues/2289"
          ]
       },
       "schema:salaryUponCompletion" : {
@@ -252,14 +252,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeason",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -308,8 +308,8 @@
          "rdfs:comment" : "The estimated salary earned while in the program.",
          "rdfs:label" : "trainingSalary",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:WorkBasedProgram",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmountDistribution",
@@ -325,8 +325,8 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:StructuredValue"
+            "schema:StructuredValue",
+            "schema:Integer"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
       }

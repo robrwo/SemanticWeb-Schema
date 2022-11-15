@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::EndorseAction;
 
-# ABSTRACT: An agent approves/certifies/likes/supports/sanction an object.
+# ABSTRACT: An agent approves/certifies/likes/supports/sanctions an object.
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-An agent approves/certifies/likes/supports/sanction an object.
+An agent approves/certifies/likes/supports/sanctions an object.
 
 
 

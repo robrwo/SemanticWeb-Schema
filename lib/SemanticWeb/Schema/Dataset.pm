@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -91,7 +91,12 @@ has dataset_time_interval => (
 
 
 A downloadable form of this dataset, at a specific location, in a specific
-format.
+format. This property can be repeated if different variations are
+available. There is no expectation that different downloadable
+distributions must contain exactly equivalent information (see also
+[DCAT](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution) on this
+point). Different distributions might include or exclude different subsets
+of the entire dataset, for example.
 
 
 A distribution should be one of the following types:
@@ -272,7 +277,7 @@ has variable_measured => (
 
 C<variablesMeasured>
 
-Originally named [[variablesMeasured]], The [[variableMeasured]] property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
+Originally named [[variablesMeasured]], the [[variableMeasured]] property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.
 
 A variables_measured should be one of the following types:
 

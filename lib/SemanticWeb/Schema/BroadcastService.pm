@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -120,8 +120,8 @@ has broadcast_display_name => (
 C<broadcastFrequency>
 
 The frequency used for over-the-air broadcasts. Numeric values or simple
-ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences
-of AM and FM radio channels, e.g. "87 FM".
+ranges, e.g. 87-99. In addition a shortcut idiom is supported for
+frequences of AM and FM radio channels, e.g. "87 FM".
 
 
 A broadcast_frequency should be one of the following types:
@@ -152,7 +152,7 @@ has broadcast_frequency => (
 C<broadcastTimezone>
 
 The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601)
-for which the service bases its broadcasts
+for which the service bases its broadcasts.
 
 
 A broadcast_timezone should be one of the following types:

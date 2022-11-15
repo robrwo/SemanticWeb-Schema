@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::DefinedTermSet;
 
-# ABSTRACT: A set of defined terms for example a set of categories or a classification scheme
+# ABSTRACT: A set of defined terms
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A set of defined terms for example a set of categories or a classification
+A set of defined terms, for example a set of categories or a classification
 scheme, a glossary, dictionary or enumeration.
 
 

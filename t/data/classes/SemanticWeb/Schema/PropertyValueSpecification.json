@@ -13,8 +13,8 @@
          "rdfs:label" : "defaultValue",
          "schema:domainIncludes" : "schema:PropertyValueSpecification",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:Text"
          ]
       },
       "schema:maxValue" : {
@@ -22,10 +22,10 @@
          "rdfs:comment" : "The upper value of some characteristic or property.",
          "rdfs:label" : "maxValue",
          "schema:domainIncludes" : [
+            "schema:QuantitativeValue",
             "schema:PropertyValueSpecification",
-            "schema:MonetaryAmount",
             "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
@@ -35,10 +35,10 @@
          "rdfs:comment" : "The lower value of some characteristic or property.",
          "rdfs:label" : "minValue",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:MonetaryAmount",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Number",
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,10 +33,10 @@ Entities that have a somewhat fixed, physical extension.
 
 C<additionalProperty>
 
-A property-value pair representing an additional characteristics of the
-entitity, e.g. a product feature or another characteristic for which there
-is no matching property in schema.org. Note: Publishers should be aware
-that applications designed to use specific schema.org properties (e.g.
+A property-value pair representing an additional characteristic of the
+entity, e.g. a product feature or another characteristic for which there is
+no matching property in schema.org. Note: Publishers should be aware that
+applications designed to use specific schema.org properties (e.g.
 http://schema.org/width, http://schema.org/color, http://schema.org/gtin13,
 ...) will typically expect such data to be provided using those properties,
 rather than using the generic property/value mechanism. 
@@ -522,9 +522,9 @@ has geo_crosses => (
 C<geoDisjoint>
 
 Represents spatial relations in which two geometries (or the places they
-represent) are topologically disjoint: they have no point in common. They
-form a set of disconnected geometries." (a symmetric relationship, as
-defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM))
+represent) are topologically disjoint: "they have no point in common. They
+form a set of disconnected geometries." (A symmetric relationship, as
+defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
 
 
 A geo_disjoint should be one of the following types:
@@ -559,7 +559,7 @@ represent) are topologically equal, as defined in
 [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM). "Two geometries are
 topologically equal if their interiors intersect and no part of the
 interior or boundary of one geometry intersects the exterior of the other"
-(a symmetric relationship)
+(a symmetric relationship).
 
 
 A geo_equals should be one of the following types:
@@ -655,9 +655,9 @@ has geo_overlaps => (
 C<geoTouches>
 
 Represents spatial relations in which two geometries (or the places they
-represent) touch: they have at least one boundary point in common, but no
-interior points." (a symmetric relationship, as defined in
-[DE-9IM](https://en.wikipedia.org/wiki/DE-9IM) )
+represent) touch: "they have at least one boundary point in common, but no
+interior points." (A symmetric relationship, as defined in
+[DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)
 
 
 A geo_touches should be one of the following types:

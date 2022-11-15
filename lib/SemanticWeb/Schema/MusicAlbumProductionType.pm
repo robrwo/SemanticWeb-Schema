@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::MusicAlbumProductionType;
 
-# ABSTRACT: Classification of the album by it's type of content: soundtrack
+# ABSTRACT: Classification of the album by its type of content: soundtrack
 
 use Moo;
 
@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Classification of the album by it's type of content: soundtrack, live
-album, studio album, etc.
+Classification of the album by its type of content: soundtrack, live album,
+studio album, etc.
 
 
 

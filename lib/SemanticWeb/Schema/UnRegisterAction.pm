@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ L<SemanticWeb::Schema::RegisterAction>: antonym of UnRegisterAction.
 
 =item *
 
-L<SemanticWeb::Schema::LeaveAction>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you werer previously registered, rather than leaving a team/group of people.
+L<SemanticWeb::Schema::LeaveAction>: Unlike LeaveAction, UnRegisterAction implies that you are unregistering from a service you were previously registered, rather than leaving a team/group of people.
 
 
 =back

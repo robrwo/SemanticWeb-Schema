@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::HowToItem;
 
-# ABSTRACT: An item used as either a tool or supply when performing the instructions for how to to achieve a result.
+# ABSTRACT: An item used as either a tool or supply when performing the instructions for how to achieve a result.
 
 use Moo;
 
@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 An item used as either a tool or supply when performing the instructions
-for how to to achieve a result.
+for how to achieve a result.
 
 
 

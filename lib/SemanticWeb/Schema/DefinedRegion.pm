@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -74,7 +74,7 @@ C<addressRegion>
 The region in which the locality is, and which is in the country. For
 example, California or another appropriate first-level [Administrative
 division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by
-_country) 
+_country).
 
 
 A address_region should be one of the following types:

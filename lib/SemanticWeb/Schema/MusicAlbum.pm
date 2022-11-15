@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,8 +33,8 @@ A collection of music tracks.
 
 C<albumProductionType>
 
-Classification of the album by it's type of content: soundtrack, live
-album, studio album, etc.
+Classification of the album by its type of content: soundtrack, live album,
+studio album, etc.
 
 
 A album_production_type should be one of the following types:

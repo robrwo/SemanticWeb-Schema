@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ L<SemanticWeb::Schema::SendAction>: The reciprocal of ReceiveAction.
 
 =item *
 
-L<SemanticWeb::Schema::TakeAction>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transfered (e.g. I can receive a package, but it does not mean the package is now mine).
+L<SemanticWeb::Schema::TakeAction>: Unlike TakeAction, ReceiveAction does not imply that the ownership has been transferred (e.g. I can receive a package, but it does not mean the package is now mine).
 
 
 =back

@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 A particular physical or virtual business of an organization for medical
-purposes. Examples of MedicalBusiness include differents business run by
+purposes. Examples of MedicalBusiness include different businesses run by
 health professionals.
 
 

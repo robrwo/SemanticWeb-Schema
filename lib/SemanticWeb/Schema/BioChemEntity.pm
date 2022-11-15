@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -396,8 +396,8 @@ has is_part_of_bio_chem_entity => (
 
 C<taxonomicRange>
 
-The taxonomic grouping of the organism that expresses, encodes, or in
-someway related to the BioChemEntity.
+The taxonomic grouping of the organism that expresses, encodes, or in some
+way related to the BioChemEntity.
 
 
 A taxonomic_range should be one of the following types:

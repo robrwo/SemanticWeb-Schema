@@ -11,10 +11,10 @@
          "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
          "schema:domainIncludes" : [
-            "schema:DefinedRegion",
-            "schema:GeoShape",
+            "schema:PostalAddress",
             "schema:GeoCoordinates",
-            "schema:PostalAddress"
+            "schema:DefinedRegion",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -31,7 +31,7 @@
       },
       "schema:addressRegion" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level [Administrative division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country) ",
+         "rdfs:comment" : "The region in which the locality is, and which is in the country. For example, California or another appropriate first-level [Administrative division](https://en.wikipedia.org/wiki/List_of_administrative_divisions_by_country).",
          "rdfs:label" : "addressRegion",
          "schema:domainIncludes" : [
             "schema:PostalAddress",
@@ -53,8 +53,8 @@
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
             "schema:PostalAddress",
-            "schema:DefinedRegion",
             "schema:GeoCoordinates",
+            "schema:DefinedRegion",
             "schema:GeoShape"
          ],
          "schema:rangeIncludes" : "schema:Text",

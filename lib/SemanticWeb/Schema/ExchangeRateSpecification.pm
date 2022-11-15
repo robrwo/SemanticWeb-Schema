@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,12 +34,12 @@ A structured value representing exchange rate.
 
 
 The currency in which the monetary amount is expressed. Use standard
-formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217)
+formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217),
 e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
-cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading
 Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
-(LETS) and other currency types e.g. "Ithaca HOUR".
+(LETS) and other currency types, e.g. "Ithaca HOUR".
 
 
 A currency should be one of the following types:

@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "An anatomical system is a group of anatomical structures that work together to perform a certain task. Anatomical systems, such as organ systems, are one organizing principle of anatomy, and can includes circulatory, digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, urinary, vestibular, and other systems.",
+      "rdfs:comment" : "An anatomical system is a group of anatomical structures that work together to perform a certain task. Anatomical systems, such as organ systems, are one organizing principle of anatomy, and can include circulatory, digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous, reproductive, respiratory, skeletal, urinary, vestibular, and other systems.",
       "rdfs:label" : "AnatomicalSystem",
       "rdfs:subClassOf" : "schema:MedicalEntity",
       "schema:isPartOf" : "http:health-lifesci.schema.org"
@@ -55,9 +55,9 @@
          "rdfs:comment" : "A medical therapy related to this anatomy.",
          "rdfs:label" : "relatedTherapy",
          "schema:domainIncludes" : [
-            "schema:AnatomicalSystem",
+            "schema:AnatomicalStructure",
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalSystem"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalTherapy"

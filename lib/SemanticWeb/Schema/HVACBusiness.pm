@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::HVACBusiness;
 
-# ABSTRACT: A business that provide Heating
+# ABSTRACT: A business that provides Heating
 
 use Moo;
 
@@ -15,13 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A business that provide Heating, Ventilation and Air Conditioning services.
+A business that provides Heating, Ventilation and Air Conditioning
+services.
 
 
 

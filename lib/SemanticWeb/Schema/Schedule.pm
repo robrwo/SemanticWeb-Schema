@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A schedule defines a repeating time period used to describe a regularly occurring L<SemanticWeb::Schema::Event>. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurences of the event. Additional information can be provided to specify the schedule more precisely.
+A schedule defines a repeating time period used to describe a regularly occurring L<SemanticWeb::Schema::Event>. At a minimum a schedule will specify [[repeatFrequency]] which describes the interval between occurrences of the event. Additional information can be provided to specify the schedule more precisely.
       This includes identifying the day(s) of the week or month when the recurring event will take place, in addition to its start and end time. Schedules may also
       have start and end dates to indicate when they are active, e.g. to define a limited calendar of events.
 
@@ -208,7 +208,7 @@ C<endTime>
 
 The endTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to end. For
-actions that span a period of time, when the action was performed. e.g.
+actions that span a period of time, when the action was performed. E.g.
 John wrote a book from January to *December*. For media, including audio
 and video, it's the time offset of the end of a clip within a larger file.
 Note that Event uses startDate/endDate instead of startTime/endTime, even
@@ -271,7 +271,7 @@ has except_date => (
 
 C<repeatCount>
 
-Defines the number of times a recurring L<SemanticWeb::Schema::Event> will take place
+Defines the number of times a recurring L<SemanticWeb::Schema::Event> will take place.
 
 A repeat_count should be one of the following types:
 
@@ -386,7 +386,7 @@ C<startTime>
 
 The startTime of something. For a reserved event or service (e.g.
 FoodEstablishmentReservation), the time that it is expected to start. For
-actions that span a period of time, when the action was performed. e.g.
+actions that span a period of time, when the action was performed. E.g.
 John wrote a book from *January* to December. For media, including audio
 and video, it's the time offset of the start of a clip within a larger
 file. Note that Event uses startDate/endDate instead of startTime/endTime,

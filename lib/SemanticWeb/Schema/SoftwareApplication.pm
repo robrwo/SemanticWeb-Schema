@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -377,7 +377,7 @@ has memory_requirements => (
 
 C<operatingSystem>
 
-Operating systems supported (Windows 7, OSX 10.6, Android 1.6).
+Operating systems supported (Windows 7, OS X 10.6, Android 1.6).
 
 
 A operating_system should be one of the following types:
@@ -492,7 +492,7 @@ has release_notes => (
 
 Component dependency requirements for application. This includes runtime
 environments and shared libraries that are not included in the application
-distribution package, but required to run the application (Examples:
+distribution package, but required to run the application (examples:
 DirectX, Java or .NET runtime).
 
 
@@ -609,7 +609,7 @@ C<softwareRequirements>
 
 Component dependency requirements for application. This includes runtime
 environments and shared libraries that are not included in the application
-distribution package, but required to run the application (Examples:
+distribution package, but required to run the application (examples:
 DirectX, Java or .NET runtime).
 
 

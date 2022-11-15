@@ -24,13 +24,13 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:BroadcastService",
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:LinkRole",
+            "schema:CreativeWork",
+            "schema:Event",
+            "schema:BroadcastService",
             "schema:PronounceableText",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -56,21 +56,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
+            "schema:CommunicateAction",
+            "schema:PayAction",
+            "schema:DonateAction",
             "schema:Message",
             "schema:SendAction",
             "schema:AuthorizeAction",
+            "schema:TipAction",
             "schema:ReturnAction",
-            "schema:PayAction",
-            "schema:DonateAction",
-            "schema:CommunicateAction",
-            "schema:GiveAction",
-            "schema:TipAction"
+            "schema:GiveAction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Audience",
+            "schema:Organization",
             "schema:ContactPoint",
-            "schema:Organization"
+            "schema:Person",
+            "schema:Audience"
          ]
       }
    }

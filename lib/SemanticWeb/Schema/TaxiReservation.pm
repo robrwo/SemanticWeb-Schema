@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -92,7 +92,7 @@ has pickup_location => (
 
 C<pickupTime>
 
-When a taxi will pickup a passenger or a rental car can be picked up.
+When a taxi will pick up a passenger or a rental car can be picked up.
 
 
 A pickup_time should be one of the following types:

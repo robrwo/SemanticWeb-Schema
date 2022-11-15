@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Web page type: Media gallery page. A mixed-media page that can contains
+Web page type: Media gallery page. A mixed-media page that can contain
 media such as images, videos, and other multimedia.
 
 

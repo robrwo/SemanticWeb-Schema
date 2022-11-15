@@ -14,9 +14,9 @@
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Duration",
+            "schema:Number",
             "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
       },
@@ -55,8 +55,8 @@
             "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceTypeEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:PriceTypeEnumeration"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       },
@@ -92,10 +92,10 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:UnitPriceSpecification"
+            "schema:UnitPriceSpecification",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

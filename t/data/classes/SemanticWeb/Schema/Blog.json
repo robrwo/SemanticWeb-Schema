@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a \"weblog\". Note that the individual posts ([[BlogPosting]]s) in a [[Blog]] are often colloqually referred to by the same term.",
+      "rdfs:comment" : "A [blog](https://en.wikipedia.org/wiki/Blog), sometimes known as a \"weblog\". Note that the individual posts ([[BlogPosting]]s) in a [[Blog]] are often colloquially referred to by the same term.",
       "rdfs:label" : "Blog",
       "rdfs:subClassOf" : "schema:CreativeWork"
    },
@@ -28,10 +28,10 @@
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:WebSite",
-            "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:Blog"
+            "schema:Blog",
+            "schema:WebSite",
+            "schema:CreativeWorkSeries"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "schemadotorgsources:source_bibex"

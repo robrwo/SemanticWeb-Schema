@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Guide;
 
-# ABSTRACT: [[Guide]] is a page or article that recommend specific products or services
+# ABSTRACT: [[Guide]] is a page or article that recommends specific products or services
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-L<SemanticWeb::Schema::Guide> is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Buying Guide and detail aspects of products or services for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Product Guide and recommend specific products or services. A L<SemanticWeb::Schema::Guide> may represent a Ranked List and recommend specific products or services with ranking.
+L<SemanticWeb::Schema::Guide> is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Buying Guide and detail aspects of products or services for a user to consider. A L<SemanticWeb::Schema::Guide> may represent a Product Guide and recommend specific products or services. A L<SemanticWeb::Schema::Guide> may represent a Ranked List and recommend specific products or services with ranking.
 
 
 

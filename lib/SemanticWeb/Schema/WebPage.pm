@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -280,7 +280,7 @@ The I<speakable> property can be repeated an arbitrary number of times, with thr
 
 1.) I<id-value> URL references - uses I<id-value> of an element in the page being annotated. The simplest use of I<speakable> has (potentially relative) URL values, referencing identified sections of the document concerned.
 
-2.) CSS Selectors - addresses content in the annotated page, eg. via class attribute. Use the [[cssSelector]] property.
+2.) CSS Selectors - addresses content in the annotated page, e.g. via class attribute. Use the [[cssSelector]] property.
 
 3.)  XPaths - addresses content via XPaths (assuming an XML view of the content). Use the [[xpath]] property.
 

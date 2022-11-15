@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -65,9 +65,9 @@ has base_salary => (
 
 C<salaryCurrency>
 
-The currency (coded using [ISO 4217](http://en.wikipedia.org/wiki/ISO_4217)
-) used for the main salary information in this job posting or for this
-employee.
+The currency (coded using [ISO
+4217](http://en.wikipedia.org/wiki/ISO_4217)) used for the main salary
+information in this job posting or for this employee.
 
 
 A salary_currency should be one of the following types:

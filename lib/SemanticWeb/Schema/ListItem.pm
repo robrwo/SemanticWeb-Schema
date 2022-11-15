@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ An list item, e.g. a step in a checklist or how-to description.
 
 
 An entity represented by an entry in a list or data feed (e.g. an 'artist'
-in a list of 'artists')â.
+in a list of 'artists').
 
 
 A item should be one of the following types:
@@ -120,7 +120,7 @@ has position => (
 
 C<previousItem>
 
-A link to the ListItem that preceeds the current one.
+A link to the ListItem that precedes the current one.
 
 
 A previous_item should be one of the following types:

@@ -17,9 +17,9 @@
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
             "schema:MonetaryGrant",
-            "schema:MoneyTransfer",
             "schema:LoanOrCredit",
             "schema:InvestmentOrDeposit",
+            "schema:MoneyTransfer",
             "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
@@ -37,11 +37,11 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
-            "schema:Person",
             "schema:MonetaryGrant",
             "schema:CreativeWork",
+            "schema:Person",
             "schema:Event",
+            "schema:Grant",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [

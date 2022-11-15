@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -1010,7 +1010,7 @@ has honorific_prefix => (
 
 C<honorificSuffix>
 
-An honorific suffix following a Person's name such as M.D. /PhD/MSCSW.
+An honorific suffix following a Person's name such as M.D./PhD/MSCSW.
 
 
 A honorific_suffix should be one of the following types:
@@ -1475,7 +1475,7 @@ has performer_in => (
 
 C<publishingPrinciples>
 
-The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
+The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual, e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
 
 While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.
 
@@ -1620,7 +1620,7 @@ has siblings => (
 
 
 A person or organization that supports a thing through a pledge, promise,
-or financial contribution. e.g. a sponsor of a Medical Study or a corporate
+or financial contribution. E.g. a sponsor of a Medical Study or a corporate
 sponsor of an event.
 
 

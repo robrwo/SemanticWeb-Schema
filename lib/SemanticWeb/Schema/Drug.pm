@@ -6,7 +6,7 @@ package SemanticWeb::Schema::Drug;
 
 use Moo;
 
-extends qw/ SemanticWeb::Schema::Substance /;
+extends qw/ SemanticWeb::Schema::Product SemanticWeb::Schema::Substance /;
 
 
 use MooX::JSON_LD 'Drug';
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -23,7 +23,7 @@ our $VERSION = 'v14.0.1';
 
 A chemical or biologic substance, used as a medical therapy, that has a
 physiological effect on an organism. Here the term drug is used
-interchangeably with the term medicine although clinical knowledge make a
+interchangeably with the term medicine although clinical knowledge makes a
 clear difference between them.
 
 
@@ -553,34 +553,6 @@ has legal_status => (
 );
 
 
-=head2 C<manufacturer>
-
-
-
-The manufacturer of the product.
-
-
-A manufacturer should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::Organization']>
-
-=back
-
-=head2 C<_has_manufacturer>
-
-A predicate for the L</manufacturer> attribute.
-
-=cut
-
-has manufacturer => (
-    is        => 'rw',
-    predicate => '_has_manufacturer',
-    json_ld   => 'manufacturer',
-);
-
-
 =head2 C<maximum_intake>
 
 C<maximumIntake>
@@ -785,7 +757,7 @@ has prescribing_info => (
 
 C<prescriptionStatus>
 
-Indicates the status of drug prescription eg. local catalogs
+Indicates the status of drug prescription, e.g. local catalogs
 classifications or whether the drug is available by prescription or
 over-the-counter, etc.
 

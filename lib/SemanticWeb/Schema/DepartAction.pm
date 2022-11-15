@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-The act of departing from a place. An agent departs from an fromLocation
-for a destination, optionally with participants.
+The act of departing from a place. An agent departs from a fromLocation for
+a destination, optionally with participants.
 
 
 

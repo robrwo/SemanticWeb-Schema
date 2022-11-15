@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -43,7 +43,7 @@ marking up hotels and other forms of accommodations</a>. </p>
 
 C<accommodationCategory>
 
-Category of an L<SemanticWeb::Schema::Accommodation>, following real estate conventions e.g. RESO (see L<PropertySubType|https://ddwiki.reso.org/display/DDW17/PropertySubType+Field>, and L<PropertyType|https://ddwiki.reso.org/display/DDW17/PropertyType+Field> fields  for suggested values).
+Category of an L<SemanticWeb::Schema::Accommodation>, following real estate conventions, e.g. RESO (see L<PropertySubType|https://ddwiki.reso.org/display/DDW17/PropertySubType+Field>, and L<PropertyType|https://ddwiki.reso.org/display/DDW17/PropertyType+Field> fields  for suggested values).
 
 A accommodation_category should be one of the following types:
 
@@ -215,7 +215,7 @@ has lease_length => (
 
 C<numberOfBathroomsTotal>
 
-The total integer number of bathrooms in a some L<SemanticWeb::Schema::Accommodation>, following real estate conventions as L<documented in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field>: "The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.". See also [[numberOfRooms]].
+The total integer number of bathrooms in some L<SemanticWeb::Schema::Accommodation>, following real estate conventions as L<documented in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field>: "The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.". See also [[numberOfRooms]].
 
 A number_of_bathrooms_total should be one of the following types:
 

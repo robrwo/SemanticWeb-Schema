@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -49,12 +49,12 @@ We expect that in many cases the page referenced might contain more specialized 
 Many L<SemanticWeb::Schema::SpecialAnnouncement>s will relate to particular regions and to identifiable local organizations. Use [[spatialCoverage]] for the region, and [[announcementLocation]] to indicate specific L<SemanticWeb::Schema::LocalBusiness>es and L<SemanticWeb::Schema::CivicStructure>s. If the announcement affects both a particular region and a specific location (for example, a library closure that serves an entire region), use both [[spatialCoverage]] and [[announcementLocation]].
 
 The [[about]] property can be used to indicate entities that are the focus of the announcement. We now recommend using [[about]] only
-for representing non-location entities (e.g. a L<SemanticWeb::Schema::Course> or a L<SemanticWeb::Schema::RadioStation>). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of /about for locations too.
+for representing non-location entities (e.g. a L<SemanticWeb::Schema::Course> or a L<SemanticWeb::Schema::RadioStation>). For places, use [[announcementLocation]] and [[spatialCoverage]]. Consumers of this markup should be aware that the initial design encouraged the use of [[about]] for locations too.
 
 The basic content of L<SemanticWeb::Schema::SpecialAnnouncement> is similar to that of an L<RSS|https://en.wikipedia.org/wiki/RSS> or L<Atom|https://en.wikipedia.org/wiki/Atom_(Web_standard)> feed. For publishers without such feeds, basic feed-like information can be shared by posting
 L<SemanticWeb::Schema::SpecialAnnouncement> updates in a page, e.g. using JSON-LD. For sites with Atom/RSS functionality, you can point to a feed
 with the [[webFeed]] property. This can be a simple URL, or an inline L<SemanticWeb::Schema::DataFeed> object, with [[encodingFormat]] providing
-media type information e.g. "application/rss+xml" or "application/atom+xml".
+media type information, e.g. "application/rss+xml" or "application/atom+xml".
 
 
 

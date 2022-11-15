@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ L<SemanticWeb::Schema::JoinAction>: Unlike JoinAction, RegisterAction implies yo
 
 =item *
 
-[FollowAction]]: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.
+L<SemanticWeb::Schema::FollowAction>: Unlike FollowAction, RegisterAction doesn't imply that the agent is expecting to poll for updates from the object.
 
 
 =item *

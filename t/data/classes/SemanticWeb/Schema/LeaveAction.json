@@ -12,12 +12,12 @@
          "rdfs:label" : "event",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:LeaveAction",
-            "schema:JoinAction",
-            "schema:InformAction",
             "schema:Place",
             "schema:PlayAction",
-            "schema:InviteAction"
+            "schema:InviteAction",
+            "schema:LeaveAction",
+            "schema:InformAction",
+            "schema:JoinAction"
          ],
          "schema:rangeIncludes" : "schema:Event"
       }

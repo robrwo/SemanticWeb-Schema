@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::MedicalTrial;
 
-# ABSTRACT: A medical trial is a type of medical study that uses scientific process used to compare the safety and efficacy of medical therapies or medical procedures
+# ABSTRACT: A medical trial is a type of medical study that uses a scientific process to compare the safety and efficacy of medical therapies or medical procedures
 
 use Moo;
 
@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A medical trial is a type of medical study that uses scientific process
-used to compare the safety and efficacy of medical therapies or medical
+A medical trial is a type of medical study that uses a scientific process
+to compare the safety and efficacy of medical therapies or medical
 procedures. In general, medical trials are controlled and subjects are
 allocated at random to the different treatment and/or control groups.
 

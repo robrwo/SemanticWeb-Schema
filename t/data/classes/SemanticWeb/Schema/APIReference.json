@@ -8,7 +8,7 @@
    "properties" : {
       "schema:assembly" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Library file name e.g., mscorlib.dll, system.web.dll.",
+         "rdfs:comment" : "Library file name, e.g., mscorlib.dll, system.web.dll.",
          "rdfs:label" : "assembly",
          "schema:domainIncludes" : "schema:APIReference",
          "schema:rangeIncludes" : "schema:Text",
@@ -16,14 +16,14 @@
       },
       "schema:assemblyVersion" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Associated product/technology version. e.g., .NET Framework 4.5.",
+         "rdfs:comment" : "Associated product/technology version. E.g., .NET Framework 4.5.",
          "rdfs:label" : "assemblyVersion",
          "schema:domainIncludes" : "schema:APIReference",
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:executableLibraryName" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Library file name e.g., mscorlib.dll, system.web.dll.",
+         "rdfs:comment" : "Library file name, e.g., mscorlib.dll, system.web.dll.",
          "rdfs:label" : "executableLibraryName",
          "schema:domainIncludes" : "schema:APIReference",
          "schema:rangeIncludes" : "schema:Text"

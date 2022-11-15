@@ -12,8 +12,8 @@
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
             "schema:MedicalStudy",
-            "schema:Patient",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -56,8 +56,8 @@
          "rdfs:comment" : "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
          "rdfs:label" : "suggestedGender",
          "schema:domainIncludes" : [
-            "schema:PeopleAudience",
-            "schema:SizeSpecification"
+            "schema:SizeSpecification",
+            "schema:PeopleAudience"
          ],
          "schema:rangeIncludes" : [
             "schema:GenderType",

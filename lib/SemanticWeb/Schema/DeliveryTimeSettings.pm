@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of a L<SemanticWeb::Schema::OfferShippingDetails>. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].
+A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of an L<SemanticWeb::Schema::OfferShippingDetails>. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].
 
 
 
@@ -89,7 +89,7 @@ has is_unlabelled_fallback => (
 C<shippingDestination>
 
 indicates (possibly multiple) shipping destinations. These can be defined
-in several ways e.g. postalCode ranges.
+in several ways, e.g. postalCode ranges.
 
 
 A shipping_destination should be one of the following types:

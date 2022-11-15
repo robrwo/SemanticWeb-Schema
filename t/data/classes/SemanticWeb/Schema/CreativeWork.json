@@ -106,14 +106,14 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:Brand",
-            "schema:CreativeWork",
-            "schema:Place",
-            "schema:Product",
-            "schema:Event",
             "schema:Offer",
+            "schema:Brand",
+            "schema:Event",
+            "schema:Place",
+            "schema:Organization",
+            "schema:Product",
             "schema:Service",
-            "schema:Organization"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
       },
@@ -141,9 +141,9 @@
          "rdfs:comment" : "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
          "rdfs:label" : "assesses",
          "schema:domainIncludes" : [
-            "schema:EducationEvent",
+            "schema:LearningResource",
             "schema:CreativeWork",
-            "schema:LearningResource"
+            "schema:EducationEvent"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -169,11 +169,11 @@
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
             "schema:Product",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:PlayAction",
             "schema:Service",
-            "schema:LodgingBusiness"
+            "schema:CreativeWork",
+            "schema:LodgingBusiness",
+            "schema:Event",
+            "schema:PlayAction"
          ],
          "schema:rangeIncludes" : "schema:Audience"
       },
@@ -183,9 +183,9 @@
          "rdfs:label" : "audio",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:AudioObject",
+            "schema:Clip",
             "schema:MusicRecording",
-            "schema:Clip"
+            "schema:AudioObject"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2420"
       },
@@ -198,8 +198,8 @@
             "schema:Rating"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:award" : {
@@ -208,9 +208,9 @@
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:Product",
-            "schema:Person",
             "schema:CreativeWork",
+            "schema:Person",
+            "schema:Product",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -220,10 +220,10 @@
          "rdfs:comment" : "Awards won by or for this item.",
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
-            "schema:Product",
+            "schema:CreativeWork",
             "schema:Person",
-            "schema:Organization",
-            "schema:CreativeWork"
+            "schema:Product",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:supersededBy" : "schema:award"
@@ -250,8 +250,8 @@
          "rdfs:comment" : "Comments, typically from users.",
          "rdfs:label" : "comment",
          "schema:domainIncludes" : [
-            "schema:RsvpAction",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:RsvpAction"
          ],
          "schema:rangeIncludes" : "schema:Comment"
       },
@@ -280,7 +280,7 @@
       },
       "schema:contentRating" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Official rating of a piece of content&#x2014;for example,'MPAA PG-13'.",
+         "rdfs:comment" : "Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'.",
          "rdfs:label" : "contentRating",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
@@ -302,8 +302,8 @@
          "rdfs:comment" : "A secondary contributor to the CreativeWork or Event.",
          "rdfs:label" : "contributor",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -316,8 +316,8 @@
          "rdfs:label" : "copyrightHolder",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:copyrightNotice" : {
@@ -343,13 +343,13 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
+            "schema:URL",
             "schema:CorrectionComment"
          ],
          "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1950"
+            "https://github.com/schemaorg/schemaorg/issues/1950",
+            "schemadotorgsources2:TP"
          ]
       },
       "schema:countryOfOrigin" : {
@@ -358,11 +358,11 @@
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
             "schema:TVSeries",
-            "schema:Product",
-            "schema:Movie",
-            "schema:CreativeWork",
             "schema:TVSeason",
-            "schema:TVEpisode"
+            "schema:CreativeWork",
+            "schema:TVEpisode",
+            "schema:Product",
+            "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -373,8 +373,8 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/987"
       },
@@ -387,8 +387,8 @@
             "schema:UserComments"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:creditText" : {
@@ -405,12 +405,12 @@
          "rdfs:comment" : "The date on which the CreativeWork was created or the item was added to a DataFeed.",
          "rdfs:label" : "dateCreated",
          "schema:domainIncludes" : [
-            "schema:DataFeedItem",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:DataFeedItem"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:dateModified" : {
@@ -432,8 +432,8 @@
          "rdfs:label" : "datePublished",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:discussionUrl" : {
@@ -445,14 +445,14 @@
       },
       "schema:editEIDR" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" whose [[titleEIDR]] is \"10.5240/7EC7-228A-510A-053E-CBB8-J\", has several edits e.g. \"10.5240/1F2A-E1C5-680A-14C6-E76B-I\" and \"10.5240/8A35-3BEE-6497-5D12-9E4F-3\".\n\nSince schema.org types like [[Movie]] and [[TVEpisode]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
+         "rdfs:comment" : "An [EIDR](https://eidr.org/) (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.\n\nFor example, the motion picture known as \"Ghostbusters\" whose [[titleEIDR]] is \"10.5240/7EC7-228A-510A-053E-CBB8-J\" has several edits, e.g. \"10.5240/1F2A-E1C5-680A-14C6-E76B-I\" and \"10.5240/8A35-3BEE-6497-5D12-9E4F-3\".\n\nSince schema.org types like [[Movie]] and [[TVEpisode]] can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.\n",
          "rdfs:label" : "editEIDR",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2469"
       },
@@ -479,15 +479,15 @@
          "rdfs:label" : "educationalLevel",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
+            "schema:EducationEvent",
             "schema:EducationalOccupationalCredential",
-            "schema:LearningResource",
-            "schema:EducationEvent"
+            "schema:LearningResource"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
       },
@@ -500,8 +500,8 @@
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ]
       },
       "schema:encoding" : {
@@ -514,7 +514,7 @@
       },
       "schema:encodingFormat" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Media type typically expressed using a MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml) and [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).\n\nIn cases where a [[CreativeWork]] has several media type representations, [[encoding]] can be used to indicate each [[MediaObject]] alongside particular [[encodingFormat]] information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
+         "rdfs:comment" : "Media type typically expressed using a MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml) and [MDN reference](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.\n\nIn cases where a [[CreativeWork]] has several media type representations, [[encoding]] can be used to indicate each [[MediaObject]] alongside particular [[encodingFormat]] information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.",
          "rdfs:label" : "encodingFormat",
          "schema:domainIncludes" : [
             "schema:MediaObject",
@@ -547,16 +547,19 @@
          "rdfs:comment" : "Date the content expires and is no longer useful or available. For example a [[VideoObject]] or [[NewsArticle]] whose availability or relevance is time-limited, or a [[ClaimReview]] fact check whose publisher wants to indicate that it may no longer be relevant (or helpful to highlight) after some date.",
          "rdfs:label" : "expires",
          "schema:domainIncludes" : "schema:CreativeWork",
-         "schema:rangeIncludes" : "schema:Date"
+         "schema:rangeIncludes" : [
+            "schema:Date",
+            "schema:DateTime"
+         ]
       },
       "schema:fileFormat" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Media type, typically MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",
+         "rdfs:comment" : "Media type, typically MIME format (see [IANA site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of the content, e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.",
          "rdfs:label" : "fileFormat",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:encodingFormat"
       },
@@ -566,11 +569,11 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
-            "schema:Person",
             "schema:MonetaryGrant",
             "schema:CreativeWork",
+            "schema:Person",
             "schema:Event",
+            "schema:Grant",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
@@ -583,20 +586,20 @@
          "rdfs:comment" : "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
          "rdfs:label" : "funding",
          "schema:domainIncludes" : [
-            "schema:BioChemEntity",
             "schema:CreativeWork",
             "schema:Event",
+            "schema:BioChemEntity",
             "schema:Organization",
             "schema:MedicalEntity",
-            "schema:Product",
-            "schema:Person"
+            "schema:Person",
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Grant",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/383",
-            "schemadotorgsources2:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/383"
          ]
       },
       "schema:genre" : {
@@ -604,13 +607,13 @@
          "rdfs:comment" : "Genre of the creative work, broadcast channel or group.",
          "rdfs:label" : "genre",
          "schema:domainIncludes" : [
-            "schema:MusicGroup",
             "schema:BroadcastChannel",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:MusicGroup"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:hasPart" : {
@@ -634,13 +637,13 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:BroadcastService",
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:LinkRole",
+            "schema:CreativeWork",
+            "schema:Event",
+            "schema:BroadcastService",
             "schema:PronounceableText",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -653,8 +656,8 @@
          "rdfs:comment" : "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.",
          "rdfs:label" : "interactionStatistic",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:Organization",
+            "schema:Person",
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:InteractionCounter",
@@ -673,8 +676,8 @@
          "rdfs:label" : "interpretedAsClaim",
          "rdfs:subPropertyOf" : "schema:description",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:CreativeWork"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Claim",
@@ -685,9 +688,9 @@
          "rdfs:comment" : "A flag to signal that the item, event, or place is accessible for free.",
          "rdfs:label" : "isAccessibleForFree",
          "schema:domainIncludes" : [
-            "schema:Place",
+            "schema:CreativeWork",
             "schema:Event",
-            "schema:CreativeWork"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Boolean"
       },
@@ -697,9 +700,9 @@
          "rdfs:label" : "isBasedOn",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
+            "schema:Product",
             "schema:CreativeWork",
-            "schema:URL",
-            "schema:Product"
+            "schema:URL"
          ]
       },
       "schema:isBasedOnUrl" : {
@@ -709,8 +712,8 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:CreativeWork"
          ],
          "schema:supersededBy" : "schema:isBasedOn"
       },
@@ -720,8 +723,8 @@
          "rdfs:label" : "isFamilyFriendly",
          "schema:domainIncludes" : [
             "schema:Product",
-            "schema:CreativeWork",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Boolean"
       },
@@ -741,16 +744,16 @@
          "rdfs:comment" : "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
          "rdfs:label" : "keywords",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:CreativeWork",
-            "schema:Organization",
             "schema:Product",
-            "schema:Event"
+            "schema:Event",
+            "schema:Place",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:DefinedTerm",
-            "schema:Text",
-            "schema:URL"
+            "schema:Text"
          ]
       },
       "schema:learningResourceType" : {
@@ -762,8 +765,8 @@
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ]
       },
       "schema:license" : {
@@ -809,13 +812,13 @@
          "rdfs:comment" : "A material that something is made from, e.g. leather, wool, cotton, paper.",
          "rdfs:label" : "material",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Product"
+            "schema:Product",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
+            "schema:Product",
             "schema:Text",
-            "schema:URL",
-            "schema:Product"
+            "schema:URL"
          ]
       },
       "schema:materialExtent" : {
@@ -842,14 +845,14 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
+            "schema:AggregateOffer",
+            "schema:EducationalOccupationalProgram",
+            "schema:Service",
             "schema:MenuItem",
             "schema:CreativeWork",
-            "schema:AggregateOffer",
-            "schema:Event",
-            "schema:Trip",
-            "schema:EducationalOccupationalProgram",
             "schema:Product",
-            "schema:Service"
+            "schema:Event",
+            "schema:Trip"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
@@ -882,13 +885,13 @@
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ]
       },
       "schema:producer" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).",
+         "rdfs:comment" : "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
          "rdfs:label" : "producer",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
@@ -901,23 +904,23 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Action",
-            "schema:CreativeWork",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:ParcelDelivery",
-            "schema:Invoice",
             "schema:Reservation",
-            "schema:Trip"
+            "schema:ParcelDelivery",
+            "schema:Service",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
+            "schema:Trip",
+            "schema:Invoice",
+            "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/2927"
+            "https://github.com/schemaorg/schemaorg/issues/2927",
+            "https://github.com/schemaorg/schemaorg/issues/2289"
          ]
       },
       "schema:publication" : {
@@ -933,8 +936,8 @@
          "rdfs:label" : "publisher",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:publisherImprint" : {
@@ -947,16 +950,16 @@
       },
       "schema:publishingPrinciples" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The publishingPrinciples property indicates (typically via [[URL]]) a document describing the editorial principles of an [[Organization]] (or individual e.g. a [[Person]] writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of the party primarily responsible for the creation of the [[CreativeWork]].\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.\n",
+         "rdfs:comment" : "The publishingPrinciples property indicates (typically via [[URL]]) a document describing the editorial principles of an [[Organization]] (or individual, e.g. a [[Person]] writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a [[CreativeWork]] (e.g. [[NewsArticle]]) the principles are those of the party primarily responsible for the creation of the [[CreativeWork]].\n\nWhile such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.\n",
          "rdfs:label" : "publishingPrinciples",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
+            "schema:Organization",
             "schema:Person",
-            "schema:Organization"
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:URL"
          ]
       },
       "schema:recordedAt" : {
@@ -979,14 +982,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Product",
-            "schema:Brand",
             "schema:Organization",
+            "schema:Product",
             "schema:Service",
+            "schema:CreativeWork",
+            "schema:Offer",
+            "schema:Brand",
             "schema:Event",
-            "schema:Place",
-            "schema:CreativeWork"
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -995,10 +998,10 @@
          "rdfs:comment" : "Review of the item.",
          "rdfs:label" : "reviews",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:CreativeWork",
-            "schema:Offer",
             "schema:Product",
+            "schema:Offer",
+            "schema:CreativeWork",
+            "schema:Place",
             "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Review",
@@ -1010,8 +1013,8 @@
          "rdfs:label" : "schemaVersion",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:sdDatePublished" : {
@@ -1030,8 +1033,8 @@
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1886"
       },
@@ -1057,10 +1060,10 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
             "schema:DefinedTerm",
-            "schema:Text",
-            "schema:SizeSpecification"
+            "schema:SizeSpecification",
+            "schema:QuantitativeValue",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1797"
       },
@@ -1090,19 +1093,19 @@
       },
       "schema:sponsor" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. e.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
+         "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
             "schema:Event",
+            "schema:MedicalStudy",
             "schema:Grant",
             "schema:Organization",
-            "schema:MedicalStudy",
             "schema:CreativeWork",
             "schema:Person"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:teaches" : {
@@ -1134,13 +1137,13 @@
       "schema:temporalCoverage" : {
          "owl:equivalentProperty" : "dc:temporal",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".\n\nOpen-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.",
+         "rdfs:comment" : "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".\n\nOpen-ended date ranges can be written with \"..\" in place of the end date. For example, \"2015-11/..\" indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated.",
          "rdfs:label" : "temporalCoverage",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:DateTime",
-            "schema:Text"
+            "schema:DateTime"
          ]
       },
       "schema:text" : {
@@ -1166,7 +1169,7 @@
       },
       "schema:translationOfWork" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The work that this work has been translated from. e.g. ç©ç§èµ·æº is a translationOf âOn the Origin of Speciesâ",
+         "rdfs:comment" : "The work that this work has been translated from. E.g. ç©ç§èµ·æº is a translationOf âOn the Origin of Speciesâ.",
          "rdfs:label" : "translationOfWork",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:workTranslation",
@@ -1182,8 +1185,8 @@
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:typicalAgeRange" : {
@@ -1191,20 +1194,20 @@
          "rdfs:comment" : "The typical expected age range, e.g. '7-9', '11-'.",
          "rdfs:label" : "typicalAgeRange",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
       "schema:usageInfo" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
+         "rdfs:comment" : "The schema.org [[usageInfo]] property indicates further information about a [[CreativeWork]]. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information, e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.\n\nThis property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.",
          "rdfs:label" : "usageInfo",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2454"
       },
@@ -1224,13 +1227,13 @@
          "rdfs:label" : "video",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:rangeIncludes" : [
-            "schema:Clip",
-            "schema:VideoObject"
+            "schema:VideoObject",
+            "schema:Clip"
          ]
       },
       "schema:workExample" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook.",
+         "rdfs:comment" : "Example/instance/realization/derivation of the concept of this creative work. E.g. the paperback edition, first edition, or e-book.",
          "rdfs:label" : "workExample",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:exampleOfWork",
@@ -1239,7 +1242,7 @@
       },
       "schema:workTranslation" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A work that is a translation of the content of this work. e.g. è¥¿éè¨ has an English workTranslation âJourney to the Westâ,a German workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese  translation TÃ¢y du kÃ½ bÃ¬nh kháº£o.",
+         "rdfs:comment" : "A work that is a translation of the content of this work. E.g. è¥¿éè¨ has an English workTranslation âJourney to the Westâ, a German workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese  translation TÃ¢y du kÃ½ bÃ¬nh kháº£o.",
          "rdfs:label" : "workTranslation",
          "schema:domainIncludes" : "schema:CreativeWork",
          "schema:inverseOf" : "schema:translationOfWork",

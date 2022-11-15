@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-WebContent is a type representing all L<SemanticWeb::Schema::WebPage>, L<SemanticWeb::Schema::WebSite> and L<SemanticWeb::Schema::WebPageElement> content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts is not always important or obvious. The  L<SemanticWeb::Schema::WebContent> type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types L<SemanticWeb::Schema::WebPage>, L<SemanticWeb::Schema::WebSite> and L<SemanticWeb::Schema::WebPageElement> will eventually be declared as subtypes of L<SemanticWeb::Schema::WebContent>).
+WebContent is a type representing all L<SemanticWeb::Schema::WebPage>, L<SemanticWeb::Schema::WebSite> and L<SemanticWeb::Schema::WebPageElement> content. It is sometimes the case that detailed distinctions between Web pages, sites and their parts are not always important or obvious. The  L<SemanticWeb::Schema::WebContent> type makes it easier to describe Web-addressable content without requiring such distinctions to always be stated. (The intent is that the existing types L<SemanticWeb::Schema::WebPage>, L<SemanticWeb::Schema::WebSite> and L<SemanticWeb::Schema::WebPageElement> will eventually be declared as subtypes of L<SemanticWeb::Schema::WebContent>.)
 
 
 

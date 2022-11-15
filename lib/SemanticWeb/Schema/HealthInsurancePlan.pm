@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -260,7 +260,7 @@ has includes_health_plan_network => (
 
 C<usesHealthPlanIdStandard>
 
-The standard for interpreting thePlan ID. The preferred is "HIOS". See the
+The standard for interpreting the Plan ID. The preferred is "HIOS". See the
 Centers for Medicare & Medicaid Services for more details.
 
 

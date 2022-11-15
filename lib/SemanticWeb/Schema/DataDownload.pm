@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::DataDownload;
 
-# ABSTRACT: A dataset in downloadable form.
+# ABSTRACT: All or part of a [[Dataset]] in downloadable form
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A dataset in downloadable form.
-
+All or part of a L<SemanticWeb::Schema::Dataset> in downloadable form. 
 
 
 

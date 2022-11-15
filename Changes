@@ -1,6 +1,11 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Updated classes to Version 15.0 of the schema.
+
+  [Documentation]
+  - Added a FAQ section to SemanticWeb::Schema.
 
 v14.0.0   2022-04-04 12:31:22+01:00 Europe/London
   [Enhancements]

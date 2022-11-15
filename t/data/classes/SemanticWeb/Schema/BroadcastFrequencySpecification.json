@@ -25,8 +25,8 @@
          "schema:domainIncludes" : "schema:BroadcastFrequencySpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:QualitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2111"
       },

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,9 +33,9 @@ The act of ingesting information/resources/food.
 
 C<actionAccessibilityRequirement>
 
-A set of requirements that a must be fulfilled in order to perform an
-Action. If more than one value is specied, fulfilling one set of
-requirements will allow the Action to be performed.
+A set of requirements that must be fulfilled in order to perform an Action.
+If more than one value is specified, fulfilling one set of requirements
+will allow the Action to be performed.
 
 
 A action_accessibility_requirement should be one of the following types:

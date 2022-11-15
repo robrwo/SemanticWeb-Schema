@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -24,7 +24,7 @@ our $VERSION = 'v14.0.1';
 =begin html
 
 <p>A suite in a hotel or other public accommodation, denotes a class of
-luxury accommodations, the key feature of which is multiple rooms (Source:
+luxury accommodations, the key feature of which is multiple rooms (source:
 Wikipedia, the free encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/Suite_(hotel)">http://en.wikipedia.org/w
 iki/Suite_(hotel)</a>). <br /><br /> See also the <a

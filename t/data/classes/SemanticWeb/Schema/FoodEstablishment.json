@@ -13,8 +13,8 @@
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:Boolean",
-            "schema:URL"
+            "schema:URL",
+            "schema:Boolean"
          ]
       },
       "schema:hasMenu" : {
@@ -24,8 +24,8 @@
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:Text",
-            "schema:Menu"
+            "schema:Menu",
+            "schema:Text"
          ]
       },
       "schema:menu" : {
@@ -34,9 +34,9 @@
          "rdfs:label" : "menu",
          "schema:domainIncludes" : "schema:FoodEstablishment",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:Menu",
-            "schema:Text"
+            "schema:Menu"
          ],
          "schema:supersededBy" : "schema:hasMenu"
       },

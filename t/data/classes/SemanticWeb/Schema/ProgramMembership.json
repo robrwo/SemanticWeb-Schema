@@ -23,8 +23,8 @@
          ],
          "schema:inverseOf" : "schema:memberOf",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:members" : {
@@ -32,12 +32,12 @@
          "rdfs:comment" : "A member of this organization.",
          "rdfs:label" : "members",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:ProgramMembership"
+            "schema:ProgramMembership",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:supersededBy" : "schema:member"
       },
@@ -50,7 +50,7 @@
       },
       "schema:membershipPointsEarned" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (e.g. stars, miles, etc.)",
+         "rdfs:comment" : "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (E.g. stars, miles, etc.)",
          "rdfs:label" : "membershipPointsEarned",
          "schema:domainIncludes" : "schema:ProgramMembership",
          "schema:isPartOf" : "http:pending.schema.org",

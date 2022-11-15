@@ -5,18 +5,18 @@
       "rdfs:label" : "TouristAttraction",
       "rdfs:subClassOf" : "schema:Place",
       "schema:source" : [
-         "schemadotorgsources:Tourism",
-         "schemadotorgsources:IIT-CNR.it"
+         "schemadotorgsources:IIT-CNR.it",
+         "schemadotorgsources:Tourism"
       ]
    },
    "properties" : {
       "schema:availableLanguage" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]]",
+         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:ServiceChannel",
             "schema:ContactPoint",
+            "schema:ServiceChannel",
             "schema:TouristAttraction",
             "schema:LodgingBusiness"
          ],
@@ -27,7 +27,7 @@
       },
       "schema:touristType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc. ",
+         "rdfs:comment" : "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
          "rdfs:label" : "touristType",
          "schema:domainIncludes" : [
             "schema:TouristTrip",

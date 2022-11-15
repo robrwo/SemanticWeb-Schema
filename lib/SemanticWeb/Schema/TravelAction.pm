@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::TravelAction;
 
-# ABSTRACT: The act of traveling from an fromLocation to a destination by a specified mode of transport
+# ABSTRACT: The act of traveling from a fromLocation to a destination by a specified mode of transport
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-The act of traveling from an fromLocation to a destination by a specified
+The act of traveling from a fromLocation to a destination by a specified
 mode of transport, optionally with participants.
 
 

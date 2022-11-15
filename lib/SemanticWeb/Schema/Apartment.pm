@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Apartment;
 
-# ABSTRACT: An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (Source: Wikipedia
+# ABSTRACT: An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia
 
 use Moo;
 
@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -25,7 +25,7 @@ our $VERSION = 'v14.0.1';
 
 <p>An apartment (in American English) or flat (in British English) is a
 self-contained housing unit (a type of residential real estate) that
-occupies only part of a building (Source: Wikipedia, the free encyclopedia,
+occupies only part of a building (source: Wikipedia, the free encyclopedia,
 see <a
 href="http://en.wikipedia.org/wiki/Apartment">http://en.wikipedia.org/wiki/
 Apartment</a>).</p>

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -24,7 +24,7 @@ our $VERSION = 'v14.0.1';
 =begin html
 
 <p>A meeting room, conference room, or conference hall is a room provided
-for singular events such as business conferences and meetings (Source:
+for singular events such as business conferences and meetings (source:
 Wikipedia, the free encyclopedia, see <a
 href="http://en.wikipedia.org/wiki/Conference_hall">http://en.wikipedia.org
 /wiki/Conference_hall</a>). <br /><br /> See also the <a

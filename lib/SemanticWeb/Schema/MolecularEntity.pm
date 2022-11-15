@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -215,7 +215,7 @@ C<monoisotopicMolecularWeight>
 The monoisotopic mass is the sum of the masses of the atoms in a molecule
 using the unbound, ground-state, rest mass of the principal (most abundant)
 isotope for each element instead of the isotopic average mass. Please
-include the units the form '&lt;Number&gt; &lt;unit&gt;', for example
+include the units in the form '&lt;Number&gt; &lt;unit&gt;', for example
 '770.230488 g/mol' or as '&lt;QuantitativeValue&gt;.
 
 

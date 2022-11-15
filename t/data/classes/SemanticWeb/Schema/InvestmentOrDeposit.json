@@ -13,9 +13,9 @@
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
             "schema:MonetaryGrant",
-            "schema:MoneyTransfer",
             "schema:LoanOrCredit",
             "schema:InvestmentOrDeposit",
+            "schema:MoneyTransfer",
             "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [

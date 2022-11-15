@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A publication event e.g. catch-up TV or radio podcast, during which a program is available on-demand.",
+      "rdfs:comment" : "A publication event, e.g. catch-up TV or radio podcast, during which a program is available on-demand.",
       "rdfs:label" : "OnDemandEvent",
       "rdfs:subClassOf" : "schema:PublicationEvent"
    },

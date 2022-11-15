@@ -23,18 +23,18 @@
          "rdfs:comment" : "The geographic area where a service or offered item is provided.",
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Offer",
-            "schema:Service",
+            "schema:Organization",
+            "schema:ContactPoint",
             "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:ContactPoint"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:AdministrativeArea",
-            "schema:GeoShape",
             "schema:Text",
-            "schema:Place"
+            "schema:GeoShape",
+            "schema:Place",
+            "schema:AdministrativeArea"
          ]
       },
       "schema:eligibleRegion" : {
@@ -43,15 +43,15 @@
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:ActionAccessSpecification"
+            "schema:Offer",
+            "schema:ActionAccessSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
+            "schema:Place",
             "schema:Text",
-            "schema:Place"
+            "schema:GeoShape"
          ],
          "schema:source" : [
             "schemadotorgsources:source_GoodRelationsTerms",
@@ -64,10 +64,10 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
             "schema:Offer",
+            "schema:MediaObject",
             "schema:ActionAccessSpecification",
-            "schema:DeliveryChargeSpecification",
             "schema:Demand",
-            "schema:MediaObject"
+            "schema:DeliveryChargeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

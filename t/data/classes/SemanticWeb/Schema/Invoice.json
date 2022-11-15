@@ -28,12 +28,12 @@
          "schema:domainIncludes" : [
             "schema:Service",
             "schema:Order",
-            "schema:Reservation",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:category" : {
@@ -41,25 +41,25 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Recommendation",
             "schema:SpecialAnnouncement",
-            "schema:Invoice",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:Invoice",
+            "schema:Recommendation",
             "schema:PhysicalActivity",
             "schema:Product",
-            "schema:Offer"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:Text",
+            "schema:CategoryCode",
             "schema:PhysicalActivityCategory",
-            "schema:Thing",
-            "schema:CategoryCode"
+            "schema:Text",
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:confirmationNumber" : {
@@ -68,8 +68,8 @@
          "rdfs:label" : "confirmationNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -82,8 +82,8 @@
             "schema:Order"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:minimumPaymentDue" : {
@@ -116,8 +116,8 @@
             "schema:Order"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:paymentMethod" : {
@@ -125,8 +125,8 @@
          "rdfs:comment" : "The name of the credit card or other method of payment for the order.",
          "rdfs:label" : "paymentMethod",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:PaymentMethod"
       },
@@ -135,8 +135,8 @@
          "rdfs:comment" : "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
          "rdfs:label" : "paymentMethodId",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -146,8 +146,8 @@
          "rdfs:label" : "paymentStatus",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:PaymentStatusType",
-            "schema:Text"
+            "schema:Text",
+            "schema:PaymentStatusType"
          ]
       },
       "schema:provider" : {
@@ -155,23 +155,23 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Action",
-            "schema:CreativeWork",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:ParcelDelivery",
-            "schema:Invoice",
             "schema:Reservation",
-            "schema:Trip"
+            "schema:ParcelDelivery",
+            "schema:Service",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
+            "schema:Trip",
+            "schema:Invoice",
+            "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/2927"
+            "https://github.com/schemaorg/schemaorg/issues/2927",
+            "https://github.com/schemaorg/schemaorg/issues/2289"
          ]
       },
       "schema:referencesOrder" : {

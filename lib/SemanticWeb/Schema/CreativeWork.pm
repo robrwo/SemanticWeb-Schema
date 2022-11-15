@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -839,7 +839,7 @@ has content_location => (
 
 C<contentRating>
 
-Official rating of a piece of content&#x2014;for example,'MPAA PG-13'.
+Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'.
 
 
 A content_rating should be one of the following types:
@@ -1284,7 +1284,7 @@ C<editEIDR>
 
 An L<EIDR|https://eidr.org/> (Entertainment Identifier Registry) [[identifier]] representing a specific edit / edition for a work of film or television.
 
-For example, the motion picture known as "Ghostbusters" whose [[titleEIDR]] is "10.5240/7EC7-228A-510A-053E-CBB8-J", has several edits e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and "10.5240/8A35-3BEE-6497-5D12-9E4F-3".
+For example, the motion picture known as "Ghostbusters" whose [[titleEIDR]] is "10.5240/7EC7-228A-510A-053E-CBB8-J" has several edits, e.g. "10.5240/1F2A-E1C5-680A-14C6-E76B-I" and "10.5240/8A35-3BEE-6497-5D12-9E4F-3".
 
 Since schema.org types like L<SemanticWeb::Schema::Movie> and L<SemanticWeb::Schema::TVEpisode> can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.
 
@@ -1462,7 +1462,7 @@ has encoding => (
 
 C<encodingFormat>
 
-Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).
+Media type typically expressed using a MIME format (see L<IANA site|http://www.iana.org/assignments/media-types/media-types.xhtml> and L<MDN reference|https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types>), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.
 
 In cases where a L<SemanticWeb::Schema::CreativeWork> has several media type representations, [[encoding]] can be used to indicate each L<SemanticWeb::Schema::MediaObject> alongside particular [[encodingFormat]] information.
 
@@ -1579,7 +1579,7 @@ C<fileFormat>
 
 Media type, typically MIME format (see [IANA
 site](http://www.iana.org/assignments/media-types/media-types.xhtml)) of
-the content e.g. application/zip of a SoftwareApplication binary. In cases
+the content, e.g. application/zip of a SoftwareApplication binary. In cases
 where a CreativeWork has several media type representations, 'encoding' can
 be used to indicate each MediaObject alongside particular fileFormat
 information. Unregistered or niche file formats can be indicated instead
@@ -2385,7 +2385,7 @@ has position => (
 
 
 The person or organization who produced the work (e.g. music album, movie,
-tv/radio series etc.).
+TV/radio series etc.).
 
 
 A producer should be one of the following types:
@@ -2533,7 +2533,7 @@ has publisher_imprint => (
 
 C<publishingPrinciples>
 
-The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
+The publishingPrinciples property indicates (typically via L<SemanticWeb::Schema::URL>) a document describing the editorial principles of an L<SemanticWeb::Schema::Organization> (or individual, e.g. a L<SemanticWeb::Schema::Person> writing a blog) that relate to their activities as a publisher, e.g. ethics or diversity policies. When applied to a L<SemanticWeb::Schema::CreativeWork> (e.g. L<SemanticWeb::Schema::NewsArticle>) the principles are those of the party primarily responsible for the creation of the L<SemanticWeb::Schema::CreativeWork>.
 
 While such policies are most typically expressed in natural language, sometimes related information (e.g. indicating a [[funder]]) can be expressed using schema.org terminology.
 
@@ -2923,7 +2923,7 @@ has spatial_coverage => (
 
 
 A person or organization that supports a thing through a pledge, promise,
-or financial contribution. e.g. a sponsor of a Medical Study or a corporate
+or financial contribution. E.g. a sponsor of a Medical Study or a corporate
 sponsor of an event.
 
 
@@ -3019,8 +3019,8 @@ textual string indicating a time period in [ISO 8601 time interval
 format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case
 of a Dataset it will typically indicate the relevant time period in a
 precise notation (e.g. for a 2011 census dataset, the year 2011 would be
-written "2011/2012"). Other forms of content e.g. ScholarlyArticle, Book,
-TVSeries or TVEpisode may indicate their temporalCoverage in broader terms
+written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book,
+TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms
 - textually or via well-known URL. Written works such as books may
 sometimes have precise temporal coverage too, e.g. a work set in 1939 -
 1945 can be indicated in ISO 8601 interval format format via "1939/1945".
@@ -3140,8 +3140,8 @@ has time_required => (
 
 C<translationOfWork>
 
-The work that this work has been translated from. e.g. ç©ç§èµ·æº is a
-translationOf âOn the Origin of Speciesâ
+The work that this work has been translated from. E.g. ç©ç§èµ·æº is a
+translationOf âOn the Origin of Speciesâ.
 
 
 A translation_of_work should be one of the following types:
@@ -3229,7 +3229,7 @@ has typical_age_range => (
 
 C<usageInfo>
 
-The schema.org [[usageInfo]] property indicates further information about a L<SemanticWeb::Schema::CreativeWork>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.
+The schema.org [[usageInfo]] property indicates further information about a L<SemanticWeb::Schema::CreativeWork>. This property is applicable both to works that are freely available and to those that require payment or other transactions. It can reference additional information, e.g. community expectations on preferred linking and citation conventions, as well as purchasing details. For something that can be commercially licensed, usageInfo can provide detailed, resource-specific information about licensing options.
 
 This property can be used alongside the license property which indicates license(s) applicable to some piece of content. The usageInfo property can provide information about other licensing options, e.g. acquiring commercial usage rights for an image that is also available under non-commercial creative commons licenses.
 
@@ -3321,7 +3321,7 @@ has video => (
 C<workExample>
 
 Example/instance/realization/derivation of the concept of this creative
-work. eg. The paperback edition, first edition, or eBook.
+work. E.g. the paperback edition, first edition, or e-book.
 
 
 A work_example should be one of the following types:
@@ -3349,8 +3349,8 @@ has work_example => (
 
 C<workTranslation>
 
-A work that is a translation of the content of this work. e.g. è¥¿éè¨
-has an English workTranslation âJourney to the Westâ,a German
+A work that is a translation of the content of this work. E.g. è¥¿éè¨
+has an English workTranslation âJourney to the Westâ, a German
 workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese translation TÃ¢y
 du kÃ½ bÃ¬nh kháº£o.
 

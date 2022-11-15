@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -23,7 +23,7 @@ our $VERSION = 'v14.0.1';
 
 An anatomical system is a group of anatomical structures that work together
 to perform a certain task. Anatomical systems, such as organ systems, are
-one organizing principle of anatomy, and can includes circulatory,
+one organizing principle of anatomy, and can include circulatory,
 digestive, endocrine, integumentary, immune, lymphatic, muscular, nervous,
 reproductive, respiratory, skeletal, urinary, vestibular, and other
 systems.

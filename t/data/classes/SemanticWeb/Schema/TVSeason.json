@@ -4,8 +4,8 @@
       "rdfs:comment" : "Season dedicated to TV broadcast and associated online delivery.",
       "rdfs:label" : "TVSeason",
       "rdfs:subClassOf" : [
-         "schema:CreativeWorkSeason",
-         "schema:CreativeWork"
+         "schema:CreativeWork",
+         "schema:CreativeWorkSeason"
       ]
    },
    "properties" : {
@@ -15,11 +15,11 @@
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
             "schema:TVSeries",
-            "schema:Product",
-            "schema:Movie",
-            "schema:CreativeWork",
             "schema:TVSeason",
-            "schema:TVEpisode"
+            "schema:CreativeWork",
+            "schema:TVEpisode",
+            "schema:Product",
+            "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -29,9 +29,9 @@
          "rdfs:label" : "partOfTVSeries",
          "rdfs:subPropertyOf" : "schema:isPartOf",
          "schema:domainIncludes" : [
-            "schema:TVEpisode",
+            "schema:TVClip",
             "schema:TVSeason",
-            "schema:TVClip"
+            "schema:TVEpisode"
          ],
          "schema:rangeIncludes" : "schema:TVSeries",
          "schema:supersededBy" : "schema:partOfSeries"

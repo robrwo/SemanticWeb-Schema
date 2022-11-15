@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ item's target audience.
 
 C<numberOfEmployees>
 
-The number of employees in an organization e.g. business.
+The number of employees in an organization, e.g. business.
 
 
 A number_of_employees should be one of the following types:

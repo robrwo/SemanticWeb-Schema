@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Format of this release (the type of recording media used, ie. compact disc,
-digital media, LP, etc.).
+Format of this release (the type of recording media used, i.e. compact
+disc, digital media, LP, etc.).
 
 
 

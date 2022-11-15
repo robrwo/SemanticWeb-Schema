@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.\\n\\nRelated actions:\\n\\n* [[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.",
+      "rdfs:comment" : "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise.\\n\\nRelated actions:\\n\\n* [[ListenAction]]: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\\n* [[WatchAction]]: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.",
       "rdfs:label" : "PlayAction",
       "rdfs:subClassOf" : "schema:Action"
    },
@@ -12,11 +12,11 @@
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
             "schema:Product",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:PlayAction",
             "schema:Service",
-            "schema:LodgingBusiness"
+            "schema:CreativeWork",
+            "schema:LodgingBusiness",
+            "schema:Event",
+            "schema:PlayAction"
          ],
          "schema:rangeIncludes" : "schema:Audience"
       },
@@ -26,12 +26,12 @@
          "rdfs:label" : "event",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:LeaveAction",
-            "schema:JoinAction",
-            "schema:InformAction",
             "schema:Place",
             "schema:PlayAction",
-            "schema:InviteAction"
+            "schema:InviteAction",
+            "schema:LeaveAction",
+            "schema:InformAction",
+            "schema:JoinAction"
          ],
          "schema:rangeIncludes" : "schema:Event"
       }

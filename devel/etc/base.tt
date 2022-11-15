@@ -81,6 +81,23 @@ The context defaults to "[% context %]".
 
 around _build_context => sub { return 'http://schema.org/' };
 
+=head1 FREQUENTLY ASKED QUESTIONS
+
+=head2 How are these classes generated?
+
+A script in the F<devel> directory downloads the RDF descriptions of the data, and uses that to generate the classes.
+
+The author may make some manual changes to work around any bugs in the class generation.
+
+=head2 Why don't you split this into separate distributions?
+
+As of v14, there are more than 890 classes. It would be difficult to rebuild and upload separate distributions for each
+class. Each distribution would have separate permissions and nearly duplicate metadata files on CPAN, and would end up
+using more disk space and network bandwidth.  It would add the risk of breaking something for users if there was a
+missing or inconsistent dependency, and increase the time it would take to install if users want multiple classes.
+
+The benefit of saving disk space is rather small considering the potential problems.
+
 =head1 SEE ALSO
 
 =over

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ user interface to generate visual feedback on a video device.
 
 
 
-An actor, e.g. in tv, radio, movie, video games etc., or in an event.
+An actor, e.g. in TV, radio, movie, video games etc., or in an event.
 Actors can be associated with individual items or with a series, episode,
 clip.
 
@@ -64,7 +64,7 @@ has actor => (
 
 
 
-An actor, e.g. in tv, radio, movie, video games etc. Actors can be
+An actor, e.g. in TV, radio, movie, video games etc. Actors can be
 associated with individual items or with a series, episode, clip.
 
 
@@ -121,7 +121,7 @@ has cheat_code => (
 
 
 
-A director of e.g. tv, radio, movie, video gaming etc. content, or of an
+A director of e.g. TV, radio, movie, video gaming etc. content, or of an
 event. Directors can be associated with individual items or with a series,
 episode, clip.
 
@@ -151,7 +151,7 @@ has director => (
 
 
 
-A director of e.g. tv, radio, movie, video games etc. content. Directors
+A director of e.g. TV, radio, movie, video games etc. content. Directors
 can be associated with individual items or with a series, episode, clip.
 
 
@@ -360,7 +360,7 @@ has play_mode => (
 
 
 
-The trailer of a movie or tv/radio series, season, episode, etc.
+The trailer of a movie or TV/radio series, season, episode, etc.
 
 
 A trailer should be one of the following types:

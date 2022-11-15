@@ -8,13 +8,13 @@
    "properties" : {
       "schema:dataFeedElement" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An item within in a data feed. Data feeds may have many elements.",
+         "rdfs:comment" : "An item within a data feed. Data feeds may have many elements.",
          "rdfs:label" : "dataFeedElement",
          "schema:domainIncludes" : "schema:DataFeed",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Thing",
-            "schema:DataFeedItem",
-            "schema:Text"
+            "schema:DataFeedItem"
          ]
       }
    }

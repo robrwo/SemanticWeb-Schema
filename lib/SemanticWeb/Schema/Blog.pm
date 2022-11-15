@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A L<blog|https://en.wikipedia.org/wiki/Blog>, sometimes known as a "weblog". Note that the individual posts (L<SemanticWeb::Schema::BlogPosting>s) in a L<SemanticWeb::Schema::Blog> are often colloqually referred to by the same term.
+A L<blog|https://en.wikipedia.org/wiki/Blog>, sometimes known as a "weblog". Note that the individual posts (L<SemanticWeb::Schema::BlogPosting>s) in a L<SemanticWeb::Schema::Blog> are often colloquially referred to by the same term.
 
 
 

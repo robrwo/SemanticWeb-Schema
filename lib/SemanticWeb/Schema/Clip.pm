@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ A short TV or radio program or a segment/part of a program.
 
 
 
-An actor, e.g. in tv, radio, movie, video games etc., or in an event.
+An actor, e.g. in TV, radio, movie, video games etc., or in an event.
 Actors can be associated with individual items or with a series, episode,
 clip.
 
@@ -63,7 +63,7 @@ has actor => (
 
 
 
-An actor, e.g. in tv, radio, movie, video games etc. Actors can be
+An actor, e.g. in TV, radio, movie, video games etc. Actors can be
 associated with individual items or with a series, episode, clip.
 
 
@@ -122,7 +122,7 @@ has clip_number => (
 
 
 
-A director of e.g. tv, radio, movie, video gaming etc. content, or of an
+A director of e.g. TV, radio, movie, video gaming etc. content, or of an
 event. Directors can be associated with individual items or with a series,
 episode, clip.
 
@@ -152,7 +152,7 @@ has director => (
 
 
 
-A director of e.g. tv, radio, movie, video games etc. content. Directors
+A director of e.g. TV, radio, movie, video games etc. content. Directors
 can be associated with individual items or with a series, episode, clip.
 
 

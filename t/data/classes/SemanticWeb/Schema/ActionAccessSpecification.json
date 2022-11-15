@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A set of requirements that a must be fulfilled in order to perform an Action.",
+      "rdfs:comment" : "A set of requirements that must be fulfilled in order to perform an Action.",
       "rdfs:label" : "ActionAccessSpecification",
       "rdfs:subClassOf" : "schema:Intangible",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
@@ -12,18 +12,18 @@
          "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityEnds",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
             "schema:Offer",
+            "schema:ActionAccessSpecification",
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
             "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:Date"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources:source_GoodRelationsTerms"
+            "schemadotorgsources:source_GoodRelationsTerms",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:availabilityStarts" : {
@@ -31,9 +31,9 @@
          "rdfs:comment" : "The beginning of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityStarts",
          "schema:domainIncludes" : [
-            "schema:Demand",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Time",
@@ -50,25 +50,25 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:Service",
-            "schema:Recommendation",
             "schema:SpecialAnnouncement",
-            "schema:Invoice",
+            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:Invoice",
+            "schema:Recommendation",
             "schema:PhysicalActivity",
             "schema:Product",
-            "schema:Offer"
+            "schema:Service"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:Text",
+            "schema:CategoryCode",
             "schema:PhysicalActivityCategory",
-            "schema:Thing",
-            "schema:CategoryCode"
+            "schema:Text",
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
+            "https://github.com/schemaorg/schemaorg/issues/1741",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:eligibleRegion" : {
@@ -77,15 +77,15 @@
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:ActionAccessSpecification"
+            "schema:Offer",
+            "schema:ActionAccessSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
+            "schema:Place",
             "schema:Text",
-            "schema:Place"
+            "schema:GeoShape"
          ],
          "schema:source" : [
             "schemadotorgsources:source_GoodRelationsTerms",
@@ -97,9 +97,9 @@
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:MediaSubscription",
+            "schema:ConsumeAction",
             "schema:ActionAccessSpecification",
-            "schema:ConsumeAction"
+            "schema:MediaSubscription"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
@@ -110,10 +110,10 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
             "schema:Offer",
+            "schema:MediaObject",
             "schema:ActionAccessSpecification",
-            "schema:DeliveryChargeSpecification",
             "schema:Demand",
-            "schema:MediaObject"
+            "schema:DeliveryChargeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

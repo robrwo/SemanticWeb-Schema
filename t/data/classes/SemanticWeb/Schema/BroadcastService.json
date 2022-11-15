@@ -30,11 +30,11 @@
       },
       "schema:broadcastFrequency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The frequency used for over-the-air broadcasts. Numeric values or simple ranges e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
+         "rdfs:comment" : "The frequency used for over-the-air broadcasts. Numeric values or simple ranges, e.g. 87-99. In addition a shortcut idiom is supported for frequences of AM and FM radio channels, e.g. \"87 FM\".",
          "rdfs:label" : "broadcastFrequency",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
-            "schema:BroadcastChannel"
+            "schema:BroadcastChannel",
+            "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : [
             "schema:BroadcastFrequencySpecification",
@@ -44,7 +44,7 @@
       },
       "schema:broadcastTimezone" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601) for which the service bases its broadcasts",
+         "rdfs:comment" : "The timezone in [ISO 8601 format](http://en.wikipedia.org/wiki/ISO_8601) for which the service bases its broadcasts.",
          "rdfs:label" : "broadcastTimezone",
          "schema:domainIncludes" : "schema:BroadcastService",
          "schema:rangeIncludes" : "schema:Text"
@@ -63,8 +63,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:BroadcastService",
-            "schema:Person",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:Person"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -84,13 +84,13 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:BroadcastService",
-            "schema:Event",
-            "schema:CreativeWork",
             "schema:LinkRole",
+            "schema:CreativeWork",
+            "schema:Event",
+            "schema:BroadcastService",
             "schema:PronounceableText",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

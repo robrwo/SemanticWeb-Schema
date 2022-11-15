@@ -8,7 +8,7 @@
    "properties" : {
       "schema:codeRepository" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).",
+         "rdfs:comment" : "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex).",
          "rdfs:label" : "codeRepository",
          "schema:domainIncludes" : "schema:SoftwareSourceCode",
          "schema:rangeIncludes" : "schema:URL"
@@ -32,7 +32,7 @@
       },
       "schema:runtime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).",
+         "rdfs:comment" : "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
          "rdfs:label" : "runtime",
          "schema:domainIncludes" : "schema:SoftwareSourceCode",
          "schema:rangeIncludes" : "schema:Text",
@@ -40,7 +40,7 @@
       },
       "schema:runtimePlatform" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3, .Net Framework 3.0).",
+         "rdfs:comment" : "Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3, .NET Framework 3.0).",
          "rdfs:label" : "runtimePlatform",
          "schema:domainIncludes" : "schema:SoftwareSourceCode",
          "schema:rangeIncludes" : "schema:Text"

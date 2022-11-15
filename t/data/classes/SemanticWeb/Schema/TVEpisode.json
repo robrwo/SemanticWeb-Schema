@@ -12,11 +12,11 @@
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
             "schema:TVSeries",
-            "schema:Product",
-            "schema:Movie",
-            "schema:CreativeWork",
             "schema:TVSeason",
-            "schema:TVEpisode"
+            "schema:CreativeWork",
+            "schema:TVEpisode",
+            "schema:Product",
+            "schema:Movie"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -26,9 +26,9 @@
          "rdfs:label" : "partOfTVSeries",
          "rdfs:subPropertyOf" : "schema:isPartOf",
          "schema:domainIncludes" : [
-            "schema:TVEpisode",
+            "schema:TVClip",
             "schema:TVSeason",
-            "schema:TVClip"
+            "schema:TVEpisode"
          ],
          "schema:rangeIncludes" : "schema:TVSeries",
          "schema:supersededBy" : "schema:partOfSeries"
@@ -38,10 +38,10 @@
          "rdfs:comment" : "Languages in which subtitles/captions are available, in [IETF BCP 47 standard format](http://tools.ietf.org/html/bcp47).",
          "rdfs:label" : "subtitleLanguage",
          "schema:domainIncludes" : [
-            "schema:TVEpisode",
-            "schema:Movie",
             "schema:ScreeningEvent",
-            "schema:BroadcastEvent"
+            "schema:Movie",
+            "schema:BroadcastEvent",
+            "schema:TVEpisode"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -61,8 +61,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2469"
       }

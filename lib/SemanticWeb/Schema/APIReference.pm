@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,7 +33,7 @@ Reference documentation for application programming interfaces (APIs).
 
 
 
-Library file name e.g., mscorlib.dll, system.web.dll.
+Library file name, e.g., mscorlib.dll, system.web.dll.
 
 
 A assembly should be one of the following types:
@@ -61,7 +61,7 @@ has assembly => (
 
 C<assemblyVersion>
 
-Associated product/technology version. e.g., .NET Framework 4.5.
+Associated product/technology version. E.g., .NET Framework 4.5.
 
 
 A assembly_version should be one of the following types:
@@ -89,7 +89,7 @@ has assembly_version => (
 
 C<executableLibraryName>
 
-Library file name e.g., mscorlib.dll, system.web.dll.
+Library file name, e.g., mscorlib.dll, system.web.dll.
 
 
 A executable_library_name should be one of the following types:

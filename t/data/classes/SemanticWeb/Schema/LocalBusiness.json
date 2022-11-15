@@ -5,14 +5,14 @@
       "rdfs:comment" : "A particular physical business or branch of an organization. Examples of LocalBusiness include a restaurant, a particular branch of a restaurant chain, a branch of a bank, a medical practice, a club, a bowling alley, etc.",
       "rdfs:label" : "LocalBusiness",
       "rdfs:subClassOf" : [
-         "schema:Organization",
-         "schema:Place"
+         "schema:Place",
+         "schema:Organization"
       ]
    },
    "properties" : {
       "schema:branchOf" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)[[branch]].",
+         "rdfs:comment" : "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical) [[branch]].",
          "rdfs:label" : "branchOf",
          "schema:domainIncludes" : "schema:LocalBusiness",
          "schema:rangeIncludes" : "schema:Organization",
@@ -20,7 +20,7 @@
       },
       "schema:currenciesAccepted" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The currency accepted.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+         "rdfs:comment" : "The currency accepted.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currenciesAccepted",
          "schema:domainIncludes" : "schema:LocalBusiness",
          "schema:rangeIncludes" : "schema:Text"

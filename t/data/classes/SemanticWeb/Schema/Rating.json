@@ -15,8 +15,8 @@
             "schema:Rating"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:bestRating" : {
@@ -40,7 +40,7 @@
       },
       "schema:ratingValue" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The rating for the content.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+         "rdfs:comment" : "The rating for the content.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
          "rdfs:label" : "ratingValue",
          "schema:domainIncludes" : "schema:Rating",
          "schema:rangeIncludes" : [
@@ -53,8 +53,8 @@
          "rdfs:comment" : "This Review or Rating is relevant to this part or facet of the itemReviewed.",
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
-            "schema:Review",
             "schema:Guide",
+            "schema:Review",
             "schema:Rating"
          ],
          "schema:rangeIncludes" : "schema:Text",

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -72,7 +72,7 @@ The power of the vehicle's engine.
 
 =item *
 
-Note 1: There are many different ways of measuring an engine's power. For an overview, see  L<I<power>test_codes|http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes>.
+Note 1: There are many different ways of measuring an engine's power. For an overview, see  L<http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes|http://en.wikipedia.org/wiki/Horsepower#Engine_power_test_codes>.
 
 
 =item *

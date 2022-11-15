@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Season;
 
-# ABSTRACT: A media season e
+# ABSTRACT: A media season, e
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A media season e.g. tv, radio, video game etc.
+A media season, e.g. TV, radio, video game etc.
 
 
 

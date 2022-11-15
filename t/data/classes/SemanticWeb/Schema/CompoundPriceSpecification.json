@@ -24,8 +24,8 @@
             "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceTypeEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:PriceTypeEnumeration"
          ],
          "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
       }

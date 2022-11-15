@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A business that provide Heating, Ventilation and Air Conditioning services.",
+      "rdfs:comment" : "A business that provides Heating, Ventilation and Air Conditioning services.",
       "rdfs:label" : "HVACBusiness",
       "rdfs:subClassOf" : "schema:HomeAndConstructionBusiness"
    },

@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A collection of items e.g. creative works or products.",
+      "rdfs:comment" : "A collection of items, e.g. creative works or products.",
       "rdfs:label" : "Collection",
       "rdfs:subClassOf" : "schema:CreativeWork",
       "schema:isPartOf" : "http:bib.schema.org"

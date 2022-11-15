@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "An item used as either a tool or supply when performing the instructions for how to to achieve a result.",
+      "rdfs:comment" : "An item used as either a tool or supply when performing the instructions for how to achieve a result.",
       "rdfs:label" : "HowToItem",
       "rdfs:subClassOf" : "schema:ListItem"
    },
@@ -12,8 +12,8 @@
          "rdfs:label" : "requiredQuantity",
          "schema:domainIncludes" : "schema:HowToItem",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
             "schema:Number",
+            "schema:QuantitativeValue",
             "schema:Text"
          ]
       }

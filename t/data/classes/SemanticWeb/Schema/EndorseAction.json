@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "An agent approves/certifies/likes/supports/sanction an object.",
+      "rdfs:comment" : "An agent approves/certifies/likes/supports/sanctions an object.",
       "rdfs:label" : "EndorseAction",
       "rdfs:subClassOf" : "schema:ReactAction"
    },

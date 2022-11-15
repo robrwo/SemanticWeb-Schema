@@ -8,11 +8,11 @@
    "properties" : {
       "schema:healthPlanNetworkId" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Name or unique ID of network. (Networks are often reused across different insurance plans).",
+         "rdfs:comment" : "Name or unique ID of network. (Networks are often reused across different insurance plans.)",
          "rdfs:label" : "healthPlanNetworkId",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
-            "schema:HealthPlanNetwork"
+            "schema:HealthPlanNetwork",
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -32,10 +32,10 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:Hospital",
-            "schema:MedicalOrganization",
             "schema:Physician",
-            "schema:MedicalClinic"
+            "schema:MedicalOrganization",
+            "schema:MedicalClinic",
+            "schema:Hospital"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"

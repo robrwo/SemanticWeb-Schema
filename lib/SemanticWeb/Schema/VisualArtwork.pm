@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -65,7 +65,7 @@ has art_edition => (
 
 C<artMedium>
 
-The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble,
+The material used. (E.g. Oil, Watercolour, Acrylic, Linoprint, Marble,
 Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut,
 Pencil, Mixed Media, etc.)
 

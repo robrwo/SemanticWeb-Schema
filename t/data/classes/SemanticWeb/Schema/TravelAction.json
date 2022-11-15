@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "The act of traveling from an fromLocation to a destination by a specified mode of transport, optionally with participants.",
+      "rdfs:comment" : "The act of traveling from a fromLocation to a destination by a specified mode of transport, optionally with participants.",
       "rdfs:label" : "TravelAction",
       "rdfs:subClassOf" : "schema:MoveAction"
    },

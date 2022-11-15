@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -181,6 +181,42 @@ has area_served => (
     is        => 'rw',
     predicate => '_has_area_served',
     json_ld   => 'areaServed',
+);
+
+
+=head2 C<asin>
+
+
+
+An Amazon Standard Identification Number (ASIN) is a 10-character
+alphanumeric unique identifier assigned by Amazon.com and its partners for
+product identification within the Amazon organization (summary from
+[Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Nu
+mber)'s article). Note also that this is a definition for how to include
+ASINs in Schema.org data, and not a definition of ASINs in general - see
+documentation from Amazon for authoritative details. ASINs are most
+commonly encoded as text strings, but the [asin] property supports URL/URI
+as potential values too.
+
+
+A asin should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_asin>
+
+A predicate for the L</asin> attribute.
+
+=cut
+
+has asin => (
+    is        => 'rw',
+    predicate => '_has_asin',
+    json_ld   => 'asin',
 );
 
 
@@ -392,6 +428,38 @@ has category => (
 );
 
 
+=head2 C<checkout_page_url_template>
+
+C<checkoutPageURLTemplate>
+
+A URL template (RFC 6570) for a checkout page for an offer. This approach
+allows merchants to specify a URL for online checkout of the offered
+product, by interpolating parameters such as the logged in user ID, product
+ID, quantity, discount code etc. Parameter naming and standardization are
+not specified here.
+
+
+A checkout_page_url_template should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_checkout_page_url_template>
+
+A predicate for the L</checkout_page_url_template> attribute.
+
+=cut
+
+has checkout_page_url_template => (
+    is        => 'rw',
+    predicate => '_has_checkout_page_url_template',
+    json_ld   => 'checkoutPageURLTemplate',
+);
+
+
 =head2 C<delivery_lead_time>
 
 C<deliveryLeadTime>
@@ -576,7 +644,11 @@ has eligible_transaction_volume => (
 
 
 
-A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties. The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged.
+A Global Trade Item Number (L<GTIN|https://www.gs1.org/standards/id-keys/gtin>). GTINs identify trade items, including products and services, using numeric identification codes.
+
+The GS1 L<digital link specifications|https://www.gs1.org/standards/Digital-Link/> express GTINs as URLs (URIs, IRIs, etc.). Details including regular expression examples can be found in, Section 6 of the GS1 URI Syntax specification; see also L<schema.org tracking issue|https://github.com/schemaorg/schemaorg/issues/3156#issuecomment-1209522809> for schema.org-specific discussion. A correct [[gtin]] value should be a valid GTIN, which means that it should be an all-numeric string of either 8, 12, 13 or 14 digits, or a "GS1 Digital Link" URL based on such a string. The numeric component should also have a L<valid GS1 check digit|https://www.gs1.org/services/check-digit-calculator> and meet the other rules for valid GTINs. See also L<GS1's GTIN Summary|http://www.gs1.org/barcodes/technical/idkeys/gtin> and L<Wikipedia|https://en.wikipedia.org/wiki/Global_Trade_Item_Number> for more details. Left-padding of the gtin values is not required or encouraged. The [[gtin]] property generalizes the earlier [[gtin8]], [[gtin12]], [[gtin13]], and [[gtin14]] properties.
+
+Note also that this is a definition for how to include GTINs in Schema.org data, and not a definition of GTINs in general - see the GS1 documentation for authoritative details.
 
 A gtin should be one of the following types:
 
@@ -1029,6 +1101,35 @@ has lease_length => (
 );
 
 
+=head2 C<mobile_url>
+
+C<mobileUrl>
+
+The [[mobileUrl]] property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated 'mobile site'.
+
+To discourage over-use, and reflecting intial usecases, the property is expected only on L<SemanticWeb::Schema::Product> and L<SemanticWeb::Schema::Offer>, rather than L<SemanticWeb::Schema::Thing>. The general trend in web technology is towards L<responsive design|https://en.wikipedia.org/wiki/Responsive_web_design> in which content can be flexibly adapted to a wide range of browsing environments. Pages and sites referenced with the long-established [[url]] property should ideally also be usable on a wide variety of devices, including mobile phones. In most cases, it would be pointless and counter productive to attempt to update all [[url]] markup to use [[mobileUrl]] for more mobile-oriented pages. The property is intended for the case when items (primarily L<SemanticWeb::Schema::Product> and L<SemanticWeb::Schema::Offer>) have extra URLs hosted on an additional "mobile site" alongside the main one. It should not be taken as an endorsement of this publication style.
+
+A mobile_url should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_mobile_url>
+
+A predicate for the L</mobile_url> attribute.
+
+=cut
+
+has mobile_url => (
+    is        => 'rw',
+    predicate => '_has_mobile_url',
+    json_ld   => 'mobileUrl',
+);
+
+
 =head2 C<mpn>
 
 
@@ -1100,7 +1201,7 @@ Usage guidelines:
 
 =item *
 
-Use the [[priceCurrency]] property (with standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217> e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies e.g. "BTC"; well known names for L<Local Exchange Tradings Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types e.g. "Ithaca HOUR") instead of including L<ambiguous symbols|http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign> such as '$' in the value.
+Use the [[priceCurrency]] property (with standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217>, e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies, e.g. "BTC"; well known names for L<Local Exchange Trading Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types, e.g. "Ithaca HOUR") instead of including L<ambiguous symbols|http://en.wikipedia.org/wiki/Dollar_sign#Currencies_that_use_the_dollar_or_peso_sign> such as '$' in the value.
 
 
 =item *
@@ -1115,7 +1216,7 @@ Note that both L<RDFa|http://www.w3.org/TR/xhtml-rdfa-primer/#using-the-content-
 
 =item *
 
-Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.
+Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.
 
 
 =back
@@ -1149,7 +1250,7 @@ C<priceCurrency>
 
 The currency of the price, or a price component when attached to L<SemanticWeb::Schema::PriceSpecification> and its subtypes.
 
-Use standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217> e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies e.g. "BTC"; well known names for L<Local Exchange Tradings Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types e.g. "Ithaca HOUR".
+Use standard formats: L<ISO 4217 currency format|http://en.wikipedia.org/wiki/ISO_4217>, e.g. "USD"; L<Ticker symbol|https://en.wikipedia.org/wiki/List_of_cryptocurrencies> for cryptocurrencies, e.g. "BTC"; well known names for L<Local Exchange Trading Systems|https://en.wikipedia.org/wiki/Local_exchange_trading_system> (LETS) and other currency types, e.g. "Ithaca HOUR".
 
 A price_currency should be one of the following types:
 

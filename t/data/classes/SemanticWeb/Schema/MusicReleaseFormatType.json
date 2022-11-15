@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Format of this release (the type of recording media used, ie. compact disc, digital media, LP, etc.).",
+      "rdfs:comment" : "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
       "rdfs:label" : "MusicReleaseFormatType",
       "rdfs:subClassOf" : "schema:Enumeration",
       "schema:source" : "schemadotorgsources:MBZ"

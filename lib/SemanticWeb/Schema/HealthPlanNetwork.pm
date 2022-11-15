@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -33,8 +33,7 @@ A US-style health insurance plan network.
 
 C<healthPlanCostSharing>
 
-Whether The costs to the patient for services under this network or
-formulary.
+The costs to the patient for services under this network or formulary.
 
 
 A health_plan_cost_sharing should be one of the following types:
@@ -63,7 +62,7 @@ has health_plan_cost_sharing => (
 C<healthPlanNetworkId>
 
 Name or unique ID of network. (Networks are often reused across different
-insurance plans).
+insurance plans.)
 
 
 A health_plan_network_id should be one of the following types:

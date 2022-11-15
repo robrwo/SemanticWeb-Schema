@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. __Note:__ This type has been superseded by [[MonetaryAmount]] use of that type is recommended",
+      "rdfs:comment" : "A DatedMoneySpecification represents monetary values with optional start and end dates. For example, this could represent an employee's salary over a specific period of time. __Note:__ This type has been superseded by [[MonetaryAmount]], use of that type is recommended.",
       "rdfs:label" : "DatedMoneySpecification",
       "rdfs:subClassOf" : "schema:StructuredValue",
       "schema:supersededBy" : "schema:MonetaryAmount"
@@ -13,9 +13,9 @@
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
             "schema:MonetaryGrant",
-            "schema:MoneyTransfer",
             "schema:LoanOrCredit",
             "schema:InvestmentOrDeposit",
+            "schema:MoneyTransfer",
             "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
@@ -29,14 +29,14 @@
       },
       "schema:currency" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217) e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies e.g. \"BTC\"; well known names for [Local Exchange Tradings Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types e.g. \"Ithaca HOUR\".",
+         "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
             "schema:MonetaryAmount",
+            "schema:DatedMoneySpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:ExchangeRateSpecification",
-            "schema:DatedMoneySpecification"
+            "schema:LoanOrCredit",
+            "schema:ExchangeRateSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -46,18 +46,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:EducationalOccupationalProgram",
             "schema:Role",
             "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
             "schema:Event",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -66,14 +66,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeason",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -35,7 +35,7 @@ code snippet samples, scripts, templates.
 C<codeRepository>
 
 Link to the repository where the un-compiled, human readable code and
-related code is located (SVN, github, CodePlex).
+related code is located (SVN, GitHub, CodePlex).
 
 
 A code_repository should be one of the following types:
@@ -122,8 +122,8 @@ has programming_language => (
 
 
 
-Runtime platform or script interpreter dependencies (Example - Java v1,
-Python2.3, .Net Framework 3.0).
+Runtime platform or script interpreter dependencies (example: Java v1,
+Python 2.3, .NET Framework 3.0).
 
 
 A runtime should be one of the following types:
@@ -151,8 +151,8 @@ has runtime => (
 
 C<runtimePlatform>
 
-Runtime platform or script interpreter dependencies (Example - Java v1,
-Python2.3, .Net Framework 3.0).
+Runtime platform or script interpreter dependencies (example: Java v1,
+Python 2.3, .NET Framework 3.0).
 
 
 A runtime_platform should be one of the following types:

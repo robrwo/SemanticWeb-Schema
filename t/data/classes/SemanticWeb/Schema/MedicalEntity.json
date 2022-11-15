@@ -20,20 +20,20 @@
          "rdfs:comment" : "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
          "rdfs:label" : "funding",
          "schema:domainIncludes" : [
-            "schema:BioChemEntity",
             "schema:CreativeWork",
             "schema:Event",
+            "schema:BioChemEntity",
             "schema:Organization",
             "schema:MedicalEntity",
-            "schema:Product",
-            "schema:Person"
+            "schema:Person",
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Grant",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/383",
-            "schemadotorgsources2:TP"
+            "schemadotorgsources2:TP",
+            "https://github.com/schemaorg/schemaorg/issues/383"
          ]
       },
       "schema:guideline" : {
@@ -49,15 +49,15 @@
          "rdfs:comment" : "The drug or supplement's legal status, including any controlled substance schedules that apply.",
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
-            "schema:Drug",
             "schema:DietarySupplement",
+            "schema:Drug",
             "schema:MedicalEntity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DrugLegalStatus",
             "schema:Text",
-            "schema:MedicalEnumeration"
+            "schema:MedicalEnumeration",
+            "schema:DrugLegalStatus"
          ]
       },
       "schema:medicineSystem" : {

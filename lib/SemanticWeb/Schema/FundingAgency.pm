@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -25,7 +25,7 @@ A FundingAgency is an organization that implements one or more L<SemanticWeb::Sc
     the granting process (via L<SemanticWeb::Schema::Grant>s, typically L<SemanticWeb::Schema::MonetaryGrant>s).
     A funding agency is not always required for grant funding, e.g. philanthropic giving, corporate sponsorship etc.
 
-Examples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation...
+Examples of funding agencies include ERC, REA, NIH, Bill and Melinda Gates Foundation, ...
 
 
 

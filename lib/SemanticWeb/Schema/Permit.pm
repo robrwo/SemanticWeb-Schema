@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -61,7 +61,7 @@ has issued_by => (
 
 C<issuedThrough>
 
-The service through with the permit was granted.
+The service through which the permit was granted.
 
 
 A issued_through should be one of the following types:

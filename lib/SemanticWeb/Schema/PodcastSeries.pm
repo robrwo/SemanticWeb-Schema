@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -34,7 +34,7 @@ user can download and listen to.
 
 
 
-An actor, e.g. in tv, radio, movie, video games etc., or in an event.
+An actor, e.g. in TV, radio, movie, video games etc., or in an event.
 Actors can be associated with individual items or with a series, episode,
 clip.
 

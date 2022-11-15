@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of a [[OfferShippingDetails]]. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].",
+      "rdfs:comment" : "A DeliveryTimeSettings represents re-usable pieces of shipping information, relating to timing. It is designed for publication on an URL that may be referenced via the [[shippingSettingsLink]] property of an [[OfferShippingDetails]]. Several occurrences can be published, distinguished (and identified/referenced) by their different values for [[transitTimeLabel]].",
       "rdfs:label" : "DeliveryTimeSettings",
       "rdfs:subClassOf" : "schema:StructuredValue",
       "schema:isPartOf" : "http:pending.schema.org",
@@ -13,8 +13,8 @@
          "rdfs:comment" : "The total delay between the receipt of the order and the goods reaching the final customer.",
          "rdfs:label" : "deliveryTime",
          "schema:domainIncludes" : [
-            "schema:DeliveryTimeSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:ShippingDeliveryTime",
@@ -34,7 +34,7 @@
       },
       "schema:shippingDestination" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways e.g. postalCode ranges.",
+         "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
             "schema:ShippingRateSettings",

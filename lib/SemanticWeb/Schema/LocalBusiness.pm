@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -36,7 +36,7 @@ etc.
 
 C<branchOf>
 
-The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical)[[branch]].
+The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical) [[branch]].
 
 A branch_of should be one of the following types:
 
@@ -64,11 +64,11 @@ has branch_of => (
 C<currenciesAccepted>
 
 The currency accepted. Use standard formats: [ISO 4217 currency
-format](http://en.wikipedia.org/wiki/ISO_4217) e.g. "USD"; [Ticker
+format](http://en.wikipedia.org/wiki/ISO_4217), e.g. "USD"; [Ticker
 symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for
-cryptocurrencies e.g. "BTC"; well known names for [Local Exchange Tradings
+cryptocurrencies, e.g. "BTC"; well known names for [Local Exchange Trading
 Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system)
-(LETS) and other currency types e.g. "Ithaca HOUR".
+(LETS) and other currency types, e.g. "Ithaca HOUR".
 
 
 A currencies_accepted should be one of the following types:

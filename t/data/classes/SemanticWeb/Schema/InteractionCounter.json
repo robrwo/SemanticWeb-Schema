@@ -8,13 +8,13 @@
    "properties" : {
       "schema:endTime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+         "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:FoodEstablishmentReservation",
-            "schema:Action",
             "schema:InteractionCounter",
+            "schema:Schedule",
+            "schema:Action",
+            "schema:FoodEstablishmentReservation",
             "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
@@ -29,8 +29,8 @@
          "rdfs:label" : "interactionService",
          "schema:domainIncludes" : "schema:InteractionCounter",
          "schema:rangeIncludes" : [
-            "schema:SoftwareApplication",
-            "schema:WebSite"
+            "schema:WebSite",
+            "schema:SoftwareApplication"
          ]
       },
       "schema:interactionType" : {
@@ -45,32 +45,32 @@
          "rdfs:comment" : "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
          "rdfs:label" : "location",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Action",
-            "schema:InteractionCounter",
-            "schema:Event"
+            "schema:Event",
+            "schema:Organization",
+            "schema:InteractionCounter"
          ],
          "schema:rangeIncludes" : [
-            "schema:PostalAddress",
-            "schema:Text",
+            "schema:VirtualLocation",
             "schema:Place",
-            "schema:VirtualLocation"
+            "schema:Text",
+            "schema:PostalAddress"
          ]
       },
       "schema:startTime" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
+         "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. E.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
          "schema:domainIncludes" : [
-            "schema:Action",
-            "schema:Schedule",
-            "schema:FoodEstablishmentReservation",
+            "schema:MediaObject",
             "schema:InteractionCounter",
-            "schema:MediaObject"
+            "schema:Schedule",
+            "schema:Action",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },

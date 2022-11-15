@@ -15,14 +15,14 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
 A tourist trip. A created itinerary of visits to one or more places of interest (L<SemanticWeb::Schema::TouristAttraction>/L<SemanticWeb::Schema::TouristDestination>) often linked by a similar theme, geographic area, or interest to a particular [[touristType]]. The L<UNWTO|http://www2.unwto.org/> defines tourism trip as the Trip taken by visitors.
-  (See examples below).
+  (See examples below.)
 
 
 
@@ -33,7 +33,7 @@ A tourist trip. A created itinerary of visits to one or more places of interest 
 
 C<touristType>
 
-Attraction suitable for type(s) of tourist. eg. Children, visitors from a
+Attraction suitable for type(s) of tourist. E.g. children, visitors from a
 particular country, etc. 
 
 

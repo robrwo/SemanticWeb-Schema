@@ -13,18 +13,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:EducationalOccupationalProgram",
             "schema:Role",
             "schema:Schedule",
-            "schema:EducationalOccupationalProgram",
             "schema:Event",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -38,8 +38,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
             "schema:Integer",
+            "schema:DateTime",
             "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
@@ -49,8 +49,8 @@
          "rdfs:comment" : "Specifies an applicable return policy (from an enumeration).",
          "rdfs:label" : "returnPolicyCategory",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:MerchantReturnPolicySeasonalOverride"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MerchantReturnEnumeration",
@@ -61,14 +61,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeason",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:CreativeWorkSeries",
             "schema:DatedMoneySpecification",
-            "schema:MerchantReturnPolicySeasonalOverride"
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

@@ -18,8 +18,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:Taxon",
-            "schema:URL"
+            "schema:URL",
+            "schema:Taxon"
          ]
       },
       "schema:hasDefinedTerm" : {
@@ -27,8 +27,8 @@
          "rdfs:comment" : "A Defined Term contained in this term set.",
          "rdfs:label" : "hasDefinedTerm",
          "schema:domainIncludes" : [
-            "schema:DefinedTermSet",
-            "schema:Taxon"
+            "schema:Taxon",
+            "schema:DefinedTermSet"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",
@@ -43,22 +43,22 @@
          "schema:inverseOf" : "schema:childTaxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:Taxon",
-            "schema:Text"
+            "schema:Taxon"
          ]
       },
       "schema:taxonRank" : {
          "dc:source" : "www.bioschemas:Taxon",
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary â (typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs).",
+         "rdfs:comment" : "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary â typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs.",
          "rdfs:label" : "taxonRank",
          "schema:domainIncludes" : "schema:Taxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:PropertyValue",
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       }
    }

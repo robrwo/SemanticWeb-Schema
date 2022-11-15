@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::WarrantyScope;
 
-# ABSTRACT: A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product
+# ABSTRACT: A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product
 
 use Moo;
 
@@ -15,13 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
+A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product.
 
 Commonly used values:
 

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v14.0.1';
+our $VERSION = 'v15.0.0';
 
 =encoding utf8
 
@@ -108,7 +108,7 @@ has funder => (
 
 
 A person or organization that supports a thing through a pledge, promise,
-or financial contribution. e.g. a sponsor of a Medical Study or a corporate
+or financial contribution. E.g. a sponsor of a Medical Study or a corporate
 sponsor of an event.
 
 

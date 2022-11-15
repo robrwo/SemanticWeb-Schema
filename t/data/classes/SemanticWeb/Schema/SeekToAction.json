@@ -13,13 +13,13 @@
          "rdfs:comment" : "The start time of the clip expressed as the number of seconds from the beginning of the work.",
          "rdfs:label" : "startOffset",
          "schema:domainIncludes" : [
-            "schema:SeekToAction",
-            "schema:Clip"
+            "schema:Clip",
+            "schema:SeekToAction"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:HyperTocEntry"
+            "schema:HyperTocEntry",
+            "schema:Number"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2021"
       }
