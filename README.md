@@ -32,7 +32,7 @@ to embed in websites.
 This is a base class for the `SemanticWeb::Schema` classes, which
 were generated automatically from the following sources:
 
-- [https://schema.org/version/14.0/schemaorg-all-http.rdf](https://schema.org/version/14.0/schemaorg-all-http.rdf)
+- [https://schema.org/version/15.0/schemaorg-all-http.rdf](https://schema.org/version/15.0/schemaorg-all-http.rdf)
 
 # ATTRIBUTES
 
@@ -47,7 +47,7 @@ The context defaults to "http://schema.org/".
 # SEE ALSO
 
 - [Moo](https://metacpan.org/pod/Moo)
-- [MooX::JSON\_LD](https://metacpan.org/pod/MooX::JSON_LD)
+- [MooX::JSON\_LD](https://metacpan.org/pod/MooX%3A%3AJSON_LD)
 - [http://schema.org/](http://schema.org/)
 
 # SOURCE

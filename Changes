@@ -7,6 +7,8 @@ Revision history for {{$dist->name}}:
   [Documentation]
   - Added a FAQ section to SemanticWeb::Schema.
 
+  - Fixed encoding of links in README.
+
   [Tests]
   - Fixed typo in filename.
 
