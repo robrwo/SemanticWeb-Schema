@@ -44,6 +44,23 @@ If this is set, it adds a `@id` to the ["json\_ld\_data"](#json_ld_data).
 
 The context defaults to "http://schema.org/".
 
+# FREQUENTLY ASKED QUESTIONS
+
+## How are these classes generated?
+
+A script in the `devel` directory downloads the RDF descriptions of the data, and uses that to generate the classes.
+
+The author may make some manual changes to work around any bugs in the class generation.
+
+## Why don't you split this into separate distributions?
+
+As of v14, there are more than 890 classes. It would be difficult to rebuild and upload separate distributions for each
+class. Each distribution would have separate permissions and nearly duplicate metadata files on CPAN, and would end up
+using more disk space and network bandwidth.  It would add the risk of breaking something for users if there was a
+missing or inconsistent dependency, and increase the time it would take to install if users want multiple classes.
+
+The benefit of saving disk space is rather small considering the potential problems.
+
 # SEE ALSO
 
 - [Moo](https://metacpan.org/pod/Moo)
