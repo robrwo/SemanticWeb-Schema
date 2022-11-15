@@ -107,6 +107,7 @@ SemanticWeb-Schema-.*\.tar\.gz
 \.mailmap$
 perltidy\.(LOG|ERR)
 fatlib/
+^\.mite$
 cpanfile\.snapshot$
 local/
 lib/SemanticWeb/Schema/CssSelectorType.pm
