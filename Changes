@@ -7,6 +7,9 @@ Revision history for {{$dist->name}}:
   [Documentation]
   - Added a FAQ section to SemanticWeb::Schema.
 
+  [Tests]
+  - Fixed typo in filename.
+
 v14.0.0   2022-04-04 12:31:22+01:00 Europe/London
   [Enhancements]
   - Updated classes to Version 14.0 of the schema.
