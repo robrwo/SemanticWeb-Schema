@@ -10,6 +10,9 @@ Revision history for {{$dist->name}}:
   [Tests]
   - Fixed typo in filename.
 
+  [Other]
+  - Signed distribution.
+
 v14.0.0   2022-04-04 12:31:22+01:00 Europe/London
   [Enhancements]
   - Updated classes to Version 14.0 of the schema.
