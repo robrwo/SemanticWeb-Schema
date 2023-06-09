@@ -4,7 +4,7 @@ SemanticWeb::Schema - Moo classes for http://schema.org/ classes
 
 # VERSION
 
-version v15.0.0
+version v21.0.0
 
 The version number of this distribution is based on the corresponding
 version of schema classes.
@@ -60,6 +60,12 @@ using more disk space and network bandwidth.  It would add the risk of breaking 
 missing or inconsistent dependency, and increase the time it would take to install if users want multiple classes.
 
 The benefit of saving disk space is rather small considering the potential problems.
+
+# SUPPORT FOR OLDER PERL VERSIONS
+
+Since v21.0.0, the this module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
 
 # SEE ALSO
 
