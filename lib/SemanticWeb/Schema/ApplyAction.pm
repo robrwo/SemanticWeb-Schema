@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ApplyAction;
 
 # ABSTRACT: The act of registering to an organization/service without the guarantee to receive it
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OrganizeAction /;

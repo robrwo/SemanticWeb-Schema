@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BefriendAction;
 
 # ABSTRACT: The act of forming a personal connection with someone (object) mutually/bidirectionally/symmetrically
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

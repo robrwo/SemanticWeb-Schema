@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MeasurementTypeEnumeration;
 
 # ABSTRACT: Enumeration of common measurement types (or dimensions)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

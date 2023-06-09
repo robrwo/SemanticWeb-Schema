@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AnatomicalSystem;
 
 # ABSTRACT: An anatomical system is a group of anatomical structures that work together to perform a certain task
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BoatTrip;
 
 # ABSTRACT: A trip on a commercial ferry line.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Trip /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InternetCafe;
 
 # ABSTRACT: An internet cafe.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

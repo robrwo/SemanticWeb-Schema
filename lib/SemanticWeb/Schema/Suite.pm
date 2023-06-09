@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Suite;
 
 # ABSTRACT: A suite in a hotel or other public accommodation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Accommodation /;

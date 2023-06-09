@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReadAction;
 
 # ABSTRACT: The act of consuming written content.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

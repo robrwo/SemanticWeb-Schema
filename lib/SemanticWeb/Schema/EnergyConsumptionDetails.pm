@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EnergyConsumptionDetails;
 
 # ABSTRACT: EnergyConsumptionDetails represents information related to the energy efficiency of a product that consumes energy
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

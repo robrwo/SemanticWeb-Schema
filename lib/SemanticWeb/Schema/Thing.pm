@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Thing;
 
 # ABSTRACT: The most generic type of item.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReviewNewsArticle;
 
 # ABSTRACT: A [[NewsArticle]] and [[CriticReview]] providing a professional critic's assessment of a service
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CriticReview SemanticWeb::Schema::NewsArticle /;

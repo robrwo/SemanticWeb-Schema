@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Language;
 
 # ABSTRACT: Natural languages such as Spanish
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

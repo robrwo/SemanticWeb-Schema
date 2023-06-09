@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalSpecialty;
 
 # ABSTRACT: Any specific branch of medical science or practice
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::Specialty /;

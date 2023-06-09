@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugClass;
 
 # ABSTRACT: A class of medical drugs, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

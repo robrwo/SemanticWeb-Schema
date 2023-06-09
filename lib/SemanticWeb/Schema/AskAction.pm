@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AskAction;
 
 # ABSTRACT: The act of posing a question / favor to someone
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

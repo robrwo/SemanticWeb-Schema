@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SkiResort;
 
 # ABSTRACT: A ski resort.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Resort SemanticWeb::Schema::SportsActivityLocation /;

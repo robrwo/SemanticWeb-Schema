@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Blog;
 
 # ABSTRACT: A [blog](https://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

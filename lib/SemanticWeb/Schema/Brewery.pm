@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Brewery;
 
 # ABSTRACT: Brewery.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

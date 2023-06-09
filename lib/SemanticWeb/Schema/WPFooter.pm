@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WPFooter;
 
 # ABSTRACT: The footer section of the page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPageElement /;

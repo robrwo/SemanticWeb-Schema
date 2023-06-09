@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InviteAction;
 
 # ABSTRACT: The act of asking someone to attend an event
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

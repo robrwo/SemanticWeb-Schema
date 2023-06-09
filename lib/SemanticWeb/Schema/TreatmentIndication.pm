@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TreatmentIndication;
 
 # ABSTRACT: An indication for treating an underlying condition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIndication /;

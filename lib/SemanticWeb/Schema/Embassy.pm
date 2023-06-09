@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Embassy;
 
 # ABSTRACT: An embassy.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;

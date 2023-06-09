@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ShippingDeliveryTime;
 
 # ABSTRACT: ShippingDeliveryTime provides various pieces of information about delivery times for shipping.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PriceSpecification;
 
 # ABSTRACT: A structured value representing a price or price range
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

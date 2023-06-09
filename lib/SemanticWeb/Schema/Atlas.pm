@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Atlas;
 
 # ABSTRACT: A collection or bound volume of maps
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

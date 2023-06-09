@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ParkingFacility;
 
 # ABSTRACT: A parking lot or other parking facility.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

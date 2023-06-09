@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Vein;
 
 # ABSTRACT: A type of blood vessel that specifically carries blood to the heart.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vessel /;

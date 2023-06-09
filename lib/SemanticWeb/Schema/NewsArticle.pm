@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NewsArticle;
 
 # ABSTRACT: A NewsArticle is an article whose content reports news
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

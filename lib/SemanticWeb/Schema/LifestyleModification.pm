@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LifestyleModification;
 
 # ABSTRACT: A process of care involving exercise
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Place;
 
 # ABSTRACT: Entities that have a somewhat fixed
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

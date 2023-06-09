@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WorkBasedProgram;
 
 # ABSTRACT: A program with both an educational and employment component
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOccupationalProgram /;

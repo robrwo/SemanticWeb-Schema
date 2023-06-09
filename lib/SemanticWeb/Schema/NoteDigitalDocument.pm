@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NoteDigitalDocument;
 
 # ABSTRACT: A file containing a note
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DigitalDocument /;

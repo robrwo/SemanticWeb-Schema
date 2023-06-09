@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ParcelDelivery;
 
 # ABSTRACT: The delivery of a parcel either via the postal service or a commercial service.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

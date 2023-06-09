@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TransferAction;
 
 # ABSTRACT: The act of transferring/moving (abstract or concrete) animate or inanimate objects from one place to another.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

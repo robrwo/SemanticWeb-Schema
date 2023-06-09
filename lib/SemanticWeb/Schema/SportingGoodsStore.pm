@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SportingGoodsStore;
 
 # ABSTRACT: A sporting goods store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

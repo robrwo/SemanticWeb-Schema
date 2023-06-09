@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FindAction;
 
 # ABSTRACT: The act of finding an object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

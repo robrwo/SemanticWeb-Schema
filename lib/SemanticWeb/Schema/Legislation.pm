@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Legislation;
 
 # ABSTRACT: A legal document such as an act
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

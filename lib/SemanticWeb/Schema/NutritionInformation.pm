@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NutritionInformation;
 
 # ABSTRACT: Nutritional information about the recipe.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

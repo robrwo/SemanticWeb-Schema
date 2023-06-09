@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EducationalOccupationalProgram;
 
 # ABSTRACT: A program offered by an institution which determines the learning progress to achieve an outcome
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

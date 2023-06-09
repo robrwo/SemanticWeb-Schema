@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Observation;
 
 # ABSTRACT: Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]])
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AlignmentObject;
 
 # ABSTRACT: An intangible item that describes an alignment between a learning resource and a node in an educational framework
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

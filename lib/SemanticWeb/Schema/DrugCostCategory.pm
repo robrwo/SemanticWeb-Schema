@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugCostCategory;
 
 # ABSTRACT: Enumerated categories of medical drug costs.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

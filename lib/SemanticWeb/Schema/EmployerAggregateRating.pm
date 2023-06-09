@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EmployerAggregateRating;
 
 # ABSTRACT: An aggregate rating of an Organization related to its role as an employer.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AggregateRating /;

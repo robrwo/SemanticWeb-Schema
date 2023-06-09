@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalGuidelineContraindication;
 
 # ABSTRACT: A guideline contraindication that designates a process as harmful and where quality of the data supporting the contraindication is sound.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalGuideline /;

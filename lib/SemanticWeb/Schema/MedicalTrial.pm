@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalTrial;
 
 # ABSTRACT: A medical trial is a type of medical study that uses a scientific process to compare the safety and efficacy of medical therapies or medical procedures
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalStudy /;

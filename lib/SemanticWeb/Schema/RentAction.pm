@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RentAction;
 
 # ABSTRACT: The act of giving money in return for temporary use
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

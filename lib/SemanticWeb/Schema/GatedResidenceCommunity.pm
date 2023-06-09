@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GatedResidenceCommunity;
 
 # ABSTRACT: Residence type: Gated community.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Residence /;

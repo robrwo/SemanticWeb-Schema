@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GovernmentPermit;
 
 # ABSTRACT: A permit issued by a government agency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Permit /;

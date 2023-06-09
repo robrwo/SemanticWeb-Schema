@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BookFormatType;
 
 # ABSTRACT: The publication format of the book.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

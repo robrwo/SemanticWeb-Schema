@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LodgingReservation;
 
 # ABSTRACT: A reservation for lodging at a hotel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReturnLabelSourceEnumeration;
 
 # ABSTRACT: Enumerates several types of return labels for product returns.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

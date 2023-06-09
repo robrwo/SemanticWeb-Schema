@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ItemPage;
 
 # ABSTRACT: A page devoted to a single item
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

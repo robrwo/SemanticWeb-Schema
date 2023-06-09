@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BookmarkAction;
 
 # ABSTRACT: An agent bookmarks/flags/labels/tags/marks an object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OrganizeAction /;

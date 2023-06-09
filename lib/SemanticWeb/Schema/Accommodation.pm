@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Accommodation;
 
 # ABSTRACT: An accommodation is a place that can accommodate human beings
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

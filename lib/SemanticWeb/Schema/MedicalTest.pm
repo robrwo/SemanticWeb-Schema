@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalTest;
 
 # ABSTRACT: Any medical test
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

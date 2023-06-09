@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NLNonprofitType;
 
 # ABSTRACT: NLNonprofitType: Non-profit organization type originating from the Netherlands.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NonprofitType /;

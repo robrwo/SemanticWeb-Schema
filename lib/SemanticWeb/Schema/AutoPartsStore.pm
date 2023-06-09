@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutoPartsStore;
 
 # ABSTRACT: An auto parts store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness SemanticWeb::Schema::Store /;

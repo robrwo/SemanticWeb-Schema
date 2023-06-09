@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FoodEstablishmentReservation;
 
 # ABSTRACT: A reservation to dine at a food-related business
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

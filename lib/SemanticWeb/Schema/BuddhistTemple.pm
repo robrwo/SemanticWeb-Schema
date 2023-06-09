@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BuddhistTemple;
 
 # ABSTRACT: A Buddhist temple.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlaceOfWorship /;

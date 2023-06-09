@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PostOffice;
 
 # ABSTRACT: A post office.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentOffice /;

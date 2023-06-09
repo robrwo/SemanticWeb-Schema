@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Casino;
 
 # ABSTRACT: A casino.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness /;

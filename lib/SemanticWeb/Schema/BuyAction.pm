@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BuyAction;
 
 # ABSTRACT: The act of giving money to a seller in exchange for goods or services rendered
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

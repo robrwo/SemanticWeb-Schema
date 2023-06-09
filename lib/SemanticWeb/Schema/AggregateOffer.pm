@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AggregateOffer;
 
 # ABSTRACT: When a single product is associated with multiple offers (for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Offer /;

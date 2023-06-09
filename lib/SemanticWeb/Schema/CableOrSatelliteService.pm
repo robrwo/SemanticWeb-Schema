@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CableOrSatelliteService;
 
 # ABSTRACT: A service which provides access to media programming like TV or radio
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Florist;
 
 # ABSTRACT: A florist.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

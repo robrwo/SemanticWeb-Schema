@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PhysicalTherapy;
 
 # ABSTRACT: A process of progressive physical care and rehabilitation aimed at improving a health condition.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTherapy /;

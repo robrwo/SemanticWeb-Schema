@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Grant;
 
 # ABSTRACT: A grant
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

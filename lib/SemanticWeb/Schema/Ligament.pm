@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Ligament;
 
 # ABSTRACT: A short band of tough
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AnatomicalStructure /;

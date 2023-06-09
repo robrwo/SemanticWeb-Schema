@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Article;
 
 # ABSTRACT: An article
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EUEnergyEfficiencyEnumeration;
 
 # ABSTRACT: Enumerates the EU energy efficiency classes A-G as well as A+
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EnergyEfficiencyEnumeration /;

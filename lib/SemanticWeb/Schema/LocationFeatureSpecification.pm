@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LocationFeatureSpecification;
 
 # ABSTRACT: Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PropertyValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CheckoutPage;
 
 # ABSTRACT: Web page type: Checkout page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

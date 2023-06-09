@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FundingAgency;
 
 # ABSTRACT: A FundingAgency is an organization that implements one or more [[FundingScheme]]s and manages the granting process (via [[Grant]]s
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Project /;

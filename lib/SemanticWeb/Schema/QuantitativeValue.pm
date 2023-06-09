@@ -4,6 +4,7 @@ package SemanticWeb::Schema::QuantitativeValue;
 
 # ABSTRACT:  A point value or interval for product characteristics and other purposes.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

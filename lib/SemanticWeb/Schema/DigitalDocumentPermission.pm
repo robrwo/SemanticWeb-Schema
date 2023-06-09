@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DigitalDocumentPermission;
 
 # ABSTRACT: A permission for a particular person or group to access a particular file.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

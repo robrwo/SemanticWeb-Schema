@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LakeBodyOfWater;
 
 # ABSTRACT: A lake (for example, Lake Pontrachain).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

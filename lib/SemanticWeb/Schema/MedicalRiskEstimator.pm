@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalRiskEstimator;
 
 # ABSTRACT: Any rule set or interactive tool for estimating the risk of developing a complication or condition.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

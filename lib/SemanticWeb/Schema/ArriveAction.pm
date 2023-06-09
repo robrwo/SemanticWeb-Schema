@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ArriveAction;
 
 # ABSTRACT: The act of arriving at a place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MoveAction /;

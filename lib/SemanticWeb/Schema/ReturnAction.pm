@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReturnAction;
 
 # ABSTRACT: The act of returning to the origin that which was previously received (concrete objects) or taken (ownership).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

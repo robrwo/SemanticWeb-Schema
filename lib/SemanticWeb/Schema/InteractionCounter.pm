@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InteractionCounter;
 
 # ABSTRACT: A summary of how users have interacted with this CreativeWork
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

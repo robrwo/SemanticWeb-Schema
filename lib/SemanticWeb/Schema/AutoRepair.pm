@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutoRepair;
 
 # ABSTRACT: Car repair business.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

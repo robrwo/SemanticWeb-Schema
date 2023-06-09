@@ -4,6 +4,7 @@ package SemanticWeb::Schema::StatusEnumeration;
 
 # ABSTRACT: Lists or enumerations dealing with status types.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

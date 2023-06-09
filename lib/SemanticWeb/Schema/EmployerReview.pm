@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EmployerReview;
 
 # ABSTRACT: An [[EmployerReview]] is a review of an [[Organization]] regarding its role as an employer
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

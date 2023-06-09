@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AskPublicNewsArticle;
 
 # ABSTRACT: A [[NewsArticle]] expressing an open call by a [[NewsMediaOrganization]] asking the public for input
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NewsArticle /;

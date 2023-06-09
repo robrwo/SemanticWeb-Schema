@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CreativeWork;
 
 # ABSTRACT: The most generic kind of creative work
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

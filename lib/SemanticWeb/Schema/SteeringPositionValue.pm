@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SteeringPositionValue;
 
 # ABSTRACT: A value indicating a steering position.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::QualitativeValue /;

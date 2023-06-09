@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusinessAudience;
 
 # ABSTRACT: A set of characteristics belonging to businesses
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Audience /;

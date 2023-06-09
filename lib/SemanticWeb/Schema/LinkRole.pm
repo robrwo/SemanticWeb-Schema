@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LinkRole;
 
 # ABSTRACT: A Role that represents a Web link, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Role /;

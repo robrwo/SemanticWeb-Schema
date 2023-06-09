@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Attorney;
 
 # ABSTRACT: Professional service: Attorney
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LegalService /;

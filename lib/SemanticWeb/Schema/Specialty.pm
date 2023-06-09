@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Specialty;
 
 # ABSTRACT: Any branch of a field in which people typically develop specific expertise
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

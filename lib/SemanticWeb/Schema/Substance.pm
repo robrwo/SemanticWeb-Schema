@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Substance;
 
 # ABSTRACT: Any matter of defined composition that has discrete existence
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

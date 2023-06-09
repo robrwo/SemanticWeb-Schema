@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicEvent;
 
 # ABSTRACT: Event type: Music event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

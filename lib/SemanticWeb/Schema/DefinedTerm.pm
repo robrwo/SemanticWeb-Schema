@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DefinedTerm;
 
 # ABSTRACT: A word, name, acronym, phrase, etc
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

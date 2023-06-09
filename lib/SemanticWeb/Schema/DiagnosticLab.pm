@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DiagnosticLab;
 
 # ABSTRACT: A medical laboratory that offers on-site or off-site diagnostic services.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalOrganization /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HousePainter;
 
 # ABSTRACT: A house painting service.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

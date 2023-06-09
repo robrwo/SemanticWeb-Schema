@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BreadcrumbList;
 
 # ABSTRACT: A BreadcrumbList is an ItemList consisting of a chain of linked Web pages
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ItemList /;

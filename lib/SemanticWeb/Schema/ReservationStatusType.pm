@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReservationStatusType;
 
 # ABSTRACT: Enumerated status values for Reservation.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

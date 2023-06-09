@@ -4,6 +4,7 @@ package SemanticWeb::Schema::StadiumOrArena;
 
 # ABSTRACT: A stadium.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::SportsActivityLocation /;

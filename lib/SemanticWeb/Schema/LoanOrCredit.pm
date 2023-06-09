@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LoanOrCredit;
 
 # ABSTRACT: A financial product for the loaning of an amount of money
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialProduct /;

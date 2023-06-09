@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EventReservation;
 
 # ABSTRACT: A reservation for an event like a concert
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

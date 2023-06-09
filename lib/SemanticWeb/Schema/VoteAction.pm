@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VoteAction;
 
 # ABSTRACT: The act of expressing a preference from a fixed/finite/structured set of choices/options.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ChooseAction /;

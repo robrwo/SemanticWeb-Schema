@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalProcedureType;
 
 # ABSTRACT: An enumeration that describes different types of medical procedures.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalEntity;
 
 # ABSTRACT: The most generic type of entity related to health and the practice of medicine.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

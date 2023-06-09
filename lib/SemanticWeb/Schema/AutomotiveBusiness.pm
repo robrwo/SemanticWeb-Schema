@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutomotiveBusiness;
 
 # ABSTRACT: Car repair, sales, or parts.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProductReturnEnumeration;
 
 # ABSTRACT: ProductReturnEnumeration enumerates several kinds of product return policy
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

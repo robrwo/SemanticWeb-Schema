@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DefinedRegion;
 
 # ABSTRACT: A DefinedRegion is a geographic area defined by potentially arbitrary (rather than political
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

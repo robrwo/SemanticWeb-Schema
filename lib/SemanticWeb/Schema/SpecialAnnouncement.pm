@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SpecialAnnouncement;
 
 # ABSTRACT: A SpecialAnnouncement combines a simple date-stamped textual information update with contextualized Web links and other structured data
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

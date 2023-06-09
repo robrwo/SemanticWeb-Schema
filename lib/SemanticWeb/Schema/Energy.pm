@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Energy;
 
 # ABSTRACT: Properties that take Energy as values are of the form '<Number> <Energy unit of measure>'.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Quantity /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Guide;
 
 # ABSTRACT: [[Guide]] is a page or article that recommends specific products or services
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

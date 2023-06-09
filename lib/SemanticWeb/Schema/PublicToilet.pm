@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PublicToilet;
 
 # ABSTRACT: A public toilet is a room or small building containing one or more toilets (and possibly also urinals) which is available for use by the general public
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

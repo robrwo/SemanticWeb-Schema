@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HyperTocEntry;
 
 # ABSTRACT: A HyperToEntry is an item within a [[HyperToc]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

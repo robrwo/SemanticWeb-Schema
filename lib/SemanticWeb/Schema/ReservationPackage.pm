@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReservationPackage;
 
 # ABSTRACT: A group of multiple reservations with common values for all sub-reservations.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

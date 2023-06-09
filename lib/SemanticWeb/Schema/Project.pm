@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Project;
 
 # ABSTRACT: An enterprise (potentially individual but typically collaborative)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

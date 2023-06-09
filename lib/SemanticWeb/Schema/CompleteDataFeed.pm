@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CompleteDataFeed;
 
 # ABSTRACT: A [[CompleteDataFeed]] is a [[DataFeed]] whose standard representation includes content for every item currently in the feed
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DataFeed /;

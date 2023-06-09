@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalClinic;
 
 # ABSTRACT: A facility
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;

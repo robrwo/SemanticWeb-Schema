@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DoseSchedule;
 
 # ABSTRACT: A specific dosing schedule for a drug or supplement.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIntangible /;

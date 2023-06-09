@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ContactPoint;
 
 # ABSTRACT: A contact point—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GovernmentBenefitsType;
 
 # ABSTRACT: GovernmentBenefitsType enumerates several kinds of government benefits to support the COVID-19 situation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

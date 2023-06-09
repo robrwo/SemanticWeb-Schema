@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Periodical;
 
 # ABSTRACT: A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;

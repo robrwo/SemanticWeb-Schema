@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MovieRentalStore;
 
 # ABSTRACT: A movie rental store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

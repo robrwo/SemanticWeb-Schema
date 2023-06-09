@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SeaBodyOfWater;
 
 # ABSTRACT: A sea (for example, the Caspian sea).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

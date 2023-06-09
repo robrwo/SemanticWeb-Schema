@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TheaterEvent;
 
 # ABSTRACT: Event type: Theater performance.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

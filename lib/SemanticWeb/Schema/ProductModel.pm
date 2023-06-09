@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProductModel;
 
 # ABSTRACT: A datasheet or vendor specification of a product (in the sense of a prototypical description).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product /;

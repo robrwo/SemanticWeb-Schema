@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Course;
 
 # ABSTRACT: A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::LearningResource /;

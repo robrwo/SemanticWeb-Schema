@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VisualArtwork;
 
 # ABSTRACT: A work of art that is primarily visual in character.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

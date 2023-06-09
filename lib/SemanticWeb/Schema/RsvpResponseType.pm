@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RsvpResponseType;
 
 # ABSTRACT: RsvpResponseType is an enumeration type whose instances represent responding to an RSVP request.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

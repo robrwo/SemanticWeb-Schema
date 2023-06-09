@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Consortium;
 
 # ABSTRACT: A Consortium is a membership [[Organization]] whose members are typically Organizations.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

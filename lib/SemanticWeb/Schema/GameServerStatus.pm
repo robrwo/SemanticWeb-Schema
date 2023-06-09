@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GameServerStatus;
 
 # ABSTRACT: Status of a game server.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

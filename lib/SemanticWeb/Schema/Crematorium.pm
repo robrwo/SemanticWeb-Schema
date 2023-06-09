@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Crematorium;
 
 # ABSTRACT: A crematorium.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

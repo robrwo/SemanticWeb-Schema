@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProductGroup;
 
 # ABSTRACT: A ProductGroup represents a group of [[Product]]s that vary only in certain well-described ways
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product /;

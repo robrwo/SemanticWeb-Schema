@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InfectiousAgentClass;
 
 # ABSTRACT: Classes of agents or pathogens that transmit infectious diseases
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

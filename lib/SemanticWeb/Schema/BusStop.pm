@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusStop;
 
 # ABSTRACT: A bus stop.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

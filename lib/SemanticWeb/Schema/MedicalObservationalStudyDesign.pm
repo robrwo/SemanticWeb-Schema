@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalObservationalStudyDesign;
 
 # ABSTRACT: Design models for observational medical studies
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

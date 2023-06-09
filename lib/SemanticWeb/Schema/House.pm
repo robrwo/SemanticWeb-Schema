@@ -4,6 +4,7 @@ package SemanticWeb::Schema::House;
 
 # ABSTRACT: A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Accommodation /;

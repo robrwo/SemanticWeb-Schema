@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MotorizedBicycle;
 
 # ABSTRACT: A motorized bicycle is a bicycle with an attached motor used to power the vehicle
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vehicle /;

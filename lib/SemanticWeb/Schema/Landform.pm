@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Landform;
 
 # ABSTRACT: A landform or physical feature
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Plumber;
 
 # ABSTRACT: A plumbing service.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

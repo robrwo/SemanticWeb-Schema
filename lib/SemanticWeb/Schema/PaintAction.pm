@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PaintAction;
 
 # ABSTRACT: The act of producing a painting
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

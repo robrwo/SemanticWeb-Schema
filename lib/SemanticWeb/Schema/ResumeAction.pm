@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ResumeAction;
 
 # ABSTRACT: The act of resuming a device or application which was formerly paused (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ControlAction /;

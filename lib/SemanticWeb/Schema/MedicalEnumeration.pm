@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalEnumeration;
 
 # ABSTRACT: Enumerations related to health and the practice of medicine: A concept that is used to attribute a quality to another concept
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

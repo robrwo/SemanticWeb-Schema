@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SportsClub;
 
 # ABSTRACT: A sports club.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SportsActivityLocation /;

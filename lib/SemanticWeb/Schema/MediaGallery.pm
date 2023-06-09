@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaGallery;
 
 # ABSTRACT: Web page type: Media gallery page
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CollectionPage /;

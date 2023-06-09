@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FinancialProduct;
 
 # ABSTRACT: A product provided to consumers and businesses by financial institutions such as banks
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

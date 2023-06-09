@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Pharmacy;
 
 # ABSTRACT: A pharmacy or drugstore.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;

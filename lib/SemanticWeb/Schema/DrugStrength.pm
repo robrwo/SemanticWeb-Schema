@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugStrength;
 
 # ABSTRACT: A specific strength in which a medical drug is available in a specific country.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIntangible /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NewsMediaOrganization;
 
 # ABSTRACT: A News/Media organization such as a newspaper or TV station.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

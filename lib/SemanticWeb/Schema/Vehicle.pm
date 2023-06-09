@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Vehicle;
 
 # ABSTRACT: A vehicle is a device that is designed or used to transport people or cargo over land
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product /;

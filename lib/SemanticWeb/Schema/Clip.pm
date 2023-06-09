@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Clip;
 
 # ABSTRACT: A short TV or radio program or a segment/part of a program.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

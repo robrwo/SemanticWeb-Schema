@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SearchResultsPage;
 
 # ABSTRACT: Web page type: Search results page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Conversation;
 
 # ABSTRACT: One or more messages between organizations or people on a particular topic
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

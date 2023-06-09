@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalIndication;
 
 # ABSTRACT: A condition or factor that indicates use of a medical therapy
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

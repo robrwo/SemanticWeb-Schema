@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MobilePhoneStore;
 
 # ABSTRACT: A store that sells mobile phones and related accessories.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

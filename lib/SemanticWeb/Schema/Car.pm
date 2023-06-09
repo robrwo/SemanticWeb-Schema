@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Car;
 
 # ABSTRACT: A car is a wheeled
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vehicle /;

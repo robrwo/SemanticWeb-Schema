@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BankAccount;
 
 # ABSTRACT: A product or service offered by a bank whereby one may deposit
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialProduct /;

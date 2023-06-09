@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CompoundPriceSpecification;
 
 # ABSTRACT: A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PriceSpecification /;

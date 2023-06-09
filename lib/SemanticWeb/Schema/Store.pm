@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Store;
 
 # ABSTRACT: A retail good store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

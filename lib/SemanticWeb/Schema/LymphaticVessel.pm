@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LymphaticVessel;
 
 # ABSTRACT: A type of blood vessel that specifically carries lymph fluid unidirectionally toward the heart.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vessel /;

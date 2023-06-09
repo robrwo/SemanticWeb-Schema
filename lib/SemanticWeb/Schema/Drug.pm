@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Drug;
 
 # ABSTRACT: A chemical or biologic substance
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product SemanticWeb::Schema::Substance /;

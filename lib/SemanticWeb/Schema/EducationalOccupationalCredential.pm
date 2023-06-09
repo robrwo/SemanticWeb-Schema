@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EducationalOccupationalCredential;
 
 # ABSTRACT: An educational or occupational credential
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

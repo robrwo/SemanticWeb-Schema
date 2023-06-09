@@ -4,6 +4,7 @@ package SemanticWeb::Schema::JobPosting;
 
 # ABSTRACT: A listing that describes a job opening in a certain organization.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

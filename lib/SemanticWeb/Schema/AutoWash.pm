@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutoWash;
 
 # ABSTRACT: A car wash business.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

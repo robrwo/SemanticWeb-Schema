@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PlayAction;
 
 # ABSTRACT: The act of playing/exercising/training/performing for enjoyment
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

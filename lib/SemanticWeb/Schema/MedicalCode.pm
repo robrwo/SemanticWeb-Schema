@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalCode;
 
 # ABSTRACT: A code for a medical entity.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CategoryCode SemanticWeb::Schema::MedicalIntangible /;

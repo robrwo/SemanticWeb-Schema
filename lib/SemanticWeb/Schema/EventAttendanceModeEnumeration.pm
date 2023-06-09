@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EventAttendanceModeEnumeration;
 
 # ABSTRACT: An EventAttendanceModeEnumeration value is one of potentially several modes of organising an event
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CommentAction;
 
 # ABSTRACT: The act of generating a comment about a subject.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

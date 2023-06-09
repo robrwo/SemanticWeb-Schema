@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MonetaryAmountDistribution;
 
 # ABSTRACT: A statistical distribution of monetary amounts.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::QuantitativeValueDistribution /;

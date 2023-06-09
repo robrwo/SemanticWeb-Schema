@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LibrarySystem;
 
 # ABSTRACT: A [[LibrarySystem]] is a collaborative system amongst several libraries.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SchoolDistrict;
 
 # ABSTRACT: A School District is an administrative area for the administration of schools.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AdministrativeArea /;

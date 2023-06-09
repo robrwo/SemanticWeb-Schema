@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VideoObject;
 
 # ABSTRACT: A video file.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MediaObject /;

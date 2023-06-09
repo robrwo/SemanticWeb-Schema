@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EmploymentAgency;
 
 # ABSTRACT: An employment agency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

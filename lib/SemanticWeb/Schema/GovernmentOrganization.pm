@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GovernmentOrganization;
 
 # ABSTRACT: A governmental organization or agency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

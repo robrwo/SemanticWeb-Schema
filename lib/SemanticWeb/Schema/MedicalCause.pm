@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalCause;
 
 # ABSTRACT: The causative agent(s) that are responsible for the pathophysiologic process that eventually results in a medical condition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalTherapy;
 
 # ABSTRACT: Any medical intervention designed to prevent
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TherapeuticProcedure /;

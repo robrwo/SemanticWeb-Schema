@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Trip;
 
 # ABSTRACT: A trip or journey
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

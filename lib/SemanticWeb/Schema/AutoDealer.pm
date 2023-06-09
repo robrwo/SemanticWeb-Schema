@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutoDealer;
 
 # ABSTRACT: An car dealership.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SelfStorage;
 
 # ABSTRACT: A self-storage facility.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Festival;
 
 # ABSTRACT: Event type: Festival.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

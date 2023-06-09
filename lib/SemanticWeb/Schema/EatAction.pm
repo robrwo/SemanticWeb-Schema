@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EatAction;
 
 # ABSTRACT: The act of swallowing solid objects.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

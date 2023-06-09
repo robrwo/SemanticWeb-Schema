@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicReleaseFormatType;
 
 # ABSTRACT: Format of this release (the type of recording media used
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

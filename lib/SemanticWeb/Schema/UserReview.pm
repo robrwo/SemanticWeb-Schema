@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UserReview;
 
 # ABSTRACT: A review created by an end-user (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

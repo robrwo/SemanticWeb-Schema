@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BroadcastChannel;
 
 # ABSTRACT: A unique instance of a BroadcastService on a CableOrSatelliteService lineup.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

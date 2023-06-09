@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GovernmentService;
 
 # ABSTRACT: A service provided by a government organization
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

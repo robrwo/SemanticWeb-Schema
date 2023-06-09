@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ExchangeRateSpecification;
 
 # ABSTRACT: A structured value representing exchange rate.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

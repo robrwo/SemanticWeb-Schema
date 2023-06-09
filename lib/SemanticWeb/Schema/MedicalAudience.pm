@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalAudience;
 
 # ABSTRACT: Target audiences for medical web pages.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Audience SemanticWeb::Schema::PeopleAudience /;

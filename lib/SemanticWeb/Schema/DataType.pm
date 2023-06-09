@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DataType;
 
 # ABSTRACT: The basic data types such as Integers
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::RDFS::Class /;

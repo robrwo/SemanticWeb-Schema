@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VideoGameClip;
 
 # ABSTRACT: A short segment/part of a video game.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Clip /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MoneyTransfer;
 
 # ABSTRACT: The act of transferring money from one place to another place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MerchantReturnPolicy;
 
 # ABSTRACT: A MerchantReturnPolicy provides information about product return policies associated with an [[Organization]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

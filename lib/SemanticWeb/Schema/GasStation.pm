@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GasStation;
 
 # ABSTRACT: A gas station.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OfferForPurchase;
 
 # ABSTRACT: An [[OfferForPurchase]] in Schema
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Offer /;

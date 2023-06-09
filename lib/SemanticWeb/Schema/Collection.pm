@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Collection;
 
 # ABSTRACT: A collection of items, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

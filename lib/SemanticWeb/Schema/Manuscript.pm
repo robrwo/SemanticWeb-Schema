@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Manuscript;
 
 # ABSTRACT: A book
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

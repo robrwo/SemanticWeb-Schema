@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PerformingGroup;
 
 # ABSTRACT: A performance group
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

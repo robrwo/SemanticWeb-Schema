@@ -4,6 +4,7 @@ package SemanticWeb::Schema::JoinAction;
 
 # ABSTRACT: An agent joins an event/group with participants/friends at a location
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

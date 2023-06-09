@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SubscribeAction;
 
 # ABSTRACT: The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates pushed to
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

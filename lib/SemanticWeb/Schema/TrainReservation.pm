@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TrainReservation;
 
 # ABSTRACT: A reservation for train travel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

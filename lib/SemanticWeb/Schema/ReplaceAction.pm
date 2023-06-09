@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReplaceAction;
 
 # ABSTRACT: The act of editing a recipient by replacing an old object with a new object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::UpdateAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PaymentCard;
 
 # ABSTRACT: A payment method using a credit
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialProduct SemanticWeb::Schema::PaymentMethod /;

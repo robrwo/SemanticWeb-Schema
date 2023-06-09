@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalTrialDesign;
 
 # ABSTRACT: Design models for medical trials
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

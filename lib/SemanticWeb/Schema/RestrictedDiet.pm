@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RestrictedDiet;
 
 # ABSTRACT: A diet restricted to certain foods or preparations for cultural
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

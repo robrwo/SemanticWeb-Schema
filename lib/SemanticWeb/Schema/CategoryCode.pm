@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CategoryCode;
 
 # ABSTRACT: A Category Code.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DefinedTerm /;

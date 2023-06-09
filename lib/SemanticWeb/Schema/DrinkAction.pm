@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrinkAction;
 
 # ABSTRACT: The act of swallowing liquids.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

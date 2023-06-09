@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicAlbumReleaseType;
 
 # ABSTRACT: The kind of release which this album is: single
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

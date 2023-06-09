@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Invoice;
 
 # ABSTRACT: A statement of the money due for goods or services; a bill.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

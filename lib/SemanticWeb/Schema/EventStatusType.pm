@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EventStatusType;
 
 # ABSTRACT: EventStatusType is an enumeration type whose instances represent several states that an Event may be in.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

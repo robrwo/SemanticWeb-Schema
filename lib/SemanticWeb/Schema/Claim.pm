@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Claim;
 
 # ABSTRACT: A [[Claim]] in Schema
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

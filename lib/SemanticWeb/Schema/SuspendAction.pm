@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SuspendAction;
 
 # ABSTRACT: The act of momentarily pausing a device or application (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ControlAction /;

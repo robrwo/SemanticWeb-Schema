@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PerformAction;
 
 # ABSTRACT: The act of participating in performance arts.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlayAction /;

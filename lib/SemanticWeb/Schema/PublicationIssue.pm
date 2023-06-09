@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PublicationIssue;
 
 # ABSTRACT: A part of a successively published publication such as a periodical or publication volume
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

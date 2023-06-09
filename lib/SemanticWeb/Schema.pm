@@ -4,8 +4,7 @@ package SemanticWeb::Schema;
 
 # ABSTRACT: Moo classes for http://schema.org/ classes
 
-use v5.10.1;
-
+use v5.14;
 use Moo;
 
 use List::Util qw/ first /;
@@ -96,6 +95,12 @@ using more disk space and network bandwidth.  It would add the risk of breaking 
 missing or inconsistent dependency, and increase the time it would take to install if users want multiple classes.
 
 The benefit of saving disk space is rather small considering the potential problems.
+
+=head1 SUPPORT FOR OLDER PERL VERSIONS
+
+Since v21.0.0, the this module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
 
 =head1 SEE ALSO
 

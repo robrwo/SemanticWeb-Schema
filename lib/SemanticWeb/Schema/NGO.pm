@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NGO;
 
 # ABSTRACT: Organization: Non-governmental Organization.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

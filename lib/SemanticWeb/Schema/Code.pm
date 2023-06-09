@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Code;
 
 # ABSTRACT: Computer programming source code
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

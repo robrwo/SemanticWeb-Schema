@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ControlAction;
 
 # ABSTRACT: An agent controls a device or application.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

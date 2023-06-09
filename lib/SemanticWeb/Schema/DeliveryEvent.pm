@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeliveryEvent;
 
 # ABSTRACT: An event involving the delivery of an item.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

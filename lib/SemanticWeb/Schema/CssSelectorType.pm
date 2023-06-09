@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CssSelectorType;
 
 # ABSTRACT: Text representing a CSS selector.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Text /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FurnitureStore;
 
 # ABSTRACT: A furniture store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

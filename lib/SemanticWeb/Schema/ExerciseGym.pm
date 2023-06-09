@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ExerciseGym;
 
 # ABSTRACT: A gym.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SportsActivityLocation /;

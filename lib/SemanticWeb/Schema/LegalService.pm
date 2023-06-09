@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LegalService;
 
 # ABSTRACT: A LegalService is a business that provides legally-oriented services
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

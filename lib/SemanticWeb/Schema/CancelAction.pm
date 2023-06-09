@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CancelAction;
 
 # ABSTRACT: The act of asserting that a future event/action is no longer going to happen
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlanAction /;

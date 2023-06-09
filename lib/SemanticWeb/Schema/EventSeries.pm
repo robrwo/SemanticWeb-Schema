@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EventSeries;
 
 # ABSTRACT: A series of [[Event]]s
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event SemanticWeb::Schema::Series /;

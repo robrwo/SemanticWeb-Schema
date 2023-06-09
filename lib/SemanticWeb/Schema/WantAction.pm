@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WantAction;
 
 # ABSTRACT: The act of expressing a desire about the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ReactAction /;

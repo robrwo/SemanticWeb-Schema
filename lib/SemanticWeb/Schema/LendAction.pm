@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LendAction;
 
 # ABSTRACT: The act of providing an object under an agreement that it will be returned at a later date
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

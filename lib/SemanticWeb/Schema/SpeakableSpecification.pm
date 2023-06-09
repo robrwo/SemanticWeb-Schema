@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SpeakableSpecification;
 
 # ABSTRACT: A SpeakableSpecification indicates (typically via [[xpath]] or [[cssSelector]]) sections of a document that are highlighted as particularly [[speakable]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

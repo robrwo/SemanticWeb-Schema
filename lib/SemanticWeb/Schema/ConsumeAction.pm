@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ConsumeAction;
 
 # ABSTRACT: The act of ingesting information/resources/food.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

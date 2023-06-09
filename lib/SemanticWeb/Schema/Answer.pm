@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Answer;
 
 # ABSTRACT: An answer offered to a question; perhaps correct
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Comment /;

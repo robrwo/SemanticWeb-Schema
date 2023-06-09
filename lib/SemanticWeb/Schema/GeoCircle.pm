@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GeoCircle;
 
 # ABSTRACT: A GeoCircle is a GeoShape representing a circular geographic area
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GeoShape /;

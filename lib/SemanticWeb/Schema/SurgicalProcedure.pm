@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SurgicalProcedure;
 
 # ABSTRACT: A medical procedure involving an incision with instruments; performed for diagnose
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalProcedure /;

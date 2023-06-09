@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TVSeries;
 
 # ABSTRACT: CreativeWorkSeries dedicated to TV broadcast and associated online delivery.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::CreativeWorkSeries /;

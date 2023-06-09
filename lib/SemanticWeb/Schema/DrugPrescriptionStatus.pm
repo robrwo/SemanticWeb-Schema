@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugPrescriptionStatus;
 
 # ABSTRACT: Indicates whether this drug is available by prescription or over-the-counter.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

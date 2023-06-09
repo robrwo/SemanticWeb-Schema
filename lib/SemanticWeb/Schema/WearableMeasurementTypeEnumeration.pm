@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WearableMeasurementTypeEnumeration;
 
 # ABSTRACT: Enumerates common types of measurement for wearables products.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MeasurementTypeEnumeration /;

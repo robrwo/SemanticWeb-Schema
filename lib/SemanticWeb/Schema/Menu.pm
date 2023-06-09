@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Menu;
 
 # ABSTRACT: A structured representation of food or drink items available from a FoodEstablishment.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

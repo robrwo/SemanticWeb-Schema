@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CreditCard;
 
 # ABSTRACT: A card payment method of a particular brand or name
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LoanOrCredit SemanticWeb::Schema::PaymentCard /;

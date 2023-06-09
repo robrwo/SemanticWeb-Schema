@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalRiskCalculator;
 
 # ABSTRACT: A complex mathematical calculation requiring an online calculator
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalRiskEstimator /;

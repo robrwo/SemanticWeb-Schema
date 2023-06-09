@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EducationalAudience;
 
 # ABSTRACT: An EducationalAudience.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Audience /;

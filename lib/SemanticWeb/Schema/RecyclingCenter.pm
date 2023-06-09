@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RecyclingCenter;
 
 # ABSTRACT: A recycling center.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ChemicalSubstance;
 
 # ABSTRACT: A chemical substance is 'a portion of matter of constant composition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BioChemEntity /;

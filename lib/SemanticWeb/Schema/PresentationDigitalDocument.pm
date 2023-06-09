@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PresentationDigitalDocument;
 
 # ABSTRACT: A file containing slides or used for a presentation.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DigitalDocument /;

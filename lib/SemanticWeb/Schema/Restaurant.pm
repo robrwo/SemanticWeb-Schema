@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Restaurant;
 
 # ABSTRACT: A restaurant.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

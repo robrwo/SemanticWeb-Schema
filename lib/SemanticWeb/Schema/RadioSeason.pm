@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RadioSeason;
 
 # ABSTRACT: Season dedicated to radio broadcast and associated online delivery.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeason /;

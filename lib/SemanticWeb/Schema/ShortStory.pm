@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ShortStory;
 
 # ABSTRACT: Short story or tale
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

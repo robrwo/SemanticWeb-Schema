@@ -4,6 +4,7 @@ package SemanticWeb::Schema::XPathType;
 
 # ABSTRACT: Text representing an XPath (typically but not necessarily version 1
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Text /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalDevice;
 
 # ABSTRACT: Any object used in a medical capacity
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

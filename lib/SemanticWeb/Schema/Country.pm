@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Country;
 
 # ABSTRACT: A country.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AdministrativeArea /;

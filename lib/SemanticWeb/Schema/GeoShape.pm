@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GeoShape;
 
 # ABSTRACT: The geographic shape of a place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

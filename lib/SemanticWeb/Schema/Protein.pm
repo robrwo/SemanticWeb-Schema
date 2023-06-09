@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Protein;
 
 # ABSTRACT: Protein is here used in its widest possible definition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BioChemEntity /;

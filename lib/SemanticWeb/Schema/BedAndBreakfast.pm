@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BedAndBreakfast;
 
 # ABSTRACT: Bed and breakfast
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LodgingBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Audience;
 
 # ABSTRACT: Intended audience for an item, i
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

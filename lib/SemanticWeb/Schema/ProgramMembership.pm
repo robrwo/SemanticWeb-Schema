@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProgramMembership;
 
 # ABSTRACT: Used to describe membership in a loyalty programs (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

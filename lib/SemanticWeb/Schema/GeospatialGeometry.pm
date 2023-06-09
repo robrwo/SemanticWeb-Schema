@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GeospatialGeometry;
 
 # ABSTRACT: (Eventually to be defined as) a supertype of GeoShape designed to accommodate definitions from Geo-Spatial best practices.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

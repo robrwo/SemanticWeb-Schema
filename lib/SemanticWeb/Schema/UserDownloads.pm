@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UserDownloads;
 
 # ABSTRACT: UserInteraction and its subtypes is an old way of talking about users interacting with pages
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::UserInteraction /;

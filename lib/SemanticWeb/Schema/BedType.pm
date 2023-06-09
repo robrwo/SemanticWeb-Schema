@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BedType;
 
 # ABSTRACT: A type of bed
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::QualitativeValue /;

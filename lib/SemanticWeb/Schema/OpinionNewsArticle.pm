@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OpinionNewsArticle;
 
 # ABSTRACT: An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses opinions rather than journalistic reporting of news and events
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NewsArticle /;

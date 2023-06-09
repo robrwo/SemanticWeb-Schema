@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Mass;
 
 # ABSTRACT: Properties that take Mass as values are of the form '<Number> <Mass unit of measure>'
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Quantity /;

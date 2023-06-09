@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Mountain;
 
 # ABSTRACT: A mountain
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Landform /;

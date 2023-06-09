@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalOrganization;
 
 # ABSTRACT: A medical organization (physical or not)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

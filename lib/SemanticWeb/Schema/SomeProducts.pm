@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SomeProducts;
 
 # ABSTRACT: A placeholder for multiple similar products of the same kind.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product /;

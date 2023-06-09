@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Intangible;
 
 # ABSTRACT: A utility class that serves as the umbrella for a number of 'intangible' things such as quantities
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

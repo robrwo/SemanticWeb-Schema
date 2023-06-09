@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Product;
 
 # ABSTRACT: Any offered product or service
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

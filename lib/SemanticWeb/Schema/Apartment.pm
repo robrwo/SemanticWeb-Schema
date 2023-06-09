@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Apartment;
 
 # ABSTRACT: An apartment (in American English) or flat (in British English) is a self-contained housing unit (a type of residential real estate) that occupies only part of a building (source: Wikipedia
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Accommodation /;

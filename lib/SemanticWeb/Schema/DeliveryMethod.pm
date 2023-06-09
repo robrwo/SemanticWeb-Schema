@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeliveryMethod;
 
 # ABSTRACT: A delivery method is a standardized procedure for transferring the product or service to the destination of fulfillment chosen by the customer
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

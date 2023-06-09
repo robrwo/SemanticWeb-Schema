@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BioChemEntity;
 
 # ABSTRACT: Any biological
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

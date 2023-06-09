@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Season;
 
 # ABSTRACT: A media season, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

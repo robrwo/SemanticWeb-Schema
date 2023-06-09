@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReportageNewsArticle;
 
 # ABSTRACT: The [[ReportageNewsArticle]] type is a subtype of [[NewsArticle]] representing news articles which are the result of journalistic news reporting conventions
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NewsArticle /;

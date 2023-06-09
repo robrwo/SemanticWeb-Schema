@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DataDownload;
 
 # ABSTRACT: All or part of a [[Dataset]] in downloadable form
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MediaObject /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Thesis;
 
 # ABSTRACT: A thesis or dissertation document submitted in support of candidature for an academic degree or professional qualification.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

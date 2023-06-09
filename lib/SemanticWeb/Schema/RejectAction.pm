@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RejectAction;
 
 # ABSTRACT: The act of rejecting to/adopting an object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AllocateAction /;

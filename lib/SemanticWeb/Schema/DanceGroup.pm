@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DanceGroup;
 
 # ABSTRACT: A dance group—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PerformingGroup /;

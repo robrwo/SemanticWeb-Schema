@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MoveAction;
 
 # ABSTRACT: The act of an agent relocating to a place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

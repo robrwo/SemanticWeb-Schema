@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SolveMathAction;
 
 # ABSTRACT: The action that takes in a math expression and directs users to a page potentially capable of solving/simplifying that expression.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

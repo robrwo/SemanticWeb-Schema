@@ -4,6 +4,7 @@ package SemanticWeb::Schema::IceCreamShop;
 
 # ABSTRACT: An ice cream shop.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReturnMethodEnumeration;
 
 # ABSTRACT: Enumerates several types of product return methods.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

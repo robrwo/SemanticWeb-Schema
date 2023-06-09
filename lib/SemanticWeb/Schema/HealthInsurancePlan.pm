@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthInsurancePlan;
 
 # ABSTRACT: A US-style health insurance plan
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

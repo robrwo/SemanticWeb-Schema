@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SportsOrganization;
 
 # ABSTRACT: Represents the collection of all sports organizations
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TaxiService;
 
 # ABSTRACT: A service for a vehicle for hire with a driver for local travel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

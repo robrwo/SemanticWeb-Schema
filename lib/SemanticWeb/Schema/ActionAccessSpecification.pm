@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ActionAccessSpecification;
 
 # ABSTRACT: A set of requirements that must be fulfilled in order to perform an Action.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

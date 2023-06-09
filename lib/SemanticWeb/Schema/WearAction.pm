@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WearAction;
 
 # ABSTRACT: The act of dressing oneself in clothing.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::UseAction /;

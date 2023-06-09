@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TattooParlor;
 
 # ABSTRACT: A tattoo parlor.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness /;

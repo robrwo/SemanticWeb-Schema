@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OrderStatus;
 
 # ABSTRACT: Enumerated status values for Order.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PaymentMethod;
 
 # ABSTRACT: A payment method is a standardized procedure for transferring the monetary amount for a purchase
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

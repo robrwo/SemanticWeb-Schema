@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Episode;
 
 # ABSTRACT: A media episode (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

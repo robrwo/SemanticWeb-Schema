@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LodgingBusiness;
 
 # ABSTRACT: A lodging business
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

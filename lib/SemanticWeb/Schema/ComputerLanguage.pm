@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComputerLanguage;
 
 # ABSTRACT: This type covers computer programming languages such as Scheme and Lisp
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

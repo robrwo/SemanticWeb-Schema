@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ActivateAction;
 
 # ABSTRACT: The act of starting or activating a device or application (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ControlAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EntryPoint;
 
 # ABSTRACT: An entry point
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

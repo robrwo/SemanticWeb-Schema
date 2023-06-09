@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TieAction;
 
 # ABSTRACT: The act of reaching a draw in a competitive activity.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AchieveAction /;

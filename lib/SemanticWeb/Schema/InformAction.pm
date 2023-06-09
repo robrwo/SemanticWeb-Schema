@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InformAction;
 
 # ABSTRACT: The act of notifying someone of information pertinent to them
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

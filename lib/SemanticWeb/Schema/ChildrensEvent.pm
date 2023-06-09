@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ChildrensEvent;
 
 # ABSTRACT: Event type: Children's event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

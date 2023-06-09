@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InvestmentFund;
 
 # ABSTRACT: A company or fund that gathers capital from a number of investors to create a pool of money that is then re-invested into stocks
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InvestmentOrDeposit /;

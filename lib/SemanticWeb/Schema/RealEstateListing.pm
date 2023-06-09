@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RealEstateListing;
 
 # ABSTRACT: A [[RealEstateListing]] is a listing that describes one or more real-estate [[Offer]]s (whose [[businessFunction]] is typically to lease out
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AudioObjectSnapshot;
 
 # ABSTRACT: A specific and exact (byte-for-byte) version of an [[AudioObject]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AudioObject /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ConfirmAction;
 
 # ABSTRACT: The act of notifying someone that a future event/action is going to happen as expected
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InformAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EngineSpecification;
 
 # ABSTRACT: Information about the engine of the vehicle
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

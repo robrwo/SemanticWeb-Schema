@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EventVenue;
 
 # ABSTRACT: An event venue.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

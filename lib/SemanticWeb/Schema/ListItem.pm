@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ListItem;
 
 # ABSTRACT: An list item, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

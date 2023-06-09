@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DepartAction;
 
 # ABSTRACT: The act of departing from a place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MoveAction /;

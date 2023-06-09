@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MovingCompany;
 
 # ABSTRACT: A moving company.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

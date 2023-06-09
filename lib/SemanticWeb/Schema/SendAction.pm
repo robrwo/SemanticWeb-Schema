@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SendAction;
 
 # ABSTRACT: The act of physically/electronically dispatching an object for transfer from an origin to a destination
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

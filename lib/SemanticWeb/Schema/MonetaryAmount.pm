@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MonetaryAmount;
 
 # ABSTRACT: A monetary value or range
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

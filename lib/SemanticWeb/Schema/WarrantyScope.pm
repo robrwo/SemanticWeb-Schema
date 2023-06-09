@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WarrantyScope;
 
 # ABSTRACT: A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

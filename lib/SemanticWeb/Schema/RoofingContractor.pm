@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RoofingContractor;
 
 # ABSTRACT: A roofing contractor.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BroadcastService;
 
 # ABSTRACT: A delivery service through which content is provided via broadcast over the air or online.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

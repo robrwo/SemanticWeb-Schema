@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DonateAction;
 
 # ABSTRACT: The act of providing goods
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

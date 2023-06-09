@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GenderType;
 
 # ABSTRACT: An enumeration of genders.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

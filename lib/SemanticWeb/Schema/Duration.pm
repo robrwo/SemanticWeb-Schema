@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Duration;
 
 # ABSTRACT: Quantity: Duration (use [ISO 8601 duration format](http://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Quantity /;

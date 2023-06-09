@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ListenAction;
 
 # ABSTRACT: The act of consuming audio content.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

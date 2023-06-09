@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ShippingRateSettings;
 
 # ABSTRACT: A ShippingRateSettings represents re-usable pieces of shipping information
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

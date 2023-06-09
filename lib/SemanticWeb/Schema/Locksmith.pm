@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Locksmith;
 
 # ABSTRACT: A locksmith.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

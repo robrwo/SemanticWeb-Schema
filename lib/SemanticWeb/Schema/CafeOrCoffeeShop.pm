@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CafeOrCoffeeShop;
 
 # ABSTRACT: A cafe or coffee shop.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

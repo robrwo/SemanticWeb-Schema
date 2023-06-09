@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReplyAction;
 
 # ABSTRACT: The act of responding to a question/message asked/sent by the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

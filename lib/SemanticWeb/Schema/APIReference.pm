@@ -4,6 +4,7 @@ package SemanticWeb::Schema::APIReference;
 
 # ABSTRACT: Reference documentation for application programming interfaces (APIs).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TechArticle /;

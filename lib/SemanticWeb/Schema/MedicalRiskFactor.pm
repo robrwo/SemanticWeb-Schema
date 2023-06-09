@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalRiskFactor;
 
 # ABSTRACT: A risk factor is anything that increases a person's likelihood of developing or contracting a disease
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

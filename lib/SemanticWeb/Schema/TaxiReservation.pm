@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TaxiReservation;
 
 # ABSTRACT: A reservation for a taxi
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

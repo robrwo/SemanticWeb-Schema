@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PropertyValue;
 
 # ABSTRACT: A property-value pair, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

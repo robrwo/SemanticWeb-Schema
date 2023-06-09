@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DietarySupplement;
 
 # ABSTRACT: A product taken by mouth that contains a dietary ingredient intended to supplement the diet
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product SemanticWeb::Schema::Substance /;

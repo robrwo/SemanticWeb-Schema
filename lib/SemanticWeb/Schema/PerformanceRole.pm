@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PerformanceRole;
 
 # ABSTRACT: A PerformanceRole is a Role that some entity places with regard to a theatrical performance
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Role /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalConditionStage;
 
 # ABSTRACT: A stage of a medical condition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIntangible /;

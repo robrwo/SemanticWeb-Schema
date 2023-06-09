@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReturnFeesEnumeration;
 
 # ABSTRACT: Enumerates several kinds of policies for product return fees.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AgreeAction;
 
 # ABSTRACT: The act of expressing a consistency of opinion with the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ReactAction /;

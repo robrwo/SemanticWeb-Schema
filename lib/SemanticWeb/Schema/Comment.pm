@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Comment;
 
 # ABSTRACT: A comment on an item - for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

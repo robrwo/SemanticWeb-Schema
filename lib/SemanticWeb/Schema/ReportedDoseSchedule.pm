@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReportedDoseSchedule;
 
 # ABSTRACT: A patient-reported or observed dosing schedule for a drug or supplement.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DoseSchedule /;

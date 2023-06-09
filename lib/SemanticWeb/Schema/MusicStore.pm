@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicStore;
 
 # ABSTRACT: A music store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

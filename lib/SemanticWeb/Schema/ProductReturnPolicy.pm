@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProductReturnPolicy;
 
 # ABSTRACT: A ProductReturnPolicy provides information about product return policies associated with an [[Organization]] or [[Product]].
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

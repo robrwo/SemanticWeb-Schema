@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthAspectEnumeration;
 
 # ABSTRACT: HealthAspectEnumeration enumerates several aspects of health content online
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

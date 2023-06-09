@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WebAPI;
 
 # ABSTRACT: An application programming interface accessible over Web/Internet technologies.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

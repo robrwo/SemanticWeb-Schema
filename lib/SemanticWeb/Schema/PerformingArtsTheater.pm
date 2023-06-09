@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PerformingArtsTheater;
 
 # ABSTRACT: A theater or other performing art center.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

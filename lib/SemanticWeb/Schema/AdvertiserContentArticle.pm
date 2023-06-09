@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AdvertiserContentArticle;
 
 # ABSTRACT: An [[Article]] that an external entity has paid to place or to produce to its specifications
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

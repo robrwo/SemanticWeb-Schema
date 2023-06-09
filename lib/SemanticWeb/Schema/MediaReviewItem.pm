@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaReviewItem;
 
 # ABSTRACT: Represents an item or group of closely related items treated as a unit for the sake of evaluation in a [[MediaReview]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

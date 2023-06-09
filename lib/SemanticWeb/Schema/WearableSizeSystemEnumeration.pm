@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WearableSizeSystemEnumeration;
 
 # ABSTRACT: Enumerates common size systems specific for wearable products
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SizeSystemEnumeration /;

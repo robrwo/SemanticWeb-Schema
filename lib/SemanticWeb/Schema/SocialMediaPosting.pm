@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SocialMediaPosting;
 
 # ABSTRACT: A post to a social media platform
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MerchantReturnEnumeration;
 
 # ABSTRACT: Enumerates several kinds of product return policies.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

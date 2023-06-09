@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PublicSwimmingPool;
 
 # ABSTRACT: A public swimming pool.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SportsActivityLocation /;

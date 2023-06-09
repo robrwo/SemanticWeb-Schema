@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CookAction;
 
 # ABSTRACT: The act of producing/preparing food.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

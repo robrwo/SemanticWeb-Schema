@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AcceptAction;
 
 # ABSTRACT: The act of committing to/adopting an object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AllocateAction /;

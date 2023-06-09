@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Resort;
 
 # ABSTRACT: A resort is a place used for relaxation or recreation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LodgingBusiness /;

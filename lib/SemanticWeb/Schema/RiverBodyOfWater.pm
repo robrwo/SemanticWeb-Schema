@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RiverBodyOfWater;
 
 # ABSTRACT: A river (for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

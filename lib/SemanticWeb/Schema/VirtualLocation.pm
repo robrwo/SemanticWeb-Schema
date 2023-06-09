@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VirtualLocation;
 
 # ABSTRACT: An online or virtual location for attending events
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

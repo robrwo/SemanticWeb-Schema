@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicRecording;
 
 # ABSTRACT: A music recording (track)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

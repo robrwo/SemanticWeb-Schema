@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UnitPriceSpecification;
 
 # ABSTRACT: The price asked for a given offer by the respective organization or person.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PriceSpecification /;

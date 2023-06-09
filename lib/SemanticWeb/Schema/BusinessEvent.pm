@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusinessEvent;
 
 # ABSTRACT: Event type: Business event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

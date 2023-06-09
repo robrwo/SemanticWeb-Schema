@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MovieSeries;
 
 # ABSTRACT: A series of movies
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MeetingRoom;
 
 # ABSTRACT: A meeting room
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Room /;

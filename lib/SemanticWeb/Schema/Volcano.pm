@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Volcano;
 
 # ABSTRACT: A volcano, like Fujisan.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Landform /;

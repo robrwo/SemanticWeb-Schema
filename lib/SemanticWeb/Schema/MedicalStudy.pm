@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalStudy;
 
 # ABSTRACT: A medical study is an umbrella type covering all kinds of research studies relating to human medicine or health
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

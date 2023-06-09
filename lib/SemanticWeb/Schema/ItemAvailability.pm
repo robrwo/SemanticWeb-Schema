@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ItemAvailability;
 
 # ABSTRACT: A list of possible product availability options.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

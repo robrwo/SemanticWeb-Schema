@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Integer;
 
 # ABSTRACT: Data type: Integer.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Number /;

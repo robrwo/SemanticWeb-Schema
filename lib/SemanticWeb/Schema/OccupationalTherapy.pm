@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OccupationalTherapy;
 
 # ABSTRACT: A treatment of people with physical
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTherapy /;

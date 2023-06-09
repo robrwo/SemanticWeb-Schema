@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InsertAction;
 
 # ABSTRACT: The act of adding at a specific location in an ordered collection.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AddAction /;

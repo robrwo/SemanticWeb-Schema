@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Permit;
 
 # ABSTRACT: A permit issued by an organization, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

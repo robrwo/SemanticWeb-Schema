@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthPlanCostSharingSpecification;
 
 # ABSTRACT: A description of costs to the patient under a given network or formulary.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

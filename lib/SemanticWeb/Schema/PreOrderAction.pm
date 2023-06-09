@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PreOrderAction;
 
 # ABSTRACT: An agent orders a (not yet released) object/product/service to be delivered/sent.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalDevicePurpose;
 
 # ABSTRACT: Categories of medical devices
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

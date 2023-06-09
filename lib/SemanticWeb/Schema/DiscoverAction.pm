@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DiscoverAction;
 
 # ABSTRACT: The act of discovering/finding an object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FindAction /;

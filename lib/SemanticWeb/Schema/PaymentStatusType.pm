@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PaymentStatusType;
 
 # ABSTRACT: A specific payment status
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

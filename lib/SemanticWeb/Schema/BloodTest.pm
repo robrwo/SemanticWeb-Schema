@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BloodTest;
 
 # ABSTRACT: A medical test performed on a sample of a patient's blood.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTest /;

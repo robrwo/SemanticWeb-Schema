@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PronounceableText;
 
 # ABSTRACT: Data type: PronounceableText.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Text /;

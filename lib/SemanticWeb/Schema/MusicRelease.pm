@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicRelease;
 
 # ABSTRACT: A MusicRelease is a specific release of a music album.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MusicPlaylist /;

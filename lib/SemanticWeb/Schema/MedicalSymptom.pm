@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalSymptom;
 
 # ABSTRACT: Any complaint sensed and expressed by the patient (therefore defined as subjective) like stomachache
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalSignOrSymptom /;

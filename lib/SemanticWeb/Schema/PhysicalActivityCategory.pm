@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PhysicalActivityCategory;
 
 # ABSTRACT: Categories of physical activity
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

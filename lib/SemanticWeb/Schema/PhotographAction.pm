@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PhotographAction;
 
 # ABSTRACT: The act of capturing still images of objects using a camera.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

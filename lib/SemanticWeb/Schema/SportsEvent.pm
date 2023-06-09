@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SportsEvent;
 
 # ABSTRACT: Event type: Sports event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

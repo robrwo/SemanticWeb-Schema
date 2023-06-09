@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Muscle;
 
 # ABSTRACT: A muscle is an anatomical structure consisting of a contractile form of tissue that animals use to effect movement.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AnatomicalStructure /;

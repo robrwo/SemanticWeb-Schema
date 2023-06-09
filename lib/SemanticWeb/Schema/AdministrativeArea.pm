@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AdministrativeArea;
 
 # ABSTRACT: A geographical region
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

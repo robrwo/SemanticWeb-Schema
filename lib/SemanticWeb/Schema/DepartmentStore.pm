@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DepartmentStore;
 
 # ABSTRACT: A department store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

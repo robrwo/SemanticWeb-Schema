@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComicSeries;
 
 # ABSTRACT: A sequential publication of comic stories under a unifying title
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Periodical /;

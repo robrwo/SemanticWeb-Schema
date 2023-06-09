@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AddAction;
 
 # ABSTRACT: The act of editing by adding an object to a collection.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::UpdateAction /;

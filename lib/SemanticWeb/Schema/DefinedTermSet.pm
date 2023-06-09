@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DefinedTermSet;
 
 # ABSTRACT: A set of defined terms
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

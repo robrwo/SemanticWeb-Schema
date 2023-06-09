@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PaymentChargeSpecification;
 
 # ABSTRACT: The costs of settling the payment using a particular payment method.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PriceSpecification /;

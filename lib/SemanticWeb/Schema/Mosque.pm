@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Mosque;
 
 # ABSTRACT: A mosque.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlaceOfWorship /;

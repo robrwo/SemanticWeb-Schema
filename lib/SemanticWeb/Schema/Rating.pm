@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Rating;
 
 # ABSTRACT: A rating is an evaluation on a numeric scale
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

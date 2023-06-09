@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BorrowAction;
 
 # ABSTRACT: The act of obtaining an object under an agreement to return it at a later date
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

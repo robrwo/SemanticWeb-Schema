@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DriveWheelConfigurationValue;
 
 # ABSTRACT: A value indicating which roadwheels will receive torque.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::QualitativeValue /;

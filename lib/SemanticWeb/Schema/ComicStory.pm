@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComicStory;
 
 # ABSTRACT: The term "story" is any indivisible
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

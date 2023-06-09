@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WebPageElement;
 
 # ABSTRACT: A web page element
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

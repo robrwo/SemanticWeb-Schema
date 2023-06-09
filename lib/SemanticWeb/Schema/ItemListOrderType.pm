@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ItemListOrderType;
 
 # ABSTRACT: Enumerated for values for itemListOrder for indicating how an ordered ItemList is organized.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

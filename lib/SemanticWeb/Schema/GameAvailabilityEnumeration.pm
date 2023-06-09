@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GameAvailabilityEnumeration;
 
 # ABSTRACT: For a [[VideoGame]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

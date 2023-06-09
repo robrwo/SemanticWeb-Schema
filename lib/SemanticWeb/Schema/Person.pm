@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Person;
 
 # ABSTRACT: A person (alive
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

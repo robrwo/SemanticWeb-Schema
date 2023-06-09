@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OfferItemCondition;
 
 # ABSTRACT: A list of possible conditions for the item.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

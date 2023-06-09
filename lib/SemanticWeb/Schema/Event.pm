@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Event;
 
 # ABSTRACT: An event happening at a certain time and location
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

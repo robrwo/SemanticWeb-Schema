@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Flight;
 
 # ABSTRACT: An airline flight.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Trip /;

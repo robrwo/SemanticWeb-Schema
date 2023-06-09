@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TravelAction;
 
 # ABSTRACT: The act of traveling from a fromLocation to a destination by a specified mode of transport
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MoveAction /;

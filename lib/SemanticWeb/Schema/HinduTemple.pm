@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HinduTemple;
 
 # ABSTRACT: A Hindu temple.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlaceOfWorship /;

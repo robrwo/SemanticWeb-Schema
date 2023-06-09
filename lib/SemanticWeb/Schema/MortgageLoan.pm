@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MortgageLoan;
 
 # ABSTRACT: A loan in which property or real estate is used as collateral
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LoanOrCredit /;

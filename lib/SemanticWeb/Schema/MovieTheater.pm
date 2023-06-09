@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MovieTheater;
 
 # ABSTRACT: A movie theater.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::EntertainmentBusiness /;

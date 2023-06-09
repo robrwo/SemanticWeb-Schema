@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TravelAgency;
 
 # ABSTRACT: A travel agency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

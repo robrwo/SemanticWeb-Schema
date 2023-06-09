@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ImageObject;
 
 # ABSTRACT: An image file.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MediaObject /;

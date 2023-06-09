@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WPHeader;
 
 # ABSTRACT: The header section of the page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPageElement /;

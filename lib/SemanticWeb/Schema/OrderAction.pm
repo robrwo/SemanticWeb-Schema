@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OrderAction;
 
 # ABSTRACT: An agent orders an object/product/service to be delivered/sent.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

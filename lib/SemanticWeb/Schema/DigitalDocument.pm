@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DigitalDocument;
 
 # ABSTRACT: An electronic file or document.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

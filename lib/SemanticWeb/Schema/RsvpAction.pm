@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RsvpAction;
 
 # ABSTRACT: The act of notifying an event organizer as to whether you expect to attend the event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InformAction /;

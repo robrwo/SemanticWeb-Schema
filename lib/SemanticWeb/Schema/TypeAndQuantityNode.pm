@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TypeAndQuantityNode;
 
 # ABSTRACT: A structured value indicating the quantity
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

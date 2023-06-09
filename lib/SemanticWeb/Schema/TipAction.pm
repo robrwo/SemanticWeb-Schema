@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TipAction;
 
 # ABSTRACT: The act of giving money voluntarily to a beneficiary in recognition of services rendered.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

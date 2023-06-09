@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalProcedure;
 
 # ABSTRACT: A process of care used in either a diagnostic
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

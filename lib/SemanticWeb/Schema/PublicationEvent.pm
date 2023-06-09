@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PublicationEvent;
 
 # ABSTRACT: A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

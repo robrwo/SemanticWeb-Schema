@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PodcastSeason;
 
 # ABSTRACT: A single season of a podcast
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeason /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Researcher;
 
 # ABSTRACT: Researchers.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Audience /;

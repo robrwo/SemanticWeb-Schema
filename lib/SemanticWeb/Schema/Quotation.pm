@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Quotation;
 
 # ABSTRACT: A quotation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

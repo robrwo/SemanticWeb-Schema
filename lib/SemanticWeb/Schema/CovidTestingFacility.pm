@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CovidTestingFacility;
 
 # ABSTRACT: A CovidTestingFacility is a [[MedicalClinic]] where testing for the COVID-19 Coronavirus disease is available
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalClinic /;

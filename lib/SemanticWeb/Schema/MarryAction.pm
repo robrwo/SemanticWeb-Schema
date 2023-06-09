@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MarryAction;
 
 # ABSTRACT: The act of marrying a person.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

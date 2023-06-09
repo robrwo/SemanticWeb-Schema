@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProfilePage;
 
 # ABSTRACT: Web page type: Profile page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

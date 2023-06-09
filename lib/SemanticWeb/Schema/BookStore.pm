@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BookStore;
 
 # ABSTRACT: A bookstore.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

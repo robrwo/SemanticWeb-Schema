@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReserveAction;
 
 # ABSTRACT: Reserving a concrete object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlanAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SocialEvent;
 
 # ABSTRACT: Event type: Social event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

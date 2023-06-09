@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OfferShippingDetails;
 
 # ABSTRACT: OfferShippingDetails represents information about shipping destinations
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EducationalOrganization;
 
 # ABSTRACT: An educational organization.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::Organization /;

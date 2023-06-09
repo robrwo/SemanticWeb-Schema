@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AdultOrientedEnumeration;
 
 # ABSTRACT: Enumeration of considerations that make a product relevant or potentially restricted for adults only.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

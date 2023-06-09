@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AMRadioChannel;
 
 # ABSTRACT: A radio channel that uses AM.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::RadioChannel /;

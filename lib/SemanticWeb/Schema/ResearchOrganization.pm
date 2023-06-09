@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ResearchOrganization;
 
 # ABSTRACT: A Research Organization (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

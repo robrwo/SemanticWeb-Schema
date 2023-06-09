@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusTrip;
 
 # ABSTRACT: A trip on a commercial bus line.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Trip /;

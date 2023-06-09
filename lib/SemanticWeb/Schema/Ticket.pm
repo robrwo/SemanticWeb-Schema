@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Ticket;
 
 # ABSTRACT: Used to describe a ticket to an event
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

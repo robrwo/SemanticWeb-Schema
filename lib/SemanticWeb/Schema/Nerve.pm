@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Nerve;
 
 # ABSTRACT: A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AnatomicalStructure /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AssessAction;
 
 # ABSTRACT: The act of forming one's opinion
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

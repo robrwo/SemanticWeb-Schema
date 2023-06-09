@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DisagreeAction;
 
 # ABSTRACT: The act of expressing a difference of opinion with the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ReactAction /;

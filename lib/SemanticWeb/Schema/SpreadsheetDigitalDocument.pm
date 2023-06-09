@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SpreadsheetDigitalDocument;
 
 # ABSTRACT: A spreadsheet file.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DigitalDocument /;

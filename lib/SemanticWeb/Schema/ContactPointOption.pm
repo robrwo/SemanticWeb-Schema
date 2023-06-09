@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ContactPointOption;
 
 # ABSTRACT: Enumerated options related to a ContactPoint.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

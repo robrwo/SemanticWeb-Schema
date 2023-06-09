@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BoatTerminal;
 
 # ABSTRACT: A terminal for boats
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

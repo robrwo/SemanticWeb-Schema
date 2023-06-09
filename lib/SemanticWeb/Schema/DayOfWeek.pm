@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DayOfWeek;
 
 # ABSTRACT: The day of the week, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

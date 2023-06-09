@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InteractAction;
 
 # ABSTRACT: The act of interacting with another person or organization.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

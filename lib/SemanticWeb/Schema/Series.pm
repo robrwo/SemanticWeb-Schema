@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Series;
 
 # ABSTRACT: A Series in schema
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

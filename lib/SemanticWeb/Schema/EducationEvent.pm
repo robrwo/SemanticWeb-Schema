@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EducationEvent;
 
 # ABSTRACT: Event type: Education event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

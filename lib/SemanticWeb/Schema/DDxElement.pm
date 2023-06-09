@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DDxElement;
 
 # ABSTRACT: An alternative
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIntangible /;

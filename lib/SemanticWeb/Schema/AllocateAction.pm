@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AllocateAction;
 
 # ABSTRACT: The act of organizing tasks/objects/events by associating resources to it.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OrganizeAction /;

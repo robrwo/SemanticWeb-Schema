@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComicIssue;
 
 # ABSTRACT: Individual comic issues are serially published as part of a larger series
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PublicationIssue /;

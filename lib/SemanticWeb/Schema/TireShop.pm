@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TireShop;
 
 # ABSTRACT: A tire shop.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

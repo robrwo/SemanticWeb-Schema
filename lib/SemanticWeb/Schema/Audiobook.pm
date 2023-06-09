@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Audiobook;
 
 # ABSTRACT: An audiobook.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AudioObject SemanticWeb::Schema::Book /;

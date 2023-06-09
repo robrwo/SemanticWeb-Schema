@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BarOrPub;
 
 # ABSTRACT: A bar or pub.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

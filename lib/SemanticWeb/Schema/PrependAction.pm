@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PrependAction;
 
 # ABSTRACT: The act of inserting at the beginning if an ordered collection.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InsertAction /;

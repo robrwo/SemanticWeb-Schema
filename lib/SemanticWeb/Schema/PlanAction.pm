@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PlanAction;
 
 # ABSTRACT: The act of planning the execution of an event/task/action/reservation/plan to a future date.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OrganizeAction /;

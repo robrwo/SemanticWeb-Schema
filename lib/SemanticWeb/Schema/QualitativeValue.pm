@@ -4,6 +4,7 @@ package SemanticWeb::Schema::QualitativeValue;
 
 # ABSTRACT: A predefined value for a product characteristic
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

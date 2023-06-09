@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BedDetails;
 
 # ABSTRACT: An entity holding detailed information about the available bed types
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

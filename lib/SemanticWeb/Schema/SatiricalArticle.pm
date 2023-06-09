@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SatiricalArticle;
 
 # ABSTRACT: An [[Article]] whose content is primarily [[satirical]](https://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

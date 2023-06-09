@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Pond;
 
 # ABSTRACT: A pond.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

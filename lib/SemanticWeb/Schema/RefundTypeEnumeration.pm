@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RefundTypeEnumeration;
 
 # ABSTRACT: Enumerates several kinds of product return refund types.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

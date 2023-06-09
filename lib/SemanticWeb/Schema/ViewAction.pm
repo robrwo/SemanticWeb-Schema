@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ViewAction;
 
 # ABSTRACT: The act of consuming static visual content.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EndorseAction;
 
 # ABSTRACT: An agent approves/certifies/likes/supports/sanctions an object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ReactAction /;

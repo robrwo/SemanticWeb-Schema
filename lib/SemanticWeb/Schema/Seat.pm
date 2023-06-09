@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Seat;
 
 # ABSTRACT: Used to describe a seat
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

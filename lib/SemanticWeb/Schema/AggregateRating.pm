@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AggregateRating;
 
 # ABSTRACT: The average rating based on multiple ratings or reviews.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Rating /;

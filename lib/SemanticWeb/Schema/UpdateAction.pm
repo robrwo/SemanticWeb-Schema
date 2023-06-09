@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UpdateAction;
 
 # ABSTRACT: The act of managing by changing/editing the state of the object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BodyOfWater;
 
 # ABSTRACT: A body of water
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Landform /;

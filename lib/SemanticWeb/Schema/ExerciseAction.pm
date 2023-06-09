@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ExerciseAction;
 
 # ABSTRACT: The act of participating in exertive activity for the purposes of improving health and fitness.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlayAction /;

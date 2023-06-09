@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusinessFunction;
 
 # ABSTRACT: The business function specifies the type of activity or access (i
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

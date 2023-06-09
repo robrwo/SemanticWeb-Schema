@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MolecularEntity;
 
 # ABSTRACT: Any constitutionally or isotopically distinct atom
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BioChemEntity /;

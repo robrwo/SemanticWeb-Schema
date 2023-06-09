@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Sculpture;
 
 # ABSTRACT: A piece of sculpture.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Reservoir;
 
 # ABSTRACT: A reservoir of water
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

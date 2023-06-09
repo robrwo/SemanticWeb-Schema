@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ActionStatusType;
 
 # ABSTRACT: The status of an Action.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

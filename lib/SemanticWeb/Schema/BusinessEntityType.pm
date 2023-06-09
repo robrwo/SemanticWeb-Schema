@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusinessEntityType;
 
 # ABSTRACT: A business entity type is a conceptual entity representing the legal form
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

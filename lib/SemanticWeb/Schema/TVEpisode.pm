@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TVEpisode;
 
 # ABSTRACT: A TV episode which can be part of a series or season.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Episode /;

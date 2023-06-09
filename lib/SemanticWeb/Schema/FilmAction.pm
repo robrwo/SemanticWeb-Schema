@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FilmAction;
 
 # ABSTRACT: The act of capturing sound and moving images on film
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

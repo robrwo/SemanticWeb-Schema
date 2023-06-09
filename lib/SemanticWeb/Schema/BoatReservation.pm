@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BoatReservation;
 
 # ABSTRACT: A reservation for boat travel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

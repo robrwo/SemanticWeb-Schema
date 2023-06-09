@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HowToItem;
 
 # ABSTRACT: An item used as either a tool or supply when performing the instructions for how to achieve a result.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ListItem /;

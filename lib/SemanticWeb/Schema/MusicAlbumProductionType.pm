@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicAlbumProductionType;
 
 # ABSTRACT: Classification of the album by its type of content: soundtrack
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

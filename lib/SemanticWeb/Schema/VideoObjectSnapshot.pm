@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VideoObjectSnapshot;
 
 # ABSTRACT: A specific and exact (byte-for-byte) version of a [[VideoObject]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::VideoObject /;

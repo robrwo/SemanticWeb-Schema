@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Continent;
 
 # ABSTRACT: One of the continents (for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Landform /;

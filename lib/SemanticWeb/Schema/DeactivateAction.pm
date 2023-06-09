@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeactivateAction;
 
 # ABSTRACT: The act of stopping or deactivating a device or application (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ControlAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrawAction;
 
 # ABSTRACT: The act of producing a visual/graphical representation of an object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LiveBlogPosting;
 
 # ABSTRACT: A [[LiveBlogPosting]] is a [[BlogPosting]] intended to provide a rolling textual coverage of an ongoing event through continuous updates.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BlogPosting /;

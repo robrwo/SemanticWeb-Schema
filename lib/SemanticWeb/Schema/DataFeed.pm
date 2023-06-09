@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DataFeed;
 
 # ABSTRACT: A single feed providing structured information about one or more entities or topics.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Dataset /;

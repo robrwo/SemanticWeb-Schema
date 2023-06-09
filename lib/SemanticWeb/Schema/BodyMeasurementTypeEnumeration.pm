@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BodyMeasurementTypeEnumeration;
 
 # ABSTRACT: Enumerates types (or dimensions) of a person's body measurements
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MeasurementTypeEnumeration /;

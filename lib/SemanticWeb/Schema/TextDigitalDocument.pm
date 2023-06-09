@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TextDigitalDocument;
 
 # ABSTRACT: A file composed primarily of text.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DigitalDocument /;

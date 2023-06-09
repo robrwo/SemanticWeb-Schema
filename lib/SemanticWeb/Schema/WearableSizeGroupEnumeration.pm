@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WearableSizeGroupEnumeration;
 
 # ABSTRACT: Enumerates common size groups (also known as "size types") for wearable products.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SizeGroupEnumeration /;

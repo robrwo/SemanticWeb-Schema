@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LegalValueLevel;
 
 # ABSTRACT: A list of possible levels for the legal validity of a legislation.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

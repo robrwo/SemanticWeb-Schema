@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DigitalDocumentPermissionType;
 
 # ABSTRACT: A type of permission which can be granted for accessing a digital document.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

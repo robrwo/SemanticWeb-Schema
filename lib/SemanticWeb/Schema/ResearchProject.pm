@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ResearchProject;
 
 # ABSTRACT: A Research project.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Project /;

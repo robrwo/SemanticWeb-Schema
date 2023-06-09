@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SizeSpecification;
 
 # ABSTRACT: Size related properties of a product
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::QualitativeValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Notary;
 
 # ABSTRACT: A notary.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LegalService /;

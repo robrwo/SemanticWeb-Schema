@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OwnershipInfo;
 
 # ABSTRACT: A structured value providing information about when a certain organization or person owned a certain product.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

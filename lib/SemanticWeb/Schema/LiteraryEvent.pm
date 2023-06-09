@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LiteraryEvent;
 
 # ABSTRACT: Event type: Literary event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

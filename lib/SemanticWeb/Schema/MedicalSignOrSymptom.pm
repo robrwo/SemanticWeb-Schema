@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalSignOrSymptom;
 
 # ABSTRACT: Any feature associated or not with a medical condition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalCondition /;

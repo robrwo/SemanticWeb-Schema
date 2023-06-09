@@ -4,6 +4,7 @@ package SemanticWeb::Schema::School;
 
 # ABSTRACT: A school.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOrganization /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SizeSystemEnumeration;
 
 # ABSTRACT: Enumerates common size systems for different categories of products
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

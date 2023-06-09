@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FloorPlan;
 
 # ABSTRACT: A FloorPlan is an explicit representation of a collection of similar accommodations
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

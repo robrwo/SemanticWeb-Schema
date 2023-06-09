@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Dentist;
 
 # ABSTRACT: A dentist.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalBusiness SemanticWeb::Schema::MedicalOrganization /;

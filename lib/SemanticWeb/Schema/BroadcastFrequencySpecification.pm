@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BroadcastFrequencySpecification;
 
 # ABSTRACT: The frequency in MHz and the modulation used for a particular BroadcastService.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

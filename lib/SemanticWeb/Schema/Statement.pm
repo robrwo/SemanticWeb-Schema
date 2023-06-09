@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Statement;
 
 # ABSTRACT: A statement about something
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

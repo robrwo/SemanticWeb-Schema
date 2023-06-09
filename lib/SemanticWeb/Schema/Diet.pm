@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Diet;
 
 # ABSTRACT: A strategy of regulating the intake of food to achieve or maintain a specific health-related goal.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::LifestyleModification /;

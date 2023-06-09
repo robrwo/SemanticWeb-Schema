@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CorrectionComment;
 
 # ABSTRACT: A [[comment]] that corrects [[CreativeWork]].
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Comment /;

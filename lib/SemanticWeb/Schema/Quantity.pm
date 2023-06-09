@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Quantity;
 
 # ABSTRACT: Quantities such as distance
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

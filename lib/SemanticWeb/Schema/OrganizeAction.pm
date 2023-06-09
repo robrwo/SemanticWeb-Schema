@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OrganizeAction;
 
 # ABSTRACT: The act of manipulating/administering/supervising/controlling one or more objects.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

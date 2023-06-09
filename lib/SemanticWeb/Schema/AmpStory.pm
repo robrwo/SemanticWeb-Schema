@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AmpStory;
 
 # ABSTRACT: A creative work with a visual storytelling format intended to be viewed online
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::MediaObject /;

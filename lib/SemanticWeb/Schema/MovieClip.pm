@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MovieClip;
 
 # ABSTRACT: A short segment/part of a movie.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Clip /;

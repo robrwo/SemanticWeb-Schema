@@ -4,6 +4,7 @@ package SemanticWeb::Schema::QuoteAction;
 
 # ABSTRACT: An agent quotes/estimates/appraises an object/product/service with a price at a location/store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

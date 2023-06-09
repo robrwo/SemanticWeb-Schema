@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OpeningHoursSpecification;
 
 # ABSTRACT: A structured value providing information about the opening hours of a place or a certain service inside a place
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

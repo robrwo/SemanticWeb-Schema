@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SearchAction;
 
 # ABSTRACT: The act of searching for an object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

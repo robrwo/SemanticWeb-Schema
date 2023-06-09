@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HyperToc;
 
 # ABSTRACT: A HyperToc represents a hypertext table of contents for complex media objects
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

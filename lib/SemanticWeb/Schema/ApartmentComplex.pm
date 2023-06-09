@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ApartmentComplex;
 
 # ABSTRACT: Residence type: Apartment complex.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Residence /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Library;
 
 # ABSTRACT: A library.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

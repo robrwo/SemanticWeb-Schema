@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DanceEvent;
 
 # ABSTRACT: Event type: A social dance.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

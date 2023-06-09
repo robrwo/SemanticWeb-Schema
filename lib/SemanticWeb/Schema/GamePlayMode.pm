@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GamePlayMode;
 
 # ABSTRACT: Indicates whether this game is multi-player
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

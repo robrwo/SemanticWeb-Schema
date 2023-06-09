@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RealEstateAgent;
 
 # ABSTRACT: A real-estate agent.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

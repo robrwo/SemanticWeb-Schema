@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Airline;
 
 # ABSTRACT: An organization that provides flights for passengers.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

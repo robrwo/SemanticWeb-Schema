@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Playground;
 
 # ABSTRACT: A playground.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

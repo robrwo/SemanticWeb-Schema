@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Preschool;
 
 # ABSTRACT: A preschool.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOrganization /;

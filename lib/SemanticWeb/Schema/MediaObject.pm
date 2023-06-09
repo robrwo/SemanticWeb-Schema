@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaObject;
 
 # ABSTRACT: A media object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

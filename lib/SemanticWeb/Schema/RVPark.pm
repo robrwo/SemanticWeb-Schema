@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RVPark;
 
 # ABSTRACT: A place offering space for "Recreational Vehicles"
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

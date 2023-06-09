@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AboutPage;
 
 # ABSTRACT: Web page type: About page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

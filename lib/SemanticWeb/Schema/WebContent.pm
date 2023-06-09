@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WebContent;
 
 # ABSTRACT: WebContent is a type representing all [[WebPage]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

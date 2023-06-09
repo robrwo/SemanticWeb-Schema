@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Taxon;
 
 # ABSTRACT: A set of organisms asserted to represent a natural cohesive biological unit.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

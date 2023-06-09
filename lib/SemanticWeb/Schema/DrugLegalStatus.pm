@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugLegalStatus;
 
 # ABSTRACT: The legal availability status of a medical drug.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIntangible /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RentalCarReservation;
 
 # ABSTRACT: A reservation for a rental car
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

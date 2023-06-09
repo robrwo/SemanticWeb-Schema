@@ -4,6 +4,7 @@ package SemanticWeb::Schema::City;
 
 # ABSTRACT: A city or town.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AdministrativeArea /;

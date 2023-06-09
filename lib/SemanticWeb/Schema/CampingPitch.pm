@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CampingPitch;
 
 # ABSTRACT: A [[CampingPitch]] is an individual place for overnight stay in the outdoors
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Accommodation /;

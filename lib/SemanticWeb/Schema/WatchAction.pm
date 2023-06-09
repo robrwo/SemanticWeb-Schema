@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WatchAction;
 
 # ABSTRACT: The act of consuming dynamic/moving visual content.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

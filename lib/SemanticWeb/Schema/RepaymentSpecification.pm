@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RepaymentSpecification;
 
 # ABSTRACT: A structured value representing repayment.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

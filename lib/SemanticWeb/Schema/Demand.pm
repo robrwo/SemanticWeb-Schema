@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Demand;
 
 # ABSTRACT: A demand entity represents the public
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

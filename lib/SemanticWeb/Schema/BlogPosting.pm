@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BlogPosting;
 
 # ABSTRACT: A blog post.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SocialMediaPosting /;

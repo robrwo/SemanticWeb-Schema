@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AnalysisNewsArticle;
 
 # ABSTRACT: An AnalysisNewsArticle is a [[NewsArticle]] that
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NewsArticle /;

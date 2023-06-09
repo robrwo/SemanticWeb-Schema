@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeliveryTimeSettings;
 
 # ABSTRACT: A DeliveryTimeSettings represents re-usable pieces of shipping information
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TouristInformationCenter;
 
 # ABSTRACT: A tourist information center.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

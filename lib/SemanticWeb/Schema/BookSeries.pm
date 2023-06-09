@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BookSeries;
 
 # ABSTRACT: A series of books
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;

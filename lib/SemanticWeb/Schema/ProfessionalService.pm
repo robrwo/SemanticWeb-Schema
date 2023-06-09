@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProfessionalService;
 
 # ABSTRACT: Original definition: "provider of professional services
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

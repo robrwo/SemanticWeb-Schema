@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LegislationObject;
 
 # ABSTRACT: A specific object or file containing a Legislation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Legislation SemanticWeb::Schema::MediaObject /;

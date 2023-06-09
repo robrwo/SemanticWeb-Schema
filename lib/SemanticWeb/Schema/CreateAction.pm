@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CreateAction;
 
 # ABSTRACT: The act of deliberately creating/producing/generating/building a result out of the agent.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

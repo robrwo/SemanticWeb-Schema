@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FireStation;
 
 # ABSTRACT: A fire station. With firemen.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure SemanticWeb::Schema::EmergencyService /;

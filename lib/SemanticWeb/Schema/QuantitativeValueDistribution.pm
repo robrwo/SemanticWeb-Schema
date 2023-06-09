@@ -4,6 +4,7 @@ package SemanticWeb::Schema::QuantitativeValueDistribution;
 
 # ABSTRACT: A statistical distribution of values.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

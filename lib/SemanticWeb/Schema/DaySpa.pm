@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DaySpa;
 
 # ABSTRACT: A day spa.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness /;

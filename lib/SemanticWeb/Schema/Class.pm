@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Class;
 
 # ABSTRACT: A class
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

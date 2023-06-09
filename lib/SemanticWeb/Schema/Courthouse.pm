@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Courthouse;
 
 # ABSTRACT: A courthouse.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;

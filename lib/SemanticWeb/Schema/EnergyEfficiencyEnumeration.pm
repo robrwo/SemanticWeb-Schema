@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EnergyEfficiencyEnumeration;
 
 # ABSTRACT: Enumerates energy efficiency levels (also known as "classes" or "ratings") and certifications that are part of several international energy efficiency standards.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

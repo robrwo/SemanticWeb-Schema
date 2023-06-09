@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CriticReview;
 
 # ABSTRACT: A [[CriticReview]] is a more specialized form of Review written or published by a source that is recognized for its reviewing activities
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

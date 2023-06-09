@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EntertainmentBusiness;
 
 # ABSTRACT: A business providing entertainment.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

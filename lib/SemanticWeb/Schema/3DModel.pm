@@ -4,6 +4,7 @@ package SemanticWeb::Schema::3DModel;
 
 # ABSTRACT: A 3D model represents some kind of 3D content
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MediaObject /;

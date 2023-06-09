@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TechArticle;
 
 # ABSTRACT: A technical article - Example: How-to (task) topics
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

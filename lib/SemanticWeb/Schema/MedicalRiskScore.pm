@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalRiskScore;
 
 # ABSTRACT: A simple system that adds up the number of risk factors to yield a score that is associated with prognosis
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalRiskEstimator /;

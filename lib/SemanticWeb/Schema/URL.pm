@@ -4,6 +4,7 @@ package SemanticWeb::Schema::URL;
 
 # ABSTRACT: Data type: URL.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Text /;

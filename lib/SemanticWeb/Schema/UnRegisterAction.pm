@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UnRegisterAction;
 
 # ABSTRACT: The act of un-registering from a service
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

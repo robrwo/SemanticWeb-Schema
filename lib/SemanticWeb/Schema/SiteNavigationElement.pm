@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SiteNavigationElement;
 
 # ABSTRACT: A navigation element of the page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPageElement /;

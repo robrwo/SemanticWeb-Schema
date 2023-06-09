@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Poster;
 
 # ABSTRACT: A large
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

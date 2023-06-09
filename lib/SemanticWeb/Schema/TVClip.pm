@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TVClip;
 
 # ABSTRACT: A short TV program or a segment/part of a TV program.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Clip /;

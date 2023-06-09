@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LandmarksOrHistoricalBuildings;
 
 # ABSTRACT: An historical landmark or building.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

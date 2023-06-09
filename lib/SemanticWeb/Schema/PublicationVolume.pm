@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PublicationVolume;
 
 # ABSTRACT: A part of a successively published publication such as a periodical or multi-volume work
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

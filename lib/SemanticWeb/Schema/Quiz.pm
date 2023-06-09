@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Quiz;
 
 # ABSTRACT: Quiz: A test of knowledge
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LearningResource /;

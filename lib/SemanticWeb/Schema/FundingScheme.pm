@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FundingScheme;
 
 # ABSTRACT: A FundingScheme combines organizational
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

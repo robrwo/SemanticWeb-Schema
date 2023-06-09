@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EmployeeRole;
 
 # ABSTRACT: A subclass of OrganizationRole used to describe employee relationships.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OrganizationRole /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GovernmentOffice;
 
 # ABSTRACT: A government office—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

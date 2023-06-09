@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalAudienceType;
 
 # ABSTRACT: Target audiences types for medical web pages
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

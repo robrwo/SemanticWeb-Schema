@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComedyClub;
 
 # ABSTRACT: A comedy club.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness /;

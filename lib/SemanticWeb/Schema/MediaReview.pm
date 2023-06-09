@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaReview;
 
 # ABSTRACT: A [[MediaReview]] is a more specialized form of Review dedicated to the evaluation of media content online
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

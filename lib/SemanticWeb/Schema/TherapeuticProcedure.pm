@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TherapeuticProcedure;
 
 # ABSTRACT: A medical procedure intended primarily for therapeutic purposes
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalProcedure /;

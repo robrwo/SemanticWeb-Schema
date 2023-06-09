@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ScheduleAction;
 
 # ABSTRACT: Scheduling future actions, events, or tasks
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlanAction /;

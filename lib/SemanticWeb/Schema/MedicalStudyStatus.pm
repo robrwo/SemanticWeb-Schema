@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalStudyStatus;
 
 # ABSTRACT: The status of a medical study
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

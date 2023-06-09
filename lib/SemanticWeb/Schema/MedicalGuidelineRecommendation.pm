@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalGuidelineRecommendation;
 
 # ABSTRACT: A guideline recommendation that is regarded as efficacious and where quality of the data supporting the recommendation is sound.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalGuideline /;

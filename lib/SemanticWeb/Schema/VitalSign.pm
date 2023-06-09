@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VitalSign;
 
 # ABSTRACT: Vital signs are measures of various physiological functions in order to assess the most basic body functions.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalSign /;

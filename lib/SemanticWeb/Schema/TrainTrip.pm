@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TrainTrip;
 
 # ABSTRACT: A trip on a commercial train line.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Trip /;

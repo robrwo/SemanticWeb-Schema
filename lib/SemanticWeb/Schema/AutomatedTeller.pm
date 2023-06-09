@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutomatedTeller;
 
 # ABSTRACT: ATM/cash machine.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialService /;

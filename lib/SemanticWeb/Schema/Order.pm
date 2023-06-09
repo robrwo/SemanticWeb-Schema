@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Order;
 
 # ABSTRACT: An order is a confirmation of a transaction (a receipt)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

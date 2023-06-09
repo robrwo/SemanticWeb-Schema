@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BikeStore;
 
 # ABSTRACT: A bike store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

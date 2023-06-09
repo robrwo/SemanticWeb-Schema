@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Corporation;
 
 # ABSTRACT: Organization: A business corporation.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

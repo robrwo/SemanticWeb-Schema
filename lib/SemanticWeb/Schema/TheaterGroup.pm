@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TheaterGroup;
 
 # ABSTRACT: A theater group or company
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PerformingGroup /;

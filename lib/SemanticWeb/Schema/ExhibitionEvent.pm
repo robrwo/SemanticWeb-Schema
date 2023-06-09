@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ExhibitionEvent;
 
 # ABSTRACT: Event type: Exhibition event, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

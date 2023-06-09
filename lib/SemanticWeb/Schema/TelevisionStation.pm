@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TelevisionStation;
 
 # ABSTRACT: A television station.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

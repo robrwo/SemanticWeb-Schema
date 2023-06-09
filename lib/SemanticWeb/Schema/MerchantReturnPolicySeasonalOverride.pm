@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MerchantReturnPolicySeasonalOverride;
 
 # ABSTRACT: A seasonal override of a return policy
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

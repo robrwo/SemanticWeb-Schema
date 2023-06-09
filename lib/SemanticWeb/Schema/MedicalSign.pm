@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalSign;
 
 # ABSTRACT: Any physical manifestation of a person's medical condition discoverable by objective diagnostic tests or physical examination.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalSignOrSymptom /;

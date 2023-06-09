@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EnergyStarEnergyEfficiencyEnumeration;
 
 # ABSTRACT: Used to indicate whether a product is EnergyStar certified.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EnergyEfficiencyEnumeration /;

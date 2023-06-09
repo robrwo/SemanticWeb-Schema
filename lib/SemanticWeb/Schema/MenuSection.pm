@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MenuSection;
 
 # ABSTRACT: A sub-grouping of food or drink items in a menu
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

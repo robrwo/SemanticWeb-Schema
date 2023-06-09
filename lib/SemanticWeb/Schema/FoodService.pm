@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FoodService;
 
 # ABSTRACT: A food service
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

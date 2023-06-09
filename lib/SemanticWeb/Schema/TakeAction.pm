@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TakeAction;
 
 # ABSTRACT: The act of gaining ownership of an object from an origin
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::StatisticalPopulation;
 
 # ABSTRACT: A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

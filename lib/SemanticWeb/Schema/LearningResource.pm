@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LearningResource;
 
 # ABSTRACT: The LearningResource type can be used to indicate [[CreativeWork]]s (whether physical or digital) that have a particular and explicit orientation towards learning
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::StupidType;
 
 # ABSTRACT: A StupidType for testing.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

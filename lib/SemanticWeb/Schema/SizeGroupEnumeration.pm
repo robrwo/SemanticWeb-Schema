@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SizeGroupEnumeration;
 
 # ABSTRACT: Enumerates common size groups for various product categories.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

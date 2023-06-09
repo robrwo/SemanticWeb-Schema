@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ArchiveComponent;
 
 # ABSTRACT: An intangible type to be applied to any archive content
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

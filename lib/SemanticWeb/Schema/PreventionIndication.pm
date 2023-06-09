@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PreventionIndication;
 
 # ABSTRACT: An indication for preventing an underlying condition
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIndication /;

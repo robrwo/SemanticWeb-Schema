@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CommunicateAction;
 
 # ABSTRACT: The act of conveying information to another person via a communication medium (instrument) such as speech
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

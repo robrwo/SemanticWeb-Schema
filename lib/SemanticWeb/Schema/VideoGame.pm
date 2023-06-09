@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VideoGame;
 
 # ABSTRACT: A video game is an electronic game that involves human interaction with a user interface to generate visual feedback on a video device.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Game SemanticWeb::Schema::SoftwareApplication /;

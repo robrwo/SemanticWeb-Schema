@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FMRadioChannel;
 
 # ABSTRACT: A radio channel that uses FM.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::RadioChannel /;

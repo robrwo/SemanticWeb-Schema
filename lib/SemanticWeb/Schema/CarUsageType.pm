@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CarUsageType;
 
 # ABSTRACT: A value indicating a special usage of a car
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

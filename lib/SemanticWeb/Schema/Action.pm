@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Action;
 
 # ABSTRACT: An action performed by a direct agent and indirect participants upon a direct object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

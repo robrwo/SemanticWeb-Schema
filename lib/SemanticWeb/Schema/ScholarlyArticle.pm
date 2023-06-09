@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ScholarlyArticle;
 
 # ABSTRACT: A scholarly article.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Article /;

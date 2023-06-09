@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ArchiveOrganization;
 
 # ABSTRACT: An organization with archival holdings
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

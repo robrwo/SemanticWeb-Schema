@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AchieveAction;
 
 # ABSTRACT: The act of accomplishing something via previous efforts
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

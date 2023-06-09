@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RadiationTherapy;
 
 # ABSTRACT: A process of care using radiation aimed at improving a health condition.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTherapy /;

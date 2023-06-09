@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InstallAction;
 
 # ABSTRACT: The act of installing an application.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

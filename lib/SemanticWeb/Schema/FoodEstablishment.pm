@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FoodEstablishment;
 
 # ABSTRACT: A food-related business.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

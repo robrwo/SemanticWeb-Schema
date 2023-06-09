@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TrainStation;
 
 # ABSTRACT: A train station.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

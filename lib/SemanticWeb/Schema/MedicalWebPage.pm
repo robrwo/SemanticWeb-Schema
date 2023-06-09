@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalWebPage;
 
 # ABSTRACT: A web page that provides medical information.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

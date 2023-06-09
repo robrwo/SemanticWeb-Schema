@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalIntangible;
 
 # ABSTRACT: A utility class that serves as the umbrella for a number of 'intangible' things in the medical space.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

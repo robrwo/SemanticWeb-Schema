@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ElementarySchool;
 
 # ABSTRACT: An elementary school.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOrganization /;

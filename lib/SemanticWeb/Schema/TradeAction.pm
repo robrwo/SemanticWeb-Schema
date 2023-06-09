@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TradeAction;
 
 # ABSTRACT: The act of participating in an exchange of goods and services for monetary compensation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

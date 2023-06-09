@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BoardingPolicyType;
 
 # ABSTRACT: A type of boarding policy used by an airline.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

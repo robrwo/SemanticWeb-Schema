@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PriceTypeEnumeration;
 
 # ABSTRACT: Enumerates different price types
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaSubscription;
 
 # ABSTRACT: A subscription which allows a user to access media including audio
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

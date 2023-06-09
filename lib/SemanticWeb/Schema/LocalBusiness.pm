@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LocalBusiness;
 
 # ABSTRACT: A particular physical business or branch of an organization
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization SemanticWeb::Schema::Place /;

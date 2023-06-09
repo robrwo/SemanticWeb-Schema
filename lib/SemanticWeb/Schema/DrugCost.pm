@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugCost;
 
 # ABSTRACT: The cost per unit of a medical drug
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MaximumDoseSchedule;
 
 # ABSTRACT: The maximum dosing schedule considered safe for a drug or supplement as recommended by an authority or by the drug/supplement's manufacturer
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DoseSchedule /;

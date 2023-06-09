@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ProductCollection;
 
 # ABSTRACT: A set of products (either [[ProductGroup]]s or specific variants) that are listed together e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Collection SemanticWeb::Schema::Product /;

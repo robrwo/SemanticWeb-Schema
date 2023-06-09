@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TouristAttraction;
 
 # ABSTRACT: A tourist attraction
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

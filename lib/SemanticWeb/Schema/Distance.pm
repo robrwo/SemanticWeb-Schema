@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Distance;
 
 # ABSTRACT: Properties that take Distances as values are of the form '<Number> <Length unit of measure>'
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Quantity /;

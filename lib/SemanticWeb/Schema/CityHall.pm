@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CityHall;
 
 # ABSTRACT: A city hall.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;

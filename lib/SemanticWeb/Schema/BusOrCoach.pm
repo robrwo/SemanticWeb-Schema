@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BusOrCoach;
 
 # ABSTRACT: A bus (also omnibus or autobus) is a road vehicle designed to carry passengers
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vehicle /;

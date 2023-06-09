@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FollowAction;
 
 # ABSTRACT: The act of forming a personal connection with someone/something (object) unidirectionally/asymmetrically to get updates polled from
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

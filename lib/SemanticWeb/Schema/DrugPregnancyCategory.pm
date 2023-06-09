@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DrugPregnancyCategory;
 
 # ABSTRACT: Categories that represent an assessment of the risk of fetal injury due to a drug or pharmaceutical used as directed by the mother during pregnancy.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

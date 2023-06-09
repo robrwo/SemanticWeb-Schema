@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PeopleAudience;
 
 # ABSTRACT: A set of characteristics belonging to people
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Audience /;

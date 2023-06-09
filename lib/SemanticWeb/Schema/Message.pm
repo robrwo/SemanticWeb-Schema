@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Message;
 
 # ABSTRACT: A single message from a sender to one or more organizations or people.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

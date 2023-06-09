@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Residence;
 
 # ABSTRACT: The place where a person lives.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

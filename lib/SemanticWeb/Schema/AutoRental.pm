@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AutoRental;
 
 # ABSTRACT: A car rental business.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

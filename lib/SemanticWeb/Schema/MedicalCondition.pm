@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalCondition;
 
 # ABSTRACT: Any condition of the human body that affects the normal functioning of a person
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

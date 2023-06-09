@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Question;
 
 # ABSTRACT: A specific question - e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Comment /;

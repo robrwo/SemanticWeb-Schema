@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicComposition;
 
 # ABSTRACT: A musical composition.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

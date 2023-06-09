@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Organization;
 
 # ABSTRACT: An organization such as a school
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Thing /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PriceComponentTypeEnumeration;
 
 # ABSTRACT: Enumerates different price components that together make up the total price for an offered product.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

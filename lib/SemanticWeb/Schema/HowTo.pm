@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HowTo;
 
 # ABSTRACT: Instructions that explain how to achieve a result by performing a sequence of steps.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

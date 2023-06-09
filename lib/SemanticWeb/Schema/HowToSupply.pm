@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HowToSupply;
 
 # ABSTRACT: A supply consumed when performing the instructions for how to achieve a result.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HowToItem /;

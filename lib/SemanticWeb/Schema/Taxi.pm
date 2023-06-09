@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Taxi;
 
 # ABSTRACT: A taxi.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Service /;

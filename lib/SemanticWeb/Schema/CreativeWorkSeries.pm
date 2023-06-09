@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CreativeWorkSeries;
 
 # ABSTRACT: A CreativeWorkSeries in schema
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::Series /;

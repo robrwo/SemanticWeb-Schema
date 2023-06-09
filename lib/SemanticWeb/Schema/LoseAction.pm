@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LoseAction;
 
 # ABSTRACT: The act of being defeated in a competitive activity.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AchieveAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthTopicContent;
 
 # ABSTRACT: [[HealthTopicContent]] is [[WebContent]] that is about some aspect of a health topic
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebContent /;

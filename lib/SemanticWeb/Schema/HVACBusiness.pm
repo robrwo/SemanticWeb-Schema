@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HVACBusiness;
 
 # ABSTRACT: A business that provides Heating
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

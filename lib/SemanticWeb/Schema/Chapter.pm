@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Chapter;
 
 # ABSTRACT: One of the sections into which a book is divided
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

@@ -4,6 +4,7 @@ package [% class_name %];
 
 # ABSTRACT: [% abstract %]
 
+use v5.14;
 use Moo;
 
 [% IF parents.size -%]

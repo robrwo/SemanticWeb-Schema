@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PropertyValueSpecification;
 
 # ABSTRACT: A Property value specification.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

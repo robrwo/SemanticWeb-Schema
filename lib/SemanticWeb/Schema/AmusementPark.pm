@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AmusementPark;
 
 # ABSTRACT: An amusement park.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness /;

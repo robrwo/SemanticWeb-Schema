@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GiveAction;
 
 # ABSTRACT: The act of transferring ownership of an object to a destination
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TransferAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Hotel;
 
 # ABSTRACT: A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LodgingBusiness /;

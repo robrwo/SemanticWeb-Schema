@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalEvidenceLevel;
 
 # ABSTRACT: Level of evidence for a medical guideline
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

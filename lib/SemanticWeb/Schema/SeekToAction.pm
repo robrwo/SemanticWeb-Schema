@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SeekToAction;
 
 # ABSTRACT: This is the [[Action]] of navigating to a specific [[startOffset]] timestamp within a [[VideoObject]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Action /;

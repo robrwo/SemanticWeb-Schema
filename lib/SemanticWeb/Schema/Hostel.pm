@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Hostel;
 
 # ABSTRACT: A hostel - cheap accommodation
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LodgingBusiness /;

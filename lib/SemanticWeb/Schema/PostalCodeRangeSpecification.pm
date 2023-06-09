@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PostalCodeRangeSpecification;
 
 # ABSTRACT: Indicates a range of postal codes
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HowToTool;
 
 # ABSTRACT: A tool used (but not consumed) when performing instructions for how to achieve a result.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HowToItem /;

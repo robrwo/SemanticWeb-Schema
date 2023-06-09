@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GolfCourse;
 
 # ABSTRACT: A golf course.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SportsActivityLocation /;

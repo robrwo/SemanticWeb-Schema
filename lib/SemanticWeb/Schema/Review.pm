@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Review;
 
 # ABSTRACT: A review of an item - for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

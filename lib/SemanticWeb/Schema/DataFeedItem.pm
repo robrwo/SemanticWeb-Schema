@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DataFeedItem;
 
 # ABSTRACT: A single item within a larger data feed.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

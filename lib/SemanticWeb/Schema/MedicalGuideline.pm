@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalGuideline;
 
 # ABSTRACT: Any recommendation made by a standard society (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

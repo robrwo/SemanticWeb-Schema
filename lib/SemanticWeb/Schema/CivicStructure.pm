@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CivicStructure;
 
 # ABSTRACT: A public structure
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Place /;

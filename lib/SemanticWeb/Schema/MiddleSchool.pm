@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MiddleSchool;
 
 # ABSTRACT: A middle school (typically for children aged around 11-14
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOrganization /;

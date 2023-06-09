@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Motorcycle;
 
 # ABSTRACT: A motorcycle or motorbike is a single-track
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Vehicle /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DefenceEstablishment;
 
 # ABSTRACT: A defence establishment
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;

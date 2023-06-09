@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Room;
 
 # ABSTRACT: A room is a distinguishable space within a structure
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Accommodation /;

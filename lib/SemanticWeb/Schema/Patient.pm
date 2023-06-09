@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Patient;
 
 # ABSTRACT: A patient is any person recipient of health care services.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalAudience SemanticWeb::Schema::Person /;

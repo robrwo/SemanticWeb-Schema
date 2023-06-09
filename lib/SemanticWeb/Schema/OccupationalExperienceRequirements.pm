@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OccupationalExperienceRequirements;
 
 # ABSTRACT: Indicates employment-related experience requirements
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

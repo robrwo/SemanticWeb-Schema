@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ShareAction;
 
 # ABSTRACT: The act of distributing content to people for their amusement or edification.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

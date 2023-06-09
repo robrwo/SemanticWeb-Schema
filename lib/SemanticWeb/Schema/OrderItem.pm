@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OrderItem;
 
 # ABSTRACT: An order item is a line of an order
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

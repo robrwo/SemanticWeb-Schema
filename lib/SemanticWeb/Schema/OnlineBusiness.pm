@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OnlineBusiness;
 
 # ABSTRACT: A particular online business
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

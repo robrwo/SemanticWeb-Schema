@@ -4,6 +4,7 @@ package SemanticWeb::Schema::State;
 
 # ABSTRACT: A state or province of a country.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AdministrativeArea /;

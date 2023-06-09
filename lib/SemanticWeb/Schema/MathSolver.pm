@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MathSolver;
 
 # ABSTRACT: A math solver which is capable of solving a subset of mathematical problems.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

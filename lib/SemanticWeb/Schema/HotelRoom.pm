@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HotelRoom;
 
 # ABSTRACT: A hotel room is a single room in a hotel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Room /;

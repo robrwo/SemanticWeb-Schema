@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PalliativeProcedure;
 
 # ABSTRACT: A medical procedure intended primarily for palliative purposes
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalProcedure SemanticWeb::Schema::MedicalTherapy /;

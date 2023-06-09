@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UseAction;
 
 # ABSTRACT: The act of applying an object to its intended purpose.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ConsumeAction /;

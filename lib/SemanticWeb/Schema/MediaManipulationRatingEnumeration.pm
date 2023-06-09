@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MediaManipulationRatingEnumeration;
 
 # ABSTRACT:  Codes for use with the [[mediaAuthenticityCategory]] property
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

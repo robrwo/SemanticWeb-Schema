@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SaleEvent;
 
 # ABSTRACT: Event type: Sales event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

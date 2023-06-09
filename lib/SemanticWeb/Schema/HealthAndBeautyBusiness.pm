@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthAndBeautyBusiness;
 
 # ABSTRACT: Health and beauty.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

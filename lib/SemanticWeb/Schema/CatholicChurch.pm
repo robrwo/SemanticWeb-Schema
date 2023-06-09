@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CatholicChurch;
 
 # ABSTRACT: A Catholic church.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Church /;

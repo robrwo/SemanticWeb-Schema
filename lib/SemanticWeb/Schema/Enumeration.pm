@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Enumeration;
 
 # ABSTRACT: Lists or enumerations—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

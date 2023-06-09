@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NightClub;
 
 # ABSTRACT: A nightclub or discotheque.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness /;

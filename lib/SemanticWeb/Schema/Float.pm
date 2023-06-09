@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Float;
 
 # ABSTRACT: Data type: Floating number.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Number /;

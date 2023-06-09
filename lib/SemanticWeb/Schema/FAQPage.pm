@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FAQPage;
 
 # ABSTRACT: A [[FAQPage]] is a [[WebPage]] presenting one or more "[Frequently asked questions](https://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

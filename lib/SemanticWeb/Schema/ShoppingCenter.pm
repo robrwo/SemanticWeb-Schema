@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ShoppingCenter;
 
 # ABSTRACT: A shopping center or mall.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

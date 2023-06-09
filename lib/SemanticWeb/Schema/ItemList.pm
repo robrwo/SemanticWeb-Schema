@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ItemList;
 
 # ABSTRACT: A list of items of any sort—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

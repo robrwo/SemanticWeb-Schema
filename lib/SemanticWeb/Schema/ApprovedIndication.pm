@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ApprovedIndication;
 
 # ABSTRACT: An indication for a medical therapy that has been formally specified or approved by a regulatory body that regulates use of the therapy; for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalIndication /;

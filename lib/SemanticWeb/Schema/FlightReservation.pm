@@ -4,6 +4,7 @@ package SemanticWeb::Schema::FlightReservation;
 
 # ABSTRACT: A reservation for air travel
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Reservation /;

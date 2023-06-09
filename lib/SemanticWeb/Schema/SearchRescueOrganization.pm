@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SearchRescueOrganization;
 
 # ABSTRACT: A Search and Rescue organization of some kind.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WorkersUnion;
 
 # ABSTRACT: A Workers Union (also known as a Labor Union
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Organization /;

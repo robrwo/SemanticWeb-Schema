@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WinAction;
 
 # ABSTRACT: The act of achieving victory in a competitive activity.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AchieveAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalImagingTechnique;
 
 # ABSTRACT: Any medical imaging modality typically used for diagnostic purposes
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

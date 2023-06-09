@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ReviewAction;
 
 # ABSTRACT: The act of producing a balanced opinion about the object for an audience
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AssessAction /;

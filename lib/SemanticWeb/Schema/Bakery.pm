@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Bakery;
 
 # ABSTRACT: A bakery.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

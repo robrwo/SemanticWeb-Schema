@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GeneralContractor;
 
 # ABSTRACT: A general contractor.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HomeAndConstructionBusiness /;

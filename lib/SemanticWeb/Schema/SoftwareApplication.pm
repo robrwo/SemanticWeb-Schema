@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SoftwareApplication;
 
 # ABSTRACT: A software application.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeleteAction;
 
 # ABSTRACT: The act of editing a recipient by removing one of its objects.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::UpdateAction /;

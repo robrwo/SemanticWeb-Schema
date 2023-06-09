@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OnDemandEvent;
 
 # ABSTRACT: A publication event, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PublicationEvent /;

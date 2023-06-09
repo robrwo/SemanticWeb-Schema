@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PayAction;
 
 # ABSTRACT: An agent pays a price to a participant.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TradeAction /;

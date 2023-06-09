@@ -4,6 +4,7 @@ package SemanticWeb::Schema::QAPage;
 
 # ABSTRACT: A QAPage is a WebPage focussed on a specific Question and its Answer(s)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPage /;

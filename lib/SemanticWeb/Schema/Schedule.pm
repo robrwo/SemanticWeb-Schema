@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Schedule;
 
 # ABSTRACT: A schedule defines a repeating time period used to describe a regularly occurring [[Event]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

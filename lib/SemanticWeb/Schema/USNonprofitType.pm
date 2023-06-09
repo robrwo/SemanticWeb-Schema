@@ -4,6 +4,7 @@ package SemanticWeb::Schema::USNonprofitType;
 
 # ABSTRACT: USNonprofitType: Non-profit organization type originating from the United States.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NonprofitType /;

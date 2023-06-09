@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MonetaryGrant;
 
 # ABSTRACT: A monetary grant.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Grant /;

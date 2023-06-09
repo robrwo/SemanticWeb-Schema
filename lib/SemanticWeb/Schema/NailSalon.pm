@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NailSalon;
 
 # ABSTRACT: A nail salon.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness /;

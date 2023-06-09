@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Role;
 
 # ABSTRACT: Represents additional information about a relationship or property
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

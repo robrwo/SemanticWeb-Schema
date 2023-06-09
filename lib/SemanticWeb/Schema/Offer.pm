@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Offer;
 
 # ABSTRACT: An offer to transfer some rights to an item or to provide a service — for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

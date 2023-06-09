@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Beach;
 
 # ABSTRACT: Beach.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EmailMessage;
 
 # ABSTRACT: An email message.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Message /;

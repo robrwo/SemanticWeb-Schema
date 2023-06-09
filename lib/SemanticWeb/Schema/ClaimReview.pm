@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ClaimReview;
 
 # ABSTRACT: A fact-checking review of claims made (or reported) in some creative work (referenced via itemReviewed).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalScholarlyArticle;
 
 # ABSTRACT: A scholarly article in the medical domain.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ScholarlyArticle /;

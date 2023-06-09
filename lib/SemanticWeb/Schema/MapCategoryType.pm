@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MapCategoryType;
 
 # ABSTRACT: An enumeration of several kinds of Map.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

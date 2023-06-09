@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OfferCatalog;
 
 # ABSTRACT: An OfferCatalog is an ItemList that contains related Offers and/or further OfferCatalogs that are offeredBy the same provider.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ItemList /;

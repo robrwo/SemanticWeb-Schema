@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CoverArt;
 
 # ABSTRACT: The artwork on the outer surface of a CreativeWork.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::VisualArtwork /;

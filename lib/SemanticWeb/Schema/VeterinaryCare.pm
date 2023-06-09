@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VeterinaryCare;
 
 # ABSTRACT: A vet's office.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalOrganization /;

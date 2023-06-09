@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MenuItem;
 
 # ABSTRACT: A food or drink item listed in a menu or menu section.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Table;
 
 # ABSTRACT: A table on a Web page.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::WebPageElement /;

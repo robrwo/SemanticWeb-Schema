@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComputerStore;
 
 # ABSTRACT: A computer store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

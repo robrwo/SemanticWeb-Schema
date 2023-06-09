@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LegislativeBuilding;
 
 # ABSTRACT: A legislative building—for example
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::GovernmentBuilding /;

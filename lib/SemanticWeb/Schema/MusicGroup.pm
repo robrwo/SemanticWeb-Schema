@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicGroup;
 
 # ABSTRACT: A musical group
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PerformingGroup /;

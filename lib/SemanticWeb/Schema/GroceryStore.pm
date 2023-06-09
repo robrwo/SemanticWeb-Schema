@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GroceryStore;
 
 # ABSTRACT: A grocery store.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

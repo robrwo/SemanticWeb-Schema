@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Play;
 
 # ABSTRACT: A play is a form of literature
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

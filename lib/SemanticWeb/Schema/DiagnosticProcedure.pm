@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DiagnosticProcedure;
 
 # ABSTRACT: A medical procedure intended primarily for diagnostic
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalProcedure /;

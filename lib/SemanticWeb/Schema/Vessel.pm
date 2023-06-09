@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Vessel;
 
 # ABSTRACT: A component of the human body circulatory system comprised of an intricate network of hollow tubes that transport blood throughout the entire body.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AnatomicalStructure /;

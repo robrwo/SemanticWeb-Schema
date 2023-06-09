@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PsychologicalTreatment;
 
 # ABSTRACT: A process of care relying upon counseling
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::TherapeuticProcedure /;

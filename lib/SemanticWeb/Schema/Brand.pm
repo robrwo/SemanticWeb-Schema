@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Brand;
 
 # ABSTRACT: A brand is a name used by an organization or business person for labeling a product
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::NonprofitType;
 
 # ABSTRACT: NonprofitType enumerates several kinds of official non-profit types of which a non-profit organization can be.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Enumeration /;

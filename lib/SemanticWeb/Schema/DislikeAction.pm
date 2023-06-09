@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DislikeAction;
 
 # ABSTRACT: The act of expressing a negative sentiment about the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ReactAction /;

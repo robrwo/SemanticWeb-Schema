@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DatedMoneySpecification;
 
 # ABSTRACT: A DatedMoneySpecification represents monetary values with optional start and end dates
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GameServer;
 
 # ABSTRACT: Server that provides game interaction in a multiplayer game.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

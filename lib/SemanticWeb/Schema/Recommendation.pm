@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Recommendation;
 
 # ABSTRACT: [[Recommendation]] is a type of [[Review]] that suggests or proposes something as the best option or best course of action
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Review /;

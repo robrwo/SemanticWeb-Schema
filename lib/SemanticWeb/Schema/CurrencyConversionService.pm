@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CurrencyConversionService;
 
 # ABSTRACT: A service to convert funds from one currency to another currency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialProduct /;

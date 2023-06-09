@@ -4,6 +4,7 @@ package SemanticWeb::Schema::GeoCoordinates;
 
 # ABSTRACT: The geographic coordinates of a place or event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

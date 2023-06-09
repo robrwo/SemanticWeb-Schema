@@ -4,6 +4,7 @@ package SemanticWeb::Schema::WriteAction;
 
 # ABSTRACT: The act of authoring written creative content.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreateAction /;

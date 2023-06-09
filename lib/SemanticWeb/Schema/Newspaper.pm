@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Newspaper;
 
 # ABSTRACT: A publication containing information about varied topics that are pertinent to general information
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Periodical /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CollegeOrUniversity;
 
 # ABSTRACT: A college
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EducationalOrganization /;

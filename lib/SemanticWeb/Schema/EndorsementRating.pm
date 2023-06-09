@@ -4,6 +4,7 @@ package SemanticWeb::Schema::EndorsementRating;
 
 # ABSTRACT: An EndorsementRating is a rating that expresses some level of endorsement
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Rating /;

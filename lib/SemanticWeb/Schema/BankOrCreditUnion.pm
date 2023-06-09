@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BankOrCreditUnion;
 
 # ABSTRACT: Bank or credit union.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialService /;

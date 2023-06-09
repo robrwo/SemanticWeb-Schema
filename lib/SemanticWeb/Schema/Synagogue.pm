@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Synagogue;
 
 # ABSTRACT: A synagogue.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PlaceOfWorship /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AssignAction;
 
 # ABSTRACT: The act of allocating an action/event/task to some destination (someone or something).
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AllocateAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InsuranceAgency;
 
 # ABSTRACT: An Insurance agency.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FinancialService /;

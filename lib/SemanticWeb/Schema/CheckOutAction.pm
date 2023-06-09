@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CheckOutAction;
 
 # ABSTRACT: The act of an agent communicating (service provider
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CommunicateAction /;

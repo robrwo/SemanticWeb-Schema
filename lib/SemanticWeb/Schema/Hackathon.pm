@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Hackathon;
 
 # ABSTRACT: A [hackathon](https://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

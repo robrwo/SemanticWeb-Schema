@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CDCPMDRecord;
 
 # ABSTRACT: A CDCPMDRecord is a data structure representing a record in a CDC tabular data format used for hospital data reporting
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StructuredValue /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MotorcycleRepair;
 
 # ABSTRACT: A motorcycle repair shop.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AutomotiveBusiness /;

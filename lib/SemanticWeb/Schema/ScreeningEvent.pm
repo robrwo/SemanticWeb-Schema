@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ScreeningEvent;
 
 # ABSTRACT: A screening of a movie or other video.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

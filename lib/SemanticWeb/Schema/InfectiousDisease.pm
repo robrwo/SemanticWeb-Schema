@@ -4,6 +4,7 @@ package SemanticWeb::Schema::InfectiousDisease;
 
 # ABSTRACT: An infectious disease is a clinically evident human disease resulting from the presence of pathogenic microbial agents
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalCondition /;

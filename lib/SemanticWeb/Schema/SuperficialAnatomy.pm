@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SuperficialAnatomy;
 
 # ABSTRACT: Anatomical features that can be observed by sight (without dissection)
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

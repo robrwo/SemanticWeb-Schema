@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Optician;
 
 # ABSTRACT: A store that sells reading glasses and similar devices for improving vision.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalBusiness /;

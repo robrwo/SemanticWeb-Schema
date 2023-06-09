@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LeaveAction;
 
 # ABSTRACT: An agent leaves an event / group with participants/friends at a location
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InteractAction /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::IgnoreAction;
 
 # ABSTRACT: The act of intentionally disregarding the object
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AssessAction /;

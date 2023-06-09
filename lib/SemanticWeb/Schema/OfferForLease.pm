@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OfferForLease;
 
 # ABSTRACT: An [[OfferForLease]] in Schema
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Offer /;

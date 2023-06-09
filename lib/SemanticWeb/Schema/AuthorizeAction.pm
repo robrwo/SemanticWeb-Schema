@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AuthorizeAction;
 
 # ABSTRACT: The act of granting permission to an object.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::AllocateAction /;

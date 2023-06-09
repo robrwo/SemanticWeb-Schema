@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Game;
 
 # ABSTRACT: The Game type represents things which are games
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

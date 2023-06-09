@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HairSalon;
 
 # ABSTRACT: A hair salon.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness /;

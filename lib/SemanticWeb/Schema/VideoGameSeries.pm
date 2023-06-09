@@ -4,6 +4,7 @@ package SemanticWeb::Schema::VideoGameSeries;
 
 # ABSTRACT: A video game series.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWorkSeries /;

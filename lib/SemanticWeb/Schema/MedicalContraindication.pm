@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalContraindication;
 
 # ABSTRACT: A condition or factor that serves as a reason to withhold a certain medical therapy
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

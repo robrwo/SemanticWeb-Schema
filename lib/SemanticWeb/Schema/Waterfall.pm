@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Waterfall;
 
 # ABSTRACT: A waterfall, like Niagara.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

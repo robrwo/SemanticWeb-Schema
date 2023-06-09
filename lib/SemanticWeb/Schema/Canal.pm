@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Canal;
 
 # ABSTRACT: A canal, like the Panama Canal.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BodyOfWater /;

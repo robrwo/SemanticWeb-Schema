@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LegalForceStatus;
 
 # ABSTRACT: A list of possible statuses for the legal force of a legislation.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::StatusEnumeration /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::LiquorStore;
 
 # ABSTRACT: A shop that sells alcoholic drinks such as wine
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Store /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SportsActivityLocation;
 
 # ABSTRACT: A sports location, such as a playing field.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

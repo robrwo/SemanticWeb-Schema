@@ -4,6 +4,7 @@ package SemanticWeb::Schema::IndividualProduct;
 
 # ABSTRACT: A single, identifiable product instance (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Product /;

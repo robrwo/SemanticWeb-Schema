@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DeliveryChargeSpecification;
 
 # ABSTRACT: The price for the delivery of an offer using a particular delivery method.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PriceSpecification /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AnatomicalStructure;
 
 # ABSTRACT: Any part of the human body
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEntity /;

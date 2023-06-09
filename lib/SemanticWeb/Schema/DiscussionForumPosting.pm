@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DiscussionForumPosting;
 
 # ABSTRACT: A posting to a discussion forum.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SocialMediaPosting /;

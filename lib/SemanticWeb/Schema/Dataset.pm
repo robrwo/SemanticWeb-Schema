@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Dataset;
 
 # ABSTRACT: A body of structured information describing some topic(s) of interest.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork /;

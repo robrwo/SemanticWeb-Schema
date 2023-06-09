@@ -4,6 +4,7 @@ package SemanticWeb::Schema::RadioEpisode;
 
 # ABSTRACT: A radio episode which can be part of a series or season.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Episode /;

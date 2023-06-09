@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TaxiStand;
 
 # ABSTRACT: A taxi stand.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OrganizationRole;
 
 # ABSTRACT: A subclass of Role used to describe roles within organizations.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Role /;

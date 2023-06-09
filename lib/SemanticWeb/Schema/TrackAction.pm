@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TrackAction;
 
 # ABSTRACT: An agent tracks an object for updates
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FindAction /;

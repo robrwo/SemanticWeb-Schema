@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MobileApplication;
 
 # ABSTRACT: A software application designed specifically to work well on a mobile device such as a telephone.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::SoftwareApplication /;

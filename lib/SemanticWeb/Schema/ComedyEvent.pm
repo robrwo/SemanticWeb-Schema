@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ComedyEvent;
 
 # ABSTRACT: Event type: Comedy event.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Event /;

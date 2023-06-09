@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Cemetery;
 
 # ABSTRACT: A graveyard.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

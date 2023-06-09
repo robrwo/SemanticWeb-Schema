@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalBusiness;
 
 # ABSTRACT: A particular physical or virtual business of an organization for medical purposes
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

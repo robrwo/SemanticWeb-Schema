@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Gene;
 
 # ABSTRACT: A discrete unit of inheritance which affects one or more biological traits (Source: [https://en
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BioChemEntity /;

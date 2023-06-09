@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicVenue;
 
 # ABSTRACT: A music venue.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

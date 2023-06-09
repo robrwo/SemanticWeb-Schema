@@ -4,6 +4,7 @@ package SemanticWeb::Schema::AdultEntertainment;
 
 # ABSTRACT: An adult entertainment establishment.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::EntertainmentBusiness /;

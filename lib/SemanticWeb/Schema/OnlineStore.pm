@@ -4,6 +4,7 @@ package SemanticWeb::Schema::OnlineStore;
 
 # ABSTRACT: An eCommerce site.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::OnlineBusiness /;

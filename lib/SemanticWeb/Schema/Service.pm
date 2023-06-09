@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Service;
 
 # ABSTRACT: A service provided by an organization, e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Intangible /;

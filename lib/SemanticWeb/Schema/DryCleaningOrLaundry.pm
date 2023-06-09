@@ -4,6 +4,7 @@ package SemanticWeb::Schema::DryCleaningOrLaundry;
 
 # ABSTRACT: A dry-cleaning business.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LocalBusiness /;

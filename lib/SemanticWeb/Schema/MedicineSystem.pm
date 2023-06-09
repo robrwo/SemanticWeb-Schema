@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicineSystem;
 
 # ABSTRACT: Systems of medical practice.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration /;

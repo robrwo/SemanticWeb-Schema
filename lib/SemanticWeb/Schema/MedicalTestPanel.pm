@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MedicalTestPanel;
 
 # ABSTRACT: Any collection of tests commonly ordered together.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTest /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::BrokerageAccount;
 
 # ABSTRACT: An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::InvestmentOrDeposit /;

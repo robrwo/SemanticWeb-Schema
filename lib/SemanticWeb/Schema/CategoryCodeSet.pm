@@ -4,6 +4,7 @@ package SemanticWeb::Schema::CategoryCodeSet;
 
 # ABSTRACT: A set of Category Code values.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::DefinedTermSet /;

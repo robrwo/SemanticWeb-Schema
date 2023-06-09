@@ -4,6 +4,7 @@ package SemanticWeb::Schema::UKNonprofitType;
 
 # ABSTRACT: UKNonprofitType: Non-profit organization type originating from the United Kingdom.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::NonprofitType /;

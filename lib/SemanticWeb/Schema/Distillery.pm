@@ -4,6 +4,7 @@ package SemanticWeb::Schema::Distillery;
 
 # ABSTRACT: A distillery.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::FoodEstablishment /;

@@ -4,6 +4,7 @@ package SemanticWeb::Schema::MusicAlbum;
 
 # ABSTRACT: A collection of music tracks.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MusicPlaylist /;

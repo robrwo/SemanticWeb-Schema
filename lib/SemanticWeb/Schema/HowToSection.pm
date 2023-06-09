@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HowToSection;
 
 # ABSTRACT: A sub-grouping of steps in the instructions for how to achieve a result (e
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::ItemList SemanticWeb::Schema::ListItem /;

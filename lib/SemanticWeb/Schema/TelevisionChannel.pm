@@ -4,6 +4,7 @@ package SemanticWeb::Schema::TelevisionChannel;
 
 # ABSTRACT: A unique instance of a television BroadcastService on a CableOrSatelliteService lineup.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::BroadcastChannel /;

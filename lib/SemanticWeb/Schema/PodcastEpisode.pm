@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PodcastEpisode;
 
 # ABSTRACT: A single episode of a podcast series.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::Episode /;

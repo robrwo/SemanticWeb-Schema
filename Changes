@@ -4,6 +4,12 @@ Revision history for {{$dist->name}}:
   [Enhancements]
   - Updated classes to Version 21.0 of the schema.
 
+  [Incompatible Changes]
+  - Perl v5.14 is now required.
+
+  [Documentation]
+  - The policy for supported Perlv ersions has been documented.
+
 v15.0.0   2022-11-15 17:27:11+00:00 Europe/London
   [Enhancements]
   - Updated classes to Version 15.0 of the schema.

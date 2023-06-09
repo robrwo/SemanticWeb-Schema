@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PhysicalActivity;
 
 # ABSTRACT: Any bodily activity that enhances or maintains physical fitness and overall health and wellness
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::LifestyleModification /;

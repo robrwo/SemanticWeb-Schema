@@ -4,6 +4,7 @@ package SemanticWeb::Schema::SingleFamilyResidence;
 
 # ABSTRACT: Residence type: Single-family home.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::House /;

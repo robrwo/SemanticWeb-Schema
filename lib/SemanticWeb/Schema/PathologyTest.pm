@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PathologyTest;
 
 # ABSTRACT: A medical test performed by a laboratory that typically involves examination of a tissue sample by a pathologist.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalTest /;

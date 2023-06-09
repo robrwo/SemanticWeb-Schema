@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ParentAudience;
 
 # ABSTRACT: A set of characteristics describing parents
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::PeopleAudience /;

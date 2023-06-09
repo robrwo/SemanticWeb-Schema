@@ -4,6 +4,7 @@ package SemanticWeb::Schema::HealthClub;
 
 # ABSTRACT: A health club.
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::HealthAndBeautyBusiness SemanticWeb::Schema::SportsActivityLocation /;

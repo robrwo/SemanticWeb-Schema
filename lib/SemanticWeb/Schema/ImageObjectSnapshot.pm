@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ImageObjectSnapshot;
 
 # ABSTRACT: A specific and exact (byte-for-byte) version of an [[ImageObject]]
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::ImageObject /;

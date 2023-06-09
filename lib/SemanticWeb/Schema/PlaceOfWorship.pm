@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PlaceOfWorship;
 
 # ABSTRACT: Place of worship
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CivicStructure /;

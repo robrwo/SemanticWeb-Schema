@@ -4,6 +4,7 @@ package SemanticWeb::Schema::PhysicalExam;
 
 # ABSTRACT: A type of physical examination of a patient performed by a physician
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::MedicalEnumeration SemanticWeb::Schema::MedicalProcedure /;

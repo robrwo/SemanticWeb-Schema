@@ -4,6 +4,7 @@ package SemanticWeb::Schema::ExercisePlan;
 
 # ABSTRACT: Fitness-related activity designed for a specific health-related purpose
 
+use v5.14;
 use Moo;
 
 extends qw/ SemanticWeb::Schema::CreativeWork SemanticWeb::Schema::PhysicalActivity /;
