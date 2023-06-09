@@ -108,7 +108,7 @@
       },
       "schema:numberOfFullBathrooms" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Number of full bathrooms - The total number of full and Â¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
+         "rdfs:comment" : "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
          "rdfs:label" : "numberOfFullBathrooms",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
@@ -120,7 +120,7 @@
       },
       "schema:numberOfPartialBathrooms" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Number of partial bathrooms - The total number of half and Â¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
+         "rdfs:comment" : "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
          "rdfs:label" : "numberOfPartialBathrooms",
          "schema:domainIncludes" : [
             "schema:FloorPlan",

@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -3140,8 +3140,8 @@ has time_required => (
 
 C<translationOfWork>
 
-The work that this work has been translated from. E.g. ç©ç§èµ·æº is a
-translationOf âOn the Origin of Speciesâ.
+The work that this work has been translated from. E.g. 物种起源 is a
+translationOf “On the Origin of Species”.
 
 
 A translation_of_work should be one of the following types:
@@ -3349,10 +3349,9 @@ has work_example => (
 
 C<workTranslation>
 
-A work that is a translation of the content of this work. E.g. è¥¿éè¨
-has an English workTranslation âJourney to the Westâ, a German
-workTranslation âMonkeys Pilgerfahrtâ and a Vietnamese translation TÃ¢y
-du kÃ½ bÃ¬nh kháº£o.
+A work that is a translation of the content of this work. E.g. 西遊記 has an
+English workTranslation “Journey to the West”, a German workTranslation
+“Monkeys Pilgerfahrt” and a Vietnamese translation Tây du ký bình khảo.
 
 
 A work_translation should be one of the following types:

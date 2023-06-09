@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::Enumeration;
 
-# ABSTRACT: Lists or enumerationsâfor example
+# ABSTRACT: Lists or enumerations—for example
 
 use Moo;
 
@@ -15,14 +15,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Lists or enumerationsâfor example, a list of cuisines or music genres,
-etc.
+Lists or enumerations—for example, a list of cuisines or music genres, etc.
 
 
 

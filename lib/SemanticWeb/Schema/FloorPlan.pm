@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -261,7 +261,7 @@ has number_of_bedrooms => (
 
 C<numberOfFullBathrooms>
 
-Number of full bathrooms - The total number of full and Â¾ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsFull field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field>.
+Number of full bathrooms - The total number of full and ¾ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsFull field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field>.
 
 A number_of_full_bathrooms should be one of the following types:
 
@@ -288,7 +288,7 @@ has number_of_full_bathrooms => (
 
 C<numberOfPartialBathrooms>
 
-Number of partial bathrooms - The total number of half and Â¼ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsPartial field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field>. 
+Number of partial bathrooms - The total number of half and ¼ bathrooms in an L<SemanticWeb::Schema::Accommodation>. This corresponds to the L<BathroomsPartial field in RESO|https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field>. 
 
 A number_of_partial_bathrooms should be one of the following types:
 

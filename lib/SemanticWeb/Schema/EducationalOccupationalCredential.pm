@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -67,8 +67,8 @@ has competency_required => (
 
 C<credentialCategory>
 
-The category or type of credential being described, for example "degreeâ,
-âcertificateâ, âbadgeâ, or more specific term.
+The category or type of credential being described, for example "degree”,
+“certificate”, “badge”, or more specific term.
 
 
 A credential_category should be one of the following types:

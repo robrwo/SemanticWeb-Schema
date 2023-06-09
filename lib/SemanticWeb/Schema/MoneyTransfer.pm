@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -64,9 +64,9 @@ has amount => (
 
 C<beneficiaryBank>
 
-A bank or bankâs branch, financial institution or international financial
-institution operating the beneficiaryâs bank account or releasing funds
-for the beneficiary.
+A bank or bank’s branch, financial institution or international financial
+institution operating the beneficiary’s bank account or releasing funds for
+the beneficiary.
 
 
 A beneficiary_bank should be one of the following types:

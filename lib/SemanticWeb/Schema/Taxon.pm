@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -123,8 +123,8 @@ has parent_taxon => (
 C<taxonRank>
 
 The taxonomic rank of this taxon given preferably as a URI from a
-controlled vocabulary â typically the ranks from TDWG TaxonRank ontology
-or equivalent Wikidata URIs.
+controlled vocabulary – typically the ranks from TDWG TaxonRank ontology or
+equivalent Wikidata URIs.
 
 
 A taxon_rank should be one of the following types:

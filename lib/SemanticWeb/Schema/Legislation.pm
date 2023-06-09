@@ -15,7 +15,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -426,7 +426,7 @@ C<legislationType>
 
 The type of the legislation. Examples of values are "law", "act",
 "directive", "decree", "regulation", "statutory instrument", "loi
-organique", "rÃ¨glement grand-ducal", etc., depending on the country.
+organique", "règlement grand-ducal", etc., depending on the country.
 
 
 A legislation_type should be one of the following types:

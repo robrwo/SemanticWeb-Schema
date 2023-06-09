@@ -15,7 +15,7 @@ use Types::Standard qw/ Str /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v15.0.1';
+our $VERSION = 'v21.0.0';
 
 # RECOMMEND PREREQ: aliased
 # RECOMMEND PREREQ: Class::XSAccessor 1.18

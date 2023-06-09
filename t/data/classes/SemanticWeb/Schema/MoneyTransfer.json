@@ -33,7 +33,7 @@
       },
       "schema:beneficiaryBank" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A bank or bankâs branch, financial institution or international financial institution operating the beneficiaryâs bank account or releasing funds for the beneficiary.",
+         "rdfs:comment" : "A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary.",
          "rdfs:label" : "beneficiaryBank",
          "schema:domainIncludes" : "schema:MoneyTransfer",
          "schema:isPartOf" : "http:pending.schema.org",
