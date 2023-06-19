@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -1899,7 +1899,7 @@ has is_accessible_for_free => (
 C<isBasedOn>
 
 A resource from which this work is derived or from which it is a
-modification or adaption.
+modification or adaptation.
 
 
 A is_based_on should be one of the following types:
@@ -3080,6 +3080,34 @@ has text => (
 );
 
 
+=head2 C<thumbnail>
+
+
+
+Thumbnail image for an image or video.
+
+
+A thumbnail should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
+
+=back
+
+=head2 C<_has_thumbnail>
+
+A predicate for the L</thumbnail> attribute.
+
+=cut
+
+has thumbnail => (
+    is        => 'rw',
+    predicate => '_has_thumbnail',
+    json_ld   => 'thumbnail',
+);
+
+
 =head2 C<thumbnail_url>
 
 C<thumbnailUrl>
@@ -3112,8 +3140,8 @@ has thumbnail_url => (
 
 C<timeRequired>
 
-Approximate or typical time it takes to work with or through this learning
-resource for the typical intended target audience, e.g. 'PT30M', 'PT1H25M'.
+Approximate or typical time it usually takes to work with or through the
+content of this work for the typical or target audience.
 
 
 A time_required should be one of the following types:

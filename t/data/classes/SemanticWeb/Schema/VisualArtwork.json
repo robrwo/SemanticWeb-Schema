@@ -3,8 +3,7 @@
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A work of art that is primarily visual in character.",
       "rdfs:label" : "VisualArtwork",
-      "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources:source_VisualArtworkClass"
+      "rdfs:subClassOf" : "schema:CreativeWork"
    },
    "properties" : {
       "schema:artEdition" : {
@@ -34,8 +33,8 @@
          "rdfs:label" : "artform",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:artist" : {
@@ -43,8 +42,8 @@
          "rdfs:comment" : "The primary artist for a work\n    \tin a medium other than pencils or digital line art--for example, if the\n    \tprimary artwork is done in watercolors or digital paints.",
          "rdfs:label" : "artist",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
+            "schema:VisualArtwork",
             "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -65,8 +64,8 @@
          "rdfs:comment" : "The individual who adds color to inked drawings.",
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
             "schema:ComicIssue",
+            "schema:ComicStory",
             "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -76,16 +75,16 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The depth of the item.",
          "rdfs:label" : "depth",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:Product",
             "schema:OfferShippingDetails",
-            "schema:Product"
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Distance"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+            "schema:Distance",
+            "schema:QuantitativeValue"
+         ]
       },
       "schema:height" : {
          "rdf:type" : "rdf:Property",
@@ -93,10 +92,10 @@
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
             "schema:OfferShippingDetails",
-            "schema:Person",
-            "schema:Product",
+            "schema:VisualArtwork",
             "schema:MediaObject",
-            "schema:VisualArtwork"
+            "schema:Product",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -108,8 +107,8 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
+            "schema:VisualArtwork",
             "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -120,8 +119,8 @@
          "rdfs:comment" : "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:ComicStory",
+            "schema:VisualArtwork",
             "schema:ComicIssue"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -132,9 +131,9 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
+            "schema:ComicIssue",
             "schema:VisualArtwork",
-            "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -156,10 +155,10 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
-            "schema:OfferShippingDetails",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:MediaObject",
+            "schema:VisualArtwork",
+            "schema:OfferShippingDetails"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",

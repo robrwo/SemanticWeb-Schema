@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -712,7 +712,7 @@ has maximum_physical_attendee_capacity => (
 
 C<maximumVirtualAttendeeCapacity>
 
-The maximum physical attendee capacity of an L<SemanticWeb::Schema::Event> whose [[eventAttendanceMode]] is L<SemanticWeb::Schema::OnlineEventAttendanceMode> (or the online aspects, in the case of a L<SemanticWeb::Schema::MixedEventAttendanceMode>). 
+The maximum virtual attendee capacity of an L<SemanticWeb::Schema::Event> whose [[eventAttendanceMode]] is L<SemanticWeb::Schema::OnlineEventAttendanceMode> (or the online aspects, in the case of a L<SemanticWeb::Schema::MixedEventAttendanceMode>). 
 
 A maximum_virtual_attendee_capacity should be one of the following types:
 

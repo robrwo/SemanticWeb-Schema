@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -188,7 +188,7 @@ has unit_text => (
 
 
 
-The value of the quantitative value or property value node.
+The value of a L<SemanticWeb::Schema::QuantitativeValue> (including L<SemanticWeb::Schema::Observation>) or property value node.
 
 =over
 

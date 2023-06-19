@@ -4,9 +4,9 @@
       "rdfs:comment" : "A tourist attraction.  In principle any Thing can be a [[TouristAttraction]], from a [[Mountain]] and [[LandmarksOrHistoricalBuildings]] to a [[LocalBusiness]].  This Type can be used on its own to describe a general [[TouristAttraction]], or be used as an [[additionalType]] to add tourist attraction properties to any other type.  (See examples below)",
       "rdfs:label" : "TouristAttraction",
       "rdfs:subClassOf" : "schema:Place",
-      "schema:source" : [
-         "schemadotorgsources:IIT-CNR.it",
-         "schemadotorgsources:Tourism"
+      "schema:contributor" : [
+         "collab:IIT-CNR.it",
+         "collab:Tourism"
       ]
    },
    "properties" : {
@@ -15,32 +15,33 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
+            "schema:Course",
             "schema:ServiceChannel",
+            "schema:LodgingBusiness",
             "schema:TouristAttraction",
-            "schema:LodgingBusiness"
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ]
       },
       "schema:touristType" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
          "rdfs:label" : "touristType",
+         "schema:contributor" : [
+            "collab:IIT-CNR.it",
+            "collab:Tourism"
+         ],
          "schema:domainIncludes" : [
-            "schema:TouristTrip",
             "schema:TouristDestination",
-            "schema:TouristAttraction"
+            "schema:TouristAttraction",
+            "schema:TouristTrip"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
-            "schema:Text"
-         ],
-         "schema:source" : [
-            "schemadotorgsources:IIT-CNR.it",
-            "schemadotorgsources:Tourism"
+            "schema:Text",
+            "schema:Audience"
          ]
       }
    }

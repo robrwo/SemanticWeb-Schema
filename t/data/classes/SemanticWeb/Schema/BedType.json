@@ -4,10 +4,8 @@
       "rdfs:comment" : "A type of bed. This is used for indicating the bed or beds available in an accommodation.",
       "rdfs:label" : "BedType",
       "rdfs:subClassOf" : "schema:QualitativeValue",
-      "schema:source" : [
-         "https://github.com/schemaorg/schemaorg/issues/1262",
-         "schemadotorgsources2:STI_Accommodation_Ontology"
-      ]
+      "schema:contributor" : "collab:STI_Accommodation_Ontology",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1262"
    },
    "properties" : {}
 }

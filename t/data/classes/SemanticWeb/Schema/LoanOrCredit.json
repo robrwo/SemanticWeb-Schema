@@ -4,7 +4,7 @@
       "rdfs:comment" : "A financial product for the loaning of an amount of money, or line of credit, under agreed terms and charges.",
       "rdfs:label" : "LoanOrCredit",
       "rdfs:subClassOf" : "schema:FinancialProduct",
-      "schema:source" : "schemadotorgsources:FIBO"
+      "schema:contributor" : "collab:FIBO"
    },
    "properties" : {
       "schema:amount" : {
@@ -12,19 +12,19 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
-            "schema:InvestmentOrDeposit",
+            "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
-            "schema:DatedMoneySpecification"
+            "schema:LoanOrCredit",
+            "schema:MonetaryGrant",
+            "schema:InvestmentOrDeposit"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:Number"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:currency" : {
@@ -32,11 +32,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:DatedMoneySpecification",
-            "schema:MonetaryAmountDistribution",
             "schema:LoanOrCredit",
-            "schema:ExchangeRateSpecification"
+            "schema:MonetaryAmount",
+            "schema:ExchangeRateSpecification",
+            "schema:MonetaryAmountDistribution",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -45,84 +45,74 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The period of time after any due date that the borrower has to fulfil its obligations before a default (failure to pay) is deemed to have occurred.",
          "rdfs:label" : "gracePeriod",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Duration",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:loanRepaymentForm" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.",
          "rdfs:label" : "loanRepaymentForm",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:RepaymentSpecification",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:loanTerm" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The duration of the loan or credit agreement.",
          "rdfs:label" : "loanTerm",
          "rdfs:subPropertyOf" : "schema:duration",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:FIBO"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:loanType" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The type of a loan or credit.",
          "rdfs:label" : "loanType",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
-         "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:recourseLoan" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The only way you get the money back in the event of default is the security. Recourse is where you still have the opportunity to go back to the borrower for the rest of the money.",
          "rdfs:label" : "recourseLoan",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
-         "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:renegotiableLoan" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Whether the terms for payment of interest can be renegotiated during the life of the loan.",
          "rdfs:label" : "renegotiableLoan",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:requiredCollateral" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
          "rdfs:label" : "requiredCollateral",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:LoanOrCredit",
          "schema:rangeIncludes" : [
-            "schema:Thing",
-            "schema:Text"
-         ],
-         "schema:source" : "schemadotorgsources:FIBO"
+            "schema:Text",
+            "schema:Thing"
+         ]
       }
    }
 }

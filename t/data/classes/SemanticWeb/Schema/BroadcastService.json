@@ -37,8 +37,8 @@
             "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : [
-            "schema:BroadcastFrequencySpecification",
-            "schema:Text"
+            "schema:Text",
+            "schema:BroadcastFrequencySpecification"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
       },
@@ -63,8 +63,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
             "schema:BroadcastService",
-            "schema:Vehicle",
-            "schema:Person"
+            "schema:Person",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -84,17 +84,17 @@
          "rdfs:comment" : "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]].",
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
-            "schema:LinkRole",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:BroadcastService",
-            "schema:PronounceableText",
             "schema:WriteAction",
-            "schema:CommunicateAction"
+            "schema:CommunicateAction",
+            "schema:CreativeWork",
+            "schema:PronounceableText",
+            "schema:BroadcastService",
+            "schema:LinkRole",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2382"
       },
@@ -110,8 +110,8 @@
          "rdfs:comment" : "The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).",
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
             "schema:ScreeningEvent",
+            "schema:BroadcastService",
             "schema:BroadcastEvent"
          ],
          "schema:rangeIncludes" : "schema:Text"

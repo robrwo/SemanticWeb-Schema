@@ -7,7 +7,7 @@
          "schema:LodgingBusiness",
          "schema:CivicStructure"
       ],
-      "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+      "schema:contributor" : "collab:STI_Accommodation_Ontology"
    },
    "properties" : {}
 }

@@ -5,7 +5,7 @@
       "rdfs:label" : "ProductGroup",
       "rdfs:subClassOf" : "schema:Product",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2597"
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1797"
    },
    "properties" : {
       "schema:hasVariant" : {

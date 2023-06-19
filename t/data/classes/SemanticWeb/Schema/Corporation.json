@@ -4,7 +4,7 @@
       "rdfs:comment" : "Organization: A business corporation.",
       "rdfs:label" : "Corporation",
       "rdfs:subClassOf" : "schema:Organization",
-      "schema:source" : "schemadotorgsources:source_rNews"
+      "schema:contributor" : "collab:rNews"
    },
    "properties" : {
       "schema:tickerSymbol" : {

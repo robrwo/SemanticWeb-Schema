@@ -4,74 +4,74 @@
       "rdfs:comment" : "A MusicRelease is a specific release of a music album.",
       "rdfs:label" : "MusicRelease",
       "rdfs:subClassOf" : "schema:MusicPlaylist",
-      "schema:source" : "schemadotorgsources:MBZ"
+      "schema:contributor" : "collab:MBZ"
    },
    "properties" : {
       "schema:catalogNumber" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The catalog number for the release.",
          "rdfs:label" : "catalogNumber",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRelease",
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:creditedTo" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.",
          "rdfs:label" : "creditedTo",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:rangeIncludes" : [
             "schema:Person",
             "schema:Organization"
-         ],
-         "schema:source" : "schemadotorgsources:MBZ"
+         ]
       },
       "schema:duration" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:Audiobook",
-            "schema:Schedule",
-            "schema:Event",
-            "schema:MusicRelease",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:MusicRelease",
+            "schema:Schedule",
+            "schema:Audiobook",
+            "schema:Event",
             "schema:Movie",
+            "schema:MusicRecording",
             "schema:Episode"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1457",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1457"
          ]
       },
       "schema:musicReleaseFormat" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
          "rdfs:label" : "musicReleaseFormat",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRelease",
-         "schema:rangeIncludes" : "schema:MusicReleaseFormatType",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:MusicReleaseFormatType"
       },
       "schema:recordLabel" : {
          "owl:equivalentProperty" : "mo:label",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The label that issued the release.",
          "rdfs:label" : "recordLabel",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRelease",
-         "schema:rangeIncludes" : "schema:Organization",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:Organization"
       },
       "schema:releaseOf" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The album this is a release of.",
          "rdfs:label" : "releaseOf",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRelease",
          "schema:inverseOf" : "schema:albumRelease",
-         "schema:rangeIncludes" : "schema:MusicAlbum",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:MusicAlbum"
       }
    }
 }

@@ -11,8 +11,8 @@
          "rdfs:comment" : "The artist that performed this album or recording.",
          "rdfs:label" : "byArtist",
          "schema:domainIncludes" : [
-            "schema:MusicAlbum",
-            "schema:MusicRecording"
+            "schema:MusicRecording",
+            "schema:MusicAlbum"
          ],
          "schema:rangeIncludes" : [
             "schema:MusicGroup",
@@ -24,20 +24,20 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:Audiobook",
-            "schema:Schedule",
-            "schema:Event",
-            "schema:MusicRelease",
             "schema:QuantitativeValueDistribution",
-            "schema:MusicRecording",
+            "schema:MediaObject",
+            "schema:MusicRelease",
+            "schema:Schedule",
+            "schema:Audiobook",
+            "schema:Event",
             "schema:Movie",
+            "schema:MusicRecording",
             "schema:Episode"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1457",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1457"
          ]
       },
       "schema:inAlbum" : {
@@ -58,18 +58,18 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The International Standard Recording Code for the recording.",
          "rdfs:label" : "isrcCode",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRecording",
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:recordingOf" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The composition this track is a recording of.",
          "rdfs:label" : "recordingOf",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : "schema:MusicRecording",
          "schema:inverseOf" : "schema:recordedAs",
-         "schema:rangeIncludes" : "schema:MusicComposition",
-         "schema:source" : "schemadotorgsources:MBZ"
+         "schema:rangeIncludes" : "schema:MusicComposition"
       }
    }
 }

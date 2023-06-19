@@ -11,18 +11,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:EducationalOccupationalProgram",
-            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:CreativeWorkSeason",
+            "schema:EducationalOccupationalProgram",
+            "schema:DatedMoneySpecification",
             "schema:CreativeWorkSeries",
-            "schema:DatedMoneySpecification"
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:CreativeWorkSeason",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -43,8 +43,8 @@
          "rdfs:label" : "roleName",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:startDate" : {
@@ -52,18 +52,18 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:CreativeWorkSeason",
-            "schema:CreativeWorkSeries",
+            "schema:EducationalOccupationalProgram",
+            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:DatedMoneySpecification",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries",
+            "schema:CreativeWorkSeason",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       }

@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -33,6 +33,35 @@ learners.
 
 
 =head1 ATTRIBUTES
+
+
+=head2 C<available_language>
+
+C<availableLanguage>
+
+A language someone may use with or at the item, service or place. Please use one of the language codes from the L<IETF BCP 47 standard|http://tools.ietf.org/html/bcp47>. See also [[inLanguage]].
+
+A available_language should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Language']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_available_language>
+
+A predicate for the L</available_language> attribute.
+
+=cut
+
+has available_language => (
+    is        => 'rw',
+    predicate => '_has_available_language',
+    json_ld   => 'availableLanguage',
+);
 
 
 =head2 C<course_code>
@@ -125,6 +154,37 @@ has educational_credential_awarded => (
 );
 
 
+=head2 C<financial_aid_eligible>
+
+C<financialAidEligible>
+
+A financial aid type or program which students may use to pay for tuition
+or fees associated with the program.
+
+
+A financial_aid_eligible should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::DefinedTerm']>
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_financial_aid_eligible>
+
+A predicate for the L</financial_aid_eligible> attribute.
+
+=cut
+
+has financial_aid_eligible => (
+    is        => 'rw',
+    predicate => '_has_financial_aid_eligible',
+    json_ld   => 'financialAidEligible',
+);
+
+
 =head2 C<has_course_instance>
 
 C<hasCourseInstance>
@@ -214,6 +274,64 @@ has occupational_credential_awarded => (
     is        => 'rw',
     predicate => '_has_occupational_credential_awarded',
     json_ld   => 'occupationalCredentialAwarded',
+);
+
+
+=head2 C<syllabus_sections>
+
+C<syllabusSections>
+
+Indicates (typically several) Syllabus entities that lay out what each
+section of the overall course will cover.
+
+
+A syllabus_sections should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Syllabus']>
+
+=back
+
+=head2 C<_has_syllabus_sections>
+
+A predicate for the L</syllabus_sections> attribute.
+
+=cut
+
+has syllabus_sections => (
+    is        => 'rw',
+    predicate => '_has_syllabus_sections',
+    json_ld   => 'syllabusSections',
+);
+
+
+=head2 C<total_historical_enrollment>
+
+C<totalHistoricalEnrollment>
+
+The total number of students that have enrolled in the history of the
+course.
+
+
+A total_historical_enrollment should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Integer']>
+
+=back
+
+=head2 C<_has_total_historical_enrollment>
+
+A predicate for the L</total_historical_enrollment> attribute.
+
+=cut
+
+has total_historical_enrollment => (
+    is        => 'rw',
+    predicate => '_has_total_historical_enrollment',
+    json_ld   => 'totalHistoricalEnrollment',
 );
 
 

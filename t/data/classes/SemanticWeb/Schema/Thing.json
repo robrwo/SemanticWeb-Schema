@@ -7,11 +7,14 @@
    "properties" : {
       "schema:additionalType" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.",
+         "rdfs:comment" : "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the \n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"http://schema.org/docs/styleguide.html\">style guide</a>",
          "rdfs:label" : "additionalType",
          "rdfs:subPropertyOf" : "rdf:type",
          "schema:domainIncludes" : "schema:Thing",
-         "schema:rangeIncludes" : "schema:URL"
+         "schema:rangeIncludes" : [
+            "schema:URL",
+            "schema:Text"
+         ]
       },
       "schema:alternateName" : {
          "rdf:type" : "rdf:Property",
@@ -26,7 +29,10 @@
          "rdfs:comment" : "A description of the item.",
          "rdfs:label" : "description",
          "schema:domainIncludes" : "schema:Thing",
-         "schema:rangeIncludes" : "schema:Text"
+         "schema:rangeIncludes" : [
+            "schema:TextObject",
+            "schema:Text"
+         ]
       },
       "schema:disambiguatingDescription" : {
          "rdf:type" : "rdf:Property",
@@ -44,8 +50,8 @@
          "schema:domainIncludes" : "schema:Thing",
          "schema:rangeIncludes" : [
             "schema:PropertyValue",
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:image" : {
@@ -65,8 +71,8 @@
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:mainEntity",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ]
       },
       "schema:name" : {
@@ -99,8 +105,8 @@
          "schema:domainIncludes" : "schema:Thing",
          "schema:inverseOf" : "schema:about",
          "schema:rangeIncludes" : [
-            "schema:Event",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Event"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1670"
       },

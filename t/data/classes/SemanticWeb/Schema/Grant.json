@@ -7,7 +7,7 @@
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
          "https://github.com/schemaorg/schemaorg/issues/383",
-         "schemadotorgsources2:FundInfoCollab"
+         "collab:FundInfoCollab"
       ]
    },
    "properties" : {
@@ -15,22 +15,22 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]].",
          "rdfs:label" : "fundedItem",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : "schema:Grant",
          "schema:inverseOf" : "schema:funding",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person",
-            "schema:Product",
             "schema:CreativeWork",
-            "schema:BioChemEntity",
+            "schema:MedicalEntity",
+            "schema:Product",
+            "schema:Person",
             "schema:Event",
-            "schema:MedicalEntity"
+            "schema:Organization",
+            "schema:BioChemEntity"
          ],
          "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/383",
-            "https://github.com/schemaorg/schemaorg/issues/1950"
+            "https://github.com/schemaorg/schemaorg/issues/1950",
+            "https://github.com/schemaorg/schemaorg/issues/383"
          ]
       },
       "schema:funder" : {
@@ -39,12 +39,12 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:CreativeWork",
             "schema:Person",
-            "schema:Event",
             "schema:Grant",
-            "schema:Organization"
+            "schema:Event",
+            "schema:Organization",
+            "schema:MonetaryGrant",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
             "schema:Organization",
@@ -56,12 +56,12 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:MedicalStudy",
-            "schema:Grant",
-            "schema:Organization",
             "schema:CreativeWork",
-            "schema:Person"
+            "schema:Person",
+            "schema:Event",
+            "schema:Grant",
+            "schema:MedicalStudy",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",

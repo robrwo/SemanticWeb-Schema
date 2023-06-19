@@ -14,18 +14,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:EducationalOccupationalProgram",
-            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:CreativeWorkSeason",
+            "schema:EducationalOccupationalProgram",
+            "schema:DatedMoneySpecification",
             "schema:CreativeWorkSeries",
-            "schema:DatedMoneySpecification"
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:CreativeWorkSeason",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -35,32 +35,32 @@
          "rdfs:comment" : "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
+         "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
+            "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:Blog",
             "schema:WebSite",
-            "schema:CreativeWorkSeries"
+            "schema:Blog"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:startDate" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Role",
             "schema:Schedule",
             "schema:Event",
-            "schema:CreativeWorkSeason",
-            "schema:CreativeWorkSeries",
+            "schema:EducationalOccupationalProgram",
+            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:DatedMoneySpecification",
-            "schema:EducationalOccupationalProgram"
+            "schema:CreativeWorkSeries",
+            "schema:CreativeWorkSeason",
+            "schema:Role"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       }

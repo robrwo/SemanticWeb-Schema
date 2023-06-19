@@ -10,33 +10,34 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:SingleFamilyResidence",
-            "schema:FloorPlan",
-            "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:House",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment",
+            "schema:Accommodation",
+            "schema:LodgingBusiness",
+            "schema:FloorPlan",
             "schema:Suite"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:QuantitativeValue"
-         ],
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         ]
       },
       "schema:occupancy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
          "rdfs:label" : "occupancy",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
+            "schema:Accommodation",
+            "schema:Apartment",
             "schema:HotelRoom",
             "schema:Suite",
-            "schema:Apartment",
             "schema:SingleFamilyResidence"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       }
    }
 }

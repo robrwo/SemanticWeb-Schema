@@ -4,7 +4,7 @@
       "rdfs:comment" : "A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document.",
       "rdfs:label" : "Question",
       "rdfs:subClassOf" : "schema:Comment",
-      "schema:source" : "schemadotorgsources:source_QAStackExchange"
+      "schema:contributor" : "collab:QAStackExchange"
    },
    "properties" : {
       "schema:acceptedAnswer" : {

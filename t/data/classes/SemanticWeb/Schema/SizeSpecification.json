@@ -14,8 +14,8 @@
          "rdfs:label" : "hasMeasurement",
          "schema:domainIncludes" : [
             "schema:SizeSpecification",
-            "schema:Product",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
@@ -28,8 +28,8 @@
          "schema:domainIncludes" : "schema:SizeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:SizeGroupEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:SizeGroupEnumeration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
       },
@@ -40,8 +40,8 @@
          "schema:domainIncludes" : "schema:SizeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:SizeSystemEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:SizeSystemEnumeration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
       },
@@ -62,12 +62,12 @@
          "rdfs:comment" : "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
          "rdfs:label" : "suggestedGender",
          "schema:domainIncludes" : [
-            "schema:SizeSpecification",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:SizeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:GenderType",
-            "schema:Text"
+            "schema:Text",
+            "schema:GenderType"
          ]
       },
       "schema:suggestedMeasurement" : {

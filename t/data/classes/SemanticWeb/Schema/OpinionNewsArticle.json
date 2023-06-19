@@ -4,11 +4,9 @@
       "rdfs:comment" : "An [[OpinionNewsArticle]] is a [[NewsArticle]] that primarily expresses opinions rather than journalistic reporting of news and events. For example, a [[NewsArticle]] consisting of a column or [[Blog]]/[[BlogPosting]] entry in the Opinions section of a news publication. ",
       "rdfs:label" : "OpinionNewsArticle",
       "rdfs:subClassOf" : "schema:NewsArticle",
+      "schema:contributor" : "collab:TP",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : [
-         "schemadotorgsources2:TP",
-         "https://github.com/schemaorg/schemaorg/issues/1525"
-      ]
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
    },
    "properties" : {}
 }

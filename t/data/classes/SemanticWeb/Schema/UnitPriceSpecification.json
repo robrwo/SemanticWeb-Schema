@@ -4,7 +4,7 @@
       "rdfs:comment" : "The price asked for a given offer by the respective organization or person.",
       "rdfs:label" : "UnitPriceSpecification",
       "rdfs:subClassOf" : "schema:PriceSpecification",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:contributor" : "collab:GoodRelationsClass"
    },
    "properties" : {
       "schema:billingDuration" : {
@@ -14,8 +14,8 @@
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
             "schema:QuantitativeValue",
+            "schema:Number",
             "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
@@ -24,9 +24,9 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.",
          "rdfs:label" : "billingIncrement",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
-         "schema:rangeIncludes" : "schema:Number",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Number"
       },
       "schema:billingStart" : {
          "rdf:type" : "rdf:Property",
@@ -50,52 +50,49 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Defines the type of a price specified for an offered product, for example a list price, a (temporary) sale price or a manufacturer suggested retail price. If multiple prices are specified for an offer the [[priceType]] property can be used to identify the type of each such specified price. The value of priceType can be specified as a value from enumeration PriceTypeEnumeration or as a free form text string for price types that are not already predefined in PriceTypeEnumeration.",
          "rdfs:label" : "priceType",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:CompoundPriceSpecification",
-            "schema:UnitPriceSpecification"
+            "schema:UnitPriceSpecification",
+            "schema:CompoundPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:PriceTypeEnumeration"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+            "schema:PriceTypeEnumeration",
+            "schema:Text"
+         ]
       },
       "schema:referenceQuantity" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.",
          "rdfs:label" : "referenceQuantity",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsProperties",
-            "schemadotorgsources:source_GoodRelationsTerms"
-         ]
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:unitCode" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.",
          "rdfs:label" : "unitCode",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:UnitPriceSpecification",
-            "schema:TypeAndQuantityNode"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
             "schema:URL"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         ]
       },
       "schema:unitText" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:UnitPriceSpecification",
-            "schema:TypeAndQuantityNode"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

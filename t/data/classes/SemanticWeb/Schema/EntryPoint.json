@@ -4,7 +4,7 @@
       "rdfs:comment" : "An entry point, within some Web-based protocol.",
       "rdfs:label" : "EntryPoint",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:source" : "schemadotorgsources:source_ActionCollabClass"
+      "schema:contributor" : "collab:ActionCollabClass"
    },
    "properties" : {
       "schema:actionApplication" : {
@@ -21,8 +21,8 @@
          "schema:domainIncludes" : "schema:EntryPoint",
          "schema:rangeIncludes" : [
             "schema:DigitalPlatformEnumeration",
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:application" : {

@@ -4,9 +4,9 @@
       "rdfs:comment" : "A NewsArticle is an article whose content reports news, or provides background context and supporting materials for understanding the news.\n\nA more detailed overview of [schema.org News markup](/docs/news.html) is also available.\n",
       "rdfs:label" : "NewsArticle",
       "rdfs:subClassOf" : "schema:Article",
-      "schema:source" : [
-         "schemadotorgsources2:TP-draws",
-         "schemadotorgsources:source_rNews"
+      "schema:contributor" : [
+         "collab:rNews",
+         "collab:TP"
       ]
    },
    "properties" : {

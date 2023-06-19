@@ -22,8 +22,8 @@
             "schema:BroadcastService"
          ],
          "schema:rangeIncludes" : [
-            "schema:BroadcastFrequencySpecification",
-            "schema:Text"
+            "schema:Text",
+            "schema:BroadcastFrequencySpecification"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
       },
@@ -39,13 +39,13 @@
          "rdfs:comment" : "Genre of the creative work, broadcast channel or group.",
          "rdfs:label" : "genre",
          "schema:domainIncludes" : [
-            "schema:BroadcastChannel",
             "schema:CreativeWork",
+            "schema:BroadcastChannel",
             "schema:MusicGroup"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:inBroadcastLineup" : {

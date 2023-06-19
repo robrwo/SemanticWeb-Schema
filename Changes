@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Bug Fix]
+  - Actually use v21 of the schema.
+
   [Documentation]
   - Bumped copyright year.
 

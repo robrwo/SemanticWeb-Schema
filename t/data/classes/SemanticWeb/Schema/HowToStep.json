@@ -5,8 +5,8 @@
       "rdfs:label" : "HowToStep",
       "rdfs:subClassOf" : [
          "schema:CreativeWork",
-         "schema:ItemList",
-         "schema:ListItem"
+         "schema:ListItem",
+         "schema:ItemList"
       ]
    },
    "properties" : {}

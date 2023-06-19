@@ -4,7 +4,7 @@
       "rdfs:comment" : "A trip or journey. An itinerary of visits to one or more places.",
       "rdfs:label" : "Trip",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:source" : "schemadotorgsources:Tourism"
+      "schema:contributor" : "collab:Tourism"
    },
    "properties" : {
       "schema:arrivalTime" : {
@@ -23,38 +23,36 @@
          "rdfs:label" : "departureTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ]
       },
       "schema:itinerary" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Destination(s) ( [[Place]] ) that make up a trip. For a trip where destination order is important use [[ItemList]] to specify that order (see examples).",
          "rdfs:label" : "itinerary",
+         "schema:contributor" : "collab:Tourism",
          "schema:domainIncludes" : "schema:Trip",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:ItemList",
-            "schema:Place"
+            "schema:Place",
+            "schema:ItemList"
          ],
-         "schema:source" : [
-            "schemadotorgsources:Tourism",
-            "https://github.com/schemaorg/schemaorg/issues/1810"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
       },
       "schema:offers" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:AggregateOffer",
-            "schema:EducationalOccupationalProgram",
-            "schema:Service",
-            "schema:MenuItem",
             "schema:CreativeWork",
+            "schema:Trip",
+            "schema:MenuItem",
             "schema:Product",
             "schema:Event",
-            "schema:Trip"
+            "schema:EducationalOccupationalProgram",
+            "schema:AggregateOffer",
+            "schema:Service"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
@@ -67,27 +65,25 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Identifies that this [[Trip]] is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
          "rdfs:label" : "partOfTrip",
+         "schema:contributor" : "collab:Tourism",
          "schema:domainIncludes" : "schema:Trip",
          "schema:inverseOf" : "schema:subTrip",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Trip",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1810",
-            "schemadotorgsources:Tourism"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
       },
       "schema:provider" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Reservation",
-            "schema:ParcelDelivery",
-            "schema:Service",
-            "schema:EducationalOccupationalProgram",
             "schema:CreativeWork",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:Reservation",
+            "schema:EducationalOccupationalProgram",
             "schema:Invoice",
+            "schema:Service",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -96,22 +92,20 @@
             "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2927",
-            "https://github.com/schemaorg/schemaorg/issues/2289"
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2927"
          ]
       },
       "schema:subTrip" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Identifies a [[Trip]] that is a subTrip of this Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
          "rdfs:label" : "subTrip",
+         "schema:contributor" : "collab:Tourism",
          "schema:domainIncludes" : "schema:Trip",
          "schema:inverseOf" : "schema:partOfTrip",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Trip",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1810",
-            "schemadotorgsources:Tourism"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
       }
    }
 }

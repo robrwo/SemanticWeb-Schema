@@ -4,7 +4,7 @@
       "rdfs:comment" : "An audio file.",
       "rdfs:label" : "AudioObject",
       "rdfs:subClassOf" : "schema:MediaObject",
-      "schema:source" : "schemadotorgsources:source_rNews"
+      "schema:contributor" : "collab:rNews"
    },
    "properties" : {
       "schema:caption" : {
@@ -13,12 +13,12 @@
          "rdfs:label" : "caption",
          "schema:domainIncludes" : [
             "schema:VideoObject",
-            "schema:ImageObject",
-            "schema:AudioObject"
+            "schema:AudioObject",
+            "schema:ImageObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaObject",
-            "schema:Text"
+            "schema:Text",
+            "schema:MediaObject"
          ]
       },
       "schema:embeddedTextCaption" : {
@@ -27,8 +27,8 @@
          "rdfs:label" : "embeddedTextCaption",
          "rdfs:subPropertyOf" : "schema:caption",
          "schema:domainIncludes" : [
-            "schema:VideoObject",
             "schema:ImageObject",
+            "schema:VideoObject",
             "schema:AudioObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",

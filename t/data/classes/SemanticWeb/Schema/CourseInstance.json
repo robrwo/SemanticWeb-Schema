@@ -12,9 +12,18 @@
          "rdfs:label" : "courseMode",
          "schema:domainIncludes" : "schema:CourseInstance",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
+      },
+      "schema:courseSchedule" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Represents the length and pace of a course, expressed as a [[Schedule]].",
+         "rdfs:label" : "courseSchedule",
+         "schema:domainIncludes" : "schema:CourseInstance",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Schedule",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3281"
       },
       "schema:courseWorkload" : {
          "rdf:type" : "rdf:Property",

@@ -16,13 +16,19 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset, i.e. DataDownload. Note that a creative work may have many media objects associated with it on the same web page. For example, a page about a single song (MusicRecording) may have a music video (VideoObject), and a high and low bandwidth audio stream (2 L<SemanticWeb::Schema::AudioObject>s).
+A media object, such as an image, video, audio, or text object embedded in
+a web page or a downloadable dataset i.e. DataDownload. Note that a
+creative work may have many media objects associated with it on the same
+web page. For example, a page about a single song (MusicRecording) may have
+a music video (VideoObject), and a high and low bandwidth audio stream (2
+AudioObject's).
+
 
 
 

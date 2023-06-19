@@ -16,8 +16,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:LocalBusiness",
-            "schema:CivicStructure"
+            "schema:CivicStructure",
+            "schema:LocalBusiness"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2514"
       },
@@ -26,21 +26,21 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:Offer",
+            "schema:PhysicalActivity",
             "schema:ActionAccessSpecification",
             "schema:Invoice",
-            "schema:Recommendation",
-            "schema:PhysicalActivity",
+            "schema:Offer",
+            "schema:Service",
+            "schema:SpecialAnnouncement",
             "schema:Product",
-            "schema:Service"
+            "schema:Recommendation"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:CategoryCode",
-            "schema:PhysicalActivityCategory",
             "schema:Text",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:PhysicalActivityCategory",
+            "schema:CategoryCode"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -52,18 +52,18 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:JobPosting",
             "schema:CDCPMDRecord",
-            "schema:RealEstateListing"
+            "schema:RealEstateListing",
+            "schema:SpecialAnnouncement",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
             "schema:Date"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2490",
-            "https://github.com/schemaorg/schemaorg/issues/2521"
+            "https://github.com/schemaorg/schemaorg/issues/2521",
+            "https://github.com/schemaorg/schemaorg/issues/2490"
          ]
       },
       "schema:diseasePreventionInfo" : {
@@ -85,10 +85,10 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Observation",
-            "schema:WebContent",
             "schema:Dataset",
-            "schema:URL"
+            "schema:Observation",
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -120,8 +120,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -144,8 +144,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -183,8 +183,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DataFeed",
-            "schema:URL"
+            "schema:URL",
+            "schema:DataFeed"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/373"
       }

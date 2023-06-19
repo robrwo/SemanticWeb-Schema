@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -231,34 +231,6 @@ has music_by => (
     is        => 'rw',
     predicate => '_has_music_by',
     json_ld   => 'musicBy',
-);
-
-
-=head2 C<thumbnail>
-
-
-
-Thumbnail image for an image or video.
-
-
-A thumbnail should be one of the following types:
-
-=over
-
-=item C<InstanceOf['SemanticWeb::Schema::ImageObject']>
-
-=back
-
-=head2 C<_has_thumbnail>
-
-A predicate for the L</thumbnail> attribute.
-
-=cut
-
-has thumbnail => (
-    is        => 'rw',
-    predicate => '_has_thumbnail',
-    json_ld   => 'thumbnail',
 );
 
 

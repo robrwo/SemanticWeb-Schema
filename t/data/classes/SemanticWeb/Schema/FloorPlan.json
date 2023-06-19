@@ -12,25 +12,25 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.",
          "rdfs:label" : "amenityFeature",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
             "schema:LodgingBusiness",
-            "schema:Accommodation",
-            "schema:Place"
+            "schema:FloorPlan",
+            "schema:Place",
+            "schema:Accommodation"
          ],
-         "schema:rangeIncludes" : "schema:LocationFeatureSpecification",
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
       "schema:floorSize" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
          "rdfs:label" : "floorSize",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:isPlanForApartment" : {
          "rdf:type" : "rdf:Property",
@@ -71,8 +71,8 @@
          "rdfs:comment" : "Indicates the number of available accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAccommodationUnits]].",
          "rdfs:label" : "numberOfAvailableAccommodationUnits",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
@@ -83,8 +83,8 @@
          "rdfs:comment" : "The total integer number of bathrooms in some [[Accommodation]], following real estate conventions as [documented in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsTotalInteger+Field): \"The simple sum of the number of bathrooms. For example for a property with two Full Bathrooms and one Half Bathroom, the Bathrooms Total Integer will be 3.\". See also [[numberOfRooms]].",
          "rdfs:label" : "numberOfBathroomsTotal",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Integer",
@@ -95,14 +95,14 @@
          "rdfs:comment" : "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
          "rdfs:label" : "numberOfBedrooms",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
+            "schema:Accommodation",
             "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       },
@@ -111,8 +111,8 @@
          "rdfs:comment" : "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
          "rdfs:label" : "numberOfFullBathrooms",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number",
@@ -123,8 +123,8 @@
          "rdfs:comment" : "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
          "rdfs:label" : "numberOfPartialBathrooms",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number",
@@ -134,36 +134,36 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:SingleFamilyResidence",
-            "schema:FloorPlan",
-            "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:House",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment",
+            "schema:Accommodation",
+            "schema:LodgingBusiness",
+            "schema:FloorPlan",
             "schema:Suite"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:QuantitativeValue"
-         ],
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         ]
       },
       "schema:petsAllowed" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.",
          "rdfs:label" : "petsAllowed",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
             "schema:FloorPlan",
-            "schema:LodgingBusiness",
+            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:ApartmentComplex"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
             "schema:Boolean"
-         ],
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         ]
       }
    }
 }

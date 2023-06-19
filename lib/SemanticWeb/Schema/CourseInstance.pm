@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -58,6 +58,33 @@ has course_mode => (
     is        => 'rw',
     predicate => '_has_course_mode',
     json_ld   => 'courseMode',
+);
+
+
+=head2 C<course_schedule>
+
+C<courseSchedule>
+
+Represents the length and pace of a course, expressed as a L<SemanticWeb::Schema::Schedule>.
+
+A course_schedule should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Schedule']>
+
+=back
+
+=head2 C<_has_course_schedule>
+
+A predicate for the L</course_schedule> attribute.
+
+=cut
+
+has course_schedule => (
+    is        => 'rw',
+    predicate => '_has_course_schedule',
+    json_ld   => 'courseSchedule',
 );
 
 

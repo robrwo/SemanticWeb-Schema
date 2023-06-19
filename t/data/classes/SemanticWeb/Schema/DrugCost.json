@@ -49,9 +49,9 @@
          "schema:domainIncludes" : "schema:DrugCost",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:Number",
             "schema:QualitativeValue",
-            "schema:Number"
+            "schema:Text"
          ]
       },
       "schema:drugUnit" : {

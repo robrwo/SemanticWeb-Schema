@@ -4,11 +4,9 @@
       "rdfs:comment" : "A structured value representing exchange rate.",
       "rdfs:label" : "ExchangeRateSpecification",
       "rdfs:subClassOf" : "schema:StructuredValue",
+      "schema:contributor" : "collab:FIBO",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : [
-         "https://github.com/schemaorg/schemaorg/issues/1253",
-         "schemadotorgsources:FIBO"
-      ]
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
    },
    "properties" : {
       "schema:currency" : {
@@ -16,11 +14,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:DatedMoneySpecification",
-            "schema:MonetaryAmountDistribution",
             "schema:LoanOrCredit",
-            "schema:ExchangeRateSpecification"
+            "schema:MonetaryAmount",
+            "schema:ExchangeRateSpecification",
+            "schema:MonetaryAmountDistribution",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -29,28 +27,24 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The current price of a currency.",
          "rdfs:label" : "currentExchangeRate",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:ExchangeRateSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:UnitPriceSpecification",
-         "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:exchangeRateSpread" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The difference between the price at which a broker or other intermediary buys and sells foreign currency.",
          "rdfs:label" : "exchangeRateSpread",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:ExchangeRateSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:MonetaryAmount"
          ],
-         "schema:source" : [
-            "schemadotorgsources:FIBO",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       }
    }
 }

@@ -4,33 +4,33 @@
       "rdfs:comment" : "A demand entity represents the public, not necessarily binding, not necessarily exclusive, announcement by an organization or person to seek a certain type of goods or services. For describing demand using this type, the very same properties used for Offer apply.",
       "rdfs:label" : "Demand",
       "rdfs:subClassOf" : "schema:Intangible",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:contributor" : "collab:GoodRelationsClass"
    },
    "properties" : {
       "schema:acceptedPaymentMethod" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The payment method(s) accepted by seller for this offer.",
          "rdfs:label" : "acceptedPaymentMethod",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:PaymentMethod"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+            "schema:PaymentMethod",
+            "schema:LoanOrCredit"
+         ]
       },
       "schema:advanceBookingRequirement" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The amount of time that is required between accepting the offer and the actual usage of the resource or service.",
          "rdfs:label" : "advanceBookingRequirement",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:areaServed" : {
          "rdf:type" : "rdf:Property",
@@ -39,15 +39,15 @@
          "schema:domainIncludes" : [
             "schema:Offer",
             "schema:Organization",
-            "schema:ContactPoint",
-            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:Service"
+            "schema:Service",
+            "schema:Demand",
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:GeoShape",
             "schema:Place",
+            "schema:Text",
             "schema:AdministrativeArea"
          ]
       },
@@ -57,9 +57,9 @@
          "rdfs:label" : "asin",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -73,8 +73,8 @@
          "rdfs:comment" : "The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc.",
          "rdfs:label" : "availability",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:ItemAvailability"
       },
@@ -82,152 +82,146 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityEnds",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Demand",
             "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
             "schema:Time",
             "schema:Date"
          ],
-         "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:availabilityStarts" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The beginning of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityStarts",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
             "schema:DateTime",
+            "schema:Time",
             "schema:Date"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources:source_GoodRelationsTerms"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:availableAtOrFrom" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The place(s) from which the offer can be obtained (e.g. store locations).",
          "rdfs:label" : "availableAtOrFrom",
          "rdfs:subPropertyOf" : "schema:areaServed",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
             "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:Place",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Place"
       },
       "schema:availableDeliveryMethod" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The delivery method(s) available for this offer.",
          "rdfs:label" : "availableDeliveryMethod",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
             "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:DeliveryMethod",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:DeliveryMethod"
       },
       "schema:businessFunction" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
          "rdfs:label" : "businessFunction",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Demand",
             "schema:TypeAndQuantityNode",
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:BusinessFunction",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:BusinessFunction"
       },
       "schema:deliveryLeadTime" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The typical delay between the receipt of the order and the goods either leaving the warehouse or being prepared for pickup, in case the delivery method is on site pickup.",
          "rdfs:label" : "deliveryLeadTime",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:eligibleCustomerType" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The type(s) of customers for which the given offer is valid.",
          "rdfs:label" : "eligibleCustomerType",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
             "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:BusinessEntityType",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:BusinessEntityType"
       },
       "schema:eligibleDuration" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The duration for which the given offer is valid.",
          "rdfs:label" : "eligibleDuration",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:eligibleQuantity" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.",
          "rdfs:label" : "eligibleQuantity",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:Demand",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:eligibleRegion" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:DeliveryChargeSpecification",
-            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:Offer",
+            "schema:DeliveryChargeSpecification",
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
+            "schema:GeoShape",
             "schema:Place",
-            "schema:Text",
-            "schema:GeoShape"
+            "schema:Text"
          ],
-         "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:eligibleTransactionVolume" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.",
          "rdfs:label" : "eligibleTransactionVolume",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
             "schema:Demand",
             "schema:PriceSpecification"
          ],
-         "schema:rangeIncludes" : "schema:PriceSpecification",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:PriceSpecification"
       },
       "schema:gtin" : {
          "rdf:type" : "rdf:Property",
@@ -235,14 +229,14 @@
          "rdfs:label" : "gtin",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
       },
@@ -251,13 +245,13 @@
          "rdfs:comment" : "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
          "rdfs:label" : "gtin12",
          "rdfs:subPropertyOf" : [
-            "schema:identifier",
-            "schema:gtin"
+            "schema:gtin",
+            "schema:identifier"
          ],
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -269,29 +263,29 @@
             "schema:gtin",
             "schema:identifier"
          ],
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Product",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:gtin14" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The GTIN-14 code of the product, or the product to which the offer refers. See [GS1 GTIN Summary](http://www.gs1.org/barcodes/technical/idkeys/gtin) for more details.",
          "rdfs:label" : "gtin14",
          "rdfs:subPropertyOf" : [
-            "schema:identifier",
-            "schema:gtin"
+            "schema:gtin",
+            "schema:identifier"
          ],
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Product",
             "schema:Offer",
             "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:gtin8" : {
          "rdf:type" : "rdf:Property",
@@ -301,25 +295,25 @@
             "schema:gtin",
             "schema:identifier"
          ],
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Product",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:includesObject" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This links to a node or nodes indicating the exact quantity of the products included in  an [[Offer]] or [[ProductCollection]].",
          "rdfs:label" : "includesObject",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:ProductCollection",
             "schema:Offer",
-            "schema:Demand",
-            "schema:ProductCollection"
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:TypeAndQuantityNode",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:TypeAndQuantityNode"
       },
       "schema:ineligibleRegion" : {
          "rdf:type" : "rdf:Property",
@@ -327,10 +321,10 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:MediaObject",
-            "schema:ActionAccessSpecification",
+            "schema:DeliveryChargeSpecification",
             "schema:Demand",
-            "schema:DeliveryChargeSpecification"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -344,13 +338,13 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The current approximate inventory level for the item or items.",
          "rdfs:label" : "inventoryLevel",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
+            "schema:Demand",
             "schema:SomeProducts"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
       "schema:itemCondition" : {
          "rdf:type" : "rdf:Property",
@@ -359,8 +353,8 @@
          "schema:domainIncludes" : [
             "schema:Demand",
             "schema:Product",
-            "schema:Offer",
-            "schema:MerchantReturnPolicy"
+            "schema:MerchantReturnPolicy",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
       },
@@ -369,43 +363,43 @@
          "rdfs:comment" : "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
          "rdfs:label" : "itemOffered",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:inverseOf" : "schema:offers",
          "schema:rangeIncludes" : [
-            "schema:AggregateOffer",
-            "schema:Product",
-            "schema:Service",
-            "schema:MenuItem",
             "schema:CreativeWork",
+            "schema:Trip",
+            "schema:MenuItem",
+            "schema:Product",
             "schema:Event",
-            "schema:Trip"
+            "schema:AggregateOffer",
+            "schema:Service"
          ]
       },
       "schema:mpn" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
          "rdfs:label" : "mpn",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Product",
             "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Product"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:priceSpecification" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
          "rdfs:label" : "priceSpecification",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
+            "schema:Demand",
             "schema:TradeAction"
          ],
-         "schema:rangeIncludes" : "schema:PriceSpecification",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:PriceSpecification"
       },
       "schema:seller" : {
          "rdf:type" : "rdf:Property",
@@ -413,11 +407,11 @@
          "rdfs:label" : "seller",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:Demand",
+            "schema:BuyAction",
             "schema:Flight",
             "schema:Offer",
-            "schema:BuyAction",
-            "schema:Order"
+            "schema:Order",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -429,75 +423,75 @@
          "rdfs:comment" : "The serial number or any alphanumeric identifier of a particular product. When attached to an offer, it is a shortcut for the serial number of the product included in the offer.",
          "rdfs:label" : "serialNumber",
          "rdfs:subPropertyOf" : "schema:identifier",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:IndividualProduct",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:sku" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.",
          "rdfs:label" : "sku",
          "rdfs:subPropertyOf" : "schema:identifier",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Demand",
             "schema:Product",
             "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:Text"
       },
       "schema:validFrom" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification",
             "schema:Offer",
             "schema:Demand",
+            "schema:OpeningHoursSpecification",
+            "schema:Permit",
             "schema:MonetaryAmount",
-            "schema:LocationFeatureSpecification",
-            "schema:PriceSpecification",
-            "schema:Permit"
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
             "schema:DateTime"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         ]
       },
       "schema:validThrough" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
          "rdfs:label" : "validThrough",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:OpeningHoursSpecification",
             "schema:JobPosting",
-            "schema:LocationFeatureSpecification",
-            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:PriceSpecification",
-            "schema:OpeningHoursSpecification"
+            "schema:LocationFeatureSpecification",
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
             "schema:Date"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         ]
       },
       "schema:warranty" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The warranty promise(s) included in the offer.",
          "rdfs:label" : "warranty",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
-         "schema:rangeIncludes" : "schema:WarrantyPromise",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:WarrantyPromise"
       }
    }
 }

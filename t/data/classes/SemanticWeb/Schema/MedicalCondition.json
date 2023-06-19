@@ -12,14 +12,14 @@
          "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
          "rdfs:label" : "associatedAnatomy",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalSystem",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalStructure",
+            "schema:AnatomicalSystem"
          ]
       },
       "schema:differentialDiagnosis" : {
@@ -37,8 +37,8 @@
          "schema:domainIncludes" : [
             "schema:MedicalCondition",
             "schema:DrugClass",
-            "schema:TherapeuticProcedure",
-            "schema:Patient"
+            "schema:Patient",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -75,8 +75,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:MedicalCondition",
-            "schema:PhysicalActivity"
+            "schema:PhysicalActivity",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -146,14 +146,14 @@
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
             "schema:MedicalProcedure",
-            "schema:MedicalCondition",
-            "schema:MedicalStudy"
+            "schema:MedicalStudy",
+            "schema:MedicalCondition"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalStudyStatus",
             "schema:Text",
-            "schema:EventStatusType"
+            "schema:EventStatusType",
+            "schema:MedicalStudyStatus"
          ]
       },
       "schema:typicalTest" : {

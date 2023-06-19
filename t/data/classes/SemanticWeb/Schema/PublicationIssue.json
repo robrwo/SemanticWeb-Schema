@@ -5,7 +5,7 @@
       "rdfs:comment" : "A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as articles.\\n\\nSee also [blog post](http://blog.schema.org/2014/09/schemaorg-support-for-bibliographic_2.html).",
       "rdfs:label" : "PublicationIssue",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources:source_bibex"
+      "schema:contributor" : "collab:bibex"
    },
    "properties" : {
       "schema:issueNumber" : {
@@ -14,60 +14,60 @@
          "rdfs:comment" : "Identifies the issue of publication; for example, \"iii\" or \"2\".",
          "rdfs:label" : "issueNumber",
          "rdfs:subPropertyOf" : "schema:position",
+         "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : "schema:PublicationIssue",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
-         ],
-         "schema:source" : "schemadotorgsources:source_bibex"
+            "schema:Integer",
+            "schema:Text"
+         ]
       },
       "schema:pageEnd" : {
          "owl:equivalentProperty" : "bibo:pageEnd",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The page on which the work ends; for example \"138\" or \"xvi\".",
          "rdfs:label" : "pageEnd",
+         "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:PublicationVolume",
-            "schema:PublicationIssue",
-            "schema:Chapter",
-            "schema:Article"
-         ],
-         "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
-         ],
-         "schema:source" : "schemadotorgsources:source_bibex"
-      },
-      "schema:pageStart" : {
-         "owl:equivalentProperty" : "bibo:pageStart",
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
-         "rdfs:label" : "pageStart",
-         "schema:domainIncludes" : [
-            "schema:Chapter",
             "schema:Article",
+            "schema:Chapter",
             "schema:PublicationVolume",
             "schema:PublicationIssue"
          ],
          "schema:rangeIncludes" : [
             "schema:Integer",
             "schema:Text"
+         ]
+      },
+      "schema:pageStart" : {
+         "owl:equivalentProperty" : "bibo:pageStart",
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
+         "rdfs:label" : "pageStart",
+         "schema:contributor" : "collab:bibex",
+         "schema:domainIncludes" : [
+            "schema:Article",
+            "schema:Chapter",
+            "schema:PublicationVolume",
+            "schema:PublicationIssue"
          ],
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:Integer"
+         ]
       },
       "schema:pagination" : {
          "owl:equivalentProperty" : "bibo:pages",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".",
          "rdfs:label" : "pagination",
+         "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:Chapter",
+            "schema:PublicationIssue",
             "schema:Article",
-            "schema:PublicationVolume",
-            "schema:PublicationIssue"
+            "schema:Chapter",
+            "schema:PublicationVolume"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:rangeIncludes" : "schema:Text"
       }
    }
 }

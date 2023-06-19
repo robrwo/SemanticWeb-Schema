@@ -4,11 +4,9 @@
       "rdfs:comment" : "An account that allows an investor to deposit funds and place investment orders with a licensed broker or brokerage firm.",
       "rdfs:label" : "BrokerageAccount",
       "rdfs:subClassOf" : "schema:InvestmentOrDeposit",
+      "schema:contributor" : "collab:FIBO",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : [
-         "schemadotorgsources:FIBO",
-         "https://github.com/schemaorg/schemaorg/issues/1253"
-      ]
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
    },
    "properties" : {}
 }

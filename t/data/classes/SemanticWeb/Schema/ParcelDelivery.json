@@ -56,8 +56,8 @@
          "rdfs:comment" : "Method used for delivery or shipping.",
          "rdfs:label" : "hasDeliveryMethod",
          "schema:domainIncludes" : [
-            "schema:ParcelDelivery",
-            "schema:DeliveryEvent"
+            "schema:DeliveryEvent",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       },
@@ -87,13 +87,13 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Reservation",
-            "schema:ParcelDelivery",
-            "schema:Service",
-            "schema:EducationalOccupationalProgram",
             "schema:CreativeWork",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:Reservation",
+            "schema:EducationalOccupationalProgram",
             "schema:Invoice",
+            "schema:Service",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -102,8 +102,8 @@
             "schema:Organization"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2927",
-            "https://github.com/schemaorg/schemaorg/issues/2289"
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2927"
          ]
       },
       "schema:trackingNumber" : {

@@ -11,9 +11,9 @@
          "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
-            "schema:MedicalStudy",
+            "schema:Patient",
             "schema:PeopleAudience",
-            "schema:Patient"
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -56,12 +56,12 @@
          "rdfs:comment" : "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
          "rdfs:label" : "suggestedGender",
          "schema:domainIncludes" : [
-            "schema:SizeSpecification",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:SizeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:GenderType",
-            "schema:Text"
+            "schema:Text",
+            "schema:GenderType"
          ]
       },
       "schema:suggestedMaxAge" : {

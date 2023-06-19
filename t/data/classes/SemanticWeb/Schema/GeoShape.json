@@ -4,7 +4,7 @@
       "rdfs:comment" : "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.",
       "rdfs:label" : "GeoShape",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources:source_rNews"
+      "schema:contributor" : "collab:rNews"
    },
    "properties" : {
       "schema:address" : {
@@ -12,15 +12,15 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:GeoCoordinates",
-            "schema:GeoShape",
             "schema:Person",
+            "schema:GeoShape",
+            "schema:Organization",
             "schema:Place",
-            "schema:Organization"
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:PostalAddress"
+            "schema:PostalAddress",
+            "schema:Text"
          ]
       },
       "schema:addressCountry" : {
@@ -28,10 +28,10 @@
          "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
          "schema:domainIncludes" : [
+            "schema:GeoShape",
             "schema:PostalAddress",
             "schema:GeoCoordinates",
-            "schema:DefinedRegion",
-            "schema:GeoShape"
+            "schema:DefinedRegion"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -85,10 +85,10 @@
          "rdfs:comment" : "The postal code. For example, 94043.",
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
+            "schema:GeoShape",
             "schema:PostalAddress",
             "schema:GeoCoordinates",
-            "schema:DefinedRegion",
-            "schema:GeoShape"
+            "schema:DefinedRegion"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

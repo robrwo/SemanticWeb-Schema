@@ -4,11 +4,9 @@
       "rdfs:comment" : "A News/Media organization such as a newspaper or TV station.",
       "rdfs:label" : "NewsMediaOrganization",
       "rdfs:subClassOf" : "schema:Organization",
+      "schema:contributor" : "collab:TP",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : [
-         "schemadotorgsources2:TP",
-         "https://github.com/schemaorg/schemaorg/issues/1525"
-      ]
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
    },
    "properties" : {
       "schema:actionableFeedbackPolicy" : {
@@ -16,25 +14,24 @@
          "rdfs:comment" : "For a [[NewsMediaOrganization]] or other news-related [[Organization]], a statement about public engagement activities (for news media, the newsroom’s), including involving the public - digitally or otherwise -- in coverage decisions, reporting and activities after publication.",
          "rdfs:label" : "actionableFeedbackPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:NewsMediaOrganization"
+            "schema:NewsMediaOrganization",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:correctionsPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement describing (in news media, the newsroom’s) disclosure and correction policy for errors.",
          "rdfs:label" : "correctionsPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
             "schema:NewsMediaOrganization",
             "schema:Organization"
@@ -44,15 +41,13 @@
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:diversityPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Statement on diversity policy by an [[Organization]] e.g. a [[NewsMediaOrganization]]. For a [[NewsMediaOrganization]], a statement describing the newsroom’s diversity policy on both staffing and sources, typically providing staffing data.",
          "rdfs:label" : "diversityPolicy",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
             "schema:NewsMediaOrganization",
             "schema:Organization"
@@ -62,37 +57,32 @@
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1525"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:diversityStaffingReport" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a report on staffing diversity issues. In a news context this might be for example ASNE or RTDNA (US) reports, or self-reported.",
          "rdfs:label" : "diversityStaffingReport",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Article",
-            "schema:URL"
+            "schema:URL",
+            "schema:Article"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:ethicsPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
          "rdfs:label" : "ethicsPolicy",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:NewsMediaOrganization"
+            "schema:NewsMediaOrganization",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -106,75 +96,68 @@
          "rdfs:comment" : "For a [[NewsMediaOrganization]], a link to the masthead page or a page listing top editorial management.",
          "rdfs:label" : "masthead",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:missionCoveragePrioritiesPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For a [[NewsMediaOrganization]], a statement on coverage priorities, including any public agenda or stance on issues.",
          "rdfs:label" : "missionCoveragePrioritiesPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:noBylinesPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For a [[NewsMediaOrganization]] or other news-related [[Organization]], a statement explaining when authors of articles are not named in bylines.",
          "rdfs:label" : "noBylinesPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1688",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
       },
       "schema:ownershipFundingInfo" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For an [[Organization]] (often but not necessarily a [[NewsMediaOrganization]]), a description of organizational ownership structure; funding and grants. In a news/media setting, this is with particular reference to editorial independence.   Note that the [[funder]] is also available and can be used to make basic funder information machine-readable.",
          "rdfs:label" : "ownershipFundingInfo",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
             "schema:AboutPage",
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1525"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:unnamedSourcesPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "For an [[Organization]] (typically a [[NewsMediaOrganization]]), a statement about policy on use of unnamed sources and the decision process required.",
          "rdfs:label" : "unnamedSourcesPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
             "schema:NewsMediaOrganization",
             "schema:Organization"
@@ -184,26 +167,21 @@
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1525",
-            "schemadotorgsources2:TP"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
       "schema:verificationFactCheckingPolicy" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Disclosure about verification and fact-checking processes for a [[NewsMediaOrganization]] or other fact-checking [[Organization]].",
          "rdfs:label" : "verificationFactCheckingPolicy",
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+         "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
             "schema:CreativeWork"
          ],
-         "schema:source" : [
-            "schemadotorgsources2:TP",
-            "https://github.com/schemaorg/schemaorg/issues/1525"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       }
    }
 }

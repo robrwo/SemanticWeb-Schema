@@ -4,27 +4,27 @@
       "rdfs:comment" : "A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia, see <a href=\"http://en.wikipedia.org/wiki/House\">http://en.wikipedia.org/wiki/House</a>).",
       "rdfs:label" : "House",
       "rdfs:subClassOf" : "schema:Accommodation",
-      "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+      "schema:contributor" : "collab:STI_Accommodation_Ontology"
    },
    "properties" : {
       "schema:numberOfRooms" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.",
          "rdfs:label" : "numberOfRooms",
+         "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:SingleFamilyResidence",
-            "schema:FloorPlan",
-            "schema:LodgingBusiness",
-            "schema:Accommodation",
             "schema:House",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment",
+            "schema:Accommodation",
+            "schema:LodgingBusiness",
+            "schema:FloorPlan",
             "schema:Suite"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:QuantitativeValue"
-         ],
-         "schema:source" : "schemadotorgsources2:STI_Accommodation_Ontology"
+         ]
       }
    }
 }

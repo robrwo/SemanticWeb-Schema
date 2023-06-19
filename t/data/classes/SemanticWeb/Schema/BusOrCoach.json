@@ -4,33 +4,33 @@
       "rdfs:comment" : "A bus (also omnibus or autobus) is a road vehicle designed to carry passengers. Coaches are luxury busses, usually in service for long distance travel.",
       "rdfs:label" : "BusOrCoach",
       "rdfs:subClassOf" : "schema:Vehicle",
-      "schema:isPartOf" : "http:auto.schema.org",
-      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:isPartOf" : "http:auto.schema.org"
    },
    "properties" : {
       "schema:acrissCode" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The ACRISS Car Classification Code is a code used by many car rental companies, for classifying vehicles. ACRISS stands for Association of Car Rental Industry Systems and Standards.",
          "rdfs:label" : "acrissCode",
-         "schema:domainIncludes" : [
-            "schema:BusOrCoach",
-            "schema:Car"
-         ],
-         "schema:isPartOf" : "http:auto.schema.org",
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
-      },
-      "schema:roofLoad" : {
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]]\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
-         "rdfs:label" : "roofLoad",
+         "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
             "schema:Car",
             "schema:BusOrCoach"
          ],
          "schema:isPartOf" : "http:auto.schema.org",
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+         "schema:rangeIncludes" : "schema:Text"
+      },
+      "schema:roofLoad" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The permitted total weight of cargo and installations (e.g. a roof rack) on top of the vehicle.\\n\\nTypical unit code(s): KGM for kilogram, LBR for pound\\n\\n* Note 1: You can indicate additional information in the [[name]] of the [[QuantitativeValue]] node.\\n* Note 2: You may also link to a [[QualitativeValue]] node that provides additional information using [[valueReference]]\\n* Note 3: Note that you can use [[minValue]] and [[maxValue]] to indicate ranges.",
+         "rdfs:label" : "roofLoad",
+         "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+         "schema:domainIncludes" : [
+            "schema:BusOrCoach",
+            "schema:Car"
+         ],
+         "schema:isPartOf" : "http:auto.schema.org",
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       }
    }
 }

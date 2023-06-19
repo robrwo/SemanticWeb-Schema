@@ -17,6 +17,7 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A music recording (track)&#x2014;usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.",
          "rdfs:label" : "track",
+         "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : [
             "schema:MusicPlaylist",
             "schema:MusicGroup"
@@ -24,8 +25,7 @@
          "schema:rangeIncludes" : [
             "schema:MusicRecording",
             "schema:ItemList"
-         ],
-         "schema:source" : "schemadotorgsources:MBZ"
+         ]
       },
       "schema:tracks" : {
          "rdf:type" : "rdf:Property",

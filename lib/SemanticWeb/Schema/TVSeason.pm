@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.1';
+our $VERSION = 'v21.0.0';
 
 =encoding utf8
 
@@ -86,6 +86,37 @@ has part_of_tv_series => (
     is        => 'rw',
     predicate => '_has_part_of_tv_series',
     json_ld   => 'partOfTVSeries',
+);
+
+
+=head2 C<title_eidr>
+
+C<titleEIDR>
+
+An L<EIDR|https://eidr.org/> (Entertainment Identifier Registry) [[identifier]] representing at the most general/abstract level, a work of film or television.
+
+For example, the motion picture known as "Ghostbusters" has a titleEIDR of  "10.5240/7EC7-228A-510A-053E-CBB8-J". This title (or work) may have several variants, which EIDR calls "edits". See [[editEIDR]].
+
+Since schema.org types like L<SemanticWeb::Schema::Movie>, L<SemanticWeb::Schema::TVEpisode>, L<SemanticWeb::Schema::TVSeason>, and L<SemanticWeb::Schema::TVSeries> can be used for both works and their multiple expressions, it is possible to use [[titleEIDR]] alone (for a general description), or alongside [[editEIDR]] for a more edit-specific description.
+
+A title_eidr should be one of the following types:
+
+=over
+
+=item C<Str>
+
+=back
+
+=head2 C<_has_title_eidr>
+
+A predicate for the L</title_eidr> attribute.
+
+=cut
+
+has title_eidr => (
+    is        => 'rw',
+    predicate => '_has_title_eidr',
+    json_ld   => 'titleEIDR',
 );
 
 

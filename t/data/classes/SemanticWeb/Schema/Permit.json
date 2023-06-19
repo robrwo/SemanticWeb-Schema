@@ -45,20 +45,20 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date when the item becomes valid.",
          "rdfs:label" : "validFrom",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
+            "schema:LocationFeatureSpecification",
             "schema:Offer",
             "schema:Demand",
+            "schema:OpeningHoursSpecification",
+            "schema:Permit",
             "schema:MonetaryAmount",
-            "schema:LocationFeatureSpecification",
-            "schema:PriceSpecification",
-            "schema:Permit"
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
             "schema:DateTime"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         ]
       },
       "schema:validIn" : {
          "rdf:type" : "rdf:Property",

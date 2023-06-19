@@ -17,8 +17,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
       },
@@ -27,16 +27,16 @@
          "rdfs:comment" : "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
          "rdfs:label" : "educationalLevel",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
             "schema:EducationEvent",
-            "schema:EducationalOccupationalCredential",
-            "schema:LearningResource"
+            "schema:CreativeWork",
+            "schema:LearningResource",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:URL",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
       },
@@ -45,14 +45,14 @@
          "rdfs:comment" : "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
          "rdfs:label" : "teaches",
          "schema:domainIncludes" : [
-            "schema:LearningResource",
+            "schema:EducationEvent",
             "schema:CreativeWork",
-            "schema:EducationEvent"
+            "schema:LearningResource"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
       }

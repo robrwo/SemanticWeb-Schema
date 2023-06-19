@@ -4,7 +4,7 @@
       "rdfs:comment" : "An answer offered to a question; perhaps correct, perhaps opinionated or wrong.",
       "rdfs:label" : "Answer",
       "rdfs:subClassOf" : "schema:Comment",
-      "schema:source" : "schemadotorgsources:source_QAStackExchange"
+      "schema:contributor" : "collab:QAStackExchange"
    },
    "properties" : {
       "schema:answerExplanation" : {
@@ -14,8 +14,8 @@
          "schema:domainIncludes" : "schema:Answer",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:Comment"
+            "schema:Comment",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
       }

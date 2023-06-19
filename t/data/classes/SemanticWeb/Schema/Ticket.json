@@ -12,8 +12,8 @@
          "rdfs:label" : "dateIssued",
          "schema:domainIncludes" : "schema:Ticket",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:issuedBy" : {
@@ -31,11 +31,11 @@
          "rdfs:comment" : "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:Ticket",
             "schema:TradeAction",
-            "schema:Offer",
-            "schema:Reservation",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -52,8 +52,8 @@
          "rdfs:label" : "ticketToken",
          "schema:domainIncludes" : "schema:Ticket",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:ticketedSeat" : {
@@ -73,8 +73,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
-            "schema:PriceSpecification",
-            "schema:Text"
+            "schema:Text",
+            "schema:PriceSpecification"
          ]
       },
       "schema:underName" : {
@@ -82,8 +82,8 @@
          "rdfs:comment" : "The person or organization the reservation or ticket is for.",
          "rdfs:label" : "underName",
          "schema:domainIncludes" : [
-            "schema:Reservation",
-            "schema:Ticket"
+            "schema:Ticket",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",

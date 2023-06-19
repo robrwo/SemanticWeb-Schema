@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A kind of lodging business that focuses on renting single properties for limited time.",
+      "rdfs:label" : "VacationRental",
+      "rdfs:subClassOf" : "schema:LodgingBusiness"
+   },
+   "properties" : {}
+}

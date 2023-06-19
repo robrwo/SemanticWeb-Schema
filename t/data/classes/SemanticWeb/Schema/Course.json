@@ -4,11 +4,27 @@
       "rdfs:comment" : "A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or be offered through different media or modes of study. An educational course is a sequence of one or more educational events and/or creative works which aims to build knowledge, competence or ability of learners.",
       "rdfs:label" : "Course",
       "rdfs:subClassOf" : [
-         "schema:LearningResource",
-         "schema:CreativeWork"
+         "schema:CreativeWork",
+         "schema:LearningResource"
       ]
    },
    "properties" : {
+      "schema:availableLanguage" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
+         "rdfs:label" : "availableLanguage",
+         "schema:domainIncludes" : [
+            "schema:Course",
+            "schema:ServiceChannel",
+            "schema:LodgingBusiness",
+            "schema:TouristAttraction",
+            "schema:ContactPoint"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:Language",
+            "schema:Text"
+         ]
+      },
       "schema:courseCode" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The identifier for the [[Course]] used by the course [[provider]] (e.g. CS101 or 6.001).",
@@ -22,9 +38,9 @@
          "rdfs:label" : "coursePrerequisites",
          "schema:domainIncludes" : "schema:Course",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:Course",
-            "schema:AlignmentObject",
-            "schema:Text"
+            "schema:AlignmentObject"
          ]
       },
       "schema:educationalCredentialAwarded" : {
@@ -32,15 +48,30 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other educational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "educationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+      },
+      "schema:financialAidEligible" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A financial aid type or program which students may use to pay for tuition or fees associated with the program.",
+         "rdfs:label" : "financialAidEligible",
+         "schema:domainIncludes" : [
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:DefinedTerm"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2418"
       },
       "schema:hasCourseInstance" : {
          "rdf:type" : "rdf:Property",
@@ -69,16 +100,34 @@
          "rdfs:comment" : "A description of the qualification, award, certificate, diploma or other occupational credential awarded as a consequence of successful completion of this course or program.",
          "rdfs:label" : "occupationalCredentialAwarded",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+      },
+      "schema:syllabusSections" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Indicates (typically several) Syllabus entities that lay out what each section of the overall course will cover.",
+         "rdfs:label" : "syllabusSections",
+         "schema:domainIncludes" : "schema:Course",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Syllabus",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3281"
+      },
+      "schema:totalHistoricalEnrollment" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The total number of students that have enrolled in the history of the course.",
+         "rdfs:label" : "totalHistoricalEnrollment",
+         "schema:domainIncludes" : "schema:Course",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Integer",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3281"
       }
    }
 }

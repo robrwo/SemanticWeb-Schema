@@ -14,8 +14,8 @@
          "schema:domainIncludes" : [
             "schema:MedicalCondition",
             "schema:DrugClass",
-            "schema:TherapeuticProcedure",
-            "schema:Patient"
+            "schema:Patient",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"

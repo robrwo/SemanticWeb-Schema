@@ -7,62 +7,54 @@
          "schema:PaymentMethod",
          "schema:FinancialProduct"
       ],
-      "schema:source" : "schemadotorgsources:FIBO"
+      "schema:contributor" : "collab:FIBO"
    },
    "properties" : {
       "schema:cashBack" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A cardholder benefit that pays the cardholder a small percentage of their net expenditures.",
          "rdfs:label" : "cashBack",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:PaymentCard",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:Number",
             "schema:Boolean"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:contactlessPayment" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A secure method for consumers to purchase products or services via debit, credit or smartcards by using RFID or NFC technology.",
          "rdfs:label" : "contactlessPayment",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:PaymentCard",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:floorLimit" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A floor limit is the amount of money above which credit card transactions must be authorized.",
          "rdfs:label" : "floorLimit",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:PaymentCard",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       },
       "schema:monthlyMinimumRepaymentAmount" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The minimum payment is the lowest amount of money that one is required to pay on a credit card statement each month.",
          "rdfs:label" : "monthlyMinimumRepaymentAmount",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:PaymentCard",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:Number"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       }
    }
 }

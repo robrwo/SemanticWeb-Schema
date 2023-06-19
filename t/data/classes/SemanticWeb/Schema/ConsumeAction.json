@@ -19,9 +19,9 @@
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:ConsumeAction",
+            "schema:MediaSubscription",
             "schema:ActionAccessSpecification",
-            "schema:MediaSubscription"
+            "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"

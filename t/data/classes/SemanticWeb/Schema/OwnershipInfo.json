@@ -4,49 +4,49 @@
       "rdfs:comment" : "A structured value providing information about when a certain organization or person owned a certain product.",
       "rdfs:label" : "OwnershipInfo",
       "rdfs:subClassOf" : "schema:StructuredValue",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:contributor" : "collab:GoodRelationsClass"
    },
    "properties" : {
       "schema:acquiredFrom" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The organization or person from which the product was acquired.",
          "rdfs:label" : "acquiredFrom",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:OwnershipInfo",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+            "schema:Person",
+            "schema:Organization"
+         ]
       },
       "schema:ownedFrom" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date and time of obtaining the product.",
          "rdfs:label" : "ownedFrom",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:OwnershipInfo",
-         "schema:rangeIncludes" : "schema:DateTime",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:DateTime"
       },
       "schema:ownedThrough" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The date and time of giving up ownership on the product.",
          "rdfs:label" : "ownedThrough",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:OwnershipInfo",
-         "schema:rangeIncludes" : "schema:DateTime",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:DateTime"
       },
       "schema:typeOfGood" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The product that this structured value is referring to.",
          "rdfs:label" : "typeOfGood",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:OwnershipInfo",
             "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
-            "schema:Product",
-            "schema:Service"
-         ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+            "schema:Service",
+            "schema:Product"
+         ]
       }
    }
 }

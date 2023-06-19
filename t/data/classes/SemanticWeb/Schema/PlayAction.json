@@ -11,12 +11,12 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:Product",
+            "schema:PlayAction",
             "schema:Service",
             "schema:CreativeWork",
             "schema:LodgingBusiness",
-            "schema:Event",
-            "schema:PlayAction"
+            "schema:Product",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Audience"
       },
@@ -25,13 +25,13 @@
          "rdfs:comment" : "Upcoming or past event associated with this place, organization, or action.",
          "rdfs:label" : "event",
          "schema:domainIncludes" : [
-            "schema:Organization",
             "schema:Place",
             "schema:PlayAction",
             "schema:InviteAction",
             "schema:LeaveAction",
             "schema:InformAction",
-            "schema:JoinAction"
+            "schema:JoinAction",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Event"
       }

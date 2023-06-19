@@ -9,7 +9,7 @@
       "rdfs:comment" : "A body of structured information describing some topic(s) of interest.",
       "rdfs:label" : "Dataset",
       "rdfs:subClassOf" : "schema:CreativeWork",
-      "schema:source" : "schemadotorgsources:source_DatasetClass"
+      "schema:contributor" : "collab:DatasetClass"
    },
    "properties" : {
       "schema:catalog" : {
@@ -57,41 +57,72 @@
          "rdfs:comment" : "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
          "rdfs:label" : "issn",
          "rdfs:subPropertyOf" : "schema:identifier",
+         "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
+            "schema:CreativeWorkSeries",
             "schema:Dataset",
-            "schema:Blog",
             "schema:WebSite",
-            "schema:CreativeWorkSeries"
+            "schema:Blog"
          ],
-         "schema:rangeIncludes" : "schema:Text",
-         "schema:source" : "schemadotorgsources:source_bibex"
+         "schema:rangeIncludes" : "schema:Text"
       },
-      "schema:measurementTechnique" : {
+      "schema:measurementMethod" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A technique or technology used in a [[Dataset]] (or [[DataDownload]], [[DataCatalog]]),\ncorresponding to the method used for measuring the corresponding variable(s) (described using [[variableMeasured]]). This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but rather as a high level summary for dataset discovery.\n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\".\n\nIf the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\".\n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]].\n      ",
-         "rdfs:label" : "measurementTechnique",
+         "rdfs:comment" : "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+         "rdfs:label" : "measurementMethod",
+         "rdfs:subPropertyOf" : "schema:measurementTechnique",
          "schema:domainIncludes" : [
             "schema:DataCatalog",
-            "schema:Dataset",
             "schema:PropertyValue",
-            "schema:DataDownload"
+            "schema:Dataset",
+            "schema:DataDownload",
+            "schema:Observation",
+            "schema:StatisticalVariable"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:MeasurementMethodEnum",
+            "schema:URL",
+            "schema:Text"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
+      },
+      "schema:measurementTechnique" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMetholdEnumeration]].",
+         "rdfs:label" : "measurementTechnique",
+         "schema:domainIncludes" : [
+            "schema:DataCatalog",
+            "schema:PropertyValue",
+            "schema:Dataset",
+            "schema:DataDownload",
+            "schema:Observation",
+            "schema:StatisticalVariable"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:Text",
-            "schema:URL"
+            "schema:DefinedTerm",
+            "schema:MeasurementMethodEnum"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
       },
       "schema:variableMeasured" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.",
+         "rdfs:comment" : "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a [[StatisticalVariable]].",
          "rdfs:label" : "variableMeasured",
-         "schema:domainIncludes" : "schema:Dataset",
+         "schema:domainIncludes" : [
+            "schema:Dataset",
+            "schema:Observation"
+         ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:StatisticalVariable",
             "schema:PropertyValue",
-            "schema:Text"
+            "schema:Property"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1083"
       },

@@ -7,9 +7,9 @@
          "schema:PaymentCard",
          "schema:LoanOrCredit"
       ],
-      "schema:source" : [
-         "schemadotorgsources:source_GoodRelationsClass",
-         "schemadotorgsources:FIBO"
+      "schema:contributor" : [
+         "collab:GoodRelationsClass",
+         "collab:FIBO"
       ]
    },
    "properties" : {}

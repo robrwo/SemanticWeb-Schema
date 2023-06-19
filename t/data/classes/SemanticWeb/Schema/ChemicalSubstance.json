@@ -1,27 +1,26 @@
 {
    "class" : {
-      "dc:source" : [
-         "http:bioschemas.org",
-         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"
-      ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A chemical substance is 'a portion of matter of constant composition, composed of molecular entities of the same type or of different types' (source: [ChEBI:59999](https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999)).",
       "rdfs:label" : "ChemicalSubstance",
       "rdfs:subClassOf" : "schema:BioChemEntity",
-      "schema:isPartOf" : "http:pending.schema.org"
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : [
+         "http:bioschemas.org",
+         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"
+      ]
    },
    "properties" : {
       "schema:chemicalComposition" : {
-         "dc:source" : "www.bioschemas:ChemicalSubstance",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The chemical composition describes the identity and relative ratio of the chemical elements that make up the substance.",
          "rdfs:label" : "chemicalComposition",
          "schema:domainIncludes" : "schema:ChemicalSubstance",
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:Text"
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "www.bioschemas:ChemicalSubstance"
       },
       "schema:chemicalRole" : {
-         "dc:source" : "www.bioschemas:ChemicalSubstance",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A role played by the BioChemEntity within a chemical context.",
          "rdfs:label" : "chemicalRole",
@@ -30,10 +29,10 @@
             "schema:ChemicalSubstance"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:DefinedTerm"
+         "schema:rangeIncludes" : "schema:DefinedTerm",
+         "schema:source" : "www.bioschemas:ChemicalSubstance"
       },
       "schema:potentialUse" : {
-         "dc:source" : "www.bioschemas:ChemicalSubstance",
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "Intended use of the BioChemEntity by humans.",
          "rdfs:label" : "potentialUse",
@@ -42,7 +41,8 @@
             "schema:ChemicalSubstance"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:DefinedTerm"
+         "schema:rangeIncludes" : "schema:DefinedTerm",
+         "schema:source" : "www.bioschemas:ChemicalSubstance"
       }
    }
 }

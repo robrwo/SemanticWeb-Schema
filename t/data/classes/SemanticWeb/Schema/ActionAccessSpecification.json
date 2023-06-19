@@ -11,60 +11,56 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityEnds",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:Demand",
             "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
             "schema:Time",
             "schema:Date"
          ],
-         "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:availabilityStarts" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The beginning of the availability of the product or service included in the offer.",
          "rdfs:label" : "availabilityStarts",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
             "schema:DateTime",
+            "schema:Time",
             "schema:Date"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "schemadotorgsources:source_GoodRelationsTerms"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:category" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
-            "schema:Offer",
+            "schema:PhysicalActivity",
             "schema:ActionAccessSpecification",
             "schema:Invoice",
-            "schema:Recommendation",
-            "schema:PhysicalActivity",
+            "schema:Offer",
+            "schema:Service",
+            "schema:SpecialAnnouncement",
             "schema:Product",
-            "schema:Service"
+            "schema:Recommendation"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:CategoryCode",
-            "schema:PhysicalActivityCategory",
             "schema:Text",
-            "schema:Thing"
+            "schema:Thing",
+            "schema:PhysicalActivityCategory",
+            "schema:CategoryCode"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1741",
@@ -76,30 +72,28 @@
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
          "rdfs:label" : "eligibleRegion",
          "rdfs:subPropertyOf" : "schema:areaServed",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:DeliveryChargeSpecification",
-            "schema:Offer",
             "schema:ActionAccessSpecification",
+            "schema:Offer",
+            "schema:DeliveryChargeSpecification",
             "schema:Demand"
          ],
          "schema:rangeIncludes" : [
+            "schema:GeoShape",
             "schema:Place",
-            "schema:Text",
-            "schema:GeoShape"
+            "schema:Text"
          ],
-         "schema:source" : [
-            "schemadotorgsources:source_GoodRelationsTerms",
-            "https://github.com/schemaorg/schemaorg/issues/1741"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
       "schema:expectsAcceptanceOf" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.",
          "rdfs:label" : "expectsAcceptanceOf",
          "schema:domainIncludes" : [
-            "schema:ConsumeAction",
+            "schema:MediaSubscription",
             "schema:ActionAccessSpecification",
-            "schema:MediaSubscription"
+            "schema:ConsumeAction"
          ],
          "schema:rangeIncludes" : "schema:Offer",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
@@ -110,10 +104,10 @@
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:MediaObject",
-            "schema:ActionAccessSpecification",
+            "schema:DeliveryChargeSpecification",
             "schema:Demand",
-            "schema:DeliveryChargeSpecification"
+            "schema:MediaObject",
+            "schema:ActionAccessSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -128,12 +122,12 @@
          "rdfs:comment" : "Indicates if use of the media require a subscription  (either paid or free). Allowed values are ```true``` or ```false``` (note that an earlier version had 'yes', 'no').",
          "rdfs:label" : "requiresSubscription",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:ActionAccessSpecification"
+            "schema:ActionAccessSpecification",
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaSubscription",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:MediaSubscription"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       }

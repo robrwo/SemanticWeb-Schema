@@ -1,16 +1,19 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Instances of the class [[Observation]] are used to specify observations about an entity (which may or may not be an instance of a [[StatisticalPopulation]]), at a particular time. The principal properties of an [[Observation]] are [[observedNode]], [[measuredProperty]], [[measuredValue]] (or [[median]], etc.) and [[observationDate]] ([[measuredProperty]] properties can, but need not always, be W3C RDF Data Cube \"measure properties\", as in the [lifeExpectancy example](https://www.w3.org/TR/vocab-data-cube/#dsd-example)).\nSee also [[StatisticalPopulation]], and the [data and datasets](/docs/data-and-datasets.html) overview for more details.\n  ",
+      "rdfs:comment" : "Instances of the class [[Observation]] are used to specify observations about an entity at a particular time. The principal properties of an [[Observation]] are [[observationAbout]], [[measuredProperty]], [[statType]], [[value] and [[observationDate]]  and [[measuredProperty]]. Some but not all Observations represent a [[QuantitativeValue]]. Quantitative observations can be about a [[StatisticalVariable]], which is an abstract specification about which we can make observations that are grounded at a particular location and time. \n    \nObservations can also encode a subset of simple RDF-like statements (its observationAbout, a StatisticalVariable, defining the measuredPoperty; its observationAbout property indicating the entity the statement is about, and [[value]] )\n\nIn the context of a quantitative knowledge graph, typical properties could include [[measuredProperty]], [[observationAbout]], [[observationDate]], [[value]], [[unitCode]], [[unitText]], [[measurementMethod]].\n    ",
       "rdfs:label" : "Observation",
-      "rdfs:subClassOf" : "schema:Intangible",
+      "rdfs:subClassOf" : [
+         "schema:Intangible",
+         "schema:QuantitativeValue"
+      ],
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
    },
    "properties" : {
       "schema:marginOfError" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "A marginOfError for an [[Observation]].",
+         "rdfs:comment" : "A [[marginOfError]] for an [[Observation]].",
          "rdfs:label" : "marginOfError",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -19,20 +22,93 @@
       },
       "schema:measuredProperty" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The measuredProperty of an [[Observation]], either a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
+         "rdfs:comment" : "The measuredProperty of an [[Observation]], typically via its [[StatisticalVariable]]. There are various kinds of applicable [[Property]]: a schema.org property, a property from other RDF-compatible systems, e.g. W3C RDF Data Cube, Data Commons, Wikidata, or schema.org extensions such as [GS1's](https://www.gs1.org/voc/?show=properties).",
          "rdfs:label" : "measuredProperty",
-         "schema:domainIncludes" : "schema:Observation",
+         "schema:domainIncludes" : [
+            "schema:StatisticalVariable",
+            "schema:Observation"
+         ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Property",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
       },
-      "schema:measuredValue" : {
+      "schema:measurementDenominator" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The measuredValue of an [[Observation]].",
-         "rdfs:label" : "measuredValue",
+         "rdfs:comment" : "Identifies the denominator variable when an observation represents a ratio or percentage.",
+         "rdfs:label" : "measurementDenominator",
+         "schema:domainIncludes" : [
+            "schema:Observation",
+            "schema:StatisticalVariable"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:StatisticalVariable",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2564"
+      },
+      "schema:measurementMethod" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+         "rdfs:label" : "measurementMethod",
+         "rdfs:subPropertyOf" : "schema:measurementTechnique",
+         "schema:domainIncludes" : [
+            "schema:DataCatalog",
+            "schema:PropertyValue",
+            "schema:Dataset",
+            "schema:DataDownload",
+            "schema:Observation",
+            "schema:StatisticalVariable"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:MeasurementMethodEnum",
+            "schema:URL",
+            "schema:Text"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
+      },
+      "schema:measurementQualifier" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "Provides additional qualification to an observation. For example, a GDP observation measures the Nominal value.",
+         "rdfs:label" : "measurementQualifier",
+         "schema:domainIncludes" : [
+            "schema:Observation",
+            "schema:StatisticalVariable"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Enumeration",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2564"
+      },
+      "schema:measurementTechnique" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMetholdEnumeration]].",
+         "rdfs:label" : "measurementTechnique",
+         "schema:domainIncludes" : [
+            "schema:DataCatalog",
+            "schema:PropertyValue",
+            "schema:Dataset",
+            "schema:DataDownload",
+            "schema:Observation",
+            "schema:StatisticalVariable"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:URL",
+            "schema:Text",
+            "schema:DefinedTerm",
+            "schema:MeasurementMethodEnum"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
+      },
+      "schema:observationAbout" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The [[observationAbout]] property identifies an entity, often a [[Place]], associated with an [[Observation]].",
+         "rdfs:label" : "observationAbout",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:DataType",
+         "schema:rangeIncludes" : [
+            "schema:Place",
+            "schema:Thing"
+         ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
       },
       "schema:observationDate" : {
@@ -44,14 +120,31 @@
          "schema:rangeIncludes" : "schema:DateTime",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
       },
-      "schema:observedNode" : {
+      "schema:observationPeriod" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The observedNode of an [[Observation]], often a [[StatisticalPopulation]].",
-         "rdfs:label" : "observedNode",
+         "rdfs:comment" : "The length of time an Observation took place over. The format follows `P[0-9]*[Y|M|D|h|m|s]`. For example, P1Y is Period 1 Year, P3M is Period 3 Months, P3h is Period 3 hours.",
+         "rdfs:label" : "observationPeriod",
          "schema:domainIncludes" : "schema:Observation",
          "schema:isPartOf" : "http:pending.schema.org",
-         "schema:rangeIncludes" : "schema:StatisticalPopulation",
-         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2564"
+      },
+      "schema:variableMeasured" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a [[StatisticalVariable]].",
+         "rdfs:label" : "variableMeasured",
+         "schema:domainIncludes" : [
+            "schema:Dataset",
+            "schema:Observation"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:StatisticalVariable",
+            "schema:PropertyValue",
+            "schema:Property"
+         ],
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1083"
       }
    }
 }

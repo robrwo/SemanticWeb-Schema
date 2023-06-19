@@ -4,7 +4,7 @@
       "rdfs:comment" : "An EducationalAudience.",
       "rdfs:label" : "EducationalAudience",
       "rdfs:subClassOf" : "schema:Audience",
-      "schema:source" : "schemadotorgsources:source_LRMIClass"
+      "schema:contributor" : "collab:LRMIClass"
    },
    "properties" : {
       "schema:educationalRole" : {

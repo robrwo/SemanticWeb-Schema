@@ -4,7 +4,7 @@
       "rdfs:comment" : "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.",
       "rdfs:label" : "QualitativeValue",
       "rdfs:subClassOf" : "schema:Enumeration",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:contributor" : "collab:GoodRelationsClass"
    },
    "properties" : {
       "schema:additionalProperty" : {
@@ -12,10 +12,10 @@
          "rdfs:comment" : "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:QuantitativeValue",
             "schema:Place",
+            "schema:Product",
             "schema:MerchantReturnPolicy",
+            "schema:QuantitativeValue",
             "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
@@ -24,70 +24,70 @@
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is equal to the object.",
          "rdfs:label" : "equal",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:greater" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is greater than the object.",
          "rdfs:label" : "greater",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:greaterOrEqual" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.",
          "rdfs:label" : "greaterOrEqual",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:lesser" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is lesser than the object.",
          "rdfs:label" : "lesser",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:lesserOrEqual" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.",
          "rdfs:label" : "lesserOrEqual",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:nonEqual" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is not equal to the object.",
          "rdfs:label" : "nonEqual",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : "schema:QualitativeValue",
-         "schema:rangeIncludes" : "schema:QualitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QualitativeValue"
       },
       "schema:valueReference" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
          "rdfs:label" : "valueReference",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:QuantitativeValue",
-            "schema:QualitativeValue"
-         ],
-         "schema:rangeIncludes" : [
-            "schema:Enumeration",
             "schema:QualitativeValue",
-            "schema:DefinedTerm",
-            "schema:MeasurementTypeEnumeration",
-            "schema:StructuredValue",
             "schema:PropertyValue",
-            "schema:Text",
             "schema:QuantitativeValue"
          ],
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : [
+            "schema:DefinedTerm",
+            "schema:StructuredValue",
+            "schema:MeasurementTypeEnumeration",
+            "schema:QualitativeValue",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue",
+            "schema:Text",
+            "schema:Enumeration"
+         ]
       }
    }
 }

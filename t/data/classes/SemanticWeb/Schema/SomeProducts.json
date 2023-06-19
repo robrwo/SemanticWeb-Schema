@@ -4,20 +4,20 @@
       "rdfs:comment" : "A placeholder for multiple similar products of the same kind.",
       "rdfs:label" : "SomeProducts",
       "rdfs:subClassOf" : "schema:Product",
-      "schema:source" : "schemadotorgsources:source_GoodRelationsClass"
+      "schema:contributor" : "collab:GoodRelationsClass"
    },
    "properties" : {
       "schema:inventoryLevel" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "The current approximate inventory level for the item or items.",
          "rdfs:label" : "inventoryLevel",
+         "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Demand",
             "schema:Offer",
+            "schema:Demand",
             "schema:SomeProducts"
          ],
-         "schema:rangeIncludes" : "schema:QuantitativeValue",
-         "schema:source" : "schemadotorgsources:source_GoodRelationsTerms"
+         "schema:rangeIncludes" : "schema:QuantitativeValue"
       }
    }
 }

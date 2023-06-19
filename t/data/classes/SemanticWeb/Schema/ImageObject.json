@@ -13,12 +13,12 @@
          "rdfs:label" : "caption",
          "schema:domainIncludes" : [
             "schema:VideoObject",
-            "schema:ImageObject",
-            "schema:AudioObject"
+            "schema:AudioObject",
+            "schema:ImageObject"
          ],
          "schema:rangeIncludes" : [
-            "schema:MediaObject",
-            "schema:Text"
+            "schema:Text",
+            "schema:MediaObject"
          ]
       },
       "schema:embeddedTextCaption" : {
@@ -27,8 +27,8 @@
          "rdfs:label" : "embeddedTextCaption",
          "rdfs:subPropertyOf" : "schema:caption",
          "schema:domainIncludes" : [
-            "schema:VideoObject",
             "schema:ImageObject",
+            "schema:VideoObject",
             "schema:AudioObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -41,8 +41,8 @@
          "rdfs:label" : "exifData",
          "schema:domainIncludes" : "schema:ImageObject",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:Text"
          ]
       },
       "schema:representativeOfPage" : {
@@ -51,16 +51,6 @@
          "rdfs:label" : "representativeOfPage",
          "schema:domainIncludes" : "schema:ImageObject",
          "schema:rangeIncludes" : "schema:Boolean"
-      },
-      "schema:thumbnail" : {
-         "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "Thumbnail image for an image or video.",
-         "rdfs:label" : "thumbnail",
-         "schema:domainIncludes" : [
-            "schema:ImageObject",
-            "schema:VideoObject"
-         ],
-         "schema:rangeIncludes" : "schema:ImageObject"
       }
    }
 }

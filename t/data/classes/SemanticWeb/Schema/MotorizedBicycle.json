@@ -4,8 +4,8 @@
       "rdfs:comment" : "A motorized bicycle is a bicycle with an attached motor used to power the vehicle, or to assist with pedaling.",
       "rdfs:label" : "MotorizedBicycle",
       "rdfs:subClassOf" : "schema:Vehicle",
-      "schema:isPartOf" : "http:auto.schema.org",
-      "schema:source" : "schemadotorgsources:Automotive_Ontology_Working_Group"
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:isPartOf" : "http:auto.schema.org"
    },
    "properties" : {}
 }

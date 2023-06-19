@@ -24,8 +24,8 @@
          "rdfs:comment" : "Location in the body of the anatomical structure.",
          "rdfs:label" : "bodyLocation",
          "schema:domainIncludes" : [
-            "schema:AnatomicalStructure",
-            "schema:MedicalProcedure"
+            "schema:MedicalProcedure",
+            "schema:AnatomicalStructure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"
@@ -59,9 +59,9 @@
          "rdfs:comment" : "A medical condition associated with this anatomy.",
          "rdfs:label" : "relatedCondition",
          "schema:domainIncludes" : [
-            "schema:AnatomicalSystem",
+            "schema:AnatomicalStructure",
             "schema:SuperficialAnatomy",
-            "schema:AnatomicalStructure"
+            "schema:AnatomicalSystem"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -71,8 +71,8 @@
          "rdfs:comment" : "A medical therapy related to this anatomy.",
          "rdfs:label" : "relatedTherapy",
          "schema:domainIncludes" : [
-            "schema:AnatomicalStructure",
             "schema:SuperficialAnatomy",
+            "schema:AnatomicalStructure",
             "schema:AnatomicalSystem"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",

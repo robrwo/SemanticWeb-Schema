@@ -4,11 +4,9 @@
       "rdfs:comment" : "The act of transferring money from one place to another place. This may occur electronically or physically.",
       "rdfs:label" : "MoneyTransfer",
       "rdfs:subClassOf" : "schema:TransferAction",
+      "schema:contributor" : "collab:FIBO",
       "schema:isPartOf" : "http:pending.schema.org",
-      "schema:source" : [
-         "schemadotorgsources:FIBO",
-         "https://github.com/schemaorg/schemaorg/issues/1253"
-      ]
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
    },
    "properties" : {
       "schema:amount" : {
@@ -16,35 +14,33 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
-            "schema:InvestmentOrDeposit",
+            "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
-            "schema:DatedMoneySpecification"
+            "schema:LoanOrCredit",
+            "schema:MonetaryGrant",
+            "schema:InvestmentOrDeposit"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:Number"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:beneficiaryBank" : {
          "rdf:type" : "rdf:Property",
          "rdfs:comment" : "A bank or bank’s branch, financial institution or international financial institution operating the beneficiary’s bank account or releasing funds for the beneficiary.",
          "rdfs:label" : "beneficiaryBank",
+         "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : "schema:MoneyTransfer",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:BankOrCreditUnion",
-            "schema:Text"
+            "schema:Text",
+            "schema:BankOrCreditUnion"
          ],
-         "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "schemadotorgsources:FIBO"
-         ]
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
       }
    }
 }

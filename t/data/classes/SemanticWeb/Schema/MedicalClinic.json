@@ -21,9 +21,9 @@
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:MedicalProcedure",
             "schema:MedicalTherapy",
-            "schema:MedicalTest",
-            "schema:MedicalProcedure"
+            "schema:MedicalTest"
          ]
       },
       "schema:medicalSpecialty" : {
@@ -31,9 +31,9 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:Physician",
-            "schema:MedicalOrganization",
             "schema:MedicalClinic",
+            "schema:MedicalOrganization",
+            "schema:Physician",
             "schema:Hospital"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
