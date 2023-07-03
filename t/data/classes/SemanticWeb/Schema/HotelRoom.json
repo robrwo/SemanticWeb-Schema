@@ -14,13 +14,13 @@
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
             "schema:Accommodation",
-            "schema:HotelRoom",
-            "schema:Suite"
+            "schema:Suite",
+            "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:BedType",
             "schema:BedDetails",
-            "schema:BedType"
+            "schema:Text"
          ]
       },
       "schema:occupancy" : {
@@ -29,11 +29,11 @@
          "rdfs:label" : "occupancy",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:Apartment",
-            "schema:HotelRoom",
+            "schema:Accommodation",
+            "schema:SingleFamilyResidence",
             "schema:Suite",
-            "schema:SingleFamilyResidence"
+            "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       }

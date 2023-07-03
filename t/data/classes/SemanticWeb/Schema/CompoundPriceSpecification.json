@@ -21,8 +21,8 @@
          "rdfs:label" : "priceType",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:UnitPriceSpecification",
-            "schema:CompoundPriceSpecification"
+            "schema:CompoundPriceSpecification",
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:PriceTypeEnumeration",

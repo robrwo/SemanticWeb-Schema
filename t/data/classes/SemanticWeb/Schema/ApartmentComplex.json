@@ -11,8 +11,8 @@
          "rdfs:comment" : "Indicates the total (available plus unavailable) number of accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAvailableAccommodationUnits]].",
          "rdfs:label" : "numberOfAccommodationUnits",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
@@ -52,10 +52,10 @@
          "rdfs:label" : "petsAllowed",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
+            "schema:LodgingBusiness",
             "schema:FloorPlan",
             "schema:ApartmentComplex",
-            "schema:Accommodation",
-            "schema:LodgingBusiness"
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

@@ -26,13 +26,13 @@
          "rdfs:label" : "depth",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:VisualArtwork",
             "schema:Product",
-            "schema:OfferShippingDetails",
-            "schema:VisualArtwork"
+            "schema:OfferShippingDetails"
          ],
          "schema:rangeIncludes" : [
-            "schema:Distance",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Distance"
          ]
       },
       "schema:doesNotShip" : {
@@ -40,8 +40,8 @@
          "rdfs:comment" : "Indicates when shipping to a particular [[shippingDestination]] is not available.",
          "rdfs:label" : "doesNotShip",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -52,9 +52,9 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
             "schema:VisualArtwork",
             "schema:MediaObject",
+            "schema:OfferShippingDetails",
             "schema:Product",
             "schema:Person"
          ],
@@ -68,9 +68,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings",
             "schema:ShippingRateSettings",
-            "schema:DeliveryTimeSettings"
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -102,8 +102,8 @@
          "rdfs:comment" : "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.",
          "rdfs:label" : "shippingRate",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",
@@ -123,8 +123,8 @@
          "rdfs:comment" : "Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within the context of a [[shippingSettingsLink]] cross-reference).",
          "rdfs:label" : "transitTimeLabel",
          "schema:domainIncludes" : [
-            "schema:DeliveryTimeSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -136,8 +136,8 @@
          "rdfs:label" : "weight",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
             "schema:Product",
+            "schema:OfferShippingDetails",
             "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -148,9 +148,9 @@
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
             "schema:Product",
+            "schema:OfferShippingDetails",
             "schema:MediaObject",
-            "schema:VisualArtwork",
-            "schema:OfferShippingDetails"
+            "schema:VisualArtwork"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",

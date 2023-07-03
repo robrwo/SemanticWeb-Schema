@@ -1,8 +1,8 @@
 {
    "class" : {
       "core:closeMatch" : [
-         "ontology:LegalRecontributor",
-         "ontology:LegalExpression"
+         "ontology:LegalExpression",
+         "ontology:LegalRecontributor"
       ],
       "rdf:type" : "rdfs:Class",
       "rdfs:comment" : "A legal document such as an act, decree, bill, etc. (enforceable or not) or a component of a legal act (like an article).",
@@ -18,13 +18,13 @@
          "rdfs:comment" : "Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.",
          "rdfs:label" : "jurisdiction",
          "schema:domainIncludes" : [
-            "schema:GovernmentService",
-            "schema:Legislation"
+            "schema:Legislation",
+            "schema:GovernmentService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:AdministrativeArea"
+            "schema:AdministrativeArea",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
       },
@@ -111,8 +111,8 @@
          "rdfs:comment" : "The jurisdiction from which the legislation originates.",
          "rdfs:label" : "legislationJurisdiction",
          "rdfs:subPropertyOf" : [
-            "schema:jurisdiction",
-            "schema:spatialCoverage"
+            "schema:spatialCoverage",
+            "schema:jurisdiction"
          ],
          "schema:contributor" : "collab:ELI",
          "schema:domainIncludes" : "schema:Legislation",

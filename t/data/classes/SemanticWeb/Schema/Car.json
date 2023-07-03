@@ -13,8 +13,8 @@
          "rdfs:label" : "acrissCode",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:Car",
-            "schema:BusOrCoach"
+            "schema:BusOrCoach",
+            "schema:Car"
          ],
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:Text"

@@ -17,8 +17,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
-            "schema:Text"
+            "schema:Text",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1779",
@@ -34,9 +34,9 @@
             "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
+            "schema:Number",
             "schema:MonetaryAmountDistribution",
-            "schema:Number"
+            "schema:MonetaryAmount"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -45,12 +45,12 @@
          "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
          "rdfs:label" : "experienceRequirements",
          "schema:domainIncludes" : [
-            "schema:Occupation",
-            "schema:JobPosting"
+            "schema:JobPosting",
+            "schema:Occupation"
          ],
          "schema:rangeIncludes" : [
-            "schema:OccupationalExperienceRequirements",
-            "schema:Text"
+            "schema:Text",
+            "schema:OccupationalExperienceRequirements"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -67,10 +67,10 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
+            "schema:JobPosting",
             "schema:Occupation",
-            "schema:WorkBasedProgram",
-            "schema:JobPosting"
+            "schema:EducationalOccupationalProgram",
+            "schema:WorkBasedProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -78,10 +78,10 @@
             "schema:CategoryCode"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/2460",
             "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/2192",
-            "https://github.com/schemaorg/schemaorg/issues/2289"
+            "https://github.com/schemaorg/schemaorg/issues/2460",
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2192"
          ]
       },
       "schema:qualifications" : {
@@ -98,8 +98,8 @@
             "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1779"
+            "https://github.com/schemaorg/schemaorg/issues/1779",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:responsibilities" : {
@@ -122,8 +122,8 @@
             "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1698",

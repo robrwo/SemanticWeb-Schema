@@ -12,10 +12,10 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
-            "schema:LoanOrCredit",
             "schema:MonetaryGrant",
+            "schema:LoanOrCredit",
+            "schema:DatedMoneySpecification",
             "schema:InvestmentOrDeposit"
          ],
          "schema:rangeIncludes" : [
@@ -23,8 +23,8 @@
             "schema:Number"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1253",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1253"
          ]
       },
       "schema:currency" : {
@@ -32,11 +32,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:MonetaryAmount",
+            "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:DatedMoneySpecification"
+            "schema:LoanOrCredit",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -46,14 +46,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification",
             "schema:CreativeWorkSeries",
             "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:DatedMoneySpecification",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -66,14 +66,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:DatedMoneySpecification",
+            "schema:Event",
+            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

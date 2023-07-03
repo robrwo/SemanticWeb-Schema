@@ -21,13 +21,13 @@
          "rdfs:label" : "funding",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:Organization",
-            "schema:BioChemEntity",
-            "schema:CreativeWork",
-            "schema:Product",
             "schema:MedicalEntity",
-            "schema:Person"
+            "schema:BioChemEntity",
+            "schema:Product",
+            "schema:CreativeWork",
+            "schema:Person",
+            "schema:Event",
+            "schema:Organization"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -47,15 +47,15 @@
          "rdfs:comment" : "The drug or supplement's legal status, including any controlled substance schedules that apply.",
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
-            "schema:Drug",
+            "schema:DietarySupplement",
             "schema:MedicalEntity",
-            "schema:DietarySupplement"
+            "schema:Drug"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
+            "schema:DrugLegalStatus",
             "schema:MedicalEnumeration",
-            "schema:Text",
-            "schema:DrugLegalStatus"
+            "schema:Text"
          ]
       },
       "schema:medicineSystem" : {

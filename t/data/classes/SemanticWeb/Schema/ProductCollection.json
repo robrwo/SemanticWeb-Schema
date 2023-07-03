@@ -17,9 +17,9 @@
          "rdfs:label" : "includesObject",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Demand",
             "schema:ProductCollection",
-            "schema:Offer",
-            "schema:Demand"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:TypeAndQuantityNode"
       }

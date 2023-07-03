@@ -12,11 +12,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:LoanOrCredit",
-            "schema:MonetaryAmount",
+            "schema:DatedMoneySpecification",
             "schema:ExchangeRateSpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:DatedMoneySpecification"
+            "schema:LoanOrCredit",
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -27,8 +27,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -40,9 +40,9 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount",
+            "schema:PropertyValue",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
@@ -53,13 +53,13 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
             "schema:Offer",
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:Permit",
             "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:Permit",
+            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -72,17 +72,17 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:JobPosting",
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification",
             "schema:LocationFeatureSpecification",
-            "schema:Offer",
-            "schema:Demand"
+            "schema:JobPosting",
+            "schema:OpeningHoursSpecification",
+            "schema:Demand",
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Date"
+            "schema:Date",
+            "schema:DateTime"
          ]
       },
       "schema:value" : {
@@ -91,14 +91,14 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
-            "schema:Text",
             "schema:Boolean",
+            "schema:Text",
             "schema:StructuredValue"
          ]
       }

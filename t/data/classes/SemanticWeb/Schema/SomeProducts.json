@@ -13,9 +13,9 @@
          "rdfs:label" : "inventoryLevel",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:Demand",
-            "schema:SomeProducts"
+            "schema:SomeProducts",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       }

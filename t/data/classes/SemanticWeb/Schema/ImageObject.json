@@ -12,8 +12,8 @@
          "rdfs:comment" : "The caption for this object. For downloadable machine formats (closed caption, subtitles etc.) use MediaObject and indicate the [[encodingFormat]].",
          "rdfs:label" : "caption",
          "schema:domainIncludes" : [
-            "schema:VideoObject",
             "schema:AudioObject",
+            "schema:VideoObject",
             "schema:ImageObject"
          ],
          "schema:rangeIncludes" : [
@@ -27,8 +27,8 @@
          "rdfs:label" : "embeddedTextCaption",
          "rdfs:subPropertyOf" : "schema:caption",
          "schema:domainIncludes" : [
-            "schema:ImageObject",
             "schema:VideoObject",
+            "schema:ImageObject",
             "schema:AudioObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",

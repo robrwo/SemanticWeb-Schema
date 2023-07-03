@@ -23,9 +23,9 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:QualitativeValue"
          ]
       },
       "schema:callSign" : {
@@ -34,9 +34,9 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:BroadcastService",
             "schema:Person",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:BroadcastService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -65,8 +65,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DriveWheelConfigurationValue"
+            "schema:DriveWheelConfigurationValue",
+            "schema:Text"
          ]
       },
       "schema:emissionsCO2" : {
@@ -113,9 +113,9 @@
             "schema:EngineSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:knownVehicleDamages" : {
@@ -134,9 +134,9 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:QualitativeValue",
-            "schema:URL",
-            "schema:Text"
+            "schema:URL"
          ]
       },
       "schema:mileageFromOdometer" : {
@@ -163,8 +163,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:numberOfAxles" : {
@@ -185,8 +185,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:numberOfForwardGears" : {
@@ -207,8 +207,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:payload" : {
@@ -237,8 +237,8 @@
          "rdfs:label" : "purchaseDate",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Date"
       },
@@ -250,8 +250,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:speed" : {
@@ -276,8 +276,8 @@
          "rdfs:comment" : "This is a StupidProperty! - for testing only",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:StupidType",
-            "schema:Vehicle"
+            "schema:Vehicle",
+            "schema:StupidType"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -379,9 +379,9 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
-            "schema:QualitativeValue"
+            "schema:QualitativeValue",
+            "schema:URL"
          ]
       },
       "schema:weightTotal" : {

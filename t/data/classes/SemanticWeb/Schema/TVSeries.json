@@ -4,8 +4,8 @@
       "rdfs:comment" : "CreativeWorkSeries dedicated to TV broadcast and associated online delivery.",
       "rdfs:label" : "TVSeries",
       "rdfs:subClassOf" : [
-         "schema:CreativeWork",
-         "schema:CreativeWorkSeries"
+         "schema:CreativeWorkSeries",
+         "schema:CreativeWork"
       ]
    },
    "properties" : {
@@ -14,18 +14,18 @@
          "rdfs:comment" : "An actor, e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "actor",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:PodcastSeries",
-            "schema:VideoObject",
-            "schema:Movie",
-            "schema:RadioSeries",
             "schema:VideoGameSeries",
-            "schema:CreativeWorkSeason",
+            "schema:MovieSeries",
             "schema:Episode",
             "schema:Clip",
-            "schema:TVSeries",
             "schema:VideoGame",
-            "schema:MovieSeries"
+            "schema:CreativeWorkSeason",
+            "schema:VideoObject",
+            "schema:Movie",
+            "schema:PodcastSeries",
+            "schema:TVSeries",
+            "schema:RadioSeries",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -34,14 +34,14 @@
          "rdfs:comment" : "An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "actors",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:VideoObject",
+            "schema:Clip",
             "schema:RadioSeries",
+            "schema:VideoGame",
+            "schema:Movie",
+            "schema:TVSeries",
             "schema:VideoGameSeries",
             "schema:Episode",
-            "schema:Clip",
-            "schema:TVSeries",
-            "schema:VideoGame",
+            "schema:VideoObject",
             "schema:MovieSeries"
          ],
          "schema:rangeIncludes" : "schema:Person",
@@ -53,8 +53,8 @@
          "rdfs:label" : "containsSeason",
          "rdfs:subPropertyOf" : "schema:hasPart",
          "schema:domainIncludes" : [
-            "schema:RadioSeries",
             "schema:VideoGameSeries",
+            "schema:RadioSeries",
             "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:CreativeWorkSeason"
@@ -64,12 +64,12 @@
          "rdfs:comment" : "The country of origin of something, including products as well as creative  works such as movie and TV content.\n\nIn the case of TV and movie, this would be the country of the principle offices of the production company or individual responsible for the movie. For other kinds of [[CreativeWork]] it is difficult to provide fully general guidance, and properties such as [[contentLocation]] and [[locationCreated]] may be more applicable.\n\nIn the case of products, the country of origin of the product. The exact interpretation of this may vary by context and product type, and cannot be fully enumerated here.",
          "rdfs:label" : "countryOfOrigin",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:TVEpisode",
+            "schema:TVSeason",
             "schema:Movie",
             "schema:TVSeries",
-            "schema:CreativeWork",
-            "schema:TVSeason"
+            "schema:Product",
+            "schema:TVEpisode",
+            "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Country"
       },
@@ -78,17 +78,17 @@
          "rdfs:comment" : "A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. Directors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "director",
          "schema:domainIncludes" : [
-            "schema:VideoGame",
             "schema:Event",
-            "schema:Movie",
             "schema:VideoGameSeries",
-            "schema:VideoObject",
-            "schema:CreativeWorkSeason",
-            "schema:TVSeries",
-            "schema:RadioSeries",
+            "schema:MovieSeries",
             "schema:Episode",
             "schema:Clip",
-            "schema:MovieSeries"
+            "schema:VideoGame",
+            "schema:CreativeWorkSeason",
+            "schema:VideoObject",
+            "schema:Movie",
+            "schema:TVSeries",
+            "schema:RadioSeries"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -97,15 +97,15 @@
          "rdfs:comment" : "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "directors",
          "schema:domainIncludes" : [
-            "schema:VideoObject",
-            "schema:Movie",
             "schema:VideoGameSeries",
-            "schema:Episode",
-            "schema:TVSeries",
-            "schema:RadioSeries",
-            "schema:Clip",
             "schema:MovieSeries",
-            "schema:VideoGame"
+            "schema:Episode",
+            "schema:VideoObject",
+            "schema:Clip",
+            "schema:RadioSeries",
+            "schema:VideoGame",
+            "schema:Movie",
+            "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Person",
          "schema:supersededBy" : "schema:director"
@@ -117,9 +117,9 @@
          "rdfs:subPropertyOf" : "schema:hasPart",
          "schema:domainIncludes" : [
             "schema:RadioSeries",
+            "schema:TVSeries",
             "schema:VideoGameSeries",
-            "schema:CreativeWorkSeason",
-            "schema:TVSeries"
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : "schema:Episode"
       },
@@ -128,9 +128,9 @@
          "rdfs:comment" : "An episode of a TV/radio series or season.",
          "rdfs:label" : "episodes",
          "schema:domainIncludes" : [
-            "schema:RadioSeries",
             "schema:VideoGameSeries",
             "schema:CreativeWorkSeason",
+            "schema:RadioSeries",
             "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Episode",
@@ -141,19 +141,19 @@
          "rdfs:comment" : "The composer of the soundtrack.",
          "rdfs:label" : "musicBy",
          "schema:domainIncludes" : [
-            "schema:VideoGame",
-            "schema:MovieSeries",
             "schema:VideoObject",
             "schema:Movie",
             "schema:RadioSeries",
+            "schema:VideoGame",
+            "schema:TVSeries",
             "schema:VideoGameSeries",
+            "schema:MovieSeries",
             "schema:Episode",
-            "schema:Clip",
-            "schema:TVSeries"
+            "schema:Clip"
          ],
          "schema:rangeIncludes" : [
-            "schema:MusicGroup",
-            "schema:Person"
+            "schema:Person",
+            "schema:MusicGroup"
          ]
       },
       "schema:numberOfEpisodes" : {
@@ -161,10 +161,10 @@
          "rdfs:comment" : "The number of episodes in this season or series.",
          "rdfs:label" : "numberOfEpisodes",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
-            "schema:CreativeWorkSeason",
             "schema:TVSeries",
-            "schema:RadioSeries"
+            "schema:RadioSeries",
+            "schema:VideoGameSeries",
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : "schema:Integer"
       },
@@ -174,8 +174,8 @@
          "rdfs:label" : "numberOfSeasons",
          "schema:domainIncludes" : [
             "schema:VideoGameSeries",
-            "schema:TVSeries",
-            "schema:RadioSeries"
+            "schema:RadioSeries",
+            "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Integer"
       },
@@ -184,14 +184,14 @@
          "rdfs:comment" : "The production company or studio responsible for the item, e.g. series, video game, episode etc.",
          "rdfs:label" : "productionCompany",
          "schema:domainIncludes" : [
-            "schema:Movie",
             "schema:VideoGameSeries",
-            "schema:CreativeWorkSeason",
-            "schema:TVSeries",
-            "schema:RadioSeries",
             "schema:Episode",
+            "schema:CreativeWorkSeason",
             "schema:MovieSeries",
-            "schema:MediaObject"
+            "schema:RadioSeries",
+            "schema:Movie",
+            "schema:MediaObject",
+            "schema:TVSeries"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -201,13 +201,13 @@
          "rdfs:label" : "season",
          "rdfs:subPropertyOf" : "schema:hasPart",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
+            "schema:RadioSeries",
             "schema:TVSeries",
-            "schema:RadioSeries"
+            "schema:VideoGameSeries"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:CreativeWorkSeason"
+            "schema:CreativeWorkSeason",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:containsSeason"
       },
@@ -216,8 +216,8 @@
          "rdfs:comment" : "A season in a media series.",
          "rdfs:label" : "seasons",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
             "schema:TVSeries",
+            "schema:VideoGameSeries",
             "schema:RadioSeries"
          ],
          "schema:rangeIncludes" : "schema:CreativeWorkSeason",
@@ -229,10 +229,10 @@
          "rdfs:label" : "titleEIDR",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:TVEpisode",
+            "schema:TVSeason",
             "schema:Movie",
             "schema:TVSeries",
-            "schema:TVSeason"
+            "schema:TVEpisode"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -246,14 +246,14 @@
          "rdfs:comment" : "The trailer of a movie or TV/radio series, season, episode, etc.",
          "rdfs:label" : "trailer",
          "schema:domainIncludes" : [
-            "schema:Movie",
-            "schema:RadioSeries",
-            "schema:VideoGameSeries",
-            "schema:CreativeWorkSeason",
+            "schema:MovieSeries",
             "schema:Episode",
-            "schema:TVSeries",
+            "schema:RadioSeries",
             "schema:VideoGame",
-            "schema:MovieSeries"
+            "schema:CreativeWorkSeason",
+            "schema:Movie",
+            "schema:TVSeries",
+            "schema:VideoGameSeries"
          ],
          "schema:rangeIncludes" : "schema:VideoObject"
       }

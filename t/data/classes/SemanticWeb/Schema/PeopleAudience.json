@@ -11,9 +11,9 @@
          "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
-            "schema:Patient",
+            "schema:MedicalStudy",
             "schema:PeopleAudience",
-            "schema:MedicalStudy"
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -44,8 +44,8 @@
          "rdfs:comment" : "The age or age range for the intended audience or person, for example 3-12 months for infants, 1-5 years for toddlers.",
          "rdfs:label" : "suggestedAge",
          "schema:domainIncludes" : [
-            "schema:SizeSpecification",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:SizeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",

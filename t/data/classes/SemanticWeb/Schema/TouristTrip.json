@@ -5,8 +5,8 @@
       "rdfs:label" : "TouristTrip",
       "rdfs:subClassOf" : "schema:Trip",
       "schema:contributor" : [
-         "collab:IIT-CNR.it",
-         "collab:Tourism"
+         "collab:Tourism",
+         "collab:IIT-CNR.it"
       ],
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
@@ -17,13 +17,13 @@
          "rdfs:comment" : "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
          "rdfs:label" : "touristType",
          "schema:contributor" : [
-            "collab:IIT-CNR.it",
-            "collab:Tourism"
+            "collab:Tourism",
+            "collab:IIT-CNR.it"
          ],
          "schema:domainIncludes" : [
+            "schema:TouristTrip",
             "schema:TouristDestination",
-            "schema:TouristAttraction",
-            "schema:TouristTrip"
+            "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

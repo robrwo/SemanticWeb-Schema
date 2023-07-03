@@ -14,9 +14,9 @@
          "schema:domainIncludes" : [
             "schema:Place",
             "schema:Product",
+            "schema:QualitativeValue",
             "schema:MerchantReturnPolicy",
-            "schema:QuantitativeValue",
-            "schema:QualitativeValue"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
       },
@@ -74,19 +74,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:QualitativeValue",
             "schema:PropertyValue",
+            "schema:QualitativeValue",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:StructuredValue",
-            "schema:MeasurementTypeEnumeration",
-            "schema:QualitativeValue",
             "schema:QuantitativeValue",
             "schema:PropertyValue",
+            "schema:DefinedTerm",
+            "schema:MeasurementTypeEnumeration",
             "schema:Text",
-            "schema:Enumeration"
+            "schema:Enumeration",
+            "schema:QualitativeValue",
+            "schema:StructuredValue"
          ]
       }
    }

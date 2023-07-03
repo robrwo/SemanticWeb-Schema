@@ -13,20 +13,20 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:ActionAccessSpecification",
+            "schema:SpecialAnnouncement",
             "schema:Invoice",
+            "schema:PhysicalActivity",
             "schema:Offer",
             "schema:Service",
-            "schema:SpecialAnnouncement",
             "schema:Product",
-            "schema:Recommendation"
+            "schema:Recommendation",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text",
-            "schema:Thing",
             "schema:PhysicalActivityCategory",
+            "schema:URL",
+            "schema:Thing",
+            "schema:Text",
             "schema:CategoryCode"
          ],
          "schema:source" : [

@@ -17,8 +17,8 @@
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : "schema:PublicationIssue",
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ]
       },
       "schema:pageEnd" : {
@@ -29,13 +29,13 @@
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
             "schema:Article",
-            "schema:Chapter",
             "schema:PublicationVolume",
+            "schema:Chapter",
             "schema:PublicationIssue"
          ],
          "schema:rangeIncludes" : [
-            "schema:Integer",
-            "schema:Text"
+            "schema:Text",
+            "schema:Integer"
          ]
       },
       "schema:pageStart" : {
@@ -45,10 +45,10 @@
          "rdfs:label" : "pageStart",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:Article",
             "schema:Chapter",
+            "schema:PublicationIssue",
             "schema:PublicationVolume",
-            "schema:PublicationIssue"
+            "schema:Article"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -62,9 +62,9 @@
          "rdfs:label" : "pagination",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:PublicationIssue",
             "schema:Article",
             "schema:Chapter",
+            "schema:PublicationIssue",
             "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : "schema:Text"

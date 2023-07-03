@@ -54,13 +54,13 @@
          "rdfs:label" : "funding",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:Event",
-            "schema:Organization",
-            "schema:BioChemEntity",
-            "schema:CreativeWork",
-            "schema:Product",
             "schema:MedicalEntity",
-            "schema:Person"
+            "schema:BioChemEntity",
+            "schema:Product",
+            "schema:CreativeWork",
+            "schema:Person",
+            "schema:Event",
+            "schema:Organization"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -120,9 +120,9 @@
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:URL",
             "schema:DefinedTerm",
-            "schema:PropertyValue",
-            "schema:URL"
+            "schema:PropertyValue"
          ],
          "schema:source" : "www.bioschemas:BioChemEntity"
       },
@@ -133,8 +133,8 @@
          "schema:domainIncludes" : "schema:BioChemEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
             "schema:PropertyValue",
+            "schema:DefinedTerm",
             "schema:URL"
          ],
          "schema:source" : "www.bioschemas:BioChemEntity"
@@ -157,9 +157,9 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:Text",
+            "schema:DefinedTerm",
             "schema:Taxon",
-            "schema:DefinedTerm"
+            "schema:Text"
          ],
          "schema:source" : "http:www.bioschemas.org"
       }

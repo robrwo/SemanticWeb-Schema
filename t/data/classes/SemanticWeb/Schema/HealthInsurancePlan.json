@@ -23,8 +23,8 @@
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
             "schema:Person",
-            "schema:Organization",
-            "schema:HealthInsurancePlan"
+            "schema:HealthInsurancePlan",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },

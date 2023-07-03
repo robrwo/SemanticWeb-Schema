@@ -29,8 +29,8 @@
          "schema:domainIncludes" : "schema:CategoryCode",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CategoryCodeSet",
-            "schema:URL"
+            "schema:URL",
+            "schema:CategoryCodeSet"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
       }

@@ -13,13 +13,13 @@
          "rdfs:label" : "isVariantOf",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:ProductModel"
+            "schema:ProductModel",
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:hasVariant",
          "schema:rangeIncludes" : [
-            "schema:ProductModel",
-            "schema:ProductGroup"
+            "schema:ProductGroup",
+            "schema:ProductModel"
          ]
       },
       "schema:predecessorOf" : {

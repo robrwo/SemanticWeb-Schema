@@ -13,8 +13,8 @@
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : "schema:SellAction",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:warrantyPromise" : {
@@ -22,8 +22,8 @@
          "rdfs:comment" : "The warranty promise(s) included in the offer.",
          "rdfs:label" : "warrantyPromise",
          "schema:domainIncludes" : [
-            "schema:BuyAction",
-            "schema:SellAction"
+            "schema:SellAction",
+            "schema:BuyAction"
          ],
          "schema:rangeIncludes" : "schema:WarrantyPromise",
          "schema:supersededBy" : "schema:warranty"

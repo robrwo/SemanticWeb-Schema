@@ -11,14 +11,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification",
             "schema:CreativeWorkSeries",
             "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:DatedMoneySpecification",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -43,8 +43,8 @@
          "rdfs:label" : "roleName",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:startDate" : {
@@ -52,14 +52,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:DatedMoneySpecification",
+            "schema:Event",
+            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

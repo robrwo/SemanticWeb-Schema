@@ -34,10 +34,10 @@
          "schema:domainIncludes" : "schema:Gene",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:AnatomicalSystem",
             "schema:BioChemEntity",
             "schema:AnatomicalStructure",
-            "schema:DefinedTerm",
-            "schema:AnatomicalSystem"
+            "schema:DefinedTerm"
          ],
          "schema:source" : "www.bioschemas:Gene"
       },
@@ -47,8 +47,8 @@
          "rdfs:label" : "hasBioPolymerSequence",
          "rdfs:subPropertyOf" : "schema:hasRepresentation",
          "schema:domainIncludes" : [
-            "schema:Protein",
-            "schema:Gene"
+            "schema:Gene",
+            "schema:Protein"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

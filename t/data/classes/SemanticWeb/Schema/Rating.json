@@ -44,8 +44,8 @@
          "rdfs:label" : "ratingValue",
          "schema:domainIncludes" : "schema:Rating",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:reviewAspect" : {
@@ -54,8 +54,8 @@
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
             "schema:Rating",
-            "schema:Guide",
-            "schema:Review"
+            "schema:Review",
+            "schema:Guide"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1689"

@@ -40,8 +40,8 @@
          "rdfs:label" : "genre",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:BroadcastChannel",
-            "schema:MusicGroup"
+            "schema:MusicGroup",
+            "schema:BroadcastChannel"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",

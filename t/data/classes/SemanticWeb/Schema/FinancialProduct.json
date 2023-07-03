@@ -28,8 +28,8 @@
             "schema:FinancialService"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:interestRate" : {

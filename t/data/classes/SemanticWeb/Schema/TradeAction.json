@@ -16,8 +16,8 @@
             "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:priceCurrency" : {
@@ -25,11 +25,11 @@
          "rdfs:comment" : "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:Ticket",
+            "schema:Reservation",
+            "schema:Offer",
             "schema:TradeAction",
-            "schema:PriceSpecification",
-            "schema:Reservation"
+            "schema:PriceSpecification"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -40,8 +40,8 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:Demand",
-            "schema:TradeAction"
+            "schema:TradeAction",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:PriceSpecification"
       }

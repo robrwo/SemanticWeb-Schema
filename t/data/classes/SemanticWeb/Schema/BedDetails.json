@@ -22,8 +22,8 @@
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : "schema:BedDetails",
          "schema:rangeIncludes" : [
-            "schema:BedType",
-            "schema:Text"
+            "schema:Text",
+            "schema:BedType"
          ]
       }
    }

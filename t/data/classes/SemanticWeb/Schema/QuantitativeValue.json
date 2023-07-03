@@ -14,9 +14,9 @@
          "schema:domainIncludes" : [
             "schema:Place",
             "schema:Product",
+            "schema:QualitativeValue",
             "schema:MerchantReturnPolicy",
-            "schema:QuantitativeValue",
-            "schema:QualitativeValue"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
       },
@@ -26,8 +26,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -39,9 +39,9 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
+            "schema:MonetaryAmount",
+            "schema:PropertyValue",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
@@ -53,13 +53,13 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitText" : {
@@ -68,8 +68,8 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -80,14 +80,14 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
-            "schema:Text",
             "schema:Boolean",
+            "schema:Text",
             "schema:StructuredValue"
          ]
       },
@@ -97,19 +97,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:QualitativeValue",
             "schema:PropertyValue",
+            "schema:QualitativeValue",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:StructuredValue",
-            "schema:MeasurementTypeEnumeration",
-            "schema:QualitativeValue",
             "schema:QuantitativeValue",
             "schema:PropertyValue",
+            "schema:DefinedTerm",
+            "schema:MeasurementTypeEnumeration",
             "schema:Text",
-            "schema:Enumeration"
+            "schema:Enumeration",
+            "schema:QualitativeValue",
+            "schema:StructuredValue"
          ]
       }
    }

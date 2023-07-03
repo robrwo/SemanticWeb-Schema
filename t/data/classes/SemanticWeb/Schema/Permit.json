@@ -11,8 +11,8 @@
          "rdfs:comment" : "The organization issuing the ticket or permit.",
          "rdfs:label" : "issuedBy",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:Ticket"
+            "schema:Ticket",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:Organization"
       },
@@ -47,13 +47,13 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:LocationFeatureSpecification",
             "schema:Offer",
-            "schema:Demand",
-            "schema:OpeningHoursSpecification",
-            "schema:Permit",
             "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:Permit",
+            "schema:LocationFeatureSpecification",
+            "schema:OpeningHoursSpecification",
+            "schema:PriceSpecification",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -65,8 +65,8 @@
          "rdfs:comment" : "The geographic area where a permit or similar thing is valid.",
          "rdfs:label" : "validIn",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalCredential",
-            "schema:Permit"
+            "schema:Permit",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:rangeIncludes" : "schema:AdministrativeArea",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"

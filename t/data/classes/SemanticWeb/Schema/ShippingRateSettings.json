@@ -13,8 +13,8 @@
          "rdfs:comment" : "Indicates when shipping to a particular [[shippingDestination]] is not available.",
          "rdfs:label" : "doesNotShip",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -49,9 +49,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings",
             "schema:ShippingRateSettings",
-            "schema:DeliveryTimeSettings"
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -74,8 +74,8 @@
          "rdfs:comment" : "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.",
          "rdfs:label" : "shippingRate",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",

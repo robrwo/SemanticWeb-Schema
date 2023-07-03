@@ -12,13 +12,13 @@
          "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
          "rdfs:label" : "associatedAnatomy",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:SuperficialAnatomy",
             "schema:AnatomicalStructure",
+            "schema:SuperficialAnatomy",
             "schema:AnatomicalSystem"
          ]
       },
@@ -27,20 +27,20 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:ActionAccessSpecification",
+            "schema:SpecialAnnouncement",
             "schema:Invoice",
+            "schema:PhysicalActivity",
             "schema:Offer",
             "schema:Service",
-            "schema:SpecialAnnouncement",
             "schema:Product",
-            "schema:Recommendation"
+            "schema:Recommendation",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text",
-            "schema:Thing",
             "schema:PhysicalActivityCategory",
+            "schema:URL",
+            "schema:Thing",
+            "schema:Text",
             "schema:CategoryCode"
          ],
          "schema:source" : [
@@ -64,8 +64,8 @@
          "rdfs:comment" : "Changes in the normal mechanical, physical, and biochemical functions that are associated with this activity or condition.",
          "rdfs:label" : "pathophysiology",
          "schema:domainIncludes" : [
-            "schema:PhysicalActivity",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:PhysicalActivity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Text"

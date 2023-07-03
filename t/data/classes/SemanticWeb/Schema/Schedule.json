@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DayOfWeek"
+            "schema:DayOfWeek",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -52,20 +52,20 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValueDistribution",
-            "schema:MediaObject",
-            "schema:MusicRelease",
-            "schema:Schedule",
-            "schema:Audiobook",
-            "schema:Event",
             "schema:Movie",
+            "schema:MediaObject",
+            "schema:Audiobook",
             "schema:MusicRecording",
-            "schema:Episode"
+            "schema:Event",
+            "schema:Schedule",
+            "schema:MusicRelease",
+            "schema:Episode",
+            "schema:QuantitativeValueDistribution"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1457"
+            "https://github.com/schemaorg/schemaorg/issues/1457",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:endDate" : {
@@ -73,14 +73,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:DatedMoneySpecification",
             "schema:CreativeWorkSeries",
             "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Schedule",
+            "schema:EducationalOccupationalProgram",
+            "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:DatedMoneySpecification",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -93,11 +93,11 @@
          "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
-            "schema:Action",
             "schema:MediaObject",
-            "schema:FoodEstablishmentReservation",
+            "schema:Action",
+            "schema:Schedule",
             "schema:InteractionCounter",
-            "schema:Schedule"
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -134,8 +134,8 @@
          "schema:domainIncludes" : "schema:Schedule",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Duration"
+            "schema:Duration",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
       },
@@ -153,14 +153,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:Schedule",
-            "schema:Event",
-            "schema:EducationalOccupationalProgram",
-            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:DatedMoneySpecification",
+            "schema:Event",
+            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:CreativeWorkSeason",
-            "schema:Role"
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:Role",
+            "schema:EducationalOccupationalProgram",
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -173,15 +173,15 @@
          "rdfs:comment" : "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. E.g. John wrote a book from *January* to December. For media, including audio and video, it's the time offset of the start of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "startTime",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
+            "schema:Action",
             "schema:FoodEstablishmentReservation",
             "schema:InteractionCounter",
-            "schema:Schedule",
-            "schema:Action"
+            "schema:MediaObject",
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
-            "schema:Time",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Time"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       }

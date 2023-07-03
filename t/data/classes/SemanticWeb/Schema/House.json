@@ -13,17 +13,17 @@
          "rdfs:label" : "numberOfRooms",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:House",
-            "schema:SingleFamilyResidence",
             "schema:Apartment",
             "schema:Accommodation",
-            "schema:LodgingBusiness",
+            "schema:SingleFamilyResidence",
+            "schema:Suite",
+            "schema:House",
             "schema:FloorPlan",
-            "schema:Suite"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       }
    }

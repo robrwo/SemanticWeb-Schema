@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:PlayGameAction",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:GameAvailabilityEnumeration"
+            "schema:GameAvailabilityEnumeration",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3058"
       }

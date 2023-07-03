@@ -14,9 +14,9 @@
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
+            "schema:Duration",
             "schema:Number",
-            "schema:Duration"
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
       },
@@ -52,8 +52,8 @@
          "rdfs:label" : "priceType",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:UnitPriceSpecification",
-            "schema:CompoundPriceSpecification"
+            "schema:CompoundPriceSpecification",
+            "schema:UnitPriceSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:PriceTypeEnumeration",
@@ -75,13 +75,13 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitText" : {
@@ -90,8 +90,8 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"

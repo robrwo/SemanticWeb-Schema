@@ -14,8 +14,8 @@
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
             "schema:Rating",
-            "schema:Guide",
-            "schema:Review"
+            "schema:Review",
+            "schema:Guide"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1689"

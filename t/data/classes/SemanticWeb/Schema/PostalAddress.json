@@ -11,10 +11,10 @@
          "rdfs:comment" : "The country. For example, USA. You can also provide the two-letter [ISO 3166-1 alpha-2 country code](http://en.wikipedia.org/wiki/ISO_3166-1).",
          "rdfs:label" : "addressCountry",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
             "schema:PostalAddress",
             "schema:GeoCoordinates",
-            "schema:DefinedRegion"
+            "schema:DefinedRegion",
+            "schema:GeoShape"
          ],
          "schema:rangeIncludes" : [
             "schema:Country",
@@ -53,9 +53,9 @@
          "rdfs:label" : "postalCode",
          "schema:domainIncludes" : [
             "schema:GeoShape",
+            "schema:DefinedRegion",
             "schema:PostalAddress",
-            "schema:GeoCoordinates",
-            "schema:DefinedRegion"
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"

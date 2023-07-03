@@ -14,10 +14,10 @@
          "rdfs:label" : "amenityFeature",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:FloorPlan",
+            "schema:Accommodation",
             "schema:Place",
-            "schema:Accommodation"
+            "schema:FloorPlan",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
@@ -27,8 +27,8 @@
          "rdfs:label" : "floorSize",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
@@ -59,8 +59,8 @@
          "rdfs:comment" : "Indicates the total (available plus unavailable) number of accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAvailableAccommodationUnits]].",
          "rdfs:label" : "numberOfAccommodationUnits",
          "schema:domainIncludes" : [
-            "schema:ApartmentComplex",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:ApartmentComplex"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
@@ -111,8 +111,8 @@
          "rdfs:comment" : "Number of full bathrooms - The total number of full and ¾ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsFull field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsFull+Field).",
          "rdfs:label" : "numberOfFullBathrooms",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number",
@@ -136,17 +136,17 @@
          "rdfs:label" : "numberOfRooms",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:House",
-            "schema:SingleFamilyResidence",
             "schema:Apartment",
             "schema:Accommodation",
-            "schema:LodgingBusiness",
+            "schema:SingleFamilyResidence",
+            "schema:Suite",
+            "schema:House",
             "schema:FloorPlan",
-            "schema:Suite"
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:petsAllowed" : {
@@ -155,10 +155,10 @@
          "rdfs:label" : "petsAllowed",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
+            "schema:LodgingBusiness",
             "schema:FloorPlan",
             "schema:ApartmentComplex",
-            "schema:Accommodation",
-            "schema:LodgingBusiness"
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

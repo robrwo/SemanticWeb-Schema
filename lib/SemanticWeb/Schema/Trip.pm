@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v21.0.2';
+our $VERSION = 'v22.0.0';
 
 =encoding utf8
 
@@ -227,6 +227,34 @@ has sub_trip => (
     is        => 'rw',
     predicate => '_has_sub_trip',
     json_ld   => 'subTrip',
+);
+
+
+=head2 C<trip_origin>
+
+C<tripOrigin>
+
+The location of origin of the trip, prior to any destination(s).
+
+
+A trip_origin should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::Place']>
+
+=back
+
+=head2 C<_has_trip_origin>
+
+A predicate for the L</trip_origin> attribute.
+
+=cut
+
+has trip_origin => (
+    is        => 'rw',
+    predicate => '_has_trip_origin',
+    json_ld   => 'tripOrigin',
 );
 
 

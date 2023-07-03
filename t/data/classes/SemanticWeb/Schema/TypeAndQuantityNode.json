@@ -21,9 +21,9 @@
          "rdfs:label" : "businessFunction",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:Demand",
-            "schema:TypeAndQuantityNode",
-            "schema:Offer"
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : "schema:BusinessFunction"
       },
@@ -48,13 +48,13 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitText" : {
@@ -63,8 +63,8 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:TypeAndQuantityNode",
-            "schema:UnitPriceSpecification",
             "schema:QuantitativeValue",
+            "schema:UnitPriceSpecification",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
