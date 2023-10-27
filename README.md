@@ -4,7 +4,7 @@ SemanticWeb::Schema - Moo classes for http://schema.org/ classes
 
 # VERSION
 
-version v23.0.0
+version v23.0.1
 
 The version number of this distribution is based on the corresponding
 version of schema classes.
