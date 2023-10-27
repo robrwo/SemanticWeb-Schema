@@ -12,8 +12,8 @@
          "rdfs:label" : "price",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:TradeAction",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:TradeAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -26,10 +26,10 @@
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
             "schema:Ticket",
-            "schema:Reservation",
-            "schema:Offer",
+            "schema:PriceSpecification",
             "schema:TradeAction",
-            "schema:PriceSpecification"
+            "schema:Offer",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -39,9 +39,9 @@
          "rdfs:label" : "priceSpecification",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:TradeAction",
-            "schema:Demand"
+            "schema:Demand",
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:PriceSpecification"
       }

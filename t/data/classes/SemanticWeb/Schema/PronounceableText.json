@@ -14,12 +14,12 @@
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
             "schema:CommunicateAction",
-            "schema:WriteAction",
+            "schema:Event",
             "schema:BroadcastService",
             "schema:PronounceableText",
             "schema:CreativeWork",
-            "schema:LinkRole",
-            "schema:Event"
+            "schema:WriteAction",
+            "schema:LinkRole"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

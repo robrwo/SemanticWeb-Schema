@@ -21,13 +21,13 @@
          "rdfs:label" : "funding",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
+            "schema:CreativeWork",
+            "schema:Product",
             "schema:MedicalEntity",
             "schema:BioChemEntity",
-            "schema:Product",
-            "schema:CreativeWork",
-            "schema:Person",
             "schema:Event",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -48,13 +48,13 @@
          "rdfs:label" : "legalStatus",
          "schema:domainIncludes" : [
             "schema:DietarySupplement",
-            "schema:MedicalEntity",
-            "schema:Drug"
+            "schema:Drug",
+            "schema:MedicalEntity"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DrugLegalStatus",
             "schema:MedicalEnumeration",
+            "schema:DrugLegalStatus",
             "schema:Text"
          ]
       },

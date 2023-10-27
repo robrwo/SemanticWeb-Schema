@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A US-style health insurance plan, including PPOs, EPOs, and HMOs. ",
+      "rdfs:comment" : "A US-style health insurance plan, including PPOs, EPOs, and HMOs.",
       "rdfs:label" : "HealthInsurancePlan",
       "rdfs:subClassOf" : "schema:Intangible",
       "schema:isPartOf" : "http:pending.schema.org",
@@ -22,9 +22,9 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:HealthInsurancePlan",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -42,8 +42,8 @@
          "rdfs:comment" : "The tier(s) of drugs offered by this formulary or insurance plan.",
          "rdfs:label" : "healthPlanDrugTier",
          "schema:domainIncludes" : [
-            "schema:HealthPlanFormulary",
-            "schema:HealthInsurancePlan"
+            "schema:HealthInsurancePlan",
+            "schema:HealthPlanFormulary"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

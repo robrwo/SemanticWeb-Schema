@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:ConstraintNode",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Property"
+            "schema:Property",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
       },

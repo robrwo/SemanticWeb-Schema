@@ -13,26 +13,26 @@
          "rdfs:label" : "bed",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:Suite",
-            "schema:HotelRoom"
+            "schema:HotelRoom",
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:BedType",
-            "schema:BedDetails",
-            "schema:Text"
+            "schema:BedDetails"
          ]
       },
       "schema:occupancy" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person",
+         "rdfs:comment" : "The allowed total occupancy for the accommodation in persons (including infants etc). For individual accommodations, this is not necessarily the legal maximum but defines the permitted usage as per the contractual agreement (e.g. a double room used by a single person).\nTypical unit code(s): C62 for person.",
          "rdfs:label" : "occupancy",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
             "schema:Accommodation",
             "schema:SingleFamilyResidence",
             "schema:Suite",
+            "schema:Apartment",
             "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"

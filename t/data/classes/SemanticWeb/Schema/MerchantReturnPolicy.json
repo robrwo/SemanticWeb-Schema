@@ -74,9 +74,9 @@
          "rdfs:comment" : "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
          "rdfs:label" : "itemCondition",
          "schema:domainIncludes" : [
+            "schema:Demand",
             "schema:Offer",
             "schema:MerchantReturnPolicy",
-            "schema:Demand",
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
@@ -118,8 +118,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Date",
             "schema:DateTime",
+            "schema:Date",
             "schema:Integer"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
@@ -149,8 +149,8 @@
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmount",
+            "schema:Number"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
       },
@@ -200,8 +200,8 @@
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Country"
+            "schema:Country",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
       },

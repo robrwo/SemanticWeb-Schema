@@ -14,24 +14,24 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:Invoice",
-            "schema:PhysicalActivity",
-            "schema:Offer",
             "schema:Service",
             "schema:Product",
+            "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
+            "schema:Invoice",
             "schema:Recommendation",
-            "schema:ActionAccessSpecification"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:PhysicalActivityCategory",
             "schema:URL",
-            "schema:Thing",
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       }
    }

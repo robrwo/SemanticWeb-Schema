@@ -25,12 +25,12 @@
          "rdfs:label" : "inLanguage",
          "schema:domainIncludes" : [
             "schema:CommunicateAction",
-            "schema:WriteAction",
+            "schema:Event",
             "schema:BroadcastService",
             "schema:PronounceableText",
             "schema:CreativeWork",
-            "schema:LinkRole",
-            "schema:Event"
+            "schema:WriteAction",
+            "schema:LinkRole"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -44,8 +44,8 @@
          "rdfs:label" : "language",
          "rdfs:subPropertyOf" : "schema:instrument",
          "schema:domainIncludes" : [
-            "schema:CommunicateAction",
-            "schema:WriteAction"
+            "schema:WriteAction",
+            "schema:CommunicateAction"
          ],
          "schema:rangeIncludes" : "schema:Language",
          "schema:supersededBy" : "schema:inLanguage"
@@ -56,21 +56,21 @@
          "rdfs:label" : "recipient",
          "rdfs:subPropertyOf" : "schema:participant",
          "schema:domainIncludes" : [
-            "schema:ReturnAction",
             "schema:Message",
-            "schema:GiveAction",
-            "schema:CommunicateAction",
             "schema:SendAction",
-            "schema:AuthorizeAction",
-            "schema:TipAction",
+            "schema:GiveAction",
+            "schema:PayAction",
+            "schema:CommunicateAction",
             "schema:DonateAction",
-            "schema:PayAction"
+            "schema:ReturnAction",
+            "schema:TipAction",
+            "schema:AuthorizeAction"
          ],
          "schema:rangeIncludes" : [
+            "schema:Person",
             "schema:ContactPoint",
             "schema:Organization",
-            "schema:Audience",
-            "schema:Person"
+            "schema:Audience"
          ]
       }
    }

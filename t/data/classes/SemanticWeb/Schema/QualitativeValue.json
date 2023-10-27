@@ -74,19 +74,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:DefinedTerm",
-            "schema:MeasurementTypeEnumeration",
+            "schema:StructuredValue",
             "schema:Text",
+            "schema:DefinedTerm",
             "schema:Enumeration",
             "schema:QualitativeValue",
-            "schema:StructuredValue"
+            "schema:MeasurementTypeEnumeration"
          ]
       }
    }

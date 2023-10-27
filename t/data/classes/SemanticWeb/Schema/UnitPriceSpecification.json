@@ -14,9 +14,9 @@
          "schema:domainIncludes" : "schema:UnitPriceSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Duration",
             "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Duration"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
       },
@@ -52,8 +52,8 @@
          "rdfs:label" : "priceType",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:CompoundPriceSpecification",
-            "schema:UnitPriceSpecification"
+            "schema:UnitPriceSpecification",
+            "schema:CompoundPriceSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:PriceTypeEnumeration",
@@ -74,10 +74,10 @@
          "rdfs:label" : "unitCode",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
-            "schema:PropertyValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -89,9 +89,9 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
+            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"

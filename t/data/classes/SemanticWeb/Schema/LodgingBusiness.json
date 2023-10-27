@@ -12,10 +12,10 @@
          "rdfs:label" : "amenityFeature",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:Place",
             "schema:FloorPlan",
-            "schema:LodgingBusiness"
+            "schema:Accommodation",
+            "schema:LodgingBusiness",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
@@ -24,11 +24,11 @@
          "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
          "rdfs:label" : "audience",
          "schema:domainIncludes" : [
-            "schema:PlayAction",
             "schema:Event",
-            "schema:LodgingBusiness",
+            "schema:PlayAction",
             "schema:Service",
             "schema:Product",
+            "schema:LodgingBusiness",
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:Audience"
@@ -38,15 +38,15 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:ServiceChannel",
-            "schema:Course",
+            "schema:TouristAttraction",
             "schema:ContactPoint",
+            "schema:Course",
             "schema:LodgingBusiness",
-            "schema:TouristAttraction"
+            "schema:ServiceChannel"
          ],
          "schema:rangeIncludes" : [
-            "schema:Language",
-            "schema:Text"
+            "schema:Text",
+            "schema:Language"
          ]
       },
       "schema:checkinTime" : {
@@ -58,8 +58,8 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:checkoutTime" : {
@@ -81,13 +81,13 @@
          "rdfs:label" : "numberOfRooms",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:Accommodation",
-            "schema:SingleFamilyResidence",
-            "schema:Suite",
-            "schema:House",
             "schema:FloorPlan",
-            "schema:LodgingBusiness"
+            "schema:LodgingBusiness",
+            "schema:House",
+            "schema:Suite",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment",
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -100,14 +100,14 @@
          "rdfs:label" : "petsAllowed",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:FloorPlan",
             "schema:ApartmentComplex",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:Text"
          ]
       },
       "schema:starRating" : {

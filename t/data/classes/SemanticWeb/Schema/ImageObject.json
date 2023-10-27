@@ -27,9 +27,9 @@
          "rdfs:label" : "embeddedTextCaption",
          "rdfs:subPropertyOf" : "schema:caption",
          "schema:domainIncludes" : [
+            "schema:AudioObject",
             "schema:VideoObject",
-            "schema:ImageObject",
-            "schema:AudioObject"
+            "schema:ImageObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

@@ -12,8 +12,8 @@
          "rdfs:label" : "bookingAgent",
          "schema:domainIncludes" : "schema:Reservation",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:supersededBy" : "schema:broker"
       },
@@ -30,9 +30,9 @@
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
             "schema:Order",
-            "schema:Invoice",
             "schema:Reservation",
-            "schema:Service"
+            "schema:Service",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -52,10 +52,10 @@
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
             "schema:Ticket",
-            "schema:Reservation",
-            "schema:Offer",
+            "schema:PriceSpecification",
             "schema:TradeAction",
-            "schema:PriceSpecification"
+            "schema:Offer",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -73,17 +73,17 @@
          "schema:domainIncludes" : [
             "schema:Reservation",
             "schema:Service",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:ParcelDelivery",
             "schema:Invoice",
+            "schema:EducationalOccupationalProgram",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:CreativeWork",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2289",
@@ -127,9 +127,9 @@
             "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:PriceSpecification",
             "schema:Number",
-            "schema:PriceSpecification"
+            "schema:Text"
          ]
       },
       "schema:underName" : {
@@ -137,12 +137,12 @@
          "rdfs:comment" : "The person or organization the reservation or ticket is for.",
          "rdfs:label" : "underName",
          "schema:domainIncludes" : [
-            "schema:Reservation",
-            "schema:Ticket"
+            "schema:Ticket",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

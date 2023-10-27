@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -515,7 +515,7 @@ has requires_subscription => (
 
 The [SHA-2](https://en.wikipedia.org/wiki/SHA-2) SHA256 hash of the content
 of the item. For example, a zero-length input has value
-'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'
+'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.
 
 
 A sha256 should be one of the following types:
@@ -578,7 +578,8 @@ has start_time => (
 
 C<uploadDate>
 
-Date when this media object was uploaded to this site.
+Date (including time if available) when this media object was uploaded to
+this site.
 
 
 A upload_date should be one of the following types:

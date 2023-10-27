@@ -29,8 +29,8 @@
          "schema:domainIncludes" : "schema:Article",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
       },
@@ -41,10 +41,10 @@
          "rdfs:label" : "pageEnd",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:Article",
-            "schema:PublicationVolume",
             "schema:Chapter",
-            "schema:PublicationIssue"
+            "schema:PublicationIssue",
+            "schema:PublicationVolume",
+            "schema:Article"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -58,10 +58,10 @@
          "rdfs:label" : "pageStart",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
+            "schema:Article",
             "schema:Chapter",
             "schema:PublicationIssue",
-            "schema:PublicationVolume",
-            "schema:Article"
+            "schema:PublicationVolume"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -75,10 +75,10 @@
          "rdfs:label" : "pagination",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:Article",
             "schema:Chapter",
             "schema:PublicationIssue",
-            "schema:PublicationVolume"
+            "schema:PublicationVolume",
+            "schema:Article"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },

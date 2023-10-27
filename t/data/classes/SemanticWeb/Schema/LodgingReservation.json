@@ -15,8 +15,8 @@
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:checkoutTime" : {
@@ -45,8 +45,8 @@
          "rdfs:label" : "lodgingUnitType",
          "schema:domainIncludes" : "schema:LodgingReservation",
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:QualitativeValue"
          ]
       },
       "schema:numAdults" : {
@@ -55,8 +55,8 @@
          "rdfs:label" : "numAdults",
          "schema:domainIncludes" : "schema:LodgingReservation",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numChildren" : {
@@ -65,8 +65,8 @@
          "rdfs:label" : "numChildren",
          "schema:domainIncludes" : "schema:LodgingReservation",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:QuantitativeValue"
          ]
       }
    }

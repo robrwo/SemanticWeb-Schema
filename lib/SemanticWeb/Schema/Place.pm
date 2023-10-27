@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -1163,7 +1163,7 @@ has photos => (
 
 C<publicAccess>
 
-A flag to signal that the L<SemanticWeb::Schema::Place> is open to public visitors.  If this property is omitted there is no assumed default boolean value
+A flag to signal that the L<SemanticWeb::Schema::Place> is open to public visitors.  If this property is omitted there is no assumed default boolean value.
 
 A public_access should be one of the following types:
 

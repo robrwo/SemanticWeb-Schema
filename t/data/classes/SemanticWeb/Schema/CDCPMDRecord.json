@@ -161,13 +161,13 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:RealEstateListing",
-            "schema:JobPosting",
             "schema:SpecialAnnouncement",
+            "schema:JobPosting",
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",

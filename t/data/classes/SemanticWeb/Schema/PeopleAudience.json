@@ -12,8 +12,8 @@
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
             "schema:MedicalStudy",
-            "schema:PeopleAudience",
-            "schema:Patient"
+            "schema:Patient",
+            "schema:PeopleAudience"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -60,8 +60,8 @@
             "schema:SizeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:GenderType"
+            "schema:GenderType",
+            "schema:Text"
          ]
       },
       "schema:suggestedMaxAge" : {

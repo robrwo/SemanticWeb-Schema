@@ -27,10 +27,10 @@
          "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure.",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
-            "schema:Patient",
-            "schema:TherapeuticProcedure",
             "schema:DrugClass",
-            "schema:MedicalCondition"
+            "schema:Patient",
+            "schema:MedicalCondition",
+            "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:Drug"
@@ -41,8 +41,8 @@
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
             "schema:MedicalStudy",
-            "schema:PeopleAudience",
-            "schema:Patient"
+            "schema:Patient",
+            "schema:PeopleAudience"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"

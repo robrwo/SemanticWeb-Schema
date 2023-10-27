@@ -4,8 +4,8 @@
       "rdfs:comment" : "An educational organization.",
       "rdfs:label" : "EducationalOrganization",
       "rdfs:subClassOf" : [
-         "schema:CivicStructure",
-         "schema:Organization"
+         "schema:Organization",
+         "schema:CivicStructure"
       ]
    },
    "properties" : {

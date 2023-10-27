@@ -12,11 +12,11 @@
          "rdfs:comment" : "The currency in which the monetary amount is expressed.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "currency",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:ExchangeRateSpecification",
             "schema:MonetaryAmountDistribution",
-            "schema:LoanOrCredit",
-            "schema:MonetaryAmount"
+            "schema:ExchangeRateSpecification",
+            "schema:DatedMoneySpecification",
+            "schema:MonetaryAmount",
+            "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
@@ -27,8 +27,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -40,10 +40,10 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:PropertyValueSpecification",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },
@@ -53,17 +53,17 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:PriceSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:Permit",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:validThrough" : {
@@ -72,17 +72,17 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
             "schema:OpeningHoursSpecification",
-            "schema:Demand",
+            "schema:JobPosting",
             "schema:PriceSpecification",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:value" : {
@@ -91,15 +91,15 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
             "schema:MonetaryAmount",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
+            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text",
-            "schema:StructuredValue"
+            "schema:Text"
          ]
       }
    }

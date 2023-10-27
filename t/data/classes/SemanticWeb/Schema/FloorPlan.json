@@ -14,21 +14,21 @@
          "rdfs:label" : "amenityFeature",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:Place",
             "schema:FloorPlan",
-            "schema:LodgingBusiness"
+            "schema:Accommodation",
+            "schema:LodgingBusiness",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:LocationFeatureSpecification"
       },
       "schema:floorSize" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard ",
+         "rdfs:comment" : "The size of the accommodation, e.g. in square meter or squarefoot.\nTypical unit code(s): MTK for square meter, FTK for square foot, or YDK for square yard.",
          "rdfs:label" : "floorSize",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
@@ -49,8 +49,8 @@
          "schema:domainIncludes" : "schema:FloorPlan",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:ImageObject"
+            "schema:ImageObject",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2690"
       },
@@ -101,8 +101,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
       },
@@ -123,8 +123,8 @@
          "rdfs:comment" : "Number of partial bathrooms - The total number of half and ¼ bathrooms in an [[Accommodation]]. This corresponds to the [BathroomsPartial field in RESO](https://ddwiki.reso.org/display/DDW17/BathroomsPartial+Field). ",
          "rdfs:label" : "numberOfPartialBathrooms",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:FloorPlan"
+            "schema:FloorPlan",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Number",
@@ -136,13 +136,13 @@
          "rdfs:label" : "numberOfRooms",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Apartment",
-            "schema:Accommodation",
-            "schema:SingleFamilyResidence",
-            "schema:Suite",
-            "schema:House",
             "schema:FloorPlan",
-            "schema:LodgingBusiness"
+            "schema:LodgingBusiness",
+            "schema:House",
+            "schema:Suite",
+            "schema:SingleFamilyResidence",
+            "schema:Apartment",
+            "schema:Accommodation"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -155,14 +155,14 @@
          "rdfs:label" : "petsAllowed",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:LodgingBusiness",
-            "schema:FloorPlan",
             "schema:ApartmentComplex",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:FloorPlan",
+            "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Boolean"
+            "schema:Boolean",
+            "schema:Text"
          ]
       }
    }

@@ -19,12 +19,12 @@
          "rdfs:label" : "track",
          "schema:contributor" : "collab:MBZ",
          "schema:domainIncludes" : [
-            "schema:MusicPlaylist",
-            "schema:MusicGroup"
+            "schema:MusicGroup",
+            "schema:MusicPlaylist"
          ],
          "schema:rangeIncludes" : [
-            "schema:MusicRecording",
-            "schema:ItemList"
+            "schema:ItemList",
+            "schema:MusicRecording"
          ]
       },
       "schema:tracks" : {

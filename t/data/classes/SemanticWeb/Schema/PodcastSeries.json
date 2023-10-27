@@ -13,18 +13,18 @@
          "rdfs:comment" : "An actor, e.g. in TV, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.",
          "rdfs:label" : "actor",
          "schema:domainIncludes" : [
-            "schema:VideoGameSeries",
-            "schema:MovieSeries",
-            "schema:Episode",
-            "schema:Clip",
-            "schema:VideoGame",
             "schema:CreativeWorkSeason",
-            "schema:VideoObject",
-            "schema:Movie",
-            "schema:PodcastSeries",
-            "schema:TVSeries",
             "schema:RadioSeries",
-            "schema:Event"
+            "schema:VideoObject",
+            "schema:TVSeries",
+            "schema:VideoGame",
+            "schema:Event",
+            "schema:Episode",
+            "schema:PodcastSeries",
+            "schema:Movie",
+            "schema:VideoGameSeries",
+            "schema:Clip",
+            "schema:MovieSeries"
          ],
          "schema:rangeIncludes" : "schema:Person"
       },
@@ -38,8 +38,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DataFeed",
-            "schema:URL"
+            "schema:URL",
+            "schema:DataFeed"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/373"
       }

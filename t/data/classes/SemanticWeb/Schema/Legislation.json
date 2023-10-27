@@ -99,8 +99,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
       },
@@ -190,8 +190,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
       }

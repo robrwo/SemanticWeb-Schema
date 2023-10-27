@@ -13,8 +13,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -26,19 +26,19 @@
          "rdfs:label" : "measurementMethod",
          "rdfs:subPropertyOf" : "schema:measurementTechnique",
          "schema:domainIncludes" : [
+            "schema:DataCatalog",
             "schema:Observation",
+            "schema:StatisticalVariable",
             "schema:DataDownload",
             "schema:Dataset",
-            "schema:PropertyValue",
-            "schema:DataCatalog",
-            "schema:StatisticalVariable"
+            "schema:PropertyValue"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:URL",
             "schema:Text",
-            "schema:MeasurementMethodEnum"
+            "schema:DefinedTerm",
+            "schema:MeasurementMethodEnum",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
       },
@@ -47,19 +47,19 @@
          "rdfs:comment" : "A technique, method or technology used in an [[Observation]], [[StatisticalVariable]] or [[Dataset]] (or [[DataDownload]], [[DataCatalog]]), corresponding to the method used for measuring the corresponding variable(s) (for datasets, described using [[variableMeasured]]; for [[Observation]], a [[StatisticalVariable]]). Often but not necessarily each [[variableMeasured]] will have an explicit representation as (or mapping to) an property such as those defined in Schema.org, or other RDF vocabularies and \"knowledge graphs\". In that case the subproperty of [[variableMeasured]] called [[measuredProperty]] is applicable.\n    \nThe [[measurementTechnique]] property helps when extra clarification is needed about how a [[measuredProperty]] was measured. This is oriented towards scientific and scholarly dataset publication but may have broader applicability; it is not intended as a full representation of measurement, but can often serve as a high level summary for dataset discovery. \n\nFor example, if [[variableMeasured]] is: molecule concentration, [[measurementTechnique]] could be: \"mass spectrometry\" or \"nmr spectroscopy\" or \"colorimetry\" or \"immunofluorescence\". If the [[variableMeasured]] is \"depression rating\", the [[measurementTechnique]] could be \"Zung Scale\" or \"HAM-D\" or \"Beck Depression Inventory\". \n\nIf there are several [[variableMeasured]] properties recorded for some given data object, use a [[PropertyValue]] for each [[variableMeasured]] and attach the corresponding [[measurementTechnique]]. The value can also be from an enumeration, organized as a [[MeasurementMetholdEnumeration]].",
          "rdfs:label" : "measurementTechnique",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
-            "schema:Observation",
-            "schema:Dataset",
-            "schema:DataCatalog",
             "schema:StatisticalVariable",
-            "schema:DataDownload"
+            "schema:Dataset",
+            "schema:DataDownload",
+            "schema:DataCatalog",
+            "schema:PropertyValue",
+            "schema:Observation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
             "schema:URL",
+            "schema:MeasurementMethodEnum",
             "schema:Text",
-            "schema:MeasurementMethodEnum"
+            "schema:DefinedTerm"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
       },
@@ -69,10 +69,10 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:PropertyValueSpecification",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },
@@ -82,8 +82,8 @@
          "rdfs:label" : "propertyID",
          "schema:domainIncludes" : "schema:PropertyValue",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:unitCode" : {
@@ -92,10 +92,10 @@
          "rdfs:label" : "unitCode",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
-            "schema:PropertyValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -107,9 +107,9 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
+            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -120,15 +120,15 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
             "schema:MonetaryAmount",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
+            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text",
-            "schema:StructuredValue"
+            "schema:Text"
          ]
       },
       "schema:valueReference" : {
@@ -137,19 +137,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:DefinedTerm",
-            "schema:MeasurementTypeEnumeration",
+            "schema:StructuredValue",
             "schema:Text",
+            "schema:DefinedTerm",
             "schema:Enumeration",
             "schema:QualitativeValue",
-            "schema:StructuredValue"
+            "schema:MeasurementTypeEnumeration"
          ]
       }
    }

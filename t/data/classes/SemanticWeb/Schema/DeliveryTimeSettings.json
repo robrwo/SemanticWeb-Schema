@@ -25,8 +25,8 @@
          "rdfs:comment" : "This can be marked 'true' to indicate that some published [[DeliveryTimeSettings]] or [[ShippingRateSettings]] are intended to apply to all [[OfferShippingDetails]] published by the same merchant, when referenced by a [[shippingSettingsLink]] in those settings. It is not meaningful to use a 'true' value for this property alongside a transitTimeLabel (for [[DeliveryTimeSettings]]) or shippingLabel (for [[ShippingRateSettings]]), since this property is for use with unlabelled settings.",
          "rdfs:label" : "isUnlabelledFallback",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
-            "schema:DeliveryTimeSettings"
+            "schema:DeliveryTimeSettings",
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -37,9 +37,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:DeliveryTimeSettings",
             "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:DeliveryTimeSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -50,8 +50,8 @@
          "rdfs:comment" : "Label to match an [[OfferShippingDetails]] with a [[DeliveryTimeSettings]] (within the context of a [[shippingSettingsLink]] cross-reference).",
          "rdfs:label" : "transitTimeLabel",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:DeliveryTimeSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

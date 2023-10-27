@@ -25,9 +25,9 @@
          "rdfs:label" : "eligibleTransactionVolume",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:PriceSpecification",
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:PriceSpecification"
       },
@@ -53,8 +53,8 @@
          "rdfs:label" : "price",
          "schema:domainIncludes" : [
             "schema:Offer",
-            "schema:TradeAction",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:TradeAction"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
@@ -67,10 +67,10 @@
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
             "schema:Ticket",
-            "schema:Reservation",
-            "schema:Offer",
+            "schema:PriceSpecification",
             "schema:TradeAction",
-            "schema:PriceSpecification"
+            "schema:Offer",
+            "schema:Reservation"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -80,17 +80,17 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:PriceSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:Permit",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:validThrough" : {
@@ -99,17 +99,17 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
             "schema:OpeningHoursSpecification",
-            "schema:Demand",
+            "schema:JobPosting",
             "schema:PriceSpecification",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:valueAddedTaxIncluded" : {

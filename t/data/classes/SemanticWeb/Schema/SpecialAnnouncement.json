@@ -16,8 +16,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:LocalBusiness",
-            "schema:CivicStructure"
+            "schema:CivicStructure",
+            "schema:LocalBusiness"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2514"
       },
@@ -27,24 +27,24 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:Invoice",
-            "schema:PhysicalActivity",
-            "schema:Offer",
             "schema:Service",
             "schema:Product",
+            "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
+            "schema:Invoice",
             "schema:Recommendation",
-            "schema:ActionAccessSpecification"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:PhysicalActivityCategory",
             "schema:URL",
-            "schema:Thing",
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:datePosted" : {
@@ -53,13 +53,13 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:RealEstateListing",
-            "schema:JobPosting",
             "schema:SpecialAnnouncement",
+            "schema:JobPosting",
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -85,10 +85,10 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Dataset",
             "schema:URL",
             "schema:WebContent",
-            "schema:Observation",
-            "schema:Dataset"
+            "schema:Observation"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -120,8 +120,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -156,8 +156,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -168,8 +168,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -183,8 +183,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DataFeed",
-            "schema:URL"
+            "schema:URL",
+            "schema:DataFeed"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/373"
       }

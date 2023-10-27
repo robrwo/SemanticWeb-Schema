@@ -26,8 +26,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -39,10 +39,10 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:PropertyValueSpecification",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },
@@ -52,10 +52,10 @@
          "rdfs:label" : "unitCode",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
-            "schema:PropertyValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue",
+            "schema:TypeAndQuantityNode"
          ],
          "schema:rangeIncludes" : [
             "schema:URL",
@@ -67,9 +67,9 @@
          "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
-            "schema:TypeAndQuantityNode",
-            "schema:QuantitativeValue",
             "schema:UnitPriceSpecification",
+            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -80,15 +80,15 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValue",
             "schema:MonetaryAmount",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
+            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text",
-            "schema:StructuredValue"
+            "schema:Text"
          ]
       },
       "schema:valueReference" : {
@@ -97,19 +97,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:QualitativeValue",
-            "schema:QuantitativeValue"
+            "schema:QualitativeValue"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
             "schema:PropertyValue",
-            "schema:DefinedTerm",
-            "schema:MeasurementTypeEnumeration",
+            "schema:StructuredValue",
             "schema:Text",
+            "schema:DefinedTerm",
             "schema:Enumeration",
             "schema:QualitativeValue",
-            "schema:StructuredValue"
+            "schema:MeasurementTypeEnumeration"
          ]
       }
    }

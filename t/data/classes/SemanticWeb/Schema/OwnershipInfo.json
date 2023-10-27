@@ -40,8 +40,8 @@
          "rdfs:label" : "typeOfGood",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OwnershipInfo",
-            "schema:TypeAndQuantityNode"
+            "schema:TypeAndQuantityNode",
+            "schema:OwnershipInfo"
          ],
          "schema:rangeIncludes" : [
             "schema:Service",

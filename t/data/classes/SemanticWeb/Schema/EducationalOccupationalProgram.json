@@ -32,8 +32,8 @@
          "rdfs:label" : "dayOfWeek",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : "schema:DayOfWeek"
       },
@@ -46,9 +46,9 @@
             "schema:Course"
          ],
          "schema:rangeIncludes" : [
-            "schema:EducationalOccupationalCredential",
+            "schema:Text",
             "schema:URL",
-            "schema:Text"
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -69,18 +69,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
+            "schema:Schedule",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
             "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -89,8 +89,8 @@
          "rdfs:comment" : "A financial aid type or program which students may use to pay for tuition or fees associated with the program.",
          "rdfs:label" : "financialAidEligible",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Course"
+            "schema:Course",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -137,21 +137,21 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation",
+            "schema:WorkBasedProgram",
             "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2192",
             "https://github.com/schemaorg/schemaorg/issues/2460",
             "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/2192"
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:occupationalCredentialAwarded" : {
@@ -164,8 +164,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
+            "schema:URL",
             "schema:EducationalOccupationalCredential"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
@@ -175,14 +175,14 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
+            "schema:MenuItem",
+            "schema:Product",
             "schema:Event",
+            "schema:EducationalOccupationalProgram",
+            "schema:AggregateOffer",
             "schema:Trip",
             "schema:Service",
-            "schema:Product",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:MenuItem",
-            "schema:AggregateOffer"
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
@@ -198,10 +198,10 @@
          "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
+            "schema:Course",
             "schema:EducationalOccupationalCredential",
-            "schema:AlignmentObject",
-            "schema:Course"
+            "schema:Text",
+            "schema:AlignmentObject"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -224,17 +224,17 @@
          "schema:domainIncludes" : [
             "schema:Reservation",
             "schema:Service",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:ParcelDelivery",
             "schema:Invoice",
+            "schema:EducationalOccupationalProgram",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:CreativeWork",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2289",
@@ -255,14 +255,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:Event",
-            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:Event",
             "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeason"
+            "schema:Schedule",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",
@@ -311,8 +311,8 @@
          "rdfs:comment" : "The estimated salary earned while in the program.",
          "rdfs:label" : "trainingSalary",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:WorkBasedProgram",
+            "schema:EducationalOccupationalProgram"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmountDistribution",

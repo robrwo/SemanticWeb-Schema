@@ -14,11 +14,11 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:MoneyTransfer",
+            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
             "schema:DatedMoneySpecification",
-            "schema:InvestmentOrDeposit"
+            "schema:MoneyTransfer",
+            "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : [
             "schema:MonetaryAmount",

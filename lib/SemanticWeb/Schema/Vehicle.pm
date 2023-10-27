@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -471,7 +471,7 @@ C<mileageFromOdometer>
 
 The total distance travelled by the particular vehicle since its initial
 production, as read from its odometer. Typical unit code(s): KMT for
-kilometers, SMI for statute miles
+kilometers, SMI for statute miles.
 
 
 A mileage_from_odometer should be one of the following types:
@@ -558,7 +558,7 @@ has number_of_airbags => (
 
 C<numberOfAxles>
 
-The number of axles. Typical unit code(s): C62
+The number of axles. Typical unit code(s): C62.
 
 
 A number_of_axles should be one of the following types:
@@ -588,7 +588,7 @@ has number_of_axles => (
 
 C<numberOfDoors>
 
-The number of doors. Typical unit code(s): C62
+The number of doors. Typical unit code(s): C62.
 
 
 A number_of_doors should be one of the following types:
@@ -619,7 +619,7 @@ has number_of_doors => (
 C<numberOfForwardGears>
 
 The total number of forward gears available for the transmission system of
-the vehicle. Typical unit code(s): C62
+the vehicle. Typical unit code(s): C62.
 
 
 A number_of_forward_gears should be one of the following types:
@@ -650,7 +650,7 @@ has number_of_forward_gears => (
 C<numberOfPreviousOwners>
 
 The number of owners of the vehicle, including the current one. Typical
-unit code(s): C62
+unit code(s): C62.
 
 
 A number_of_previous_owners should be one of the following types:
@@ -791,7 +791,7 @@ C<seatingCapacity>
 
 The number of persons that can be seated (e.g. in a vehicle), both in terms
 of the physical space available, and in terms of limitations set by law.
-Typical unit code(s): C62 for persons 
+Typical unit code(s): C62 for persons.
 
 
 A seating_capacity should be one of the following types:
@@ -881,7 +881,7 @@ has steering_position => (
 
 C<stupidProperty>
 
-This is a StupidProperty! - for testing only
+This is a StupidProperty! - for testing only.
 
 
 A stupid_property should be one of the following types:
@@ -1309,7 +1309,7 @@ has weight_total => (
 
 The distance between the centers of the front and rear wheels. Typical unit
 code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for
-foot/feet
+foot/feet.
 
 
 A wheelbase should be one of the following types:

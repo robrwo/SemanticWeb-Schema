@@ -12,8 +12,8 @@
          "rdfs:label" : "feesAndCommissionsSpecification",
          "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : [
-            "schema:FinancialProduct",
-            "schema:FinancialService"
+            "schema:FinancialService",
+            "schema:FinancialProduct"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",

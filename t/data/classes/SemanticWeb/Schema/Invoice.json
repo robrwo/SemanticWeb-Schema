@@ -27,9 +27,9 @@
          "rdfs:label" : "broker",
          "schema:domainIncludes" : [
             "schema:Order",
-            "schema:Invoice",
             "schema:Reservation",
-            "schema:Service"
+            "schema:Service",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",
@@ -42,24 +42,24 @@
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
             "schema:SpecialAnnouncement",
-            "schema:Invoice",
-            "schema:PhysicalActivity",
-            "schema:Offer",
             "schema:Service",
             "schema:Product",
+            "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
+            "schema:Invoice",
             "schema:Recommendation",
-            "schema:ActionAccessSpecification"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:PhysicalActivityCategory",
             "schema:URL",
-            "schema:Thing",
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Thing"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1741",
-            "https://github.com/schemaorg/schemaorg/issues/2490"
+            "https://github.com/schemaorg/schemaorg/issues/2490",
+            "https://github.com/schemaorg/schemaorg/issues/1741"
          ]
       },
       "schema:confirmationNumber" : {
@@ -78,12 +78,12 @@
          "rdfs:comment" : "Party placing the order or paying the invoice.",
          "rdfs:label" : "customer",
          "schema:domainIncludes" : [
-            "schema:Invoice",
-            "schema:Order"
+            "schema:Order",
+            "schema:Invoice"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:minimumPaymentDue" : {
@@ -112,12 +112,12 @@
          "rdfs:comment" : "The date that payment is due.",
          "rdfs:label" : "paymentDueDate",
          "schema:domainIncludes" : [
-            "schema:Order",
-            "schema:Invoice"
+            "schema:Invoice",
+            "schema:Order"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:paymentMethod" : {
@@ -146,8 +146,8 @@
          "rdfs:label" : "paymentStatus",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:PaymentStatusType",
-            "schema:Text"
+            "schema:Text",
+            "schema:PaymentStatusType"
          ]
       },
       "schema:provider" : {
@@ -157,17 +157,17 @@
          "schema:domainIncludes" : [
             "schema:Reservation",
             "schema:Service",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:ParcelDelivery",
             "schema:Invoice",
+            "schema:EducationalOccupationalProgram",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:CreativeWork",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2289",
@@ -194,8 +194,8 @@
          "rdfs:label" : "totalPaymentDue",
          "schema:domainIncludes" : "schema:Invoice",
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:PriceSpecification"
+            "schema:PriceSpecification",
+            "schema:MonetaryAmount"
          ]
       }
    }

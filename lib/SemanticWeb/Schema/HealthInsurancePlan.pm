@@ -16,13 +16,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-A US-style health insurance plan, including PPOs, EPOs, and HMOs. 
+A US-style health insurance plan, including PPOs, EPOs, and HMOs.
 
 
 

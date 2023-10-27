@@ -50,8 +50,8 @@
          "rdfs:label" : "reviewedBy",
          "schema:domainIncludes" : "schema:WebPage",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:significantLink" : {

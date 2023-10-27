@@ -5,8 +5,8 @@
       "rdfs:label" : "Dentist",
       "rdfs:subClassOf" : [
          "schema:LocalBusiness",
-         "schema:MedicalOrganization",
-         "schema:MedicalBusiness"
+         "schema:MedicalBusiness",
+         "schema:MedicalOrganization"
       ]
    },
    "properties" : {}

@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -71,7 +71,7 @@ The allowed total occupancy for the accommodation in persons (including
 infants etc). For individual accommodations, this is not necessarily the
 legal maximum but defines the permitted usage as per the contractual
 agreement (e.g. a double room used by a single person). Typical unit
-code(s): C62 for person
+code(s): C62 for person.
 
 
 A occupancy should be one of the following types:

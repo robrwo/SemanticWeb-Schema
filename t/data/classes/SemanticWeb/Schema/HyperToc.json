@@ -13,9 +13,9 @@
          "rdfs:comment" : "A media object that encodes this CreativeWork. This property is a synonym for encoding.",
          "rdfs:label" : "associatedMedia",
          "schema:domainIncludes" : [
+            "schema:HyperToc",
             "schema:CreativeWork",
-            "schema:HyperTocEntry",
-            "schema:HyperToc"
+            "schema:HyperTocEntry"
          ],
          "schema:rangeIncludes" : "schema:MediaObject"
       },

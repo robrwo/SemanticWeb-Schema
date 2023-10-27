@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:BioChemEntity",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "http:bioschemas.org",
-         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"
+         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999",
+         "http:bioschemas.org"
       ]
    },
    "properties" : {
@@ -37,8 +37,8 @@
          "rdfs:comment" : "Intended use of the BioChemEntity by humans.",
          "rdfs:label" : "potentialUse",
          "schema:domainIncludes" : [
-            "schema:MolecularEntity",
-            "schema:ChemicalSubstance"
+            "schema:ChemicalSubstance",
+            "schema:MolecularEntity"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",

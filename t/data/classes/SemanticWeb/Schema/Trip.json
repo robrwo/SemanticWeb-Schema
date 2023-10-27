@@ -23,8 +23,8 @@
          "rdfs:label" : "departureTime",
          "schema:domainIncludes" : "schema:Trip",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ]
       },
       "schema:itinerary" : {
@@ -45,14 +45,14 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
+            "schema:MenuItem",
+            "schema:Product",
             "schema:Event",
+            "schema:EducationalOccupationalProgram",
+            "schema:AggregateOffer",
             "schema:Trip",
             "schema:Service",
-            "schema:Product",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:MenuItem",
-            "schema:AggregateOffer"
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
@@ -79,17 +79,17 @@
          "schema:domainIncludes" : [
             "schema:Reservation",
             "schema:Service",
-            "schema:EducationalOccupationalProgram",
-            "schema:CreativeWork",
-            "schema:ParcelDelivery",
             "schema:Invoice",
+            "schema:EducationalOccupationalProgram",
             "schema:Trip",
+            "schema:ParcelDelivery",
+            "schema:CreativeWork",
             "schema:Action"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2289",

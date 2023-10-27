@@ -13,9 +13,9 @@
          "rdfs:comment" : "A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
          "rdfs:label" : "hasMeasurement",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:Product",
-            "schema:SizeSpecification",
-            "schema:Offer"
+            "schema:SizeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue",
@@ -23,7 +23,7 @@
       },
       "schema:sizeGroup" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\"",
+         "rdfs:comment" : "The size group (also known as \"size type\") for a product's size. Size groups are common in the fashion industry to define size segments and suggested audiences for wearable products. Multiple values can be combined, for example \"men's big and tall\", \"petite maternity\" or \"regular\".",
          "rdfs:label" : "sizeGroup",
          "schema:domainIncludes" : "schema:SizeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -66,8 +66,8 @@
             "schema:SizeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:GenderType"
+            "schema:GenderType",
+            "schema:Text"
          ]
       },
       "schema:suggestedMeasurement" : {

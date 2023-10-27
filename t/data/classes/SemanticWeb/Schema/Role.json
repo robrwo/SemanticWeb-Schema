@@ -11,18 +11,18 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:CreativeWorkSeries",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:Schedule",
             "schema:EducationalOccupationalProgram",
+            "schema:Schedule",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:DatedMoneySpecification",
+            "schema:CreativeWorkSeries",
             "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:DatedMoneySpecification",
             "schema:Event"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       },
@@ -32,8 +32,8 @@
          "rdfs:label" : "namedPosition",
          "schema:domainIncludes" : "schema:Role",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:supersededBy" : "schema:roleName"
       },
@@ -52,14 +52,14 @@
          "rdfs:comment" : "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
-            "schema:DatedMoneySpecification",
-            "schema:Event",
-            "schema:Schedule",
             "schema:CreativeWorkSeries",
-            "schema:MerchantReturnPolicySeasonalOverride",
             "schema:Role",
+            "schema:CreativeWorkSeason",
+            "schema:Event",
             "schema:EducationalOccupationalProgram",
-            "schema:CreativeWorkSeason"
+            "schema:Schedule",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:DatedMoneySpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:Date",

@@ -14,8 +14,8 @@
          "rdfs:label" : "hasBioPolymerSequence",
          "rdfs:subPropertyOf" : "schema:hasRepresentation",
          "schema:domainIncludes" : [
-            "schema:Gene",
-            "schema:Protein"
+            "schema:Protein",
+            "schema:Gene"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",

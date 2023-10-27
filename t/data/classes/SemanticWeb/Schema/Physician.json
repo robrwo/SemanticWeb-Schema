@@ -4,8 +4,8 @@
       "rdfs:comment" : "A doctor's office.",
       "rdfs:label" : "Physician",
       "rdfs:subClassOf" : [
-         "schema:MedicalOrganization",
-         "schema:MedicalBusiness"
+         "schema:MedicalBusiness",
+         "schema:MedicalOrganization"
       ]
    },
    "properties" : {

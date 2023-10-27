@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -67,7 +67,7 @@ C<sizeGroup>
 The size group (also known as "size type") for a product's size. Size
 groups are common in the fashion industry to define size segments and
 suggested audiences for wearable products. Multiple values can be combined,
-for example "men's big and tall", "petite maternity" or "regular"
+for example "men's big and tall", "petite maternity" or "regular".
 
 
 A size_group should be one of the following types:

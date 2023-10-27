@@ -15,10 +15,27 @@
       },
       "schema:parentItem" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The parent of a question, answer or item in general.",
+         "rdfs:comment" : "The parent of a question, answer or item in general. Typically used for Q/A discussion threads e.g. a chain of comments with the first comment being an [[Article]] or other [[CreativeWork]]. See also [[comment]] which points from something to a comment about it.",
          "rdfs:label" : "parentItem",
-         "schema:domainIncludes" : "schema:Comment",
-         "schema:rangeIncludes" : "schema:Comment"
+         "schema:domainIncludes" : [
+            "schema:Question",
+            "schema:Comment",
+            "schema:Answer"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:CreativeWork",
+            "schema:Comment"
+         ]
+      },
+      "schema:sharedContent" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A CreativeWork such as an image, video, or audio clip shared as part of this posting.",
+         "rdfs:label" : "sharedContent",
+         "schema:domainIncludes" : [
+            "schema:Comment",
+            "schema:SocialMediaPosting"
+         ],
+         "schema:rangeIncludes" : "schema:CreativeWork"
       },
       "schema:upvoteCount" : {
          "rdf:type" : "rdf:Property",

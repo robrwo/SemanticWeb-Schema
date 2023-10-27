@@ -11,15 +11,15 @@
          "rdfs:comment" : "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. E.g. John wrote a book from January to *December*. For media, including audio and video, it's the time offset of the end of a clip within a larger file.\\n\\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.",
          "rdfs:label" : "endTime",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
-            "schema:Action",
-            "schema:Schedule",
             "schema:InteractionCounter",
+            "schema:MediaObject",
+            "schema:Schedule",
+            "schema:Action",
             "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       },
@@ -28,12 +28,12 @@
          "rdfs:comment" : "Number of people the reservation should accommodate.",
          "rdfs:label" : "partySize",
          "schema:domainIncludes" : [
-            "schema:TaxiReservation",
-            "schema:FoodEstablishmentReservation"
+            "schema:FoodEstablishmentReservation",
+            "schema:TaxiReservation"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:startTime" : {
@@ -48,8 +48,8 @@
             "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Time"
+            "schema:Time",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2493"
       }

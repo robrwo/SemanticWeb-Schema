@@ -4,9 +4,9 @@
       "rdfs:comment" : "A hospital.",
       "rdfs:label" : "Hospital",
       "rdfs:subClassOf" : [
-         "schema:CivicStructure",
+         "schema:MedicalOrganization",
          "schema:EmergencyService",
-         "schema:MedicalOrganization"
+         "schema:CivicStructure"
       ]
    },
    "properties" : {
@@ -33,8 +33,8 @@
          "schema:domainIncludes" : "schema:Hospital",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Dataset",
-            "schema:CDCPMDRecord"
+            "schema:CDCPMDRecord",
+            "schema:Dataset"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },

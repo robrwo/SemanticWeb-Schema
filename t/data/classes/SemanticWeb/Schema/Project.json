@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Organization",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "collab:FundInfoCollab",
-         "https://github.com/schemaorg/schemaorg/issues/383"
+         "https://github.com/schemaorg/schemaorg/issues/383",
+         "collab:FundInfoCollab"
       ]
    },
    "properties" : {}

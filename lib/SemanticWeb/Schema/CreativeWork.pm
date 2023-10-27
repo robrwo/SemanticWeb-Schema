@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -284,7 +284,7 @@ A human-readable summary of specific accessibility features or
 deficiencies, consistent with the other accessibility metadata but
 expressing subtleties such as "short descriptions are present but long
 descriptions will be needed for non-visual users" or "short descriptions
-are present and no long descriptions are needed."
+are present and no long descriptions are needed".
 
 
 A accessibility_summary should be one of the following types:
@@ -2713,7 +2713,7 @@ has schema_version => (
 
 C<sdDatePublished>
 
-Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]]
+Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]].
 
 A sd_date_published should be one of the following types:
 

@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -62,14 +62,15 @@ has downvote_count => (
 
 C<parentItem>
 
-The parent of a question, answer or item in general.
-
+The parent of a question, answer or item in general. Typically used for Q/A discussion threads e.g. a chain of comments with the first comment being an L<SemanticWeb::Schema::Article> or other L<SemanticWeb::Schema::CreativeWork>. See also [[comment]] which points from something to a comment about it.
 
 A parent_item should be one of the following types:
 
 =over
 
 =item C<InstanceOf['SemanticWeb::Schema::Comment']>
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
 
 =back
 
@@ -83,6 +84,35 @@ has parent_item => (
     is        => 'rw',
     predicate => '_has_parent_item',
     json_ld   => 'parentItem',
+);
+
+
+=head2 C<shared_content>
+
+C<sharedContent>
+
+A CreativeWork such as an image, video, or audio clip shared as part of
+this posting.
+
+
+A shared_content should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::CreativeWork']>
+
+=back
+
+=head2 C<_has_shared_content>
+
+A predicate for the L</shared_content> attribute.
+
+=cut
+
+has shared_content => (
+    is        => 'rw',
+    predicate => '_has_shared_content',
+    json_ld   => 'sharedContent',
 );
 
 

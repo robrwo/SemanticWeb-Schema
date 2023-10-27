@@ -35,8 +35,8 @@
          "rdfs:comment" : "The duration of validity of a permit or similar thing.",
          "rdfs:label" : "validFor",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalCredential",
-            "schema:Permit"
+            "schema:Permit",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
@@ -47,17 +47,17 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:PriceSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:Permit",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:validIn" : {

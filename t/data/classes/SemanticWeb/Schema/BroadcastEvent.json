@@ -25,15 +25,15 @@
          "rdfs:comment" : "Languages in which subtitles/captions are available, in [IETF BCP 47 standard format](http://tools.ietf.org/html/bcp47).",
          "rdfs:label" : "subtitleLanguage",
          "schema:domainIncludes" : [
-            "schema:ScreeningEvent",
             "schema:BroadcastEvent",
-            "schema:TVEpisode",
-            "schema:Movie"
+            "schema:ScreeningEvent",
+            "schema:Movie",
+            "schema:TVEpisode"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2110"
       },
@@ -43,8 +43,8 @@
          "rdfs:label" : "videoFormat",
          "schema:domainIncludes" : [
             "schema:BroadcastService",
-            "schema:ScreeningEvent",
-            "schema:BroadcastEvent"
+            "schema:BroadcastEvent",
+            "schema:ScreeningEvent"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

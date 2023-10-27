@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -86,6 +86,36 @@ has address => (
     is        => 'rw',
     predicate => '_has_address',
     json_ld   => 'address',
+);
+
+
+=head2 C<agent_interaction_statistic>
+
+C<agentInteractionStatistic>
+
+The number of completed interactions for this entity, in a particular role
+(the 'agent'), in a particular action (indicated in the statistic), and in
+a particular context (i.e. interactionService).
+
+
+A agent_interaction_statistic should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::InteractionCounter']>
+
+=back
+
+=head2 C<_has_agent_interaction_statistic>
+
+A predicate for the L</agent_interaction_statistic> attribute.
+
+=cut
+
+has agent_interaction_statistic => (
+    is        => 'rw',
+    predicate => '_has_agent_interaction_statistic',
+    json_ld   => 'agentInteractionStatistic',
 );
 
 

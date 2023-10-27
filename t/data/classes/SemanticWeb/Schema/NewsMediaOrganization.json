@@ -21,8 +21,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
@@ -49,13 +49,13 @@
          "rdfs:label" : "diversityPolicy",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
@@ -71,8 +71,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Article"
+            "schema:Article",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
@@ -81,8 +81,8 @@
          "rdfs:comment" : "Statement about ethics policy, e.g. of a [[NewsMediaOrganization]] regarding journalistic and publishing practices, or of a [[Restaurant]], a page describing food source policies. In the case of a [[NewsMediaOrganization]], an ethicsPolicy is typically a statement describing the personal, organizational, and corporate standards of behavior expected by the organization.",
          "rdfs:label" : "ethicsPolicy",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -100,8 +100,8 @@
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
@@ -128,8 +128,8 @@
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
       },
@@ -140,14 +140,14 @@
          "rdfs:subPropertyOf" : "schema:publishingPrinciples",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:NewsMediaOrganization",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:NewsMediaOrganization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CreativeWork",
             "schema:URL",
+            "schema:CreativeWork",
+            "schema:Text",
             "schema:AboutPage"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
@@ -164,8 +164,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       },
@@ -178,8 +178,8 @@
          "schema:domainIncludes" : "schema:NewsMediaOrganization",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
       }

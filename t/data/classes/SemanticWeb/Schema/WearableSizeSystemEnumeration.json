@@ -1,7 +1,7 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "Enumerates common size systems specific for wearable products",
+      "rdfs:comment" : "Enumerates common size systems specific for wearable products.",
       "rdfs:label" : "WearableSizeSystemEnumeration",
       "rdfs:subClassOf" : "schema:SizeSystemEnumeration",
       "schema:isPartOf" : "http:pending.schema.org",

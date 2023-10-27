@@ -33,9 +33,9 @@
             "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
+            "schema:Number",
             "schema:PriceSpecification",
-            "schema:Number"
+            "schema:MonetaryAmount"
          ]
       },
       "schema:benefits" : {
@@ -52,13 +52,13 @@
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
             "schema:RealEstateListing",
-            "schema:JobPosting",
             "schema:SpecialAnnouncement",
+            "schema:JobPosting",
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/2490",
@@ -79,13 +79,13 @@
          "rdfs:comment" : "Educational background needed for the position or Occupation.",
          "rdfs:label" : "educationRequirements",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Text"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/1779",
@@ -131,13 +131,13 @@
          "rdfs:comment" : "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
          "rdfs:label" : "estimatedSalary",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
+            "schema:MonetaryAmount",
             "schema:Number",
-            "schema:MonetaryAmountDistribution",
-            "schema:MonetaryAmount"
+            "schema:MonetaryAmountDistribution"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -155,12 +155,12 @@
          "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
          "rdfs:label" : "experienceRequirements",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:OccupationalExperienceRequirements"
+            "schema:OccupationalExperienceRequirements",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
       },
@@ -170,8 +170,8 @@
          "rdfs:label" : "hiringOrganization",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:incentiveCompensation" : {
@@ -195,8 +195,8 @@
          "rdfs:label" : "industry",
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ]
       },
       "schema:jobBenefits" : {
@@ -248,21 +248,21 @@
          "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
          "rdfs:label" : "occupationalCategory",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation",
+            "schema:WorkBasedProgram",
             "schema:EducationalOccupationalProgram",
-            "schema:WorkBasedProgram"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:CategoryCode"
+            "schema:CategoryCode",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/2192",
             "https://github.com/schemaorg/schemaorg/issues/2460",
             "https://github.com/schemaorg/schemaorg/issues/2289",
-            "https://github.com/schemaorg/schemaorg/issues/2192"
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:physicalRequirement" : {
@@ -272,9 +272,9 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:Text",
             "schema:DefinedTerm",
-            "schema:Text"
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -288,12 +288,12 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Text"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1779",
-            "https://github.com/schemaorg/schemaorg/issues/1698"
+            "https://github.com/schemaorg/schemaorg/issues/1698",
+            "https://github.com/schemaorg/schemaorg/issues/1779"
          ]
       },
       "schema:relevantOccupation" : {
@@ -309,8 +309,8 @@
          "rdfs:comment" : "Responsibilities associated with this role or Occupation.",
          "rdfs:label" : "responsibilities",
          "schema:domainIncludes" : [
-            "schema:JobPosting",
-            "schema:Occupation"
+            "schema:Occupation",
+            "schema:JobPosting"
          ],
          "schema:rangeIncludes" : "schema:Text",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
@@ -332,8 +332,8 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -344,9 +344,9 @@
          "schema:domainIncludes" : "schema:JobPosting",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
+            "schema:Text",
             "schema:DefinedTerm",
-            "schema:Text"
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
       },
@@ -359,12 +359,12 @@
             "schema:JobPosting"
          ],
          "schema:rangeIncludes" : [
-            "schema:DefinedTerm",
-            "schema:Text"
+            "schema:Text",
+            "schema:DefinedTerm"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/2322"
+            "https://github.com/schemaorg/schemaorg/issues/2322",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:specialCommitments" : {
@@ -396,17 +396,17 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
             "schema:OpeningHoursSpecification",
-            "schema:Demand",
+            "schema:JobPosting",
             "schema:PriceSpecification",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:workHours" : {

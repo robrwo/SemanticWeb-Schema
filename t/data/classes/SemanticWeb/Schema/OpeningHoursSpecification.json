@@ -21,8 +21,8 @@
          "rdfs:label" : "dayOfWeek",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:OpeningHoursSpecification",
-            "schema:EducationalOccupationalProgram"
+            "schema:EducationalOccupationalProgram",
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : "schema:DayOfWeek"
       },
@@ -40,17 +40,17 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
+            "schema:PriceSpecification",
+            "schema:Demand",
             "schema:MonetaryAmount",
             "schema:Permit",
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
-            "schema:PriceSpecification",
-            "schema:Demand"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:validThrough" : {
@@ -59,17 +59,17 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:JobPosting",
             "schema:OpeningHoursSpecification",
-            "schema:Demand",
+            "schema:JobPosting",
             "schema:PriceSpecification",
             "schema:MonetaryAmount",
-            "schema:Offer"
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       }
    }

@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -44,7 +44,7 @@ the use of rdf:type in RDF. Text values can be used sparingly, for cases
 where useful information can be added without their being an appropriate
 schema to reference. In the case of text values, the class label should
 follow the schema.org <a
-href="http://schema.org/docs/styleguide.html">style guide</a></p>
+href="http://schema.org/docs/styleguide.html">style guide</a>.</p>
 
 =end html
 

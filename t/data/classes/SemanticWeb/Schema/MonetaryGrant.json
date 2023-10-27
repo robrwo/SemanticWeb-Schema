@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Grant",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "collab:FundInfoCollab",
-         "https://github.com/schemaorg/schemaorg/issues/383"
+         "https://github.com/schemaorg/schemaorg/issues/383",
+         "collab:FundInfoCollab"
       ]
    },
    "properties" : {
@@ -16,11 +16,11 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:MoneyTransfer",
+            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
-            "schema:LoanOrCredit",
             "schema:DatedMoneySpecification",
-            "schema:InvestmentOrDeposit"
+            "schema:MoneyTransfer",
+            "schema:LoanOrCredit"
          ],
          "schema:rangeIncludes" : [
             "schema:MonetaryAmount",
@@ -39,14 +39,14 @@
          "schema:domainIncludes" : [
             "schema:MonetaryGrant",
             "schema:CreativeWork",
-            "schema:Grant",
-            "schema:Person",
             "schema:Event",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person",
+            "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       }
    }

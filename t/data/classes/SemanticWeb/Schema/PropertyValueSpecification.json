@@ -23,8 +23,8 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
+            "schema:PropertyValueSpecification",
             "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
@@ -36,10 +36,10 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PropertyValueSpecification",
             "schema:MonetaryAmount",
-            "schema:PropertyValue",
-            "schema:QuantitativeValue"
+            "schema:PropertyValueSpecification",
+            "schema:QuantitativeValue",
+            "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },

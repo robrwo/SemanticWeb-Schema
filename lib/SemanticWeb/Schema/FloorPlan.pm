@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
@@ -66,7 +66,7 @@ C<floorSize>
 
 The size of the accommodation, e.g. in square meter or squarefoot. Typical
 unit code(s): MTK for square meter, FTK for square foot, or YDK for square
-yard 
+yard.
 
 
 A floor_size should be one of the following types:

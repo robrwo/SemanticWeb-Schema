@@ -43,8 +43,8 @@
          "rdfs:label" : "artist",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicIssue",
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -65,8 +65,8 @@
          "rdfs:label" : "colorist",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:ComicIssue",
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -78,8 +78,8 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:Product",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -92,10 +92,10 @@
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
             "schema:VisualArtwork",
-            "schema:MediaObject",
+            "schema:Person",
             "schema:OfferShippingDetails",
             "schema:Product",
-            "schema:Person"
+            "schema:MediaObject"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -119,9 +119,9 @@
          "rdfs:comment" : "The individual who adds lettering, including speech balloons and sound effects, to artwork.",
          "rdfs:label" : "letterer",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
+            "schema:VisualArtwork",
             "schema:ComicIssue",
-            "schema:VisualArtwork"
+            "schema:ComicStory"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -131,8 +131,8 @@
          "rdfs:comment" : "The individual who draws the primary narrative artwork.",
          "rdfs:label" : "penciler",
          "schema:domainIncludes" : [
-            "schema:ComicStory",
             "schema:ComicIssue",
+            "schema:ComicStory",
             "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
@@ -145,8 +145,8 @@
          "rdfs:subPropertyOf" : "schema:material",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:supersededBy" : "schema:artworkSurface"
       },
@@ -156,9 +156,9 @@
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
             "schema:Product",
-            "schema:OfferShippingDetails",
             "schema:MediaObject",
-            "schema:VisualArtwork"
+            "schema:VisualArtwork",
+            "schema:OfferShippingDetails"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",

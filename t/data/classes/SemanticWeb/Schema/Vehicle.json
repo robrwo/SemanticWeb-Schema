@@ -65,8 +65,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:DriveWheelConfigurationValue",
-            "schema:Text"
+            "schema:Text",
+            "schema:DriveWheelConfigurationValue"
          ]
       },
       "schema:emissionsCO2" : {
@@ -109,13 +109,13 @@
          "rdfs:label" : "fuelType",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:EngineSpecification"
+            "schema:EngineSpecification",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : [
-            "schema:QualitativeValue",
             "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:QualitativeValue"
          ]
       },
       "schema:knownVehicleDamages" : {
@@ -134,14 +134,14 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:mileageFromOdometer" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles",
+         "rdfs:comment" : "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles.",
          "rdfs:label" : "mileageFromOdometer",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
@@ -163,35 +163,35 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:numberOfAxles" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of axles.\\n\\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of axles.\\n\\nTypical unit code(s): C62.",
          "rdfs:label" : "numberOfAxles",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numberOfDoors" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of doors.\\n\\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of doors.\\n\\nTypical unit code(s): C62.",
          "rdfs:label" : "numberOfDoors",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:numberOfForwardGears" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62",
+         "rdfs:comment" : "The total number of forward gears available for the transmission system of the vehicle.\\n\\nTypical unit code(s): C62.",
          "rdfs:label" : "numberOfForwardGears",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
@@ -202,13 +202,13 @@
       },
       "schema:numberOfPreviousOwners" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62",
+         "rdfs:comment" : "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62.",
          "rdfs:label" : "numberOfPreviousOwners",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:payload" : {
@@ -244,14 +244,14 @@
       },
       "schema:seatingCapacity" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons ",
+         "rdfs:comment" : "The number of persons that can be seated (e.g. in a vehicle), both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
          "rdfs:label" : "seatingCapacity",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:speed" : {
@@ -273,11 +273,11 @@
       },
       "schema:stupidProperty" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "This is a StupidProperty! - for testing only",
+         "rdfs:comment" : "This is a StupidProperty! - for testing only.",
          "rdfs:label" : "stupidProperty",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:StupidType"
+            "schema:StupidType",
+            "schema:Vehicle"
          ],
          "schema:isPartOf" : "http:attic.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"
@@ -356,8 +356,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:vehicleSpecialUsage" : {
@@ -395,7 +395,7 @@
       },
       "schema:wheelbase" : {
          "rdf:type" : "rdf:Property",
-         "rdfs:comment" : "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet",
+         "rdfs:comment" : "The distance between the centers of the front and rear wheels.\\n\\nTypical unit code(s): CMT for centimeters, MTR for meters, INH for inches, FOT for foot/feet.",
          "rdfs:label" : "wheelbase",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",

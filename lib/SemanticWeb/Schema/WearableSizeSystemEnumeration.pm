@@ -2,7 +2,7 @@ use utf8;
 
 package SemanticWeb::Schema::WearableSizeSystemEnumeration;
 
-# ABSTRACT: Enumerates common size systems specific for wearable products
+# ABSTRACT: Enumerates common size systems specific for wearable products.
 
 use v5.14;
 use Moo;
@@ -16,13 +16,13 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v22.0.1';
+our $VERSION = 'v23.0.0';
 
 =encoding utf8
 
 =head1 DESCRIPTION
 
-Enumerates common size systems specific for wearable products
+Enumerates common size systems specific for wearable products.
 
 
 

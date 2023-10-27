@@ -55,10 +55,10 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:ItemList",
-            "schema:WebContent",
             "schema:Text",
-            "schema:ListItem"
+            "schema:ListItem",
+            "schema:WebContent",
+            "schema:ItemList"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2832"
       },
@@ -67,15 +67,15 @@
          "rdfs:comment" : "Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.\n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described.\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).",
          "rdfs:label" : "positiveNotes",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Review"
+            "schema:Review",
+            "schema:Product"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:WebContent",
+            "schema:ItemList",
             "schema:Text",
-            "schema:ListItem",
-            "schema:ItemList"
+            "schema:ListItem"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2832"
       },

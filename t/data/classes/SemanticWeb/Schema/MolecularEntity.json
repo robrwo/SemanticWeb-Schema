@@ -77,8 +77,8 @@
          "schema:domainIncludes" : "schema:MolecularEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Text"
          ],
          "schema:source" : "www.bioschemas:MolecularEntity"
       },
@@ -87,8 +87,8 @@
          "rdfs:comment" : "Intended use of the BioChemEntity by humans.",
          "rdfs:label" : "potentialUse",
          "schema:domainIncludes" : [
-            "schema:MolecularEntity",
-            "schema:ChemicalSubstance"
+            "schema:ChemicalSubstance",
+            "schema:MolecularEntity"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedTerm",

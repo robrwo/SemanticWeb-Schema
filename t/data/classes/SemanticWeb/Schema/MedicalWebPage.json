@@ -23,8 +23,8 @@
          "schema:domainIncludes" : "schema:MedicalWebPage",
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalAudience",
-            "schema:MedicalAudienceType"
+            "schema:MedicalAudienceType",
+            "schema:MedicalAudience"
          ]
       }
    }

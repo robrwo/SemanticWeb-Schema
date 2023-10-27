@@ -4,8 +4,8 @@
       "rdfs:comment" : "A ski resort.",
       "rdfs:label" : "SkiResort",
       "rdfs:subClassOf" : [
-         "schema:SportsActivityLocation",
-         "schema:Resort"
+         "schema:Resort",
+         "schema:SportsActivityLocation"
       ]
    },
    "properties" : {}

@@ -4,8 +4,8 @@
       "rdfs:comment" : "A creative work with a visual storytelling format intended to be viewed online, particularly on mobile devices.",
       "rdfs:label" : "AmpStory",
       "rdfs:subClassOf" : [
-         "schema:MediaObject",
-         "schema:CreativeWork"
+         "schema:CreativeWork",
+         "schema:MediaObject"
       ],
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2646"
