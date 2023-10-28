@@ -1,6 +1,10 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Tests]
+  - Migrated to Test2.
+
+  - Stopped using Test::Most.
 
 v23.0.0   2023-10-27 12:59:59+01:00 Europe/London
   [Enhancements]

@@ -1,4 +1,7 @@
-use Test::Most;
+use v5.14;
+use warnings;
+
+use Test2::V0;
 use Test::JSON::More;
 
 use aliased 'SemanticWeb::Schema::Person';

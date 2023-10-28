@@ -1,10 +1,10 @@
 use v5.14;
 use warnings;
 
-use Test::More;
+use Test2::V0;
 
-use_ok('SemanticWeb::Schema::Dentist');
+use SemanticWeb::Schema::Dentist;
 
-ok SemanticWeb::Schema::Dentist->new({})->json_ld, 'json_ld';
+ok( SemanticWeb::Schema::Dentist->new({})->json_ld );
 
 done_testing;
