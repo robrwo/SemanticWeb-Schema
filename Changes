@@ -9,6 +9,8 @@ Revision history for {{$dist->name}}:
 
   - Stopped using Test::Most.
 
+  - Updated author MANIFEST tests to use a maintained module.
+
   [Other]
   - Bumped minimum version of building script to match Perl v5.14.
 

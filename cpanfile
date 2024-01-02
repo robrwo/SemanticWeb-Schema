@@ -37,6 +37,7 @@ on 'configure' => sub {
 on 'develop' => sub {
   requires "Test::CleanNamespaces" => "0.15";
   requires "Test::Compile" => "0";
+  requires "Test::DistManifest" => "0";
   requires "Test::EOF" => "0";
   requires "Test::MinimumVersion" => "0";
   requires "Test::More" => "0";
