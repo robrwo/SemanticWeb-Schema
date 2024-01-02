@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentatopm]
+  - Updated copyright year.
+
   [Tests]
   - Migrated to Test2.
 
