@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:BioChemEntity",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999",
-         "http:bioschemas.org"
+         "http:bioschemas.org",
+         "https://www.ebi.ac.uk/chebi/searchId.do?chebiId=59999"
       ]
    },
    "properties" : {

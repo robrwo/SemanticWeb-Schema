@@ -12,8 +12,8 @@
          "rdfs:label" : "menuAddOn",
          "schema:domainIncludes" : "schema:MenuItem",
          "schema:rangeIncludes" : [
-            "schema:MenuItem",
-            "schema:MenuSection"
+            "schema:MenuSection",
+            "schema:MenuItem"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1541"
       },
@@ -22,8 +22,8 @@
          "rdfs:comment" : "Nutrition information about the recipe or menu item.",
          "rdfs:label" : "nutrition",
          "schema:domainIncludes" : [
-            "schema:Recipe",
-            "schema:MenuItem"
+            "schema:MenuItem",
+            "schema:Recipe"
          ],
          "schema:rangeIncludes" : "schema:NutritionInformation"
       },
@@ -32,19 +32,19 @@
          "rdfs:comment" : "An offer to provide this item&#x2014;for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event. Use [[businessFunction]] to indicate the kind of transaction offered, i.e. sell, lease, etc. This property can also be used to describe a [[Demand]]. While this property is listed as expected on a number of common types, it can be used in others. In that case, using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.\n      ",
          "rdfs:label" : "offers",
          "schema:domainIncludes" : [
-            "schema:MenuItem",
-            "schema:Product",
-            "schema:Event",
             "schema:EducationalOccupationalProgram",
-            "schema:AggregateOffer",
-            "schema:Trip",
+            "schema:MenuItem",
+            "schema:CreativeWork",
             "schema:Service",
-            "schema:CreativeWork"
+            "schema:Trip",
+            "schema:AggregateOffer",
+            "schema:Event",
+            "schema:Product"
          ],
          "schema:inverseOf" : "schema:itemOffered",
          "schema:rangeIncludes" : [
-            "schema:Demand",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
       },
@@ -53,8 +53,8 @@
          "rdfs:comment" : "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc.",
          "rdfs:label" : "suitableForDiet",
          "schema:domainIncludes" : [
-            "schema:Recipe",
-            "schema:MenuItem"
+            "schema:MenuItem",
+            "schema:Recipe"
          ],
          "schema:rangeIncludes" : "schema:RestrictedDiet"
       }

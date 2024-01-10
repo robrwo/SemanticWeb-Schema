@@ -13,8 +13,8 @@
          "rdfs:comment" : "Indicates the populationType common to all members of a [[StatisticalPopulation]] or all cases within the scope of a [[StatisticalVariable]].",
          "rdfs:label" : "populationType",
          "schema:domainIncludes" : [
-            "schema:StatisticalPopulation",
-            "schema:StatisticalVariable"
+            "schema:StatisticalVariable",
+            "schema:StatisticalPopulation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Class",

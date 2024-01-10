@@ -26,8 +26,8 @@
          "rdfs:label" : "roofLoad",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:BusOrCoach",
-            "schema:Car"
+            "schema:Car",
+            "schema:BusOrCoach"
          ],
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : "schema:QuantitativeValue"

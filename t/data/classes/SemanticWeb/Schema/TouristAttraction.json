@@ -15,10 +15,10 @@
          "rdfs:comment" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[inLanguage]].",
          "rdfs:label" : "availableLanguage",
          "schema:domainIncludes" : [
-            "schema:TouristAttraction",
             "schema:ContactPoint",
-            "schema:Course",
             "schema:LodgingBusiness",
+            "schema:TouristAttraction",
+            "schema:Course",
             "schema:ServiceChannel"
          ],
          "schema:rangeIncludes" : [
@@ -35,13 +35,13 @@
             "collab:IIT-CNR.it"
          ],
          "schema:domainIncludes" : [
-            "schema:TouristDestination",
             "schema:TouristTrip",
+            "schema:TouristDestination",
             "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
-            "schema:Text"
+            "schema:Text",
+            "schema:Audience"
          ]
       }
    }

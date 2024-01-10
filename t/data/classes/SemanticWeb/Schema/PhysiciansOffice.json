@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "A doctor's office or clinic.",
+      "rdfs:label" : "PhysiciansOffice",
+      "rdfs:subClassOf" : "schema:Physician"
+   },
+   "properties" : {}
+}

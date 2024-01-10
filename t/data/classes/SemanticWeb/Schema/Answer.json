@@ -14,8 +14,8 @@
          "schema:domainIncludes" : "schema:Answer",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Comment",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:Comment"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
       },
@@ -24,13 +24,13 @@
          "rdfs:comment" : "The parent of a question, answer or item in general. Typically used for Q/A discussion threads e.g. a chain of comments with the first comment being an [[Article]] or other [[CreativeWork]]. See also [[comment]] which points from something to a comment about it.",
          "rdfs:label" : "parentItem",
          "schema:domainIncludes" : [
-            "schema:Question",
             "schema:Comment",
+            "schema:Question",
             "schema:Answer"
          ],
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:Comment"
+            "schema:Comment",
+            "schema:CreativeWork"
          ]
       }
    }

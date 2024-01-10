@@ -4,9 +4,10 @@ package SemanticWeb::Schema::LockerDelivery;
 
 # ABSTRACT: A DeliveryMethod in which an item is made available via locker.
 
+use v5.14;
 use Moo;
 
-extends qw/ SemanticWeb::Schema::DeliveryMethod /;
+extends qw/ SemanticWeb::Schema /;
 
 
 use MooX::JSON_LD 'LockerDelivery';
@@ -15,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v23.0.1';
+our $VERSION = 'v24.0.0';
 
 =encoding utf8
 
@@ -33,7 +34,7 @@ A DeliveryMethod in which an item is made available via locker.
 
 
 
-L<SemanticWeb::Schema::DeliveryMethod>
+L<SemanticWeb::Schema>
 
 =cut
 

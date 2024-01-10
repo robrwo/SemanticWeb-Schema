@@ -29,8 +29,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:WebSite",
             "schema:CreativeWorkSeries",
+            "schema:WebSite",
             "schema:Blog",
             "schema:Dataset"
          ],

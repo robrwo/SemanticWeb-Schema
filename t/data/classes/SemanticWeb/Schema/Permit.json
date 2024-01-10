@@ -47,12 +47,12 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
-            "schema:Demand",
-            "schema:MonetaryAmount",
-            "schema:Permit",
-            "schema:Offer",
             "schema:LocationFeatureSpecification",
+            "schema:Permit",
+            "schema:PriceSpecification",
+            "schema:Offer",
+            "schema:MonetaryAmount",
+            "schema:Demand",
             "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
@@ -65,8 +65,8 @@
          "rdfs:comment" : "The geographic area where a permit or similar thing is valid.",
          "rdfs:label" : "validIn",
          "schema:domainIncludes" : [
-            "schema:Permit",
-            "schema:EducationalOccupationalCredential"
+            "schema:EducationalOccupationalCredential",
+            "schema:Permit"
          ],
          "schema:rangeIncludes" : "schema:AdministrativeArea",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"

@@ -21,13 +21,13 @@
             "collab:IIT-CNR.it"
          ],
          "schema:domainIncludes" : [
-            "schema:TouristDestination",
             "schema:TouristTrip",
+            "schema:TouristDestination",
             "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
-            "schema:Text"
+            "schema:Text",
+            "schema:Audience"
          ]
       }
    }

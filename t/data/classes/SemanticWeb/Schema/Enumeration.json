@@ -17,9 +17,9 @@
          ],
          "schema:isPartOf" : "http:meta.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Property",
+            "schema:Enumeration",
             "schema:Class",
-            "schema:Enumeration"
+            "schema:Property"
          ]
       }
    }

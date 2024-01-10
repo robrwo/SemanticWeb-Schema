@@ -40,12 +40,12 @@
          "rdfs:label" : "validFrom",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PriceSpecification",
-            "schema:Demand",
-            "schema:MonetaryAmount",
-            "schema:Permit",
-            "schema:Offer",
             "schema:LocationFeatureSpecification",
+            "schema:Permit",
+            "schema:PriceSpecification",
+            "schema:Offer",
+            "schema:MonetaryAmount",
+            "schema:Demand",
             "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
@@ -59,13 +59,13 @@
          "rdfs:label" : "validThrough",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:LocationFeatureSpecification",
-            "schema:OpeningHoursSpecification",
             "schema:JobPosting",
+            "schema:Demand",
             "schema:PriceSpecification",
+            "schema:Offer",
             "schema:MonetaryAmount",
-            "schema:Demand"
+            "schema:OpeningHoursSpecification"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",

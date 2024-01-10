@@ -5,8 +5,8 @@
       "rdfs:comment" : "A patient is any person recipient of health care services.",
       "rdfs:label" : "Patient",
       "rdfs:subClassOf" : [
-         "schema:MedicalAudience",
-         "schema:Person"
+         "schema:Person",
+         "schema:MedicalAudience"
       ],
       "schema:isPartOf" : "http:health-lifesci.schema.org"
    },
@@ -16,8 +16,8 @@
          "rdfs:comment" : "One or more alternative conditions considered in the differential diagnosis process as output of a diagnosis process.",
          "rdfs:label" : "diagnosis",
          "schema:domainIncludes" : [
-            "schema:DDxElement",
-            "schema:Patient"
+            "schema:Patient",
+            "schema:DDxElement"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"
@@ -27,9 +27,9 @@
          "rdfs:comment" : "Specifying a drug or medicine used in a medication procedure.",
          "rdfs:label" : "drug",
          "schema:domainIncludes" : [
+            "schema:MedicalCondition",
             "schema:DrugClass",
             "schema:Patient",
-            "schema:MedicalCondition",
             "schema:TherapeuticProcedure"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
@@ -41,8 +41,8 @@
          "rdfs:label" : "healthCondition",
          "schema:domainIncludes" : [
             "schema:MedicalStudy",
-            "schema:Patient",
-            "schema:PeopleAudience"
+            "schema:PeopleAudience",
+            "schema:Patient"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalCondition"

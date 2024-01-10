@@ -31,9 +31,9 @@
          "rdfs:comment" : "The currency of the price, or a price component when attached to [[PriceSpecification]] and its subtypes.\\n\\nUse standard formats: [ISO 4217 currency format](http://en.wikipedia.org/wiki/ISO_4217), e.g. \"USD\"; [Ticker symbol](https://en.wikipedia.org/wiki/List_of_cryptocurrencies) for cryptocurrencies, e.g. \"BTC\"; well known names for [Local Exchange Trading Systems](https://en.wikipedia.org/wiki/Local_exchange_trading_system) (LETS) and other currency types, e.g. \"Ithaca HOUR\".",
          "rdfs:label" : "priceCurrency",
          "schema:domainIncludes" : [
+            "schema:TradeAction",
             "schema:Ticket",
             "schema:PriceSpecification",
-            "schema:TradeAction",
             "schema:Offer",
             "schema:Reservation"
          ],
@@ -73,8 +73,8 @@
          ],
          "schema:rangeIncludes" : [
             "schema:PriceSpecification",
-            "schema:Number",
-            "schema:Text"
+            "schema:Text",
+            "schema:Number"
          ]
       },
       "schema:underName" : {
@@ -82,8 +82,8 @@
          "rdfs:comment" : "The person or organization the reservation or ticket is for.",
          "rdfs:label" : "underName",
          "schema:domainIncludes" : [
-            "schema:Ticket",
-            "schema:Reservation"
+            "schema:Reservation",
+            "schema:Ticket"
          ],
          "schema:rangeIncludes" : [
             "schema:Person",

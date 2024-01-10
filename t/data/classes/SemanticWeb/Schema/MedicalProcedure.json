@@ -60,14 +60,14 @@
          "rdfs:label" : "status",
          "schema:domainIncludes" : [
             "schema:MedicalProcedure",
-            "schema:MedicalStudy",
-            "schema:MedicalCondition"
+            "schema:MedicalCondition",
+            "schema:MedicalStudy"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MedicalStudyStatus",
+            "schema:EventStatusType",
             "schema:Text",
-            "schema:EventStatusType"
+            "schema:MedicalStudyStatus"
          ]
       }
    }

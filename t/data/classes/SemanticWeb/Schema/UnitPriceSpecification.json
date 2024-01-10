@@ -56,8 +56,8 @@
             "schema:CompoundPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceTypeEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:PriceTypeEnumeration"
          ]
       },
       "schema:referenceQuantity" : {
@@ -75,13 +75,13 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
-            "schema:TypeAndQuantityNode"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:unitText" : {
@@ -90,9 +90,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       }

@@ -16,9 +16,9 @@
          "schema:inverseOf" : "schema:parentTaxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Taxon",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "www.bioschemas:Taxon"
       },
@@ -42,9 +42,9 @@
          "schema:inverseOf" : "schema:childTaxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Taxon",
             "schema:Text",
-            "schema:URL",
-            "schema:Taxon"
+            "schema:URL"
          ],
          "schema:source" : "www.bioschemas:Taxon"
       },
@@ -55,9 +55,9 @@
          "schema:domainIncludes" : "schema:Taxon",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:PropertyValue",
-            "schema:Text"
+            "schema:PropertyValue"
          ],
          "schema:source" : "www.bioschemas:Taxon"
       }

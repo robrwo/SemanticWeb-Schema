@@ -13,10 +13,10 @@
          "rdfs:comment" : "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:Product",
             "schema:QualitativeValue",
             "schema:MerchantReturnPolicy",
+            "schema:Product",
+            "schema:Place",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
@@ -28,8 +28,8 @@
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Country",
-            "schema:Text"
+            "schema:Text",
+            "schema:Country"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3001"
       },
@@ -74,10 +74,10 @@
          "rdfs:comment" : "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
          "rdfs:label" : "itemCondition",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:Offer",
             "schema:MerchantReturnPolicy",
-            "schema:Product"
+            "schema:Product",
+            "schema:Offer",
+            "schema:Demand"
          ],
          "schema:rangeIncludes" : "schema:OfferItemCondition"
       },
@@ -119,8 +119,8 @@
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:DateTime",
-            "schema:Date",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
       },
@@ -149,8 +149,8 @@
          "schema:domainIncludes" : "schema:MerchantReturnPolicy",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:Number"
+            "schema:Number",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
       },

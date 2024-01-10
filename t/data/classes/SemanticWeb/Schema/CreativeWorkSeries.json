@@ -14,14 +14,14 @@
          "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
          "rdfs:label" : "endDate",
          "schema:domainIncludes" : [
-            "schema:EducationalOccupationalProgram",
-            "schema:Schedule",
-            "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:DatedMoneySpecification",
-            "schema:CreativeWorkSeries",
             "schema:Role",
             "schema:CreativeWorkSeason",
-            "schema:Event"
+            "schema:DatedMoneySpecification",
+            "schema:MerchantReturnPolicySeasonalOverride",
+            "schema:CreativeWorkSeries",
+            "schema:Event",
+            "schema:EducationalOccupationalProgram",
+            "schema:Schedule"
          ],
          "schema:rangeIncludes" : [
             "schema:DateTime",
@@ -37,8 +37,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:contributor" : "collab:bibex",
          "schema:domainIncludes" : [
-            "schema:WebSite",
             "schema:CreativeWorkSeries",
+            "schema:WebSite",
             "schema:Blog",
             "schema:Dataset"
          ],
@@ -50,17 +50,17 @@
          "rdfs:label" : "startDate",
          "schema:domainIncludes" : [
             "schema:CreativeWorkSeries",
-            "schema:Role",
-            "schema:CreativeWorkSeason",
             "schema:Event",
             "schema:EducationalOccupationalProgram",
+            "schema:Role",
             "schema:Schedule",
+            "schema:DatedMoneySpecification",
             "schema:MerchantReturnPolicySeasonalOverride",
-            "schema:DatedMoneySpecification"
+            "schema:CreativeWorkSeason"
          ],
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
       }

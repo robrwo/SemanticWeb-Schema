@@ -13,8 +13,8 @@
          "rdfs:label" : "appliesToDeliveryMethod",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PaymentChargeSpecification",
-            "schema:DeliveryChargeSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:PaymentChargeSpecification"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       },
@@ -23,18 +23,18 @@
          "rdfs:comment" : "The geographic area where a service or offered item is provided.",
          "rdfs:label" : "areaServed",
          "schema:domainIncludes" : [
-            "schema:Demand",
-            "schema:DeliveryChargeSpecification",
-            "schema:ContactPoint",
             "schema:Organization",
+            "schema:ContactPoint",
+            "schema:DeliveryChargeSpecification",
             "schema:Offer",
+            "schema:Demand",
             "schema:Service"
          ],
          "schema:rangeIncludes" : [
-            "schema:GeoShape",
-            "schema:Place",
             "schema:AdministrativeArea",
-            "schema:Text"
+            "schema:Text",
+            "schema:GeoShape",
+            "schema:Place"
          ]
       },
       "schema:eligibleRegion" : {
@@ -44,15 +44,15 @@
          "rdfs:subPropertyOf" : "schema:areaServed",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:ActionAccessSpecification",
-            "schema:Demand",
             "schema:DeliveryChargeSpecification",
-            "schema:Offer"
+            "schema:Offer",
+            "schema:Demand",
+            "schema:ActionAccessSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:Place",
             "schema:Text",
-            "schema:GeoShape"
+            "schema:GeoShape",
+            "schema:Place"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
       },
@@ -61,17 +61,17 @@
          "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\\n\\nSee also [[eligibleRegion]].\n      ",
          "rdfs:label" : "ineligibleRegion",
          "schema:domainIncludes" : [
-            "schema:MediaObject",
             "schema:DeliveryChargeSpecification",
-            "schema:Offer",
+            "schema:Demand",
             "schema:ActionAccessSpecification",
-            "schema:Demand"
+            "schema:Offer",
+            "schema:MediaObject"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:GeoShape",
-            "schema:Place",
-            "schema:Text"
+            "schema:Place"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2242"
       }

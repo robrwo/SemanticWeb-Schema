@@ -34,8 +34,8 @@
          "schema:domainIncludes" : "schema:MediaReview",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:WebPage",
+            "schema:URL",
             "schema:MediaObject"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"

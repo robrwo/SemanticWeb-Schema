@@ -21,11 +21,11 @@
          "rdfs:comment" : "Physical address of the item.",
          "rdfs:label" : "address",
          "schema:domainIncludes" : [
-            "schema:GeoShape",
             "schema:Organization",
             "schema:Person",
-            "schema:GeoCoordinates",
-            "schema:Place"
+            "schema:GeoShape",
+            "schema:Place",
+            "schema:GeoCoordinates"
          ],
          "schema:rangeIncludes" : [
             "schema:PostalAddress",
@@ -45,8 +45,8 @@
          "rdfs:comment" : "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
          "rdfs:label" : "agentInteractionStatistic",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:InteractionCounter",
@@ -59,8 +59,8 @@
          "schema:domainIncludes" : "schema:Person",
          "schema:inverseOf" : "schema:alumni",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:EducationalOrganization"
+            "schema:EducationalOrganization",
+            "schema:Organization"
          ]
       },
       "schema:award" : {
@@ -68,11 +68,11 @@
          "rdfs:comment" : "An award won by or for this item.",
          "rdfs:label" : "award",
          "schema:domainIncludes" : [
+            "schema:Service",
             "schema:Person",
             "schema:CreativeWork",
-            "schema:Service",
-            "schema:Product",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -82,8 +82,8 @@
          "rdfs:label" : "awards",
          "schema:domainIncludes" : [
             "schema:Person",
-            "schema:Organization",
             "schema:CreativeWork",
+            "schema:Organization",
             "schema:Product"
          ],
          "schema:rangeIncludes" : "schema:Text",
@@ -109,13 +109,13 @@
          "rdfs:label" : "brand",
          "schema:domainIncludes" : [
             "schema:Product",
+            "schema:Service",
             "schema:Organization",
-            "schema:Person",
-            "schema:Service"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
-            "schema:Brand",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Brand"
          ]
       },
       "schema:callSign" : {
@@ -124,8 +124,8 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:Vehicle",
+            "schema:Person",
             "schema:BroadcastService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -162,9 +162,9 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
-            "schema:HealthInsurancePlan",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:HealthInsurancePlan"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -210,9 +210,9 @@
          "rdfs:comment" : "Email address.",
          "rdfs:label" : "email",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -228,9 +228,9 @@
          "rdfs:comment" : "The fax number.",
          "rdfs:label" : "faxNumber",
          "schema:domainIncludes" : [
+            "schema:Person",
             "schema:Organization",
             "schema:Place",
-            "schema:Person",
             "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -248,16 +248,16 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:Organization",
             "schema:Person",
+            "schema:MonetaryGrant",
+            "schema:Organization",
+            "schema:Event",
+            "schema:CreativeWork",
             "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:funding" : {
@@ -266,13 +266,13 @@
          "rdfs:label" : "funding",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:CreativeWork",
-            "schema:Product",
-            "schema:MedicalEntity",
-            "schema:BioChemEntity",
-            "schema:Event",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:Event",
+            "schema:Product",
+            "schema:BioChemEntity",
+            "schema:MedicalEntity",
+            "schema:CreativeWork"
          ],
          "schema:inverseOf" : "schema:fundedItem",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -289,8 +289,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:GenderType"
+            "schema:GenderType",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2341"
       },
@@ -308,8 +308,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:Organization",
+            "schema:Person",
             "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
@@ -319,8 +319,8 @@
          "rdfs:comment" : "A credential awarded to the Person or Organization.",
          "rdfs:label" : "hasCredential",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:EducationalOccupationalCredential",
@@ -340,8 +340,8 @@
          "rdfs:label" : "hasOfferCatalog",
          "schema:domainIncludes" : [
             "schema:Organization",
-            "schema:Person",
-            "schema:Service"
+            "schema:Service",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:OfferCatalog"
       },
@@ -351,8 +351,8 @@
          "rdfs:label" : "hasPOS",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Place"
       },
@@ -361,11 +361,11 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
-            "schema:Person",
-            "schema:OfferShippingDetails",
+            "schema:MediaObject",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:OfferShippingDetails",
+            "schema:VisualArtwork",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -403,8 +403,8 @@
          "rdfs:label" : "interactionStatistic",
          "schema:domainIncludes" : [
             "schema:CreativeWork",
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:InteractionCounter",
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2421"
@@ -415,9 +415,9 @@
          "rdfs:label" : "isicV4",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Place"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -428,8 +428,8 @@
          "schema:domainIncludes" : "schema:Person",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2192"
       },
@@ -446,14 +446,14 @@
          "rdfs:label" : "knowsAbout",
          "schema:contributor" : "collab:TP",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:Text",
             "schema:URL",
-            "schema:Thing",
-            "schema:Text"
+            "schema:Thing"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
       },
@@ -468,8 +468,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Language"
+            "schema:Language",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
       },
@@ -479,8 +479,8 @@
          "rdfs:label" : "makesOffer",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:inverseOf" : "schema:offeredBy",
          "schema:rangeIncludes" : "schema:Offer"
@@ -533,8 +533,8 @@
          "rdfs:label" : "owns",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:OwnershipInfo",
@@ -573,8 +573,8 @@
             "schema:Organization"
          ],
          "schema:rangeIncludes" : [
-            "schema:CreativeWork",
-            "schema:URL"
+            "schema:URL",
+            "schema:CreativeWork"
          ]
       },
       "schema:relatedTo" : {
@@ -590,8 +590,8 @@
          "rdfs:label" : "seeks",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:rangeIncludes" : "schema:Demand"
       },
@@ -615,16 +615,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
+            "schema:Event",
             "schema:MedicalStudy",
             "schema:CreativeWork",
-            "schema:Event",
-            "schema:Organization",
-            "schema:Person"
-         ],
-         "schema:rangeIncludes" : [
+            "schema:Grant",
             "schema:Person",
             "schema:Organization"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:spouse" : {
@@ -641,8 +641,8 @@
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -651,10 +651,10 @@
          "rdfs:comment" : "The telephone number.",
          "rdfs:label" : "telephone",
          "schema:domainIncludes" : [
-            "schema:ContactPoint",
             "schema:Person",
             "schema:Organization",
-            "schema:Place"
+            "schema:Place",
+            "schema:ContactPoint"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -664,8 +664,8 @@
          "rdfs:label" : "vatID",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -675,9 +675,9 @@
          "rdfs:label" : "weight",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:Person",
+            "schema:Product",
             "schema:OfferShippingDetails",
-            "schema:Product"
+            "schema:Person"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"
       },
@@ -688,8 +688,8 @@
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : "schema:Person",
          "schema:rangeIncludes" : [
-            "schema:ContactPoint",
-            "schema:Place"
+            "schema:Place",
+            "schema:ContactPoint"
          ]
       },
       "schema:worksFor" : {

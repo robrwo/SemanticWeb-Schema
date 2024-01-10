@@ -111,15 +111,15 @@
          "rdfs:comment" : "The jurisdiction from which the legislation originates.",
          "rdfs:label" : "legislationJurisdiction",
          "rdfs:subPropertyOf" : [
-            "schema:spatialCoverage",
-            "schema:jurisdiction"
+            "schema:jurisdiction",
+            "schema:spatialCoverage"
          ],
          "schema:contributor" : "collab:ELI",
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:AdministrativeArea"
+            "schema:AdministrativeArea",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
       },
@@ -146,8 +146,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
       },
@@ -161,8 +161,8 @@
          "schema:domainIncludes" : "schema:Legislation",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
       },

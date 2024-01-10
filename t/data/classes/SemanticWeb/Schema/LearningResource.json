@@ -13,14 +13,14 @@
          "rdfs:comment" : "The item being described is intended to assess the competency or learning outcome defined by the referenced term.",
          "rdfs:label" : "assesses",
          "schema:domainIncludes" : [
+            "schema:EducationEvent",
             "schema:LearningResource",
-            "schema:CreativeWork",
-            "schema:EducationEvent"
+            "schema:CreativeWork"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
       },
@@ -34,8 +34,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
             "schema:DefinedTerm",
+            "schema:Text",
             "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
@@ -55,16 +55,16 @@
          "rdfs:comment" : "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
          "rdfs:label" : "educationalLevel",
          "schema:domainIncludes" : [
-            "schema:LearningResource",
             "schema:CreativeWork",
-            "schema:EducationalOccupationalCredential",
-            "schema:EducationEvent"
+            "schema:EducationEvent",
+            "schema:LearningResource",
+            "schema:EducationalOccupationalCredential"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
             "schema:URL",
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
       },
@@ -73,12 +73,12 @@
          "rdfs:comment" : "The purpose of a work in the context of education; for example, 'assignment', 'group work'.",
          "rdfs:label" : "educationalUse",
          "schema:domainIncludes" : [
-            "schema:LearningResource",
-            "schema:CreativeWork"
+            "schema:CreativeWork",
+            "schema:LearningResource"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ]
       },
       "schema:learningResourceType" : {
@@ -90,8 +90,8 @@
             "schema:LearningResource"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ]
       },
       "schema:teaches" : {
@@ -105,8 +105,8 @@
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DefinedTerm"
+            "schema:DefinedTerm",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
       }

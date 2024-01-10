@@ -16,8 +16,8 @@
          "schema:domainIncludes" : "schema:DefinedTerm",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DefinedTermSet",
-            "schema:URL"
+            "schema:URL",
+            "schema:DefinedTermSet"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
       },

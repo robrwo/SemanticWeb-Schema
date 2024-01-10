@@ -1,9 +1,8 @@
 {
    "class" : {
-      "rdf:type" : "rdfs:Class",
+      "rdf:type" : "schema:DeliveryMethod",
       "rdfs:comment" : "A DeliveryMethod in which an item is made available via locker.",
-      "rdfs:label" : "LockerDelivery",
-      "rdfs:subClassOf" : "schema:DeliveryMethod"
+      "rdfs:label" : "LockerDelivery"
    },
    "properties" : {}
 }

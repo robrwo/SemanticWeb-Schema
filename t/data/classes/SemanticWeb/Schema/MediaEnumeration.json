@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "MediaEnumeration enumerations are lists of codes, labels etc. useful for describing media objects. They may be reflections of externally developed lists, or created at schema.org, or a combination.",
+      "rdfs:label" : "MediaEnumeration",
+      "rdfs:subClassOf" : "schema:Enumeration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3392"
+   },
+   "properties" : {}
+}

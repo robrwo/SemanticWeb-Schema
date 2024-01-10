@@ -14,8 +14,8 @@
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
             "schema:Suite",
-            "schema:HotelRoom",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : [
             "schema:Text",
@@ -29,17 +29,17 @@
          "rdfs:label" : "numberOfRooms",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:FloorPlan",
-            "schema:LodgingBusiness",
-            "schema:House",
-            "schema:Suite",
             "schema:SingleFamilyResidence",
+            "schema:Suite",
+            "schema:LodgingBusiness",
             "schema:Apartment",
-            "schema:Accommodation"
+            "schema:Accommodation",
+            "schema:House",
+            "schema:FloorPlan"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:occupancy" : {
@@ -48,10 +48,10 @@
          "rdfs:label" : "occupancy",
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
             "schema:SingleFamilyResidence",
             "schema:Suite",
             "schema:Apartment",
+            "schema:Accommodation",
             "schema:HotelRoom"
          ],
          "schema:rangeIncludes" : "schema:QuantitativeValue"

@@ -21,7 +21,7 @@ use Text::Wrap qw/ wrap /;
 use Types::Standard -types;
 use URI;
 
-our $VERSION = 'v23.0.1'; # Update definition below
+our $VERSION = 'v24.0.0'; # Update definition below
 
 const my $MAX_ABSTRACT_LENGTH => 44;    # See ExtUtils::ModuleMaker
 
@@ -104,7 +104,7 @@ has definition => (
     isa     => ArrayRef [Str],
     default => sub {
         [
-            'https://schema.org/version/23.0/schemaorg-all-http.rdf',
+            'https://schema.org/version/24.0/schemaorg-all-http.rdf',
         ]
     },
 );

@@ -16,7 +16,7 @@ use Ref::Util qw/ is_plain_hashref /;
 
 use namespace::autoclean;
 
-our $VERSION = 'v23.0.1';
+our $VERSION = 'v24.0.0';
 
 =encoding utf8
 
@@ -1248,6 +1248,33 @@ has date_published => (
     is        => 'rw',
     predicate => '_has_date_published',
     json_ld   => 'datePublished',
+);
+
+
+=head2 C<digital_source_type>
+
+C<digitalSourceType>
+
+Indicates an IPTCDigitalSourceEnumeration code indicating the nature of the digital source(s) for some L<SemanticWeb::Schema::CreativeWork>.
+
+A digital_source_type should be one of the following types:
+
+=over
+
+=item C<InstanceOf['SemanticWeb::Schema::IPTCDigitalSourceEnumeration']>
+
+=back
+
+=head2 C<_has_digital_source_type>
+
+A predicate for the L</digital_source_type> attribute.
+
+=cut
+
+has digital_source_type => (
+    is        => 'rw',
+    predicate => '_has_digital_source_type',
+    json_ld   => 'digitalSourceType',
 );
 
 

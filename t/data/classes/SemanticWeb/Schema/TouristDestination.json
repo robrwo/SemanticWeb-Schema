@@ -17,8 +17,8 @@
          "rdfs:comment" : "Attraction located at destination.",
          "rdfs:label" : "includesAttraction",
          "schema:contributor" : [
-            "collab:IIT-CNR.it",
-            "collab:Tourism"
+            "collab:Tourism",
+            "collab:IIT-CNR.it"
          ],
          "schema:domainIncludes" : "schema:TouristDestination",
          "schema:isPartOf" : "http:pending.schema.org",
@@ -34,13 +34,13 @@
             "collab:IIT-CNR.it"
          ],
          "schema:domainIncludes" : [
-            "schema:TouristDestination",
             "schema:TouristTrip",
+            "schema:TouristDestination",
             "schema:TouristAttraction"
          ],
          "schema:rangeIncludes" : [
-            "schema:Audience",
-            "schema:Text"
+            "schema:Text",
+            "schema:Audience"
          ]
       }
    }

@@ -25,8 +25,8 @@
             "schema:CompoundPriceSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:PriceTypeEnumeration",
-            "schema:Text"
+            "schema:Text",
+            "schema:PriceTypeEnumeration"
          ]
       }
    }

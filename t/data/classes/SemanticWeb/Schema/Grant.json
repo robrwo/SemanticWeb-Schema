@@ -6,8 +6,8 @@
       "rdfs:subClassOf" : "schema:Intangible",
       "schema:isPartOf" : "http:pending.schema.org",
       "schema:source" : [
-         "https://github.com/schemaorg/schemaorg/issues/383",
-         "collab:FundInfoCollab"
+         "collab:FundInfoCollab",
+         "https://github.com/schemaorg/schemaorg/issues/383"
       ]
    },
    "properties" : {
@@ -20,13 +20,13 @@
          "schema:inverseOf" : "schema:funding",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
+            "schema:CreativeWork",
             "schema:Organization",
             "schema:Person",
-            "schema:CreativeWork",
+            "schema:Event",
             "schema:Product",
-            "schema:MedicalEntity",
             "schema:BioChemEntity",
-            "schema:Event"
+            "schema:MedicalEntity"
          ],
          "schema:source" : [
             "https://github.com/schemaorg/schemaorg/issues/383",
@@ -39,16 +39,16 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:Organization",
             "schema:Person",
+            "schema:MonetaryGrant",
+            "schema:Organization",
+            "schema:Event",
+            "schema:CreativeWork",
             "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       },
       "schema:sponsor" : {
@@ -56,16 +56,16 @@
          "rdfs:comment" : "A person or organization that supports a thing through a pledge, promise, or financial contribution. E.g. a sponsor of a Medical Study or a corporate sponsor of an event.",
          "rdfs:label" : "sponsor",
          "schema:domainIncludes" : [
-            "schema:Grant",
+            "schema:Event",
             "schema:MedicalStudy",
             "schema:CreativeWork",
-            "schema:Event",
-            "schema:Organization",
-            "schema:Person"
-         ],
-         "schema:rangeIncludes" : [
+            "schema:Grant",
             "schema:Person",
             "schema:Organization"
+         ],
+         "schema:rangeIncludes" : [
+            "schema:Organization",
+            "schema:Person"
          ]
       }
    }

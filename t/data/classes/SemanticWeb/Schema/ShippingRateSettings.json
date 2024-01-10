@@ -13,8 +13,8 @@
          "rdfs:comment" : "Indicates when shipping to a particular [[shippingDestination]] is not available.",
          "rdfs:label" : "doesNotShip",
          "schema:domainIncludes" : [
-            "schema:OfferShippingDetails",
-            "schema:ShippingRateSettings"
+            "schema:ShippingRateSettings",
+            "schema:OfferShippingDetails"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Boolean",
@@ -27,8 +27,8 @@
          "schema:domainIncludes" : "schema:ShippingRateSettings",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:MonetaryAmount",
-            "schema:DeliveryChargeSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:MonetaryAmount"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
       },
@@ -49,9 +49,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
+            "schema:DeliveryTimeSettings",
             "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",
@@ -62,8 +62,8 @@
          "rdfs:comment" : "Label to match an [[OfferShippingDetails]] with a [[ShippingRateSettings]] (within the context of a [[shippingSettingsLink]] cross-reference).",
          "rdfs:label" : "shippingLabel",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -74,8 +74,8 @@
          "rdfs:comment" : "The shipping rate is the cost of shipping to the specified destination. Typically, the maxValue and currency values (of the [[MonetaryAmount]]) are most appropriate.",
          "rdfs:label" : "shippingRate",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
-            "schema:OfferShippingDetails"
+            "schema:OfferShippingDetails",
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:MonetaryAmount",

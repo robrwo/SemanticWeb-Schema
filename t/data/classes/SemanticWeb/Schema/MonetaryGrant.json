@@ -16,8 +16,8 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
+            "schema:InvestmentOrDeposit",
             "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
             "schema:LoanOrCredit"
@@ -27,8 +27,8 @@
             "schema:Number"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:funder" : {
@@ -37,16 +37,16 @@
          "rdfs:label" : "funder",
          "rdfs:subPropertyOf" : "schema:sponsor",
          "schema:domainIncludes" : [
-            "schema:MonetaryGrant",
-            "schema:CreativeWork",
-            "schema:Event",
-            "schema:Organization",
             "schema:Person",
+            "schema:MonetaryGrant",
+            "schema:Organization",
+            "schema:Event",
+            "schema:CreativeWork",
             "schema:Grant"
          ],
          "schema:rangeIncludes" : [
-            "schema:Person",
-            "schema:Organization"
+            "schema:Organization",
+            "schema:Person"
          ]
       }
    }

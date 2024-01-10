@@ -23,8 +23,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
+            "schema:URL",
             "schema:QualitativeValue"
          ]
       },
@@ -34,8 +34,8 @@
          "rdfs:label" : "callSign",
          "rdfs:subPropertyOf" : "schema:identifier",
          "schema:domainIncludes" : [
-            "schema:Person",
             "schema:Vehicle",
+            "schema:Person",
             "schema:BroadcastService"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -65,8 +65,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:DriveWheelConfigurationValue"
+            "schema:DriveWheelConfigurationValue",
+            "schema:Text"
          ]
       },
       "schema:emissionsCO2" : {
@@ -113,8 +113,8 @@
             "schema:Vehicle"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
             "schema:Text",
+            "schema:URL",
             "schema:QualitativeValue"
          ]
       },
@@ -135,8 +135,8 @@
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
             "schema:QualitativeValue",
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:mileageFromOdometer" : {
@@ -163,8 +163,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:numberOfAxles" : {
@@ -174,8 +174,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:numberOfDoors" : {
@@ -207,8 +207,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:Number"
+            "schema:Number",
+            "schema:QuantitativeValue"
          ]
       },
       "schema:payload" : {
@@ -226,8 +226,8 @@
          "rdfs:label" : "productionDate",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date"
       },
@@ -237,8 +237,8 @@
          "rdfs:label" : "purchaseDate",
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : [
-            "schema:Vehicle",
-            "schema:Product"
+            "schema:Product",
+            "schema:Vehicle"
          ],
          "schema:rangeIncludes" : "schema:Date"
       },
@@ -356,8 +356,8 @@
          "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
-            "schema:Number",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Number"
          ]
       },
       "schema:vehicleSpecialUsage" : {
@@ -368,8 +368,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:isPartOf" : "http:auto.schema.org",
          "schema:rangeIncludes" : [
-            "schema:CarUsageType",
-            "schema:Text"
+            "schema:Text",
+            "schema:CarUsageType"
          ]
       },
       "schema:vehicleTransmission" : {
@@ -380,8 +380,8 @@
          "schema:domainIncludes" : "schema:Vehicle",
          "schema:rangeIncludes" : [
             "schema:Text",
-            "schema:QualitativeValue",
-            "schema:URL"
+            "schema:URL",
+            "schema:QualitativeValue"
          ]
       },
       "schema:weightTotal" : {

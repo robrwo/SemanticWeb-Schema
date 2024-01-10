@@ -31,15 +31,15 @@
          "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
          "rdfs:label" : "duration",
          "schema:domainIncludes" : [
-            "schema:Audiobook",
-            "schema:MediaObject",
-            "schema:MusicRecording",
-            "schema:Event",
-            "schema:Episode",
-            "schema:Schedule",
-            "schema:QuantitativeValueDistribution",
             "schema:Movie",
-            "schema:MusicRelease"
+            "schema:MusicRelease",
+            "schema:QuantitativeValueDistribution",
+            "schema:Schedule",
+            "schema:MediaObject",
+            "schema:Episode",
+            "schema:Audiobook",
+            "schema:MusicRecording",
+            "schema:Event"
          ],
          "schema:rangeIncludes" : "schema:Duration",
          "schema:source" : [

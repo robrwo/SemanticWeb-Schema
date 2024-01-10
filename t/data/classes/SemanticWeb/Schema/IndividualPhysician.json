@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdfs:Class",
+      "rdfs:comment" : "An individual medical practitioner. For their official address use [[address]], for affiliations to hospitals use [[hospitalAffiliation]]. \nThe [[practicesAt]] property can be used to indicate [[MedicalOrganization]] hospitals, clinics, pharmacies etc. where this physician practices.",
+      "rdfs:label" : "IndividualPhysician",
+      "rdfs:subClassOf" : "schema:Physician"
+   },
+   "properties" : {
+      "schema:practicesAt" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A [[MedicalOrganization]] where the [[IndividualPhysician]] practices.",
+         "rdfs:label" : "practicesAt",
+         "schema:domainIncludes" : "schema:IndividualPhysician",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:MedicalOrganization",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3420"
+      }
+   }
+}

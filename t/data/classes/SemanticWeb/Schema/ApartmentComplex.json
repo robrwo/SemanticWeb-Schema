@@ -35,9 +35,9 @@
          "rdfs:comment" : "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
          "rdfs:label" : "numberOfBedrooms",
          "schema:domainIncludes" : [
+            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:FloorPlan",
-            "schema:ApartmentComplex"
+            "schema:FloorPlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
@@ -53,8 +53,8 @@
          "schema:contributor" : "collab:STI_Accommodation_Ontology",
          "schema:domainIncludes" : [
             "schema:ApartmentComplex",
-            "schema:Accommodation",
             "schema:FloorPlan",
+            "schema:Accommodation",
             "schema:LodgingBusiness"
          ],
          "schema:rangeIncludes" : [
@@ -67,9 +67,9 @@
          "rdfs:comment" : "A page providing information on how to book a tour of some [[Place]], such as an [[Accommodation]] or [[ApartmentComplex]] in a real estate setting, as well as other kinds of tours as appropriate.",
          "rdfs:label" : "tourBookingPage",
          "schema:domainIncludes" : [
+            "schema:ApartmentComplex",
             "schema:Accommodation",
-            "schema:Place",
-            "schema:ApartmentComplex"
+            "schema:Place"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:URL",

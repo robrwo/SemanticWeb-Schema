@@ -12,13 +12,13 @@
          "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
          "rdfs:label" : "aggregateRating",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:Brand",
-            "schema:Event",
-            "schema:Organization",
-            "schema:Offer",
             "schema:Service",
+            "schema:Organization",
+            "schema:Event",
+            "schema:Product",
             "schema:Place",
+            "schema:Brand",
+            "schema:Offer",
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : "schema:AggregateRating"
@@ -31,10 +31,10 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:Service",
-            "schema:Product",
-            "schema:Brand",
             "schema:Organization",
-            "schema:Place"
+            "schema:Product",
+            "schema:Place",
+            "schema:Brand"
          ],
          "schema:rangeIncludes" : [
             "schema:ImageObject",
@@ -46,14 +46,14 @@
          "rdfs:comment" : "A review of the item.",
          "rdfs:label" : "review",
          "schema:domainIncludes" : [
-            "schema:Place",
             "schema:CreativeWork",
             "schema:Service",
+            "schema:Organization",
             "schema:Product",
+            "schema:Place",
             "schema:Brand",
             "schema:Event",
-            "schema:Offer",
-            "schema:Organization"
+            "schema:Offer"
          ],
          "schema:rangeIncludes" : "schema:Review"
       },
@@ -62,9 +62,9 @@
          "rdfs:comment" : "A slogan or motto associated with the item.",
          "rdfs:label" : "slogan",
          "schema:domainIncludes" : [
+            "schema:Service",
             "schema:Organization",
             "schema:Place",
-            "schema:Service",
             "schema:Product",
             "schema:Brand"
          ],

@@ -15,8 +15,8 @@
          "schema:domainIncludes" : "schema:CDCPMDRecord",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:DateTime",
-            "schema:Text"
+            "schema:Text",
+            "schema:DateTime"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
       },
@@ -160,9 +160,9 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:RealEstateListing",
             "schema:SpecialAnnouncement",
             "schema:JobPosting",
+            "schema:RealEstateListing",
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [

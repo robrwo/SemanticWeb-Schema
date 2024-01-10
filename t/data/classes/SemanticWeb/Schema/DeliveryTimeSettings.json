@@ -37,9 +37,9 @@
          "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
          "rdfs:label" : "shippingDestination",
          "schema:domainIncludes" : [
-            "schema:ShippingRateSettings",
+            "schema:DeliveryTimeSettings",
             "schema:OfferShippingDetails",
-            "schema:DeliveryTimeSettings"
+            "schema:ShippingRateSettings"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:DefinedRegion",

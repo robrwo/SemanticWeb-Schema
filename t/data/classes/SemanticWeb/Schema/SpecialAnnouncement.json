@@ -26,20 +26,20 @@
          "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
          "rdfs:label" : "category",
          "schema:domainIncludes" : [
-            "schema:SpecialAnnouncement",
             "schema:Service",
-            "schema:Product",
-            "schema:ActionAccessSpecification",
-            "schema:PhysicalActivity",
             "schema:Invoice",
             "schema:Recommendation",
+            "schema:Product",
+            "schema:SpecialAnnouncement",
+            "schema:ActionAccessSpecification",
+            "schema:PhysicalActivity",
             "schema:Offer"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:PhysicalActivityCategory",
-            "schema:URL",
             "schema:CategoryCode",
+            "schema:PhysicalActivityCategory",
+            "schema:Text",
+            "schema:URL",
             "schema:Thing"
          ],
          "schema:source" : [
@@ -52,9 +52,9 @@
          "rdfs:comment" : "Publication date of an online listing.",
          "rdfs:label" : "datePosted",
          "schema:domainIncludes" : [
-            "schema:RealEstateListing",
             "schema:SpecialAnnouncement",
             "schema:JobPosting",
+            "schema:RealEstateListing",
             "schema:CDCPMDRecord"
          ],
          "schema:rangeIncludes" : [
@@ -73,8 +73,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -87,8 +87,8 @@
          "schema:rangeIncludes" : [
             "schema:Dataset",
             "schema:URL",
-            "schema:WebContent",
-            "schema:Observation"
+            "schema:Observation",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -120,8 +120,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -144,8 +144,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:WebContent"
+            "schema:WebContent",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -156,8 +156,8 @@
          "schema:domainIncludes" : "schema:SpecialAnnouncement",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:WebContent",
-            "schema:URL"
+            "schema:URL",
+            "schema:WebContent"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
       },
@@ -178,8 +178,8 @@
          "rdfs:comment" : "The URL for a feed, e.g. associated with a podcast series, blog, or series of date-stamped updates. This is usually RSS or Atom.",
          "rdfs:label" : "webFeed",
          "schema:domainIncludes" : [
-            "schema:PodcastSeries",
-            "schema:SpecialAnnouncement"
+            "schema:SpecialAnnouncement",
+            "schema:PodcastSeries"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

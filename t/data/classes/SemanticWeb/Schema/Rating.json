@@ -15,8 +15,8 @@
             "schema:CreativeWork"
          ],
          "schema:rangeIncludes" : [
-            "schema:Organization",
-            "schema:Person"
+            "schema:Person",
+            "schema:Organization"
          ]
       },
       "schema:bestRating" : {
@@ -25,8 +25,8 @@
          "rdfs:label" : "bestRating",
          "schema:domainIncludes" : "schema:Rating",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       },
       "schema:ratingExplanation" : {
@@ -53,8 +53,8 @@
          "rdfs:comment" : "This Review or Rating is relevant to this part or facet of the itemReviewed.",
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
-            "schema:Rating",
             "schema:Review",
+            "schema:Rating",
             "schema:Guide"
          ],
          "schema:rangeIncludes" : "schema:Text",
@@ -66,8 +66,8 @@
          "rdfs:label" : "worstRating",
          "schema:domainIncludes" : "schema:Rating",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Number"
+            "schema:Number",
+            "schema:Text"
          ]
       }
    }

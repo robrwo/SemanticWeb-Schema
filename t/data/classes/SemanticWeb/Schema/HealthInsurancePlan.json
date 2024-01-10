@@ -22,9 +22,9 @@
          "rdfs:comment" : "A contact point for a person or organization.",
          "rdfs:label" : "contactPoint",
          "schema:domainIncludes" : [
-            "schema:HealthInsurancePlan",
+            "schema:Person",
             "schema:Organization",
-            "schema:Person"
+            "schema:HealthInsurancePlan"
          ],
          "schema:rangeIncludes" : "schema:ContactPoint"
       },
@@ -42,8 +42,8 @@
          "rdfs:comment" : "The tier(s) of drugs offered by this formulary or insurance plan.",
          "rdfs:label" : "healthPlanDrugTier",
          "schema:domainIncludes" : [
-            "schema:HealthInsurancePlan",
-            "schema:HealthPlanFormulary"
+            "schema:HealthPlanFormulary",
+            "schema:HealthInsurancePlan"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:Text",
@@ -92,8 +92,8 @@
          "schema:domainIncludes" : "schema:HealthInsurancePlan",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
       }

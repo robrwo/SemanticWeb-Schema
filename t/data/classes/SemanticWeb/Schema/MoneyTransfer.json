@@ -14,8 +14,8 @@
          "rdfs:comment" : "The amount of money.",
          "rdfs:label" : "amount",
          "schema:domainIncludes" : [
-            "schema:InvestmentOrDeposit",
             "schema:MonetaryGrant",
+            "schema:InvestmentOrDeposit",
             "schema:DatedMoneySpecification",
             "schema:MoneyTransfer",
             "schema:LoanOrCredit"
@@ -25,8 +25,8 @@
             "schema:Number"
          ],
          "schema:source" : [
-            "https://github.com/schemaorg/schemaorg/issues/1698",
-            "https://github.com/schemaorg/schemaorg/issues/1253"
+            "https://github.com/schemaorg/schemaorg/issues/1253",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
          ]
       },
       "schema:beneficiaryBank" : {

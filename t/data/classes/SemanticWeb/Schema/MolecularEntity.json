@@ -65,8 +65,8 @@
          "schema:domainIncludes" : "schema:MolecularEntity",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:QuantitativeValue"
+            "schema:QuantitativeValue",
+            "schema:Text"
          ],
          "schema:source" : "www.bioschemas:MolecularEntity"
       },

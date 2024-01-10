@@ -11,8 +11,8 @@
          "rdfs:comment" : "Number of people the reservation should accommodate.",
          "rdfs:label" : "partySize",
          "schema:domainIncludes" : [
-            "schema:FoodEstablishmentReservation",
-            "schema:TaxiReservation"
+            "schema:TaxiReservation",
+            "schema:FoodEstablishmentReservation"
          ],
          "schema:rangeIncludes" : [
             "schema:Integer",

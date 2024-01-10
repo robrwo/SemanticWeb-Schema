@@ -11,8 +11,8 @@
          "rdfs:comment" : "A floorplan of some [[Accommodation]].",
          "rdfs:label" : "accommodationFloorPlan",
          "schema:domainIncludes" : [
-            "schema:Accommodation",
-            "schema:Residence"
+            "schema:Residence",
+            "schema:Accommodation"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : "schema:FloorPlan",

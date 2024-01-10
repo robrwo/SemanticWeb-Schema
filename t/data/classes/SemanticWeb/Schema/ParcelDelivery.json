@@ -11,8 +11,8 @@
          "rdfs:comment" : "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
          "rdfs:label" : "carrier",
          "schema:domainIncludes" : [
-            "schema:ParcelDelivery",
-            "schema:Flight"
+            "schema:Flight",
+            "schema:ParcelDelivery"
          ],
          "schema:rangeIncludes" : "schema:Organization",
          "schema:supersededBy" : "schema:provider"
@@ -37,8 +37,8 @@
          "rdfs:label" : "expectedArrivalFrom",
          "schema:domainIncludes" : "schema:ParcelDelivery",
          "schema:rangeIncludes" : [
-            "schema:Date",
-            "schema:DateTime"
+            "schema:DateTime",
+            "schema:Date"
          ]
       },
       "schema:expectedArrivalUntil" : {
@@ -87,14 +87,14 @@
          "rdfs:comment" : "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.",
          "rdfs:label" : "provider",
          "schema:domainIncludes" : [
-            "schema:Reservation",
-            "schema:Service",
-            "schema:Invoice",
+            "schema:Action",
             "schema:EducationalOccupationalProgram",
+            "schema:CreativeWork",
+            "schema:Service",
             "schema:Trip",
             "schema:ParcelDelivery",
-            "schema:CreativeWork",
-            "schema:Action"
+            "schema:Reservation",
+            "schema:Invoice"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [

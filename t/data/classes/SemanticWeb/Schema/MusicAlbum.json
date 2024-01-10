@@ -39,8 +39,8 @@
             "schema:MusicAlbum"
          ],
          "schema:rangeIncludes" : [
-            "schema:MusicGroup",
-            "schema:Person"
+            "schema:Person",
+            "schema:MusicGroup"
          ]
       }
    }

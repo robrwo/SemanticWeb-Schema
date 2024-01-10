@@ -13,8 +13,8 @@
          "rdfs:label" : "appliesToDeliveryMethod",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:PaymentChargeSpecification",
-            "schema:DeliveryChargeSpecification"
+            "schema:DeliveryChargeSpecification",
+            "schema:PaymentChargeSpecification"
          ],
          "schema:rangeIncludes" : "schema:DeliveryMethod"
       },

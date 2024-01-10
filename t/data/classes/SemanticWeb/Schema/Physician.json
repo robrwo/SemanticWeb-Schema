@@ -1,12 +1,9 @@
 {
    "class" : {
       "rdf:type" : "rdfs:Class",
-      "rdfs:comment" : "A doctor's office.",
+      "rdfs:comment" : "An individual physician or a physician's office considered as a [[MedicalOrganization]].",
       "rdfs:label" : "Physician",
-      "rdfs:subClassOf" : [
-         "schema:MedicalBusiness",
-         "schema:MedicalOrganization"
-      ]
+      "rdfs:subClassOf" : "schema:MedicalOrganization"
    },
    "properties" : {
       "schema:availableService" : {
@@ -14,15 +11,15 @@
          "rdfs:comment" : "A medical service available from this provider.",
          "rdfs:label" : "availableService",
          "schema:domainIncludes" : [
+            "schema:Physician",
             "schema:Hospital",
-            "schema:MedicalClinic",
-            "schema:Physician"
+            "schema:MedicalClinic"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : [
             "schema:MedicalTherapy",
-            "schema:MedicalProcedure",
-            "schema:MedicalTest"
+            "schema:MedicalTest",
+            "schema:MedicalProcedure"
          ]
       },
       "schema:hospitalAffiliation" : {
@@ -38,13 +35,47 @@
          "rdfs:comment" : "A medical specialty of the provider.",
          "rdfs:label" : "medicalSpecialty",
          "schema:domainIncludes" : [
-            "schema:MedicalOrganization",
+            "schema:MedicalClinic",
             "schema:Physician",
             "schema:Hospital",
-            "schema:MedicalClinic"
+            "schema:MedicalOrganization"
          ],
          "schema:isPartOf" : "http:health-lifesci.schema.org",
          "schema:rangeIncludes" : "schema:MedicalSpecialty"
+      },
+      "schema:occupationalCategory" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A category describing the job, preferably using a term from a taxonomy such as [BLS O*NET-SOC](http://www.onetcenter.org/taxonomy.html), [ISCO-08](https://www.ilo.org/public/english/bureau/stat/isco/isco08/) or similar, with the property repeated for each applicable value. Ideally the taxonomy should be identified, and both the textual label and formal code for the category should be provided.\\n\nNote: for historical reasons, any textual label and formal code provided as a literal may be assumed to be from O*NET-SOC.",
+         "rdfs:label" : "occupationalCategory",
+         "schema:domainIncludes" : [
+            "schema:Physician",
+            "schema:JobPosting",
+            "schema:EducationalOccupationalProgram",
+            "schema:Occupation",
+            "schema:WorkBasedProgram"
+         ],
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : [
+            "schema:Text",
+            "schema:CategoryCode"
+         ],
+         "schema:source" : [
+            "https://github.com/schemaorg/schemaorg/issues/3420",
+            "https://github.com/schemaorg/schemaorg/issues/2192",
+            "https://github.com/schemaorg/schemaorg/issues/2289",
+            "https://github.com/schemaorg/schemaorg/issues/2460",
+            "https://github.com/schemaorg/schemaorg/issues/1698"
+         ]
+      },
+      "schema:usNPI" : {
+         "rdf:type" : "rdf:Property",
+         "rdfs:comment" : "A <a href=\"https://en.wikipedia.org/wiki/National_Provider_Identifier\">National Provider Identifier</a> (NPI) \n    is a unique 10-digit identification number issued to health care providers in the United States by the Centers for Medicare and Medicaid Services.",
+         "rdfs:label" : "usNPI",
+         "rdfs:subPropertyOf" : "schema:identifier",
+         "schema:domainIncludes" : "schema:Physician",
+         "schema:isPartOf" : "http:pending.schema.org",
+         "schema:rangeIncludes" : "schema:Text",
+         "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3420"
       }
    }
 }

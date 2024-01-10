@@ -12,10 +12,10 @@
          "rdfs:comment" : "A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching property in schema.org.\\n\\nNote: Publishers should be aware that applications designed to use specific schema.org properties (e.g. http://schema.org/width, http://schema.org/color, http://schema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.\n",
          "rdfs:label" : "additionalProperty",
          "schema:domainIncludes" : [
-            "schema:Place",
-            "schema:Product",
             "schema:QualitativeValue",
             "schema:MerchantReturnPolicy",
+            "schema:Product",
+            "schema:Place",
             "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:PropertyValue"
@@ -26,10 +26,10 @@
          "rdfs:label" : "maxValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
+            "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : "schema:Number"
       },
@@ -39,9 +39,9 @@
          "rdfs:label" : "minValue",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
+            "schema:QuantitativeValue",
             "schema:MonetaryAmount",
             "schema:PropertyValueSpecification",
-            "schema:QuantitativeValue",
             "schema:PropertyValue"
          ],
          "schema:rangeIncludes" : "schema:Number"
@@ -53,13 +53,13 @@
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
+            "schema:TypeAndQuantityNode",
             "schema:PropertyValue",
-            "schema:TypeAndQuantityNode"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:unitText" : {
@@ -68,9 +68,9 @@
          "rdfs:label" : "unitText",
          "schema:domainIncludes" : [
             "schema:UnitPriceSpecification",
-            "schema:QuantitativeValue",
             "schema:TypeAndQuantityNode",
-            "schema:PropertyValue"
+            "schema:PropertyValue",
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : "schema:Text"
       },
@@ -80,15 +80,15 @@
          "rdfs:label" : "value",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:MonetaryAmount",
+            "schema:PropertyValue",
             "schema:QuantitativeValue",
-            "schema:PropertyValue"
+            "schema:MonetaryAmount"
          ],
          "schema:rangeIncludes" : [
             "schema:Number",
-            "schema:StructuredValue",
             "schema:Boolean",
-            "schema:Text"
+            "schema:Text",
+            "schema:StructuredValue"
          ]
       },
       "schema:valueReference" : {
@@ -97,19 +97,19 @@
          "rdfs:label" : "valueReference",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:QuantitativeValue",
+            "schema:QualitativeValue",
             "schema:PropertyValue",
-            "schema:QualitativeValue"
+            "schema:QuantitativeValue"
          ],
          "schema:rangeIncludes" : [
-            "schema:QuantitativeValue",
-            "schema:PropertyValue",
             "schema:StructuredValue",
-            "schema:Text",
             "schema:DefinedTerm",
+            "schema:QuantitativeValue",
+            "schema:Text",
             "schema:Enumeration",
-            "schema:QualitativeValue",
-            "schema:MeasurementTypeEnumeration"
+            "schema:MeasurementTypeEnumeration",
+            "schema:PropertyValue",
+            "schema:QualitativeValue"
          ]
       }
    }

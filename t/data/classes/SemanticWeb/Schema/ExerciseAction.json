@@ -29,8 +29,8 @@
          "rdfs:comment" : "The distance travelled, e.g. exercising or travelling.",
          "rdfs:label" : "distance",
          "schema:domainIncludes" : [
-            "schema:ExerciseAction",
-            "schema:TravelAction"
+            "schema:TravelAction",
+            "schema:ExerciseAction"
          ],
          "schema:rangeIncludes" : "schema:Distance"
       },
@@ -78,8 +78,8 @@
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : [
             "schema:MoveAction",
-            "schema:ExerciseAction",
-            "schema:TransferAction"
+            "schema:TransferAction",
+            "schema:ExerciseAction"
          ],
          "schema:rangeIncludes" : "schema:Place"
       },
@@ -121,9 +121,9 @@
          "rdfs:label" : "toLocation",
          "rdfs:subPropertyOf" : "schema:location",
          "schema:domainIncludes" : [
-            "schema:MoveAction",
-            "schema:InsertAction",
             "schema:ExerciseAction",
+            "schema:InsertAction",
+            "schema:MoveAction",
             "schema:TransferAction"
          ],
          "schema:rangeIncludes" : "schema:Place"

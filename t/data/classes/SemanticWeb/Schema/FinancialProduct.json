@@ -24,12 +24,12 @@
          "rdfs:label" : "feesAndCommissionsSpecification",
          "schema:contributor" : "collab:FIBO",
          "schema:domainIncludes" : [
-            "schema:FinancialService",
-            "schema:FinancialProduct"
+            "schema:FinancialProduct",
+            "schema:FinancialService"
          ],
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:URL"
+            "schema:URL",
+            "schema:Text"
          ]
       },
       "schema:interestRate" : {

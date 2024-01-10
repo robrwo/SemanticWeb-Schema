@@ -13,8 +13,8 @@
          "rdfs:comment" : "This Review or Rating is relevant to this part or facet of the itemReviewed.",
          "rdfs:label" : "reviewAspect",
          "schema:domainIncludes" : [
-            "schema:Rating",
             "schema:Review",
+            "schema:Rating",
             "schema:Guide"
          ],
          "schema:rangeIncludes" : "schema:Text",

@@ -12,8 +12,8 @@
          "rdfs:label" : "artEdition",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:Integer"
+            "schema:Integer",
+            "schema:Text"
          ]
       },
       "schema:artMedium" : {
@@ -33,8 +33,8 @@
          "rdfs:label" : "artform",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:artist" : {
@@ -55,8 +55,8 @@
          "rdfs:label" : "artworkSurface",
          "schema:domainIncludes" : "schema:VisualArtwork",
          "schema:rangeIncludes" : [
-            "schema:URL",
-            "schema:Text"
+            "schema:Text",
+            "schema:URL"
          ]
       },
       "schema:colorist" : {
@@ -77,8 +77,8 @@
          "rdfs:label" : "depth",
          "schema:contributor" : "collab:GoodRelationsTerms",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
             "schema:OfferShippingDetails",
+            "schema:VisualArtwork",
             "schema:Product"
          ],
          "schema:rangeIncludes" : [
@@ -91,11 +91,11 @@
          "rdfs:comment" : "The height of the item.",
          "rdfs:label" : "height",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
-            "schema:Person",
-            "schema:OfferShippingDetails",
+            "schema:MediaObject",
             "schema:Product",
-            "schema:MediaObject"
+            "schema:OfferShippingDetails",
+            "schema:VisualArtwork",
+            "schema:Person"
          ],
          "schema:rangeIncludes" : [
             "schema:QuantitativeValue",
@@ -107,9 +107,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"
@@ -155,10 +155,10 @@
          "rdfs:comment" : "The width of the item.",
          "rdfs:label" : "width",
          "schema:domainIncludes" : [
-            "schema:Product",
-            "schema:MediaObject",
+            "schema:OfferShippingDetails",
             "schema:VisualArtwork",
-            "schema:OfferShippingDetails"
+            "schema:MediaObject",
+            "schema:Product"
          ],
          "schema:rangeIncludes" : [
             "schema:Distance",

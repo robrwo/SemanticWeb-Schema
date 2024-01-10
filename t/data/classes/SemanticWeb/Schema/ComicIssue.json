@@ -36,9 +36,9 @@
          "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
          "rdfs:label" : "inker",
          "schema:domainIncludes" : [
-            "schema:VisualArtwork",
+            "schema:ComicIssue",
             "schema:ComicStory",
-            "schema:ComicIssue"
+            "schema:VisualArtwork"
          ],
          "schema:isPartOf" : "http:bib.schema.org",
          "schema:rangeIncludes" : "schema:Person"

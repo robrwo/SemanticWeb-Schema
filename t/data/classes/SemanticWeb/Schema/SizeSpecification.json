@@ -13,8 +13,8 @@
          "rdfs:comment" : "A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. Usually an exact measurement, but can also be a range of measurements for adjustable products, for example belts and ski bindings.",
          "rdfs:label" : "hasMeasurement",
          "schema:domainIncludes" : [
-            "schema:Offer",
             "schema:Product",
+            "schema:Offer",
             "schema:SizeSpecification"
          ],
          "schema:isPartOf" : "http:pending.schema.org",
@@ -28,8 +28,8 @@
          "schema:domainIncludes" : "schema:SizeSpecification",
          "schema:isPartOf" : "http:pending.schema.org",
          "schema:rangeIncludes" : [
-            "schema:Text",
-            "schema:SizeGroupEnumeration"
+            "schema:SizeGroupEnumeration",
+            "schema:Text"
          ],
          "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
       },
@@ -66,8 +66,8 @@
             "schema:SizeSpecification"
          ],
          "schema:rangeIncludes" : [
-            "schema:GenderType",
-            "schema:Text"
+            "schema:Text",
+            "schema:GenderType"
          ]
       },
       "schema:suggestedMeasurement" : {
