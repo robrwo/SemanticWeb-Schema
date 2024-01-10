@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Smaller compositions included in this work (e.g. a movement in a symphony).",
+      "rdfs:label" : "includedComposition",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:MusicComposition"
+   },
+   "properties" : {}
+}

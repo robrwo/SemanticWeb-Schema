@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DigitalPlatformEnumeration",
+      "rdfs:comment" : "Represents the generic notion of the Web Platform. More specific codes include [[MobileWebPlatform]] and [[DesktopWebPlatform]], as an incomplete list. ",
+      "rdfs:label" : "GenericWebPlatform",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3057"
+   },
+   "properties" : {}
+}

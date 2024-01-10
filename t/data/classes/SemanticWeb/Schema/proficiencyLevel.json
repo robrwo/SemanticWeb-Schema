@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Proficiency needed for this content; expected values: 'Beginner', 'Expert'.",
+      "rdfs:label" : "proficiencyLevel",
+      "schema:domainIncludes" : "schema:TechArticle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RestrictedDiet",
+      "rdfs:comment" : "A diet exclusive of animal meat.",
+      "rdfs:label" : "VegetarianDiet"
+   },
+   "properties" : {}
+}

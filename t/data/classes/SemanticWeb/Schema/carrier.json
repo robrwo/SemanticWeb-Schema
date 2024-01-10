@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "'carrier' is an out-dated term indicating the 'provider' for parcel delivery and flights.",
+      "rdfs:label" : "carrier",
+      "schema:domainIncludes" : [
+         "schema:Flight",
+         "schema:ParcelDelivery"
+      ],
+      "schema:rangeIncludes" : "schema:Organization",
+      "schema:supersededBy" : "schema:provider"
+   },
+   "properties" : {}
+}

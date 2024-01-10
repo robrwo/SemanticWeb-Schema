@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalImagingTechnique",
+      "rdfs:comment" : "Positron emission tomography imaging.",
+      "rdfs:label" : "PET",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

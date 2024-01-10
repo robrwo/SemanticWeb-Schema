@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The movie presented during this event.",
+      "rdfs:label" : "workPresented",
+      "rdfs:subPropertyOf" : "schema:workFeatured",
+      "schema:domainIncludes" : "schema:ScreeningEvent",
+      "schema:rangeIncludes" : "schema:Movie"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The framework to which the resource being described is aligned.",
+      "rdfs:label" : "educationalFramework",
+      "schema:domainIncludes" : "schema:AlignmentObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Identifier of the NHSN facility that this data record applies to. Use [[cvdFacilityCounty]] to indicate the county. To provide other details, [[healthcareReportingData]] can be used on a [[Hospital]] entry.",
+      "rdfs:label" : "cvdFacilityId",
+      "schema:domainIncludes" : "schema:CDCPMDRecord",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
+   },
+   "properties" : {}
+}

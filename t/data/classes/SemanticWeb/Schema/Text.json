@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : [
+         "rdfs:Class",
+         "schema:DataType"
+      ],
+      "rdfs:comment" : "Data type: Text.",
+      "rdfs:label" : "Text"
+   },
+   "properties" : {}
+}

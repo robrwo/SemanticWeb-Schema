@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "DemoAlbum.",
+      "rdfs:label" : "DemoAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

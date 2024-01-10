@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date/time at which the message was sent.",
+      "rdfs:label" : "dateSent",
+      "schema:domainIncludes" : "schema:Message",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The likely outcome in either the short term or long term of the medical condition.",
+      "rdfs:label" : "expectedPrognosis",
+      "schema:domainIncludes" : "schema:MedicalCondition",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

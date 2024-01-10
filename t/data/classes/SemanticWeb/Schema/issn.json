@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "bibo:issn",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.",
+      "rdfs:label" : "issn",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:contributor" : "collab:bibex",
+      "schema:domainIncludes" : [
+         "schema:CreativeWorkSeries",
+         "schema:WebSite",
+         "schema:Blog",
+         "schema:Dataset"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

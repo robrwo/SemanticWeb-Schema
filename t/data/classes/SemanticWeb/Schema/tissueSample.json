@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of tissue sample required for the test.",
+      "rdfs:label" : "tissueSample",
+      "schema:domainIncludes" : "schema:PathologyTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

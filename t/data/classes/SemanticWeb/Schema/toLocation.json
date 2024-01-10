@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of location. The final location of the object or the agent after the action.",
+      "rdfs:label" : "toLocation",
+      "rdfs:subPropertyOf" : "schema:location",
+      "schema:domainIncludes" : [
+         "schema:ExerciseAction",
+         "schema:InsertAction",
+         "schema:MoveAction",
+         "schema:TransferAction"
+      ],
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

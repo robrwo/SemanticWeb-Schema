@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A publication event associated with the item.",
+      "rdfs:label" : "publication",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:PublicationEvent"
+   },
+   "properties" : {}
+}

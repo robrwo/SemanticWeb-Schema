@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person that acts as performing member of a sports team; a player as opposed to a coach.",
+      "rdfs:label" : "athlete",
+      "schema:domainIncludes" : "schema:SportsTeam",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

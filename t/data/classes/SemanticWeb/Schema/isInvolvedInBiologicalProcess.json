@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Biological process this BioChemEntity is involved in; please use PropertyValue if you want to include any evidence.",
+      "rdfs:label" : "isInvolvedInBiologicalProcess",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:URL",
+         "schema:PropertyValue"
+      ],
+      "schema:source" : "www.bioschemas:BioChemEntity"
+   },
+   "properties" : {}
+}

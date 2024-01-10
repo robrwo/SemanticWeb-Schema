@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Other anatomical structures to which this structure is connected.",
+      "rdfs:label" : "connectedTo",
+      "schema:domainIncludes" : "schema:AnatomicalStructure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalStructure"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A member of a music group&#x2014;for example, John, Paul, George, or Ringo.",
+      "rdfs:label" : "musicGroupMember",
+      "schema:domainIncludes" : "schema:MusicGroup",
+      "schema:rangeIncludes" : "schema:Person",
+      "schema:supersededBy" : "schema:member"
+   },
+   "properties" : {}
+}

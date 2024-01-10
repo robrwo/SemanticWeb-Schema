@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date that payment is due.",
+      "rdfs:label" : "paymentDueDate",
+      "schema:domainIncludes" : [
+         "schema:Order",
+         "schema:Invoice"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

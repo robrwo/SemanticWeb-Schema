@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Closest child taxa of the taxon in question.",
+      "rdfs:label" : "childTaxon",
+      "schema:domainIncludes" : "schema:Taxon",
+      "schema:inverseOf" : "schema:parentTaxon",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Taxon",
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:source" : "www.bioschemas:Taxon"
+   },
+   "properties" : {}
+}

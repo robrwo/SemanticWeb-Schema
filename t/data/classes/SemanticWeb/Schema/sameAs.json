@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.",
+      "rdfs:label" : "sameAs",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

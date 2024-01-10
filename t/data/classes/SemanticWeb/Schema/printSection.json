@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "If this NewsArticle appears in print, this field indicates the print section in which the article appeared.",
+      "rdfs:label" : "printSection",
+      "schema:domainIncludes" : "schema:NewsArticle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

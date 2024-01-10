@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The current status of the order.",
+      "rdfs:label" : "orderStatus",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:OrderStatus"
+   },
+   "properties" : {}
+}

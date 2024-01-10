@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Quantitative measure gauging the degree of force involved in the exercise, for example, heartbeats per minute. May include the velocity of the movement.",
+      "rdfs:label" : "intensity",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

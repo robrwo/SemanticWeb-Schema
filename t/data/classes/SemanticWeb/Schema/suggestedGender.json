@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The suggested gender of the intended person or audience, for example \"male\", \"female\", or \"unisex\".",
+      "rdfs:label" : "suggestedGender",
+      "schema:domainIncludes" : [
+         "schema:PeopleAudience",
+         "schema:SizeSpecification"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:GenderType"
+      ]
+   },
+   "properties" : {}
+}

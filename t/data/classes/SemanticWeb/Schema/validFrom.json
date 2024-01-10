@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date when the item becomes valid.",
+      "rdfs:label" : "validFrom",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:LocationFeatureSpecification",
+         "schema:Permit",
+         "schema:PriceSpecification",
+         "schema:Offer",
+         "schema:MonetaryAmount",
+         "schema:Demand",
+         "schema:OpeningHoursSpecification"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

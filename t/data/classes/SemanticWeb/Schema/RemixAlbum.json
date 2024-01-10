@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "RemixAlbum.",
+      "rdfs:label" : "RemixAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

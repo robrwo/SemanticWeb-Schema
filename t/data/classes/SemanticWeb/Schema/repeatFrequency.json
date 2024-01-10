@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Defines the frequency at which [[Event]]s will occur according to a schedule [[Schedule]]. The intervals between\n      events should be defined as a [[Duration]] of time.",
+      "rdfs:label" : "repeatFrequency",
+      "rdfs:subPropertyOf" : "schema:frequency",
+      "schema:domainIncludes" : "schema:Schedule",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Duration",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
+   },
+   "properties" : {}
+}

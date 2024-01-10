@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:USNonprofitType",
+      "rdfs:comment" : "Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees.",
+      "rdfs:label" : "Nonprofit501c4",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The phone number to use to access the service.",
+      "rdfs:label" : "servicePhone",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:ContactPoint"
+   },
+   "properties" : {}
+}

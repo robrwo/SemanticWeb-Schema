@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ProductReturnEnumeration",
+      "rdfs:comment" : "ProductReturnFiniteReturnWindow: there is a finite window for product returns.",
+      "rdfs:label" : "ProductReturnFiniteReturnWindow",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:MerchantReturnFiniteReturnWindow"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether this content is family friendly.",
+      "rdfs:label" : "isFamilyFriendly",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:Offer",
+         "schema:CreativeWork"
+      ],
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

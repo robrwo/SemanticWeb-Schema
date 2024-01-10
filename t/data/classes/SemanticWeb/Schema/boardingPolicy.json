@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of boarding policy used by the airline (e.g. zone-based or group-based).",
+      "rdfs:label" : "boardingPolicy",
+      "schema:domainIncludes" : [
+         "schema:Flight",
+         "schema:Airline"
+      ],
+      "schema:rangeIncludes" : "schema:BoardingPolicyType"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:InfectiousAgentClass",
+      "rdfs:comment" : "Pathogenic fungus.",
+      "rdfs:label" : "Fungus",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

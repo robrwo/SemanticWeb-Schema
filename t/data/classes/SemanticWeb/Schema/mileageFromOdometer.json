@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total distance travelled by the particular vehicle since its initial production, as read from its odometer.\\n\\nTypical unit code(s): KMT for kilometers, SMI for statute miles.",
+      "rdfs:label" : "mileageFromOdometer",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

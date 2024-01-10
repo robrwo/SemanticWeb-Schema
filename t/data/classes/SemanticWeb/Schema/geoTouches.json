@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Represents spatial relations in which two geometries (or the places they represent) touch: \"they have at least one boundary point in common, but no interior points.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+      "rdfs:label" : "geoTouches",
+      "schema:domainIncludes" : [
+         "schema:GeospatialGeometry",
+         "schema:Place"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Place",
+         "schema:GeospatialGeometry"
+      ]
+   },
+   "properties" : {}
+}

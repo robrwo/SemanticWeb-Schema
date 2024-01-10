@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The special opening hours of a certain place.\\n\\nUse this to explicitly override general opening hours brought in scope by [[openingHoursSpecification]] or [[openingHours]].\n      ",
+      "rdfs:label" : "specialOpeningHoursSpecification",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
+   },
+   "properties" : {}
+}

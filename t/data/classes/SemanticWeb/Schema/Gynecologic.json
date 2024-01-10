@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female reproductive system.",
+      "rdfs:label" : "Gynecologic",
+      "rdfs:subClassOf" : "schema:MedicalBusiness",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

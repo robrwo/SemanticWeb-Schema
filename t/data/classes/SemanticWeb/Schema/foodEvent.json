@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of location. The specific food event where the action occurred.",
+      "rdfs:label" : "foodEvent",
+      "rdfs:subPropertyOf" : "schema:location",
+      "schema:domainIncludes" : "schema:CookAction",
+      "schema:rangeIncludes" : "schema:FoodEvent"
+   },
+   "properties" : {}
+}

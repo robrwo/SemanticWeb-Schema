@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of milligrams of cholesterol.",
+      "rdfs:label" : "cholesterolContent",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Mass"
+   },
+   "properties" : {}
+}

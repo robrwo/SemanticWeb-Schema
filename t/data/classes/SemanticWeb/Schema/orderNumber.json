@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The identifier of the transaction.",
+      "rdfs:label" : "orderNumber",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

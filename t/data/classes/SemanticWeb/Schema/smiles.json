@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A specification in form of a line notation for describing the structure of chemical species using short ASCII strings.  Double bond stereochemistry \\ indicators may need to be escaped in the string in formats where the backslash is an escape character.",
+      "rdfs:label" : "smiles",
+      "rdfs:subPropertyOf" : "schema:hasRepresentation",
+      "schema:domainIncludes" : "schema:MolecularEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "www.bioschemas:MolecularEntity"
+   },
+   "properties" : {}
+}

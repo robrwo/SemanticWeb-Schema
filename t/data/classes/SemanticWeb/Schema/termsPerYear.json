@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of times terms of study are offered per year. Semesters and quarters are common units for term. For example, if the student can only take 2 semesters for the program in one year, then termsPerYear should be 2.",
+      "rdfs:label" : "termsPerYear",
+      "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Number",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
+   },
+   "properties" : {}
+}

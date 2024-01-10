@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceTypeEnumeration",
+      "rdfs:comment" : "Represents the minimum advertised price (\"MAP\") (as dictated by the manufacturer) of an offered product.",
+      "rdfs:label" : "MinimumAdvertisedPrice",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

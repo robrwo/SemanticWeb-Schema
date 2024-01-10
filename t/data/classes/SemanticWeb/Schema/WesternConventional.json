@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicineSystem",
+      "rdfs:comment" : "The conventional Western system of medicine, that aims to apply the best available evidence gained from the scientific method to clinical decision making. Also known as conventional or Western medicine.",
+      "rdfs:label" : "WesternConventional",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

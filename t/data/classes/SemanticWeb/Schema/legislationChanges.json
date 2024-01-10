@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:changes",
+      "owl:equivalentProperty" : "ontology:changes",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Another legislation that this legislation changes. This encompasses the notions of amendment, replacement, correction, repeal, or other types of change. This may be a direct change (textual or non-textual amendment) or a consequential or indirect change. The property is to be used to express the existence of a change relationship between two acts rather than the existence of a consolidated version of the text that shows the result of the change. For consolidation relationships, use the <a href=\"/legislationConsolidates\">legislationConsolidates</a> property.",
+      "rdfs:label" : "legislationChanges",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Legislation",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

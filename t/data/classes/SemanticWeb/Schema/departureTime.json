@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The expected departure time.",
+      "rdfs:label" : "departureTime",
+      "schema:domainIncludes" : "schema:Trip",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Time"
+      ]
+   },
+   "properties" : {}
+}

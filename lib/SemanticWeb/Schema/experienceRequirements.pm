@@ -1,0 +1,41 @@
+use utf8;
+
+package SemanticWeb::Schema::experienceRequirements;
+
+# ABSTRACT: Description of skills and experience needed for the position or Occupation.
+
+use v5.14;
+use Moo;
+
+extends qw/ SemanticWeb::Schema /;
+
+
+use MooX::JSON_LD 'experienceRequirements';
+use Ref::Util qw/ is_plain_hashref /;
+# RECOMMEND PREREQ: Ref::Util::XS
+
+use namespace::autoclean;
+
+our $VERSION = 'v24.0.0';
+
+=encoding utf8
+
+=head1 DESCRIPTION
+
+Description of skills and experience needed for the position or Occupation.
+
+
+
+
+=cut
+
+
+=head1 SEE ALSO
+
+
+
+L<SemanticWeb::Schema>
+
+=cut
+
+1;

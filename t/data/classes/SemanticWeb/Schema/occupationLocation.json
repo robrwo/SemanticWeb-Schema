@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : " The region/country for which this occupational description is appropriate. Note that educational requirements and qualifications can vary between jurisdictions.",
+      "rdfs:label" : "occupationLocation",
+      "schema:domainIncludes" : "schema:Occupation",
+      "schema:rangeIncludes" : "schema:AdministrativeArea",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

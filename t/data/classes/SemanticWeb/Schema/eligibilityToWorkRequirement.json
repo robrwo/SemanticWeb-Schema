@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The legal requirements such as citizenship, visa and other documentation required for an applicant to this job.",
+      "rdfs:label" : "eligibilityToWorkRequirement",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2384"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the timezone for which the time(s) indicated in the [[Schedule]] are given. The value provided should be among those listed in the IANA Time Zone Database.",
+      "rdfs:label" : "scheduleTimezone",
+      "schema:domainIncludes" : "schema:Schedule",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1457"
+   },
+   "properties" : {}
+}

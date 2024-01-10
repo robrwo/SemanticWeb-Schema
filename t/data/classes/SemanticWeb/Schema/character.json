@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Fictional person connected with a creative work.",
+      "rdfs:label" : "character",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

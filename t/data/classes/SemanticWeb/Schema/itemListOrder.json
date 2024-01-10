@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Type of ordering (e.g. Ascending, Descending, Unordered).",
+      "rdfs:label" : "itemListOrder",
+      "schema:domainIncludes" : "schema:ItemList",
+      "schema:rangeIncludes" : [
+         "schema:ItemListOrderType",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

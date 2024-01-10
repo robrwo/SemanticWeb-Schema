@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "SoundtrackAlbum.",
+      "rdfs:label" : "SoundtrackAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

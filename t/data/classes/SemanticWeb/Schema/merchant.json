@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "'merchant' is an out-dated term for 'seller'.",
+      "rdfs:label" : "merchant",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:supersededBy" : "schema:seller"
+   },
+   "properties" : {}
+}

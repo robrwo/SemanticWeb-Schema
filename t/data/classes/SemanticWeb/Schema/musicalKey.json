@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The key, mode, or scale this composition uses.",
+      "rdfs:label" : "musicalKey",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

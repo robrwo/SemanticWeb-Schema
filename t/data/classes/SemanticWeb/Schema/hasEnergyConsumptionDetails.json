@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Defines the energy efficiency Category (also known as \"class\" or \"rating\") for a product according to an international energy efficiency standard.",
+      "rdfs:label" : "hasEnergyConsumptionDetails",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:EnergyConsumptionDetails",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
+   },
+   "properties" : {}
+}

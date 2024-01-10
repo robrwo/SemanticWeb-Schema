@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Any special commitments associated with this job posting. Valid entries include VeteranCommit, MilitarySpouseCommit, etc.",
+      "rdfs:label" : "specialCommitments",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

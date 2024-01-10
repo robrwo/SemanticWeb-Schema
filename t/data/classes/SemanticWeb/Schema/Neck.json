@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalExam",
+      "rdfs:comment" : "Neck assessment with clinical examination.",
+      "rdfs:label" : "Neck",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

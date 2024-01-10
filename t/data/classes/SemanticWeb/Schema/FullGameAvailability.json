@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GameAvailabilityEnumeration",
+      "rdfs:comment" : "Indicates full game availability.",
+      "rdfs:label" : "FullGameAvailability",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3058"
+   },
+   "properties" : {}
+}

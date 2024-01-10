@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifying something physically contained by something else. Typically used here for the underlying anatomical structures, such as organs, that comprise the anatomical system.",
+      "rdfs:label" : "comprisedOf",
+      "schema:domainIncludes" : "schema:AnatomicalSystem",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AnatomicalStructure",
+         "schema:AnatomicalSystem"
+      ]
+   },
+   "properties" : {}
+}

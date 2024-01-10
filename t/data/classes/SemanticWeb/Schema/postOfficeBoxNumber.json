@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The post office box number for PO box addresses.",
+      "rdfs:label" : "postOfficeBoxNumber",
+      "schema:domainIncludes" : "schema:PostalAddress",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

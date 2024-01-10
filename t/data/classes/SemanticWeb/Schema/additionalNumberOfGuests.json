@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "If responding yes, the number of guests who will attend in addition to the invitee.",
+      "rdfs:label" : "additionalNumberOfGuests",
+      "schema:domainIncludes" : "schema:RsvpAction",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

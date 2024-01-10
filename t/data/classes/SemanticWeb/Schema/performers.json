@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The main performer or performers of the event&#x2014;for example, a presenter, musician, or actor.",
+      "rdfs:label" : "performers",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:supersededBy" : "schema:performer"
+   },
+   "properties" : {}
+}

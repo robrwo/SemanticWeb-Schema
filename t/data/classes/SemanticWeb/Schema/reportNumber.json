@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number or other unique designator assigned to a Report by the publishing organization.",
+      "rdfs:label" : "reportNumber",
+      "schema:domainIncludes" : "schema:Report",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

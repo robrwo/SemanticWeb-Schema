@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Subcellular location where this BioChemEntity is located; please use PropertyValue if you want to include any evidence.",
+      "rdfs:label" : "isLocatedInSubcellularLocation",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:PropertyValue",
+         "schema:DefinedTerm",
+         "schema:URL"
+      ],
+      "schema:source" : "www.bioschemas:BioChemEntity"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The International Standard Musical Work Code for the composition.",
+      "rdfs:label" : "iswcCode",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

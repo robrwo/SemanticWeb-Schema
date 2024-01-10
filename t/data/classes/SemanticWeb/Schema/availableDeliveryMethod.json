@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The delivery method(s) available for this offer.",
+      "rdfs:label" : "availableDeliveryMethod",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : "schema:DeliveryMethod"
+   },
+   "properties" : {}
+}

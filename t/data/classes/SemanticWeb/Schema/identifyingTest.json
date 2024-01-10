@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A diagnostic test that can identify this sign.",
+      "rdfs:label" : "identifyingTest",
+      "schema:domainIncludes" : "schema:MedicalSign",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTest"
+   },
+   "properties" : {}
+}

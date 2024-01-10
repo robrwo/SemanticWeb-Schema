@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates an OfferCatalog listing for this Organization, Person, or Service.",
+      "rdfs:label" : "hasOfferCatalog",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Service",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : "schema:OfferCatalog"
+   },
+   "properties" : {}
+}

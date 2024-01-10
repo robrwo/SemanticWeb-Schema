@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The release date of a product or product model. This can be used to distinguish the exact variant of a product.",
+      "rdfs:label" : "releaseDate",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

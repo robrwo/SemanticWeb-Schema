@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The distance travelled, e.g. exercising or travelling.",
+      "rdfs:label" : "distance",
+      "schema:domainIncludes" : [
+         "schema:TravelAction",
+         "schema:ExerciseAction"
+      ],
+      "schema:rangeIncludes" : "schema:Distance"
+   },
+   "properties" : {}
+}

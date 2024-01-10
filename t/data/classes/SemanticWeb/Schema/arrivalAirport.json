@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The airport where the flight terminates.",
+      "rdfs:label" : "arrivalAirport",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : "schema:Airport"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A NewsArticle associated with the Media Object.",
+      "rdfs:label" : "associatedArticle",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:NewsArticle"
+   },
+   "properties" : {}
+}

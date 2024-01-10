@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The method of cooking, such as Frying, Steaming, ...",
+      "rdfs:label" : "cookingMethod",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

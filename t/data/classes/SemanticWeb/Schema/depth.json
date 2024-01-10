@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The depth of the item.",
+      "rdfs:label" : "depth",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:OfferShippingDetails",
+         "schema:VisualArtwork",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Distance"
+      ]
+   },
+   "properties" : {}
+}

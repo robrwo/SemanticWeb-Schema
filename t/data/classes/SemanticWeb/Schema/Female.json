@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GenderType",
+      "rdfs:comment" : "The female gender.",
+      "rdfs:label" : "Female"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The locality in which the street address is, and which is in the region. For example, Mountain View.",
+      "rdfs:label" : "addressLocality",
+      "schema:domainIncludes" : "schema:PostalAddress",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

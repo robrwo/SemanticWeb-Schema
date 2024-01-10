@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a specific [[CivicStructure]] or [[LocalBusiness]] associated with the SpecialAnnouncement. For example, a specific testing facility or business with special opening hours. For a larger geographic region like a quarantine of an entire region, use [[spatialCoverage]].",
+      "rdfs:label" : "announcementLocation",
+      "rdfs:subPropertyOf" : "schema:spatialCoverage",
+      "schema:domainIncludes" : "schema:SpecialAnnouncement",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:CivicStructure",
+         "schema:LocalBusiness"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2514"
+   },
+   "properties" : {}
+}

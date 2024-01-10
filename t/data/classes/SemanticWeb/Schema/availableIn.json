@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location in which the strength is available.",
+      "rdfs:label" : "availableIn",
+      "schema:domainIncludes" : "schema:DrugStrength",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AdministrativeArea"
+   },
+   "properties" : {}
+}

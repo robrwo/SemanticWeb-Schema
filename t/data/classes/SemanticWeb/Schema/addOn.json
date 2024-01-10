@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge).",
+      "rdfs:label" : "addOn",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:Offer",
+      "schema:rangeIncludes" : "schema:Offer"
+   },
+   "properties" : {}
+}

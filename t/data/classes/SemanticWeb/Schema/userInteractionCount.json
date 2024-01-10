@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication.",
+      "rdfs:label" : "userInteractionCount",
+      "schema:domainIncludes" : "schema:InteractionCounter",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

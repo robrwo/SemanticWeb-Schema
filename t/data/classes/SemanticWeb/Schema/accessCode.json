@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Password, PIN, or access code needed for delivery (e.g. from a locker).",
+      "rdfs:label" : "accessCode",
+      "schema:domainIncludes" : "schema:DeliveryEvent",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

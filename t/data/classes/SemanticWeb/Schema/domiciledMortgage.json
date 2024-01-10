@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether borrower is a resident of the jurisdiction where the property is located.",
+      "rdfs:label" : "domiciledMortgage",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:MortgageLoan",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
+   },
+   "properties" : {}
+}

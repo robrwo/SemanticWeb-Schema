@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date and time of giving up ownership on the product.",
+      "rdfs:label" : "ownedThrough",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:OwnershipInfo",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

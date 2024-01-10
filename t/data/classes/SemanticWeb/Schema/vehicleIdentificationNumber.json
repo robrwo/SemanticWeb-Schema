@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.",
+      "rdfs:label" : "vehicleIdentificationNumber",
+      "rdfs:subPropertyOf" : "schema:serialNumber",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

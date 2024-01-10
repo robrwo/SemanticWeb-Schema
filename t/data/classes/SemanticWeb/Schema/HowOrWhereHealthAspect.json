@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Information about how or where to find a topic. Also may contain location data that can be used for where to look for help if the topic is observed.",
+      "rdfs:label" : "HowOrWhereHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2374"
+   },
+   "properties" : {}
+}

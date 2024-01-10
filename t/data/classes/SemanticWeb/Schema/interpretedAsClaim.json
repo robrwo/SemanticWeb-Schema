@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Used to indicate a specific claim contained, implied, translated or refined from the content of a [[MediaObject]] or other [[CreativeWork]]. The interpreting party can be indicated using [[claimInterpreter]].",
+      "rdfs:label" : "interpretedAsClaim",
+      "rdfs:subPropertyOf" : "schema:description",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:MediaObject"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Claim",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

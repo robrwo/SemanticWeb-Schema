@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Date on which the content on this web page was last reviewed for accuracy and/or completeness.",
+      "rdfs:label" : "lastReviewed",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

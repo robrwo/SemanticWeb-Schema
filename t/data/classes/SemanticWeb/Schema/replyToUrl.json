@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The URL at which a reply may be posted to the specified UserComment.",
+      "rdfs:label" : "replyToUrl",
+      "schema:domainIncludes" : "schema:UserComments",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

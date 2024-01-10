@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.",
+      "rdfs:label" : "httpMethod",
+      "schema:domainIncludes" : "schema:EntryPoint",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

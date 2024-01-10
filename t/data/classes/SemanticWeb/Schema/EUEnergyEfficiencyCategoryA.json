@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:EUEnergyEfficiencyEnumeration",
+      "rdfs:comment" : "Represents EU Energy Efficiency Class A as defined in EU energy labeling regulations.",
+      "rdfs:label" : "EUEnergyEfficiencyCategoryA",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
+   },
+   "properties" : {}
+}

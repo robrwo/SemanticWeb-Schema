@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The thing -- flight, event, restaurant, etc. being reserved.",
+      "rdfs:label" : "reservationFor",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Classification of the album by its type of content: soundtrack, live album, studio album, etc.",
+      "rdfs:label" : "albumProductionType",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicAlbum",
+      "schema:rangeIncludes" : "schema:MusicAlbumProductionType"
+   },
+   "properties" : {}
+}

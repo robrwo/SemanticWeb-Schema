@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Other co-agents that participated in the action indirectly. E.g. John wrote a book with *Steve*.",
+      "rdfs:label" : "participant",
+      "schema:domainIncludes" : "schema:Action",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

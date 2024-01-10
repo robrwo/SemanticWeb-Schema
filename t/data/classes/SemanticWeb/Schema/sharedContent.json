@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A CreativeWork such as an image, video, or audio clip shared as part of this posting.",
+      "rdfs:label" : "sharedContent",
+      "schema:domainIncludes" : [
+         "schema:Comment",
+         "schema:SocialMediaPosting"
+      ],
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

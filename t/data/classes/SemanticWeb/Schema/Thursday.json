@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DayOfWeek",
+      "rdfs:comment" : "The day of the week between Wednesday and Friday.",
+      "rdfs:label" : "Thursday",
+      "schema:sameAs" : "entity:Q129"
+   },
+   "properties" : {}
+}

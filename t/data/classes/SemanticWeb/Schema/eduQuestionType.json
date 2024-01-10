@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "For questions that are part of learning resources (e.g. Quiz), eduQuestionType indicates the format of question being given. Example: \"Multiple choice\", \"Open ended\", \"Flashcard\".",
+      "rdfs:label" : "eduQuestionType",
+      "schema:domainIncludes" : [
+         "schema:SolveMathAction",
+         "schema:Question"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
+   },
+   "properties" : {}
+}

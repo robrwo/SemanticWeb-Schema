@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location in which the status applies.",
+      "rdfs:label" : "applicableLocation",
+      "schema:domainIncludes" : [
+         "schema:DrugCost",
+         "schema:DrugLegalStatus"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AdministrativeArea"
+   },
+   "properties" : {}
+}

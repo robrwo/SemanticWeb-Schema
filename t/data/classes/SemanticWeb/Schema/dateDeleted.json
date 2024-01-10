@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The datetime the item was removed from the DataFeed.",
+      "rdfs:label" : "dateDeleted",
+      "schema:domainIncludes" : "schema:DataFeedItem",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

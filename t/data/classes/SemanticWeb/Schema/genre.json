@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Genre of the creative work, broadcast channel or group.",
+      "rdfs:label" : "genre",
+      "schema:domainIncludes" : [
+         "schema:MusicGroup",
+         "schema:CreativeWork",
+         "schema:BroadcastChannel"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

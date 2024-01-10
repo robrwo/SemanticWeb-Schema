@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The publishing division which published the comic.",
+      "rdfs:label" : "publisherImprint",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

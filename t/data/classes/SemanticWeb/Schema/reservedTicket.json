@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A ticket associated with the reservation.",
+      "rdfs:label" : "reservedTicket",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:Ticket"
+   },
+   "properties" : {}
+}

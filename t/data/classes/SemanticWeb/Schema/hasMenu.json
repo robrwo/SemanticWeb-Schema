@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Either the actual menu as a structured representation, as text, or a URL of the menu.",
+      "rdfs:label" : "hasMenu",
+      "schema:domainIncludes" : "schema:FoodEstablishment",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:Menu"
+      ]
+   },
+   "properties" : {}
+}

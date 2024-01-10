@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The website to access the service.",
+      "rdfs:label" : "serviceUrl",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

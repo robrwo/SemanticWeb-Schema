@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total delay between the receipt of the order and the goods reaching the final customer.",
+      "rdfs:label" : "deliveryTime",
+      "schema:domainIncludes" : [
+         "schema:DeliveryTimeSettings",
+         "schema:OfferShippingDetails"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ShippingDeliveryTime",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

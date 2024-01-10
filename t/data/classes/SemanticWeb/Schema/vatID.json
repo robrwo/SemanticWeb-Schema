@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Value-added Tax ID of the organization or person.",
+      "rdfs:label" : "vatID",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

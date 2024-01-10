@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location depicted or described in the content. For example, the location in a photograph or painting.",
+      "rdfs:label" : "contentLocation",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

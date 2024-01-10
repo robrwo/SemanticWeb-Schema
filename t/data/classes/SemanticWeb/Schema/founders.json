@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person who founded this organization.",
+      "rdfs:label" : "founders",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Person",
+      "schema:supersededBy" : "schema:founder"
+   },
+   "properties" : {}
+}

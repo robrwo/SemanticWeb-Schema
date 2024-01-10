@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total financial value of the person as calculated by subtracting assets from liabilities.",
+      "rdfs:label" : "netWorth",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : [
+         "schema:PriceSpecification",
+         "schema:MonetaryAmount"
+      ]
+   },
+   "properties" : {}
+}

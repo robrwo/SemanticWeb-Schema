@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Information about questions that may be asked, when to see a professional, measures before seeing a doctor or content about the first consultation.",
+      "rdfs:label" : "SeeDoctorHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2374"
+   },
+   "properties" : {}
+}

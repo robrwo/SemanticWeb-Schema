@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of object. A question.",
+      "rdfs:label" : "question",
+      "rdfs:subPropertyOf" : "schema:object",
+      "schema:domainIncludes" : "schema:AskAction",
+      "schema:rangeIncludes" : "schema:Question"
+   },
+   "properties" : {}
+}

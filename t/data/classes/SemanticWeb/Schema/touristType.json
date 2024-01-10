@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Attraction suitable for type(s) of tourist. E.g. children, visitors from a particular country, etc. ",
+      "rdfs:label" : "touristType",
+      "schema:contributor" : [
+         "collab:Tourism",
+         "collab:IIT-CNR.it"
+      ],
+      "schema:domainIncludes" : [
+         "schema:TouristTrip",
+         "schema:TouristDestination",
+         "schema:TouristAttraction"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Audience"
+      ]
+   },
+   "properties" : {}
+}

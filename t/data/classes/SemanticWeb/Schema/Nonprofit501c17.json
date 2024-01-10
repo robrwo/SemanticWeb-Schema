@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:USNonprofitType",
+      "rdfs:comment" : "Nonprofit501c17: Non-profit type referring to Supplemental Unemployment Benefit Trusts.",
+      "rdfs:label" : "Nonprofit501c17",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

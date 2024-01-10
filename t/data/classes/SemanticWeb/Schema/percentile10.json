@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The 10th percentile value.",
+      "rdfs:label" : "percentile10",
+      "schema:domainIncludes" : "schema:QuantitativeValueDistribution",
+      "schema:rangeIncludes" : "schema:Number",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

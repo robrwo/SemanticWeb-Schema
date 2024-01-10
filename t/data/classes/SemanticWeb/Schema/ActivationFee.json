@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceComponentTypeEnumeration",
+      "rdfs:comment" : "Represents the activation fee part of the total price for an offered product, for example a cellphone contract.",
+      "rdfs:label" : "ActivationFee",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
+   },
+   "properties" : {}
+}

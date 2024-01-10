@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A unique identifier for the membership.",
+      "rdfs:label" : "membershipNumber",
+      "schema:domainIncludes" : "schema:ProgramMembership",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

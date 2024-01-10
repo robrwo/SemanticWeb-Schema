@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A full description of the lodging unit.",
+      "rdfs:label" : "lodgingUnitDescription",
+      "schema:domainIncludes" : "schema:LodgingReservation",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

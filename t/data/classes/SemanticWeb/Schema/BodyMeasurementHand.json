@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BodyMeasurementTypeEnumeration",
+      "rdfs:comment" : "Maximum hand girth (measured over the knuckles of the open right hand excluding thumb, fingers together). Used, for example, to fit gloves.",
+      "rdfs:label" : "BodyMeasurementHand",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

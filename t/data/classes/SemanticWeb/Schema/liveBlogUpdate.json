@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An update to the LiveBlog.",
+      "rdfs:label" : "liveBlogUpdate",
+      "schema:domainIncludes" : "schema:LiveBlogPosting",
+      "schema:rangeIncludes" : "schema:BlogPosting"
+   },
+   "properties" : {}
+}

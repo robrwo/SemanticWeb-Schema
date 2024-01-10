@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The estimated time the flight will take.",
+      "rdfs:label" : "estimatedFlightDuration",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Duration"
+      ]
+   },
+   "properties" : {}
+}

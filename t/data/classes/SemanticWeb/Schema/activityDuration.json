@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Length of time to engage in the activity.",
+      "rdfs:label" : "activityDuration",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Duration"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GamePlayMode",
+      "rdfs:comment" : "Play mode: SinglePlayer. Which is played by a lone player.",
+      "rdfs:label" : "SinglePlayer"
+   },
+   "properties" : {}
+}

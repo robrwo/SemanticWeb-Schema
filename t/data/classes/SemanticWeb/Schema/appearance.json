@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates an occurrence of a [[Claim]] in some [[CreativeWork]].",
+      "rdfs:label" : "appearance",
+      "rdfs:subPropertyOf" : "schema:workExample",
+      "schema:domainIncludes" : "schema:Claim",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:CreativeWork",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1828"
+   },
+   "properties" : {}
+}

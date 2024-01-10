@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer to the organization or person making the offer.",
+      "rdfs:label" : "offeredBy",
+      "schema:domainIncludes" : "schema:Offer",
+      "schema:inverseOf" : "schema:makesOffer",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

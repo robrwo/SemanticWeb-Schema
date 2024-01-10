@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a legal jurisdiction, e.g. of some legislation, or where some government service is based.",
+      "rdfs:label" : "jurisdiction",
+      "schema:domainIncludes" : [
+         "schema:Legislation",
+         "schema:GovernmentService"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AdministrativeArea",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
+   },
+   "properties" : {}
+}

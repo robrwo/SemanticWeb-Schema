@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. As defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).",
+      "rdfs:label" : "geoIntersects",
+      "schema:domainIncludes" : [
+         "schema:Place",
+         "schema:GeospatialGeometry"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:GeospatialGeometry",
+         "schema:Place"
+      ]
+   },
+   "properties" : {}
+}

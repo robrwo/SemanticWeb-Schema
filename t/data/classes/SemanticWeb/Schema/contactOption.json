@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).",
+      "rdfs:label" : "contactOption",
+      "schema:domainIncludes" : "schema:ContactPoint",
+      "schema:rangeIncludes" : "schema:ContactPointOption"
+   },
+   "properties" : {}
+}

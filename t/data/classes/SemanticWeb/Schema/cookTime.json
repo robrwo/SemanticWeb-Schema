@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time it takes to actually cook the dish, in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+      "rdfs:label" : "cookTime",
+      "rdfs:subPropertyOf" : "schema:performTime",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Use [[MonetaryAmount]] to specify a fixed restocking fee for product returns, or use [[Number]] to specify a percentage of the product price paid by the customer.",
+      "rdfs:label" : "restockingFee",
+      "schema:domainIncludes" : "schema:MerchantReturnPolicy",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:MonetaryAmount"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

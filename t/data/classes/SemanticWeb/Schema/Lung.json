@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalExam",
+      "rdfs:comment" : "Lung and respiratory system clinical examination.",
+      "rdfs:label" : "Lung",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

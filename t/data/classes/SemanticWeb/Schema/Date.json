@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : [
+         "rdfs:Class",
+         "schema:DataType"
+      ],
+      "rdfs:comment" : "A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
+      "rdfs:label" : "Date"
+   },
+   "properties" : {}
+}

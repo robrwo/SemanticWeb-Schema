@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).",
+      "rdfs:label" : "geoRadius",
+      "schema:domainIncludes" : "schema:GeoCircle",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:Text",
+         "schema:Distance"
+      ]
+   },
+   "properties" : {}
+}

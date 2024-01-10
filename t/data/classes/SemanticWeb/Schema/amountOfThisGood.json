@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The quantity of the goods included in the offer.",
+      "rdfs:label" : "amountOfThisGood",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:TypeAndQuantityNode",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

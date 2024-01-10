@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DriveWheelConfigurationValue",
+      "rdfs:comment" : "Front-wheel drive is a transmission layout where the engine drives the front wheels.",
+      "rdfs:label" : "FrontWheelDriveConfiguration",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group"
+   },
+   "properties" : {}
+}

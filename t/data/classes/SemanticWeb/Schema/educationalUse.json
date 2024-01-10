@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The purpose of a work in the context of education; for example, 'assignment', 'group work'.",
+      "rdfs:label" : "educationalUse",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:LearningResource"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

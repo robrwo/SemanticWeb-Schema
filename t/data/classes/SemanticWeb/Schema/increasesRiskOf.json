@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The condition, complication, etc. influenced by this factor.",
+      "rdfs:label" : "increasesRiskOf",
+      "schema:domainIncludes" : "schema:MedicalRiskFactor",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalEntity"
+   },
+   "properties" : {}
+}

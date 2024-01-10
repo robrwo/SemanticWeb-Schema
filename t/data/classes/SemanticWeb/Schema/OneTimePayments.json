@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GovernmentBenefitsType",
+      "rdfs:comment" : "OneTimePayments: this is a benefit for one-time payments for individuals.",
+      "rdfs:label" : "OneTimePayments",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
+   },
+   "properties" : {}
+}

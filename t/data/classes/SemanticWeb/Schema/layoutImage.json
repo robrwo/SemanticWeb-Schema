@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A schematic image showing the floorplan layout.",
+      "rdfs:label" : "layoutImage",
+      "rdfs:subPropertyOf" : "schema:image",
+      "schema:domainIncludes" : "schema:FloorPlan",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:ImageObject"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2690"
+   },
+   "properties" : {}
+}

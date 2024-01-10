@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BodyMeasurementTypeEnumeration",
+      "rdfs:comment" : "Foot length (measured between end of the most prominent toe and the most prominent part of the heel). Used, for example, to measure socks.",
+      "rdfs:label" : "BodyMeasurementFoot",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

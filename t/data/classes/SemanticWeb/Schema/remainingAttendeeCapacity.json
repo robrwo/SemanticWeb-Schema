@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of attendee places for an event that remain unallocated.",
+      "rdfs:label" : "remainingAttendeeCapacity",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

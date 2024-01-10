@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of return fees if the product is returned due to customer remorse.",
+      "rdfs:label" : "customerRemorseReturnFees",
+      "schema:domainIncludes" : "schema:MerchantReturnPolicy",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ReturnFeesEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

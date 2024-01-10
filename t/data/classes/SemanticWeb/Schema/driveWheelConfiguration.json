@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The drive wheel configuration, i.e. which roadwheels will receive torque from the vehicle's engine via the drivetrain.",
+      "rdfs:label" : "driveWheelConfiguration",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : [
+         "schema:DriveWheelConfigurationValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

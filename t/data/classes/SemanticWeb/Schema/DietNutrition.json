@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "Dietetics and nutrition as a medical specialty.",
+      "rdfs:label" : "DietNutrition",
+      "rdfs:subClassOf" : "schema:MedicalBusiness",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

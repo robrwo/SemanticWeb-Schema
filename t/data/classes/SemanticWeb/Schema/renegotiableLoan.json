@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether the terms for payment of interest can be renegotiated during the life of the loan.",
+      "rdfs:label" : "renegotiableLoan",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:LoanOrCredit",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
+   },
+   "properties" : {}
+}

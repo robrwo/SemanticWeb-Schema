@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BodyMeasurementTypeEnumeration",
+      "rdfs:comment" : "Girth of hips (measured around the buttocks). Used, for example, to fit skirts.",
+      "rdfs:label" : "BodyMeasurementHips",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

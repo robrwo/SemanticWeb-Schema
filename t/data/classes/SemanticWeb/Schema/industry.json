@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The industry associated with the job position.",
+      "rdfs:label" : "industry",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

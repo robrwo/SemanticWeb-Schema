@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type(s) of customers for which the given offer is valid.",
+      "rdfs:label" : "eligibleCustomerType",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : "schema:BusinessEntityType"
+   },
+   "properties" : {}
+}

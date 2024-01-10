@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:USNonprofitType",
+      "rdfs:comment" : "Nonprofit501q: Non-profit type referring to Credit Counseling Organizations.",
+      "rdfs:label" : "Nonprofit501q",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

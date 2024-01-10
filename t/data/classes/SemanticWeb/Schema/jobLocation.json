@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A (typically single) geographic location associated with the job position.",
+      "rdfs:label" : "jobLocation",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

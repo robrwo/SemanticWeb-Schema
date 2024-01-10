@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The place where the Organization was founded.",
+      "rdfs:label" : "foundingLocation",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

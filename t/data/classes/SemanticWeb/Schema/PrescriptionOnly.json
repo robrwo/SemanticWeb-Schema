@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DrugPrescriptionStatus",
+      "rdfs:comment" : "Available by prescription only.",
+      "rdfs:label" : "PrescriptionOnly",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The electronic systems used to play <a href=\"http://en.wikipedia.org/wiki/Category:Video_game_platforms\">video games</a>.",
+      "rdfs:label" : "gamePlatform",
+      "schema:domainIncludes" : [
+         "schema:VideoGameSeries",
+         "schema:VideoGame"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:Thing"
+      ]
+   },
+   "properties" : {}
+}

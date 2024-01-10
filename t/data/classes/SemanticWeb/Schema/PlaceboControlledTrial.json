@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalTrialDesign",
+      "rdfs:comment" : "A placebo-controlled trial design.",
+      "rdfs:label" : "PlaceboControlledTrial",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

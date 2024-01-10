@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The subject matter of the content.",
+      "rdfs:label" : "about",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:CommunicateAction",
+         "schema:Event"
+      ],
+      "schema:inverseOf" : "schema:subjectOf",
+      "schema:rangeIncludes" : "schema:Thing",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1670"
+   },
+   "properties" : {}
+}

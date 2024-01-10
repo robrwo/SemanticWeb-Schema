@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether the book is an abridged edition.",
+      "rdfs:label" : "abridged",
+      "schema:domainIncludes" : "schema:Book",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

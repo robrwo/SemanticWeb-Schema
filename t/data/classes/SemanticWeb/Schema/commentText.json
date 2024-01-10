@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The text of the UserComment.",
+      "rdfs:label" : "commentText",
+      "schema:domainIncludes" : "schema:UserComments",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

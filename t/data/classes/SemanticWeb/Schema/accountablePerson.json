@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies the Person that is legally accountable for the CreativeWork.",
+      "rdfs:label" : "accountablePerson",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

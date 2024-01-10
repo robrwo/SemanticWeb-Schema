@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indications regarding the permitted usage of the accommodation.",
+      "rdfs:label" : "permittedUsage",
+      "schema:contributor" : "collab:STI_Accommodation_Ontology",
+      "schema:domainIncludes" : "schema:Accommodation",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

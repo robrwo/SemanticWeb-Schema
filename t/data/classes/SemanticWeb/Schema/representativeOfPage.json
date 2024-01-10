@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether this image is representative of the content of the page.",
+      "rdfs:label" : "representativeOfPage",
+      "schema:domainIncludes" : "schema:ImageObject",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

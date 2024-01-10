@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number to access the service by text message.",
+      "rdfs:label" : "serviceSmsNumber",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:ContactPoint"
+   },
+   "properties" : {}
+}

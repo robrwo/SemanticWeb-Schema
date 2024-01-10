@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DigitalDocumentPermissionType",
+      "rdfs:comment" : "Permission to read or view the document.",
+      "rdfs:label" : "ReadPermission"
+   },
+   "properties" : {}
+}

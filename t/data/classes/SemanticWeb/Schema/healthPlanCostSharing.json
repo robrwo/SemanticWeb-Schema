@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The costs to the patient for services under this network or formulary.",
+      "rdfs:label" : "healthPlanCostSharing",
+      "schema:domainIncludes" : [
+         "schema:HealthPlanNetwork",
+         "schema:HealthPlanFormulary"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

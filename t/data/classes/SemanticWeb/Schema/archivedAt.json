@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a page or other link involved in archival of a [[CreativeWork]]. In the case of [[MediaReview]], the items in a [[MediaReviewItem]] may often become inaccessible, but be archived by archival, journalistic, activist, or law enforcement organizations. In such cases, the referenced page may not directly publish the content.",
+      "rdfs:label" : "archivedAt",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:WebPage"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

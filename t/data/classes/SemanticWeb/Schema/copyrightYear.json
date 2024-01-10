@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The year during which the claimed copyright for the CreativeWork was first asserted.",
+      "rdfs:label" : "copyrightYear",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

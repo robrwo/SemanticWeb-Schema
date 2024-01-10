@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A posting that is part of this blog.",
+      "rdfs:label" : "blogPost",
+      "schema:domainIncludes" : "schema:Blog",
+      "schema:rangeIncludes" : "schema:BlogPosting"
+   },
+   "properties" : {}
+}

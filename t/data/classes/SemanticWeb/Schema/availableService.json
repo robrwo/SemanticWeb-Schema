@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical service available from this provider.",
+      "rdfs:label" : "availableService",
+      "schema:domainIncludes" : [
+         "schema:Physician",
+         "schema:Hospital",
+         "schema:MedicalClinic"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:MedicalTherapy",
+         "schema:MedicalTest",
+         "schema:MedicalProcedure"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.",
+      "rdfs:label" : "reviewedBy",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The value of an active ingredient's strength, e.g. 325.",
+      "rdfs:label" : "strengthValue",
+      "schema:domainIncludes" : "schema:DrugStrength",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

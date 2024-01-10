@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An agent associated with the publication event.",
+      "rdfs:label" : "publishedBy",
+      "schema:domainIncludes" : "schema:PublicationEvent",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

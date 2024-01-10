@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A work performed in some event, for example a play performed in a TheaterEvent.",
+      "rdfs:label" : "workPerformed",
+      "rdfs:subPropertyOf" : "schema:workFeatured",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

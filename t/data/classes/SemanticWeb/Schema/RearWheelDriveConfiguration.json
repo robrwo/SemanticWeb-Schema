@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DriveWheelConfigurationValue",
+      "rdfs:comment" : "Real-wheel drive is a transmission layout where the engine drives the rear wheels.",
+      "rdfs:label" : "RearWheelDriveConfiguration",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The typical expected age range, e.g. '7-9', '11-'.",
+      "rdfs:label" : "typicalAgeRange",
+      "schema:domainIncludes" : [
+         "schema:Event",
+         "schema:CreativeWork"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

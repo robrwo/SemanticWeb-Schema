@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A BioChemEntity that is known to interact with this item.",
+      "rdfs:label" : "bioChemInteraction",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:BioChemEntity",
+      "schema:source" : "http:www.bioschemas.org"
+   },
+   "properties" : {}
+}

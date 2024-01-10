@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Content that discusses and explains how a particular health-related topic works, e.g. in terms of mechanisms and underlying science.",
+      "rdfs:label" : "HowItWorksHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2799"
+   },
+   "properties" : {}
+}

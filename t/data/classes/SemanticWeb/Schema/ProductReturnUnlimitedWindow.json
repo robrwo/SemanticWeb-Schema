@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ProductReturnEnumeration",
+      "rdfs:comment" : "ProductReturnUnlimitedWindow: there is an unlimited window for product returns.",
+      "rdfs:label" : "ProductReturnUnlimitedWindow",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:MerchantReturnUnlimitedWindow"
+   },
+   "properties" : {}
+}

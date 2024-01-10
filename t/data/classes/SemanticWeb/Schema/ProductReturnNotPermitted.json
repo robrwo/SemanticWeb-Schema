@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ProductReturnEnumeration",
+      "rdfs:comment" : "ProductReturnNotPermitted: product returns are not permitted.",
+      "rdfs:label" : "ProductReturnNotPermitted",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:MerchantReturnNotPermitted"
+   },
+   "properties" : {}
+}

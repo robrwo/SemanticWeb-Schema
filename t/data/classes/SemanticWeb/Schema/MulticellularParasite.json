@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:InfectiousAgentClass",
+      "rdfs:comment" : "Multicellular parasite that causes an infection.",
+      "rdfs:label" : "MulticellularParasite",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

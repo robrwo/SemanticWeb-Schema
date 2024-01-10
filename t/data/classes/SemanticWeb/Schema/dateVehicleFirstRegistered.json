@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date of the first registration of the vehicle with the respective public authorities.",
+      "rdfs:label" : "dateVehicleFirstRegistered",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

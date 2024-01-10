@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalExam",
+      "rdfs:comment" : "Abdomen clinical examination.",
+      "rdfs:label" : "Abdomen",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term.",
+      "rdfs:label" : "teaches",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:EducationEvent",
+         "schema:LearningResource"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2427"
+   },
+   "properties" : {}
+}

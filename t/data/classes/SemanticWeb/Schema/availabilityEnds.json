@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The end of the availability of the product or service included in the offer.",
+      "rdfs:label" : "availabilityEnds",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:ActionAccessSpecification",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Time",
+         "schema:Date"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
+   },
+   "properties" : {}
+}

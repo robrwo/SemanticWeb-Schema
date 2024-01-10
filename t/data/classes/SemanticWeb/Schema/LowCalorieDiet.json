@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RestrictedDiet",
+      "rdfs:comment" : "A diet focused on reduced calorie intake.",
+      "rdfs:label" : "LowCalorieDiet"
+   },
+   "properties" : {}
+}

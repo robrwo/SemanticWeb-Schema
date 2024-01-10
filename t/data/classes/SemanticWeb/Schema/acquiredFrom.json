@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The organization or person from which the product was acquired.",
+      "rdfs:label" : "acquiredFrom",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:OwnershipInfo",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

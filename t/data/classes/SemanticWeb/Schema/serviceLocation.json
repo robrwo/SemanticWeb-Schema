@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location (e.g. civic structure, local business, etc.) where a person can go to access the service.",
+      "rdfs:label" : "serviceLocation",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:WearableSizeGroupEnumeration",
+      "rdfs:comment" : "Size group \"Girls\" for wearables.",
+      "rdfs:label" : "WearableSizeGroupGirls",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The larger organization that this local business is a branch of, if any. Not to be confused with (anatomical) [[branch]].",
+      "rdfs:label" : "branchOf",
+      "schema:domainIncludes" : "schema:LocalBusiness",
+      "schema:rangeIncludes" : "schema:Organization",
+      "schema:supersededBy" : "schema:parentOrganization"
+   },
+   "properties" : {}
+}

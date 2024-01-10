@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [[Grant]] that directly or indirectly provide funding or sponsorship for this item. See also [[ownershipFundingInfo]].",
+      "rdfs:label" : "funding",
+      "schema:contributor" : "collab:TP",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization",
+         "schema:Event",
+         "schema:Product",
+         "schema:BioChemEntity",
+         "schema:MedicalEntity",
+         "schema:CreativeWork"
+      ],
+      "schema:inverseOf" : "schema:fundedItem",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Grant",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/383"
+   },
+   "properties" : {}
+}

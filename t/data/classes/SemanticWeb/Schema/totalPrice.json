@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total price for the reservation or ticket, including applicable taxes, shipping, etc.\\n\\nUsage guidelines:\\n\\n* Use values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similar Unicode symbols.\\n* Use '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.",
+      "rdfs:label" : "totalPrice",
+      "schema:domainIncludes" : [
+         "schema:Ticket",
+         "schema:Reservation"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:PriceSpecification",
+         "schema:Text",
+         "schema:Number"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "URL at which the app may be installed, if different from the URL of the item.",
+      "rdfs:label" : "installUrl",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

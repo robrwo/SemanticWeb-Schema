@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The individual who adds color to inked drawings.",
+      "rdfs:label" : "colorist",
+      "schema:domainIncludes" : [
+         "schema:VisualArtwork",
+         "schema:ComicIssue",
+         "schema:ComicStory"
+      ],
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

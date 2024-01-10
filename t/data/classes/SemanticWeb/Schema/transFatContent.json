@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of grams of trans fat.",
+      "rdfs:label" : "transFatContent",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Mass"
+   },
+   "properties" : {}
+}

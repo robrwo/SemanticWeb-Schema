@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The geo coordinates of the place.",
+      "rdfs:label" : "geo",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:rangeIncludes" : [
+         "schema:GeoShape",
+         "schema:GeoCoordinates"
+      ]
+   },
+   "properties" : {}
+}

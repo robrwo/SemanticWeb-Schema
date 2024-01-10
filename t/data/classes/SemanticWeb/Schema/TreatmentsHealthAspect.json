@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Treatments or related therapies for a Topic.",
+      "rdfs:label" : "TreatmentsHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2374"
+   },
+   "properties" : {}
+}

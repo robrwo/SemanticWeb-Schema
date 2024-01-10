@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Family name. In the U.S., the last name of a Person.",
+      "rdfs:label" : "familyName",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

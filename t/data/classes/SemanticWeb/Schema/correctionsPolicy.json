@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "For an [[Organization]] (e.g. [[NewsMediaOrganization]]), a statement describing (in news media, the newsroom’s) disclosure and correction policy for errors.",
+      "rdfs:label" : "correctionsPolicy",
+      "rdfs:subPropertyOf" : "schema:publishingPrinciples",
+      "schema:contributor" : "collab:TP",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:NewsMediaOrganization"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:CreativeWork"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1525"
+   },
+   "properties" : {}
+}

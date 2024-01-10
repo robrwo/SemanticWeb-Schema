@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates when shipping to a particular [[shippingDestination]] is not available.",
+      "rdfs:label" : "doesNotShip",
+      "schema:domainIncludes" : [
+         "schema:ShippingRateSettings",
+         "schema:OfferShippingDetails"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The words in the song.",
+      "rdfs:label" : "lyrics",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

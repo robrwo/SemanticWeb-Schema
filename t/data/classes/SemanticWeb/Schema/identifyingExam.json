@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A physical examination that can identify this sign.",
+      "rdfs:label" : "identifyingExam",
+      "schema:domainIncludes" : "schema:MedicalSign",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:PhysicalExam"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date after which the price is no longer available.",
+      "rdfs:label" : "priceValidUntil",
+      "schema:domainIncludes" : "schema:Offer",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

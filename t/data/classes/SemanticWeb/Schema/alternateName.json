@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An alias for the item.",
+      "rdfs:label" : "alternateName",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This property is deprecated, alongside the UserInteraction types on which it depended.",
+      "rdfs:label" : "interactionCount",
+      "schema:supersededBy" : "schema:interactionStatistic"
+   },
+   "properties" : {}
+}

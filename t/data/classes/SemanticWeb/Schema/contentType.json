@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The supported content type(s) for an EntryPoint response.",
+      "rdfs:label" : "contentType",
+      "schema:domainIncludes" : "schema:EntryPoint",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

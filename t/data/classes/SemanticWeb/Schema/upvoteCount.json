@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of upvotes this question, answer or comment has received from the community.",
+      "rdfs:label" : "upvoteCount",
+      "schema:domainIncludes" : "schema:Comment",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

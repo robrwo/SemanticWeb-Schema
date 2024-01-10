@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Description of bonus and commission compensation aspects of the job.",
+      "rdfs:label" : "incentives",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:incentiveCompensation"
+   },
+   "properties" : {}
+}

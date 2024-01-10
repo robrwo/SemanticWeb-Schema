@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Estimated processing time for the service using this channel.",
+      "rdfs:label" : "processingTime",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

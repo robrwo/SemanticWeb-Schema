@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Strength of evidence of the data used to formulate the guideline (enumerated).",
+      "rdfs:label" : "evidenceLevel",
+      "schema:domainIncludes" : "schema:MedicalGuideline",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalEvidenceLevel"
+   },
+   "properties" : {}
+}

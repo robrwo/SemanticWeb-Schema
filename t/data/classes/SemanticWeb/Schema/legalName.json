@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The official name of the organization, e.g. the registered company name.",
+      "rdfs:label" : "legalName",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

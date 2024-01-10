@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A contact location for a person's residence.",
+      "rdfs:label" : "homeLocation",
+      "rdfs:subPropertyOf" : "schema:location",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : [
+         "schema:Place",
+         "schema:ContactPoint"
+      ]
+   },
+   "properties" : {}
+}

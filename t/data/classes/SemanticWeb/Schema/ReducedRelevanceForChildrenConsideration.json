@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:AdultOrientedEnumeration",
+      "rdfs:comment" : "A general code for cases where relevance to children is reduced, e.g. adult education, mortgages, retirement-related products, etc.",
+      "rdfs:label" : "ReducedRelevanceForChildrenConsideration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

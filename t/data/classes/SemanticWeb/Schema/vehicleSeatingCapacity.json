@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of passengers that can be seated in the vehicle, both in terms of the physical space available, and in terms of limitations set by law.\\n\\nTypical unit code(s): C62 for persons.",
+      "rdfs:label" : "vehicleSeatingCapacity",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Number"
+      ]
+   },
+   "properties" : {}
+}

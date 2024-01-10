@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of grams of saturated fat.",
+      "rdfs:label" : "saturatedFatContent",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Mass"
+   },
+   "properties" : {}
+}

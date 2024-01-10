@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnLabelSourceEnumeration",
+      "rdfs:comment" : "Specifies that a return label will be provided by the seller in the shipping box.",
+      "rdfs:label" : "ReturnLabelInBox",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The typical working hours for this job (e.g. 1st shift, night shift, 8am-5pm).",
+      "rdfs:label" : "workHours",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalProcedureType",
+      "rdfs:comment" : "A type of medical procedure that involves percutaneous techniques, where access to organs or tissue is achieved via needle-puncture of the skin. For example, catheter-based procedures like stent delivery.",
+      "rdfs:label" : "PercutaneousProcedure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

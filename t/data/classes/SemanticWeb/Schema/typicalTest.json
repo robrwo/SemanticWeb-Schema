@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical test typically performed given this condition.",
+      "rdfs:label" : "typicalTest",
+      "schema:domainIncludes" : "schema:MedicalCondition",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTest"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalDevicePurpose",
+      "rdfs:comment" : "A medical device used for diagnostic purposes.",
+      "rdfs:label" : "Diagnostic",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The [SHA-2](https://en.wikipedia.org/wiki/SHA-2) SHA256 hash of the content of the item. For example, a zero-length input has value 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'.",
+      "rdfs:label" : "sha256",
+      "rdfs:subPropertyOf" : "schema:description",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

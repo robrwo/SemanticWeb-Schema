@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of credits or units awarded by a Course or required to complete an EducationalOccupationalProgram.",
+      "rdfs:label" : "numberOfCredits",
+      "schema:domainIncludes" : [
+         "schema:Course",
+         "schema:EducationalOccupationalProgram"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:StructuredValue",
+         "schema:Integer"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
+   },
+   "properties" : {}
+}

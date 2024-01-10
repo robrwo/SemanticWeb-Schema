@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A release of this album.",
+      "rdfs:label" : "albumRelease",
+      "schema:domainIncludes" : "schema:MusicAlbum",
+      "schema:inverseOf" : "schema:releaseOf",
+      "schema:rangeIncludes" : "schema:MusicRelease"
+   },
+   "properties" : {}
+}

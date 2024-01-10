@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "True if this item's name is a proprietary/brand name (vs. generic name).",
+      "rdfs:label" : "isProprietary",
+      "schema:domainIncludes" : [
+         "schema:Drug",
+         "schema:DietarySupplement"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

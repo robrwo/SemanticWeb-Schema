@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The category of cost, such as wholesale, retail, reimbursement cap, etc.",
+      "rdfs:label" : "costCategory",
+      "schema:domainIncludes" : "schema:DrugCost",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:DrugCostCategory"
+   },
+   "properties" : {}
+}

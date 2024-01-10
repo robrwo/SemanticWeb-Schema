@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The area to which the artery supplies blood.",
+      "rdfs:label" : "supplyTo",
+      "schema:domainIncludes" : "schema:Artery",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalStructure"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain.",
+      "rdfs:label" : "taxID",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Device required to run the application. Used in cases where a specific make/model is required to run the application.",
+      "rdfs:label" : "device",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:availableOnDevice"
+   },
+   "properties" : {}
+}

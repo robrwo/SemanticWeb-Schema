@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates data describing a hospital, e.g. a CDC [[CDCPMDRecord]] or as some kind of [[Dataset]].",
+      "rdfs:label" : "healthcareReportingData",
+      "schema:domainIncludes" : "schema:Hospital",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:CDCPMDRecord",
+         "schema:Dataset"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
+   },
+   "properties" : {}
+}

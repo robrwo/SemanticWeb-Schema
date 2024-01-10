@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of engine or engines powering the vehicle.",
+      "rdfs:label" : "engineType",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:EngineSpecification",
+      "schema:isPartOf" : "http:auto.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:QualitativeValue"
+      ]
+   },
+   "properties" : {}
+}

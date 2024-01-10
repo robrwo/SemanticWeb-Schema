@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The stage represented as a number, e.g. 3.",
+      "rdfs:label" : "stageAsNumber",
+      "schema:domainIncludes" : "schema:MedicalConditionStage",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

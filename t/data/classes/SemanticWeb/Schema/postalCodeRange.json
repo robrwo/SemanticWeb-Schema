@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A defined range of postal codes.",
+      "rdfs:label" : "postalCodeRange",
+      "schema:domainIncludes" : "schema:DefinedRegion",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:PostalCodeRangeSpecification",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

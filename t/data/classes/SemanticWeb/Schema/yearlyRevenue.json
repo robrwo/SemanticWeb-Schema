@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The size of the business in annual revenue.",
+      "rdfs:label" : "yearlyRevenue",
+      "schema:domainIncludes" : "schema:BusinessAudience",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

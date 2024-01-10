@@ -4,6 +4,8 @@ Revision history for {{$dist->name}}:
   [Enhancements]
   - Updated classes to Version 24.0 of the schema.
 
+  - Added stub datatype classes to simplify class generation.
+
   [Documentatopm]
   - Updated copyright year.
 

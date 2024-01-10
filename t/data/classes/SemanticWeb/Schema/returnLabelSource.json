@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The method (from an enumeration) by which the customer obtains a return shipping label for a product returned for any reason.",
+      "rdfs:label" : "returnLabelSource",
+      "schema:domainIncludes" : "schema:MerchantReturnPolicy",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ReturnLabelSourceEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The RxCUI drug identifier from RXNORM.",
+      "rdfs:label" : "rxcui",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

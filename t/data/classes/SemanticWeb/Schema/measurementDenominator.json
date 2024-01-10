@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Identifies the denominator variable when an observation represents a ratio or percentage.",
+      "rdfs:label" : "measurementDenominator",
+      "schema:domainIncludes" : [
+         "schema:StatisticalVariable",
+         "schema:Observation"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:StatisticalVariable",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2564"
+   },
+   "properties" : {}
+}

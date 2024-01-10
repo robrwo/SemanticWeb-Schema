@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Additional details to capture the origin of the cost data. For example, 'Medicare Part B'.",
+      "rdfs:label" : "costOrigin",
+      "schema:domainIncludes" : "schema:DrugCost",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The medical conditions, treatments, etc. that are the subject of the guideline.",
+      "rdfs:label" : "guidelineSubject",
+      "schema:domainIncludes" : "schema:MedicalGuideline",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalEntity"
+   },
+   "properties" : {}
+}

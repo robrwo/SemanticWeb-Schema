@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a specialist if necessary.",
+      "rdfs:label" : "PrimaryCare",
+      "rdfs:subClassOf" : "schema:MedicalBusiness",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

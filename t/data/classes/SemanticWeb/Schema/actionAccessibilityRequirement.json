@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A set of requirements that must be fulfilled in order to perform an Action. If more than one value is specified, fulfilling one set of requirements will allow the Action to be performed.",
+      "rdfs:label" : "actionAccessibilityRequirement",
+      "schema:domainIncludes" : "schema:ConsumeAction",
+      "schema:rangeIncludes" : "schema:ActionAccessSpecification",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
+   },
+   "properties" : {}
+}

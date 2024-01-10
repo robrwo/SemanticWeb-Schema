@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:USNonprofitType",
+      "rdfs:comment" : "Nonprofit501c2: Non-profit type referring to Title-holding Corporations for Exempt Organizations.",
+      "rdfs:label" : "Nonprofit501c2",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

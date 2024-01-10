@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PaymentStatusType",
+      "rdfs:comment" : "An automatic payment system is in place and will be used.",
+      "rdfs:label" : "PaymentAutomaticallyApplied"
+   },
+   "properties" : {}
+}

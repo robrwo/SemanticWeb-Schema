@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.",
+      "rdfs:label" : "namedPosition",
+      "schema:domainIncludes" : "schema:Role",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:supersededBy" : "schema:roleName"
+   },
+   "properties" : {}
+}

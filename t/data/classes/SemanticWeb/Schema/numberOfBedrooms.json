@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total integer number of bedrooms in a some [[Accommodation]], [[ApartmentComplex]] or [[FloorPlan]].",
+      "rdfs:label" : "numberOfBedrooms",
+      "schema:domainIncludes" : [
+         "schema:ApartmentComplex",
+         "schema:Accommodation",
+         "schema:FloorPlan"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:QuantitativeValue"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
+   },
+   "properties" : {}
+}

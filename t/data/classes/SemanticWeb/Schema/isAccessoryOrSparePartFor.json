@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer to another product (or multiple products) for which this product is an accessory or spare part.",
+      "rdfs:label" : "isAccessoryOrSparePartFor",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:rangeIncludes" : "schema:Product"
+   },
+   "properties" : {}
+}

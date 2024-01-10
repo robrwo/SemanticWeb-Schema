@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalAudienceType",
+      "rdfs:comment" : "Medical researchers.",
+      "rdfs:label" : "MedicalResearcher",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

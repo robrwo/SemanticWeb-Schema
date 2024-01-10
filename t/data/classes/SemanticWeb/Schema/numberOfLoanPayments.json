@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of payments contractually required at origination to repay the loan. For monthly paying loans this is the number of months from the contractual first payment date to the maturity date.",
+      "rdfs:label" : "numberOfLoanPayments",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:RepaymentSpecification",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Number",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
+   },
+   "properties" : {}
+}

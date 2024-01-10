@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Position of the clip within an ordered group of clips.",
+      "rdfs:label" : "clipNumber",
+      "rdfs:subPropertyOf" : "schema:position",
+      "schema:domainIncludes" : "schema:Clip",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Integer"
+      ]
+   },
+   "properties" : {}
+}

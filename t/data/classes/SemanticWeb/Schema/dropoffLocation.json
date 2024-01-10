@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Where a rental car can be dropped off.",
+      "rdfs:label" : "dropoffLocation",
+      "schema:domainIncludes" : "schema:RentalCarReservation",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

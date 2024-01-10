@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The cuisine of the recipe (for example, French or Ethiopian).",
+      "rdfs:label" : "recipeCuisine",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

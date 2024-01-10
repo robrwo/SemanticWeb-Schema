@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The format of the book.",
+      "rdfs:label" : "bookFormat",
+      "schema:domainIncludes" : "schema:Book",
+      "schema:rangeIncludes" : "schema:BookFormatType"
+   },
+   "properties" : {}
+}

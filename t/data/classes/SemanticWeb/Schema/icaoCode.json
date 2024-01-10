@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "ICAO identifier for an airport.",
+      "rdfs:label" : "icaoCode",
+      "schema:domainIncludes" : "schema:Airport",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

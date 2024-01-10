@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of recipient. The recipient who was directly sent the message.",
+      "rdfs:label" : "toRecipient",
+      "rdfs:subPropertyOf" : "schema:recipient",
+      "schema:domainIncludes" : "schema:Message",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Audience",
+         "schema:Organization",
+         "schema:ContactPoint"
+      ]
+   },
+   "properties" : {}
+}

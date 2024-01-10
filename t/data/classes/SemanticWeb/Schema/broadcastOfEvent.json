@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The event being broadcast such as a sporting event or awards ceremony.",
+      "rdfs:label" : "broadcastOfEvent",
+      "schema:domainIncludes" : "schema:BroadcastEvent",
+      "schema:rangeIncludes" : "schema:Event"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies the allowed range for number of characters in a literal value.",
+      "rdfs:label" : "valueMaxLength",
+      "schema:domainIncludes" : "schema:PropertyValueSpecification",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

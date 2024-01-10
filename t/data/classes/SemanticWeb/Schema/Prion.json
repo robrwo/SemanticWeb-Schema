@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:InfectiousAgentClass",
+      "rdfs:comment" : "A prion is an infectious agent composed of protein in a misfolded form.",
+      "rdfs:label" : "Prion",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

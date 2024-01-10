@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Number of times one should repeat the activity.",
+      "rdfs:label" : "repetitions",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Number"
+      ]
+   },
+   "properties" : {}
+}

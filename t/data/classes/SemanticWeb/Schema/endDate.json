@@ -1,0 +1,23 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The end date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)).",
+      "rdfs:label" : "endDate",
+      "schema:domainIncludes" : [
+         "schema:Role",
+         "schema:CreativeWorkSeason",
+         "schema:DatedMoneySpecification",
+         "schema:MerchantReturnPolicySeasonalOverride",
+         "schema:CreativeWorkSeries",
+         "schema:Event",
+         "schema:EducationalOccupationalProgram",
+         "schema:Schedule"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2486"
+   },
+   "properties" : {}
+}

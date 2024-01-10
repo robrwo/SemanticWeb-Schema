@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReservationStatusType",
+      "rdfs:comment" : "The status of a confirmed reservation.",
+      "rdfs:label" : "ReservationConfirmed"
+   },
+   "properties" : {}
+}

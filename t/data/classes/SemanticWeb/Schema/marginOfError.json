@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [[marginOfError]] for an [[Observation]].",
+      "rdfs:label" : "marginOfError",
+      "schema:domainIncludes" : "schema:Observation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:QuantitativeValue",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+   },
+   "properties" : {}
+}

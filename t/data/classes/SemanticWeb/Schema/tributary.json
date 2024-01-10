@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The anatomical or organ system that the vein flows into; a larger structure that the vein connects to.",
+      "rdfs:label" : "tributary",
+      "schema:domainIncludes" : "schema:Vein",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalStructure"
+   },
+   "properties" : {}
+}

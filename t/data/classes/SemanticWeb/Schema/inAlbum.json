@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The album to which this recording belongs.",
+      "rdfs:label" : "inAlbum",
+      "schema:domainIncludes" : "schema:MusicRecording",
+      "schema:rangeIncludes" : "schema:MusicAlbum"
+   },
+   "properties" : {}
+}

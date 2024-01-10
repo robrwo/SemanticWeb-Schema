@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A short summary of the specific claims reviewed in a ClaimReview.",
+      "rdfs:label" : "claimReviewed",
+      "schema:domainIncludes" : "schema:ClaimReview",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1061"
+   },
+   "properties" : {}
+}

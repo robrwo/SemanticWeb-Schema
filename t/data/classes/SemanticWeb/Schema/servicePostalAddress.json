@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The address for accessing the service by mail.",
+      "rdfs:label" : "servicePostalAddress",
+      "schema:domainIncludes" : "schema:ServiceChannel",
+      "schema:rangeIncludes" : "schema:PostalAddress"
+   },
+   "properties" : {}
+}

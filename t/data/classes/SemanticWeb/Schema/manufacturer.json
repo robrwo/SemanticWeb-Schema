@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The manufacturer of the product.",
+      "rdfs:label" : "manufacturer",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

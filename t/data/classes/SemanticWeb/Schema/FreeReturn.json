@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnFeesEnumeration",
+      "rdfs:comment" : "Specifies that product returns are free of charge for the customer.",
+      "rdfs:label" : "FreeReturn",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

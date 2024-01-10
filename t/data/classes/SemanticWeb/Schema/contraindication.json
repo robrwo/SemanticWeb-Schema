@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A contraindication for this therapy.",
+      "rdfs:label" : "contraindication",
+      "schema:domainIncludes" : [
+         "schema:MedicalDevice",
+         "schema:MedicalTherapy"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:MedicalContraindication",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

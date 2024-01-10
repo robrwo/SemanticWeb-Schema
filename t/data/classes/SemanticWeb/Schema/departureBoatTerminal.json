@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The terminal or port from which the boat departs.",
+      "rdfs:label" : "departureBoatTerminal",
+      "schema:domainIncludes" : "schema:BoatTrip",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:BoatTerminal",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1755"
+   },
+   "properties" : {}
+}

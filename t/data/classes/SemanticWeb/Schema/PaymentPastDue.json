@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PaymentStatusType",
+      "rdfs:comment" : "The payment is due and considered late.",
+      "rdfs:label" : "PaymentPastDue"
+   },
+   "properties" : {}
+}

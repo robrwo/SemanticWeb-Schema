@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The bitrate of the media object.",
+      "rdfs:label" : "bitrate",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product identification within the Amazon organization (summary from [Wikipedia](https://en.wikipedia.org/wiki/Amazon_Standard_Identification_Number)'s article).\n\nNote also that this is a definition for how to include ASINs in Schema.org data, and not a definition of ASINs in general - see documentation from Amazon for authoritative details.\nASINs are most commonly encoded as text strings, but the [asin] property supports URL/URI as potential values too.",
+      "rdfs:label" : "asin",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:Offer",
+         "schema:Product"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

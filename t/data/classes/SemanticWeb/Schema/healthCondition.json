@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifying the health condition(s) of a patient, medical study, or other target audience.",
+      "rdfs:label" : "healthCondition",
+      "schema:domainIncludes" : [
+         "schema:MedicalStudy",
+         "schema:PeopleAudience",
+         "schema:Patient"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalCondition"
+   },
+   "properties" : {}
+}

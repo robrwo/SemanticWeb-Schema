@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:in_force",
+      "owl:equivalentProperty" : "ontology:in_force",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether the legislation is currently in force, not in force, or partially in force.",
+      "rdfs:label" : "legislationLegalForce",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:LegalForceStatus",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

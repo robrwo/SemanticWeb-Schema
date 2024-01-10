@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A member of this organization.",
+      "rdfs:label" : "members",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:ProgramMembership"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:supersededBy" : "schema:member"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The rating given in this review. Note that reviews can themselves be rated. The ```reviewRating``` applies to rating given by the review. The [[aggregateRating]] property applies to the review itself, as a creative work.",
+      "rdfs:label" : "reviewRating",
+      "schema:domainIncludes" : "schema:Review",
+      "schema:rangeIncludes" : "schema:Rating"
+   },
+   "properties" : {}
+}

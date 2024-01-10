@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether the property must be filled in to complete the action.  Default is false.",
+      "rdfs:label" : "valueRequired",
+      "schema:domainIncludes" : "schema:PropertyValueSpecification",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

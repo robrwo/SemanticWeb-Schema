@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Pregnancy category of this drug.",
+      "rdfs:label" : "pregnancyCategory",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:DrugPregnancyCategory"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DigitalDocumentPermissionType",
+      "rdfs:comment" : "Permission to add comments to the document.",
+      "rdfs:label" : "CommentPermission"
+   },
+   "properties" : {}
+}

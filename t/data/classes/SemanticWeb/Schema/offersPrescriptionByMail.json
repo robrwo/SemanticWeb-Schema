@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether prescriptions can be delivered by mail.",
+      "rdfs:label" : "offersPrescriptionByMail",
+      "schema:domainIncludes" : "schema:HealthPlanFormulary",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Boolean",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

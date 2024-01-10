@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The postal code. For example, 94043.",
+      "rdfs:label" : "postalCode",
+      "schema:domainIncludes" : [
+         "schema:GeoShape",
+         "schema:PostalAddress",
+         "schema:GeoCoordinates",
+         "schema:DefinedRegion"
+      ],
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time the object is scheduled to.",
+      "rdfs:label" : "scheduledTime",
+      "schema:domainIncludes" : "schema:PlanAction",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

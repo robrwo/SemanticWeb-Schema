@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A financial aid type or program which students may use to pay for tuition or fees associated with the program.",
+      "rdfs:label" : "financialAidEligible",
+      "schema:domainIncludes" : [
+         "schema:Course",
+         "schema:EducationalOccupationalProgram"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2418"
+   },
+   "properties" : {}
+}

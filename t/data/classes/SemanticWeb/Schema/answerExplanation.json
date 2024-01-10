@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A step-by-step or full explanation about Answer. Can outline how this Answer was achieved or contain more broad clarification or statement about it. ",
+      "rdfs:label" : "answerExplanation",
+      "schema:domainIncludes" : "schema:Answer",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:WebContent",
+         "schema:Comment"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2636"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A defined range of postal codes indicated by a common textual prefix. Used for non-numeric systems such as UK.",
+      "rdfs:label" : "postalCodePrefix",
+      "schema:domainIncludes" : "schema:DefinedRegion",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

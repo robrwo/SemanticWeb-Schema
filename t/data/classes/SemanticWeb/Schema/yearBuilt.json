@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The year an [[Accommodation]] was constructed. This corresponds to the [YearBuilt field in RESO](https://ddwiki.reso.org/display/DDW17/YearBuilt+Field). ",
+      "rdfs:label" : "yearBuilt",
+      "schema:domainIncludes" : "schema:Accommodation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Number",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
+   },
+   "properties" : {}
+}

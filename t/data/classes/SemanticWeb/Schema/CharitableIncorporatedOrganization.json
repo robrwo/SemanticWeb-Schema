@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:UKNonprofitType",
+      "rdfs:comment" : "CharitableIncorporatedOrganization: Non-profit type referring to a Charitable Incorporated Organization (UK).",
+      "rdfs:label" : "CharitableIncorporatedOrganization",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

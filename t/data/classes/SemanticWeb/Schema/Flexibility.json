@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalActivityCategory",
+      "rdfs:comment" : "Physical activity that is engaged in to improve joint and muscle flexibility.",
+      "rdfs:label" : "Flexibility",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

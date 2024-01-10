@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a MediaManipulationRatingEnumeration classification of a media object (in the context of how it was published or shared).",
+      "rdfs:label" : "mediaAuthenticityCategory",
+      "schema:domainIncludes" : "schema:MediaReview",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:MediaManipulationRatingEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An additional name for a Person, can be used for a middle name.",
+      "rdfs:label" : "additionalName",
+      "rdfs:subPropertyOf" : "schema:alternateName",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

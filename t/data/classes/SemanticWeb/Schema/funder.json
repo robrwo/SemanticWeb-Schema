@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person or organization that supports (sponsors) something through some kind of financial contribution.",
+      "rdfs:label" : "funder",
+      "rdfs:subPropertyOf" : "schema:sponsor",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:MonetaryGrant",
+         "schema:Organization",
+         "schema:Event",
+         "schema:CreativeWork",
+         "schema:Grant"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of calories.",
+      "rdfs:label" : "calories",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Energy"
+   },
+   "properties" : {}
+}

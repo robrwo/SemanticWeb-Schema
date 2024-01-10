@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:implements",
+      "owl:equivalentProperty" : "ontology:implements",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. This is an informative link, and it has no legal value. For legally-binding links of transposition, use the <a href=\"/legislationTransposes\">legislationTransposes</a> property. For example an informative consolidated law of a European Union's member state \"applies\" the consolidated version of the European Directive implemented in it.",
+      "rdfs:label" : "legislationApplies",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Legislation",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

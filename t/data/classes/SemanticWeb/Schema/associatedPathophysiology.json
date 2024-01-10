@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "If applicable, a description of the pathophysiology associated with the anatomical system, including potential abnormal changes in the mechanical, physical, and biochemical functions of the system.",
+      "rdfs:label" : "associatedPathophysiology",
+      "schema:domainIncludes" : [
+         "schema:AnatomicalSystem",
+         "schema:AnatomicalStructure",
+         "schema:SuperficialAnatomy"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

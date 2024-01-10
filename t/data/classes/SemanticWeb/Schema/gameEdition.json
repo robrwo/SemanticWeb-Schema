@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The edition of a video game.",
+      "rdfs:label" : "gameEdition",
+      "schema:domainIncludes" : "schema:VideoGame",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

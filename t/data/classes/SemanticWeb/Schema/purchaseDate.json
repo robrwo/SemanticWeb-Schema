@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date the item, e.g. vehicle, was purchased by the current owner.",
+      "rdfs:label" : "purchaseDate",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:Vehicle"
+      ],
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

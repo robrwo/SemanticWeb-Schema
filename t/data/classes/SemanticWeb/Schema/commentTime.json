@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time at which the UserComment was made.",
+      "rdfs:label" : "commentTime",
+      "schema:domainIncludes" : "schema:UserComments",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

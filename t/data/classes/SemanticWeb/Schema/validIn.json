@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The geographic area where a permit or similar thing is valid.",
+      "rdfs:label" : "validIn",
+      "schema:domainIncludes" : [
+         "schema:EducationalOccupationalCredential",
+         "schema:Permit"
+      ],
+      "schema:rangeIncludes" : "schema:AdministrativeArea",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
+   },
+   "properties" : {}
+}

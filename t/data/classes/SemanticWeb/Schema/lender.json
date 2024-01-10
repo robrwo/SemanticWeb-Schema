@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The person that lends the object being borrowed.",
+      "rdfs:label" : "lender",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : "schema:BorrowAction",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

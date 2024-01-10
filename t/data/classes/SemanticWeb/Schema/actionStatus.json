@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the current disposition of the Action.",
+      "rdfs:label" : "actionStatus",
+      "schema:domainIncludes" : "schema:Action",
+      "schema:rangeIncludes" : "schema:ActionStatusType"
+   },
+   "properties" : {}
+}

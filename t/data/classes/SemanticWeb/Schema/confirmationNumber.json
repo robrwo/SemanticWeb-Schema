@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A number that confirms the given order or payment has been received.",
+      "rdfs:label" : "confirmationNumber",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : [
+         "schema:Invoice",
+         "schema:Order"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

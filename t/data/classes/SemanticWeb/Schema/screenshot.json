@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A link to a screenshot image of the app.",
+      "rdfs:label" : "screenshot",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:ImageObject"
+      ]
+   },
+   "properties" : {}
+}

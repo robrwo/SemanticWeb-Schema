@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The identifier for the account the payment will be applied to.",
+      "rdfs:label" : "accountId",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

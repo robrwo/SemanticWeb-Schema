@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of procedure, for example Surgical, Noninvasive, or Percutaneous.",
+      "rdfs:label" : "procedureType",
+      "schema:domainIncludes" : "schema:MedicalProcedure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalProcedureType"
+   },
+   "properties" : {}
+}

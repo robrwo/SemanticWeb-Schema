@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BookFormatType",
+      "rdfs:comment" : "Book format: Hardcover.",
+      "rdfs:label" : "Hardcover"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Information about disease prevention.",
+      "rdfs:label" : "diseasePreventionInfo",
+      "schema:domainIncludes" : "schema:SpecialAnnouncement",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:WebContent",
+         "schema:URL"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
+   },
+   "properties" : {}
+}

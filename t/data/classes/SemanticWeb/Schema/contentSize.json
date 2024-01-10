@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "File size in (mega/kilo)bytes.",
+      "rdfs:label" : "contentSize",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The passenger's sequence number as assigned by the airline.",
+      "rdfs:label" : "passengerSequenceNumber",
+      "schema:domainIncludes" : "schema:FlightReservation",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

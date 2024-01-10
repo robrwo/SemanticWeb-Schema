@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical therapy related to this anatomy.",
+      "rdfs:label" : "relatedTherapy",
+      "schema:domainIncludes" : [
+         "schema:AnatomicalSystem",
+         "schema:SuperficialAnatomy",
+         "schema:AnatomicalStructure"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTherapy"
+   },
+   "properties" : {}
+}

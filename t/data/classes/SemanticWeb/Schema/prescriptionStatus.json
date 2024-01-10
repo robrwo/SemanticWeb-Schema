@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the status of drug prescription, e.g. local catalogs classifications or whether the drug is available by prescription or over-the-counter, etc.",
+      "rdfs:label" : "prescriptionStatus",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DrugPrescriptionStatus",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The trailer of a movie or TV/radio series, season, episode, etc.",
+      "rdfs:label" : "trailer",
+      "schema:domainIncludes" : [
+         "schema:TVSeries",
+         "schema:CreativeWorkSeason",
+         "schema:Episode",
+         "schema:VideoGameSeries",
+         "schema:RadioSeries",
+         "schema:Movie",
+         "schema:VideoGame",
+         "schema:MovieSeries"
+      ],
+      "schema:rangeIncludes" : "schema:VideoObject"
+   },
+   "properties" : {}
+}

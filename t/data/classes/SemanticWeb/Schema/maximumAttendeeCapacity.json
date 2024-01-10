@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total number of individuals that may attend an event or venue.",
+      "rdfs:label" : "maximumAttendeeCapacity",
+      "schema:domainIncludes" : [
+         "schema:Place",
+         "schema:Event"
+      ],
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

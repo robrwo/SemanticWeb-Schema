@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.",
+      "rdfs:label" : "articleSection",
+      "schema:domainIncludes" : "schema:Article",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

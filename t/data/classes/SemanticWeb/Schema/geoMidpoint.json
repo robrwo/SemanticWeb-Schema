@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle.",
+      "rdfs:label" : "geoMidpoint",
+      "schema:domainIncludes" : "schema:GeoCircle",
+      "schema:rangeIncludes" : "schema:GeoCoordinates"
+   },
+   "properties" : {}
+}

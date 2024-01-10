@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Originally named [[variablesMeasured]], the [[variableMeasured]] property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue.",
+      "rdfs:label" : "variablesMeasured",
+      "schema:domainIncludes" : "schema:Dataset",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:PropertyValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

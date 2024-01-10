@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The overall rating, based on a collection of reviews or ratings, of the item.",
+      "rdfs:label" : "aggregateRating",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Organization",
+         "schema:Event",
+         "schema:Product",
+         "schema:Place",
+         "schema:Brand",
+         "schema:Offer",
+         "schema:CreativeWork"
+      ],
+      "schema:rangeIncludes" : "schema:AggregateRating"
+   },
+   "properties" : {}
+}

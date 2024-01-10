@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ActionStatusType",
+      "rdfs:comment" : "A description of an action that is supported.",
+      "rdfs:label" : "PotentialActionStatus"
+   },
+   "properties" : {}
+}

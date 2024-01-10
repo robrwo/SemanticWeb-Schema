@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The class of drug this belongs to (e.g., statins).",
+      "rdfs:label" : "drugClass",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:DrugClass"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:date_document",
+      "owl:equivalentProperty" : "ontology:date_document",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date of adoption or signature of the legislation. This is the date at which the text is officially aknowledged to be a legislation, even though it might not even be published or in force.",
+      "rdfs:label" : "legislationDate",
+      "rdfs:subPropertyOf" : "schema:dateCreated",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Date",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

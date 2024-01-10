@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The stop or station from which the bus arrives.",
+      "rdfs:label" : "arrivalBusStop",
+      "schema:domainIncludes" : "schema:BusTrip",
+      "schema:rangeIncludes" : [
+         "schema:BusStop",
+         "schema:BusStation"
+      ]
+   },
+   "properties" : {}
+}

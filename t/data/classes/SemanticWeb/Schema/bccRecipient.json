@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of recipient. The recipient blind copied on a message.",
+      "rdfs:label" : "bccRecipient",
+      "rdfs:subPropertyOf" : "schema:recipient",
+      "schema:domainIncludes" : "schema:Message",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization",
+         "schema:ContactPoint"
+      ]
+   },
+   "properties" : {}
+}

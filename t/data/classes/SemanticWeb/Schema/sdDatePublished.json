@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the date on which the current structured data was generated / published. Typically used alongside [[sdPublisher]].",
+      "rdfs:label" : "sdDatePublished",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Date",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1886"
+   },
+   "properties" : {}
+}

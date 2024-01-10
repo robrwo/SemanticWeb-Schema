@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether the vehicle has been used for special purposes, like commercial rental, driving school, or as a taxi. The legislation in many countries requires this information to be revealed when offering a car for sale.",
+      "rdfs:label" : "vehicleSpecialUsage",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:isPartOf" : "http:auto.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:CarUsageType"
+      ]
+   },
+   "properties" : {}
+}

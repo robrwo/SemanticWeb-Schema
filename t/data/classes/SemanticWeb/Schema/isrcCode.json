@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The International Standard Recording Code for the recording.",
+      "rdfs:label" : "isrcCode",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRecording",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

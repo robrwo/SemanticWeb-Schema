@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A means of accessing the service (e.g. a phone bank, a web site, a location, etc.).",
+      "rdfs:label" : "availableChannel",
+      "schema:domainIncludes" : "schema:Service",
+      "schema:rangeIncludes" : "schema:ServiceChannel"
+   },
+   "properties" : {}
+}

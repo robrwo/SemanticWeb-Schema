@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The organization issuing the ticket or permit.",
+      "rdfs:label" : "issuedBy",
+      "schema:domainIncludes" : [
+         "schema:Ticket",
+         "schema:Permit"
+      ],
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

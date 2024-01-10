@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "How often one should break from the activity.",
+      "rdfs:label" : "restPeriods",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

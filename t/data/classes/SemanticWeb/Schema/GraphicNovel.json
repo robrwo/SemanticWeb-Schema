@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BookFormatType",
+      "rdfs:comment" : "Book format: GraphicNovel. May represent a bound collection of ComicIssue instances.",
+      "rdfs:label" : "GraphicNovel",
+      "schema:isPartOf" : "http:bib.schema.org"
+   },
+   "properties" : {}
+}

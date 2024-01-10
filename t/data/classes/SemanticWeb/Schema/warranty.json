@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The warranty promise(s) included in the offer.",
+      "rdfs:label" : "warranty",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Offer",
+         "schema:Demand"
+      ],
+      "schema:rangeIncludes" : "schema:WarrantyPromise"
+   },
+   "properties" : {}
+}

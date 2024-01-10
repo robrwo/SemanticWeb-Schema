@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RestrictedDiet",
+      "rdfs:comment" : "A diet conforming to Jewish dietary practices.",
+      "rdfs:label" : "KosherDiet"
+   },
+   "properties" : {}
+}

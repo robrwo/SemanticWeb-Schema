@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The CreativeWork that captured all or part of this Event.",
+      "rdfs:label" : "recordedIn",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:inverseOf" : "schema:recordedAt",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

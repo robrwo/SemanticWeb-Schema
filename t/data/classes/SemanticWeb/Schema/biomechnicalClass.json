@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The biomechanical properties of the bone.",
+      "rdfs:label" : "biomechnicalClass",
+      "schema:domainIncludes" : "schema:Joint",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

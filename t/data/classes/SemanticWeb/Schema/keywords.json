@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.",
+      "rdfs:label" : "keywords",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:Organization",
+         "schema:Event",
+         "schema:Product",
+         "schema:Place"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:DefinedTerm",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:USNonprofitType",
+      "rdfs:comment" : "Nonprofit501c9: Non-profit type referring to Voluntary Employee Beneficiary Associations.",
+      "rdfs:label" : "Nonprofit501c9",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

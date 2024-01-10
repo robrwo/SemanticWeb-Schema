@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.",
+      "rdfs:label" : "lesserOrEqual",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:QualitativeValue",
+      "schema:rangeIncludes" : "schema:QualitativeValue"
+   },
+   "properties" : {}
+}

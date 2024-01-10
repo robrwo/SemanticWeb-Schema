@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [callsign](https://en.wikipedia.org/wiki/Call_sign), as used in broadcasting and radio communications to identify people, radio and TV stations, or vehicles.",
+      "rdfs:label" : "callSign",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : [
+         "schema:Vehicle",
+         "schema:Person",
+         "schema:BroadcastService"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2109"
+   },
+   "properties" : {}
+}

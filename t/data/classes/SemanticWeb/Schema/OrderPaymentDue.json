@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:OrderStatus",
+      "rdfs:comment" : "OrderStatus representing that payment is due on an order.",
+      "rdfs:label" : "OrderPaymentDue"
+   },
+   "properties" : {}
+}

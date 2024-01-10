@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation.",
+      "rdfs:label" : "programMembershipUsed",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:ProgramMembership"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Actual bytes of the media object, for example the image file or video file.",
+      "rdfs:label" : "contentUrl",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

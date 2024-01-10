@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalEvidenceLevel",
+      "rdfs:comment" : "Only consensus opinion of experts, case studies, or standard-of-care.",
+      "rdfs:label" : "EvidenceLevelC",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

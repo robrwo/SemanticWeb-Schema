@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The count of total number of ratings.",
+      "rdfs:label" : "ratingCount",
+      "schema:domainIncludes" : "schema:AggregateRating",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

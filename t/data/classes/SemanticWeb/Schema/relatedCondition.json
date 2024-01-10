@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical condition associated with this anatomy.",
+      "rdfs:label" : "relatedCondition",
+      "schema:domainIncludes" : [
+         "schema:AnatomicalSystem",
+         "schema:AnatomicalStructure",
+         "schema:SuperficialAnatomy"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalCondition"
+   },
+   "properties" : {}
+}

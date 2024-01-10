@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).",
+      "rdfs:label" : "employmentType",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

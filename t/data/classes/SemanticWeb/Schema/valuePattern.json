@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies a regular expression for testing literal values according to the HTML spec.",
+      "rdfs:label" : "valuePattern",
+      "schema:domainIncludes" : "schema:PropertyValueSpecification",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

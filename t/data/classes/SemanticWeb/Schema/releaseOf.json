@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The album this is a release of.",
+      "rdfs:label" : "releaseOf",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRelease",
+      "schema:inverseOf" : "schema:albumRelease",
+      "schema:rangeIncludes" : "schema:MusicAlbum"
+   },
+   "properties" : {}
+}

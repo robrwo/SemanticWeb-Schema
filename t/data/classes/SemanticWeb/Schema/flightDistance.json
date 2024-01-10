@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The distance of the flight.",
+      "rdfs:label" : "flightDistance",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Distance"
+      ]
+   },
+   "properties" : {}
+}

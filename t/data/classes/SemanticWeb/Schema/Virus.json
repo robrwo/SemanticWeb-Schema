@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:InfectiousAgentClass",
+      "rdfs:comment" : "Pathogenic virus that causes viral infection.",
+      "rdfs:label" : "Virus",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

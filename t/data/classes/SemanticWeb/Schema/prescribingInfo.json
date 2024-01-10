@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Link to prescribing information for the drug.",
+      "rdfs:label" : "prescribingInfo",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

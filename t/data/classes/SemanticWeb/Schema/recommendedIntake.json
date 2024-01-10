@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Recommended intake of this supplement for a given population as defined by a specific recommending authority.",
+      "rdfs:label" : "recommendedIntake",
+      "schema:domainIncludes" : "schema:DietarySupplement",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:RecommendedDoseSchedule"
+   },
+   "properties" : {}
+}

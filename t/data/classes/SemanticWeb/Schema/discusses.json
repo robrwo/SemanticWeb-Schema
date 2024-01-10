@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies the CreativeWork associated with the UserComment.",
+      "rdfs:label" : "discusses",
+      "schema:domainIncludes" : "schema:UserComments",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

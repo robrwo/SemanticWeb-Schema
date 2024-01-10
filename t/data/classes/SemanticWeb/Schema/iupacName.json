@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Systematic method of naming chemical compounds as recommended by the International Union of Pure and Applied Chemistry (IUPAC).",
+      "rdfs:label" : "iupacName",
+      "schema:domainIncludes" : "schema:MolecularEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "www.bioschemas:MolecularEntity"
+   },
+   "properties" : {}
+}

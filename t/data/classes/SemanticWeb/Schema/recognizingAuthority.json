@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "If applicable, the organization that officially recognizes this entity as part of its endorsed system of medicine.",
+      "rdfs:label" : "recognizingAuthority",
+      "schema:domainIncludes" : "schema:MedicalEntity",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

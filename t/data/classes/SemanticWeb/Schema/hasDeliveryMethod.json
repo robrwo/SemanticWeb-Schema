@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Method used for delivery or shipping.",
+      "rdfs:label" : "hasDeliveryMethod",
+      "schema:domainIncludes" : [
+         "schema:DeliveryEvent",
+         "schema:ParcelDelivery"
+      ],
+      "schema:rangeIncludes" : "schema:DeliveryMethod"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The playlist to which this recording belongs.",
+      "rdfs:label" : "inPlaylist",
+      "schema:domainIncludes" : "schema:MusicRecording",
+      "schema:rangeIncludes" : "schema:MusicPlaylist"
+   },
+   "properties" : {}
+}

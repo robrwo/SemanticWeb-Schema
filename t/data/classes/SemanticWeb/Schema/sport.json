@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A type of sport (e.g. Baseball).",
+      "rdfs:label" : "sport",
+      "schema:domainIncludes" : [
+         "schema:SportsOrganization",
+         "schema:SportsEvent"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1951"
+   },
+   "properties" : {}
+}

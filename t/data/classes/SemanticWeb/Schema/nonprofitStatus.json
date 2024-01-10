@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "nonprofitStatus indicates the legal status of a non-profit organization in its primary place of business.",
+      "rdfs:label" : "nonprofitStatus",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:NonprofitType",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

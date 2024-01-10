@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:passed_by",
+      "owl:equivalentProperty" : "ontology:passed_by",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). This indicates the \"legal author\" of the law, as opposed to its physical author.",
+      "rdfs:label" : "legislationPassedBy",
+      "rdfs:subPropertyOf" : "schema:creator",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

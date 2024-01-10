@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.",
+      "rdfs:label" : "bestRating",
+      "schema:domainIncludes" : "schema:Rating",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

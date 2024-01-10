@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of instrument. The recipe/instructions used to perform the action.",
+      "rdfs:label" : "recipe",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : "schema:CookAction",
+      "schema:rangeIncludes" : "schema:Recipe"
+   },
+   "properties" : {}
+}

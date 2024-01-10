@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.",
+      "rdfs:label" : "smokingAllowed",
+      "schema:contributor" : "collab:STI_Accommodation_Ontology",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

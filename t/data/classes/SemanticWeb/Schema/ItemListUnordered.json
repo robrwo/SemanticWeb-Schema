@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ItemListOrderType",
+      "rdfs:comment" : "An ItemList ordered with no explicit order.",
+      "rdfs:label" : "ItemListUnordered"
+   },
+   "properties" : {}
+}

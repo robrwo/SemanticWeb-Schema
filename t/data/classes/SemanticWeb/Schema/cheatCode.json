@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Cheat codes to the game.",
+      "rdfs:label" : "cheatCode",
+      "schema:domainIncludes" : [
+         "schema:VideoGameSeries",
+         "schema:VideoGame"
+      ],
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

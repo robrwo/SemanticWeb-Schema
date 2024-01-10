@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The street address. For example, 1600 Amphitheatre Pkwy.",
+      "rdfs:label" : "streetAddress",
+      "schema:domainIncludes" : "schema:PostalAddress",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

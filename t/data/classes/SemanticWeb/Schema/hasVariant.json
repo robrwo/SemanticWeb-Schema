@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a [[Product]] that is a member of this [[ProductGroup]] (or [[ProductModel]]).",
+      "rdfs:label" : "hasVariant",
+      "schema:domainIncludes" : "schema:ProductGroup",
+      "schema:inverseOf" : "schema:isVariantOf",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Product",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1797"
+   },
+   "properties" : {}
+}

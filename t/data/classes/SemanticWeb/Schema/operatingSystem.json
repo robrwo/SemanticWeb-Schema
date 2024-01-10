@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Operating systems supported (Windows 7, OS X 10.6, Android 1.6).",
+      "rdfs:label" : "operatingSystem",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

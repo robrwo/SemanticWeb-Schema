@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Range of acceptable values for a typical patient, when applicable.",
+      "rdfs:label" : "normalRange",
+      "schema:domainIncludes" : "schema:MedicalTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:MedicalEnumeration",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

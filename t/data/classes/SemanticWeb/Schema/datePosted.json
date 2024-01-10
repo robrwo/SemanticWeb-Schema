@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Publication date of an online listing.",
+      "rdfs:label" : "datePosted",
+      "schema:domainIncludes" : [
+         "schema:SpecialAnnouncement",
+         "schema:JobPosting",
+         "schema:RealEstateListing",
+         "schema:CDCPMDRecord"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ],
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/2490",
+         "https://github.com/schemaorg/schemaorg/issues/2521"
+      ]
+   },
+   "properties" : {}
+}

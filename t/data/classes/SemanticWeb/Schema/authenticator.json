@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Organization responsible for authenticating the user's subscription. For example, many media apps require a cable/satellite provider to authenticate your subscription before playing media.",
+      "rdfs:label" : "authenticator",
+      "schema:domainIncludes" : "schema:MediaSubscription",
+      "schema:rangeIncludes" : "schema:Organization",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
+   },
+   "properties" : {}
+}

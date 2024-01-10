@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "A specific branch of medical science that pertains to study of anesthetics and their application.",
+      "rdfs:label" : "Anesthesia",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

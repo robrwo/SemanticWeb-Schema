@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnLabelSourceEnumeration",
+      "rdfs:comment" : "Indicated that a return label must be downloaded and printed by the customer.",
+      "rdfs:label" : "ReturnLabelDownloadAndPrint",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

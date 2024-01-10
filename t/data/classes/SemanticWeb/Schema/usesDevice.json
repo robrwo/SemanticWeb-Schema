@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Device used to perform the test.",
+      "rdfs:label" : "usesDevice",
+      "schema:domainIncludes" : "schema:MedicalTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalDevice"
+   },
+   "properties" : {}
+}

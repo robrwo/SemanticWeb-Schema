@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The geographic area associated with the audience.",
+      "rdfs:label" : "geographicArea",
+      "schema:domainIncludes" : "schema:Audience",
+      "schema:rangeIncludes" : "schema:AdministrativeArea"
+   },
+   "properties" : {}
+}

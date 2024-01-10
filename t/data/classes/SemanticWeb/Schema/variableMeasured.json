@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The variableMeasured property can indicate (repeated as necessary) the  variables that are measured in some dataset, either described as text or as pairs of identifier and description using PropertyValue, or more explicitly as a [[StatisticalVariable]].",
+      "rdfs:label" : "variableMeasured",
+      "schema:domainIncludes" : [
+         "schema:Observation",
+         "schema:Dataset"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:StatisticalVariable",
+         "schema:Text",
+         "schema:PropertyValue",
+         "schema:Property"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1083"
+   },
+   "properties" : {}
+}

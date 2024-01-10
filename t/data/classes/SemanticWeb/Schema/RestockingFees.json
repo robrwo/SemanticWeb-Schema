@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnFeesEnumeration",
+      "rdfs:comment" : "Specifies that the customer must pay a restocking fee when returning a product.",
+      "rdfs:label" : "RestockingFees",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

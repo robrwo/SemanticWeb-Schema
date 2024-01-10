@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates that the CreativeWork contains a reference to, but is not necessarily about a concept.",
+      "rdfs:label" : "mentions",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

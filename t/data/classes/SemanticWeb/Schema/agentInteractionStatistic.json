@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a particular context (i.e. interactionService).",
+      "rdfs:label" : "agentInteractionStatistic",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:InteractionCounter",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2858"
+   },
+   "properties" : {}
+}

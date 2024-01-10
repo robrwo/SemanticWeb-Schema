@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The job title of the person (for example, Financial Manager).",
+      "rdfs:label" : "jobTitle",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2192"
+   },
+   "properties" : {}
+}

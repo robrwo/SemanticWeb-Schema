@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The edition of the print product in which the NewsArticle appears.",
+      "rdfs:label" : "printEdition",
+      "schema:domainIncludes" : "schema:NewsArticle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

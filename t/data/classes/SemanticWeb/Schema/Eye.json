@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalExam",
+      "rdfs:comment" : "Eye or ophthalmological function assessment with clinical examination.",
+      "rdfs:label" : "Eye",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

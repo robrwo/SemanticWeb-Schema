@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.",
+      "rdfs:label" : "box",
+      "schema:domainIncludes" : "schema:GeoShape",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

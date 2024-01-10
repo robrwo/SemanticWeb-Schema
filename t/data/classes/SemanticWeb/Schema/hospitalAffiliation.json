@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A hospital with which the physician or office is affiliated.",
+      "rdfs:label" : "hospitalAffiliation",
+      "schema:domainIncludes" : "schema:Physician",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Hospital"
+   },
+   "properties" : {}
+}

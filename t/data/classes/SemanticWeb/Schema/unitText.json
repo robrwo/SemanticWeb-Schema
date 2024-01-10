@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\n<a href='unitCode'>unitCode</a>.",
+      "rdfs:label" : "unitText",
+      "schema:domainIncludes" : [
+         "schema:UnitPriceSpecification",
+         "schema:TypeAndQuantityNode",
+         "schema:PropertyValue",
+         "schema:QuantitativeValue"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

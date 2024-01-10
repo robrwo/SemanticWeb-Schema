@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether the copay is before or after deductible, etc. TODO: Is this a closed set?",
+      "rdfs:label" : "healthPlanCopayOption",
+      "schema:domainIncludes" : "schema:HealthPlanCostSharingSpecification",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

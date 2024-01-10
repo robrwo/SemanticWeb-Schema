@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DrugCostCategory",
+      "rdfs:comment" : "The drug's cost represents the maximum reimbursement paid by an insurer for the drug.",
+      "rdfs:label" : "ReimbursementCap",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

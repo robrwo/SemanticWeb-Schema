@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Status of a game server.",
+      "rdfs:label" : "serverStatus",
+      "schema:domainIncludes" : "schema:GameServer",
+      "schema:rangeIncludes" : "schema:GameServerStatus"
+   },
+   "properties" : {}
+}

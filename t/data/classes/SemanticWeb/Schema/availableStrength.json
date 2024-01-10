@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An available dosage strength for the drug.",
+      "rdfs:label" : "availableStrength",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:DrugStrength"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See [background notes](/docs/datamodel.html#mainEntityBackground) for details.",
+      "rdfs:label" : "mainEntityOfPage",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:inverseOf" : "schema:mainEntity",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:CreativeWork"
+      ]
+   },
+   "properties" : {}
+}

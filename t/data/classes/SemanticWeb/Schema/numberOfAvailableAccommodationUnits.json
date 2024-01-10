@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the number of available accommodation units in an [[ApartmentComplex]], or the number of accommodation units for a specific [[FloorPlan]] (within its specific [[ApartmentComplex]]). See also [[numberOfAccommodationUnits]].",
+      "rdfs:label" : "numberOfAvailableAccommodationUnits",
+      "schema:domainIncludes" : [
+         "schema:FloorPlan",
+         "schema:ApartmentComplex"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:QuantitativeValue",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2373"
+   },
+   "properties" : {}
+}

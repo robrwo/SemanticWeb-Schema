@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Maximal age of the child.",
+      "rdfs:label" : "childMaxAge",
+      "schema:domainIncludes" : "schema:ParentAudience",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

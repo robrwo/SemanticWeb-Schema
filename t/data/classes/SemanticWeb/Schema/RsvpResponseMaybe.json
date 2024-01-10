@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RsvpResponseType",
+      "rdfs:comment" : "The invitee may or may not attend.",
+      "rdfs:label" : "RsvpResponseMaybe"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the design and body style of the vehicle (e.g. station wagon, hatchback, etc.).",
+      "rdfs:label" : "bodyType",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:isPartOf" : "http:auto.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:QualitativeValue"
+      ]
+   },
+   "properties" : {}
+}

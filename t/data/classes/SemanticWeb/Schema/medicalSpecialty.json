@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical specialty of the provider.",
+      "rdfs:label" : "medicalSpecialty",
+      "schema:domainIncludes" : [
+         "schema:MedicalClinic",
+         "schema:Physician",
+         "schema:Hospital",
+         "schema:MedicalOrganization"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalSpecialty"
+   },
+   "properties" : {}
+}

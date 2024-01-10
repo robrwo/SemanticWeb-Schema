@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicReleaseFormatType",
+      "rdfs:comment" : "CDFormat.",
+      "rdfs:label" : "CDFormat",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

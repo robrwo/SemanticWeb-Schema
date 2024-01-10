@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date at which the program begins collecting applications for the next enrollment cycle.",
+      "rdfs:label" : "applicationStartDate",
+      "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Date",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
+   },
+   "properties" : {}
+}

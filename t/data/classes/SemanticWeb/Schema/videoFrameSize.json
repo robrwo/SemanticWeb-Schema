@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The frame size of the video.",
+      "rdfs:label" : "videoFrameSize",
+      "schema:domainIncludes" : "schema:VideoObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

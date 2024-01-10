@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalEvidenceLevel",
+      "rdfs:comment" : "Data derived from a single randomized trial, or nonrandomized studies.",
+      "rdfs:label" : "EvidenceLevelB",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

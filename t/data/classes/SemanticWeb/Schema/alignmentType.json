@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A category of alignment between the learning resource and the framework node. Recommended values include: 'requires', 'textComplexity', 'readingLevel', and 'educationalSubject'.",
+      "rdfs:label" : "alignmentType",
+      "schema:domainIncludes" : "schema:AlignmentObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

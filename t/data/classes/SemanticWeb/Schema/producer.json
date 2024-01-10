@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.).",
+      "rdfs:label" : "producer",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

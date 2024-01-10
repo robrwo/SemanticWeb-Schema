@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies an applicable return policy (from an enumeration).",
+      "rdfs:label" : "returnPolicyCategory",
+      "schema:domainIncludes" : [
+         "schema:MerchantReturnPolicy",
+         "schema:MerchantReturnPolicySeasonalOverride"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:MerchantReturnEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The illustrator of the book.",
+      "rdfs:label" : "illustrator",
+      "schema:domainIncludes" : "schema:Book",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

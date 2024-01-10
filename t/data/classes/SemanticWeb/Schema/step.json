@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A single step item (as HowToStep, text, document, video, etc.) or a HowToSection.",
+      "rdfs:label" : "step",
+      "schema:domainIncludes" : "schema:HowTo",
+      "schema:rangeIncludes" : [
+         "schema:HowToStep",
+         "schema:Text",
+         "schema:CreativeWork",
+         "schema:HowToSection"
+      ]
+   },
+   "properties" : {}
+}

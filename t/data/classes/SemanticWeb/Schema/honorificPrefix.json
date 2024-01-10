@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An honorific prefix preceding a Person's name such as Dr/Mrs/Mr.",
+      "rdfs:label" : "honorificPrefix",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

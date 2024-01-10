@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:EventAttendanceModeEnumeration",
+      "rdfs:comment" : "MixedEventAttendanceMode - an event that is conducted as a combination of both offline and online modes.",
+      "rdfs:label" : "MixedEventAttendanceMode",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1842"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The stage of the condition, if applicable.",
+      "rdfs:label" : "stage",
+      "schema:domainIncludes" : "schema:MedicalCondition",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalConditionStage"
+   },
+   "properties" : {}
+}

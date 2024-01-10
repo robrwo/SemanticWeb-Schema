@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An episode of a TV, radio or game media within a series or season.",
+      "rdfs:label" : "episode",
+      "rdfs:subPropertyOf" : "schema:hasPart",
+      "schema:domainIncludes" : [
+         "schema:TVSeries",
+         "schema:VideoGameSeries",
+         "schema:CreativeWorkSeason",
+         "schema:RadioSeries"
+      ],
+      "schema:rangeIncludes" : "schema:Episode"
+   },
+   "properties" : {}
+}

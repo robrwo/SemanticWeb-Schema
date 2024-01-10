@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A diagnostic test or procedure offered by this lab.",
+      "rdfs:label" : "availableTest",
+      "schema:domainIncludes" : "schema:DiagnosticLab",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTest"
+   },
+   "properties" : {}
+}

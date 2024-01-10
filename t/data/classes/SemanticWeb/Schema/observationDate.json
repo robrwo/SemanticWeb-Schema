@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The observationDate of an [[Observation]].",
+      "rdfs:label" : "observationDate",
+      "schema:domainIncludes" : "schema:Observation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:DateTime",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+   },
+   "properties" : {}
+}

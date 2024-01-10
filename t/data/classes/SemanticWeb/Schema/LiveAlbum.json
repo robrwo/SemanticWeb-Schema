@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "LiveAlbum.",
+      "rdfs:label" : "LiveAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

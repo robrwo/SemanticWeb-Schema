@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The production company or studio responsible for the item, e.g. series, video game, episode etc.",
+      "rdfs:label" : "productionCompany",
+      "schema:domainIncludes" : [
+         "schema:TVSeries",
+         "schema:VideoGameSeries",
+         "schema:CreativeWorkSeason",
+         "schema:MediaObject",
+         "schema:Episode",
+         "schema:RadioSeries",
+         "schema:Movie",
+         "schema:MovieSeries"
+      ],
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

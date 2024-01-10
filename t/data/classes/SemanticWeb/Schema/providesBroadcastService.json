@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The BroadcastService offered on this channel.",
+      "rdfs:label" : "providesBroadcastService",
+      "schema:domainIncludes" : "schema:BroadcastChannel",
+      "schema:inverseOf" : "schema:hasBroadcastChannel",
+      "schema:rangeIncludes" : "schema:BroadcastService"
+   },
+   "properties" : {}
+}

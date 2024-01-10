@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A season in a media series.",
+      "rdfs:label" : "seasons",
+      "schema:domainIncludes" : [
+         "schema:TVSeries",
+         "schema:VideoGameSeries",
+         "schema:RadioSeries"
+      ],
+      "schema:rangeIncludes" : "schema:CreativeWorkSeason",
+      "schema:supersededBy" : "schema:season"
+   },
+   "properties" : {}
+}

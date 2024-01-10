@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:SteeringPositionValue",
+      "rdfs:comment" : "The steering position is on the right side of the vehicle (viewed from the main direction of driving).",
+      "rdfs:label" : "RightHandDriving",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group"
+   },
+   "properties" : {}
+}

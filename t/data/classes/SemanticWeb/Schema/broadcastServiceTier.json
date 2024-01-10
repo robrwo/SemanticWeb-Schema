@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of service required to have access to the channel (e.g. Standard or Premium).",
+      "rdfs:label" : "broadcastServiceTier",
+      "schema:domainIncludes" : "schema:BroadcastChannel",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

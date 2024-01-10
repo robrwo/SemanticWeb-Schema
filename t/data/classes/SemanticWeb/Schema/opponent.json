@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The opponent on this action.",
+      "rdfs:label" : "opponent",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : "schema:ExerciseAction",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

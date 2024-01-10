@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:EnergyStarEnergyEfficiencyEnumeration",
+      "rdfs:comment" : "Represents EnergyStar certification.",
+      "rdfs:label" : "EnergyStarCertified",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Someone working for this organization.",
+      "rdfs:label" : "employee",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

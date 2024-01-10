@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Prerequisites needed to fulfill steps in article.",
+      "rdfs:label" : "dependencies",
+      "schema:domainIncludes" : "schema:TechArticle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

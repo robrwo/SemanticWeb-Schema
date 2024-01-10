@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.",
+      "rdfs:label" : "subOrganization",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:inverseOf" : "schema:parentOrganization",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

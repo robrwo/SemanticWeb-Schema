@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "How the disease spreads, either as a route or vector, for example 'direct contact', 'Aedes aegypti', etc.",
+      "rdfs:label" : "transmissionMethod",
+      "schema:domainIncludes" : "schema:InfectiousDisease",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

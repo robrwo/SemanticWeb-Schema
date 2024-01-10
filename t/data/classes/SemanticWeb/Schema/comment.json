@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Comments, typically from users.",
+      "rdfs:label" : "comment",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:RsvpAction"
+      ],
+      "schema:rangeIncludes" : "schema:Comment"
+   },
+   "properties" : {}
+}

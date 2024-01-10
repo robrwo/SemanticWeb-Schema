@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The current approximate inventory level for the item or items.",
+      "rdfs:label" : "inventoryLevel",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:SomeProducts",
+         "schema:Offer",
+         "schema:Demand"
+      ],
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

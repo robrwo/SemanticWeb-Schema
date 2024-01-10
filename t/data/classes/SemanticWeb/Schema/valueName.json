@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.",
+      "rdfs:label" : "valueName",
+      "schema:domainIncludes" : "schema:PropertyValueSpecification",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time when a passenger can check into the flight online.",
+      "rdfs:label" : "webCheckinTime",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

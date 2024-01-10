@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of instrument. The query used on this action.",
+      "rdfs:label" : "query",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : "schema:SearchAction",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

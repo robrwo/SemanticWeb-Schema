@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "A specific branch of medical science that pertains to treating diseases, injuries and deformities by manual and instrumental means.",
+      "rdfs:label" : "Surgical",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

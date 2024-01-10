@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\\n\\nSee also [[ineligibleRegion]].\n    ",
+      "rdfs:label" : "eligibleRegion",
+      "rdfs:subPropertyOf" : "schema:areaServed",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:DeliveryChargeSpecification",
+         "schema:Offer",
+         "schema:Demand",
+         "schema:ActionAccessSpecification"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:GeoShape",
+         "schema:Place"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1741"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.",
+      "rdfs:label" : "validThrough",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:LocationFeatureSpecification",
+         "schema:JobPosting",
+         "schema:Demand",
+         "schema:PriceSpecification",
+         "schema:Offer",
+         "schema:MonetaryAmount",
+         "schema:OpeningHoursSpecification"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

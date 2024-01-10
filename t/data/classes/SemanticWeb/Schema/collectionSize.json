@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of items in the [[Collection]].",
+      "rdfs:label" : "collectionSize",
+      "schema:domainIncludes" : "schema:Collection",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Integer",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1759"
+   },
+   "properties" : {}
+}

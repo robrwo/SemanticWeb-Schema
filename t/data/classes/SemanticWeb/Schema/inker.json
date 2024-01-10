@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The individual who traces over the pencil drawings in ink after pencils are complete.",
+      "rdfs:label" : "inker",
+      "schema:domainIncludes" : [
+         "schema:ComicIssue",
+         "schema:ComicStory",
+         "schema:VisualArtwork"
+      ],
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

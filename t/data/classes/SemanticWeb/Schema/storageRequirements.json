@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Storage requirements (free space required).",
+      "rdfs:label" : "storageRequirements",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

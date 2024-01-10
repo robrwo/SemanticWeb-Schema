@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The cost per unit of the drug.",
+      "rdfs:label" : "costPerUnit",
+      "schema:domainIncludes" : "schema:DrugCost",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QualitativeValue",
+         "schema:Number",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

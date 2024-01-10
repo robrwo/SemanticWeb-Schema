@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalStudyStatus",
+      "rdfs:comment" : "Enrolling participants by invitation only.",
+      "rdfs:label" : "EnrollingByInvitation",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

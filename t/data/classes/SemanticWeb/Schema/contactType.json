@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.",
+      "rdfs:label" : "contactType",
+      "schema:domainIncludes" : "schema:ContactPoint",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

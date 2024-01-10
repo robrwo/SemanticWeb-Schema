@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A secondary contributor to the CreativeWork or Event.",
+      "rdfs:label" : "contributor",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:Event"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

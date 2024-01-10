@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The quantity produced by the recipe (for example, number of people served, number of servings, etc).",
+      "rdfs:label" : "recipeYield",
+      "rdfs:subPropertyOf" : "schema:yield",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

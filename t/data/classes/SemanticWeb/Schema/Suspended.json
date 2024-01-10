@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalStudyStatus",
+      "rdfs:comment" : "Suspended.",
+      "rdfs:label" : "Suspended",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

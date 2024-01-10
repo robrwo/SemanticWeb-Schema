@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BookFormatType",
+      "rdfs:comment" : "Book format: Ebook.",
+      "rdfs:label" : "EBook"
+   },
+   "properties" : {}
+}

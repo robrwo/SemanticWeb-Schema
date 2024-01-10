@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The neurological pathway extension that inputs and sends information to the brain or spinal cord.",
+      "rdfs:label" : "sensoryUnit",
+      "schema:domainIncludes" : "schema:Nerve",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AnatomicalStructure",
+         "schema:SuperficialAnatomy"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a page documenting how licenses can be purchased or otherwise acquired, for the current item.",
+      "rdfs:label" : "acquireLicensePage",
+      "rdfs:subPropertyOf" : "schema:usageInfo",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:CreativeWork"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2454"
+   },
+   "properties" : {}
+}

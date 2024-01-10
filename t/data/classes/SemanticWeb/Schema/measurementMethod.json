@@ -1,0 +1,25 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A subproperty of [[measurementTechnique]] that can be used for specifying specific methods, in particular via [[MeasurementMethodEnum]].",
+      "rdfs:label" : "measurementMethod",
+      "rdfs:subPropertyOf" : "schema:measurementTechnique",
+      "schema:domainIncludes" : [
+         "schema:Observation",
+         "schema:StatisticalVariable",
+         "schema:DataCatalog",
+         "schema:Dataset",
+         "schema:DataDownload",
+         "schema:PropertyValue"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:MeasurementMethodEnum",
+         "schema:DefinedTerm"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1425"
+   },
+   "properties" : {}
+}

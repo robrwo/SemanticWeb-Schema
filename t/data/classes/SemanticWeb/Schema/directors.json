@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A director of e.g. TV, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.",
+      "rdfs:label" : "directors",
+      "schema:domainIncludes" : [
+         "schema:Episode",
+         "schema:Clip",
+         "schema:VideoGameSeries",
+         "schema:RadioSeries",
+         "schema:VideoObject",
+         "schema:Movie",
+         "schema:VideoGame",
+         "schema:MovieSeries",
+         "schema:TVSeries"
+      ],
+      "schema:rangeIncludes" : "schema:Person",
+      "schema:supersededBy" : "schema:director"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The audience eligible for this service.",
+      "rdfs:label" : "serviceAudience",
+      "schema:domainIncludes" : "schema:Service",
+      "schema:rangeIncludes" : "schema:Audience",
+      "schema:supersededBy" : "schema:audience"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An educationalRole of an EducationalAudience.",
+      "rdfs:label" : "educationalRole",
+      "schema:domainIncludes" : "schema:EducationalAudience",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

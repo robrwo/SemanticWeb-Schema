@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:LegalValue-definitive",
+      "rdf:type" : "schema:LegalValueLevel",
+      "rdfs:comment" : "Indicates a document for which the text is conclusively what the law says and is legally binding. (E.g. the digitally signed version of an Official Journal.)\n  Something \"Definitive\" is considered to be also [[AuthoritativeLegalValue]].",
+      "rdfs:label" : "DefinitiveLegalValue",
+      "schema:contributor" : "collab:ELI",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

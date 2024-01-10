@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicReleaseFormatType",
+      "rdfs:comment" : "LaserDiscFormat.",
+      "rdfs:label" : "LaserDiscFormat",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

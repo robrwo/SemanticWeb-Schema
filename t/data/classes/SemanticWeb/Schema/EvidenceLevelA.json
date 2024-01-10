@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalEvidenceLevel",
+      "rdfs:comment" : "Data derived from multiple randomized clinical trials or meta-analyses.",
+      "rdfs:label" : "EvidenceLevelA",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

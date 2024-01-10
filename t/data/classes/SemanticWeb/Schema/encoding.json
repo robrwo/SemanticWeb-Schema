@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.",
+      "rdfs:label" : "encoding",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:inverseOf" : "schema:encodesCreativeWork",
+      "schema:rangeIncludes" : "schema:MediaObject"
+   },
+   "properties" : {}
+}

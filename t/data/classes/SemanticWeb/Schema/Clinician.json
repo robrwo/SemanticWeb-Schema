@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalAudienceType",
+      "rdfs:comment" : "Medical clinicians, including practicing physicians and other medical professionals involved in clinical practice.",
+      "rdfs:label" : "Clinician",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

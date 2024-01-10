@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex).",
+      "rdfs:label" : "codeRepository",
+      "schema:domainIncludes" : "schema:SoftwareSourceCode",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

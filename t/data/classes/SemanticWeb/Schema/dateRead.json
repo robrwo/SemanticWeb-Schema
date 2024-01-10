@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date/time at which the message has been read by the recipient if a single recipient exists.",
+      "rdfs:label" : "dateRead",
+      "schema:domainIncludes" : "schema:Message",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Date"
+      ]
+   },
+   "properties" : {}
+}

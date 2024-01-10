@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates if this web page element is the main subject of the page.",
+      "rdfs:label" : "mainContentOfPage",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:WebPageElement"
+   },
+   "properties" : {}
+}

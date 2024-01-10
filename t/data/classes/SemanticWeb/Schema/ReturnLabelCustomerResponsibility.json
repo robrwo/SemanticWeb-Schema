@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnLabelSourceEnumeration",
+      "rdfs:comment" : "Indicated that creating a return label is the responsibility of the customer.",
+      "rdfs:label" : "ReturnLabelCustomerResponsibility",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

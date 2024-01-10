@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. Also used for product return policies to specify the condition of products accepted for returns.",
+      "rdfs:label" : "itemCondition",
+      "schema:domainIncludes" : [
+         "schema:MerchantReturnPolicy",
+         "schema:Product",
+         "schema:Offer",
+         "schema:Demand"
+      ],
+      "schema:rangeIncludes" : "schema:OfferItemCondition"
+   },
+   "properties" : {}
+}

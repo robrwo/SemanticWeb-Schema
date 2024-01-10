@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of employees in an organization, e.g. business.",
+      "rdfs:label" : "numberOfEmployees",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:BusinessAudience"
+      ],
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

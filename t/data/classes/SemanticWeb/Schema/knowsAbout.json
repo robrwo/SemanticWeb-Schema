@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Of a [[Person]], and less typically of an [[Organization]], to indicate a topic that is known about - suggesting possible expertise but not implying it. We do not distinguish skill levels here, or relate this to educational content, events, objectives or [[JobPosting]] descriptions.",
+      "rdfs:label" : "knowsAbout",
+      "schema:contributor" : "collab:TP",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:Thing"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1688"
+   },
+   "properties" : {}
+}

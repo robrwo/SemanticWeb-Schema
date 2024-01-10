@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The position of the steering wheel or similar device (mostly for cars).",
+      "rdfs:label" : "steeringPosition",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:SteeringPositionValue"
+   },
+   "properties" : {}
+}

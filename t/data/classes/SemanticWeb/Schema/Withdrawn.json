@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalStudyStatus",
+      "rdfs:comment" : "Withdrawn.",
+      "rdfs:label" : "Withdrawn",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

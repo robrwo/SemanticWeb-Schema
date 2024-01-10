@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The opening hour of the place or service on the given day(s) of the week.",
+      "rdfs:label" : "opens",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:OpeningHoursSpecification",
+      "schema:rangeIncludes" : "schema:Time"
+   },
+   "properties" : {}
+}

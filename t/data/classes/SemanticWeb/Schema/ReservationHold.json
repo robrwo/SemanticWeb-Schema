@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReservationStatusType",
+      "rdfs:comment" : "The status of a reservation on hold pending an update like credit card number or flight changes.",
+      "rdfs:label" : "ReservationHold"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – typically the ranks from TDWG TaxonRank ontology or equivalent Wikidata URIs.",
+      "rdfs:label" : "taxonRank",
+      "schema:domainIncludes" : "schema:Taxon",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:PropertyValue"
+      ],
+      "schema:source" : "www.bioschemas:Taxon"
+   },
+   "properties" : {}
+}

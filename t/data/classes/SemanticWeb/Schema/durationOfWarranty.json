@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The duration of the warranty promise. Common unitCode values are ANN for year, MON for months, or DAY for days.",
+      "rdfs:label" : "durationOfWarranty",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:WarrantyPromise",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

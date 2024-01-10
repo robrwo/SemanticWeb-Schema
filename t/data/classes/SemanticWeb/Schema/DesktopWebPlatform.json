@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DigitalPlatformEnumeration",
+      "rdfs:comment" : "Represents the broad notion of 'desktop' browsers as a Web Platform.",
+      "rdfs:label" : "DesktopWebPlatform",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3057"
+   },
+   "properties" : {}
+}

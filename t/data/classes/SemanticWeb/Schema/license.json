@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A license document that applies to this content, typically indicated by URL.",
+      "rdfs:label" : "license",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:CreativeWork"
+      ]
+   },
+   "properties" : {}
+}

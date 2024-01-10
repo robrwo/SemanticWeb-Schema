@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DrugPrescriptionStatus",
+      "rdfs:comment" : "The character of a medical substance, typically a medicine, of being available over the counter or not.",
+      "rdfs:label" : "OTC",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

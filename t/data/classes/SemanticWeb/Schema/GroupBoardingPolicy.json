@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BoardingPolicyType",
+      "rdfs:comment" : "The airline boards by groups based on check-in time, priority, etc.",
+      "rdfs:label" : "GroupBoardingPolicy"
+   },
+   "properties" : {}
+}

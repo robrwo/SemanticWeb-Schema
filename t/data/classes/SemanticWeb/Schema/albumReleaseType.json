@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The kind of release which this album is: single, EP or album.",
+      "rdfs:label" : "albumReleaseType",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicAlbum",
+      "schema:rangeIncludes" : "schema:MusicAlbumReleaseType"
+   },
+   "properties" : {}
+}

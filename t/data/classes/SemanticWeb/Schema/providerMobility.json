@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the mobility of a provided service (e.g. 'static', 'dynamic').",
+      "rdfs:label" : "providerMobility",
+      "schema:domainIncludes" : "schema:Service",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalObservationalStudyDesign",
+      "rdfs:comment" : "An observational study design.",
+      "rdfs:label" : "Observational",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

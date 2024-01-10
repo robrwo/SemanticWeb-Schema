@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The program providing the membership.",
+      "rdfs:label" : "programName",
+      "schema:domainIncludes" : "schema:ProgramMembership",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

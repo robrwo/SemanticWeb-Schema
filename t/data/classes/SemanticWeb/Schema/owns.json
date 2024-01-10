@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Products owned by the organization or person.",
+      "rdfs:label" : "owns",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:OwnershipInfo",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

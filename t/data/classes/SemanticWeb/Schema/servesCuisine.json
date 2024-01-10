@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The cuisine of the restaurant.",
+      "rdfs:label" : "servesCuisine",
+      "schema:domainIncludes" : "schema:FoodEstablishment",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

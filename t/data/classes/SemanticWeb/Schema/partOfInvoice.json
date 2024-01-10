@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The order is being paid as part of the referenced Invoice.",
+      "rdfs:label" : "partOfInvoice",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:Invoice"
+   },
+   "properties" : {}
+}

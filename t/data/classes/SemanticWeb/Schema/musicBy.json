@@ -1,0 +1,23 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The composer of the soundtrack.",
+      "rdfs:label" : "musicBy",
+      "schema:domainIncludes" : [
+         "schema:Clip",
+         "schema:VideoGameSeries",
+         "schema:Episode",
+         "schema:RadioSeries",
+         "schema:Movie",
+         "schema:VideoObject",
+         "schema:VideoGame",
+         "schema:MovieSeries",
+         "schema:TVSeries"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:MusicGroup",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

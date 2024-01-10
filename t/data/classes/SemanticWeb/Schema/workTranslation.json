@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A work that is a translation of the content of this work. E.g. 西遊記 has an English workTranslation “Journey to the West”, a German workTranslation “Monkeys Pilgerfahrt” and a Vietnamese  translation Tây du ký bình khảo.",
+      "rdfs:label" : "workTranslation",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:inverseOf" : "schema:translationOfWork",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

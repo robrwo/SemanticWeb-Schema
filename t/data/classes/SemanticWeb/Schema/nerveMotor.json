@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The neurological pathway extension that involves muscle control.",
+      "rdfs:label" : "nerveMotor",
+      "schema:domainIncludes" : "schema:Nerve",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Muscle"
+   },
+   "properties" : {}
+}

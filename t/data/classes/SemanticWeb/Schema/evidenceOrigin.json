@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Source of the data used to formulate the guidance, e.g. RCT, consensus opinion, etc.",
+      "rdfs:label" : "evidenceOrigin",
+      "schema:domainIncludes" : "schema:MedicalGuideline",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

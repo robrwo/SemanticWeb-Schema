@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The computer programming language.",
+      "rdfs:label" : "programmingLanguage",
+      "schema:domainIncludes" : "schema:SoftwareSourceCode",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:ComputerLanguage"
+      ]
+   },
+   "properties" : {}
+}

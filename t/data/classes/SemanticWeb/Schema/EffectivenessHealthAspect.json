@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Content about the effectiveness-related aspects of a health topic.",
+      "rdfs:label" : "EffectivenessHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2799"
+   },
+   "properties" : {}
+}

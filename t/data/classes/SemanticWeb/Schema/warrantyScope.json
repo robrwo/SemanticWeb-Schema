@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The scope of the warranty promise.",
+      "rdfs:label" : "warrantyScope",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:WarrantyPromise",
+      "schema:rangeIncludes" : "schema:WarrantyScope"
+   },
+   "properties" : {}
+}

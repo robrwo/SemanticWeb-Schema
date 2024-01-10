@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The TV series to which this episode or season belongs.",
+      "rdfs:label" : "partOfTVSeries",
+      "rdfs:subPropertyOf" : "schema:isPartOf",
+      "schema:domainIncludes" : [
+         "schema:TVSeason",
+         "schema:TVClip",
+         "schema:TVEpisode"
+      ],
+      "schema:rangeIncludes" : "schema:TVSeries",
+      "schema:supersededBy" : "schema:partOfSeries"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of screens in the movie theater.",
+      "rdfs:label" : "screenCount",
+      "schema:domainIncludes" : "schema:MovieTheater",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

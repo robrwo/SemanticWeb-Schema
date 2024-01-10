@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DriveWheelConfigurationValue",
+      "rdfs:comment" : "All-wheel Drive is a transmission layout where the engine drives all four wheels.",
+      "rdfs:label" : "AllWheelDriveConfiguration",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group"
+   },
+   "properties" : {}
+}

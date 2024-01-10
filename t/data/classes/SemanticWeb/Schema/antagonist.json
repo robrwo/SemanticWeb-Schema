@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The muscle whose action counteracts the specified muscle.",
+      "rdfs:label" : "antagonist",
+      "schema:domainIncludes" : "schema:Muscle",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Muscle"
+   },
+   "properties" : {}
+}

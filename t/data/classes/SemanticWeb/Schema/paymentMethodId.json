@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).",
+      "rdfs:label" : "paymentMethodId",
+      "schema:domainIncludes" : [
+         "schema:Invoice",
+         "schema:Order"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of tracks in this album or playlist.",
+      "rdfs:label" : "numTracks",
+      "schema:domainIncludes" : "schema:MusicPlaylist",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

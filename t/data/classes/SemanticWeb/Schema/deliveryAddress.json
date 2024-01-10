@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Destination address.",
+      "rdfs:label" : "deliveryAddress",
+      "schema:domainIncludes" : "schema:ParcelDelivery",
+      "schema:rangeIncludes" : "schema:PostalAddress"
+   },
+   "properties" : {}
+}

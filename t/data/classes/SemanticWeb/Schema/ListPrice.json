@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceTypeEnumeration",
+      "rdfs:comment" : "Represents the list price (the price a product is actually advertised for) of an offered product.",
+      "rdfs:label" : "ListPrice",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

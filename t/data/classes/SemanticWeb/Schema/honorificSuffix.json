@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An honorific suffix following a Person's name such as M.D./PhD/MSCSW.",
+      "rdfs:label" : "honorificSuffix",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

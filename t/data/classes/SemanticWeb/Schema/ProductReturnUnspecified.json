@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ProductReturnEnumeration",
+      "rdfs:comment" : "ProductReturnUnspecified: a product return policy is not specified here.",
+      "rdfs:label" : "ProductReturnUnspecified",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:MerchantReturnUnspecified"
+   },
+   "properties" : {}
+}

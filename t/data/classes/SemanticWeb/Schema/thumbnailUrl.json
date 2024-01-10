@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A thumbnail image relevant to the Thing.",
+      "rdfs:label" : "thumbnailUrl",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

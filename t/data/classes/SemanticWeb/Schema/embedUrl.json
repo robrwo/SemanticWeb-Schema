@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A URL pointing to a player for a specific video. In general, this is the information in the ```src``` element of an ```embed``` tag and should not be the same as the content of the ```loc``` tag.",
+      "rdfs:label" : "embedUrl",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

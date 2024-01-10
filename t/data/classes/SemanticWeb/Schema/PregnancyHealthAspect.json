@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Content discussing pregnancy-related aspects of a health topic.",
+      "rdfs:label" : "PregnancyHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2799"
+   },
+   "properties" : {}
+}

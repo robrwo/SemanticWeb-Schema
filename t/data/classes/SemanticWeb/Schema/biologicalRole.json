@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A role played by the BioChemEntity within a biological context.",
+      "rdfs:label" : "biologicalRole",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:DefinedTerm",
+      "schema:source" : "http:www.bioschemas.org"
+   },
+   "properties" : {}
+}

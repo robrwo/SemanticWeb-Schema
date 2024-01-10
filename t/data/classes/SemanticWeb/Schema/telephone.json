@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The telephone number.",
+      "rdfs:label" : "telephone",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization",
+         "schema:Place",
+         "schema:ContactPoint"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

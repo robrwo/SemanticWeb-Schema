@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The frequency in MHz for a particular broadcast.",
+      "rdfs:label" : "broadcastFrequencyValue",
+      "schema:domainIncludes" : "schema:BroadcastFrequencySpecification",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Number"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
+   },
+   "properties" : {}
+}

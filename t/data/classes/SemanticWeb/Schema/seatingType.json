@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type/class of the seat.",
+      "rdfs:label" : "seatingType",
+      "schema:domainIncludes" : "schema:Seat",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:QualitativeValue"
+      ]
+   },
+   "properties" : {}
+}

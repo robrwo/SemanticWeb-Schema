@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of owners of the vehicle, including the current one.\\n\\nTypical unit code(s): C62.",
+      "rdfs:label" : "numberOfPreviousOwners",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:QuantitativeValue"
+      ]
+   },
+   "properties" : {}
+}

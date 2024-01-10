@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of instrument. The language used on this action.",
+      "rdfs:label" : "language",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : [
+         "schema:WriteAction",
+         "schema:CommunicateAction"
+      ],
+      "schema:rangeIncludes" : "schema:Language",
+      "schema:supersededBy" : "schema:inLanguage"
+   },
+   "properties" : {}
+}

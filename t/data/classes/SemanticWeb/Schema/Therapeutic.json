@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalDevicePurpose",
+      "rdfs:comment" : "A medical device used for therapeutic purposes.",
+      "rdfs:label" : "Therapeutic",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

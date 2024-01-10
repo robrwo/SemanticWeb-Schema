@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:HealthAspectEnumeration",
+      "rdfs:comment" : "Content about common misconceptions and myths that are related to a topic.",
+      "rdfs:label" : "MisconceptionsHealthAspect",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2374"
+   },
+   "properties" : {}
+}

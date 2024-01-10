@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The delivery of the parcel related to this order or order item.",
+      "rdfs:label" : "orderDelivery",
+      "schema:domainIncludes" : [
+         "schema:OrderItem",
+         "schema:Order"
+      ],
+      "schema:rangeIncludes" : "schema:ParcelDelivery"
+   },
+   "properties" : {}
+}

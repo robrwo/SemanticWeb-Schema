@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of object. The options subject to this action.",
+      "rdfs:label" : "option",
+      "rdfs:subPropertyOf" : "schema:object",
+      "schema:domainIncludes" : "schema:ChooseAction",
+      "schema:rangeIncludes" : [
+         "schema:Thing",
+         "schema:Text"
+      ],
+      "schema:supersededBy" : "schema:actionOption"
+   },
+   "properties" : {}
+}

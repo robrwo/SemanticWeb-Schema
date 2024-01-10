@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The place of attachment of a muscle, or what the muscle moves.",
+      "rdfs:label" : "insertion",
+      "schema:domainIncludes" : "schema:Muscle",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalStructure"
+   },
+   "properties" : {}
+}

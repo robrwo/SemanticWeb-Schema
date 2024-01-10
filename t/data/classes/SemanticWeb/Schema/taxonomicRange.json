@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The taxonomic grouping of the organism that expresses, encodes, or in some way related to the BioChemEntity.",
+      "rdfs:label" : "taxonomicRange",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:Taxon",
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "http:www.bioschemas.org"
+   },
+   "properties" : {}
+}

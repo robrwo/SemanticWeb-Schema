@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The CableOrSatelliteService offering the channel.",
+      "rdfs:label" : "inBroadcastLineup",
+      "schema:domainIncludes" : "schema:BroadcastChannel",
+      "schema:rangeIncludes" : "schema:CableOrSatelliteService"
+   },
+   "properties" : {}
+}

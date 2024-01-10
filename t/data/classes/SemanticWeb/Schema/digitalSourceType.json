@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates an IPTCDigitalSourceEnumeration code indicating the nature of the digital source(s) for some [[CreativeWork]].",
+      "rdfs:label" : "digitalSourceType",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:IPTCDigitalSourceEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3392"
+   },
+   "properties" : {}
+}

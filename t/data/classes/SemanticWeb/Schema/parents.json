@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A parents of the person.",
+      "rdfs:label" : "parents",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Person",
+      "schema:supersededBy" : "schema:parent"
+   },
+   "properties" : {}
+}

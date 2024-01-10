@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceTypeEnumeration",
+      "rdfs:comment" : "Represents the manufacturer suggested retail price (\"MSRP\") of an offered product.",
+      "rdfs:label" : "MSRP",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnFeesEnumeration",
+      "rdfs:comment" : "Specifies that product returns must be paid for, and are the responsibility of, the customer.",
+      "rdfs:label" : "ReturnFeesCustomerResponsibility",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

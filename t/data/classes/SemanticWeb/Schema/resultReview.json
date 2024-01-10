@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of result. The review that resulted in the performing of the action.",
+      "rdfs:label" : "resultReview",
+      "rdfs:subPropertyOf" : "schema:result",
+      "schema:domainIncludes" : "schema:ReviewAction",
+      "schema:rangeIncludes" : "schema:Review"
+   },
+   "properties" : {}
+}

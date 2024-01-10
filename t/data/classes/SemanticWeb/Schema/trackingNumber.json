@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Shipper tracking number.",
+      "rdfs:label" : "trackingNumber",
+      "schema:domainIncludes" : "schema:ParcelDelivery",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

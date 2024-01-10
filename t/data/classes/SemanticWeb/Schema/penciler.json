@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The individual who draws the primary narrative artwork.",
+      "rdfs:label" : "penciler",
+      "schema:domainIncludes" : [
+         "schema:ComicIssue",
+         "schema:ComicStory",
+         "schema:VisualArtwork"
+      ],
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

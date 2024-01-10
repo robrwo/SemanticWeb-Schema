@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:OrderStatus",
+      "rdfs:comment" : "OrderStatus representing availability of an order for pickup.",
+      "rdfs:label" : "OrderPickupAvailable"
+   },
+   "properties" : {}
+}

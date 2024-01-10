@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Human-readable terms of service documentation.",
+      "rdfs:label" : "termsOfService",
+      "schema:domainIncludes" : "schema:Service",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1423"
+   },
+   "properties" : {}
+}

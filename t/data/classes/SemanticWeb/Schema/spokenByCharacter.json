@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The (e.g. fictional) character, Person or Organization to whom the quotation is attributed within the containing CreativeWork.",
+      "rdfs:label" : "spokenByCharacter",
+      "schema:domainIncludes" : "schema:Quotation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/271"
+   },
+   "properties" : {}
+}

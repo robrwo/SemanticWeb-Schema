@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "When a rental car can be dropped off.",
+      "rdfs:label" : "dropoffTime",
+      "schema:domainIncludes" : "schema:RentalCarReservation",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

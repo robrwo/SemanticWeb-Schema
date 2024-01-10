@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "MixtapeAlbum.",
+      "rdfs:label" : "MixtapeAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

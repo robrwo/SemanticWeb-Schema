@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.",
+      "rdfs:label" : "surface",
+      "rdfs:subPropertyOf" : "schema:material",
+      "schema:domainIncludes" : "schema:VisualArtwork",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:supersededBy" : "schema:artworkSurface"
+   },
+   "properties" : {}
+}

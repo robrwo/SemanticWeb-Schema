@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The branches that delineate from the nerve bundle. Not to be confused with [[branchOf]].",
+      "rdfs:label" : "branch",
+      "schema:domainIncludes" : "schema:Nerve",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalStructure",
+      "schema:supersededBy" : "schema:arterialBranch"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Another gene which is a variation of this one.",
+      "rdfs:label" : "alternativeOf",
+      "schema:domainIncludes" : "schema:Gene",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Gene",
+      "schema:source" : "www.bioschemas:Gene"
+   },
+   "properties" : {}
+}

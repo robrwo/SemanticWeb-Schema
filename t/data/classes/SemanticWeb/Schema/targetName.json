@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The name of a node in an established educational framework.",
+      "rdfs:label" : "targetName",
+      "schema:domainIncludes" : "schema:AlignmentObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The party holding the legal copyright to the CreativeWork.",
+      "rdfs:label" : "copyrightHolder",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

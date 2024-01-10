@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The unique identifier for the train.",
+      "rdfs:label" : "trainNumber",
+      "schema:domainIncludes" : "schema:TrainTrip",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

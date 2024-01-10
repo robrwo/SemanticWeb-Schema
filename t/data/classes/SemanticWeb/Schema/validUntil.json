@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date when the item is no longer valid.",
+      "rdfs:label" : "validUntil",
+      "schema:domainIncludes" : "schema:Permit",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

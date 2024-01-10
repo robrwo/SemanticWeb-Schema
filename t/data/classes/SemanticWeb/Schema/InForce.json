@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:InForce-inForce",
+      "rdf:type" : "schema:LegalForceStatus",
+      "rdfs:comment" : "Indicates that a legislation is in force.",
+      "rdfs:label" : "InForce",
+      "schema:contributor" : "collab:ELI",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

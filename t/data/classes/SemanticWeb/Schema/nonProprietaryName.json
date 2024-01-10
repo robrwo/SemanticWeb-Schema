@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The generic name of this drug or supplement.",
+      "rdfs:label" : "nonProprietaryName",
+      "schema:domainIncludes" : [
+         "schema:Drug",
+         "schema:DietarySupplement"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

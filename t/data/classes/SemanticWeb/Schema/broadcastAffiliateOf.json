@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The media network(s) whose content is broadcast on this station.",
+      "rdfs:label" : "broadcastAffiliateOf",
+      "schema:domainIncludes" : "schema:BroadcastService",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

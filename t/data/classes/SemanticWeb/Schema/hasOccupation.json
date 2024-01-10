@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Person's occupation. For past professions, use Role for expressing dates.",
+      "rdfs:label" : "hasOccupation",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Occupation",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

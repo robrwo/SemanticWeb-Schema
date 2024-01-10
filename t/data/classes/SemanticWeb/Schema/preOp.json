@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A description of the workup, testing, and other preparations required before implanting this device.",
+      "rdfs:label" : "preOp",
+      "schema:domainIncludes" : "schema:MedicalDevice",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The quality of the video.",
+      "rdfs:label" : "videoQuality",
+      "schema:domainIncludes" : "schema:VideoObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

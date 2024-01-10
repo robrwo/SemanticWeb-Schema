@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "One of the domain specialities to which this web page's content applies.",
+      "rdfs:label" : "specialty",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:Specialty"
+   },
+   "properties" : {}
+}

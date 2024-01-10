@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "DJMixAlbum.",
+      "rdfs:label" : "DJMixAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

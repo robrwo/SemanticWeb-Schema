@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Strength of the guideline's recommendation (e.g. 'class I').",
+      "rdfs:label" : "recommendationStrength",
+      "schema:domainIncludes" : "schema:MedicalGuidelineRecommendation",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

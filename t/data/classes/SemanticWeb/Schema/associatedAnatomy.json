@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The anatomy of the underlying organ system or structures associated with this entity.",
+      "rdfs:label" : "associatedAnatomy",
+      "schema:domainIncludes" : [
+         "schema:MedicalCondition",
+         "schema:PhysicalActivity"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AnatomicalSystem",
+         "schema:AnatomicalStructure",
+         "schema:SuperficialAnatomy"
+      ]
+   },
+   "properties" : {}
+}

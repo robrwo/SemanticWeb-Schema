@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.",
+      "rdfs:label" : "successorOf",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:ProductModel",
+      "schema:rangeIncludes" : "schema:ProductModel"
+   },
+   "properties" : {}
+}

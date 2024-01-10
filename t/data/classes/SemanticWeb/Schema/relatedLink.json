@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A link related to this web page, for example to other related web pages.",
+      "rdfs:label" : "relatedLink",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

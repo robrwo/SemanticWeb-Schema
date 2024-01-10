@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RefundTypeEnumeration",
+      "rdfs:comment" : "Specifies that a refund can be done as an exchange for the same product.",
+      "rdfs:label" : "ExchangeRefund",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

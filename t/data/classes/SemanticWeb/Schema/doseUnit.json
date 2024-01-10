@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The unit of the dose, e.g. 'mg'.",
+      "rdfs:label" : "doseUnit",
+      "schema:domainIncludes" : "schema:DoseSchedule",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

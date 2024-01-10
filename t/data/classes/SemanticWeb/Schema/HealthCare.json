@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GovernmentBenefitsType",
+      "rdfs:comment" : "HealthCare: this is a benefit for health care.",
+      "rdfs:label" : "HealthCare",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
+   },
+   "properties" : {}
+}

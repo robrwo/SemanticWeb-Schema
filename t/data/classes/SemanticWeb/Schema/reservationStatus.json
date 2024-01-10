@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The current status of the reservation.",
+      "rdfs:label" : "reservationStatus",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:ReservationStatusType"
+   },
+   "properties" : {}
+}

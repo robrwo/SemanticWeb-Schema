@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.",
+      "rdfs:label" : "seller",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : [
+         "schema:BuyAction",
+         "schema:Demand",
+         "schema:Offer",
+         "schema:Order",
+         "schema:Flight"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

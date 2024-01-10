@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A step in making the recipe, in the form of a single item (document, video, etc.) or an ordered list with HowToStep and/or HowToSection items.",
+      "rdfs:label" : "recipeInstructions",
+      "rdfs:subPropertyOf" : "schema:step",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:CreativeWork",
+         "schema:ItemList"
+      ]
+   },
+   "properties" : {}
+}

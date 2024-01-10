@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceTypeEnumeration",
+      "rdfs:comment" : "Represents a sale price (usually active for a limited period) of an offered product.",
+      "rdfs:label" : "SalePrice",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

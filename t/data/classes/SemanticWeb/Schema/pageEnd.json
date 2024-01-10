@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "bibo:pageEnd",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The page on which the work ends; for example \"138\" or \"xvi\".",
+      "rdfs:label" : "pageEnd",
+      "schema:contributor" : "collab:bibex",
+      "schema:domainIncludes" : [
+         "schema:PublicationIssue",
+         "schema:Chapter",
+         "schema:Article",
+         "schema:PublicationVolume"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Integer",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

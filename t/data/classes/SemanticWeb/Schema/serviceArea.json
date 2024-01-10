@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The geographic area where the service is provided.",
+      "rdfs:label" : "serviceArea",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Organization",
+         "schema:ContactPoint"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Place",
+         "schema:AdministrativeArea",
+         "schema:GeoShape"
+      ],
+      "schema:supersededBy" : "schema:areaServed"
+   },
+   "properties" : {}
+}

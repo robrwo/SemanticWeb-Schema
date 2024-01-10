@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceComponentTypeEnumeration",
+      "rdfs:comment" : "Represents the downpayment (up-front payment) price component of the total price for an offered product that has additional installment payments.",
+      "rdfs:label" : "Downpayment",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
+   },
+   "properties" : {}
+}

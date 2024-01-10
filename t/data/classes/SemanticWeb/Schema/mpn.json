@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.",
+      "rdfs:label" : "mpn",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:Offer",
+         "schema:Demand"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

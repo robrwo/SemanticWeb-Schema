@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "URL of the item.",
+      "rdfs:label" : "url",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

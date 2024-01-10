@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This ordering relation for qualitative values indicates that the subject is not equal to the object.",
+      "rdfs:label" : "nonEqual",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:QualitativeValue",
+      "schema:rangeIncludes" : "schema:QualitativeValue"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.",
+      "rdfs:label" : "potentialAction",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : "schema:Action"
+   },
+   "properties" : {}
+}

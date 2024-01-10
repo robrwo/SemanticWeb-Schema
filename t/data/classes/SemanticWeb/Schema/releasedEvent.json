@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The place and time the release was issued, expressed as a PublicationEvent.",
+      "rdfs:label" : "releasedEvent",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:PublicationEvent"
+   },
+   "properties" : {}
+}

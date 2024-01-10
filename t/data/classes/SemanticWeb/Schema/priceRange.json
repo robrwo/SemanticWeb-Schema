@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The price range of the business, for example ```$$$```.",
+      "rdfs:label" : "priceRange",
+      "schema:domainIncludes" : "schema:LocalBusiness",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

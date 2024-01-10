@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Identifies that this [[Trip]] is a subTrip of another Trip.  For example Day 1, Day 2, etc. of a multi-day trip.",
+      "rdfs:label" : "partOfTrip",
+      "schema:contributor" : "collab:Tourism",
+      "schema:domainIncludes" : "schema:Trip",
+      "schema:inverseOf" : "schema:subTrip",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Trip",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,24 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A secondary value that provides additional information on the original value, e.g. a reference temperature or a type of measurement.",
+      "rdfs:label" : "valueReference",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:QualitativeValue",
+         "schema:PropertyValue",
+         "schema:QuantitativeValue"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:StructuredValue",
+         "schema:DefinedTerm",
+         "schema:QuantitativeValue",
+         "schema:Text",
+         "schema:Enumeration",
+         "schema:MeasurementTypeEnumeration",
+         "schema:PropertyValue",
+         "schema:QualitativeValue"
+      ]
+   },
+   "properties" : {}
+}

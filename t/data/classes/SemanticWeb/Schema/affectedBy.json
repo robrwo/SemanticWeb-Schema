@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Drugs that affect the test's results.",
+      "rdfs:label" : "affectedBy",
+      "schema:domainIncludes" : "schema:MedicalTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Drug"
+   },
+   "properties" : {}
+}

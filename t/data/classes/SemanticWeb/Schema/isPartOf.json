@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.",
+      "rdfs:label" : "isPartOf",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:inverseOf" : "schema:hasPart",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:CreativeWork"
+      ]
+   },
+   "properties" : {}
+}

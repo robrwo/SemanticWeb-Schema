@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.",
+      "rdfs:label" : "targetProduct",
+      "schema:domainIncludes" : "schema:SoftwareSourceCode",
+      "schema:rangeIncludes" : "schema:SoftwareApplication"
+   },
+   "properties" : {}
+}

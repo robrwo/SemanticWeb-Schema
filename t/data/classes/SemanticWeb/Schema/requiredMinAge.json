@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Audiences defined by a person's minimum age.",
+      "rdfs:label" : "requiredMinAge",
+      "schema:domainIncludes" : "schema:PeopleAudience",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

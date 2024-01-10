@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Order(s) related to this Invoice. One or more Orders may be combined into a single Invoice.",
+      "rdfs:label" : "referencesOrder",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : "schema:Order"
+   },
+   "properties" : {}
+}

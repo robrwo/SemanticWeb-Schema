@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A CreativeWork attached to the message.",
+      "rdfs:label" : "messageAttachment",
+      "schema:domainIncludes" : "schema:Message",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

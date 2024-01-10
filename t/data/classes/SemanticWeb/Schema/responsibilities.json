@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Responsibilities associated with this role or Occupation.",
+      "rdfs:label" : "responsibilities",
+      "schema:domainIncludes" : [
+         "schema:JobPosting",
+         "schema:Occupation"
+      ],
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "One or more detailed price specifications, indicating the unit price and delivery or payment charges.",
+      "rdfs:label" : "priceSpecification",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:TradeAction",
+         "schema:Offer",
+         "schema:Demand"
+      ],
+      "schema:rangeIncludes" : "schema:PriceSpecification"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BoardingPolicyType",
+      "rdfs:comment" : "The airline boards by zones of the plane.",
+      "rdfs:label" : "ZoneBoardingPolicy"
+   },
+   "properties" : {}
+}

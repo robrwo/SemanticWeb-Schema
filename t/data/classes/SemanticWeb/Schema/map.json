@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A URL to a map of the place.",
+      "rdfs:label" : "map",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:rangeIncludes" : "schema:URL",
+      "schema:supersededBy" : "schema:hasMap"
+   },
+   "properties" : {}
+}

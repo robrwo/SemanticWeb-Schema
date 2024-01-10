@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An abstract is a short description that summarizes a [[CreativeWork]].",
+      "rdfs:label" : "abstract",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/276"
+   },
+   "properties" : {}
+}

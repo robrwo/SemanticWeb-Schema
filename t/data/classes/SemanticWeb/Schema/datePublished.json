@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Date of first broadcast/publication.",
+      "rdfs:label" : "datePublished",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:Date",
+         "schema:DateTime"
+      ]
+   },
+   "properties" : {}
+}

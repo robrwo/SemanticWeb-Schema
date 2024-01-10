@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date and place the work was first performed.",
+      "rdfs:label" : "firstPerformance",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:Event"
+   },
+   "properties" : {}
+}

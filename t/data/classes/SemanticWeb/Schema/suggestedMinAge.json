@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Minimum recommended age in years for the audience or user.",
+      "rdfs:label" : "suggestedMinAge",
+      "schema:domainIncludes" : "schema:PeopleAudience",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The name of a character played in some acting or performing role, i.e. in a PerformanceRole.",
+      "rdfs:label" : "characterName",
+      "schema:domainIncludes" : "schema:PerformanceRole",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

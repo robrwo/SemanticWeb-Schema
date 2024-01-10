@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalImagingTechnique",
+      "rdfs:comment" : "Ultrasound imaging.",
+      "rdfs:label" : "Ultrasound",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

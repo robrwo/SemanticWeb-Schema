@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Imaging technique used.",
+      "rdfs:label" : "imagingTechnique",
+      "schema:domainIncludes" : "schema:ImagingTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalImagingTechnique"
+   },
+   "properties" : {}
+}

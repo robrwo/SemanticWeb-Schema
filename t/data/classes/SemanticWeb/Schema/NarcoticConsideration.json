@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:AdultOrientedEnumeration",
+      "rdfs:comment" : "Item is a narcotic as defined by the [1961 UN convention](https://www.incb.org/incb/en/narcotic-drugs/Yellowlist/yellow-list.html), for example marijuana or heroin.",
+      "rdfs:label" : "NarcoticConsideration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

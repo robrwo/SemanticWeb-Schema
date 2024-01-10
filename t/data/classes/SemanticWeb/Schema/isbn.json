@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "bibo:isbn",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The ISBN of the book.",
+      "rdfs:label" : "isbn",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : "schema:Book",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

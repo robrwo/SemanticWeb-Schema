@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An url template (RFC6570) that will be used to construct the target of the execution of the action.",
+      "rdfs:label" : "urlTemplate",
+      "schema:domainIncludes" : "schema:EntryPoint",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A condition the test is used to diagnose.",
+      "rdfs:label" : "usedToDiagnose",
+      "schema:domainIncludes" : "schema:MedicalTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalCondition"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalTrialDesign",
+      "rdfs:comment" : "A trial that takes place at multiple centers.",
+      "rdfs:label" : "MultiCenterTrial",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

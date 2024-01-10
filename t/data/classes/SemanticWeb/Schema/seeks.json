@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer to products or services sought by the organization or person (demand).",
+      "rdfs:label" : "seeks",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:rangeIncludes" : "schema:Demand"
+   },
+   "properties" : {}
+}

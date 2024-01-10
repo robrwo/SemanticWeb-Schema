@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReservationStatusType",
+      "rdfs:comment" : "The status for a previously confirmed reservation that is now cancelled.",
+      "rdfs:label" : "ReservationCancelled"
+   },
+   "properties" : {}
+}

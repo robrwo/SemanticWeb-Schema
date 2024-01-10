@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "InChIKey is a hashed version of the full InChI (using the SHA-256 algorithm).",
+      "rdfs:label" : "inChIKey",
+      "rdfs:subPropertyOf" : "schema:hasRepresentation",
+      "schema:domainIncludes" : "schema:MolecularEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "www.bioschemas:MolecularEntity"
+   },
+   "properties" : {}
+}

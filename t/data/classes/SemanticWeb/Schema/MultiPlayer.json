@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GamePlayMode",
+      "rdfs:comment" : "Play mode: MultiPlayer. Requiring or allowing multiple human players to play simultaneously.",
+      "rdfs:label" : "MultiPlayer"
+   },
+   "properties" : {}
+}

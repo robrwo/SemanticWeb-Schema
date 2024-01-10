@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "IATA identifier for an airline or airport.",
+      "rdfs:label" : "iataCode",
+      "schema:domainIncludes" : [
+         "schema:Airline",
+         "schema:Airport"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

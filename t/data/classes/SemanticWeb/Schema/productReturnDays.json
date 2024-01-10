@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable.",
+      "rdfs:label" : "productReturnDays",
+      "schema:domainIncludes" : "schema:ProductReturnPolicy",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:rangeIncludes" : "schema:Integer",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:merchantReturnDays"
+   },
+   "properties" : {}
+}

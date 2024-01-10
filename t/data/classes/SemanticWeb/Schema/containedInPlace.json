@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The basic containment relation between a place and one that contains it.",
+      "rdfs:label" : "containedInPlace",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:inverseOf" : "schema:containsPlace",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

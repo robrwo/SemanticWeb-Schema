@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "Something in medical science that pertains to infectious diseases, i.e. caused by bacterial, viral, fungal or parasitic infections.",
+      "rdfs:label" : "Infectious",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

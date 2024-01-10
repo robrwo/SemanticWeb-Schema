@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A media object representing the circumstances before performing this direction.",
+      "rdfs:label" : "beforeMedia",
+      "schema:domainIncludes" : "schema:HowToDirection",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:MediaObject"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BodyMeasurementTypeEnumeration",
+      "rdfs:comment" : "Body height (measured between crown of head and soles of feet). Used, for example, to fit jackets.",
+      "rdfs:label" : "BodyMeasurementHeight",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

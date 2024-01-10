@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)",
+      "rdfs:label" : "requiredCollateral",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:LoanOrCredit",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Thing"
+      ]
+   },
+   "properties" : {}
+}

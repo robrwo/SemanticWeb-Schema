@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The units of an active ingredient's strength, e.g. mg.",
+      "rdfs:label" : "strengthUnit",
+      "schema:domainIncludes" : "schema:DrugStrength",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

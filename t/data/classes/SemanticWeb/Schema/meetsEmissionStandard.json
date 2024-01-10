@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates that the vehicle meets the respective emission standard.",
+      "rdfs:label" : "meetsEmissionStandard",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:isPartOf" : "http:auto.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QualitativeValue",
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

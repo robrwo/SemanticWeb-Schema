@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:AdultOrientedEnumeration",
+      "rdfs:comment" : "The item contains sexually oriented content such as nudity, suggestive or explicit material, or related online services, or is intended to enhance sexual activity. Examples: Erotic videos or magazine, sexual enhancement devices, sex toys.",
+      "rdfs:label" : "SexualContentConsideration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "True if the broadcast is of a live event.",
+      "rdfs:label" : "isLiveBroadcast",
+      "schema:domainIncludes" : "schema:BroadcastEvent",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

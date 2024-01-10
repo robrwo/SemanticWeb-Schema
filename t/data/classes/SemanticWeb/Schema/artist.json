@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The primary artist for a work\n    \tin a medium other than pencils or digital line art--for example, if the\n    \tprimary artwork is done in watercolors or digital paints.",
+      "rdfs:label" : "artist",
+      "schema:domainIncludes" : [
+         "schema:VisualArtwork",
+         "schema:ComicIssue",
+         "schema:ComicStory"
+      ],
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

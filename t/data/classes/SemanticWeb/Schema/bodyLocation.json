@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Location in the body of the anatomical structure.",
+      "rdfs:label" : "bodyLocation",
+      "schema:domainIncludes" : [
+         "schema:AnatomicalStructure",
+         "schema:MedicalProcedure"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

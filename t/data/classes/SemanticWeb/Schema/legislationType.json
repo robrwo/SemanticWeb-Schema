@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:type_document",
+      "owl:equivalentProperty" : "ontology:type_document",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of the legislation. Examples of values are \"law\", \"act\", \"directive\", \"decree\", \"regulation\", \"statutory instrument\", \"loi organique\", \"règlement grand-ducal\", etc., depending on the country.",
+      "rdfs:label" : "legislationType",
+      "rdfs:subPropertyOf" : "schema:genre",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:CategoryCode",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the origin of a shipment, i.e. where it should be coming from.",
+      "rdfs:label" : "shippingOrigin",
+      "schema:domainIncludes" : "schema:OfferShippingDetails",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:DefinedRegion",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3122"
+   },
+   "properties" : {}
+}

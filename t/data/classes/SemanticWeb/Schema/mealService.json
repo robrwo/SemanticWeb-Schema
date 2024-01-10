@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Description of the meals that will be provided or available for purchase.",
+      "rdfs:label" : "mealService",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

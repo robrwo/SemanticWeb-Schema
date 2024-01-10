@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Identifies a price component (for example, a line item on an invoice), part of the total price for an offer.",
+      "rdfs:label" : "priceComponentType",
+      "schema:domainIncludes" : "schema:UnitPriceSpecification",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:PriceComponentTypeEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2689"
+   },
+   "properties" : {}
+}

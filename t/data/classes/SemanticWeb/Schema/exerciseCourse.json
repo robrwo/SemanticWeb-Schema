@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of location. The course where this action was taken.",
+      "rdfs:label" : "exerciseCourse",
+      "rdfs:subPropertyOf" : "schema:location",
+      "schema:domainIncludes" : "schema:ExerciseAction",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

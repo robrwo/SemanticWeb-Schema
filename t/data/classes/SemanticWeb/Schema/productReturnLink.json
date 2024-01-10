@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a Web page or service by URL, for product return.",
+      "rdfs:label" : "productReturnLink",
+      "schema:domainIncludes" : "schema:ProductReturnPolicy",
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:rangeIncludes" : "schema:URL",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288",
+      "schema:supersededBy" : "schema:merchantReturnLink"
+   },
+   "properties" : {}
+}

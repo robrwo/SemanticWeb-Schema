@@ -1,0 +1,29 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.",
+      "rdfs:label" : "category",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Invoice",
+         "schema:Recommendation",
+         "schema:Product",
+         "schema:SpecialAnnouncement",
+         "schema:ActionAccessSpecification",
+         "schema:PhysicalActivity",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:CategoryCode",
+         "schema:PhysicalActivityCategory",
+         "schema:Text",
+         "schema:URL",
+         "schema:Thing"
+      ],
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/2490",
+         "https://github.com/schemaorg/schemaorg/issues/1741"
+      ]
+   },
+   "properties" : {}
+}

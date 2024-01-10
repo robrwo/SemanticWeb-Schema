@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "mo:label",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The label that issued the release.",
+      "rdfs:label" : "recordLabel",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRelease",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

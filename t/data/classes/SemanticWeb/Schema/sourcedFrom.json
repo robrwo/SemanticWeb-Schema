@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The neurological pathway that originates the neurons.",
+      "rdfs:label" : "sourcedFrom",
+      "schema:domainIncludes" : "schema:Nerve",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:BrainStructure"
+   },
+   "properties" : {}
+}

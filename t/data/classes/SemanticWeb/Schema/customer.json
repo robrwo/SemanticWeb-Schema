@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Party placing the order or paying the invoice.",
+      "rdfs:label" : "customer",
+      "schema:domainIncludes" : [
+         "schema:Order",
+         "schema:Invoice"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

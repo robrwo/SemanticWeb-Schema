@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.).",
+      "rdfs:label" : "musicReleaseFormat",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRelease",
+      "schema:rangeIncludes" : "schema:MusicReleaseFormatType"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The height of the item.",
+      "rdfs:label" : "height",
+      "schema:domainIncludes" : [
+         "schema:MediaObject",
+         "schema:Product",
+         "schema:OfferShippingDetails",
+         "schema:VisualArtwork",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Distance"
+      ]
+   },
+   "properties" : {}
+}

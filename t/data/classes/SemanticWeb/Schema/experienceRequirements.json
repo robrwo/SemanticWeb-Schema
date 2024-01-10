@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Description of skills and experience needed for the position or Occupation.",
+      "rdfs:label" : "experienceRequirements",
+      "schema:domainIncludes" : [
+         "schema:Occupation",
+         "schema:JobPosting"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:OccupationalExperienceRequirements",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

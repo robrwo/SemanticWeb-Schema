@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of instrument. The method of delivery.",
+      "rdfs:label" : "deliveryMethod",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : [
+         "schema:SendAction",
+         "schema:ReceiveAction",
+         "schema:OrderAction",
+         "schema:TrackAction"
+      ],
+      "schema:rangeIncludes" : "schema:DeliveryMethod"
+   },
+   "properties" : {}
+}

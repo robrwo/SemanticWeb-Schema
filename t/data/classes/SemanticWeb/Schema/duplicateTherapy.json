@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A therapy that duplicates or overlaps this one.",
+      "rdfs:label" : "duplicateTherapy",
+      "schema:domainIncludes" : "schema:MedicalTherapy",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTherapy"
+   },
+   "properties" : {}
+}

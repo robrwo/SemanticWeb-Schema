@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A flag to signal that the item, event, or place is accessible for free.",
+      "rdfs:label" : "isAccessibleForFree",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:Place",
+         "schema:Event"
+      ],
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

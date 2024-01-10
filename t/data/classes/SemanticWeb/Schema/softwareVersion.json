@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Version of the software instance.",
+      "rdfs:label" : "softwareVersion",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

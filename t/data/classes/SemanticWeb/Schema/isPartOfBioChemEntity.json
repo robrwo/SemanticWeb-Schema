@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a BioChemEntity that is (in some sense) a part of this BioChemEntity. ",
+      "rdfs:label" : "isPartOfBioChemEntity",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:inverseOf" : "schema:hasBioChemEntityPart",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:BioChemEntity",
+      "schema:source" : "http:www.bioschemas.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer to another, functionally similar product (or multiple products).",
+      "rdfs:label" : "isSimilarTo",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Service",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

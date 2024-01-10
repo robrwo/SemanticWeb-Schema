@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:AdultOrientedEnumeration",
+      "rdfs:comment" : "The item is suitable only for adults, without indicating why. Due to widespread use of \"adult\" as a euphemism for \"sexual\", many such items are likely suited also for the SexualContentConsideration code.",
+      "rdfs:label" : "UnclassifiedAdultConsideration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

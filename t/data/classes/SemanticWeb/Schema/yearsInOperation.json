@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The age of the business.",
+      "rdfs:label" : "yearsInOperation",
+      "schema:domainIncludes" : "schema:BusinessAudience",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

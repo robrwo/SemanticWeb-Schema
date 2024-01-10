@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalProcedureType",
+      "rdfs:comment" : "A type of medical procedure that involves noninvasive techniques.",
+      "rdfs:label" : "NoninvasiveProcedure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The color of the product.",
+      "rdfs:label" : "color",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

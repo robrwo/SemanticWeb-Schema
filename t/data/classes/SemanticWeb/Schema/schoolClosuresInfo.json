@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Information about school closures.",
+      "rdfs:label" : "schoolClosuresInfo",
+      "schema:domainIncludes" : "schema:SpecialAnnouncement",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:WebContent"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2490"
+   },
+   "properties" : {}
+}

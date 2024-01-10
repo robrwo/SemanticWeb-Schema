@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A link to the ListItem that precedes the current one.",
+      "rdfs:label" : "previousItem",
+      "schema:domainIncludes" : "schema:ListItem",
+      "schema:rangeIncludes" : "schema:ListItem"
+   },
+   "properties" : {}
+}

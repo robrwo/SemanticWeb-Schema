@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.",
+      "rdfs:label" : "leiCode",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:contributor" : [
+         "collab:GLEIF",
+         "collab:FIBO"
+      ],
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

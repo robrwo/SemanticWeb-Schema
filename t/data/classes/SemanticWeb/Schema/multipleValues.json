@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Whether multiple values are allowed for the property.  Default is false.",
+      "rdfs:label" : "multipleValues",
+      "schema:domainIncludes" : "schema:PropertyValueSpecification",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

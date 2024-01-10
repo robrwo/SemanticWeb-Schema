@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time interval used to compute the invoice.",
+      "rdfs:label" : "billingPeriod",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

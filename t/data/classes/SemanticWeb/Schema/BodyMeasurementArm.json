@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:BodyMeasurementTypeEnumeration",
+      "rdfs:comment" : "Arm length (measured between arms/shoulder line intersection and the prominent wrist bone). Used, for example, to fit shirts.",
+      "rdfs:label" : "BodyMeasurementArm",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

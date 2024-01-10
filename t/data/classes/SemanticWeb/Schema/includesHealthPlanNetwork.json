@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Networks covered by this plan.",
+      "rdfs:label" : "includesHealthPlanNetwork",
+      "schema:domainIncludes" : "schema:HealthInsurancePlan",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:HealthPlanNetwork",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

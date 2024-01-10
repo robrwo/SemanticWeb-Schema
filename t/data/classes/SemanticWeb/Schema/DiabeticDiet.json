@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RestrictedDiet",
+      "rdfs:comment" : "A diet appropriate for people with diabetes.",
+      "rdfs:label" : "DiabeticDiet"
+   },
+   "properties" : {}
+}

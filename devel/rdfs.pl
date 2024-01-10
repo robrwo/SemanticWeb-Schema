@@ -245,7 +245,7 @@ sub generate_class_from_trine {
     my $types = $nodes->{'rdf:type'} or return;
     $types = [$types] unless is_plain_arrayref($types);
 
-    return if any { $_ eq 'schema:DataType' } @$types;
+    # return if any { $_ eq 'schema:DataType' } @$types;
 
     return unless any { $_ =~ /^(rdfs|schema):Class$/ } @$types;
 

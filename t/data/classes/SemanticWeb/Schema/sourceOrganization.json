@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Organization on whose behalf the creator was working.",
+      "rdfs:label" : "sourceOrganization",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

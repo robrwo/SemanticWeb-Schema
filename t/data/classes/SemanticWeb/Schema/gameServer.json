@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The server on which  it is possible to play the game.",
+      "rdfs:label" : "gameServer",
+      "schema:domainIncludes" : "schema:VideoGame",
+      "schema:inverseOf" : "schema:game",
+      "schema:rangeIncludes" : "schema:GameServer"
+   },
+   "properties" : {}
+}

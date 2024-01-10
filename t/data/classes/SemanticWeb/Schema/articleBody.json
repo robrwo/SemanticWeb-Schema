@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The actual body of the article.",
+      "rdfs:label" : "articleBody",
+      "schema:domainIncludes" : "schema:Article",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

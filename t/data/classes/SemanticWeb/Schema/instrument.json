@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The object that helped the agent perform the action. E.g. John wrote a book with *a pen*.",
+      "rdfs:label" : "instrument",
+      "schema:domainIncludes" : "schema:Action",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

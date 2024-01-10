@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This is the molecular weight of the entity being described, not of the parent. Units should be included in the form '&lt;Number&gt; &lt;unit&gt;', for example '12 amu' or as '&lt;QuantitativeValue&gt;.",
+      "rdfs:label" : "molecularWeight",
+      "schema:domainIncludes" : "schema:MolecularEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Text"
+      ],
+      "schema:source" : "www.bioschemas:MolecularEntity"
+   },
+   "properties" : {}
+}

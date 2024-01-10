@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A media object that encodes this CreativeWork.",
+      "rdfs:label" : "encodings",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:MediaObject",
+      "schema:supersededBy" : "schema:encoding"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Associated product/technology version. E.g., .NET Framework 4.5.",
+      "rdfs:label" : "assemblyVersion",
+      "schema:domainIncludes" : "schema:APIReference",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

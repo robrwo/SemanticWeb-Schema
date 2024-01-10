@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sign detected by the test.",
+      "rdfs:label" : "signDetected",
+      "schema:domainIncludes" : "schema:MedicalTest",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalSign"
+   },
+   "properties" : {}
+}

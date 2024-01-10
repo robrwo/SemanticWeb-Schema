@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A music album.",
+      "rdfs:label" : "album",
+      "schema:domainIncludes" : "schema:MusicGroup",
+      "schema:rangeIncludes" : "schema:MusicAlbum"
+   },
+   "properties" : {}
+}

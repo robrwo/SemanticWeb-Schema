@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of answers this question has received.",
+      "rdfs:label" : "answerCount",
+      "schema:domainIncludes" : "schema:Question",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

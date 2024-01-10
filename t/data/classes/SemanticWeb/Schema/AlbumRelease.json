@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumReleaseType",
+      "rdfs:comment" : "AlbumRelease.",
+      "rdfs:label" : "AlbumRelease",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

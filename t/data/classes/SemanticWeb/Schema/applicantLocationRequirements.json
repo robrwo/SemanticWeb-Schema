@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location(s) applicants can apply from. This is usually used for telecommuting jobs where the applicant does not need to be in a physical office. Note: This should not be used for citizenship or work visa requirements.",
+      "rdfs:label" : "applicantLocationRequirements",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:AdministrativeArea",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2083"
+   },
+   "properties" : {}
+}

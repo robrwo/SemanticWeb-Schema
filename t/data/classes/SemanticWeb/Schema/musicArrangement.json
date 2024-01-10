@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An arrangement derived from the composition.",
+      "rdfs:label" : "musicArrangement",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:MusicComposition"
+   },
+   "properties" : {}
+}

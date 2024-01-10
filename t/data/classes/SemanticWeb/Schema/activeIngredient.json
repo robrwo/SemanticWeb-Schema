@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An active ingredient, typically chemical compounds and/or biologic substances.",
+      "rdfs:label" : "activeIngredient",
+      "schema:domainIncludes" : [
+         "schema:DietarySupplement",
+         "schema:DrugStrength",
+         "schema:Substance",
+         "schema:Drug"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

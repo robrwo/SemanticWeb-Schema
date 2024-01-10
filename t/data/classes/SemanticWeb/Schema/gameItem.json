@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.",
+      "rdfs:label" : "gameItem",
+      "schema:domainIncludes" : [
+         "schema:Game",
+         "schema:VideoGameSeries"
+      ],
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

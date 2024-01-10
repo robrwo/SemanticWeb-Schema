@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Tracking url for the parcel delivery.",
+      "rdfs:label" : "trackingUrl",
+      "schema:domainIncludes" : "schema:ParcelDelivery",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

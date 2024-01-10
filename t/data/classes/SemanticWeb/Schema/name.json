@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "dc:title",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The name of the item.",
+      "rdfs:label" : "name",
+      "rdfs:subPropertyOf" : "rdfs:label",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

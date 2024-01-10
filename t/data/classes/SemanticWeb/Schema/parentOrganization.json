@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The larger organization that this organization is a [[subOrganization]] of, if any.",
+      "rdfs:label" : "parentOrganization",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:inverseOf" : "schema:subOrganization",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

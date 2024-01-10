@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Subcategory of the application, e.g. 'Arcade Game'.",
+      "rdfs:label" : "applicationSubCategory",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

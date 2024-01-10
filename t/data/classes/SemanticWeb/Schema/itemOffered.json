@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An item being offered (or demanded). The transactional nature of the offer or demand is documented using [[businessFunction]], e.g. sell, lease etc. While several common expected types are listed explicitly in this definition, others can be used. Using a second type, such as Product or a subtype of Product, can clarify the nature of the offer.",
+      "rdfs:label" : "itemOffered",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:Offer"
+      ],
+      "schema:inverseOf" : "schema:offers",
+      "schema:rangeIncludes" : [
+         "schema:MenuItem",
+         "schema:CreativeWork",
+         "schema:Service",
+         "schema:Trip",
+         "schema:AggregateOffer",
+         "schema:Event",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

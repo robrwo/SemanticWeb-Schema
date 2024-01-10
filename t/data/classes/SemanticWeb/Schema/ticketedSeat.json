@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The seat associated with the ticket.",
+      "rdfs:label" : "ticketedSeat",
+      "schema:domainIncludes" : "schema:Ticket",
+      "schema:rangeIncludes" : "schema:Seat"
+   },
+   "properties" : {}
+}

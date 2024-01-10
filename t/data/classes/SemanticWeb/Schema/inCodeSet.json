@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [[CategoryCodeSet]] that contains this category code.",
+      "rdfs:label" : "inCodeSet",
+      "rdfs:subPropertyOf" : "schema:inDefinedTermSet",
+      "schema:domainIncludes" : "schema:CategoryCode",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:CategoryCodeSet",
+         "schema:URL"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
+   },
+   "properties" : {}
+}

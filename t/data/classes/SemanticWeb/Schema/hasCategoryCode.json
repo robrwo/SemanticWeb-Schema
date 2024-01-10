@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A Category code contained in this code set.",
+      "rdfs:label" : "hasCategoryCode",
+      "rdfs:subPropertyOf" : "schema:hasDefinedTerm",
+      "schema:domainIncludes" : "schema:CategoryCodeSet",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:CategoryCode",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
+   },
+   "properties" : {}
+}

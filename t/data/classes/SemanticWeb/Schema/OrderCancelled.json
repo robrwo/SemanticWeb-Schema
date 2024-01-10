@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:OrderStatus",
+      "rdfs:comment" : "OrderStatus representing cancellation of an order.",
+      "rdfs:label" : "OrderCancelled"
+   },
+   "properties" : {}
+}

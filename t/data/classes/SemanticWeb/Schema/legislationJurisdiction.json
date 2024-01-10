@@ -1,0 +1,22 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:jurisdiction",
+      "owl:equivalentProperty" : "ontology:jurisdiction",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The jurisdiction from which the legislation originates.",
+      "rdfs:label" : "legislationJurisdiction",
+      "rdfs:subPropertyOf" : [
+         "schema:jurisdiction",
+         "schema:spatialCoverage"
+      ],
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AdministrativeArea",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

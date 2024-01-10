@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GameServerStatus",
+      "rdfs:comment" : "Game server status: Online. Server is available.",
+      "rdfs:label" : "Online"
+   },
+   "properties" : {}
+}

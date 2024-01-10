@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The [[observationAbout]] property identifies an entity, often a [[Place]], associated with an [[Observation]].",
+      "rdfs:label" : "observationAbout",
+      "schema:domainIncludes" : "schema:Observation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Place",
+         "schema:Thing"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+   },
+   "properties" : {}
+}

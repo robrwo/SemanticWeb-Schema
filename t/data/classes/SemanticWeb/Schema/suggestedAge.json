@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The age or age range for the intended audience or person, for example 3-12 months for infants, 1-5 years for toddlers.",
+      "rdfs:label" : "suggestedAge",
+      "schema:domainIncludes" : [
+         "schema:PeopleAudience",
+         "schema:SizeSpecification"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:QuantitativeValue",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

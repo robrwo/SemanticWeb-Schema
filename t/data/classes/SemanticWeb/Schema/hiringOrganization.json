@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Organization or Person offering the job position.",
+      "rdfs:label" : "hiringOrganization",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

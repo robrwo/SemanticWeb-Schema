@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The response (yes, no, maybe) to the RSVP.",
+      "rdfs:label" : "rsvpResponse",
+      "schema:domainIncludes" : "schema:RsvpAction",
+      "schema:rangeIncludes" : "schema:RsvpResponseType"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.",
+      "rdfs:label" : "hasCourseInstance",
+      "schema:domainIncludes" : "schema:Course",
+      "schema:rangeIncludes" : "schema:CourseInstance"
+   },
+   "properties" : {}
+}

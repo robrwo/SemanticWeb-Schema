@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Any FDA or other warnings about the drug (text or URL).",
+      "rdfs:label" : "warning",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The lowest price if the price is a range.",
+      "rdfs:label" : "minPrice",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:PriceSpecification",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

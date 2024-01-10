@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The insurance plans that cover this drug.",
+      "rdfs:label" : "includedInHealthInsurancePlan",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:HealthInsurancePlan",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1062"
+   },
+   "properties" : {}
+}

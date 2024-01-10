@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of educational or occupational program. For example, classroom, internship, alternance, etc.",
+      "rdfs:label" : "programType",
+      "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2460"
+   },
+   "properties" : {}
+}

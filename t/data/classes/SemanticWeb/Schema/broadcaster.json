@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The organization owning or operating the broadcast service.",
+      "rdfs:label" : "broadcaster",
+      "schema:domainIncludes" : "schema:BroadcastService",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

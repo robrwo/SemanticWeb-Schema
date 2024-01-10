@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MediaManipulationRatingEnumeration",
+      "rdfs:comment" : "Content coded 'staged content' in a [[MediaReview]], considered in the context of how it was published or shared.\n\nFor a [[VideoObject]] to be 'staged content': A video that has been created using actors or similarly contrived.\n\nFor an [[ImageObject]] to be 'staged content': An image that was created using actors or similarly contrived, such as a screenshot of a fake tweet.\n\nFor an [[ImageObject]] with embedded text to be 'staged content': An image that was created using actors or similarly contrived, such as a screenshot of a fake tweet.\n\nFor an [[AudioObject]] to be 'staged content': Audio that has been created using actors or similarly contrived.\n",
+      "rdfs:label" : "StagedContent",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

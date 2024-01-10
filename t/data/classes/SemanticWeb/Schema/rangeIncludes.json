@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property.",
+      "rdfs:label" : "rangeIncludes",
+      "schema:domainIncludes" : "schema:Property",
+      "schema:isPartOf" : "http:meta.schema.org",
+      "schema:rangeIncludes" : "schema:Class"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifics about the observational study design (enumerated).",
+      "rdfs:label" : "studyDesign",
+      "schema:domainIncludes" : "schema:MedicalObservationalStudy",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalObservationalStudyDesign"
+   },
+   "properties" : {}
+}

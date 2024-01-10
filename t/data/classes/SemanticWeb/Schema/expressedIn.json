@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. For example brain, digestive system.",
+      "rdfs:label" : "expressedIn",
+      "schema:domainIncludes" : "schema:Gene",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:BioChemEntity",
+         "schema:AnatomicalStructure",
+         "schema:DefinedTerm",
+         "schema:AnatomicalSystem"
+      ],
+      "schema:source" : "www.bioschemas:Gene"
+   },
+   "properties" : {}
+}

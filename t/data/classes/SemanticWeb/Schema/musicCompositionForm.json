@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of composition (e.g. overture, sonata, symphony, etc.).",
+      "rdfs:label" : "musicCompositionForm",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicComposition",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

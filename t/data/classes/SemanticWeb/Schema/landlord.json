@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The owner of the real estate property.",
+      "rdfs:label" : "landlord",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : "schema:RentAction",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Description of benefits associated with the job.",
+      "rdfs:label" : "benefits",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:jobBenefits"
+   },
+   "properties" : {}
+}

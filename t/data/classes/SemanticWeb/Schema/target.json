@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a target EntryPoint, or url, for an Action.",
+      "rdfs:label" : "target",
+      "schema:domainIncludes" : "schema:Action",
+      "schema:rangeIncludes" : [
+         "schema:EntryPoint",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

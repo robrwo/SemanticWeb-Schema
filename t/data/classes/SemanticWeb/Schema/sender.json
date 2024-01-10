@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The participant who is at the sending end of the action.",
+      "rdfs:label" : "sender",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : [
+         "schema:ReceiveAction",
+         "schema:Message"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Audience",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

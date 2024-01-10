@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc.",
+      "rdfs:label" : "artworkSurface",
+      "schema:domainIncludes" : "schema:VisualArtwork",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

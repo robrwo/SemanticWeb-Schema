@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ActionStatusType",
+      "rdfs:comment" : "An in-progress action (e.g., while watching the movie, or driving to a location).",
+      "rdfs:label" : "ActiveActionStatus"
+   },
+   "properties" : {}
+}

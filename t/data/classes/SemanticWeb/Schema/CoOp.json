@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GamePlayMode",
+      "rdfs:comment" : "Play mode: CoOp. Co-operative games, where you play on the same team with friends.",
+      "rdfs:label" : "CoOp"
+   },
+   "properties" : {}
+}

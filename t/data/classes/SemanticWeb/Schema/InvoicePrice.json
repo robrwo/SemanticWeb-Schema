@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PriceTypeEnumeration",
+      "rdfs:comment" : "Represents the invoice price of an offered product.",
+      "rdfs:label" : "InvoicePrice",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2712"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An organization that this person is affiliated with. For example, a school/university, a club, or a team.",
+      "rdfs:label" : "affiliation",
+      "rdfs:subPropertyOf" : "schema:memberOf",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

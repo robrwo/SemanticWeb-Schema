@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Non-proprietary identifier for molecular entity that can be used in printed and electronic data sources thus enabling easier linking of diverse data compilations.",
+      "rdfs:label" : "inChI",
+      "rdfs:subPropertyOf" : "schema:hasRepresentation",
+      "schema:domainIncludes" : "schema:MolecularEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "www.bioschemas:MolecularEntity"
+   },
+   "properties" : {}
+}

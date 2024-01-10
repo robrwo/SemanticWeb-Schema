@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The vasculature the lymphatic structure runs, or efferents, to.",
+      "rdfs:label" : "runsTo",
+      "schema:domainIncludes" : "schema:LymphaticVessel",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Vessel"
+   },
+   "properties" : {}
+}

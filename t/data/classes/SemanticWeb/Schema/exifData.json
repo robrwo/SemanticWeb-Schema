@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "exif data for this object.",
+      "rdfs:label" : "exifData",
+      "schema:domainIncludes" : "schema:ImageObject",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:PropertyValue"
+      ]
+   },
+   "properties" : {}
+}

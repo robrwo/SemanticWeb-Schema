@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ContactPointOption",
+      "rdfs:comment" : "The associated telephone number is toll free.",
+      "rdfs:label" : "TollFree"
+   },
+   "properties" : {}
+}

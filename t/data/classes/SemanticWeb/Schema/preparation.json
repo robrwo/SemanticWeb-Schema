@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Typical preparation that a patient must undergo before having the procedure performed.",
+      "rdfs:label" : "preparation",
+      "schema:domainIncludes" : "schema:MedicalProcedure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:MedicalEntity"
+      ]
+   },
+   "properties" : {}
+}

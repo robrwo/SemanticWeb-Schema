@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The home team in a sports event.",
+      "rdfs:label" : "homeTeam",
+      "rdfs:subPropertyOf" : "schema:competitor",
+      "schema:domainIncludes" : "schema:SportsEvent",
+      "schema:rangeIncludes" : [
+         "schema:SportsTeam",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

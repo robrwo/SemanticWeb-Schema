@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicineSystem",
+      "rdfs:comment" : "A system of medicine based on the principle that a disease can be cured by a substance that produces similar symptoms in healthy people.",
+      "rdfs:label" : "Homeopathic",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

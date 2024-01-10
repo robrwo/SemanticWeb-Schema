@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A set of links that can help a user understand and navigate a website hierarchy.",
+      "rdfs:label" : "breadcrumb",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:BreadcrumbList"
+      ]
+   },
+   "properties" : {}
+}

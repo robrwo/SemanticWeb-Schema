@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ItemAvailability",
+      "rdfs:comment" : "Indicates that the item is available for ordering and delivery before general availability.",
+      "rdfs:label" : "PreSale"
+   },
+   "properties" : {}
+}

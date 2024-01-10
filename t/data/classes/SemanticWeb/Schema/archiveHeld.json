@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Collection, [fonds](https://en.wikipedia.org/wiki/Fonds), or item held, kept or maintained by an [[ArchiveOrganization]].",
+      "rdfs:label" : "archiveHeld",
+      "schema:domainIncludes" : "schema:ArchiveOrganization",
+      "schema:inverseOf" : "schema:holdingArchive",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ArchiveComponent",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1758"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The airline-specific indicator of boarding order / preference.",
+      "rdfs:label" : "boardingGroup",
+      "schema:domainIncludes" : "schema:FlightReservation",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

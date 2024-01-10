@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A data catalog which contains this dataset.",
+      "rdfs:label" : "catalog",
+      "schema:domainIncludes" : "schema:Dataset",
+      "schema:rangeIncludes" : "schema:DataCatalog",
+      "schema:supersededBy" : "schema:includedInDataCatalog"
+   },
+   "properties" : {}
+}

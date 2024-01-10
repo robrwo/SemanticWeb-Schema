@@ -1,0 +1,24 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601).",
+      "rdfs:label" : "duration",
+      "schema:domainIncludes" : [
+         "schema:Movie",
+         "schema:MusicRelease",
+         "schema:QuantitativeValueDistribution",
+         "schema:Schedule",
+         "schema:MediaObject",
+         "schema:Episode",
+         "schema:Audiobook",
+         "schema:MusicRecording",
+         "schema:Event"
+      ],
+      "schema:rangeIncludes" : "schema:Duration",
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/1698",
+         "https://github.com/schemaorg/schemaorg/issues/1457"
+      ]
+   },
+   "properties" : {}
+}

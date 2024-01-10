@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person assigned to instruct or provide instructional assistance for the [[CourseInstance]].",
+      "rdfs:label" : "instructor",
+      "schema:domainIncludes" : "schema:CourseInstance",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

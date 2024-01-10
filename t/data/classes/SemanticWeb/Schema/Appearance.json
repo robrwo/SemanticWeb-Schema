@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalExam",
+      "rdfs:comment" : "Appearance assessment with clinical examination.",
+      "rdfs:label" : "Appearance",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

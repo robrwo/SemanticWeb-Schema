@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicReleaseFormatType",
+      "rdfs:comment" : "VinylFormat.",
+      "rdfs:label" : "VinylFormat",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

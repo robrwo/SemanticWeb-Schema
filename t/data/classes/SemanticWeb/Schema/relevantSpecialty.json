@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "If applicable, a medical specialty in which this entity is relevant.",
+      "rdfs:label" : "relevantSpecialty",
+      "schema:domainIncludes" : "schema:MedicalEntity",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalSpecialty"
+   },
+   "properties" : {}
+}

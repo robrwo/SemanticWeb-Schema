@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The individual reservations included in the package. Typically a repeated property.",
+      "rdfs:label" : "subReservation",
+      "schema:domainIncludes" : "schema:ReservationPackage",
+      "schema:rangeIncludes" : "schema:Reservation"
+   },
+   "properties" : {}
+}

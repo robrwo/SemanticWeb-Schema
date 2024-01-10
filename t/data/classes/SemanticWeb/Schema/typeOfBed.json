@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of bed to which the BedDetail refers, i.e. the type of bed available in the quantity indicated by quantity.",
+      "rdfs:label" : "typeOfBed",
+      "schema:contributor" : "collab:STI_Accommodation_Ontology",
+      "schema:domainIncludes" : "schema:BedDetails",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:BedType"
+      ]
+   },
+   "properties" : {}
+}

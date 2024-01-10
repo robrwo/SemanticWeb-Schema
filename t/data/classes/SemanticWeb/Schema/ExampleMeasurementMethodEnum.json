@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MeasurementMethodEnum",
+      "rdfs:comment" : "An example [[MeasurementMethodEnum]] (to remove when real enums are added).",
+      "rdfs:label" : "ExampleMeasurementMethodEnum",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2564"
+   },
+   "properties" : {}
+}

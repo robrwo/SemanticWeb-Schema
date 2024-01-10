@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of object. The collection target of the action.",
+      "rdfs:label" : "targetCollection",
+      "rdfs:subPropertyOf" : "schema:object",
+      "schema:domainIncludes" : "schema:UpdateAction",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

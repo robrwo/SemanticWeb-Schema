@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "collectiondate - Date for which patient counts are reported.",
+      "rdfs:label" : "cvdCollectionDate",
+      "schema:domainIncludes" : "schema:CDCPMDRecord",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:DateTime"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2521"
+   },
+   "properties" : {}
+}

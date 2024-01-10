@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalImagingTechnique",
+      "rdfs:comment" : "X-ray computed tomography imaging.",
+      "rdfs:label" : "CT",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

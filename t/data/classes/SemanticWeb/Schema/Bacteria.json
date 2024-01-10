@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:InfectiousAgentClass",
+      "rdfs:comment" : "Pathogenic bacteria that cause bacterial infection.",
+      "rdfs:label" : "Bacteria",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

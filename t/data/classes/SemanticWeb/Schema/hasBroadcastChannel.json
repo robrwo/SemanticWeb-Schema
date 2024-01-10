@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A broadcast channel of a broadcast service.",
+      "rdfs:label" : "hasBroadcastChannel",
+      "schema:domainIncludes" : "schema:BroadcastService",
+      "schema:inverseOf" : "schema:providesBroadcastService",
+      "schema:rangeIncludes" : "schema:BroadcastChannel",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1004"
+   },
+   "properties" : {}
+}

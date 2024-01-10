@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "How often the dose is taken, e.g. 'daily'.",
+      "rdfs:label" : "frequency",
+      "schema:domainIncludes" : "schema:DoseSchedule",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

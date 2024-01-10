@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The name displayed in the channel guide. For many US affiliates, it is the network name.",
+      "rdfs:label" : "broadcastDisplayName",
+      "schema:domainIncludes" : "schema:BroadcastService",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

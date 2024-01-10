@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The actual body of the review.",
+      "rdfs:label" : "reviewBody",
+      "schema:domainIncludes" : "schema:Review",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

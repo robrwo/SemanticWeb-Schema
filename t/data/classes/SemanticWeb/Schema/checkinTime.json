@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The earliest someone may check into a lodging establishment.",
+      "rdfs:label" : "checkinTime",
+      "schema:domainIncludes" : [
+         "schema:LodgingReservation",
+         "schema:LodgingBusiness"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Time"
+      ]
+   },
+   "properties" : {}
+}

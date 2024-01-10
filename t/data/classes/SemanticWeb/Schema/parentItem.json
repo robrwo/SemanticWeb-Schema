@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The parent of a question, answer or item in general. Typically used for Q/A discussion threads e.g. a chain of comments with the first comment being an [[Article]] or other [[CreativeWork]]. See also [[comment]] which points from something to a comment about it.",
+      "rdfs:label" : "parentItem",
+      "schema:domainIncludes" : [
+         "schema:Comment",
+         "schema:Question",
+         "schema:Answer"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Comment",
+         "schema:CreativeWork"
+      ]
+   },
+   "properties" : {}
+}

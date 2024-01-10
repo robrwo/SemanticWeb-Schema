@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies a MerchantReturnPolicy that may be applicable.",
+      "rdfs:label" : "hasMerchantReturnPolicy",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Product",
+         "schema:Offer"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:MerchantReturnPolicy",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

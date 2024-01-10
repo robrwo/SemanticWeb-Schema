@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a post that is part of a [[Blog]]. Note that historically, what we term a \"Blog\" was once known as a \"weblog\", and that what we term a \"BlogPosting\" is now often colloquially referred to as a \"blog\".",
+      "rdfs:label" : "blogPosts",
+      "schema:domainIncludes" : "schema:Blog",
+      "schema:rangeIncludes" : "schema:BlogPosting",
+      "schema:supersededBy" : "schema:blogPost"
+   },
+   "properties" : {}
+}

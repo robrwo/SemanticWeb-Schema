@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The vasculature that the vein drains into.",
+      "rdfs:label" : "drainsTo",
+      "schema:domainIncludes" : "schema:Vein",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Vessel"
+   },
+   "properties" : {}
+}

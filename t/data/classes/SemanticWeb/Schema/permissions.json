@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Permission(s) required to run the app (for example, a mobile app may require full internet access or may run only on wifi).",
+      "rdfs:label" : "permissions",
+      "schema:domainIncludes" : "schema:SoftwareApplication",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

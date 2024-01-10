@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The expected arrival time.",
+      "rdfs:label" : "arrivalTime",
+      "schema:domainIncludes" : "schema:Trip",
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Time"
+      ]
+   },
+   "properties" : {}
+}

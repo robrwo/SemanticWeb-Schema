@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Quantitative measure of the physiologic output of the exercise; also referred to as energy expenditure.",
+      "rdfs:label" : "workload",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Energy",
+         "schema:QuantitativeValue"
+      ]
+   },
+   "properties" : {}
+}

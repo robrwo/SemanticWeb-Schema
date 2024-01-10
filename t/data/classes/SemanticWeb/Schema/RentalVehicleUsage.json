@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:CarUsageType",
+      "rdfs:comment" : "Indicates the usage of the vehicle as a rental car.",
+      "rdfs:label" : "RentalVehicleUsage",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:isPartOf" : "http:auto.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.",
+      "rdfs:label" : "creator",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:UserComments"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

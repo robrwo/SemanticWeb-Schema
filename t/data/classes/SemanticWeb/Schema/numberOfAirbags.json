@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number or type of airbags in the vehicle.",
+      "rdfs:label" : "numberOfAirbags",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

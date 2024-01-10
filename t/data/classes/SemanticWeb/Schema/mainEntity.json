@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the primary entity described in some page or other CreativeWork.",
+      "rdfs:label" : "mainEntity",
+      "rdfs:subPropertyOf" : "schema:about",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:inverseOf" : "schema:mainEntityOfPage",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

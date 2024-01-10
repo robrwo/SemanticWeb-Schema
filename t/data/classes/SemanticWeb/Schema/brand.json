@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.",
+      "rdfs:label" : "brand",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:Service",
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Brand"
+      ]
+   },
+   "properties" : {}
+}

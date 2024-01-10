@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc.",
+      "rdfs:label" : "aspect",
+      "schema:domainIncludes" : "schema:MedicalWebPage",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:mainContentOfPage"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Disease associated to this BioChemEntity. Such disease can be a MedicalCondition or a URL. If you want to add an evidence supporting the association, please use PropertyValue.",
+      "rdfs:label" : "associatedDisease",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:PropertyValue",
+         "schema:MedicalCondition",
+         "schema:URL"
+      ],
+      "schema:source" : "www.bioschemas:BioChemEntity"
+   },
+   "properties" : {}
+}

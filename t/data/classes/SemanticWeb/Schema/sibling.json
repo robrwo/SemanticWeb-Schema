@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sibling of the person.",
+      "rdfs:label" : "sibling",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A common representation such as a protein sequence or chemical structure for this entity. For images use schema.org/image.",
+      "rdfs:label" : "hasRepresentation",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:PropertyValue",
+         "schema:Text"
+      ],
+      "schema:source" : "http:www.bioschemas.org"
+   },
+   "properties" : {}
+}

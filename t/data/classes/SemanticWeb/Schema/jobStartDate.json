@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date on which a successful applicant for this job would be expected to start work. Choose a specific date in the future or use the jobImmediateStart property to indicate the position is to be filled as soon as possible.",
+      "rdfs:label" : "jobStartDate",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Date"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2244"
+   },
+   "properties" : {}
+}

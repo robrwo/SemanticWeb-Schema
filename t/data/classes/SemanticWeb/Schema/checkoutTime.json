@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The latest someone may check out of a lodging establishment.",
+      "rdfs:label" : "checkoutTime",
+      "schema:domainIncludes" : [
+         "schema:LodgingReservation",
+         "schema:LodgingBusiness"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:DateTime",
+         "schema:Time"
+      ]
+   },
+   "properties" : {}
+}

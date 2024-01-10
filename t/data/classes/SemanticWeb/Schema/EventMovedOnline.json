@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:EventStatusType",
+      "rdfs:comment" : "Indicates that the event was changed to allow online participation. See [[eventAttendanceMode]] for specifics of whether it is now fully or partially online.",
+      "rdfs:label" : "EventMovedOnline"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The length of time it takes to perform instructions or a direction (not including time to prepare the supplies), in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+      "rdfs:label" : "performTime",
+      "schema:domainIncludes" : [
+         "schema:HowTo",
+         "schema:HowToDirection"
+      ],
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

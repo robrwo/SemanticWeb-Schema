@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:WearableSizeSystemEnumeration",
+      "rdfs:comment" : "EN 13402 (joint European standard for size labelling of clothes).",
+      "rdfs:label" : "WearableSizeSystemEN13402",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

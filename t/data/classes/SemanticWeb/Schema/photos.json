@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Photographs of this place.",
+      "rdfs:label" : "photos",
+      "schema:domainIncludes" : "schema:Place",
+      "schema:rangeIncludes" : [
+         "schema:ImageObject",
+         "schema:Photograph"
+      ],
+      "schema:supersededBy" : "schema:photo"
+   },
+   "properties" : {}
+}

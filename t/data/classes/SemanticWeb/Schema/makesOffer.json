@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A pointer to products or services offered by the organization or person.",
+      "rdfs:label" : "makesOffer",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:inverseOf" : "schema:offeredBy",
+      "schema:rangeIncludes" : "schema:Offer"
+   },
+   "properties" : {}
+}

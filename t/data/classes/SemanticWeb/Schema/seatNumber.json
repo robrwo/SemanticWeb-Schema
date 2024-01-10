@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location of the reserved seat (e.g., 27).",
+      "rdfs:label" : "seatNumber",
+      "schema:domainIncludes" : "schema:Seat",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

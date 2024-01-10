@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A standardized size of a product or creative work, specified either through a simple textual string (for example 'XL', '32Wx34L'), a  QuantitativeValue with a unitCode, or a comprehensive and structured [[SizeSpecification]]; in other cases, the [[width]], [[height]], [[depth]] and [[weight]] properties may be more applicable. ",
+      "rdfs:label" : "size",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:CreativeWork"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:DefinedTerm",
+         "schema:QuantitativeValue",
+         "schema:Text",
+         "schema:SizeSpecification"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1797"
+   },
+   "properties" : {}
+}

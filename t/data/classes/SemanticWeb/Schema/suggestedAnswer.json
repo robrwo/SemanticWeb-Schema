@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An answer (possibly one of several, possibly incorrect) to a Question, e.g. on a Question/Answer site.",
+      "rdfs:label" : "suggestedAnswer",
+      "schema:domainIncludes" : "schema:Question",
+      "schema:rangeIncludes" : [
+         "schema:ItemList",
+         "schema:Answer"
+      ]
+   },
+   "properties" : {}
+}

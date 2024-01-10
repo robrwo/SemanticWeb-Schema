@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:consolidates",
+      "owl:equivalentProperty" : "ontology:consolidates",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates another legislation taken into account in this consolidated legislation (which is usually the product of an editorial process that revises the legislation). This property should be used multiple times to refer to both the original version or the previous consolidated version, and to the legislations making the change.",
+      "rdfs:label" : "legislationConsolidates",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Legislation",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

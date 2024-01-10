@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Thumbnail image for an image or video.",
+      "rdfs:label" : "thumbnail",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:ImageObject"
+   },
+   "properties" : {}
+}

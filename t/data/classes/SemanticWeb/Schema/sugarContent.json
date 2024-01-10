@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of grams of sugar.",
+      "rdfs:label" : "sugarContent",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Mass"
+   },
+   "properties" : {}
+}

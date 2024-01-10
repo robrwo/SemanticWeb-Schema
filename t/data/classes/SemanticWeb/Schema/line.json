@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.",
+      "rdfs:label" : "line",
+      "schema:domainIncludes" : "schema:GeoShape",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

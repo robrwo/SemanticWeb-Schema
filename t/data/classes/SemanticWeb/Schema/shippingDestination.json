@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "indicates (possibly multiple) shipping destinations. These can be defined in several ways, e.g. postalCode ranges.",
+      "rdfs:label" : "shippingDestination",
+      "schema:domainIncludes" : [
+         "schema:DeliveryTimeSettings",
+         "schema:OfferShippingDetails",
+         "schema:ShippingRateSettings"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:DefinedRegion",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

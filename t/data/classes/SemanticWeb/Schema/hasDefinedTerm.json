@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A Defined Term contained in this term set.",
+      "rdfs:label" : "hasDefinedTerm",
+      "schema:domainIncludes" : [
+         "schema:DefinedTermSet",
+         "schema:Taxon"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:DefinedTerm",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
+   },
+   "properties" : {}
+}

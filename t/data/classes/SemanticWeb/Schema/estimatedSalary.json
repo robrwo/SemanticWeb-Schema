@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An estimated salary for a job posting or occupation, based on a variety of variables including, but not limited to industry, job title, and location. Estimated salaries  are often computed by outside organizations rather than the hiring organization, who may not have committed to the estimated value.",
+      "rdfs:label" : "estimatedSalary",
+      "schema:domainIncludes" : [
+         "schema:JobPosting",
+         "schema:Occupation"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:MonetaryAmountDistribution",
+         "schema:MonetaryAmount",
+         "schema:Number"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1698"
+   },
+   "properties" : {}
+}

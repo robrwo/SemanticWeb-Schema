@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalObservationalStudyDesign",
+      "rdfs:comment" : "A registry-based study design.",
+      "rdfs:label" : "Registry",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

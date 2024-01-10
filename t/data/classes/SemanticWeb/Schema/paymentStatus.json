@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The status of payment; whether the invoice has been paid or not.",
+      "rdfs:label" : "paymentStatus",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:PaymentStatusType"
+      ]
+   },
+   "properties" : {}
+}

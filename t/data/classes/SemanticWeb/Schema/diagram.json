@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An image containing a diagram that illustrates the structure and/or its component substructures and/or connections with other structures.",
+      "rdfs:label" : "diagram",
+      "schema:domainIncludes" : "schema:AnatomicalStructure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:ImageObject"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ItemAvailability",
+      "rdfs:comment" : "Indicates that the item has sold out.",
+      "rdfs:label" : "SoldOut"
+   },
+   "properties" : {}
+}

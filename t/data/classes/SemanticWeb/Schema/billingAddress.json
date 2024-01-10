@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The billing address for the order.",
+      "rdfs:label" : "billingAddress",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:PostalAddress"
+   },
+   "properties" : {}
+}

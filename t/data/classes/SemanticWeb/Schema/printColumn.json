@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of the column in which the NewsArticle appears in the print edition.",
+      "rdfs:label" : "printColumn",
+      "schema:domainIncludes" : "schema:NewsArticle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

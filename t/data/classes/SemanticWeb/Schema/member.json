@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals.",
+      "rdfs:label" : "member",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:ProgramMembership"
+      ],
+      "schema:inverseOf" : "schema:memberOf",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ]
+   },
+   "properties" : {}
+}

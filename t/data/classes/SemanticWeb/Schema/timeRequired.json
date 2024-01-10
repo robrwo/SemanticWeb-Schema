@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Approximate or typical time it usually takes to work with or through the content of this work for the typical or target audience.",
+      "rdfs:label" : "timeRequired",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

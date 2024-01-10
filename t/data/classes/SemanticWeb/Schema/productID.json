@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The product identifier, such as ISBN. For example: ``` meta itemprop=\"productID\" content=\"isbn:123-456-789\" ```.",
+      "rdfs:label" : "productID",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:domainIncludes" : "schema:Product",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

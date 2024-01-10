@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The condition, complication, or symptom whose risk is being estimated.",
+      "rdfs:label" : "estimatesRiskOf",
+      "schema:domainIncludes" : "schema:MedicalRiskEstimator",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalEntity"
+   },
+   "properties" : {}
+}

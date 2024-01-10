@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalSpecialty",
+      "rdfs:comment" : "The therapy that is concerned with the maintenance or improvement of respiratory function (as in patients with pulmonary disease).",
+      "rdfs:label" : "RespiratoryTherapy",
+      "rdfs:subClassOf" : "schema:MedicalTherapy",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

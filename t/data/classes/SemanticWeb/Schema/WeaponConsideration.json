@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:AdultOrientedEnumeration",
+      "rdfs:comment" : "The item is intended to induce bodily harm, for example guns, mace, combat knives, brass knuckles, nail or other bombs, and spears.",
+      "rdfs:label" : "WeaponConsideration",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The highest price if the price is a range.",
+      "rdfs:label" : "maxPrice",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:PriceSpecification",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

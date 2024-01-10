@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Number of players on the server.",
+      "rdfs:label" : "playersOnline",
+      "schema:domainIncludes" : "schema:GameServer",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

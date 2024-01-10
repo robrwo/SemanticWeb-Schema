@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.",
+      "rdfs:label" : "coverageEndTime",
+      "schema:domainIncludes" : "schema:LiveBlogPosting",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

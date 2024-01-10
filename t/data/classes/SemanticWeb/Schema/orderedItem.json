@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The item ordered.",
+      "rdfs:label" : "orderedItem",
+      "schema:domainIncludes" : [
+         "schema:OrderItem",
+         "schema:Order"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Service",
+         "schema:OrderItem",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of service being offered, e.g. veterans' benefits, emergency relief, etc.",
+      "rdfs:label" : "serviceType",
+      "schema:domainIncludes" : "schema:Service",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:GovernmentBenefitsType"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The product that this structured value is referring to.",
+      "rdfs:label" : "typeOfGood",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:TypeAndQuantityNode",
+         "schema:OwnershipInfo"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Service",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

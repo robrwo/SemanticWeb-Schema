@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The duration of the loan or credit agreement.",
+      "rdfs:label" : "loanTerm",
+      "rdfs:subPropertyOf" : "schema:duration",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:LoanOrCredit",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

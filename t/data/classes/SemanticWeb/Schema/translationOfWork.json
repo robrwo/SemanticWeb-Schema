@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The work that this work has been translated from. E.g. 物种起源 is a translationOf “On the Origin of Species”.",
+      "rdfs:label" : "translationOfWork",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:inverseOf" : "schema:workTranslation",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

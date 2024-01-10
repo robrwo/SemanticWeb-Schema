@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:WearableSizeSystemEnumeration",
+      "rdfs:comment" : "Australian size system for wearables.",
+      "rdfs:label" : "WearableSizeSystemAU",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PaymentStatusType",
+      "rdfs:comment" : "The payee received the payment, but it was declined for some reason.",
+      "rdfs:label" : "PaymentDeclined"
+   },
+   "properties" : {}
+}

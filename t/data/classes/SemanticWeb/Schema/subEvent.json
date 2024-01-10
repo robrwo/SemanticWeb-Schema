@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference.",
+      "rdfs:label" : "subEvent",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:inverseOf" : "schema:superEvent",
+      "schema:rangeIncludes" : "schema:Event"
+   },
+   "properties" : {}
+}

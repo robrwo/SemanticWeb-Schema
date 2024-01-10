@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:WearableSizeSystemEnumeration",
+      "rdfs:comment" : "GS1 (formerly NRF) size system for wearables.",
+      "rdfs:label" : "WearableSizeSystemGS1",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

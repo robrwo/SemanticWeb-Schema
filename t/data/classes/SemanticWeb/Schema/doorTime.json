@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The time admission will commence.",
+      "rdfs:label" : "doorTime",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:rangeIncludes" : [
+         "schema:Time",
+         "schema:DateTime"
+      ]
+   },
+   "properties" : {}
+}

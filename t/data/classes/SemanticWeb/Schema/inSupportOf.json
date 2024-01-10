@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Qualification, candidature, degree, application that Thesis supports.",
+      "rdfs:label" : "inSupportOf",
+      "schema:domainIncludes" : "schema:Thesis",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

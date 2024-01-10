@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A CreativeWork or Event about this Thing.",
+      "rdfs:label" : "subjectOf",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:inverseOf" : "schema:about",
+      "schema:rangeIncludes" : [
+         "schema:Event",
+         "schema:CreativeWork"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1670"
+   },
+   "properties" : {}
+}

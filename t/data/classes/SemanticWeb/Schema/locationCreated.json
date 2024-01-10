@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.",
+      "rdfs:label" : "locationCreated",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of credits or units a full-time student would be expected to take in 1 term however 'term' is defined by the institution.",
+      "rdfs:label" : "typicalCreditsPerTerm",
+      "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:StructuredValue",
+         "schema:Integer"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2419"
+   },
+   "properties" : {}
+}

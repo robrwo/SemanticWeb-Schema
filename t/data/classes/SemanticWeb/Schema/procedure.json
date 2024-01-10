@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A description of the procedure involved in setting up, using, and/or installing the device.",
+      "rdfs:label" : "procedure",
+      "schema:domainIncludes" : "schema:MedicalDevice",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

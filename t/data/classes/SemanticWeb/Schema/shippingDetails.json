@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates information about the shipping policies and options associated with an [[Offer]].",
+      "rdfs:label" : "shippingDetails",
+      "schema:domainIncludes" : "schema:Offer",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:OfferShippingDetails",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

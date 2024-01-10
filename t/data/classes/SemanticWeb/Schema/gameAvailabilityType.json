@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the availability type of the game content associated with this action, such as whether it is a full version or a demo.",
+      "rdfs:label" : "gameAvailabilityType",
+      "schema:domainIncludes" : "schema:PlayGameAction",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:GameAvailabilityEnumeration",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3058"
+   },
+   "properties" : {}
+}

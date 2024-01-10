@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An application that can complete the request.",
+      "rdfs:label" : "actionApplication",
+      "schema:domainIncludes" : "schema:EntryPoint",
+      "schema:rangeIncludes" : "schema:SoftwareApplication"
+   },
+   "properties" : {}
+}

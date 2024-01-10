@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of object. The object that is being replaced.",
+      "rdfs:label" : "replacee",
+      "rdfs:subPropertyOf" : "schema:object",
+      "schema:domainIncludes" : "schema:ReplaceAction",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

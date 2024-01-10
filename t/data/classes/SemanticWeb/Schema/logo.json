@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An associated logo.",
+      "rdfs:label" : "logo",
+      "rdfs:subPropertyOf" : "schema:image",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Organization",
+         "schema:Product",
+         "schema:Place",
+         "schema:Brand"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:ImageObject",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

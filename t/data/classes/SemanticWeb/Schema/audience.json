@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An intended audience, i.e. a group for whom something was created.",
+      "rdfs:label" : "audience",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:PlayAction",
+         "schema:Service",
+         "schema:Event",
+         "schema:LodgingBusiness",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : "schema:Audience"
+   },
+   "properties" : {}
+}

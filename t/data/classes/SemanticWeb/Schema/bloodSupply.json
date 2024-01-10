@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The blood vessel that carries blood from the heart to the muscle.",
+      "rdfs:label" : "bloodSupply",
+      "schema:domainIncludes" : "schema:Muscle",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Vessel"
+   },
+   "properties" : {}
+}

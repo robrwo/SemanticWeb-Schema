@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The winner of the action.",
+      "rdfs:label" : "winner",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : "schema:LoseAction",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The payment method(s) accepted by seller for this offer.",
+      "rdfs:label" : "acceptedPaymentMethod",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Demand",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:LoanOrCredit",
+         "schema:PaymentMethod"
+      ]
+   },
+   "properties" : {}
+}

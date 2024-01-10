@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Attraction located at destination.",
+      "rdfs:label" : "includesAttraction",
+      "schema:contributor" : [
+         "collab:Tourism",
+         "collab:IIT-CNR.it"
+      ],
+      "schema:domainIncludes" : "schema:TouristDestination",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:TouristAttraction",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
+   },
+   "properties" : {}
+}

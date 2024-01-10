@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "dc:spatial",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The \"spatial\" property can be used in cases when more specific properties\n(e.g. [[locationCreated]], [[spatialCoverage]], [[contentLocation]]) are not known to be appropriate.",
+      "rdfs:label" : "spatial",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReservationStatusType",
+      "rdfs:comment" : "The status of a reservation when a request has been sent, but not confirmed.",
+      "rdfs:label" : "ReservationPending"
+   },
+   "properties" : {}
+}

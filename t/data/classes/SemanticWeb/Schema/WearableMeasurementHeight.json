@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:WearableMeasurementTypeEnumeration",
+      "rdfs:comment" : "Measurement of the height, for example the heel height of a shoe.",
+      "rdfs:label" : "WearableMeasurementHeight",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2811"
+   },
+   "properties" : {}
+}

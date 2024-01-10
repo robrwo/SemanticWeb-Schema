@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The required quantity of the item(s).",
+      "rdfs:label" : "requiredQuantity",
+      "schema:domainIncludes" : "schema:HowToItem",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:QuantitativeValue",
+         "schema:Number"
+      ]
+   },
+   "properties" : {}
+}

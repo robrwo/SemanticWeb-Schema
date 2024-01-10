@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The lower value of some characteristic or property.",
+      "rdfs:label" : "minValue",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:MonetaryAmount",
+         "schema:PropertyValueSpecification",
+         "schema:PropertyValue"
+      ],
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

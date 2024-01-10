@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The business function (e.g. sell, lease, repair, dispose) of the offer or component of a bundle (TypeAndQuantityNode). The default is http://purl.org/goodrelations/v1#Sell.",
+      "rdfs:label" : "businessFunction",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:TypeAndQuantityNode",
+         "schema:Demand",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : "schema:BusinessFunction"
+   },
+   "properties" : {}
+}

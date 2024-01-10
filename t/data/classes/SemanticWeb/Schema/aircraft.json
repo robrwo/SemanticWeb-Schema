@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The kind of aircraft (e.g., \"Boeing 747\").",
+      "rdfs:label" : "aircraft",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Vehicle"
+      ]
+   },
+   "properties" : {}
+}

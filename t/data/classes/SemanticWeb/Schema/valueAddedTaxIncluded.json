@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.",
+      "rdfs:label" : "valueAddedTaxIncluded",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:PriceSpecification",
+      "schema:rangeIncludes" : "schema:Boolean"
+   },
+   "properties" : {}
+}

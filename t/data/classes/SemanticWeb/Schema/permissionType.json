@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The type of permission granted the person, organization, or audience.",
+      "rdfs:label" : "permissionType",
+      "schema:domainIncludes" : "schema:DigitalDocumentPermission",
+      "schema:rangeIncludes" : "schema:DigitalDocumentPermissionType"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A description of the job location (e.g. TELECOMMUTE for telecommute jobs).",
+      "rdfs:label" : "jobLocationType",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1591"
+   },
+   "properties" : {}
+}

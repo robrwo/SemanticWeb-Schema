@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub-property of instrument. A supply consumed when performing instructions or a direction.",
+      "rdfs:label" : "supply",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : [
+         "schema:HowTo",
+         "schema:HowToDirection"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:HowToSupply",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

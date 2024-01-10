@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specific qualifications required for this role or Occupation.",
+      "rdfs:label" : "qualifications",
+      "schema:domainIncludes" : [
+         "schema:Occupation",
+         "schema:JobPosting"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:EducationalOccupationalCredential",
+         "schema:Text"
+      ],
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/1698",
+         "https://github.com/schemaorg/schemaorg/issues/1779"
+      ]
+   },
+   "properties" : {}
+}

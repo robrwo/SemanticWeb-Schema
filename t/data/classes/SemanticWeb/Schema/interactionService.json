@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The WebSite or SoftwareApplication where the interactions took place.",
+      "rdfs:label" : "interactionService",
+      "schema:domainIncludes" : "schema:InteractionCounter",
+      "schema:rangeIncludes" : [
+         "schema:WebSite",
+         "schema:SoftwareApplication"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether this game is multi-player, co-op or single-player.  The game can be marked as multi-player, co-op and single-player at the same time.",
+      "rdfs:label" : "playMode",
+      "schema:domainIncludes" : [
+         "schema:VideoGameSeries",
+         "schema:VideoGame"
+      ],
+      "schema:rangeIncludes" : "schema:GamePlayMode"
+   },
+   "properties" : {}
+}

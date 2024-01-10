@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Cash, Credit Card, Cryptocurrency, Local Exchange Tradings System, etc.",
+      "rdfs:label" : "paymentAccepted",
+      "schema:domainIncludes" : "schema:LocalBusiness",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

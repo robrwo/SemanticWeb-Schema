@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The target audience for this permit.",
+      "rdfs:label" : "permitAudience",
+      "schema:domainIncludes" : "schema:Permit",
+      "schema:rangeIncludes" : "schema:Audience"
+   },
+   "properties" : {}
+}

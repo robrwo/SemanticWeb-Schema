@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:OrderStatus",
+      "rdfs:comment" : "OrderStatus representing that an order is being processed.",
+      "rdfs:label" : "OrderProcessing"
+   },
+   "properties" : {}
+}

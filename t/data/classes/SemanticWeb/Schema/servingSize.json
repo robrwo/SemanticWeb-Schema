@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The serving size, in terms of the number of volume or mass.",
+      "rdfs:label" : "servingSize",
+      "schema:domainIncludes" : "schema:NutritionInformation",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

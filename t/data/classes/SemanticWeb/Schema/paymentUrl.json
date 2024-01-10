@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The URL for sending a payment.",
+      "rdfs:label" : "paymentUrl",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

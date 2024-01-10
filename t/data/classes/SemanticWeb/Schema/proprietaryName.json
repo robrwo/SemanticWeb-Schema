@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Proprietary name given to the diet plan, typically by its originator or creator.",
+      "rdfs:label" : "proprietaryName",
+      "schema:domainIncludes" : [
+         "schema:Drug",
+         "schema:DietarySupplement"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

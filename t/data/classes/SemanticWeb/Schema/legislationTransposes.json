@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:transposes",
+      "owl:equivalentProperty" : "ontology:transposes",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates that this legislation (or part of legislation) fulfills the objectives set by another legislation, by passing appropriate implementation measures. Typically, some legislations of European Union's member states or regions transpose European Directives. This indicates a legally binding link between the 2 legislations.",
+      "rdfs:label" : "legislationTransposes",
+      "rdfs:subPropertyOf" : "schema:legislationApplies",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Legislation",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

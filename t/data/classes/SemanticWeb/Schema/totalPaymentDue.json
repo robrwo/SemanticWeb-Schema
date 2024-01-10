@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total amount due.",
+      "rdfs:label" : "totalPaymentDue",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : [
+         "schema:PriceSpecification",
+         "schema:MonetaryAmount"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Medical audience for page.",
+      "rdfs:label" : "medicalAudience",
+      "schema:domainIncludes" : "schema:MedicalWebPage",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:MedicalAudience",
+         "schema:MedicalAudienceType"
+      ]
+   },
+   "properties" : {}
+}

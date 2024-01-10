@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "For failed actions, more information on the cause of the failure.",
+      "rdfs:label" : "error",
+      "schema:domainIncludes" : "schema:Action",
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

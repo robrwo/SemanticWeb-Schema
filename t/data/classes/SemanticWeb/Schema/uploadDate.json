@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Date (including time if available) when this media object was uploaded to this site.",
+      "rdfs:label" : "uploadDate",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : [
+         "schema:Date",
+         "schema:DateTime"
+      ]
+   },
+   "properties" : {}
+}

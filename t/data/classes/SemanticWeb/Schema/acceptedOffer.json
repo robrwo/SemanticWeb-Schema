@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The offer(s) -- e.g., product, quantity and price combinations -- included in the order.",
+      "rdfs:label" : "acceptedOffer",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : "schema:Offer"
+   },
+   "properties" : {}
+}

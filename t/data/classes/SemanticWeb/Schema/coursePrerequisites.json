@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Requirements for taking the Course. May be completion of another [[Course]] or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using [[AlignmentObject]].",
+      "rdfs:label" : "coursePrerequisites",
+      "schema:domainIncludes" : "schema:Course",
+      "schema:rangeIncludes" : [
+         "schema:AlignmentObject",
+         "schema:Text",
+         "schema:Course"
+      ]
+   },
+   "properties" : {}
+}

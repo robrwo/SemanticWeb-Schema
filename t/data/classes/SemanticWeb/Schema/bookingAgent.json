@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.",
+      "rdfs:label" : "bookingAgent",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:supersededBy" : "schema:broker"
+   },
+   "properties" : {}
+}

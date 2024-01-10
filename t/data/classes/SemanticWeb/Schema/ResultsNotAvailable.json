@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalStudyStatus",
+      "rdfs:comment" : "Results are not available.",
+      "rdfs:label" : "ResultsNotAvailable",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

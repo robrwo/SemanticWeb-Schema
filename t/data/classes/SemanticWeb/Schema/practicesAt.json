@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [[MedicalOrganization]] where the [[IndividualPhysician]] practices.",
+      "rdfs:label" : "practicesAt",
+      "schema:domainIncludes" : "schema:IndividualPhysician",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalOrganization",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3420"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A possible treatment to address this condition, sign or symptom.",
+      "rdfs:label" : "possibleTreatment",
+      "schema:domainIncludes" : [
+         "schema:MedicalCondition",
+         "schema:MedicalSignOrSymptom"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTherapy"
+   },
+   "properties" : {}
+}

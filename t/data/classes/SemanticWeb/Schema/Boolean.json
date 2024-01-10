@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : [
+         "schema:DataType",
+         "rdfs:Class"
+      ],
+      "rdfs:comment" : "Boolean: True or False.",
+      "rdfs:label" : "Boolean"
+   },
+   "properties" : {}
+}

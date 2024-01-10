@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A single ingredient used in the recipe, e.g. sugar, flour or garlic.",
+      "rdfs:label" : "ingredients",
+      "rdfs:subPropertyOf" : "schema:supply",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:recipeIngredient"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The catalog number for the release.",
+      "rdfs:label" : "catalogNumber",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRelease",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

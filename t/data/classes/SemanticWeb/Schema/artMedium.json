@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The material used. (E.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.)",
+      "rdfs:label" : "artMedium",
+      "rdfs:subPropertyOf" : "schema:material",
+      "schema:domainIncludes" : "schema:VisualArtwork",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

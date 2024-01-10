@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The station from which the train departs.",
+      "rdfs:label" : "departureStation",
+      "schema:domainIncludes" : "schema:TrainTrip",
+      "schema:rangeIncludes" : "schema:TrainStation"
+   },
+   "properties" : {}
+}

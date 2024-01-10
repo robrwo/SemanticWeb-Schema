@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The latitude of a location. For example ```37.42242``` ([WGS 84](https://en.wikipedia.org/wiki/World_Geodetic_System)).",
+      "rdfs:label" : "latitude",
+      "schema:domainIncludes" : [
+         "schema:Place",
+         "schema:GeoCoordinates"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

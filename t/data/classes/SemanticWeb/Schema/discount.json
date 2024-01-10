@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Any discount applied (to an Order).",
+      "rdfs:label" : "discount",
+      "schema:domainIncludes" : "schema:Order",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Number"
+      ]
+   },
+   "properties" : {}
+}

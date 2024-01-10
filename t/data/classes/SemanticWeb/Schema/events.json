@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Upcoming or past events associated with this place or organization.",
+      "rdfs:label" : "events",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Place"
+      ],
+      "schema:rangeIncludes" : "schema:Event",
+      "schema:supersededBy" : "schema:event"
+   },
+   "properties" : {}
+}

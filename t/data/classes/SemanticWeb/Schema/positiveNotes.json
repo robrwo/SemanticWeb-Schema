@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Provides positive considerations regarding something, for example product highlights or (alongside [[negativeNotes]]) pro/con lists for reviews.\n\nIn the case of a [[Review]], the property describes the [[itemReviewed]] from the perspective of the review; in the case of a [[Product]], the product itself is being described.\n\nThe property values can be expressed either as unstructured text (repeated as necessary), or if ordered, as a list (in which case the most positive is at the beginning of the list).",
+      "rdfs:label" : "positiveNotes",
+      "schema:domainIncludes" : [
+         "schema:Product",
+         "schema:Review"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:WebContent",
+         "schema:ListItem",
+         "schema:Text",
+         "schema:ItemList"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2832"
+   },
+   "properties" : {}
+}

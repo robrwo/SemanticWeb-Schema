@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Represents textual captioning from a [[MediaObject]], e.g. text of a 'meme'.",
+      "rdfs:label" : "embeddedTextCaption",
+      "rdfs:subPropertyOf" : "schema:caption",
+      "schema:domainIncludes" : [
+         "schema:AudioObject",
+         "schema:ImageObject",
+         "schema:VideoObject"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2450"
+   },
+   "properties" : {}
+}

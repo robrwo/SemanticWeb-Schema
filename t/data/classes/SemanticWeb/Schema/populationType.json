@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the populationType common to all members of a [[StatisticalPopulation]] or all cases within the scope of a [[StatisticalVariable]].",
+      "rdfs:label" : "populationType",
+      "schema:domainIncludes" : [
+         "schema:StatisticalVariable",
+         "schema:StatisticalPopulation"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Class",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+   },
+   "properties" : {}
+}

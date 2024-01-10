@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies the least energy efficient class on the regulated EU energy consumption scale for the product category a product belongs to. For example, energy consumption for televisions placed on the market after January 1, 2020 is scaled from D to A+++.",
+      "rdfs:label" : "energyEfficiencyScaleMin",
+      "schema:domainIncludes" : "schema:EnergyConsumptionDetails",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:EUEnergyEfficiencyEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2670"
+   },
+   "properties" : {}
+}

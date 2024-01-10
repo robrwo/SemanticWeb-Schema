@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicReleaseFormatType",
+      "rdfs:comment" : "CassetteFormat.",
+      "rdfs:label" : "CassetteFormat",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

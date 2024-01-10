@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the main image on the page.",
+      "rdfs:label" : "primaryImageOfPage",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:ImageObject"
+   },
+   "properties" : {}
+}

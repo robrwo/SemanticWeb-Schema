@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Link to a page containing [[ShippingRateSettings]] and [[DeliveryTimeSettings]] details.",
+      "rdfs:label" : "shippingSettingsLink",
+      "schema:domainIncludes" : "schema:OfferShippingDetails",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:URL",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2506"
+   },
+   "properties" : {}
+}

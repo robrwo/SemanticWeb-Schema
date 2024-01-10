@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifies browser requirements in human-readable text. For example, 'requires HTML5 support'.",
+      "rdfs:label" : "browserRequirements",
+      "schema:domainIncludes" : "schema:WebApplication",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

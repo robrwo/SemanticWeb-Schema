@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "core:exactMatch" : "ontology:responsibility_of",
+      "owl:equivalentProperty" : "ontology:responsibility_of",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An individual or organization that has some kind of responsibility for the legislation. Typically the ministry who is/was in charge of elaborating the legislation, or the adressee for potential questions about the legislation once it is published.",
+      "rdfs:label" : "legislationResponsible",
+      "schema:contributor" : "collab:ELI",
+      "schema:domainIncludes" : "schema:Legislation",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1156"
+   },
+   "properties" : {}
+}

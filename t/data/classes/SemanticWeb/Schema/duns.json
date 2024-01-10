@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The Dun & Bradstreet DUNS number for identifying an organization or business person.",
+      "rdfs:label" : "duns",
+      "rdfs:subPropertyOf" : "schema:identifier",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

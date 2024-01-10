@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of location. The entertainment business where the action occurred.",
+      "rdfs:label" : "entertainmentBusiness",
+      "rdfs:subPropertyOf" : "schema:location",
+      "schema:domainIncludes" : "schema:PerformAction",
+      "schema:rangeIncludes" : "schema:EntertainmentBusiness"
+   },
+   "properties" : {}
+}

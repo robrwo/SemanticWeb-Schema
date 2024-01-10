@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A broadcast service associated with the publication event.",
+      "rdfs:label" : "publishedOn",
+      "schema:domainIncludes" : "schema:PublicationEvent",
+      "schema:rangeIncludes" : "schema:BroadcastService"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'.",
+      "rdfs:label" : "contentRating",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Rating"
+      ]
+   },
+   "properties" : {}
+}

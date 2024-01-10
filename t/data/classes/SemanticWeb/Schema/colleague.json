@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A colleague of the person.",
+      "rdfs:label" : "colleague",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

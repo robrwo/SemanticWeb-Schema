@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates a correction to a [[CreativeWork]], either via a [[CorrectionComment]], textually or in another document.",
+      "rdfs:label" : "correction",
+      "schema:contributor" : "collab:TP",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:CorrectionComment",
+         "schema:Text",
+         "schema:URL"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1950"
+   },
+   "properties" : {}
+}

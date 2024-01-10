@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The width of the item.",
+      "rdfs:label" : "width",
+      "schema:domainIncludes" : [
+         "schema:OfferShippingDetails",
+         "schema:VisualArtwork",
+         "schema:MediaObject",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Distance",
+         "schema:QuantitativeValue"
+      ]
+   },
+   "properties" : {}
+}

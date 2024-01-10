@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]].",
+      "rdfs:label" : "image",
+      "schema:domainIncludes" : "schema:Thing",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:ImageObject"
+      ]
+   },
+   "properties" : {}
+}

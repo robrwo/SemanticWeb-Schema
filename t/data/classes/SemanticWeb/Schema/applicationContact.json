@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Contact details for further information relevant to this job posting.",
+      "rdfs:label" : "applicationContact",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ContactPoint",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2396"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A form of paying back money previously borrowed from a lender. Repayment usually takes the form of periodic payments that normally include part principal plus interest in each payment.",
+      "rdfs:label" : "loanRepaymentForm",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:LoanOrCredit",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:RepaymentSpecification",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
+   },
+   "properties" : {}
+}

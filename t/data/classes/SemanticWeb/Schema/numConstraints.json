@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the number of constraints property values defined for a particular [[ConstraintNode]] such as [[StatisticalVariable]]. This helps applications understand if they have access to a sufficiently complete description of a [[StatisticalVariable]] or other construct that is defined using properties on template-style nodes.",
+      "rdfs:label" : "numConstraints",
+      "schema:domainIncludes" : "schema:ConstraintNode",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Integer",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2291"
+   },
+   "properties" : {}
+}

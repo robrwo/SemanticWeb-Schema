@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Player type required&#x2014;for example, Flash or Silverlight.",
+      "rdfs:label" : "playerType",
+      "schema:domainIncludes" : "schema:MediaObject",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

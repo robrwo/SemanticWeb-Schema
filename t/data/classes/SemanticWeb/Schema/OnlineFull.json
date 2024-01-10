@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:GameServerStatus",
+      "rdfs:comment" : "Game server status: OnlineFull. Server is online but unavailable. The maximum number of players has reached.",
+      "rdfs:label" : "OnlineFull"
+   },
+   "properties" : {}
+}

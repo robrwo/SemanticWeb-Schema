@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date that this organization was dissolved.",
+      "rdfs:label" : "dissolutionDate",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

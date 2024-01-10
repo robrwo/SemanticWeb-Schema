@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The category of the recipe—for example, appetizer, entree, etc.",
+      "rdfs:label" : "recipeCategory",
+      "schema:domainIncludes" : "schema:Recipe",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

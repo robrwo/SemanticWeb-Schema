@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Date on which this guideline's recommendation was made.",
+      "rdfs:label" : "guidelineDate",
+      "schema:domainIncludes" : "schema:MedicalGuideline",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

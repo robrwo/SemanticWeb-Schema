@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicineSystem",
+      "rdfs:comment" : "A system of medicine focused on promoting the body's innate ability to heal itself.",
+      "rdfs:label" : "Osteopathic",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of membership points earned by the member. If necessary, the unitText can be used to express the units the points are issued in. (E.g. stars, miles, etc.)",
+      "rdfs:label" : "membershipPointsEarned",
+      "schema:domainIncludes" : "schema:ProgramMembership",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:QuantitativeValue"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2085"
+   },
+   "properties" : {}
+}

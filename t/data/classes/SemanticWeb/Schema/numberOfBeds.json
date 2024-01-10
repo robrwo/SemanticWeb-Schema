@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The quantity of the given bed type available in the HotelRoom, Suite, House, or Apartment.",
+      "rdfs:label" : "numberOfBeds",
+      "schema:contributor" : "collab:STI_Accommodation_Ontology",
+      "schema:domainIncludes" : "schema:BedDetails",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

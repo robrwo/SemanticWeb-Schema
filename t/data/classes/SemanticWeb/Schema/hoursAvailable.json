@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The hours during which this service or contact is available.",
+      "rdfs:label" : "hoursAvailable",
+      "schema:domainIncludes" : [
+         "schema:LocationFeatureSpecification",
+         "schema:ContactPoint",
+         "schema:Service"
+      ],
+      "schema:rangeIncludes" : "schema:OpeningHoursSpecification"
+   },
+   "properties" : {}
+}

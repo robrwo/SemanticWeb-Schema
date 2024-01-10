@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date and time the reservation was booked.",
+      "rdfs:label" : "bookingTime",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

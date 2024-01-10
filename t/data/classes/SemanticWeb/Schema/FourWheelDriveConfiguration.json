@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DriveWheelConfigurationValue",
+      "rdfs:comment" : "Four-wheel drive is a transmission layout where the engine primarily drives two wheels with a part-time four-wheel drive capability.",
+      "rdfs:label" : "FourWheelDriveConfiguration",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group"
+   },
+   "properties" : {}
+}

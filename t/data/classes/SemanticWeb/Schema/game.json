@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Video game which is played on this server.",
+      "rdfs:label" : "game",
+      "schema:domainIncludes" : "schema:GameServer",
+      "schema:inverseOf" : "schema:gameServer",
+      "schema:rangeIncludes" : "schema:VideoGame"
+   },
+   "properties" : {}
+}

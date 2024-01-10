@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Identifier of the flight's arrival gate.",
+      "rdfs:label" : "arrivalGate",
+      "schema:domainIncludes" : "schema:Flight",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The person or organization the reservation or ticket is for.",
+      "rdfs:label" : "underName",
+      "schema:domainIncludes" : [
+         "schema:Reservation",
+         "schema:Ticket"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

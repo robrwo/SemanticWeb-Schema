@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The condition, complication, symptom, sign, etc. caused.",
+      "rdfs:label" : "causeOf",
+      "schema:domainIncludes" : "schema:MedicalCause",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalEntity"
+   },
+   "properties" : {}
+}

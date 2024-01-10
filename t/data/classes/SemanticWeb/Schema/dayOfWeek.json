@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The day of the week for which these opening hours are valid.",
+      "rdfs:label" : "dayOfWeek",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:EducationalOccupationalProgram",
+         "schema:OpeningHoursSpecification"
+      ],
+      "schema:rangeIncludes" : "schema:DayOfWeek"
+   },
+   "properties" : {}
+}

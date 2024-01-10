@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The eventAttendanceMode of an event indicates whether it occurs online, offline, or a mix.",
+      "rdfs:label" : "eventAttendanceMode",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:EventAttendanceModeEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1842"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A secondary title of the CreativeWork.",
+      "rdfs:label" : "alternativeHeadline",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

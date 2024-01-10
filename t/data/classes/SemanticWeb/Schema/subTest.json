@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A component test of the panel.",
+      "rdfs:label" : "subTest",
+      "schema:domainIncludes" : "schema:MedicalTestPanel",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTest"
+   },
+   "properties" : {}
+}

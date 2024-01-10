@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.",
+      "rdfs:label" : "eventStatus",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:rangeIncludes" : "schema:EventStatusType"
+   },
+   "properties" : {}
+}

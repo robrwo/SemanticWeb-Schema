@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The item that is being reviewed/rated.",
+      "rdfs:label" : "itemReviewed",
+      "schema:domainIncludes" : [
+         "schema:AggregateRating",
+         "schema:Review"
+      ],
+      "schema:rangeIncludes" : "schema:Thing"
+   },
+   "properties" : {}
+}

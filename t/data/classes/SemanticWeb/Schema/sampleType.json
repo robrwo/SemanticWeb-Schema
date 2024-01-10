@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.",
+      "rdfs:label" : "sampleType",
+      "schema:domainIncludes" : "schema:SoftwareSourceCode",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:codeSampleType"
+   },
+   "properties" : {}
+}

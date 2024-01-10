@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Frequency of payments due, i.e. number of months between payments. This is defined as a frequency, i.e. the reciprocal of a period of time.",
+      "rdfs:label" : "loanPaymentFrequency",
+      "schema:contributor" : "collab:FIBO",
+      "schema:domainIncludes" : "schema:RepaymentSpecification",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Number",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1253"
+   },
+   "properties" : {}
+}

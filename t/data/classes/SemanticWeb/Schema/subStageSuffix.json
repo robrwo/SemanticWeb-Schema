@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The substage, e.g. 'a' for Stage IIIa.",
+      "rdfs:label" : "subStageSuffix",
+      "schema:domainIncludes" : "schema:MedicalConditionStage",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

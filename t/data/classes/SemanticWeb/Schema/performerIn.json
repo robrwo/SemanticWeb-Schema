@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Event that this person is a performer or participant in.",
+      "rdfs:label" : "performerIn",
+      "schema:domainIncludes" : "schema:Person",
+      "schema:rangeIncludes" : "schema:Event"
+   },
+   "properties" : {}
+}

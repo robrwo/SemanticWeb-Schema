@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A resource from which this work is derived or from which it is a modification or adaptation.",
+      "rdfs:label" : "isBasedOn",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:Product",
+         "schema:URL",
+         "schema:CreativeWork"
+      ]
+   },
+   "properties" : {}
+}

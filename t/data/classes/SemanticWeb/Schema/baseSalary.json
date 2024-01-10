@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The base salary of the job or of an employee in an EmployeeRole.",
+      "rdfs:label" : "baseSalary",
+      "schema:domainIncludes" : [
+         "schema:JobPosting",
+         "schema:EmployeeRole"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Number",
+         "schema:PriceSpecification",
+         "schema:MonetaryAmount"
+      ]
+   },
+   "properties" : {}
+}

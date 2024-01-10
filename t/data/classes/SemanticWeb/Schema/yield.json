@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The quantity that results by performing instructions. For example, a paper airplane, 10 personalized candles.",
+      "rdfs:label" : "yield",
+      "schema:domainIncludes" : "schema:HowTo",
+      "schema:rangeIncludes" : [
+         "schema:QuantitativeValue",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

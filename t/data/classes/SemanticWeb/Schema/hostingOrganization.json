@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The organization (airline, travelers' club, etc.) the membership is made with.",
+      "rdfs:label" : "hostingOrganization",
+      "schema:domainIncludes" : "schema:ProgramMembership",
+      "schema:rangeIncludes" : "schema:Organization"
+   },
+   "properties" : {}
+}

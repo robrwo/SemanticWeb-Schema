@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date and time the reservation was modified.",
+      "rdfs:label" : "modifiedTime",
+      "schema:domainIncludes" : "schema:Reservation",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A slogan or motto associated with the item.",
+      "rdfs:label" : "slogan",
+      "schema:domainIncludes" : [
+         "schema:Service",
+         "schema:Organization",
+         "schema:Place",
+         "schema:Product",
+         "schema:Brand"
+      ],
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

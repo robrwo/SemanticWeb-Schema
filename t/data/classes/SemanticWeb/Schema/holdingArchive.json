@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "[[ArchiveOrganization]] that holds, keeps or maintains the [[ArchiveComponent]].",
+      "rdfs:label" : "holdingArchive",
+      "schema:domainIncludes" : "schema:ArchiveComponent",
+      "schema:inverseOf" : "schema:archiveHeld",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:ArchiveOrganization",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1758"
+   },
+   "properties" : {}
+}

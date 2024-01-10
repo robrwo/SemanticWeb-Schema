@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates the department, unit and/or facility where the employee reports and/or in which the job is to be performed.",
+      "rdfs:label" : "employmentUnit",
+      "schema:domainIncludes" : "schema:JobPosting",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Organization",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2296"
+   },
+   "properties" : {}
+}

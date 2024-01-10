@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Number of people the reservation should accommodate.",
+      "rdfs:label" : "partySize",
+      "schema:domainIncludes" : [
+         "schema:TaxiReservation",
+         "schema:FoodEstablishmentReservation"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Integer",
+         "schema:QuantitativeValue"
+      ]
+   },
+   "properties" : {}
+}

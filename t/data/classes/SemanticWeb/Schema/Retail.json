@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DrugCostCategory",
+      "rdfs:comment" : "The drug's cost represents the retail cost of the drug.",
+      "rdfs:label" : "Retail",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

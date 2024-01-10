@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date that this organization was founded.",
+      "rdfs:label" : "foundingDate",
+      "schema:domainIncludes" : "schema:Organization",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

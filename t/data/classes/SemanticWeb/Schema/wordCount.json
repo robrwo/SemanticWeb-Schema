@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of words in the text of the Article.",
+      "rdfs:label" : "wordCount",
+      "schema:domainIncludes" : "schema:Article",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

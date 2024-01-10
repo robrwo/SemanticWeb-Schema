@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location of origin of the trip, prior to any destination(s).",
+      "rdfs:label" : "tripOrigin",
+      "schema:domainIncludes" : "schema:Trip",
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

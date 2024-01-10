@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Review of the item.",
+      "rdfs:label" : "reviews",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:Organization",
+         "schema:Product",
+         "schema:Place",
+         "schema:Offer"
+      ],
+      "schema:rangeIncludes" : "schema:Review",
+      "schema:supersededBy" : "schema:review"
+   },
+   "properties" : {}
+}

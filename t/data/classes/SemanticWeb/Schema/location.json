@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location of, for example, where an event is happening, where an organization is located, or where an action takes place.",
+      "rdfs:label" : "location",
+      "schema:domainIncludes" : [
+         "schema:Action",
+         "schema:InteractionCounter",
+         "schema:Organization",
+         "schema:Event"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:VirtualLocation",
+         "schema:Place",
+         "schema:PostalAddress",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

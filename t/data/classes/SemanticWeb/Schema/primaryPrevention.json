@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A preventative therapy used to prevent an initial occurrence of the medical condition, such as vaccination.",
+      "rdfs:label" : "primaryPrevention",
+      "schema:domainIncludes" : "schema:MedicalCondition",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTherapy"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person that acts in a coaching role for a sports team.",
+      "rdfs:label" : "coach",
+      "schema:domainIncludes" : "schema:SportsTeam",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

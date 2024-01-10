@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Points-of-Sales operated by the organization or person.",
+      "rdfs:label" : "hasPOS",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ],
+      "schema:rangeIncludes" : "schema:Place"
+   },
+   "properties" : {}
+}

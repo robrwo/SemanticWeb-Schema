@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Links to tips, tactics, etc.",
+      "rdfs:label" : "gameTip",
+      "schema:domainIncludes" : "schema:VideoGame",
+      "schema:rangeIncludes" : "schema:CreativeWork"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ReturnMethodEnumeration",
+      "rdfs:comment" : "Specifies that product returns must be made in a store.",
+      "rdfs:label" : "ReturnInStore",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2880"
+   },
+   "properties" : {}
+}

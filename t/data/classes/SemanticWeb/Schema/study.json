@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A medical study or trial related to this entity.",
+      "rdfs:label" : "study",
+      "schema:domainIncludes" : "schema:MedicalEntity",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalStudy"
+   },
+   "properties" : {}
+}

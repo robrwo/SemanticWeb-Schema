@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The composition this track is a recording of.",
+      "rdfs:label" : "recordingOf",
+      "schema:contributor" : "collab:MBZ",
+      "schema:domainIncludes" : "schema:MusicRecording",
+      "schema:inverseOf" : "schema:recordedAs",
+      "schema:rangeIncludes" : "schema:MusicComposition"
+   },
+   "properties" : {}
+}

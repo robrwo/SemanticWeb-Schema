@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The level in terms of progression through an educational or training context. Examples of educational levels include 'beginner', 'intermediate' or 'advanced', and formal sets of level indicators.",
+      "rdfs:label" : "educationalLevel",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:EducationEvent",
+         "schema:LearningResource",
+         "schema:EducationalOccupationalCredential"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:DefinedTerm",
+         "schema:Text"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1779"
+   },
+   "properties" : {}
+}

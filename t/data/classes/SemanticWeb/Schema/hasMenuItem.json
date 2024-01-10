@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A food or drink item contained in a menu or menu section.",
+      "rdfs:label" : "hasMenuItem",
+      "schema:domainIncludes" : [
+         "schema:Menu",
+         "schema:MenuSection"
+      ],
+      "schema:rangeIncludes" : "schema:MenuItem"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The unique identifier for the ticket.",
+      "rdfs:label" : "ticketNumber",
+      "schema:domainIncludes" : "schema:Ticket",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

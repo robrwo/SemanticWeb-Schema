@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalStudyStatus",
+      "rdfs:comment" : "Completed.",
+      "rdfs:label" : "Completed",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

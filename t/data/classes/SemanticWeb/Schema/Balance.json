@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PhysicalActivityCategory",
+      "rdfs:comment" : "Physical activity that is engaged to help maintain posture and balance.",
+      "rdfs:label" : "Balance",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

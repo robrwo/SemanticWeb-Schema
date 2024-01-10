@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Reference to an asset (e.g., Barcode, QR code image or PDF) usable for entrance.",
+      "rdfs:label" : "ticketToken",
+      "schema:domainIncludes" : "schema:Ticket",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL"
+      ]
+   },
+   "properties" : {}
+}

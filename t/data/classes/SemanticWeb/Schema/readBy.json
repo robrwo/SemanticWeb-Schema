@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A person who reads (performs) the audiobook.",
+      "rdfs:label" : "readBy",
+      "rdfs:subPropertyOf" : "schema:actor",
+      "schema:domainIncludes" : "schema:Audiobook",
+      "schema:isPartOf" : "http:bib.schema.org",
+      "schema:rangeIncludes" : "schema:Person"
+   },
+   "properties" : {}
+}

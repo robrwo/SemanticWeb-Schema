@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The area within which users can expect to reach the broadcast service.",
+      "rdfs:label" : "area",
+      "schema:domainIncludes" : "schema:BroadcastService",
+      "schema:rangeIncludes" : "schema:Place",
+      "schema:supersededBy" : "schema:serviceArea"
+   },
+   "properties" : {}
+}

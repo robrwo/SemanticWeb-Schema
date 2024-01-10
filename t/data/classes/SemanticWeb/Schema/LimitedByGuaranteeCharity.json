@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:UKNonprofitType",
+      "rdfs:comment" : "LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that is limited by guarantee (UK).",
+      "rdfs:label" : "LimitedByGuaranteeCharity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2543"
+   },
+   "properties" : {}
+}

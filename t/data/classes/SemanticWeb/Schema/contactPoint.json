@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A contact point for a person or organization.",
+      "rdfs:label" : "contactPoint",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:Organization",
+         "schema:HealthInsurancePlan"
+      ],
+      "schema:rangeIncludes" : "schema:ContactPoint"
+   },
+   "properties" : {}
+}

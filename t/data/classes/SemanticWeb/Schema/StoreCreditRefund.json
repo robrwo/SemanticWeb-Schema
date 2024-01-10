@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:RefundTypeEnumeration",
+      "rdfs:comment" : "Specifies that the customer receives a store credit as refund when returning a product.",
+      "rdfs:label" : "StoreCreditRefund",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2288"
+   },
+   "properties" : {}
+}

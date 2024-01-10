@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.",
+      "rdfs:label" : "circle",
+      "schema:domainIncludes" : "schema:GeoShape",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

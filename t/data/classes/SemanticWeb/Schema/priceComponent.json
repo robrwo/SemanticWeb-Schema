@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This property links to all [[UnitPriceSpecification]] nodes that apply in parallel for the [[CompoundPriceSpecification]] node.",
+      "rdfs:label" : "priceComponent",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:CompoundPriceSpecification",
+      "schema:rangeIncludes" : "schema:UnitPriceSpecification"
+   },
+   "properties" : {}
+}

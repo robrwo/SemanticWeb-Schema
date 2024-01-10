@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A [[DefinedTermSet]] that contains this term.",
+      "rdfs:label" : "inDefinedTermSet",
+      "rdfs:subPropertyOf" : "schema:isPartOf",
+      "schema:domainIncludes" : "schema:DefinedTerm",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:URL",
+         "schema:DefinedTermSet"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/894"
+   },
+   "properties" : {}
+}

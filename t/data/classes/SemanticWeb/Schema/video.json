@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "An embedded video object.",
+      "rdfs:label" : "video",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : [
+         "schema:VideoObject",
+         "schema:Clip"
+      ]
+   },
+   "properties" : {}
+}

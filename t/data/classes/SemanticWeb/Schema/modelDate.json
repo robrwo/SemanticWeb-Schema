@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The release date of a vehicle model (often used to differentiate versions of the same make and model).",
+      "rdfs:label" : "modelDate",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:isPartOf" : "http:auto.schema.org",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

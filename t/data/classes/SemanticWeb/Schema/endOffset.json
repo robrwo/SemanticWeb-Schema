@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The end time of the clip expressed as the number of seconds from the beginning of the work.",
+      "rdfs:label" : "endOffset",
+      "schema:domainIncludes" : "schema:Clip",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:HyperTocEntry",
+         "schema:Number"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2021"
+   },
+   "properties" : {}
+}

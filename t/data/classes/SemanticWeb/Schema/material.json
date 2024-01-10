@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A material that something is made from, e.g. leather, wool, cotton, paper.",
+      "rdfs:label" : "material",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:URL",
+         "schema:Product"
+      ]
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The anatomical or organ system that this structure is part of.",
+      "rdfs:label" : "partOfSystem",
+      "schema:domainIncludes" : "schema:AnatomicalStructure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AnatomicalSystem"
+   },
+   "properties" : {}
+}

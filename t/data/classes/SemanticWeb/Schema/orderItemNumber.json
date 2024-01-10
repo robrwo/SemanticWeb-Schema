@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The identifier of the order item.",
+      "rdfs:label" : "orderItemNumber",
+      "schema:domainIncludes" : "schema:OrderItem",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

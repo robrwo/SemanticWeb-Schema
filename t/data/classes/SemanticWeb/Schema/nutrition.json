@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Nutrition information about the recipe or menu item.",
+      "rdfs:label" : "nutrition",
+      "schema:domainIncludes" : [
+         "schema:MenuItem",
+         "schema:Recipe"
+      ],
+      "schema:rangeIncludes" : "schema:NutritionInformation"
+   },
+   "properties" : {}
+}

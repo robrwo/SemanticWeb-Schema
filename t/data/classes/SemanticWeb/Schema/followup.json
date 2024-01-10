@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Typical or recommended followup care after the procedure is performed.",
+      "rdfs:label" : "followup",
+      "schema:domainIncludes" : "schema:MedicalProcedure",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

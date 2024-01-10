@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Awards won by or for this item.",
+      "rdfs:label" : "awards",
+      "schema:domainIncludes" : [
+         "schema:Person",
+         "schema:CreativeWork",
+         "schema:Organization",
+         "schema:Product"
+      ],
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:award"
+   },
+   "properties" : {}
+}

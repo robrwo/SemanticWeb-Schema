@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The name of the bus (e.g. Bolt Express).",
+      "rdfs:label" : "busName",
+      "schema:domainIncludes" : "schema:BusTrip",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

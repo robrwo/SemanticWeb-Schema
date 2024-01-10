@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The color or color combination of the interior of the vehicle.",
+      "rdfs:label" : "vehicleInteriorColor",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

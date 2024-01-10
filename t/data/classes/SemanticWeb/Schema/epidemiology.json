@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The characteristics of associated patients, such as age, gender, race etc.",
+      "rdfs:label" : "epidemiology",
+      "schema:domainIncludes" : [
+         "schema:PhysicalActivity",
+         "schema:MedicalCondition"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

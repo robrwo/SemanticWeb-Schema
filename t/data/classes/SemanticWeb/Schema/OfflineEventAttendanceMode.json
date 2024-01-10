@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "schema:EventAttendanceModeEnumeration",
+      "rdfs:comment" : "OfflineEventAttendanceMode - an event that is primarily conducted offline. ",
+      "rdfs:label" : "OfflineEventAttendanceMode",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1842"
+   },
+   "properties" : {}
+}

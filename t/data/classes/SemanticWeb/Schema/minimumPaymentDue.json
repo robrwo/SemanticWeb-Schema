@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The minimum payment required at this time.",
+      "rdfs:label" : "minimumPaymentDue",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : [
+         "schema:PriceSpecification",
+         "schema:MonetaryAmount"
+      ]
+   },
+   "properties" : {}
+}

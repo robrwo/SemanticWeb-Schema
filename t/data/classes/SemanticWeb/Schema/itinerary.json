@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Destination(s) ( [[Place]] ) that make up a trip. For a trip where destination order is important use [[ItemList]] to specify that order (see examples).",
+      "rdfs:label" : "itinerary",
+      "schema:contributor" : "collab:Tourism",
+      "schema:domainIncludes" : "schema:Trip",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:ItemList",
+         "schema:Place"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1810"
+   },
+   "properties" : {}
+}

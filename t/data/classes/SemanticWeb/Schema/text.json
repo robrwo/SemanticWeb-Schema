@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The textual content of this CreativeWork.",
+      "rdfs:label" : "text",
+      "schema:domainIncludes" : "schema:CreativeWork",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

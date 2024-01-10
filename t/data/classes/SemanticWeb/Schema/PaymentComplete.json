@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:PaymentStatusType",
+      "rdfs:comment" : "The payment has been received and processed.",
+      "rdfs:label" : "PaymentComplete"
+   },
+   "properties" : {}
+}

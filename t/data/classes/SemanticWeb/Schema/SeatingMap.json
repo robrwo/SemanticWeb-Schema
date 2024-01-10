@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MapCategoryType",
+      "rdfs:comment" : "A seating map.",
+      "rdfs:label" : "SeatingMap"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Information about the engine or engines of the vehicle.",
+      "rdfs:label" : "vehicleEngine",
+      "schema:contributor" : "collab:Automotive_Ontology_Working_Group",
+      "schema:domainIncludes" : "schema:Vehicle",
+      "schema:rangeIncludes" : "schema:EngineSpecification"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date and time of obtaining the product.",
+      "rdfs:label" : "ownedFrom",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:OwnershipInfo",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates whether API is managed or unmanaged.",
+      "rdfs:label" : "programmingModel",
+      "schema:domainIncludes" : "schema:APIReference",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The class of infectious agent (bacteria, prion, etc.) that causes the disease.",
+      "rdfs:label" : "infectiousAgentClass",
+      "schema:domainIncludes" : "schema:InfectiousDisease",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:InfectiousAgentClass"
+   },
+   "properties" : {}
+}

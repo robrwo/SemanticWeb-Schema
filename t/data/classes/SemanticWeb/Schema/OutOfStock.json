@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ItemAvailability",
+      "rdfs:comment" : "Indicates that the item is out of stock.",
+      "rdfs:label" : "OutOfStock"
+   },
+   "properties" : {}
+}

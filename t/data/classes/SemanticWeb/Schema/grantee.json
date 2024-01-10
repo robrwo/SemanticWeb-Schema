@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The person, organization, contact point, or audience that has been granted this permission.",
+      "rdfs:label" : "grantee",
+      "schema:domainIncludes" : "schema:DigitalDocumentPermission",
+      "schema:rangeIncludes" : [
+         "schema:Organization",
+         "schema:Person",
+         "schema:Audience",
+         "schema:ContactPoint"
+      ]
+   },
+   "properties" : {}
+}

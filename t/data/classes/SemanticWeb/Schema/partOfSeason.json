@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The season to which this episode belongs.",
+      "rdfs:label" : "partOfSeason",
+      "rdfs:subPropertyOf" : "schema:isPartOf",
+      "schema:domainIncludes" : [
+         "schema:Episode",
+         "schema:Clip"
+      ],
+      "schema:rangeIncludes" : "schema:CreativeWorkSeason"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of pages in the book.",
+      "rdfs:label" : "numberOfPages",
+      "schema:domainIncludes" : "schema:Book",
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

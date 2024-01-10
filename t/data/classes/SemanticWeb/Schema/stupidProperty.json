@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This is a StupidProperty! - for testing only.",
+      "rdfs:label" : "stupidProperty",
+      "schema:domainIncludes" : [
+         "schema:StupidType",
+         "schema:Vehicle"
+      ],
+      "schema:isPartOf" : "http:attic.schema.org",
+      "schema:rangeIncludes" : "schema:QuantitativeValue"
+   },
+   "properties" : {}
+}

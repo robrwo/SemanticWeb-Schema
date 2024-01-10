@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Physical address of the item.",
+      "rdfs:label" : "address",
+      "schema:domainIncludes" : [
+         "schema:Organization",
+         "schema:Person",
+         "schema:GeoShape",
+         "schema:Place",
+         "schema:GeoCoordinates"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:PostalAddress",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

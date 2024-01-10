@@ -1,0 +1,17 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Prerequisites for enrolling in the program.",
+      "rdfs:label" : "programPrerequisites",
+      "schema:domainIncludes" : "schema:EducationalOccupationalProgram",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:EducationalOccupationalCredential",
+         "schema:Text",
+         "schema:AlignmentObject",
+         "schema:Course"
+      ],
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2289"
+   },
+   "properties" : {}
+}

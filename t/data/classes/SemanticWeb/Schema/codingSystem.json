@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The coding system, e.g. 'ICD-10'.",
+      "rdfs:label" : "codingSystem",
+      "schema:domainIncludes" : "schema:MedicalCode",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

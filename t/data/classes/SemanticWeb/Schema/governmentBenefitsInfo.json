@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "governmentBenefitsInfo provides information about government benefits associated with a SpecialAnnouncement.",
+      "rdfs:label" : "governmentBenefitsInfo",
+      "schema:domainIncludes" : "schema:SpecialAnnouncement",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:GovernmentService",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2534"
+   },
+   "properties" : {}
+}

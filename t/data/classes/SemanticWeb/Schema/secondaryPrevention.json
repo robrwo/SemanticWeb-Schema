@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A preventative therapy used to prevent reoccurrence of the medical condition after an initial episode of the condition.",
+      "rdfs:label" : "secondaryPrevention",
+      "schema:domainIncludes" : "schema:MedicalCondition",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTherapy"
+   },
+   "properties" : {}
+}

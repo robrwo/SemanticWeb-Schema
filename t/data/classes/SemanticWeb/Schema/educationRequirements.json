@@ -1,0 +1,21 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Educational background needed for the position or Occupation.",
+      "rdfs:label" : "educationRequirements",
+      "schema:domainIncludes" : [
+         "schema:JobPosting",
+         "schema:Occupation"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:EducationalOccupationalCredential"
+      ],
+      "schema:source" : [
+         "https://github.com/schemaorg/schemaorg/issues/1779",
+         "https://github.com/schemaorg/schemaorg/issues/1698"
+      ]
+   },
+   "properties" : {}
+}

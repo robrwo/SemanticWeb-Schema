@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The supported encoding type(s) for an EntryPoint request.",
+      "rdfs:label" : "encodingType",
+      "schema:domainIncludes" : "schema:EntryPoint",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

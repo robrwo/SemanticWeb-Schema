@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Any other drug related to this one, for example commonly-prescribed alternatives.",
+      "rdfs:label" : "relatedDrug",
+      "schema:domainIncludes" : "schema:Drug",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Drug"
+   },
+   "properties" : {}
+}

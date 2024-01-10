@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MedicalImagingTechnique",
+      "rdfs:comment" : "Magnetic resonance imaging.",
+      "rdfs:label" : "MRI",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

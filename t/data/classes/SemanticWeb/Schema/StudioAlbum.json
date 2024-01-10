@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:MusicAlbumProductionType",
+      "rdfs:comment" : "StudioAlbum.",
+      "rdfs:label" : "StudioAlbum",
+      "schema:contributor" : "collab:MBZ"
+   },
+   "properties" : {}
+}

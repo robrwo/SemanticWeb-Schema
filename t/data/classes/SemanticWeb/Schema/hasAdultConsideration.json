@@ -1,0 +1,15 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Used to tag an item to be intended or suitable for consumption or use by adults only.",
+      "rdfs:label" : "hasAdultConsideration",
+      "schema:domainIncludes" : [
+         "schema:Offer",
+         "schema:Product"
+      ],
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:AdultOrientedEnumeration",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/2989"
+   },
+   "properties" : {}
+}

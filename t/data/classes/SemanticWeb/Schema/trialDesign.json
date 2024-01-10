@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Specifics about the trial design (enumerated).",
+      "rdfs:label" : "trialDesign",
+      "schema:domainIncludes" : "schema:MedicalTrial",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:MedicalTrialDesign"
+   },
+   "properties" : {}
+}

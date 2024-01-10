@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.",
+      "rdfs:label" : "billingIncrement",
+      "schema:contributor" : "collab:GoodRelationsTerms",
+      "schema:domainIncludes" : "schema:UnitPriceSpecification",
+      "schema:rangeIncludes" : "schema:Number"
+   },
+   "properties" : {}
+}

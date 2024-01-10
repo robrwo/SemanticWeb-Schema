@@ -1,0 +1,9 @@
+{
+   "class" : {
+      "rdf:type" : "schema:DrugPregnancyCategory",
+      "rdfs:comment" : "A designation that the drug in question has not been assigned a pregnancy category designation by the US FDA.",
+      "rdfs:label" : "FDAnotEvaluated",
+      "schema:isPartOf" : "http:health-lifesci.schema.org"
+   },
+   "properties" : {}
+}

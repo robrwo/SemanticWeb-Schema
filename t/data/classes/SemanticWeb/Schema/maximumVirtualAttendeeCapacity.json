@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The maximum virtual attendee capacity of an [[Event]] whose [[eventAttendanceMode]] is [[OnlineEventAttendanceMode]] (or the online aspects, in the case of a [[MixedEventAttendanceMode]]). ",
+      "rdfs:label" : "maximumVirtualAttendeeCapacity",
+      "schema:domainIncludes" : "schema:Event",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Integer",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/1842"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,20 @@
+{
+   "class" : {
+      "owl:equivalentProperty" : "bibo:pageStart",
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The page on which the work starts; for example \"135\" or \"xiii\".",
+      "rdfs:label" : "pageStart",
+      "schema:contributor" : "collab:bibex",
+      "schema:domainIncludes" : [
+         "schema:Chapter",
+         "schema:Article",
+         "schema:PublicationVolume",
+         "schema:PublicationIssue"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:Integer"
+      ]
+   },
+   "properties" : {}
+}

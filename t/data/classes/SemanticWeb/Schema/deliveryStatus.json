@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "New entry added as the package passes through each leg of its journey (from shipment to final delivery).",
+      "rdfs:label" : "deliveryStatus",
+      "schema:domainIncludes" : "schema:ParcelDelivery",
+      "schema:rangeIncludes" : "schema:DeliveryEvent"
+   },
+   "properties" : {}
+}

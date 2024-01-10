@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of participant. The real estate agent involved in the action.",
+      "rdfs:label" : "realEstateAgent",
+      "rdfs:subPropertyOf" : "schema:participant",
+      "schema:domainIncludes" : "schema:RentAction",
+      "schema:rangeIncludes" : "schema:RealEstateAgent"
+   },
+   "properties" : {}
+}

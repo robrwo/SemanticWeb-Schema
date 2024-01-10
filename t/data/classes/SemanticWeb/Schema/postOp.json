@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A description of the postoperative procedures, care, and/or followups for this device.",
+      "rdfs:label" : "postOp",
+      "schema:domainIncludes" : "schema:MedicalDevice",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

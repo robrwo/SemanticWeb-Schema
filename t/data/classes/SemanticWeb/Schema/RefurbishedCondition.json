@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:OfferItemCondition",
+      "rdfs:comment" : "Indicates that the item is refurbished.",
+      "rdfs:label" : "RefurbishedCondition"
+   },
+   "properties" : {}
+}

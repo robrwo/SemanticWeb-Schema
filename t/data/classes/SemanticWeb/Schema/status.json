@@ -1,0 +1,19 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The status of the study (enumerated).",
+      "rdfs:label" : "status",
+      "schema:domainIncludes" : [
+         "schema:MedicalProcedure",
+         "schema:MedicalCondition",
+         "schema:MedicalStudy"
+      ],
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:EventStatusType",
+         "schema:Text",
+         "schema:MedicalStudyStatus"
+      ]
+   },
+   "properties" : {}
+}

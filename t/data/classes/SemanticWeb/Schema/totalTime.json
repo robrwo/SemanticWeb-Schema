@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The total time required to perform instructions or a direction (including time to prepare the supplies), in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601).",
+      "rdfs:label" : "totalTime",
+      "schema:domainIncludes" : [
+         "schema:HowTo",
+         "schema:HowToDirection"
+      ],
+      "schema:rangeIncludes" : "schema:Duration"
+   },
+   "properties" : {}
+}

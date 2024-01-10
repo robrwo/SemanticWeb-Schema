@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Anatomical systems or structures that relate to the superficial anatomy.",
+      "rdfs:label" : "relatedAnatomy",
+      "schema:domainIncludes" : "schema:SuperficialAnatomy",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:AnatomicalStructure",
+         "schema:AnatomicalSystem"
+      ]
+   },
+   "properties" : {}
+}

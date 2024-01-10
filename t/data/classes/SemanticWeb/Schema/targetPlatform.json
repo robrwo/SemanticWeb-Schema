@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Type of app development: phone, Metro style, desktop, XBox, etc.",
+      "rdfs:label" : "targetPlatform",
+      "schema:domainIncludes" : "schema:APIReference",
+      "schema:rangeIncludes" : "schema:Text"
+   },
+   "properties" : {}
+}

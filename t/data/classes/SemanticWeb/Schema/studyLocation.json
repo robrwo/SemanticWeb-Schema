@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The location in which the study is taking/took place.",
+      "rdfs:label" : "studyLocation",
+      "schema:domainIncludes" : "schema:MedicalStudy",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:AdministrativeArea"
+   },
+   "properties" : {}
+}

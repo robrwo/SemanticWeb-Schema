@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "How often one should engage in the activity.",
+      "rdfs:label" : "activityFrequency",
+      "schema:domainIncludes" : "schema:ExercisePlan",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:QuantitativeValue"
+      ]
+   },
+   "properties" : {}
+}

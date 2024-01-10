@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Another BioChemEntity encoding by this one.",
+      "rdfs:label" : "isEncodedByBioChemEntity",
+      "schema:domainIncludes" : "schema:BioChemEntity",
+      "schema:inverseOf" : "schema:encodesBioChemEntity",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Gene",
+      "schema:source" : "www.bioschemas:Gene"
+   },
+   "properties" : {}
+}

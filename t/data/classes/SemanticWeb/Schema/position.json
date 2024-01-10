@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The position of an item in a series or sequence of items.",
+      "rdfs:label" : "position",
+      "schema:domainIncludes" : [
+         "schema:CreativeWork",
+         "schema:ListItem"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Integer",
+         "schema:Text"
+      ]
+   },
+   "properties" : {}
+}

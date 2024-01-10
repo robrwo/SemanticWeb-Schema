@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Library file name, e.g., mscorlib.dll, system.web.dll.",
+      "rdfs:label" : "assembly",
+      "schema:domainIncludes" : "schema:APIReference",
+      "schema:rangeIncludes" : "schema:Text",
+      "schema:supersededBy" : "schema:executableLibraryName"
+   },
+   "properties" : {}
+}

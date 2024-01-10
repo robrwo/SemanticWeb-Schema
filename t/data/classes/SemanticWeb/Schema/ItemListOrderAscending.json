@@ -1,0 +1,8 @@
+{
+   "class" : {
+      "rdf:type" : "schema:ItemListOrderType",
+      "rdfs:comment" : "An ItemList ordered with lower values listed first.",
+      "rdfs:label" : "ItemListOrderAscending"
+   },
+   "properties" : {}
+}

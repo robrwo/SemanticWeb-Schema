@@ -1,0 +1,16 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: \"they have no point in common. They form a set of disconnected geometries.\" (A symmetric relationship, as defined in [DE-9IM](https://en.wikipedia.org/wiki/DE-9IM).)",
+      "rdfs:label" : "geoDisjoint",
+      "schema:domainIncludes" : [
+         "schema:Place",
+         "schema:GeospatialGeometry"
+      ],
+      "schema:rangeIncludes" : [
+         "schema:Place",
+         "schema:GeospatialGeometry"
+      ]
+   },
+   "properties" : {}
+}

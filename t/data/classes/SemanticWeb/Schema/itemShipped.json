@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Item(s) being shipped.",
+      "rdfs:label" : "itemShipped",
+      "schema:domainIncludes" : "schema:ParcelDelivery",
+      "schema:rangeIncludes" : "schema:Product"
+   },
+   "properties" : {}
+}

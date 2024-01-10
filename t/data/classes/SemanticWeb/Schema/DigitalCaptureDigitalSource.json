@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "core:exactMatch" : "digitalsourcetype:digitalCapture",
+      "rdf:type" : "schema:IPTCDigitalSourceEnumeration",
+      "rdfs:comment" : "Content coded as '<a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture\">digital capture</a></a>' using the IPTC <a href=\"https://cv.iptc.org/newscodes/digitalsourcetype/\">digital source type</a> vocabulary.",
+      "rdfs:label" : "DigitalCaptureDigitalSource",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3392"
+   },
+   "properties" : {}
+}

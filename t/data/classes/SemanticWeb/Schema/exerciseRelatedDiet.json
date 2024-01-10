@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of instrument. The diet used in this action.",
+      "rdfs:label" : "exerciseRelatedDiet",
+      "rdfs:subPropertyOf" : "schema:instrument",
+      "schema:domainIncludes" : "schema:ExerciseAction",
+      "schema:isPartOf" : "http:health-lifesci.schema.org",
+      "schema:rangeIncludes" : "schema:Diet"
+   },
+   "properties" : {}
+}

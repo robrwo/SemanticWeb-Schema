@@ -1,0 +1,12 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Indicates (typically several) Syllabus entities that lay out what each section of the overall course will cover.",
+      "rdfs:label" : "syllabusSections",
+      "schema:domainIncludes" : "schema:Course",
+      "schema:isPartOf" : "http:pending.schema.org",
+      "schema:rangeIncludes" : "schema:Syllabus",
+      "schema:source" : "https://github.com/schemaorg/schemaorg/issues/3281"
+   },
+   "properties" : {}
+}

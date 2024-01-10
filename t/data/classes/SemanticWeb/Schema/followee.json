@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "A sub property of object. The person or organization being followed.",
+      "rdfs:label" : "followee",
+      "rdfs:subPropertyOf" : "schema:object",
+      "schema:domainIncludes" : "schema:FollowAction",
+      "schema:rangeIncludes" : [
+         "schema:Person",
+         "schema:Organization"
+      ]
+   },
+   "properties" : {}
+}

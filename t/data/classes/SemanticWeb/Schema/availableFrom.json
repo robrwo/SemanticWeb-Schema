@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "When the item is available for pickup from the store, locker, etc.",
+      "rdfs:label" : "availableFrom",
+      "schema:domainIncludes" : "schema:DeliveryEvent",
+      "schema:rangeIncludes" : "schema:DateTime"
+   },
+   "properties" : {}
+}

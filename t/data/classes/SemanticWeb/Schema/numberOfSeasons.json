@@ -1,0 +1,14 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The number of seasons in this series.",
+      "rdfs:label" : "numberOfSeasons",
+      "schema:domainIncludes" : [
+         "schema:RadioSeries",
+         "schema:TVSeries",
+         "schema:VideoGameSeries"
+      ],
+      "schema:rangeIncludes" : "schema:Integer"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,11 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.",
+      "rdfs:label" : "significantLinks",
+      "schema:domainIncludes" : "schema:WebPage",
+      "schema:rangeIncludes" : "schema:URL",
+      "schema:supersededBy" : "schema:significantLink"
+   },
+   "properties" : {}
+}

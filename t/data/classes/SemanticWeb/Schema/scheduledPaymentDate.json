@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The date the invoice is scheduled to be paid.",
+      "rdfs:label" : "scheduledPaymentDate",
+      "schema:domainIncludes" : "schema:Invoice",
+      "schema:rangeIncludes" : "schema:Date"
+   },
+   "properties" : {}
+}

@@ -1,0 +1,18 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "Upcoming or past event associated with this place, organization, or action.",
+      "rdfs:label" : "event",
+      "schema:domainIncludes" : [
+         "schema:PlayAction",
+         "schema:InformAction",
+         "schema:Organization",
+         "schema:JoinAction",
+         "schema:InviteAction",
+         "schema:Place",
+         "schema:LeaveAction"
+      ],
+      "schema:rangeIncludes" : "schema:Event"
+   },
+   "properties" : {}
+}

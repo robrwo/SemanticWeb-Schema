@@ -1,0 +1,10 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The URL of a node in an established educational framework.",
+      "rdfs:label" : "targetUrl",
+      "schema:domainIncludes" : "schema:AlignmentObject",
+      "schema:rangeIncludes" : "schema:URL"
+   },
+   "properties" : {}
+}

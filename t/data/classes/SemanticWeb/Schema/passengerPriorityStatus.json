@@ -1,0 +1,13 @@
+{
+   "class" : {
+      "rdf:type" : "rdf:Property",
+      "rdfs:comment" : "The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).",
+      "rdfs:label" : "passengerPriorityStatus",
+      "schema:domainIncludes" : "schema:FlightReservation",
+      "schema:rangeIncludes" : [
+         "schema:Text",
+         "schema:QualitativeValue"
+      ]
+   },
+   "properties" : {}
+}
