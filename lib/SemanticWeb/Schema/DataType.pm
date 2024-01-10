@@ -7,7 +7,7 @@ package SemanticWeb::Schema::DataType;
 use v5.14;
 use Moo;
 
-extends qw/ SemanticWeb::RDFS::Class /;
+extends qw/ SemanticWeb::Schema /;
 
 
 use MooX::JSON_LD 'DataType';
@@ -26,15 +26,6 @@ The basic data types such as Integers, Strings, etc.
 
 
 
-
-=cut
-
-
-=head1 SEE ALSO
-
-
-
-L<SemanticWeb::RDFS::Class>
 
 =cut
 
