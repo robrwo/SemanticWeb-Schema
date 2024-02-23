@@ -120,4 +120,5 @@ lib/SemanticWeb/Schema/Text.pm
 lib/SemanticWeb/Schema/TextDigitalDocument.pm
 lib/SemanticWeb/Schema/URL.pm
 lib/SemanticWeb/Schema/XPathType.pm
-cache/
+^cache/
+^devel/cache/
