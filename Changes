@@ -9,6 +9,8 @@ Revision history for {{$dist->name}}:
   [Documentatopm]
   - Updated copyright year.
 
+  - Added a security policy.
+
   [Tests]
   - Migrated to Test2.
 
